@@ -1395,13 +1395,6 @@
         "title": "Alignment 3: Hercules",
         "text": "Astral Bonnie gains +1.5% damage for each enemy currently on the map."
       }
-    ],
-    "skins": [
-       {
-        "name": "Radiant Astral Bonnie",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/radiant-astral-bonnie-high.png",
-        "rarity": "Radiant"
-      },
     ]
   },
   {
@@ -8163,17 +8156,7 @@
         "name": "Anubis Wrath",
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/anubis-wrath-high.png",
         "rarity": "secret"
-      },
-       {
-        "name": "Security Puppet",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/security-puppet-high.png",
-        "rarity": "secret"
-      },
-       {
-        "name": "Shiny Security Puppet",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/security-puppet-shiny-high.png",
-        "rarity": "shiny"
-      },
+      }
     ]
   },
   {

@@ -7876,7 +7876,7 @@
     "passives": [
       {
         "title": "Shouldn't have killed me.",
-        "text": "Upon activation, knockback all enemies in range ignoring their current knockback lockout and buff all neutral element units by +15% Dmg and +10% RNG for 120s. (Upgrade 18+, Local CD: 200s).",
+        "text": "Upon activation, knockback all enemies in range ignoring their current knockback lockout and buff all neutral element units by +20% Dmg and +20% RNG for 120s. (Upgrade 18+, Local CD: 200s).",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-01-03-05-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347"
       },
       {
@@ -7885,11 +7885,11 @@
       },
       {
         "title": "Restless Soul [Upgrade 5+]",
-        "text": "Every base stock lost, gain +10% RNG and -5% CD. For each wave completed, all units gain 1% DMG, up to a max of 75% DMG."
+        "text": "Every base stock lost, gain +10% RNG and -5% CD. For each wave completed, all units gain 1% DMG, up to a max of 30% DMG."
       },
       {
         "title": "It's Me! [Upgrade 12+]",
-        "text": "Every 45s, increase this unit's boosts by +100% towards a random neutral element unit in range for 10s (cannot apply to self)."
+        "text": "Every 45s, increase this unit's boosts by +50% towards a random neutral element unit in range for 20s (cannot apply to self)."
       }
     ],
     "skins": [

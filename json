@@ -1079,7 +1079,7 @@
         "level": 5,
         "cost": 6850,
         "damage": 944.35,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 2.5,
         "range": 28
       },
@@ -1087,7 +1087,7 @@
         "level": 6,
         "cost": 7350,
         "damage": 964.55,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 2.3,
         "range": 28
       }
@@ -1953,7 +1953,7 @@
     "element": "Neutral",
     "placements": 2,
     "attackType": "Cone",
-    "obtainment": "S3 Evo Nightmare",
+    "obtainment": "Nightmare Chica Evolution",
     "levels": [
       {
         "level": 1,
@@ -3117,7 +3117,7 @@
       "Support"
     ],
     "placements": 1,
-    "obtainment": "S2 Evo Nightmare",
+    "obtainment": "Phantom Mangle Evolution",
     "modes": {
       "springBonnie": {
         "label": "Spring Bonnie",
@@ -6218,7 +6218,7 @@
         "level": 1,
         "cost": 2500,
         "damage": 434.3,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 2.8,
         "range": 20
       },
@@ -6226,7 +6226,7 @@
         "level": 2,
         "cost": 1000,
         "damage": 464.6,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 2.8,
         "range": 22
       },
@@ -6234,7 +6234,7 @@
         "level": 3,
         "cost": 1500,
         "damage": 489.85,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 2.6,
         "range": 23
       },
@@ -6242,7 +6242,7 @@
         "level": 4,
         "cost": 2500,
         "damage": 505,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 2.6,
         "range": 23
       },
@@ -6250,7 +6250,7 @@
         "level": 5,
         "cost": 2500,
         "damage": 530.25,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 2.5,
         "range": 25
       },
@@ -6937,7 +6937,7 @@
     "element": "Neutral",
     "placements": 2,
     "attackType": "Circle",
-    "obtainment": "S1 Evo Nightmare",
+    "obtainment": "Golden Freddy Pet Evolution",
     "levels": [
       {
         "level": 1,
@@ -10018,7 +10018,7 @@
     "element": "Electricity",
     "placements": 2,
     "attackType": "Multi",
-    "obtainment": "S4 Evo Nightmare",
+    "obtainment": "Ballora Evolution",
     "levels": [
       {
         "level": 1,
@@ -12558,8 +12558,8 @@
     "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-4xayro.png",
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-4xayro.png",
     "rarity": "hero",
-    "typeMain": "Endgame",
-    "tierlist": "3",
+    "typeMain": "Midgame",
+    "tierlist": "4",
     "typeTags": [
       "Support",
       "Knockback",
@@ -12574,7 +12574,7 @@
         "level": 1,
         "cost": 3150,
         "damage": 227.25,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 3.6,
         "range": 20
       },
@@ -12582,7 +12582,7 @@
         "level": 2,
         "cost": 2014,
         "damage": 237.35,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 3.5,
         "range": 20
       },
@@ -12590,7 +12590,7 @@
         "level": 3,
         "cost": 3500,
         "damage": 252.5,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 3.5,
         "range": 21
       },
@@ -12598,7 +12598,7 @@
         "level": 4,
         "cost": 3850,
         "damage": 282.8,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 3.3,
         "range": 21
       },
@@ -12606,7 +12606,7 @@
         "level": 5,
         "cost": 4150,
         "damage": 323.2,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 3.3,
         "range": 21
       },
@@ -12614,7 +12614,7 @@
         "level": 6,
         "cost": 4250,
         "damage": 343.4,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 3.2,
         "range": 22
       },
@@ -12622,7 +12622,7 @@
         "level": 7,
         "cost": 4500,
         "damage": 378.75,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 3.2,
         "range": 22
       },
@@ -12630,7 +12630,7 @@
         "level": 8,
         "cost": 5000,
         "damage": 388.85,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 3.1,
         "range": 23
       },
@@ -12638,7 +12638,7 @@
         "level": 9,
         "cost": 5250,
         "damage": 409.05,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 3.1,
         "range": 23
       },
@@ -12646,7 +12646,7 @@
         "level": 10,
         "cost": 5500,
         "damage": 424.2,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 3,
         "range": 24
       },
@@ -12870,7 +12870,7 @@
         "level": 1,
         "cost": 850,
         "damage": 580.75,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 3.8,
         "range": 22
       },
@@ -12878,7 +12878,7 @@
         "level": 2,
         "cost": 900,
         "damage": 590.85,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 3.8,
         "range": 22
       },
@@ -12886,7 +12886,7 @@
         "level": 3,
         "cost": 1150,
         "damage": 606,
-        "type": "Explosion",
+        "type": "Circle",
         "cd": 3.7,
         "range": 24
       },
@@ -13141,5 +13141,1518 @@
         "text": "Gains boosts based on the number of units of the same element in the team (excluding self) requires 3/4/5 units respectively. Neutral: +1/2/5% DMG and RNG. Nature: +2/4/10% RNG. Fire: +3/6/12% DMG and burn. Water: -2/4/10% CD. Dark: +3/6/12% DMG. Light: +3/8/12% RNG. Rust: +1/2/5% DMG and RNG. Electric: -1/2/5% CD."
       }
     ]
-  }
+  },
+  {
+  "name": "Michael Afton",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-khgihp.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-khgihp.png",
+  "rarity": "hero",
+  "typeMain": "endgame",
+  "typeTags": [
+    "Slow",
+    "Stun",
+    "Support"
+  ],
+  "element": "Rust",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Hero Quest 7",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 6500,
+      "damage": 484.8,
+      "type": "Line",
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 1000,
+      "damage": 499.95,
+      "type": "Line",
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 1400,
+      "damage": 515.1,
+      "type": "Line",
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 1800,
+      "damage": 525.2,
+      "type": "Line",
+      "cd": 2.9,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 2250,
+      "damage": 550.45,
+      "type": "Line",
+      "cd": 2.9,
+      "range": 25
+    },
+    {
+      "level": 6,
+      "cost": 2750,
+      "damage": 570.65,
+      "type": "Line",
+      "cd": 2.9,
+      "range": 25
+    },
+    {
+      "level": 7,
+      "cost": 3250,
+      "damage": 585.8,
+      "type": "Line",
+      "cd": 2.8,
+      "range": 25
+    },
+    {
+      "level": 8,
+      "cost": 3800,
+      "damage": 606,
+      "type": "Cone 45°",
+      "cd": 2.8,
+      "range": 25
+    },
+    {
+      "level": 9,
+      "cost": 4400,
+      "damage": 626.2,
+      "type": "Cone 45°",
+      "cd": 2.8,
+      "range": 26
+    },
+    {
+      "level": 10,
+      "cost": 5000,
+      "damage": 651.45,
+      "type": "Cone 45°",
+      "cd": 2.8,
+      "range": 26
+    },
+    {
+      "level": 11,
+      "cost": 5600,
+      "damage": 676.7,
+      "type": "Cone 45°",
+      "cd": 2.8,
+      "range": 26
+    },
+    {
+      "level": 12,
+      "cost": 6200,
+      "damage": 696.9,
+      "type": "Cone 45°",
+      "cd": 2.7,
+      "range": 26
+    },
+    {
+      "level": 13,
+      "cost": 6800,
+      "damage": 722.15,
+      "type": "Cone 45°",
+      "cd": 2.7,
+      "range": 27
+    },
+    {
+      "level": 14,
+      "cost": 7400,
+      "damage": 747.4,
+      "type": "Cone 60°",
+      "cd": 2.7,
+      "range": 27
+    },
+    {
+      "level": 15,
+      "cost": 8000,
+      "damage": 777.7,
+      "type": "Cone 60°",
+      "cd": 2.7,
+      "range": 27
+    },
+    {
+      "level": 16,
+      "cost": 8750,
+      "damage": 818.1,
+      "type": "Cone 60°",
+      "cd": 2.7,
+      "range": 28
+    },
+    {
+      "level": 17,
+      "cost": 9500,
+      "damage": 858.5,
+      "type": "Cone 60°",
+      "cd": 2.6,
+      "range": 28
+    },
+    {
+      "level": 18,
+      "cost": 10500,
+      "damage": 909,
+      "type": "Cone 60°",
+      "cd": 2.6,
+      "range": 28
+    },
+    {
+      "level": 19,
+      "cost": 11500,
+      "damage": 969.6,
+      "type": "Cone 60°",
+      "cd": 2.6,
+      "range": 29
+    },
+    {
+      "level": 20,
+      "cost": 13250,
+      "damage": 1035.25,
+      "type": "Cone 60°",
+      "cd": 2.6,
+      "range": 29
+    },
+    {
+      "level": 21,
+      "cost": 15000,
+      "damage": 1111,
+      "type": "Cone 80°",
+      "cd": 2.6,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Today's Sponsorship",
+      "text": "Michael throws a TV onto the track in range showing 1 of 5 possible ads. A max of 3 TVs can be placed at a time. Fiztime Pop Soda: Enemies move 10% faster but take 15% more damage from Rust units. Marty's Plungers: Enemies bleed for 15% of this units damage every second. Flo's Glossy Floss: The enemy and the next 4 closest enemies are stunned for 1.5 seconds. Wacky Wart Paste: Reduce enemies regen by 25% until death. Lally's Lollies: Enemies are slowed by 20% for 15 seconds. (Upgrade 1+, Local CD: 10s).",
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-e95njo.png"
+    },
+    {
+      "title": "Together Again",
+      "text": "When paired with Rust element units, Rust element units in range gain +30% damage, +25% range, and -10% cooldown. This unit receives these buffs and an additional 10% damage and range for each Rust animatronic on the team"
+    },
+    {
+      "title": "Completing the Salvage",
+      "text": "When an enemy is killed within Michael's range, add their parts to his pile to make traps. Every 10 seconds create a trap at a random place on the track. Traps deal 75% of Michael's current damage. Max 10 traps on the track per placement"
+    }
+  ],
+  "skins": [
+       {
+        "name": "Puppet Boy Michael",
+        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/puppet-boy-michael-high.png",
+        "rarity": "exclusive"
+      }
+  ]
+},
+{
+  "name": "Candy Cadet",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/candy-cadet-high.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/candy-cadet-shiny-high.png",
+  "rarity": "exclusive",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Rust",
+  "placements": 1,
+  "attackType": "No Type",
+  "obtainment": "S5 Pro Pack",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2500,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 2000,
+      "range": 25
+    }
+  ],
+  "passives": [
+    {
+      "title": "Story Time",
+      "text": "Choose a story. Only one story buff can be active at a time and each lasts 30s. Orphans: Spend 1-5k cash for +20% to candy values for every 1k spent. Keys: Choose 1-5 keys for +30% to candy values per key. 100%/90%/75%/60%/40% success rate depending on amount of keys chosen. Kittens: Choose 1-5 kittens for +10% damage per kitten to units in range for 30s, then disable candy buffs for 3s per kitten. (Upgrade 0+, Local CD: 60s).",
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-7o9cx8.png"
+    },
+    {
+      "title": "Candy. Candy. Candy.",
+      "text": "On placement, select which type of candy to give units in range: Red candy: +30% damage and +10% range. Yellow candy: +30% range and +10% damage"
+    }
+  ]
+},
+{
+  "name": "Helpy",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/helpy-high.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/helpy-shiny-high.png",
+  "rarity": "exclusive",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Light",
+  "placements": 1,
+  "attackType": "Single",
+  "obtainment": "S5 Starter Pack",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 3000,
+      "damage": 181.8,
+      "cd": 1.2,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 1500,
+      "damage": 212.1,
+      "cd": 1.2,
+      "range": 22
+    },
+    {
+      "level": 3,
+      "cost": 2250,
+      "damage": 272.7,
+      "cd": 1.3,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 3000,
+      "damage": 323.2,
+      "cd": 1.3,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 4000,
+      "damage": 404,
+      "cd": 1.4,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 6000,
+      "damage": 505,
+      "cd": 1.5,
+      "range": 26
+    }
+  ],
+  "passives": [
+    {
+      "title": "Play Time!",
+      "text": "Spend cash to unlock and select a minigame. Ballpit: Circle 150% damage and leaves balls on the track nearby that do damage. Riding Rockets: Line 120% damage and secondary single target pizza attack on the weakest enemy. Gravity Vortex: Full AoE 80% damage and -3% cooldown for every successful lawsuit avoided until lawsuit, then reset. (Upgrade 0+, Local CD: 0s).",
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-4d7vzr.png"
+    },
+    {
+      "title": "Lawsuit",
+      "text": "On placement this unit receives +50% damage. Every 5s roll a chance for a lawsuit, starting at 10% and increasing by 5% per failed attempt. When lawsuit chance succeeds, disable this passive's damage buff for 15s"
+    },
+    {
+      "title": "Little Helper",
+      "text": "Units in range gain +5% damage and +5% range. When a unit in range attacks follow up for 1% of this unit's damage"
+    }
+  ]
+},
+{
+  "name": "Lefty",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/lefty-high.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/lefty-shiny-high.png",
+  "rarity": "nightmare",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Stun",
+    "Support"
+  ],
+  "element": "Light",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Rockstar Foxy Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 5,
+      "damage": 1.01,
+      "type": "Single",
+      "cd": 2.5,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 181.8,
+      "type": "Single",
+      "cd": 3,
+      "range": 20
+    },
+    {
+      "level": 3,
+      "cost": 3000,
+      "damage": 404,
+      "type": "Single",
+      "cd": 3.5,
+      "range": 21
+    },
+    {
+      "level": 4,
+      "cost": 3500,
+      "damage": 555.5,
+      "type": "Single",
+      "cd": 3.5,
+      "range": 22
+    },
+    {
+      "level": 5,
+      "cost": 5000,
+      "damage": 757.5,
+      "type": "Circle",
+      "cd": 3.5,
+      "range": 24
+    },
+    {
+      "level": 6,
+      "cost": 7500,
+      "damage": 1010,
+      "type": "Circle",
+      "cd": 4,
+      "range": 24
+    },
+    {
+      "level": 7,
+      "cost": 10000,
+      "damage": 1464.5,
+      "type": "Circle",
+      "cd": 4.5,
+      "range": 27
+    },
+    {
+      "level": 8,
+      "cost": 16000,
+      "damage": 2121,
+      "type": "Circle",
+      "cd": 5,
+      "range": 30
+    },
+    {
+      "level": 9,
+      "cost": 20000,
+      "damage": 2828,
+      "type": "Cone 50°",
+      "cd": 6,
+      "range": 31
+    },
+    {
+      "level": 10,
+      "cost": 25000,
+      "damage": 3535,
+      "type": "Cone 50°",
+      "cd": 6.2,
+      "range": 32
+    },
+    {
+      "level": 11,
+      "cost": 35000,
+      "damage": 4545,
+      "type": "Cone 90°",
+      "cd": 6.5,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "L.E.F.T.E",
+      "text": "Stun enemies in range for 5s and deal 250% damage. Enemies with stun lockout take 500% damage instead. Change this unit's target to Strongest and buff this unit's damage by 50% for 15s. If The Puppet is on the team, lower their damage by 25% for 15s and buff this unit's damage by an additional 50% for 15s. (Upgrade 0+, Global CD: 75s).",
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-bxs52a.png"
+    },
+    {
+      "title": "Rare Finds",
+      "text": "Every wave this unit's upgrade cost is reduced by 25%, resetting on upgrade. When cost reduction reaches 100%, automatically upgrade this unit. For every other Rockstar unit on the team, cost reduction increases by an additional 25%, buff this unit's damage by 10%, and Rockstar units in range Gain 20% damage and Upgrade cost reduced by 20%"
+    },
+    {
+      "title": "Music Box",
+      "text": "When selecting this unit, lowers this unit's cooldown by 10% for 30s. Puppet units on the team also receive this buff. If this unit is not selected for 60s, attack for 200% damage in a full AOE and stun enemies hit for 2s"
+    }
+  ],
+  "skins": [
+         {
+        "name": "Dark Knight Lefty",
+        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/dark-knight-lefty-high.png",
+        "rarity": "exclusive"
+      }
+  ]
+},
+{
+  "name": "Fredtrap",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/fredtrap-high.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/fredtrap-shiny-high.png",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Rust",
+  "placements": 1,
+  "attackType": "Line",
+  "obtainment": "Endless 2 Unit Quest",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 3000,
+      "damage": 606,
+      "cd": 3,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 2000,
+      "damage": 646.4,
+      "cd": 2.8,
+      "range": 20
+    },
+    {
+      "level": 3,
+      "cost": 2250,
+      "damage": 707,
+      "cd": 2.8,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 2750,
+      "damage": 782.75,
+      "cd": 2.6,
+      "range": 21
+    },
+    {
+      "level": 5,
+      "cost": 3400,
+      "damage": 909,
+      "cd": 2.6,
+      "range": 23
+    },
+    {
+      "level": 6,
+      "cost": 4000,
+      "damage": 1010,
+      "cd": 2.5,
+      "range": 25
+    },
+    {
+      "level": 7,
+      "cost": 5000,
+      "damage": 1111,
+      "cd": 2.4,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Clobbering Time!",
+      "text": "Every other attack this unit performs a follow-up attack for 75% damage and inflicts Breakable on enemies. Enemies inflicted with Breakable lose 1 additional shield from all sources"
+    },
+    {
+      "title": "Hybrid",
+      "text": "When there are 3+ Rust element units on the team, buff this unit's damage by 25%. nWhen there are 5+ Rust element units on the team, this unit's follow-up attacks deal 15% more damage"
+    }
+  ]
+},
+{
+  "name": "Funtime Bonnie",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/funtime-bonnie-high.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/funtime-bonnie-shiny-high.png",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "element": "Light",
+  "placements": 2,
+  "attackType": "Cone",
+  "obtainment": "Endless 5 Unit Quest",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2000,
+      "damage": 303,
+      "degrees": "45°",
+      "cd": 1.8,
+      "range": 25
+    },
+    {
+      "level": 2,
+      "cost": 1750,
+      "damage": 328.25,
+      "degrees": "45°",
+      "cd": 1.7,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 2000,
+      "damage": 353.5,
+      "degrees": "45°",
+      "cd": 1.7,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 2500,
+      "damage": 383.8,
+      "degrees": "45°",
+      "cd": 1.7,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 3200,
+      "damage": 414.1,
+      "degrees": "150°",
+      "cd": 1.6,
+      "range": 32
+    },
+    {
+      "level": 6,
+      "cost": 4000,
+      "damage": 454.5,
+      "degrees": "150°",
+      "cd": 1.5,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Undead Encore",
+      "text": "While a necromancer or its summons are alive, this unit's cooldown is reduced by 25%"
+    }
+  ]
+},
+{
+  "name": "Molten Freddy",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/molten-freddy-high.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/molten-freddy-shiny-high.png",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Slow",
+    "Stun"
+  ],
+  "element": "Fire/Rust",
+  "placements": 2,
+  "attackType": "Multi",
+  "obtainment": "S5 Premium Pass lvl 50",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 3500,
+      "damage": 303,
+      "type": "Circle",
+      "cd": 3.5,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 323.2,
+      "type": "Circle",
+      "cd": 3.3,
+      "range": 26
+    },
+    {
+      "level": 3,
+      "cost": 3500,
+      "damage": 353.5,
+      "type": "Circle",
+      "cd": 3.3,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 4250,
+      "damage": 378.75,
+      "type": "Circle",
+      "cd": 3.2,
+      "range": 27
+    },
+    {
+      "level": 5,
+      "cost": 5000,
+      "damage": 404,
+      "type": "Line",
+      "cd": 3,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 5750,
+      "damage": 434.3,
+      "type": "Line",
+      "cd": 3,
+      "range": 28
+    },
+    {
+      "level": 7,
+      "cost": 7250,
+      "damage": 454.5,
+      "type": "Line",
+      "cd": 2.8,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Heated Endo Skeleton",
+      "text": "On attack, apply 20% burn over 5s. If the enemy is already burning, apply 30% burn over 5s instead. Burning enemies in range are slowed by 15%"
+    },
+    {
+      "title": "Heat Seeking Tendrils",
+      "text": "When a burning enemy leaves this unit's range, deal 150% of this unit's damage, apply 50% burn over 5s, stun for 2s, and slow by 20% for 10s"
+    },
+    {
+      "title": "All As One",
+      "text": "For each Rust or Fire element unit on the team, buff this unit's damage by +10%. For each Molten Freddy in range, buff this unit's damage by +25%"
+    }
+  ]
+},
+{
+  "name": "Nightmare Shadow Bonnie",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nightmare-shadow-bonnie-high.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nightmare-shadow-bonnie-shiny-high.png",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Endless 4 Unit Quest",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 4000,
+      "damage": 353.5,
+      "type": "Single",
+      "cd": 2,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 2000,
+      "damage": 454.5,
+      "type": "Single",
+      "cd": 2.2,
+      "range": 20
+    },
+    {
+      "level": 3,
+      "cost": 2750,
+      "damage": 606,
+      "type": "Single",
+      "cd": 2.5,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 3500,
+      "damage": 984.75,
+      "type": "Single",
+      "cd": 2.5,
+      "range": 26
+    },
+    {
+      "level": 5,
+      "cost": 5000,
+      "damage": 1237.25,
+      "type": "Cone 45°",
+      "cd": 2.8,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 6750,
+      "damage": 1565.5,
+      "type": "Cone 45°",
+      "cd": 3,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Shade's Presence",
+      "text": "For every second an enemy is in this unit's range they gain 1 stack. For every stack on the enemy, reduce enemy regen by 2% and enemies take 2% more damage from this unit"
+    }
+  ]
+},
+{
+  "name": "Rockstar Foxy",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/rockstar-foxy-high.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/rockstar-foxy-shiny-high.png",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Nature",
+  "placements": 1,
+  "attackType": "Cone",
+  "obtainment": "Season 5 Present (0.05%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 5000,
+      "damage": 646.4,
+      "degrees": "45°",
+      "cd": 3,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 707,
+      "degrees": "45°",
+      "cd": 3,
+      "range": 22
+    },
+    {
+      "level": 3,
+      "cost": 3200,
+      "damage": 757.5,
+      "degrees": "45°",
+      "cd": 2.8,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 4500,
+      "damage": 808,
+      "degrees": "45°",
+      "cd": 2.6,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 6000,
+      "damage": 888.8,
+      "degrees": "45°",
+      "cd": 2.6,
+      "range": 25
+    },
+    {
+      "level": 6,
+      "cost": 7500,
+      "damage": 969.6,
+      "degrees": "80°",
+      "cd": 2.4,
+      "range": 26
+    },
+    {
+      "level": 7,
+      "cost": 9500,
+      "damage": 1060.5,
+      "degrees": "80°",
+      "cd": 2.4,
+      "range": 27
+    },
+    {
+      "level": 8,
+      "cost": 12000,
+      "damage": 1111,
+      "degrees": "80°",
+      "cd": 2,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Ye win some, ye lose some!",
+      "text": "Upon activation, Rockstar Foxy will grant a random effect. These effects will be permanent unless otherwise stated. Positive Effects: 1 Stock, 1k Cash, 10k Cash, boosts the attack of all units by 15%, boosts the range of all units by 10%, reduces the cooldown of all units by 5%. Negative Effects: -1 Stock, -3 Stocks, 0.1% chance to reduce base HP to 1, reduces the attack of all units by 20% for 3 waves, increases the cooldown of all units by 10% for 5 waves. (Upgrade 0+, Local CD: 60s).",
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-h8ba6n.png"
+    },
+    {
+      "title": "Hidden Treasure",
+      "text": "Every 10 seconds, spawns a coin somewhere on the map. Every 30 seconds, auto collects 1 coin. Each coin picked up permanently gives +2% damage and +2% range (max 20%) and +5% crit rate and crit damage. Max 10 coins held"
+    },
+    {
+      "title": "Rockstars Assemble",
+      "text": "When 3 other rockstar animatronics are in the same loadout, buff this unit's damage and range by 25%"
+    }
+  ]
+},
+{
+  "name": "Scraptrap",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/scraptrap-high.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/scraptrap-high-99a8u5.png",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Wither"
+  ],
+  "element": "Fire/Rust",
+  "placements": 2,
+  "attackType": "",
+  "obtainment": "S5 Free Pass lvl 50",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 3500,
+      "damage": 323.2,
+      "type": "Line",
+      "cd": 4,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 343.4,
+      "type": "Line",
+      "cd": 3.8,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 3000,
+      "damage": 358.55,
+      "type": "Cone 45°",
+      "cd": 3.8,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 4000,
+      "damage": 368.65,
+      "type": "Cone 45°",
+      "cd": 3.6,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 6500,
+      "damage": 378.75,
+      "type": "Cone 45°",
+      "cd": 3.4,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 5000,
+      "damage": 386.83,
+      "type": "Cone 145°",
+      "cd": 3.1,
+      "range": 28
+    },
+    {
+      "level": 7,
+      "cost": 6500,
+      "damage": 394.91,
+      "type": "Cone 145°",
+      "cd": 2.8,
+      "range": 30
+    },
+    {
+      "level": 8,
+      "cost": 6500,
+      "damage": 404,
+      "type": "Cone 145°",
+      "cd": 2.6,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Withering Away",
+      "text": "Enemies in range receive 5% wither. If burning, receive 10% wither instead"
+    },
+    {
+      "title": "Engulfing Flames",
+      "text": "Attacks apply 10% burn over 5s. Subsequent applications increase this burn by 5% (Max 50%). For each burning enemy in range, gain +5% damage (Max 50%)"
+    },
+    {
+      "title": "Opportune Strike",
+      "text": "+25% crit rate and +100% crit damage. Every 5 attacks, follow up for 100% damage. This attack is guaranteed to crit. When an enemy is stunned in range, follow up for 150% damage. This attack is guaranteed to crit"
+    }
+  ]
+},
+{
+  "name": "Showtime Freddy",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/showtime-freddy-high.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/showtime-freddy-shiny-high.png",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "element": "Fire",
+  "placements": 2,
+  "attackType": "Multi",
+  "obtainment": "Endless 6 Quest Unit",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 3250,
+      "damage": 404,
+      "type": "Line",
+      "cd": 3.8,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 424.2,
+      "type": "Line",
+      "cd": 3.7,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 2750,
+      "damage": 454.5,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 25
+    },
+    {
+      "level": 4,
+      "cost": 3250,
+      "damage": 479.75,
+      "type": "Cone 45°",
+      "cd": 3.2,
+      "range": 27
+    },
+    {
+      "level": 5,
+      "cost": 4000,
+      "damage": 515.1,
+      "type": "Cone 45°",
+      "cd": 3,
+      "range": 27
+    },
+    {
+      "level": 6,
+      "cost": 5000,
+      "damage": 555.5,
+      "type": "Cone 90°",
+      "cd": 3,
+      "range": 28
+    },
+    {
+      "level": 7,
+      "cost": 6500,
+      "damage": 606,
+      "type": "Cone 90°",
+      "cd": 3,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Funeral Song of Fire",
+      "text": "Every 3rd attack, this unit performs a follow-up attack as a full AOE. Enemies hit by this follow-up attack are inflicted 50% burn over 5s. Follow-up attacks permanently remove enemy DoT immunity"
+    },
+    {
+      "title": "Harmonic Inferno",
+      "text": "When this unit's burn expires on an enemy within this units range, Inflict 100% burn over 10s"
+    }
+  ]
+},
+{
+  "name": "Sparky",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/sparky-high.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/sparky-shiny-high.png",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "element": "Neutral",
+  "placements": 2,
+  "attackType": "Cone 45°",
+  "obtainment": "Endless 1 Unit Quest",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 1500,
+      "damage": 222.2,
+      "cd": 2.5,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 850,
+      "damage": 237.35,
+      "cd": 2.3,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 1000,
+      "damage": 262.6,
+      "cd": 2,
+      "range": 27
+    },
+    {
+      "level": 4,
+      "cost": 1200,
+      "damage": 303,
+      "cd": 1.8,
+      "range": 30
+    },
+    {
+      "level": 5,
+      "cost": 1500,
+      "damage": 353.5,
+      "cd": 1.5,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Ferocious Bite",
+      "text": "Once a regen enemy enters within 60% of this unit's range, permanently reduce enemies regen by 50%"
+    }
+  ]
+},
+{
+  "name": "Toy Foxy",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/toy-foxy-high.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/toy-foxy-shiny-high.png",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "element": "Water",
+  "placements": 3,
+  "attackType": "Circle",
+  "obtainment": "Endless 2 Unit Quest",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2500,
+      "damage": 303,
+      "cd": 2.5,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 1250,
+      "damage": 323.2,
+      "cd": 2.5,
+      "range": 20
+    },
+    {
+      "level": 3,
+      "cost": 1500,
+      "damage": 353.5,
+      "cd": 2.5,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 1800,
+      "damage": 388.85,
+      "cd": 2.3,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 2500,
+      "damage": 424.2,
+      "cd": 2.2,
+      "range": 26
+    }
+  ],
+  "passives": [
+    {
+      "title": "Cleansing Solution",
+      "text": "Whenever a mystery enemy dies in this unit's range, the new enemy loses 30% of its max hp on spawn"
+    }
+  ]
+},
+{
+  "name": "Rockstar Freddy",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/rockstar-freddy-high.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/rockstar-freddy-shiny-high.png",
+  "rarity": "mythical",
+  "typeMain": "Midgame",
+  "element": "Light",
+  "placements": 2,
+  "attackType": "Multi",
+  "obtainment": "Season 5 Present (5%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2500,
+      "damage": 202,
+      "type": "Line",
+      "cd": 2.5,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 1800,
+      "damage": 232.3,
+      "type": "Line",
+      "cd": 2.4,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 2500,
+      "damage": 282.8,
+      "type": "Line",
+      "cd": 2.3,
+      "range": 27
+    },
+    {
+      "level": 4,
+      "cost": 3500,
+      "damage": 363.6,
+      "type": "Cone 65°",
+      "cd": 2.2,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 5000,
+      "damage": 404,
+      "type": "Cone 65°",
+      "cd": 2,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 6000,
+      "damage": 454.5,
+      "type": "Cone 65°",
+      "cd": 2,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Rockstars Assemble",
+      "text": "When 3 other rockstar animatronics are in the same loadout, buff this unit's range by 25% and damage by 15%"
+    },
+    {
+      "title": "Overheating",
+      "text": "Every 30 Seconds, 50% DMG increase for 10s. When 1 Fire element is on team, 50% DMG Increase -> 75% DMG Increase plus an additional 25% if 2 or more"
+    },
+    {
+      "title": "Show Time",
+      "text": "If Rockstar Foxy is on your team, each coin held increases Overheating duration by 1s"
+    }
+  ]
+},
+{
+  "name": "Hero PaperPals",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/hero-paperpals-high.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/hero-paperpals-shiny-high.png",
+  "rarity": "epic",
+  "typeMain": "Starter",
+  "element": "Neutral",
+  "placements": 3,
+  "attackType": "Circle",
+  "obtainment": "Paperpals Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 500,
+      "damage": 151.5,
+      "cd": 2.5,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 800,
+      "damage": 181.8,
+      "cd": 2.4,
+      "range": 26
+    },
+    {
+      "level": 3,
+      "cost": 1250,
+      "damage": 212.1,
+      "cd": 2.3,
+      "range": 28
+    },
+    {
+      "level": 4,
+      "cost": 2500,
+      "damage": 232.3,
+      "cd": 2,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Paper Cuts",
+      "text": "On hit, applies 25% bleed over 5 seconds"
+    },
+    {
+      "title": "Paper Pals",
+      "text": "If any Paperpal unit is in range, buff this unit's damage by 25%"
+    }
+  ]
+},
+{
+  "name": "Rockstar Bonnie",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/rockstar-bonnie-high.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/rockstar-bonnie-shiny-high.png",
+  "rarity": "epic",
+  "typeMain": "Midgame",
+  "element": "Electricity",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Season 5 Present (15%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 1200,
+      "damage": 252.5,
+      "cd": 1.5,
+      "range": 25
+    },
+    {
+      "level": 2,
+      "cost": 1500,
+      "damage": 303,
+      "cd": 1.4,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 1750,
+      "damage": 358.55,
+      "cd": 1.3,
+      "range": 28
+    },
+    {
+      "level": 4,
+      "cost": 2000,
+      "damage": 378.75,
+      "cd": 1.1,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 2500,
+      "damage": 404,
+      "cd": 1,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Rockstars Assemble",
+      "text": "When 3 other rockstar animatronics are in the same loadout\n• Reduce this unit's cooldown by 20%"
+    },
+    {
+      "title": "Lost Guitar",
+      "text": "Randomly loses their guitar on the track. While lost, this unit loses 10% damage and range. If found manually, gain 30% damage and range until guitar is lost again. If not found, guitar is automatically reclaimed after 30s with no buff"
+    }
+  ]
+},
+{
+  "name": "Bucket Bob",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-t620j9.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-i3bdxe.png",
+  "rarity": "rare",
+  "typeMain": "Starter",
+  "typeTags": [
+    "Slow"
+  ],
+  "element": "Neutral",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Summons (30%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 500,
+      "damage": 202,
+      "cd": 3,
+      "range": 14
+    },
+    {
+      "level": 2,
+      "cost": 300,
+      "damage": 222.2,
+      "cd": 2.8,
+      "range": 14
+    },
+    {
+      "level": 3,
+      "cost": 450,
+      "damage": 252.5,
+      "cd": 2.7,
+      "range": 15
+    },
+    {
+      "level": 4,
+      "cost": 600,
+      "damage": 282.8,
+      "cd": 2.5,
+      "range": 15
+    }
+  ],
+  "passives": [
+    {
+      "title": "Sheer Stupidity",
+      "text": "Enemies that come within 50% of this unit's range:\n• Become permanently slowed by 10%"
+    },
+    {
+      "title": "Trash Gang",
+      "text": "If all other Trash Gang members are in range, all Trash Gang members share combined damage and range. All Trash Gang members use the average cooldown of everyone"
+    }
+  ]
+},
+{
+  "name": "No. 1 Crate",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-fcrxw2.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-u2bzg3.png",
+  "rarity": "rare",
+  "typeMain": "Starter",
+  "element": "Neutral",
+  "placements": 1,
+  "attackType": "FullAOE",
+  "obtainment": "Summons (30%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 1000,
+      "damage": 202,
+      "cd": 4,
+      "range": 14
+    },
+    {
+      "level": 2,
+      "cost": 800,
+      "damage": 222.2,
+      "cd": 3.8,
+      "range": 15
+    },
+    {
+      "level": 3,
+      "cost": 1500,
+      "damage": 252.5,
+      "cd": 3.8,
+      "range": 17
+    },
+    {
+      "level": 4,
+      "cost": 2500,
+      "damage": 282.8,
+      "cd": 3.5,
+      "range": 20
+    }
+  ],
+  "passives": [
+    {
+      "title": "Cheer",
+      "text": "All units in range deal 20% more damage"
+    },
+    {
+      "title": "Trash Gang",
+      "text": "If all other Trash Gang members are in range, all Trash Gang members share combined damage and range. All Trash Gang members use the average cooldown of everyone"
+    }
+  ]
+},
+{
+  "name": "Pan Stan",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-p7hxru.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-dryu49.png",
+  "rarity": "rare",
+  "typeMain": "Starter",
+  "typeTags": [
+    "Stun"
+  ],
+  "element": "Neutral",
+  "placements": 1,
+  "attackType": "Line",
+  "obtainment": "Summons (30%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 750,
+      "damage": 181.8,
+      "cd": 3,
+      "range": 14
+    },
+    {
+      "level": 2,
+      "cost": 600,
+      "damage": 242.4,
+      "cd": 3,
+      "range": 15
+    },
+    {
+      "level": 3,
+      "cost": 1000,
+      "damage": 303,
+      "cd": 3,
+      "range": 15
+    },
+    {
+      "level": 4,
+      "cost": 1500,
+      "damage": 404,
+      "cd": 3,
+      "range": 16
+    }
+  ],
+  "passives": [
+    {
+      "title": "Clank",
+      "text": "Every 15 seconds stun all enemies in range for 1.5 seconds"
+    },
+    {
+      "title": "Trash Gang",
+      "text": "If all other Trash Gang members are in range, all Trash Gang members share combined damage and range. All Trash Gang members use the average cooldown of everyone"
+    }
+  ]
+},
+{
+  "name": "Rockstar Chica",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-p8dy4o.png",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-dc01m6.png",
+  "rarity": "rare",
+  "typeMain": "Starter",
+  "typeTags": [
+    "Stun"
+  ],
+  "element": "Water",
+  "placements": 3,
+  "attackType": "Circle",
+  "obtainment": "Season 5 Present (80%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 750,
+      "damage": 151.5,
+      "cd": 2,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 1000,
+      "damage": 161.6,
+      "cd": 1.9,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 1500,
+      "damage": 176.75,
+      "cd": 1.8,
+      "range": 25
+    },
+    {
+      "level": 4,
+      "cost": 2500,
+      "damage": 181.8,
+      "cd": 1.5,
+      "range": 25
+    }
+  ],
+  "passives": [
+    {
+      "title": "Rockstars Assemble",
+      "text": "When 3 other rockstar animatronics are in the same loadout, reduce this unit's cooldown by 20%"
+    },
+    {
+      "title": "Wet Floor Sign!",
+      "text": "Every 10 seconds, place a sign on the track that stuns for 1 second (Max 3)"
+    }
+  ]
+}
 ]

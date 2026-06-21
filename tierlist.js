@@ -333,7 +333,7 @@
     }
   },
   "notes": {
-    "all": "",
+    "all": "note testing stuff yes",
     "starter": "",
     "support": "",
     "stun": ""
@@ -477,7 +477,7 @@
   var modeDiv = document.createElement('div');
   modeDiv.className = 'tl-mode';
   modeDiv.id = 'tlModes';
-  [['all','Every Unit'],['starter','Starter'],['support','Support'],['stun','Stun']].forEach(function(p) {
+  [['all','All'],['starter','Starter'],['support','Support'],['stun','Stun']].forEach(function(p) {
     var b = document.createElement('button');
     b.className = 'tl-mb' + (p[0] === 'all' ? ' on' : '');
     b.setAttribute('data-m', p[0]);

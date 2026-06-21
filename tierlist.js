@@ -1,5 +1,3 @@
-/* Tierlist widget - self-contained. Loads via <script src>, mounts into <div id="tlMount"></div> */
-
 (function() {
   if (document.getElementById('tlRoot')) return;
 
@@ -364,20 +362,20 @@
 
   var CSS = [
     '@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);',
-    '#tlRoot{width:100vw;position:relative;left:50%;transform:translateX(-50%);min-height:100vh;background-color:#090909;color:#fff;padding-bottom:40px;box-sizing:border-box}',
+    '#tlRoot{width:100vw;position:relative;left:50%;transform:translateX(-50%);min-height:100vh;background-color:#090909;color:#fff;font-family:"Press Start 2P",monospace;border:3px solid #f69b55;padding-bottom:40px;box-sizing:border-box}',
     '#tlRoot *{box-sizing:border-box}',
-    '#tlHdr{position:sticky;top:0;z-index:9999;background:rgba(3,3,10,0.97);border-bottom:2px solid rgba(255,215,0,0.2);padding:12px 18px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}',
-    '#tlTitle{font-family:Press Start 2P,monospace;font-size:11px;color:#FFD700;text-shadow:0 0 14px rgba(255,215,0,0.6);white-space:nowrap}',
+    '#tlHdr{position:sticky;top:0;z-index:9999;background:rgba(3,3,10,0.97);border-bottom:2px solid rgba(246,155,85,0.35);padding:12px 18px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}',
+    '#tlTitle{font-family:"Press Start 2P",monospace;font-size:11px;color:#681f62;text-shadow:0 0 14px rgba(104,31,98,0.85);white-space:nowrap}',
     '.tl-mode{display:flex;gap:6px;flex-wrap:wrap}',
-    '.tl-mb{font-family:Press Start 2P,monospace;font-size:7px;padding:9px 12px;background:rgba(0,0,0,0.55);border:2px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.38);cursor:pointer;white-space:nowrap;transition:all .15s}',
+    '.tl-mb{font-family:"Press Start 2P",monospace;font-size:7px;padding:9px 12px;background:rgba(0,0,0,0.55);border:2px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.38);cursor:pointer;white-space:nowrap;transition:all .15s}',
     '.tl-mb:hover{border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.65)}',
-    '.tl-mb.on{background:rgba(255,215,0,0.12);border-color:#FFD700;color:#FFD700;box-shadow:0 0 12px rgba(255,215,0,0.3),inset 0 0 12px rgba(255,215,0,0.06);text-shadow:0 0 8px rgba(255,215,0,0.6)}',
+    '.tl-mb.on{background:rgba(104,31,98,0.18);border-color:#681f62;color:#681f62;box-shadow:0 0 12px rgba(104,31,98,0.5),inset 0 0 12px rgba(104,31,98,0.12);text-shadow:0 0 8px rgba(104,31,98,0.85)}',
     ".tl-mb.on::before{content:'\\25BA '}",
     '#tlList{padding:10px 18px;display:flex;flex-direction:column;gap:4px}',
     '.tl-row{display:flex;min-height:90px;border-radius:6px;border:1px solid rgba(255,255,255,.06)}',
     '.tl-lbl{width:82px;min-width:82px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6px 4px;gap:2px;background:rgba(4,4,14,.92);border-radius:5px 0 0 5px;border-right:1px solid rgba(255,255,255,.07)}',
-    '.tl-st{font-family:Press Start 2P,monospace;font-size:8px;letter-spacing:1px;line-height:1;color:#FFD700}',
-    '.tl-nm2{font-family:Press Start 2P,monospace;font-size:14px;line-height:1.1;color:#FFD700;text-shadow:0 0 12px #FFD700}',
+    '.tl-st{font-family:"Press Start 2P",monospace;font-size:8px;letter-spacing:1px;line-height:1;color:#FFD700}',
+    '.tl-nm2{font-family:Arial,Helvetica,sans-serif;font-weight:800;font-size:18px;line-height:1.1;color:#FFD700;text-shadow:0 0 12px #FFD700}',
     '.tl-row[data-t=s] .tl-st,.tl-row[data-t=s] .tl-nm2{color:#FF9900;text-shadow:0 0 12px #FF9900}',
     '.tl-row[data-t=a] .tl-st,.tl-row[data-t=a] .tl-nm2{color:#A8FF47;text-shadow:0 0 10px #A8FF47}',
     '.tl-row[data-t=b] .tl-st,.tl-row[data-t=b] .tl-nm2{color:#47AFFF;text-shadow:0 0 10px #47AFFF}',
@@ -392,7 +390,7 @@
     '.tl-card{border-radius:12px;padding:2px;border:none;flex-shrink:0;width:80px;cursor:default}',
     '.tl-cin{border-radius:10px;overflow:hidden;background:rgba(34,34,34,0.85)}',
     '.tl-cin img{width:76px;height:76px;object-fit:cover;object-position:center top;display:block;pointer-events:none}',
-    '#tlTip{position:absolute;font-family:Press Start 2P,monospace;font-size:8px;line-height:1.7;background:rgba(6,3,18,0.97);border:2px solid #FFD700;color:#fff;padding:9px 12px;border-radius:6px;text-align:center;pointer-events:none;opacity:0;transition:opacity .18s;z-index:10000;max-width:200px;word-break:break-word;display:none}',
+    '#tlTip{position:absolute;font-family:"Press Start 2P",monospace;font-size:8px;line-height:1.7;background:rgba(6,3,18,0.97);border:2px solid #681f62;color:#fff;padding:9px 12px;border-radius:6px;text-align:center;pointer-events:none;opacity:0;transition:opacity .18s;z-index:10000;max-width:200px;word-break:break-word;display:none}',
     '.tl-msg{padding:24px;text-align:center;color:rgba(255,255,255,.35);font-size:12px;width:100%}',
     '@keyframes shinyLoop{0%{background-position:0% 50%}100%{background-position:200% 50%}}'
   ].join('');

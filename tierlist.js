@@ -1,3 +1,5 @@
+/* Tierlist widget - self-contained. Loads via <script src>, mounts into <div id="tlMount"></div> */
+
 (function() {
   if (document.getElementById('tlRoot')) return;
 

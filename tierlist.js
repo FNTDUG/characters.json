@@ -1,4 +1,4 @@
-/* sun */
+/* pluh */
 (function() {
   if (document.getElementById('tlRoot')) return;
 
@@ -6,7 +6,7 @@
   "lists": {
     "all": {
       "ss": [
-        "Astral Bonnie BUG",
+        "Astral Bonnie BUG NEW DOWN UP",
         "Dragon Endo 01",
         "Golden Freddy",
         "Frozen King Foxy",
@@ -307,17 +307,38 @@
     }
   },
   "msg": {
-    "Astral Bonnie": "Godlike AOE damage and insane passives. Best in the game.",
-    "Dragon Endo 01": "Highest single-target burst. Essential endgame pick.",
-    "Golden Freddy": "Unmatched support and damage hybrid. Must-have carry.",
-    "Frozen King Foxy": "Elite CC and damage combo. Top-tier in every mode.",
-    "Frostmancer Withered Bonnie": "Best slow and DPS synergy. Endgame staple.",
-    "Stormbound Chica": "Add your note here.",
-    "Kronos Endo Freddy": "Add your note here."
+    "all": {
+      "Astral Bonnie": "Godlike AOE damage and insane passives. Best in the game.",
+      "Dragon Endo 01": "Highest single-target burst. Essential endgame pick.",
+      "Golden Freddy": "Unmatched support and damage hybrid. Must-have carry.",
+      "Frozen King Foxy": "Elite CC and damage combo. Top-tier in every mode.",
+      "Frostmancer Withered Bonnie": "Best slow and DPS synergy. Endgame staple.",
+      "Stormbound Chica": "Add your note here.",
+      "Kronos Endo Freddy": "Add your note here."
+    },
+    "starter": {
+      "Golden Freddy": "Add your note here."
+    },
+    "support": {
+      "Astral Bonnie": "Add your note here.",
+      "Dragon Endo 01": "Add your note here.",
+      "Golden Freddy": "Add your note here.",
+      "Frozen King Foxy": "Add your note here.",
+      "Stormbound Chica": "Add your note here.",
+      "Kronos Endo Freddy": "Add your note here."
+    },
+    "stun": {
+      "Frostmancer Withered Bonnie": "Add your note here.",
+      "Kronos Endo Freddy": "Add your note here."
+    }
   }
 };
   var lists = cfg.lists || {};
-  var msg   = cfg.msg   || {};
+  var allMsg = cfg.msg || {};
+  function getModeMsg() {
+    var m = allMsg[mode];
+    return (m && typeof m === 'object') ? m : allMsg;
+  }
   var unitMap = {};
   var mode  = 'all';
 
@@ -382,14 +403,14 @@
     '@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);',
     '#tlRoot{width:100vw;position:relative;left:50%;transform:translateX(-50%);background-color:#090909;color:#fff;font-family:"Press Start 2P",monospace;border:3px solid #f69b55;padding-bottom:20px;box-sizing:border-box}',
     '#tlRoot *{box-sizing:border-box}',
-    '#tlHdr{position:sticky;top:0;z-index:9999;background:rgba(3,3,10,0.97);border-bottom:2px solid rgba(246,155,85,0.35);padding:12px 18px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}',
+    '#tlHdr{position:sticky;top:0;z-index:9999;background:rgba(3,3,10,0.97);border-bottom:1px solid rgba(246,155,85,1);padding:12px 18px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}',
     '#tlTitle{font-family:"Press Start 2P",monospace;font-size:clamp(15px,4vw,24px);color:#681f62;text-shadow:0 0 14px rgba(104,31,98,0.85);white-space:nowrap}',
     '.tl-mode{display:flex;gap:6px;flex-wrap:wrap}',
     '.tl-mb{font-family:"Press Start 2P",monospace;font-size:clamp(9px,2.4vw,12px);padding:11px 14px;background:rgba(0,0,0,0.55);border:2px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.38);cursor:pointer;white-space:nowrap;transition:all .15s}',
     '.tl-mb:hover{border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.65)}',
     '.tl-mb.on{background:rgba(104,31,98,0.18);border-color:#681f62;color:#681f62;box-shadow:0 0 12px rgba(104,31,98,0.5),inset 0 0 12px rgba(104,31,98,0.12);text-shadow:0 0 8px rgba(104,31,98,0.85)}',
     '#tlList{padding:10px 18px;display:flex;flex-direction:column;gap:4px}',
-    '.tl-row{display:flex;min-height:90px;border-radius:6px;border:1px solid rgba(255,255,255,.06)}',
+    '.tl-row{display:flex;min-height:76px;border-radius:6px;border:1px solid rgba(255,255,255,.04)}',
     '.tl-lbl{width:82px;min-width:82px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6px 4px;gap:2px;background:rgba(4,4,14,.92);border-radius:5px 0 0 5px;border-right:1px solid rgba(255,255,255,.07)}',
     '.tl-st{font-family:"Press Start 2P",monospace;font-size:clamp(11px,3.2vw,15px);letter-spacing:1px;line-height:1;color:#FFD700}',
     '.tl-nm2{font-family:Arial,Helvetica,sans-serif;font-weight:800;font-size:clamp(22px,6vw,32px);line-height:1.1;color:#FFD700;text-shadow:0 0 12px #FFD700}',
@@ -403,13 +424,14 @@
     '.tl-row[data-t=a]  .tl-band{background:rgba(40,90,0,.17)}',
     '.tl-row[data-t=b]  .tl-band{background:rgba(0,45,110,.17)}',
     '.tl-row[data-t=c]  .tl-band{background:rgba(25,25,45,.22)}',
-    '.tl-units{display:flex;flex-wrap:wrap;gap:4px;padding:7px;align-content:flex-start;min-height:90px;width:100%}',
-    '.tl-card{border-radius:12px;padding:2px;border:none;flex-shrink:0;width:80px;cursor:default;position:relative}',
-    '.tl-cin{border-radius:10px;overflow:hidden;background:rgba(34,34,34,0.85)}',
-    '.tl-cin img{width:76px;height:76px;object-fit:cover;object-position:center top;display:block;pointer-events:none}',
+    '.tl-units{display:flex;flex-wrap:wrap;gap:4px;padding:6px;align-content:flex-start;min-height:76px;width:100%}',
+    '.tl-card{border-radius:10px;padding:2px;border:none;flex-shrink:0;width:72px;cursor:default;position:relative}',
+    '.tl-cin{border-radius:8px;overflow:hidden;background:rgba(34,34,34,0.85)}',
+    '.tl-cin img{width:66px;height:66px;object-fit:cover;object-position:center top;display:block;pointer-events:none}',
     '#tlTip{position:absolute;font-family:"Press Start 2P",monospace;font-size:8px;line-height:1.7;background:rgba(6,3,18,0.97);border:2px solid #681f62;color:#fff;padding:9px 12px;border-radius:6px;text-align:center;pointer-events:none;opacity:0;transition:opacity .18s;z-index:10000;max-width:200px;word-break:break-word;display:none}',
     '.tl-msg{padding:24px;text-align:center;color:rgba(255,255,255,.35);font-size:12px;width:100%}',
-    '@keyframes shinyLoop{0%{background-position:0% 50%}100%{background-position:200% 50%}}'
+    '@keyframes shinyLoop{0%{background-position:0% 50%}100%{background-position:200% 50%}}',
+    '@media(max-width:600px){#tlHdr{padding:8px 10px;gap:6px}#tlTitle{font-size:8px}.tl-mb{font-size:6px;padding:6px 8px}.tl-lbl{width:52px;min-width:52px}.tl-nm2{font-size:10px}.tl-st{font-size:7px}.tl-card{width:48px}.tl-cin img{width:44px;height:44px}.tl-units{gap:3px;padding:4px;min-height:56px}.tl-row{min-height:56px}}'
   ].join('');
 
   var style = document.createElement('style');
@@ -503,13 +525,13 @@
     img.draggable = false;
     img.src = u.img || '';
     img.onerror = function() {
-      this.style.cssText = 'width:76px;height:76px;background:#1a1a2e;display:block';
+      this.style.cssText = 'width:66px;height:66px;background:#1a1a2e;display:block';
       this.removeAttribute('src');
     };
     inn.appendChild(img);
     card.appendChild(inn);
     if (isSSZone) {
-      var tip = msg[name];
+      var tip = getModeMsg()[name];
       if (tip) {
         card.addEventListener('mouseenter', function() {
           var r  = card.getBoundingClientRect();
@@ -533,7 +555,7 @@
       if (i >= 4) return;
       var b = document.createElement('img');
       b.src = STATUS_ICON[tag] || '';
-      b.style.cssText = 'position:absolute;width:18px;height:18px;' + CORNERS[i] + ';pointer-events:none;z-index:3;image-rendering:auto';
+      b.style.cssText = 'position:absolute;width:26px;height:26px;' + CORNERS[i] + ';pointer-events:none;z-index:3;image-rendering:auto';
       card.appendChild(b);
     });
     return card;

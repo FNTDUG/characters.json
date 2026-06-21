@@ -1,4 +1,3 @@
-/* freedom */
 (function() {
   if (document.getElementById('tlRoot')) return;
 
@@ -333,7 +332,7 @@
     }
   },
   "notes": {
-    "all": "note testing stuff yes",
+    "all": "",
     "starter": "",
     "support": "",
     "stun": ""
@@ -448,10 +447,10 @@
     '#tlTip{position:absolute;font-family:"Press Start 2P",monospace;font-size:8px;line-height:1.7;background:rgba(6,3,18,0.97);border:2px solid #681f62;color:#fff;padding:9px 12px;border-radius:6px;text-align:center;pointer-events:none;opacity:0;transition:opacity .18s;z-index:10000;max-width:200px;word-break:break-word;display:none}',
     '.tl-msg{padding:24px;text-align:center;color:rgba(255,255,255,.35);font-size:12px;width:100%}',
 
-    '#tlNote{padding:10px 18px;font-family:Press Start 2P,monospace;font-size:7px;line-height:2;color:rgba(246,155,85,0.9);background:rgba(3,3,10,0.97);border-top:1px solid rgba(246,155,85,1);border-bottom:1px solid rgba(246,155,85,1);display:none}',
+    '#tlNote{padding:10px 18px;font-family:Press Start 2P,monospace;font-size:10px;line-height:2;color:rgba(246,155,85,0.9);background:rgba(3,3,10,0.97);border-bottom:1px solid rgba(246,155,85,1);display:none}',
     '#tlCount{font-family:Press Start 2P,monospace;font-size:clamp(10px,2.6vw,14px);color:#c862be;text-shadow:0 0 8px #c862be,0 0 18px #681f62;white-space:nowrap;margin-left:6px}',
-    '#tlSearch{padding:8px 10px;display:flex;justify-content:center;background:rgba(3,3,10,0.97);border-bottom:1px solid rgba(246,155,85,1)}',
-    '#tlSearchInput{font-family:"Press Start 2P",monospace;font-size:8px;background:rgba(0,0,0,0.6);border:1px solid rgba(104,31,98,0.6);color:#c862be;padding:7px 12px;width:300px;max-width:90%;outline:none;letter-spacing:1px}',
+    '#tlSearch{padding:10px 10px;display:flex;justify-content:center;background:rgba(3,3,10,0.97);border-bottom:1px solid rgba(246,155,85,1)}',
+    '#tlSearchInput{font-family:"Press Start 2P",monospace;font-size:10px;background:rgba(0,0,0,0.6);border:1px solid rgba(104,31,98,0.6);color:#c862be;padding:9px 14px;width:340px;max-width:90%;outline:none;letter-spacing:1px}',
     '#tlSearchInput::placeholder{color:rgba(200,98,190,0.35)}',
     '#tlSearchInput:focus{border-color:#c862be;box-shadow:0 0 10px rgba(200,98,190,0.45)}',
     '@keyframes tlBlink{0%,49%{box-shadow:0 0 0 3px #ffff00,0 0 12px #ffff00}50%,100%{box-shadow:0 0 0 3px transparent,0 0 0 transparent}}',
@@ -477,7 +476,7 @@
   var modeDiv = document.createElement('div');
   modeDiv.className = 'tl-mode';
   modeDiv.id = 'tlModes';
-  [['all','All'],['starter','Starter'],['support','Support'],['stun','Stun']].forEach(function(p) {
+  [['all','Every Unit'],['starter','Starter'],['support','Support'],['stun','Stun']].forEach(function(p) {
     var b = document.createElement('button');
     b.className = 'tl-mb' + (p[0] === 'all' ? ' on' : '');
     b.setAttribute('data-m', p[0]);

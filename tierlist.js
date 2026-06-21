@@ -417,7 +417,7 @@
 
   var CSS = [
     '@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);',
-    '#tlRoot{width:100vw;position:relative;left:50%;transform:translateX(-50%);background-color:#090909;color:#fff;font-family:"Press Start 2P",monospace;border:1px solid rgba(246,155,85,1);padding-bottom:20px;box-sizing:border-box}',
+    '#tlRoot{width:100vw;position:relative;left:50%;transform:translateX(-50%);background-color:#03030a;color:#fff;font-family:"Press Start 2P",monospace;border:1px solid rgba(246,155,85,1);padding-bottom:0;box-sizing:border-box}',
     '#tlRoot *{box-sizing:border-box}',
     '#tlHdr{position:sticky;top:0;z-index:9999;background:rgba(3,3,10,0.97);border-bottom:1px solid rgba(246,155,85,1);padding:12px 18px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}',
     '#tlTitle{font-family:"Press Start 2P",monospace;font-size:clamp(15px,4vw,24px);color:#681f62;text-shadow:0 0 14px rgba(104,31,98,0.85);white-space:nowrap}',
@@ -443,12 +443,18 @@
     '.tl-units{display:flex;flex-wrap:wrap;gap:6px;padding:6px;align-content:flex-start;min-height:76px;width:100%}',
     '.tl-card{border-radius:10px;padding:2px;border:none;flex-shrink:0;width:72px;cursor:default;position:relative}',
     '.tl-cin{border-radius:8px;overflow:hidden;background:rgba(34,34,34,0.85)}',
-    '.tl-cin img{width:66px;height:66px;object-fit:cover;object-position:center top;display:block;pointer-events:none}',
+    '.tl-cin img{width:100%;height:66px;object-fit:cover;object-position:center top;display:block;pointer-events:none}',
     '#tlTip{position:absolute;font-family:"Press Start 2P",monospace;font-size:8px;line-height:1.7;background:rgba(6,3,18,0.97);border:2px solid #681f62;color:#fff;padding:9px 12px;border-radius:6px;text-align:center;pointer-events:none;opacity:0;transition:opacity .18s;z-index:10000;max-width:200px;word-break:break-word;display:none}',
     '.tl-msg{padding:24px;text-align:center;color:rgba(255,255,255,.35);font-size:12px;width:100%}',
 
     '#tlNote{padding:10px 18px;font-family:Press Start 2P,monospace;font-size:7px;line-height:2;color:rgba(246,155,85,0.9);background:rgba(3,3,10,0.97);border-top:1px solid rgba(246,155,85,1);border-bottom:1px solid rgba(246,155,85,1);display:none}',
     '#tlCount{font-family:Press Start 2P,monospace;font-size:clamp(10px,2.6vw,14px);color:#c862be;text-shadow:0 0 8px #c862be,0 0 18px #681f62;white-space:nowrap;margin-left:6px}',
+    '#tlSearch{padding:8px 10px;display:flex;justify-content:center;background:rgba(3,3,10,0.97);border-bottom:1px solid rgba(246,155,85,1)}',
+    '#tlSearchInput{font-family:"Press Start 2P",monospace;font-size:8px;background:rgba(0,0,0,0.6);border:1px solid rgba(104,31,98,0.6);color:#c862be;padding:7px 12px;width:300px;max-width:90%;outline:none;letter-spacing:1px}',
+    '#tlSearchInput::placeholder{color:rgba(200,98,190,0.35)}',
+    '#tlSearchInput:focus{border-color:#c862be;box-shadow:0 0 10px rgba(200,98,190,0.45)}',
+    '@keyframes tlBlink{0%,49%{box-shadow:0 0 0 3px #ffff00,0 0 12px #ffff00}50%,100%{box-shadow:0 0 0 3px transparent,0 0 0 transparent}}',
+    '.tl-match{animation:tlBlink 0.75s step-end infinite}',
     '@keyframes shinyLoop{0%{background-position:0% 50%}100%{background-position:200% 50%}}',
     '@media(max-width:600px){#tlHdr{padding:8px 10px;gap:6px}#tlTitle{font-size:8px}.tl-mb{font-size:6px;padding:6px 8px}.tl-lbl{width:52px;min-width:52px}.tl-nm2{font-size:10px}.tl-st{font-size:7px}.tl-card{width:48px}.tl-cin img{width:44px;height:44px}.tl-units{gap:3px;padding:4px;min-height:56px}.tl-row{min-height:56px}}'
   ].join('');
@@ -487,6 +493,17 @@
   var noteEl = document.createElement('div');
   noteEl.id = 'tlNote';
   root.appendChild(noteEl);
+
+  var searchEl = document.createElement('div');
+  searchEl.id = 'tlSearch';
+  var searchInp = document.createElement('input');
+  searchInp.id = 'tlSearchInput';
+  searchInp.type = 'text';
+  searchInp.placeholder = 'SEARCH...';
+  searchInp.autocomplete = 'off';
+  searchInp.spellcheck = false;
+  searchEl.appendChild(searchInp);
+  root.appendChild(searchEl);
 
   var list = document.createElement('div');
   list.id = 'tlList';
@@ -548,7 +565,7 @@
     img.draggable = false;
     img.src = u.img || '';
     img.onerror = function() {
-      this.style.cssText = 'width:66px;height:66px;background:#1a1a2e;display:block';
+      this.style.cssText = 'width:100%;height:66px;background:#1a1a2e;display:block';
       this.removeAttribute('src');
     };
     inn.appendChild(img);
@@ -584,6 +601,21 @@
     return card;
   }
 
+  function applySearch() {
+    var inp = document.getElementById('tlSearchInput');
+    if (!inp) return;
+    var q = inp.value.trim().toLowerCase();
+    document.querySelectorAll('.tl-card').forEach(function(card) {
+      var img = card.querySelector('img');
+      var name = img ? img.alt.toLowerCase() : '';
+      if (q && name.indexOf(q) !== -1) {
+        card.classList.add('tl-match');
+      } else {
+        card.classList.remove('tl-match');
+      }
+    });
+  }
+
   function renderMode(m) {
     var ls = lists[m] || {};
     TIERS.forEach(function(t) {
@@ -598,6 +630,7 @@
     if (cEl) { var tot = countUnits(m); cEl.textContent = tot > 0 ? ('1st - ' + ordinal(tot)) : ''; }
     var nEl = document.getElementById('tlNote');
     if (nEl) { var note = ((cfg.notes || {})[m] || '').trim(); nEl.textContent = note; nEl.style.display = note ? 'block' : 'none'; }
+    applySearch();
   }
 
   document.getElementById('tlModes').addEventListener('click', function(e) {
@@ -609,6 +642,8 @@
     mode = b.getAttribute('data-m');
     renderMode(mode);
   });
+
+  document.getElementById('tlSearchInput').addEventListener('input', applySearch);
 
   renderMode(mode);
 

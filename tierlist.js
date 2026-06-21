@@ -1,3 +1,4 @@
+/* freedom */
 (function() {
   if (document.getElementById('tlRoot')) return;
 

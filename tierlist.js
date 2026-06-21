@@ -1,4 +1,5 @@
-/* A */
+/* Tierlist widget - self-contained. Loads via <script src>, mounts into <div id="tlMount"></div> */
+
 (function() {
   if (document.getElementById('tlRoot')) return;
 
@@ -363,7 +364,7 @@
 
   var CSS = [
     '@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);',
-    '#tlRoot{width:100vw;position:relative;left:50%;transform:translateX(-50%);min-height:100vh;background-color:#090909;color:#fff;font-family:"Press Start 2P",monospace;border:3px solid #f69b55;padding-bottom:40px;box-sizing:border-box}',
+    '#tlRoot{width:100vw;position:relative;left:50%;transform:translateX(-50%);background-color:#090909;color:#fff;font-family:"Press Start 2P",monospace;border:3px solid #f69b55;padding-bottom:20px;box-sizing:border-box}',
     '#tlRoot *{box-sizing:border-box}',
     '#tlHdr{position:sticky;top:0;z-index:9999;background:rgba(3,3,10,0.97);border-bottom:2px solid rgba(246,155,85,0.35);padding:12px 18px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}',
     '#tlTitle{font-family:"Press Start 2P",monospace;font-size:clamp(15px,4vw,24px);color:#681f62;text-shadow:0 0 14px rgba(104,31,98,0.85);white-space:nowrap}',
@@ -374,7 +375,7 @@
     '#tlList{padding:10px 18px;display:flex;flex-direction:column;gap:4px}',
     '.tl-row{display:flex;min-height:90px;border-radius:6px;border:1px solid rgba(255,255,255,.06)}',
     '.tl-lbl{width:82px;min-width:82px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6px 4px;gap:2px;background:rgba(4,4,14,.92);border-radius:5px 0 0 5px;border-right:1px solid rgba(255,255,255,.07)}',
-    '.tl-st{font-family:"Press Start 2P",monospace;font-size:8px;letter-spacing:1px;line-height:1;color:#FFD700}',
+    '.tl-st{font-family:"Press Start 2P",monospace;font-size:clamp(11px,3.2vw,15px);letter-spacing:1px;line-height:1;color:#FFD700}',
     '.tl-nm2{font-family:Arial,Helvetica,sans-serif;font-weight:800;font-size:clamp(22px,6vw,32px);line-height:1.1;color:#FFD700;text-shadow:0 0 12px #FFD700}',
     '.tl-row[data-t=s] .tl-st,.tl-row[data-t=s] .tl-nm2{color:#FF9900;text-shadow:0 0 12px #FF9900}',
     '.tl-row[data-t=a] .tl-st,.tl-row[data-t=a] .tl-nm2{color:#A8FF47;text-shadow:0 0 10px #A8FF47}',
@@ -414,7 +415,7 @@
   hdr.id = 'tlHdr';
   var ttl = document.createElement('span');
   ttl.id = 'tlTitle';
-  ttl.textContent = '\u2605 TIERLIST';
+  ttl.textContent = 'TIERLIST';
   var modeDiv = document.createElement('div');
   modeDiv.className = 'tl-mode';
   modeDiv.id = 'tlModes';

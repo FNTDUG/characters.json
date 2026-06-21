@@ -6,7 +6,7 @@
   "lists": {
     "all": {
       "ss": [
-        "Astral Bonnie",
+        "Astral Bonnie BUG",
         "Dragon Endo 01",
         "Golden Freddy",
         "Frozen King Foxy",

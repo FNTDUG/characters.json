@@ -456,7 +456,7 @@
     '@keyframes tlBlink{0%,49%{box-shadow:0 0 0 3px #ffff00,0 0 12px #ffff00}50%,100%{box-shadow:0 0 0 3px transparent,0 0 0 transparent}}',
     '.tl-match{animation:tlBlink 1.6s step-end infinite}',
     '@keyframes shinyLoop{0%{background-position:0% 50%}100%{background-position:200% 50%}}',
-    '@media(max-width:600px){#tlHdr{padding:8px 10px;gap:6px}#tlTitle{font-size:8px}.tl-mb{font-size:6px;padding:6px 8px}#tlList{padding:6px 3px}.tl-lbl{width:64px;min-width:64px}.tl-nm2{font-size:22px}.tl-st{font-size:11px}.tl-card{width:48px;height:48px}.tl-units{gap:3px;padding:4px;min-height:56px}.tl-row{min-height:56px}}'
+    '@media(max-width:600px){#tlHdr{padding:8px 10px;gap:6px}#tlTitle{font-size:8px}.tl-mb{font-size:6px;padding:6px 8px}#tlList{padding:6px 3px}.tl-lbl{width:64px;min-width:64px}.tl-nm2{font-size:22px}.tl-st{font-size:11px}.tl-card{width:52px;height:52px}.tl-units{gap:3px;padding:4px;min-height:60px}.tl-row{min-height:60px}}'
   ].join('');
 
   var style = document.createElement('style');

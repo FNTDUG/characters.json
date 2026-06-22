@@ -130,7 +130,7 @@
         "Nightmare Endo",
         "Rockstar Freddy",
         "Funtime Freddy",
-        "Frosty The Snowcake",
+        "Frosty the Snowcake",
         "Nightmare BB",
         "No. 1 Crate",
         "Faz-ino Spring Bonnie BUG",
@@ -150,8 +150,8 @@
         "John Pigpatch",
         "Popeyes Toy Freddy",
         "Nightmare Freddy",
-        "Hero Paperpals",
-        "Paperpals",
+        "Hero PaperPals",
+        "PaperPals",
         "Cloaked Sparky",
         "Hor Hor Freddy",
         "Minireenas", 
@@ -175,7 +175,7 @@
         "Bucket Bob",
         "Pan Stan",
         "Freddy",
-        "Freddy With A Glock",
+        "Freddy With a Glock",
         "Cerberus Freddy",
         "UFO Tangle",
         "Balloon Boy",
@@ -195,146 +195,146 @@
     },
     "starter": {
       "ss": [
-        "Golden Freddy"
+        "Golden Freddy",
+        "Endo 01",
+        "Rockin Bonnie",
+        "Undead Chica",
+        "Bonnie",
+        "Foxy"
       ],
       "s": [
-        "Old Man Consequences",
-        "Withered Bonnie"
+        "Crying Child",
+        "Rockstar Chica",
+        "Foxy Fighters",
+        "Masked Bullies",
+        "Barbarian Boy",
+        "Conductor Freddy",
+        "Turkey Chica",
+        "Cloaked Sparky",
+        "Hor Hor Freddy"
       ],
       "a": [
-        "Barbarian Boy",
-        "Rockin Bonnie",
-        "Phantom Bonnie",
-        "Phantom Mangle",
-        "Phantom BB",
-        "Foxy",
-        "Bonnie",
-        "Jack'O Bonnie",
-        "Party Packer Cupcake"
+        'UFO Tangle",
+        "Frosty the Snowcake",
+        "Party Glock Freddy",
+        "Hero PaperPals",
+        "PaperPals",
+        "JJ",
+        "Freddy",
+        "Freddy With a Glock"
       ],
       "b": [
-        "Party Glock Freddy",
-        "UFO Tangle",
-        "Nightmare Cupcake",
-        "Nightmare Freddy",
-        "Masked Bullies",
-        "Phantom Chica",
-        "Cloaked Sparky",
-        "Turkey Chica",
-        "PaperPals",
-        "Toy Freddy",
-        "Hor Hor Freddy",
-        "Endo 01",
-        "Frosty the Snowcake",
-        "Conductor Toy Freddy",
-        "Undead Chica",
-        "Bidybabs",
-        "Faz-ino Spring Bonnie"
+      "Faz-ino Spring Bonnie BUG",
+      "Phantom Chica",
+      "Nightmare Cupcake",
+      "Santa Freddy",
+      "Nightmare Freddy"
+      "Soul Prisoner Foxy",
+      "Toy Bonnie",
+      "Jack'O Bonnie",
+      "Withered Chica"
       ],
+      
       "c": [
-        "Freddy With a Glock",
-        "Soul Prisoner Foxy",
-        "Freddy",
-        "Chica",
-        "JJ",
-        "Toy Bonnie",
-        "Withered Chica",
-        "Toy Chica",
-        "Mrs Claus Toy Chica",
-        "Santa Freddy",
-        "Foxy Fighters",
-        "Hero PaperPals",
-        "Bucket Bob",
-        "No. 1 Crate",
-        "Pan Stan",
-        "Rockstar Chica"
+      "Bidybabs",
+      "Party Packer Cupcake",
+      "No. 1 Crate",
+      "Bucket Bob"
+      "Pan Stan",
+      "Phantom Bonnie"
       ]
     },
 
     
     "support": {
       "ss": [
-        "Astral Bonnie",
-        "Dragon Endo 01",
-        "Golden Freddy",
-        "Frozen King Foxy",
-        "Stormbound Chica",
-        "Kronos Endo Freddy"
+        "Candy Cadet",
+        "Psychic Friend Fredbear",
+        "Golden Cupcake",
+        "Spring Duo",
+        "Golden Freddy"
       ],
       "s": [
-        "Nightmare Fredbear",
         "Starfarer Princess",
-        "Spring Duo",
-        "Golden Cupcake",
-        "Overgrown Foxy",
-        "Old Man Consequences",
-        "Headless Horseman Mangle",
-        "Lolbit",
-        "Ennard",
-        "Chipper",
+        "Kronos Endo Freddy",
+        "Scarecrow Freddy",
+        "Funtime Foxy",
         "Animdude",
-        "Mother Nature Ballora"
+        "No. 1 Crate",
+        "Endo 01",
+        "Rockin Bonnie",
+        "Hag Withered Chica"
       ],
       "a": [
-        "Sweetheart Toy Foxy",
         "Barbarian Boy",
-        "Springtrap",
-        "Rockin Bonnie",
-        "Phantom Mangle",
-        "Bear5",
-        "Puppet",
-        "Popcorn Bot",
-        "Scarecrow Freddy",
-        "Party Packer Cupcake",
-        "Handunit"
+        "Crying Child",
+        "Astral Bonnie",
+        "Mother Nature Ballora",
+        "Handunit",
+        "Movie Director Freddy",
+        "Sweetheart Toy Foxy",
+        "Chipper"
       ],
       "b": [
-        "Shadow Knight Freddy",
-        "Movie Director Freddy",
-        "Balloon Boy",
-        "Funtime Foxy"
+        "Puppet",
+        "Michael Afton",
+        "Ennard",
+        "Nightmare Fredbear",
+        "Old Man Consquences",
+        "Frozen King Foxy",
+        "Springtrap",
+        "Funtime Chica",
+        "Nightmare Chica,
+        "Overgrown Foxy",
+        "Helpy",
+        "Cupcake",
+        "Popcorn Bot",
+        "Stormbound Chica",
+        "Circus Baby",
+        "Balloon Boy"
+        
       ],
       "c": [
-        "Nightmare Chica",
-        "Cupcake",
-        "Michael Afton",
-        "Candy Cadet",
-        "Helpy",
-        "Lefty",
-        "Fredtrap",
-        "Rockstar Foxy"
+      "Hacker King RWQFSFASXC",
+        "Phantom Mangle"
+        "Party Packer Cupcake",
+        "Headless Horseman Mangle",
+        "Lich Shadow Bonnie",
+        "Shadow Knight Freddy",
+        "Bear5"
       ]
     },
     "stun": {
       "ss": [
-        "Frostmancer Withered Bonnie",
-        "Kronos Endo Freddy"
+        "Deep Sea Calamity Endo",
+        "Krampus Purple Guy",
+        "Ennard"
       ],
       "s": [
-        "Nightmare Fredbear",
-        "Old Man Consequences",
-        "Krampus Purple Guy",
-        "Yenndo",
-        "Ennard",
-        "Mother Nature Ballora"
+        "Frostmancer Withered Bonnie",
+        "Kronos Endo Freddy",
+        "Chicas Magic Rainbow"
       ],
       "a": [
-        "Mangle",
+        "Pan Stan",
+        "Nightmare Fredbear",
         "Circus Baby",
-        "Exotic Butters"
+        "Exotic Butters",
+        "Mother Nature Ballora",
+        "Lefty",
+        "Foxy Fighters",
       ],
       "b": [
+        "Landslide Funtime Foxy",
+        "Animdude",
+        "Mangle BUG",
         "Nightmare Mangle",
-        "Time Lord Withered Freddy"
+        "Yenndo"
       ],
       "c": [
-        "Landslide Funtime Foxy",
-        "Foxy Fighters",
         "Michael Afton",
-        "Lefty",
-        "Molten Freddy",
-        "Pan Stan",
-        "Rockstar Chica"
+        "Time Lord Withered Freddy",
+        "Old Man Consequences"
       ]
     }
   },

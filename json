@@ -1041,7 +1041,7 @@
     "element": "Rust",
     "placements": 2,
     "attackType": "Multi",
-    "obtainment": "Normal Summons, Nightmare 0.01%",
+    "obtainment": "Soul Summons (0.01%"),
     "levels": [
       {
         "level": 1,
@@ -1953,7 +1953,7 @@
     "element": "Neutral",
     "placements": 2,
     "attackType": "Cone",
-    "obtainment": "Nightmare Chica Evolution",
+    "obtainment": "Season 3 Craftable Nightmare",
     "levels": [
       {
         "level": 1,
@@ -3117,7 +3117,7 @@
       "Support"
     ],
     "placements": 1,
-    "obtainment": "Phantom Mangle Evolution",
+    "obtainment": "Season 2 Craftable Nightmare",
     "modes": {
       "springBonnie": {
         "label": "Spring Bonnie",
@@ -3477,7 +3477,18 @@
         "name": "Dark Springtrap",
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/st-skin-high.png",
         "rarity": "secret"
+      },
+      {
+        "name": "Glacier Springtrap",
+        "image": "https://drive.google.com/thumbnail?id=1J2sJ6pFH5VlHUJXKo-_9vNTnBqIDePcV&sz=w500",
+        "rarity": "exclusive"
+      },
+      {
+        "name": "Shiny Glacier Springtrap",
+        "image": "https://drive.google.com/thumbnail?id=1I7DCWx-ztHHFom5loRHQLtlIbBf5UN7U&sz=w500",
+        "rarity": "shiny"
       }
+      
     ]
   },
   {
@@ -4104,6 +4115,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-05-57-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
     "rarity": "nightmare",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Summon"
+    ],
     "tierlist": 4,
     "typeTags": [
       "Summon"
@@ -6934,10 +6948,13 @@
     "typeTags": [
       "Summon"
     ],
+    "typeTags": [
+      "Summon"
+    ],
     "element": "Neutral",
     "placements": 2,
     "attackType": "Circle",
-    "obtainment": "Golden Freddy Pet Evolution",
+    "obtainment": "Season 1 Craftable Nightmare",
     "levels": [
       {
         "level": 1,
@@ -7568,7 +7585,14 @@
         "title": "Rider's Hellfire",
         "text": "Every 45s, this unit causes a firestorm within its own range for 15s. All enemies affected by the firestorm are afflicted with a 12% burn debuff that deals damage every second until they're out of range."
       }
-    ]
+    ],
+      "skins": [
+      {
+        "name": "Wandering Soul",
+        "image": "https://drive.google.com/thumbnail?id=10j0eqZl7FfZWcJvfWEiYPC9S9r9uTPGH&sz=w500",
+        "rarity": "nightmare"
+      }
+      ]
   },
   {
     "name": "Bear5",
@@ -10013,7 +10037,7 @@
     "element": "Electricity",
     "placements": 2,
     "attackType": "Multi",
-    "obtainment": "Ballora Evolution",
+    "obtainment": "Season 4 Craftable Nightmare",
     "levels": [
       {
         "level": 1,
@@ -10269,7 +10293,19 @@
         "text": "When activated, Scooped Micheal spews a bit of ennard on the track right beside him. This trap can hit 10 enemies, inflicting enemies with 5% Bleed, but if there are 2 other Electric units present within your team, Bleed increases to 15%.  If the team is Mono-Electric, Bleed stat increases to 25%, along with Exponential Slow in which every tick enemies lose 0.5% movement speed up to 25% till death. Max of 3 traps at a time  (Upgrade 4+, Local CD: 35s).",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/miechal-abilityu-high.png"
       }
-    ]
+    ],
+      "skins": [
+      {
+        "name": "Scooped Ice Cream Michael",
+        "image": "https://drive.google.com/thumbnail?id=11NlByCP1R_K-ucOLLftYR0wlWyG4e6Tm&sz=w500",
+        "rarity": "exclusive"
+      },
+      {
+        "name": "Shiny Scooped Ice Cream Michael",
+        "image": "https://drive.google.com/thumbnail?id=1AFuI5kM8kk0c_8K9l4gqOvVMMajkB-jP&sz=w500",
+        "rarity": "Shiny"
+      }
+      ]
   },
   {
     "name": "Exotic Butters",
@@ -13467,7 +13503,7 @@
     "element": "Light",
     "placements": 1,
     "attackType": "Multi",
-    "obtainment": "Rockstar Foxy Evolution",
+    "obtainment": "Season 5 Craftable Nightmare",
     "levels": [
       {
         "level": 1,
@@ -14729,6 +14765,882 @@
     {
       "title": "Wasteland Scavenger",
       "text": "Units in range of Mutating Gas are stunned for 5s every 15s. Whenever a unit is stunned in this unit's range, this unit receives +50% damage for 5s for every stunned unit. The stunned units receive +25% damage for 10s"
+    }
+  ]
+},
+  {
+  "name": "Deep Sea Calamity Endo",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1LGNOHIWOs68ljAVzCGbz-delxj3KtMih&sz=w500",
+  "imgShiny": "https://drive.google.com/thumbnail?id=1O0pU-4NGoB15l4Ih842ocfl_qcGQbMyD&sz=w500",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Slow",
+    "Stun",
+    "Knockback"
+  ],
+  "element": "Water",
+  "placements": 2,
+  "attackType": "Multi",
+  "obtainment": "Serpent Endo Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 8000,
+      "damage": 101,
+      "type": "Line",
+      "cd": 3,
+      "range": 25
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 131.3,
+      "type": "Line",
+      "cd": 3,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 4500,
+      "damage": 176.75,
+      "type": "Line",
+      "cd": 3,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 227.25,
+      "type": "Line",
+      "cd": 3,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 7500,
+      "damage": 242.4,
+      "type": "Line",
+      "cd": 2.5,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 10000,
+      "damage": 282.8,
+      "type": "Cone 245°",
+      "cd": 2.5,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 12500,
+      "damage": 303,
+      "type": "Cone 245°",
+      "cd": 2,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Leviathans Grasp",
+      "text": "Attacks apply 30% bleed over 5s and deal bonus damage equal to slow on enemy. Bleeding enemies in range are slowed by 15%"
+    },
+    {
+      "title": "Anantashesha",
+      "text": "On attack stun enemies for 1.8s. If enemy is in stun lockout, do a follow-up for 50% of this unit's damage in a full AOE. Deal +1 shield damage and follow-up for 50% on shield break. When enemy enters within 50% of this unit's range for the first time, knockback enemy 2 tiles. If the enemy is a boss, stun for 2.5s after stun lockout ends"
+    }
+  ]
+},
+{
+  "name": "Fallen Angel Nightmarionne",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1UzYss-75B6Ioeu6LwR9gL6JL4AgY1269&sz=w500",
+  "imgShiny": "https://drive.google.com/thumbnail?id=1OxiMehgLtQ1l6ke5za4-Cm-atxWdOS2n&sz=w500",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "element": "Dark/Light",
+  "placements": 1,
+  "attackType": "Cone",
+  "obtainment": "",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 6660,
+      "damage": 707,
+      "degrees": "45°",
+      "cd": 4,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 858.5,
+      "degrees": "45°",
+      "cd": 4,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 4000,
+      "damage": 1161.5,
+      "degrees": "45°",
+      "cd": 4.2,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 5000,
+      "damage": 1212,
+      "degrees": "45°",
+      "cd": 4.2,
+      "range": 26
+    },
+    {
+      "level": 5,
+      "cost": 6250,
+      "damage": 1414,
+      "degrees": "45°",
+      "cd": 4.2,
+      "range": 27
+    },
+    {
+      "level": 6,
+      "cost": 7500,
+      "damage": 1919,
+      "degrees": "45°",
+      "cd": 4.8,
+      "range": 27
+    },
+    {
+      "level": 7,
+      "cost": 8750,
+      "damage": 2222,
+      "degrees": "60°",
+      "cd": 4.8,
+      "range": 27
+    },
+    {
+      "level": 8,
+      "cost": 10000,
+      "damage": 2626,
+      "degrees": "60°",
+      "cd": 5,
+      "range": 28
+    },
+    {
+      "level": 9,
+      "cost": 12500,
+      "damage": 3030,
+      "degrees": "60°",
+      "cd": 5,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Retribution",
+      "text": "Deals 500% damage in a line. On hit, apply 20% slow for 10s. If enemy dies while this slow is still active, summon a Flaming Nightmarionne Plushie for 100% damage as health. (Upgrade 0+, Global CD: 90s).",
+      "activeIcon": ""
+    },
+    {
+      "title": "The Fallen",
+      "text": "On attack, buff this units damage by +10% (Max 50%). Once this buff is maxed out, keep maxed buff for 3 attacks and reset. Gains boosts for every Light or Dark element unit on the team: Dark - +5% damage, Light -  +5% range"
+    }
+  ]
+},
+{
+  "name": "Fathomless Withered Foxy",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1D91ZkGztRYsoKFyFKAu_Zp84PdN2wLyj&sz=w500",
+  "imgShiny": "https://drive.google.com/thumbnail?id=1ERJZd8Wszyp-X36lTZ9dhoC3Yeir5IVv&sz=w500",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Knockback"
+  ],
+  "element": "Water",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Shark Withered FoxY Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 12000,
+      "damage": 1212,
+      "type": "Line",
+      "cd": 4,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 5000,
+      "damage": 1313,
+      "type": "Line",
+      "cd": 4,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 6000,
+      "damage": 1363.5,
+      "type": "Line",
+      "cd": 3.8,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 7250,
+      "damage": 1464.5,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 27
+    },
+    {
+      "level": 5,
+      "cost": 8500,
+      "damage": 1616,
+      "type": "Line",
+      "cd": 3.2,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 10000,
+      "damage": 1767.5,
+      "type": "Cone 45°",
+      "cd": 3,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 12500,
+      "damage": 2020,
+      "type": "Cone 45°",
+      "cd": 3,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Call of the Abyss",
+      "text": "While enemy is in range, deal more damage the longer the enemy is in this unit's range (2%/s) (Max 150%). If enemy is bleeding, increase by 2.5%/s instead. nWhen enemy tries to leave range for the first time, knockback enemy by 5 tiles and stun them for 2s and reset Call of the Abyss damage buff on that enemy"
+    },
+    {
+      "title": "Apex Predator",
+      "text": "Attacks apply 25% bleed over 5s. If there are 3+ sources of bleed on the enemy, buff this bleed application to 40%. Deal 25% more damage to bleeding enemies. If enemy is in the latter half of the track, deal 20% more damage and apply an additional 10% bleed"
+    }
+  ]
+},
+{
+  "name": "Music Man",
+  "imgNormal": "https://drive.google.com/thumbnail?id=168jLa3GwZfafld5MVg1gaaz1mP4blrFr&sz=w500",
+  "imgShiny": "https://drive.google.com/thumbnail?id=10MYPDAvMk2fnlJNqVDFFegzh2GmMAcYl&sz=w500",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "element": "Neutral",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Quest Shop",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2000,
+      "damage": 505,
+      "cd": 3,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 1400,
+      "damage": 520.15,
+      "cd": 2.9,
+      "range": 20
+    },
+    {
+      "level": 3,
+      "cost": 1900,
+      "damage": 550.45,
+      "cd": 2.9,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 2500,
+      "damage": 606,
+      "cd": 2.8,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 3000,
+      "damage": 641.35,
+      "cd": 2.8,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 3700,
+      "damage": 671.65,
+      "cd": 2.7,
+      "range": 27
+    },
+    {
+      "level": 7,
+      "cost": 4600,
+      "damage": 747.4,
+      "cd": 2.7,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Pump up the Jam",
+      "text": "This unit gains +1% damage for every 1% the music setting is turned up."
+    },
+    {
+      "title": "Cymbal Crash",
+      "text": "Every 10s deal 200% damage to all enemies in range"
+    }
+  ]
+},
+{
+  "name": "Roadkill Phantom Foxy",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1XZplaepZ71vuOaVTas-FQr0VsmFCr13R&sz=w500",
+  "imgShiny": "https://drive.google.com/thumbnail?id=1IjLUAT0pCH-8i71ckwUx5FyTdLWsRFtX&sz=w500",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Slow",
+    "Stun"
+  ],
+  "element": "Rust",
+  "placements": 2,
+  "attackType": "Line",
+  "obtainment": "Apocalypse Present (2%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 3000,
+      "damage": 328.25,
+      "cd": 3.2,
+      "range": 25
+    },
+    {
+      "level": 2,
+      "cost": 1750,
+      "damage": 404,
+      "cd": 3.4,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 2500,
+      "damage": 530.25,
+      "cd": 3.6,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 3500,
+      "damage": 666.6,
+      "cd": 3.8,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 5000,
+      "damage": 808,
+      "cd": 4,
+      "range": 30
+    },
+    {
+      "level": 6,
+      "cost": 7000,
+      "damage": 909,
+      "cd": 4,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Walking Dead",
+      "text": "On attack, apply 25% bleed and 25% poison over 5s. When this unit is stunned, next attack applies an additional 100% bleed and 100% poison over 10s, stun enemies in range for 1.8s, and slow enemies in range by 15% for 15s"
+    }
+  ]
+},
+{
+  "name": "Henry Emily",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1eDky2lh0LbOAdgYLXcZMze8vXYcPivir&sz=w500",
+  "imgShiny": "https://drive.google.com/thumbnail?id=1JZMkHO2CLNqdzhNp_YEe8QFhBLZixyTr&sz=w500",
+  "rarity": "secret",
+  "typeMain": "Stater-Midgame",
+   "typeTags": [
+      "Summon"
+    ],
+  "element": "Rust",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Quest Shop",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 1500,
+      "damage": 212.1,
+      "cd": 2,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 2000,
+      "damage": 227.25,
+      "cd": 2,
+      "range": 20
+    },
+    {
+      "level": 3,
+      "cost": 2400,
+      "damage": 252.5,
+      "cd": 2.2,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 2800,
+      "damage": 282.8,
+      "cd": 2.3,
+      "range": 21
+    },
+    {
+      "level": 5,
+      "cost": 3250,
+      "damage": 328.25,
+      "cd": 2.5,
+      "range": 23
+    },
+    {
+      "level": 6,
+      "cost": 3750,
+      "damage": 363.6,
+      "cd": 2.5,
+      "range": 23
+    },
+    {
+      "level": 7,
+      "cost": 4500,
+      "damage": 404,
+      "cd": 2.5,
+      "range": 23
+    },
+    {
+      "level": 8,
+      "cost": 5500,
+      "damage": 454.5,
+      "cd": 2.5,
+      "range": 24
+    }
+  ],
+  "passives": [
+    {
+      "title": "Machine Learning",
+      "text": "Every 5s this unit summons an endo with stats depending on its current upgrade. This unit gains Parts whenever enemies are killed within its range (Boss kills grant 16 Parts). Parts are used to upgrade the Endo summon: Level 1 (50 Parts): Summon has 125% damage as health, increased to 150% if another Rust unit is on the team. Level 2 (100 Parts): Summon has 200% damage as health, explodes on death for 150% damage in a 16 range radius. Level 3 (175 Parts): Summon has 275% damage as health and is guaranteed to crit. On death explodes for 150% damage and applies 15% Exposure, increasing this units' summons damage to enemies within an 18 range radius for 10s."
+    },
+    {
+      "title": "Turning Gears",
+      "text": "For every Rust element unit in range, buff this units damage by 2.5% and range by 3% (Max 12.5% damage and 15% range)"
+    }
+  ]
+},
+{
+  "name": "El Chip",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1iaU-jtAyveQlxkacduvVHCrxFI2ES60d&sz=w500",
+  "imgShiny": "https://drive.google.com/thumbnail?id=1i81r3R5Uxm_iUyqVsL45fE2bkEGwwNqX&sz=w500",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "element": "Nature",
+  "placements": 1,
+  "attackType": "Line",
+  "obtainment": "Quest Shop",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 7460,
+      "damage": 151.5,
+      "cd": 0.6,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 156.55,
+      "cd": 0.6,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 3250,
+      "damage": 163.62,
+      "cd": 0.6,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 4000,
+      "damage": 171.7,
+      "cd": 0.6,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 5000,
+      "damage": 181.8,
+      "cd": 0.5,
+      "range": 27
+    },
+    {
+      "level": 6,
+      "cost": 6000,
+      "damage": 196.95,
+      "cd": 0.5,
+      "range": 29
+    },
+    {
+      "level": 7,
+      "cost": 7500,
+      "damage": 222.2,
+      "cd": 0.5,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Taco Tuesday!",
+      "text": "This unit gains buffs depending on the chosen filling: Beef - +15% damage, +15% range, +5% cooldown. Chicken - -5% damage, +5% range, -10% cooldown. Vegan - +25% damage, +10% range, +10% cooldown."
+    },
+    {
+      "title": "Happy Hour",
+      "text": "Buff this unit's damage by 50% on odd waves. Reduce this unit's cooldown by 30% on even waves. When a boss is on the map, both buffs are active at once."
+    },
+    {
+      "title": "Tax Return",
+      "text": "Every 3 waves, automatically upgrade El Chip once.This unit cannot be sold after being placed."
+    }
+  ]
+},
+{
+  "name": "Firework Shadow Freddy",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1uUw3CHpAP53PIjep1yEH_5cN-b8YUmEH&sz=w500",
+  "imgShiny": "https://drive.google.com/thumbnail?id=1QGAO3W-ZTy5UsVcd8IJtfhK_lNrnHZDC&sz=w500",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "element": "Fire",
+  "placements": 2,
+  "attackType": "Circle",
+  "obtainment": "Unit Quest 3",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2500,
+      "damage": 227.25,
+      "cd": 4,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 1200,
+      "damage": 242.4,
+      "cd": 4,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 1800,
+      "damage": 262.6,
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 2500,
+      "damage": 272.7,
+      "cd": 3.7,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 3250,
+      "damage": 282.8,
+      "cd": 3.4,
+      "range": 30
+    },
+    {
+      "level": 6,
+      "cost": 4000,
+      "damage": 292.9,
+      "cd": 3,
+      "range": 32
+    },
+    {
+      "level": 7,
+      "cost": 5000,
+      "damage": 333.3,
+      "cd": 3,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Firework Show",
+      "text": "Every 30s, rotate the current firework color: Red - +50% damage. Blue - -20% cooldown. Purple - +50% crit rate and +25% crit damage."
+    },
+    {
+      "title": "Fuse",
+      "text": "On attack, apply Fuse, exploding after 3s dealing 100% damage in a small aoe. Fuse has bonus effects based on current firework color:Red - Explosion radius increased by 25%. Blue - Detonates a second explosion after 1s dealing 35% damage. Purple - Explosion is guaranteed to crit."
+    }
+  ]
+},
+{
+  "name": "Funtime Chica",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1yLjxm_NUfFw_7xJeUzIdCjr5MyENGrRj&sz=w500",
+  "imgShiny": "https://drive.google.com/thumbnail?id=17hPJplE7R9vVRW1_A53-Y2yLL_R-7n_7&sz=w500",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Light",
+  "placements": 1,
+  "attackType": "Cone",
+  "obtainment": "",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 7100,
+      "damage": 479.75,
+      "degrees": "45°",
+      "cd": 5,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 2400,
+      "damage": 505,
+      "degrees": "45°",
+      "cd": 5,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 3500,
+      "damage": 545.4,
+      "degrees": "45°",
+      "cd": 5,
+      "range": 25
+    },
+    {
+      "level": 4,
+      "cost": 4500,
+      "damage": 570.65,
+      "degrees": "45°",
+      "cd": 4.8,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 6000,
+      "damage": 600.95,
+      "degrees": "45°",
+      "cd": 4.6,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 8500,
+      "damage": 631.25,
+      "degrees": "45°",
+      "cd": 4.3,
+      "range": 27
+    },
+    {
+      "level": 7,
+      "cost": 10000,
+      "damage": 666.6,
+      "degrees": "90°",
+      "cd": 4,
+      "range": 27
+    },
+    {
+      "level": 8,
+      "cost": 13000,
+      "damage": 727.2,
+      "degrees": "90°",
+      "cd": 3.8,
+      "range": 28
+    },
+    {
+      "level": 9,
+      "cost": 16000,
+      "damage": 787.8,
+      "degrees": "90°",
+      "cd": 3.5,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Spotlight",
+      "text": "Light units in range gain +20% damage. For each Light unit in range, this unit gains +5% damage (Max 50%). If an enemy is within 50% of this unit's range, this unit gains +50% damage"
+    },
+    {
+      "title": "Star of the Show",
+      "text": "+50% crit rate and +50% crit damage. If there is a unit with a higher damage stat in range, gain +25% crit damage and +20% damage. When another unit in range crits, uff this unit's crit rate by +1% (Max 100%). Crit rate over 100% converts directly into crit damage"
+    }
+  ]
+},
+{
+  "name": "Scrap Baby",
+  "imgNormal": "https://drive.google.com/thumbnail?id=18YcpszOfsT7FLuxFaIVh0fMuLzGLSmaK&sz=w500",
+  "imgShiny": "https://drive.google.com/thumbnail?id=1EP0dhrPKwouJfyIpLYMm4KD8l1jmcMDk&sz=w500",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "element": "Rust",
+  "placements": 2,
+  "attackType": "Multi",
+  "obtainment": "Quest Shop",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 4000,
+      "damage": 242.4,
+      "type": "Circle",
+      "cd": 6,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 257.55,
+      "type": "Circle",
+      "cd": 6,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 3500,
+      "damage": 282.8,
+      "type": "Circle",
+      "cd": 6,
+      "range": 25
+    },
+    {
+      "level": 4,
+      "cost": 4250,
+      "damage": 303,
+      "type": "Cone 45°",
+      "cd": 6,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 5000,
+      "damage": 343.4,
+      "type": "Cone 45°",
+      "cd": 6,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 6000,
+      "damage": 353.5,
+      "type": "Cone 45°",
+      "cd": 4,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 7500,
+      "damage": 368.65,
+      "type": "Circle",
+      "cd": 4,
+      "range": 32
+    },
+    {
+      "level": 8,
+      "cost": 10000,
+      "damage": 393.9,
+      "type": "Circle",
+      "cd": 4,
+      "range": 35
+    }
+  ],
+  "passives": [
+    {
+      "title": "Decaying Benevolence",
+      "text": "Every attack lowers this unit's cooldown by 1% (Max 20%). After 20 attacks enemies in range take 30% more damage from DoT effects"
+    },
+    {
+      "title": "Arterial Claw",
+      "text": "Attacks inflict Bleed, dealing 45% of this unit's damage every second for 4 seconds. Deal 55% more damage to enemies already inflicted with Bleed"
+    }
+  ]
+},
+{
+  "name": "Radioactive Phantom Freddy",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1YvJwjzuBeqmFyeVnma1OCAAV3LCKUIrD&sz=w500",
+  "imgShiny": "https://drive.google.com/thumbnail?id=1qNc7cWtmbTNo7lndKlqwGIMJJAUl7hmX&sz=w500",
+  "rarity": "epic",
+  "typeMain": "Starter-Midgame",
+  "typeTags": [],
+  "element": "Rust",
+  "placements": 3,
+  "attackType": "Circle",
+  "obtainment": "Apocalypse Present (97,9%",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 1250,
+      "damage": 111.1,
+      "cd": 2,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 800,
+      "damage": 126.25,
+      "cd": 2,
+      "range": 22
+    },
+    {
+      "level": 3,
+      "cost": 1000,
+      "damage": 141.4,
+      "cd": 2,
+      "range": 25
+    },
+    {
+      "level": 4,
+      "cost": 1200,
+      "damage": 156.55,
+      "cd": 1.8,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 1500,
+      "damage": 176.75,
+      "cd": 1.8,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 2000,
+      "damage": 202,
+      "cd": 1.8,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Hazardous Material",
+      "text": "On attack, Aapply 50% poison over 5s. If this unit is stunned, buff this unit's damage by 50% for 20s and apply 500% poison over 15s in a full AOE when stun ends"
     }
   ]
 }

@@ -136,6 +136,7 @@
         "Frosty the Snowcake UP",
         "Nightmare BB DOWN",
         "No. 1 Crate",
+        "Exotic Butters DOWN",
         "Faz-ino Spring Bonnie UP BUG",
         "Phantom Mangle DOWN",
         "Mecha Cupcake",

@@ -8203,7 +8203,7 @@
     "passives": [
       {
         "title": "Endo CPU",
-        "text": "Every upgrade provides a 3% damage boost to all units. [Caps at 15%].="
+        "text": "Every upgrade provides a 3% damage boost to all units. [Caps at 15%]."
       }
     ],
     "skins": [
@@ -14806,7 +14806,7 @@
     "element": "Water",
     "placements": 1,
     "attackType": "Multi",
-    "obtainment": "Shark Withered FoxY Evolution",
+    "obtainment": "Shark Withered Foxy Evolution",
     "levels": [
       {
         "level": 1,

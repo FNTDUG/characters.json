@@ -355,9 +355,9 @@
       "Frostmancer Withered Bonnie": "Spectacular stall unit with varied AOE Slow (0%-45%, varies with RNG) and Single target 1s Stun (7s CD)."
     },
     "starter": {
-      "Golden Freddy": "Great boosting in Endless (up to +30% damage per Golden Freddy), good DPS, and great stall with 20% Slow on attack and Knockback with his Active."
-      "Endo 01": "A good choice for a Starter as he gives all units in his range +15% Damage and -3% CD, making him useful throughout the whole match."
-      "Rockin Bonnie": "A great choice for a Starter as he gives all units in his range -11% CD, making him quite throughout the match"
+      "Golden Freddy": "Great boosting in Endless (up to +30% damage per Golden Freddy), good DPS, and great stall with 20% Slow on attack and Knockback with his Active.",
+      "Endo 01": "A good choice for a Starter as he gives all units in his range +15% Damage and -3% CD, making him useful throughout the whole match.",
+      "Rockin Bonnie": "A great choice for a Starter as he gives all units in his range -11% CD, making him quite throughout the match.",
       "Undead Chica": "Creates a steady stream of strong Summons.",
       "Bonnie": "High range Starter that can be used as a booster due to being Electric with high placements, effectively giving all nearby units -4% CD if all Bonnies are placed near each other. Spectacular in Grind Metas",
       "Foxy": "Fair DPS Starter that can be used as a booster due to being Water with high placements, effectively giving all nearby units +15% Range if all Foxies are placed near each other. Spectacular in Water focused teams."

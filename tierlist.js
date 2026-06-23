@@ -223,7 +223,7 @@
       "a": [
         "UFO Tangle",
         "Frosty the Snowcake",
-        "Party Glock Freddy",
+        "Party Glock Freddy BUG",
         "Hero PaperPals",
         "PaperPals",
         "JJ",
@@ -244,7 +244,7 @@
       
       "c": [
       "Bidybabs",
-      "Party Packer Cupcake",
+      "Party Packer Cupcake BUG",
       "No. 1 Crate",
       "Bucket Bob",
       "Pan Stan",
@@ -304,7 +304,7 @@
       "c": [
       "Hacker King RWQFSFASXC",
         "Phantom Mangle",
-        "Party Packer Cupcake",
+        "Party Packer Cupcake BUG",
         "Headless Horseman Mangle",
         "Lich Shadow Bonnie",
         "Shadow Knight Freddy",

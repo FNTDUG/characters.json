@@ -140,7 +140,7 @@
         "Phantom Mangle DOWN",
         "Mecha Cupcake",
         "Endo 02 BUG",
-        "Rockstar Chica UP ",
+        "Rockstar Chica UP",
         "Landslide Funtime Foxy",
         "Withered Golden Freddy",
         "Turkey Chica", 
@@ -328,6 +328,7 @@
         "Exotic Butters",
         "Mother Nature Ballora",
         "Lefty",
+        "Rockstar Chica",
         "Foxy Fighters"
       ],
       "b": [

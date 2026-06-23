@@ -32,18 +32,18 @@
         "Amalgam UP",
         "Fathomless Withered Foxy NEW",
         "Blighted Endo Freddy",
-        "Valkyrie Chica",
+        "Valkyrie Chica UP",
         "Sole Survivor Withered Bonnie NEW",
         "Nightmare Fredbear DOWN",
-        "Hag Withered Chica",
+        "Hag Withered Chica DOWN",
         "Michael Afton UP",
         "Molten Freddy UP",
-        "Shadow Bonnie",
+        "Shadow Bonnie DOWN",
         "Goodnight Plushtime",
         "Shark Withered Foxy",
         "Nightmare Shadow Bonnie",
         "Starfarer Princess",
-        "Lolbit",
+        "Lolbit UP",
         "Henry Emily NEW",
         "Chipper",
         "Nightmarionne",
@@ -62,10 +62,11 @@
         "Fallen Angel Nightmarionne NEW",
         "Ignited Burst Withered Freddy",
         "Mother Nature Ballora",
-        "Showtime Freddy",
+        "Showtime Freddy UP",
         "Springtrap",
         "Old Man Consequences",
         "Music Man NEW",
+        "Funtime Bonnie DOWN",
         "Thanatos DOWN"
       ],
       "a": [
@@ -121,6 +122,7 @@
         "Withered Freddy"
       ],
       "b": [
+        "Scrap Baby NEW",
         "Masked Bullies",
         "Toy Chica",
         "Nightmare Foxy",
@@ -143,7 +145,7 @@
         "Sweetheart Toy Foxy",
         "Conductor Toy Freddy",
         "Time Lord Withered Freddy",
-        "Radioactive Phantom Freddy",
+        "Radioactive Phantom Freddy NEW",
         "Phantom Foxy",
         "Nightmare Mangle",
         "Rockstar Bonnie",
@@ -193,6 +195,7 @@
         "Chica"
       ]
     },
+    
     "starter": {
       "ss": [
         "Golden Freddy",
@@ -214,7 +217,7 @@
         "Hor Hor Freddy"
       ],
       "a": [
-        'UFO Tangle",
+        "UFO Tangle",
         "Frosty the Snowcake",
         "Party Glock Freddy",
         "Hero PaperPals",
@@ -228,7 +231,7 @@
       "Phantom Chica",
       "Nightmare Cupcake",
       "Santa Freddy",
-      "Nightmare Freddy"
+      "Nightmare Freddy",
       "Soul Prisoner Foxy",
       "Toy Bonnie",
       "Jack'O Bonnie",
@@ -340,13 +343,13 @@
   },
   "msg": {
     "all": {
-      "Astral Bonnie": "Godlike AOE damage and insane passives. Best in the game.",
-      "Dragon Endo 01": "Highest single-target burst. Essential endgame pick.",
-      "Golden Freddy": "Unmatched support and damage hybrid. Must-have carry.",
-      "Frozen King Foxy": "Elite CC and damage combo. Top-tier in every mode.",
-      "Frostmancer Withered Bonnie": "Best slow and DPS synergy. Endgame staple.",
-      "Stormbound Chica": "Add your note here.",
-      "Kronos Endo Freddy": "Add your note here."
+      "Astral Bonnie": "Incredible DPS, mild support, and fits spectacularly into Light/Dark focused teams.",
+      "Deep Sea Calamity Endo": "The best staller by far, having 15% AOE Slow per placement (30% per person bringing him), 1.8s Stun on attack, and Knockback when enemies get too close. Additionally is a good supporting DPS and has an absurdly large 245° Cone attack.",
+      "Kronos Endo Freddy": "Great AOE DPS and absurd Stun potential when his passives are maxed out. Additionally provides decent boosts to Rust units, minor boosts to non-Rust units, and can reapply debuffs to enemies.",
+      "Frozen King Foxy": "Great choice as a supporting unit in most teams with 25% AOE Slow and 20% Wither for Water element units.",
+      "Dragon Endo 01": "Great DPS and DoT, additionally increasing the DoT for other Fire units and having global DoT with his Active.",
+      "Golden Freddy": "Great boosting in Endless (up to +30% damage per Golden Freddy), good DPS, and great stall with 20% Slow on attack and Knockback with his Active.",
+      "Frostmancer Withered Bonnie": "Spectacular stall unit with varied AOE Slow (0%-45%, varies with RNG) and Single target 1s Stun (7s CD)."
     },
     "starter": {
       "Golden Freddy": "Add your note here."

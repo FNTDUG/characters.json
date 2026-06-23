@@ -15255,7 +15255,7 @@
     "element": "Light",
     "placements": 1,
     "attackType": "Cone",
-    "obtainment": "",
+    "obtainment": "Quest Shop",
     "levels": [
       {
         "level": 1,
@@ -15337,7 +15337,7 @@
       },
       {
         "title": "Star of the Show",
-        "text": "+50% crit rate and +50% crit damage. If there is a unit with a higher damage stat in range, gain +25% crit damage and +20% damage. When another unit in range crits, uff this unit's crit rate by +1% (Max 75%). Crit rate over 100% converts directly into crit damage"
+        "text": "+50% crit rate and +50% crit damage. If there is a unit with a higher damage stat in range, gain +25% crit damage and +20% damage. When another unit in range crits, buff this unit's crit rate by +1% (Max 75%). Crit rate over 100% converts directly into crit damage"
       }
     ]
   },

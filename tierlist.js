@@ -242,7 +242,7 @@
       "Bidybabs",
       "Party Packer Cupcake",
       "No. 1 Crate",
-      "Bucket Bob"
+      "Bucket Bob",
       "Pan Stan",
       "Phantom Bonnie"
       ]
@@ -287,7 +287,7 @@
         "Frozen King Foxy",
         "Springtrap",
         "Funtime Chica",
-        "Nightmare Chica,
+        "Nightmare Chica",
         "Overgrown Foxy",
         "Helpy",
         "Cupcake",
@@ -299,7 +299,7 @@
       ],
       "c": [
       "Hacker King RWQFSFASXC",
-        "Phantom Mangle"
+        "Phantom Mangle",
         "Party Packer Cupcake",
         "Headless Horseman Mangle",
         "Lich Shadow Bonnie",
@@ -325,7 +325,7 @@
         "Exotic Butters",
         "Mother Nature Ballora",
         "Lefty",
-        "Foxy Fighters",
+        "Foxy Fighters"
       ],
       "b": [
         "Landslide Funtime Foxy",

@@ -1,7 +1,7 @@
 (function() {
   if (document.getElementById('tlRoot')) return;
 
-  var cfg = {
+ var cfg = {
   "lists": {
     "all": {
       "ss": [
@@ -104,7 +104,7 @@
         "Shadow Freddy UP",
         "Tidal Wailer Crying Child",
         "Roadkill Phantom Foxy NEW",
-        "Breadbear", 
+        "Breadbear",
         "Harlequin Mangle",
         "Freddles",
         "Phantom Bonnie UP",
@@ -144,7 +144,7 @@
         "Rockstar Chica UP",
         "Landslide Funtime Foxy",
         "Withered Golden Freddy",
-        "Turkey Chica", 
+        "Turkey Chica",
         "Sweetheart Toy Foxy",
         "Conductor Toy Freddy",
         "Time Lord Withered Freddy",
@@ -159,7 +159,7 @@
         "PaperPals",
         "Cloaked Sparky",
         "Hor Hor Freddy",
-        "Minireenas", 
+        "Minireenas",
         "Freddy Fastbear DOWN",
         "Jack'O Bonnie DOWN",
         "Puppet's Alliance",
@@ -490,7 +490,9 @@
     '.tl-card{border-radius:10px;padding:2px;border:none;flex-shrink:0;width:72px;height:72px;cursor:default;position:relative;box-sizing:border-box}',
     '.tl-cin{width:100%;height:100%;border-radius:8px;overflow:hidden;background:rgba(34,34,34,0.85)}',
     '.tl-cin img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;pointer-events:none}',
-    '#tlTip{position:absolute;font-family:"Press Start 2P",monospace;font-size:8px;line-height:1.7;background:rgba(6,3,18,0.97);border:2px solid #681f62;color:#fff;padding:9px 12px;border-radius:6px;text-align:center;pointer-events:none;opacity:0;transition:opacity .18s;z-index:10000;max-width:200px;word-break:break-word;display:none}',
+    '#tlTip{position:absolute;pointer-events:none;opacity:0;transition:opacity .18s;z-index:10000;display:none;padding:2px;border-radius:8px}',
+    '#tlTipInner{font-family:"Press Start 2P",monospace;font-size:8px;line-height:1.7;background:rgba(6,3,18,0.97);color:#fff;padding:9px 12px;border-radius:6px;text-align:center;max-width:196px;word-break:normal;overflow-wrap:break-word}',
+    '.tl-tip-note{margin-top:6px;border-top:1px solid rgba(255,255,255,0.2);padding-top:6px;display:none}',
     '.tl-msg{padding:24px;text-align:center;color:rgba(255,255,255,.35);font-size:12px;width:100%}',
 
     '#tlNote{padding:10px 18px;font-family:Press Start 2P,monospace;font-size:10px;line-height:2;color:rgba(246,155,85,0.9);background:rgba(3,3,10,0.97);border-bottom:1px solid rgba(246,155,85,1);display:none}',
@@ -522,7 +524,7 @@
   var modeDiv = document.createElement('div');
   modeDiv.className = 'tl-mode';
   modeDiv.id = 'tlModes';
-  [['all','All'],['starter','Starter'],['support','Support'],['stun','Stun']].forEach(function(p) {
+  [['all','Every Unit'],['starter','Starter'],['support','Support'],['stun','Stun']].forEach(function(p) {
     var b = document.createElement('button');
     b.className = 'tl-mb' + (p[0] === 'all' ? ' on' : '');
     b.setAttribute('data-m', p[0]);
@@ -586,6 +588,14 @@
 
   var floatTip = document.createElement('div');
   floatTip.id = 'tlTip';
+  var tipInner = document.createElement('div');
+  tipInner.id = 'tlTipInner';
+  var tipName = document.createElement('div');
+  var tipNote = document.createElement('div');
+  tipNote.className = 'tl-tip-note';
+  tipInner.appendChild(tipName);
+  tipInner.appendChild(tipNote);
+  floatTip.appendChild(tipInner);
   document.body.appendChild(floatTip);
 
   function makeCard(raw_name, isSSZone) {
@@ -616,27 +626,38 @@
     };
     inn.appendChild(img);
     card.appendChild(inn);
-    if (isSSZone) {
-      var tip = getModeMsg()[name];
-      if (tip) {
-        card.addEventListener('mouseenter', function() {
-          var r  = card.getBoundingClientRect();
-          var sy = window.pageYOffset || document.documentElement.scrollTop;
-          var sx = window.pageXOffset || document.documentElement.scrollLeft;
-          floatTip.textContent = tip;
-          floatTip.style.display = 'block';
-          floatTip.style.opacity = '0';
-          var tw = floatTip.offsetWidth;
-          floatTip.style.left = (r.left + sx + r.width / 2 - tw / 2) + 'px';
-          floatTip.style.top  = (r.bottom + sy + 6) + 'px';
-          floatTip.style.opacity = '1';
-        });
-        card.addEventListener('mouseleave', function() {
-          floatTip.style.opacity = '0';
-          floatTip.style.display = 'none';
-        });
+    var tipBg = rar === 'shiny' ? (SHINY[name] || SHINY_DEF) : (RARITY[rar] || '#aaaaaa');
+    card.addEventListener('mouseenter', function() {
+      var note = isSSZone ? getModeMsg()[name] : null;
+      var r  = card.getBoundingClientRect();
+      var sy = window.pageYOffset || document.documentElement.scrollTop;
+      var sx = window.pageXOffset || document.documentElement.scrollLeft;
+      floatTip.style.background = tipBg;
+      if (rar === 'shiny') {
+        floatTip.style.backgroundSize = '200% 200%';
+        floatTip.style.animation = 'shinyLoop 6s linear infinite';
+      } else {
+        floatTip.style.backgroundSize = '';
+        floatTip.style.animation = '';
       }
-    }
+      tipName.textContent = name;
+      if (note) {
+        tipNote.textContent = note;
+        tipNote.style.display = 'block';
+      } else {
+        tipNote.style.display = 'none';
+      }
+      floatTip.style.display = 'block';
+      floatTip.style.opacity = '0';
+      var tw = floatTip.offsetWidth;
+      floatTip.style.left = (r.left + sx + r.width / 2 - tw / 2) + 'px';
+      floatTip.style.top  = (r.bottom + sy + 6) + 'px';
+      floatTip.style.opacity = '1';
+    });
+    card.addEventListener('mouseleave', function() {
+      floatTip.style.opacity = '0';
+      floatTip.style.display = 'none';
+    });
     statuses.forEach(function(tag, i) {
       if (i >= 4) return;
       var b = document.createElement('img');

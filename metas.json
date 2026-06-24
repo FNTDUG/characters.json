@@ -38,6 +38,16 @@
     ]
   },
 
+  "multi": {
+    "siteName": "FNTD USER GUIDE",
+    "pages": [
+      {
+        "pageTitle": "Multiplayer",
+        "order": ["Player 1", "Player 2", "Player 3", "Player 4"]
+      }
+  },
+
+
   "metas": {
     "Story Nightmare": {
       "units": [
@@ -217,6 +227,46 @@
         { "name": "El Chip", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Shepherd Fredbear", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Landslide Funtime Foxy", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
+      ]
+    },
+      "Player 1": {
+      "units": [
+        { "name": "Golden Freddy", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Psychic Friend Fredbear", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "", "caption": "" },
+        { "name": "Shark Withered Foxy", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
+      ]
+    },
+      "Player 2": {
+      "units": [
+        { "name": "Golden Freddy", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Starfarer Princess", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" },
+        { "name": "Shark Withered Foxy", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
+      ]
+    },
+      "Player 3": {
+      "units": [
+        { "name": "Golden Freddy", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Golden Cupcake", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" },
+        { "name": "Shark Withered Foxy", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
+      ]
+    },
+      "Player 4": {
+      "units": [
+        { "name": "Golden Freddy", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Spring Duo", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Lolbit", "label": "", "byte": "UFO", "enchant": "Vengenace", "replacement": "", "caption": "" },
+        { "name": "Shark Withered Foxy", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
       ]
     }
   }

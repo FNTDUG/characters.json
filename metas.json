@@ -21,19 +21,59 @@
 
   "seamless": {
     "siteName":  "FNTD USER GUIDE",
-    "pageTitle": "GRIND METAS",
-    "order":     ["Endless Farthest Meta"]
+    "pageTitle": "FARTHEST METAS",
+    "order":     ["Story Nightmare"]
   },
 
   "metas": {
-    "Endless Farthest Meta": {
+    "Story Nightmare": {
       "units": [
-        { "name": "Golden Freddy",               "label": "$1K", "byte": "The Box",    "enchant": "Vengeance", "replacement": "Spring Duo", "caption": "" },
-        { "name": "Astral Bonnie",               "label": "",    "byte": "Boss Drain", "enchant": "Phantom",   "replacement": "",           "caption": "" },
-        { "name": "Dragon Endo 01",              "label": "",    "byte": "Reaper",     "enchant": "",          "replacement": "",           "caption": "" },
-        { "name": "Frostmancer Withered Bonnie", "label": "",    "byte": "The Fan",    "enchant": "",          "replacement": "",           "caption": "" },
-        { "name": "Golden Cupcake",              "label": "",    "byte": "UFO",        "enchant": "",          "replacement": "",           "caption": "" },
-        { "name": "Kronos Endo Freddy",          "label": "",    "byte": "KABOOM!",    "enchant": "",          "replacement": "",           "caption": "" }
+        { "name": "Undead Chica", "label": "$600", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Phantom Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "", "caption": "" },
+        { "name": "War Machine Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
+        { "name": "Movie Director Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" }
+      ]
+    },
+    "Endless 6": {
+      "units": [
+        { "name": "Endo 01", "label": "$1k", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
+        { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Amalgam", "caption": "" },
+        { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "El Chip", "caption": "" }
+      ]
+    },
+    "Event Endless": {
+      "units": [
+        { "name": "Undead Chica", "label": "$600", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Gravelord Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
+        { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Yenndo", "caption": "" },
+        { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "El Chip", "caption": "" }
+      ]
+    },
+    "Event Story Nightmare": {
+      "units": [
+        { "name": "Undead Chica", "label": "$600", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Phantom Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "", "caption": "" },
+        { "name": "War Machine Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
+        { "name": "Movie Director Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" }
+      ]
+    },
+    "Boss Raids": {
+      "units": [
+        { "name": "Golden Freddy", "label": "$1k", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Gravelord Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "Amalgam", "caption": "" },
+        { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
+        { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "El Chip", "caption": "" }
       ]
     }
   }

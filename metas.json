@@ -34,17 +34,11 @@
       {
         "pageTitle": "ELEMENT METAS",
         "order": ["Water 1st", "Rust 2nd", "Dark 3rd", "Light 4th", "Neutral 5th", "Fire 5th", "Electricity 7th", "Nature 8th"]
-      }
-    ]
-  },
-
-  "multi": {
-    "siteName": "FNTD USER GUIDE",
-    "pages": [
+      },
       {
-        "pageTitle": "Multiplayer",
+        "pageTitle": "MULTIPLAYER",
         "order": ["Player 1", "Player 2", "Player 3", "Player 4"]
-      }
+      } 
     ]
   },
 

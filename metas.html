@@ -1,26 +1,9 @@
-/*
-  ================================================================
-  META COMPOSITION ENGINE  —  metas.html
-  ================================================================
-  INDIVIDUAL META (unchanged):
-    <div class="metaMount" data-meta="Endless Farthest Meta"></div>
-
-  SEAMLESS MODE (all metas stacked, one container):
-    <div class="metaMount" data-seamless></div>
-
-  Include the script once per page:
-    <script src="https://raw.githack.com/FNTDUG/characters.json/refs/heads/main/metas.html"></script>
-
-  ALL config lives in metas.json — no script edits needed.
-  ================================================================
-*/
 (function () {
   'use strict';
 
   var METAS_URL = 'https://raw.githubusercontent.com/FNTDUG/characters.json/refs/heads/main/metas.json';
   var UNITS_URL = 'https://raw.githubusercontent.com/FNTDUG/characters.json/refs/heads/main/json';
 
-  /* ---- one-time: Google Fonts ---- */
   if (!document.getElementById('metaGFonts')) {
     var lnk = document.createElement('link');
     lnk.id = 'metaGFonts'; lnk.rel = 'stylesheet';
@@ -28,19 +11,16 @@
     (document.head || document.documentElement).appendChild(lnk);
   }
 
-  /* ---- one-time: viewport ---- */
   if (!document.querySelector('meta[name="viewport"]')) {
     var vpm = document.createElement('meta');
     vpm.name = 'viewport'; vpm.content = 'width=device-width, initial-scale=1';
     (document.head || document.documentElement).appendChild(vpm);
   }
 
-  /* ---- one-time: CSS ---- */
   if (!document.getElementById('metaCSS')) {
     var CSS = [
       '@keyframes metaShiny{0%{background-position:0% 50%}100%{background-position:200% 50%}}',
 
-      /* === INDIVIDUAL META === */
       '.metaRoot{width:100vw;position:relative;left:50%;transform:translateX(-50%);' +
         'background-size:cover;background-position:center;background-repeat:no-repeat;' +
         'color:#fff;font-family:"Press Start 2P",monospace;box-sizing:border-box;' +
@@ -61,17 +41,14 @@
       '.metaSiteUrl{font-family:"Press Start 2P",monospace;font-size:clamp(8px,1.1vw,13px);' +
         'color:#fff;text-align:center;text-shadow:0 1px 6px rgba(0,0,0,0.95)}',
 
-      /* === SEAMLESS MODE === */
-      /* no horizontal padding on root — children handle their own side spacing */
       '.seamlessRoot{width:100vw;position:relative;left:50%;transform:translateX(-50%);' +
         'background-size:cover;background-position:center;background-repeat:no-repeat;' +
         'color:#fff;font-family:"Press Start 2P",monospace;box-sizing:border-box;' +
         'padding:clamp(12px,2vw,24px) 0 clamp(14px,2.5vw,28px);' +
         'border:1px solid rgba(246,155,85,1);margin-bottom:5px;overflow:hidden}',
       '.seamlessRoot *{box-sizing:border-box}',
-      /* logo absolutely left; site name truly centered across full width */
       '.seamlessHeader{position:relative;display:flex;align-items:center;justify-content:center;' +
-        'padding:0 clamp(8px,1.5vw,16px);margin-bottom:6px;' +
+        'padding:0 clamp(8px,1.5vw,16px);margin-bottom:4px;' +
         'min-height:clamp(46px,7vw,80px)}',
       '.seamlessLogo{position:absolute;left:clamp(8px,1.5vw,16px);top:50%;' +
         'transform:translateY(-50%);' +
@@ -84,26 +61,22 @@
         'font-size:clamp(7px,1.1vw,13px);color:#fff;text-align:center;' +
         'padding:0 clamp(8px,1.5vw,16px);' +
         'margin-bottom:clamp(6px,1vw,12px);text-shadow:0 1px 4px rgba(0,0,0,0.9)}',
-      /* page title: full width naturally since root has no horiz padding */
       '.seamlessPageTitle{font-family:"Press Start 2P",monospace;' +
         'font-size:clamp(16px,3.2vw,40px);color:#00e5ff;text-align:center;' +
         'background:rgba(0,180,230,0.12);' +
         'padding:clamp(6px,1vw,12px) clamp(8px,1.5vw,16px);' +
         'margin:0 0 clamp(4px,0.8vw,8px);' +
         'text-shadow:0 0 18px rgba(0,220,255,0.55),0 2px 8px rgba(0,0,0,0.8)}',
-      /* sections get the side padding */
       '.seamlessSection{padding:0 clamp(8px,1.5vw,16px);margin-top:clamp(6px,1.2vw,14px)}',
       '.seamlessSectionTitle{font-family:"Press Start 2P",monospace;' +
         'font-size:clamp(14px,2.6vw,34px);color:#fff;text-align:center;' +
         'margin:0 0 clamp(4px,0.8vw,10px);' +
         'text-shadow:0 2px 10px rgba(0,0,0,0.95),0 0 2px rgba(0,0,0,1)}',
-      /* seamless clutter button: centered, bigger on desktop */
       '.seamlessControls{display:flex;justify-content:center;' +
         'padding:clamp(4px,0.8vw,8px) clamp(8px,1.5vw,16px) clamp(6px,1vw,10px)}',
       '.seamlessControls .meta-clutter-btn{font-size:clamp(7px,1vw,12px);' +
         'padding:clamp(4px,0.6vw,8px) clamp(8px,1.2vw,16px)}',
 
-      /* === CARDS (shared) === */
       '.meta-card{width:100%;aspect-ratio:1/1;' +
         'border-radius:12px;padding:3px;position:relative;cursor:default}',
       '.meta-card.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
@@ -111,36 +84,30 @@
         'border-radius:9px;overflow:hidden;background:rgba(34,34,34,0.85)}',
       '.meta-card-img{width:100%;height:100%;object-fit:cover;object-position:center top;' +
         'display:block;pointer-events:none}',
-      /* byte — top-right */
       '.meta-byte{position:absolute;top:2px;right:2px;z-index:2;aspect-ratio:1/1;' +
         'width:clamp(16px,28%,54px);border-radius:9px;padding:2px;pointer-events:none}',
       '.meta-byte.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
       '.meta-byte-inner{width:100%;height:100%;border-radius:7px;overflow:hidden;background:rgba(34,34,34,0.85)}',
       '.meta-byte-inner img{width:100%;height:100%;object-fit:cover;display:block}',
-      /* enchant — top-left */
       '.meta-enchant{position:absolute;top:2px;left:2px;z-index:2;aspect-ratio:1/1;' +
         'width:clamp(14px,24%,48px);border-radius:8px;padding:2px;pointer-events:none}',
       '.meta-enchant-inner{width:100%;height:100%;border-radius:6px;overflow:hidden;background:rgba(34,34,34,0.85)}',
       '.meta-enchant-inner img{width:100%;height:100%;object-fit:cover;display:block}',
-      /* replacement — bottom-right */
       '.meta-replacement{position:absolute;bottom:2px;right:2px;z-index:2;aspect-ratio:1/1;' +
         'width:clamp(16px,28%,54px);border-radius:9px;padding:2px;pointer-events:none}',
       '.meta-replacement.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
       '.meta-replacement-inner{width:100%;height:100%;border-radius:7px;overflow:hidden;background:rgba(34,34,34,0.85)}',
       '.meta-replacement-inner img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}',
-      /* label — bottom-left */
       '.meta-label{position:absolute;bottom:2px;left:2px;padding:2px;' +
         'border-radius:5px;pointer-events:none;z-index:2}',
       '.meta-label-inner{background:rgba(0,0,0,0.88);color:#39ff14;' +
         'font-family:"Press Start 2P",monospace;' +
         'font-size:clamp(5px,0.9vw,9px);padding:3px 6px;border-radius:3px;display:block}',
-      /* slot + caption */
       '.meta-slot{display:flex;flex-direction:column;align-items:center;gap:clamp(3px,0.6vw,7px)}',
       '.meta-caption{font-family:"Press Start 2P",monospace;font-size:clamp(5px,0.85vw,10px);' +
         'color:#fff;text-align:center;width:100%;line-height:1.5;' +
         'word-break:break-word;text-shadow:0 1px 4px rgba(0,0,0,0.9);user-select:none}',
 
-      /* === CLUTTER TOGGLE === */
       '.metaControls{display:flex;justify-content:flex-end;margin-bottom:6px}',
       '.meta-clutter-btn{font-family:"Press Start 2P",monospace;font-size:7px;' +
         'padding:4px 8px;background:rgba(0,0,0,0.65);' +
@@ -148,13 +115,11 @@
         'border-radius:4px;cursor:pointer;user-select:none;transition:opacity .15s,border-color .15s,color .15s}',
       '.meta-clutter-btn:hover{background:rgba(246,155,85,0.12)}',
       '.meta-clutter-btn.cltr-off{border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.3)}',
-      /* hide all four elements when clutter is off */
       '.meta-clutter-off .meta-byte,' +
       '.meta-clutter-off .meta-enchant,' +
       '.meta-clutter-off .meta-replacement,' +
       '.meta-clutter-off .meta-label{display:none!important}',
 
-      /* === TOOLTIP === */
       '#metaTip{position:fixed;pointer-events:none;opacity:0;transition:opacity .18s;' +
         'z-index:10000;display:none;padding:2px;border-radius:8px}',
       '#metaTipInner{font-family:"Press Start 2P",monospace;font-size:10px;line-height:1.8;' +
@@ -169,13 +134,15 @@
       '.mt-icon-in img{width:100%;height:100%;object-fit:cover;display:block}',
       '.mt-text{font-size:9.5px;opacity:0.9;line-height:1.5}',
 
-      /* === MOBILE === */
       '@media(max-width:900px){' +
         '.metaRoot{padding-left:4px;padding-right:4px}' +
         '.metaRow{gap:3px}' +
         '.seamlessSection .metaRow{gap:3px}' +
-        /* keep seamless clutter button small on mobile */
         '.seamlessControls .meta-clutter-btn{font-size:7px;padding:4px 8px}' +
+        '.seamlessHeader{min-height:clamp(30px,5vw,46px);margin-bottom:2px}' +
+        '.seamlessLogo{width:clamp(30px,5vw,46px);height:clamp(30px,5vw,46px);left:clamp(4px,1vw,8px)}' +
+        '.seamlessSiteName{font-size:clamp(20px,4.5vw,42px)}' +
+        '.seamlessSiteUrl{margin-bottom:3px}' +
         '.meta-card{padding:2px;border-radius:8px}' +
         '.meta-card-inner{border-radius:6px}' +
         '.meta-byte{top:2px;right:2px;padding:1px;border-radius:6px}' +
@@ -204,7 +171,6 @@
     (document.head || document.documentElement).appendChild(styleEl);
   }
 
-  /* ---- one-time: shared tooltip ---- */
   var tip, tipInner;
   if (!document.getElementById('metaTip')) {
     tip = document.createElement('div'); tip.id = 'metaTip';
@@ -216,7 +182,6 @@
     tipInner = document.getElementById('metaTipInner');
   }
 
-  /* ---- rarity gradients ---- */
   var RARITY = {
     uncommon:  'linear-gradient(90deg,#5CFF4D,#3FFF8F)',
     rare:      'linear-gradient(90deg,#58A6FF,#1C3AA0)',
@@ -247,11 +212,9 @@
     return RARITY[rar] || '#888888';
   }
 
-  /* ---- shared unit data ---- */
   var unitMap = {};
   var unitMapReady = false;
 
-  /* ---- tooltip ---- */
   function showTip(card, unitCfg, u, META_CFG) {
     var rar = (u.rarity || '').toLowerCase(), sh = rar === 'shiny';
     tip.style.background     = getRarityBg(unitCfg.name, rar);
@@ -311,9 +274,6 @@
 
   function hideTip() { tip.style.opacity = '0'; tip.style.display = 'none'; }
 
-  /* ================================================================
-     SHARED: clutter button
-  ================================================================ */
   function makeClutterBtn(container) {
     var on = true;
     var btn = document.createElement('button');
@@ -327,11 +287,6 @@
     return btn;
   }
 
-  /* ================================================================
-     SHARED: build card row
-     Fills `row` element with slot/card/overlay elements.
-     Returns a renderCards() callback for re-rendering after unitMap loads.
-  ================================================================ */
   function buildCardRow(row, META_CFG) {
     function renderCards() {
       row.innerHTML = '';
@@ -352,7 +307,6 @@
         img.onerror = function () { this.style.cssText = 'width:100%;height:100%;display:block'; this.removeAttribute('src'); };
         inner.appendChild(img);
 
-        /* enchant — top-left */
         var enchData = META_CFG.enchants[unitCfg.enchant];
         if (enchData) {
           var eW = document.createElement('div'); eW.className = 'meta-enchant'; eW.style.background = enchData.color;
@@ -361,7 +315,6 @@
           eI.appendChild(eM); eW.appendChild(eI); inner.appendChild(eW);
         }
 
-        /* byte — top-right */
         var byteData = META_CFG.bytes[unitCfg.byte];
         if (byteData) {
           var bR = (byteData.rarity || '').toLowerCase(), bSh = bR === 'shiny';
@@ -373,7 +326,6 @@
           bI.appendChild(bM); bW.appendChild(bI); inner.appendChild(bW);
         }
 
-        /* replacement — bottom-right */
         if (unitCfg.replacement) {
           var rU = unitMap[unitCfg.replacement] || {}, rR = (rU.rarity || '').toLowerCase(), rSh = rR === 'shiny';
           var rW = document.createElement('div');
@@ -384,7 +336,6 @@
           rI.appendChild(rM); rW.appendChild(rI); inner.appendChild(rW);
         }
 
-        /* label — bottom-left */
         if (unitCfg.label) {
           var lO = document.createElement('div');
           lO.className = 'meta-label' + (isShiny ? ' meta-shiny' : ''); lO.style.background = bg;
@@ -414,9 +365,6 @@
     return renderCards;
   }
 
-  /* ================================================================
-     INDIVIDUAL META RENDERER (unchanged from user's perspective)
-  ================================================================ */
   function renderMeta(mountEl, META_CFG) {
     var root = document.createElement('div');
     root.className = 'metaRoot';
@@ -426,7 +374,6 @@
     titleEl.className = 'metaTitle'; titleEl.textContent = META_CFG.title;
     root.appendChild(titleEl);
 
-    /* clutter button */
     var controls = document.createElement('div'); controls.className = 'metaControls';
     controls.appendChild(makeClutterBtn(root));
     root.appendChild(controls);
@@ -447,27 +394,15 @@
     return buildCardRow(row, META_CFG);
   }
 
-  /* ================================================================
-     SEAMLESS RENDERER
-     Activated by <div class="metaMount" data-seamless></div>
-     Config in metas.json "seamless" key:
-       {
-         "siteName":  "FNTD USER GUIDE",
-         "pageTitle": "GRIND METAS",
-         "pageNote":  "...",
-         "order":     ["Story","Endless",...]   ← optional, defaults to all metas
-       }
-  ================================================================ */
   function renderSeamless(mountEl, metasData) {
     var shared   = metasData.shared   || {};
     var seamCfg  = metasData.seamless || {};
-    if (seamCfg === true) seamCfg = {};   /* support "seamless": true shorthand */
+    if (seamCfg === true) seamCfg = {};
 
     var root = document.createElement('div');
     root.className = 'seamlessRoot';
     root.style.backgroundImage = 'url(' + (shared.background || '') + ')';
 
-    /* header: logo + site name */
     var header = document.createElement('div'); header.className = 'seamlessHeader';
     if (shared.logoUrl) {
       var logo = document.createElement('img'); logo.className = 'seamlessLogo'; logo.src = shared.logoUrl; logo.alt = '';
@@ -478,30 +413,25 @@
     header.appendChild(siteName);
     root.appendChild(header);
 
-    /* site URL */
     if (shared.siteUrl) {
       var siteUrlEl = document.createElement('div'); siteUrlEl.className = 'seamlessSiteUrl';
       siteUrlEl.textContent = shared.siteUrl; root.appendChild(siteUrlEl);
     }
 
-    /* page title */
     if (seamCfg.pageTitle) {
       var ptEl = document.createElement('div'); ptEl.className = 'seamlessPageTitle';
       ptEl.textContent = seamCfg.pageTitle; root.appendChild(ptEl);
     }
 
-    /* page note */
     if (seamCfg.pageNote) {
       var pnEl = document.createElement('div'); pnEl.className = 'seamlessPageNote';
       pnEl.textContent = seamCfg.pageNote; root.appendChild(pnEl);
     }
 
-    /* clutter button — centered, bigger on desktop */
     var controls = document.createElement('div'); controls.className = 'seamlessControls';
     controls.appendChild(makeClutterBtn(root));
     root.appendChild(controls);
 
-    /* meta sections */
     var order = seamCfg.order || Object.keys(metasData.metas || {});
     var reRenders = [];
 
@@ -532,9 +462,6 @@
     return reRenders;
   }
 
-  /* ================================================================
-     FETCH + RENDER PIPELINE
-  ================================================================ */
   var metasData       = null;
   var activeReRenders = [];
 
@@ -546,14 +473,12 @@
       if (mountEl.getAttribute('data-rendered')) return;
       mountEl.setAttribute('data-rendered', '1');
 
-      /* seamless mount */
       if (mountEl.hasAttribute('data-seamless')) {
         var rrs = renderSeamless(mountEl, metasData || { shared: {}, metas: {}, seamless: {} });
         rrs.forEach(function (fn) { activeReRenders.push(fn); if (unitMapReady) fn(); });
         return;
       }
 
-      /* individual meta mount */
       var name = mountEl.getAttribute('data-meta');
       var cfg  = metasData && metasData.metas && metasData.metas[name];
       if (!cfg) {
@@ -578,7 +503,6 @@
     });
   }
 
-  /* fetch metas.json */
   var xM = new XMLHttpRequest();
   xM.open('GET', METAS_URL, true);
   xM.onload = function () {
@@ -589,7 +513,6 @@
   xM.onerror = function () { metasData = { shared: {}, metas: {} }; renderAllMounts(); };
   xM.send();
 
-  /* fetch characters.json (parallel) */
   var xC = new XMLHttpRequest();
   xC.open('GET', UNITS_URL, true);
   xC.onload = function () {

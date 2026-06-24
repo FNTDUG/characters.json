@@ -22,7 +22,7 @@
   "metas": {
     "Endless Farthest Meta": {
       "units": [
-        { "name": "Golden Freddy",               "label": "$1K", "byte": "The Box",    "enchant": "Vengeance", "replacement": "Spring Duo", "caption": "" },
+        { "name": "Golden Freddy",               "label": "$1K", "byte": "The Box",    "enchant": "Vengeance", "replacement": "",           "caption": "" },
         { "name": "Astral Bonnie",               "label": "",    "byte": "Boss Drain", "enchant": "Phantom",   "replacement": "",           "caption": "" },
         { "name": "Dragon Endo 01",              "label": "",    "byte": "Reaper",     "enchant": "",          "replacement": "",           "caption": "" },
         { "name": "Frostmancer Withered Bonnie", "label": "",    "byte": "The Fan",    "enchant": "",          "replacement": "",           "caption": "" },

@@ -1,0 +1,34 @@
+{
+  "shared": {
+    "logoUrl":    "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/circle_done-high-hapj13.png?enable-io=true&width=100",
+    "siteUrl":    "www.fntduserguide.com",
+    "background": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/carbon-fiber-background-wallpapers-1440x900-high.jpg?enable-io=true&width=1252",
+
+    "bytes": {
+      "The Box":    { "url": "https://tr.rbxcdn.com/180DAY-4b19af25461691ad22d21c356410ac97/420/420/Image/Png/noFilter", "rarity": "nightmare" },
+      "Boss Drain": { "url": "https://tr.rbxcdn.com/180DAY-94227120f5540f9816e8f085f0ab5d39/420/420/Image/Png/noFilter", "rarity": "secret" },
+      "Reaper":     { "url": "https://tr.rbxcdn.com/180DAY-e7ce24b2e8ad5cac263d3680bbf64fd1/420/420/Image/Png/noFilter", "rarity": "secret" },
+      "The Fan":    { "url": "https://tr.rbxcdn.com/180DAY-27f75f89477ed81d7891e1842f11da2e/420/420/Image/Png/noFilter", "rarity": "secret" },
+      "UFO":        { "url": "https://tr.rbxcdn.com/180DAY-58cf1675b1fb9037073356f04e0799ad/420/420/Image/Png/noFilter", "rarity": "secret" },
+      "KABOOM!":    { "url": "https://tr.rbxcdn.com/180DAY-05db103928cbf22d82c9542be6710993/420/420/Image/Png/noFilter", "rarity": "mythic" }
+    },
+
+    "enchants": {
+      "Vengeance": { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-40-19-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347", "color": "#e87a00" },
+      "Phantom":   { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-39-58-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347", "color": "#00ee00" }
+    }
+  },
+
+  "metas": {
+    "Endless Farthest Meta": {
+      "units": [
+        { "name": "Golden Freddy",               "label": "$1K", "byte": "The Box",    "enchant": "Vengeance", "replacement": "Spring Duo", "caption": "" },
+        { "name": "Astral Bonnie",               "label": "",    "byte": "Boss Drain", "enchant": "Phantom",   "replacement": "",           "caption": "" },
+        { "name": "Dragon Endo 01",              "label": "",    "byte": "Reaper",     "enchant": "",          "replacement": "",           "caption": "" },
+        { "name": "Frostmancer Withered Bonnie", "label": "",    "byte": "The Fan",    "enchant": "",          "replacement": "",           "caption": "" },
+        { "name": "Golden Cupcake",              "label": "",    "byte": "UFO",        "enchant": "",          "replacement": "",           "caption": "" },
+        { "name": "Kronos Endo Freddy",          "label": "",    "byte": "KABOOM!",    "enchant": "",          "replacement": "",           "caption": "" }
+      ]
+    }
+  }
+}

@@ -2,63 +2,96 @@
   ================================================================
   META COMPOSITION ENGINE  —  metas.html
   ================================================================
-  USAGE ON YOUR SITE (include the script once, any number of mounts):
-
+  INDIVIDUAL META (unchanged):
     <div class="metaMount" data-meta="Endless Farthest Meta"></div>
-    <div class="metaMount" data-meta="Normal Meta"></div>
+
+  SEAMLESS MODE (all metas stacked, one container):
+    <div class="metaMount" data-seamless></div>
+
+  Include the script once per page:
     <script src="https://raw.githack.com/FNTDUG/characters.json/refs/heads/main/metas.html"></script>
 
-  CONFIG lives in metas.json (same repo).  No script edits needed.
+  ALL config lives in metas.json — no script edits needed.
   ================================================================
 */
 (function () {
   'use strict';
 
-  /* ---- data sources ---- */
   var METAS_URL = 'https://raw.githubusercontent.com/FNTDUG/characters.json/refs/heads/main/metas.json';
   var UNITS_URL = 'https://raw.githubusercontent.com/FNTDUG/characters.json/refs/heads/main/json';
 
   /* ---- one-time: Google Fonts ---- */
   if (!document.getElementById('metaGFonts')) {
     var lnk = document.createElement('link');
-    lnk.id   = 'metaGFonts';
-    lnk.rel  = 'stylesheet';
+    lnk.id = 'metaGFonts'; lnk.rel = 'stylesheet';
     lnk.href = 'https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap';
     (document.head || document.documentElement).appendChild(lnk);
   }
 
-  /* ---- one-time: viewport meta ---- */
+  /* ---- one-time: viewport ---- */
   if (!document.querySelector('meta[name="viewport"]')) {
-    var vpm     = document.createElement('meta');
-    vpm.name    = 'viewport';
-    vpm.content = 'width=device-width, initial-scale=1';
+    var vpm = document.createElement('meta');
+    vpm.name = 'viewport'; vpm.content = 'width=device-width, initial-scale=1';
     (document.head || document.documentElement).appendChild(vpm);
   }
 
-  /* ---- one-time: CSS (class-based so multiple instances work) ---- */
+  /* ---- one-time: CSS ---- */
   if (!document.getElementById('metaCSS')) {
     var CSS = [
       '@keyframes metaShiny{0%{background-position:0% 50%}100%{background-position:200% 50%}}',
 
-      /* root */
+      /* === INDIVIDUAL META === */
       '.metaRoot{width:100vw;position:relative;left:50%;transform:translateX(-50%);' +
         'background-size:cover;background-position:center;background-repeat:no-repeat;' +
         'color:#fff;font-family:"Press Start 2P",monospace;box-sizing:border-box;' +
         'padding:clamp(14px,2.5vw,28px) clamp(8px,1.5vw,16px) clamp(18px,3vw,36px);' +
-        'border:1px solid rgba(246,155,85,1);margin-bottom:15px}',
+        'border:1px solid rgba(246,155,85,1);margin-bottom:5px}',
       '.metaRoot *{box-sizing:border-box}',
-
-      /* title */
       '.metaTitle{font-family:"Press Start 2P",monospace;font-size:clamp(14px,3vw,36px);' +
-        'color:#fff;text-align:center;margin:0 0 clamp(12px,2vw,24px);padding:4px 8px;' +
+        'color:#fff;text-align:center;margin:0 0 clamp(8px,1.5vw,16px);padding:4px 8px;' +
         'line-height:1.35;word-break:break-word;' +
         'text-shadow:0 2px 10px rgba(0,0,0,0.95),0 0 2px rgba(0,0,0,1)}',
-
-      /* grid row */
+      '.metaControls{display:flex;justify-content:flex-end;margin-bottom:6px}',
       '.metaRow{display:grid;grid-template-columns:repeat(6,1fr);' +
         'gap:clamp(4px,1.2vw,10px);padding:4px 0}',
+      '.metaFooter{display:flex;flex-direction:column;align-items:center;' +
+        'gap:clamp(6px,1vw,10px);margin-top:clamp(10px,2vw,26px)}',
+      '.metaLogo{width:clamp(40px,5vw,64px);height:clamp(40px,5vw,64px);' +
+        'border-radius:50%;object-fit:cover;display:block}',
+      '.metaSiteUrl{font-family:"Press Start 2P",monospace;font-size:clamp(8px,1.1vw,13px);' +
+        'color:#fff;text-align:center;text-shadow:0 1px 6px rgba(0,0,0,0.95)}',
 
-      /* unit card */
+      /* === SEAMLESS MODE === */
+      '.seamlessRoot{width:100vw;position:relative;left:50%;transform:translateX(-50%);' +
+        'background-size:cover;background-position:center;background-repeat:no-repeat;' +
+        'color:#fff;font-family:"Press Start 2P",monospace;box-sizing:border-box;' +
+        'padding:clamp(12px,2vw,24px) clamp(8px,1.5vw,16px) clamp(14px,2.5vw,28px);' +
+        'border:1px solid rgba(246,155,85,1);margin-bottom:5px}',
+      '.seamlessRoot *{box-sizing:border-box}',
+      '.seamlessHeader{display:flex;align-items:center;gap:clamp(10px,2vw,20px);margin-bottom:4px}',
+      '.seamlessLogo{width:clamp(46px,7vw,80px);height:clamp(46px,7vw,80px);' +
+        'border-radius:50%;object-fit:cover;flex-shrink:0}',
+      '.seamlessSiteName{font-family:"Press Start 2P",monospace;' +
+        'font-size:clamp(14px,3.5vw,46px);color:#fff;line-height:1.2;' +
+        'text-shadow:0 2px 10px rgba(0,0,0,0.95)}',
+      '.seamlessSiteUrl{font-family:"Press Start 2P",monospace;' +
+        'font-size:clamp(7px,1.1vw,13px);color:#fff;text-align:center;' +
+        'margin-bottom:clamp(6px,1vw,12px);text-shadow:0 1px 4px rgba(0,0,0,0.9)}',
+      '.seamlessPageTitle{font-family:"Press Start 2P",monospace;' +
+        'font-size:clamp(16px,3.2vw,40px);color:#00e5ff;text-align:center;' +
+        'background:rgba(0,180,230,0.1);padding:clamp(4px,0.8vw,8px) 0;' +
+        'margin:0 0 clamp(6px,1vw,10px);' +
+        'text-shadow:0 0 18px rgba(0,220,255,0.55),0 2px 8px rgba(0,0,0,0.8)}',
+      '.seamlessPageNote{font-family:"Press Start 2P",monospace;' +
+        'font-size:clamp(6px,0.9vw,11px);color:rgba(255,255,255,0.8);' +
+        'margin-bottom:clamp(8px,1.5vw,16px);line-height:1.8}',
+      '.seamlessSection{margin-top:clamp(6px,1.2vw,14px)}',
+      '.seamlessSectionTitle{font-family:"Press Start 2P",monospace;' +
+        'font-size:clamp(14px,2.6vw,34px);color:#fff;text-align:center;' +
+        'margin:0 0 clamp(4px,0.8vw,10px);' +
+        'text-shadow:0 2px 10px rgba(0,0,0,0.95),0 0 2px rgba(0,0,0,1)}',
+
+      /* === CARDS (shared) === */
       '.meta-card{width:100%;aspect-ratio:1/1;' +
         'border-radius:12px;padding:3px;position:relative;cursor:default}',
       '.meta-card.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
@@ -66,41 +99,50 @@
         'border-radius:9px;overflow:hidden;background:rgba(34,34,34,0.85)}',
       '.meta-card-img{width:100%;height:100%;object-fit:cover;object-position:center top;' +
         'display:block;pointer-events:none}',
-
       /* byte — top-right */
       '.meta-byte{position:absolute;top:2px;right:2px;z-index:2;aspect-ratio:1/1;' +
         'width:clamp(16px,28%,54px);border-radius:9px;padding:2px;pointer-events:none}',
       '.meta-byte.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
       '.meta-byte-inner{width:100%;height:100%;border-radius:7px;overflow:hidden;background:rgba(34,34,34,0.85)}',
       '.meta-byte-inner img{width:100%;height:100%;object-fit:cover;display:block}',
-
       /* enchant — top-left */
       '.meta-enchant{position:absolute;top:2px;left:2px;z-index:2;aspect-ratio:1/1;' +
         'width:clamp(14px,24%,48px);border-radius:8px;padding:2px;pointer-events:none}',
       '.meta-enchant-inner{width:100%;height:100%;border-radius:6px;overflow:hidden;background:rgba(34,34,34,0.85)}',
       '.meta-enchant-inner img{width:100%;height:100%;object-fit:cover;display:block}',
-
       /* replacement — bottom-right */
       '.meta-replacement{position:absolute;bottom:2px;right:2px;z-index:2;aspect-ratio:1/1;' +
         'width:clamp(16px,28%,54px);border-radius:9px;padding:2px;pointer-events:none}',
       '.meta-replacement.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
       '.meta-replacement-inner{width:100%;height:100%;border-radius:7px;overflow:hidden;background:rgba(34,34,34,0.85)}',
       '.meta-replacement-inner img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}',
-
-      /* label — bottom-left, rarity border */
+      /* label — bottom-left */
       '.meta-label{position:absolute;bottom:2px;left:2px;padding:2px;' +
         'border-radius:5px;pointer-events:none;z-index:2}',
       '.meta-label-inner{background:rgba(0,0,0,0.88);color:#39ff14;' +
         'font-family:"Press Start 2P",monospace;' +
         'font-size:clamp(5px,0.9vw,9px);padding:3px 6px;border-radius:3px;display:block}',
-
-      /* slot — card + optional caption */
+      /* slot + caption */
       '.meta-slot{display:flex;flex-direction:column;align-items:center;gap:clamp(3px,0.6vw,7px)}',
       '.meta-caption{font-family:"Press Start 2P",monospace;font-size:clamp(5px,0.85vw,10px);' +
         'color:#fff;text-align:center;width:100%;line-height:1.5;' +
         'word-break:break-word;text-shadow:0 1px 4px rgba(0,0,0,0.9);user-select:none}',
 
-      /* shared tooltip */
+      /* === CLUTTER TOGGLE === */
+      '.metaControls{display:flex;justify-content:flex-end;margin-bottom:6px}',
+      '.meta-clutter-btn{font-family:"Press Start 2P",monospace;font-size:7px;' +
+        'padding:4px 8px;background:rgba(0,0,0,0.65);' +
+        'border:1px solid rgba(246,155,85,0.75);color:#ffa45b;' +
+        'border-radius:4px;cursor:pointer;user-select:none;transition:opacity .15s,border-color .15s,color .15s}',
+      '.meta-clutter-btn:hover{background:rgba(246,155,85,0.12)}',
+      '.meta-clutter-btn.cltr-off{border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.3)}',
+      /* hide all four elements when clutter is off */
+      '.meta-clutter-off .meta-byte,' +
+      '.meta-clutter-off .meta-enchant,' +
+      '.meta-clutter-off .meta-replacement,' +
+      '.meta-clutter-off .meta-label{display:none!important}',
+
+      /* === TOOLTIP === */
       '#metaTip{position:fixed;pointer-events:none;opacity:0;transition:opacity .18s;' +
         'z-index:10000;display:none;padding:2px;border-radius:8px}',
       '#metaTipInner{font-family:"Press Start 2P",monospace;font-size:10px;line-height:1.8;' +
@@ -115,21 +157,14 @@
       '.mt-icon-in img{width:100%;height:100%;object-fit:cover;display:block}',
       '.mt-text{font-size:9.5px;opacity:0.9;line-height:1.5}',
 
-      /* footer */
-      '.metaFooter{display:flex;flex-direction:column;align-items:center;' +
-        'gap:clamp(6px,1vw,10px);margin-top:clamp(10px,2vw,26px)}',
-      '.metaLogo{width:clamp(40px,5vw,64px);height:clamp(40px,5vw,64px);' +
-        'border-radius:50%;object-fit:cover;display:block}',
-      '.metaSiteUrl{font-family:"Press Start 2P",monospace;font-size:clamp(8px,1.1vw,13px);' +
-        'color:#fff;text-align:center;text-shadow:0 1px 6px rgba(0,0,0,0.95)}',
-
-      /* mobile (portrait + landscape) */
+      /* === MOBILE === */
       '@media(max-width:900px){' +
         '.metaRoot{padding-left:4px;padding-right:4px}' +
+        '.seamlessRoot{padding-left:4px;padding-right:4px}' +
         '.metaRow{gap:3px}' +
+        '.seamlessSection .metaRow{gap:3px}' +
         '.meta-card{padding:2px;border-radius:8px}' +
         '.meta-card-inner{border-radius:6px}' +
-        /* all four elements: 2px from their corner, 1px border, fixed radius */
         '.meta-byte{top:2px;right:2px;padding:1px;border-radius:6px}' +
         '.meta-byte-inner{border-radius:5px}' +
         '.meta-enchant{top:2px;left:2px;padding:1px;border-radius:6px}' +
@@ -139,8 +174,6 @@
         '.meta-label{bottom:2px;left:2px;padding:1px}' +
         '.meta-label-inner{border-radius:2px}' +
       '}',
-
-      /* small portrait phones */
       '@media(max-width:600px){' +
         '#metaTipInner{font-size:7px;padding:7px 9px;max-width:190px}' +
         '.mt-name{font-size:8px;margin-bottom:4px}' +
@@ -161,14 +194,12 @@
   /* ---- one-time: shared tooltip ---- */
   var tip, tipInner;
   if (!document.getElementById('metaTip')) {
-    tip = document.createElement('div');
-    tip.id = 'metaTip';
-    tipInner = document.createElement('div');
-    tipInner.id = 'metaTipInner';
+    tip = document.createElement('div'); tip.id = 'metaTip';
+    tipInner = document.createElement('div'); tipInner.id = 'metaTipInner';
     tip.appendChild(tipInner);
     document.body.appendChild(tip);
   } else {
-    tip      = document.getElementById('metaTip');
+    tip = document.getElementById('metaTip');
     tipInner = document.getElementById('metaTipInner');
   }
 
@@ -203,178 +234,115 @@
     return RARITY[rar] || '#888888';
   }
 
-  /* ---- shared unit data (populated by characters.json fetch) ---- */
+  /* ---- shared unit data ---- */
   var unitMap = {};
   var unitMapReady = false;
 
   /* ---- tooltip ---- */
   function showTip(card, unitCfg, u, META_CFG) {
-    var rar     = (u.rarity || '').toLowerCase();
-    var isShiny = rar === 'shiny';
+    var rar = (u.rarity || '').toLowerCase(), sh = rar === 'shiny';
     tip.style.background     = getRarityBg(unitCfg.name, rar);
-    tip.style.backgroundSize = isShiny ? '200% 200%' : '';
-    tip.style.animation      = isShiny ? 'metaShiny 6s linear infinite' : '';
-
+    tip.style.backgroundSize = sh ? '200% 200%' : '';
+    tip.style.animation      = sh ? 'metaShiny 6s linear infinite' : '';
     tipInner.innerHTML = '';
 
     var nameEl = document.createElement('span');
-    nameEl.className   = 'mt-name';
-    nameEl.textContent = unitCfg.name;
+    nameEl.className = 'mt-name'; nameEl.textContent = unitCfg.name;
     tipInner.appendChild(nameEl);
-
-    var sep = document.createElement('hr');
-    sep.className = 'mt-sep';
+    var sep = document.createElement('hr'); sep.className = 'mt-sep';
     tipInner.appendChild(sep);
 
-    /* byte row */
+    function tipRow(iconBg, iconSh, iconSrc, label) {
+      var row = document.createElement('div'); row.className = 'mt-row';
+      var ic  = document.createElement('div');
+      ic.className = 'mt-icon' + (iconSh ? ' meta-shiny' : '');
+      ic.style.background = iconBg;
+      if (iconSh) ic.style.backgroundSize = '200% 200%';
+      var inn = document.createElement('div'); inn.className = 'mt-icon-in';
+      var im  = document.createElement('img'); im.src = iconSrc; im.alt = '';
+      inn.appendChild(im); ic.appendChild(inn);
+      var tx = document.createElement('div'); tx.className = 'mt-text'; tx.textContent = label;
+      row.appendChild(ic); row.appendChild(tx);
+      return row;
+    }
+
     var byteData = META_CFG.bytes[unitCfg.byte];
     if (byteData) {
-      var bRar = (byteData.rarity || '').toLowerCase(), bSh = bRar === 'shiny';
-      var bRow = document.createElement('div'); bRow.className = 'mt-row';
-      var bIc  = document.createElement('div');
-      bIc.className = 'mt-icon' + (bSh ? ' meta-shiny' : '');
-      bIc.style.background = getRarityBg(unitCfg.byte, bRar);
-      if (bSh) bIc.style.backgroundSize = '200% 200%';
-      var bIn = document.createElement('div'); bIn.className = 'mt-icon-in';
-      var bIm = document.createElement('img'); bIm.src = byteData.url; bIm.alt = '';
-      bIn.appendChild(bIm); bIc.appendChild(bIn);
-      var bTx = document.createElement('div'); bTx.className = 'mt-text';
-      bTx.textContent = 'Byte: ' + unitCfg.byte;
-      bRow.appendChild(bIc); bRow.appendChild(bTx);
-      tipInner.appendChild(bRow);
+      var bR = (byteData.rarity || '').toLowerCase();
+      tipInner.appendChild(tipRow(getRarityBg(unitCfg.byte, bR), bR === 'shiny', byteData.url, 'Byte: ' + unitCfg.byte));
     }
-
-    /* enchant row */
     var enchData = META_CFG.enchants[unitCfg.enchant];
     if (enchData) {
-      var eRow = document.createElement('div'); eRow.className = 'mt-row';
-      var eIc  = document.createElement('div'); eIc.className = 'mt-icon';
-      eIc.style.background = enchData.color;
-      var eIn = document.createElement('div'); eIn.className = 'mt-icon-in';
-      var eIm = document.createElement('img'); eIm.src = enchData.url; eIm.alt = '';
-      eIn.appendChild(eIm); eIc.appendChild(eIn);
-      var eTx = document.createElement('div'); eTx.className = 'mt-text';
-      eTx.textContent = 'Enchant: ' + unitCfg.enchant;
-      eRow.appendChild(eIc); eRow.appendChild(eTx);
-      tipInner.appendChild(eRow);
+      tipInner.appendChild(tipRow(enchData.color, false, enchData.url, 'Enchant: ' + unitCfg.enchant));
     }
-
-    /* role row */
     var role = u.role || u.type || '';
     if (role) {
       var rRow = document.createElement('div'); rRow.className = 'mt-row';
-      var rTx  = document.createElement('div'); rTx.className = 'mt-text';
-      rTx.textContent = 'Role: ' + role;
+      var rTx = document.createElement('div'); rTx.className = 'mt-text'; rTx.textContent = 'Role: ' + role;
       rRow.appendChild(rTx); tipInner.appendChild(rRow);
     }
-
-    /* replacement row */
     if (unitCfg.replacement) {
-      var rrU  = unitMap[unitCfg.replacement] || {};
-      var rrR  = (rrU.rarity || '').toLowerCase(), rrSh = rrR === 'shiny';
-      var rrRow = document.createElement('div'); rrRow.className = 'mt-row';
-      var rrIc  = document.createElement('div');
-      rrIc.className = 'mt-icon' + (rrSh ? ' meta-shiny' : '');
-      rrIc.style.background = getRarityBg(unitCfg.replacement, rrR);
-      if (rrSh) rrIc.style.backgroundSize = '200% 200%';
-      var rrIn = document.createElement('div'); rrIn.className = 'mt-icon-in';
-      var rrIm = document.createElement('img'); rrIm.src = rrU.img || ''; rrIm.alt = '';
-      rrIn.appendChild(rrIm); rrIc.appendChild(rrIn);
-      var rrTx = document.createElement('div'); rrTx.className = 'mt-text';
-      rrTx.textContent = 'Alt: ' + unitCfg.replacement;
-      rrRow.appendChild(rrIc); rrRow.appendChild(rrTx);
-      tipInner.appendChild(rrRow);
+      var rrU = unitMap[unitCfg.replacement] || {};
+      var rrR = (rrU.rarity || '').toLowerCase();
+      tipInner.appendChild(tipRow(getRarityBg(unitCfg.replacement, rrR), rrR === 'shiny', rrU.img || '', 'Alt: ' + unitCfg.replacement));
     }
 
-    /* position */
-    tip.style.display = 'block';
-    tip.style.opacity = '0';
-    var r    = card.getBoundingClientRect();
-    var tw   = tip.offsetWidth, th = tip.offsetHeight;
-    var left = r.left + r.width / 2 - tw / 2;
-    left = Math.max(4, Math.min(left, window.innerWidth - tw - 4));
+    tip.style.display = 'block'; tip.style.opacity = '0';
+    var r = card.getBoundingClientRect();
+    var tw = tip.offsetWidth, th = tip.offsetHeight;
+    var left = Math.max(4, Math.min(r.left + r.width / 2 - tw / 2, window.innerWidth - tw - 4));
     var top  = r.bottom + 6;
     if (top + th > window.innerHeight - 4) top = r.top - th - 6;
-    tip.style.left    = left + 'px';
-    tip.style.top     = top  + 'px';
-    tip.style.opacity = '1';
+    tip.style.left = left + 'px'; tip.style.top = top + 'px'; tip.style.opacity = '1';
   }
 
-  function hideTip() {
-    tip.style.opacity = '0';
-    tip.style.display = 'none';
+  function hideTip() { tip.style.opacity = '0'; tip.style.display = 'none'; }
+
+  /* ================================================================
+     SHARED: clutter button
+  ================================================================ */
+  function makeClutterBtn(container) {
+    var on = true;
+    var btn = document.createElement('button');
+    btn.className = 'meta-clutter-btn';
+    btn.textContent = 'CLTR';
+    btn.addEventListener('click', function () {
+      on = !on;
+      container.classList.toggle('meta-clutter-off', !on);
+      btn.classList.toggle('cltr-off', !on);
+    });
+    return btn;
   }
 
   /* ================================================================
-     RENDER ONE META WIDGET
-     Returns a re-render function — called again when unit images load.
+     SHARED: build card row
+     Fills `row` element with slot/card/overlay elements.
+     Returns a renderCards() callback for re-rendering after unitMap loads.
   ================================================================ */
-  function renderMeta(mountEl, META_CFG) {
-    var root = document.createElement('div');
-    root.className = 'metaRoot';
-    root.style.backgroundImage = 'url(' + META_CFG.background + ')';
-
-    var titleEl = document.createElement('div');
-    titleEl.className   = 'metaTitle';
-    titleEl.textContent = META_CFG.title;
-    root.appendChild(titleEl);
-
-    var row = document.createElement('div');
-    row.className = 'metaRow';
-    root.appendChild(row);
-
-    var footer = document.createElement('div');
-    footer.className = 'metaFooter';
-    if (META_CFG.logoUrl) {
-      var logoEl = document.createElement('img');
-      logoEl.className = 'metaLogo';
-      logoEl.src = META_CFG.logoUrl;
-      logoEl.alt = '';
-      footer.appendChild(logoEl);
-    }
-    var siteEl = document.createElement('div');
-    siteEl.className   = 'metaSiteUrl';
-    siteEl.textContent = META_CFG.siteUrl;
-    footer.appendChild(siteEl);
-    root.appendChild(footer);
-
-    mountEl.appendChild(root);
-
-    /* inner render — re-callable after unitMap updates */
+  function buildCardRow(row, META_CFG) {
     function renderCards() {
       row.innerHTML = '';
       META_CFG.units.forEach(function (unitCfg) {
-        var u       = unitMap[unitCfg.name] || {};
-        var rar     = (u.rarity || '').toLowerCase();
-        var isShiny = rar === 'shiny';
-        var bg      = getRarityBg(unitCfg.name, rar);
+        var u = unitMap[unitCfg.name] || {};
+        var rar = (u.rarity || '').toLowerCase(), isShiny = rar === 'shiny';
+        var bg = getRarityBg(unitCfg.name, rar);
 
         var card = document.createElement('div');
         card.className = 'meta-card' + (isShiny ? ' meta-shiny' : '');
         card.style.background = bg;
 
-        var inner = document.createElement('div');
-        inner.className = 'meta-card-inner';
+        var inner = document.createElement('div'); inner.className = 'meta-card-inner';
 
-        /* unit image */
         var img = document.createElement('img');
-        img.className = 'meta-card-img';
-        img.src       = u.img || '';
-        img.alt       = unitCfg.name;
-        img.draggable = false;
-        img.loading   = 'lazy';
-        img.onerror   = function () {
-          this.style.cssText = 'width:100%;height:100%;display:block';
-          this.removeAttribute('src');
-        };
+        img.className = 'meta-card-img'; img.src = u.img || ''; img.alt = unitCfg.name;
+        img.draggable = false; img.loading = 'lazy';
+        img.onerror = function () { this.style.cssText = 'width:100%;height:100%;display:block'; this.removeAttribute('src'); };
         inner.appendChild(img);
 
         /* enchant — top-left */
         var enchData = META_CFG.enchants[unitCfg.enchant];
         if (enchData) {
-          var eW = document.createElement('div');
-          eW.className = 'meta-enchant';
-          eW.style.background = enchData.color;
+          var eW = document.createElement('div'); eW.className = 'meta-enchant'; eW.style.background = enchData.color;
           var eI = document.createElement('div'); eI.className = 'meta-enchant-inner';
           var eM = document.createElement('img'); eM.src = enchData.url; eM.alt = unitCfg.enchant;
           eI.appendChild(eM); eW.appendChild(eI); inner.appendChild(eW);
@@ -383,10 +351,9 @@
         /* byte — top-right */
         var byteData = META_CFG.bytes[unitCfg.byte];
         if (byteData) {
-          var bRar = (byteData.rarity || '').toLowerCase(), bSh = bRar === 'shiny';
+          var bR = (byteData.rarity || '').toLowerCase(), bSh = bR === 'shiny';
           var bW = document.createElement('div');
-          bW.className = 'meta-byte' + (bSh ? ' meta-shiny' : '');
-          bW.style.background = getRarityBg(unitCfg.byte, bRar);
+          bW.className = 'meta-byte' + (bSh ? ' meta-shiny' : ''); bW.style.background = getRarityBg(unitCfg.byte, bR);
           if (bSh) bW.style.backgroundSize = '200% 200%';
           var bI = document.createElement('div'); bI.className = 'meta-byte-inner';
           var bM = document.createElement('img'); bM.src = byteData.url; bM.alt = unitCfg.byte;
@@ -395,84 +362,194 @@
 
         /* replacement — bottom-right */
         if (unitCfg.replacement) {
-          var rU = unitMap[unitCfg.replacement] || {};
-          var rR = (rU.rarity || '').toLowerCase(), rSh = rR === 'shiny';
+          var rU = unitMap[unitCfg.replacement] || {}, rR = (rU.rarity || '').toLowerCase(), rSh = rR === 'shiny';
           var rW = document.createElement('div');
-          rW.className = 'meta-replacement' + (rSh ? ' meta-shiny' : '');
-          rW.style.background = getRarityBg(unitCfg.replacement, rR);
+          rW.className = 'meta-replacement' + (rSh ? ' meta-shiny' : ''); rW.style.background = getRarityBg(unitCfg.replacement, rR);
           if (rSh) rW.style.backgroundSize = '200% 200%';
           var rI = document.createElement('div'); rI.className = 'meta-replacement-inner';
-          var rM = document.createElement('img');
-          rM.src = rU.img || ''; rM.alt = unitCfg.replacement;
-          rM.draggable = false; rM.loading = 'lazy';
+          var rM = document.createElement('img'); rM.src = rU.img || ''; rM.alt = unitCfg.replacement; rM.draggable = false; rM.loading = 'lazy';
           rI.appendChild(rM); rW.appendChild(rI); inner.appendChild(rW);
         }
 
-        /* label — bottom-left, rarity border */
+        /* label — bottom-left */
         if (unitCfg.label) {
           var lO = document.createElement('div');
-          lO.className = 'meta-label' + (isShiny ? ' meta-shiny' : '');
-          lO.style.background = bg;
+          lO.className = 'meta-label' + (isShiny ? ' meta-shiny' : ''); lO.style.background = bg;
           if (isShiny) lO.style.backgroundSize = '200% 200%';
-          var lI = document.createElement('div');
-          lI.className   = 'meta-label-inner';
-          lI.textContent = unitCfg.label;
+          var lI = document.createElement('div'); lI.className = 'meta-label-inner'; lI.textContent = unitCfg.label;
           lO.appendChild(lI); inner.appendChild(lO);
         }
 
         card.appendChild(inner);
 
-        /* hover */
         (function (c, cfg, data) {
           c.addEventListener('mouseenter', function () { showTip(c, cfg, data, META_CFG); });
           c.addEventListener('mouseleave', hideTip);
         }(card, unitCfg, u));
 
-        /* slot = card + caption */
-        var slot = document.createElement('div');
-        slot.className = 'meta-slot';
+        var slot = document.createElement('div'); slot.className = 'meta-slot';
         slot.appendChild(card);
-
         if (unitCfg.caption) {
-          var cap = document.createElement('div');
-          cap.className   = 'meta-caption';
-          cap.textContent = unitCfg.caption;
+          var cap = document.createElement('div'); cap.className = 'meta-caption'; cap.textContent = unitCfg.caption;
           slot.appendChild(cap);
         }
-
         row.appendChild(slot);
       });
     }
 
     renderCards();
-    return renderCards; /* caller re-invokes when unit images arrive */
+    return renderCards;
+  }
+
+  /* ================================================================
+     INDIVIDUAL META RENDERER (unchanged from user's perspective)
+  ================================================================ */
+  function renderMeta(mountEl, META_CFG) {
+    var root = document.createElement('div');
+    root.className = 'metaRoot';
+    root.style.backgroundImage = 'url(' + META_CFG.background + ')';
+
+    var titleEl = document.createElement('div');
+    titleEl.className = 'metaTitle'; titleEl.textContent = META_CFG.title;
+    root.appendChild(titleEl);
+
+    /* clutter button */
+    var controls = document.createElement('div'); controls.className = 'metaControls';
+    controls.appendChild(makeClutterBtn(root));
+    root.appendChild(controls);
+
+    var row = document.createElement('div'); row.className = 'metaRow';
+    root.appendChild(row);
+
+    var footer = document.createElement('div'); footer.className = 'metaFooter';
+    if (META_CFG.logoUrl) {
+      var logoEl = document.createElement('img'); logoEl.className = 'metaLogo'; logoEl.src = META_CFG.logoUrl; logoEl.alt = '';
+      footer.appendChild(logoEl);
+    }
+    var siteEl = document.createElement('div'); siteEl.className = 'metaSiteUrl'; siteEl.textContent = META_CFG.siteUrl;
+    footer.appendChild(siteEl);
+    root.appendChild(footer);
+
+    mountEl.appendChild(root);
+    return buildCardRow(row, META_CFG);
+  }
+
+  /* ================================================================
+     SEAMLESS RENDERER
+     Activated by <div class="metaMount" data-seamless></div>
+     Config in metas.json "seamless" key:
+       {
+         "siteName":  "FNTD USER GUIDE",
+         "pageTitle": "GRIND METAS",
+         "pageNote":  "...",
+         "order":     ["Story","Endless",...]   ← optional, defaults to all metas
+       }
+  ================================================================ */
+  function renderSeamless(mountEl, metasData) {
+    var shared   = metasData.shared   || {};
+    var seamCfg  = metasData.seamless || {};
+    if (seamCfg === true) seamCfg = {};   /* support "seamless": true shorthand */
+
+    var root = document.createElement('div');
+    root.className = 'seamlessRoot';
+    root.style.backgroundImage = 'url(' + (shared.background || '') + ')';
+
+    /* header: logo + site name */
+    var header = document.createElement('div'); header.className = 'seamlessHeader';
+    if (shared.logoUrl) {
+      var logo = document.createElement('img'); logo.className = 'seamlessLogo'; logo.src = shared.logoUrl; logo.alt = '';
+      header.appendChild(logo);
+    }
+    var siteName = document.createElement('div'); siteName.className = 'seamlessSiteName';
+    siteName.textContent = seamCfg.siteName || 'FNTD USER GUIDE';
+    header.appendChild(siteName);
+    root.appendChild(header);
+
+    /* site URL */
+    if (shared.siteUrl) {
+      var siteUrlEl = document.createElement('div'); siteUrlEl.className = 'seamlessSiteUrl';
+      siteUrlEl.textContent = shared.siteUrl; root.appendChild(siteUrlEl);
+    }
+
+    /* page title */
+    if (seamCfg.pageTitle) {
+      var ptEl = document.createElement('div'); ptEl.className = 'seamlessPageTitle';
+      ptEl.textContent = seamCfg.pageTitle; root.appendChild(ptEl);
+    }
+
+    /* page note */
+    if (seamCfg.pageNote) {
+      var pnEl = document.createElement('div'); pnEl.className = 'seamlessPageNote';
+      pnEl.textContent = seamCfg.pageNote; root.appendChild(pnEl);
+    }
+
+    /* clutter button */
+    var controls = document.createElement('div'); controls.className = 'metaControls';
+    controls.appendChild(makeClutterBtn(root));
+    root.appendChild(controls);
+
+    /* meta sections */
+    var order = seamCfg.order || Object.keys(metasData.metas || {});
+    var reRenders = [];
+
+    order.forEach(function (metaName) {
+      var cfg = metasData.metas && metasData.metas[metaName];
+      if (!cfg) return;
+
+      var section = document.createElement('div'); section.className = 'seamlessSection';
+
+      var titleEl = document.createElement('div'); titleEl.className = 'seamlessSectionTitle';
+      titleEl.textContent = metaName; section.appendChild(titleEl);
+
+      var row = document.createElement('div'); row.className = 'metaRow';
+      section.appendChild(row);
+      root.appendChild(section);
+
+      var META_CFG = {
+        title:    metaName,
+        logoUrl:  '', siteUrl:  '', background: '',
+        bytes:    shared.bytes    || {},
+        enchants: shared.enchants || {},
+        units:    cfg.units       || []
+      };
+      reRenders.push(buildCardRow(row, META_CFG));
+    });
+
+    mountEl.appendChild(root);
+    return reRenders;
   }
 
   /* ================================================================
      FETCH + RENDER PIPELINE
   ================================================================ */
-  var metasData    = null;
+  var metasData       = null;
   var activeReRenders = [];
 
   function renderAllMounts() {
     var mounts = Array.prototype.slice.call(
-      document.querySelectorAll('.metaMount[data-meta], #tlMount[data-meta]')
+      document.querySelectorAll('.metaMount[data-meta], .metaMount[data-seamless], #tlMount[data-meta]')
     );
     mounts.forEach(function (mountEl) {
       if (mountEl.getAttribute('data-rendered')) return;
       mountEl.setAttribute('data-rendered', '1');
 
+      /* seamless mount */
+      if (mountEl.hasAttribute('data-seamless')) {
+        var rrs = renderSeamless(mountEl, metasData || { shared: {}, metas: {}, seamless: {} });
+        rrs.forEach(function (fn) { activeReRenders.push(fn); if (unitMapReady) fn(); });
+        return;
+      }
+
+      /* individual meta mount */
       var name = mountEl.getAttribute('data-meta');
       var cfg  = metasData && metasData.metas && metasData.metas[name];
       if (!cfg) {
         var err = document.createElement('div');
         err.style.cssText = 'color:#ffa45b;font-family:monospace;padding:10px;font-size:12px';
-        err.textContent   = 'Meta "' + name + '" not found in metas.json';
-        mountEl.appendChild(err);
-        return;
+        err.textContent = 'Meta "' + name + '" not found in metas.json';
+        mountEl.appendChild(err); return;
       }
-
-      var shared = (metasData.shared) || {};
+      var shared = (metasData && metasData.shared) || {};
       var META_CFG = {
         title:      name,
         logoUrl:    shared.logoUrl    || '',
@@ -482,11 +559,9 @@
         enchants:   shared.enchants   || {},
         units:      cfg.units         || []
       };
-
-      var reRender = renderMeta(mountEl, META_CFG);
-      activeReRenders.push(reRender);
-      /* if unit images already loaded, refresh immediately */
-      if (unitMapReady) reRender();
+      var rr = renderMeta(mountEl, META_CFG);
+      activeReRenders.push(rr);
+      if (unitMapReady) rr();
     });
   }
 
@@ -498,27 +573,19 @@
     catch (e) { metasData = { shared: {}, metas: {} }; }
     renderAllMounts();
   };
-  xM.onerror = function () {
-    metasData = { shared: {}, metas: {} };
-    renderAllMounts();
-  };
+  xM.onerror = function () { metasData = { shared: {}, metas: {} }; renderAllMounts(); };
   xM.send();
 
-  /* fetch characters.json — runs in parallel */
+  /* fetch characters.json (parallel) */
   var xC = new XMLHttpRequest();
   xC.open('GET', UNITS_URL, true);
   xC.onload = function () {
     try {
       JSON.parse(xC.responseText).forEach(function (u) {
-        unitMap[u.name] = {
-          img:    u.imgNormal || '',
-          rarity: u.rarity   || '',
-          role:   u.role     || u.type || ''
-        };
+        unitMap[u.name] = { img: u.imgNormal || '', rarity: u.rarity || '', role: u.role || u.type || '' };
       });
     } catch (e) {}
     unitMapReady = true;
-    /* re-render every already-mounted meta to populate unit images */
     activeReRenders.forEach(function (fn) { fn(); });
   };
   xC.send();

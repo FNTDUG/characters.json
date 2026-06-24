@@ -142,10 +142,10 @@
     '.meta-replacement-inner{width:100%;height:100%;border-radius:7px;overflow:hidden;background:rgba(34,34,34,0.85)}',
     '.meta-replacement-inner img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}',
 
-    /* cost label — bottom-left */
-    '.meta-label{position:absolute;bottom:5px;left:5px;background:rgba(0,0,0,0.88);' +
-      'border:2px solid #ffd700;color:#39ff14;font-family:"Press Start 2P",monospace;' +
-      'font-size:clamp(5px,0.9vw,9px);padding:3px 6px;border-radius:4px;pointer-events:none;z-index:2}',
+    /* cost label — bottom-left, rarity gradient border via padding trick */
+    '.meta-label{position:absolute;bottom:1px;left:1px;padding:2px;border-radius:5px;pointer-events:none;z-index:2}',
+    '.meta-label-inner{background:rgba(0,0,0,0.88);color:#39ff14;font-family:"Press Start 2P",monospace;' +
+      'font-size:clamp(5px,0.9vw,9px);padding:3px 6px;border-radius:3px;display:block}',
 
     /* slot — card + caption stacked */
     '.meta-slot{display:flex;flex-direction:column;align-items:center;gap:clamp(3px,0.6vw,7px)}',
@@ -198,7 +198,7 @@
       '.mt-row{gap:5px;margin-top:4px}' +
       '.mt-icon{width:20px;height:20px}' +
       '.mt-text{font-size:6px}' +
-      '.meta-label{font-size:5px;padding:2px 4px;border-width:1px}' +
+      '.meta-label-inner{font-size:5px;padding:2px 4px}' +
     '}'
   ].join('');
 
@@ -455,12 +455,17 @@
         inner.appendChild(rWrap);
       }
 
-      /* cost label — bottom-left */
+      /* cost label — bottom-left, rarity gradient border */
       if (unitCfg.label) {
-        var label = document.createElement('div');
-        label.className   = 'meta-label';
-        label.textContent = unitCfg.label;
-        inner.appendChild(label);
+        var labelOuter = document.createElement('div');
+        labelOuter.className        = 'meta-label' + (isShiny ? ' meta-shiny' : '');
+        labelOuter.style.background = bg;
+        if (isShiny) labelOuter.style.backgroundSize = '200% 200%';
+        var labelInner = document.createElement('div');
+        labelInner.className   = 'meta-label-inner';
+        labelInner.textContent = unitCfg.label;
+        labelOuter.appendChild(labelInner);
+        inner.appendChild(labelOuter);
       }
 
       card.appendChild(inner);

@@ -42,7 +42,7 @@
         { "name": "War Machine Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
-        { "name": "Movie Director Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" }
+        { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
     },
     "Endless 6": {
@@ -72,7 +72,7 @@
         { "name": "War Machine Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
-        { "name": "Movie Director Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" }
+        { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
     },
     "Boss Raids": {

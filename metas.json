@@ -30,6 +30,10 @@
       {
         "pageTitle": "GRIND METAS",
         "order": ["Story Grind", "Endless Grind", "Event Endless Grind", "Event Story Grind", "Boss Raids Grind"]
+      },
+      {
+        "pageTitle": "ELEMENT METAS",
+        "order": ["Water 1st", "Rust 2nd", "Dark 3rd", "Light 4th", "Neutral 5th", "Fire 5th", "Electricity 7th", "Nature 8th"]
       }
     ]
   },
@@ -133,6 +137,86 @@
         { "name": "Purple Guy", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "Henry Emily", "caption": "Place on Boss" },
         { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
         { "name": "Fazcade", "label": "", "byte": "UFO", "enchant": "Investor", "replacement": "", "caption": "" }
+      ]
+    },
+    "Water 1st": {
+      "units": [
+        { "name": "Rockstar Chica", "label": "$750", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Old Man Consequences", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Yeti Oni Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Fathomless Withered Foxy", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Frozen King Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
+      ]
+    },
+    "Rust 2nd": {
+      "units": [
+        { "name": "Undead Chica", "label": "$600", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Michael Afton", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Fredtrap", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Molten Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" }
+      ]
+    },
+    "Dark 3rd": {
+      "units": [
+        { "name": "Cloaked Sparky", "label": "$750", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Nightmare Fredbear", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Goodnight Plushtime", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Nightmare Chica", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" },
+        { "name": "Krampus Purple Guy", "label": "", "byte": "KABOOM!", "enchant": "Phantom", "replacement": "", "caption": "" }
+      ]
+    },
+    "Light 4th": {
+      "units": [
+        { "name": "Party Glock Freddy", "label": "$750", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Puppet", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Lefty", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Starfarer Princess", "label": "", "byte": "KABOOM!", "enchant": "Phantom", "replacement": "", "caption": "" },
+        { "name": "Golden Cupcake", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "", "caption": "" }
+      ]
+    },
+    "Neutral 5th": {
+      "units": [
+        { "name": "Golden Freddy", "label": "$1k", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Purple Guy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Grinch Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Anti-Hero Mike", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Spring Duo", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Yenndo", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" }
+      ]
+    },
+    "Fire 6th": {
+      "units": [
+        { "name": "Turkey Chica", "label": "$750", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Springtrap", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Headless Horseman Mangle", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Gravelord Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Molten Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" }
+      ]
+    },
+    "Electricity 7th": {
+      "units": [
+        { "name": "Endo 01", "label": "$1k", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Ennard", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Stormbound Chica", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Phone Dude", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Lolbit", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Scooped Michael", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
+      ]
+    },
+    "Nature 8th": {
+      "units": [
+        { "name": "Barbarian Boy", "label": "$850", "byte": "UFO", "enchant": "Phantom", "replacement": "", "caption": "Starter" },
+        { "name": "Chipper", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Mother Nature Ballora", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "El Chip", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Shepard Fredbear", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Landslide Funtime Foxy", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
       ]
     }
   }

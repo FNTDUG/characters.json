@@ -45,7 +45,7 @@
         'background-size:cover;background-position:center;background-repeat:no-repeat;' +
         'color:#fff;font-family:"Press Start 2P",monospace;box-sizing:border-box;' +
         'padding:clamp(14px,2.5vw,28px) clamp(8px,1.5vw,16px) clamp(18px,3vw,36px);' +
-        'border:1px solid rgba(246,155,85,1);margin-bottom:5px}',
+        'border:1px solid rgba(246,155,85,1);margin-bottom:15px}',
       '.metaRoot *{box-sizing:border-box}',
       '.metaTitle{font-family:"Press Start 2P",monospace;font-size:clamp(14px,3vw,36px);' +
         'color:#fff;text-align:center;margin:0 0 clamp(8px,1.5vw,16px);padding:4px 8px;' +
@@ -68,23 +68,23 @@
         'padding:clamp(12px,2vw,24px) clamp(8px,1.5vw,16px) clamp(14px,2.5vw,28px);' +
         'border:1px solid rgba(246,155,85,1);margin-bottom:5px}',
       '.seamlessRoot *{box-sizing:border-box}',
+      /* logo left, site name fills remaining space and centers within it */
       '.seamlessHeader{display:flex;align-items:center;gap:clamp(10px,2vw,20px);margin-bottom:4px}',
       '.seamlessLogo{width:clamp(46px,7vw,80px);height:clamp(46px,7vw,80px);' +
         'border-radius:50%;object-fit:cover;flex-shrink:0}',
       '.seamlessSiteName{font-family:"Press Start 2P",monospace;' +
         'font-size:clamp(14px,3.5vw,46px);color:#fff;line-height:1.2;' +
-        'text-shadow:0 2px 10px rgba(0,0,0,0.95)}',
+        'text-shadow:0 2px 10px rgba(0,0,0,0.95);flex:1;text-align:center}',
       '.seamlessSiteUrl{font-family:"Press Start 2P",monospace;' +
         'font-size:clamp(7px,1.1vw,13px);color:#fff;text-align:center;' +
         'margin-bottom:clamp(6px,1vw,12px);text-shadow:0 1px 4px rgba(0,0,0,0.9)}',
+      /* negative margins cancel parent padding so bar spans full width */
       '.seamlessPageTitle{font-family:"Press Start 2P",monospace;' +
         'font-size:clamp(16px,3.2vw,40px);color:#00e5ff;text-align:center;' +
-        'background:rgba(0,180,230,0.1);padding:clamp(4px,0.8vw,8px) 0;' +
-        'margin:0 0 clamp(6px,1vw,10px);' +
+        'background:rgba(0,180,230,0.1);' +
+        'padding:clamp(4px,0.8vw,8px) clamp(8px,1.5vw,16px);' +
+        'margin:0 calc(-1*clamp(8px,1.5vw,16px)) clamp(6px,1vw,10px);' +
         'text-shadow:0 0 18px rgba(0,220,255,0.55),0 2px 8px rgba(0,0,0,0.8)}',
-      '.seamlessPageNote{font-family:"Press Start 2P",monospace;' +
-        'font-size:clamp(6px,0.9vw,11px);color:rgba(255,255,255,0.8);' +
-        'margin-bottom:clamp(8px,1.5vw,16px);line-height:1.8}',
       '.seamlessSection{margin-top:clamp(6px,1.2vw,14px)}',
       '.seamlessSectionTitle{font-family:"Press Start 2P",monospace;' +
         'font-size:clamp(14px,2.6vw,34px);color:#fff;text-align:center;' +

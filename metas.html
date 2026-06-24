@@ -41,7 +41,7 @@
     },
 
     units: [
-      { name: 'Golden Freddy',               label: '$1K', byte: 'The Box',    enchant: 'Vengeance', replacement: 'Spring Duo' },
+      { name: 'Golden Freddy',               label: '$1K', byte: 'The Box',    enchant: 'Vengeance', replacement: '' },
       { name: 'Astral Bonnie',               label: '',    byte: 'Boss Drain', enchant: 'Phantom',   replacement: '' },
       { name: 'Dragon Endo 01',              label: '',    byte: 'Reaper',     enchant: '',           replacement: '' },
       { name: 'Frostmancer Withered Bonnie', label: '',    byte: 'The Fan',    enchant: '',           replacement: '' },
@@ -95,7 +95,7 @@
     '#metaRoot *{box-sizing:border-box}',
 
     /* editable title */
-    '#metaTitle{font-family:"Press Start 2P",monospace;font-size:clamp(14px,3.5vw,36px);' +
+    '#metaTitle{font-family:"Press Start 2P",monospace;font-size:36px;' +
       'color:#fff;text-align:center;margin:0 0 24px;padding:4px 8px;' +
       'line-height:1.35;word-break:break-word;' +
       'text-shadow:0 2px 10px rgba(0,0,0,0.95),0 0 2px rgba(0,0,0,1)}',
@@ -107,8 +107,8 @@
     '#metaRow::-webkit-scrollbar-thumb{background:#ffa45b;border-radius:4px}',
     '#metaRow::-webkit-scrollbar-track{background:rgba(0,0,0,0.3)}',
 
-    /* main unit card — flex-shrink allowed, min size keeps them usable */
-    '.meta-card{flex:1 1 0;min-width:70px;max-width:180px;aspect-ratio:1/1;' +
+    /* main unit card — fixed size, never shrinks; row scrolls on mobile */
+    '.meta-card{flex:0 0 160px;width:160px;height:160px;' +
       'border-radius:12px;padding:3px;position:relative;cursor:default}',
     '.meta-card.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
 
@@ -139,7 +139,7 @@
     /* cost label — bottom-left */
     '.meta-label{position:absolute;bottom:5px;left:5px;background:rgba(0,0,0,0.88);' +
       'border:2px solid #ffd700;color:#39ff14;font-family:"Press Start 2P",monospace;' +
-      'font-size:clamp(5px,1.3vw,9px);padding:3px 6px;border-radius:4px;pointer-events:none;z-index:2}',
+      'font-size:9px;padding:3px 6px;border-radius:4px;pointer-events:none;z-index:2}',
 
     /* ---- tooltip (same visual style as tierlist) ---- */
     '#metaTip{position:fixed;pointer-events:none;opacity:0;transition:opacity .18s;' +
@@ -159,7 +159,7 @@
     /* footer */
     '#metaFooter{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:26px}',
     '#metaLogo{width:64px;height:64px;border-radius:50%;object-fit:cover;display:block}',
-    '#metaSiteUrl{font-family:"Press Start 2P",monospace;font-size:clamp(8px,2vw,13px);' +
+    '#metaSiteUrl{font-family:"Press Start 2P",monospace;font-size:13px;' +
       'color:#fff;text-align:center;text-shadow:0 1px 6px rgba(0,0,0,0.95)}'
   ].join('');
 

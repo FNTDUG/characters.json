@@ -25,6 +25,10 @@
       {
         "pageTitle": "FARTHEST METAS",
         "order": ["Story Nightmare", "Endless 6", "Event Endless", "Event Story Nightmare", "Boss Raids"]
+      },
+      {
+        "pageTitle": "GRIND METAS",
+        "order": ["Story Nightmare", "Endless 6", "Event Endless", "Event Story Nightmare", "Boss Raids"]
       }
     ]
   },
@@ -78,6 +82,16 @@
         { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
         { "name": "Candy Cadet", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "El Chip", "caption": "" }
+      ]
+    },
+    "Story Nightmare (Copy)": {
+      "units": [
+        { "name": "Undead Chica", "label": "$600", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Phantom Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "", "caption": "" },
+        { "name": "War Machine Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
+        { "name": "Movie Director Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
     }
   }

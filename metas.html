@@ -48,12 +48,12 @@
         'padding:clamp(8px,1.4vw,17px) 0 clamp(10px,1.75vw,20px);' +
         'border:1px solid rgba(246,155,85,1);margin-bottom:5px;overflow:hidden}',
       '.seamlessRoot *{box-sizing:border-box}',
-      '.seamlessHeader{position:relative;display:flex;align-items:center;justify-content:center;' +
+      '.seamlessHeader{display:flex;align-items:center;justify-content:center;' +
+        'gap:clamp(6px,1vw,14px);' +
         'padding:0 clamp(6px,1.05vw,11px);margin-bottom:3px;' +
         'min-height:clamp(32px,4.9vw,56px)}',
-      '.seamlessLogo{position:absolute;right:clamp(6px,1.05vw,11px);top:50%;' +
-        'transform:translateY(-50%);' +
-        'width:clamp(32px,4.9vw,56px);height:clamp(32px,4.9vw,56px);' +
+      '.seamlessLogo{flex-shrink:0;' +
+        'width:clamp(38px,5.8vw,70px);height:clamp(38px,5.8vw,70px);' +
         'border-radius:50%;object-fit:cover}',
       '.seamlessSiteName{font-family:"Press Start 2P",monospace;' +
         'font-size:clamp(16px,3.5vw,48px);color:#fff;line-height:1.2;text-align:center;' +
@@ -69,7 +69,6 @@
         'margin:0 0 clamp(2px,0.4vw,4px);' +
         'text-shadow:0 0 18px rgba(0,220,255,0.55),0 2px 8px rgba(0,0,0,0.8)}',
       '.seamlessSection{padding:0 clamp(6px,1.05vw,11px);margin-top:clamp(2px,0.3vw,4px)}',
-      '.seamlessSection .metaRow{grid-template-columns:repeat(6,clamp(40px,5.5vw,68px));justify-content:center}',
       '.seamlessSectionTitle{font-family:"Press Start 2P",monospace;' +
         'font-size:clamp(10px,1.82vw,24px);color:#fff;text-align:center;' +
         'margin:0 0 clamp(3px,0.56vw,7px);' +
@@ -153,7 +152,7 @@
         '.seamlessSection .metaRow{gap:3px}' +
         '.seamlessControls .meta-clutter-btn{font-size:7px;padding:4px 8px}' +
         '.seamlessHeader{min-height:clamp(30px,5vw,46px);margin-bottom:2px}' +
-        '.seamlessLogo{width:clamp(30px,5vw,46px);height:clamp(30px,5vw,46px);right:clamp(4px,1vw,8px)}' +
+        '.seamlessLogo{width:clamp(30px,5vw,46px);height:clamp(30px,5vw,46px)}' +
         '.seamlessSiteName{font-size:clamp(20px,4.5vw,42px)}' +
         '.seamlessSiteUrl{margin-bottom:3px}' +
         '.meta-card{padding:2px;border-radius:8px}' +

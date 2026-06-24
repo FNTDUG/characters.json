@@ -62,34 +62,46 @@
         'color:#fff;text-align:center;text-shadow:0 1px 6px rgba(0,0,0,0.95)}',
 
       /* === SEAMLESS MODE === */
+      /* no horizontal padding on root — children handle their own side spacing */
       '.seamlessRoot{width:100vw;position:relative;left:50%;transform:translateX(-50%);' +
         'background-size:cover;background-position:center;background-repeat:no-repeat;' +
         'color:#fff;font-family:"Press Start 2P",monospace;box-sizing:border-box;' +
-        'padding:clamp(12px,2vw,24px) clamp(8px,1.5vw,16px) clamp(14px,2.5vw,28px);' +
-        'border:1px solid rgba(246,155,85,1);margin-bottom:5px}',
+        'padding:clamp(12px,2vw,24px) 0 clamp(14px,2.5vw,28px);' +
+        'border:1px solid rgba(246,155,85,1);margin-bottom:5px;overflow:hidden}',
       '.seamlessRoot *{box-sizing:border-box}',
-      /* logo left, site name fills remaining space and centers within it */
-      '.seamlessHeader{display:flex;align-items:center;gap:clamp(10px,2vw,20px);margin-bottom:4px}',
-      '.seamlessLogo{width:clamp(46px,7vw,80px);height:clamp(46px,7vw,80px);' +
-        'border-radius:50%;object-fit:cover;flex-shrink:0}',
+      /* logo absolutely left; site name truly centered across full width */
+      '.seamlessHeader{position:relative;display:flex;align-items:center;justify-content:center;' +
+        'padding:0 clamp(8px,1.5vw,16px);margin-bottom:6px;' +
+        'min-height:clamp(46px,7vw,80px)}',
+      '.seamlessLogo{position:absolute;left:clamp(8px,1.5vw,16px);top:50%;' +
+        'transform:translateY(-50%);' +
+        'width:clamp(46px,7vw,80px);height:clamp(46px,7vw,80px);' +
+        'border-radius:50%;object-fit:cover}',
       '.seamlessSiteName{font-family:"Press Start 2P",monospace;' +
-        'font-size:clamp(14px,3.5vw,46px);color:#fff;line-height:1.2;' +
-        'text-shadow:0 2px 10px rgba(0,0,0,0.95);flex:1;text-align:center}',
+        'font-size:clamp(14px,3.5vw,46px);color:#fff;line-height:1.2;text-align:center;' +
+        'text-shadow:0 2px 10px rgba(0,0,0,0.95)}',
       '.seamlessSiteUrl{font-family:"Press Start 2P",monospace;' +
         'font-size:clamp(7px,1.1vw,13px);color:#fff;text-align:center;' +
+        'padding:0 clamp(8px,1.5vw,16px);' +
         'margin-bottom:clamp(6px,1vw,12px);text-shadow:0 1px 4px rgba(0,0,0,0.9)}',
-      /* negative margins cancel parent padding so bar spans full width */
+      /* page title: full width naturally since root has no horiz padding */
       '.seamlessPageTitle{font-family:"Press Start 2P",monospace;' +
         'font-size:clamp(16px,3.2vw,40px);color:#00e5ff;text-align:center;' +
-        'background:rgba(0,180,230,0.1);' +
-        'padding:clamp(4px,0.8vw,8px) clamp(8px,1.5vw,16px);' +
-        'margin:0 calc(-1*clamp(8px,1.5vw,16px)) clamp(6px,1vw,10px);' +
+        'background:rgba(0,180,230,0.12);' +
+        'padding:clamp(6px,1vw,12px) clamp(8px,1.5vw,16px);' +
+        'margin:0 0 clamp(4px,0.8vw,8px);' +
         'text-shadow:0 0 18px rgba(0,220,255,0.55),0 2px 8px rgba(0,0,0,0.8)}',
-      '.seamlessSection{margin-top:clamp(6px,1.2vw,14px)}',
+      /* sections get the side padding */
+      '.seamlessSection{padding:0 clamp(8px,1.5vw,16px);margin-top:clamp(6px,1.2vw,14px)}',
       '.seamlessSectionTitle{font-family:"Press Start 2P",monospace;' +
         'font-size:clamp(14px,2.6vw,34px);color:#fff;text-align:center;' +
         'margin:0 0 clamp(4px,0.8vw,10px);' +
         'text-shadow:0 2px 10px rgba(0,0,0,0.95),0 0 2px rgba(0,0,0,1)}',
+      /* seamless clutter button: centered, bigger on desktop */
+      '.seamlessControls{display:flex;justify-content:center;' +
+        'padding:clamp(4px,0.8vw,8px) clamp(8px,1.5vw,16px) clamp(6px,1vw,10px)}',
+      '.seamlessControls .meta-clutter-btn{font-size:clamp(7px,1vw,12px);' +
+        'padding:clamp(4px,0.6vw,8px) clamp(8px,1.2vw,16px)}',
 
       /* === CARDS (shared) === */
       '.meta-card{width:100%;aspect-ratio:1/1;' +
@@ -160,9 +172,10 @@
       /* === MOBILE === */
       '@media(max-width:900px){' +
         '.metaRoot{padding-left:4px;padding-right:4px}' +
-        '.seamlessRoot{padding-left:4px;padding-right:4px}' +
         '.metaRow{gap:3px}' +
         '.seamlessSection .metaRow{gap:3px}' +
+        /* keep seamless clutter button small on mobile */
+        '.seamlessControls .meta-clutter-btn{font-size:7px;padding:4px 8px}' +
         '.meta-card{padding:2px;border-radius:8px}' +
         '.meta-card-inner{border-radius:6px}' +
         '.meta-byte{top:2px;right:2px;padding:1px;border-radius:6px}' +
@@ -483,8 +496,8 @@
       pnEl.textContent = seamCfg.pageNote; root.appendChild(pnEl);
     }
 
-    /* clutter button */
-    var controls = document.createElement('div'); controls.className = 'metaControls';
+    /* clutter button — centered, bigger on desktop */
+    var controls = document.createElement('div'); controls.className = 'seamlessControls';
     controls.appendChild(makeClutterBtn(root));
     root.appendChild(controls);
 

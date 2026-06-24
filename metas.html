@@ -175,12 +175,19 @@
       'color:#fff;text-align:center;text-shadow:0 1px 6px rgba(0,0,0,0.95)}',
 
     /* mobile overrides */
-    /* mobile (portrait + landscape) — thinner borders, tighter gaps = bigger images */
+    /* mobile (portrait + landscape) — thinner borders, tighter gaps, edge-hugging icons */
     '@media(max-width:900px){' +
       '#metaRoot{padding-left:4px;padding-right:4px}' +
       '#metaRow{gap:3px}' +
       '.meta-card{padding:2px;border-radius:8px}' +
       '.meta-card-inner{border-radius:6px}' +
+      /* push icons right to the edge and reduce corner radius so they look square */
+      '.meta-byte{top:1px;right:1px;border-radius:4px}' +
+      '.meta-byte-inner{border-radius:2px}' +
+      '.meta-enchant{top:1px;left:1px;border-radius:4px}' +
+      '.meta-enchant-inner{border-radius:2px}' +
+      '.meta-replacement{bottom:1px;right:1px;border-radius:4px}' +
+      '.meta-replacement-inner{border-radius:2px}' +
     '}',
 
     /* small portrait phones — tooltip + label */

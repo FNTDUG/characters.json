@@ -41,7 +41,7 @@
       '.metaSiteUrl{font-family:"Press Start 2P",monospace;font-size:clamp(8px,1.1vw,13px);' +
         'color:#fff;text-align:center;text-shadow:0 1px 6px rgba(0,0,0,0.95)}',
 
-      /* ── seamless: all sizes reduced ~30% from original ── */
+      /* seamless — ~30% smaller than the original values */
       '.seamlessRoot{width:100vw;position:relative;left:50%;transform:translateX(-50%);' +
         'background-size:cover;background-position:center;background-repeat:no-repeat;' +
         'color:#fff;font-family:"Press Start 2P",monospace;box-sizing:border-box;' +
@@ -66,7 +66,7 @@
         'font-size:clamp(11px,2.24vw,28px);color:#00e5ff;text-align:center;' +
         'background:rgba(0,180,230,0.12);' +
         'padding:clamp(4px,0.7vw,8px) clamp(6px,1.05vw,11px);' +
-        'margin:0 0 clamp(3px,0.56vw,6px);' +
+        'margin:0 0 clamp(2px,0.4vw,4px);' +
         'text-shadow:0 0 18px rgba(0,220,255,0.55),0 2px 8px rgba(0,0,0,0.8)}',
       '.seamlessSection{padding:0 clamp(6px,1.05vw,11px);margin-top:clamp(2px,0.3vw,4px)}',
       '.seamlessSectionTitle{font-family:"Press Start 2P",monospace;' +
@@ -78,15 +78,16 @@
       '.seamlessControls .meta-clutter-btn{font-size:clamp(5px,0.7vw,8px);' +
         'padding:clamp(3px,0.42vw,6px) clamp(6px,0.84vw,11px)}',
 
-      '.seamlessTabBar{display:flex;flex-wrap:wrap;justify-content:center;gap:5px;' +
-        'padding:clamp(3px,0.5vw,6px) clamp(6px,1.05vw,11px) clamp(4px,0.7vw,8px)}',
-      '.seamlessTab{font-family:"Press Start 2P",monospace;font-size:clamp(5px,0.8vw,9px);' +
+      /* page switcher tabs — only rendered when pages.length > 1 */
+      '.seamlessPageTabBar{display:flex;flex-wrap:wrap;justify-content:center;gap:5px;' +
+        'padding:clamp(3px,0.5vw,6px) clamp(6px,1.05vw,11px) clamp(5px,0.8vw,9px)}',
+      '.seamlessPageTab{font-family:"Press Start 2P",monospace;font-size:clamp(5px,0.8vw,9px);' +
         'padding:clamp(3px,0.5vw,6px) clamp(7px,1vw,12px);' +
         'background:rgba(0,0,0,0.5);border:1px solid rgba(246,155,85,0.35);' +
         'color:rgba(255,255,255,0.4);border-radius:4px;cursor:pointer;' +
         'transition:all .15s;user-select:none}',
-      '.seamlessTab:hover{background:rgba(246,155,85,0.1);border-color:rgba(246,155,85,0.7);color:rgba(255,255,255,0.8)}',
-      '.seamlessTab.seamlessTabActive{background:rgba(246,155,85,0.18);border-color:rgba(246,155,85,1);color:#ffa45b}',
+      '.seamlessPageTab:hover{background:rgba(246,155,85,0.1);border-color:rgba(246,155,85,0.7);color:rgba(255,255,255,0.8)}',
+      '.seamlessPageTab.seamlessPageTabActive{background:rgba(246,155,85,0.18);border-color:rgba(246,155,85,1);color:#ffa45b}',
 
       '.meta-card{width:100%;aspect-ratio:1/1;' +
         'border-radius:12px;padding:3px;position:relative;cursor:default}',
@@ -406,14 +407,21 @@
   }
 
   function renderSeamless(mountEl, metasData) {
-    var shared   = metasData.shared   || {};
-    var seamCfg  = metasData.seamless || {};
+    var shared  = metasData.shared  || {};
+    var seamCfg = metasData.seamless || {};
     if (seamCfg === true) seamCfg = {};
+
+    /* support old format (single pageTitle+order) and new format (pages array) */
+    var pages = seamCfg.pages;
+    if (!pages || !pages.length) {
+      pages = [{ pageTitle: seamCfg.pageTitle, pageNote: seamCfg.pageNote, order: seamCfg.order }];
+    }
 
     var root = document.createElement('div');
     root.className = 'seamlessRoot';
     root.style.backgroundImage = 'url(' + (shared.background || '') + ')';
 
+    /* ── fixed header ── */
     var header = document.createElement('div'); header.className = 'seamlessHeader';
     if (shared.logoUrl) {
       var logo = document.createElement('img'); logo.className = 'seamlessLogo'; logo.src = shared.logoUrl; logo.alt = '';
@@ -429,69 +437,76 @@
       siteUrlEl.textContent = shared.siteUrl; root.appendChild(siteUrlEl);
     }
 
-    if (seamCfg.pageTitle) {
-      var ptEl = document.createElement('div'); ptEl.className = 'seamlessPageTitle';
-      ptEl.textContent = seamCfg.pageTitle; root.appendChild(ptEl);
-    }
-
-    if (seamCfg.pageNote) {
-      var pnEl = document.createElement('div'); pnEl.className = 'seamlessPageNote';
-      pnEl.textContent = seamCfg.pageNote; root.appendChild(pnEl);
-    }
-
     var controls = document.createElement('div'); controls.className = 'seamlessControls';
     controls.appendChild(makeClutterBtn(root));
     root.appendChild(controls);
 
-    var order = seamCfg.order || Object.keys(metasData.metas || {});
-    var reRenders = [];
-    var useTabBar = order.length > 1;
+    /* ── page-switcher tab bar (only when multiple pages) ── */
     var tabBar = null;
-    var sectionEls = [];
+    var pageWrappers = [];
+    var reRenders = [];
 
-    if (useTabBar) {
+    if (pages.length > 1) {
       tabBar = document.createElement('div');
-      tabBar.className = 'seamlessTabBar';
+      tabBar.className = 'seamlessPageTabBar';
       root.appendChild(tabBar);
     }
 
-    order.forEach(function (metaName, idx) {
-      var cfg = metasData.metas && metasData.metas[metaName];
-      if (!cfg) return;
+    pages.forEach(function (page, pageIdx) {
+      /* wrapper holds the pageTitle + all sections for this page */
+      var wrap = document.createElement('div');
+      if (pageIdx > 0) wrap.style.display = 'none';
+      pageWrappers.push(wrap);
 
-      var section = document.createElement('div'); section.className = 'seamlessSection';
-      if (useTabBar && idx > 0) section.style.display = 'none';
-
-      var titleEl = document.createElement('div'); titleEl.className = 'seamlessSectionTitle';
-      titleEl.textContent = metaName; section.appendChild(titleEl);
-
-      var row = document.createElement('div'); row.className = 'metaRow';
-      section.appendChild(row);
-      root.appendChild(section);
-
-      if (useTabBar) {
-        sectionEls.push(section);
-        var tab = document.createElement('button');
-        tab.className = 'seamlessTab' + (idx === 0 ? ' seamlessTabActive' : '');
-        tab.textContent = metaName;
-        (function (i) {
-          tab.addEventListener('click', function () {
-            sectionEls.forEach(function (s, j) { s.style.display = j === i ? '' : 'none'; });
-            var tabs = tabBar.querySelectorAll('.seamlessTab');
-            for (var k = 0; k < tabs.length; k++) tabs[k].classList.toggle('seamlessTabActive', k === i);
-          });
-        }(idx));
-        tabBar.appendChild(tab);
+      if (page.pageTitle) {
+        var ptEl = document.createElement('div'); ptEl.className = 'seamlessPageTitle';
+        ptEl.textContent = page.pageTitle; wrap.appendChild(ptEl);
+      }
+      if (page.pageNote) {
+        var pnEl = document.createElement('div'); pnEl.className = 'seamlessPageNote';
+        pnEl.textContent = page.pageNote; wrap.appendChild(pnEl);
       }
 
-      var META_CFG = {
-        title:    metaName,
-        logoUrl:  '', siteUrl:  '', background: '',
-        bytes:    shared.bytes    || {},
-        enchants: shared.enchants || {},
-        units:    cfg.units       || []
-      };
-      reRenders.push(buildCardRow(row, META_CFG));
+      var order = page.order || Object.keys(metasData.metas || {});
+      order.forEach(function (metaName) {
+        var cfg = metasData.metas && metasData.metas[metaName];
+        if (!cfg) return;
+
+        var section = document.createElement('div'); section.className = 'seamlessSection';
+
+        var titleEl = document.createElement('div'); titleEl.className = 'seamlessSectionTitle';
+        titleEl.textContent = metaName; section.appendChild(titleEl);
+
+        var row = document.createElement('div'); row.className = 'metaRow';
+        section.appendChild(row);
+        wrap.appendChild(section);
+
+        var META_CFG = {
+          title:    metaName,
+          logoUrl:  '', siteUrl: '', background: '',
+          bytes:    shared.bytes    || {},
+          enchants: shared.enchants || {},
+          units:    cfg.units       || []
+        };
+        reRenders.push(buildCardRow(row, META_CFG));
+      });
+
+      root.appendChild(wrap);
+
+      /* build the tab button for this page */
+      if (tabBar) {
+        var tab = document.createElement('button');
+        tab.className = 'seamlessPageTab' + (pageIdx === 0 ? ' seamlessPageTabActive' : '');
+        tab.textContent = page.pageTitle || ('List ' + (pageIdx + 1));
+        (function (i) {
+          tab.addEventListener('click', function () {
+            pageWrappers.forEach(function (w, j) { w.style.display = j === i ? '' : 'none'; });
+            var tabs = tabBar.querySelectorAll('.seamlessPageTab');
+            for (var k = 0; k < tabs.length; k++) tabs[k].classList.toggle('seamlessPageTabActive', k === i);
+          });
+        }(pageIdx));
+        tabBar.appendChild(tab);
+      }
     });
 
     mountEl.appendChild(root);

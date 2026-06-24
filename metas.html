@@ -175,6 +175,15 @@
       'color:#fff;text-align:center;text-shadow:0 1px 6px rgba(0,0,0,0.95)}',
 
     /* mobile overrides */
+    /* mobile (portrait + landscape) — thinner borders, tighter gaps = bigger images */
+    '@media(max-width:900px){' +
+      '#metaRoot{padding-left:4px;padding-right:4px}' +
+      '#metaRow{gap:3px}' +
+      '.meta-card{padding:2px;border-radius:8px}' +
+      '.meta-card-inner{border-radius:6px}' +
+    '}',
+
+    /* small portrait phones — tooltip + label */
     '@media(max-width:600px){' +
       '#metaTipInner{font-size:7px;padding:7px 9px;max-width:190px}' +
       '.mt-name{font-size:8px;margin-bottom:4px}' +

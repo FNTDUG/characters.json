@@ -129,7 +129,7 @@
         { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
     },
-    "Boss Raid Grind": {
+    "Boss Raids Grind": {
       "units": [
         { "name": "Bonnie", "label": "$375", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Valkyrie Chica", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "", "caption": "" },

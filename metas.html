@@ -7,6 +7,14 @@
   lnk.href = 'https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap';
   (document.head || document.documentElement).appendChild(lnk);
 
+  /* Viewport meta — ensures mobile renders at device width, not virtual 980px */
+  if (!document.querySelector('meta[name="viewport"]')) {
+    var vpm = document.createElement('meta');
+    vpm.name    = 'viewport';
+    vpm.content = 'width=device-width, initial-scale=1';
+    (document.head || document.documentElement).appendChild(vpm);
+  }
+
   /* ================================================================
      EDITABLE CONFIG
      — title      : heading text (also editable live in the browser)
@@ -41,12 +49,12 @@
     },
 
     units: [
-      { name: 'Golden Freddy',               label: '$1K', byte: 'The Box',    enchant: 'Vengeance', replacement: '' },
-      { name: 'Astral Bonnie',               label: '',    byte: 'Boss Drain', enchant: 'Phantom',   replacement: '' },
-      { name: 'Dragon Endo 01',              label: '',    byte: 'Reaper',     enchant: '',           replacement: '' },
-      { name: 'Frostmancer Withered Bonnie', label: '',    byte: 'The Fan',    enchant: '',           replacement: '' },
-      { name: 'Golden Cupcake',              label: '',    byte: 'UFO',        enchant: '',           replacement: '' },
-      { name: 'Kronos Endo Freddy',          label: '',    byte: 'KABOOM!',    enchant: '',           replacement: '' }
+      { name: 'Golden Freddy',               label: '$1K', byte: 'The Box',    enchant: 'Vengeance', replacement: '', caption: '' },
+      { name: 'Astral Bonnie',               label: '',    byte: 'Boss Drain', enchant: 'Phantom',   replacement: '', caption: '' },
+      { name: 'Dragon Endo 01',              label: '',    byte: 'Reaper',     enchant: '',           replacement: '', caption: '' },
+      { name: 'Frostmancer Withered Bonnie', label: '',    byte: 'The Fan',    enchant: '',           replacement: '', caption: '' },
+      { name: 'Golden Cupcake',              label: '',    byte: 'UFO',        enchant: '',           replacement: '', caption: '' },
+      { name: 'Kronos Endo Freddy',          label: '',    byte: 'KABOOM!',    enchant: '',           replacement: '', caption: '' }
     ]
   };
 
@@ -90,13 +98,14 @@
     /* root */
     '#metaRoot{width:100vw;position:relative;left:50%;transform:translateX(-50%);' +
       'background-size:cover;background-position:center;background-repeat:no-repeat;' +
-      'color:#fff;font-family:"Press Start 2P",monospace;box-sizing:border-box;padding:28px 16px 36px;' +
+      'color:#fff;font-family:"Press Start 2P",monospace;box-sizing:border-box;' +
+      'padding:clamp(14px,2.5vw,28px) clamp(8px,1.5vw,16px) clamp(18px,3vw,36px);' +
       'border:1px solid rgba(246,155,85,1)}',
     '#metaRoot *{box-sizing:border-box}',
 
     /* editable title */
-    '#metaTitle{font-family:"Press Start 2P",monospace;font-size:clamp(14px,2.8vw,36px);' +
-      'color:#fff;text-align:center;margin:0 0 24px;padding:4px 8px;' +
+    '#metaTitle{font-family:"Press Start 2P",monospace;font-size:clamp(14px,3vw,36px);' +
+      'color:#fff;text-align:center;margin:0 0 clamp(12px,2vw,24px);padding:4px 8px;' +
       'line-height:1.35;word-break:break-word;' +
       'text-shadow:0 2px 10px rgba(0,0,0,0.95),0 0 2px rgba(0,0,0,1)}',
 
@@ -138,6 +147,13 @@
       'border:2px solid #ffd700;color:#39ff14;font-family:"Press Start 2P",monospace;' +
       'font-size:clamp(5px,0.9vw,9px);padding:3px 6px;border-radius:4px;pointer-events:none;z-index:2}',
 
+    /* slot — card + caption stacked */
+    '.meta-slot{display:flex;flex-direction:column;align-items:center;gap:clamp(3px,0.6vw,7px)}',
+    '.meta-caption{font-family:"Press Start 2P",monospace;font-size:clamp(5px,0.85vw,10px);' +
+      'color:#fff;text-align:center;width:100%;outline:none;cursor:text;line-height:1.5;' +
+      'word-break:break-word;text-shadow:0 1px 4px rgba(0,0,0,0.9)}',
+    '.meta-caption:empty:before{content:attr(data-ph);opacity:0.35;pointer-events:none}',
+
     /* ---- tooltip (same visual style as tierlist) ---- */
     '#metaTip{position:fixed;pointer-events:none;opacity:0;transition:opacity .18s;' +
       'z-index:10000;display:none;padding:2px;border-radius:8px}',
@@ -154,8 +170,8 @@
     '.mt-text{font-size:9.5px;opacity:0.9;line-height:1.5}',
 
     /* footer */
-    '#metaFooter{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:26px}',
-    '#metaLogo{width:64px;height:64px;border-radius:50%;object-fit:cover;display:block}',
+    '#metaFooter{display:flex;flex-direction:column;align-items:center;gap:clamp(6px,1vw,10px);margin-top:clamp(10px,2vw,26px)}',
+    '#metaLogo{width:clamp(40px,5vw,64px);height:clamp(40px,5vw,64px);border-radius:50%;object-fit:cover;display:block}',
     '#metaSiteUrl{font-family:"Press Start 2P",monospace;font-size:clamp(8px,1.1vw,13px);' +
       'color:#fff;text-align:center;text-shadow:0 1px 6px rgba(0,0,0,0.95)}'
   ].join('');
@@ -429,7 +445,21 @@
         c.addEventListener('mouseleave', hideTip);
       }(card, unitCfg, u));
 
-      row.appendChild(card);
+      /* slot wraps card + caption */
+      var slot = document.createElement('div');
+      slot.className = 'meta-slot';
+      slot.appendChild(card);
+
+      /* caption — centered editable text below the card */
+      var captionEl = document.createElement('div');
+      captionEl.className       = 'meta-caption';
+      captionEl.contentEditable = 'true';
+      captionEl.setAttribute('spellcheck', 'false');
+      captionEl.setAttribute('data-ph', 'Add text...');
+      if (unitCfg.caption) captionEl.textContent = unitCfg.caption;
+      slot.appendChild(captionEl);
+
+      row.appendChild(slot);
     });
   }
 

@@ -122,22 +122,22 @@
     '.meta-card-inner{position:relative;width:100%;height:100%;border-radius:9px;overflow:hidden;background:rgba(34,34,34,0.85)}',
     '.meta-card-img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;pointer-events:none}',
 
-    /* byte icon — top-right (rarity bordered, like tierlist cards) */
-    '.meta-byte{position:absolute;top:4px;right:4px;z-index:2;' +
-      'width:clamp(16px,28%,54px);height:clamp(16px,28%,54px);border-radius:9px;padding:2px;pointer-events:none}',
+    /* byte icon — top-right */
+    '.meta-byte{position:absolute;top:4px;right:4px;z-index:2;aspect-ratio:1/1;' +
+      'width:clamp(16px,28%,54px);border-radius:9px;padding:2px;pointer-events:none}',
     '.meta-byte.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
     '.meta-byte-inner{width:100%;height:100%;border-radius:7px;overflow:hidden;background:rgba(34,34,34,0.85)}',
     '.meta-byte-inner img{width:100%;height:100%;object-fit:cover;display:block}',
 
-    /* enchant icon — top-left (solid color border) */
-    '.meta-enchant{position:absolute;top:4px;left:4px;z-index:2;' +
-      'width:clamp(14px,24%,48px);height:clamp(14px,24%,48px);border-radius:8px;padding:2px;pointer-events:none}',
+    /* enchant icon — top-left */
+    '.meta-enchant{position:absolute;top:4px;left:4px;z-index:2;aspect-ratio:1/1;' +
+      'width:clamp(14px,24%,48px);border-radius:8px;padding:2px;pointer-events:none}',
     '.meta-enchant-inner{width:100%;height:100%;border-radius:6px;overflow:hidden;background:rgba(34,34,34,0.85)}',
     '.meta-enchant-inner img{width:100%;height:100%;object-fit:cover;display:block}',
 
     /* replacement unit icon — bottom-right */
-    '.meta-replacement{position:absolute;bottom:4px;right:4px;z-index:2;' +
-      'width:clamp(16px,28%,54px);height:clamp(16px,28%,54px);border-radius:9px;padding:2px;pointer-events:none}',
+    '.meta-replacement{position:absolute;bottom:4px;right:4px;z-index:2;aspect-ratio:1/1;' +
+      'width:clamp(16px,28%,54px);border-radius:9px;padding:2px;pointer-events:none}',
     '.meta-replacement.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
     '.meta-replacement-inner{width:100%;height:100%;border-radius:7px;overflow:hidden;background:rgba(34,34,34,0.85)}',
     '.meta-replacement-inner img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}',
@@ -150,9 +150,8 @@
     /* slot — card + caption stacked */
     '.meta-slot{display:flex;flex-direction:column;align-items:center;gap:clamp(3px,0.6vw,7px)}',
     '.meta-caption{font-family:"Press Start 2P",monospace;font-size:clamp(5px,0.85vw,10px);' +
-      'color:#fff;text-align:center;width:100%;outline:none;cursor:text;line-height:1.5;' +
-      'word-break:break-word;text-shadow:0 1px 4px rgba(0,0,0,0.9)}',
-    '.meta-caption:empty:before{content:attr(data-ph);opacity:0.35;pointer-events:none}',
+      'color:#fff;text-align:center;width:100%;line-height:1.5;' +
+      'word-break:break-word;text-shadow:0 1px 4px rgba(0,0,0,0.9);user-select:none}',
 
     /* ---- tooltip (same visual style as tierlist) ---- */
     '#metaTip{position:fixed;pointer-events:none;opacity:0;transition:opacity .18s;' +
@@ -173,7 +172,18 @@
     '#metaFooter{display:flex;flex-direction:column;align-items:center;gap:clamp(6px,1vw,10px);margin-top:clamp(10px,2vw,26px)}',
     '#metaLogo{width:clamp(40px,5vw,64px);height:clamp(40px,5vw,64px);border-radius:50%;object-fit:cover;display:block}',
     '#metaSiteUrl{font-family:"Press Start 2P",monospace;font-size:clamp(8px,1.1vw,13px);' +
-      'color:#fff;text-align:center;text-shadow:0 1px 6px rgba(0,0,0,0.95)}'
+      'color:#fff;text-align:center;text-shadow:0 1px 6px rgba(0,0,0,0.95)}',
+
+    /* mobile overrides */
+    '@media(max-width:600px){' +
+      '#metaTipInner{font-size:7px;padding:7px 9px;max-width:190px}' +
+      '.mt-name{font-size:8px;margin-bottom:4px}' +
+      '.mt-sep{margin:4px 0}' +
+      '.mt-row{gap:5px;margin-top:4px}' +
+      '.mt-icon{width:20px;height:20px}' +
+      '.mt-text{font-size:6px}' +
+      '.meta-label{font-size:5px;padding:2px 4px;border-width:1px}' +
+    '}'
   ].join('');
 
   var styleEl = document.createElement('style');
@@ -452,11 +462,8 @@
 
       /* caption — centered editable text below the card */
       var captionEl = document.createElement('div');
-      captionEl.className       = 'meta-caption';
-      captionEl.contentEditable = 'true';
-      captionEl.setAttribute('spellcheck', 'false');
-      captionEl.setAttribute('data-ph', 'Add text...');
-      if (unitCfg.caption) captionEl.textContent = unitCfg.caption;
+      captionEl.className   = 'meta-caption';
+      captionEl.textContent = unitCfg.caption || '';
       slot.appendChild(captionEl);
 
       row.appendChild(slot);

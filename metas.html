@@ -41,12 +41,12 @@
     },
 
     units: [
-      { name: 'Golden Freddy',               label: '$1K', byte: 'The Box',    enchant: 'Vengeance' },
-      { name: 'Astral Bonnie',               label: '',    byte: 'Boss Drain', enchant: 'Phantom'   },
-      { name: 'Dragon Endo 01',              label: '',    byte: 'Reaper',     enchant: ''           },
-      { name: 'Frostmancer Withered Bonnie', label: '',    byte: 'The Fan',    enchant: ''           },
-      { name: 'Golden Cupcake',              label: '',    byte: 'UFO',        enchant: ''           },
-      { name: 'Kronos Endo Freddy',          label: '',    byte: 'KABOOM!',    enchant: ''           }
+      { name: 'Golden Freddy',               label: '$1K', byte: 'The Box',    enchant: 'Vengeance', replacement: '' },
+      { name: 'Astral Bonnie',               label: '',    byte: 'Boss Drain', enchant: 'Phantom',   replacement: '' },
+      { name: 'Dragon Endo 01',              label: '',    byte: 'Reaper',     enchant: '',           replacement: '' },
+      { name: 'Frostmancer Withered Bonnie', label: '',    byte: 'The Fan',    enchant: '',           replacement: '' },
+      { name: 'Golden Cupcake',              label: '',    byte: 'UFO',        enchant: '',           replacement: '' },
+      { name: 'Kronos Endo Freddy',          label: '',    byte: 'KABOOM!',    enchant: '',           replacement: '' }
     ]
   };
 
@@ -113,8 +113,8 @@
       'border-radius:12px;padding:3px;position:relative;cursor:default}',
     '.meta-card.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
 
-    /* inner — dark bg so rarity gradient shows only through the 3px padding ring (border only) */
-    '.meta-card-inner{position:relative;width:100%;height:100%;border-radius:9px;overflow:hidden;background:rgba(15,10,25,0.92)}',
+    /* inner — no background at all */
+    '.meta-card-inner{position:relative;width:100%;height:100%;border-radius:9px;overflow:hidden}',
     '.meta-card-img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;pointer-events:none}',
 
     /* byte icon — top-right (rarity bordered, like tierlist cards) */
@@ -129,6 +129,13 @@
       'width:clamp(30px,24%,48px);height:clamp(30px,24%,48px);border-radius:8px;padding:2px;pointer-events:none}',
     '.meta-enchant-inner{width:100%;height:100%;border-radius:6px;overflow:hidden}',
     '.meta-enchant-inner img{width:100%;height:100%;object-fit:cover;display:block}',
+
+    /* replacement unit icon — bottom-right */
+    '.meta-replacement{position:absolute;bottom:4px;right:4px;z-index:2;' +
+      'width:clamp(34px,28%,54px);height:clamp(34px,28%,54px);border-radius:9px;padding:2px;pointer-events:none}',
+    '.meta-replacement.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
+    '.meta-replacement-inner{width:100%;height:100%;border-radius:7px;overflow:hidden}',
+    '.meta-replacement-inner img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}',
 
     /* cost label — bottom-left */
     '.meta-label{position:absolute;bottom:5px;left:5px;background:rgba(0,0,0,0.88);' +
@@ -288,6 +295,31 @@
       tipInner.appendChild(rRow);
     }
 
+    /* replacement row */
+    if (unitCfg.replacement) {
+      var rrU   = unitMap[unitCfg.replacement] || {};
+      var rrRar = (rrU.rarity || '').toLowerCase();
+      var rrSh  = rrRar === 'shiny';
+      var rrRow = document.createElement('div');
+      rrRow.className = 'mt-row';
+
+      var rrIcon = document.createElement('div');
+      rrIcon.className        = 'mt-icon' + (rrSh ? ' meta-shiny' : '');
+      rrIcon.style.background = getRarityBg(unitCfg.replacement, rrRar);
+      if (rrSh) rrIcon.style.backgroundSize = '200% 200%';
+      var rrIn  = document.createElement('div'); rrIn.className = 'mt-icon-in';
+      var rrImg = document.createElement('img'); rrImg.src = rrU.img || ''; rrImg.alt = '';
+      rrIn.appendChild(rrImg); rrIcon.appendChild(rrIn);
+
+      var rrTxt = document.createElement('div');
+      rrTxt.className   = 'mt-text';
+      rrTxt.textContent = 'Alt: ' + unitCfg.replacement;
+
+      rrRow.appendChild(rrIcon);
+      rrRow.appendChild(rrTxt);
+      tipInner.appendChild(rrRow);
+    }
+
     /* position — fixed coords from getBoundingClientRect */
     tip.style.display = 'block';
     tip.style.opacity = '0';
@@ -336,7 +368,7 @@
       img.draggable  = false;
       img.loading    = 'lazy';
       img.onerror    = function () {
-        this.style.cssText = 'width:100%;height:100%;background:#1a1a2e;display:block';
+        this.style.cssText = 'width:100%;height:100%;display:block';
         this.removeAttribute('src');
       };
       inner.appendChild(img);
@@ -368,6 +400,23 @@
         bImg.src = byteData.url; bImg.alt = unitCfg.byte;
         bIn.appendChild(bImg); bWrap.appendChild(bIn);
         inner.appendChild(bWrap);
+      }
+
+      /* replacement unit icon — bottom-right */
+      if (unitCfg.replacement) {
+        var rU     = unitMap[unitCfg.replacement] || {};
+        var rRar   = (rU.rarity || '').toLowerCase();
+        var rShiny = rRar === 'shiny';
+        var rWrap  = document.createElement('div');
+        rWrap.className        = 'meta-replacement' + (rShiny ? ' meta-shiny' : '');
+        rWrap.style.background = getRarityBg(unitCfg.replacement, rRar);
+        if (rShiny) rWrap.style.backgroundSize = '200% 200%';
+        var rIn  = document.createElement('div'); rIn.className = 'meta-replacement-inner';
+        var rImg = document.createElement('img');
+        rImg.src = rU.img || ''; rImg.alt = unitCfg.replacement;
+        rImg.draggable = false; rImg.loading = 'lazy';
+        rIn.appendChild(rImg); rWrap.appendChild(rIn);
+        inner.appendChild(rWrap);
       }
 
       /* cost label — bottom-left */

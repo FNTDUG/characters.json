@@ -15,7 +15,8 @@
 
     "enchants": {
       "Vengeance": { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-40-19-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347", "color": "#e87a00" },
-      "Phantom":   { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-39-58-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347", "color": "#00ee00" }
+      "Phantom":   { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-39-58-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347", "color": "#00ee00" },
+      "Investor": { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-39-48-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347", "color": "#6a5404"}
     }
   },
 
@@ -28,7 +29,7 @@
       },
       {
         "pageTitle": "GRIND METAS",
-        "order": ["Story Nightmare", "Endless 6", "Event Endless", "Event Story Nightmare", "Boss Raids"]
+        "order": ["Story Grind", "Endless Grind", "Event Endless Grind", "Event Story Grind", "Boss Raids Grind"]
       }
     ]
   },
@@ -40,17 +41,17 @@
         { "name": "Phantom Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "", "caption": "" },
         { "name": "War Machine Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Candy Cadet", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
         { "name": "Movie Director Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
     },
     "Endless 6": {
       "units": [
-        { "name": "Endo 01", "label": "$1k", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Endo 01", "label": "$1k", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
         { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Amalgam", "caption": "" },
         { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
-        { "name": "Candy Cadet", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "El Chip", "caption": "" }
       ]
     },
@@ -60,7 +61,7 @@
         { "name": "Gravelord Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
         { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Yenndo", "caption": "" },
         { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
-        { "name": "Candy Cadet", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "El Chip", "caption": "" }
       ]
     },
@@ -70,28 +71,68 @@
         { "name": "Phantom Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "", "caption": "" },
         { "name": "War Machine Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Candy Cadet", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
         { "name": "Movie Director Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
     },
     "Boss Raids": {
       "units": [
-        { "name": "Golden Freddy", "label": "$1k", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Golden Freddy", "label": "$1k", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Gravelord Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "Amalgam", "caption": "" },
         { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
         { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
-        { "name": "Candy Cadet", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "El Chip", "caption": "" }
       ]
     },
-    "Story Nightmare (Copy)": {
+    "Story Grind": {
       "units": [
         { "name": "Undead Chica", "label": "$600", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Phantom Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "", "caption": "" },
-        { "name": "War Machine Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Candy Cadet", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
-        { "name": "Movie Director Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" }
+        { "name": "War Machine Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "", "caption": "" },
+        { "name": "Valkyrie Chica", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Withered Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
+        { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "", "caption": "" }
+      ]
+    }
+    "Endless Grind": {
+      "units": [
+        { "name": "Bonnie", "label": "$375", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Valkyrie Chica", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "War Machine Foxy", "caption": "Place on Boss" },
+        { "name": "Purple Guy", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "Henry Emily", "caption": "Place on Boss" },
+        { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
+        { "name": "Fazcade", "label": "", "byte": "UFO", "enchant": "Investor", "replacement": "", "caption": "" }
+      ]
+    }
+    "Event Endless Grind": {
+      "units": [
+        { "name": "Undead Chica", "label": "$600", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "War Machine Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "", "caption": "" },
+        { "name": "Valkyrie Chica", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Purple Guy", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "Henry Emily", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
+        { "name": "Fazcade", "label": "", "byte": "UFO", "enchant": "Investor", "replacement": "", "caption": "" }
+      ]
+    }
+    "Event Story Grind": {
+      "units": [
+        { "name": "Undead Chica", "label": "$600", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "War Machine Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "", "caption": "" },
+        { "name": "Valkyrie Chica", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Purple Guy", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "Henry Emily", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
+        { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "", "caption": "" }
+      ]
+    }
+    "Boss Raid Grind": {
+      "units": [
+        { "name": "Bonnie", "label": "$375", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Valkyrie Chica", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "War Machine Foxy", "caption": "Place on Boss" },
+        { "name": "Purple Guy", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "Henry Emily", "caption": "Place on Boss" },
+        { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "Golden Cupcake", "caption": "" },
+        { "name": "Fazcade", "label": "", "byte": "UFO", "enchant": "Investor", "replacement": "", "caption": "" }
       ]
     }
   }

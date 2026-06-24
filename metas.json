@@ -20,9 +20,13 @@
   },
 
   "seamless": {
-    "siteName":  "FNTD USER GUIDE",
-    "pageTitle": "FARTHEST METAS",
-    "order":     ["Story Nightmare","Endless 6","Event Endless","Event Story Nightmare","Boss Raids"]
+    "siteName": "FNTD USER GUIDE",
+    "pages": [
+      {
+        "pageTitle": "FARTHEST METAS",
+        "order": ["Story Nightmare", "Endless 6", "Event Endless", "Event Story Nightmare", "Boss Raids"]
+      }
+    ]
   },
 
   "metas": {

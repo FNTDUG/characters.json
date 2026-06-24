@@ -29,6 +29,16 @@
         { "name": "Golden Cupcake",              "label": "",    "byte": "UFO",        "enchant": "",          "replacement": "",           "caption": "" },
         { "name": "Kronos Endo Freddy",          "label": "",    "byte": "KABOOM!",    "enchant": "",          "replacement": "",           "caption": "" }
       ]
+    },
+   "Normal Meta": {
+      "units": [
+        { "name": "Golden Freddy",               "label": "$1K", "byte": "The Box",    "enchant": "Vengeance", "replacement": "",           "caption": "" },
+        { "name": "Astral Bonnie",               "label": "",    "byte": "Boss Drain", "enchant": "Phantom",   "replacement": "",           "caption": "" },
+        { "name": "Dragon Endo 01",              "label": "",    "byte": "Reaper",     "enchant": "",          "replacement": "",           "caption": "" },
+        { "name": "Frostmancer Withered Bonnie", "label": "",    "byte": "The Fan",    "enchant": "",          "replacement": "",           "caption": "" },
+        { "name": "Golden Cupcake",              "label": "",    "byte": "UFO",        "enchant": "",          "replacement": "",           "caption": "" },
+        { "name": "Kronos Endo Freddy",          "label": "",    "byte": "KABOOM!",    "enchant": "",          "replacement": "",           "caption": "" }
+      ]
+     }
     }
-  }
-}
+   }

@@ -238,7 +238,7 @@
       "units": [
         { "name": "Golden Freddy", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Starfarer Princess", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" },
+        { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Shark Withered Foxy", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
@@ -248,7 +248,7 @@
       "units": [
         { "name": "Golden Freddy", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Golden Cupcake", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" },
+        { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Shark Withered Foxy", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
@@ -258,7 +258,7 @@
       "units": [
         { "name": "Golden Freddy", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Spring Duo", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Lolbit", "label": "", "byte": "UFO", "enchant": "Vengenace", "replacement": "", "caption": "" },
+        { "name": "Lolbit", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Shark Withered Foxy", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }

@@ -231,7 +231,7 @@
         { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "", "caption": "" },
         { "name": "Shark Withered Foxy", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]
     },
       "Player 2": {
@@ -241,7 +241,7 @@
         { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Shark Withered Foxy", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]
     },
       "Player 3": {
@@ -251,7 +251,7 @@
         { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Shark Withered Foxy", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]
     },
       "Player 4": {
@@ -261,7 +261,7 @@
         { "name": "Lolbit", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Shark Withered Foxy", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]
     }
   }

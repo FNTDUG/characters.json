@@ -161,7 +161,7 @@
         { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Fredtrap", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Molten Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Candy Cadet", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" }
+        { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
     },
     "Dark 3rd": {

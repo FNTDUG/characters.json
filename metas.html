@@ -159,6 +159,13 @@
         '.seamlessControls .meta-clutter-btn{font-size:clamp(5px,0.7vw,8px);padding:clamp(3px,0.42vw,6px) clamp(6px,0.84vw,11px)}' +
         '.seamlessPageTabBar{gap:5px;padding:clamp(3px,0.5vw,6px) clamp(6px,1.05vw,11px) clamp(5px,0.8vw,9px)}' +
         '.seamlessPageTab{font-size:clamp(5px,0.8vw,9px);padding:clamp(3px,0.5vw,6px) clamp(7px,1vw,12px)}' +
+        /* desktop seamless only: shrink the unit card 20% (80% width, square so height follows). */
+        /* badges are sized as a % of the card, so bump their % by 1/0.8 = x1.25 to keep them */
+        /* at their original pixel size. labels (viewport-based) + captions (outside card) untouched. */
+        '.seamlessRoot .meta-card{width:80%}' +
+        '.seamlessRoot .meta-byte{width:clamp(16px,35%,54px)}' +
+        '.seamlessRoot .meta-enchant{width:clamp(14px,30%,48px)}' +
+        '.seamlessRoot .meta-replacement{width:clamp(16px,35%,54px)}' +
       '}',
       '@media(max-width:900px){' +
         '.metaRoot{padding-left:4px;padding-right:4px}' +

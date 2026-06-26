@@ -144,7 +144,7 @@
       '.mt-icon.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
       '.mt-icon-in{width:100%;height:100%;border-radius:4px;overflow:hidden;background:rgba(34,34,34,0.85)}',
       '.mt-icon-in img{width:100%;height:100%;object-fit:cover;display:block}',
-      '.mt-text{font-size:9.5px;opacity:0.9;line-height:1.5}',
+      '.mt-text{font-size:9.5px;opacity:0.9;line-height:1.5;white-space:pre-line}',
 
       '@media(min-width:901px){' +
         '.seamlessRoot{padding:clamp(5px,0.9vw,11px) 0 clamp(6px,1.12vw,13px)}' +
@@ -271,7 +271,7 @@
     var byteData = META_CFG.bytes[unitCfg.byte];
     if (byteData) {
       var bR = (byteData.rarity || '').toLowerCase();
-      tipInner.appendChild(tipRow(getRarityBg(unitCfg.byte, bR), bR === 'shiny', byteData.url, 'Byte: ' + unitCfg.byte));
+      tipInner.appendChild(tipRow(getRarityBg(unitCfg.byte, bR), bR === 'shiny', byteData.url, 'Byte: ' + unitCfg.byte + (byteData.note ? '\n' + byteData.note : '')));
     }
     var enchData = META_CFG.enchants[unitCfg.enchant];
     if (enchData) {

@@ -41,6 +41,7 @@
       '.metaSiteUrl{font-family:"Press Start 2P",monospace;font-size:clamp(8px,1.1vw,13px);' +
         'color:#fff;text-align:center;text-shadow:0 1px 6px rgba(0,0,0,0.95)}',
 
+      /* seamless — ~30% smaller than the original values */
       '.seamlessRoot{width:100vw;position:relative;left:50%;transform:translateX(-50%);' +
         'background-size:cover;background-position:center;background-repeat:no-repeat;' +
         'color:#fff;font-family:"Press Start 2P",monospace;box-sizing:border-box;' +
@@ -63,7 +64,7 @@
         'margin-bottom:clamp(4px,0.7vw,8px);text-shadow:0 1px 4px rgba(0,0,0,0.9)}',
       '.seamlessPageTitle{font-family:"Press Start 2P",monospace;' +
         'font-size:clamp(11px,2.24vw,28px);color:#00e5ff;text-align:center;' +
-        'background:rgba(177,250,255,0.35);' +
+        'background:rgba(0,180,230,0.12);' +
         'padding:clamp(4px,0.7vw,8px) clamp(6px,1.05vw,11px);' +
         'margin:0 0 clamp(2px,0.4vw,4px);' +
         'text-shadow:0 0 18px rgba(0,220,255,0.55),0 2px 8px rgba(0,0,0,0.8)}',
@@ -77,6 +78,7 @@
       '.seamlessControls .meta-clutter-btn{font-size:clamp(5px,0.7vw,8px);' +
         'padding:clamp(3px,0.42vw,6px) clamp(6px,0.84vw,11px)}',
 
+      /* page switcher tabs — only rendered when pages.length > 1 */
       '.seamlessPageTabBar{display:flex;flex-wrap:wrap;justify-content:center;gap:5px;' +
         'padding:clamp(3px,0.5vw,6px) clamp(6px,1.05vw,11px) clamp(5px,0.8vw,9px)}',
       '.seamlessPageTab{font-family:"Press Start 2P",monospace;font-size:clamp(5px,0.8vw,9px);' +
@@ -144,6 +146,21 @@
       '.mt-icon-in img{width:100%;height:100%;object-fit:cover;display:block}',
       '.mt-text{font-size:9.5px;opacity:0.9;line-height:1.5}',
 
+      '@media(min-width:901px){' +
+        '.seamlessRoot{padding:clamp(6px,1.12vw,14px) 0 clamp(8px,1.4vw,16px)}' +
+        '.seamlessHeader{gap:clamp(5px,0.8vw,11px);padding:0 clamp(5px,0.84vw,9px);min-height:clamp(26px,3.9vw,45px);margin-bottom:2px}' +
+        '.seamlessLogo{width:clamp(30px,4.6vw,56px);height:clamp(30px,4.6vw,56px)}' +
+        '.seamlessSiteName{font-size:clamp(13px,2.8vw,38px)}' +
+        '.seamlessSiteUrl{font-size:clamp(6px,0.88vw,10px);padding:0 clamp(5px,0.84vw,9px);margin-bottom:clamp(3px,0.56vw,6px)}' +
+        '.seamlessPageTitle{font-size:clamp(9px,1.79vw,22px);padding:clamp(3px,0.56vw,6px) clamp(5px,0.84vw,9px);margin:0 0 clamp(2px,0.32vw,3px)}' +
+        '.seamlessSection{padding:0 clamp(5px,0.84vw,9px);margin-top:clamp(2px,0.24vw,3px)}' +
+        '.seamlessSectionTitle{font-size:clamp(8px,1.46vw,19px);margin:0 0 clamp(2px,0.45vw,6px)}' +
+        '.seamlessControls{padding:clamp(2px,0.45vw,5px) clamp(5px,0.84vw,9px) clamp(3px,0.56vw,6px)}' +
+        '.seamlessControls .meta-clutter-btn{font-size:clamp(4px,0.56vw,6px);padding:clamp(2px,0.34vw,5px) clamp(5px,0.67vw,9px)}' +
+        '.seamlessPageTabBar{gap:4px;padding:clamp(2px,0.4vw,5px) clamp(5px,0.84vw,9px) clamp(4px,0.64vw,7px)}' +
+        '.seamlessPageTab{font-size:clamp(4px,0.64vw,7px);padding:clamp(2px,0.4vw,5px) clamp(6px,0.8vw,10px)}' +
+        '.seamlessSection .metaRow{zoom:0.7}' +
+      '}',
       '@media(max-width:900px){' +
         '.metaRoot{padding-left:4px;padding-right:4px}' +
         '.metaRow{gap:3px}' +
@@ -288,7 +305,7 @@
     var on = true;
     var btn = document.createElement('button');
     btn.className = 'meta-clutter-btn';
-    btn.textContent = 'ICONS';
+    btn.textContent = 'CLTR';
     btn.addEventListener('click', function () {
       on = !on;
       container.classList.toggle('meta-clutter-off', !on);
@@ -409,6 +426,7 @@
     var seamCfg = metasData.seamless || {};
     if (seamCfg === true) seamCfg = {};
 
+    /* support old format (single pageTitle+order) and new format (pages array) */
     var pages = seamCfg.pages;
     if (!pages || !pages.length) {
       pages = [{ pageTitle: seamCfg.pageTitle, pageNote: seamCfg.pageNote, order: seamCfg.order }];
@@ -418,6 +436,7 @@
     root.className = 'seamlessRoot';
     root.style.backgroundImage = 'url(' + (shared.background || '') + ')';
 
+    /* ── fixed header ── */
     var header = document.createElement('div'); header.className = 'seamlessHeader';
     if (shared.logoUrl) {
       var logo = document.createElement('img'); logo.className = 'seamlessLogo'; logo.src = shared.logoUrl; logo.alt = '';
@@ -437,6 +456,7 @@
     controls.appendChild(makeClutterBtn(root));
     root.appendChild(controls);
 
+    /* ── page-switcher tab bar (only when multiple pages) ── */
     var tabBar = null;
     var pageWrappers = [];
     var reRenders = [];
@@ -448,6 +468,7 @@
     }
 
     pages.forEach(function (page, pageIdx) {
+      /* wrapper holds the pageTitle + all sections for this page */
       var wrap = document.createElement('div');
       if (pageIdx > 0) wrap.style.display = 'none';
       pageWrappers.push(wrap);
@@ -487,6 +508,7 @@
 
       root.appendChild(wrap);
 
+      /* build the tab button for this page */
       if (tabBar) {
         var tab = document.createElement('button');
         tab.className = 'seamlessPageTab' + (pageIdx === 0 ? ' seamlessPageTabActive' : '');

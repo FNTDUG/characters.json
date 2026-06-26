@@ -211,7 +211,7 @@
         { "name": "Stormbound Chica", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Phone Dude", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Lolbit", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Scooped Michael", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
+        { "name": "Scooped Michael", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]
     },
     "Nature 8th": {
@@ -221,7 +221,7 @@
         { "name": "Mother Nature Ballora", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "El Chip", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Shepherd Fredbear", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Landslide Funtime Foxy", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
+        { "name": "Landslide Funtime Foxy", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
     },
       "Player 1": {

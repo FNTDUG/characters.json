@@ -5,12 +5,12 @@
     "background": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/carbon-fiber-background-wallpapers-1440x900-high.jpg?enable-io=true&width=1252",
 
     "bytes": {
-      "The Box":    { "url": "https://tr.rbxcdn.com/180DAY-4b19af25461691ad22d21c356410ac97/420/420/Image/Png/noFilter", "rarity": "nightmare" },
-      "Boss Drain": { "url": "https://tr.rbxcdn.com/180DAY-94227120f5540f9816e8f085f0ab5d39/420/420/Image/Png/noFilter", "rarity": "secret" },
-      "Reaper":     { "url": "https://tr.rbxcdn.com/180DAY-e7ce24b2e8ad5cac263d3680bbf64fd1/420/420/Image/Png/noFilter", "rarity": "secret" },
-      "The Fan":    { "url": "https://tr.rbxcdn.com/180DAY-27f75f89477ed81d7891e1842f11da2e/420/420/Image/Png/noFilter", "rarity": "secret" },
-      "UFO":        { "url": "https://tr.rbxcdn.com/180DAY-58cf1675b1fb9037073356f04e0799ad/420/420/Image/Png/noFilter", "rarity": "secret" },
-      "KABOOM!":    { "url": "https://tr.rbxcdn.com/180DAY-05db103928cbf22d82c9542be6710993/420/420/Image/Png/noFilter", "rarity": "mythic" }
+      "The Box":    { "url": "https://tr.rbxcdn.com/180DAY-4b19af25461691ad22d21c356410ac97/420/420/Image/Png/noFilter", "rarity": "nightmare", "note": "Increases DMG, RNG and decreases CD" },
+      "Boss Drain": { "url": "https://tr.rbxcdn.com/180DAY-94227120f5540f9816e8f085f0ab5d39/420/420/Image/Png/noFilter", "rarity": "secret",    "note": "Increases DMG and Boss DMG" },
+      "Reaper":     { "url": "https://tr.rbxcdn.com/180DAY-e7ce24b2e8ad5cac263d3680bbf64fd1/420/420/Image/Png/noFilter", "rarity": "secret",    "note": "Increases Crit DMG" },
+      "The Fan":    { "url": "https://tr.rbxcdn.com/180DAY-27f75f89477ed81d7891e1842f11da2e/420/420/Image/Png/noFilter", "rarity": "secret",    "note": "Gives units slow" },
+      "UFO":        { "url": "https://tr.rbxcdn.com/180DAY-58cf1675b1fb9037073356f04e0799ad/420/420/Image/Png/noFilter", "rarity": "secret",    "note": "Gives units any element boost and increases active ability DMG" },
+      "KABOOM!":    { "url": "https://tr.rbxcdn.com/180DAY-05db103928cbf22d82c9542be6710993/420/420/Image/Png/noFilter", "rarity": "mythic",    "note": "Changes attack type to Circle and decreases CD" }
     },
 
     "enchants": {
@@ -38,7 +38,7 @@
       {
         "pageTitle": "MULTIPLAYER META",
         "order": ["Player 1", "Player 2", "Player 3", "Player 4"]
-      } 
+      }
     ]
   },
 

@@ -15900,7 +15900,6 @@
       "level": 5,
       "cost": 9500,
       "damage": 116.15,
-      "type": "Line",
       "cd": 1.6,
       "range": 28
     },

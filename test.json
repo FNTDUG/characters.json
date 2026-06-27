@@ -3552,7 +3552,6 @@
     "passiveDamage": {
       "periodic": [
         {
-          "id": "crash_landing",
           "label": "Crash Landing",
           "pctOfDamage": 2.3,
           "hits": 1,
@@ -4349,7 +4348,6 @@
     "passiveDamage": {
       "onNthAttack": [
         {
-          "id": "gnarly_riff",
           "label": "Gnarly Riff",
           "pctOfDamage": 1.45,
           "everyNthAttack": 3
@@ -6417,11 +6415,10 @@
     "passiveDamage": {
       "dots": [
         {
-          "id": "faz_metal_jacket",
-          "type": "burn",
           "pctOfDamage": 0.1,
           "durationSec": 1.0,
-          "stacks": 1
+          "stacks": 1,
+          "label": "Faz-Metal-Jacket"
         }
       ]
     }
@@ -7120,13 +7117,20 @@
     "passiveDamage": {
       "summons": [
         {
-          "id": "gun_endo",
           "label": "Gun Endo",
           "healthPctOfDamage": 0.55,
           "attackPctOfDamage": 0.4,
           "attackCd": 1.0,
           "attackCdBoostable": false,
-          "spawnCd": null,
+          "spawnCd": 7.8,
+          "spawnCdBoostable": true,
+          "maxActive": 1,
+          "cdScope": "local"
+        },
+        {
+        "label": "Summon",
+          "healthPctOfDamage": 0.80,
+          "spawnCd": 2.6,
           "spawnCdBoostable": true,
           "maxActive": 1,
           "cdScope": "local"
@@ -7565,7 +7569,6 @@
     "passiveDamage": {
       "selfBoost": [
         {
-          "id": "curse_of_dreadbear",
           "label": "Curse of Dreadbear",
           "kind": "toggle",
           "key": "curse_of_dreadbear",
@@ -8569,11 +8572,10 @@
     "passiveDamage": {
       "dots": [
         {
-          "id": "permafrost",
-          "type": "permafrost",
           "pctOfDamage": 0.03,
           "durationSec": 1.0,
-          "stacks": 1
+          "stacks": 1,
+          "label": "Crown of Permafrost"
         }
       ]
     }

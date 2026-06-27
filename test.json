@@ -7576,8 +7576,8 @@
         },
         {
           "label": "Heartbeat Current",
-          "cdMult": 0.85, 
-          "duration": 20, 
+          "cdMult": 0.85,
+          "duration": 20,
           "cd": 60
         }
       ]

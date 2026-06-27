@@ -7573,7 +7573,13 @@
           "dmgMult": 1.3,
           "rngMult": 1.2,
           "cdMult": 0.9
-        }
+        },
+        {
+          "label": "Heartbeat Current",
+          "cdMult": 0.85, 
+          "duration": 20, 
+          "cd": 60
+        },
       ]
     }
   },

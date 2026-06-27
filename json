@@ -6750,7 +6750,7 @@
   ],
   "element": "Light",
   "placements": 2,
-  "attackType": "Multi",
+  "attackType": "Circle",
   "obtainment": "S1 Pro Pack",
   "passives": [
     {

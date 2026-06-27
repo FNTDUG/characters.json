@@ -12480,7 +12480,7 @@
       {
         "title": "Lumber Bot Shop (This does not appear in-game)",
         "text": "Grants a shop used to craft Lumber Bots in exchange for varying amounts of Wood and Special Wood. You can have a max of 3 Bots at a time, and all Bots can attack and last 5 Waves. Lumber Bot 1.0: Costs 5 Wood and has low-end DPS. Lumber Bot 2.0: Costs 12 Wood and has low-mid-end DPS. Lumber Bot 3.0: Costs 20 Wood and 2 Special Wood, has mid-end DPS, and applies 3% Slow on hit. Lumber Bot 4.0: Costs 30 Wood and 5 Special Wood, has mid-high-end DPS, and 5% AOE Slow. Lumber Bot 5.0: Costs 45 Wood and 10 Special Wood, has high-end DPS, and 8% AOE Slow.",
-        "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-19-21-gmt-0500-central-daylight-time-high.png"
+        "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-jun-27-2026-15-42-58-gmt-0500-central-daylight-time-high.png"
       },
       {
         "title": "Stock Stacker",
@@ -15925,7 +15925,7 @@
     },
     {
       "title": "Drifter's Blessing",
-      "text": "When placed, this unit generates an additional stock.\n\nUnits in range:\n• Damage buffed by 30%\n• Range buffed by 25%\n• Cooldown reduced by 5%"
+      "text": "When placed, this unit generates an additional stock. Units in range have their damage buffed by 30%, range buffed by 25%, and cooldown reduced by 5%"
     }
   ]
 },

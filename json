@@ -12084,7 +12084,7 @@
         "name": "Shiny Mad Doctor Purple Guy",
         "image": "https://drive.google.com/thumbnail?id=1yCuzUga9hfDRJ4XuIDE7ntL7gJkHaQWC&sz=w500",
         "rarity": "shiny"
-      },
+      }
     ]
   },
   },
@@ -16176,14 +16176,13 @@
   ],
   "element": "Neutral",
   "placements": 1,
-  "attackType": "",
+  "attackType": "Line",
   "obtainment": "Crafted from Trash and the Gang",
   "levels": [
     {
       "level": 1,
       "cost": 5000,
       "damage": 202,
-      "type": "Line",
       "cd": 2.5,
       "range": 20
     },
@@ -16191,7 +16190,6 @@
       "level": 2,
       "cost": 2500,
       "damage": 227.25,
-      "type": "Line",
       "cd": 2.5,
       "range": 20
     },
@@ -16199,7 +16197,6 @@
       "level": 3,
       "cost": 3500,
       "damage": 252.5,
-      "type": "Line",
       "cd": 2.5,
       "range": 21
     },
@@ -16207,7 +16204,6 @@
       "level": 4,
       "cost": 4500,
       "damage": 272.7,
-      "type": "Line",
       "cd": 2.4,
       "range": 22
     },
@@ -16215,7 +16211,6 @@
       "level": 5,
       "cost": 5500,
       "damage": 292.9,
-      "type": "Line",
       "cd": 2.3,
       "range": 23
     },
@@ -16223,7 +16218,6 @@
       "level": 6,
       "cost": 6500,
       "damage": 313.1,
-      "type": "Line",
       "cd": 2.2,
       "range": 24
     },
@@ -16231,7 +16225,6 @@
       "level": 7,
       "cost": 8000,
       "damage": 338.35,
-      "type": "Line",
       "cd": 2.2,
       "range": 25
     },
@@ -16239,7 +16232,6 @@
       "level": 8,
       "cost": 9500,
       "damage": 358.55,
-      "type": "Line",
       "cd": 2.1,
       "range": 25
     },
@@ -16247,7 +16239,6 @@
       "level": 9,
       "cost": 11000,
       "damage": 383.8,
-      "type": "Line",
       "cd": 2.1,
       "range": 26
     },
@@ -16255,7 +16246,6 @@
       "level": 10,
       "cost": 13000,
       "damage": 404,
-      "type": "Line",
       "cd": 2,
       "range": 26
     }

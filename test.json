@@ -7565,7 +7565,21 @@
         "title": "Heartbeat Current",
         "text": "Every 60s, this unit gains -15% CD for 20s."
       }
-    ]
+    ],
+    "passiveDamage": {
+      "selfBoost": [
+        {
+          "id": "curse_of_dreadbear",
+          "label": "Curse of Dreadbear",
+          "kind": "toggle",
+          "key": "curse_of_dreadbear",
+          "dmgMult": 1.3,
+          "rngMult": 1.2,
+          "cdMult": 0.9,
+          "unlockLevel": 1
+        }
+      ]
+    }
   },
   {
     "name": "Headless Horseman Mangle",

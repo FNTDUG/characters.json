@@ -3074,131 +3074,131 @@
     ]
   },
   {
-  "name": "Spring Duo",
-  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-48-58-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/img_6397-high.png",
-  "rarity": "nightmare",
-  "element": "Neutral",
-  "typeMain": "Endgame",
-  "typeTags": [
-    "Support"
-  ],
-  "placements": 1,
-  "attackType": "Multi",
-  "obtainment": "Season 2 Craftable Nightmare",
-  "passives": [
-    {
-      "title": "Spotlight!",
-      "text": "These units fight for fame! Switching between each other every 15 seconds. (Only 1 boost at a time)"
+    "name": "Spring Duo",
+    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-48-58-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/img_6397-high.png",
+    "rarity": "nightmare",
+    "element": "Neutral",
+    "typeMain": "Endgame",
+    "typeTags": [
+      "Support"
+    ],
+    "placements": 1,
+    "attackType": "Multi",
+    "obtainment": "Season 2 Craftable Nightmare",
+    "passives": [
+      {
+        "title": "Spotlight!",
+        "text": "These units fight for fame! Switching between each other every 15 seconds. (Only 1 boost at a time)"
+      },
+      {
+        "title": "Spring Bonnie",
+        "text": "Type: 65 degree Cone AOE, dealing high DPS. Boosts all units in range (includes itself): +10% DMG, +30% Range, -5% CD."
+      },
+      {
+        "title": "Fredbear",
+        "text": "Type: Small Circle AOE, dealing low DPS. Boosts all units in range (includes itself): +40% DMG and +15% Range."
+      }
+    ],
+    "modes": {
+      "springBonnie": {
+        "label": "Spring Bonnie",
+        "role": "damage",
+        "attackType": "Cone",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 3000,
+            "damage": 303,
+            "damageBoost": "+10%",
+            "rangeBoost": "+30%",
+            "cdBoost": "-5%",
+            "cd": 3,
+            "range": 20
+          },
+          {
+            "level": 2,
+            "cost": 4250,
+            "damage": 858.5,
+            "damageBoost": "+10%",
+            "rangeBoost": "+30%",
+            "cdBoost": "-5%",
+            "cd": 3.2,
+            "range": 24
+          },
+          {
+            "level": 3,
+            "cost": 4750,
+            "damage": 909,
+            "damageBoost": "+10%",
+            "rangeBoost": "+30%",
+            "cdBoost": "-5%",
+            "cd": 3,
+            "range": 26
+          },
+          {
+            "level": 4,
+            "cost": 5000,
+            "damage": 1010,
+            "damageBoost": "+10%",
+            "rangeBoost": "+30%",
+            "cdBoost": "-5%",
+            "cd": 2.7,
+            "range": 28
+          }
+        ]
+      },
+      "fredbear": {
+        "label": "Fredbear",
+        "role": "damage",
+        "attackType": "Circle",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 3000,
+            "damage": 303,
+            "damageBoost": "+40%",
+            "rangeBoost": "+15%",
+            "cd": 3,
+            "range": 20
+          },
+          {
+            "level": 2,
+            "cost": 4250,
+            "damage": 116.15,
+            "damageBoost": "+40%",
+            "rangeBoost": "+15%",
+            "cd": 1.3,
+            "range": 18
+          },
+          {
+            "level": 3,
+            "cost": 4750,
+            "damage": 131.3,
+            "damageBoost": "+40%",
+            "rangeBoost": "+15%",
+            "cd": 1.2,
+            "range": 19
+          },
+          {
+            "level": 4,
+            "cost": 5000,
+            "damage": 196.95,
+            "damageBoost": "+40%",
+            "rangeBoost": "+15%",
+            "cd": 1,
+            "range": 20
+          }
+        ]
+      }
     },
-    {
-      "title": "Spring Bonnie",
-      "text": "Type: 65 degree Cone AOE, dealing high DPS. Boosts all units in range (includes itself): +10% DMG, +30% Range, -5% CD."
-    },
-    {
-      "title": "Fredbear",
-      "text": "Type: Small Circle AOE, dealing low DPS. Boosts all units in range (includes itself): +40% DMG and +15% Range."
-    }
-  ],
-  "modes": {
-    "springBonnie": {
-      "label": "Spring Bonnie",
-      "role": "damage",
-      "attackType": "Cone",
-      "levels": [
-        {
-          "level": 1,
-          "cost": 3000,
-          "damage": 303,
-          "damageBoost": "+10%",
-          "rangeBoost": "+30%",
-          "cdBoost": "-5%",
-          "cd": 3,
-          "range": 20
-        },
-        {
-          "level": 2,
-          "cost": 4250,
-          "damage": 858.5,
-          "damageBoost": "+10%",
-          "rangeBoost": "+30%",
-          "cdBoost": "-5%",
-          "cd": 3.2,
-          "range": 24
-        },
-        {
-          "level": 3,
-          "cost": 4750,
-          "damage": 909,
-          "damageBoost": "+10%",
-          "rangeBoost": "+30%",
-          "cdBoost": "-5%",
-          "cd": 3,
-          "range": 26
-        },
-        {
-          "level": 4,
-          "cost": 5000,
-          "damage": 1010,
-          "damageBoost": "+10%",
-          "rangeBoost": "+30%",
-          "cdBoost": "-5%",
-          "cd": 2.7,
-          "range": 28
-        }
-      ]
-    },
-    "fredbear": {
-      "label": "Fredbear",
-      "role": "damage",
-      "attackType": "Circle",
-      "levels": [
-        {
-          "level": 1,
-          "cost": 3000,
-          "damage": 303,
-          "damageBoost": "+40%",
-          "rangeBoost": "+15%",
-          "cd": 3,
-          "range": 20
-        },
-        {
-          "level": 2,
-          "cost": 4250,
-          "damage": 116.15,
-          "damageBoost": "+40%",
-          "rangeBoost": "+15%",
-          "cd": 1.3,
-          "range": 18
-        },
-        {
-          "level": 3,
-          "cost": 4750,
-          "damage": 131.3,
-          "damageBoost": "+40%",
-          "rangeBoost": "+15%",
-          "cd": 1.2,
-          "range": 19
-        },
-        {
-          "level": 4,
-          "cost": 5000,
-          "damage": 196.95,
-          "damageBoost": "+40%",
-          "rangeBoost": "+15%",
-          "cd": 1,
-          "range": 20
-        }
-      ]
-    }
+    "skins": [
+      {
+        "name": "Clown Duo",
+        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3upkzb-high.png"
+      }
+    ]
   },
-  "skins": [
-    {
-      "name": "Clown Duo",
-      "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3upkzb-high.png"
-    }
-  ]
-},
   {
     "name": "Springtrap",
     "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-53-12-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
@@ -6771,252 +6771,252 @@
     ]
   },
   {
-  "name": "Mangle",
-  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/mangle-render-high.png",
-  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-30-07-gmt-0600-central-standard-time-high.png",
-  "rarity": "exclusive",
-  "typeMain": "Endgame",
-  "typeTags": [
-    "Stun"
-  ],
-  "element": "Light",
-  "placements": 2,
-  "attackType": "Circle",
-  "obtainment": "S1 Pro Pack",
-  "passives": [
-    {
-      "title": "Amalgamation",
-      "text": "This unit has 3 different attacks that it cycles through every 3rd attack. Attack 1 is a Circle AOE Light Cannon, attack 2 is a Cone AOE Flamethrower, and attack 3 is a Single Target Bite."
+    "name": "Mangle",
+    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/mangle-render-high.png",
+    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-30-07-gmt-0600-central-standard-time-high.png",
+    "rarity": "exclusive",
+    "typeMain": "Endgame",
+    "typeTags": [
+      "Stun"
+    ],
+    "element": "Light",
+    "placements": 2,
+    "attackType": "Circle",
+    "obtainment": "S1 Pro Pack",
+    "passives": [
+      {
+        "title": "Amalgamation",
+        "text": "This unit has 3 different attacks that it cycles through every 3rd attack. Attack 1 is a Circle AOE Light Cannon, attack 2 is a Cone AOE Flamethrower, and attack 3 is a Single Target Bite."
+      },
+      {
+        "title": "Take Apart & Put Together",
+        "text": "This unit's other head attacks dealing 40% of this unit's damage and appling a 40% bleed over 3s (Circle AOE)."
+      },
+      {
+        "title": "Radio Static",
+        "text": "When an enemy is within 50% of this unit's range for more than 2 seconds, this unit stuns the enemy for 3s. [12.5s stun CD]."
+      }
+    ],
+    "modes": {
+      "lightCannon": {
+        "label": "Light Cannon",
+        "role": "damage",
+        "attackType": "Circle",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 3300,
+            "damage": 450.01,
+            "cd": 4.8,
+            "range": 24
+          },
+          {
+            "level": 2,
+            "cost": 2200,
+            "damage": 490.01,
+            "cd": 4.8,
+            "range": 24
+          },
+          {
+            "level": 3,
+            "cost": 2400,
+            "damage": 540.01,
+            "cd": 4.6,
+            "range": 25
+          },
+          {
+            "level": 4,
+            "cost": 3200,
+            "damage": 570.01,
+            "cd": 4.6,
+            "range": 25
+          },
+          {
+            "level": 5,
+            "cost": 3400,
+            "damage": 620.01,
+            "cd": 4.4,
+            "range": 26
+          },
+          {
+            "level": 6,
+            "cost": 4000,
+            "damage": 680.01,
+            "cd": 4.2,
+            "range": 26
+          },
+          {
+            "level": 7,
+            "cost": 4400,
+            "damage": 730.02,
+            "cd": 4,
+            "range": 28
+          },
+          {
+            "level": 8,
+            "cost": 5000,
+            "damage": 750.02,
+            "cd": 4,
+            "range": 30
+          },
+          {
+            "level": 9,
+            "cost": 5600,
+            "damage": 800.02,
+            "cd": 3.8,
+            "range": 31
+          }
+        ]
+      },
+      "flamethrower": {
+        "label": "Flamethrower",
+        "role": "damage",
+        "attackType": "Cone",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 3300,
+            "damage": 450.01,
+            "cd": 4.8,
+            "range": 24
+          },
+          {
+            "level": 2,
+            "cost": 2200,
+            "damage": 490.01,
+            "cd": 4.8,
+            "range": 24
+          },
+          {
+            "level": 3,
+            "cost": 2400,
+            "damage": 540.01,
+            "cd": 4.6,
+            "range": 25
+          },
+          {
+            "level": 4,
+            "cost": 3200,
+            "damage": 570.01,
+            "cd": 4.6,
+            "range": 25
+          },
+          {
+            "level": 5,
+            "cost": 3400,
+            "damage": 620.01,
+            "cd": 4.4,
+            "range": 26
+          },
+          {
+            "level": 6,
+            "cost": 4000,
+            "damage": 680.01,
+            "cd": 4.2,
+            "range": 26
+          },
+          {
+            "level": 7,
+            "cost": 4400,
+            "damage": 730.02,
+            "cd": 4,
+            "range": 28
+          },
+          {
+            "level": 8,
+            "cost": 5000,
+            "damage": 750.02,
+            "cd": 4,
+            "range": 30
+          },
+          {
+            "level": 9,
+            "cost": 5600,
+            "damage": 800.02,
+            "cd": 3.8,
+            "range": 31
+          }
+        ]
+      },
+      "bite": {
+        "label": "Bite",
+        "role": "damage",
+        "attackType": "Single",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 3300,
+            "damage": 450.01,
+            "cd": 4.8,
+            "range": 24
+          },
+          {
+            "level": 2,
+            "cost": 2200,
+            "damage": 490.01,
+            "cd": 4.8,
+            "range": 24
+          },
+          {
+            "level": 3,
+            "cost": 2400,
+            "damage": 540.01,
+            "cd": 4.6,
+            "range": 25
+          },
+          {
+            "level": 4,
+            "cost": 3200,
+            "damage": 570.01,
+            "cd": 4.6,
+            "range": 25
+          },
+          {
+            "level": 5,
+            "cost": 3400,
+            "damage": 620.01,
+            "cd": 4.4,
+            "range": 26
+          },
+          {
+            "level": 6,
+            "cost": 4000,
+            "damage": 680.01,
+            "cd": 4.2,
+            "range": 26
+          },
+          {
+            "level": 7,
+            "cost": 4400,
+            "damage": 730.02,
+            "cd": 4,
+            "range": 28
+          },
+          {
+            "level": 8,
+            "cost": 5000,
+            "damage": 750.02,
+            "cd": 4,
+            "range": 30
+          },
+          {
+            "level": 9,
+            "cost": 5600,
+            "damage": 800.02,
+            "cd": 3.8,
+            "range": 31
+          }
+        ]
+      }
     },
-    {
-      "title": "Take Apart & Put Together",
-      "text": "This unit's other head attacks dealing 40% of this unit's damage and appling a 40% bleed over 3s (Circle AOE)."
-    },
-    {
-      "title": "Radio Static",
-      "text": "When an enemy is within 50% of this unit's range for more than 2 seconds, this unit stuns the enemy for 3s. [12.5s stun CD]."
-    }
-  ],
-  "modes": {
-    "lightCannon": {
-      "label": "Light Cannon",
-      "role": "damage",
-      "attackType": "Circle",
-      "levels": [
-        {
-          "level": 1,
-          "cost": 3300,
-          "damage": 450.01,
-          "cd": 4.8,
-          "range": 24
-        },
-        {
-          "level": 2,
-          "cost": 2200,
-          "damage": 490.01,
-          "cd": 4.8,
-          "range": 24
-        },
-        {
-          "level": 3,
-          "cost": 2400,
-          "damage": 540.01,
-          "cd": 4.6,
-          "range": 25
-        },
-        {
-          "level": 4,
-          "cost": 3200,
-          "damage": 570.01,
-          "cd": 4.6,
-          "range": 25
-        },
-        {
-          "level": 5,
-          "cost": 3400,
-          "damage": 620.01,
-          "cd": 4.4,
-          "range": 26
-        },
-        {
-          "level": 6,
-          "cost": 4000,
-          "damage": 680.01,
-          "cd": 4.2,
-          "range": 26
-        },
-        {
-          "level": 7,
-          "cost": 4400,
-          "damage": 730.02,
-          "cd": 4,
-          "range": 28
-        },
-        {
-          "level": 8,
-          "cost": 5000,
-          "damage": 750.02,
-          "cd": 4,
-          "range": 30
-        },
-        {
-          "level": 9,
-          "cost": 5600,
-          "damage": 800.02,
-          "cd": 3.8,
-          "range": 31
-        }
-      ]
-    },
-    "flamethrower": {
-      "label": "Flamethrower",
-      "role": "damage",
-      "attackType": "Cone",
-      "levels": [
-        {
-          "level": 1,
-          "cost": 3300,
-          "damage": 450.01,
-          "cd": 4.8,
-          "range": 24
-        },
-        {
-          "level": 2,
-          "cost": 2200,
-          "damage": 490.01,
-          "cd": 4.8,
-          "range": 24
-        },
-        {
-          "level": 3,
-          "cost": 2400,
-          "damage": 540.01,
-          "cd": 4.6,
-          "range": 25
-        },
-        {
-          "level": 4,
-          "cost": 3200,
-          "damage": 570.01,
-          "cd": 4.6,
-          "range": 25
-        },
-        {
-          "level": 5,
-          "cost": 3400,
-          "damage": 620.01,
-          "cd": 4.4,
-          "range": 26
-        },
-        {
-          "level": 6,
-          "cost": 4000,
-          "damage": 680.01,
-          "cd": 4.2,
-          "range": 26
-        },
-        {
-          "level": 7,
-          "cost": 4400,
-          "damage": 730.02,
-          "cd": 4,
-          "range": 28
-        },
-        {
-          "level": 8,
-          "cost": 5000,
-          "damage": 750.02,
-          "cd": 4,
-          "range": 30
-        },
-        {
-          "level": 9,
-          "cost": 5600,
-          "damage": 800.02,
-          "cd": 3.8,
-          "range": 31
-        }
-      ]
-    },
-    "bite": {
-      "label": "Bite",
-      "role": "damage",
-      "attackType": "Single",
-      "levels": [
-        {
-          "level": 1,
-          "cost": 3300,
-          "damage": 450.01,
-          "cd": 4.8,
-          "range": 24
-        },
-        {
-          "level": 2,
-          "cost": 2200,
-          "damage": 490.01,
-          "cd": 4.8,
-          "range": 24
-        },
-        {
-          "level": 3,
-          "cost": 2400,
-          "damage": 540.01,
-          "cd": 4.6,
-          "range": 25
-        },
-        {
-          "level": 4,
-          "cost": 3200,
-          "damage": 570.01,
-          "cd": 4.6,
-          "range": 25
-        },
-        {
-          "level": 5,
-          "cost": 3400,
-          "damage": 620.01,
-          "cd": 4.4,
-          "range": 26
-        },
-        {
-          "level": 6,
-          "cost": 4000,
-          "damage": 680.01,
-          "cd": 4.2,
-          "range": 26
-        },
-        {
-          "level": 7,
-          "cost": 4400,
-          "damage": 730.02,
-          "cd": 4,
-          "range": 28
-        },
-        {
-          "level": 8,
-          "cost": 5000,
-          "damage": 750.02,
-          "cd": 4,
-          "range": 30
-        },
-        {
-          "level": 9,
-          "cost": 5600,
-          "damage": 800.02,
-          "cd": 3.8,
-          "range": 31
-        }
-      ]
-    }
+    "skins": [
+      {
+        "name": "Meltdown Mangle",
+        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/meltdown-mangle-high.png",
+        "rarity": "mythic"
+      }
+    ]
   },
-  "skins": [
-    {
-      "name": "Meltdown Mangle",
-      "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/meltdown-mangle-high.png",
-      "rarity": "mythic"
-    }
-  ]
-},
   {
     "name": "Purple Guy",
     "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-37-09-gmt-0600-central-standard-time-high.png",
@@ -7118,14 +7118,14 @@
       "summons": [
         {
           "label": "Endo",
-          "healthPctOfDamage": 0.80,
+          "healthPctOfDamage": 0.8,
           "spawnCd": 2.6,
           "spawnCdBoostable": true,
           "maxActive": 1,
           "cdScope": "local"
         },
         {
-        "label": "Gun Endo",
+          "label": "Gun Endo",
           "healthPctOfDamage": 0.55,
           "attackPctOfDamage": 0.4,
           "attackCd": 1.0,
@@ -7570,8 +7570,6 @@
       "selfBoost": [
         {
           "label": "Curse of Dreadbear",
-          "kind": "toggle",
-          "key": "curse_of_dreadbear",
           "dmgMult": 1.3,
           "rngMult": 1.2,
           "cdMult": 0.9
@@ -12149,7 +12147,7 @@
         "title": "Lying In Wait",
         "text": "While there are no enemies in range this unit gains +2% damage/s (max 20%), when at max buff also gain +25% range.This buff drains by by 0.5%/s while there are enemies in range."
       }
-        ],
+    ],
     "skins": [
       {
         "name": "Mad Doctor Purple Guy",
@@ -15715,624 +15713,624 @@
       }
     ]
   },
-{
-  "name": "Gaia Chica",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-3e93b63663771936d836ad698a3cffff/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-967f8273ed9f572a7fa407b1a2f6fdf9/420/420/Image/Png/noFilter",
-  "rarity": "apex",
-  "typeMain": "Endgame",
-  "typeTags": [
-    "Slow",
-    "Support",
-    "Stun"
-  ],
-  "element": "Nature",
-  "placements": 1,
-  "attackType": "Multi",
-  "obtainment": "Blossom Chica Evolution",
-  "levels": [
-    {
-      "level": 1,
-      "cost": 12000,
-      "damage": 909,
-      "type": "Circle",
-      "cd": 2.8,
-      "range": 24
-    },
-    {
-      "level": 2,
-      "cost": 5250,
-      "damage": 959.5,
-      "type": "Circle",
-      "cd": 2.8,
-      "range": 25
-    },
-    {
-      "level": 3,
-      "cost": 6000,
-      "damage": 1035.25,
-      "type": "Circle",
-      "cd": 2.8,
-      "range": 26
-    },
-    {
-      "level": 4,
-      "cost": 6750,
-      "damage": 1111,
-      "type": "Circle",
-      "cd": 2.8,
-      "range": 27
-    },
-    {
-      "level": 5,
-      "cost": 7500,
-      "damage": 1186.75,
-      "type": "Cone 60°",
-      "cd": 2.8,
-      "range": 28
-    },
-    {
-      "level": 6,
-      "cost": 8500,
-      "damage": 1287.75,
-      "type": "Cone 60°",
-      "cd": 3,
-      "range": 30
-    },
-    {
-      "level": 7,
-      "cost": 9500,
-      "damage": 1338.25,
-      "type": "Cone 60°",
-      "cd": 3,
-      "range": 30
-    },
-    {
-      "level": 8,
-      "cost": 11000,
-      "damage": 1388.75,
-      "type": "Cone 60°",
-      "cd": 3,
-      "range": 31
-    },
-    {
-      "level": 9,
-      "cost": 12500,
-      "damage": 1439.25,
-      "type": "Cone 60°",
-      "cd": 3,
-      "range": 31
-    },
-    {
-      "level": 10,
-      "cost": 14000,
-      "damage": 1489.75,
-      "type": "Cone 60°",
-      "cd": 3,
-      "range": 32
-    },
-    {
-      "level": 11,
-      "cost": 16000,
-      "damage": 1565.5,
-      "type": "Cone 120°",
-      "cd": 3,
-      "range": 34
-    },
-    {
-      "level": 12,
-      "cost": 18000,
-      "damage": 1641.25,
-      "type": "Cone 120°",
-      "cd": 3,
-      "range": 36
-    }
-  ],
-  "passives": [
-    {
-      "title": "Growmain Expansion",
-      "text": "Creates a nature domain in this unit's range for 30 seconds. Nature units in the domain gain +30% damage and -10% cooldown. Gaia Chica gains +50% damage and -15% cooldown instead. Duration is extended by 1 second per stock, up to 15 seconds. The first 3 activations generate +1 stock. (Upgrade 0+, Global CD: 90s).",
-      "activeIcon": "https://tr.rbxcdn.com/180DAY-9bd108c80b4437014dd44343e399ad7b/420/420/Image/Png/noFilter"
-    },
-    {
-      "title": "Healing Roots",
-      "text": "Every 8 kills from Gaia Chica, gain 1 [Healing Root] stack. Each stack prevents 2 seconds of stun on a unit. A single stun can only be reduced once."
-    },
-    {
-      "title": "Blossom Bloom",
-      "text": "Every 5 seconds apawn a rose trap anywhere on the track for 75% of this unit's damage, increasing to 100% if spawned during Growmain Expansion (Max 10). Rose traps generate 50% more income on hit, increasing by 2% per max stock. Rose traps shoot thorns every 3 seconds, dealing 1% of this unit's damage per max stock in 15 range, increasing to 1.5% during Growmain Expansion."
-    },
-    {
-      "title": "Persistent Vines",
-      "text": "On attack, apply Rooted, applying an increasing slow at 2%/s. When Rooted reaches 30% slow, stun the enemy for 1.5 seconds and remove Rooted. If the enemy has stun lockout, deal 200% of this unit's damage instead. When Growmain Expansion is active, Rooted slow increases 50% faster."
-    }
-  ]
-},
-{
-  "name": "Abyssal Ballora",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-5ca8e77a4f68a51e28a8bbd6323f8f40/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-caaf967147f03f514eb51a8fb69fb674/420/420/Image/Png/noFilter",
-  "rarity": "nightmare",
-  "typeMain": "Endgame",
-  "typeTags": [
-    "Stun"
-  ],
-  "element": "Water",
-  "placements": 1,
-  "attackType": "Cone 150°",
-  "obtainment": "Abyssal Ballora Present (350 Raid Coins)",
-  "levels": [
-    {
-      "level": 1,
-      "cost": 10935,
-      "damage": 707,
-      "cd": 2.5,
-      "range": 22
-    },
-    {
-      "level": 2,
-      "cost": 4000,
-      "damage": 737.3,
-      "cd": 2.5,
-      "range": 24
-    },
-    {
-      "level": 3,
-      "cost": 5200,
-      "damage": 782.75,
-      "cd": 2.6,
-      "range": 26
-    },
-    {
-      "level": 4,
-      "cost": 6500,
-      "damage": 833.25,
-      "cd": 2.7,
-      "range": 27
-    },
-    {
-      "level": 5,
-      "cost": 8250,
-      "damage": 909,
-      "cd": 2.8,
-      "range": 28
-    },
-    {
-      "level": 6,
-      "cost": 10000,
-      "damage": 1010,
-      "cd": 2.9,
-      "range": 28
-    },
-    {
-      "level": 7,
-      "cost": 12000,
-      "damage": 1161.5,
-      "cd": 3,
-      "range": 28
-    },
-    {
-      "level": 8,
-      "cost": 15000,
-      "damage": 1313,
-      "cd": 3,
-      "range": 28
-    }
-  ],
-  "passives": [
-    {
-      "title": "Tidal Shift",
-      "text": "Every 30s swaps between High Tide and Low Tide. High Tide: +10% damage and +50% range. Cone 150 AoE. Low Tide: +50% damage and +10% range. Cone 90 AoE. When changing tide, deal 200% of this unit's damage as Full AoE and stun enemies hit for 2s. Deals an additional 20% damage per Water unit on the team"
-    },
-    {
-      "title": "Eternal Flow",
-      "text": "This unit is immune to stuns. On attack reduce this unit's cooldown by 3%, resetting when changing target (Max -15%). Every other attack deals 1.2x damage. If the cooldown buff is maxed, every attack deals 1.2x damage"
-    }
-  ]
-},
-{
-  "name": "Nature Reclaimed Foxy",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-9735e139fd9ad7044942426f3683ffa7/420/420/Image/Png/noFilter",
-  "imgShiny": "https://drive.google.com/thumbnail?id=1kiwC_IoB9b9z3pgiZotChSTmDNy2asz4&sz=w500",
-  "rarity": "nightmare",
-  "typeMain": "Endgame",
-  "typeTags": [
-    "Support"
-  ],
-  "element": "Nature/Rust",
-  "placements": 2,
-  "attackType": "Line",
-  "obtainment": "Overgrown Foxy Evolution",
-  "levels": [
-    {
-      "level": 1,
-      "cost": 2500,
-      "damage": 75.75,
-      "cd": 1.8,
-      "range": 24
-    },
-    {
-      "level": 2,
-      "cost": 5000,
-      "damage": 80.8,
-      "cd": 1.8,
-      "range": 25
-    },
-    {
-      "level": 3,
-      "cost": 6500,
-      "damage": 90.9,
-      "cd": 1.8,
-      "range": 26
-    },
-    {
-      "level": 4,
-      "cost": 8000,
-      "damage": 101,
-      "cd": 1.7,
-      "range": 27
-    },
-    {
-      "level": 5,
-      "cost": 9500,
-      "damage": 116.15,
-      "cd": 1.6,
-      "range": 28
-    },
-    {
-      "level": 6,
-      "cost": 11500,
-      "damage": 131.3,
-      "cd": 1.5,
-      "range": 30
-    },
-    {
-      "level": 7,
-      "cost": 11500,
-      "damage": 151.5,
-      "cd": 1.5,
-      "range": 30
-    }
-  ],
-  "passives": [
-    {
-      "title": "Grōnin",
-      "text": "When a boss spawns, create a clone of this unit with 33% of this unit's damage. Clone teleports next to the boss when it leaves its range. Buff this unit's damage by 5% per Nature/Rust unit on the team, by 3% per max stock (Max 45%) and by 2.5% per missing stock (Max 30%)"
-    },
-    {
-      "title": "Drifter's Blessing",
-      "text": "When placed, this unit generates an additional stock. Units in range have their damage buffed by 30%, range buffed by 25%, and cooldown reduced by 5%"
-    }
-  ]
-},
-{
-  "name": "Commander Withered Freddy",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-138675b10c07c945f9598ce200dde14a/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-e1ec944877d3576932d84a025b55a925/420/420/Image/Png/noFilter",
-  "rarity": "nightmare",
-  "typeMain": "Midgame-Engame",
-  "typeTags": [
-    "Support"
-  ],
-  "element": "Light",
-  "placements": 2,
-  "attackType": "Cone 75°",
-  "obtainment": "Withered Freddy Evolution",
-  "levels": [
-    {
-      "level": 1,
-      "cost": 4500,
-      "damage": 50.5,
-      "cd": 0.5,
-      "range": 24
-    },
-    {
-      "level": 2,
-      "cost": 3000,
-      "damage": 65.65,
-      "cd": 0.5,
-      "range": 25
-    },
-    {
-      "level": 3,
-      "cost": 3750,
-      "damage": 70.7,
-      "cd": 0.45,
-      "range": 25
-    },
-    {
-      "level": 4,
-      "cost": 4500,
-      "damage": 80.8,
-      "cd": 0.45,
-      "range": 25
-    },
-    {
-      "level": 5,
-      "cost": 5500,
-      "damage": 88.88,
-      "cd": 0.4,
-      "range": 26
-    },
-    {
-      "level": 6,
-      "cost": 7000,
-      "damage": 101,
-      "cd": 0.4,
-      "range": 26
-    }
-  ],
-  "passives": [
-    {
-      "title": "Adaptive Tactics",
-      "text": "When 3+ enemies are in range, decrease this unit's damage by 40%, increase this unit's range by 35%, reduce this unit's cooldown by 25%, and increase this unit's AoE to a 210 cone. After not attacking for 5s, buff this unit's damage by 20% every second until this unit attacks (Max 100%), Buff is removed after 3 attacks. If damage buff reaches max value, buff this unit's damage by 50% and decrease this unit's AoE to a 25 cone"
-    },
-    {
-      "title": "Strength In Numbers",
-      "text": "For every unit in range, buff this unit's damage by 5% and buff all units in range by 1%"
-    }
-  ]
-},
-{
-  "name": "Afterbite Withered Golden Freddy",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-66c6211384cf0a1719705eaf9959a555/420/420/Image/Png/noFilter",
-  "imgShiny": "https://drive.google.com/thumbnail?id=14RQqqXrOTf4oLC0tnXLElEIhdMdOGegY&sz=w500",
-  "rarity": "nightmare",
-  "typeMain": "Endgame",
-  "typeTags": [
-    "Slow",
-    "Stun",
-    "Knockback"
-  ],
-  "element": "Dark",
-  "placements": 1,
-  "attackType": "Cone",
-  "obtainment": "Withered Golden Freddy Evolution",
-  "levels": [
-    {
-      "level": 1,
-      "cost": 5000,
-      "damage": 777.7,
-      "cd": 3,
-      "range": 25
-    },
-    {
-      "level": 2,
-      "cost": 4500,
-      "damage": 903.95,
-      "cd": 3.2,
-      "range": 25
-    },
-    {
-      "level": 3,
-      "cost": 5000,
-      "damage": 1030.2,
-      "cd": 3.4,
-      "range": 26
-    },
-    {
-      "level": 4,
-      "cost": 5750,
-      "damage": 1176.65,
-      "cd": 3.7,
-      "range": 26
-    },
-    {
-      "level": 5,
-      "cost": 6500,
-      "damage": 1353.4,
-      "cd": 4,
-      "range": 27
-    },
-    {
-      "level": 6,
-      "cost": 7500,
-      "damage": 1434.2,
-      "cd": 4,
-      "range": 27
-    },
-    {
-      "level": 7,
-      "cost": 8500,
-      "damage": 1515,
-      "cd": 4,
-      "range": 28
-    },
-    {
-      "level": 8,
-      "cost": 10000,
-      "damage": 1616,
-      "cd": 4,
-      "range": 28
-    },
-    {
-      "level": 9,
-      "cost": 12000,
-      "damage": 1737.2,
-      "cd": 4,
-      "range": 30
-    }
-  ],
-  "passives": [
-    {
-      "title": "Keep Out",
-      "text": "Enemies within 60% of this unit's range are slowed by 30% and take 10% of this unit's damage every second. Once an enemy is 10 studs from the exit, knockback 3 tiles. If the enemy is a Boss, stun for 2.5s instead"
-    },
-    {
-      "title": "Closed For Restoration",
-      "text": "Enemies in the latter half of the track take 25% more damage from this unit. This unit gains +5% damage per enemy on the track, deals +10% damage to Necromancer enemies and deals +25% damage to their summons"
-    }
-  ]
-},
-{
-  "name": "Foxy.exe",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-09147abd9ac584e788a65979af3bcb1d/420/420/Image/Png/noFilter",
-  "imgShiny": "https://drive.google.com/thumbnail?id=15YKl8oG5lZM_yWidPiMQ46o7iWaNhkMj&sz=w500",
-  "rarity": "nightmare",
-  "typeMain": "Midgame-Endgame",
-  "typeTags": [
-    "Income"
-  ],
-  "element": "Dark",
-  "placements": 2,
-  "attackType": "Multi",
-  "obtainment": "Withered Foxy Evolution",
-  "levels": [
-    {
-      "level": 1,
-      "cost": 4040,
-      "damage": 424.2,
-      "type": "Circle",
-      "cd": 3,
-      "range": 22
-    },
-    {
-      "level": 2,
-      "cost": 2500,
-      "damage": 565.6,
-      "type": "Circle",
-      "cd": 3.5,
-      "range": 22
-    },
-    {
-      "level": 3,
-      "cost": 3250,
-      "damage": 747.4,
-      "type": "Circle",
-      "cd": 4,
-      "range": 23
-    },
-    {
-      "level": 4,
-      "cost": 4000,
-      "damage": 949.4,
-      "type": "Cone 65°",
-      "cd": 4.5,
-      "range": 24
-    },
-    {
-      "level": 5,
-      "cost": 5000,
-      "damage": 1262.5,
-      "type": "Cone 65°",
-      "cd": 5,
-      "range": 25
-    },
-    {
-      "level": 6,
-      "cost": 8000,
-      "damage": 1515,
-      "type": "Cone 65°",
-      "cd": 5,
-      "range": 26
-    }
-  ],
-  "passives": [
-    {
-      "title": "Corrupted Data",
-      "text": "First hit per enemy deals 100% more damage, applies 50% bleed over 5s bypassing DoT immunity, and stuns for 1.5s. Every 10s buff this unit's damage by 50% for 5s"
-    },
-    {
-      "title": "Go Phishing",
-      "text": "Enemies hit by Corrupted Data permanently generate 20% more income and generate 40% more income while this unit is hitting them. If the enemy is a Tank, apply a permanent bleed that deals 5% of this unit's damage every second"
-    }
-  ]
-},
-{
-  "name": "Trash o Tron",
-  "imgNormal": "https://drive.google.com/thumbnail?id=1rKAZgHEjBkJciEIwZD26H2hDe-G8bdNi&sz=w500",
-  "imgShiny": "https://drive.google.com/thumbnail?id=1rKAZgHEjBkJciEIwZD26H2hDe-G8bdNi&sz=w500",
-  "rarity": "secret",
-  "typeMain": "Endgame",
-  "typeTags": [
-    "Support",
-    "Stun"
-  ],
-  "element": "Neutral",
-  "placements": 1,
-  "attackType": "Line",
-  "obtainment": "Crafted from Trash and the Gang",
-  "levels": [
-    {
-      "level": 1,
-      "cost": 5000,
-      "damage": 202,
-      "cd": 2.5,
-      "range": 20
-    },
-    {
-      "level": 2,
-      "cost": 2500,
-      "damage": 227.25,
-      "cd": 2.5,
-      "range": 20
-    },
-    {
-      "level": 3,
-      "cost": 3500,
-      "damage": 252.5,
-      "cd": 2.5,
-      "range": 21
-    },
-    {
-      "level": 4,
-      "cost": 4500,
-      "damage": 272.7,
-      "cd": 2.4,
-      "range": 22
-    },
-    {
-      "level": 5,
-      "cost": 5500,
-      "damage": 292.9,
-      "cd": 2.3,
-      "range": 23
-    },
-    {
-      "level": 6,
-      "cost": 6500,
-      "damage": 313.1,
-      "cd": 2.2,
-      "range": 24
-    },
-    {
-      "level": 7,
-      "cost": 8000,
-      "damage": 338.35,
-      "cd": 2.2,
-      "range": 25
-    },
-    {
-      "level": 8,
-      "cost": 9500,
-      "damage": 358.55,
-      "cd": 2.1,
-      "range": 25
-    },
-    {
-      "level": 9,
-      "cost": 11000,
-      "damage": 383.8,
-      "cd": 2.1,
-      "range": 26
-    },
-    {
-      "level": 10,
-      "cost": 13000,
-      "damage": 404,
-      "cd": 2,
-      "range": 26
-    }
-  ],
-  "passives": [
-    {
-      "title": "Bits and Bobs",
-      "text": "Every attack is randomly decided between Electric Pan Hand and Flamethrower. Pan: Line AOE. Stuns for 1.2 seconds. Deals +20% damage. Flamethrower: Wide cone AOE.  Applies 50% burn over 5s. Deals +30% damage to Mystery enemies. Deals 3 hits worth of shield damage. If the same attack happens 3 times in a row the next attack becomes Full AOE with double damage. Applies the effect of the attack that was not used 3 times at double value where applicable."
-    },
-    {
-      "title": "Assorted Parts",
-      "text": "Every 3 upgrades place one of three Trash Gang members as a sub tower with 25% of their normal damage. Trash Gang members in range gain +50% damage. This unit gains +50% damage per Trash Gang member in range, up to +300%."
-    }
-  ]
-}
+  {
+    "name": "Gaia Chica",
+    "imgNormal": "https://tr.rbxcdn.com/180DAY-3e93b63663771936d836ad698a3cffff/420/420/Image/Png/noFilter",
+    "imgShiny": "https://tr.rbxcdn.com/180DAY-967f8273ed9f572a7fa407b1a2f6fdf9/420/420/Image/Png/noFilter",
+    "rarity": "apex",
+    "typeMain": "Endgame",
+    "typeTags": [
+      "Slow",
+      "Support",
+      "Stun"
+    ],
+    "element": "Nature",
+    "placements": 1,
+    "attackType": "Multi",
+    "obtainment": "Blossom Chica Evolution",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 12000,
+        "damage": 909,
+        "type": "Circle",
+        "cd": 2.8,
+        "range": 24
+      },
+      {
+        "level": 2,
+        "cost": 5250,
+        "damage": 959.5,
+        "type": "Circle",
+        "cd": 2.8,
+        "range": 25
+      },
+      {
+        "level": 3,
+        "cost": 6000,
+        "damage": 1035.25,
+        "type": "Circle",
+        "cd": 2.8,
+        "range": 26
+      },
+      {
+        "level": 4,
+        "cost": 6750,
+        "damage": 1111,
+        "type": "Circle",
+        "cd": 2.8,
+        "range": 27
+      },
+      {
+        "level": 5,
+        "cost": 7500,
+        "damage": 1186.75,
+        "type": "Cone 60°",
+        "cd": 2.8,
+        "range": 28
+      },
+      {
+        "level": 6,
+        "cost": 8500,
+        "damage": 1287.75,
+        "type": "Cone 60°",
+        "cd": 3,
+        "range": 30
+      },
+      {
+        "level": 7,
+        "cost": 9500,
+        "damage": 1338.25,
+        "type": "Cone 60°",
+        "cd": 3,
+        "range": 30
+      },
+      {
+        "level": 8,
+        "cost": 11000,
+        "damage": 1388.75,
+        "type": "Cone 60°",
+        "cd": 3,
+        "range": 31
+      },
+      {
+        "level": 9,
+        "cost": 12500,
+        "damage": 1439.25,
+        "type": "Cone 60°",
+        "cd": 3,
+        "range": 31
+      },
+      {
+        "level": 10,
+        "cost": 14000,
+        "damage": 1489.75,
+        "type": "Cone 60°",
+        "cd": 3,
+        "range": 32
+      },
+      {
+        "level": 11,
+        "cost": 16000,
+        "damage": 1565.5,
+        "type": "Cone 120°",
+        "cd": 3,
+        "range": 34
+      },
+      {
+        "level": 12,
+        "cost": 18000,
+        "damage": 1641.25,
+        "type": "Cone 120°",
+        "cd": 3,
+        "range": 36
+      }
+    ],
+    "passives": [
+      {
+        "title": "Growmain Expansion",
+        "text": "Creates a nature domain in this unit's range for 30 seconds. Nature units in the domain gain +30% damage and -10% cooldown. Gaia Chica gains +50% damage and -15% cooldown instead. Duration is extended by 1 second per stock, up to 15 seconds. The first 3 activations generate +1 stock. (Upgrade 0+, Global CD: 90s).",
+        "activeIcon": "https://tr.rbxcdn.com/180DAY-9bd108c80b4437014dd44343e399ad7b/420/420/Image/Png/noFilter"
+      },
+      {
+        "title": "Healing Roots",
+        "text": "Every 8 kills from Gaia Chica, gain 1 [Healing Root] stack. Each stack prevents 2 seconds of stun on a unit. A single stun can only be reduced once."
+      },
+      {
+        "title": "Blossom Bloom",
+        "text": "Every 5 seconds apawn a rose trap anywhere on the track for 75% of this unit's damage, increasing to 100% if spawned during Growmain Expansion (Max 10). Rose traps generate 50% more income on hit, increasing by 2% per max stock. Rose traps shoot thorns every 3 seconds, dealing 1% of this unit's damage per max stock in 15 range, increasing to 1.5% during Growmain Expansion."
+      },
+      {
+        "title": "Persistent Vines",
+        "text": "On attack, apply Rooted, applying an increasing slow at 2%/s. When Rooted reaches 30% slow, stun the enemy for 1.5 seconds and remove Rooted. If the enemy has stun lockout, deal 200% of this unit's damage instead. When Growmain Expansion is active, Rooted slow increases 50% faster."
+      }
+    ]
+  },
+  {
+    "name": "Abyssal Ballora",
+    "imgNormal": "https://tr.rbxcdn.com/180DAY-5ca8e77a4f68a51e28a8bbd6323f8f40/420/420/Image/Png/noFilter",
+    "imgShiny": "https://tr.rbxcdn.com/180DAY-caaf967147f03f514eb51a8fb69fb674/420/420/Image/Png/noFilter",
+    "rarity": "nightmare",
+    "typeMain": "Endgame",
+    "typeTags": [
+      "Stun"
+    ],
+    "element": "Water",
+    "placements": 1,
+    "attackType": "Cone 150°",
+    "obtainment": "Abyssal Ballora Present (350 Raid Coins)",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 10935,
+        "damage": 707,
+        "cd": 2.5,
+        "range": 22
+      },
+      {
+        "level": 2,
+        "cost": 4000,
+        "damage": 737.3,
+        "cd": 2.5,
+        "range": 24
+      },
+      {
+        "level": 3,
+        "cost": 5200,
+        "damage": 782.75,
+        "cd": 2.6,
+        "range": 26
+      },
+      {
+        "level": 4,
+        "cost": 6500,
+        "damage": 833.25,
+        "cd": 2.7,
+        "range": 27
+      },
+      {
+        "level": 5,
+        "cost": 8250,
+        "damage": 909,
+        "cd": 2.8,
+        "range": 28
+      },
+      {
+        "level": 6,
+        "cost": 10000,
+        "damage": 1010,
+        "cd": 2.9,
+        "range": 28
+      },
+      {
+        "level": 7,
+        "cost": 12000,
+        "damage": 1161.5,
+        "cd": 3,
+        "range": 28
+      },
+      {
+        "level": 8,
+        "cost": 15000,
+        "damage": 1313,
+        "cd": 3,
+        "range": 28
+      }
+    ],
+    "passives": [
+      {
+        "title": "Tidal Shift",
+        "text": "Every 30s swaps between High Tide and Low Tide. High Tide: +10% damage and +50% range. Cone 150 AoE. Low Tide: +50% damage and +10% range. Cone 90 AoE. When changing tide, deal 200% of this unit's damage as Full AoE and stun enemies hit for 2s. Deals an additional 20% damage per Water unit on the team"
+      },
+      {
+        "title": "Eternal Flow",
+        "text": "This unit is immune to stuns. On attack reduce this unit's cooldown by 3%, resetting when changing target (Max -15%). Every other attack deals 1.2x damage. If the cooldown buff is maxed, every attack deals 1.2x damage"
+      }
+    ]
+  },
+  {
+    "name": "Nature Reclaimed Foxy",
+    "imgNormal": "https://tr.rbxcdn.com/180DAY-9735e139fd9ad7044942426f3683ffa7/420/420/Image/Png/noFilter",
+    "imgShiny": "https://drive.google.com/thumbnail?id=1kiwC_IoB9b9z3pgiZotChSTmDNy2asz4&sz=w500",
+    "rarity": "nightmare",
+    "typeMain": "Endgame",
+    "typeTags": [
+      "Support"
+    ],
+    "element": "Nature/Rust",
+    "placements": 2,
+    "attackType": "Line",
+    "obtainment": "Overgrown Foxy Evolution",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 2500,
+        "damage": 75.75,
+        "cd": 1.8,
+        "range": 24
+      },
+      {
+        "level": 2,
+        "cost": 5000,
+        "damage": 80.8,
+        "cd": 1.8,
+        "range": 25
+      },
+      {
+        "level": 3,
+        "cost": 6500,
+        "damage": 90.9,
+        "cd": 1.8,
+        "range": 26
+      },
+      {
+        "level": 4,
+        "cost": 8000,
+        "damage": 101,
+        "cd": 1.7,
+        "range": 27
+      },
+      {
+        "level": 5,
+        "cost": 9500,
+        "damage": 116.15,
+        "cd": 1.6,
+        "range": 28
+      },
+      {
+        "level": 6,
+        "cost": 11500,
+        "damage": 131.3,
+        "cd": 1.5,
+        "range": 30
+      },
+      {
+        "level": 7,
+        "cost": 11500,
+        "damage": 151.5,
+        "cd": 1.5,
+        "range": 30
+      }
+    ],
+    "passives": [
+      {
+        "title": "Grōnin",
+        "text": "When a boss spawns, create a clone of this unit with 33% of this unit's damage. Clone teleports next to the boss when it leaves its range. Buff this unit's damage by 5% per Nature/Rust unit on the team, by 3% per max stock (Max 45%) and by 2.5% per missing stock (Max 30%)"
+      },
+      {
+        "title": "Drifter's Blessing",
+        "text": "When placed, this unit generates an additional stock. Units in range have their damage buffed by 30%, range buffed by 25%, and cooldown reduced by 5%"
+      }
+    ]
+  },
+  {
+    "name": "Commander Withered Freddy",
+    "imgNormal": "https://tr.rbxcdn.com/180DAY-138675b10c07c945f9598ce200dde14a/420/420/Image/Png/noFilter",
+    "imgShiny": "https://tr.rbxcdn.com/180DAY-e1ec944877d3576932d84a025b55a925/420/420/Image/Png/noFilter",
+    "rarity": "nightmare",
+    "typeMain": "Midgame-Engame",
+    "typeTags": [
+      "Support"
+    ],
+    "element": "Light",
+    "placements": 2,
+    "attackType": "Cone 75°",
+    "obtainment": "Withered Freddy Evolution",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 4500,
+        "damage": 50.5,
+        "cd": 0.5,
+        "range": 24
+      },
+      {
+        "level": 2,
+        "cost": 3000,
+        "damage": 65.65,
+        "cd": 0.5,
+        "range": 25
+      },
+      {
+        "level": 3,
+        "cost": 3750,
+        "damage": 70.7,
+        "cd": 0.45,
+        "range": 25
+      },
+      {
+        "level": 4,
+        "cost": 4500,
+        "damage": 80.8,
+        "cd": 0.45,
+        "range": 25
+      },
+      {
+        "level": 5,
+        "cost": 5500,
+        "damage": 88.88,
+        "cd": 0.4,
+        "range": 26
+      },
+      {
+        "level": 6,
+        "cost": 7000,
+        "damage": 101,
+        "cd": 0.4,
+        "range": 26
+      }
+    ],
+    "passives": [
+      {
+        "title": "Adaptive Tactics",
+        "text": "When 3+ enemies are in range, decrease this unit's damage by 40%, increase this unit's range by 35%, reduce this unit's cooldown by 25%, and increase this unit's AoE to a 210 cone. After not attacking for 5s, buff this unit's damage by 20% every second until this unit attacks (Max 100%), Buff is removed after 3 attacks. If damage buff reaches max value, buff this unit's damage by 50% and decrease this unit's AoE to a 25 cone"
+      },
+      {
+        "title": "Strength In Numbers",
+        "text": "For every unit in range, buff this unit's damage by 5% and buff all units in range by 1%"
+      }
+    ]
+  },
+  {
+    "name": "Afterbite Withered Golden Freddy",
+    "imgNormal": "https://tr.rbxcdn.com/180DAY-66c6211384cf0a1719705eaf9959a555/420/420/Image/Png/noFilter",
+    "imgShiny": "https://drive.google.com/thumbnail?id=14RQqqXrOTf4oLC0tnXLElEIhdMdOGegY&sz=w500",
+    "rarity": "nightmare",
+    "typeMain": "Endgame",
+    "typeTags": [
+      "Slow",
+      "Stun",
+      "Knockback"
+    ],
+    "element": "Dark",
+    "placements": 1,
+    "attackType": "Cone",
+    "obtainment": "Withered Golden Freddy Evolution",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 5000,
+        "damage": 777.7,
+        "cd": 3,
+        "range": 25
+      },
+      {
+        "level": 2,
+        "cost": 4500,
+        "damage": 903.95,
+        "cd": 3.2,
+        "range": 25
+      },
+      {
+        "level": 3,
+        "cost": 5000,
+        "damage": 1030.2,
+        "cd": 3.4,
+        "range": 26
+      },
+      {
+        "level": 4,
+        "cost": 5750,
+        "damage": 1176.65,
+        "cd": 3.7,
+        "range": 26
+      },
+      {
+        "level": 5,
+        "cost": 6500,
+        "damage": 1353.4,
+        "cd": 4,
+        "range": 27
+      },
+      {
+        "level": 6,
+        "cost": 7500,
+        "damage": 1434.2,
+        "cd": 4,
+        "range": 27
+      },
+      {
+        "level": 7,
+        "cost": 8500,
+        "damage": 1515,
+        "cd": 4,
+        "range": 28
+      },
+      {
+        "level": 8,
+        "cost": 10000,
+        "damage": 1616,
+        "cd": 4,
+        "range": 28
+      },
+      {
+        "level": 9,
+        "cost": 12000,
+        "damage": 1737.2,
+        "cd": 4,
+        "range": 30
+      }
+    ],
+    "passives": [
+      {
+        "title": "Keep Out",
+        "text": "Enemies within 60% of this unit's range are slowed by 30% and take 10% of this unit's damage every second. Once an enemy is 10 studs from the exit, knockback 3 tiles. If the enemy is a Boss, stun for 2.5s instead"
+      },
+      {
+        "title": "Closed For Restoration",
+        "text": "Enemies in the latter half of the track take 25% more damage from this unit. This unit gains +5% damage per enemy on the track, deals +10% damage to Necromancer enemies and deals +25% damage to their summons"
+      }
+    ]
+  },
+  {
+    "name": "Foxy.exe",
+    "imgNormal": "https://tr.rbxcdn.com/180DAY-09147abd9ac584e788a65979af3bcb1d/420/420/Image/Png/noFilter",
+    "imgShiny": "https://drive.google.com/thumbnail?id=15YKl8oG5lZM_yWidPiMQ46o7iWaNhkMj&sz=w500",
+    "rarity": "nightmare",
+    "typeMain": "Midgame-Endgame",
+    "typeTags": [
+      "Income"
+    ],
+    "element": "Dark",
+    "placements": 2,
+    "attackType": "Multi",
+    "obtainment": "Withered Foxy Evolution",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 4040,
+        "damage": 424.2,
+        "type": "Circle",
+        "cd": 3,
+        "range": 22
+      },
+      {
+        "level": 2,
+        "cost": 2500,
+        "damage": 565.6,
+        "type": "Circle",
+        "cd": 3.5,
+        "range": 22
+      },
+      {
+        "level": 3,
+        "cost": 3250,
+        "damage": 747.4,
+        "type": "Circle",
+        "cd": 4,
+        "range": 23
+      },
+      {
+        "level": 4,
+        "cost": 4000,
+        "damage": 949.4,
+        "type": "Cone 65°",
+        "cd": 4.5,
+        "range": 24
+      },
+      {
+        "level": 5,
+        "cost": 5000,
+        "damage": 1262.5,
+        "type": "Cone 65°",
+        "cd": 5,
+        "range": 25
+      },
+      {
+        "level": 6,
+        "cost": 8000,
+        "damage": 1515,
+        "type": "Cone 65°",
+        "cd": 5,
+        "range": 26
+      }
+    ],
+    "passives": [
+      {
+        "title": "Corrupted Data",
+        "text": "First hit per enemy deals 100% more damage, applies 50% bleed over 5s bypassing DoT immunity, and stuns for 1.5s. Every 10s buff this unit's damage by 50% for 5s"
+      },
+      {
+        "title": "Go Phishing",
+        "text": "Enemies hit by Corrupted Data permanently generate 20% more income and generate 40% more income while this unit is hitting them. If the enemy is a Tank, apply a permanent bleed that deals 5% of this unit's damage every second"
+      }
+    ]
+  },
+  {
+    "name": "Trash o Tron",
+    "imgNormal": "https://drive.google.com/thumbnail?id=1rKAZgHEjBkJciEIwZD26H2hDe-G8bdNi&sz=w500",
+    "imgShiny": "https://drive.google.com/thumbnail?id=1rKAZgHEjBkJciEIwZD26H2hDe-G8bdNi&sz=w500",
+    "rarity": "secret",
+    "typeMain": "Endgame",
+    "typeTags": [
+      "Support",
+      "Stun"
+    ],
+    "element": "Neutral",
+    "placements": 1,
+    "attackType": "Line",
+    "obtainment": "Crafted from Trash and the Gang",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 5000,
+        "damage": 202,
+        "cd": 2.5,
+        "range": 20
+      },
+      {
+        "level": 2,
+        "cost": 2500,
+        "damage": 227.25,
+        "cd": 2.5,
+        "range": 20
+      },
+      {
+        "level": 3,
+        "cost": 3500,
+        "damage": 252.5,
+        "cd": 2.5,
+        "range": 21
+      },
+      {
+        "level": 4,
+        "cost": 4500,
+        "damage": 272.7,
+        "cd": 2.4,
+        "range": 22
+      },
+      {
+        "level": 5,
+        "cost": 5500,
+        "damage": 292.9,
+        "cd": 2.3,
+        "range": 23
+      },
+      {
+        "level": 6,
+        "cost": 6500,
+        "damage": 313.1,
+        "cd": 2.2,
+        "range": 24
+      },
+      {
+        "level": 7,
+        "cost": 8000,
+        "damage": 338.35,
+        "cd": 2.2,
+        "range": 25
+      },
+      {
+        "level": 8,
+        "cost": 9500,
+        "damage": 358.55,
+        "cd": 2.1,
+        "range": 25
+      },
+      {
+        "level": 9,
+        "cost": 11000,
+        "damage": 383.8,
+        "cd": 2.1,
+        "range": 26
+      },
+      {
+        "level": 10,
+        "cost": 13000,
+        "damage": 404,
+        "cd": 2,
+        "range": 26
+      }
+    ],
+    "passives": [
+      {
+        "title": "Bits and Bobs",
+        "text": "Every attack is randomly decided between Electric Pan Hand and Flamethrower. Pan: Line AOE. Stuns for 1.2 seconds. Deals +20% damage. Flamethrower: Wide cone AOE.  Applies 50% burn over 5s. Deals +30% damage to Mystery enemies. Deals 3 hits worth of shield damage. If the same attack happens 3 times in a row the next attack becomes Full AOE with double damage. Applies the effect of the attack that was not used 3 times at double value where applicable."
+      },
+      {
+        "title": "Assorted Parts",
+        "text": "Every 3 upgrades place one of three Trash Gang members as a sub tower with 25% of their normal damage. Trash Gang members in range gain +50% damage. This unit gains +50% damage per Trash Gang member in range, up to +300%."
+      }
+    ]
+  }
 ]

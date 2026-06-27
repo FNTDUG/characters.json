@@ -7117,20 +7117,20 @@
     "passiveDamage": {
       "summons": [
         {
-          "label": "Gun Endo",
-          "healthPctOfDamage": 0.55,
-          "attackPctOfDamage": 0.4,
-          "attackCd": 1.0,
-          "attackCdBoostable": false,
-          "spawnCd": 7.8,
+          "label": "Endo",
+          "healthPctOfDamage": 0.80,
+          "spawnCd": 2.6,
           "spawnCdBoostable": true,
           "maxActive": 1,
           "cdScope": "local"
         },
         {
-        "label": "Summon",
-          "healthPctOfDamage": 0.80,
-          "spawnCd": 2.6,
+        "label": "Gun Endo",
+          "healthPctOfDamage": 0.55,
+          "attackPctOfDamage": 0.4,
+          "attackCd": 1.0,
+          "attackCdBoostable": false,
+          "spawnCd": 7.8,
           "spawnCdBoostable": true,
           "maxActive": 1,
           "cdScope": "local"

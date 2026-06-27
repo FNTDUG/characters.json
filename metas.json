@@ -11,7 +11,7 @@
       "The Fan":    { "url": "https://tr.rbxcdn.com/180DAY-27f75f89477ed81d7891e1842f11da2e/420/420/Image/Png/noFilter", "rarity": "secret",    "note": "Gives units slow" },
       "UFO":        { "url": "https://tr.rbxcdn.com/180DAY-58cf1675b1fb9037073356f04e0799ad/420/420/Image/Png/noFilter", "rarity": "secret",    "note": "Gives units any element boost and increases active ability DMG" },
       "KABOOM!":    { "url": "https://tr.rbxcdn.com/180DAY-05db103928cbf22d82c9542be6710993/420/420/Image/Png/noFilter", "rarity": "mythic",    "note": "Changes attack type to Circle and increases RNG" },
-      "Pearl":      { "url": "https://iili.io/CAqv7Qs.webp", "rarity": "secret",    "note": "Increases income" },
+      "Pearl":      { "url": "https://iili.io/CAqv7Qs.webp", "rarity": "secret",    "note": "Increases income" }
     },
 
     "enchants": {

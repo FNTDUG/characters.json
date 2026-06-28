@@ -100,7 +100,7 @@
         { "name": "Undead Chica", "label": "$600", "byte": "Pearl", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "", "caption": "" },
         { "name": "Valkyrie Chica", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "War Machine Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Golden Cupcake", "caption": "" },
         { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
@@ -120,7 +120,7 @@
         { "name": "Undead Chica", "label": "$600", "byte": "Pearl", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "", "caption": "" },
         { "name": "Valkyrie Chica", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Commander Withered Freddy", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "War Machine Foxy", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Golden Cupcake", "caption": "" },
         { "name": "Fazcade", "label": "", "byte": "Pearl", "enchant": "Investor", "replacement": "", "caption": "" }
       ]
@@ -165,7 +165,7 @@
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
     },
-    "Nature 3th": {
+    "Nature 3rd": {
       "units": [
         { "name": "Barbarian Boy", "label": "$850", "byte": "Pearl", "enchant": "Phantom", "replacement": "", "caption": "Starter" },
         { "name": "Chipper", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },

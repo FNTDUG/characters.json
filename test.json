@@ -1232,11 +1232,6 @@
           "spawncd": 10
         },
         {
-          "label": "Toy Bonnie",
-          "healthflat": 1150,
-          "spawncd": 10
-        },
-        {
           "label": "Toy Chica",
           "healthflat": 1000,
           "spawncd": 10
@@ -1648,10 +1643,10 @@
       }
     ],
     "passiveDamage": {
-      "selfBoost": [
+      "selfboost": [
         {
           "label": "The First (Wither)",
-          "dmgMult": 1.08,
+          "dmgmult": 1.08
         }
       ]
     }
@@ -1746,16 +1741,15 @@
       }
     ],
     "passiveDamage": {
-      "selfBoost": [
+      "selfboost": [
         {
           "label": "Promise (maxed)",
-          "dmgMult": 1.3,
-          "rngMult": 1.2,
-          "cdMult": 0.975
+          "dmgmult": 1.3,
+          "rngmult": 1.2,
+          "cdmult": 0.975
         }
       ]
     }
-  },
   },
   {
     "name": "Freddles",
@@ -1824,22 +1818,22 @@
         "text": "This unit does not attack and instead summons Freddles along the track when its CD passes."
       }
     ],
-  "passiveDamage": {
-      "selfBoost": [
+    "passiveDamage": {
+      "selfboost": [
         {
           "label": "Three Musket Freddie's (maxed)",
-          "dmgMult": 1.25,
-          "cdMult": 0.9
+          "dmgmult": 1.25,
+          "cdmult": 0.9
         }
       ],
-   "summons": [
+      "summons": [
         {
           "label": "Freddles Army",
-          "healthPctOfDamage": 1,
-          "spawnCd": 2.0,
-          "spawnCdBoostable": true,
-          "maxActive": 3,
-          "cdScope": "local"
+          "healthpctofdamage": 1,
+          "spawncd": 2.0,
+          "spawncdboostable": true,
+          "maxactive": 3,
+          "cdscope": "local"
         }
       ]
     }
@@ -2142,11 +2136,11 @@
         "text": "This unit does +15% Damage to enemies in the outer half of his range."
       }
     ],
-  "passiveDamage": {
-      "selfBoost": [
+    "passiveDamage": {
+      "selfboost": [
         {
           "label": "X Mark The Spot",
-          "dmgMult": 1.15,
+          "dmgmult": 1.15
         }
       ]
     }
@@ -2249,19 +2243,19 @@
       }
     ],
     "passiveDamage": {
-      "selfBoost": [
+      "selfboost": [
         {
           "label": "Heckle",
-          "dmgMult": 1.20,
+          "dmgmult": 1.2,
           "duration": 30,
           "cd": 145
-        ],
-        ]
-        "onNthAttack": [
+        }
+      ],
+      "onnthattack": [
         {
           "label": "Crying Cannon",
-          "pctOfDamage": 1.50,
-          "everyNthAttack": 4
+          "pctofdamage": 1.5,
+          "everynthattack": 4
         }
       ]
     }
@@ -2415,29 +2409,29 @@
       }
     ],
     "passiveDamage": {
-    "dots": [
-      { 
-        "label": "Fenrir's Rage", 
-        "pctofdamage": 0.25, 
-        "durationsec": 3, 
-        "cd": 60, 
-        "cdboostable": false, 
-        "cdscope": "local" 
+      "dots": [
+        {
+          "label": "Fenrir's Rage",
+          "pctofdamage": 0.25,
+          "durationsec": 3,
+          "cd": 60,
+          "cdboostable": false,
+          "cdscope": "local"
         },
-        { 
-        "label": "Intense Flame", 
-        "pctofdamage": 0.20, 
-        "durationsec": 3,
-        "cd": 5,
-        "cdboostable": true, 
+        {
+          "label": "Intense Flame",
+          "pctofdamage": 0.2,
+          "durationsec": 3,
+          "cd": 5,
+          "cdboostable": true
         },
-        { 
-        "label": "Crème brūlaze", 
-        "pctofdamage": 0.10, 
-        "durationsec": 3,
-        "cd": 5,
-        "cdboostable": true, 
-        },
+        {
+          "label": "Crème brūlaze",
+          "pctofdamage": 0.1,
+          "durationsec": 3,
+          "cd": 5,
+          "cdboostable": true
+        }
       ]
     }
   },
@@ -2516,20 +2510,20 @@
         "text": "Spawns summons at 100% it's damage every 1.25x cooldown."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "FALL",
-          "dmgMult": 1.15,
+          "dmgmult": 1.15,
           "duration": 15,
           "cd": 60
         }
       ],
-    "summon": [
+      "summons": [
         {
           "label": "Beyond The Plain",
-          "healthPctOfDamage": 1.0,
-          "spawncd": 4
+          "healthpctofdamage": 1.0,
+          "spawncd": 4,
           "spawncdboostable": true
         }
       ]

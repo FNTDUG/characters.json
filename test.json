@@ -79,7 +79,7 @@
           "hits": 2,
           "cd": 15,
           "cdBoostable": false,
-          "cdscope": "local"
+          "cdScope": "local"
         }
       ]
     }
@@ -229,7 +229,7 @@
           "hits": 6,
           "cd": 45,
           "cdBoostable": false,
-          "cdscope": "local"
+          "cdScope": "local"
         }
       ]
     }
@@ -494,7 +494,7 @@
           "label": "Darkest Eclipse",
           "dmgMult": 1.25,
           "everyNthAttack": 10,
-          "duration": 30,
+          "duration": 30
         },
         {
           "label": "Feeding the Fear (maxed)",
@@ -985,7 +985,6 @@
       ]
     }
   },
-  },
   {
     "name": "Plushtrap",
     "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-29-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
@@ -1119,7 +1118,6 @@
       ]
     }
   },
-  },
   {
     "name": "Amalgam",
     "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-14-53-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
@@ -1214,40 +1212,40 @@
           "cdMult": 0.90
         }
       ],
-      "DoTs": [
+      "dots": [
        {
          "label": "Together DoT",
          "pctOfDamage": 0.05,
          "durationSec": 1,
          "stacks": 2
-       }  
+       }
       ],
     "summons": [
         {
           "label": "Toy Freddy",
           "healthFlat": 1850,
-          "spawncd": 4
+          "spawnCd": 4
         },
         {
           "label": "Toy Bonnie",
           "healthFlat": 1150,
-          "spawncd": 4
+          "spawnCd": 4
         },
         {
           "label": "Toy Bonnie",
           "healthFlat": 1150,
-          "spawncd": 4
+          "spawnCd": 4
         },
         {
           "label": "Toy Chica",
           "healthFlat": 1000,
-          "spawncd": 4
+          "spawnCd": 4
         },
         {
           "label": "Mangle",
           "healthFlat": 2350,
-          "spawncd": 4
-        },
+          "spawnCd": 4
+        }
       ]
     }
   },
@@ -1552,7 +1550,7 @@
           "maxActive": 1,
           "cdScope": "global"
         }
-      ], 
+      ],
       "summons": [
         {
           "label": "Blackhole (DPS)",
@@ -1562,7 +1560,7 @@
           "maxActive": 1,
           "cdScope": "global"
         }
-      ], 
+      ],
       "selfBoost": [
         {
           "label": "Big Dipper (maxed)",
@@ -1574,7 +1572,7 @@
           "dmgMult": 1.30,
           "rngMult": 1.45,
           "duration": 45
-        },
+        }
       ]
     }
   },

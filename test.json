@@ -2606,7 +2606,19 @@
         "title": "Roaring Scream",
         "text": "When 5 or more enemies are in the range of this unit, scream. Units in range gain 3% CD but gain 25% DMG for 10s (25s CD)"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Roaring Scream",
+          "dmgmult": 1.25,
+          "cdmult": 1.03,
+          "duration": 10,
+          "cd": 25,
+          "cdscope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Shepherd Fredbear",
@@ -2693,7 +2705,25 @@
         "title": "Fieldwarden",
         "text": "This unit summons a sheep with 80% of this unit's damage as health every 10s, and every 4th sheep is golden. Golden sheep have 175% of this unit's damage as health and increases this unit's income by 5% (up to +35%) every kill they get."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "summons": [
+        {
+          "label": "Sheep",
+          "healthpctofdamage": 0.8,
+          "spawncd": 10,
+          "spawncdboostable": "false",
+          "cdscope": "local"
+        },
+        {
+          "label": "Golden Sheep",
+          "healthpctofdamage": 1.75,
+          "spawncd": 40,
+          "spawncdboostable": "false"
+          "cdscope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Cursed Jester Spring Bonnie",
@@ -2762,7 +2792,22 @@
         "text": "Upon activation, draw a card from the spellbound deck of cards, costing 8000 cash and gaining either 1% range boost (20%) or 1% burn (capped at 20% of this unit's damage) (Upgrade 2+, Global CD: 60s).",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-01-03-05-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Spellbound DoT (maxed)",
+          "pctofdamage": 0.20,
+          "durationsec": 1,
+        }
+      ],
+    "selfboost": [
+        {
+          "label": "Spellbound Boost (maxed)",
+          "rngmult": 1.20,
+        }
+      ]
+    }
   },
   {
     "name": "Barbarian Boy",
@@ -2819,7 +2864,17 @@
         "title": "War Cry",
         "text": "Barbarian Boy will yell out smashing his hammer on his shield boosting nearby units damage by +15% for 25s every 6 kills."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "War Cry",
+          "dmgmult": 1.15,
+          "duration": 25,
+          "everyNthAttack": 3
+        }
+      ]
+    }
   },
   {
     "name": "Hag Withered Chica",
@@ -7407,7 +7462,6 @@
           "healthpctofdamage": 0.8,
           "spawncd": 2.6,
           "spawncdboostable": true,
-          "maxactive": 1,
           "cdscope": "local"
         },
         {
@@ -7418,7 +7472,6 @@
           "attackcdboostable": false,
           "spawncd": 7.8,
           "spawncdboostable": true,
-          "maxactive": 1,
           "cdscope": "local"
         }
       ]

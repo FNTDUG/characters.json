@@ -100,7 +100,7 @@
         { "name": "Undead Chica", "label": "$600", "byte": "Pearl", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "War Machine Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "", "caption": "" },
         { "name": "Valkyrie Chica", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Withered Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Golden Cupcake", "caption": "" },
         { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
@@ -110,7 +110,7 @@
         { "name": "Bonnie", "label": "$375", "byte": "Pearl", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Valkyrie Chica", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "", "caption": "" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "War Machine Foxy", "caption": "Place on Boss" },
-        { "name": "Commander Withered Freddy", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "Henry Emily", "caption": "Place on Boss" },
+        { "name": "Commander Withered Freddy", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "Place on Boss" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Golden Cupcake", "caption": "" },
         { "name": "Fazcade", "label": "", "byte": "Pearl", "enchant": "Investor", "replacement": "", "caption": "" }
       ]
@@ -142,7 +142,7 @@
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "War Machine Foxy", "caption": "Place on Boss" },
         { "name": "Commander Withered Freddy", "label": "",    "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "Place on Boss" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Golden Cupcake", "caption": "" },
-        { "name": "Fazcade", "label": "", "byte": "UFO", "enchant": "Investor", "replacement": "", "caption": "" }
+        { "name": "Fazcade", "label": "", "byte": "Pearl", "enchant": "Investor", "replacement": "", "caption": "" }
       ]
     },
     "Water 1st": {

@@ -2952,7 +2952,17 @@
         "title": "Debilitating Toxin",
         "text": "Every 3rd attack, Hag gives inflicts enemies with 15% AOE Wither for 3s."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Debilitating Toxin",
+          "dmgmult": 1.15,
+          "duration": 3,
+          "everyNthAttack": 3
+        }
+      ]
+    }
   },
   {
     "name": "Harlequin Mangle",
@@ -3189,7 +3199,15 @@
         "title": "Holy Lake of Golden Stars",
         "text": "In this unit's range, all Activatable Abilities have their CD reduced by 35%, all enemies are Slowed by 15%, and all Light element units gain +30% Damage."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Light Boost",
+          "dmgmult": 1.3,
+        }
+      ]
+    }
   },
   {
     "name": "Nightmare Mangle",
@@ -3350,7 +3368,16 @@
         "title": "Blood In The Water",
         "text": "The longer an enemy is in Shark Withered Foxy's range, the more damage they take from Shark Withered Foxy (+2% per second)."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Blood In The Water",
+          "dmgmult": 0.02,
+          "everyNthAttack": 1
+        }
+      ]
+    }
   },
   {
     "name": "Serpent Endo",
@@ -3790,7 +3817,54 @@
         "image": "https://drive.google.com/thumbnail?id=1I7DCWx-ztHHFom5loRHQLtlIbBf5UN7U&sz=w500",
         "rarity": "shiny"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Ignited Rage (maxed)",
+          "dmgmult": 2.0,
+          "duration": 5,
+          "cd": 30
+        },
+        {
+          "label": "Ignited Rage stackes (maxed)",
+          "dmgmult": 1.75,
+        },
+        {
+          "label": "Scorched",
+          "dmgmult": 1.25,
+          "everyNthAttack": 1
+        }
+      ],
+    "dots": [
+        {
+          "label": "Axe Toss (bleed)",
+          "pctofdamage": 0.025,
+          "durationsec": 1,
+          "cd": 20,
+          "cdboostable": false,
+          "cdscope": "local"
+         }
+       ],
+   "periodic": [
+        {
+          "label": "Axe Toss (recall)",
+          "pctofdamage": 0.70,
+          "hits": 1,
+          "cd": 20.0,
+          "cdboostable": false,
+          "cdscope": "local"
+        },
+        {
+          "label": "Axe Toss (impact)",
+          "pctofdamage": 0.70,
+          "hits": 1,
+          "cd": 20.0,
+          "cdboostable": false,
+          "cdscope": "local"
+        },
+      ]
+    }
   },
   {
     "name": "Golden Cupcake",
@@ -4099,7 +4173,25 @@
         "title": "Golden Head",
         "text": "Applies Knockback 2."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Shadow Head",
+          "dmgmult": 4.0,
+          "duration": 25,
+          "cd": 25,
+          "uptime": false
+        },
+        {
+          "label": "Freddy Head",
+          "cdmult": 1.45,
+          "duration": 25,
+          "cd": 25,
+          "uptime": false
+        }
+      ]
+    }
   },
   {
     "name": "Hades Bonnie",

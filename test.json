@@ -2607,7 +2607,7 @@
         "text": "When 5 or more enemies are in the range of this unit, scream. Units in range gain 3% CD but gain 25% DMG for 10s (25s CD)"
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Roaring Scream",
@@ -2706,7 +2706,7 @@
         "text": "This unit summons a sheep with 80% of this unit's damage as health every 10s, and every 4th sheep is golden. Golden sheep have 175% of this unit's damage as health and increases this unit's income by 5% (up to +35%) every kill they get."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "summons": [
         {
           "label": "Sheep",
@@ -2793,18 +2793,18 @@
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-01-03-05-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920"
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "dots": [
         {
           "label": "Spellbound DoT (maxed)",
-          "pctofdamage": 0.20,
+          "pctofdamage": 0.2,
           "durationsec": 1
         }
       ],
-    "selfboost": [
+      "selfboost": [
         {
           "label": "Spellbound Boost (maxed)",
-          "rngmult": 1.20
+          "rngmult": 1.2
         }
       ]
     }
@@ -2865,13 +2865,13 @@
         "text": "Barbarian Boy will yell out smashing his hammer on his shield boosting nearby units damage by +15% for 25s every 6 kills."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "War Cry",
           "dmgmult": 1.15,
           "duration": 25,
-          "everyNthAttack": 3
+          "everynthattack": 3
         }
       ]
     }
@@ -2953,13 +2953,13 @@
         "text": "Every 3rd attack, Hag gives inflicts enemies with 15% AOE Wither for 3s."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Debilitating Toxin",
           "dmgmult": 1.15,
           "duration": 3,
-          "everyNthAttack": 3
+          "everynthattack": 3
         }
       ]
     }
@@ -3200,11 +3200,11 @@
         "text": "In this unit's range, all Activatable Abilities have their CD reduced by 35%, all enemies are Slowed by 15%, and all Light element units gain +30% Damage."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Light Boost",
-          "dmgmult": 1.3,
+          "dmgmult": 1.3
         }
       ]
     }
@@ -3369,12 +3369,12 @@
         "text": "The longer an enemy is in Shark Withered Foxy's range, the more damage they take from Shark Withered Foxy (+2% per second)."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Blood In The Water",
           "dmgmult": 0.02,
-          "everyNthAttack": 1
+          "everynthattack": 1
         }
       ]
     }
@@ -3818,7 +3818,7 @@
         "rarity": "shiny"
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Ignited Rage (maxed)",
@@ -3828,15 +3828,15 @@
         },
         {
           "label": "Ignited Rage stackes (maxed)",
-          "dmgmult": 1.75,
+          "dmgmult": 1.75
         },
         {
           "label": "Scorched",
           "dmgmult": 1.25,
-          "everyNthAttack": 1
+          "everynthattack": 1
         }
       ],
-    "dots": [
+      "dots": [
         {
           "label": "Axe Toss (bleed)",
           "pctofdamage": 0.025,
@@ -3844,12 +3844,12 @@
           "cd": 20,
           "cdboostable": false,
           "cdscope": "local"
-         }
-       ],
-   "periodic": [
+        }
+      ],
+      "periodic": [
         {
           "label": "Axe Toss (recall)",
-          "pctofdamage": 0.70,
+          "pctofdamage": 0.7,
           "hits": 1,
           "cd": 20.0,
           "cdboostable": false,
@@ -3857,12 +3857,12 @@
         },
         {
           "label": "Axe Toss (impact)",
-          "pctofdamage": 0.70,
+          "pctofdamage": 0.7,
           "hits": 1,
           "cd": 20.0,
           "cdboostable": false,
           "cdscope": "local"
-        },
+        }
       ]
     }
   },
@@ -4174,7 +4174,7 @@
         "text": "Applies Knockback 2."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Shadow Head",

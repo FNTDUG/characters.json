@@ -2712,14 +2712,14 @@
           "label": "Sheep",
           "healthpctofdamage": 0.8,
           "spawncd": 10,
-          "spawncdboostable": "false",
+          "spawncdboostable": false,
           "cdscope": "local"
         },
         {
           "label": "Golden Sheep",
           "healthpctofdamage": 1.75,
           "spawncd": 40,
-          "spawncdboostable": "false"
+          "spawncdboostable": false,
           "cdscope": "local"
         }
       ]
@@ -2798,13 +2798,13 @@
         {
           "label": "Spellbound DoT (maxed)",
           "pctofdamage": 0.20,
-          "durationsec": 1,
+          "durationsec": 1
         }
       ],
     "selfboost": [
         {
           "label": "Spellbound Boost (maxed)",
-          "rngmult": 1.20,
+          "rngmult": 1.20
         }
       ]
     }

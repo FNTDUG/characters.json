@@ -1543,7 +1543,6 @@
           "hits": 1,
           "cd": 150.0,
           "cdboostable": false,
-          "maxactive": 1,
           "cdscope": "global"
         }
       ],

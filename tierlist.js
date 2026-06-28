@@ -22,7 +22,7 @@
         "Candy Cadet",
         "Krampus Purple Guy",
         "Ennard",
-        "Trash O Tron NEW",
+        "Trash o Tron NEW",
         "El Chip",
         "Yeti Oni Bonnie",
         "Golden Cupcake",
@@ -191,7 +191,7 @@
         "Freddy",
         "Freddy With a Glock",
         "Cerberus Freddy",
-        "UFO Tangle ",
+        "UFO Tangle",
         "Balloon Boy",
         "Overgrown Foxy",
         "Plushtrap",
@@ -303,7 +303,7 @@
         "Nightmare Chica",
         "Gaia Chica",
         "Overgrown Foxy",
-        "Commander Withered Foxy",
+        "Commander Withered Freddy",
         "Helpy",
         "Cupcake",
         "Popcorn Bot",
@@ -332,7 +332,7 @@
         "Frostmancer Withered Bonnie",
         "Kronos Endo Freddy",
         "Chicas Magic Rainbow",
-        "Trash O Tron"
+        "Trash o Tron"
       ],
       "a": [
         "Pan Stan",

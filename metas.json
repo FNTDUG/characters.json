@@ -62,7 +62,7 @@
         { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
         { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Amalgam", "caption": "" },
         { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
-        { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The box", "enchant": "Vengeance", "replacement": "Golden Cupcake", "caption": "" }
+        { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Golden Cupcake", "caption": "" }
       ]
     },
     "Event Endless": {
@@ -152,7 +152,7 @@
         { "name": "Yeti Oni Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Fathomless Withered Foxy", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Frozen King Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
+        { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]
     },
     "Rust 2nd": {
@@ -172,7 +172,7 @@
         { "name": "Gaia Chica", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Mother Nature Ballora", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "El Chip", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "enchant": "Vengenace", "replacement": "", "caption": "" }
+        { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]
     },
     "Dark 4th": {
@@ -202,7 +202,7 @@
         { "name": "Grinch Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Trash o Tron", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Yenndo", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" },
-        { "name": "Spring Duo", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Spring Duo", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]
     },
     "Fire 7th": {

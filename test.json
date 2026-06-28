@@ -1646,7 +1646,15 @@
         "title": "The First",
         "text": "She has seen everything. Every 5th attack increases her range by 1% (capped at 10%). Additionally any enemy in range gets slowed by 10% and increases damage taken by dark type units by 8%."
       }
-    ]
+    ],
+    "passiveDamage": {
+      "selfBoost": [
+        {
+          "label": "The First (Wither)",
+          "dmgMult": 1.08,
+        }
+      ]
+    }
   },
   {
     "name": "Psychic Friend Fredbear",
@@ -1736,7 +1744,18 @@
         "title": "2 Stocks Lost",
         "text": "+30% DMG, +25% RNG, & -2.5% CD."
       }
-    ]
+    ],
+    "passiveDamage": {
+      "selfBoost": [
+        {
+          "label": "Promise (maxed)",
+          "dmgMult": 1.3,
+          "rngMult": 1.2,
+          "cdMult": 0.975
+        }
+      ]
+    }
+  },
   },
   {
     "name": "Freddles",
@@ -1804,7 +1823,26 @@
         "title": "Freddles Army",
         "text": "This unit does not attack and instead summons Freddles along the track when its CD passes."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfBoost": [
+        {
+          "label": "Three Musket Freddie's (maxed)",
+          "dmgMult": 1.25,
+          "cdMult": 0.9
+        }
+      ],
+   "summons": [
+        {
+          "label": "Freddles Army",
+          "healthPctOfDamage": 1,
+          "spawnCd": 2.0,
+          "spawnCdBoostable": true,
+          "maxActive": 3,
+          "cdScope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Nightmare Endo",
@@ -2103,7 +2141,15 @@
         "title": "X Mark The Spot",
         "text": "This unit does +15% Damage to enemies in the outer half of his range."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfBoost": [
+        {
+          "label": "X Mark The Spot",
+          "dmgMult": 1.15,
+        }
+      ]
+    }
   },
   {
     "name": "Masked Bullies",
@@ -2201,7 +2247,24 @@
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/bjb9rmg-high.png?enable-io=true&crop=1%3A1&width=347",
         "rarity": "exclusive"
       }
-    ]
+    ],
+    "passiveDamage": {
+      "selfBoost": [
+        {
+          "label": "Heckle",
+          "dmgMult": 1.20,
+          "duration": 30,
+          "cd": 145
+        ],
+        ]
+        "onNthAttack": [
+        {
+          "label": "Crying Cannon",
+          "pctOfDamage": 1.50,
+          "everyNthAttack": 4
+        }
+      ]
+    }
   },
   {
     "name": "Dragon Endo 01",
@@ -2350,7 +2413,33 @@
         "title": "Crème brūlaze",
         "text": "Due to the raw ember inside of Dragon Endo, all fire types will now set enemies on fire at 10% damage for 3 seconds. Additionally previous units that can set enemies on fire will now have an extra 5% and 1.5 seconds."
       }
-    ]
+    ],
+    "passiveDamage": {
+    "dots": [
+      { 
+        "label": "Fenrir's Rage", 
+        "pctofdamage": 0.25, 
+        "durationsec": 3, 
+        "cd": 60, 
+        "cdboostable": false, 
+        "cdscope": "local" 
+        },
+        { 
+        "label": "Intense Flame", 
+        "pctofdamage": 0.20, 
+        "durationsec": 3,
+        "cd": 5,
+        "cdboostable": true, 
+        },
+        { 
+        "label": "Crème brūlaze", 
+        "pctofdamage": 0.10, 
+        "durationsec": 3,
+        "cd": 5,
+        "cdboostable": true, 
+        },
+      ]
+    }
   },
   {
     "name": "Lich Shadow Bonnie",
@@ -2426,7 +2515,25 @@
         "title": "Beyond The Plain",
         "text": "Spawns summons at 100% it's damage every 1.25x cooldown."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "FALL",
+          "dmgMult": 1.15,
+          "duration": 15,
+          "cd": 60
+        }
+      ],
+    "summon": [
+        {
+          "label": "Beyond The Plain",
+          "healthPctOfDamage": 1.0,
+          "spawncd": 4
+          "spawncdboostable": true
+        }
+      ]
+    }
   },
   {
     "name": "Shadow Knight Freddy",

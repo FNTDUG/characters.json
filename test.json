@@ -64,22 +64,22 @@
       }
     ],
     "passiveDamage": {
-      "selfBoost": [
+      "selfboost": [
         {
           "label": "Celebration",
-          "dmgMult": 1.3,
-          "rngMult": 1.25,
-          "cdMult": 0.85
+          "dmgmult": 1.3,
+          "rngmult": 1.25,
+          "cdmult": 0.85
         }
       ],
       "periodic": [
         {
           "label": "Party Poppers",
-          "pctOfDamage": 1.2,
+          "pctofdamage": 1.2,
           "hits": 2,
           "cd": 15,
-          "cdBoostable": false,
-          "cdScope": "local"
+          "cdboostable": false,
+          "cdscope": "local"
         }
       ]
     }
@@ -225,11 +225,11 @@
       "periodic": [
         {
           "label": "To the moon!",
-          "pctOfDamage": 0.75,
+          "pctofdamage": 0.75,
           "hits": 6,
           "cd": 45,
-          "cdBoostable": false,
-          "cdScope": "local"
+          "cdboostable": false,
+          "cdscope": "local"
         }
       ]
     }
@@ -483,24 +483,24 @@
       }
     ],
     "passiveDamage": {
-      "selfBoost": [
+      "selfboost": [
         {
           "label": "Nightmarish Cry (maxed)",
-          "dmgMult": 1.75,
+          "dmgmult": 1.75,
           "duration": 10,
           "cd": 145
         },
         {
           "label": "Darkest Eclipse",
-          "dmgMult": 1.25,
-          "everyNthAttack": 10,
+          "dmgmult": 1.25,
+          "everynthattack": 10,
           "duration": 30
         },
         {
           "label": "Feeding the Fear (maxed)",
-          "dmgMult": 2.5,
-          "rngMult": 1.5,
-          "cdMult": 0.95
+          "dmgmult": 2.5,
+          "rngmult": 1.5,
+          "cdmult": 0.95
         }
       ]
     }
@@ -648,11 +648,11 @@
       "periodic": [
         {
           "label": "Blossom Boom",
-          "pctOfDamage": 0.45,
+          "pctofdamage": 0.45,
           "hits": 1,
           "cd": 12.0,
-          "cdBoostable": false,
-          "cdScope": "global"
+          "cdboostable": false,
+          "cdscope": "global"
         }
       ]
     }
@@ -977,10 +977,10 @@
       }
     },
     "passiveDamage": {
-      "selfBoost": [
+      "selfboost": [
         {
           "label": "Upgrades (Damage)",
-          "dmgMult": 1.35
+          "dmgmult": 1.35
         }
       ]
     }
@@ -1049,10 +1049,10 @@
       "periodic": [
         {
           "label": "Photophobia",
-          "pctOfDamage": 1.0,
+          "pctofdamage": 1.0,
           "hits": 5,
-          "everyNthAttack": 3,
-          "cdScope": "local"
+          "everynthattack": 3,
+          "cdscope": "local"
         }
       ]
     }
@@ -1108,10 +1108,10 @@
       }
     ],
     "passiveDamage": {
-    "selfBoost": [
+      "selfboost": [
         {
           "label": "Thermal Runaway",
-          "dmgMult": 1.25,
+          "dmgmult": 1.25,
           "duration": 8,
           "cd": 30
         }
@@ -1204,47 +1204,47 @@
         "text": "Single Type, 2350 DMG. Stuns an enemy for 2s."
       }
     ],
-  "passiveDamage": {
-      "selfBoost": [
+    "passiveDamage": {
+      "selfboost": [
         {
           "label": "Together Boost",
-          "dmgMult": 1.10,
-          "cdMult": 0.90
+          "dmgmult": 1.1,
+          "cdmult": 0.9
         }
       ],
       "dots": [
-       {
-         "label": "Together DoT",
-         "pctOfDamage": 0.05,
-         "durationSec": 1,
-         "stacks": 2
-       }
+        {
+          "label": "Together DoT",
+          "pctofdamage": 0.05,
+          "durationsec": 1,
+          "stacks": 2
+        }
       ],
-    "summons": [
+      "summons": [
         {
           "label": "Toy Freddy",
-          "healthFlat": 1850,
-          "spawnCd": 10
+          "healthflat": 1850,
+          "spawncd": 10
         },
         {
           "label": "Toy Bonnie",
-          "healthFlat": 1150,
-          "spawnCd": 10
+          "healthflat": 1150,
+          "spawncd": 10
         },
         {
           "label": "Toy Bonnie",
-          "healthFlat": 1150,
-          "spawnCd": 10
+          "healthflat": 1150,
+          "spawncd": 10
         },
         {
           "label": "Toy Chica",
-          "healthFlat": 1000,
-          "spawnCd": 10
+          "healthflat": 1000,
+          "spawncd": 10
         },
         {
           "label": "Mangle",
-          "healthFlat": 2350,
-          "spawnCd": 10
+          "healthflat": 2350,
+          "spawncd": 10
         }
       ]
     }
@@ -1351,12 +1351,12 @@
         "text": "Attack type becomes Full AOE (Plushies float)."
       }
     ],
-  "passiveDamage": {
-      "selfBoost": [
+    "passiveDamage": {
+      "selfboost": [
         {
           "label": "Dark Offerings (maxed)",
-          "dmgMult": 1.20,
-          "rngMult": 1.20
+          "dmgmult": 1.2,
+          "rngmult": 1.2
         }
       ]
     }
@@ -1544,34 +1544,34 @@
       "periodic": [
         {
           "label": "Blackhole (engulfing)",
-          "pctOfDamage": 4.5,
+          "pctofdamage": 4.5,
           "hits": 1,
           "cd": 150.0,
-          "cdBoostable": false,
-          "maxActive": 1,
-          "cdScope": "global"
+          "cdboostable": false,
+          "maxactive": 1,
+          "cdscope": "global"
         }
       ],
       "summons": [
         {
           "label": "Blackhole (DPS)",
-          "attackPctOfDamage": 0.1,
-          "attackCd": 1.0,
-          "attackCdBoostable": false,
-          "maxActive": 1,
-          "cdScope": "global"
+          "attackpctofdamage": 0.1,
+          "attackcd": 1.0,
+          "attackcdboostable": false,
+          "maxactive": 1,
+          "cdscope": "global"
         }
       ],
-      "selfBoost": [
+      "selfboost": [
         {
           "label": "Big Dipper (maxed)",
-          "dmgMult": 1.3,
+          "dmgmult": 1.3,
           "duration": 45
         },
         {
           "label": "Orion's Belt (maxed)",
-          "dmgMult": 1.30,
-          "rngMult": 1.45,
+          "dmgmult": 1.3,
+          "rngmult": 1.45,
           "duration": 45
         }
       ]
@@ -3737,11 +3737,11 @@
       "periodic": [
         {
           "label": "Crash Landing",
-          "pctOfDamage": 2.3,
+          "pctofdamage": 2.3,
           "hits": 1,
           "cd": 70.0,
-          "cdBoostable": false,
-          "cdScope": "global"
+          "cdboostable": false,
+          "cdscope": "global"
         }
       ]
     }
@@ -4530,11 +4530,11 @@
       }
     ],
     "passiveDamage": {
-      "onNthAttack": [
+      "onnthattack": [
         {
           "label": "Gnarly Riff",
-          "pctOfDamage": 1.45,
-          "everyNthAttack": 3
+          "pctofdamage": 1.45,
+          "everynthattack": 3
         }
       ]
     }
@@ -6599,8 +6599,8 @@
     "passiveDamage": {
       "dots": [
         {
-          "pctOfDamage": 0.1,
-          "durationSec": 1.0,
+          "pctofdamage": 0.1,
+          "durationsec": 1.0,
           "stacks": 1,
           "label": "Faz-Metal-Jacket"
         }
@@ -7302,22 +7302,22 @@
       "summons": [
         {
           "label": "Endo",
-          "healthPctOfDamage": 0.8,
-          "spawnCd": 2.6,
-          "spawnCdBoostable": true,
-          "maxActive": 1,
-          "cdScope": "local"
+          "healthpctofdamage": 0.8,
+          "spawncd": 2.6,
+          "spawncdboostable": true,
+          "maxactive": 1,
+          "cdscope": "local"
         },
         {
           "label": "Gun Endo",
-          "healthPctOfDamage": 0.55,
-          "attackPctOfDamage": 0.4,
-          "attackCd": 1.0,
-          "attackCdBoostable": false,
-          "spawnCd": 7.8,
-          "spawnCdBoostable": true,
-          "maxActive": 1,
-          "cdScope": "local"
+          "healthpctofdamage": 0.55,
+          "attackpctofdamage": 0.4,
+          "attackcd": 1.0,
+          "attackcdboostable": false,
+          "spawncd": 7.8,
+          "spawncdboostable": true,
+          "maxactive": 1,
+          "cdscope": "local"
         }
       ]
     }
@@ -7751,16 +7751,16 @@
       }
     ],
     "passiveDamage": {
-      "selfBoost": [
+      "selfboost": [
         {
           "label": "Curse of Dreadbear",
-          "dmgMult": 1.3,
-          "rngMult": 1.2,
-          "cdMult": 0.9
+          "dmgmult": 1.3,
+          "rngmult": 1.2,
+          "cdmult": 0.9
         },
         {
           "label": "Heartbeat Current",
-          "cdMult": 0.85,
+          "cdmult": 0.85,
           "duration": 20,
           "cd": 60
         }
@@ -8760,8 +8760,8 @@
     "passiveDamage": {
       "dots": [
         {
-          "pctOfDamage": 0.03,
-          "durationSec": 1.0,
+          "pctofdamage": 0.03,
+          "durationsec": 1.0,
           "stacks": 1,
           "label": "Crown of Permafrost"
         }

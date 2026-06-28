@@ -62,7 +62,27 @@
         "title": "Party Poppers",
         "text": "Every 15s, this unit places 2 Party Poppers aimed at the enemy it's targeting that deal 120% of this unit's current damage in a 70° angle."
       }
-    ]
+    ],
+    "passiveDamage": {
+      "selfBoost": [
+        {
+          "label": "Celebration",
+          "dmgMult": 1.3,
+          "rngMult": 1.25,
+          "cdMult": 0.85
+        }
+      ],
+      "periodic": [
+        {
+          "label": "Party Poppers",
+          "pctOfDamage": 1.2,
+          "hits": 2,
+          "cd": 15,
+          "cdBoostable": false,
+          "cdscope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Sweetheart Toy Foxy",
@@ -200,7 +220,19 @@
         "text": "This unit attacks every 1.5s dealing 75% of its damage in AOE for 9s. (Upgrade 4+, Global CD: 45s).",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-mar-16-2026-22-59-43-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=347"
       }
-    ]
+    ],
+    "passiveDamage": {
+      "periodic": [
+        {
+          "label": "To the moon!",
+          "pctOfDamage": 0.75,
+          "hits": 6,
+          "cd": 45,
+          "cdBoostable": false,
+          "cdscope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Nightmare Fredbear",
@@ -449,7 +481,29 @@
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/hazard-fredbear-high.png",
         "rarity": "secret"
       }
-    ]
+    ],
+    "passiveDamage": {
+      "selfBoost": [
+        {
+          "label": "Nightmarish Cry (maxed)",
+          "dmgMult": 1.75,
+          "duration": 10,
+          "cd": 145
+        },
+        {
+          "label": "Darkest Eclipse",
+          "dmgMult": 1.25,
+          "everyNthAttack": 10,
+          "duration": 30,
+        },
+        {
+          "label": "Feeding the Fear (maxed)",
+          "dmgMult": 2.5,
+          "rngMult": 1.5,
+          "cdMult": 0.95
+        }
+      ]
+    }
   },
   {
     "name": "Fisherman Toy Bonnie",
@@ -589,7 +643,19 @@
         "text": "Chica summons a rose thorn bush trap dealing damage equal to 45% of her damage. Additionally, grants 30% of damage dealt as income. In Boss Rush, all knocked-out units are healed. (Upgrade 3+, Global CD: 12s).",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-01-03-27-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920"
       }
-    ]
+    ],
+    "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Blossom Boom",
+          "pctOfDamage": 0.45,
+          "hits": 1,
+          "cd": 12.0,
+          "cdBoostable": false,
+          "cdScope": "global"
+        }
+      ]
+    }
   },
   {
     "name": "Thanatos",
@@ -909,7 +975,16 @@
           }
         ]
       }
+    },
+    "passiveDamage": {
+      "selfBoost": [
+        {
+          "label": "Upgrades (Damage)",
+          "dmgMult": 1.35
+        }
+      ]
     }
+  },
   },
   {
     "name": "Plushtrap",
@@ -970,7 +1045,18 @@
         "title": "Photophobia",
         "text": "On this unit's CD, he makes a movement. After 3 movements, Plushtrap can attack up to 5 times. Whether or not he does attack, Plushtrap goes back to sitting after his CD has passed 5 times. Plushtrap cannot make a movement if a Light element unit or enemy is within his range."
       }
-    ]
+    ],
+    "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Photophobia",
+          "pctOfDamage": 1.0,
+          "hits": 5,
+          "everyNthAttack": 3,
+          "cdScope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Crying Child",
@@ -1021,7 +1107,18 @@
         "title": "Thermal Runaway",
         "text": "Every 30 seconds, the flashlight overheats. Crying Child throws it, leaving a stackable puddle that slows by 10% and applies 25% Wither to enemies that walk over it. Lasts 8 seconds."
       }
-    ]
+    ],
+    "passiveDamage": {
+    "selfBoost": [
+        {
+          "label": "Thermal Runaway",
+          "dmgMult": 1.25,
+          "duration": 8,
+          "cd": 30
+        }
+      ]
+    }
+  },
   },
   {
     "name": "Amalgam",
@@ -1108,7 +1205,51 @@
         "title": " Mangle",
         "text": "Single Type, 2350 DMG. Stuns an enemy for 2s."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfBoost": [
+        {
+          "label": "Together Boost",
+          "dmgMult": 1.10,
+          "cdMult": 0.90
+        }
+      ],
+      "DoTs": [
+       {
+         "label": "Together DoT",
+         "pctOfDamage": 0.05,
+         "durationSec": 1,
+         "stacks": 2
+       }  
+      ],
+    "summons": [
+        {
+          "label": "Toy Freddy",
+          "healthFlat": 1850,
+          "spawncd": 4
+        },
+        {
+          "label": "Toy Bonnie",
+          "healthFlat": 1150,
+          "spawncd": 4
+        },
+        {
+          "label": "Toy Bonnie",
+          "healthFlat": 1150,
+          "spawncd": 4
+        },
+        {
+          "label": "Toy Chica",
+          "healthFlat": 1000,
+          "spawncd": 4
+        },
+        {
+          "label": "Mangle",
+          "healthFlat": 2350,
+          "spawncd": 4
+        },
+      ]
+    }
   },
   {
     "name": "Nightmarionne",
@@ -1211,7 +1352,16 @@
         "title": "75 Defeated Enemies",
         "text": "Attack type becomes Full AOE (Plushies float)."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfBoost": [
+        {
+          "label": "Dark Offerings (maxed)",
+          "dmgMult": 1.20,
+          "rngMult": 1.20
+        }
+      ]
+    }
   },
   {
     "name": "Astral Bonnie",
@@ -1391,7 +1541,42 @@
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/radiant-astral-bonnie-high.png",
         "rarity": "radiant"
       }
-    ]
+    ],
+    "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Blackhole (engulfing)",
+          "pctOfDamage": 4.5,
+          "hits": 1,
+          "cdBoostable": false,
+          "maxActive": 1,
+          "cdScope": "global"
+        }
+      ], 
+      "summons": [
+        {
+          "label": "Blackhole (DPS)",
+          "attackPctOfDamage": 0.1,
+          "attackCd": 1.0,
+          "attackCdBoostable": false,
+          "maxActive": 1,
+          "cdScope": "global"
+        }
+      ], 
+      "selfBoost": [
+        {
+          "label": "Big Dipper (maxed)",
+          "dmgMult": 1.3,
+          "duration": 45
+        },
+        {
+          "label": "Orion's Belt (maxed)",
+          "dmgMult": 1.30,
+          "rngMult": 1.45,
+          "duration": 45
+        },
+      ]
+    }
   },
   {
     "name": "Nightmare Chica",

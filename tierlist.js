@@ -264,7 +264,7 @@
     "support": {
       "ss": [
         "Candy Cadet",
-        "Nature Reclaimed Foxy",
+        "Nature Reclaimed Foxy NEW",
         "Psychic Friend Fredbear",
         "Golden Cupcake",
         "Spring Duo",
@@ -301,9 +301,9 @@
         "Springtrap",
         "Funtime Chica",
         "Nightmare Chica",
-        "Gaia Chica",
+        "Gaia Chica NEW",
         "Overgrown Foxy",
-        "Commander Withered Freddy",
+        "Commander Withered Freddy NEW",
         "Helpy",
         "Cupcake",
         "Popcorn Bot",
@@ -331,8 +331,9 @@
       "s": [
         "Frostmancer Withered Bonnie",
         "Kronos Endo Freddy",
+        "Mangle",
         "Chicas Magic Rainbow",
-        "Trash o Tron"
+        "Trash o Tron NEW"
       ],
       "a": [
         "Pan Stan",
@@ -348,16 +349,15 @@
       "b": [
         "Landslide Funtime Foxy",
         "Animdude",
-        "Mangle BUG",
         "Nightmare Mangle",
         "Yenndo"
       ],
       "c": [
-        "Gaia Chica",
+        "Gaia Chica NEW",
         "Michael Afton",
         "Time Lord Withered Freddy",
         "Old Man Consequences",
-        "Afterbite Withered Golden Freddy"
+        "Afterbite Withered Golden Freddy NEW"
       ]
     }
   },

@@ -1224,27 +1224,27 @@
         {
           "label": "Toy Freddy",
           "healthFlat": 1850,
-          "spawnCd": 4
+          "spawnCd": 10
         },
         {
           "label": "Toy Bonnie",
           "healthFlat": 1150,
-          "spawnCd": 4
+          "spawnCd": 10
         },
         {
           "label": "Toy Bonnie",
           "healthFlat": 1150,
-          "spawnCd": 4
+          "spawnCd": 10
         },
         {
           "label": "Toy Chica",
           "healthFlat": 1000,
-          "spawnCd": 4
+          "spawnCd": 10
         },
         {
           "label": "Mangle",
           "healthFlat": 2350,
-          "spawnCd": 4
+          "spawnCd": 10
         }
       ]
     }
@@ -1546,6 +1546,7 @@
           "label": "Blackhole (engulfing)",
           "pctOfDamage": 4.5,
           "hits": 1,
+          "cd": 150.0,
           "cdBoostable": false,
           "maxActive": 1,
           "cdScope": "global"

@@ -4168,14 +4168,14 @@
           "dmgmult": 4.0,
           "duration": 25,
           "cd": 75,
-          "uptime": false
+          "uptime": true
         },
         {
           "label": "Freddy Head",
           "dmgmult": 1.45,
           "duration": 25,
           "cd": 75,
-          "uptime": false
+          "uptime": true
         }
       ]
     }
@@ -4368,7 +4368,7 @@
       "selfboost": [
         {
           "label": "Decode",
-          "cdmult": 1.15,
+          "dmgmult": 1.15,
           "duration": 8,
           "cd": 45
         }
@@ -4920,7 +4920,7 @@
         {
           "label": "Overheat",
           "dmgmult": 1.075,
-          "uptime": false,
+          "uptime": true,
           "duration": 45,
           "cd": 48,
           "stun": 3
@@ -4993,24 +4993,7 @@
         "title": "Eternal Blaze",
         "text": "If this unit hits 6 or more enemies at once, its flames turn blue. Blue flames deal 50% more damage and inflict 15% burn over the course of 3s."
       }
-    ],
-    "passiveDamage": {
-      "periodic": [
-        {
-          "label": "Eternal Blaze (6+)",
-          "pctofdamage": 0.5,
-          "hits": 1
-        }
-      ],
-      "dots": [
-        {
-          "label": "Eternal Blaze (Burn)",
-          "pctofdamage": 0.15,
-          "durationsec": 3,
-          "stacks": 2
-        }
-      ]
-    }
+    ]
   },
   {
     "name": "Phantom Freddy",
@@ -5221,7 +5204,7 @@
           "dmgmult": 1.3,
           "duration": 8,
           "cd": 100,
-          "uptime": false
+          "uptime": true
         }
       ]
     }
@@ -5773,7 +5756,7 @@
           "label": "Cloaked",
           "dmgmult": 1.5,
           "cdmult": 0.9,
-          "uptime": false,
+          "uptime": true,
           "duration": 5,
           "cd": 10,
           "cdscope": "local"
@@ -6365,21 +6348,21 @@
         {
           "label": "Horn of Plenty (DMG)",
           "dmgmult": 1.5,
-          "uptime": false,
+          "uptime": true,
           "duration": 1.667,
           "cd": 7
         },
         {
           "label": "Horn of Plenty (RNG)",
           "rngmult": 1.8,
-          "uptime": false,
+          "uptime": true,
           "duration": 1.667,
           "cd": 7
         },
         {
           "label": "Horn of Plenty (CD)",
           "cdmult": 0.7,
-          "uptime": false,
+          "uptime": true,
           "duration": 1.667,
           "cd": 7
         }
@@ -8207,7 +8190,7 @@
           "label": "Phone Ring",
           "dmgmult": 1.1,
           "cdmult": 0.92,
-          "uptime": false,
+          "uptime": true,
           "duration": 4,
           "cd": 12,
           "cdboostable": false
@@ -8620,7 +8603,7 @@
           "durationsec": 15,
           "cd": 45,
           "cdboostable": false,
-          "uptime": true
+          "uptime": false
         }
       ]
     }
@@ -11162,7 +11145,7 @@
           "cd": 120,
           "cdboostable": false,
           "cdscope": "global",
-          "uptime": true
+          "uptime": false
         }
       ],
       "selfboost": [
@@ -13273,7 +13256,7 @@
         {
           "label": "Scene of the Crime (active)",
           "dmgmult": 1.5,
-          "uptime": false,
+          "uptime": true,
           "duration": 20,
           "cd": 60
         },

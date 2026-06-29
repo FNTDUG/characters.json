@@ -12812,10 +12812,10 @@
     "passiveDamage": {
       "periodic": [
         {
-          "label": "Call of the Storm",
+          "label": "Call of the Storm (Enemies)",
           "pctofdamage": 0.25,
           "hits": 40,
-          "cd": 60.0,
+          "cd": 40.0,
           "cdboostable": false,
           "cdscope": "local"
         },

@@ -14585,7 +14585,6 @@
           "pctofdamage": 1.4,
           "hits": 1,
           "cd": 10.5,
-          "stun": 3,
           "cdboostable": false,
           "cdscope": "local"
         }

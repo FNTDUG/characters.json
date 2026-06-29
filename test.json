@@ -14113,16 +14113,10 @@
       }
     ],
     "passiveDamage": {
-      "selfboost": [
-        {
-          "label": "Deathly Bones (maxed)",
-          "dmgmult": 1.65
-        }
-      ],
       "summons": [
         {
-          "label": "Fire Freddle",
-          "healthpctofdamage": 0.5,
+          "label": "Fire Freddle (Maxed)",
+          "healthpctofdamage": 0.825,
           "spawncd": 20,
           "spawncdboostable": false,
           "cdscope": "local",

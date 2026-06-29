@@ -14032,7 +14032,30 @@
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3uir87-high.png",
         "rarity": "secret"
       }
-    ]
+    ],
+  "passiveDamage": {
+    "summons": [
+        {
+          "label": "Bot 1 (3)",
+          "healthflat": 723,
+          "spawncd": 12,
+          "spawncdboostable": false,
+          "cdscope": "local"
+        }
+      ],  
+    "selfboost": [
+        {
+          "label": "Stock Stacker (Maxed)",
+          "dmgmult": 1.3,
+          "rngmult": 1.3,
+          "cdmult": 0.7
+        },
+        {
+          "label": "Lumber Co (Maxed)",
+          "dmgmult": 2
+        }
+      ]
+    }
   },
   {
     "name": "Bones of The Past Nightmare Freddy",
@@ -14329,7 +14352,22 @@
         "title": "Familiar Tools",
         "text": "Bonuses based on equipped byte: Box - every 10s rotates through Damage, Range and Cooldown and gives an extra 50% of the % the byte gives on that stat.  Boss Drain - attacks on bosses deal +10% damage and apply 10% wither.  Reaper - executes non-boss enemies below 5% HP, +50% crit chance.  KABOOM! - every other attack toggles +50% damage and +30% range.  The Fan - -20% cooldown, every 10s next attack knocks back enemies 1.5 studs."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "onnthattack": [
+        {
+          "label": "Alarm (Hit)",
+          "pctofdamage": 0.5,
+          "everynthattack": 1
+        }
+      ],
+    "selfboost": [
+        {
+          "label": "Alarm (Boost, maxed)",
+          "dmgmult": 2.0
+        }
+      ]
+    }
   },
   {
     "name": "Chicas Magic Rainbow",

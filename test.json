@@ -9414,7 +9414,15 @@
         "name": "Mendo",
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3uiaas-high.png"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Endo CPU",
+          "cdmult": 1.15
+        }
+      ]
+    }
   },
   {
     "name": "Frozen King Foxy",

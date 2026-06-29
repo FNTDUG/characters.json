@@ -8996,7 +8996,7 @@
     "passiveDamage": {
       "selfboost": [
         {
-          "label": "Shouldn't have killed me.",
+          "label": "Shouldn't have killed me",
           "dmgmult": 1.4,
           "rngmult": 1.2,
           "cd": 200,

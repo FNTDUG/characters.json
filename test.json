@@ -4919,7 +4919,11 @@
       "selfboost": [
         {
           "label": "Overheat",
-          "dmgmult": 1.007
+          "dmgmult": 1.075,
+          "uptime": false,
+          "duration": 45,
+          "cd": 48,
+          "stun": 3
         }
       ]
     }
@@ -9735,14 +9739,6 @@
     "passiveDamage": {
       "summons": [
         {
-          "label": "Agony (Clones)",
-          "healthpctofdamage": 2.5,
-          "spawncd": 40,
-          "spawncdboostable": false,
-          "cdscope": "local",
-          "maxactive": 2
-        },
-        {
           "label": "Oni Apprentice",
           "healthpctofdamage": 0.3,
           "spawncd": 13.5,
@@ -9761,6 +9757,14 @@
           "attackcd": 2.5,
           "attackcdboostable": false,
           "cdscope": "local"
+        },
+        {
+          "label": "Agony (Clones)",
+          "healthpctofdamage": 2.5,
+          "spawncd": 40,
+          "spawncdboostable": false,
+          "cdscope": "local",
+          "maxactive": 2
         }
       ]
     }

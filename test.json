@@ -4990,7 +4990,7 @@
         "text": "If this unit hits 6 or more enemies at once, its flames turn blue. Blue flames deal 50% more damage and inflict 15% burn over the course of 3s."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "periodic": [
         {
           "label": "Eternal Blaze (6+)",
@@ -4998,7 +4998,7 @@
           "hits": 1
         }
       ],
-    "dots": [
+      "dots": [
         {
           "label": "Eternal Blaze (Burn)",
           "pctofdamage": 0.15,
@@ -5209,12 +5209,12 @@
         "rarity": "secret"
       }
     ],
-   "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Time Stop (Boost)",
           "cdmult": 0.85,
-          "dmgmult": 1.30,
+          "dmgmult": 1.3,
           "duration": 8,
           "cd": 100,
           "uptime": false
@@ -5476,7 +5476,7 @@
         "rarity": "secret"
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "periodic": [
         {
           "label": "Hellish (Enemies)",
@@ -5495,7 +5495,7 @@
           "cdscope": "global"
         }
       ],
-    "selfboost": [
+      "selfboost": [
         {
           "label": "Guiding Whistle",
           "dmgmult": 1.1,
@@ -5565,7 +5565,7 @@
         "text": "On this unit's CD, he lays a fried chicken trap on the track with 50% of this unit's damage as health that also deals 45% of this unit's damage as burn damage over the course of 3s."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "summons": [
         {
           "label": "Flaming Hot Sauce (Trap)",
@@ -5575,7 +5575,7 @@
           "cdscope": "local"
         }
       ],
-    "dots": [
+      "dots": [
         {
           "label": "Flaming Hot Sauce (DoT)",
           "pctofdamage": 0.45,
@@ -5763,12 +5763,12 @@
         "text": "This unit gains a unique Cloaked buff after dealing 1.5k damage, Cloaked gives Sparky +50% Damage, -10% CD, and changes his Type fron Line to Cone 60 for 5s. (10s CD)."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Cloaked",
-          "dmgmult": 1.50,
-          "cdmult": 0.90,
+          "dmgmult": 1.5,
+          "cdmult": 0.9,
           "uptime": false,
           "duration": 5,
           "cd": 10,
@@ -5837,7 +5837,7 @@
         "text": "This unit steadily becomes more visible and stronger when enemies enter his range. When an enemy does enter his range, Phantom Bonnie gains +0.25% Damage up to +25% Damage. Once he reaches +25% Damage, he also receives +15% Range."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Gloom Doom (maxed)",
@@ -5916,7 +5916,7 @@
         "text": "Every 20s this unit applies full AOE poison, causing 50% of its damage for 5 ticks over 5s to every enemy in its range. Additionally, while an enemy is poisoned, there is a 6% chance to Crit for 25% more DMG from any source."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "dots": [
         {
           "label": "Phantom Fear DoT",
@@ -5991,7 +5991,7 @@
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-01-03-08-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347"
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "summons": [
         {
           "label": "Cams (maxed)",
@@ -6171,7 +6171,7 @@
         "text": "Every 5 attacks, Freddy throws his hat and applies bleed for 1 second equal to 10% of his damage."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "dots": [
         {
           "label": "Hat Toss",
@@ -6229,7 +6229,7 @@
         "text": "Every 6 attacks, Foxy performs a follow-up hit that deals 25% of his current damage."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "onnthattack": [
         {
           "label": "Right Hook",
@@ -6285,7 +6285,7 @@
         "text": "Every 5 attacks, Chica's cupcake is set on fire and applies burn for 1 second equal to 10% of her damage."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "dots": [
         {
           "label": "Specialty Cupcake",
@@ -6356,27 +6356,28 @@
         "text": "Every 7s, this unit gains one of three buffs for 5s. The buffs can be +50% Damage, +80% Range, or -30% CD."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
-          {
-            "label": "Horn of Plenty (DMG)",
-            "dmgmult": 1.50,
-            "uptime": false,
-            "duration": 1.667,
-            "cd": 7
-          },
-          {
-            "label": "Horn of Plenty (RNG)",
-            "rngmult": 1.80,
-            "uptime": false,
-            "duration": 1.667,
-            "cd": 7
-          },
-          { "label": "Horn of Plenty (CD)",
-            "cdmult": 0.70,
-            "uptime": false,
-            "duration": 1.667,
-            "cd": 7
+        {
+          "label": "Horn of Plenty (DMG)",
+          "dmgmult": 1.5,
+          "uptime": false,
+          "duration": 1.667,
+          "cd": 7
+        },
+        {
+          "label": "Horn of Plenty (RNG)",
+          "rngmult": 1.8,
+          "uptime": false,
+          "duration": 1.667,
+          "cd": 7
+        },
+        {
+          "label": "Horn of Plenty (CD)",
+          "cdmult": 0.7,
+          "uptime": false,
+          "duration": 1.667,
+          "cd": 7
         }
       ]
     }
@@ -6427,11 +6428,11 @@
         "text": "Every 10 seconds, Bonnie strums his guitar and boosts his stats by 10% for 5 seconds."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Guitar Solo",
-          "cdmult": 0.90,
+          "cdmult": 0.9,
           "dmgmult": 1.1,
           "rngmult": 1.1,
           "duration": 5,
@@ -6551,7 +6552,7 @@
         "text": "Consumes the power of nearby enemies. For every enemy killed in its radius, JJ gains 0.1% RNG, up to 10%."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Megalomaniac (maxed)",
@@ -6751,14 +6752,14 @@
         "text": "When this unit first hits an enemy, does 75% bonus damage; then applies a bleed dealing 30% DMG over 2 seconds. [15% DMG/tick]."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Sword Lunge (hit bonus)",
           "dmgmult": 1.75
         }
       ],
-       "dots": [
+      "dots": [
         {
           "label": "Sword Lunge (hit dot)",
           "pctofdamage": 0.3,
@@ -6886,7 +6887,7 @@
         "text": "Every 5s, this unit will place an explosive jack-o-lantern somewhere on the track within its range (3 per placement, 12 per player). When an enemy touches an explosive jack-o-lantern, the jack-o-lantern will explode dealing 120% of this unit's damage and burning for 10% of this unit's damage."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "dots": [
         {
           "label": "Jack-O-Blaze (dot)",
@@ -6899,13 +6900,13 @@
           "durationsec": 1.0
         }
       ],
-    "selfboost": [
+      "selfboost": [
         {
           "label": "Jack-O-Blaze (boost)",
           "dmgmult": 1.2
         }
       ],
-    "summons": [
+      "summons": [
         {
           "label": "Explosive Lanterns (trap)",
           "healthpctofdamage": 1.2,
@@ -7002,7 +7003,7 @@
         "text": "This unit's range increases by 3% for each upgrade performed within its range. [75% max buff]"
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Energy Siphon (maxed)",
@@ -7093,7 +7094,7 @@
         "text": "Attacks apply 20% Poison over 2s."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "dots": [
         {
           "label": "Agonizing Energy",
@@ -7279,7 +7280,7 @@
         "text": "Endo 02 places [Endo Turrets] within Range every 15 seconds, dealing 100% Damage to a [Single Target] with 100% Cooldown, lasting 45 seconds."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "summons": [
         {
           "label": "Endo Turrets",
@@ -7351,7 +7352,7 @@
         "text": "This unit charges up its attack with the generator on its back. Every other attack deals 40% bonus damage."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Generator (boost)",
@@ -7494,7 +7495,7 @@
         "text": "Every 15 seconds, this unit deals 2x damage to enemies around its main target in a medium splash."
       }
     ],
-   "passiveDamage": {
+    "passiveDamage": {
       "periodic": [
         {
           "label": "Electrical Overflow",
@@ -7584,7 +7585,7 @@
         "text": "Upon reaching full Bloodlust stacks, this unit keeps all Bloodlust stacks and changes its type to 45° Cone AOE."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Bloodlust (boost)",
@@ -8132,7 +8133,7 @@
         "text": "Every 3rd attack he goes full hor hor and starts spinning and shoots a lot and then gets tired for 3 seconds and then he is fine :)."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "periodic": [
         {
           "label": "Hor Hor",
@@ -8197,7 +8198,7 @@
         "text": "after about 12 seconds john gets a call with probably bad news because he gets mad and does 10% more damage and has 8% less cooldown for like 4 seconds."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Phone Ring",
@@ -8278,7 +8279,7 @@
         "text": "Throws bread every like 3 attacks or smth for like 125% damage and then every 5 bread its huge bread for 175% i think."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "periodic": [
         {
           "label": "taste Better Than Key (normal)",
@@ -8353,7 +8354,7 @@
         "text": "This guy decides if you want something done you have to do it yourself so every abt 15 seconds he just leaves his spot like a good employee and sprints along the path at super sonic speed dealing like a gatrillion damage (250% actually, thats his health) and also slows down the enemy by 10%."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "summons": [
         {
           "label": "Freddy",
@@ -8593,7 +8594,7 @@
         "rarity": "nightmare"
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Hallowed Pumpkin Realm",
@@ -8603,7 +8604,7 @@
           "uptime": true
         }
       ],
-    "dots": [
+      "dots": [
         {
           "label": "Mutilation",
           "pctofdamage": 0.2,
@@ -8710,7 +8711,7 @@
         "text": "Bear5's wheel's chance of giving 1 of 5 random things includes the following; all Uncommon Freddies get +55% Damage, +55% Range, and -55% CD for 5s, all player heads get 5% bigger (can be fixed with Reset Character), Bear5 turns red and get +5% Damage, +5% Range, and -5% CD for 5s, game speed gets set to 5x for 5s, or a math quiz appears. The math quiz involves one of 3 types of math questions; pre calculus, algebra, or simple multiplication. Getting the pre calculus question correct grants +15% Damage, +15% Range, and -5% CD to all units for 55s, but getting it incorrect gives all enemies 2x health for 15 waves. Getting the algebra question correct grants +5% Damage and +5% Range to all units for 8s, but getting it incorrect gives all enemies 2x health for 5 waves. Getting the simple multiplication question correct grants +5% Range to all units for 5s, but getting it incorrect gives all enemies 2x health for 3 waves."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "dots": [
         {
           "label": "passive 3 (dot)",
@@ -8719,7 +8720,7 @@
           "everynthattack": 5
         }
       ],
-    "selfboost": [
+      "selfboost": [
         {
           "label": "passive 3 (boost)",
           "duration": 5,
@@ -8727,7 +8728,7 @@
           "everynthattack": 5
         }
       ],
-     "onnthattack": [
+      "onnthattack": [
         {
           "label": "passive 4",
           "pctofdamage": 0.55,
@@ -8988,7 +8989,7 @@
         "rarity": "secret"
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Shouldn't have killed me.",
@@ -9261,7 +9262,7 @@
         "rarity": "secret"
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Gift of Life",
@@ -9287,7 +9288,7 @@
           "dmgmult": 1.2
         }
       ],
-    "summons": [
+      "summons": [
         {
           "label": "Gift of Life (Summon)",
           "healthpctofdamage": 0.6,
@@ -9416,7 +9417,7 @@
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3uiaas-high.png"
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Endo CPU",
@@ -9590,7 +9591,7 @@
       "selfboost": [
         {
           "label": "Frozen Obelisk",
-          "dmgmult": 1.2,
+          "dmgmult": 1.2
         }
       ]
     }
@@ -9731,27 +9732,35 @@
         "text": "When attacking enemies above 80% of their max health, Oni does a follow up attack that deals 50% of his damage in a line."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "summons": [
         {
-      "label": "Oni Apprentice",
-      "healthpctofdamage": 0.30,
-      "spawncd": 13.5,
-      "spawncdboostable": false,
-      "attackpctofdamage": 0.25,
-      "attackcd": 3.0,
-      "attackcdboostable": false,
-      "cdscope": "local"
-    },
-    {
-      "label": "Oni Sensei",
-      "healthpctofdamage": 0.80,
-      "spawncd": 27.0,
-      "spawncdboostable": false,
-      "attackpctofdamage": 0.45,
-      "attackcd": 2.5,
-      "attackcdboostable": false,
-      "cdscope": "local"
+          "label": "Agony (Clones)",
+          "healthpctofdamage": 2.5,
+          "spawncd": 40,
+          "spawncdboostable": false,
+          "cdscope": "local",
+          "maxactive": 2
+        },
+        {
+          "label": "Oni Apprentice",
+          "healthpctofdamage": 0.3,
+          "spawncd": 13.5,
+          "spawncdboostable": false,
+          "attackpctofdamage": 0.25,
+          "attackcd": 3.0,
+          "attackcdboostable": false,
+          "cdscope": "local"
+        },
+        {
+          "label": "Oni Sensei",
+          "healthpctofdamage": 0.8,
+          "spawncd": 27.0,
+          "spawncdboostable": false,
+          "attackpctofdamage": 0.45,
+          "attackcd": 2.5,
+          "attackcdboostable": false,
+          "cdscope": "local"
         }
       ]
     }
@@ -9929,7 +9938,6 @@
       ]
     }
   },
-  },
   {
     "name": "Grinch Foxy",
     "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-27-36-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
@@ -9990,7 +9998,7 @@
         "text": "When attacking an enemy, has a 33% chance to apply a 4 second bleed dealing 15% damage every second. Enemies defeated by this unit increase its damage by 0.2% up to 25%."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Broken Ornaments (Boost, Maxed)",
@@ -10081,7 +10089,7 @@
         "text": "All attacks from this unit inflict [Darkfire]. Darkfire does 23% of this unit’s damage per tick for 2 seconds."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "dots": [
         {
           "label": "Darkfire",
@@ -10478,7 +10486,7 @@
         "text": "On this unit’s cooldown, summons a train on the track with 120% damage as health (does not damage bosses). While a train is on the track, this unit gains a 10% damage boost (capped at 1)."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "summons": [
         {
           "label": "Train",
@@ -10488,7 +10496,7 @@
           "cdscope": "local"
         }
       ],
-   "selfboost": [
+      "selfboost": [
         {
           "label": "Train (Boost)",
           "dmgmult": 1.1
@@ -10565,7 +10573,7 @@
         "text": "Boosts all units and their stats by 5% for 7s."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "dots": [
         {
           "label": "Spicy",
@@ -10577,7 +10585,7 @@
           "cdscope": "local"
         }
       ],
-    "selfboost": [
+      "selfboost": [
         {
           "label": "Sweet",
           "rngmult": 1.05,
@@ -10640,7 +10648,7 @@
         "text": "Gains +1% damage per Zombie Cupcake on the track (capped at +10%)."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "summons": [
         {
           "label": "Zombie Cupcake",
@@ -10650,7 +10658,7 @@
           "cdscope": "local"
         }
       ],
-    "selfboost": [
+      "selfboost": [
         {
           "label": "Overwhelming Horde (maxed)",
           "rngmult": 1.1
@@ -10871,26 +10879,27 @@
         "text": "The first enemy struck by Luminary Bonnie's main attack will be hit twice. (Site Note: This passive is not stated in game)"
       }
     ],
-  "passiveDamage": {
-    "selfboost": [
-      {
-        "label": "Boomerang",
-        "dmgmult": 2.0
-      },
-      {
-        "label": "Cosmic Greed",
-        "dmgmult": 1.10
-      }
-    ],
-    "periodic": [
-      {
-        "label": "Dying Light",
-        "pctofdamage": 2.50,
-        "everynthattack": 40,
-        "cdscope": "local",
-        "stun": 5
-      }
-    ]
+    "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Boomerang",
+          "dmgmult": 2.0
+        },
+        {
+          "label": "Cosmic Greed",
+          "dmgmult": 1.1
+        }
+      ],
+      "periodic": [
+        {
+          "label": "Dying Light",
+          "pctofdamage": 2.5,
+          "everynthattack": 40,
+          "cdscope": "local",
+          "stun": 5
+        }
+      ]
+    }
   },
   {
     "name": "Scarecrow Freddy",
@@ -11115,45 +11124,45 @@
         "cost": 4000
       }
     ],
-  "passiveDamage": {
-    "periodic": [
-      {
-        "label": "Fallout (Missiles)",
-        "pctofdamage": 1.40,
-        "hits": 5,
-        "cd": 120,
-        "cdboostable": false,
-        "cdscope": "global"
-      },
-      {
-        "label": "Fallout (Steam)",
-        "pctofdamage": 1.20,
-        "hits": 3,
-        "cd": 120,
-        "cdboostable": false,
-        "cdscope": "global"
-      },
-      {
-        "label": "ICBCM",
-        "pctofdamage": 2.0,
-        "cd": 12,
-        "cdboostable": false,
-        "cdscope": "local"
-      }
-    ],
-    "dots": [
+    "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Fallout (Missiles)",
+          "pctofdamage": 1.4,
+          "hits": 5,
+          "cd": 120,
+          "cdboostable": false,
+          "cdscope": "global"
+        },
+        {
+          "label": "Fallout (Steam)",
+          "pctofdamage": 1.2,
+          "hits": 3,
+          "cd": 120,
+          "cdboostable": false,
+          "cdscope": "global"
+        },
+        {
+          "label": "ICBCM",
+          "pctofdamage": 2.0,
+          "cd": 12,
+          "cdboostable": false,
+          "cdscope": "local"
+        }
+      ],
+      "dots": [
         {
           "label": "Steam (DoT)",
           "pctofdamage": 0.4,
           "durationsec": 3,
-          "stacks": 3
+          "stacks": 3,
           "cd": 120,
           "cdboostable": false,
           "cdscope": "global",
           "uptime": true
         }
       ],
-  "selfboost": [
+      "selfboost": [
         {
           "label": "Explosives Expert (maxed)",
           "rngmult": 1.15,
@@ -11232,7 +11241,7 @@
         "text": "A giant tidal wave increases in size over 25s. At max height, the wave crashes down map-wide dealing 50% damage and applies a 15% slow for 5s. (10s CD)"
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "periodic": [
         {
           "label": "Tidal Wave",
@@ -11439,7 +11448,7 @@
           "cdscope": "local"
         }
       ],
-    "selfboost": [
+      "selfboost": [
         {
           "label": "Overcharge (Boost)",
           "dmgmult": 1.25
@@ -11632,19 +11641,19 @@
         "rarity": "Shiny"
       }
     ],
-  "passiveDamage": {
-    "dots": [
-      {
-        "label": "Soft-Served",
-        "pctofdamage": 0.05,
-        "durationsec": 1.0,
-        "cd": 35,
-        "cdboostable": false,
-        "cdscope": "local",
-        "stacks": 3
-       }
-     ]
-   }
+    "passiveDamage": {
+      "dots": [
+        {
+          "label": "Soft-Served",
+          "pctofdamage": 0.05,
+          "durationsec": 1.0,
+          "cd": 35,
+          "cdboostable": false,
+          "cdscope": "local",
+          "stacks": 3
+        }
+      ]
+    }
   },
   {
     "name": "Exotic Butters",
@@ -11898,7 +11907,7 @@
         "text": "Elizabeth will drop her ice cream on track every 5 seconds. For each ice cream in a stack, the enemy that makes contact takes 5% damage and 1% slow (caps at 30 cones per stack) that lasts for 5 seconds."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Sweet Treat",
@@ -12080,7 +12089,7 @@
         "text": "Every 10 seconds, Funtime Freddy throws Bonbon at an enemy. Bonbon attaches to the target and nibbles at them, dealing damage equal to 30% of Funtime Freddy’s damage over 5 seconds."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "dots": [
         {
           "label": "Go Get 'Em!",
@@ -12405,223 +12414,223 @@
           }
         ],
         "passiveDamage": {
-      "periodic": [
-        {
-          "label": "Coiling Combination (Smasher)",
-          "pctofdamage": 4.45,
-          "hits": 1,
-          "cd": 10.0,
-          "cdboostable": false,
-          "cdscope": "global"
+          "periodic": [
+            {
+              "label": "Coiling Combination (Smasher)",
+              "pctofdamage": 4.45,
+              "hits": 1,
+              "cd": 10.0,
+              "cdboostable": false,
+              "cdscope": "global"
+            }
+          ]
         }
-      ]
-    }
-  },
-      },
-      "shocker": {
-        "label": "Shocker",
-        "role": "damage",
-        "attackType": "Multi",
-        "levels": [
-          {
-            "level": 1,
-            "cost": 8000,
-            "type": "Line",
-            "damage": 131.4,
-            "cd": 1,
-            "range": 20
-          },
-          {
-            "level": 2,
-            "cost": 2500,
-            "type": "Line",
-            "damage": 151.6,
-            "cd": 1,
-            "range": 20
-          },
-          {
-            "level": 3,
-            "cost": 2750,
-            "type": "Line",
-            "damage": 168.7,
-            "cd": 1,
-            "range": 21
-          },
-          {
-            "level": 4,
-            "cost": 3000,
-            "type": "Line",
-            "damage": 197.6,
-            "cd": 1,
-            "range": 21
-          },
-          {
-            "level": 5,
-            "cost": 4000,
-            "type": "Line",
-            "damage": 228.3,
-            "cd": 1,
-            "range": 21
-          },
-          {
-            "level": 6,
-            "cost": 4000,
-            "type": "Line",
-            "damage": 258.1,
-            "cd": 1,
-            "range": 22
-          },
-          {
-            "level": 7,
-            "cost": 4250,
-            "type": "Line",
-            "damage": 287.9,
-            "cd": 1,
-            "range": 22
-          },
-          {
-            "level": 8,
-            "cost": 4250,
-            "type": "Line",
-            "damage": 317.7,
-            "cd": 1,
-            "range": 23
-          },
-          {
-            "level": 9,
-            "cost": 6000,
-            "type": "Line",
-            "damage": 347.5,
-            "cd": 1,
-            "range": 23
-          },
-          {
-            "level": 10,
-            "cost": 5000,
-            "type": "Line",
-            "damage": 377.3,
-            "cd": 1,
-            "range": 24
-          },
-          {
-            "level": 11,
-            "cost": 7500,
-            "type": "Line",
-            "damage": 407.1,
-            "cd": 1,
-            "range": 20
-          },
-          {
-            "level": 12,
-            "cost": 6500,
-            "type": "Line",
-            "damage": 436.9,
-            "cd": 1,
-            "range": 21
-          },
-          {
-            "level": 13,
-            "cost": 6500,
-            "type": "Line",
-            "damage": 466.7,
-            "cd": 1,
-            "range": 22
-          },
-          {
-            "level": 14,
-            "cost": 7000,
-            "type": "Line",
-            "damage": 496.5,
-            "cd": 1,
-            "range": 22
-          },
-          {
-            "level": 15,
-            "cost": 7000,
-            "type": "Cone 75°",
-            "damage": 526.3,
-            "cd": 1,
-            "range": 25
-          },
-          {
-            "level": 16,
-            "cost": 8500,
-            "type": "Cone 75°",
-            "damage": 556.1,
-            "cd": 2,
-            "range": 24
-          },
-          {
-            "level": 17,
-            "cost": 7500,
-            "type": "Cone 75°",
-            "damage": 686.9,
-            "cd": 1.9,
-            "range": 24
-          },
-          {
-            "level": 18,
-            "cost": 8000,
-            "type": "Cone 75°",
-            "damage": 716.7,
-            "cd": 1.8,
-            "range": 25
-          },
-          {
-            "level": 19,
-            "cost": 8000,
-            "type": "Cone 75°",
-            "damage": 746.5,
-            "cd": 1.8,
-            "range": 26
-          },
-          {
-            "level": 20,
-            "cost": 9000,
-            "type": "Cone 75°",
-            "damage": 776.3,
-            "cd": 1.7,
-            "range": 27
-          },
-          {
-            "level": 21,
-            "cost": 10000,
-            "type": "Cone 75°",
-            "damage": 907,
-            "cd": 1.6,
-            "range": 29
-          }
-        ],
-        "passives": [
-          {
-            "title": "Construct",
-            "text": "Players can switch between two modes: Smasher and Shocker, each with its own unique stats, passive, and ability. (Upgrade 0+, Local CD: 0s)",
-            "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/enard-ability-high.png"
-          },
-          {
-            "title": "Coiling Combination [Shocker] [Upgrade 5+]",
-            "text": "Every 6 seconds, 4 random enemies anywhere on the map are attacked from below by coils, each taking damage equal to 40% of this unit’s damage and being stunned for 1.5 seconds."
-          },
-          {
-            "title": "Tanglement [Shocker] [Upgrade 13+]",
-            "text": "Ennard copies 0.85x of the base damage of the highest-damage unit within range, and its cooldown becomes the average of the two units’ cooldowns. It also gains the ability to stun enemies for 1.5 seconds."
-          },
-          {
-            "title": " Conductor [Shocker] [Upgrade 18+]",
-            "text": "All Electrical units within range gain an additional 15% damage, 20% range, and 5% cooldown reduction. For each Electrical unit in range up to a maximum of 25% damage, 40% range, and 10% cooldown reduction."
-          }
-        ],
-        "passiveDamage": {
-      "periodic": [
+      }
+    },
+    "shocker": {
+      "label": "Shocker",
+      "role": "damage",
+      "attackType": "Multi",
+      "levels": [
         {
-          "label": "Coiling Combination (Shocker)",
-          "pctofdamage": 0.4,
-          "hits": 1,
-          "cd": 6.0,
-          "cdboostable": false,
-          "cdscope": "global"
+          "level": 1,
+          "cost": 8000,
+          "type": "Line",
+          "damage": 131.4,
+          "cd": 1,
+          "range": 20
+        },
+        {
+          "level": 2,
+          "cost": 2500,
+          "type": "Line",
+          "damage": 151.6,
+          "cd": 1,
+          "range": 20
+        },
+        {
+          "level": 3,
+          "cost": 2750,
+          "type": "Line",
+          "damage": 168.7,
+          "cd": 1,
+          "range": 21
+        },
+        {
+          "level": 4,
+          "cost": 3000,
+          "type": "Line",
+          "damage": 197.6,
+          "cd": 1,
+          "range": 21
+        },
+        {
+          "level": 5,
+          "cost": 4000,
+          "type": "Line",
+          "damage": 228.3,
+          "cd": 1,
+          "range": 21
+        },
+        {
+          "level": 6,
+          "cost": 4000,
+          "type": "Line",
+          "damage": 258.1,
+          "cd": 1,
+          "range": 22
+        },
+        {
+          "level": 7,
+          "cost": 4250,
+          "type": "Line",
+          "damage": 287.9,
+          "cd": 1,
+          "range": 22
+        },
+        {
+          "level": 8,
+          "cost": 4250,
+          "type": "Line",
+          "damage": 317.7,
+          "cd": 1,
+          "range": 23
+        },
+        {
+          "level": 9,
+          "cost": 6000,
+          "type": "Line",
+          "damage": 347.5,
+          "cd": 1,
+          "range": 23
+        },
+        {
+          "level": 10,
+          "cost": 5000,
+          "type": "Line",
+          "damage": 377.3,
+          "cd": 1,
+          "range": 24
+        },
+        {
+          "level": 11,
+          "cost": 7500,
+          "type": "Line",
+          "damage": 407.1,
+          "cd": 1,
+          "range": 20
+        },
+        {
+          "level": 12,
+          "cost": 6500,
+          "type": "Line",
+          "damage": 436.9,
+          "cd": 1,
+          "range": 21
+        },
+        {
+          "level": 13,
+          "cost": 6500,
+          "type": "Line",
+          "damage": 466.7,
+          "cd": 1,
+          "range": 22
+        },
+        {
+          "level": 14,
+          "cost": 7000,
+          "type": "Line",
+          "damage": 496.5,
+          "cd": 1,
+          "range": 22
+        },
+        {
+          "level": 15,
+          "cost": 7000,
+          "type": "Cone 75°",
+          "damage": 526.3,
+          "cd": 1,
+          "range": 25
+        },
+        {
+          "level": 16,
+          "cost": 8500,
+          "type": "Cone 75°",
+          "damage": 556.1,
+          "cd": 2,
+          "range": 24
+        },
+        {
+          "level": 17,
+          "cost": 7500,
+          "type": "Cone 75°",
+          "damage": 686.9,
+          "cd": 1.9,
+          "range": 24
+        },
+        {
+          "level": 18,
+          "cost": 8000,
+          "type": "Cone 75°",
+          "damage": 716.7,
+          "cd": 1.8,
+          "range": 25
+        },
+        {
+          "level": 19,
+          "cost": 8000,
+          "type": "Cone 75°",
+          "damage": 746.5,
+          "cd": 1.8,
+          "range": 26
+        },
+        {
+          "level": 20,
+          "cost": 9000,
+          "type": "Cone 75°",
+          "damage": 776.3,
+          "cd": 1.7,
+          "range": 27
+        },
+        {
+          "level": 21,
+          "cost": 10000,
+          "type": "Cone 75°",
+          "damage": 907,
+          "cd": 1.6,
+          "range": 29
         }
-       ]
+      ],
+      "passives": [
+        {
+          "title": "Construct",
+          "text": "Players can switch between two modes: Smasher and Shocker, each with its own unique stats, passive, and ability. (Upgrade 0+, Local CD: 0s)",
+          "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/enard-ability-high.png"
+        },
+        {
+          "title": "Coiling Combination [Shocker] [Upgrade 5+]",
+          "text": "Every 6 seconds, 4 random enemies anywhere on the map are attacked from below by coils, each taking damage equal to 40% of this unit’s damage and being stunned for 1.5 seconds."
+        },
+        {
+          "title": "Tanglement [Shocker] [Upgrade 13+]",
+          "text": "Ennard copies 0.85x of the base damage of the highest-damage unit within range, and its cooldown becomes the average of the two units’ cooldowns. It also gains the ability to stun enemies for 1.5 seconds."
+        },
+        {
+          "title": " Conductor [Shocker] [Upgrade 18+]",
+          "text": "All Electrical units within range gain an additional 15% damage, 20% range, and 5% cooldown reduction. For each Electrical unit in range up to a maximum of 25% damage, 40% range, and 10% cooldown reduction."
+        }
+      ],
+      "passiveDamage": {
+        "periodic": [
+          {
+            "label": "Coiling Combination (Shocker)",
+            "pctofdamage": 0.4,
+            "hits": 1,
+            "cd": 6.0,
+            "cdboostable": false,
+            "cdscope": "global"
+          }
+        ]
       }
     },
     "skins": [
@@ -12703,7 +12712,7 @@
         "text": "Upon entering 50% of its range, the enemy trips and gets stunned for 1.5s and takes 100% damage."
       }
     ],
-   "passiveDamage": {
+    "passiveDamage": {
       "periodic": [
         {
           "label": "rockfall (1)",
@@ -12811,12 +12820,12 @@
     "passiveDamage": {
       "periodic": [
         {
-        "label": "Call of the Storm",
-        "pctofdamage": 0.25,
-        "hits": 39,
-        "cd": 60.0,
-        "cdboostable": false,
-        "cdscope": "local"
+          "label": "Call of the Storm",
+          "pctofdamage": 0.25,
+          "hits": 39,
+          "cd": 60.0,
+          "cdboostable": false,
+          "cdscope": "local"
         },
         {
           "label": "Electrifying Pressure",
@@ -13160,27 +13169,26 @@
     ],
     "passiveDamage": {
       "periodic": [
-      {
-        "label": "Unsafe Lands",
-        "pctofdamage": 0.50,
-        "hits": 1,
-        "cd": 6,
-        "cdboostable": false,
-        "cdscope": "local"
-      }
-    ],
-    "dots": [
-      {
-        "label": "Unsafe Lands (Burn)",
-        "pctofdamage": 0.30,
-        "durationsec": 1,
-        "cd": 6,
-        "cdboostable": false,
-        "cdscope": "local"
+        {
+          "label": "Unsafe Lands",
+          "pctofdamage": 0.5,
+          "hits": 1,
+          "cd": 6,
+          "cdboostable": false,
+          "cdscope": "local"
+        }
+      ],
+      "dots": [
+        {
+          "label": "Unsafe Lands (Burn)",
+          "pctofdamage": 0.3,
+          "durationsec": 1,
+          "cd": 6,
+          "cdboostable": false,
+          "cdscope": "local"
         }
       ]
     }
-  },
   },
   {
     "name": "Detective Bonnie",
@@ -13254,24 +13262,25 @@
         "text": "When enemies enter this unit's range, gain 1 evidence stack giving 1% damage, caps at 25 stacks."
       }
     ],
-  "passiveDamage": {
-    "selfboost": [
-      {
-        "label": "What Could This Mean... (avg)",
-        "dmgmult": 1.125
-      },
-      {
-        "label": "Scene of the Crime (active)",
-        "dmgmult": 1.50,
-        "uptime": false,
-        "duration": 20,
-        "cd": 60
-      },
-      {
-        "label": "Scene of the Crime (permanent)",
-        "dmgmult": 1.15
-      }
-    ]
+    "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "What Could This Mean... (avg)",
+          "dmgmult": 1.125
+        },
+        {
+          "label": "Scene of the Crime (active)",
+          "dmgmult": 1.5,
+          "uptime": false,
+          "duration": 20,
+          "cd": 60
+        },
+        {
+          "label": "Scene of the Crime (permanent)",
+          "dmgmult": 1.15
+        }
+      ]
+    }
   },
   {
     "name": "Goodnight Plushtime",
@@ -13352,11 +13361,11 @@
         "text": "This unit will start off Asleep and will be unable to attack until woken up. While this unit is Asleep, gain 1 Sleep stack per wave."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Scary Dream (Maxed)",
-          "dmgmult": 3.45,
+          "dmgmult": 3.45
         }
       ]
     }
@@ -13444,7 +13453,7 @@
         "text": "If Anti-Hero Mike is in the team, then Fazmobiles acceleration is buffed to 2.75 studs/s every second and both units gain +25% damage."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "periodic": [
         {
           "label": "Fazmobile",
@@ -13455,7 +13464,7 @@
           "cdscope": "local"
         }
       ],
-    "selfboost": [
+      "selfboost": [
         {
           "label": "Dynamic Duo",
           "dmgmult": 1.25
@@ -13564,27 +13573,27 @@
         "rarity": "shiny"
       }
     ],
-  "passiveDamage": {
-    "periodic": [
+    "passiveDamage": {
+      "periodic": [
         {
           "label": "The Purpleninator (Hit)",
           "pctofdamage": 3.5,
           "hits": 1,
           "cd": 20.0,
-          "cdboostable": false,
+          "cdboostable": false
         }
       ],
-    "dots": [
+      "dots": [
         {
           "label": "The Purpleninator (DoT)",
           "pctofdamage": 0.5,
           "durationsec": 5,
           "stacks": 1,
           "cd": 20,
-          "cdboostable": false,
+          "cdboostable": false
         }
       ],
-    "selfboost": [
+      "selfboost": [
         {
           "label": "Devious Scheme (DMG boost)",
           "dmgmult": 1.25
@@ -13657,7 +13666,7 @@
         "text": "This unit gains +50% crit rate and +25% crit damage."
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "periodic": [
         {
           "label": "Target Aquired",
@@ -13829,7 +13838,7 @@
         "rarity": "secret"
       }
     ],
-  "passiveDamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "In Due Time (12)",
@@ -13838,7 +13847,7 @@
         },
         {
           "label": "OVERCLOCKED (12)",
-          "dmgmult": 1.20
+          "dmgmult": 1.2
         }
       ]
     }
@@ -14111,23 +14120,24 @@
         "text": "He will spawn in Small Fire Freddle which will run down the lane every 20 seconds with 50% of his damage."
       }
     ],
-    ""passiveDamage": {
-    "selfboost": [
-      {
-        "label": "Deathly Bones (maxed)",
-        "dmgmult": 1.65
-      }
-    ],
-    "summons": [
-      {
-        "label": "Fire Freddle",
-        "healthpctofdamage": 0.50,
-        "spawncd": 20,
-        "spawncdboostable": false,
-        "cdscope": "local",
-        "maxactive": 3
-      }
-    ]
+    "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Deathly Bones (maxed)",
+          "dmgmult": 1.65
+        }
+      ],
+      "summons": [
+        {
+          "label": "Fire Freddle",
+          "healthpctofdamage": 0.5,
+          "spawncd": 20,
+          "spawncdboostable": false,
+          "cdscope": "local",
+          "maxactive": 3
+        }
+      ]
+    }
   },
   {
     "name": "Animdude",

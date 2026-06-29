@@ -8982,7 +8982,7 @@
     "passiveDamage": {
       "selfboost": [
         {
-          "label": "Shouldn't have killed me.",
+          "label": "Shouldn't have killed me",
           "dmgmult": 1.4,
           "rngmult": 1.2,
           "cd": 200,
@@ -8990,7 +8990,7 @@
           "uptimes": true
         },
         {
-          "label": "Restless Soul (maxed)",
+          "label": "Restless Soul (Maxed)",
           "rngmult": 1.1,
           "cdmult": 0.95,
           "dmgmult": 1.3
@@ -12806,7 +12806,7 @@
       },
       {
         "title": "Electrifying Pressure",
-        "text": "Hits the enemy every second for damage scaling on distance, at max scaling enemies take 10% more electric/water damage. At max scaling enemies take 10% more electric/water damage and are slowed 10%."
+        "text": "Hits an enemy every second for 10% of this units damage, and slowes by 10%."
       }
     ],
     "passiveDamage": {
@@ -12814,14 +12814,15 @@
         {
           "label": "Call of the Storm",
           "pctofdamage": 0.25,
-          "hits": 39,
+          "hits": 40,
           "cd": 60.0,
           "cdboostable": false,
-          "cdscope": "local"
+          "cdscope": "local",
+          "uptime": true
         },
         {
           "label": "Electrifying Pressure",
-          "pctofdamage": 0.1,
+          "pctofdamage": 0.125,
           "hits": 1,
           "cd": 1.0,
           "cdboostable": false,

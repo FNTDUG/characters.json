@@ -9288,7 +9288,7 @@
       ],
     "summons": [
         {
-          "label": "Gift of Life",
+          "label": "Gift of Life (Summon)",
           "healthpctofdamage": 0.6,
           "spawncd": 15
         }

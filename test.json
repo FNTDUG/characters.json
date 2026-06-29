@@ -4761,7 +4761,7 @@
           "durationsec": 4,
           "cd": 15,
           "cdboostable": false,
-          "cdscope": "local"
+          "cdscope": "local",
           "stacks": 2
         }
       ]
@@ -5769,7 +5769,7 @@
           "cdmult": 0.90,
           "uptime": false,
           "duration": 5,
-          "cd": 10
+          "cd": 10,
           "cdscope": "local"
         }
       ]
@@ -6356,25 +6356,25 @@
     ],
   "passiveDamage": {
       "selfboost": [
-          { 
-            "label": "Horn of Plenty (DMG)", 
-            "dmgmult": 1.50, 
-            "uptime": false, 
-            "duration": 1.667, 
-            "cd": 7 
+          {
+            "label": "Horn of Plenty (DMG)",
+            "dmgmult": 1.50,
+            "uptime": false,
+            "duration": 1.667,
+            "cd": 7
           },
-          { 
-            "label": "Horn of Plenty (RNG)", 
-            "rngmult": 1.80, 
-            "uptime": false, 
-            "duration": 1.667, 
-            "cd": 7 
+          {
+            "label": "Horn of Plenty (RNG)",
+            "rngmult": 1.80,
+            "uptime": false,
+            "duration": 1.667,
+            "cd": 7
           },
-          { "label": "Horn of Plenty (CD)",  
-            "cdmult": 0.70,  
-            "uptime": false, 
-            "duration": 1.667, 
-            "cd": 7 
+          { "label": "Horn of Plenty (CD)",
+            "cdmult": 0.70,
+            "uptime": false,
+            "duration": 1.667,
+            "cd": 7
         }
       ]
     }
@@ -6895,12 +6895,12 @@
           "label": "Explosive Lanterns (dot)",
           "pctofdamage": 0.1,
           "durationsec": 1.0
-        },
+        }
       ],
     "selfboost": [
         {
           "label": "Jack-O-Blaze (boost)",
-          "dmgmult": 1.2,
+          "dmgmult": 1.2
         }
       ],
     "summons": [
@@ -6911,7 +6911,7 @@
           "spawncdboostable": false,
           "maxactive": 12
         }
-      ],
+      ]
     }
   },
   {
@@ -8612,9 +8612,9 @@
           "pctofdamage": 2.8,
           "durationsec": 15,
           "cd": 45,
-          "cdboostable" false,
+          "cdboostable": false,
           "uptime": true
-        },
+        }
       ]
     }
   },
@@ -8730,7 +8730,7 @@
           "pctofdamage": 0.55,
           "everynthattack": 5
         }
-      ],
+      ]
     }
   },
   {
@@ -8999,7 +8999,7 @@
           "label": "Restless Soul (maxed)",
           "rngmult": 1.1,
           "cdmult": 0.95,
-          "dmgmult": 1.3,
+          "dmgmult": 1.3
         }
       ]
     }
@@ -9269,20 +9269,20 @@
         },
         {
           "label": "Music Box (stack 1)",
-          "dmgmult": 2.0,
+          "dmgmult": 2.0
         },
         {
           "label": "Music Box (stack 2)",
-          "rngmult": 1.5,
+          "rngmult": 1.5
         },
         {
           "label": "Music Box (stack 3)",
-          "dmgmult": 1.3,
+          "dmgmult": 1.3
         },
         {
           "label": "Music Box (stack 4)",
-          "dmgmult": 1.2,
-        },
+          "dmgmult": 1.2
+        }
       ],
     "summons": [
         {

@@ -1217,7 +1217,8 @@
           "label": "Together DoT",
           "pctofdamage": 0.05,
           "durationsec": 1,
-          "stacks": 2
+          "stacks": 2,
+          "everynthattack": 1
         }
       ],
       "summons": [
@@ -1825,16 +1826,6 @@
           "label": "Three Musket Freddie's (maxed)",
           "dmgmult": 1.25,
           "cdmult": 0.9
-        }
-      ],
-      "summons": [
-        {
-          "label": "Freddles Army",
-          "healthpctofdamage": 1,
-          "spawncd": 2.0,
-          "spawncdboostable": true,
-          "maxactive": 3,
-          "cdscope": "local"
         }
       ]
     }
@@ -2798,7 +2789,9 @@
         {
           "label": "Spellbound DoT (maxed)",
           "pctofdamage": 0.2,
-          "durationsec": 1
+          "durationsec": 1,
+          "stacks": 2,
+          "everynthattack": 1
         }
       ],
       "selfboost": [
@@ -4769,6 +4762,7 @@
           "cd": 15,
           "cdboostable": false,
           "cdscope": "local"
+          "stacks": 2
         }
       ]
     }
@@ -5006,7 +5000,8 @@
         {
           "label": "Eternal Blaze (Burn)",
           "pctofdamage": 0.15,
-          "durationsec": 3
+          "durationsec": 3,
+          "stacks": 2
         }
       ]
     }
@@ -5567,7 +5562,29 @@
         "title": "Flaming Hot Sauce",
         "text": "On this unit's CD, he lays a fried chicken trap on the track with 50% of this unit's damage as health that also deals 45% of this unit's damage as burn damage over the course of 3s."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "summons": [
+        {
+          "label": "Flaming Hot Sauce (Trap)",
+          "healthpctofdamage": 0.5,
+          "spawncd": 2.2,
+          "spawncdboostable": true,
+          "cdscope": "local"
+        }
+      ],
+    "dots": [
+        {
+          "label": "Flaming Hot Sauce (DoT)",
+          "pctofdamage": 0.45,
+          "durationsec": 3,
+          "stacks": 2,
+          "cd": 2.2,
+          "cdboostable": true,
+          "cdscope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Phantom Chica",
@@ -5743,7 +5760,20 @@
         "title": "Shadow Surge",
         "text": "This unit gains a unique Cloaked buff after dealing 1.5k damage, Cloaked gives Sparky +50% Damage, -10% CD, and changes his Type fron Line to Cone 60 for 5s. (10s CD)."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Cloaked",
+          "dmgmult": 1.50,
+          "cdmult": 0.90,
+          "uptime": false,
+          "duration": 5,
+          "cd": 10
+          "cdscope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Phantom Bonnie",
@@ -5804,7 +5834,16 @@
         "title": "Gloom Doom",
         "text": "This unit steadily becomes more visible and stronger when enemies enter his range. When an enemy does enter his range, Phantom Bonnie gains +0.25% Damage up to +25% Damage. Once he reaches +25% Damage, he also receives +15% Range."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Gloom Doom (maxed)",
+          "dmgmult": 1.25,
+          "rngmult": 1.15
+        }
+      ]
+    }
   },
   {
     "name": "Phantom Mangle",
@@ -5874,7 +5913,20 @@
         "title": "Phantom Fear",
         "text": "Every 20s this unit applies full AOE poison, causing 50% of its damage for 5 ticks over 5s to every enemy in its range. Additionally, while an enemy is poisoned, there is a 6% chance to Crit for 25% more DMG from any source."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Phantom Fear DoT",
+          "pctofdamage": 0.5,
+          "durationsec": 5,
+          "stacks": 2,
+          "cd": 20,
+          "cdboostable": false,
+          "cdscope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Phone Dude",
@@ -5936,7 +5988,17 @@
         "text": "When activated, a camera can be placed anywhere outside of this unit's range (cap of 4). Once placed, these cameras will attack in a 55 degree Cone dealing 50% of this unit's DMG with RNG and CD equal to it. (Upgrade 2+, Global CD: 30s).",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-01-03-08-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "summons": [
+        {
+          "label": "Cams (maxed)",
+          "attackpctofdamage": 2.0,
+          "attackcd": 2.8,
+          "attackcdboostable": true
+        }
+      ]
+    }
   },
   {
     "name": "Follow Me",
@@ -6106,7 +6168,18 @@
         "title": "Hat Toss",
         "text": "Every 5 attacks, Freddy throws his hat and applies bleed for 1 second equal to 10% of his damage."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Hat Toss",
+          "pctofdamage": 1.05,
+          "durationsec": 1,
+          "everynthattack": 5,
+          "stacks": 6
+        }
+      ]
+    }
   },
   {
     "name": "Foxy",
@@ -6153,7 +6226,16 @@
         "title": "Right Hook",
         "text": "Every 6 attacks, Foxy performs a follow-up hit that deals 25% of his current damage."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "onnthattack": [
+        {
+          "label": "Right Hook",
+          "pctofdamage": 0.25,
+          "everynthattack": 6
+        }
+      ]
+    }
   },
   {
     "name": "Chica",
@@ -6200,7 +6282,17 @@
         "title": "Specialty Cupcake",
         "text": "Every 5 attacks, Chica's cupcake is set on fire and applies burn for 1 second equal to 10% of her damage."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Specialty Cupcake",
+          "pctofdamage": 0.1,
+          "everynthattack": 5,
+          "durationsec": 1
+        }
+      ]
+    }
   },
   {
     "name": "Turkey Chica",
@@ -6261,7 +6353,31 @@
         "title": "Horn of Plenty",
         "text": "Every 7s, this unit gains one of three buffs for 5s. The buffs can be +50% Damage, +80% Range, or -30% CD."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+          { 
+            "label": "Horn of Plenty (DMG)", 
+            "dmgmult": 1.50, 
+            "uptime": false, 
+            "duration": 1.667, 
+            "cd": 7 
+          },
+          { 
+            "label": "Horn of Plenty (RNG)", 
+            "rngmult": 1.80, 
+            "uptime": false, 
+            "duration": 1.667, 
+            "cd": 7 
+          },
+          { "label": "Horn of Plenty (CD)",  
+            "cdmult": 0.70,  
+            "uptime": false, 
+            "duration": 1.667, 
+            "cd": 7 
+        }
+      ]
+    }
   },
   {
     "name": "Bonnie",
@@ -6308,7 +6424,20 @@
         "title": "Guitar Solo",
         "text": "Every 10 seconds, Bonnie strums his guitar and boosts his stats by 10% for 5 seconds."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Guitar Solo",
+          "cdmult": 0.90,
+          "dmgmult": 1.1,
+          "rngmult": 1.1,
+          "duration": 5,
+          "cd": 10,
+          "uptime": true
+        }
+      ]
+    }
   },
   {
     "name": "PaperPals",
@@ -6362,7 +6491,17 @@
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-23-42-37-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=347",
         "rarity": "mythic"
       }
-    ]
+    ],
+    "passiveDamage": {
+      "dots": [
+        {
+          "label": "Paper Cuts",
+          "pctofdamage": 0.05,
+          "durationsec": 1.0,
+          "everynthattack": 1
+        }
+      ]
+    }
   },
   {
     "name": "JJ",
@@ -6409,7 +6548,15 @@
         "title": "Megalomaniac",
         "text": "Consumes the power of nearby enemies. For every enemy killed in its radius, JJ gains 0.1% RNG, up to 10%."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Megalomaniac (maxed)",
+          "rngmult": 1.1
+        }
+      ]
+    }
   },
   {
     "name": "Toy Freddy",
@@ -6517,7 +6664,16 @@
         "title": "Energy Surplus",
         "text": "Every 10th attack charges Toy Bonnie's next attack, causing it to deal an additional 150% of its damage."
       }
-    ]
+    ],
+    "passiveDamage": {
+      "onnthattack": [
+        {
+          "label": "Energy Surplus",
+          "pctofdamage": 1.5,
+          "everynthattack": 10
+        }
+      ]
+    }
   },
   {
     "name": "Withered Foxy",
@@ -6592,7 +6748,22 @@
         "title": "Sword Lunge",
         "text": "When this unit first hits an enemy, does 75% bonus damage; then applies a bleed dealing 30% DMG over 2 seconds. [15% DMG/tick]."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Sword Lunge (hit bonus)",
+          "dmgmult": 1.75
+        }
+      ],
+       "dots": [
+        {
+          "label": "Sword Lunge (hit dot)",
+          "pctofdamage": 0.3,
+          "durationsec": 2
+        }
+      ]
+    }
   },
   {
     "name": "BBnJ",
@@ -6712,7 +6883,36 @@
         "title": "Explosive Jack-O-Lanterns",
         "text": "Every 5s, this unit will place an explosive jack-o-lantern somewhere on the track within its range (3 per placement, 12 per player). When an enemy touches an explosive jack-o-lantern, the jack-o-lantern will explode dealing 120% of this unit's damage and burning for 10% of this unit's damage."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Jack-O-Blaze (dot)",
+          "pctofdamage": 0.05,
+          "durationsec": 3.0
+        },
+        {
+          "label": "Explosive Lanterns (dot)",
+          "pctofdamage": 0.1,
+          "durationsec": 1.0
+        },
+      ],
+    "selfboost": [
+        {
+          "label": "Jack-O-Blaze (boost)",
+          "dmgmult": 1.2,
+        }
+      ],
+    "summons": [
+        {
+          "label": "Explosive Lanterns (trap)",
+          "healthpctofdamage": 1.2,
+          "spawncd": 5,
+          "spawncdboostable": false,
+          "maxactive": 12
+        }
+      ],
+    }
   },
   {
     "name": "Shadow Freddy",
@@ -6799,7 +6999,15 @@
         "title": "Energy Siphon",
         "text": "This unit's range increases by 3% for each upgrade performed within its range. [75% max buff]"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Energy Siphon (maxed)",
+          "rngmult": 1.75
+        }
+      ]
+    }
   },
   {
     "name": "Shadow Bonnie",
@@ -6882,7 +7090,17 @@
         "title": "Agonizing Energy",
         "text": "Attacks apply 20% Poison over 2s."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Agonizing Energy",
+          "pctofdamage": 0.2,
+          "durationsec": 2.0,
+          "everynthattack": 1
+        }
+      ]
+    }
   },
   {
     "name": "Withered Freddy",
@@ -7058,7 +7276,20 @@
         "title": "Engineer",
         "text": "Endo 02 places [Endo Turrets] within Range every 15 seconds, dealing 100% Damage to a [Single Target] with 100% Cooldown, lasting 45 seconds."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "summons": [
+        {
+          "label": "Endo Turrets",
+          "attackpctofdamage": 1.0,
+          "attackcd": 2.4,
+          "attackcdboostable": true,
+          "spawncd": 15,
+          "spawncdboostable": false,
+          "maxactive": 6
+        }
+      ]
+    }
   },
   {
     "name": "Withered Chica",
@@ -7117,7 +7348,16 @@
         "title": "Generator",
         "text": "This unit charges up its attack with the generator on its back. Every other attack deals 40% bonus damage."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Generator (boost)",
+          "dmgmult": 1.4,
+          "everynthattack": 2
+        }
+      ]
+    }
   },
   {
     "name": "Toy Chica",
@@ -7251,7 +7491,18 @@
         "title": "Electrical Overflow",
         "text": "Every 15 seconds, this unit deals 2x damage to enemies around its main target in a medium splash."
       }
-    ]
+    ],
+   "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Electrical Overflow",
+          "pctofdamage": 2.0,
+          "hits": 1,
+          "cd": 15,
+          "cdboostable": false
+        }
+      ]
+    }
   },
   {
     "name": "Slasher Bonnie",
@@ -7330,7 +7581,17 @@
         "title": "Indiscriminate Bloodshed",
         "text": "Upon reaching full Bloodlust stacks, this unit keeps all Bloodlust stacks and changes its type to 45° Cone AOE."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Bloodlust (boost)",
+          "dmgmult": 1.075,
+          "rngmult": 1.05,
+          "cdmult": 0.97
+        }
+      ]
+    }
   },
   {
     "name": "Mangle",
@@ -7359,6 +7620,25 @@
         "text": "When an enemy is within 50% of this unit's range for more than 2 seconds, this unit stuns the enemy for 3s. [12.5s stun CD]."
       }
     ],
+    "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Take Apart (hit)",
+          "pctofdamage": 0.4,
+          "hits": 1,
+          "everynthattack": 1
+        }
+      ],
+      "dots": [
+        {
+          "label": "Take Apart (dot)",
+          "pctofdamage": 0.4,
+          "durationsec": 3,
+          "hits": 1,
+          "everynthattack": 1
+        }
+      ]
+    },
     "modes": {
       "lightCannon": {
         "label": "Light Cannon",
@@ -7849,7 +8129,17 @@
         "title": "Hor Hor",
         "text": "Every 3rd attack he goes full hor hor and starts spinning and shoots a lot and then gets tired for 3 seconds and then he is fine :)."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Hor Hor",
+          "pctofdamage": 1.0,
+          "hits": 15,
+          "everynthattack": 3
+        }
+      ]
+    }
   },
   {
     "name": "John Pigpatch",
@@ -7903,7 +8193,20 @@
         "title": "Phone Ring",
         "text": "after about 12 seconds john gets a call with probably bad news because he gets mad and does 10% more damage and has 8% less cooldown for like 4 seconds."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Phone Ring",
+          "dmgmult": 1.1,
+          "cdmult": 0.92,
+          "uptime": false,
+          "duration": 4,
+          "cd": 12,
+          "cdboostable": false
+        }
+      ]
+    }
   },
   {
     "name": "Breadbear",
@@ -7971,7 +8274,23 @@
         "title": "taste Better Than Key",
         "text": "Throws bread every like 3 attacks or smth for like 125% damage and then every 5 bread its huge bread for 175% i think."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "periodic": [
+        {
+          "label": "taste Better Than Key (normal)",
+          "pctofdamage": 1.25,
+          "hits": 1,
+          "everynthattack": 3
+        },
+        {
+          "label": "taste Better Than Key (huge)",
+          "pctofdamage": 1.75,
+          "hits": 1,
+          "everynthattack": 15
+        }
+      ]
+    }
   },
   {
     "name": "Freddy Fastbear",
@@ -8030,7 +8349,18 @@
         "title": "ARE YOU READY FOR FREDDY?",
         "text": "This guy decides if you want something done you have to do it yourself so every abt 15 seconds he just leaves his spot like a good employee and sprints along the path at super sonic speed dealing like a gatrillion damage (250% actually, thats his health) and also slows down the enemy by 10%."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "summons": [
+        {
+          "label": "Freddy",
+          "healthpctofdamage": 2.5,
+          "spawncd": 15,
+          "spawncdboostable": false,
+          "cdscope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Dreadbear",
@@ -8259,7 +8589,34 @@
         "image": "https://drive.google.com/thumbnail?id=10j0eqZl7FfZWcJvfWEiYPC9S9r9uTPGH&sz=w500",
         "rarity": "nightmare"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Hallowed Pumpkin Realm",
+          "dmgmult": 1.85,
+          "duration": 30,
+          "cd": 100,
+          "uptime": true
+        }
+      ],
+    "dots": [
+        {
+          "label": "Mutilation",
+          "pctofdamage": 0.2,
+          "durationsec": 1,
+          "everynthattack": 1
+        },
+        {
+          "label": "Rider's Hellfire",
+          "pctofdamage": 2.8,
+          "durationsec": 15,
+          "cd": 45,
+          "cdboostable" false,
+          "uptime": true
+        },
+      ]
+    }
   },
   {
     "name": "Bear5",
@@ -8349,7 +8706,32 @@
         "title": "1 of 5 Things",
         "text": "Bear5's wheel's chance of giving 1 of 5 random things includes the following; all Uncommon Freddies get +55% Damage, +55% Range, and -55% CD for 5s, all player heads get 5% bigger (can be fixed with Reset Character), Bear5 turns red and get +5% Damage, +5% Range, and -5% CD for 5s, game speed gets set to 5x for 5s, or a math quiz appears. The math quiz involves one of 3 types of math questions; pre calculus, algebra, or simple multiplication. Getting the pre calculus question correct grants +15% Damage, +15% Range, and -5% CD to all units for 55s, but getting it incorrect gives all enemies 2x health for 15 waves. Getting the algebra question correct grants +5% Damage and +5% Range to all units for 8s, but getting it incorrect gives all enemies 2x health for 5 waves. Getting the simple multiplication question correct grants +5% Range to all units for 5s, but getting it incorrect gives all enemies 2x health for 3 waves."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "passive 3 (dot)",
+          "durationsec": 5,
+          "pctofdamage": 0.11,
+          "everynthattack": 5
+        }
+      ],
+    "selfboost": [
+        {
+          "label": "passive 3 (boost)",
+          "duration": 5,
+          "dmgmult": 1.05,
+          "everynthattack": 5
+        }
+      ],
+     "onnthattack": [
+        {
+          "label": "passive 4",
+          "pctofdamage": 0.55,
+          "everynthattack": 5
+        }
+      ],
+    }
   },
   {
     "name": "Golden Freddy",
@@ -8565,7 +8947,7 @@
     "passives": [
       {
         "title": "Shouldn't have killed me.",
-        "text": "Upon activation, knockback all enemies in range ignoring their current knockback lockout and buff all neutral element units by +20% Dmg and +20% RNG for 120s. (Upgrade 18+, Local CD: 200s).",
+        "text": "Upon activation, knockback all enemies in range ignoring their current knockback lockout and buff all neutral element units by +40% Dmg and +20% RNG for 120s. (Upgrade 18+, Local CD: 200s).",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-01-03-05-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347"
       },
       {
@@ -8602,7 +8984,25 @@
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/excalibur-golden-freddy-high.png",
         "rarity": "secret"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Shouldn't have killed me.",
+          "dmgmult": 1.4,
+          "rngmult": 1.2,
+          "cd": 200,
+          "duration": 120,
+          "uptimes": true
+        },
+        {
+          "label": "Restless Soul (maxed)",
+          "rngmult": 1.1,
+          "cdmult": 0.95,
+          "dmgmult": 1.3,
+        }
+      ]
+    }
   },
   {
     "name": "Puppet",
@@ -8814,7 +9214,7 @@
     "passives": [
       {
         "title": "Gift of Life",
-        "text": "Upon activation, Puppet increases range by 40% to all light units in ranhe for 10 seconds. (Upgrade 9+, Global CD: 20s).",
+        "text": "Upon activation, Puppet increases range by 40% to all light units in range for 10 seconds. (Upgrade 9+, Global CD: 20s).",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-01-03-00-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347"
       },
       {
@@ -8823,7 +9223,7 @@
       },
       {
         "title": "Music Box [Upgrade 10+]",
-        "text": "For every activation of Gift of Life, gain a buff and stack called windup (up to 4). Every 8th activation resets the buffs and resets all buffs and stacks while dealing 400% damage to all enemies on map. 1 Stack: 100% damage buff (to self). 2 Stacks: 50% range (to self). 3 Stacks: Enemies within range take 30% more damage from light enemies, 4 Stacks: +20% damage to all light type units in range."
+        "text": "For every activation of Gift of Life, gain a buff and stack called windup (up to 4). Every 8th activation resets the buffs and resets all buffs and stacks while dealing 400% damage to all enemies on the map. 1 Stack: 100% damage buff (to self). 2 Stacks: 50% range (to self). 3 Stacks: Enemies within range take 30% more damage from light enemies, 4 Stacks: +20% damage to all light type units in range."
       }
     ],
     "skins": [
@@ -8857,7 +9257,41 @@
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/security-puppet-high.png",
         "rarity": "secret"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Gift of Life",
+          "rngmult": 1.4,
+          "duration": 10,
+          "cd": 20,
+          "uptime": true
+        },
+        {
+          "label": "Music Box (stack 1)",
+          "dmgmult": 2.0,
+        },
+        {
+          "label": "Music Box (stack 2)",
+          "rngmult": 1.5,
+        },
+        {
+          "label": "Music Box (stack 3)",
+          "dmgmult": 1.3,
+        },
+        {
+          "label": "Music Box (stack 4)",
+          "dmgmult": 1.2,
+        },
+      ],
+    "summons": [
+        {
+          "label": "Gift of Life",
+          "healthpctofdamage": 0.6,
+          "spawncd": 15
+        }
+      ]
+    }
   },
   {
     "name": "Puppet's Alliance",
@@ -9138,7 +9572,7 @@
         {
           "pctofdamage": 0.03,
           "durationsec": 1.0,
-          "stacks": 1,
+          "everynthattack": 1,
           "label": "Crown of Permafrost"
         }
       ]
@@ -15595,7 +16029,7 @@
     "element": "Water",
     "placements": 1,
     "attackType": "Multi",
-    "obtainment": "amalgam Withered Foxy Evolution",
+    "obtainment": "Shark Withered Foxy Evolution",
     "levels": [
       {
         "level": 1,

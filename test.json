@@ -8996,7 +8996,7 @@
     "passiveDamage": {
       "selfboost": [
         {
-          "label": "Shouldn't have killed me",
+          "label": "Shouldn't have killed me.",
           "dmgmult": 1.4,
           "rngmult": 1.2,
           "cd": 200,
@@ -12421,220 +12421,220 @@
           "periodic": [
             {
               "label": "Coiling Combination (Smasher)",
-              "pctofdamage": 4.45,
-              "hits": 1,
+              "pctofdamage": 3.45,
+              "hits": 3,
               "cd": 10.0,
               "cdboostable": false,
               "cdscope": "global"
             }
           ]
         }
-      }
-    },
-    "shocker": {
-      "label": "Shocker",
-      "role": "damage",
-      "attackType": "Multi",
-      "levels": [
-        {
-          "level": 1,
-          "cost": 8000,
-          "type": "Line",
-          "damage": 131.4,
-          "cd": 1,
-          "range": 20
-        },
-        {
-          "level": 2,
-          "cost": 2500,
-          "type": "Line",
-          "damage": 151.6,
-          "cd": 1,
-          "range": 20
-        },
-        {
-          "level": 3,
-          "cost": 2750,
-          "type": "Line",
-          "damage": 168.7,
-          "cd": 1,
-          "range": 21
-        },
-        {
-          "level": 4,
-          "cost": 3000,
-          "type": "Line",
-          "damage": 197.6,
-          "cd": 1,
-          "range": 21
-        },
-        {
-          "level": 5,
-          "cost": 4000,
-          "type": "Line",
-          "damage": 228.3,
-          "cd": 1,
-          "range": 21
-        },
-        {
-          "level": 6,
-          "cost": 4000,
-          "type": "Line",
-          "damage": 258.1,
-          "cd": 1,
-          "range": 22
-        },
-        {
-          "level": 7,
-          "cost": 4250,
-          "type": "Line",
-          "damage": 287.9,
-          "cd": 1,
-          "range": 22
-        },
-        {
-          "level": 8,
-          "cost": 4250,
-          "type": "Line",
-          "damage": 317.7,
-          "cd": 1,
-          "range": 23
-        },
-        {
-          "level": 9,
-          "cost": 6000,
-          "type": "Line",
-          "damage": 347.5,
-          "cd": 1,
-          "range": 23
-        },
-        {
-          "level": 10,
-          "cost": 5000,
-          "type": "Line",
-          "damage": 377.3,
-          "cd": 1,
-          "range": 24
-        },
-        {
-          "level": 11,
-          "cost": 7500,
-          "type": "Line",
-          "damage": 407.1,
-          "cd": 1,
-          "range": 20
-        },
-        {
-          "level": 12,
-          "cost": 6500,
-          "type": "Line",
-          "damage": 436.9,
-          "cd": 1,
-          "range": 21
-        },
-        {
-          "level": 13,
-          "cost": 6500,
-          "type": "Line",
-          "damage": 466.7,
-          "cd": 1,
-          "range": 22
-        },
-        {
-          "level": 14,
-          "cost": 7000,
-          "type": "Line",
-          "damage": 496.5,
-          "cd": 1,
-          "range": 22
-        },
-        {
-          "level": 15,
-          "cost": 7000,
-          "type": "Cone 75°",
-          "damage": 526.3,
-          "cd": 1,
-          "range": 25
-        },
-        {
-          "level": 16,
-          "cost": 8500,
-          "type": "Cone 75°",
-          "damage": 556.1,
-          "cd": 2,
-          "range": 24
-        },
-        {
-          "level": 17,
-          "cost": 7500,
-          "type": "Cone 75°",
-          "damage": 686.9,
-          "cd": 1.9,
-          "range": 24
-        },
-        {
-          "level": 18,
-          "cost": 8000,
-          "type": "Cone 75°",
-          "damage": 716.7,
-          "cd": 1.8,
-          "range": 25
-        },
-        {
-          "level": 19,
-          "cost": 8000,
-          "type": "Cone 75°",
-          "damage": 746.5,
-          "cd": 1.8,
-          "range": 26
-        },
-        {
-          "level": 20,
-          "cost": 9000,
-          "type": "Cone 75°",
-          "damage": 776.3,
-          "cd": 1.7,
-          "range": 27
-        },
-        {
-          "level": 21,
-          "cost": 10000,
-          "type": "Cone 75°",
-          "damage": 907,
-          "cd": 1.6,
-          "range": 29
-        }
-      ],
-      "passives": [
-        {
-          "title": "Construct",
-          "text": "Players can switch between two modes: Smasher and Shocker, each with its own unique stats, passive, and ability. (Upgrade 0+, Local CD: 0s)",
-          "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/enard-ability-high.png"
-        },
-        {
-          "title": "Coiling Combination [Shocker] [Upgrade 5+]",
-          "text": "Every 6 seconds, 4 random enemies anywhere on the map are attacked from below by coils, each taking damage equal to 40% of this unit’s damage and being stunned for 1.5 seconds."
-        },
-        {
-          "title": "Tanglement [Shocker] [Upgrade 13+]",
-          "text": "Ennard copies 0.85x of the base damage of the highest-damage unit within range, and its cooldown becomes the average of the two units’ cooldowns. It also gains the ability to stun enemies for 1.5 seconds."
-        },
-        {
-          "title": " Conductor [Shocker] [Upgrade 18+]",
-          "text": "All Electrical units within range gain an additional 15% damage, 20% range, and 5% cooldown reduction. For each Electrical unit in range up to a maximum of 25% damage, 40% range, and 10% cooldown reduction."
-        }
-      ],
-      "passiveDamage": {
-        "periodic": [
+      },
+      "shocker": {
+        "label": "Shocker",
+        "role": "damage",
+        "attackType": "Multi",
+        "levels": [
           {
-            "label": "Coiling Combination (Shocker)",
-            "pctofdamage": 0.4,
-            "hits": 1,
-            "cd": 6.0,
-            "cdboostable": false,
-            "cdscope": "global"
+            "level": 1,
+            "cost": 8000,
+            "type": "Line",
+            "damage": 131.4,
+            "cd": 1,
+            "range": 20
+          },
+          {
+            "level": 2,
+            "cost": 2500,
+            "type": "Line",
+            "damage": 151.6,
+            "cd": 1,
+            "range": 20
+          },
+          {
+            "level": 3,
+            "cost": 2750,
+            "type": "Line",
+            "damage": 168.7,
+            "cd": 1,
+            "range": 21
+          },
+          {
+            "level": 4,
+            "cost": 3000,
+            "type": "Line",
+            "damage": 197.6,
+            "cd": 1,
+            "range": 21
+          },
+          {
+            "level": 5,
+            "cost": 4000,
+            "type": "Line",
+            "damage": 228.3,
+            "cd": 1,
+            "range": 21
+          },
+          {
+            "level": 6,
+            "cost": 4000,
+            "type": "Line",
+            "damage": 258.1,
+            "cd": 1,
+            "range": 22
+          },
+          {
+            "level": 7,
+            "cost": 4250,
+            "type": "Line",
+            "damage": 287.9,
+            "cd": 1,
+            "range": 22
+          },
+          {
+            "level": 8,
+            "cost": 4250,
+            "type": "Line",
+            "damage": 317.7,
+            "cd": 1,
+            "range": 23
+          },
+          {
+            "level": 9,
+            "cost": 6000,
+            "type": "Line",
+            "damage": 347.5,
+            "cd": 1,
+            "range": 23
+          },
+          {
+            "level": 10,
+            "cost": 5000,
+            "type": "Line",
+            "damage": 377.3,
+            "cd": 1,
+            "range": 24
+          },
+          {
+            "level": 11,
+            "cost": 7500,
+            "type": "Line",
+            "damage": 407.1,
+            "cd": 1,
+            "range": 20
+          },
+          {
+            "level": 12,
+            "cost": 6500,
+            "type": "Line",
+            "damage": 436.9,
+            "cd": 1,
+            "range": 21
+          },
+          {
+            "level": 13,
+            "cost": 6500,
+            "type": "Line",
+            "damage": 466.7,
+            "cd": 1,
+            "range": 22
+          },
+          {
+            "level": 14,
+            "cost": 7000,
+            "type": "Line",
+            "damage": 496.5,
+            "cd": 1,
+            "range": 22
+          },
+          {
+            "level": 15,
+            "cost": 7000,
+            "type": "Cone 75°",
+            "damage": 526.3,
+            "cd": 1,
+            "range": 25
+          },
+          {
+            "level": 16,
+            "cost": 8500,
+            "type": "Cone 75°",
+            "damage": 556.1,
+            "cd": 2,
+            "range": 24
+          },
+          {
+            "level": 17,
+            "cost": 7500,
+            "type": "Cone 75°",
+            "damage": 686.9,
+            "cd": 1.9,
+            "range": 24
+          },
+          {
+            "level": 18,
+            "cost": 8000,
+            "type": "Cone 75°",
+            "damage": 716.7,
+            "cd": 1.8,
+            "range": 25
+          },
+          {
+            "level": 19,
+            "cost": 8000,
+            "type": "Cone 75°",
+            "damage": 746.5,
+            "cd": 1.8,
+            "range": 26
+          },
+          {
+            "level": 20,
+            "cost": 9000,
+            "type": "Cone 75°",
+            "damage": 776.3,
+            "cd": 1.7,
+            "range": 27
+          },
+          {
+            "level": 21,
+            "cost": 10000,
+            "type": "Cone 75°",
+            "damage": 907,
+            "cd": 1.6,
+            "range": 29
           }
-        ]
+        ],
+        "passives": [
+          {
+            "title": "Construct",
+            "text": "Players can switch between two modes: Smasher and Shocker, each with its own unique stats, passive, and ability. (Upgrade 0+, Local CD: 0s)",
+            "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/enard-ability-high.png"
+          },
+          {
+            "title": "Coiling Combination [Shocker] [Upgrade 5+]",
+            "text": "Every 6 seconds, 4 random enemies anywhere on the map are attacked from below by coils, each taking damage equal to 40% of this unit’s damage and being stunned for 1.5 seconds."
+          },
+          {
+            "title": "Tanglement [Shocker] [Upgrade 13+]",
+            "text": "Ennard copies 0.85x of the base damage of the highest-damage unit within range, and its cooldown becomes the average of the two units’ cooldowns. It also gains the ability to stun enemies for 1.5 seconds."
+          },
+          {
+            "title": " Conductor [Shocker] [Upgrade 18+]",
+            "text": "All Electrical units within range gain an additional 15% damage, 20% range, and 5% cooldown reduction. For each Electrical unit in range up to a maximum of 25% damage, 40% range, and 10% cooldown reduction."
+          }
+        ],
+        "passiveDamage": {
+          "periodic": [
+            {
+              "label": "Coiling Combination (Shocker)",
+              "pctofdamage": 0.4,
+              "hits": 4,
+              "cd": 6.0,
+              "cdboostable": false,
+              "cdscope": "global"
+            }
+          ]
+        }
       }
     },
     "skins": [

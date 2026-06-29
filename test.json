@@ -4167,14 +4167,14 @@
           "label": "Shadow Head",
           "dmgmult": 4.0,
           "duration": 25,
-          "cd": 25,
+          "cd": 75,
           "uptime": false
         },
         {
           "label": "Freddy Head",
-          "cdmult": 1.45,
+          "dmgmult": 1.45,
           "duration": 25,
-          "cd": 25,
+          "cd": 75,
           "uptime": false
         }
       ]
@@ -4268,7 +4268,7 @@
     "passiveDamage": {
       "periodic": [
         {
-          "label": "Crash Landing",
+          "label": "Skull Piercer",
           "pctofdamage": 1.0,
           "hits": 1,
           "cd": 15.0,
@@ -4761,7 +4761,7 @@
           "label": "Malevolent Frenzy (bleed)",
           "pctofdamage": 1.2,
           "durationsec": 4,
-          "cd": 15,
+          "cd": 8,
           "cdboostable": false,
           "cdscope": "local",
           "stacks": 2
@@ -6179,7 +6179,7 @@
       "dots": [
         {
           "label": "Hat Toss",
-          "pctofdamage": 1.05,
+          "pctofdamage": 1.01,
           "durationsec": 1,
           "everynthattack": 5,
           "stacks": 6
@@ -7641,7 +7641,6 @@
           "label": "Take Apart (dot)",
           "pctofdamage": 0.4,
           "durationsec": 3,
-          "hits": 1,
           "everynthattack": 1
         }
       ]
@@ -8617,7 +8616,7 @@
         },
         {
           "label": "Rider's Hellfire",
-          "pctofdamage": 2.8,
+          "pctofdamage": 1.8,
           "durationsec": 15,
           "cd": 45,
           "cdboostable": false,
@@ -9425,7 +9424,7 @@
       "selfboost": [
         {
           "label": "Endo CPU",
-          "cdmult": 1.15
+          "dmgmult": 1.15
         }
       ]
     }
@@ -11170,8 +11169,7 @@
         {
           "label": "Explosives Expert (maxed)",
           "rngmult": 1.15,
-          "dmgmult": 1.15,
-          "cdmult": 0.85
+          "dmgmult": 1.15
         }
       ]
     }

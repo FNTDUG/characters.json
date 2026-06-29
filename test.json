@@ -14678,7 +14678,7 @@
       "dots": [
         {
           "label": "Specialized Ammo",
-          "pctofdamage": 1.5,
+          "pctofdamage": 0.5,
           "durationsec": 5,
           "everynthattack": 1
         }

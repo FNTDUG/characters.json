@@ -14579,16 +14579,16 @@
           "stun": 3,
           "cdboostable": false,
           "cdscope": "local"
-        }
-         ], 
-        "dots": [
-        {
+        },
+         {
           "label": "Bombs Away",
           "pctofdamage": 1.4,
-          "durationsec": 2.5,
-          "cd": 8,
+          "hits": 1,
+          "cd": 10.5,
+          "stun": 3,
+          "cdboostable": false,
           "cdscope": "local"
-        }
+        },
       ]
     }
   },
@@ -14667,7 +14667,7 @@
       },
       {
         "title": "Specialized Ammo",
-        "text": "All attacks apply 50% bleed over 5s. Enemies bleeding within her range will be marked and take 10% more damage from this units element (rust), Enemies marked while being hit up by follow ups will have the bleed reapplied at 20% effectiveness. Bleeds applied this way cannot be reapplied again."
+        "text": "All attacks apply 50% bleed over 5s. Enemies bleeding within her range will be marked and take 10% more damage from this units element (rust), Enemies marked while being hit by follow ups will have the bleed reapplied at 20% effectiveness. Bleeds applied this way cannot be reapplied again."
       },
       {
         "title": "Make It Count",
@@ -14677,10 +14677,32 @@
   "passiveDamage": {
       "dots": [
         {
-          "label": "Specialized Ammo",
+          "label": "Ammo (Bleed)",
           "pctofdamage": 0.5,
           "durationsec": 5,
           "everynthattack": 1
+        },
+        {
+          "label": "Make It Count (Bleed)",
+          "pctofdamage": 0.3,
+          "durationsec": 1,
+          "everynthattack": 6
+        }
+      ],
+    "periodic": [
+        {
+          "label": "Make It Count (Followup)",
+          "pctofdamage": 0.5,
+          "hits": 2,
+          "cd": 20.93,
+          "cdboostable": true,
+          "cdscope": "global"
+        }
+      ],
+    "selfboost": [
+        {
+          "label": "Make It Count (Boost)",
+          "dmgmult": 1.5,
         }
       ]
     }

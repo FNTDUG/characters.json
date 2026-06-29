@@ -14046,9 +14046,9 @@
     "selfboost": [
         {
           "label": "Stock Stacker (Maxed)",
-          "dmgmult": 1.3,
-          "rngmult": 1.3,
-          "cdmult": 0.7
+          "dmgmult": 1.12,
+          "rngmult": 1.12,
+          "cdmult": 0.88
         },
         {
           "label": "Lumber Co (Maxed)",
@@ -14459,7 +14459,16 @@
         "title": "The Main Character!",
         "text": "Gains 1 free upgrade every 7 waves (reduces by 2 waves per missing team slot, min 1 wave).  Each manual upgrade gives +10% damage permanently. Bonuses per empty team slot: 1 - +30% dmg | 2 - -25% placement cost, +50% dmg | 3 - -50% placement cost, +75% dmg, -10% cd | 4 - -75% placement cost, +100% dmg, -30% cd | 5 - Free placement, +200% dmg, -50% cd"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "The Main Character (5 Slots)",
+          "dmgmult": 3,
+          "cdmult": 0.5
+        }
+      ]
+    }
   },
   {
     "name": "Foxy Fighters",
@@ -14559,7 +14568,29 @@
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3urd5g-high.png",
         "rarity": "secret"
       }
-    ]
+    ],
+ "passiveDamage": {   
+  "periodic": [
+        {
+          "label": "BARREL ROLL",
+          "pctofdamage": 2.5,
+          "hits": 1,
+          "cd": 15,
+          "stun": 3,
+          "cdboostable": false,
+          "cdscope": "local"
+        }
+         ], 
+        "dots": [
+        {
+          "label": "Bombs Away",
+          "pctofdamage": 1.4,
+          "durationsec": 2.5,
+          "cd": 8,
+          "cdscope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Purifier Mercenary Toy Chica",
@@ -14642,7 +14673,17 @@
         "title": "Make It Count",
         "text": "This unit has 6 bullets, the attack that consumed the last bullet will apply 30% more bleed before performing a followup attack. When at 0 ammo, fires a single target followup that deals 50% damage on random enemies 5 times. Prioritizing enemies marked (max 2 hits per target), then reloads reloading grants 50% damage for 20s."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Specialized Ammo",
+          "pctofdamage": 1.5,
+          "durationsec": 5,
+          "everynthattack": 1
+        }
+      ]
+    }
   },
   {
     "name": "Mother Nature Ballora",

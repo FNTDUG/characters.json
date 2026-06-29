@@ -1216,31 +1216,33 @@
         {
           "label": "Together DoT",
           "pctofdamage": 0.05,
-          "durationsec": 1,
-          "stacks": 2,
-          "everynthattack": 1
+          "durationsec": 1
         }
       ],
       "summons": [
         {
           "label": "Toy Freddy",
           "healthflat": 1850,
-          "spawncd": 10
+          "spawncd": 40,
+          "spawncdboostable": false
         },
         {
           "label": "Toy Bonnie",
           "healthflat": 1150,
-          "spawncd": 10
+          "spawncd": 40,
+          "spawncdboostable": false
         },
         {
           "label": "Toy Chica",
           "healthflat": 1000,
-          "spawncd": 10
+          "spawncd": 40,
+          "spawncdboostable": false
         },
         {
           "label": "Mangle",
           "healthflat": 2350,
-          "spawncd": 10
+          "spawncd": 40,
+          "spawncdboostable": false
         }
       ]
     }

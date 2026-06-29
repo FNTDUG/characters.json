@@ -7963,7 +7963,7 @@
         {
           "label": "Endo",
           "healthpctofdamage": 0.8,
-          "spawncd": 2.6,
+          "spawncd": 3.9,
           "spawncdboostable": true,
           "cdscope": "local"
         },
@@ -9586,6 +9586,12 @@
           "everynthattack": 1,
           "label": "Crown of Permafrost"
         }
+      ],
+      "selfboost": [
+        {
+          "label": "Frozen Obelisk",
+          "dmgmult": 1.2,
+        }
       ]
     }
   },
@@ -9724,7 +9730,31 @@
         "title": "Frost Slash",
         "text": "When attacking enemies above 80% of their max health, Oni does a follow up attack that deals 50% of his damage in a line."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "summons": [
+        {
+      "label": "Oni Apprentice",
+      "healthpctofdamage": 0.30,
+      "spawncd": 13.5,
+      "spawncdboostable": false,
+      "attackpctofdamage": 0.25,
+      "attackcd": 3.0,
+      "attackcdboostable": false,
+      "cdscope": "local"
+    },
+    {
+      "label": "Oni Sensei",
+      "healthpctofdamage": 0.80,
+      "spawncd": 27.0,
+      "spawncdboostable": false,
+      "attackpctofdamage": 0.45,
+      "attackcd": 2.5,
+      "attackcdboostable": false,
+      "cdscope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Frosty the Snowcake",
@@ -9869,7 +9899,36 @@
         "title": "Wind-Up Bomb Toy",
         "text": "Deals equal to 20% of this units damage. On death, explodes dealing 125% damage."
       }
-    ]
+    ],
+    "passiveDamage": {
+      "summons": [
+        {
+          "label": "Toy Train",
+          "healthpctofdamage": 0.8,
+          "spawncd": 30,
+          "attackpctofdamage": 0.3,
+          "attackcd": 3.0,
+          "attackcdboostable": false,
+          "spawncdboostable": false,
+          "cdscope": "local"
+        },
+        {
+          "label": "Toy Soldier",
+          "healthpctofdamage": 0.5,
+          "spawncd": 30,
+          "spawncdboostable": false,
+          "cdscope": "local"
+        },
+        {
+          "label": "Wind-Up Bomb Toy",
+          "healthpctofdamage": 1.45,
+          "spawncd": 30,
+          "spawncdboostable": false,
+          "cdscope": "local"
+        }
+      ]
+    }
+  },
   },
   {
     "name": "Grinch Foxy",
@@ -9930,7 +9989,15 @@
         "title": "Broken Ornaments",
         "text": "When attacking an enemy, has a 33% chance to apply a 4 second bleed dealing 15% damage every second. Enemies defeated by this unit increase its damage by 0.2% up to 25%."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Broken Ornaments (Boost, Maxed)",
+          "dmgmult": 1.25
+        }
+      ]
+    }
   },
   {
     "name": "Scrooge Freddy",
@@ -10013,7 +10080,18 @@
         "title": "Ghosts of Christmas Past and Future",
         "text": "All attacks from this unit inflict [Darkfire]. Darkfire does 23% of this unit’s damage per tick for 2 seconds."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Darkfire",
+          "pctofdamage": 0.23,
+          "durationsec": 2,
+          "stacks": 2,
+          "everynthattack": 1
+        }
+      ]
+    }
   },
   {
     "name": "Mrs Claus Toy Chica",
@@ -10399,7 +10477,24 @@
         "title": "All Aboard!",
         "text": "On this unit’s cooldown, summons a train on the track with 120% damage as health (does not damage bosses). While a train is on the track, this unit gains a 10% damage boost (capped at 1)."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "summons": [
+        {
+          "label": "Train",
+          "healthpctofdamage": 1.2,
+          "spawncd": 7,
+          "spawncdboostable": true,
+          "cdscope": "local"
+        }
+      ],
+   "selfboost": [
+        {
+          "label": "Train (Boost)",
+          "dmgmult": 1.1
+        }
+      ]
+    }
   },
   {
     "name": "Popcorn Bot",
@@ -10469,7 +10564,32 @@
         "title": "Sweet",
         "text": "Boosts all units and their stats by 5% for 7s."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Spicy",
+          "pctofdamage": 0.2,
+          "durationsec": 3,
+          "stacks": 2,
+          "cd": 24,
+          "cdboostable": false,
+          "cdscope": "local"
+        }
+      ],
+    "selfboost": [
+        {
+          "label": "Sweet",
+          "rngmult": 1.05,
+          "dmgmult": 1.05,
+          "cdmult": 0.95,
+          "cd": 24,
+          "cdboostable": false,
+          "duration": 7,
+          "cdscope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Undead Chica",
@@ -10519,7 +10639,24 @@
         "title": "Overwhelming Horde",
         "text": "Gains +1% damage per Zombie Cupcake on the track (capped at +10%)."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "summons": [
+        {
+          "label": "Zombie Cupcake",
+          "healthpctofdamage": 1,
+          "spawncd": 2,
+          "spawncdboostable": true,
+          "cdscope": "local"
+        }
+      ],
+    "selfboost": [
+        {
+          "label": "Overwhelming Horde (maxed)",
+          "rngmult": 1.1
+        }
+      ]
+    }
   },
   {
     "name": "Fazcade",
@@ -10733,6 +10870,26 @@
         "title": "Boomerang",
         "text": "The first enemy struck by Luminary Bonnie's main attack will be hit twice. (Site Note: This passive is not stated in game)"
       }
+    ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Boomerang",
+        "dmgmult": 2.0
+      },
+      {
+        "label": "Cosmic Greed",
+        "dmgmult": 1.10
+      }
+    ],
+    "periodic": [
+      {
+        "label": "Dying Light",
+        "pctofdamage": 2.50,
+        "everynthattack": 40,
+        "cdscope": "local",
+        "stun": 5
+      }
     ]
   },
   {
@@ -10888,7 +11045,7 @@
     "passives": [
       {
         "title": "Fallout",
-        "text": "For 17s, this unit launches a Ballistic Missile every 3.4s (5 total) that each deal 140% damage. After that, this unit releases 3 Cone AOE steam blasts over 3s dealing 120% damage and burning enemies for 3s (40% damage per second). (Upgrade 6+, Global CD:120 120s)",
+        "text": "For 17s, this unit launches a Ballistic Missile every 3.4s (5 total) that each deal 140% damage. After that, this unit releases 3 Cone AOE steam blasts over 3s dealing 120% damage and burning enemies for 3s (40% damage per second). (Upgrade 6+, Global CD: 120s)",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-mar-16-2026-23-00-48-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=347"
       },
       {
@@ -10957,7 +11114,54 @@
         "cd": 2,
         "cost": 4000
       }
-    ]
+    ],
+  "passiveDamage": {
+    "periodic": [
+      {
+        "label": "Fallout (Missiles)",
+        "pctofdamage": 1.40,
+        "hits": 5,
+        "cd": 120,
+        "cdboostable": false,
+        "cdscope": "global"
+      },
+      {
+        "label": "Fallout (Steam)",
+        "pctofdamage": 1.20,
+        "hits": 3,
+        "cd": 120,
+        "cdboostable": false,
+        "cdscope": "global"
+      },
+      {
+        "label": "ICBCM",
+        "pctofdamage": 2.0,
+        "cd": 12,
+        "cdboostable": false,
+        "cdscope": "local"
+      }
+    ],
+    "dots": [
+        {
+          "label": "Steam (DoT)",
+          "pctofdamage": 0.4,
+          "durationsec": 3,
+          "stacks": 3
+          "cd": 120,
+          "cdboostable": false,
+          "cdscope": "global",
+          "uptime": true
+        }
+      ],
+  "selfboost": [
+        {
+          "label": "Explosives Expert (maxed)",
+          "rngmult": 1.15,
+          "dmgmult": 1.15,
+          "cdmult": 0.85
+        }
+      ]
+    }
   },
   {
     "name": "Tidal Wailer Crying Child",
@@ -11027,7 +11231,19 @@
         "title": "Surf Up",
         "text": "A giant tidal wave increases in size over 25s. At max height, the wave crashes down map-wide dealing 50% damage and applies a 15% slow for 5s. (10s CD)"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Tidal Wave",
+          "pctofdamage": 0.5,
+          "hits": 1,
+          "cd": 10.0,
+          "cdboostable": false,
+          "cdscope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Lolbit",
@@ -11211,7 +11427,25 @@
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/baby-skin-high.png",
         "rarity": "exclusive"
       }
-    ]
+    ],
+    "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Overcharge (DMG)",
+          "pctofdamage": 0.55,
+          "hits": 1,
+          "cd": 15.0,
+          "cdboostable": false,
+          "cdscope": "local"
+        }
+      ],
+    "selfboost": [
+        {
+          "label": "Overcharge (Boost)",
+          "dmgmult": 1.25
+        }
+      ]
+    }
   },
   {
     "name": "Yenndo",
@@ -11397,7 +11631,20 @@
         "image": "https://drive.google.com/thumbnail?id=1AFuI5kM8kk0c_8K9l4gqOvVMMajkB-jP&sz=w500",
         "rarity": "Shiny"
       }
-    ]
+    ],
+  "passiveDamage": {
+    "dots": [
+      {
+        "label": "Soft-Served",
+        "pctofdamage": 0.05,
+        "durationsec": 1.0,
+        "cd": 35,
+        "cdboostable": false,
+        "cdscope": "local",
+        "stacks": 3
+       }
+     ]
+   }
   },
   {
     "name": "Exotic Butters",
@@ -11650,7 +11897,17 @@
         "title": "Sweet Treat",
         "text": "Elizabeth will drop her ice cream on track every 5 seconds. For each ice cream in a stack, the enemy that makes contact takes 5% damage and 1% slow (caps at 30 cones per stack) that lasts for 5 seconds."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Sweet Treat",
+          "dmgmult": 2.5,
+          "duration": 5,
+          "cd": 150
+        }
+      ]
+    }
   },
   {
     "name": "Bidybabs",
@@ -11822,7 +12079,20 @@
         "title": "Go Get 'Em!",
         "text": "Every 10 seconds, Funtime Freddy throws Bonbon at an enemy. Bonbon attaches to the target and nibbles at them, dealing damage equal to 30% of Funtime Freddy’s damage over 5 seconds."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Go Get 'Em!",
+          "pctofdamage": 0.3,
+          "durationsec": 5,
+          "stacks": 3,
+          "cd": 10,
+          "cdboostable": false,
+          "cdscope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Handunit",
@@ -12133,7 +12403,20 @@
             "title": "Conductor [Smasher] [Upgrade 18+]",
             "text": "All Electrical units within range gain an additional 40% damage and 45% range. For each Electrical unit in range, these boosts decrease down to a minimum of 35% damage and 30% range."
           }
-        ]
+        ],
+        "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Coiling Combination (Smasher)",
+          "pctofdamage": 4.45,
+          "hits": 1,
+          "cd": 10.0,
+          "cdboostable": false,
+          "cdscope": "global"
+        }
+      ]
+    }
+  },
       },
       "shocker": {
         "label": "Shocker",
@@ -12327,7 +12610,18 @@
             "title": " Conductor [Shocker] [Upgrade 18+]",
             "text": "All Electrical units within range gain an additional 15% damage, 20% range, and 5% cooldown reduction. For each Electrical unit in range up to a maximum of 25% damage, 40% range, and 10% cooldown reduction."
           }
-        ]
+        ],
+        "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Coiling Combination (Shocker)",
+          "pctofdamage": 0.4,
+          "hits": 1,
+          "cd": 6.0,
+          "cdboostable": false,
+          "cdscope": "global"
+        }
+       ]
       }
     },
     "skins": [
@@ -12408,7 +12702,19 @@
         "title": "Uneven Ground",
         "text": "Upon entering 50% of its range, the enemy trips and gets stunned for 1.5s and takes 100% damage."
       }
-    ]
+    ],
+   "passiveDamage": {
+      "periodic": [
+        {
+          "label": "rockfall (1)",
+          "pctofdamage": 1.5,
+          "hits": 1,
+          "cd": 60.0,
+          "cdboostable": false,
+          "cdscope": "global"
+        }
+      ]
+    }
   },
   {
     "name": "Stormbound Chica",
@@ -12494,14 +12800,34 @@
     "passives": [
       {
         "title": "Call of the storm",
-        "text": "Chica rises up and pushes enemies back 1 tile. For 20s buff Electrifying Pressure by 50% and call down 3 lightning bolts every 1.5s on random enemies for 25% dmg. If a boss is present always focus one on the boss for 33% dmg. (Upragde 2+, Local CD: 60s)",
+        "text": "Chica rises up and pushes enemies back 1 tile. For 20s buff Electrifying Pressure by 50% and calls down 3 lightning bolts every 1.5s on random enemies for 25% dmg. If a boss is present always focus one on the boss for 33% dmg. (Upragde 2+, Local CD: 60s)",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-08qfv7.png"
       },
       {
         "title": "Electrifying Pressure",
         "text": "Hits the enemy every second for damage scaling on distance, at max scaling enemies take 10% more electric/water damage. At max scaling enemies take 10% more electric/water damage and are slowed 10%."
       }
-    ]
+    ],
+    "passiveDamage": {
+      "periodic": [
+        {
+        "label": "Call of the Storm",
+        "pctofdamage": 0.25,
+        "hits": 39,
+        "cd": 60.0,
+        "cdboostable": false,
+        "cdscope": "local"
+        },
+        {
+          "label": "Electrifying Pressure",
+          "pctofdamage": 0.1,
+          "hits": 1,
+          "cd": 1.0,
+          "cdboostable": false,
+          "cdscope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Anti-Hero Mike",
@@ -12831,7 +13157,30 @@
         "title": "Unsafe Lands",
         "text": "Every 6s, this unit does an AOE attack with damage based on the enemies' distance from this unit, ranging from 1-100% of this unit's damage. This attack also applies 30% Burn."
       }
-    ]
+    ],
+    "passiveDamage": {
+      "periodic": [
+      {
+        "label": "Unsafe Lands",
+        "pctofdamage": 0.50,
+        "hits": 1,
+        "cd": 6,
+        "cdboostable": false,
+        "cdscope": "local"
+      }
+    ],
+    "dots": [
+      {
+        "label": "Unsafe Lands (Burn)",
+        "pctofdamage": 0.30,
+        "durationsec": 1,
+        "cd": 6,
+        "cdboostable": false,
+        "cdscope": "local"
+        }
+      ]
+    }
+  },
   },
   {
     "name": "Detective Bonnie",
@@ -12903,6 +13252,24 @@
       {
         "title": "What Could This Mean...",
         "text": "When enemies enter this unit's range, gain 1 evidence stack giving 1% damage, caps at 25 stacks."
+      }
+    ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "What Could This Mean... (avg)",
+        "dmgmult": 1.125
+      },
+      {
+        "label": "Scene of the Crime (active)",
+        "dmgmult": 1.50,
+        "uptime": false,
+        "duration": 20,
+        "cd": 60
+      },
+      {
+        "label": "Scene of the Crime (permanent)",
+        "dmgmult": 1.15
       }
     ]
   },
@@ -12984,7 +13351,15 @@
         "title": "Counting Sheeps",
         "text": "This unit will start off Asleep and will be unable to attack until woken up. While this unit is Asleep, gain 1 Sleep stack per wave."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Scary Dream (Maxed)",
+          "dmgmult": 3.45,
+        }
+      ]
+    }
   },
   {
     "name": "Fazman",
@@ -13068,7 +13443,25 @@
         "title": "Dynamic Duo",
         "text": "If Anti-Hero Mike is in the team, then Fazmobiles acceleration is buffed to 2.75 studs/s every second and both units gain +25% damage."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Fazmobile",
+          "pctofdamage": 3.75,
+          "hits": 2,
+          "cd": 60.0,
+          "cdboostable": false,
+          "cdscope": "local"
+        }
+      ],
+    "selfboost": [
+        {
+          "label": "Dynamic Duo",
+          "dmgmult": 1.25
+        }
+      ]
+    }
   },
   {
     "name": "Devious Purple Guy",
@@ -13156,7 +13549,7 @@
       },
       {
         "title": "Lying In Wait",
-        "text": "While there are no enemies in range this unit gains +2% damage/s (max 20%), when at max buff also gain +25% range.This buff drains by by 0.5%/s while there are enemies in range."
+        "text": "While there are no enemies in range this unit gains +2% damage/s (max 20%), when at max buff also gain +25% range. This buff drains by by 0.5%/s while there are enemies in range."
       }
     ],
     "skins": [
@@ -13170,7 +13563,34 @@
         "image": "https://drive.google.com/thumbnail?id=1yCuzUga9hfDRJ4XuIDE7ntL7gJkHaQWC&sz=w500",
         "rarity": "shiny"
       }
-    ]
+    ],
+  "passiveDamage": {
+    "periodic": [
+        {
+          "label": "The Purpleninator (Hit)",
+          "pctofdamage": 3.5,
+          "hits": 1,
+          "cd": 20.0,
+          "cdboostable": false,
+        }
+      ],
+    "dots": [
+        {
+          "label": "The Purpleninator (DoT)",
+          "pctofdamage": 0.5,
+          "durationsec": 5,
+          "stacks": 1,
+          "cd": 20,
+          "cdboostable": false,
+        }
+      ],
+    "selfboost": [
+        {
+          "label": "Devious Scheme (DMG boost)",
+          "dmgmult": 1.25
+        }
+      ]
+    }
   },
   {
     "name": "Super Soldier Foxy",
@@ -13236,7 +13656,19 @@
         "title": "Take The Advantage",
         "text": "This unit gains +50% crit rate and +25% crit damage."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Target Aquired",
+          "pctofdamage": 3.5,
+          "hits": 1,
+          "cd": 15.0,
+          "cdboostable": false,
+          "cdscope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "Kronos Endo Freddy",
@@ -13396,7 +13828,20 @@
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/oxidized-kronos-high.png",
         "rarity": "secret"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "In Due Time (12)",
+          "dmgmult": 1.24,
+          "rngmult": 1.24
+        },
+        {
+          "label": "OVERCLOCKED (12)",
+          "dmgmult": 1.20
+        }
+      ]
+    }
   },
   {
     "name": "Chipper",
@@ -13664,6 +14109,23 @@
       {
         "title": "Freddles of Fire",
         "text": "He will spawn in Small Fire Freddle which will run down the lane every 20 seconds with 50% of his damage."
+      }
+    ],
+    ""passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Deathly Bones (maxed)",
+        "dmgmult": 1.65
+      }
+    ],
+    "summons": [
+      {
+        "label": "Fire Freddle",
+        "healthpctofdamage": 0.50,
+        "spawncd": 20,
+        "spawncdboostable": false,
+        "cdscope": "local",
+        "maxactive": 3
       }
     ]
   },

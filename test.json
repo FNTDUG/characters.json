@@ -12817,8 +12817,7 @@
           "hits": 40,
           "cd": 60.0,
           "cdboostable": false,
-          "cdscope": "local",
-          "uptime": true
+          "cdscope": "local"
         },
         {
           "label": "Electrifying Pressure",

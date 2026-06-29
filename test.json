@@ -8138,7 +8138,7 @@
           "label": "Hor Hor",
           "pctofdamage": 1.0,
           "hits": 15,
-          "everynthattack": 3
+          "everynthattack": 3,
           "stun": 3
         }
       ]

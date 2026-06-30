@@ -3369,8 +3369,7 @@
       "selfboost": [
         {
           "label": "Blood In The Water",
-          "dmgmult": 1.02,
-          "everynthattack": 1
+          "dmgmult": 1.02
         }
       ]
     }
@@ -6359,21 +6358,21 @@
         {
           "label": "Horn of Plenty (DMG)",
           "dmgmult": 1.5,
-          "uptime": false,
+          "uptime": true,
           "duration": 1.667,
           "cd": 7
         },
         {
           "label": "Horn of Plenty (RNG)",
           "rngmult": 1.8,
-          "uptime": false,
+          "uptime": true,
           "duration": 1.667,
           "cd": 7
         },
         {
           "label": "Horn of Plenty (CD)",
           "cdmult": 0.7,
-          "uptime": false,
+          "uptime": true,
           "duration": 1.667,
           "cd": 7
         }
@@ -8209,7 +8208,7 @@
     "typeMain": "Midgame-Endgame",
     "element": "Nature",
     "placements": 2,
-    "attackType": "Cone 45°",
+    "attackType": "Cone45°",
     "obtainment": "April Fools Present (5%)",
     "levels": [
       {
@@ -8625,7 +8624,7 @@
     ],
     "element": "Neutral",
     "placements": 1,
-    "attackType": "Cone 45°",
+    "attackType": "Cone45°",
     "obtainment": "April Fools Present (0.0555%)",
     "levels": [
       {
@@ -11212,7 +11211,7 @@
       {
         "level": 5,
         "cost": 2550,
-        "type": "Cone 75°",
+        "type": "Cone75°",
         "damage": 580.1,
         "cd": 2.7,
         "range": 22
@@ -11220,7 +11219,7 @@
       {
         "level": 6,
         "cost": 4150,
-        "type": "Cone 75°",
+        "type": "Cone75°",
         "damage": 700.1,
         "cd": 2.6,
         "range": 24
@@ -11287,7 +11286,7 @@
       {
         "level": 4,
         "cost": 2800,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "damage": 850.0,
         "cd": 3.6,
         "range": 25
@@ -11295,7 +11294,7 @@
       {
         "level": 5,
         "cost": 2100,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "damage": 900.0,
         "cd": 3.5,
         "range": 26
@@ -11303,7 +11302,7 @@
       {
         "level": 6,
         "cost": 2500,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "damage": 950.0,
         "cd": 3.4,
         "range": 27
@@ -11311,7 +11310,7 @@
       {
         "level": 7,
         "cost": 4850,
-        "type": "Cone 150°",
+        "type": "Cone150°",
         "damage": 1025.05,
         "cd": 3.3,
         "range": 29
@@ -11384,7 +11383,7 @@
       {
         "level": 5,
         "cost": 5600,
-        "type": "Cone 65°",
+        "type": "Cone65°",
         "damage": 710.0,
         "cd": 4.4,
         "range": 23
@@ -11392,7 +11391,7 @@
       {
         "level": 6,
         "cost": 5000,
-        "type": "Cone 65°",
+        "type": "Cone65°",
         "damage": 760.0,
         "cd": 4.4,
         "range": 25
@@ -11400,7 +11399,7 @@
       {
         "level": 7,
         "cost": 5800,
-        "type": "Cone 65°",
+        "type": "Cone65°",
         "damage": 810.0,
         "cd": 4.2,
         "range": 27
@@ -11408,7 +11407,7 @@
       {
         "level": 8,
         "cost": 6675,
-        "type": "Cone 65°",
+        "type": "Cone65°",
         "damage": 910.0,
         "cd": 3.8,
         "range": 29
@@ -11489,7 +11488,7 @@
       {
         "level": 4,
         "cost": 6900,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "damage": 706.04,
         "cd": 2.8,
         "range": 27
@@ -11497,7 +11496,7 @@
       {
         "level": 5,
         "cost": 6300,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "damage": 740.0,
         "cd": 2.7,
         "range": 28
@@ -11505,7 +11504,7 @@
       {
         "level": 6,
         "cost": 7000,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "damage": 776.04,
         "cd": 2.6,
         "range": 30
@@ -11513,7 +11512,7 @@
       {
         "level": 7,
         "cost": 7700,
-        "type": "Cone 95°",
+        "type": "Cone95°",
         "damage": 810.0,
         "cd": 2.6,
         "range": 31
@@ -11521,7 +11520,7 @@
       {
         "level": 8,
         "cost": 8750,
-        "type": "Cone 95°",
+        "type": "Cone95°",
         "damage": 890.0,
         "cd": 2.8,
         "range": 32
@@ -11663,7 +11662,7 @@
       {
         "level": 1,
         "cost": 3200,
-        "type": "Cone 50°",
+        "type": "Cone50°",
         "damage": 880.0,
         "cd": 6.5,
         "range": 21
@@ -11671,7 +11670,7 @@
       {
         "level": 2,
         "cost": 2000,
-        "type": "Cone 50°",
+        "type": "Cone50°",
         "damage": 925.05,
         "cd": 6,
         "range": 22
@@ -11679,7 +11678,7 @@
       {
         "level": 3,
         "cost": 2575,
-        "type": "Cone 50°",
+        "type": "Cone50°",
         "damage": 970.0,
         "cd": 6,
         "range": 23
@@ -11687,7 +11686,7 @@
       {
         "level": 4,
         "cost": 3150,
-        "type": "Cone 50°",
+        "type": "Cone50°",
         "damage": 1015.05,
         "cd": 5.8,
         "range": 24
@@ -11695,7 +11694,7 @@
       {
         "level": 5,
         "cost": 3900,
-        "type": "Cone 50°",
+        "type": "Cone50°",
         "damage": 1060.0,
         "cd": 5.8,
         "range": 25
@@ -11878,7 +11877,7 @@
       {
         "level": 7,
         "cost": 2600,
-        "type": "Cone 50°",
+        "type": "Cone50°",
         "damage": 400.1,
         "cd": 1.8,
         "range": 26
@@ -11886,7 +11885,7 @@
       {
         "level": 8,
         "cost": 4000,
-        "type": "Cone 50°",
+        "type": "Cone50°",
         "damage": 435.05,
         "cd": 1.7,
         "range": 298
@@ -12053,7 +12052,7 @@
       {
         "level": 4,
         "cost": 1000,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "damage": 270.0,
         "cd": 2.2,
         "range": 24
@@ -12061,7 +12060,7 @@
       {
         "level": 5,
         "cost": 950,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "damage": 300.0,
         "cd": 2,
         "range": 25
@@ -12538,7 +12537,7 @@
           {
             "level": 15,
             "cost": 7000,
-            "type": "Cone 75°",
+            "type": "Cone75°",
             "damage": 526.3,
             "cd": 1,
             "range": 25
@@ -12546,7 +12545,7 @@
           {
             "level": 16,
             "cost": 8500,
-            "type": "Cone 75°",
+            "type": "Cone75°",
             "damage": 556.1,
             "cd": 2,
             "range": 24
@@ -12554,7 +12553,7 @@
           {
             "level": 17,
             "cost": 7500,
-            "type": "Cone 75°",
+            "type": "Cone75°",
             "damage": 686.9,
             "cd": 1.9,
             "range": 24
@@ -12562,7 +12561,7 @@
           {
             "level": 18,
             "cost": 8000,
-            "type": "Cone 75°",
+            "type": "Cone75°",
             "damage": 716.7,
             "cd": 1.8,
             "range": 25
@@ -12570,7 +12569,7 @@
           {
             "level": 19,
             "cost": 8000,
-            "type": "Cone 75°",
+            "type": "Cone75°",
             "damage": 746.5,
             "cd": 1.8,
             "range": 26
@@ -12578,7 +12577,7 @@
           {
             "level": 20,
             "cost": 9000,
-            "type": "Cone 75°",
+            "type": "Cone75°",
             "damage": 776.3,
             "cd": 1.7,
             "range": 27
@@ -12586,7 +12585,7 @@
           {
             "level": 21,
             "cost": 10000,
-            "type": "Cone 75°",
+            "type": "Cone75°",
             "damage": 907,
             "cd": 1.6,
             "range": 29
@@ -12776,7 +12775,7 @@
       {
         "level": 6,
         "cost": 16250,
-        "type": "Cone 125°",
+        "type": "Cone125°",
         "damage": 4000.1,
         "cd": 6.3,
         "range": 26
@@ -12784,7 +12783,7 @@
       {
         "level": 7,
         "cost": 18500,
-        "type": "Cone 125°",
+        "type": "Cone125°",
         "damage": 4250.1,
         "cd": 6.2,
         "range": 27
@@ -12792,7 +12791,7 @@
       {
         "level": 8,
         "cost": 20000,
-        "type": "Cone 125°",
+        "type": "Cone125°",
         "damage": 4800.2,
         "cd": 6,
         "range": 28
@@ -13095,7 +13094,7 @@
       {
         "level": 1,
         "cost": 8000,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "damage": 1050.1,
         "cd": 5.7,
         "range": 18
@@ -13103,7 +13102,7 @@
       {
         "level": 2,
         "cost": 9000,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "damage": 1150.1,
         "cd": 5.7,
         "range": 20
@@ -13111,7 +13110,7 @@
       {
         "level": 3,
         "cost": 9000,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "damage": 1200.1,
         "cd": 5.6,
         "range": 20
@@ -13119,7 +13118,7 @@
       {
         "level": 4,
         "cost": 11000,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "damage": 1350.1,
         "cd": 5.6,
         "range": 21
@@ -13312,7 +13311,7 @@
       {
         "level": 4,
         "cost": 3000,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "damage": 545.0,
         "cd": 2.5,
         "range": 25
@@ -13320,7 +13319,7 @@
       {
         "level": 5,
         "cost": 4350,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "damage": 585.0,
         "cd": 2.5,
         "range": 26
@@ -13328,7 +13327,7 @@
       {
         "level": 6,
         "cost": 5000,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "damage": 615.0,
         "cd": 2.5,
         "range": 26
@@ -13336,7 +13335,7 @@
       {
         "level": 7,
         "cost": 6450,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "damage": 645.0,
         "cd": 2.3,
         "range": 27
@@ -14042,7 +14041,7 @@
           "spawncdboostable": false,
           "cdscope": "local"
         }
-      ],  
+      ],
     "selfboost": [
         {
           "label": "Stock Stacker (Maxed)",
@@ -14248,7 +14247,7 @@
         "level": 11,
         "cost": 6350,
         "damage": 420.0,
-        "type": "Cone 125°",
+        "type": "Cone125°",
         "cd": 2.7,
         "range": 22
       },
@@ -14256,7 +14255,7 @@
         "level": 12,
         "cost": 6500,
         "damage": 445.0,
-        "type": "Cone 125°",
+        "type": "Cone125°",
         "cd": 2.7,
         "range": 22
       },
@@ -14264,7 +14263,7 @@
         "level": 13,
         "cost": 6750,
         "damage": 460.0,
-        "type": "Cone 125°",
+        "type": "Cone125°",
         "cd": 2.5,
         "range": 24
       },
@@ -14272,7 +14271,7 @@
         "level": 14,
         "cost": 7250,
         "damage": 480.0,
-        "type": "Cone 125°",
+        "type": "Cone125°",
         "cd": 2.4,
         "range": 25
       },
@@ -14280,7 +14279,7 @@
         "level": 15,
         "cost": 7500,
         "damage": 505.0,
-        "type": "Cone 125°",
+        "type": "Cone125°",
         "cd": 2.2,
         "range": 26
       },
@@ -14288,7 +14287,7 @@
         "level": 16,
         "cost": 7850,
         "damage": 530.0,
-        "type": "Cone 125°",
+        "type": "Cone125°",
         "cd": 2.2,
         "range": 26
       },
@@ -14296,7 +14295,7 @@
         "level": 17,
         "cost": 8000,
         "damage": 550.0,
-        "type": "Cone 125°",
+        "type": "Cone125°",
         "cd": 2,
         "range": 27
       },
@@ -14424,7 +14423,7 @@
         "level": 6,
         "cost": 9350,
         "damage": 930.0,
-        "type": "Cone 85°",
+        "type": "Cone85°",
         "cd": 2.4,
         "range": 20
       },
@@ -14432,7 +14431,7 @@
         "level": 7,
         "cost": 9500,
         "damage": 985.0,
-        "type": "Cone 85°",
+        "type": "Cone85°",
         "cd": 2.4,
         "range": 21
       },
@@ -14440,7 +14439,7 @@
         "level": 8,
         "cost": 10000,
         "damage": 1085.0,
-        "type": "Cone 85°",
+        "type": "Cone85°",
         "cd": 2.3,
         "range": 23
       }
@@ -14569,7 +14568,7 @@
         "rarity": "secret"
       }
     ],
- "passiveDamage": {   
+ "passiveDamage": {
   "periodic": [
         {
           "label": "BARREL ROLL",
@@ -14887,7 +14886,7 @@
         "level": 8,
         "cost": 3800,
         "damage": 600.0,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 2.8,
         "range": 25
       },
@@ -14895,7 +14894,7 @@
         "level": 9,
         "cost": 4400,
         "damage": 620.0,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 2.8,
         "range": 26
       },
@@ -14903,7 +14902,7 @@
         "level": 10,
         "cost": 5000,
         "damage": 645.0,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 2.8,
         "range": 26
       },
@@ -14911,7 +14910,7 @@
         "level": 11,
         "cost": 5600,
         "damage": 670.0,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 2.8,
         "range": 26
       },
@@ -14919,7 +14918,7 @@
         "level": 12,
         "cost": 6200,
         "damage": 690.0,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 2.7,
         "range": 26
       },
@@ -14927,7 +14926,7 @@
         "level": 13,
         "cost": 6800,
         "damage": 715.0,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 2.7,
         "range": 27
       },
@@ -14935,7 +14934,7 @@
         "level": 14,
         "cost": 7400,
         "damage": 740.0,
-        "type": "Cone 60°",
+        "type": "Cone60°",
         "cd": 2.7,
         "range": 27
       },
@@ -14943,7 +14942,7 @@
         "level": 15,
         "cost": 8000,
         "damage": 770.0,
-        "type": "Cone 60°",
+        "type": "Cone60°",
         "cd": 2.7,
         "range": 27
       },
@@ -14951,7 +14950,7 @@
         "level": 16,
         "cost": 8750,
         "damage": 810.0,
-        "type": "Cone 60°",
+        "type": "Cone60°",
         "cd": 2.7,
         "range": 28
       },
@@ -14959,7 +14958,7 @@
         "level": 17,
         "cost": 9500,
         "damage": 850.0,
-        "type": "Cone 60°",
+        "type": "Cone60°",
         "cd": 2.6,
         "range": 28
       },
@@ -14967,7 +14966,7 @@
         "level": 18,
         "cost": 10500,
         "damage": 900.0,
-        "type": "Cone 60°",
+        "type": "Cone60°",
         "cd": 2.6,
         "range": 28
       },
@@ -14975,7 +14974,7 @@
         "level": 19,
         "cost": 11500,
         "damage": 960.0,
-        "type": "Cone 60°",
+        "type": "Cone60°",
         "cd": 2.6,
         "range": 29
       },
@@ -14983,7 +14982,7 @@
         "level": 20,
         "cost": 13250,
         "damage": 1025.0,
-        "type": "Cone 60°",
+        "type": "Cone60°",
         "cd": 2.6,
         "range": 29
       },
@@ -14991,7 +14990,7 @@
         "level": 21,
         "cost": 15000,
         "damage": 1100.0,
-        "type": "Cone 80°",
+        "type": "Cone80°",
         "cd": 2.6,
         "range": 30
       }
@@ -15017,7 +15016,27 @@
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/puppet-boy-michael-high.png",
         "rarity": "exclusive"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Together (Boost)",
+          "dmgmult": 1.3,
+          "rngmult": 1.25,
+          "cdmult": 0.9
+        }
+      ],
+    "periodic": [
+        {
+          "label": "Salvage",
+          "pctofdamage": 0.75,
+          "hits": 1,
+          "cd": 10.0,
+          "cdboostable": false,
+          "cdscope": "global"
+        }
+      ]
+    }
   },
   {
     "name": "Candy Cadet",
@@ -15126,7 +15145,26 @@
         "title": "Little Helper",
         "text": "Units in range gain +5% damage and +5% range. When a unit in range attacks follow up for 1% of this unit's damage"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Little Helper (Followup)",
+          "pctofdamage": 0.1,
+          "hits": 1,
+          "everynthattack": 1,
+          "cdboostable": false,
+          "cdscope": "global"
+        }
+      ],
+    "selfboost": [
+        {
+          "label": "Little Helper (Boost)",
+          "dmgmult": 1.05,
+          "rngmult": 1.05
+        }
+      ]
+    }
   },
   {
     "name": "Lefty",
@@ -15211,7 +15249,7 @@
         "level": 9,
         "cost": 20000,
         "damage": 2800.0,
-        "type": "Cone 50°",
+        "type": "Cone50°",
         "cd": 6,
         "range": 31
       },
@@ -15219,7 +15257,7 @@
         "level": 10,
         "cost": 25000,
         "damage": 3500.0,
-        "type": "Cone 50°",
+        "type": "Cone50°",
         "cd": 6.2,
         "range": 32
       },
@@ -15227,7 +15265,7 @@
         "level": 11,
         "cost": 35000,
         "damage": 4500.0,
-        "type": "Cone 90°",
+        "type": "Cone90°",
         "cd": 6.5,
         "range": 32
       }
@@ -15253,7 +15291,41 @@
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/dark-knight-lefty-high.png",
         "rarity": "exclusive"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "periodic": [
+        {
+          "label": "LEFTE (Hit)",
+          "pctofdamage": 2.5,
+          "hits": 1,
+          "cd": 75.0,
+          "cdboostable": false,
+          "cdscope": "global"
+        }
+      ],
+    "selfboost": [
+        {
+          "label": "LEFTE (Boost1)",
+          "dmgmult": 5,
+          "cd": 75.0,
+          "duration": 8,
+          "cdboostable": false,
+          "cdscope": "global"
+        },
+        {
+          "label": "LEFTE (Boost2)",
+          "dmgmult": 1.5,
+          "cd": 75.0,
+          "duration": 15,
+          "cdboostable": false,
+          "cdscope": "global"
+        },
+        {
+          "label": "Music Box (Boost)",
+          "cdmult": 0.9
+        }
+      ]
+    }
   },
   {
     "name": "Fredtrap",
@@ -15326,9 +15398,19 @@
       },
       {
         "title": "Hybrid",
-        "text": "When there are 3+ Rust element units on the team, buff this unit's damage by 25%. nWhen there are 5+ Rust element units on the team, this unit's follow-up attacks deal 15% more damage"
+        "text": "When there are 3+ Rust element units on the team, buff this unit's damage by 25%. When there are 5+ Rust element units on the team, this unit's follow-up attacks deal 15% more damage"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Clobbering Time",
+          "pctofdamage": 0.75,
+          "hits": 1,
+          "everynthattack": 2
+        }
+      ]
+    }
   },
   {
     "name": "Funtime Bonnie",
@@ -15482,7 +15564,24 @@
         "title": "All As One",
         "text": "For each Rust or Fire element unit on the team, buff this unit's damage by +10%. For each Molten Freddy in range, buff this unit's damage by +25%"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Heated (DoT)",
+          "pctofdamage": 0.3,
+          "durationsec": 5,
+          "stacks": 2,
+          "everynthattack": 1
+        }
+      ],
+    "selfboost": [
+        {
+          "label": "All As One",
+          "dmgmult": 1.25
+        }
+      ]
+    }
   },
   {
     "name": "Nightmare Shadow Bonnie",
@@ -15531,7 +15630,7 @@
         "level": 5,
         "cost": 5000,
         "damage": 1225.0,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 2.8,
         "range": 28
       },
@@ -15539,7 +15638,7 @@
         "level": 6,
         "cost": 6750,
         "damage": 1550.0,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 3,
         "range": 30
       }
@@ -15549,7 +15648,15 @@
         "title": "Shade's Presence",
         "text": "For every second an enemy is in this unit's range they gain 1 stack. For every stack on the enemy, reduce enemy regen by 2% and enemies take 2% more damage from this unit"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Shade's Presence",
+          "dmgmult": 1.02
+        }
+      ]
+    }
   },
   {
     "name": "Rockstar Foxy",
@@ -15644,7 +15751,16 @@
         "title": "Rockstars Assemble",
         "text": "When 3 other rockstar animatronics are in the same loadout, buff this unit's damage and range by 25%"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Hidden Treasure (Maxed)",
+          "dmgmult": 1.2,
+          "rngmult": 1.2
+        }
+      ]
+    }
   },
   {
     "name": "Scraptrap",
@@ -15657,7 +15773,7 @@
     ],
     "element": "Fire/Rust",
     "placements": 2,
-    "attackType": "",
+    "attackType": "Multi",
     "obtainment": "S5 Free Pass lvl 50",
     "levels": [
       {
@@ -15680,7 +15796,7 @@
         "level": 3,
         "cost": 3000,
         "damage": 355.0,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 3.8,
         "range": 26
       },
@@ -15688,7 +15804,7 @@
         "level": 4,
         "cost": 4000,
         "damage": 365.0,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 3.6,
         "range": 28
       },
@@ -15696,7 +15812,7 @@
         "level": 5,
         "cost": 6500,
         "damage": 375.0,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 3.4,
         "range": 28
       },
@@ -15704,7 +15820,7 @@
         "level": 6,
         "cost": 5000,
         "damage": 383.0,
-        "type": "Cone 145°",
+        "type": "Cone145°",
         "cd": 3.1,
         "range": 28
       },
@@ -15712,7 +15828,7 @@
         "level": 7,
         "cost": 6500,
         "damage": 391.0,
-        "type": "Cone 145°",
+        "type": "Cone145°",
         "cd": 2.8,
         "range": 30
       },
@@ -15720,7 +15836,7 @@
         "level": 8,
         "cost": 6500,
         "damage": 400.0,
-        "type": "Cone 145°",
+        "type": "Cone145°",
         "cd": 2.6,
         "range": 30
       }
@@ -15738,7 +15854,32 @@
         "title": "Opportune Strike",
         "text": "+25% crit rate and +100% crit damage. Every 5 attacks, follow up for 100% damage. This attack is guaranteed to crit. When an enemy is stunned in range, follow up for 150% damage. This attack is guaranteed to crit"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Withering Away",
+          "dmgmult": 1.1
+        }
+      ],
+    "dots": [
+        {
+          "label": "Engulfing Flames",
+          "pctofdamage": 1.1,
+          "durationsec": 5,
+          "everynthattack": 1,
+          "stacks": 2
+        }
+      ],
+    "periodic": [
+        {
+          "label": "Strike",
+          "pctofdamage": 2,
+          "hits": 1,
+          "everynthattack": 5
+        }
+      ]
+    }
   },
   {
     "name": "Showtime Freddy",
@@ -15779,7 +15920,7 @@
         "level": 4,
         "cost": 3250,
         "damage": 475.0,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 3.2,
         "range": 27
       },
@@ -15787,7 +15928,7 @@
         "level": 5,
         "cost": 4000,
         "damage": 510.0,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 3,
         "range": 27
       },
@@ -15795,7 +15936,7 @@
         "level": 6,
         "cost": 5000,
         "damage": 550.0,
-        "type": "Cone 90°",
+        "type": "Cone90°",
         "cd": 3,
         "range": 28
       },
@@ -15803,7 +15944,7 @@
         "level": 7,
         "cost": 6500,
         "damage": 600.0,
-        "type": "Cone 90°",
+        "type": "Cone90°",
         "cd": 3,
         "range": 28
       }
@@ -15817,7 +15958,25 @@
         "title": "Harmonic Inferno",
         "text": "When this unit's burn expires on an enemy within this units range, Inflict 100% burn over 10s"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Song of Fire",
+          "pctofdamage": 0.5,
+          "durationsec": 5,
+          "everynthattack": 3,
+          "stacks": 2
+        },
+        {
+          "label": "Harmonic Inferno",
+          "pctofdamage": 1,
+          "durationsec": 10,
+          "cd": 20,
+          "stacks": 2
+        }
+      ]
+    }
   },
   {
     "name": "Sparky",
@@ -15966,7 +16125,7 @@
         "level": 4,
         "cost": 3500,
         "damage": 360.0,
-        "type": "Cone 65°",
+        "type": "Cone65°",
         "cd": 2.2,
         "range": 28
       },
@@ -15974,7 +16133,7 @@
         "level": 5,
         "cost": 5000,
         "damage": 400.0,
-        "type": "Cone 65°",
+        "type": "Cone65°",
         "cd": 2,
         "range": 28
       },
@@ -15982,7 +16141,7 @@
         "level": 6,
         "cost": 6000,
         "damage": 450.0,
-        "type": "Cone 65°",
+        "type": "Cone65°",
         "cd": 2,
         "range": 28
       }
@@ -16000,7 +16159,19 @@
         "title": "Show Time",
         "text": "If Rockstar Foxy is on your team, each coin held increases Overheating duration by 1s"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Overheating",
+          "dmgmult": 1.5,
+          "duration": 10,
+          "cd": 30,
+          "cdscope": "local",
+          "cdboostable": false
+        }
+      ]
+    }
   },
   {
     "name": "Hero PaperPals",
@@ -16051,7 +16222,18 @@
         "title": "Paper Pals",
         "text": "If any Paperpal unit is in range, buff this unit's damage by 25%"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Paper Cuts (DoT)",
+          "pctofdamage": 0.25,
+          "durationsec": 5,
+          "everynthattack": 1,
+          "stacks": 3
+        }
+      ]
+    }
   },
   {
     "name": "Rockstar Bonnie",
@@ -16374,7 +16556,7 @@
         "level": 5,
         "cost": 8000,
         "damage": 1515,
-        "type": "Cone 90°",
+        "type": "Cone90°",
         "cd": 2.25,
         "range": 33
       },
@@ -16382,7 +16564,7 @@
         "level": 6,
         "cost": 11000,
         "damage": 1616,
-        "type": "Cone 90°",
+        "type": "Cone90°",
         "cd": 2,
         "range": 35
       },
@@ -16390,7 +16572,7 @@
         "level": 7,
         "cost": 15000,
         "damage": 1818,
-        "type": "Cone 90°",
+        "type": "Cone90°",
         "cd": 2,
         "range": 35
       }
@@ -16466,7 +16648,7 @@
         "level": 6,
         "cost": 10000,
         "damage": 282.8,
-        "type": "Cone 245°",
+        "type": "Cone245°",
         "cd": 2.5,
         "range": 30
       },
@@ -16474,7 +16656,7 @@
         "level": 7,
         "cost": 12500,
         "damage": 303,
-        "type": "Cone 245°",
+        "type": "Cone245°",
         "cd": 2,
         "range": 30
       }
@@ -16488,7 +16670,26 @@
         "title": "Anantashesha",
         "text": "On attack stun enemies for 1.8s. If enemy is in stun lockout, do a follow-up for 50% of this unit's damage in a full AOE. Deal +1 shield damage and follow-up for 50% on shield break. When enemy enters within 50% of this unit's range for the first time, knockback enemy 2 tiles. If the enemy is a boss, stun for 2.5s after stun lockout ends"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Leviathans Grasp",
+          "pctofdamage": 0.45,
+          "durationsec": 5,
+          "everynthattack": 1,
+          "stacks": 2
+        }
+      ],
+    "periodic": [
+        {
+          "label": "Anantashesha",
+          "pctofdamage": 0.5,
+          "hits": 1,
+          "everynthattack": 1
+        }
+      ]
+    }
   },
   {
     "name": "Fallen Angel Nightmarionne",
@@ -16578,13 +16779,39 @@
       {
         "title": "Retribution",
         "text": "Deals 500% damage in a line. On hit, apply 20% slow for 10s. If enemy dies while this slow is still active, summon a Flaming Nightmarionne Plushie for 100% damage as health. (Upgrade 0+, Global CD: 90s).",
-        "activeIcon": ""
+        "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-08qfv7.png"
       },
       {
         "title": "The Fallen",
         "text": "On attack, buff this units damage by +10% (Max 50%). Once this buff is maxed out, keep maxed buff for 3 attacks and reset. Gains boosts for every Light or Dark element unit on the team: Dark - +5% damage, Light -  +5% range"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Retribution (Hit)",
+          "pctofdamage": 5,
+          "hits": 1,
+          "cd": 90.0,
+          "cdboostable": false,
+          "cdscope": "global"
+        }
+      ],
+      "summons": [
+        {
+          "label": "Retribution (Summon)",
+          "healthpctofdamage": 1,
+          "spawncd": 90,
+          "spawncdboostable": false
+        }
+      ],
+      "selfboost": [
+        {
+          "label": "The Fallen",
+          "dmgmult": 1.375
+        }
+      ]
+    }
   },
   {
     "name": "Fathomless Withered Foxy",
@@ -16644,7 +16871,7 @@
         "level": 6,
         "cost": 10000,
         "damage": 1767.5,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 3,
         "range": 30
       },
@@ -16652,7 +16879,7 @@
         "level": 7,
         "cost": 12500,
         "damage": 2020,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 3,
         "range": 30
       }
@@ -16660,13 +16887,35 @@
     "passives": [
       {
         "title": "Call of the Abyss",
-        "text": "While enemy is in range, deal more damage the longer the enemy is in this unit's range (2%/s) (Max 150%). If enemy is bleeding, increase by 2.5%/s instead. nWhen enemy tries to leave range for the first time, knockback enemy by 5 tiles and stun them for 2s and reset Call of the Abyss damage buff on that enemy"
+        "text": "While enemy is in range, deal more damage the longer the enemy is in this unit's range (2%/s) (Max 150%). If enemy is bleeding, increase by 2.5%/s instead. When an enemy tries to leave range for the first time, knockback that enemy by 5 tiles and stun them for 2s and reset Call of the Abyss damage buff on that enemy"
       },
       {
         "title": "Apex Predator",
         "text": "Attacks apply 25% bleed over 5s. If there are 3+ sources of bleed on the enemy, buff this bleed application to 40%. Deal 25% more damage to bleeding enemies. If enemy is in the latter half of the track, deal 20% more damage and apply an additional 10% bleed"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Call of the Abyss (1)",
+          "dmgmult": 1.045
+        },
+        {
+          "label": "Apex Predator (Boost)",
+          "dmgmult": 1.25,
+          "everynthattack": 1,
+          "duration": 5
+        }
+      ],
+    "dots": [
+        {
+          "label": "Apex Predator (DoT)",
+          "pctofdamage": 0.25,
+          "durationsec": 5,
+          "everynthattack": 1
+        }
+      ]
+    }
   },
   {
     "name": "Music Man",
@@ -16738,7 +16987,25 @@
         "title": "Cymbal Crash",
         "text": "Every 10s deal 200% damage to all enemies in range"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Cymbal Crash",
+          "pctofdamage": 2,
+          "hits": 1,
+          "cd": 10.0,
+          "cdboostable": false,
+          "cdscope": "global"
+        }
+      ],
+      "selfboost": [
+        {
+          "label": "Pump up the Jam (maxed)",
+          "dmgmult": 2
+        }
+      ]
+    }
   },
   {
     "name": "Roadkill Phantom Foxy",
@@ -16803,7 +17070,18 @@
         "title": "Walking Dead",
         "text": "On attack, apply 25% bleed and 25% poison over 5s. When this unit is stunned, next attack applies an additional 100% bleed and 100% poison over 10s, stun enemies in range for 1.8s, and slow enemies in range by 15% for 15s"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Walking Dead (DoT)",
+          "pctofdamage": 0.5,
+          "durationsec": 5,
+          "stacks": 2,
+          "everynthattack": 1
+        }
+      ]
+    }
   },
   {
     "name": "Henry Emily",
@@ -16885,7 +17163,18 @@
         "title": "Turning Gears",
         "text": "For every Rust element unit in range, buff this units damage by 2.5% and range by 3% (Max 12.5% damage and 15% range)"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "summons": [
+        {
+          "label": "Endo (lvl3)",
+          "healthpctofdamage": 6,
+          "spawncd": 5,
+          "spawncdboostable": false,
+          "cdscope": "local"
+        }
+      ]
+    }
   },
   {
     "name": "El Chip",
@@ -16959,7 +17248,7 @@
       },
       {
         "title": "Tax Return",
-        "text": "Every 3 waves, automatically upgrade El Chip once.This unit cannot be sold after being placed."
+        "text": "Every 3 waves, automatically upgrade El Chip once. This unit cannot be sold after being placed."
       }
     ]
   },
@@ -17031,9 +17320,39 @@
       },
       {
         "title": "Fuse",
-        "text": "On attack, apply Fuse, exploding after 3s dealing 100% damage in a small aoe. Fuse has bonus effects based on current firework color:Red - Explosion radius increased by 25%. Blue - Detonates a second explosion after 1s dealing 35% damage. Purple - Explosion is guaranteed to crit."
+        "text": "On attack, apply Fuse, exploding after 3s dealing 100% damage in a small aoe. Fuse has bonus effects based on current firework color: Red - Explosion radius increased by 25%. Blue - Detonates a second explosion after 1s dealing 35% damage. Purple - Explosion is guaranteed to crit."
+      }
+    ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Firework Show (Red)",
+        "dmgmult": 1.5,
+        "duration": 30,
+        "cd": 90,
+        "uptime": true
+      },
+      {
+        "label": "Firework Show (Blue)",
+        "cdmult": 0.8,
+        "duration": 30,
+        "cd": 90,
+        "uptime": true
+      }
+    ],
+    "onnthattack": [
+      {
+        "label": "Fuse",
+        "pctofdamage": 1.0,
+        "everynthattack": 1
+      },
+      {
+        "label": "Fuse (Blue - 2nd explosion)",
+        "pctofdamage": 0.117,
+        "everynthattack": 1
       }
     ]
+  }
   },
   {
     "name": "Funtime Chica",
@@ -17172,7 +17491,7 @@
         "level": 4,
         "cost": 4250,
         "damage": 303,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 6,
         "range": 25
       },
@@ -17180,7 +17499,7 @@
         "level": 5,
         "cost": 5000,
         "damage": 343.4,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 6,
         "range": 26
       },
@@ -17188,7 +17507,7 @@
         "level": 6,
         "cost": 6000,
         "damage": 353.5,
-        "type": "Cone 45°",
+        "type": "Cone45°",
         "cd": 4,
         "range": 30
       },
@@ -17218,7 +17537,24 @@
         "title": "Arterial Claw",
         "text": "Attacks inflict Bleed, dealing 45% of this unit's damage every second for 4 seconds. Deal 55% more damage to enemies already inflicted with Bleed"
       }
-    ]
+    ],
+  "passivedamage": {
+  "selfboost": [
+        {
+          "label": "Decaying (Maxed)",
+          "cdmult": 0.8
+        }
+      ],
+    "dots": [
+        {
+          "label": "Claw",
+          "pctofdamage": 0.585,
+          "durationsec": 4,
+          "stacks": 2,
+          "everynthattack": 1
+        }
+      ]
+    }
   },
   {
     "name": "Radioactive Phantom Freddy",
@@ -17280,7 +17616,18 @@
         "title": "Hazardous Material",
         "text": "On attack, Aapply 50% poison over 5s. If this unit is stunned, buff this unit's damage by 50% for 20s and apply 500% poison over 15s in a full AOE when stun ends"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Hazardous",
+          "pctofdamage": 0.5,
+          "durationsec": 5,
+          "stacks": 3,
+          "everynthattack": 1
+        }
+      ]
+    }
   },
   {
     "name": "Gaia Chica",
@@ -17334,7 +17681,7 @@
         "level": 5,
         "cost": 7500,
         "damage": 1186.75,
-        "type": "Cone 60°",
+        "type": "Cone60°",
         "cd": 2.8,
         "range": 28
       },
@@ -17342,7 +17689,7 @@
         "level": 6,
         "cost": 8500,
         "damage": 1287.75,
-        "type": "Cone 60°",
+        "type": "Cone60°",
         "cd": 3,
         "range": 30
       },
@@ -17350,7 +17697,7 @@
         "level": 7,
         "cost": 9500,
         "damage": 1338.25,
-        "type": "Cone 60°",
+        "type": "Cone60°",
         "cd": 3,
         "range": 30
       },
@@ -17358,7 +17705,7 @@
         "level": 8,
         "cost": 11000,
         "damage": 1388.75,
-        "type": "Cone 60°",
+        "type": "Cone60°",
         "cd": 3,
         "range": 31
       },
@@ -17366,7 +17713,7 @@
         "level": 9,
         "cost": 12500,
         "damage": 1439.25,
-        "type": "Cone 60°",
+        "type": "Cone60°",
         "cd": 3,
         "range": 31
       },
@@ -17374,7 +17721,7 @@
         "level": 10,
         "cost": 14000,
         "damage": 1489.75,
-        "type": "Cone 60°",
+        "type": "Cone60°",
         "cd": 3,
         "range": 32
       },
@@ -17382,7 +17729,7 @@
         "level": 11,
         "cost": 16000,
         "damage": 1565.5,
-        "type": "Cone 120°",
+        "type": "Cone120°",
         "cd": 3,
         "range": 34
       },
@@ -17390,7 +17737,7 @@
         "level": 12,
         "cost": 18000,
         "damage": 1641.25,
-        "type": "Cone 120°",
+        "type": "Cone120°",
         "cd": 3,
         "range": 36
       }
@@ -17413,7 +17760,32 @@
         "title": "Persistent Vines",
         "text": "On attack, apply Rooted, applying an increasing slow at 2%/s. When Rooted reaches 30% slow, stun the enemy for 1.5 seconds and remove Rooted. If the enemy has stun lockout, deal 200% of this unit's damage instead. When Growmain Expansion is active, Rooted slow increases 50% faster."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Growmain Expansion",
+          "dmgmult": 1.5,
+          "cdmult": 0.85,
+          "duration": 37,
+          "cd": 90,
+          "uptime": true
+        }
+      ],
+    "summons": [
+        {
+          "label": "Rose Trap",
+          "healthpctofdamage": 0.75,
+          "attackpctofdamage": 0.7,
+          "attackcd": 3.0,
+          "attackcdboostable": false,
+          "spawncd": 5,
+          "spawncdboostable": false,
+          "cdscope": "local",
+          "maxactive": 10
+        }
+      ]
+    }
   },
   {
     "name": "Abyssal Ballora",
@@ -17426,7 +17798,7 @@
     ],
     "element": "Water",
     "placements": 1,
-    "attackType": "Cone 150°",
+    "attackType": "Multi",
     "obtainment": "Abyssal Ballora Present (350 Raid Coins)",
     "levels": [
       {
@@ -17495,7 +17867,37 @@
         "title": "Eternal Flow",
         "text": "This unit is immune to stuns. On attack reduce this unit's cooldown by 3%, resetting when changing target (Max -15%). Every other attack deals 1.2x damage. If the cooldown buff is maxed, every attack deals 1.2x damage"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "High Tide",
+          "dmgmult": 1.10,
+          "rngmult": 1.50,
+          "duration": 30,
+          "cd": 60,
+          "uptime": true
+        },
+        {
+          "label": "Low Tide",
+          "dmgmult": 1.50,
+          "rngmult": 1.10,
+          "duration": 30,
+          "cd": 60,
+          "uptime": true
+        }
+      ],
+    "periodic": [
+        {
+          "label": "Tide Change",
+          "pctofdamage": 2,
+          "hits": 1,
+          "cd": 30.0,
+          "cdboostable": false,
+          "cdscope": "global"
+        }
+      ]
+    }
   },
   {
     "name": "Nature Reclaimed Foxy",
@@ -17570,7 +17972,23 @@
         "title": "Drifter's Blessing",
         "text": "When placed, this unit generates an additional stock. Units in range have their damage buffed by 30%, range buffed by 25%, and cooldown reduced by 5%"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "summons": [
+        {
+          "label": "Clone",
+          "attackpctofdamage": 0.33,
+          "attackcd": 1.5,
+          "attackcdboostable": true
+        }
+      ],
+    "selfboost": [
+        {
+          "label": "Grōnin (Boost)",
+          "dmgmult": 1.2
+        }
+      ]
+    }
   },
   {
     "name": "Commander Withered Freddy",
@@ -17583,7 +18001,7 @@
     ],
     "element": "Light",
     "placements": 2,
-    "attackType": "Cone 75°",
+    "attackType": "Cone75°",
     "obtainment": "Withered Freddy Evolution",
     "levels": [
       {
@@ -17729,7 +18147,15 @@
         "title": "Closed For Restoration",
         "text": "Enemies in the latter half of the track take 25% more damage from this unit. This unit gains +5% damage per enemy on the track, deals +10% damage to Necromancer enemies and deals +25% damage to their summons"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Restoration (1)",
+          "dmgmult": 1.05
+        }
+      ]
+    }
   },
   {
     "name": "Foxy.exe",
@@ -17773,7 +18199,7 @@
         "level": 4,
         "cost": 4000,
         "damage": 949.4,
-        "type": "Cone 65°",
+        "type": "Cone65°",
         "cd": 4.5,
         "range": 24
       },
@@ -17781,7 +18207,7 @@
         "level": 5,
         "cost": 5000,
         "damage": 1262.5,
-        "type": "Cone 65°",
+        "type": "Cone65°",
         "cd": 5,
         "range": 25
       },
@@ -17789,7 +18215,7 @@
         "level": 6,
         "cost": 8000,
         "damage": 1515,
-        "type": "Cone 65°",
+        "type": "Cone65°",
         "cd": 5,
         "range": 26
       }
@@ -17803,7 +18229,23 @@
         "title": "Go Phishing",
         "text": "Enemies hit by Corrupted Data permanently generate 20% more income and generate 40% more income while this unit is hitting them. If the enemy is a Tank, apply a permanent bleed that deals 5% of this unit's damage every second"
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Data (Hit Bonus)",
+          "dmgmult": 2.1
+        }
+      ],
+      "dots": [
+        {
+          "label": "Go Phishing (Tank Bonus)",
+          "pctofdamage": 0.5,
+          "durationsec": 1,
+          "everynthattack": 1
+        }
+      ]
+    }
   },
   {
     "name": "Trash o Tron",
@@ -17900,6 +18342,52 @@
         "title": "Assorted Parts",
         "text": "Every 3 upgrades place one of three Trash Gang members as a sub tower with 25% of their normal damage. Trash Gang members in range gain +50% damage. This unit gains +50% damage per Trash Gang member in range, up to +300%."
       }
+    ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Bits and Bobs",
+        "dmgmult": 1.23
+      },
+      {
+        "label": "Assorted Parts (Maxed)",
+        "dmgmult": 2.5
+      }
+    ],
+    "dots": [
+      {
+        "label": "Flamethrower Burn",
+        "pctofdamage": 0.5,
+        "durationsec": 5,
+        "everynthattack": 2
+      }
+    ],
+    "summons": [
+      {
+        "label": "Bucket Bob",
+        "attackpctofdamage": 0.0927,
+        "attackcdboostable": true,
+        "attackcd": 2.5,
+        "maxactive": 1,
+        "cdscope": "global"
+      },
+      {
+        "label": "No. 1 Crate",
+        "attackpctofdamage": 0.0927,
+        "attackcd": 3.5,
+        "attackcdboostable": true,
+        "maxactive": 1,
+        "cdscope": "global"
+      },
+      {
+        "label": "Pan Stan",
+        "attackpctofdamage": 0.1323,
+        "attackcd": 3.0,
+        "attackcdboostable": true,
+        "maxactive": 1,
+        "cdscope": "global"
+      }
     ]
+  }
   }
 ]

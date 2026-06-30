@@ -2518,7 +2518,7 @@
           "dmgmult": 1.15,
           "duration": 15,
           "cd": 60,
-          "uptime:": true
+          "uptime": true
         }
       ],
       "summons": [
@@ -8124,7 +8124,7 @@
       "periodic": [
         {
           "label": "Hor Hor",
-          "pctofdamage": 1.0,
+          "pctofdamage": 0.2,
           "hits": 15,
           "everynthattack": 3,
           "stun": 3
@@ -8986,7 +8986,7 @@
           "rngmult": 1.2,
           "cd": 200,
           "duration": 120,
-          "uptimes": true
+          "uptime": true
         },
         {
           "label": "Restless Soul (Maxed)",
@@ -10263,7 +10263,16 @@
         "title": "Herald of Winter",
         "text": "This unit summons Snow Bonnies around itself (cap of 3) that provide 1 of 2 following buffs to itself: 10% DMG and RNG increase (Cyan colored), 15% slowing to all enemies in range (Dark Blue Colored). Additionally while a Snow Bonnie is present, attacks freeze enemies for 0.75s."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Herald of Winter (Boost)",
+          "dmgmult": 1.1,
+          "rngmult": 1.1
+        }
+      ]
+    }
   },
   {
     "name": "Krampus Purple Guy",
@@ -14831,7 +14840,27 @@
         "title": "Nature's Blessing",
         "text": "Gains boosts based on the number of units of the same element in the team (excluding self) requires 3/4/5 units respectively. Neutral: +1/2/5% DMG and RNG. Nature: +2/4/10% RNG. Fire: +3/6/12% DMG and burn. Water: -2/4/10% CD. Dark: +3/6/12% DMG. Light: +3/8/12% RNG. Rust: +1/2/5% DMG and RNG. Electric: -1/2/5% CD."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Sprawling Roots (Nature)",
+          "pctofdamage": 1,
+          "hits": 1,
+          "cd": 5.0,
+          "cdboostable": false,
+          "cdscope": "global"
+        }
+      ],
+    "selfboost": [
+        {
+          "label": "Seasons (Nature)",
+          "dmgmult": 1.085,
+          "rngmult": 1.11,
+          "cdmult": 0.95
+        }
+      ]
+    }
   },
   {
     "name": "Michael Afton",
@@ -17280,7 +17309,16 @@
         "title": "Tax Return",
         "text": "Every 3 waves, automatically upgrade El Chip once. This unit cannot be sold after being placed."
       }
-    ]
+    ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Happy Hour (AVG)",
+          "dmgmult": 1.25,
+          "cdmult": 0.85
+        }
+      ]
+    }
   },
   {
     "name": "Firework Shadow Freddy",
@@ -17586,7 +17624,7 @@
         "text": "This unit does +55% damage to Bleeding enemies and her attacks inflict 45% Bleed for 4s."
       }
     ],
-    "passivedamage": {
+    "passiveDamage": {
       "selfboost": [
         {
           "label": "Decaying (Maxed)",

@@ -15876,7 +15876,7 @@
       },
       {
         "title": "Opportune Strike",
-        "text": "This unit has+25% crit rate and +100% crit damage. Every 5th attack, this unit does a follow up attack that always crits. When a stunned enemy is in range, this unit does a follow up attack with +50% damage that always crits."
+        "text": "This unit has +25% crit rate and +100% crit damage. Every 5th attack, this unit does a follow up attack that always crits. When a stunned enemy is in range, this unit does a follow up attack with +50% damage that always crits."
       }
     ],
     "passiveDamage": {

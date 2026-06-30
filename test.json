@@ -17822,15 +17822,14 @@
       ],
       "summons": [
         {
-          "label": "Rose Trap (10)",
+          "label": "Rose Trap",
           "healthpctofdamage": 0.75,
           "attackpctofdamage": 0.7,
           "attackcd": 3.0,
           "attackcdboostable": false,
           "spawncd": 5,
           "spawncdboostable": false,
-          "cdscope": "local",
-          "maxactive": 10
+          "cdscope": "local"
         }
       ]
     }

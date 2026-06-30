@@ -13079,14 +13079,19 @@
         "text": "This unit has +25% crit chance and crit damage."
       }
     ],
-    "critC": 0.3,
-    "critD": 2.25,
     "passiveDamage": {
       "onnthattack": [
         {
           "label": "Devil's Hand (follow-up)",
           "pctofdamage": 0.15,
           "everynthattack": 1
+        }
+      ],
+      "selfboost": [
+        {
+          "label": "Pinnacle of Luck",
+          "critC": 0.3,
+          "critD": 2.25
         }
       ]
     }
@@ -13678,10 +13683,15 @@
           "cdboostable": false,
           "cdscope": "local"
         }
+      ],
+      "selfboost": [
+        {
+          "label": "Take The Advantage",
+          "critC": 0.55,
+          "critD": 2.25
+        }
       ]
-    },
-    "critC": 0.55,
-    "critD": 2.25
+    }
   },
   {
     "name": "Kronos Endo Freddy",
@@ -15770,11 +15780,11 @@
         {
           "label": "Hidden Treasure (Maxed)",
           "dmgmult": 1.2,
-          "rngmult": 1.2
+          "rngmult": 1.2,
+          "critC": 0.25
         }
       ]
-    },
-    "critC": 0.25
+    }
   },
   {
     "name": "Scraptrap",
@@ -15874,6 +15884,11 @@
         {
           "label": "Withering Away",
           "dmgmult": 1.1
+        },
+        {
+          "label": "Opportune Strike",
+          "critC": 0.3,
+          "critD": 3.0
         }
       ],
       "dots": [
@@ -15894,9 +15909,7 @@
           "critC": 1.0
         }
       ]
-    },
-    "critC": 0.3,
-    "critD": 3.0
+    }
   },
   {
     "name": "Showtime Freddy",
@@ -17477,8 +17490,15 @@
         "text": "+50% crit rate and +50% crit damage. If there is a unit with a higher damage stat in range, gain +25% crit damage and +20% Damage. When another unit in range crits, buff this unit's crit rate by +1% (max +75%). Crit rate over 100% converts directly into crit damage."
       }
     ],
-    "critC": 0.55,
-    "critD": 2.5
+    "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Star of the Show",
+          "critC": 0.55,
+          "critD": 2.5
+        }
+      ]
+    }
   },
   {
     "name": "Scrap Baby",

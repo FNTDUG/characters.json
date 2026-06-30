@@ -17774,7 +17774,7 @@
       ],
     "summons": [
         {
-          "label": "Rose Trap",
+          "label": "Rose Trap (10)",
           "healthpctofdamage": 0.75,
           "attackpctofdamage": 0.7,
           "attackcd": 3.0,

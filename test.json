@@ -7133,7 +7133,7 @@
     "attackType": "Multi",
     "obtainment": "Normal Summons, Secret 0.25%",
     "modes": {
-      "apr": {
+      "FMJ": {
         "label": "FMJ",
         "role": "damage",
         "attackType": "Multi",

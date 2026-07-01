@@ -1774,6 +1774,7 @@
     "placements": 1,
     "attackType": "Line",
     "obtainment": "S3 Premium Pass Tier 30",
+    "basenodps": true,
     "levels": [
       {
         "level": 1,
@@ -1829,6 +1830,15 @@
       }
     ],
     "passiveDamage": {
+      "summons": [
+        {
+          "label": "Freddles Army",
+          "healthpctofdamage": 1,
+          "spawncd": 2,
+          "spawncdboostable": true,
+          "cdscope": "local"
+        }
+      ],
       "selfboost": [
         {
           "label": "Three Musket Freddie's (maxed)",
@@ -5924,6 +5934,15 @@
           "cdboostable": false,
           "cdscope": "local"
         }
+      ],
+      "selfboost": [ 
+      {
+        "label": "Phantom Fear (Boost)",
+        "dmgmult": 1.25,
+        "duration": 5,
+        "everynthattack": 17,
+        "uptime": true
+        } 
       ]
     }
   },
@@ -7204,6 +7223,7 @@
     "placements": 2,
     "attackType": "Mutli",
     "obtainment": "S1 Free Pass Tier 30",
+    "basenodps": true,
     "levels": [
       {
         "level": 1,
@@ -10612,6 +10632,7 @@
     "placements": 3,
     "attackType": "No Type",
     "obtainment": "Halloween25, Pet Evo. 1-Mummy Freddy Pet and 10-Ghost Bonnie Pets. Soul Summons, Rare 30%",
+    "basenodps": true,
     "levels": [
       {
         "level": 1,

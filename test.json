@@ -7213,7 +7213,7 @@
          "dots": [
         {
           "label": "Faz-Metal-Jacket",
-          "pctofdamage": 1.1,
+          "pctofdamage": 0.1,
           "durationsec": 1,
           "everynthattack": 1,
           "stacks": 3

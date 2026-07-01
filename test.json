@@ -5916,7 +5916,7 @@
     "passiveDamage": {
       "dots": [
         {
-          "label": "Phantom Fear DoT",
+          "label": "Phantom Fear (DoT)",
           "pctofdamage": 0.5,
           "durationsec": 5,
           "stacks": 2,
@@ -10661,7 +10661,7 @@
       "selfboost": [
         {
           "label": "Overwhelming Horde (maxed)",
-          "rngmult": 1.1
+          "dmgmult": 1.1
         }
       ]
     }

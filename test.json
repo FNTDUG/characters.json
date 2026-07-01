@@ -1530,11 +1530,11 @@
       },
       {
         "title": "Alignment 2: Orion's Belt",
-        "text": "Astral Bonnie grants all units +3% range and +2% damage per unit in range. Caps at +45% range and +30% damage."
+        "text": "Grants all units in range +2% Damage and +3% Range for every unit in range (+30% Damage and +45% Range max)."
       },
       {
         "title": "Alignment 3: Hercules",
-        "text": "Astral Bonnie gains +1.5% damage for each enemy currently on the map."
+        "text": "Astral Bonnie gains +1.5% Damage for each enemy currently on the map."
       }
     ],
     "skins": [

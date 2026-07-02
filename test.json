@@ -9091,6 +9091,14 @@
           "cdmult": 0.95,
           "dmgmult": 1.3
         }
+      ],
+      "slows": [
+        {
+          "label": "Vengeful Spirit (Slow)",
+          "pct": 0.2,
+          "duration": 5,
+          "everynthattack": 1
+        }
       ]
     }
   },

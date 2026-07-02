@@ -488,23 +488,30 @@
     "passiveDamage": {
       "selfboost": [
         {
-          "label": "Nightmarish Cry (maxed)",
+          "label": "Nightmarish Cry (Maxed)",
           "dmgmult": 1.75,
           "duration": 10,
           "cd": 145,
           "uptime": true
         },
         {
-          "label": "Darkest Eclipse",
+          "label": "Eclipse (Boost)",
           "dmgmult": 1.25,
           "everynthattack": 10,
           "duration": 30
         },
         {
-          "label": "Feeding the Fear (maxed)",
-          "dmgmult": 2.5,
-          "rngmult": 1.5,
-          "cdmult": 0.95
+          "label": "Feeding the Fear (Maxed)",
+          "dmgmult": 1.5,
+          "cdmult": 0.95,
+        }
+      ],
+      "slows": [
+        {
+          "label": "Eclipse (Slow)",
+          "pct": 0.25,
+          "everynthattack": 10,
+          "duration": 30
         }
       ]
     }
@@ -1115,10 +1122,20 @@
     "passiveDamage": {
       "selfboost": [
         {
-          "label": "Thermal Runaway",
+          "label": "Thermal (Wither)",
           "dmgmult": 1.25,
           "duration": 8,
           "cd": 30,
+          "uptime": true,
+          "cdscope": "local"
+        }
+      ],
+      "slows": [
+        {
+          "label": "Thermal (Slow)",
+          "pct": 0.10,
+          "cd": 30,
+          "duration": 8,
           "uptime": true,
           "cdscope": "local"
         }
@@ -3445,7 +3462,18 @@
         "title": "Serpent Grasp",
         "text": "Every 5th attack, Serpent Endo throws his chain on enemies in a 180° Cone, inflicting 20% Slow for 3s."
       }
-    ]
+    ],
+    "passivedamage" {
+    "slows": [
+        {
+          "label": "Soft-Served (Slow)",
+          "pct": 0.2,
+          "everynthattack": 5,
+          "duration": 3,
+          "uptime": true
+        }
+      ]
+    } 
   },
   {
     "name": "Spring Duo",
@@ -4406,11 +4434,22 @@
     "passiveDamage": {
       "selfboost": [
         {
-          "label": "Decode",
+          "label": "Decode (Wither)",
           "dmgmult": 1.15,
           "duration": 8,
           "cd": 45,
-          "uptime": true
+          "uptime": true,
+          "cdscope": "local"
+        }
+      ],
+      "slows": [
+        {
+          "label": "Decode (Slow)",
+          "pct": 0.15,
+          "cd": 45,
+          "duration": 8,
+          "uptime": true,
+          "cdscope": "local"
         }
       ]
     }
@@ -4566,8 +4605,8 @@
     "passiveDamage": {
       "periodic": [
         {
-          "label": "Leviathan’s Call (Wave)",
-          "pctofdamage": 1.8,
+          "label": "Call (Wave)",
+          "pctofdamage": 0.8,
           "hits": 1,
           "cd": 25.0,
           "cdboostable": false,
@@ -4576,8 +4615,18 @@
       ],
       "selfboost": [
         {
-          "label": "Leviathan’s Call (Boost)",
+          "label": "Call (Boost)",
           "dmgmult": 1.25
+        }
+      ],
+      "slows": [
+        {
+          "label": "Call (Slow)",
+          "pct": 0.30,
+          "cd": 25,
+          "duration": 4,
+          "uptime": true,
+          "cdscope": "local"
         }
       ]
     }
@@ -9094,10 +9143,8 @@
       ],
       "slows": [
         {
-          "label": "Vengeful Spirit (Slow)",
-          "pct": 0.2,
-          "duration": 5,
-          "everynthattack": 1
+          "label": "Vengeful (Slow)",
+          "pct": 0.2
         }
       ]
     }
@@ -9388,6 +9435,15 @@
           "healthpctofdamage": 0.6,
           "spawncd": 15,
           "spawncdboostable": false
+        }
+      ],
+      "slows": [
+        {
+          "label": "Gift of Life (Slow)",
+          "pct": 0.20,
+          "cd": 15,
+          "duration": 5,
+          "uptime": true
         }
       ]
     }
@@ -11349,14 +11405,24 @@
     "passiveDamage": {
       "periodic": [
         {
-          "label": "Tidal Wave",
+          "label": "Tidal Wave (Hit)",
           "pctofdamage": 0.5,
           "hits": 1,
-          "cd": 10.0,
+          "cd": 35,
           "cdboostable": false,
           "cdscope": "local"
         }
-      ]
+      ],
+      "slows": [
+        {
+          "label": "Tidal Wave (Slow)",
+          "pct": 0.105,
+          "cd": 35,
+          "duration": 5,
+          "uptime": true,
+          "cdscope": "local"
+        }
+      ] 
     }
   },
   {
@@ -11749,7 +11815,7 @@
     "passiveDamage": {
       "dots": [
         {
-          "label": "Soft-Served",
+          "label": "Soft-Served (DMG)",
           "pctofdamage": 0.05,
           "durationsec": 1.0,
           "cd": 35,
@@ -12015,11 +12081,21 @@
     "passiveDamage": {
       "selfboost": [
         {
-          "label": "Sweet Treat",
+          "label": "Sweet Treat (DMG)",
           "dmgmult": 2.5,
           "duration": 5,
           "cd": 150,
           "uptime": true
+        }
+      ],
+      "slows": [
+        {
+          "label": "Sweet Treat (Slow)",
+          "pct": 0.3,
+          "cd": 150,
+          "duration": 5,
+          "uptime": true,
+          "cdscope": "local"
         }
       ]
     }
@@ -17962,6 +18038,14 @@
           "duration": 37,
           "cd": 90,
           "uptime": true
+        }
+      ],
+      "slows": [
+        {
+          "label": "Persistent Vines",
+          "pct": 0.30,
+          "cd": 30,
+          "duration": 15
         }
       ],
       "summons": [

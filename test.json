@@ -3466,7 +3466,7 @@
     "passiveDamage": {
     "slows": [
         {
-          "label": "Soft-Served (Slow)",
+          "label": "Grasp (Slow)",
           "pct": 0.2,
           "everynthattack": 5,
           "duration": 3,

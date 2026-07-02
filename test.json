@@ -508,7 +508,7 @@
       ],
       "stuns": [
       {
-        "label": "Nightmarish Cry (KB)",
+        "label": "Nightmarish Cry (Stun)",
         "cd": 145,
         "duration": 10,
         "cdboostable": false,
@@ -18243,7 +18243,7 @@
       ],
       "slows": [
         {
-          "label": "Persistent Vines (DMG)",
+          "label": "Persistent Vines (Slow)",
           "pct": 0.30,
           "cd": 30,
           "duration": 15

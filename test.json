@@ -456,7 +456,7 @@
     "passives": [
       {
         "title": "Nightmarish Cry",
-        "text": "Stun all current enemies and all other units gain +75% CD for 10s. During this time, Nightmare Fredbear can attack anywhere on the map and deals 1%-75% increased damage based on distance from this unit (Upgrade 19+, Global CD: 145s).",
+        "text": "Stun all current enemies for 10s, and all other units gain +75% CD for 10s. During this time, Nightmare Fredbear can attack anywhere on the map and deals 1%-75% increased damage based on distance from this unit (Upgrade 19+, Global CD: 145s).",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-mar-16-2026-23-33-30-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
       },
       {
@@ -506,6 +506,16 @@
           "cdmult": 0.95
         }
       ],
+      "stuns": [
+      {
+        "label": "Nightmarish Cry (KB)",
+        "cd": 145,
+        "duration": 10,
+        "cdboostable": false,
+        "cdscope": "local",
+        "uptime": true
+         }
+        ],
       "slows": [
         {
           "label": "Eclipse (Slow)",
@@ -2255,7 +2265,7 @@
     "passives": [
       {
         "title": "Heckle",
-        "text": "The group of teenagers will start yelling, causing the enemies to be insecure. Deals 3 Knockback and 20% of this unit's damage every second. (Upgrade 1+, Global CD: 145s).",
+        "text": "The group of teenagers will start yelling, causing the enemies to be insecure for 30 seconds. Deals 3 Knockback and 20% of this unit's damage every second. (Upgrade 1+, Global CD: 145s).",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-mar-16-2026-23-35-46-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
       },
       {
@@ -2271,15 +2281,24 @@
       }
     ],
     "passiveDamage": {
-      "selfboost": [
+      "periodic": [
         {
-          "label": "Heckle",
-          "dmgmult": 1.2,
-          "duration": 30,
+          "label": "Heckle (DMG)",
+          "pctofdamage": 0.2,
+          "hits": 30,
           "cd": 145,
           "uptime": true
         }
       ],
+      "knockback": [
+      {
+        "label": "Heckle (KB)",
+        "cd": 145,
+        "tiles": 3,
+        "duration": 30,
+        "uptime": true
+      }
+    ],
       "onnthattack": [
         {
           "label": "Crying Cannon",
@@ -3317,7 +3336,20 @@
         "text": "Both Mangle heads scream at enemies in a Cone for 7s, stunning them for 3s. Nightmare Mangle cannot attack during these 7s. (Upgrade 1+, Global CD: 90s).",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-mar-16-2026-23-34-41-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
       }
-    ]
+    ],
+    "passiveDamage": {
+    "stuns": [
+      {
+        "label": "Static Cry",
+        "cd": 90,
+        "duration": 3,
+        "stun": 7,
+        "cdboostable": false,
+        "cdscope": "local",
+        "uptime": true
+        }
+      ]
+    }
   },
   {
     "name": "Shark Withered Foxy",
@@ -4244,7 +4276,16 @@
           "cd": 75,
           "uptime": true
         }
-      ]
+      ],
+      "knockback": [
+      {
+        "label": "Golden Head",
+        "cd": 75,
+        "tiles": 2,
+        "duration": 25,
+        "uptime": true
+      }
+     ]
     }
   },
   {
@@ -5295,6 +5336,16 @@
           "cd": 100,
           "uptime": true
         }
+      ],
+    "stuns": [
+      {
+        "label": "Static Cry",
+        "cd": 100,
+        "duration": 8,
+        "cdboostable": false,
+        "cdscope": "local",
+        "uptime": true
+        }
       ]
     }
   },
@@ -6163,7 +6214,18 @@
         "title": "Dismantle",
         "text": "Every 35s, Follow Me disables the least placed unit (excluding Boosters and Heroes) that has the highest Damage stat in range for 15s. During these 15s, Follow Me gains 75% of that unit's Damage and Knockback."
       }
-    ]
+    ],
+    "passiveDamage": {
+    "knockback": [
+      {
+        "label": "Dismantle (KB)",
+        "cd": 35,
+        "tiles": 1.5,
+        "duration": 15,
+        "uptime": true
+      }
+     ]
+    }
   },
   {
     "name": "Phantom BB",
@@ -8115,7 +8177,7 @@
     }
   },
   {
-    "name": "Withered Golden Freddy",
+    "name": "Withered ",
     "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/withered-golden-freddy-render-high.png",
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-33-47-gmt-0600-central-standard-time-high.png",
     "rarity": "nightmare",
@@ -8847,6 +8909,14 @@
       }
     ],
     "passiveDamage": {
+      "knockback": [
+      {
+        "label": "Passive 2",
+        "cd": 30,
+        "tiles": 5,
+        "uptime": true
+      }
+    ],
       "dots": [
         {
           "label": "passive 3 (DoT)",
@@ -9086,7 +9156,7 @@
     "passives": [
       {
         "title": "Shouldn't have killed me.",
-        "text": "Upon activation, knockback all enemies in range ignoring their current knockback lockout and buff all Neutral element units by +40% Damage and +20% Range for 120s. (Upgrade 18+, Local CD: 200s).",
+        "text": "Upon activation, knockback all enemies in range by 2 titles ignoring their current knockback lockout and buff all Neutral element units by +40% Damage and +20% Range for 120s. (Upgrade 18+, Local CD: 200s).",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-01-03-05-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347"
       },
       {
@@ -9127,7 +9197,7 @@
     "passiveDamage": {
       "selfboost": [
         {
-          "label": "Shouldn't have killed me",
+          "label": "killed me (Boost)",
           "dmgmult": 1.4,
           "rngmult": 1.2,
           "cd": 200,
@@ -9141,6 +9211,14 @@
           "dmgmult": 1.3
         }
       ],
+      "knockback": [
+      {
+        "label": "killed me (KB)",
+        "cd": 200,
+        "tiles": 2,
+        "externalCd": false
+      }
+    ],
       "slows": [
         {
           "label": "Vengeful (Slow)",
@@ -10511,7 +10589,16 @@
         "title": "Punishment of Evil",
         "text": "Attacks stun enemies for 1.8s and this unit does +35% damage to stunned enemies."
       }
-    ]
+    ],
+    "passiveDamage": {
+    "stuns": [
+      {
+        "label": "Punishment",
+        "everynthattack": 1,
+        "duration": 1.8
+        }
+      ]
+    }
   },
   {
     "name": "Movie Director Freddy",
@@ -10745,6 +10832,15 @@
           "cdscope": "local"
         }
       ],
+      "knockback": [
+      {
+        "label": "Buttered",
+        "cd": 24,
+        "tiles": 1,
+        "duration": 8,
+        "uptime": true
+      }
+    ],
       "selfboost": [
         {
           "label": "Sweet",
@@ -11624,6 +11720,16 @@
           "label": "Overcharge (Boost)",
           "dmgmult": 1.25
         }
+      ],
+      "stuns": [
+      {
+        "label": "Overcharge (Stun)",
+        "cd": 15,
+        "duration": 3,
+        "cdboostable": false,
+        "cdscope": "local",
+        "uptime": true
+        }
       ]
     }
   },
@@ -11903,7 +12009,19 @@
         "text": "The TV fires a bolt of electricity from its antennas at an enemy, stunning them for 2 seconds. The bolt then chains to up to 2 nearby enemies within 10 studs, stunning each of them for 1.5 seconds. (Upgrade 2+, Global CD: 20s)",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/butter-ability-high.png"
       }
-    ]
+    ],
+    "passiveDamage": {
+    "stuns": [
+      {
+        "label": "Power Surge",
+        "cd": 20,
+        "duration": 2,
+        "cdboostable": false,
+        "cdscope": "local",
+        "uptime": true
+        }
+      ]
+    }
   },
   {
     "name": "Ballora",
@@ -12385,6 +12503,13 @@
         "title": "Minireena's Push",
         "text": "Attacks knockback enemies."
       }
+    ],
+    "knockback": [
+      {
+        "label": "Push",
+        "everynth": 1,
+        "tiles": 1
+      }
     ]
   },
   {
@@ -12790,7 +12915,7 @@
           },
           {
             "title": "Coiling Combination [Shocker] [Upgrade 5+]",
-            "text": "Every 6 s, 4 random enemies are attacked from below by coils, each taking damage equal to 40% of this unit’s damage and Stunning them for 1.5s."
+            "text": "Every 6s, 4 random enemies are attacked from below by coils, each taking damage equal to 40% of this unit’s damage and Stunning them for 1.5s."
           },
           {
             "title": "Tanglement [Shocker] [Upgrade 13+]",
@@ -12804,12 +12929,22 @@
         "passiveDamage": {
           "periodic": [
             {
-              "label": "Coiling Combination (Shocker)",
+              "label": "Coiling (Shocker, DMG)",
               "pctofdamage": 0.4,
               "hits": 4,
               "cd": 6.0,
               "cdboostable": false,
               "cdscope": "global"
+            }
+          ],
+       "stuns": [
+      {
+        "label": "Coiling (Shocker, KB)",
+        "cd": 6,
+        "duration": 1.5,
+        "cdboostable": false,
+        "cdscope": "local",
+        "uptime": true
             }
           ]
         }
@@ -12897,12 +13032,22 @@
     "passiveDamage": {
       "periodic": [
         {
-          "label": "rockfall (1)",
+          "label": "Landslide (1)",
           "pctofdamage": 1.5,
           "hits": 1,
           "cd": 60.0,
           "cdboostable": false,
           "cdscope": "global"
+        }
+      ],
+    "stuns": [
+      {
+        "label": "Landslide (Stun)",
+        "cd": 60,
+        "externalCd": false,
+        "cdboostable": false,
+        "cdscope": "global",
+        "duration": 1.2
         }
       ]
     }
@@ -13000,6 +13145,14 @@
       }
     ],
     "passiveDamage": {
+      "knockback": [
+      {
+        "label": "Call of the Storm (KB)",
+        "cd": 30,
+        "tiles": 1,
+        "uptime": true
+      }
+    ],
       "periodic": [
         {
           "label": "Call of the Storm (Enemies)",
@@ -14794,12 +14947,22 @@
           "cdscope": "local"
         },
         {
-          "label": "Bombs Away",
+          "label": "Bombs Away (DMG)",
           "pctofdamage": 1.4,
           "hits": 1,
           "cd": 10.5,
           "cdboostable": false,
           "cdscope": "local"
+        }
+      ],
+      "stuns": [
+      {
+        "label": "Bombs Away (Stun)",
+        "cd": 10.5,
+        "duration": 1.5,
+        "cdboostable": false,
+        "cdscope": "local",
+        "uptime": true
         }
       ]
     }
@@ -15535,6 +15698,16 @@
           "cd": 75.0,
           "cdboostable": false,
           "cdscope": "global"
+        }
+      ],
+      "stuns": [
+      {
+        "label": "LEFTE (Stun)",
+        "cd": 75,
+        "duration": 5,
+        "cdboostable": false,
+        "cdscope": "local",
+        "uptime": true
         }
       ],
       "selfboost": [
@@ -16691,7 +16864,16 @@
         "title": "Trash Gang",
         "text": "If all other Trash Gang members are in range, all Trash Gang members share combined damage and range. All Trash Gang members use the average cooldown of everyone."
       }
-    ]
+    ],
+    "passiveDamage": {
+    "stuns": [
+      {
+        "label": "Clank",
+        "cd": 15,
+        "duration": 1.5
+        }
+      ]
+    }
   },
   {
     "name": "Rockstar Chica",
@@ -16745,7 +16927,16 @@
         "title": "Wet Floor Sign!",
         "text": "Every 10s, place a sign on the track that Stuns enemies that contact it for 1s (max of 3 signs)."
       }
-    ]
+    ],
+    "passiveDamage": {
+    "stuns": [
+      {
+        "label": "Floor Sign",
+        "cd": 10,
+        "duration": 1
+        }
+      ]
+    }
   },
   {
     "name": "Sole Survivor Withered Bonnie",
@@ -18040,9 +18231,19 @@
           "uptime": true
         }
       ],
+      "stuns": [
+      {
+        "label": "Persistent Vines (Stun)",
+        "cd": 30,
+        "duration": 1.5,
+        "cdboostable": false,
+        "cdscope": "local",
+        "uptime": true
+        }
+      ],
       "slows": [
         {
-          "label": "Persistent Vines",
+          "label": "Persistent Vines (DMG)",
           "pct": 0.30,
           "cd": 30,
           "duration": 15
@@ -18162,14 +18363,30 @@
           "uptime": true
         }
       ],
+      "stuns": [
+      {
+        "label": "Tide Change (Stun)",
+        "cd": 30,
+        "duration": 2,
+        "cdboostable": false,
+        "cdscope": "local",
+        "uptime": true
+        }
+      ],
       "periodic": [
         {
-          "label": "Tide Change",
+          "label": "Tide Change (DMG)",
           "pctofdamage": 2,
           "hits": 1,
           "cd": 30.0,
           "cdboostable": false,
           "cdscope": "global"
+        },
+        {
+          "label": "Eternal Flow",
+          "pctofdamage": 0.2,
+          "hits": 1,
+          "everynthattack": 2
         }
       ]
     }
@@ -18640,11 +18857,23 @@
         {
           "label": "Assorted Parts (Maxed)",
           "dmgmult": 2.5
+        },
+        {
+          "label": "Pan Hand (Boost)",
+          "dmgmult": 0.2,
+          "everynthattack": 2
+        }
+      ],
+      "stuns": [
+      {
+        "label": "Pan Hand (Stun)",
+        "everynthattack": 2,
+        "duration": 1.2
         }
       ],
       "dots": [
         {
-          "label": "Flamethrower Burn",
+          "label": "Flamethrower (Burn)",
           "pctofdamage": 0.5,
           "durationsec": 5,
           "everynthattack": 2

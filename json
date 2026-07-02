@@ -999,6 +999,7 @@
     "placements": 2,
     "attackType": "Single",
     "obtainment": "S3 Free Pass Tier 30",
+    "basenodps": true,
     "levels": [
       {
         "level": 1,
@@ -10793,22 +10794,22 @@
     "levels": [
       {
         "level": 1,
-        "income": 200,
+        "income": 250,
         "cost": 450
       },
       {
         "level": 2,
-        "income": 450,
+        "income": 500,
         "cost": 1350
       },
       {
         "level": 3,
-        "income": 1000,
+        "income": 1250,
         "cost": 2500
       },
       {
         "level": 4,
-        "income": 1600,
+        "income": 1750,
         "cost": 4500
       }
     ],
@@ -18442,7 +18443,14 @@
         {
           "label": "Data (Hit Bonus)",
           "dmgmult": 2.1
-        }
+        },
+        {
+          "label": "Data (Boost)",
+          "dmgmult": 1.5,
+          "duration": 5,
+          "cd": 10,
+          "cdboostable": false
+        },
       ],
       "dots": [
         {

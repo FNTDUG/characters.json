@@ -368,19 +368,21 @@
       "Kronos Endo Freddy": "Great AOE DPS and absurd Stun potential when his passives are maxed out. Additionally provides decent boosts to Rust units, minor boosts to non-Rust units, and can reapply debuffs to enemies.",
       "Frozen King Foxy": "Great choice as a supporting unit in most teams with 25% AOE Slow and 20% Wither for Water element units.",
       "Dragon Endo 01": "Great DPS and DoT, additionally increasing the DoT for other Fire units and having global DoT with his Active.",
+      "Nature Reclaimed Foxy": "Spectacular support, giving all units in range +30% Damage, +25% Range and -5% CD, on top of boosting your base's health. He also does fair DPS by himself with some bonus DPS to Bosses.",
       "Golden Freddy": "Great boosting in Endless (up to +30% damage per Golden Freddy), good DPS, and great stall with 20% Slow on attack and Knockback with his Active.",
       "Frostmancer Withered Bonnie": "Spectacular stall unit with varied AOE Slow (0%-45%, varies with RNG) and Single target 1s Stun (7s CD)."
     },
     "starter": {
       "Golden Freddy": "Great boosting in Endless (up to +30% damage per Golden Freddy), good DPS, and great stall with 20% Slow on attack and Knockback with his Active.",
       "Endo 01": "A good choice for a Starter as he gives all units in his range +15% Damage and -3% CD, making him useful throughout the whole match.",
-      "Rockin Bonnie": "A great choice for a Starter as he gives all units in his range -11% CD, making him quite throughout the match.",
+      "Rockin Bonnie": "A good choice for a Starter as he gives all units in his range -11% CD, making him quite throughout the match.",
       "Undead Chica": "Creates a steady stream of strong Summons.",
       "Bonnie": "High range Starter that can be used as a booster due to being Electric with high placements, effectively giving all nearby units -4% CD if all Bonnies are placed near each other. Spectacular in Grind Metas",
       "Foxy": "Fair DPS Starter that can be used as a booster due to being Water with high placements, effectively giving all nearby units +15% Range if all Foxies are placed near each other. Spectacular in Water focused teams."
     },
     "support": {
-      "Candy Cadet": "Gives +30% Damage and +10% Range to all other units in range when in Red Candy mode, then +10% Damage and +30% Range to all other units in range when in Yellow Candy mode (mode chosen on placement). Does particularly well when using his Orphans story, doubling his boosts for 30s. Boosts do not stack with other Candy Cadets.",
+      "Candy Cadet": "Gives +30% Damage and +10% Range to all units in range when in Red Candy mode, then +10% Damage and +30% Range to all units in range when in Yellow Candy mode (mode chosen on placement). Does particularly well when using his Orphans story, doubling his boosts for 30s. Boosts do not stack with other Candy Cadets.",
+      "Nature Reclaimed Foxy": "Gives all units in range +30% Damage, +25% Range and -5% CD. Additionally increases base health, allowing you to survive longer against normal enemies.",
       "Psychic Friend Fredbear": "Boosts units based on the amount of Stocks (HP) you've lost. All units in range gain -5% CD if no Stocks are lost, +15% Damage and +20% Range if you've lost 1 Stock, and +30% Damage, +25% Range, and -2.5% CD if you've lost 2 Stocks.",
       "Golden Cupcake": "Gains stacks based on the amount of Light units on your team, up to 3. Gives all units in range +10% Damage and +6% Range per stack (max of +30% Damage and +18% Range)",
       "Spring Duo": "Cycles between two sets of boosts, giving +10% Damage, +30% Range, and -5% CD when in Spring Bonnie mode, and +40% Damage and +15% Range in Fredbear mode",

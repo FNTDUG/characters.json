@@ -60,7 +60,7 @@
         { "name": "Golden Freddy", "label": "$1k", "byte": "Pearl", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Trash o Tron", "caption": "" },
         { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "enchant": "Vengeance",   "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
-        { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Amalgam", "caption": "" },
+        { "name": "Gaia Chica", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Amalgam", "caption": "" },
         { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "Golden Cupcake", "caption": "" }
       ]

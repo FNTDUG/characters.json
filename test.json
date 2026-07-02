@@ -8913,8 +8913,7 @@
       {
         "label": "Passive 2",
         "cd": 30,
-        "tiles": 5,
-        "uptime": true
+        "tiles": 5
       }
     ],
       "dots": [

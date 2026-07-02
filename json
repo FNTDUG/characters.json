@@ -6788,22 +6788,7 @@
         "title": "Sword Lunge",
         "text": "Upon attacking a new enemy, this unit does +75% Damage and applies 30% Bleed for 2s (15% Damage per tick)."
       }
-    ],
-    "passiveDamage": {
-      "selfboost": [
-        {
-          "label": "Sword Lunge (hit bonus)",
-          "dmgmult": 1.75
-        }
-      ],
-      "dots": [
-        {
-          "label": "Sword Lunge (hit DoT)",
-          "pctofdamage": 0.3,
-          "durationsec": 2
-        }
-      ]
-    }
+    ]
   },
   {
     "name": "BBnJ",
@@ -18435,15 +18420,11 @@
       },
       {
         "title": "Go Phishing",
-        "text": "Enemies hit by Corrupted Data permanently generate +20% income and generate +40% income while this unit is hitting them. If the enemy is a Tank, apply a permanent 5% Bleed to that unit."
+        "text": "Enemies hit by Corrupted Data permanently generate +20% income and generate +40% income while this unit is hitting them. If the enemy is a Tank, apply a permanent 5% Bleed to that enemy."
       }
     ],
     "passiveDamage": {
       "selfboost": [
-        {
-          "label": "Data (Hit Bonus)",
-          "dmgmult": 2.1
-        },
         {
           "label": "Data (Boost)",
           "dmgmult": 1.5,

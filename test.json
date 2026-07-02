@@ -12939,7 +12939,7 @@
           ],
        "stuns": [
       {
-        "label": "Coiling (Shocker, KB)",
+        "label": "Coiling (Shocker, Stun)",
         "cd": 6,
         "duration": 1.5,
         "cdboostable": false,

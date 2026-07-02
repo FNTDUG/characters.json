@@ -6949,7 +6949,7 @@
           "healthpctofdamage": 1.2,
           "spawncd": 5,
           "spawncdboostable": false,
-          "maxactive": 12
+          "maxactive": 4
         }
       ]
     }

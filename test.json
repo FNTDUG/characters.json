@@ -503,7 +503,7 @@
         {
           "label": "Feeding the Fear (Maxed)",
           "dmgmult": 1.5,
-          "cdmult": 0.95,
+          "cdmult": 0.95
         }
       ],
       "slows": [
@@ -1685,7 +1685,7 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-17-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
     "rarity": "secret",
     "typeMain": "Endgame",
-    "typetag": [
+    "typeTags": [
       "Support"
     ],
     "element": "Light",
@@ -3463,7 +3463,7 @@
         "text": "Every 5th attack, Serpent Endo throws his chain on enemies in a 180° Cone, inflicting 20% Slow for 3s."
       }
     ],
-    "passivedamage" {
+    "passiveDamage": {
     "slows": [
         {
           "label": "Soft-Served (Slow)",
@@ -3473,7 +3473,7 @@
           "uptime": true
         }
       ]
-    } 
+    }
   },
   {
     "name": "Spring Duo",
@@ -11422,7 +11422,7 @@
           "uptime": true,
           "cdscope": "local"
         }
-      ] 
+      ]
     }
   },
   {

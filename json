@@ -11595,7 +11595,7 @@
     "passives": [
       {
         "title": "Digital Disruption",
-        "text": "Enemies within this unit's range are infected with Malware. Malware increases damage from DoT effects by 35% and increases stun duration from all sources by 15%. Each time a Malware-infected enemy is defeated, this unit's SPA cycles through -10%, -20%, -30%, then resets to base on the 4th kill."
+        "text": "Enemies within this unit's range are infected with Malware. Malware increases damage from DoT effects by 35% and increases stun duration from all sources by 15%. Each time a Malware-infected enemy is defeated, this unit's CD cycles through -10%, -20%, -30% boosts, then resets to base on the 4th kill."
       },
       {
         "title": "Hacked",
@@ -11608,7 +11608,16 @@
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/data-bolt-lolbit-high.png",
         "rarity": "secret"
       }
-    ]
+    ],
+    "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Disruption (Boost)",
+          "cdmult": 0.4,
+          "everynthattack": 4
+        }
+      ]
+    }
   },
   {
     "name": "Circus Baby",

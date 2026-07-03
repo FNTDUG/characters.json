@@ -11608,13 +11608,13 @@
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/data-bolt-lolbit-high.png",
         "rarity": "secret"
       }
-    ],
+    ]
     "passiveDamage": {
       "selfboost": [
         {
           "label": "Disruption (Boost)",
-          "cdmult": 0.4,
-          "everynthattack": 4
+          "cdmult": 0.85,
+          "uptime": false
         }
       ]
     }

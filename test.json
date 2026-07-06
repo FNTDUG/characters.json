@@ -18914,5 +18914,111 @@
         }
       ]
     }
+  },
+    {
+  "name": "Lore Keeper Shadow Bonnie",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1KBljE82m3pi6SVDckBOC8bnIysH529XX&sz=w500",
+  "imgShiny": "https://drive.google.com/thumbnail?id=1KBljE82m3pi6SVDckBOC8bnIysH529XX&sz=w500",
+  "rarity": "secret",
+  "typeMain": "Midgame-Endgame",
+  "typeTags": [
+    "Wither",
+    "Stun"
+  ],
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "The Tower Floor 50",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 4000,
+      "damage": 1645.2,
+      "type": "Circle",
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 1864.5,
+      "type": "Circle",
+      "cd": 3,
+      "range": 26
+    },
+    {
+      "level": 3,
+      "cost": 4000,
+      "damage": 2138.7,
+      "type": "Circle",
+      "cd": 3,
+      "range": 28
+    },
+    {
+      "level": 4,
+      "cost": 5500,
+      "damage": 2632.3,
+      "type": "Line",
+      "cd": 3.25,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 7000,
+      "damage": 2961.3,
+      "type": "Line",
+      "cd": 3.25,
+      "range": 30
+    },
+    {
+      "level": 6,
+      "cost": 8500,
+      "damage": 3290.4,
+      "type": "Line",
+      "cd": 3.25,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 10000,
+      "damage": 3948.4,
+      "type": "Cone 180°",
+      "cd": 3.5,
+      "range": 32
+    },
+    {
+      "level": 8,
+      "cost": 12500,
+      "damage": 4606.5,
+      "type": "Cone 180°",
+      "cd": 3.5,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Meticulous Study",
+      "text": "Enemies entering this unit's range for the first time are stunned for 3s and are inflicted with 25% wither for 30s"
+    },
+    {
+      "title": "Callings of the Past",
+      "text": "At the start of every game, 5 Missing Children's Posters are collected by Lore Keeper Shadow Bonnie. This Grants remnant based on the majority element on the team and applies its effect to all units of that element. <br>● Water: Attacks apply 5% slow, capping at 20%. <br>● Dark: Attacks apply 15% poison over 5s and cannot reapply until it ends. <br>● Nature: Grants +1 stock, then grants +1 bonus stock when nature units are placed, capping at +5 bonus stock. <br>● Rust: Attacks apply 10% wither for 5s and cannot reapply until it ends. <br>● Neutral: +15% crit rate and +20% crit damage. <br>● Fire: Attacks apply 20% more burn. <br>● Electric: Attacks stun for 0.75s and cannot bybass stun lock."
+    }
+  ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Meticulous Study",
+          "dmgmult": 1.25
+        },
+      ],
+      "dots": [
+        {
+          "label": "Callings of the Past (Dark)",
+          "pctofdamage": 0.15,
+          "durationsec": 5,
+          "everynthatattack": 2
+        }
+      ]
   }
 ]

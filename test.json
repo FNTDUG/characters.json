@@ -19017,7 +19017,7 @@
           "label": "Callings of the Past (Dark)",
           "pctofdamage": 0.15,
           "durationsec": 5,
-          "everynthatattack": 2
+          "everynthattack": 2
         }
       ]
   }

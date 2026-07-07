@@ -19008,20 +19008,14 @@
     }
   ],
   "passiveDamage": {
-      "selfboost": [
-        {
-          "label": "Meticulous Study",
-          "dmgmult": 1.25
-        }
-      ],
       "dots": [
         {
-          "label": "Callings of the Past (Dark)",
+          "label": "Callings (Dark)",
           "pctofdamage": 0.15,
           "durationsec": 5,
           "everynthattack": 2
-        }
-      ]
+      }
+    ]
   }
 }
 ]

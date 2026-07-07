@@ -18984,7 +18984,7 @@
       "level": 7,
       "cost": 10000,
       "damage": 1891.5,
-      "type": "Cone 180°",
+      "type": "Cone180°",
       "cd": 3.5,
       "range": 32
     },
@@ -18992,7 +18992,7 @@
       "level": 8,
       "cost": 12500,
       "damage": 2206.7,
-      "type": "Cone 180°",
+      "type": "Cone180°",
       "cd": 3.5,
       "range": 32
     }

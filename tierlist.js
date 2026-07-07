@@ -70,7 +70,7 @@
         "Mother Nature Ballora",
         "Showtime Freddy",
         "Springtrap",
-        "Mangle UP",
+        "Mangle",
         "Old Man Consequences",
         "Music Man",
         "Funtime Bonnie",
@@ -121,7 +121,6 @@
         "Puppet BUG",
         "Rockstar Foxy",
         "Sparky",
-        "Mangle",
         "Bear5",
         "Elizabeth",
         "Hacker King RWQFSFASXC",
@@ -265,7 +264,7 @@
     "support": {
       "ss": [
         "Candy Cadet",
-        "Nature Reclaimed Foy",
+        "Nature Reclaimed Foxy",
         "Psychic Friend Fredbear",
         "Golden Cupcake",
         "Spring Duo",

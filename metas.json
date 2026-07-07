@@ -34,7 +34,7 @@
       },
       {
         "pageTitle": "ELEMENT METAS",
-        "order": ["Water 1st", "Rust 2nd", "Nature 3rd", "Dark 4th", "Light 5th", "Neutral 6th", "Fire 7th", "Electricity 8th"]
+        "order": ["Water 1st", "Rust 2nd", "Dark 3rd", "Nature 4th", "Light 5th", "Neutral 6th", "Fire 7th", "Electricity 8th"]
       },
       {
         "pageTitle": "MULTIPLAYER META",
@@ -165,7 +165,17 @@
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
     },
-    "Nature 3rd": {
+    "Dark 3rd": {
+      "units": [
+        { "name": "Cloaked Sparky", "label": "$750", "byte": "Pearl", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Nightmare Fredbear", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Gaia Chica", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Afterbite Withered Golden Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" },
+        { "name": "Krampus Purple Guy", "label": "", "byte": "KABOOM!", "enchant": "Phantom", "replacement": "", "caption": "" }
+      ]
+    },
+    "Nature 4th": {
       "units": [
         { "name": "Barbarian Boy", "label": "$850", "byte": "Pearl", "enchant": "Phantom", "replacement": "", "caption": "Starter" },
         { "name": "Chipper", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
@@ -173,16 +183,6 @@
         { "name": "Mother Nature Ballora", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "El Chip", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" }
-      ]
-    },
-    "Dark 4th": {
-      "units": [
-        { "name": "Cloaked Sparky", "label": "$750", "byte": "Pearl", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Nightmare Fredbear", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Goodnight Plushtime", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Afterbite Withered Golden Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "replacement": "", "caption": "" },
-        { "name": "Krampus Purple Guy", "label": "", "byte": "KABOOM!", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
     },
     "Light 5th": {

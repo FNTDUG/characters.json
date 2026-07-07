@@ -18998,11 +18998,11 @@
   "passives": [
     {
       "title": "Meticulous Study",
-      "text": "Enemies entering this unit's range for the first time are stunned for 3s and are inflicted with 25% wither for 30s"
+      "text": "Enemies entering this unit's range for the first time are Stunned for 3s and are inflicted with 25% Wither for 30s."
     },
     {
       "title": "Callings of the Past",
-      "text": "At the start of every game, 5 Missing Children's Posters are collected by Lore Keeper Shadow Bonnie. This Grants remnant based on the majority element on the team and applies its effect to all units of that element. <br>● Water: Attacks apply 5% slow, capping at 20%. <br>● Dark: Attacks apply 15% poison over 5s and cannot reapply until it ends. <br>● Nature: Grants +1 stock, then grants +1 bonus stock when nature units are placed, capping at +5 bonus stock. <br>● Rust: Attacks apply 10% wither for 5s and cannot reapply until it ends. <br>● Neutral: +15% crit rate and +20% crit damage. <br>● Fire: Attacks apply 20% more burn. <br>● Electric: Attacks stun for 0.75s and cannot bybass stun lock."
+      "text": "Lorekeeper grants different boosts to the team based on the main element of your team that affect units of that element. <br>● Water: Attacks apply 5% Slow (20% max). <br>● Dark: Attacks apply 15% Poison for 5s that can't be reapplied until it ends. <br>● Nature: Grants +1 Stock, then grants +1 bonus Stock when nature units are placed (+5 Stocks max). <br>● Rust: Attacks apply 10% Wither for 5s that can't be reapplied until it ends. <br>● Neutral: +15% crit rate and +20% crit damage. <br>● Fire: Attacks apply +20% more Burn. <br>● Electric: Attacks Stun for 0.75s (does not bypass lockout)."
     }
   ],
   "passiveDamage": {

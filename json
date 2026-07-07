@@ -19004,7 +19004,7 @@
     },
     {
       "title": "Callings of the Past",
-      "text": "Lorekeeper grants different boosts to the team based on the main element of your team that affect units of that element. <br>● Water: Attacks apply 5% Slow (20% max). <br>● Dark: Attacks apply 15% Poison for 5s that can't be reapplied until it ends. <br>● Nature: Grants +1 Stock, then grants +1 bonus Stock when nature units are placed (+5 Stocks max). <br>● Rust: Attacks apply 10% Wither for 5s that can't be reapplied until it ends. <br>● Neutral: +15% crit rate and +20% crit damage. <br>● Fire: Attacks apply +20% more Burn. <br>● Electric: Attacks Stun for 0.75s (does not bypass lockout)."
+      "text": "Lorekeeper grants different boosts to the team based on the main element of your team that affect units of that element. <br>● Water: Attacks apply 5% Slow (20% max). <br>● Dark: Attacks apply 15% Poison for 5s that can't be reapplied until it ends. <br>● Nature: Grants +1 Stock, then grants +1 bonus Stock when nature units are placed (+5 Stocks max). <br>● Rust: Attacks apply 10% Wither for 5s that can't be reapplied until it ends. <br>● Light: Attacks 15% faster. <br>● Neutral: +15% crit rate and +20% crit damage. <br>● Fire: Attacks apply +20% more Burn. <br>● Electric: Attacks Stun for 0.75s (does not bypass lockout)."
     }
   ],
   "passiveDamage": {

@@ -9965,7 +9965,7 @@
         {
           "label": "Agony (Clones)",
           "healthpctofdamage": 2.5,
-          "spawncd": 40,
+          "spawncd": 58,
           "spawncdboostable": false,
           "cdscope": "local",
           "maxactive": 2

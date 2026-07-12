@@ -101,6 +101,13 @@
       '.meta-byte.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
       '.meta-byte-inner{width:100%;height:100%;border-radius:7px;overflow:hidden;background:rgba(34,34,34,0.85)}',
       '.meta-byte-inner img{width:100%;height:100%;object-fit:cover;display:block}',
+      '.meta-chip{position:absolute;bottom:2px;left:2px;z-index:2;aspect-ratio:1/1;' +
+        'width:clamp(16px,28%,54px);border-radius:9px;padding:2px;pointer-events:none}',
+      '.meta-chip.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
+      '.meta-chip-inner{width:100%;height:100%;border-radius:7px;overflow:hidden;background:rgba(34,34,34,0.85)}',
+      '.meta-chip-inner img{width:100%;height:100%;object-fit:cover;display:block}',
+      '.meta-chip.chip-mid-right{bottom:auto;left:auto;right:2px;top:50%;transform:translateY(-50%)}',
+      '.meta-chip.chip-bottom-right{left:auto;right:2px}',
       '.meta-enchant{position:absolute;top:2px;left:2px;z-index:2;aspect-ratio:1/1;' +
         'width:clamp(14px,24%,48px);border-radius:8px;padding:2px;pointer-events:none}',
       '.meta-enchant-inner{width:100%;height:100%;border-radius:6px;overflow:hidden;background:rgba(34,34,34,0.85)}',
@@ -128,6 +135,7 @@
       '.meta-clutter-btn:hover{background:rgba(246,155,85,0.12)}',
       '.meta-clutter-btn.cltr-off{border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.3)}',
       '.meta-clutter-off .meta-byte,' +
+      '.meta-clutter-off .meta-chip,' +
       '.meta-clutter-off .meta-enchant,' +
       '.meta-clutter-off .meta-replacement,' +
       '.meta-clutter-off .meta-label{display:none!important}',
@@ -173,6 +181,8 @@
         '.meta-card-inner{border-radius:6px}' +
         '.meta-byte{top:2px;right:2px;padding:1px;border-radius:6px}' +
         '.meta-byte-inner{border-radius:5px}' +
+        '.meta-chip{bottom:2px;left:2px;padding:1px;border-radius:6px}' +
+        '.meta-chip-inner{border-radius:5px}' +
         '.meta-enchant{top:2px;left:2px;padding:1px;border-radius:6px}' +
         '.meta-enchant-inner{border-radius:5px}' +
         '.meta-replacement{bottom:2px;right:2px;padding:1px;border-radius:6px}' +
@@ -273,6 +283,11 @@
       var bR = (byteData.rarity || '').toLowerCase();
       tipInner.appendChild(tipRow(getRarityBg(unitCfg.byte, bR), bR === 'shiny', byteData.url, 'Byte: ' + unitCfg.byte + (byteData.note ? '\n' + byteData.note : '')));
     }
+    var chipData = META_CFG.chips && META_CFG.chips[unitCfg.chip];
+    if (chipData) {
+      var chR = (chipData.rarity || '').toLowerCase();
+      tipInner.appendChild(tipRow(getRarityBg(unitCfg.chip, chR), chR === 'shiny', chipData.url, 'Chip: ' + unitCfg.chip + (chipData.note ? '\n' + chipData.note : '')));
+    }
     var enchData = META_CFG.enchants[unitCfg.enchant];
     if (enchData) {
       tipInner.appendChild(tipRow(enchData.color, false, enchData.url, 'Enchant: ' + unitCfg.enchant));
@@ -368,6 +383,24 @@
           if (isShiny) lO.style.backgroundSize = '200% 200%';
           var lI = document.createElement('div'); lI.className = 'meta-label-inner'; lI.textContent = unitCfg.label;
           lO.appendChild(lI); inner.appendChild(lO);
+        }
+
+        if (unitCfg.chip) {
+          var chipD = META_CFG.chips && META_CFG.chips[unitCfg.chip];
+          if (chipD) {
+            var chR = (chipD.rarity || '').toLowerCase(), chSh = chR === 'shiny';
+            var chipPosClass = '';
+            if (unitCfg.label) {
+              chipPosClass = unitCfg.replacement ? ' chip-mid-right' : ' chip-bottom-right';
+            }
+            var cW = document.createElement('div');
+            cW.className = 'meta-chip' + (chSh ? ' meta-shiny' : '') + chipPosClass;
+            cW.style.background = getRarityBg(unitCfg.chip, chR);
+            if (chSh) cW.style.backgroundSize = '200% 200%';
+            var cI = document.createElement('div'); cI.className = 'meta-chip-inner';
+            var cM = document.createElement('img'); cM.src = chipD.url; cM.alt = unitCfg.chip;
+            cI.appendChild(cM); cW.appendChild(cI); inner.appendChild(cW);
+          }
         }
 
         card.appendChild(inner);
@@ -500,6 +533,7 @@
           logoUrl:  '', siteUrl: '', background: '',
           bytes:    shared.bytes    || {},
           enchants: shared.enchants || {},
+          chips:    shared.chips    || {},
           units:    cfg.units       || []
         };
         reRenders.push(buildCardRow(row, META_CFG));
@@ -560,6 +594,7 @@
         background: shared.background || '',
         bytes:      shared.bytes      || {},
         enchants:   shared.enchants   || {},
+        chips:      shared.chips      || {},
         units:      cfg.units         || []
       };
       var rr = renderMeta(mountEl, META_CFG);

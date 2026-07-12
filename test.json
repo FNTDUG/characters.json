@@ -19086,8 +19086,8 @@
 },
 {
   "name": "Bombwork Cupcake",
-  "imgNormal": "",
-  "imgShiny": "",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-e2110cc052a73d59ae7423616dbeae08/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-7aa219330c5e3c2d3e661c66df2f1307/420/420/Image/Png/noFilter",
   "rarity": "secret",
   "typeMain": "Midgame",
   "element": "Fire",
@@ -19171,15 +19171,17 @@
 },
 {
   "name": "Arch Angler Toy Bonnie",
-  "imgNormal": "",
-  "imgShiny": "",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-d453ce0374b879a72ea4ff7d54e8bbab/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-ae3352f66185a9c0de2fe3a71e6c18f7/420/420/Image/Png/noFilter",
   "rarity": "secret",
-  "typeMain": "",
-  "typeTags": [],
+  "typeMain": "Midgame-Endgame",
+  "typeTags": [
+    "Support"
+  ],
   "element": "Water",
   "placements": 2,
-  "attackType": "",
-  "obtainment": "",
+  "attackType": "Line",
+  "obtainment": "Fisherman Toy Bonnie Evolution",
   "levels": [
     {
       "level": 1,
@@ -19193,7 +19195,6 @@
       "level": 2,
       "cost": 2500,
       "damage": 460,
-      "type": "Line",
       "cd": 4.8,
       "range": 18
     },
@@ -19201,7 +19202,6 @@
       "level": 3,
       "cost": 3000,
       "damage": 610,
-      "type": "Line",
       "cd": 4.8,
       "range": 20
     },
@@ -19209,7 +19209,6 @@
       "level": 4,
       "cost": 3750,
       "damage": 710,
-      "type": "Line",
       "cd": 4.5,
       "range": 22
     },
@@ -19217,7 +19216,6 @@
       "level": 5,
       "cost": 4500,
       "damage": 880,
-      "type": "Line",
       "cd": 4.5,
       "range": 24
     },
@@ -19225,7 +19223,6 @@
       "level": 6,
       "cost": 5000,
       "damage": 1100,
-      "type": "Line",
       "cd": 4.2,
       "range": 24
     }
@@ -19249,6 +19246,8 @@
           "cd": 4.2,
           "cdboostable": true,
           "cdscope": "local"
-        }, 
+        }
+      ]
+}
 }
 ]

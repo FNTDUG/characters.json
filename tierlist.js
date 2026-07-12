@@ -48,7 +48,7 @@
         "Nightmare Shadow Bonnie",
         "Starfarer Princess",
         "Lolbit",
-        "Lore Keeper Shadow Bonnie NEW",
+        "Lore Keeper Shadow Bonnie",
         "Henry Emily",
         "Foxy.exe",
         "Chipper",
@@ -60,6 +60,7 @@
         "Anti-Hero Mike",
         "Scraptrap",
         "War Machine Foxy",
+        "Party Never Ends Cupcake NEW",
         "Funtime Chica",
         "Devious Purple Guy",
         "Toy Maker Mangle",
@@ -67,10 +68,12 @@
         "Fazman",
         "Fallen Angel Nightmarionne",
         "Ignited Burst Withered Freddy",
+        "Bombwork Cupcake NEW",
         "Mother Nature Ballora",
         "Showtime Freddy",
         "Springtrap",
         "Mangle",
+        "Arch Angler Toy Bonnie NEW",
         "Old Man Consequences",
         "Music Man",
         "Funtime Bonnie",
@@ -273,6 +276,7 @@
       "s": [
         "Starfarer Princess",
         "Kronos Endo Freddy",
+        "Party Never Ends Cupcake NEW",
         "Scarecrow Freddy",
         "Funtime Foxy",
         "Animdude",
@@ -298,7 +302,7 @@
         "Nightmare Fredbear",
         "Old Man Consequences",
         "Frozen King Foxy",
-        "Lore Keeper Shadow Bonnie NEW",
+        "Lore Keeper Shadow Bonnie",
         "Springtrap",
         "Funtime Chica",
         "Nightmare Chica",
@@ -320,7 +324,8 @@
         "Headless Horseman Mangle",
         "Lich Shadow Bonnie",
         "Shadow Knight Freddy",
-        "Bear5"
+        "Bear5",
+        "Arch Angler Toy Bonnie NEW"
       ]
     },
     "stun": {
@@ -349,7 +354,7 @@
       ],
       "b": [
         "Landslide Funtime Foxy",
-        "Lore Keeper Shadow Bonnie NEW",
+        "Lore Keeper Shadow Bonnie",
         "Animdude",
         "Nightmare Mangle",
         "Yenndo"

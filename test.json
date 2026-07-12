@@ -1424,6 +1424,40 @@
         "url": "https://www.fntduserguide.com/_downloads/b822c6c6b27730929ccab08027b8b262"
       }
     ],
+    "balanceChanges": [
+  {
+    "date": "7/12/2026",
+    "changes": [
+      { "type": "buff",  "text": "+20% Damage<br>-10% Cooldown" },
+      { "type": "nerf",  "text": "-15% Range" },
+      { "type": "rework","text": "Passive reworked: now applies burn on every 3rd attack instead of on ability use" }
+    ]
+  },
+"balanceChanges": [
+  {
+    "date": "7/12/2026",
+    "changes": [
+      { "type": "buff",  "text": "+20% Damage<br>-10% Cooldown" },
+      { "type": "nerf",  "text": "-15% Range" },
+      { "type": "rework","text": "Passive reworked: now applies burn on every 3rd attack instead of on ability use" }
+    ]
+  },
+  {
+    "date": "5/1/2026",
+    "type": "nerf",
+    "text": "-25% Damage<br>-10% Range<br>Cooldown increased from 3s to 4s"
+  },
+  {
+    "date": "3/3/2026",
+    "type": "buff",
+    "text": "+15% Damage"
+  },
+  {
+    "date": "1/20/2026",
+    "type": "rework",
+    "text": "Unit completely reworked<br>New passive: summons a minion every 10 attacks<br>Base damage reduced by 30%<br>Cooldown reduced from 6s to 3s"
+  }
+],
     "levels": [
       {
         "level": 1,

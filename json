@@ -19187,7 +19187,6 @@
       "level": 1,
       "cost": 3000,
       "damage": 385,
-      "type": "Line",
       "cd": 5,
       "range": 16
     },

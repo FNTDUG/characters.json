@@ -1428,9 +1428,9 @@
       {
         "date": "7/12/2026",
         "changes": [
-          { "type": "buff",   "text": "Anti-regen 100%(was 40%)<br>-10% Cooldown" },
-          { "type": "nerf",   "text": "-15% Range" },
-          { "type": "rework", "text": "blank some type about whatever idk" }
+          { "type": "buff",   "text": "● Anti-regen 100% (was 40%)<br>● -10% Cooldown" },
+          { "type": "nerf",   "text": "● -15% Range" },
+          { "type": "rework", "text": "● blank some type about whatever idk" }
         ]
       }
     ],

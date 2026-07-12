@@ -19017,5 +19017,238 @@
         }
       ]
   }
+},
+{
+  "name": "Party Never Ends Cupcake",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-9d5929b29629e3bc28e1fe971c83c966/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-3bb8da7ff0252398f99de5961f2c23c4/420/420/Image/Png/noFilter",
+  "rarity": "secret",
+  "typeMain": "Starter-Midgame",
+  "typeTags": [
+    "Support",
+    "Summon"
+  ],
+  "element": "Neutral",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Cupcake Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 1000,
+      "damage": 100,
+      "cd": 15,
+      "range": 12
+    },
+    {
+      "level": 2,
+      "cost": 2000,
+      "damage": 125,
+      "cd": 15,
+      "range": 15
+    },
+    {
+      "level": 3,
+      "cost": 5000,
+      "damage": 150,
+      "cd": 15,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 50000,
+      "damage": 175,
+      "cd": 15,
+      "range": 20
+    }
+  ],
+  "passives": [
+    {
+      "title": "Varity Pack",
+      "text": "At max upgrade mimic the highest damage and range from nearby towers. Has a set cooldown of 15s. On kill summons 1 cupcake with 25% damage as health."
+    },
+    {
+      "title": "Birthday Boy",
+      "text": "Towers in range have their damage and range buffed by 15%, and cooldown reduced by 5%. Cupcake towers receive double this buff."
+    }
+  ],
+"passiveDamage": {
+      "summons": [
+        {
+          "label": "Cupcake",
+          "healthpctofdamage": 0.25,
+          "spawncd": 15,
+          "spawncdboostable": false,
+          "cdscope": "local"
+        }
+      ]
+  }
+},
+{
+  "name": "Bombwork Cupcake",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-e2110cc052a73d59ae7423616dbeae08/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-7aa219330c5e3c2d3e661c66df2f1307/420/420/Image/Png/noFilter",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "element": "Fire",
+  "placements": 2,
+  "attackType": "Circle",
+  "obtainment": "Clockwork Cupcake Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2000,
+      "damage": 380,
+      "cd": 3,
+      "range": 16
+    },
+    {
+      "level": 2,
+      "cost": 1500,
+      "damage": 420,
+      "cd": 3.3,
+      "range": 18
+    },
+    {
+      "level": 3,
+      "cost": 2000,
+      "damage": 480,
+      "cd": 3.3,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 2750,
+      "damage": 550,
+      "cd": 3.6,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 3500,
+      "damage": 650,
+      "cd": 3.6,
+      "range": 25
+    },
+    {
+      "level": 6,
+      "cost": 4500,
+      "damage": 800,
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 7,
+      "cost": 6000,
+      "damage": 950,
+      "cd": 4,
+      "range": 26
+    }
+  ],
+  "passives": [
+    {
+      "title": "Short Fuse",
+      "text": "Every 20s deal 200% of this unit's damage as Full AoE. Damage increases by 20% per Nature unit on the team. Timer decreases by 1.5s per Fire unit on the team. Every second gain +1% damage (Max 30%). If the team only has Nature and Fire units, gain +1.5% damage instead (Max 45%). If sold with max buff deal 300% of this unit's damage as Full AoE"
+    }
+  ],
+  "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Short Fuse",
+          "dmgmult": 1.45
+        }
+      ],
+      "Periodic": [
+        {
+          "label": "Short Fuse",
+          "pctofdamage": 2.0,
+          "cd": 15,
+          "cdboostable": false,
+          "cdscope": "local"
+        }
+      ]
+  }
+},
+{
+  "name": "Arch Angler Toy Bonnie",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-d453ce0374b879a72ea4ff7d54e8bbab/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-ae3352f66185a9c0de2fe3a71e6c18f7/420/420/Image/Png/noFilter",
+  "rarity": "secret",
+  "typeMain": "Midgame-Endgame",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Water",
+  "placements": 2,
+  "attackType": "Line",
+  "obtainment": "Fisherman Toy Bonnie Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 3000,
+      "damage": 385,
+      "type": "Line",
+      "cd": 5,
+      "range": 16
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 460,
+      "cd": 4.8,
+      "range": 18
+    },
+    {
+      "level": 3,
+      "cost": 3000,
+      "damage": 610,
+      "cd": 4.8,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 3750,
+      "damage": 710,
+      "cd": 4.5,
+      "range": 22
+    },
+    {
+      "level": 5,
+      "cost": 4500,
+      "damage": 880,
+      "cd": 4.5,
+      "range": 24
+    },
+    {
+      "level": 6,
+      "cost": 5000,
+      "damage": 1100,
+      "cd": 4.2,
+      "range": 24
+    }
+  ],
+  "passives": [
+    {
+      "title": "Shark Infested Waters",
+      "text": "Attacks apply 25% bleed over 5s. All shark towers perform a follow-up automatically on double this units cooldown, dealing 25% of their damage as bleed over 5s."
+    },
+    {
+      "title": "Sit for a while",
+      "text": "If Old Man Consequences is on the team this unit is free to place and receives double the buffs of Guiding Whistle."
+    }
+  ],
+  "passiveDamage": {
+      "dots": [
+        {
+          "label": "Infested Waters",
+          "pctofdamage": 0.25,
+          "durationsec": 5,
+          "cd": 4.2,
+          "cdboostable": true,
+          "cdscope": "local"
+        }
+      ]
 }
+}
+]
 ]

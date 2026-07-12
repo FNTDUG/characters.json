@@ -237,12 +237,12 @@
     },
       "Player 1": {
       "units": [
-        { "name": "Golden Freddy", "label": "", "byte": "UFO", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "Psychic Friend Fredbear", "label": "", "byte": "UFO", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "", "caption": "" },
-        { "name": "Nature Reclaimed Foxy", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Hijacked", "replacement": "", "caption": "" }
+        { "name": "Golden Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Psychic Friend Fredbear", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Candy Cadet", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" },
+        { "name": "Nature Reclaimed Foxy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Hijacked", "chip": "Eye Augmentation", "replacement": "", "caption": "" }
       ]
     },
       "Player 2": {

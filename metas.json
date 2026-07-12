@@ -17,7 +17,8 @@
     "enchants": {
       "Vengeance": { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-40-19-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347", "color": "#e87a00" },
       "Phantom":   { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-39-58-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347", "color": "#00ee00" },
-      "Investor": { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-39-48-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347", "color": "#6a5404"}
+      "Investor": { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-39-48-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347", "color": "#6a5404"},
+      "Hijacked": { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c1xcnu2-high.webp", "color": "##14D154"},
     },
 
     "chips": {
@@ -66,20 +67,20 @@
     },
     "Endless 6": {
       "units": [
-        { "name": "Golden Freddy", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Trash o Tron", "caption": "" },
-        { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "chip": "Blazing Fire", "enchant": "Vengeance",   "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
-        { "name": "Gaia Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Amalgam", "caption": "" },
+        { "name": "Golden Freddy", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Starter" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Trash o Tron", "caption": "" },
+        { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "chip": "Blazing Fire", "enchant": "Hijacked",   "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
+        { "name": "Gaia Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Amalgam", "caption": "" },
         { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Golden Cupcake", "caption": "" }
       ]
     },
     "Event Endless": {
       "units": [
-        { "name": "Golden Freddy", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation","enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Trash o Tron", "caption": "" },
-        { "name": "Gravelord Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance",   "replacement": "Amalgam", "caption": "" },
-        { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "chip": "Blazing Fire", "enchant": "Vengeance", "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
+        { "name": "Golden Freddy", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation","enchant": "Hijacked", "replacement": "", "caption": "Starter" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Trash o Tron", "caption": "" },
+        { "name": "Gravelord Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "Amalgam", "caption": "" },
+        { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "chip": "Blazing Fire", "enchant": "Hijacked", "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
         { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Golden Cupcake", "caption": "" }
       ]
@@ -87,7 +88,7 @@
     "Event Story Nightmare": {
       "units": [
         { "name": "Undead Chica", "label": "$600", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Phantom Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance",   "replacement": "", "caption": "" },
+        { "name": "Phantom Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "", "caption": "" },
         { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation","enchant": "Vengeance", "replacement": "Golden Cupcake", "caption": "" },
@@ -96,8 +97,8 @@
     },
     "Boss Raids": {
       "units": [
-        { "name": "Golden Freddy", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Trash o Tron", "caption": "" },
+        { "name": "Golden Freddy", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Starter" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengenace", "replacement": "Trash o Tron", "caption": "" },
         { "name": "Gravelord Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance",   "replacement": "Amalgam", "caption": "" },
         { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "chip": "Blazing Fire", "enchant": "Vengeance",   "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
         { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
@@ -156,30 +157,30 @@
     },
     "Water 1st": {
       "units": [
-        { "name": "Rockstar Chica", "label": "$750", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Old Man Consequences", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Yeti Oni Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Fathomless Withered Foxy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Frozen King Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Arch Angler Toy Bonnie", "label": "Free", "byte": "Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Old Man Consequences", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Yeti Oni Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Fathomless Withered Foxy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Frozen King Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]
     },
     "Rust 2nd": {
       "units": [
-        { "name": "Undead Chica", "label": "$600", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Michael Afton", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Purifier Mercenary Toy Chica", "label": "",  "byte": "The Box", "chip": "Blazing Fire", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Undead Chica", "label": "$600", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengenace", "replacement": "", "caption": "Starter" },
+        { "name": "Michael Afton", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Purifier Mercenary Toy Chica", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Molten Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Nature Reclaimed Foxy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" }
+        { "name": "Nature Reclaimed Foxy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]
     },
     "Dark 3rd": {
       "units": [
         { "name": "Cloaked Sparky", "label": "$750", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Nightmare Fredbear", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Gaia Chica", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Nightmare Fredbear", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Gaia Chica", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Afterbite Withered Golden Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" },
         { "name": "Krampus Purple Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
@@ -187,91 +188,91 @@
     "Nature 4th": {
       "units": [
         { "name": "Barbarian Boy", "label": "$850", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Starter" },
-        { "name": "Chipper", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Gaia Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Mother Nature Ballora", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "El Chip", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Chipper", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Gaia Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Mother Nature Ballora", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "El Chip", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]
     },
     "Light 5th": {
       "units": [
         { "name": "Party Glock Freddy", "label": "$750", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Puppet", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Lefty", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Puppet", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Lefty", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Starfarer Princess", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" },
         { "name": "Golden Cupcake", "label": "", "byte": "UFO", "enchant": "Phantom", "chip": "Eye Augmentation", "replacement": "", "caption": "" }
       ]
     },
     "Neutral 6th": {
       "units": [
-        { "name": "Golden Freddy", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Golden Freddy", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Starter" },
         { "name": "Purple Guy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Grinch Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Trash o Tron", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Trash o Tron", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Yenndo", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" },
-        { "name": "Spring Duo", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
+        { "name": "Spring Duo", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" }
       ]
     },
     "Fire 7th": {
       "units": [
         { "name": "Turkey Chica", "label": "$750", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Springtrap", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Headless Horseman Mangle", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Gravelord Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Springtrap", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "chip": "Blazing Fire", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Headless Horseman Mangle", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Gravelord Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Molten Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
     },
     "Electricity 8th": {
       "units": [
         { "name": "Endo 01", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Ennard", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Stormbound Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Phone Dude", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Lolbit", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Ennard", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Stormbound Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Phone Dude", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Lolbit", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengenace", "replacement": "", "caption": "" },
         { "name": "Scooped Michael", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]
     },
       "Player 1": {
       "units": [
-        { "name": "Golden Freddy", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Psychic Friend Fredbear", "label": "", "byte": "UFO", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Golden Freddy", "label": "", "byte": "UFO", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Psychic Friend Fredbear", "label": "", "byte": "UFO", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Candy Cadet", "label": "", "byte": "UFO", "enchant": "Phantom", "replacement": "", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "",  "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Vengeance", "replacement": "", "caption": "" }
+        { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "enchant": "Hijacked", "replacement": "", "caption": "" }
       ]
     },
       "Player 2": {
       "units": [
-        { "name": "Golden Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Starfarer Princess", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Golden Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Starfarer Princess", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Shark Withered Foxy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
+        { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" }
       ]
     },
       "Player 3": {
       "units": [
-        { "name": "Golden Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Golden Cupcake", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Golden Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Golden Cupcake", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" },
+        { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Shark Withered Foxy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
+        { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" }
       ]
     },
       "Player 4": {
       "units": [
-        { "name": "Golden Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Spring Duo", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Golden Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Spring Duo", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Lolbit", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Shark Withered Foxy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
+        { "name": "Fathomless Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" }
       ]
     }
   }

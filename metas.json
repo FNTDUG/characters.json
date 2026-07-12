@@ -18,7 +18,7 @@
       "Vengeance": { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-40-19-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347", "color": "#e87a00" },
       "Phantom":   { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-39-58-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347", "color": "#00ee00" },
       "Investor": { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-39-48-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347", "color": "#6a5404"},
-      "Hijacked": { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c1xcnu2-high.webp", "color": "##14D154"}
+      "Hijacked": { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c1xcnu2-high.webp", "color": "#14D154"}
     },
 
     "chips": {
@@ -157,7 +157,7 @@
     },
     "Water 1st": {
       "units": [
-        { "name": "Arch Angler Toy Bonnie", "label": "Free", "byte": "Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Arch Angler Toy Bonnie", "label": "Free", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Old Man Consequences", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Yeti Oni Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Fathomless Withered Foxy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },

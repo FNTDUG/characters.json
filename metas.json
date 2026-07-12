@@ -167,7 +167,7 @@
     },
     "Rust 2nd": {
       "units": [
-        { "name": "Undead Chica", "label": "$600", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengenace", "replacement": "", "caption": "Starter" },
+        { "name": "Undead Chica", "label": "$600", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Michael Afton", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Kronos Endo Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Purifier Mercenary Toy Chica", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },

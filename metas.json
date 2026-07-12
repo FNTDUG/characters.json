@@ -18,6 +18,15 @@
       "Vengeance": { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-40-19-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347", "color": "#e87a00" },
       "Phantom":   { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-39-58-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347", "color": "#00ee00" },
       "Investor": { "url": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-39-48-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347", "color": "#6a5404"}
+    },
+
+    "chips": {
+      "Overwhelming Power": { "url": "https://iili.io/C18yVoB.webp", "rarity": "secret", "note": "+15% DMG, +0.5% DMG per enemy in range (max of +5%)" },
+      "Rapid Strikes": { "url": "https://iili.io/C18y6KX.webp", "rarity": "secret", "note": "-5% CD, Followup DMG +25%, enemies take +15% DMG for 3s" },
+      "Crowd Culler": { "url": "https://iili.io/C18yn8G.webp", "rarity": "secret", "note": "+5% DMG per enemy in range (max of +25%" },
+      "Weak Point": { "url": "https://iili.io/C18yacu.webp", "rarity": "secret", "note": "+15% CritR, +30% CritD" },
+      "Eye Augmentation": { "url": "https://iili.io/C18yAnS.webp", "rarity": "secret", "note": "+15% RNG, +10% DMG" },
+      "Blazing Fire": { "url": "https://iili.io/C18ypi7.webp", "rarity": "secret", "note": "+20% DoT DMG, when burn is applied +20% DMG for 10s" }
     }
   },
 

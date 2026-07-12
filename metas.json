@@ -98,7 +98,7 @@
     "Boss Raids": {
       "units": [
         { "name": "Golden Freddy", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Starter" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengenace", "replacement": "Trash o Tron", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Trash o Tron", "caption": "" },
         { "name": "Gravelord Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance",   "replacement": "Amalgam", "caption": "" },
         { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "chip": "Blazing Fire", "enchant": "Vengeance",   "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
         { "name": "Deep Sea Calamity Endo", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },

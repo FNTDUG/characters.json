@@ -15279,7 +15279,7 @@
       {
         "date": "6/6/26",
         "changes": [
-          { "type": "buff",   "text": "Placement Cost 3.15k (was 900)" }
+          { "type": "nerf",   "text": "Placement Cost 3.15k (was 900)" }
         ]
       }
     ],

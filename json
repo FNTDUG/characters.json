@@ -9528,13 +9528,13 @@
       {
         "date": "6/6/26",
         "changes": [
-          { "type": "buff",   "text": "Full Kit rework" }
+          { "type": "rework",   "text": "● Full Kit rework" }
         ]
       },
       {
         "date": "6/14/26",
         "changes": [
-          { "type": "nerf",   "text": "Restless Soul DMG boost nerfed to +30% (was +75%)" }
+          { "type": "nerf",   "text": "● Restless Soul DMG boost +30% (was +75%)" }
         ]
       }
     ],

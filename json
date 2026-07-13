@@ -1599,7 +1599,7 @@
       },
       {
         "title": "Astral Sickness",
-        "text": "Regenerating enemies inside Astral Bonnie's range have their regeneration reduced by 15%. If Astral Bonnie hits one, that reduction becomes 40% for 3 seconds."
+        "text": "Regenerating enemies inside Astral Bonnie's range have their regeneration reduced by 15%. If Astral Bonnie hits one, its regeneration is removed permanently."
       },
       {
         "title": "Astral Alignment",

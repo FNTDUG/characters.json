@@ -7414,8 +7414,7 @@
           "label": "Explosive Lanterns (Trap)",
           "healthpctofdamage": 1.2,
           "spawncd": 5,
-          "spawncdboostable": false,
-          "maxactive": 4
+          "spawncdboostable": false
         }
       ]
     }

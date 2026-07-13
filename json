@@ -8271,7 +8271,7 @@
         "date": "2/7/26",
         "changes": [
           { "type": "buff",   "text": "● CD 4.8-3.8 (was 5.2-4.5)<br>● RNG 24-31 (was 22-26)" },
-          { "type": "rework",   "text": "● Passive [Radio Static] Stun Length 3s (was 0.75s)<br>● Time in RNG 2s (was 6s)<br>● Stun Lockout 12.5s (was 10s)" }
+          { "type": "rework",   "text": "● Passive [Radio Static] Stun Length 3s (was 0.75s)<br>● Time in RNG 3s (was 6s)<br>● Stun Lockout 12.5s (was 10s)" }
         ]
       }
     ],

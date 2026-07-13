@@ -9530,6 +9530,12 @@
         "changes": [
           { "type": "buff",   "text": "Full Kit rework" }
         ]
+      },
+      {
+        "date": "6/14/26",
+        "changes": [
+          { "type": "nerf",   "text": "Restless Soul DMG boost nerfed to +30% (was +75%)" }
+        ]
       }
     ],
     "levels": [
@@ -12757,6 +12763,13 @@
     "placements": 1,
     "attackType": "No Type",
     "obtainment": "S4 Present (0.1%)",
+    "balanceChanges": [
+      {
+        "date": "5/23/25",
+        "changes": [
+          { "type": "rework",   "text": "● Placements reduced to 1 (was 2)<br> ● Damage doubled" }
+        ]
+      }
     "levels": [
       {
         "level": 1,

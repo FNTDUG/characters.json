@@ -1467,7 +1467,7 @@
         "date": "4/26/26",
         "changes": [
           { "type": "rework",   "text": "● Removed LVL's 15 & 16" },
-          { "type": "buff",   "text": "● LVL 13 DMG 340 (was 320)" }
+          { "type": "buff",   "text": "● LVL 14 DMG 340 (was 320)" }
         ]
       },
       {

@@ -100,6 +100,14 @@
     "placements": 1,
     "attackType": "Multi",
     "obtainment": "Bi-Weekly 8",
+    "balanceChanges": [
+      {
+        "date": "2/14/26",
+        "changes": [
+          { "type": "nerf",   "text": "● Passive [Love Shot] DMG debuff -35% (was -20%)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -1017,6 +1025,14 @@
     "attackType": "Single",
     "obtainment": "S3 Free Pass Tier 30",
     "basenodps": true,
+    "balanceChanges": [
+      {
+        "date": "3/14/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 635-800 (was 470-635)<br>● CD 1.6-1.2 (was 2)<br>● Passive CD On unit CD (was Every 3s)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -1093,6 +1109,14 @@
     "placements": 2,
     "attackType": "Cone",
     "obtainment": "S3 Starter Pack",
+    "balanceChanges": [
+      {
+        "date": "3/14/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 350-425 (was 0)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -1162,6 +1186,20 @@
     "placements": 2,
     "attackType": "Multi",
     "obtainment": "Soul Summons (0.01%)",
+    "balanceChanges": [
+      {
+        "date": "3/29/26",
+        "changes": [
+          { "type": "buff",   "text": "● Passive Addition: Together 'If 2 amalgams are in range they both gain: +10% Damage, -10% Cooldown, 5% Damage burn/second.'" }
+        ]
+      },
+      {
+        "date": "5/31/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 725-955 (was 650-885)<br>Traps:<br>● Toy Freddy: DMG 1.85k (was 1.35k)<br>● Toy Bonnie: DMG 1.15k (was 850)<br>● Toy Chica: DMG 1k (was 700), Slow 20% (was 12%)<br>● Mangle DMG 2.35k (was 1.85k)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -1425,12 +1463,17 @@
       }
     ],
     "balanceChanges": [
-      {
-        "date": "7/12/2026",
+    {
+        "date": "4/26/26",
         "changes": [
-          { "type": "buff",   "text": "● Anti-regen 100% (was 40%)<br>● -10% Cooldown" },
-          { "type": "nerf",   "text": "● -15% Range" },
-          { "type": "rework", "text": "● blank some type about whatever idk" }
+          { "type": "rework",   "text": "● Removed LVL's 15 & 16" },
+          { "type": "buff",   "text": "● LVL 13 DMG 340 (was 320)" }
+        ]
+      },
+      {
+        "date": "7/12/26",
+        "changes": [
+          { "type": "buff",   "text": "● Anti-Regen 100% (was 40%)" }
         ]
       }
     ],
@@ -1712,6 +1755,15 @@
     "placements": 1,
     "attackType": "Multi",
     "obtainment": "S3 Premium Pass Tier 1",
+    "balanceChanges": [
+      {
+        "date": "5/23/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG Boost 30% (was 20%)" },
+          { "type": "nerf",   "text": "● CD Boost -2.5% (was -10%)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -1813,6 +1865,15 @@
     "attackType": "Line",
     "obtainment": "S3 Premium Pass Tier 30",
     "basenodps": true,
+    "balanceChanges": [
+      {
+        "date": "3/14/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 400-635 (was 375-550)" },
+          { "type": "nerf",   "text": "● Placements 1 (was 2)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -2067,6 +2128,14 @@
     "placements": 3,
     "attackType": "Multi",
     "obtainment": "S3 Present, Rare 80%",
+    "balanceChanges": [
+      {
+        "date": "3/14/26",
+        "changes": [
+          { "type": "nerf",   "text": "● DMG 235-365 (was 280-500)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -2128,6 +2197,15 @@
     "placements": 1,
     "attackType": "Multi",
     "obtainment": "Normal Summon, Secret 0.25%",
+    "balanceChanges": [
+      {
+        "date": "3/14/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 500-675 (was 435-570)<br>● Placements 1 (was 2)" },
+          { "type": "nerf",   "text": "● Placements 1 (was 2)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -2601,6 +2679,14 @@
     "placements": 2,
     "attackType": "Multi",
     "obtainment": "Medieval Event Exclusive 1",
+    "balanceChanges": [
+      {
+        "date": "5/31/26",
+        "changes": [
+          { "type": "buff",   "text": "● Placements 2 (was 1)<br>● +30% DMG on all LVL's<br>● -15% Cost on all LVL's<br>● Passive [Dark Night] CD debuff +3% (was +5%)<br>● Passive [Dark Night] +25% DMG (was +20%)<br>● Passive [Dark Night] CD 25s (was 45s)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -3275,6 +3361,14 @@
     "placements": 1,
     "attackType": "FullAOE",
     "obtainment": "Normal Summons, Nightmare 0.01%",
+    "balanceChanges": [
+      {
+        "date": "3/29/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 350-645 (was 250-435)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -3530,6 +3624,15 @@
     "placements": 1,
     "attackType": "Multi",
     "obtainment": "Season 2 Craftable Nightmare",
+    "balanceChanges": [
+      {
+        "date": "5/23/26",
+        "changes": [
+          { "type": "buff",   "text": "● Mode: Spring Bonnie: 30% RNG, -5% CD, 10% DMG (was 10% RNG, -10% CD)<br>● Mode: Fredbear: 40% DMG, 15% RNG (was 25% DMG, 25% RNG" },
+          { "type": "nerf",   "text": "● Stacking Removed" }
+        ]
+      }
+    ],
     "passives": [
       {
         "title": "Spotlight!",
@@ -3699,6 +3802,27 @@
       {
         "title": "Full Upgrade",
         "url": "https://www.fntduserguide.com/_downloads/97de78fdd4257bcf1a3721fc5e8c9392"
+      }
+    ],
+    "balanceChanges": [
+      {
+        "date": "1/19/26",
+        "changes": [
+          { "type": "buff",   "text": "● Passive [Ignited Rage] cap +75% (was +50%)<br>● Passive [Ignited Rage] per stack 15% (was 10%)" }
+        ]
+      },
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "buff",   "text": "● Passive [Agonized] will reduced other passives CD by 9% for each ⁨[Fire]⁩ Element Unit on your team.<br>● Passive Addition: Enemies hit by normal attacks are inflicted with ⁨[Scorched]⁩ and take 25% more damage from ⁨[Fire]⁩ Element Units." },
+          { "type": "rework",   "text": "Element Fire (was Dark)" }
+        ]
+      },
+      {
+        "date": "4/26/26",
+        "changes": [
+          { "type": "buff",   "text": "● RNG 22-30 (was 20-24)<br>● CD 1-2.3 (was 1-2.7)<br>● DMG 55-725 (was 37.5-598)<br>● Starting at LVL 11 FullAOE (was Cone)" }
+        ]
       }
     ],
     "levels": [
@@ -3974,6 +4098,15 @@
     "placements": 1,
     "attackType": "no type",
     "obtainment": "S2 Premium Pass Tier 1",
+    "balanceChanges": [
+      {
+        "date": "5/23/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG Boost 30% (was 15%)<br>● RNG Boost 18% (was 15%)" },
+          { "type": "nerf",   "text": "● CD Boost Removed (was -15%)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -4003,6 +4136,14 @@
     "placements": 2,
     "attackType": "Multi",
     "obtainment": "OG Event Endless 2/Military. OG Present 0.1%",
+    "balanceChanges": [
+      {
+        "date": "3/14/26",
+        "changes": [
+          { "type": "buff",   "text": "● RNG 18-21 (was 20-24)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -4515,6 +4656,14 @@
     "placements": 2,
     "attackType": "Multi",
     "obtainment": "OG Event Endless 3/Western. OG Present 0.1%",
+    "balanceChanges": [
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "buff",   "text": "● CD 3.75-3.25 (was 4-3.5)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -4597,6 +4746,14 @@
     "placements": 1,
     "attackType": "Multi",
     "obtainment": "OG Event Endless 1/Summer. OG Present 0.1%",
+    "balanceChanges": [
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 900-1.545k (was 845-1.45k)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -4695,6 +4852,22 @@
     "placements": 1,
     "attackType": "Multi",
     "obtainment": "OG Event Endless 4/Halloween. OG Present 0.1%",
+    "balanceChanges": [
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "nerf",   "text": "● CD 7.2-6 (was 3.6-3)" },
+          { "type": "buff",   "text": "● DMG 1.65k-2.75k (was 600-1k)<br>● Passive [Necromancer's Revenge] HP cap 125k (was 50%)" }
+        ]
+      },
+      {
+        "date": "5/23/26",
+        "changes": [
+          { "type": "buff",   "text": "● Passive [Necromancer's Revenge] HP cap inf (was 125k)<br>● Passive [Necromancer's Revenge] HP Percent 85% (was 75%)<br>● Passive [Necromancer's Revenge] No longer need to kill to Proc" },
+          { "type": "nerf",   "text": "● Passive [Necromancer's Revenge] Max summons 6 (was inf)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -5145,6 +5318,14 @@
     "placements": 3,
     "attackType": "Circle",
     "obtainment": "S2 Present, Rare 30%. Soul Summons, Rare 30%",
+    "balanceChanges": [
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "rework",   "text": "Element Fire (was Dark)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -5222,6 +5403,15 @@
     "placements": 3,
     "attackType": "No Type",
     "obtainment": "Boss Raids Present, Secret 4.5%",
+    "balanceChanges": [
+      {
+        "date": "5/23/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG Boost 30% (was 20%)" },
+          { "type": "nerf",   "text": "● CD Boost -7.5% (was -12.5%)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -5405,6 +5595,14 @@
       {
         "title": "Full Upgrade",
         "url": "https://www.fntduserguide.com/_downloads/8dea71a7d85b038ff03a1665e756de18"
+      }
+    ],
+    "balanceChanges": [
+    {
+        "date": "4/26/26",
+        "changes": [
+          { "type": "buff",   "text": "● Base RNG 20 (was 16)" }
+        ]
       }
     ],
     "levels": [
@@ -5735,6 +5933,14 @@
     "placements": 2,
     "attackType": "Circle",
     "obtainment": "S2 Present, Epic 18%. Soul Summons, Epic 18%",
+    "balanceChanges": [
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "rework",   "text": "Element Fire (was Dark)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -5790,6 +5996,14 @@
     "placements": 2,
     "attackType": "Multi",
     "obtainment": "S2 Present, Mythic 2%. Soul Summons, Mythic 2%",
+    "balanceChanges": [
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "rework",   "text": "Element Fire (was Dark)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -5924,6 +6138,14 @@
     "placements": 1,
     "attackType": "Full AOE",
     "obtainment": "S2 Free Pass Tier 30",
+    "balanceChanges": [
+      {
+        "date": "1/4/26",
+        "changes": [
+          { "type": "nerf",   "text": "● DMG 1.95k-2.3k (was 2.8k-3.25k)<br>● RNG 17-22 (was 24-36)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -5997,6 +6219,20 @@
     "placements": 2,
     "attackType": "Multi",
     "obtainment": "S2 Present, Secret 0.1%",
+    "balanceChanges": [
+      {
+        "date": "1/6/26",
+        "changes": [
+          { "type": "buff",   "text": "● Type starting at LVL 5 65 Cone (was Line)" }
+        ]
+      },
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "rework",   "text": "Element Fire (was Dark)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -6086,6 +6322,14 @@
     "placements": 1,
     "attackType": "Circle",
     "obtainment": "S2 Pro Pack",
+    "balanceChanges": [
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 450-725 (was 425-700)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -6161,6 +6405,26 @@
     "placements": 1,
     "attackType": "Mutli",
     "obtainment": "S2 Premium Pass Tier 30",
+    "balanceChanges": [
+      {
+        "date": "1/4/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 650-875 (was 650-800)<br>● DMG Gained from Passive 50% (was 30%)<br>● Passive CD 40s (was 45s)" }
+        ]
+      },
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG Gained from Passive 75% (was 50%)<br>● Passive CD 35s (was 40s)<br>● Passive length 15s (was 10s)" }
+        ]
+      },
+      {
+        "date": "2/14/26",
+        "changes": [
+          { "type": "nerf",   "text": "● Knockback 2 tiles (was 4 tiles)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -6247,6 +6511,14 @@
     "placements": 2,
     "attackType": "Mutli",
     "obtainment": "Normal Summons, Mythic 2%",
+    "balanceChanges": [
+      {
+        "date": "1/19/26",
+        "changes": [
+          { "type": "nerf",   "text": "● Placements 2 (was 3)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -6463,6 +6735,14 @@
     "placements": 3,
     "attackType": "Line",
     "obtainment": "Bi-Weekly 3",
+    "balanceChanges": [
+    {
+        "date": "12/20/25",
+        "changes": [
+          { "type": "buff",   "text": "● Base DMG 100 (was 70)<br>● CD through LVL's 3-2.5 (was 3.5-2.7)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -6610,6 +6890,20 @@
     "placements": 4,
     "attackType": "Circle",
     "obtainment": "Normal Summons, Rare 30%",
+    "balanceChanges": [
+      {
+        "date": "3/14/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 85-140 (was 50-65)<br>● CD 2.5-2 (was 3-2)" }
+        ]
+      },
+      {
+        "date": "5/23/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 100-165 (was 85-140)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -6674,6 +6968,20 @@
     "placements": 3,
     "attackType": "Line",
     "obtainment": "Normal Summons, Rare 30%",
+    "balanceChanges": [
+      {
+        "date": "3/14/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 45-85 (was 35-60)" }
+        ]
+      },
+      {
+        "date": "5/23/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 60-100 (was 45-85)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -6729,6 +7037,14 @@
     "placements": 4,
     "attackType": "Cone",
     "obtainment": "Normal Summons, Epic 18%",
+    "balanceChanges": [
+      {
+        "date": "5/23/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 85-140 (was 75-125)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -6783,6 +7099,14 @@
     "placements": 4,
     "attackType": "Cone",
     "obtainment": "Normal Summons, Epic 18%",
+    "balanceChanges": [
+      {
+        "date": "5/23/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 75-140 (was 55-120)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -6846,6 +7170,26 @@
     "placements": 2,
     "attackType": "Mutli",
     "obtainment": "Normal Summons (0.25%)",
+    "balanceChanges": [
+      {
+        "date": "1/6/26",
+        "changes": [
+          { "type": "buff",   "text": "● Type starting at LVL 5 65 Cone (was Line)" }
+        ]
+      },
+      {
+        "date": "3/14/26",
+        "changes": [
+          { "type": "buff",   "text": "● CD 1.4-1.2 (was 1.5)<br>● DMG 125-285 (was 90-210)" }
+        ]
+      },
+      {
+        "date": "5/31/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 165-350 (was 125-285)<br>● Passive [Sword Lunge] First hit Bonus DMG 75% (was 30%)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -6921,6 +7265,14 @@
     "placements": 2,
     "attackType": "Line",
     "obtainment": "Halloween25, Pet Evo. 1-Harvest Festival Foxy, 10-Mummy Freddy and 30-Ghost Bonnie Pets",
+    "balanceChanges": [
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 225-300 (was 160-250)<br>● RNG 18-24 (was 16-21)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -6976,6 +7328,14 @@
     "placements": 4,
     "attackType": "Circle",
     "obtainment": "Halloween25 Free Pass Tier 30",
+    "balanceChanges": [
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 145-235 (was 130-225)<br>● CD 4.5-3.8 (was 4.7-4.3)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -7070,6 +7430,27 @@
     "placements": 2,
     "attackType": "Multi",
     "obtainment": "Normal Summons, Secret 0.25%",
+    "balanceChanges": [
+      {
+        "date": "1/6/26",
+        "changes": [
+          { "type": "buff",   "text": "● Type starting at LVL 6 FullAOE (was Circle)" }
+        ]
+      },
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "nerf",   "text": "● placements 2 (was 3)" },
+          { "type": "buff",   "text": "● DMG 385-545 (was 250-405)" }
+        ]
+      },
+      {
+        "date": "5/31/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 430-655 (was 385-545<br>● Passive [Energy Siphon] RNG Boost 3% per Upgrade (was 2%)<br>● Passive [Energy Siphon] RNG Boost cap 75% (was 70%)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -7165,6 +7546,20 @@
     "placements": 2,
     "attackType": "Multi",
     "obtainment": "S1 Premium Pass Tier 30",
+    "balanceChanges": [
+     {
+        "date": "12/20/25",
+        "changes": [
+          { "type": "buff",   "text": "● LVL 2 Type Circle (was Single)<br>● LVL 4 Type FullAOE (was Circle<br>● LVL 5 DMG 210 (was 200)" }
+        ]
+      },
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "buff",   "text": "● CD 4.2-3.7 (was 4.8-4.2)<br>● DMG 575-745 (was 500-700)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -7422,6 +7817,26 @@
     "attackType": "Mutli",
     "obtainment": "S1 Free Pass Tier 30",
     "basenodps": true,
+    "balanceChanges": [
+      {
+        "date": "1/4/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 101-231 (was 80-180)<br>● Turret Type Cone (was Single)" }
+        ]
+      },
+      {
+        "date": "1/6/26",
+        "changes": [
+          { "type": "buff",   "text": "● Type starting at LVL 4 Line (was Circle)" }
+        ]
+      },
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 145-345 (was 101 - 231)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -7510,6 +7925,20 @@
     "placements": 3,
     "attackType": "Mutli",
     "obtainment": "Normal Summons, Epic 18%",
+    "balanceChanges": [
+      {
+        "date": "1/6/26",
+        "changes": [
+          { "type": "buff",   "text": "● Type starting at LVL 3 Circle (was Single)" }
+        ]
+      },
+      {
+        "date": "5/23/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 125-225 (was 100-200)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -7645,6 +8074,20 @@
     "placements": 3,
     "attackType": "Mutli",
     "obtainment": "Normal summons, Mythic 2%",
+    "balanceChanges": [
+      {
+        "date": "1/6/26",
+        "changes": [
+          { "type": "buff",   "text": "● Type starting at LVL 3 Single (was Circle)" }
+        ]
+      },
+      {
+        "date": "5/23/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 110-215 (was 90-195)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -7723,6 +8166,14 @@
     "placements": 3,
     "attackType": "Cone",
     "obtainment": "Halloween25 Season Exclusive Unit 1",
+    "balanceChanges": [
+      {
+        "date": "3/14/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 225-400 (was 170-320)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -7815,6 +8266,15 @@
     "placements": 2,
     "attackType": "Circle",
     "obtainment": "S1 Pro Pack",
+    "balanceChanges": [
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "buff",   "text": "● CD 4.8-3.8 (was 5.2-4.5)<br>● RNG 24-31 (was 22-26)" },
+          { "type": "rework",   "text": "● Passive [Radio Static] Stun Length 3s (was 0.75s)<br>● Time in RNG 2s (was 6s)<br>● Stun Lockout 12.5s (was 10s)" }
+        ]
+      }
+    ],
     "passives": [
       {
         "title": "Amalgamation",
@@ -8080,6 +8540,15 @@
     "placements": 2,
     "attackType": "Circle",
     "obtainment": "Season 1 Craftable Nightmare",
+    "balanceChanges": [
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "buff",   "text": "● RNG 22-26 (was 20)<br>● Endo HP 80% (was 10%)" },
+          { "type": "nerf",   "text": "● Shooter Endo HP 55% (was 60%)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -8199,6 +8668,14 @@
     "placements": 1,
     "attackType": "Mutli",
     "obtainment": "Normal Summons (0.01%)",
+    "balanceChanges": [
+      {
+        "date": "1/6/26",
+        "changes": [
+          { "type": "buff",   "text": "● Type starting at LVL 6 65 Cone (was Line)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -8290,6 +8767,14 @@
     "placements": 3,
     "attackType": "Cone",
     "obtainment": "April Fools Present (50%)",
+    "balanceChanges": [
+      {
+        "date": "4/1/26",
+        "changes": [
+          { "type": "nerf",   "text": "● DMG 70-145 (was 100-715)<br>● Placement Cost 750 (was 450)<br>● LVL's Price 800-2250 (was 650-1500)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -8582,6 +9067,14 @@
     "placements": 2,
     "attackType": "Mutli",
     "obtainment": "Halloween25 Premium Pass Tier 30",
+    "balanceChanges": [
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 1.65k-2.75k (was 600-1k)<br>● 5.4-5.6 (was 9)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -8697,6 +9190,26 @@
     "placements": 1,
     "attackType": "Cone",
     "obtainment": "Halloween25 Endless Present, 150k Bones",
+    "balanceChanges": [
+      {
+        "date": "1/6/26",
+        "changes": [
+          { "type": "buff",   "text": "● Type starting at LVL 7 120 Cone (was 65)" }
+        ]
+      },
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "buff",   "text": "● CD 5.8-5.3 (was 6.4-5.6)<br>● Active Dark/Fire DMG Boost +85 (was 70%)" }
+        ]
+      },
+      {
+        "date": "4/26/26",
+        "changes": [
+          { "type": "buff",   "text": "● Active CD 100s (was 500s)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -8992,6 +9505,33 @@
         "url": "https://www.fntduserguide.com/_downloads/425d4aafd2fd52f631c4e5eaf0ee6b98"
       }
     ],
+    "balanceChanges": [
+      {
+        "date": "11/25/25",
+        "changes": [
+          { "type": "buff",   "text": "● Placement Price 750 (was 900)" }
+        ]
+      },
+      {
+        "date": "1/4/26",
+        "changes": [
+          { "type": "nerf",   "text": "● Costs 1k-8k (was 750-6.5k)" },
+          { "type": "buff",   "text": "● DMG 70-445 (was 45-195)<br>● Passive [The One You Should Not Have Killed] DMG +500% (was +50%)" }
+        ]
+      },
+      {
+        "date": "3/29/26",
+        "changes": [
+          { "type": "buff",   "text": "● Passive [Restless Soul] DMG Boost cap 150% (was 100%)<br>● Passive [Vengful Spirit] Scale per wave 3% (was 2%)<br>● Passive [Restless Soul] Scale per Endless wave 1% (was 0.8%)<br>● Passive [The One You Should Not Have Killed] Stun lockout 15s (was 30s)<br>● Passive [The One You Should Not Have Killed] Wither 25% (was 20%)<br>● DMG 100-635 (was 70-445)<br>● LVL's 10-17 Type 45 Cone (was Circle)<br>● LVL 18 Type 85 Cone (was Circle)" }
+        ]
+      },
+      {
+        "date": "6/6/26",
+        "changes": [
+          { "type": "buff",   "text": "Full Kit rework" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -9271,6 +9811,27 @@
       {
         "title": "Full Upgrade",
         "url": "https://www.fntduserguide.com/_downloads/21c0f0e541b78dafdf4ad46ed0baad7b"
+      }
+    ],
+    "balanceChanges": [
+      {
+        "date": "1/4/26",
+        "changes": [
+          { "type": "nerf",   "text": "● Costs 2.4k-10k (was 1.35k-9k)" },
+          { "type": "buff",   "text": "● DMG 150-400 (was 130-375)<br>● Active DMG Boost +15% (was +5%)" }
+        ]
+      },
+      {
+        "date": "3/29/26",
+        "changes": [
+          { "type": "buff",   "text": "● Starting at LVL 16 Type 145 Cone (was Circle)<br>● DMG 125-735 (was 150-400)" }
+        ]
+      },
+      {
+        "date": "6/6/26",
+        "changes": [
+          { "type": "buff",   "text": "Full Kit rework" }
+        ]
       }
     ],
     "levels": [
@@ -9606,6 +10167,14 @@
     "placements": 3,
     "attackType": "Circle",
     "obtainment": "Normal Summons, Mythic 2%",
+    "balanceChanges": [
+      {
+        "date": "12/20/25",
+        "changes": [
+          { "type": "buff",   "text": "● Type Circle (was Single)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -9690,6 +10259,14 @@
       {
         "title": "Full Upgrade",
         "url": "https://www.fntduserguide.com/_downloads/cefcf1354ad29282aa1718c4ad21ccf7"
+      }
+    ],
+    "balanceChanges": [
+      {
+        "date": "1/19/26",
+        "changes": [
+          { "type": "buff",   "text": "● RNG 22-30 (was 20-22)<br>● DMG 1.9k-2.75k (was 1.8k-2.4k)<br>● Passive [Frozen Obelisk] Slow 25% (was 10%)" }
+        ]
       }
     ],
     "levels": [
@@ -9889,6 +10466,28 @@
         "url": "https://www.fntduserguide.com/_downloads/a576822a96c66dcece925043c9f1656f"
       }
     ],
+    "balanceChanges": [
+    {
+        "date": "12/25/25",
+        "changes": [
+          { "type": "nerf",   "text": "● CD through LVL's 12-10 (was 5-5.8)<br>● Active Scaling 250% (was 300%)" },
+          { "type": "buff",   "text": "● Placement Cost 10k (was 12.5k). This also affects LVL's Cost" },
+          { "type": "rework",   "text": "● Active CD 40s (was 60s)<br>● Active Duration 20s (was 60s) " }
+        ]
+      },
+      {
+        "date": "1/4/26",
+        "changes": [
+          { "type": "buff",   "text": "● Yeti Apprentice DMG 25% (was 15%)<br>● Yeti Sensei DMG 45% (was 30%)" }
+        ]
+      },
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "nerf",   "text": "● 205 less DMG on every LVL" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -10016,6 +10615,14 @@
     "placements": 3,
     "attackType": "Circle",
     "obtainment": "XMAS25 Special Present Epic 90%",
+    "balanceChanges": [
+      {
+        "date": "5/31/26",
+        "changes": [
+          { "type": "buff",   "text": "● Placement Cost 950 (was 1.05k)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -10078,6 +10685,14 @@
     "placements": 2,
     "attackType": "Single",
     "obtainment": "XMAS25 Special Present Secret 9.5%",
+    "balanceChanges": [
+      {
+        "date": "3/22/26",
+        "changes": [
+          { "type": "rework",   "text": "● DMG and CD doubled" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -10186,6 +10801,20 @@
     "placements": 3,
     "attackType": "Cone45°",
     "obtainment": "XMAS25 Premium Pass Tier 30",
+    "balanceChanges": [
+      {
+        "date": "12/7/25",
+        "changes": [
+          { "type": "buff",   "text": "● Placements 3 (was 2)<br>● Max Range 31 (was 24)<br>● LVL 5 DMG 210 (was 200)<br>● Placement Cost 2350 (was 2750)<br>● Passive addition: 'Enemies defeated by this unit increase its damage by .2% up to 25%.'" }
+        ]
+      },
+      {
+        "date": "2/7/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 150-285 (was 150-210)<br>● Passive [Broken Ornaments] Bleed length 4s (was 2s)<br>● Passive [Broken Ornaments] Bleed Scale 20% (was 10%)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -10349,6 +10978,14 @@
     "placements": 2,
     "attackType": "Cone",
     "obtainment": "XMAS25 Summon, Mythic 10%. Soul Summons, Mythic 2%",
+    "balanceChanges": [
+    {
+        "date": "1/6/26",
+        "changes": [
+          { "type": "buff",   "text": "● Type Degrees 90 (was 35)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -10448,6 +11085,14 @@
     "placements": 2,
     "attackType": "Mutli",
     "obtainment": "XMAS25 Summon, Secret 0.35%",
+    "balanceChanges": [
+      {
+        "date": "1/6/26",
+        "changes": [
+          { "type": "buff",   "text": "● Type starting at LVL 5 Single (was Circle)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -10686,6 +11331,20 @@
     "placements": 3,
     "attackType": "Mutli",
     "obtainment": "XMAS25 Exclusive Unit 2",
+    "balanceChanges": [
+      {
+        "date": "12/6/25",
+        "changes": [
+          { "type": "rework",   "text": "● DMG and CD doubled" }
+        ]
+      },
+      {
+        "date": "1/6/26",
+        "changes": [
+          { "type": "buff",   "text": "● Type starting at LVL 5 65 Cone (was Line)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -10774,6 +11433,14 @@
     "placements": 2,
     "attackType": "Line",
     "obtainment": "Bi-Weekly 4",
+    "balanceChanges": [
+      {
+        "date": "3/22/26",
+        "changes": [
+          { "type": "nerf",   "text": "● Spicy Burn 20% (was 35%)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -10878,6 +11545,20 @@
     "placements": 3,
     "attackType": "No Type",
     "obtainment": "Halloween25, Pet Evo. 1-Mummy Freddy Pet and 10-Ghost Bonnie Pets. Soul Summons, Rare 30%",
+    "balanceChanges": [
+      {
+        "date": "4/19/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG doubled<br>● CD reduced to 1" }
+        ]
+      },
+      {
+        "date": "4/26/26",
+        "changes": [
+          { "type": "rework",   "text": "● DMG 235-310 (was 160-240)<br>● CD 2.5-2 (was 1)" }
+        ]
+      }
+    ],
     "basenodps": true,
     "levels": [
       {
@@ -10945,6 +11626,15 @@
     "placements": 5,
     "attackType": "no type",
     "obtainment": "Normal Summons, Mythic 2%",
+    "balanceChanges": [
+      {
+        "date": "3/22/26",
+        "changes": [
+          { "type": "buff",   "text": "● Money 250-1750 (was 200-1600)<br>● Placements 5 (was 3)" },
+          { "type": "nerf",   "text": "● LVL Prices 1350-4500 (was 900-3250)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -11338,6 +12028,14 @@
         "name": "Volcanic Party Packer Cupcake",
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/bpq5htq-high.png?enable-io=true&crop=1%3A1&width=1252",
         "rarity": "exclusive"
+      }
+    ],
+    "balanceChanges": [
+      {
+        "date": "1/4/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 125-400 (was 125-320)" }
+        ]
       }
     ],
     "levels": [
@@ -11851,6 +12549,14 @@
     "placements": 2,
     "attackType": "Multi",
     "obtainment": "S4 Premium Pass lvl 30",
+    "balanceChanges": [
+      {
+        "date": "5/31/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 685-1.25k (was 635-1k)<br>● active 2 electric units 15% Bleed (was 10%)<br>● Mono electric Team 25% Bleed, 25% Slow (was 20% and 20%)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -12246,6 +12952,14 @@
     "placements": 4,
     "attackType": "Single",
     "obtainment": "S4 Present (30%)",
+    "balanceChanges": [
+    {
+        "date": "4/26/26",
+        "changes": [
+          { "type": "nerf",   "text": "● RNG 23-27 (was 25-35)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -12295,6 +13009,15 @@
     "placements": 2,
     "attackType": "No Type",
     "obtainment": "S4 Present (15%)",
+    "balanceChanges": [
+      {
+        "date": "5/23/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG 10%/15% (was 5%/10%)<br>● RNG 10%/15% (was 5%/10%)" },
+          { "type": "nerf",   "text": "● Stacking Removed" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -12549,6 +13272,17 @@
         "label": "Smasher",
         "role": "damage",
         "attackType": "Multi",
+        "balanceChanges": [
+      {
+        "date": "5/23/26",
+        "changes": [
+          { "type": "buff",   "text": "● Mode: Smasher:<br>● DMG boost 40%/35% (was 30%/25%)" },
+          { "type": "nerf",   "text": "● CD Boost Removed (was -15%/-10%)" },
+          { "type": "buff",   "text": "● Mode: Shocker:<br>● DMG Boost 15%/25% (was 10%/13%)<br>● RNG Boost 20%/40% (was 15%/35%)" },
+          { "type": "nerf",   "text": "● CD Boost -5%/-10% (was -3%/-15%)" }
+        ]
+      }
+    ],
         "levels": [
           {
             "level": 1,
@@ -14541,6 +15275,14 @@
     "placements": 1,
     "attackType": "Multi",
     "obtainment": "Hero Quest 6",
+    "balanceChanges": [
+      {
+        "date": "6/6/26",
+        "changes": [
+          { "type": "buff",   "text": "Placement Cost 3.15k (was 900)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -18115,6 +18857,14 @@
     "placements": 1,
     "attackType": "Multi",
     "obtainment": "Blossom Chica Evolution",
+    "balanceChanges": [
+      {
+        "date": "7/6/26",
+        "changes": [
+          { "type": "buff",   "text": "Element Nature/Dark (was Nature)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,

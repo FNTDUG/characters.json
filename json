@@ -18385,6 +18385,14 @@
     "placements": 1,
     "attackType": "Line",
     "obtainment": "Quest Shop",
+    "balanceChanges": [
+      {
+        "date": "6/27/26",
+        "changes": [
+          { "type": "nerf",   "text": "● [Happy Hour] CD boost reduced to -20% (was -30%)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -18443,7 +18451,7 @@
       },
       {
         "title": "Happy Hour",
-        "text": "This unit gains +50% Damage on odd numbered waves and -30% CD on even numbered waves. Both of these buffs are active at once if a Boss is alive."
+        "text": "This unit gains +50% Damage on odd numbered waves and -20% CD on even numbered waves. Both of these buffs are active at once if a Boss is alive."
       },
       {
         "title": "Tax Return",

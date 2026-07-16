@@ -16513,7 +16513,7 @@
     "element": "Rust",
     "placements": 1,
     "attackType": "Line",
-    "obtainment": "Endless 2 Unit Quest",
+    "obtainment": "Endless 3 Unit Quest (Every 10 waves after wave 100 (2%), Night 3+ Nightmare (2%), 25 Raid Tokens)",
     "levels": [
       {
         "level": 1,
@@ -16595,7 +16595,7 @@
     "element": "Light",
     "placements": 2,
     "attackType": "Cone",
-    "obtainment": "Endless 5 Unit Quest",
+    "obtainment": "Endless 5 Unit Quest (Every 10 waves after wave 100 (2%), Night 3+ Nightmare (2%), 5 Salvage Points)",
     "levels": [
       {
         "level": 1,
@@ -16766,7 +16766,7 @@
     "element": "Dark",
     "placements": 1,
     "attackType": "Multi",
-    "obtainment": "Endless 4 Unit Quest",
+    "obtainment": "Endless 4 Unit Quest (Every 10 waves after wave 100 (2%), Night 3+ Nightmare (2%), 5 Salvage Points)",
     "levels": [
       {
         "level": 1,
@@ -17071,7 +17071,7 @@
     "element": "Fire",
     "placements": 2,
     "attackType": "Multi",
-    "obtainment": "Endless 6 Quest Unit",
+    "obtainment": "Endless 6 Quest Unit (Every 10 waves after wave 100 (2%), Night 3+ Nightmare (2%), 25 Raid Tokens)",
     "levels": [
       {
         "level": 1,
@@ -17168,7 +17168,7 @@
     "element": "Neutral",
     "placements": 2,
     "attackType": "Cone 45°",
-    "obtainment": "Endless 1 Unit Quest",
+    "obtainment": "Endless 1 Unit Quest (Every 10 waves after wave 100 (2%), Night 3+ Nightmare (2%), AFK)",
     "levels": [
       {
         "level": 1,
@@ -17222,7 +17222,7 @@
     "element": "Water",
     "placements": 3,
     "attackType": "Circle",
-    "obtainment": "Endless 2 Unit Quest",
+    "obtainment": "Endless 2 Unit Quest (Every 10 waves after wave 100 (2%), Night 3+ Nightmare (2%), Random Chance from Quests)",
     "levels": [
       {
         "level": 1,

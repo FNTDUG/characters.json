@@ -9070,7 +9070,7 @@
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 1.65k-2.75k (was 600-1k)<br>● 5.4-5.6 (was 9)" }
+          { "type": "buff",   "text": "● DMG 1.65k-2.75k (was 600-1k)<br>● CD 5.4-5.6 (was 9)" }
         ]
       }
     ],

@@ -19528,7 +19528,7 @@
       "dots": [
         {
           "label": "Go Phishing (Tank Bonus)",
-          "pctofdamage": 0.5,
+          "pctofdamage": 0.05,
           "durationsec": 1,
           "everynthattack": 1
         }

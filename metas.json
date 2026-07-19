@@ -122,7 +122,7 @@
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "War Machine Foxy", "caption": "Place on Boss" },
         { "name": "Commander Withered Freddy", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Place on Boss" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Golden Cupcake", "caption": "" },
-        { "name": "Fazcade", "label": "", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Investor", "replacement": "", "caption": "" }
+        { "name": "Fazcade", "label": "", "byte": "Pearl", "chip": "", "enchant": "Investor", "replacement": "", "caption": "" }
       ]
     },
     "Event Endless Grind": {
@@ -132,7 +132,7 @@
         { "name": "Valkyrie Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Commander Withered Freddy", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Golden Cupcake", "caption": "" },
-        { "name": "Fazcade", "label": "", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Investor", "replacement": "", "caption": "" }
+        { "name": "Fazcade", "label": "", "byte": "Pearl", "chip": "", "enchant": "Investor", "replacement": "", "caption": "" }
       ]
     },
     "Event Story Grind": {
@@ -152,7 +152,7 @@
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "War Machine Foxy", "caption": "Place on Boss" },
         { "name": "Commander Withered Freddy", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Place on Boss" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Golden Cupcake", "caption": "" },
-        { "name": "Fazcade", "label": "", "byte": "Pearl", "enchant": "Investor", "chip": "Eye Augmentation", "replacement": "", "caption": "" }
+        { "name": "Fazcade", "label": "", "byte": "Pearl", "enchant": "Investor", "chip": "", "replacement": "", "caption": "" }
       ]
     },
     "Water 1st": {

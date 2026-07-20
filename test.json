@@ -20205,7 +20205,7 @@
           "cdscope": "local"
         },
         {
-          "label": "Bishop",
+          "label": "Rook",
           "attackpctofdamage": 0.60,
           "attackcd": 0.4,
           "attackcdboostable": true,

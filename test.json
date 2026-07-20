@@ -20086,7 +20086,7 @@
   "element": "Light",
   "placements": 1,
   "attackType": "Continuous",
-  "obtainment": "Soul Summons (0.01)",
+  "obtainment": "Soul Summons (0.005)",
   "levels": [
     {
       "level": 1,
@@ -20155,7 +20155,7 @@
   "passives": [
     {
       "title": "You're All Pawns on my Board.",
-      "text": "Place up to 5 Chess Pieces on the board. Pieces start as Pawns and promote after earning kills. <br> Pawn: Single target, 80% damage, max 5. <br> Knight: Cone 25, 65% damage, applies 15% bleed over 2 seconds, max 3. <br> Rook: Line, 60% damage, stuns the nearest 3 enemies for 1 seconds on its 10th attack. Max 1. <br> Bishop: Cone 75, 80% damage, attacks apply a secondary piercing shot to 3 enemies for 40% damage, max 2.<br> Queen: Cone 180, 50% damage, applies 20% bleed for 5 seconds, applies 10% slow for 5 seconds, and stuns the nearest 5 enemies for 1.5 second. Max 1.<br> King: Full AoE, 65% damage, passively applies 15% slow to enemies in range, max 1. (Upgrade 0+, Global CD: 0s).",
+      "text": "Place up to 5 Chess Pieces on the board. Pieces start as Pawns and promote after earning kills. <br>● Pawn: Single target, 80% damage, max 5. <br>● Knight: Cone 25, 65% damage, applies 15% bleed over 2 seconds, max 3. <br>● Rook: Line, 60% damage, stuns the nearest 3 enemies for 1 seconds on its 10th attack. Max 1. <br>● Bishop: Cone 75, 80% damage, attacks apply a secondary piercing shot to 3 enemies for 40% damage, max 2.<br>● Queen: Cone 180, 50% damage, applies 20% bleed for 5 seconds, applies 10% slow for 5 seconds, and stuns the nearest 5 enemies for 1.5 second. Max 1.<br>● King: Full AoE, 65% damage, passively applies 15% slow to enemies in range, max 1. (Upgrade 0+, Global CD: 0s).",
       "activeIcon": "https://tr.rbxcdn.com/180DAY-970aae71c4aaccc7b04c458dcccce895/420/420/Image/Png/noFilter"
     },
     {
@@ -20166,7 +20166,54 @@
       "title": "Pressing the Advantage",
       "text": "When killing an enemy of any valid element buff units matching that enemy's element by +35% damage for 25 seconds. Only one element buff can exist at a time. <br> Valid elements: Rust, Light, Nature, Water, Fire, Neutral"
     }
-  ]
+  ],
+    "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Advantage",
+          "dmgmult": 1.35
+        },
+        {
+          "label": "Hold the Line",
+          "critc": 0.20,
+          "critd": 2.30
+        }
+      ],
+      "summons": [
+        {
+          "label": "King",
+          "attackpctofdamage": 0.65,
+          "attackcdboostable": true,
+          "attackcd": 0.40,
+          "maxactive": 1,
+          "cdscope": "local"
+        },
+        {
+          "label": "Queen",
+          "attackpctofdamage": 0.54,
+          "attackcd": 0.40,
+          "attackcdboostable": true,
+          "maxactive": 1,
+          "cdscope": "local"
+        },
+        {
+          "label": "Bishop",
+          "attackpctofdamage": 0.80,
+          "attackcd": 0.4,
+          "attackcdboostable": true,
+          "maxactive": 2,
+          "cdscope": "local"
+        },
+        {
+          "label": "Bishop",
+          "attackpctofdamage": 0.60,
+          "attackcd": 0.4,
+          "attackcdboostable": true,
+          "maxactive": 1,
+          "cdscope": "local"
+        }
+      ]
+    }
 },
 {
   "name": "Cthulhu Nightmare Foxy",
@@ -20236,15 +20283,36 @@
   "passives": [
     {
       "title": "Star Spawn",
-      "text": "Warp a unit in range. Warped units receive +30% damage and range and become Dark/Water. (Upgrade 0+, Global CD: undefineds).",
+      "text": "Warp a unit in range. Warped units receive +30% damage and range and become Dark/Water. (Upgrade 0+, Local CD: 0s).",
       "activeIcon": ""
     },
     {
       "title": "Depths of Insanity",
       "text": "Every 30 seconds become invisible every other second for 10 seconds (+2 seconds per Warped unit in range). Every time this unit becomes invisible receive +2% damage and range (Cap of 40%). When there are 3 warped units in range attacks stun for 1 second and apply 20% slow for 5 seconds"
     }
-  ]
-  
+  ],
+      "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Star Spawn (Boost)",
+          "dmgmult": 1.4,
+          "rngmult": 1.4
+        }
+      ],
+      "slows": [
+        {
+          "label": "Depths (Slow)",
+          "pct": 0.2
+        }
+      ],
+    "stuns": [
+      {
+        "label": "Punishment",
+        "everynthattack": 1,
+        "duration": 1.8
+        }
+      ]
+    }
 },
 {
   "name": "Unicorn Toy Foxy",
@@ -20316,15 +20384,8 @@
     "passiveDamage": {
       "selfboost": [
         {
-          "label": "Light Eater",
+          "label": "Light Eater (Boost)",
           "dmgmult": 1.15
-        }
-      ],
-      "periodic": [
-        {
-          "label": "Light Eater",
-          "pctofdamage": 1,
-          "hits": 1
         }
       ]
     }
@@ -20417,6 +20478,23 @@
       "title": "Figure in the Dark",
       "text": "If other Dark units are on the team: <br> 1+ Dark units: +10% damage and +5% range <br> 3+ Dark units: +50% damage and +10% range <br> 5 Dark units: +100% damage and +20% range <br> At 5+ Dark units: Enemies in range take 25% more damage from Dark units"
     }
-  ]
+  ],
+  "passiveDamage": {
+      "periodic": [
+        {
+          "label": "Piercing",
+          "pctofdamage": 2.0,
+          "cd": 3,
+          "cdboostable": false,
+          "cdscope": "local"
+        }
+      ],
+      "slows": [
+        {
+          "label": "Piercing (Slow)",
+          "pct": 0.2
+        }
+      ]
+  }
 }
 ]

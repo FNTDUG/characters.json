@@ -19884,7 +19884,7 @@
     },
     {
       "title": "Birthday Boy",
-      "text": "Towers in range have their damage and range buffed by 15%, and cooldown reduced by 5%. Cupcake towers receive double this buff."
+      "text": "Nearby units gain +15% Damage, Range, and -5% CD. Cupcake towers receive double this buff."
     }
   ],
 "passiveDamage": {
@@ -19963,7 +19963,7 @@
   "passives": [
     {
       "title": "Short Fuse",
-      "text": "Every 20s deal 200% of this unit's damage as Full AoE. Damage increases by 20% per Nature unit on the team. Timer decreases by 1.5s per Fire unit on the team. Every second gain +1% damage (Max 30%). If the team only has Nature and Fire units, gain +1.5% damage instead (Max 45%). If sold with max buff deal 300% of this unit's damage as Full AoE"
+      "text": "Every 20s, deal 200% of this unit's damage as Full AoE. Damage increases by 20% per Nature unit on the team. Timer decreases by 1.5s per Fire unit on the team. Every second gain +1% Damage (Max 30%). If the team only has Nature and Fire units, gain +1.5% Damage instead (Max 45%). If sold with max buff deal 300% of this unit's damage as Full AoE."
     }
   ],
   "passiveDamage": {
@@ -20052,11 +20052,11 @@
   "passives": [
     {
       "title": "Shark Infested Waters",
-      "text": "Attacks apply 25% bleed over 5s. All shark towers perform a follow-up automatically on double this units cooldown, dealing 25% of their damage as bleed over 5s."
+      "text": "Attacks apply 25% Bleed for 5s. All shark towers perform a follow-up automatically on double this units CD, dealing 25% of their damage as Bleed for 5s."
     },
     {
       "title": "Sit for a while",
-      "text": "If Old Man Consequences is on the team this unit is free to place and receives double the buffs of Guiding Whistle."
+      "text": "If Old Man Consequences is on the team, this unit is free to place and receives double the buffs from Guiding Whistle."
     }
   ],
   "passiveDamage": {
@@ -20155,7 +20155,7 @@
   "passives": [
     {
       "title": "You're All Pawns on my Board.",
-      "text": "Place up to 5 Chess Pieces on the board. Pieces start as Pawns and promote after earning kills. <br>● Pawn: Single target, 80% damage, max 5. <br>● Knight: Cone 25, 65% damage, applies 15% bleed over 2 seconds, max 3. <br>● Rook: Line, 60% damage, stuns the nearest 3 enemies for 1 seconds on its 10th attack. Max 1. <br>● Bishop: Cone 75, 80% damage, attacks apply a secondary piercing shot to 3 enemies for 40% damage, max 2.<br>● Queen: Cone 180, 50% damage, applies 20% bleed for 5 seconds, applies 10% slow for 5 seconds, and stuns the nearest 5 enemies for 1.5 second. Max 1.<br>● King: Full AoE, 65% damage, passively applies 15% slow to enemies in range, max 1. (Upgrade 0+, Global CD: 0s).",
+    "text": "Place up to 5 Chess Pieces on the board. Pieces start as Pawns and promote after earning kills. <br>● Pawn: Single target, 80% damage, max 5. <br>● Knight: Cone 25, 65% damage, applies 15% Bleed for 2s, max 3. <br>● Rook: Line, 60% damage, Stuns the 3 closest enemies for 1s on its 10th attack, max 1. <br>● Bishop: Cone 75, 80% damage, attacks apply a secondary piercing shot to 3 enemies for 40% damage, max 2.<br>● Queen: Cone 180, 50% damage, applies 20% Bleed for 5s, applies 10% Slow for 5s, and Stuns the 5 closest enemies for 1.5s. Max 1.<br>● King: Full AoE, 65% damage, passively applies 15% Slow to enemies in range, max 1. (Upgrade 0+, Global CD: 0s).",
       "activeIcon": "https://tr.rbxcdn.com/180DAY-970aae71c4aaccc7b04c458dcccce895/420/420/Image/Png/noFilter"
     },
     {
@@ -20164,7 +20164,7 @@
     },
     {
       "title": "Pressing the Advantage",
-      "text": "When killing an enemy of any valid element buff units matching that enemy's element by +35% damage for 25 seconds. Only one element buff can exist at a time. <br> Valid elements: Rust, Light, Nature, Water, Fire, Neutral"
+      "text": "When killing an enemy of any valid element, units of that element gain +35% Damage for 25s. Only one element buff can exist at a time. <br> Valid elements: Rust, Light, Nature, Water, Fire, and Neutral."
     }
   ],
     "passiveDamage": {
@@ -20283,12 +20283,12 @@
   "passives": [
     {
       "title": "Star Spawn",
-      "text": "Warp a unit in range. Warped units receive +30% damage and range and become Dark/Water. (Upgrade 0+, Local CD: 0s).",
+      "text": "Warp a unit in range. Warped units receive +30% Damage, Range, and become Dark/Water. (Upgrade 0+, Local CD: 0s).",
       "activeIcon": ""
     },
     {
       "title": "Depths of Insanity",
-      "text": "Every 30 seconds become invisible every other second for 10 seconds (+2 seconds per Warped unit in range). Every time this unit becomes invisible receive +2% damage and range (Cap of 40%). When there are 3 warped units in range attacks stun for 1 second and apply 20% slow for 5 seconds"
+      "text": "Every 30s, become invisible every other second for 10s (+2s per Warped unit in range). Every time this unit becomes invisible, it gains +2% Damage and Range (Cap of 40%). When there are 3 warped units in range, this unit's attacks Stun for 1s and apply 20% Slow for 5s."
     }
   ],
       "passiveDamage": {
@@ -20374,11 +20374,11 @@
   "passives": [
     {
       "title": "Light Eater",
-      "text": "Attacks apply a 1% stacking wither (Max 15%). Performs a follow-up attack if an enemy reaches under 35% HP"
+      "text": "Attacks apply a 1% stacking Wither (Max 15%). Performs a follow-up attack if an enemy reaches under 35% HP."
     },
     {
       "title": "Star of the Show",
-      "text": "For every Light element unit in range, attacks ricochet to an additional enemy"
+      "text": "For every Light element unit in range, attacks ricochet to an additional enemy."
     }
   ],
     "passiveDamage": {
@@ -20472,11 +20472,11 @@
   "passives": [
     {
       "title": "Piercing Eyes",
-      "text": "Enemies in range are slowed by 1% per second (Max 20%). Every 3 seconds take 100% of this unit's damage, increasing by 10% per repetition (Max 200%) On hit deals +4 shield damage"
+      "text": "Enemies in range are Slowed by 1% per second (Max 20%), and receive this unit's damage every 3s, increasing by 10% per repetition (max 200%). This unit's attacks deal +4 shield damage."
     },
     {
       "title": "Figure in the Dark",
-      "text": "If other Dark units are on the team: <br> 1+ Dark units: +10% damage and +5% range <br> 3+ Dark units: +50% damage and +10% range <br> 5 Dark units: +100% damage and +20% range <br> At 5+ Dark units: Enemies in range take 25% more damage from Dark units"
+      "text": "If other Dark units are on the team: <br> 1+ Dark units: +10% Damage and +5% Range. <br> 3+ Dark units: +50% Damage and +10% Range. <br> 5 Dark units: +100% Damage and +20% Range. <br> At 5+ Dark units: Enemies in range take 25% more damage from Dark units."
     }
   ],
   "passiveDamage": {

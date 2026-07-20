@@ -4882,7 +4882,7 @@
           { "type": "buff",   "text": "● DMG increased to 3950 (was 2750) <br>● RNG increased to 26 (was 25)"},
           { "type": "nerf",   "text": "● Passive [Necromancer's Revenge] Summon hp reduced to 20% (was 85%)" }
         ]
-      },
+      }
     
     ],
   "levels": [

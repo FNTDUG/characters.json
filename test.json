@@ -3291,6 +3291,15 @@
     "placements": 1,
     "attackType": "Multi",
     "obtainment": "Medieval Event Pass Free tier 30",
+        "balanceChanges": [
+      {
+        "date": "7/20/26",
+        "changes": [
+          { "type": "buff",   "text": "● Slow increased to 20% (was 15%)<br>● RNG increased to 25 (was 19)" },
+          { "type": "nerf",   "text": "● Passive [Holy Lake of Golden Stars] Active CD reduction reduced to 15% (was 35%)" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
@@ -3298,7 +3307,7 @@
         "type": "Circle",
         "damage": 235.0,
         "cd": 3,
-        "range": 16
+        "range": 20
       },
       {
         "level": 2,
@@ -3306,7 +3315,7 @@
         "type": "Circle",
         "damage": 285.01,
         "cd": 2.5,
-        "range": 16
+        "range": 21
       },
       {
         "level": 3,
@@ -3314,7 +3323,7 @@
         "type": "Circle",
         "damage": 300.01,
         "cd": 2.5,
-        "range": 17
+        "range": 22
       },
       {
         "level": 4,
@@ -3322,7 +3331,7 @@
         "type": "Circle",
         "damage": 450.01,
         "cd": 2,
-        "range": 17
+        "range": 23
       },
       {
         "level": 5,
@@ -3330,7 +3339,7 @@
         "type": "Line",
         "damage": 545.01,
         "cd": 2,
-        "range": 18
+        "range": 24
       },
       {
         "level": 6,
@@ -3338,13 +3347,13 @@
         "type": "Line",
         "damage": 635.01,
         "cd": 1.8,
-        "range": 19
+        "range": 25
       }
     ],
     "passives": [
       {
         "title": "Holy Lake of Golden Stars",
-        "text": "In this unit's range, all Activatable Abilities have their CD reduced by 35%, all enemies are Slowed by 15%, and all Light element units gain +30% Damage."
+        "text": "In this unit's range, all Activatable Abilities have their CD reduced by 15%, all enemies are Slowed by 20%, and all Light element units gain +30% Damage."
       }
     ]
   },
@@ -4839,7 +4848,7 @@
       ]
     }
   },
-  {
+{
     "name": "Gravelord Foxy",
     "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-05-55-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-05-57-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
@@ -4866,81 +4875,89 @@
           { "type": "buff",   "text": "● Passive [Necromancer's Revenge] HP cap inf (was 125k)<br>● Passive [Necromancer's Revenge] HP Percent 85% (was 75%)<br>● Passive [Necromancer's Revenge] No longer need to kill to Proc" },
           { "type": "nerf",   "text": "● Passive [Necromancer's Revenge] Max summons 6 (was inf)" }
         ]
-      }
+      },
+      {
+        "date": "7/20/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG increased to 3950 (was 2750) <br>● RNG increased to 26 (was 25)"},
+          { "type": "nerf",   "text": "● Passive [Necromancer's Revenge] Summon hp reduced to 20% (was 85%)" }
+        ]
+      },
+    
     ],
-    "levels": [
-      {
-        "level": 1,
-        "cost": 5000,
-        "type": "Single",
-        "damage": 1650.03,
-        "cd": 7.2,
-        "range": 23
-      },
-      {
-        "level": 2,
-        "cost": 5000,
-        "type": "Single",
-        "damage": 1730.04,
-        "cd": 7.2,
-        "range": 23
-      },
-      {
-        "level": 3,
-        "cost": 6000,
-        "type": "Single",
-        "damage": 1830.04,
-        "cd": 7.2,
-        "range": 23
-      },
-      {
-        "level": 4,
-        "cost": 6000,
-        "type": "Single",
-        "damage": 1925.04,
-        "cd": 7,
-        "range": 23
-      },
-      {
-        "level": 5,
-        "cost": 6500,
-        "type": "Single",
-        "damage": 2020.04,
-        "cd": 7,
-        "range": 24
-      },
-      {
-        "level": 6,
-        "cost": 7000,
-        "type": "Circle",
-        "damage": 2475.05,
-        "cd": 6.6,
-        "range": 24
-      },
-      {
-        "level": 7,
-        "cost": 7000,
-        "type": "Circle",
-        "damage": 2600.05,
-        "cd": 6.2,
-        "range": 24
-      },
-      {
-        "level": 8,
-        "cost": 8500,
-        "type": "Circle",
-        "damage": 2750.06,
-        "cd": 6,
-        "range": 25
-      }
-    ],
-    "passives": [
-      {
-        "title": "Necromancer's Revenge",
-        "text": "Enemies hit by Gravelord Foxy are resurrected when defeated with 85% of their original health (max of 6 ressurected enemies)."
-      }
-    ]
-  },
+  "levels": [
+    {
+      "level": 1,
+      "cost": 5000,
+      "damage": 2350,
+      "type": "Single",
+      "cd": 7.2,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 5000,
+      "damage": 2600,
+      "type": "Single",
+      "cd": 7.2,
+      "range": 22
+    },
+    {
+      "level": 3,
+      "cost": 6000,
+      "damage": 2900,
+      "type": "Single",
+      "cd": 7.2,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 3100,
+      "type": "Single",
+      "cd": 7,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 6500,
+      "damage": 3300,
+      "type": "Single",
+      "cd": 7,
+      "range": 25
+    },
+    {
+      "level": 6,
+      "cost": 7000,
+      "damage": 3500,
+      "type": "Explosion",
+      "cd": 6.6,
+      "range": 26
+    },
+    {
+      "level": 7,
+      "cost": 7000,
+      "damage": 3700,
+      "type": "Explosion",
+      "cd": 6.2,
+      "range": 26
+    },
+    {
+      "level": 8,
+      "cost": 8500,
+      "damage": 3950,
+      "type": "Explosion",
+      "cd": 6,
+      "range": 26
+    }
+  ],
+  "passives": [
+    {
+      "title": "Necromancer's Revenge",
+      "text": "Enemies hit by Gravelord Foxy are resurrected when defeated with 20% of their original health. Max 6 resurrected enemies at once"
+    }
+  ]
+},
   {
     "name": "Blighted Endo Freddy",
     "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-06-10-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
@@ -5563,6 +5580,15 @@
     "placements": 1,
     "attackType": "Multi",
     "obtainment": "Hero 4 Quest",
+        "balanceChanges": [
+      {
+        "date": "7/20/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG boost increased to 30% (was 10%)<br>● RNG boost increased to 35% (was 15%)" },
+          { "type": "nerf",   "text": "● CD Boost Removed (was -10%)" }
+        ]
+      }
+    ],
     "voicelines": [
       {
         "title": "Placement1",
@@ -5783,7 +5809,7 @@
       },
       {
         "title": "Guiding Whistle",
-        "text": "Old Man Consequences empowers all [Water] units with +10% Damage, +25% Range, and -10% Cooldown."
+        "text": "Buffs Water element units in range by +35% Damage and +30% Range."
       },
       {
         "title": "Purgatory's Reimbursement",
@@ -13818,7 +13844,7 @@
     "element": "Electricity",
     "placements": 1,
     "attackType": "Multi",
-    "obtainment": "S2 Clan Present (0.05%)",
+    "obtainment": "Season 2 Clan Present (0.05%)",
     "levels": [
       {
         "level": 1,
@@ -14968,157 +14994,186 @@
     ],
     "element": "Nature",
     "placements": 1,
-    "attackType": "Circle",
+    "attackType": "Multi",
     "obtainment": "Game 5 Minigame (5% Normal Ending, 10% Secret Ending)",
-    "levels": [
+        "balanceChanges": [
       {
-        "level": 1,
-        "damage": 120.0,
-        "range": 21,
-        "cd": 2,
-        "cost": 4500
-      },
-      {
-        "level": 2,
-        "damage": 150.0,
-        "range": 22,
-        "cd": 2,
-        "cost": 2500
-      },
-      {
-        "level": 3,
-        "damage": 174.0,
-        "range": 23,
-        "cd": 2,
-        "cost": 2750
-      },
-      {
-        "level": 4,
-        "damage": 200.0,
-        "range": 24,
-        "cd": 2,
-        "cost": 3000
-      },
-      {
-        "level": 5,
-        "damage": 225.0,
-        "range": 25,
-        "cd": 2,
-        "cost": 4000
-      },
-      {
-        "level": 6,
-        "damage": 256.0,
-        "range": 25,
-        "cd": 2,
-        "cost": 5000
-      },
-      {
-        "level": 7,
-        "damage": 278.0,
-        "range": 26,
-        "cd": 2,
-        "cost": 6000
-      },
-      {
-        "level": 8,
-        "damage": 299.0,
-        "range": 26,
-        "cd": 2,
-        "cost": 6500
-      },
-      {
-        "level": 9,
-        "damage": 598.0,
-        "range": 26,
-        "cd": 4,
-        "cost": 8000
-      },
-      {
-        "level": 10,
-        "damage": 630.0,
-        "range": 26,
-        "cd": 3.8,
-        "cost": 7000
-      },
-      {
-        "level": 11,
-        "damage": 690.0,
-        "range": 26,
-        "cd": 3.8,
-        "cost": 8000
-      },
-      {
-        "level": 12,
-        "damage": 730.0,
-        "range": 27,
-        "cd": 3.6,
-        "cost": 8000
-      },
-      {
-        "level": 13,
-        "damage": 777.0,
-        "range": 27,
-        "cd": 3.6,
-        "cost": 9000
-      },
-      {
-        "level": 14,
-        "damage": 836.0,
-        "range": 28,
-        "cd": 3.4,
-        "cost": 10000
-      },
-      {
-        "level": 15,
-        "damage": 896.0,
-        "range": 29,
-        "cd": 3.4,
-        "cost": 10000
-      },
-      {
-        "level": 16,
-        "damage": 941.0,
-        "range": 30,
-        "cd": 3.2,
-        "cost": 11000
-      },
-      {
-        "level": 17,
-        "damage": 995.0,
-        "range": 30,
-        "cd": 3.2,
-        "cost": 11000
-      },
-      {
-        "level": 18,
-        "damage": 1035.0,
-        "range": 30,
-        "cd": 3,
-        "cost": 11500
-      },
-      {
-        "level": 19,
-        "damage": 1100.0,
-        "range": 31,
-        "cd": 3,
-        "cost": 12000
-      },
-      {
-        "level": 20,
-        "damage": 1180.0,
-        "range": 32,
-        "cd": 3,
-        "cost": 12500
-      },
-      {
-        "level": 21,
-        "damage": 1299.0,
-        "range": 33,
-        "cd": 2.8,
-        "cost": 15000
+        "date": "7/20/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG increased to 1500 (was 1299)<br>● Attack type change to Cone 45° at lvl 10 and Cone 75° at lvl 16 (was Circle)" }
+        ]
       }
     ],
+  "levels": [
+    {
+      "level": 1,
+      "cost": 4500,
+      "damage": 325,
+      "type": "Cricle",
+      "cd": 2,
+      "range": 21
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 360,
+      "type": "Circle",
+      "cd": 2,
+      "range": 22
+    },
+    {
+      "level": 3,
+      "cost": 2750,
+      "damage": 400,
+      "type": "Circle",
+      "cd": 2,
+      "range": 23
+    },
+    {
+      "level": 4,
+      "cost": 3000,
+      "damage": 450,
+      "type": "Cricle",
+      "cd": 2,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 4000,
+      "damage": 475,
+      "type": "Explosion",
+      "cd": 2,
+      "range": 25
+    },
+    {
+      "level": 6,
+      "cost": 5000,
+      "damage": 500,
+      "type": "Circle",
+      "cd": 2,
+      "range": 25
+    },
+    {
+      "level": 7,
+      "cost": 6000,
+      "damage": 525,
+      "type": "Circle",
+      "cd": 2,
+      "range": 26
+    },
+    {
+      "level": 8,
+      "cost": 6500,
+      "damage": 550,
+      "type": "Circle",
+      "cd": 2,
+      "range": 26
+    },
+    {
+      "level": 9,
+      "cost": 8000,
+      "damage": 780,
+      "type": "Circle",
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 10,
+      "cost": 7000,
+      "damage": 820,
+      "type": "Cone 45°",
+      "cd": 3.8,
+      "range": 26
+    },
+    {
+      "level": 11,
+      "cost": 8000,
+      "damage": 870,
+      "type": "Cone 45°",
+      "cd": 3.8,
+      "range": 26
+    },
+    {
+      "level": 12,
+      "cost": 8000,
+      "damage": 930,
+      "type": "Cone 45°",
+      "cd": 3.6,
+      "range": 27
+    },
+    {
+      "level": 13,
+      "cost": 9000,
+      "damage": 970,
+      "type": "Cone 45°",
+      "cd": 3.6,
+      "range": 27
+    },
+    {
+      "level": 14,
+      "cost": 10000,
+      "damage": 1040,
+      "type": "Cone 45°",
+      "cd": 3.4,
+      "range": 28
+    },
+    {
+      "level": 15,
+      "cost": 10000,
+      "damage": 1090,
+      "type": "Cone 45°",
+      "cd": 3.4,
+      "range": 29
+    },
+    {
+      "level": 16,
+      "cost": 11000,
+      "damage": 1140,
+      "type": "Cone 75°",
+      "cd": 3.2,
+      "range": 30
+    },
+    {
+      "level": 17,
+      "cost": 11000,
+      "damage": 1195,
+      "type": "Cone 75°",
+      "cd": 3.2,
+      "range": 30
+    },
+    {
+      "level": 18,
+      "cost": 11500,
+      "damage": 1235,
+      "type": "Cone 75°",
+      "cd": 3,
+      "range": 30
+    },
+    {
+      "level": 19,
+      "cost": 12000,
+      "damage": 1300,
+      "type": "Cone 75°",
+      "cd": 3,
+      "range": 31
+    },
+    {
+      "level": 20,
+      "cost": 12500,
+      "damage": 1380,
+      "type": "Cone 75°",
+      "cd": 3,
+      "range": 32
+    },
+    {
+      "level": 21,
+      "cost": 15000,
+      "damage": 1500,
+      "type": "Cone 75°",
+      "cd": 2.8,
+      "range": 33
+    }
+  ],
     "passives": [
       {
         "title": "Lumber Bot Shop (This does not appear in-game)",
@@ -19939,9 +19994,17 @@
     "Support"
   ],
   "element": "Water",
-  "placements": 2,
+  "placements": 1,
   "attackType": "Line",
   "obtainment": "Fisherman Toy Bonnie Evolution",
+      "balanceChanges": [
+      {
+        "date": "7/20/26",
+        "changes": [
+          { "type": "nerf",   "text": "● Placements reduced to 1 (was 2)" }
+        ]
+      }
+      ],
   "levels": [
     {
       "level": 1,
@@ -20008,5 +20071,352 @@
         }
       ]
 }
+},
+{
+  "name": "Grand Strategist Chica",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1tWdufAheUp3nKuGt4WF7nxQmwvBP1FAc&sz=w500",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-4bb50f74e9e51c27ef397ff1b37bf8ac/420/420/Image/Png/noFilter",
+  "rarity": "apex",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Support",
+    "Slow",
+    "Stun"
+  ],
+  "element": "Light",
+  "placements": 1,
+  "attackType": "Continuous",
+  "obtainment": "Soul Summons (0.01)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2882,
+      "damage": 35,
+      "cd": 0.5,
+      "range": 16
+    },
+    {
+      "level": 2,
+      "cost": 5000,
+      "damage": 40,
+      "cd": 0.5,
+      "range": 18
+    },
+    {
+      "level": 3,
+      "cost": 6000,
+      "damage": 50,
+      "cd": 0.45,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 7000,
+      "damage": 60,
+      "cd": 0.45,
+      "range": 22
+    },
+    {
+      "level": 5,
+      "cost": 10000,
+      "damage": 70,
+      "cd": 0.4,
+      "range": 24
+    },
+    {
+      "level": 6,
+      "cost": 12000,
+      "damage": 80,
+      "cd": 0.4,
+      "range": 25
+    },
+    {
+      "level": 7,
+      "cost": 14000,
+      "damage": 90,
+      "cd": 0.35,
+      "range": 26
+    },
+    {
+      "level": 8,
+      "cost": 16000,
+      "damage": 100,
+      "cd": 0.35,
+      "range": 26
+    },
+    {
+      "level": 9,
+      "cost": 20000,
+      "damage": 110,
+      "cd": 0.35,
+      "range": 26
+    }
+  ],
+  "passives": [
+    {
+      "title": "You're All Pawns on my Board.",
+      "text": "Place up to 5 Chess Pieces on the board. Pieces start as Pawns and promote after earning kills. <br> Pawn: Single target, 80% damage, max 5. <br> Knight: Cone 25, 65% damage, applies 15% bleed over 2 seconds, max 3. <br> Rook: Line, 60% damage, stuns the nearest 3 enemies for 1 seconds on its 10th attack. Max 1. <br> Bishop: Cone 75, 80% damage, attacks apply a secondary piercing shot to 3 enemies for 40% damage, max 2.<br> Queen: Cone 180, 50% damage, applies 20% bleed for 5 seconds, applies 10% slow for 5 seconds, and stuns the nearest 5 enemies for 1.5 second. Max 1.<br> King: Full AoE, 65% damage, passively applies 15% slow to enemies in range, max 1. (Upgrade 0+, Global CD: 0s).",
+      "activeIcon": "https://tr.rbxcdn.com/180DAY-970aae71c4aaccc7b04c458dcccce895/420/420/Image/Png/noFilter"
+    },
+    {
+      "title": "Hold the Line!",
+      "text": "When losing a stock buff all units in range by +10% crit damage. Buff this unit's crit rate by +5%. Stacks up to 3 times"
+    },
+    {
+      "title": "Pressing the Advantage",
+      "text": "When killing an enemy of any valid element buff units matching that enemy's element by +35% damage for 25 seconds. Only one element buff can exist at a time. <br> Valid elements: Rust, Light, Nature, Water, Fire, Neutral"
+    }
+  ]
+},
+{
+  "name": "Cthulhu Nightmare Foxy",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1KRqBibC0wvFC2ttB8p4VI7lnRl4MoJ3Y&sz=w500",
+  "imgShiny": "https://drive.google.com/thumbnail?id=14Suv4GbNBm1iF3Ts13CDHhltMC7fsRyl&sz=w500",
+  "rarity": "nightmare",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Support",
+    "Slow",
+    "Stun"
+  ],
+  "element": "Dark/Water",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Clan Tournaments",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 1928,
+      "damage": 600,
+      "type": "Line",
+      "cd": 4,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 3500,
+      "damage": 750,
+      "type": "Line",
+      "cd": 4,
+      "range": 19
+    },
+    {
+      "level": 3,
+      "cost": 5000,
+      "damage": 950,
+      "type": "Line",
+      "cd": 4,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 7500,
+      "damage": 1100,
+      "type": "Line",
+      "cd": 3,
+      "range": 22
+    },
+    {
+      "level": 5,
+      "cost": 10000,
+      "damage": 1300,
+      "type": "Cone 120°",
+      "cd": 3,
+      "range": 25
+    },
+    {
+      "level": 6,
+      "cost": 15000,
+      "damage": 1600,
+      "type": "Cone 120°",
+      "cd": 3,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Star Spawn",
+      "text": "Warp a unit in range. Warped units receive +30% damage and range and become Dark/Water. (Upgrade 0+, Global CD: undefineds).",
+      "activeIcon": ""
+    },
+    {
+      "title": "Depths of Insanity",
+      "text": "Every 30 seconds become invisible every other second for 10 seconds (+2 seconds per Warped unit in range). Every time this unit becomes invisible receive +2% damage and range (Cap of 40%). When there are 3 warped units in range attacks stun for 1 second and apply 20% slow for 5 seconds"
+    }
+  ]
+  
+},
+{
+  "name": "Unicorn Toy Foxy",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1tQIoKHpnUwkngOoEJjXh6UxleloYqN3_&sz=w500",
+  "imgShiny": "https://drive.google.com/thumbnail?id=1VJ8i74TAhi7B616GoabqgNDmBR1j5kFG&sz=w500",
+  "rarity": "nightmare",
+  "typeMain": "Starter-Midgame",
+  "typeTags": [
+    "Wither"
+  ],
+  "element": "Light",
+  "placements": 3,
+  "attackType": "Ricochet",
+  "obtainment": "Season 3 Clan Present (0.05%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 1000,
+      "damage": 500,
+      "cd": 4,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 550,
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 3,
+      "cost": 3250,
+      "damage": 625,
+      "cd": 4,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 4750,
+      "damage": 700,
+      "cd": 4,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 6500,
+      "damage": 750,
+      "cd": 3.5,
+      "range": 32
+    },
+    {
+      "level": 6,
+      "cost": 8500,
+      "damage": 800,
+      "cd": 3.5,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Light Eater",
+      "text": "Attacks apply a 1% stacking wither (Max 15%). Performs a follow-up attack if an enemy reaches under 35% HP"
+    },
+    {
+      "title": "Star of the Show",
+      "text": "For every Light element unit in range, attacks ricochet to an additional enemy"
+    }
+  ],
+    "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Light Eater",
+          "dmgmult": 1.15
+        }
+      ],
+      "periodic": [
+        {
+          "label": "Light Eater",
+          "pctofdamage": 1,
+          "hits": 1
+        }
+      ]
+    }
+},
+{
+  "name": "Mothman Lefty",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1ow8FHLJ7vSfZMpFQCyY48M4JFm61Bh79&sz=w500",
+  "imgShiny": "https://drive.google.com/thumbnail?id=1D2eHqtposAuCBcPF55zmykthtHiVXWKc&sz=w500",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Slow"
+  ],
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Season 3 Clan Present (0.05%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 7500,
+      "damage": 200,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 230,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 22
+    },
+    {
+      "level": 3,
+      "cost": 4500,
+      "damage": 275,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 6500,
+      "damage": 340,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 23
+    },
+    {
+      "level": 5,
+      "cost": 8000,
+      "damage": 420,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 23
+    },
+    {
+      "level": 6,
+      "cost": 9000,
+      "damage": 500,
+      "type": "Circle",
+      "cd": 2,
+      "range": 23
+    },
+    {
+      "level": 7,
+      "cost": 10000,
+      "damage": 540,
+      "type": "Line",
+      "cd": 2,
+      "range": 26
+    },
+    {
+      "level": 8,
+      "cost": 12000,
+      "damage": 600,
+      "type": "Line",
+      "cd": 2,
+      "range": 26
+    }
+  ],
+  "passives": [
+    {
+      "title": "Piercing Eyes",
+      "text": "Enemies in range are slowed by 1% per second (Max 20%). Every 3 seconds take 100% of this unit's damage, increasing by 10% per repetition (Max 200%) On hit deals +4 shield damage"
+    },
+    {
+      "title": "Figure in the Dark",
+      "text": "If other Dark units are on the team: <br> 1+ Dark units: +10% damage and +5% range <br> 3+ Dark units: +50% damage and +10% range <br> 5 Dark units: +100% damage and +20% range <br> At 5+ Dark units: Enemies in range take 25% more damage from Dark units"
+    }
+  ]
 }
 ]

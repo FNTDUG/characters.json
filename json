@@ -19684,7 +19684,7 @@
         },
         {
           "label": "Pan Hand (Boost)",
-          "dmgmult": 0.2,
+          "dmgmult": 1.2,
           "everynthattack": 2
         }
       ],

@@ -8657,7 +8657,8 @@
       },
       {
         "name": "Froman Hoax Purple Guy",
-        "image": "https://drive.google.com/thumbnail?id=1MHhGktKcXIGIVLiGP4_M3O7spyR-LhYn&sz=w500"
+        "image": "https://drive.google.com/thumbnail?id=1MHhGktKcXIGIVLiGP4_M3O7spyR-LhYn&sz=w500",
+        "rarity": "secret"
       }
     ],
     "passiveDamage": {
@@ -20093,7 +20094,7 @@
   "element": "Light",
   "placements": 1,
   "attackType": "Continuous",
-  "obtainment": "Soul Summons (0.005)",
+  "obtainment": "Soul Summons (0.001%)",
   "levels": [
     {
       "level": 1,

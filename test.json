@@ -1599,7 +1599,7 @@
       },
       {
         "title": "Astral Sickness",
-        "text": "Regenerating enemies inside Astral Bonnie's range have their regeneration reduced by 15%. If Astral Bonnie hits one, that reduction becomes 40% for 3 seconds."
+        "text": "Regenerating enemies inside Astral Bonnie's range have their regeneration reduced by 15%. If Astral Bonnie hits one, that reduction, its regeneration is removed permanently."
       },
       {
         "title": "Astral Alignment",
@@ -5580,15 +5580,6 @@
     "placements": 1,
     "attackType": "Multi",
     "obtainment": "Hero 4 Quest",
-        "balanceChanges": [
-      {
-        "date": "7/20/26",
-        "changes": [
-          { "type": "buff",   "text": "● DMG boost increased to 30% (was 10%)<br>● RNG boost increased to 35% (was 15%)" },
-          { "type": "nerf",   "text": "● CD Boost Removed (was -10%)" }
-        ]
-      }
-    ],
     "voicelines": [
       {
         "title": "Placement1",
@@ -5628,6 +5619,13 @@
         "date": "4/26/26",
         "changes": [
           { "type": "buff",   "text": "● Base RNG 20 (was 16)" }
+        ]
+      },
+      {
+        "date": "7/20/26",
+        "changes": [
+          { "type": "buff",   "text": "● DMG boost increased to 35% (was 10%)<br>● RNG boost increased to 30% (was 25%)" },
+          { "type": "nerf",   "text": "● CD Boost Removed (was -10%)" }
         ]
       }
     ],
@@ -5859,9 +5857,8 @@
       "selfboost": [
         {
           "label": "Guiding Whistle",
-          "dmgmult": 1.1,
-          "rngmult": 1.25,
-          "cdmult": 0.9
+          "dmgmult": 1.35,
+          "rngmult": 1.30,
         }
       ]
     }
@@ -8657,6 +8654,10 @@
       {
         "name": "Dave Miller",
         "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/untitled-high.png?enable-io=true&crop=1%3A1&width=347"
+      },
+      {
+        "name": "Froman Hoax Purple Guy",
+        "image": "https://drive.google.com/thumbnail?id=1MHhGktKcXIGIVLiGP4_M3O7spyR-LhYn&sz=w500"
       }
     ],
     "passiveDamage": {
@@ -9555,6 +9556,12 @@
         "date": "6/6/26",
         "changes": [
           { "type": "buff",   "text": "Full Kit rework" }
+        ]
+      },
+      {
+        "date": "6/6/26",
+        "changes": [
+          { "type": "nerf",   "text": "Passive [Restless Soul] DMG boost reduced to 30% (was 75%)" }
         ]
       }
     ],

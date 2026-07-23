@@ -20158,7 +20158,7 @@
   "passives": [
     {
       "title": "You're All Pawns on my Board.",
-    "text": "Place up to 5 Chess Pieces on the board. Pieces start as Pawns and promote after earning kills. <br>● Pawn: Single target, 80% damage, max 5. <br>● Knight: Cone 25, 65% damage, applies 15% Bleed for 2s, max 3. <br>● Rook: Line, 60% damage, Stuns the 3 closest enemies for 1s on its 10th attack, max 1. <br>● Bishop: Cone 75, 80% damage, attacks apply a secondary piercing shot to 3 enemies for 40% damage, max 2.<br>● Queen: Cone 180, 50% damage, applies 20% Bleed for 5s, applies 10% Slow for 5s, and Stuns the 5 closest enemies for 1.5s. Max 1.<br>● King: Full AoE, 65% damage, passively applies 15% Slow to enemies in range, max 1. (Upgrade 0+, Global CD: 0s).",
+    "text": "Place up to 5 Chess Pieces on the board. Pieces start as Pawns and promote after earning kills. <br>𜺗 Pawn: Single target, 80% damage, max 5. <br>● Knight: Cone 25, 65% damage, applies 15% Bleed for 2s, max 3. <br>● Rook: Line, 60% damage, Stuns the 3 closest enemies for 1s on its 10th attack, max 1. <br>● Bishop: Cone 75, 80% damage, attacks apply a secondary piercing shot to 3 enemies for 40% damage, max 2.<br>● Queen: Cone 180, 50% damage, applies 20% Bleed for 5s, applies 10% Slow for 5s, and Stuns the 5 closest enemies for 1.5s. Max 1.<br>● King: Full AoE, 65% damage, passively applies 15% Slow to enemies in range, max 1. (Upgrade 0+, Global CD: 0s).",
       "activeIcon": "https://tr.rbxcdn.com/180DAY-970aae71c4aaccc7b04c458dcccce895/420/420/Image/Png/noFilter"
     },
     {

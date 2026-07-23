@@ -8013,8 +8013,8 @@
     "passiveDamage": {
       "selfboost": [
         {
-          "label": "Generator (boost)",
-          "dmgmult": 1.4,
+          "label": "Generator",
+          "dmgmult": 1.2,
           "everynthattack": 2
         }
       ]

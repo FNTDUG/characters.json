@@ -18484,7 +18484,7 @@
     "passives": [
       {
         "title": "Taco Tuesday!",
-        "text": "This unit gains buffs depending on the chosen filling: Beef - +15% Damage, +15% Range, +5% CD. Chicken - -5% Damage, +5% Dange, -10% CD. Vegan - +25% Damage, +10% Range, +10% CD."
+        "text": "This unit gains buffs depending on the chosen filling: <br> Beef - +15% Damage, +15% Range, +5% CD. <br> Chicken - -5% Damage, +5% Range, -10% CD. <br> Vegan - +25% Damage, +10% Range, +10% CD."
       },
       {
         "title": "Happy Hour",

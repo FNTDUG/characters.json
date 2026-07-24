@@ -46,6 +46,7 @@
         "Commander Withered Freddy",
         "Shadow Bonnie",
         "Goodnight Plushtime",
+        "Unicorn Toy Foxy NEW",
         "Shark Withered Foxy",
         "Nightmare Shadow Bonnie",
         "Lolbit",
@@ -379,33 +380,45 @@
     "slow": {
       "ss": [
         "Deep Sea Calamity Endo",
-        "Frostmancer Bonnie",
+        "Molten Freddy",
+        "Frostmancer Withered Bonnie",
         "Frozen King Foxy",
         "Grand Strategist Chica NEW",
-        "Cthulhu Nightmare Foxy NEW",
-        "Golden Freddy"
       ],
       "s": [
+        "Starfarer Princess",
+        "Nightmare Chica",
+        "Cthulhu Nightmare Foxy NEW",
+        "Golden Freddy",
         "Afterbite Withered Golden Freddy",
-        "Mother Nature Ballora",
       ],
       "a": [
         "Yenndo",
-        "Frosty the Snowcake"
+        "Lore Keeper Shadow Bonnie",
+        "Mother Nature Ballora",
+        "Bucket Bob",
+        "Mothman Lefty"
       ],
       "b": [
-
+        "Withered Golden Freddy",
+        "Stormbound Chica",
         "Gaia Chica",
-        "Puppet"
+        "Frosty the Snowcake",
+        "Puppet",
+        "Chipper",
+        "Detective Bonnie",
+        "Serpent Endo"
       ],
       "c": [
-        "Chipper",
         "Leviathan Mangle",
         "Tidal Wailer Crying Child",
         "Nightmare Fredbear",
         "Hacker King RWQFSFASXC",
         "Crying Child",
-        "Michael Afton"
+        "Scooped Michael",
+        "Michael Afton",
+        "Elizabeth",
+        "Roadkill Phantom Foxy"
       ]
     }
   },

@@ -1230,16 +1230,16 @@ text-overflow:ellipsis;
 /* ── MOBILE RESET (≤600px) — undo desktop upscale, match original look ── */
 @media(max-width:600px){
   /* frame & layout */
-  .trade-frame{padding:14px 4px;}
-  .trade-title{font-size:18px;margin-bottom:8px;}
-  .trade-players{margin-bottom:12px;}
-  .player{font-size:10px;}
-  .rating{font-size:9px;margin-top:4px;}
+  .trade-frame{padding:12px 4px;}
+  .trade-title{font-size:16px;margin-bottom:6px;}
+  .trade-players{margin-bottom:10px;}
+  .player{font-size:9px;}
+  .rating{font-size:8px;margin-top:4px;}
   .trade-grid{gap:10px;margin-top:10px;}
   /* slots */
-  .unit-side{gap:6px;padding:6px;min-height:80px;}
-  .slot{width:75px;height:75px;border-radius:11px;}
-  .addSlot{font-size:24px;}
+  .unit-side{gap:5px;padding:6px;min-height:70px;}
+  .slot{width:60px;height:60px;border-radius:9px;}
+  .addSlot{font-size:20px;}
   .shiny{font-size:12px;}
   .enchantBadge{width:17px;height:17px;border-radius:5px;padding:1px;}
   .glitchBadge{width:17px;height:17px;border-radius:5px;padding:1px;}
@@ -1252,14 +1252,14 @@ text-overflow:ellipsis;
   /* status & counter */
   .trade-status{margin-top:14px;padding:8px;font-size:9px;}
   .counter-area{margin-top:18px;}
-  .counter-title{font-size:10px;margin-bottom:7px;}
-  .counter-area input{font-size:8px;padding:7px 10px;}
+  .counter-title{font-size:9px;margin-bottom:6px;}
+  .counter-area input{font-size:7px;padding:6px 8px;}
   /* soul bars — original mobile sizing */
   .soul-bars-row{margin:12px 0 3px;}
-  .skull-icon{width:40px;height:40px;left:4px;}
+  .skull-icon{width:34px;height:34px;left:4px;}
   .soul-bar-wrap.right .skull-icon{left:auto;right:4px;}
-  .soul-bar{font-size:10px;padding:8px 12px 8px 48px;}
-  .soul-bar-wrap.right .soul-bar{padding:8px 48px 8px 12px;}
+  .soul-bar{font-size:9px;padding:6px 10px 6px 42px;}
+  .soul-bar-wrap.right .soul-bar{padding:6px 42px 6px 10px;}
   /* popup grid */
   .updated-grid{max-width:calc(66px * 4 + 5px * 3);}
   .updated-card{width:66px!important;height:66px!important;min-width:66px!important;min-height:66px!important;max-width:66px!important;max-height:66px!important;}

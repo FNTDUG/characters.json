@@ -226,7 +226,7 @@
       ],
       "s": [
         "Bonnie",
-        "Foxy"
+        "Foxy",
         "Crying Child",
         "Rockstar Chica",
         "Foxy Fighters",
@@ -340,7 +340,7 @@
         "Deep Sea Calamity Endo",
         "Krampus Purple Guy",
         "Ennard",
-        "Cthluhu Nightmare Foxy NEW",
+        "Cthulhu Nightmare Foxy NEW",
         "Grand Strategist Chica NEW",
       ],
       "s": [
@@ -376,79 +376,13 @@
         "Afterbite Withered Golden Freddy"
       ]
     },
-        "support": {
-      "ss": [
-        "Candy Cadet",
-        "Nature Reclaimed Foxy",
-        "Psychic Friend Fredbear",
-        "Golden Cupcake",
-        "Spring Duo",
-        "Golden Freddy"
-      ],
-      "s": [
-        "Kronos Endo Freddy",
-        "Party Never Ends Cupcake",
-        "Cthulhu Nightmare Foxy NEW",
-        "Scarecrow Freddy",
-        "Funtime Foxy",
-        "Animdude",
-        "No. 1 Crate",
-        "Endo 01",
-        "Rockin Bonnie",
-        "Hag Withered Chica"
-      ],
-      "a": [
-        "Starfarer Princess DOWN",
-        "Barbarian Boy",
-        "Crying Child",
-        "Astral Bonnie",
-        "Mother Nature Ballora",
-        "Handunit",
-        "Movie Director Freddy",
-        "Sweetheart Toy Foxy",
-        "Chipper",
-        "Grand Strategist Chica NEW"
-      ],
-      "b": [
-        "Old Man Consequences UP",
-        "Puppet",
-        "Michael Afton",
-        "Ennard",
-        "Nightmare Fredbear",
-        "Frozen King Foxy",
-        "Lore Keeper Shadow Bonnie",
-        "Springtrap",
-        "Funtime Chica",
-        "Nightmare Chica",
-        "Gaia Chica",
-        "Overgrown Foxy",
-        "Commander Withered Freddy",
-        "Mothman Lefty",
-        "Helpy",
-        "Cupcake",
-        "Popcorn Bot",
-        "Circus Baby",
-        "Balloon Boy"
-        
-      ],
-      "c": [
-        "Hacker King RWQFSFASXC",
-        "Phantom Mangle",
-        "Party Packer Cupcake BUG",
-        "Headless Horseman Mangle",
-        "Lich Shadow Bonnie",
-        "Shadow Knight Freddy",
-        "Bear5",
-        "Arch Angler Toy Bonnie NEW"
-      ]
-    },
     "slow": {
       "ss": [
         "Deep Sea Calamity Endo",
         "Frostmancer Bonnie",
         "Frozen King Foxy",
         "Grand Strategist Chica NEW",
-        "Cthluhu Nightmare Foxy NEW",
+        "Cthulhu Nightmare Foxy NEW",
         "Golden Freddy"
       ],
       "s": [
@@ -512,7 +446,8 @@
     "all": "",
     "starter": "",
     "support": "",
-    "stun": ""
+    "stun": "",
+    "slow": ""
   }
 };
   var lists = cfg.lists || {};
@@ -655,7 +590,7 @@
   var modeDiv = document.createElement('div');
   modeDiv.className = 'tl-mode';
   modeDiv.id = 'tlModes';
-  [['all','Every Unit'],['starter','Starter'],['support','Support'],['stun','Stun']].forEach(function(p) {
+  [['all','Every Unit'],['starter','Starter'],['support','Support'],['stun','Stun'],['slow','Slow']].forEach(function(p) {
     var b = document.createElement('button');
     b.className = 'tl-mb' + (p[0] === 'all' ? ' on' : '');
     b.setAttribute('data-m', p[0]);

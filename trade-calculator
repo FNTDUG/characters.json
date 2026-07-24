@@ -268,6 +268,7 @@ text-overflow:ellipsis;
   box-sizing:border-box;
   padding:13px 14px;
   font-size:14px;
+  font-family:'Press Start 2P',cursive;
 
   border-radius:10px;
   border:2px solid rgba(255,164,91,0.5);

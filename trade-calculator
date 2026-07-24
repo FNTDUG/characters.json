@@ -1007,8 +1007,8 @@ text-overflow:ellipsis;
   .trade-title{ font-size:16px; }
   .player{ font-size:9px; }
   .rating{ font-size:8px; }
-  #myCustomValue,#theirCustomValue{ font-size:5px !important; white-space:nowrap; gap:2px; }
-  #myCustomValue span:first-child,#theirCustomValue span:first-child{ width:8px !important; height:8px !important; border-radius:2px !important; }
+  #myCustomValue,#theirCustomValue{ font-size:8px !important; white-space:nowrap; gap:3px; }
+  #myCustomValue span:first-child,#theirCustomValue span:first-child{ width:10px !important; height:10px !important; border-radius:2px !important; }
   .trade-status{ font-size:9px; padding:8px; }
   .counter-title{ font-size:9px; }
   .counter-area input{ font-size:7px; }

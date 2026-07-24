@@ -1235,7 +1235,7 @@ text-overflow:ellipsis;
   .trade-title{font-size:16px;margin-bottom:6px;}
   .trade-players{margin-bottom:10px;}
   .player{font-size:9px;}
-  .rating{font-size:8px;margin-top:4px;}
+  .rating{font-size:8px;margin-top:8px;}
   .trade-grid{gap:10px;margin-top:10px;}
   /* slots */
   .unit-side{gap:5px;padding:6px;min-height:70px;}

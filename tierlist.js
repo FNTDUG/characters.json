@@ -375,6 +375,104 @@
         "Old Man Consequences",
         "Afterbite Withered Golden Freddy"
       ]
+    },
+        "support": {
+      "ss": [
+        "Candy Cadet",
+        "Nature Reclaimed Foxy",
+        "Psychic Friend Fredbear",
+        "Golden Cupcake",
+        "Spring Duo",
+        "Golden Freddy"
+      ],
+      "s": [
+        "Kronos Endo Freddy",
+        "Party Never Ends Cupcake",
+        "Cthulhu Nightmare Foxy NEW",
+        "Scarecrow Freddy",
+        "Funtime Foxy",
+        "Animdude",
+        "No. 1 Crate",
+        "Endo 01",
+        "Rockin Bonnie",
+        "Hag Withered Chica"
+      ],
+      "a": [
+        "Starfarer Princess DOWN",
+        "Barbarian Boy",
+        "Crying Child",
+        "Astral Bonnie",
+        "Mother Nature Ballora",
+        "Handunit",
+        "Movie Director Freddy",
+        "Sweetheart Toy Foxy",
+        "Chipper",
+        "Grand Strategist Chica NEW"
+      ],
+      "b": [
+        "Old Man Consequences UP",
+        "Puppet",
+        "Michael Afton",
+        "Ennard",
+        "Nightmare Fredbear",
+        "Frozen King Foxy",
+        "Lore Keeper Shadow Bonnie",
+        "Springtrap",
+        "Funtime Chica",
+        "Nightmare Chica",
+        "Gaia Chica",
+        "Overgrown Foxy",
+        "Commander Withered Freddy",
+        "Mothman Lefty",
+        "Helpy",
+        "Cupcake",
+        "Popcorn Bot",
+        "Circus Baby",
+        "Balloon Boy"
+        
+      ],
+      "c": [
+        "Hacker King RWQFSFASXC",
+        "Phantom Mangle",
+        "Party Packer Cupcake BUG",
+        "Headless Horseman Mangle",
+        "Lich Shadow Bonnie",
+        "Shadow Knight Freddy",
+        "Bear5",
+        "Arch Angler Toy Bonnie NEW"
+      ]
+    },
+    "slow": {
+      "ss": [
+        "Deep Sea Calamity Endo",
+        "Frostmancer Bonnie",
+        "Frozen King Foxy",
+        "Grand Strategist Chica NEW",
+        "Cthluhu Nightmare Foxy NEW",
+        "Golden Freddy"
+      ],
+      "s": [
+        "Afterbite Withered Golden Freddy",
+        "Mother Nature Ballora",
+      ],
+      "a": [
+        "Yenndo",
+        "Frosty the Snowcake"
+      ],
+      "b": [
+
+        "Gaia Chica",
+        "Puppet"
+      ],
+      "c": [
+        "Chipper",
+        "Leviathan Mangle",
+        "Tidal Wailer Crying Child",
+        "Nightmare Fredbear",
+        "Hacker King RWQFSFASXC",
+        "Crying Child",
+        "Michael Afton"
+      ]
     }
   },
   "msg": {

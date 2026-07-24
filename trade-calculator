@@ -1007,8 +1007,8 @@ text-overflow:ellipsis;
   .trade-title{ font-size:16px; }
   .player{ font-size:9px; }
   .rating{ font-size:8px; }
-  #myCustomValue,#theirCustomValue{ font-size:5px !important; white-space:nowrap; gap:2px; }
-  #myCustomValue span:first-child,#theirCustomValue span:first-child{ width:8px !important; height:8px !important; border-radius:2px !important; }
+  #myCustomValue,#theirCustomValue{ font-size:8px !important; white-space:nowrap; gap:3px; }
+  #myCustomValue span:first-child,#theirCustomValue span:first-child{ width:11px !important; height:11px !important; border-radius:2px !important; }
   .trade-status{ font-size:9px; padding:8px; }
   .counter-title{ font-size:9px; }
   .counter-area input{ font-size:7px; }
@@ -1176,6 +1176,8 @@ text-overflow:ellipsis;
 
 /* ── UPSCALE OVERRIDES ── */
 #tradeApp{max-width:1300px;}
+#myCustomValue,#theirCustomValue{font-size:13px!important;gap:5px!important;}
+#myCustomValue span:first-child,#theirCustomValue span:first-child{width:16px!important;height:16px!important;}
 .trade-frame{padding:52px 36px;}
 .trade-title{font-size:42px;margin-bottom:22px;}
 .trade-players{margin-bottom:24px;}

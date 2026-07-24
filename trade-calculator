@@ -1134,8 +1134,7 @@ text-overflow:ellipsis;
 }
 .customValueBadge{
   position:absolute;
-  top:50%;
-  transform:translateY(-50%);
+  bottom:2px;
   left:2px;
   z-index:3;
   width:22px;
@@ -1203,7 +1202,7 @@ text-overflow:ellipsis;
 .soul-bar-wrap.right .soul-bar{padding:11px 68px 11px 18px;}
 .enchantBadge{width:30px;height:30px;border-radius:9px;padding:2px;}
 .glitchBadge{width:30px;height:30px;border-radius:9px;padding:2px;}
-.customValueBadge{width:30px;height:30px;border-radius:9px;top:50%;transform:translateY(-50%);bottom:auto;}
+.customValueBadge{width:30px;height:30px;border-radius:9px;}
 .lvTag{font-size:9px;padding:2px 5px;}
 .stackCount{font-size:11px;padding:2px 5px;}
 .unit-list{grid-template-columns:repeat(auto-fill,96px);}
@@ -2919,7 +2918,8 @@ if (unit.customValue) {
   _cvW.className = "customValueBadge";
   if (unit.glitched) {
     _cvW.style.bottom = "auto";
-    _cvW.style.top = window.innerWidth <= 600 ? "22px" : "29px";
+    _cvW.style.top = "50%";
+    _cvW.style.transform = "translateY(-50%)";
   }
   var _cvI = document.createElement("div");
   _cvI.className = "customValueBadgeInner";

@@ -2539,7 +2539,8 @@
           "Electricity/Light": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/electricity-light-element-high.png",
           "Fire/Rust": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/element_fire_rust-high.png",
           "Nature/Rust": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/element_nature_rust-high.png",
-          "Nature/Dark": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/element_nature_dark-high.png"
+          "Nature/Dark": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/element_nature_dark-high.png",
+          "Dark/Water": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/element_dark_water-high.png?enable-io=true&crop=1%3A1&width=347"
         };
 
         function getElementIcon(elementName) {
@@ -2560,7 +2561,8 @@
         "Electricity/Light": "-1% CD to units within range (caps at -15%) & -3% CD (self buff)",
         "Fire/Rust": "All attacks apply burn for 3% DMG/second & +3% CD & +6% DMG (self buff).",
         "Nature/Rust": "+1 Stock (tank 1 additional enemy/hit, this stacks) & +3% CD & +6% DMG (self buff).",
-        "Nature/Dark": "+1 Stock (tank 1 additional enemy/hit, this stacks) & +3% DMG (self buff)."
+        "Nature/Dark": "+1 Stock (tank 1 additional enemy/hit, this stacks) & +3% DMG (self buff).",
+        "Dark/Water": "+3% DMG (self buff) & +3% RNG to all units within range (this stacks)."
       };
         
       
@@ -3727,6 +3729,7 @@
           ["chipper",           "Chipper: Stock Stacker (+0.5% DMG, +0.5% RNG per stack)",                  { dmgMult: 1.005, rngMult: 1.005, stackKey: "chipperStacks", maxStacks: 20 }],
           ["comm_freddy",       "Commander Withered Freddy: Strength In Numbers (+1% DMG per stack)",        { dmgMult: 1.01, stackKey: "commanderStacks", maxStacks: 4 }],
           ["child",             "Crying Child: Thermal Runaway (+25% DMG)",                                { dmgMult: 1.25, duration: 16, cd: 30 }],
+          ["cthulhu",           "Cthulhu Nightmare Foxy: Star Spawn (+30% DMG & +30% RNG)",                 { dmgMult: 1.30, rngMult: 1.30}],
           ["cupcake",           "Cupcake: Birthday Boy (+3% DMG/RNG, -3% CD)",                              { dmgMult: 1.03, rngMult: 1.03, cdMult: 0.97 }],
           ["balloon",           "Balloon Boy: Stolen Batteries (+10% RNG per stack)",                        { rngMult: 1.10, stackKey: "balloonStacks", maxStacks: 2 }],
           ["barb",              "Barbarian Boy: War Cry (+15% DMG per stack)",                               { dmgMult: 1.15, stackKey: "barbStacks", maxStacks: 2 }],
@@ -3764,8 +3767,11 @@
           ["roar",              "Shadow Knight Freddy: Roaring Scream (+25% DMG, +3% CD)",                { dmgMult: 1.25, cdMult: 1.03, duration: 15, cd: 60 }],
           ["survivor_gas",      "Sole Survivor Withered Bonnie: Mutating Gas (+30% DMG, +5% CD per stack)",{ dmgMult: 1.30, cdMult: 1.05, stackKey: "survivorStacks", maxStacks: 4 }],
           ["survivor_stun",     "Sole Survivor Withered Bonnie: Wasteland Scavenger (+25% DMG)",          { dmgMult: 1.25, duration: 10, cd: 15 }],
+          ["strat_chica_dmg",   "Grand Strategist Chica: Pressing the Advantage (+35% Crit DMG)",          { dmgMult: 1.25}],
+          ["strat_chica_crit",   "Grand Strategist Chica: Hold the Line (+30% Crit DMG)",                  { critDmgAdd: 1.30}],
           ["spring_duo_avg",    "Spring Duo: Spotlight! (Averaged, +25% DMG, +22.5% RNG, -2.5% CD)",      { dmgMult: 1.25, rngMult: 1.225, cdMult: 0.975 }],
           ["sweetheart_toy_foxy","Sweetheart Toy Foxy: Love Shot (-35% DMG, avg CD)",                      { dmgMult: 0.65 }],
+          ["unicorn_foxy",        "Unicorn Toy Foxy: Light Eater (+15% DMG)",                              { dmgMult: 1.15 }],
           ["electricityelement","Electricity Element: -1% CD to units within range (stacks)",              { cdMult: 0.99, stackKey: "electricityelementStacks", maxStacks: 15 }],
           ["waterelement",      "Water Element: +3% RNG to units within range (stacks)",                   { rngMult: 1.03, stackKey: "waterelementStacks", maxStacks: 18 }],
           ];
@@ -3792,12 +3798,12 @@
           );
         }
 
-        if (String(unit.element || "").toLowerCase() === "dark" || String(unit.element || "").toLowerCase() === "dark/light" || String(unit.element || "").toLowerCase() === "nature/dark") {
+        if (String(unit.element || "").toLowerCase() === "dark" || String(unit.element || "").toLowerCase() === "dark/light" || String(unit.element || "").toLowerCase() === "nature/dark"|| String(unit.element || "").toLowerCase() === "dark/water") {
           BOOST_OPTIONS.push(
             ["nightmarefred", "Nightmare Fredbear: Feeding the Fear (+10% DMG, +10% RNG per stack) [Dark only]", { dmgMult: 1.10, rngMult: 1.10, stackKey: "nightmarefredStacks", maxStacks: 5 }],
-            ["darkelement",   "Dark Element: +3% DMG [Dark only]",                                               { dmgMult: 1.03, elements: ["Dark", "Dark/Light", "Nature/Dark"] }],
-            ["ballora_dark",  "Mother Nature Ballora: Dark Wither (+10% DMG) [Dark only]",                       { dmgMult: 1.10, elements: ["Dark", "Dark/Light", "Nature/Dark" ]}],
-            ["nugget",        "Nightmare Chica: The First (+8% DMG) [Dark only]",                                { dmgMult: 1.08, elements: ["Dark", "Dark/Light", "Nature/Dark"] }]
+            ["darkelement",   "Dark Element: +3% DMG [Dark only]",                                               { dmgMult: 1.03, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water"] }],
+            ["ballora_dark",  "Mother Nature Ballora: Dark Wither (+10% DMG) [Dark only]",                       { dmgMult: 1.10, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water"]}],
+            ["nugget",        "Nightmare Chica: The First (+8% DMG) [Dark only]",                                { dmgMult: 1.08, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water"] }]
           );
         }
 
@@ -3816,11 +3822,11 @@
           );
         }
 
-        if (String(unit.element || "").toLowerCase() === "water") {
+        if (String(unit.element || "").toLowerCase() === "water" || String(unit.element || "").toLowerCase() === "dark/water") {
           BOOST_OPTIONS.push(
-            ["fkf_obelisk",  "Frozen King Foxy: Frozen Obelisk (+20% DMG) [Water only]",                          { dmgMult: 1.20, elements: ["Water"] }],
-            ["ballora_water","Mother Nature Ballora: Water Boost (+10% DMG) [Water only]",                         { dmgMult: 1.10, elements: ["Water"] }],
-            ["omc_whistle",  "Old Man Consequences: Guiding Whistle (+10% DMG, +25% RNG, -10% CD) [Water only]",  { dmgMult: 1.10, rngMult: 1.25, cdMult: 0.90, elements: ["Water"] }],
+            ["fkf_obelisk",  "Frozen King Foxy: Frozen Obelisk (+20% DMG) [Water only]",                          { dmgMult: 1.20, elements: ["Water", "Dark/Water"] }],
+            ["ballora_water","Mother Nature Ballora: Water Boost (+10% DMG) [Water only]",                         { dmgMult: 1.10, elements: ["Water", "Dark/Water"] }],
+            ["omc_whistle",  "Old Man Consequences: Guiding Whistle (+35% DMG & +30% RNG) [Water only]",        { dmgMult: 1.35, rngMult: 1.30, elements: ["Water", "Dark/Water"] }],
             ["stormbound",   "Stormbound Chica: Electrifying Pressure (+10% DMG) [Water & Electric only]",        { dmgMult: 1.10, elements: ["Electricity", "Electricity/Light", "Water"] }]
           );
         }

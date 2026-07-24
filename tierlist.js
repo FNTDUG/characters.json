@@ -10,8 +10,8 @@
         "Cthulhu Nightmare Foxy NEW",
         "Nature Reclaimed Foxy",
         "Golden Freddy",
-        "Deep Sea Calamity Endo"
-        "Gaia Chica",
+        "Deep Sea Calamity Endo",
+        "Gaia Chica"
       ],
       "s": [
         "Kronos Endo Freddy",

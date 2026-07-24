@@ -1230,7 +1230,7 @@ text-overflow:ellipsis;
 /* ── MOBILE RESET (≤600px) — undo desktop upscale, match original look ── */
 @media(max-width:600px){
   /* frame & layout */
-  .trade-frame{padding:12px 5px;}
+  .trade-frame{padding:12px 5px!important;}
   .trade-title{font-size:16px;margin-bottom:6px;}
   .trade-players{margin-bottom:10px;}
   .player{font-size:9px;}

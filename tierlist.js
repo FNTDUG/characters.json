@@ -5,20 +5,22 @@
   "lists": {
     "all": {
       "ss": [
+        "Grand Strategist Chica NEW",
         "Astral Bonnie",
-        "Deep Sea Calamity Endo",
+        "Cthulhu Nightmare Foxy NEW",
+        "Nature Reclaimed Foxy",
+        "Golden Freddy",
+        "Deep Sea Calamity Endo"
+        "Gaia Chica",
+      ],
+      "s": [
         "Kronos Endo Freddy",
         "Frozen King Foxy",
         "Dragon Endo 01",
-        "Nature Reclaimed Foxy",
-        "Golden Freddy"
-      ],
-      "s": [
         "Frostmancer Withered Bonnie",
-        "Gravelord Foxy",
         "Stormbound Chica",
-        "Gaia Chica",
         "Headless Horseman Mangle",
+        "Faz-ino Spring Bonnie UP",
         "Candy Cadet",
         "Krampus Purple Guy",
         "Ennard",
@@ -46,9 +48,9 @@
         "Goodnight Plushtime",
         "Shark Withered Foxy",
         "Nightmare Shadow Bonnie",
-        "Starfarer Princess",
         "Lolbit",
         "Lore Keeper Shadow Bonnie",
+        "Mothman Lefty NEW",
         "Henry Emily",
         "Foxy.exe",
         "Chipper",
@@ -60,7 +62,9 @@
         "Anti-Hero Mike",
         "Scraptrap",
         "War Machine Foxy",
-        "Party Never Ends Cupcake NEW",
+        "Old Man Consequences UP",
+        "Starfarer Princess DOWN",
+        "Party Never Ends Cupcake",
         "Funtime Chica",
         "Devious Purple Guy",
         "Toy Maker Mangle",
@@ -68,16 +72,15 @@
         "Fazman",
         "Fallen Angel Nightmarionne",
         "Ignited Burst Withered Freddy",
-        "Bombwork Cupcake NEW",
+        "Bombwork Cupcake",
         "Mother Nature Ballora",
         "Showtime Freddy",
         "Springtrap",
         "Mangle",
-        "Arch Angler Toy Bonnie NEW",
-        "Old Man Consequences",
         "Music Man",
         "Funtime Bonnie",
-        "Thanatos"
+        "Thanatos",
+        "Gravelord Foxy DOWN",
       ],
       "a": [
         "Funtime Foxy",
@@ -88,6 +91,7 @@
         "Endo 01",
         "Rockin Bonnie",
         "Grinch Foxy",
+        "Arch Angler Toy Bonnie DOWN",
         "Bones of The Past Nightmare Freddy",
         "Abyssal Ballora",
         "Yenndo",
@@ -106,7 +110,7 @@
         "Foxy",
         "Crying Child",
         "Foxy Fighters",
-        "Scarecrow Freddy BUG",
+        "Scarecrow Freddy",
         "Toy Foxy",
         "Firework Shadow Freddy",
         "Lich Shadow Bonnie",
@@ -148,7 +152,6 @@
         "Nightmare BB",
         "No. 1 Crate",
         "Exotic Butters",
-        "Faz-ino Spring Bonnie BUG",
         "Phantom Mangle",
         "Mecha Cupcake",
         "Endo 02 BUG",
@@ -214,13 +217,16 @@
     "starter": {
       "ss": [
         "Golden Freddy",
+        "Faz-ino Spring Bonnie UP",
         "Endo 01",
         "Rockin Bonnie",
+        "Unicorn Toy Foxy NEW",
         "Undead Chica",
-        "Bonnie",
-        "Foxy"
+
       ],
       "s": [
+        "Bonnie",
+        "Foxy"
         "Crying Child",
         "Rockstar Chica",
         "Foxy Fighters",
@@ -242,7 +248,6 @@
         "Freddy With a Glock"
       ],
       "b": [
-      "Faz-ino Spring Bonnie BUG",
       "Phantom Chica",
       "Nightmare Cupcake",
       "Santa Freddy",
@@ -274,9 +279,9 @@
         "Golden Freddy"
       ],
       "s": [
-        "Starfarer Princess",
         "Kronos Endo Freddy",
-        "Party Never Ends Cupcake NEW",
+        "Party Never Ends Cupcake",
+        "Cthulhu Nightmare Foxy NEW",
         "Scarecrow Freddy",
         "Funtime Foxy",
         "Animdude",
@@ -286,6 +291,7 @@
         "Hag Withered Chica"
       ],
       "a": [
+        "Starfarer Princess DOWN",
         "Barbarian Boy",
         "Crying Child",
         "Astral Bonnie",
@@ -293,14 +299,15 @@
         "Handunit",
         "Movie Director Freddy",
         "Sweetheart Toy Foxy",
-        "Chipper"
+        "Chipper",
+        "Grand Strategist Chica NEW"
       ],
       "b": [
+        "Old Man Consequences UP",
         "Puppet",
         "Michael Afton",
         "Ennard",
         "Nightmare Fredbear",
-        "Old Man Consequences",
         "Frozen King Foxy",
         "Lore Keeper Shadow Bonnie",
         "Springtrap",
@@ -309,16 +316,16 @@
         "Gaia Chica",
         "Overgrown Foxy",
         "Commander Withered Freddy",
+        "Mothman Lefty",
         "Helpy",
         "Cupcake",
         "Popcorn Bot",
-        "Stormbound Chica",
         "Circus Baby",
         "Balloon Boy"
         
       ],
       "c": [
-      "Hacker King RWQFSFASXC",
+        "Hacker King RWQFSFASXC",
         "Phantom Mangle",
         "Party Packer Cupcake BUG",
         "Headless Horseman Mangle",
@@ -332,7 +339,9 @@
       "ss": [
         "Deep Sea Calamity Endo",
         "Krampus Purple Guy",
-        "Ennard"
+        "Ennard",
+        "Cthluhu Nightmare Foxy NEW",
+        "Grand Strategist Chica NEW",
       ],
       "s": [
         "Frostmancer Withered Bonnie",

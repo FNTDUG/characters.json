@@ -1007,8 +1007,8 @@ text-overflow:ellipsis;
   .trade-title{ font-size:16px; }
   .player{ font-size:9px; }
   .rating{ font-size:8px; }
-  #myCustomValue,#theirCustomValue{ font-size:8px !important; white-space:nowrap; gap:3px; }
-  #myCustomValue span:first-child,#theirCustomValue span:first-child{ width:11px !important; height:11px !important; border-radius:2px !important; }
+  #myCustomValue,#theirCustomValue{ font-size:6px !important; white-space:nowrap; gap:2px; }
+  #myCustomValue span:first-child,#theirCustomValue span:first-child{ width:9px !important; height:9px !important; border-radius:2px !important; }
   .trade-status{ font-size:9px; padding:8px; }
   .counter-title{ font-size:9px; }
   .counter-area input{ font-size:7px; }
@@ -1134,7 +1134,8 @@ text-overflow:ellipsis;
 }
 .customValueBadge{
   position:absolute;
-  bottom:2px;
+  top:50%;
+  transform:translateY(-50%);
   left:2px;
   z-index:3;
   width:22px;
@@ -1202,7 +1203,7 @@ text-overflow:ellipsis;
 .soul-bar-wrap.right .soul-bar{padding:11px 68px 11px 18px;}
 .enchantBadge{width:30px;height:30px;border-radius:9px;padding:2px;}
 .glitchBadge{width:30px;height:30px;border-radius:9px;padding:2px;}
-.customValueBadge{width:30px;height:30px;border-radius:9px;}
+.customValueBadge{width:30px;height:30px;border-radius:9px;top:50%;transform:translateY(-50%);bottom:auto;}
 .lvTag{font-size:9px;padding:2px 5px;}
 .stackCount{font-size:11px;padding:2px 5px;}
 .unit-list{grid-template-columns:repeat(auto-fill,96px);}

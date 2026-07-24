@@ -431,7 +431,10 @@
       "Dragon Endo 01": "Great DPS and DoT, additionally increasing the DoT for other Fire units and having global DoT with his Active.",
       "Nature Reclaimed Foxy": "Spectacular support, giving all units in range +30% Damage, +25% Range and -5% CD, on top of boosting your base's health. He also does fair DPS by himself with some bonus DPS to Bosses.",
       "Golden Freddy": "Great boosting in Endless (up to +30% damage per Golden Freddy), good DPS, and great stall with 20% Slow on attack and Knockback with his Active.",
-      "Frostmancer Withered Bonnie": "Spectacular stall unit with varied AOE Slow (0%-45%, varies with RNG) and Single target 1s Stun (7s CD)."
+      "Frostmancer Withered Bonnie": "Spectacular stall unit with varied AOE Slow (0%-45%, varies with RNG) and Single target 1s Stun (7s CD).",
+      "Grand Strategist Chica": "Incredible DPS, good Slow, Stun, and support. Great in many teams, especially Light focused ones",
+      "Gaia Chica": "Great DPS, Nature support, and decent Slow and Stun",
+      "Cthulhu Nightmare Foxy": "Good DPS, great support to half the team, and good Slow and Stun."
     },
     "starter": {
       "Golden Freddy": "Great boosting in Endless (up to +30% damage per Golden Freddy), good DPS, and great stall with 20% Slow on attack and Knockback with his Active.",
@@ -453,7 +456,15 @@
       "Deep Sea Calamity Endo": "An absurdly good stunner, applying 1.8s Stun on attack in a very large 245° Cone. Also has the potential to Stun Bosses for 2.5s if they get too close.",
       "Krampus Purple Guy": "A great stunner applying 1.8s Stun on attack. Pair him with a Kaboom or Box Byte to help combat his shorter range for better coverage.",
       "Ennard": "Has a good 1.5s Stun on attack while additionally stunning 4 random enemies around the map every 6s for 1.5s."
+    },
+    "slow": {
+      "Deep Sea Calamity Endo": "Effectively has 30% AOE Slow.",
+      "Molten Freddy": "Effectively has 30% AOE Slow, but is below Calamity Endo due to being Line.",
+      "Frostmancer Withered Bonnie": "RNG based AOE Slow that can go up to 45%.",
+      "Frozen King Foxy": "25% AOE Slow",
+      "Grand Strategist Chica": "15% AOE Slow + 10% Cone 180 Slow."
     }
+      
   },
   "notes": {
     "all": "",

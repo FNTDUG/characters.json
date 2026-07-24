@@ -1172,6 +1172,78 @@ text-overflow:ellipsis;
   pointer-events:none;
   line-height:1.2;
 }
+
+/* ── UPSCALE OVERRIDES ── */
+#tradeApp{max-width:1150px;}
+.trade-frame{padding:32px;}
+.trade-title{font-size:42px;}
+.player{font-size:18px;}
+.rating{font-size:14px;margin-top:6px;}
+.trade-grid{gap:16px;margin-top:16px;}
+.unit-side{gap:12px;min-height:180px;padding:8px;}
+.slot{width:110px;height:110px;border-radius:16px;}
+.addSlot{font-size:36px;}
+.shiny{font-size:16px;}
+.trade-buttons{gap:28px;margin-top:42px;}
+.trade-btn{padding:16px 28px;font-size:17px;}
+.trade-status{margin-top:24px;padding:14px;font-size:14px;}
+.counter-area{margin-top:30px;}
+.counter-title{font-size:15px;margin-bottom:8px;}
+.counter-area input{font-size:12px;padding:8px 10px;}
+.cat-tab{font-size:13px;padding:13px 26px;}
+.soul-bars-row{margin:26px 0 6px;}
+.skull-icon{width:56px;height:56px;left:5px;}
+.soul-bar-wrap.right .skull-icon{left:auto;right:5px;}
+.soul-bar{font-size:14px;padding:11px 18px 11px 68px;}
+.soul-bar-wrap.right .soul-bar{padding:11px 68px 11px 18px;}
+.enchantBadge{width:30px;height:30px;border-radius:9px;padding:2px;}
+.glitchBadge{width:30px;height:30px;border-radius:9px;padding:2px;}
+.customValueBadge{width:30px;height:30px;border-radius:9px;}
+.lvTag{font-size:9px;padding:2px 5px;}
+.stackCount{font-size:11px;padding:2px 5px;}
+.unit-list{grid-template-columns:repeat(auto-fill,96px);}
+.unit-item{width:96px;height:96px;}
+.updated-grid{max-width:calc(112px * 7 + 6px * 6);}
+.updated-card{width:112px!important;height:112px!important;min-width:112px!important;min-height:112px!important;max-width:112px!important;max-height:112px!important;}
+.unit-box{max-width:700px;height:82vh;max-height:82vh;}
+#unitSearch{padding:16px 18px;font-size:16px;margin-bottom:14px;}
+#detailName{font-size:28px;}
+#detailImg{width:160px;height:160px;}
+.popup-header-title{font-size:13px;}
+#unitDetail .unit-box-body button,#unitDetail .unit-box-body select{font-size:14px;padding:13px;}
+.enchant-btn{padding:13px 16px;font-size:13px;}
+.enchant-btn-label{font-size:13px;}
+.enchant-option{padding:9px 14px;font-size:11px;}
+.enchant-opt-badge{width:26px;height:26px;}
+.enchant-opt-ph{width:26px;height:26px;font-size:13px;}
+.ench-section-label{font-size:10px;letter-spacing:1.5px;}
+.ench-tile{min-height:110px;padding:14px 8px 10px;gap:6px;}
+.ench-tile-icon-wrap{width:44px;height:44px;}
+.ench-tile-ph{width:44px;height:44px;font-size:22px;}
+.ench-tile-none{padding:12px 16px;}
+.ench-tile-none .ench-tile-name{font-size:10px;}
+.ench-tile-name{font-size:9px;}
+.ench-tile-val{font-size:8px;padding:3px 7px;}
+.ench-tile-icon{width:44px;height:44px;}
+
+/* ── MOBILE UPSCALE OVERRIDE (≤600px) ── */
+@media(max-width:600px){
+  .slot{width:76px;height:76px;border-radius:11px;}
+  .addSlot{font-size:26px;}
+  .updated-grid{max-width:calc(80px * 4 + 5px * 3);}
+  .updated-card{width:80px!important;height:80px!important;min-width:80px!important;min-height:80px!important;max-width:80px!important;max-height:80px!important;}
+  .skull-icon{width:42px;height:42px;}
+  .soul-bar{font-size:10px;padding:8px 12px 8px 52px;}
+  .soul-bar-wrap.right .soul-bar{padding:8px 52px 8px 12px;}
+  .enchantBadge{width:20px;height:20px;}
+  .glitchBadge{width:20px;height:20px;}
+  .customValueBadge{width:20px!important;height:20px!important;}
+  .trade-title{font-size:20px;}
+  .player{font-size:10px;}
+  .ench-tile{min-height:80px;}
+  .ench-tile-icon-wrap{width:30px;height:30px;}
+  .ench-tile-ph{width:30px;height:30px;font-size:15px;}
+}
 </style>
 
 

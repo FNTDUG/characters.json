@@ -1174,7 +1174,7 @@ text-overflow:ellipsis;
 }
 
 /* ── UPSCALE OVERRIDES ── */
-#tradeApp{max-width:1150px;}
+#tradeApp{max-width:1300px;}
 .trade-frame{padding:52px 36px;}
 .trade-title{font-size:42px;margin-bottom:22px;}
 .trade-players{margin-bottom:24px;}

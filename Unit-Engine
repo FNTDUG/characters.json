@@ -1923,6 +1923,24 @@
         knockback: 'Knockback pushes enemies backward for a stated amount of tiles, with a 7s CD (also known as lockout)'
       };
 
+      function _repositionTip(box) {
+        requestAnimationFrame(function() {
+          box.style.left = '50%';
+          box.style.right = 'auto';
+          box.style.transform = 'translateX(-50%)';
+          var r  = box.getBoundingClientRect();
+          var vw = window.innerWidth || document.documentElement.clientWidth;
+          if (r.left < 8) {
+            box.style.left = '0';
+            box.style.transform = 'none';
+          } else if (r.right > vw - 8) {
+            box.style.left = 'auto';
+            box.style.right = '0';
+            box.style.transform = 'none';
+          }
+        });
+      }
+
       function makeInfoIcon(keyword, color) {
         var note = _PASSIVE_NOTES[keyword.toLowerCase()];
         if (!note) return null;
@@ -1933,10 +1951,12 @@
         box.className = 'ue-kw-info-box';
         box.textContent = note;
         wrap.appendChild(box);
+        wrap.addEventListener('mouseenter', function() { _repositionTip(box); });
         wrap.addEventListener('click', function(e) {
           e.stopPropagation();
           document.querySelectorAll('.ue-kw-info.open').forEach(function(o) { if (o !== wrap) o.classList.remove('open'); });
           wrap.classList.toggle('open');
+          if (wrap.classList.contains('open')) _repositionTip(box);
         });
         return wrap;
       }

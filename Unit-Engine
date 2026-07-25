@@ -1174,8 +1174,6 @@
         box-shadow: 0 4px 16px rgba(0,0,0,0.85);
         text-align: left;
       }
-      .ue-kw-info:hover .ue-kw-info-box,
-      .ue-kw-info.open .ue-kw-info-box { display: block; }
 
       
       #unitEngine .ue-csel-wrap {
@@ -1920,47 +1918,48 @@
         knockback: 'Knockback pushes enemies backward for a stated amount of tiles, with a 7s CD (also known as lockout)'
       };
 
-      function _repositionTip(wrap, box) {
-        requestAnimationFrame(function() {
-          var wr  = wrap.getBoundingClientRect();
-          var bw  = box.offsetWidth  || 215;
-          var bh  = box.offsetHeight || 60;
-          var vw  = window.innerWidth  || document.documentElement.clientWidth;
-          var pad = 8;
-
-          var left = wr.left + wr.width / 2 - bw / 2;
-          var top  = wr.top  - bh - 6;
-
-          if (left < pad)           left = pad;
-          if (left + bw > vw - pad) left = vw - pad - bw;
-          if (top  < pad)           top  = wr.bottom + 6;
-
-          box.style.left = left + 'px';
-          box.style.top  = top  + 'px';
-        });
-      }
-
       function makeInfoIcon(keyword, color) {
         var note = _PASSIVE_NOTES[keyword.toLowerCase()];
         if (!note) return null;
+
         var wrap = document.createElement('span');
         wrap.className = 'ue-kw-info';
         if (color) wrap.style.color = color;
-        var box = document.createElement('span');
+
+        // Append box to body so it escapes every overflow/clip ancestor
+        var box = document.createElement('div');
         box.className = 'ue-kw-info-box';
         box.textContent = note;
-        wrap.appendChild(box);
-        wrap.addEventListener('mouseenter', function() { _repositionTip(wrap, box); });
+        box.style.display = 'none';
+        document.body.appendChild(box);
+
+        function showTip() {
+          box.style.display = 'block';
+          var wr  = wrap.getBoundingClientRect();
+          var bw  = box.offsetWidth;
+          var bh  = box.offsetHeight;
+          var vw  = window.innerWidth  || document.documentElement.clientWidth;
+          var pad = 8;
+          var left = wr.left + wr.width / 2 - bw / 2;
+          var top  = wr.top  - bh - 6;
+          if (left < pad)           left = pad;
+          if (left + bw > vw - pad) left = vw - pad - bw;
+          if (top  < pad)           top  = wr.bottom + 6;
+          box.style.left = left + 'px';
+          box.style.top  = top  + 'px';
+        }
+        function hideTip() { box.style.display = 'none'; }
+
+        wrap.addEventListener('mouseenter', showTip);
+        wrap.addEventListener('mouseleave', hideTip);
         wrap.addEventListener('click', function(e) {
           e.stopPropagation();
-          document.querySelectorAll('.ue-kw-info.open').forEach(function(o) { if (o !== wrap) o.classList.remove('open'); });
-          wrap.classList.toggle('open');
-          if (wrap.classList.contains('open')) _repositionTip(wrap, box);
+          if (box.style.display === 'none') { showTip(); } else { hideTip(); }
         });
         return wrap;
       }
       document.addEventListener('click', function() {
-        document.querySelectorAll('.ue-kw-info.open').forEach(function(o) { o.classList.remove('open'); });
+        document.querySelectorAll('.ue-kw-info-box').forEach(function(b) { b.style.display = 'none'; });
       });
 
 

@@ -1148,9 +1148,8 @@
         position: relative;
         display: inline-block;
         cursor: pointer;
-        font-size: 9px;
+        font-size: 12px;
         font-weight: bold;
-        color: rgba(255,255,255,0.4);
         vertical-align: super;
         line-height: 1;
         user-select: none;
@@ -1924,11 +1923,12 @@
         knockback: 'Knockback pushes enemies backward along the path, forcing them to re-cover ground.'
       };
 
-      function makeInfoIcon(keyword) {
+      function makeInfoIcon(keyword, color) {
         var note = _PASSIVE_NOTES[keyword.toLowerCase()];
         if (!note) return null;
         var wrap = document.createElement('span');
         wrap.className = 'ue-kw-info';
+        if (color) wrap.style.color = color;
         var box = document.createElement('span');
         box.className = 'ue-kw-info-box';
         box.textContent = note;
@@ -1982,7 +1982,7 @@
                 n2.style.color = col;
                 n2.textContent = kw + (sfx || '');
                 el.appendChild(n2);
-                var ic2 = makeInfoIcon(kw.toLowerCase());
+                var ic2 = makeInfoIcon(kw.toLowerCase(), col);
                 if (ic2) el.appendChild(ic2);
               } else {
                 el.appendChild(document.createTextNode(kw + (sfx || '')));
@@ -1999,7 +1999,7 @@
               n4.style.color = _PASSIVE_COLORS[ccWord.toLowerCase()] || '#7BB5D9';
               n4.textContent = ccWord + (ccSfx || '');
               el.appendChild(n4);
-              var ic4 = makeInfoIcon(ccWord.toLowerCase());
+              var ic4 = makeInfoIcon(ccWord.toLowerCase(), _PASSIVE_COLORS[ccWord.toLowerCase()] || '#7BB5D9');
               if (ic4) el.appendChild(ic4);
             } else if (twoPhrase !== undefined) {
 
@@ -2007,7 +2007,7 @@
               n5.style.color = '#7BB5D9';
               n5.textContent = twoPhrase;
               el.appendChild(n5);
-              var ic5 = makeInfoIcon('knockback');
+              var ic5 = makeInfoIcon('knockback', '#7BB5D9');
               if (ic5) el.appendChild(ic5);
             }
             last = m.index + m[0].length;

@@ -1144,6 +1144,15 @@
         }
       }
 
+      .ue-byte-stat-row { margin-top: 8px; }
+      .ue-byte-stat-lbl { font-size: 9px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px; opacity: 0.65; }
+      .ue-byte-stat-range { font-size: 8px; color: rgba(255,164,91,0.8); }
+      .ue-byte-input { width: 100%; padding: 6px 8px; border-radius: 8px; border: 1px solid rgba(255,164,91,0.4); background: rgba(8,6,18,0.9); color: #fff; font-size: 10px; font-family: 'Press Start 2P', cursive; box-sizing: border-box; outline: none; transition: border-color 0.15s; -moz-appearance: textfield; }
+      .ue-byte-input:focus { border-color: #ffa45b; box-shadow: 0 0 0 2px rgba(255,164,91,0.15); }
+      .ue-byte-input::-webkit-outer-spin-button,
+      .ue-byte-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+      .ue-byte-sublabel { font-size: 9px; opacity: 0.65; margin-top: 10px; margin-bottom: 2px; }
+
       .ue-kw-info {
         position: relative;
         display: inline-block;
@@ -1481,6 +1490,19 @@
           enchant: "none"
         };
 
+        var byteState = { mainByte: "none", subByte: "none", stats: {}, subStats: {} };
+
+        var BYTE_LIST = ["The Box", "Boss Drain", "Reaper", "The Fan", "UFO", "KABOOM!"];
+
+        var BYTE_STATS = {
+          "The Box":    [{ key:"cd",  label:"CD",  unit:"%", min:-13,  max:13   }, { key:"rng", label:"RNG", unit:"%", min:-26, max:26 }, { key:"dmg", label:"DMG", unit:"%", min:-26, max:26 }],
+          "Boss Drain": [{ key:"dmg", label:"DMG", unit:"%", min:0,    max:13   }, { key:"bossdmg", label:"Boss DMG", unit:"%", min:0, max:32.5 }],
+          "Reaper":     [{ key:"critd", label:"Crit DMG", unit:"%", min:0, max:52 }],
+          "The Fan":    [{ key:"chargecd", label:"Charge CD", unit:"s", min:32.5, max:39 }, { key:"slow", label:"Slow", unit:"%", min:6.5, max:26 }, { key:"activedur", label:"Active Duration", unit:"s", min:3.9, max:10.4 }, { key:"effectdur", label:"Effect Duration", unit:"s", min:2.6, max:6.5 }],
+          "UFO":        [],
+          "KABOOM!":    [{ key:"rng", label:"RNG", unit:"%", min:0, max:32.5 }]
+        };
+
         var currentPermaBoostType = "none";
         
         
@@ -1693,7 +1715,45 @@
         costMult = r.costMult; critRateMult = r.critRateMult; critDmgMult = r.critDmgMult; critRateAdd = r.critRateAdd; critDmgAdd = r.critDmgAdd;
       });
 
-        
+        // ── Byte boosts ────────────────────────────────────────────────────────
+        function _applyByteBoosts(bm, bs) {
+          if (!bm || bm === "none") return;
+          if (bm === "The Box") {
+            var _bCd = parseFloat(bs.cd||0)||0, _bRng = parseFloat(bs.rng||0)||0, _bDmg = parseFloat(bs.dmg||0)||0;
+            if (_bCd  !== 0) cdMult  *= (1 + _bCd  / 100);
+            if (_bRng !== 0) rngMult *= (1 + _bRng / 100);
+            if (_bDmg !== 0) dmgMult *= (1 + _bDmg / 100);
+          } else if (bm === "Boss Drain") {
+            var _bdD = parseFloat(bs.dmg||0)||0, _bdB = parseFloat(bs.bossdmg||0)||0;
+            if (_bdD !== 0) dmgMult *= (1 + _bdD / 100);
+            if (_bdB !== 0) dmgMult *= (1 + _bdB / 100);
+          } else if (bm === "Reaper") {
+            var _rC = parseFloat(bs.critd||0)||0;
+            if (_rC !== 0) critDmgAdd += _rC / 100;
+          } else if (bm === "UFO") {
+            var _uEl = String(bs.element||"none").toLowerCase(), _uDmg = parseFloat(bs.dmg||0)||0;
+            switch (_uEl) {
+              case "neutral":     dmgMult *= 1.03; rngMult *= 1.03; cdMult *= 0.97; break;
+              case "dark":        dmgMult *= 1.03; break;
+              case "light":       cdMult  *= 0.97; break;
+              case "water":       rngMult *= 1.03; break;
+              case "electricity": cdMult  *= 0.99; break;
+              case "rust":        dmgMult *= 1.06; cdMult  *= 1.03; break;
+            }
+            if (_uDmg !== 0 && _uEl !== "none" && unit && unit.element) {
+              var _uUnit = String(unit.element||"").toLowerCase();
+              if (_uUnit === _uEl || _uUnit.indexOf(_uEl) !== -1) dmgMult *= (1 + _uDmg / 100);
+            }
+          } else if (bm === "KABOOM!") {
+            var _kR = parseFloat(bs.rng||0)||0;
+            if (_kR !== 0) rngMult *= (1 + _kR / 100);
+          }
+        }
+        if (typeof byteState !== "undefined") {
+          _applyByteBoosts(byteState.mainByte, byteState.stats    || {});
+          _applyByteBoosts(byteState.subByte,  byteState.subStats || {});
+        }
+
         if (!isFinite(dmgMult) || dmgMult <= 0) dmgMult = 1;
         if (!isFinite(rngMult)      || rngMult      <= 0) rngMult      = 1;
         if (!isFinite(cdMult)       || cdMult       <= 0) cdMult       = 1;
@@ -3773,9 +3833,11 @@
           return btn;
         }
 
-        var tabPerm = makeTabButton("Unit Boosts", "perm");
-        var tabTemp = makeTabButton("Boss Raids", "temp");
-        var tabEnch = makeTabButton("Enchant",   "ench");
+        var tabPerm  = makeTabButton("Unit Boosts", "perm");
+        var tabTemp  = makeTabButton("Boss Raids",  "temp");
+        var tabEnch  = makeTabButton("Enchant",     "ench");
+        var tabBytes = makeTabButton("Bytes",        "bytes");
+        var tabChips = makeTabButton("Chips",        "chips");
 
         var resetBtn = document.createElement("button");
         resetBtn.type = "button";
@@ -3787,6 +3849,7 @@
           buffState.tempSelected  = [];
           buffState.enchant       = "none";
           buffState.perma         = {};
+          if (typeof byteState !== "undefined") { byteState.mainByte = "none"; byteState.subByte = "none"; byteState.stats = {}; byteState.subStats = {}; }
           if (typeof allowDisplayAnimation !== "undefined") allowDisplayAnimation = false;
           displayUnit(unit, modeKey);
         };
@@ -3794,6 +3857,8 @@
         header.appendChild(tabPerm);
         header.appendChild(tabTemp);
         header.appendChild(tabEnch);
+        header.appendChild(tabBytes);
+        header.appendChild(tabChips);
         header.appendChild(resetBtn);
 
         
@@ -3801,13 +3866,17 @@
         body.className = "buff-tabs-body";
         card.appendChild(body);
 
-        var permPanel = document.createElement("div");
-        var tempPanel = document.createElement("div");
-        var enchPanel = document.createElement("div");
+        var permPanel  = document.createElement("div");
+        var tempPanel  = document.createElement("div");
+        var enchPanel  = document.createElement("div");
+        var bytesPanel = document.createElement("div");
+        var chipsPanel = document.createElement("div");
 
         body.appendChild(permPanel);
         body.appendChild(tempPanel);
         body.appendChild(enchPanel);
+        body.appendChild(bytesPanel);
+        body.appendChild(chipsPanel);
 
         
         (function buildPermPanel() {
@@ -4258,6 +4327,134 @@
         })();
 
         
+        (function buildBytesPanel() {
+          var statWrap = document.createElement("div");
+          var subWrap  = document.createElement("div");
+
+          var UFO_ELEMENTS = ["Neutral","Dark","Light","Fire","Water","Electricity","Rust"];
+          var UFO_ELEMENT_DESC = {
+            neutral:"",dark:"+3% DMG",light:"-3% CD",
+            fire:"3% DMG/sec burn on every attack (stacks)",
+            water:"+3% RNG",electricity:"-1% CD",rust:"+6% DMG, +3% CD penalty"
+          };
+          UFO_ELEMENT_DESC.neutral = "+3% DMG, +3% RNG, -3% CD";
+
+          function makeStatInput(s, effMax, ref) {
+            if (!ref) ref = byteState.stats;
+            var row = document.createElement("div"); row.className = "ue-byte-stat-row";
+            var lbl = document.createElement("div"); lbl.className = "ue-byte-stat-lbl";
+            var lt = document.createElement("span"); lt.textContent = s.label;
+            var rt = document.createElement("span"); rt.className = "ue-byte-stat-range";
+            var suf = s.unit || "%";
+            function fv(v) { return (v > 0 ? "+" : "") + v + suf; }
+            rt.textContent = fv(s.min) + " to " + fv(effMax);
+            lbl.appendChild(lt); lbl.appendChild(rt);
+            var inp = document.createElement("input");
+            inp.type = "number"; inp.className = "ue-byte-input";
+            inp.min = s.min; inp.max = effMax; inp.step = "0.1";
+            var _sv = ref[s.key];
+            inp.value = (_sv != null) ? _sv : 0;
+            inp.addEventListener("blur", function() {
+              var v = parseFloat(inp.value); if (isNaN(v)) v = 0;
+              v = Math.max(s.min, Math.min(effMax, v));
+              inp.value = v; ref[s.key] = v;
+              allowDisplayAnimation = false; displayUnit(unit, modeKey);
+            });
+            inp.addEventListener("keydown", function(e) { if (e.key === "Enter") inp.blur(); });
+            row.appendChild(lbl); row.appendChild(inp);
+            return row;
+          }
+
+          function renderByteInputs(byteKey, statsRef, container) {
+            if (byteKey === "UFO") {
+              var elOpts = [{ value:"none", label:"Select Element...", placeholder:true }];
+              UFO_ELEMENTS.forEach(function(e) { elOpts.push({ value:e.toLowerCase(), label:e }); });
+              var elSel = makeUESelect(elOpts, statsRef.element || "none", function(v) {
+                statsRef.element = v;
+                if (v === "none") statsRef.dmg = 0;
+                if (typeof playUiClickSound === "function") playUiClickSound();
+                renderStats();
+                allowDisplayAnimation = false; displayUnit(unit, modeKey);
+              }, { searchable:false, noMarginTop:true });
+              container.appendChild(elSel);
+              var selEl = statsRef.element || "none";
+              if (selEl !== "none" && UFO_ELEMENT_DESC[selEl]) {
+                var _desc = document.createElement("div");
+                _desc.style.cssText = "margin-top:6px;font-size:9px;padding:5px 8px;border-radius:6px;background:rgba(104,31,98,0.2);border:1px solid rgba(255,164,91,0.2);color:rgba(255,255,255,0.75);line-height:1.6;";
+                _desc.textContent = UFO_ELEMENT_DESC[selEl];
+                container.appendChild(_desc);
+              }
+              if (selEl !== "none" && unit && unit.element) {
+                var unitEl = String(unit.element||"").toLowerCase();
+                if (unitEl === selEl || unitEl.indexOf(selEl) !== -1) {
+                  container.appendChild(makeStatInput({ key:"dmg", label:"DMG", unit:"%", min:2.6, max:13 }, 13, statsRef));
+                }
+              }
+            } else {
+              var defs = (BYTE_STATS && BYTE_STATS[byteKey]) ? BYTE_STATS[byteKey] : [];
+              defs.forEach(function(s) { container.appendChild(makeStatInput(s, s.max, statsRef)); });
+              if (byteKey === "The Fan") {
+                var _fSlow = parseFloat(statsRef.slow||0)||0, _fCd = parseFloat(statsRef.chargecd||0)||0;
+                var _fAct  = parseFloat(statsRef.activedur||0)||0, _fEff = parseFloat(statsRef.effectdur||0)||0;
+                var _fUp   = (_fCd > 0 && _fAct > 0) ? Math.min(1, _fAct / _fCd) : 0;
+                var _fSum  = document.createElement("div");
+                _fSum.style.cssText = "margin-top:8px;font-size:9px;padding:6px 8px;border-radius:6px;background:rgba(104,31,98,0.2);border:1px solid rgba(255,164,91,0.2);line-height:1.7;";
+                _fSum.innerHTML = "<span style='color:#7BB5D9'>Slow: " + (_fSlow*_fUp).toFixed(1) + "%</span>" +
+                  " <span style='color:rgba(255,164,91,0.4)'>|</span> " +
+                  "<span style='color:rgba(255,255,255,0.55)'>" + Math.round(_fUp*100) + "% uptime</span>" +
+                  (_fEff > 0 ? " <span style='color:rgba(255,164,91,0.4)'>|</span> <span style='color:#7BB5D9'>Dur: " + _fEff + "s</span>" : "");
+                container.appendChild(_fSum);
+              }
+            }
+          }
+
+          function renderStats() {
+            statWrap.innerHTML = ""; subWrap.innerHTML = "";
+            var sel = byteState.mainByte;
+            renderByteInputs(sel, byteState.stats, statWrap);
+            if (sel !== "none") {
+              var subLbl = document.createElement("div"); subLbl.className = "ue-byte-sublabel";
+              subLbl.textContent = "Sub-Byte";
+              var subOpts = [{ value:"none", label:"Select Sub-Byte...", placeholder:true }];
+              BYTE_LIST.forEach(function(b) { if (b !== sel) subOpts.push({ value:b, label:b }); });
+              var subSel = makeUESelect(subOpts, byteState.subByte || "none", function(v) {
+                byteState.subByte = v;
+                if (v === "none") byteState.subStats = {};
+                if (typeof playUiClickSound === "function") playUiClickSound();
+                renderStats();
+                allowDisplayAnimation = false; displayUnit(unit, modeKey);
+              }, { searchable:false, noMarginTop:true });
+              subWrap.appendChild(subLbl);
+              subWrap.appendChild(subSel);
+              if (byteState.subByte && byteState.subByte !== "none") {
+                renderByteInputs(byteState.subByte, byteState.subStats, subWrap);
+              }
+            }
+          }
+
+          var byteOpts = [{ value:"none", label:"Select Byte...", placeholder:true }];
+          BYTE_LIST.forEach(function(b) { byteOpts.push({ value:b, label:b }); });
+          var byteSel = makeUESelect(byteOpts, byteState.mainByte || "none", function(v) {
+            byteState.mainByte = v;
+            if (v === "none") { byteState.subByte = "none"; byteState.stats = {}; byteState.subStats = {}; }
+            if (typeof playUiClickSound === "function") playUiClickSound();
+            renderStats();
+            allowDisplayAnimation = false; displayUnit(unit, modeKey);
+          }, { searchable:false, noMarginTop:true });
+
+          bytesPanel.appendChild(byteSel);
+          bytesPanel.appendChild(statWrap);
+          bytesPanel.appendChild(subWrap);
+          renderStats();
+        })();
+
+        (function buildChipsPanel() {
+          var note = document.createElement("div");
+          note.style.cssText = "font-size:9px;opacity:0.4;text-align:center;padding:12px 0;";
+          note.textContent = "Coming soon";
+          chipsPanel.appendChild(note);
+        })();
+
         var totalDpsBoost = computeTotalDpsBoost(unit, modeKey);
 
         var summary = document.createElement("div");
@@ -4270,13 +4467,17 @@
         function activateTab(key) {
           currentBuffTabKey = key;
 
-          tabPerm.classList.toggle("active", key === "perm");
-          tabTemp.classList.toggle("active", key === "temp");
-          tabEnch.classList.toggle("active", key === "ench");
+          tabPerm.classList.toggle("active",  key === "perm");
+          tabTemp.classList.toggle("active",  key === "temp");
+          tabEnch.classList.toggle("active",  key === "ench");
+          tabBytes.classList.toggle("active", key === "bytes");
+          tabChips.classList.toggle("active", key === "chips");
 
-          permPanel.style.display = (key === "perm") ? "block" : "none";
-          tempPanel.style.display = (key === "temp") ? "block" : "none";
-          enchPanel.style.display = (key === "ench") ? "block" : "none";
+          permPanel.style.display  = (key === "perm")  ? "block" : "none";
+          tempPanel.style.display  = (key === "temp")  ? "block" : "none";
+          enchPanel.style.display  = (key === "ench")  ? "block" : "none";
+          bytesPanel.style.display = (key === "bytes") ? "block" : "none";
+          chipsPanel.style.display = (key === "chips") ? "block" : "none";
         }
 
         tabPerm.addEventListener("click", function () {
@@ -4290,6 +4491,14 @@
         tabEnch.addEventListener("click", function () {
           if (typeof playUiClickSound === "function") playUiClickSound();
           activateTab("ench");
+        });
+        tabBytes.addEventListener("click", function () {
+          if (typeof playUiClickSound === "function") playUiClickSound();
+          activateTab("bytes");
+        });
+        tabChips.addEventListener("click", function () {
+          if (typeof playUiClickSound === "function") playUiClickSound();
+          activateTab("chips");
         });
 
         activateTab(currentBuffTabKey || "perm");

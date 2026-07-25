@@ -15528,7 +15528,7 @@
       },
       {
         "title": "Familiar Tools",
-        "text": "Bonuses based on equipped byte: Box - every 10s rotates through Damage, Range and Cooldown and gives an extra 50% of the % the byte gives on that stat.  Boss Drain - attacks on bosses deal +10% damage and apply 10% Wither.  Reaper - executes non-boss enemies below 5% HP, +50% crit chance.  KABOOM! - every other attack toggles +50% damage and +30% range.  The Fan - -20% cooldown, every 10s next attack knocks enemies back 1.5 studs."
+        "text": "Bonuses based on equipped byte: Box - every 10s rotates through Damage, Range and Cooldown and gives an extra 50% of the % the byte gives on that stat.  Boss Drain - attacks on bosses deal +10% damage and apply 10% Wither.  Reaper - executes non-boss enemies below 5% HP, +50% crit chance.  KABOOM! - every other attack toggles +50% damage and +30% range.  The Fan - -20% cooldown, every 10s next attack knocks back enemies 1.5 studs."
       }
     ],
     "passiveDamage": {

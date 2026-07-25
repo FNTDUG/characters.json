@@ -461,7 +461,7 @@
       "Deep Sea Calamity Endo": "Effectively has 30% AOE Slow.",
       "Molten Freddy": "Effectively has 30% AOE Slow, but is below Calamity Endo due to being Line.",
       "Frostmancer Withered Bonnie": "RNG based AOE Slow that can go up to 45%.",
-      "Frozen King Foxy": "25% AOE Slow",
+      "Frozen King Foxy": "25% AOE Slow.",
       "Grand Strategist Chica": "15% AOE Slow + 10% Cone 180 Slow."
     }
       

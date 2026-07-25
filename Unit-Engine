@@ -1157,10 +1157,7 @@
       .ue-kw-info::before { content: 'ⓘ'; }
       .ue-kw-info-box {
         display: none;
-        position: absolute;
-        bottom: calc(100% + 5px);
-        left: 50%;
-        transform: translateX(-50%);
+        position: fixed;
         background: rgba(10,6,24,0.97);
         border: 1px solid rgba(255,164,91,0.35);
         border-radius: 8px;
@@ -1923,21 +1920,23 @@
         knockback: 'Knockback pushes enemies backward for a stated amount of tiles, with a 7s CD (also known as lockout)'
       };
 
-      function _repositionTip(box) {
+      function _repositionTip(wrap, box) {
         requestAnimationFrame(function() {
-          box.style.left = '50%';
-          box.style.right = 'auto';
-          box.style.transform = 'translateX(-50%)';
-          var r  = box.getBoundingClientRect();
-          var vw = window.innerWidth || document.documentElement.clientWidth;
-          if (r.left < 8) {
-            box.style.left = '0';
-            box.style.transform = 'none';
-          } else if (r.right > vw - 8) {
-            box.style.left = 'auto';
-            box.style.right = '0';
-            box.style.transform = 'none';
-          }
+          var wr  = wrap.getBoundingClientRect();
+          var bw  = box.offsetWidth  || 215;
+          var bh  = box.offsetHeight || 60;
+          var vw  = window.innerWidth  || document.documentElement.clientWidth;
+          var pad = 8;
+
+          var left = wr.left + wr.width / 2 - bw / 2;
+          var top  = wr.top  - bh - 6;
+
+          if (left < pad)           left = pad;
+          if (left + bw > vw - pad) left = vw - pad - bw;
+          if (top  < pad)           top  = wr.bottom + 6;
+
+          box.style.left = left + 'px';
+          box.style.top  = top  + 'px';
         });
       }
 
@@ -1951,12 +1950,12 @@
         box.className = 'ue-kw-info-box';
         box.textContent = note;
         wrap.appendChild(box);
-        wrap.addEventListener('mouseenter', function() { _repositionTip(box); });
+        wrap.addEventListener('mouseenter', function() { _repositionTip(wrap, box); });
         wrap.addEventListener('click', function(e) {
           e.stopPropagation();
           document.querySelectorAll('.ue-kw-info.open').forEach(function(o) { if (o !== wrap) o.classList.remove('open'); });
           wrap.classList.toggle('open');
-          if (wrap.classList.contains('open')) _repositionTip(box);
+          if (wrap.classList.contains('open')) _repositionTip(wrap, box);
         });
         return wrap;
       }

@@ -9439,7 +9439,7 @@
       },
       {
         "title": "Never ending glare",
-        "text": "Every 30s, Bear5 forces an enemy to walk backwards for 5s."
+        "text": "Every 30s, Bear5 knocks back the closest enemy to him 5 tiles."
       },
       {
         "title": "This is fake",
@@ -13271,7 +13271,7 @@
     "passives": [
       {
         "title": "Minireena's Push",
-        "text": "Attacks knockback enemies."
+        "text": "Attacks Knockback enemies."
       }
     ],
     "knockback": [
@@ -13917,7 +13917,7 @@
     "passives": [
       {
         "title": "Call of the storm",
-        "text": "Chica knocks enemies back 1 tile. For 20s buff Electrifying Pressure by 50% and calls down 3 lightning bolts every 1.5s on random enemies for 25% of this unit's damage. If a boss is present, lightning bolts will always strike the boss and instead deal 33% of this unit's damage. (Upgrade 2+, Local CD: 60s)",
+        "text": "All enemies receive 1 tile of Knockback. For 20s, buff Electrifying Pressure by 50% and calls down 3 lightning bolts every 1.5s on random enemies for 25% of this unit's damage. If a boss is present, lightning bolts will always strike the boss and instead deal 33% of this unit's damage. (Upgrade 2+, Local CD: 60s)",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-08qfv7.png"
       },
       {
@@ -17912,7 +17912,7 @@
       },
       {
         "title": "Anantashesha",
-        "text": "Attacks Stun enemies for 1.8s. If enemy is in stun lockout, do a follow-up attack to all enemies in range that deals half of this unit's damage. Deal +1 shield damage and this unit does a follow up attack that deals half of this unit's damage on shield break. When enemy gets within half of this unit's range for the first time, that enemy is knocked back 2 tiles. If the enemy is a boss, it is instead Stunned for 2.5s after its current stun lockout ends."
+        "text": "Attacks Stun enemies for 1.8s. If enemy is in stun lockout, do a follow-up attack to all enemies in range that deals half of this unit's damage. Deal +1 shield damage and this unit does a follow up attack that deals half of this unit's damage on shield break. When enemy gets within half of this unit's range for the first time, that enemy receives 2 tile Knockback. If the enemy is a boss, it is instead Stunned for 2.5s after its current stun lockout ends."
       }
     ],
     "passiveDamage": {
@@ -18131,7 +18131,7 @@
     "passives": [
       {
         "title": "Call of the Abyss",
-        "text": "Enemies take +2% damage from this unit (+2.5% if Bleeding) for every second they're within this unit's range (max +150%). When an enemy tries to leave this unit's range for the first time, knock that enemy back 5 tiles, Stun them for 2s, and reset the Call of the Abyss damage buff on that enemy."
+        "text": "Enemies take +2% damage from this unit (+2.5% if Bleeding) for every second they're within this unit's range (max +150%). When an enemy tries to leave this unit's range for the first time, it receives 3 tile Knockback, is Stunned for 2s, and reset the Call of the Abyss damage buff on that enemy."
       },
       {
         "title": "Apex Predator",
@@ -19453,7 +19453,7 @@
     "passives": [
       {
         "title": "Keep Out",
-        "text": "Enemies within 60% of this unit's range are Slowed by 30% and take 10% of this unit's damage every second. Once an enemy is 10 studs from the exit, it gets knocked back 3 tiles. If the enemy is a Boss, it is instead Stunned for 2.5s."
+        "text": "Enemies within 60% of this unit's range are Slowed by 30% and take 10% of this unit's damage every second. Once an enemy is 10 studs from the exit, it receives 3 tile Knockback. If the enemy is a Boss, it is instead Stunned for 2.5s."
       },
       {
         "title": "Closed For Restoration",

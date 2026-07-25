@@ -279,6 +279,14 @@
    MOBILE
 ------------------------------------------------ */
 @media (max-width: 600px) {
+  .updated-header {
+    padding: 16px 30px 14px;
+  }
+
+  .updated-header h3 {
+    font-size: 13px;
+  }
+
   .updated-grid {
     width: 100% !important;
     max-width: 100%;

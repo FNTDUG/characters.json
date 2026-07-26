@@ -20609,10 +20609,6 @@
           "dmgmult": 3.00
         },
         {
-          "label": "Brace the Storm",
-          "dmgmult": 1.60
-        },
-        {
           "label": "Dangerous Waters (Boost)",
           "dmgmult": 1.20
         }

@@ -21312,6 +21312,14 @@
       "title": "Resourceful",
       "text": "For every max hit from Energy Surplus, reduce all Active CDs by 5%, up to 25%. If any Active Ability is used, reset Resourceful."
     }
-  ]
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Energy Surplus (average)",
+        "dmgmult": 2.00
+      }
+    ]
+  }
 }
 ]

@@ -432,8 +432,8 @@
       "Nature Reclaimed Foxy": "Spectacular support, giving all units in range +30% Damage, +25% Range and -5% CD, on top of boosting your base's health. He also does fair DPS by himself with some bonus DPS to Bosses.",
       "Golden Freddy": "Great boosting in Endless (up to +30% damage per Golden Freddy), good DPS, and great stall with 20% Slow on attack and Knockback with his Active.",
       "Frostmancer Withered Bonnie": "Spectacular stall unit with varied AOE Slow (0%-45%, varies with RNG) and Single target 1s Stun (7s CD).",
-      "Grand Strategist Chica": "Incredible DPS, good Slow, Stun, and support. Great in many teams, especially Light focused ones",
-      "Gaia Chica": "Great DPS, Nature support, and decent Slow and Stun",
+      "Grand Strategist Chica": "Incredible DPS, good Slow, Stun, and support. Great in many teams, especially Light focused ones.",
+      "Gaia Chica": "Great DPS, Nature support, decent Slow and ok Stun.",
       "Cthulhu Nightmare Foxy": "Good DPS, great support to half the team, and good Slow and Stun."
     },
     "starter": {

@@ -21061,7 +21061,7 @@
   "element": "Water",
   "placements": 2,
   "attackType": "Multi",
-  "obtainment": "Pirate Event Pass Premium Lvl 30",
+  "obtainment": "Pirate Event Pass Premium Lvl 50",
   "levels": [
     {
       "level": 1,
@@ -21127,7 +21127,7 @@
     },
     {
       "title": "Seafarer",
-      "text": "Water element units in range are buffed by 15%. At 3+ Water element units on the team buff this units damage by 25%."
+      "text": "Water element units in range have their damage buffed by 15%. At 3+ Water element units on the team buff this units damage by 25%."
     }
   ],
   "passiveDamage": {
@@ -21159,7 +21159,7 @@
   "element": "Fire",
   "placements": 2,
   "attackType": "",
-  "obtainment": "Pirate Event Pass Free Lvl 30",
+  "obtainment": "Pirate Event Pass Free Lvl 50",
   "levels": [
     {
       "level": 1,

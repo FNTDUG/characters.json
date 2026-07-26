@@ -8013,8 +8013,8 @@
     "passiveDamage": {
       "selfboost": [
         {
-          "label": "Generator (boost)",
-          "dmgmult": 1.4,
+          "label": "Generator",
+          "dmgmult": 1.2,
           "everynthattack": 2
         }
       ]
@@ -9439,7 +9439,7 @@
       },
       {
         "title": "Never ending glare",
-        "text": "Every 30s, Bear5 forces an enemy to walk backwards for 5s."
+        "text": "Every 30s, Bear5 knocks back the closest enemy to him 5 tiles."
       },
       {
         "title": "This is fake",
@@ -13271,7 +13271,7 @@
     "passives": [
       {
         "title": "Minireena's Push",
-        "text": "Attacks knockback enemies."
+        "text": "Attacks Knockback enemies."
       }
     ],
     "knockback": [
@@ -13917,7 +13917,7 @@
     "passives": [
       {
         "title": "Call of the storm",
-        "text": "Chica knocks enemies back 1 tile. For 20s buff Electrifying Pressure by 50% and calls down 3 lightning bolts every 1.5s on random enemies for 25% of this unit's damage. If a boss is present, lightning bolts will always strike the boss and instead deal 33% of this unit's damage. (Upgrade 2+, Local CD: 60s)",
+        "text": "All enemies receive 1 tile of Knockback. For 20s, buff Electrifying Pressure by 50% and calls down 3 lightning bolts every 1.5s on random enemies for 25% of this unit's damage. If a boss is present, lightning bolts will always strike the boss and instead deal 33% of this unit's damage. (Upgrade 2+, Local CD: 60s)",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-08qfv7.png"
       },
       {
@@ -14172,28 +14172,12 @@
     "passives": [
       {
         "title": "Fool's Gambit",
-        "text": "Spend 1k cash to flip a coin. Gain rewards for each consecutive heads flipped, each including all previous rewards. 5 and 7 heads in a row locks for 30s. 10 heads in a row locks for 240s, removes all cash, and can only trigger 3 times per match. (Upgrade 2+, Local CD: 1s)",
+        "text": "Spend 1k cash to flip a coin. Gain rewards for each consecutive heads flipped, each including all previous rewards. 5 and 7 heads in a row locks for 30s. 10 heads in a row locks for 240s, removes all cash, and can only trigger 3 times per match. <br> ●  3 Heads: Gain 5% of your current cash (max of 15k). <br> ● 5 Heads: Gain +30% crit damage for 30s. <br> ● 7 Heads: Next attack deals 777% damage. First time: Permanantly gains +7% to all stats. ● 10 Heads: Gains +50% damage, -10% cooldown, and +50% crit damage for 30s. After buff ends: Permanantly gains +20% damage and +10% crit damage. Units in range recive 20% of this unit's crit stats for 30s. Gains 1% damage per crit in range (caps at 50%). Devil's Hand recieves double buff per repetition for 30s. (Upgrade 2+, Local CD: 1s)",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-7geqyq.png"
       },
       {
-        "title": "3 Heads",
-        "text": "Gain 5% of your current cash (max of 15k)."
-      },
-      {
-        "title": "5 Heads",
-        "text": "Gain +30% crit damage for 30s."
-      },
-      {
-        "title": "7 Heads",
-        "text": "Next attack deals 777% damage. First time: Permanantly gains +7% to all stats."
-      },
-      {
-        "title": "10 Heads",
-        "text": "Gains +50% damage, -10% cooldown, and +50% crit damage for 30s. After buff ends: Permanantly gains +20% damage and +10% crit damage. Units in range recive 20% of this unit's crit stats for 30s. Gains 1% damage per crit in range (caps at 50%). Devil's Hand recieves double buff per repetition for 30s."
-      },
-      {
         "title": "The Devil's Hand",
-        "text": "For every 10k cash held, increase Fool's Gambit heads chance by 2%. If an enemy if crit from this unit, he does a follow up attack with half damage. If the follow up attack kills, Fazino will continue making follow up attacks increasing in damage by +25% (max of +200%) unit his kill chain ends."
+        "text": "For every 10k cash held, increase Fool's Gambit heads chance by 2%. If an enemy if crit from this unit, he does a follow up attack with half damage. If the follow up attack kills, Fazino will continue making follow up attacks increasing in damage by +25% (max of +200%) until his kill chain ends."
       },
       {
         "title": "Lady Luck",
@@ -15528,7 +15512,7 @@
       },
       {
         "title": "Familiar Tools",
-        "text": "Bonuses based on equipped byte: Box - every 10s rotates through Damage, Range and Cooldown and gives an extra 50% of the % the byte gives on that stat.  Boss Drain - attacks on bosses deal +10% damage and apply 10% Wither.  Reaper - executes non-boss enemies below 5% HP, +50% crit chance.  KABOOM! - every other attack toggles +50% damage and +30% range.  The Fan - -20% cooldown, every 10s next attack knocks enemies back 1.5 studs."
+        "text": "Bonuses based on equipped byte: Box - every 10s rotates through Damage, Range and Cooldown and gives an extra 50% of the % the byte gives on that stat.  Boss Drain - attacks on bosses deal +10% damage and apply 10% Wither.  Reaper - executes non-boss enemies below 5% HP, +50% crit chance.  KABOOM! - every other attack toggles +50% damage and +30% range.  The Fan - -20% cooldown, every 10s next attack knocks back enemies 1.5 studs."
       }
     ],
     "passiveDamage": {
@@ -16985,7 +16969,7 @@
   {
     "name": "Scraptrap",
     "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/scraptrap-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/scraptrap-high-99a8u5.png",
+    "imgShiny": "https://tr.rbxcdn.com/180DAY-3e238cde1b2cb30a9d56ab09e06c442c/420/420/Image/Png/noFilter",
     "rarity": "secret",
     "typeMain": "Midgame",
     "typeTags": [
@@ -17912,7 +17896,7 @@
       },
       {
         "title": "Anantashesha",
-        "text": "Attacks Stun enemies for 1.8s. If enemy is in stun lockout, do a follow-up attack to all enemies in range that deals half of this unit's damage. Deal +1 shield damage and this unit does a follow up attack that deals half of this unit's damage on shield break. When enemy gets within half of this unit's range for the first time, that enemy is knocked back 2 tiles. If the enemy is a boss, it is instead Stunned for 2.5s after its current stun lockout ends."
+        "text": "Attacks Stun enemies for 1.8s. If enemy is in stun lockout, do a follow-up attack to all enemies in range that deals half of this unit's damage. Deal +1 shield damage and this unit does a follow up attack that deals half of this unit's damage on shield break. When enemy gets within half of this unit's range for the first time, that enemy receives 2 tile Knockback. If the enemy is a boss, it is instead Stunned for 2.5s after its current stun lockout ends."
       }
     ],
     "passiveDamage": {
@@ -18131,7 +18115,7 @@
     "passives": [
       {
         "title": "Call of the Abyss",
-        "text": "Enemies take +2% damage from this unit (+2.5% if Bleeding) for every second they're within this unit's range (max +150%). When an enemy tries to leave this unit's range for the first time, knock that enemy back 5 tiles, Stun them for 2s, and reset the Call of the Abyss damage buff on that enemy."
+        "text": "Enemies take +2% damage from this unit (+2.5% if Bleeding) for every second they're within this unit's range (max +150%). When an enemy tries to leave this unit's range for the first time, it receives 3 tile Knockback, is Stunned for 2s, and reset the Call of the Abyss damage buff on that enemy."
       },
       {
         "title": "Apex Predator",
@@ -18484,7 +18468,7 @@
     "passives": [
       {
         "title": "Taco Tuesday!",
-        "text": "This unit gains buffs depending on the chosen filling: Beef - +15% Damage, +15% Range, +5% CD. Chicken - -5% Damage, +5% Dange, -10% CD. Vegan - +25% Damage, +10% Range, +10% CD."
+        "text": "This unit gains buffs depending on the chosen filling: <br> Beef - +15% Damage, +15% Range, +5% CD. <br> Chicken - -5% Damage, +5% Range, -10% CD. <br> Vegan - +25% Damage, +10% Range, +10% CD."
       },
       {
         "title": "Happy Hour",
@@ -19453,7 +19437,7 @@
     "passives": [
       {
         "title": "Keep Out",
-        "text": "Enemies within 60% of this unit's range are Slowed by 30% and take 10% of this unit's damage every second. Once an enemy is 10 studs from the exit, it gets knocked back 3 tiles. If the enemy is a Boss, it is instead Stunned for 2.5s."
+        "text": "Enemies within 60% of this unit's range are Slowed by 30% and take 10% of this unit's damage every second. Once an enemy is 10 studs from the exit, it receives 3 tile Knockback. If the enemy is a Boss, it is instead Stunned for 2.5s."
       },
       {
         "title": "Closed For Restoration",
@@ -20158,7 +20142,7 @@
   "passives": [
     {
       "title": "You're All Pawns on my Board.",
-    "text": "Place up to 5 Chess Pieces on the board. Pieces start as Pawns and promote after earning kills. <br>𜺗 Pawn: Single target, 80% damage, max 5. <br>● Knight: Cone 25, 65% damage, applies 15% Bleed for 2s, max 3. <br>● Rook: Line, 60% damage, Stuns the 3 closest enemies for 1s on its 10th attack, max 1. <br>● Bishop: Cone 75, 80% damage, attacks apply a secondary piercing shot to 3 enemies for 40% damage, max 2.<br>● Queen: Cone 180, 50% damage, applies 20% Bleed for 5s, applies 10% Slow for 5s, and Stuns the 5 closest enemies for 1.5s. Max 1.<br>● King: Full AoE, 65% damage, passively applies 15% Slow to enemies in range, max 1. (Upgrade 0+, Global CD: 0s).",
+    "text": "Place up to 5 Chess Pieces on the board. Pieces start as Pawns and promote after earning kills. <br>● Pawn: Single target, 80% damage, max 5. <br>● Knight: Cone 25, 65% damage, applies 15% Bleed for 2s, max 3. <br>● Rook: Line, 60% damage, Stuns the 3 closest enemies for 1s on its 10th attack, max 1. <br>● Bishop: Cone 75, 80% damage, attacks apply a secondary piercing shot to 3 enemies for 40% damage, max 2.<br>● Queen: Cone 180, 50% damage, applies 20% Bleed for 5s, applies 10% Slow for 5s, and Stuns the 5 closest enemies for 1.5s. Max 1.<br>● King: Full AoE, 65% damage, passively applies 15% Slow to enemies in range, max 1. (Upgrade 0+, Global CD: 0s).",
       "activeIcon": "https://tr.rbxcdn.com/180DAY-970aae71c4aaccc7b04c458dcccce895/420/420/Image/Png/noFilter"
     },
     {
@@ -20321,7 +20305,7 @@
   "name": "Unicorn Toy Foxy",
   "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-11-15-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=816",
   "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-11-19-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=816",
-  "rarity": "nightmare",
+  "rarity": "secret",
   "typeMain": "Starter-Midgame",
   "typeTags": [
     "Wither"
@@ -20499,5 +20483,799 @@
         }
       ]
   }
+},
+{
+  "name": "Witch of the Sea Scrapbaby",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-5ecfdc67ca338c2536df18f093ef009a/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-1a0ff63f2ea50ef7d49e657794eab762/420/420/Image/Png/noFilter",
+  "rarity": "apex",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Water/Electricity",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Pirate Event Summons (0.001%). Pirate Present (0.002%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 16900,
+      "damage": 325,
+      "type": "Circle",
+      "cd": 5,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 6000,
+      "damage": 375,
+      "type": "Circle",
+      "cd": 5,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 6500,
+      "damage": 450,
+      "type": "Circle",
+      "cd": 4.5,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 7000,
+      "damage": 525,
+      "type": "Line",
+      "cd": 4.5,
+      "range": 27
+    },
+    {
+      "level": 5,
+      "cost": 8000,
+      "damage": 600,
+      "type": "Line",
+      "cd": 4.5,
+      "range": 27
+    },
+    {
+      "level": 6,
+      "cost": 9000,
+      "damage": 700,
+      "type": "Line",
+      "cd": 4.5,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 10000,
+      "damage": 800,
+      "type": "Line",
+      "cd": 4.2,
+      "range": 30
+    },
+    {
+      "level": 8,
+      "cost": 12500,
+      "damage": 925,
+      "type": "Cone 120°",
+      "cd": 4.2,
+      "range": 32
+    },
+    {
+      "level": 9,
+      "cost": 15000,
+      "damage": 1050,
+      "type": "Cone 120°",
+      "cd": 4.2,
+      "range": 32
+    },
+    {
+      "level": 10,
+      "cost": 20000,
+      "damage": 1200,
+      "type": "Cone 120°",
+      "cd": 4,
+      "range": 34
+    },
+    {
+      "level": 11,
+      "cost": 25000,
+      "damage": 1400,
+      "type": "Cone 120°",
+      "cd": 4,
+      "range": 34
+    }
+  ],
+  "passives": [
+    {
+      "title": "Brace the Storm",
+      "text": "Buff Electricity and Water units in range by +60% damage for 30 seconds. Other element units in range lose 20% damage instead, and a random non-Electricity/Water unit in range is stunned for 2 seconds every 5 seconds while active. (Upgrade 0+, Global CD: 60s).",
+      "activeIcon": "https://tr.rbxcdn.com/180DAY-9ba79603b350f62a179731fe282f68bc/420/420/Image/Png/noFilter"
+    },
+    {
+      "title": "Underwater Goliath",
+      "text": "This unit takes up 2 equip slots and gains +200% damage on placement. On attack deal +5 damage to shields, apply 30% Bleed over 10s and summon 2 eels that target the weakest enemies in range, dealing 25% of this unit's damage with equal range and cooldown"
+    },
+    {
+      "title": "Dangerous Waters",
+      "text": "Enemies in range have their regen reduced by 75%, take 10% of this unit's damage every second, 15% if the enemy has regen, and take 20% more damage from Water and Electricity units. <br> ● At 3+ Electricity units on the team reduce this unit's cooldown by 10%, buff this unit's damage by 20%, and buff Dangerous Waters damage by 50%. <br> ● At 3+ Water units on the team buff this unit's damage by 50% and range by 25%"
+    }
+  ],
+  "passiveDamage": {
+          "selfboost": [
+        {
+          "label": "Underwater Goliath (Boost)",
+          "dmgmult": 3.00
+        },
+        {
+          "label": "Brace the Storm",
+          "dmgmult": 1.60
+        },
+        {
+          "label": "Dangerous Waters (Boost)",
+          "dmgmult": 1.20
+        }
+          ],
+    "summons": [
+      {
+      "label": "Underwater Goliath (Eels)",
+      "attackpctofdamage": 0.5,
+      "attackcd": 4.0,
+      "attackcdboostable": true,
+      "spawncdboostable": true,
+      "cdscope": "local"
+      }
+    ],
+    "dots": [
+        {
+          "label": "Underwater Goliath (Dot)",
+          "pctofdamage": 0.30,
+          "durationsec": 10
+        }
+    ],
+    "periodic": [
+        {
+          "label": "Dangerous Waters (Non-Regen)",
+          "pctofdamage": 0.10,
+          "cd": 1,
+          "cdboostable": false,
+          "cdscope": "local"
+        }
+    ]
+  }
+},
+{
+  "name": "Mecha-Lizabeth",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-1a79a59bde7dda00eab9051f35572cc9/420/420/Image/Png/noFilter",
+  "imgShiny": "https://fntd2.com/database/units?=shiny-mechalizabeth",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Slow"
+  ],
+  "element":"Electricity",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Elizabeth Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 4000,
+      "damage": 600,
+      "cd": 2.5,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 2000,
+      "damage": 700,
+      "cd": 2.5,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 2750,
+      "damage": 850,
+      "cd": 2.5,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 3500,
+      "damage": 1000,
+      "cd": 2.5,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 5000,
+      "damage": 1250,
+      "cd": 2.8,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 7000,
+      "damage": 1500,
+      "cd": 2.8,
+      "range": 28
+    },
+    {
+      "level": 7,
+      "cost": 10000,
+      "damage": 1800,
+      "cd": 3,
+      "range": 30
+    },
+    {
+      "level": 8,
+      "cost": 15000,
+      "damage": 2100,
+      "cd": 3,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "I've Come to Make an Announcement",
+      "text": "Fire a Full AoE ice cream rocket, dealing 300% damage and stunning enemies for 3 seconds. (Upgrade 0+, Global CD: 20s).",
+      "activeIcon": "https://tr.rbxcdn.com/180DAY-2274588f70b88aa43a192979df02b410/420/420/Image/Png/noFilter"
+    },
+    {
+      "title": "Sweet Treat",
+      "text": "Every 5s drop an ice cream on the track. On hit, deal 7.5% damage and apply 1.5% slow for 5s per ice cream in the stack (Max 30). Gain +5% damage on the next attack per stack consumed."
+    }
+  ],
+      "passiveDamage": {
+      "selfboost": [
+        {
+          "label": "Sweet Treat (DMG)",
+          "dmgmult": 3.25,
+          "duration": 5,
+          "cd": 150,
+          "uptime": true
+        }
+      ],
+      "slows": [
+        {
+          "label": "Sweet Treat (Slow)",
+          "pct": 0.45,
+          "cd": 150,
+          "duration": 5,
+          "uptime": true,
+          "cdscope": "local"
+        }
+      ],
+      "periodic": [
+        {
+          "label": "Announcement",
+          "pctofdamage": 3.0,
+          "cd": 20,
+          "cdboostable": false,
+          "cdscope": "local"
+        }
+      ]
+    }
+},
+{
+  "name": "Dutchman Nightmare Bonnie",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-d37c357770a86f979d942e8a3f74da56/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-cb52a324994c2014505c6b2439f0deb4/420/420/Image/Png/noFilter",
+  "rarity": "nightmare",
+  "typeMain": "Midgame-Endgame",
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Pirate Event Summons (0.066%). Pirate Present (0.132%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 3500,
+      "damage": 500,
+      "cd": 4,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 525,
+      "cd": 3.8,
+      "range": 20
+    },
+    {
+      "level": 3,
+      "cost": 3750,
+      "damage": 575,
+      "cd": 3.8,
+      "range": 21
+    },
+    {
+      "level": 4,
+      "cost": 4500,
+      "damage": 625,
+      "cd": 3.5,
+      "range": 21
+    },
+    {
+      "level": 5,
+      "cost": 5500,
+      "damage": 775,
+      "cd": 3.5,
+      "range": 22
+    },
+    {
+      "level": 6,
+      "cost": 7500,
+      "damage": 825,
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 7,
+      "cost": 10000,
+      "damage": 975,
+      "cd": 3,
+      "range": 26
+    },
+    {
+      "level": 8,
+      "cost": 12500,
+      "damage": 1200,
+      "cd": 3,
+      "range": 26
+    }
+  ],
+  "passives": [
+    {
+      "title": "Ghostly Apparition",
+      "text": "If there is no ghost currently on the map, when a unit is sold, create a ghost copy with 1/4 of their damage for 3 waves. If there is a ghost currently on the map, buff this unit's damage by 50%. Follow up on ghost attacks for 50% of this unit's damage with a 3s cooldown"
+    },
+    {
+      "title": "Soul Collector",
+      "text": "Attacks buff this unit's damage by 5% for 15s, up to 50%. If an enemy dies in range, the next attack buffs by 10% instead. Deal 20% more damage to enemies below 50% HP"
+    }
+  ],
+  "passiveDamage": {
+      "selfboost": [
+      {
+        "label": "Soul Collector",
+        "dmgmult": 1.5,
+        }
+      ]
+  }
+},
+{
+  "name": "Aqua Strike Toy Chica",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-0b0f91b227e9159158fe78d274c1c4c8/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-4b29842be214cb1cefee02c5e72f7ff7/420/420/Image/Png/noFilter",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Water",
+  "placements": 3,
+  "attackType": "Multi",
+  "obtainment": "Toy Chica Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 4000,
+      "damage": 325,
+      "type": "Line",
+      "cd": 2.5,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 350,
+      "type": "Line",
+      "cd": 2.5,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 3500,
+      "damage": 375,
+      "type": "Line",
+      "cd": 2.5,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 5000,
+      "damage": 400,
+      "type": "Line",
+      "cd": 2.2,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 7500,
+      "damage": 450,
+      "type": "Cone 45°",
+      "cd": 2.2,
+      "range": 30
+    },
+    {
+      "level": 6,
+      "cost": 10000,
+      "damage": 500,
+      "type": "Cone 45°",
+      "cd": 2,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Water Warfare",
+      "text": "On attack generate 1 water balloon, or 2 if the team has 3+ Water units. <br> ● At 6 water balloons the next 6 attacks follow up with a water balloon in a Circle AOE, dealing 50% damage. Follow-ups apply Soaked and create a puddle that applies Soaked. <br> ● [Soaked] enemies take 10% more damage from Water units. Fire hits deal +25% damage and remove Soaked. Electric hits deal +10% damage, stun for 1.5s, and remove Soaked"
+    }
+  ],
+  "passiveDamage": {
+          "periodic": [
+        {
+          "label": "Water Warfare",
+          "pctofdamage": 0.50,
+          "hits": 6,
+          "cd": 12,
+          "cdboostable": true,
+          "cdscope": "local"
+        }
+      ]
+  }
+},
+{
+  "name": "Mechanic Endo 01",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-670b03e99412c367125f14b02819fac5/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-100bacf38b00b69c48a92c3ef57e7f54/420/420/Image/Png/noFilter",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Electricity",
+  "placements": 2,
+  "attackType": "Circle",
+  "obtainment": "Endo 01 Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2000,
+      "damage": 150,
+      "cd": 2,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 1500,
+      "damage": 175,
+      "cd": 2,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 2000,
+      "damage": 200,
+      "cd": 2,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 5000,
+      "damage": 250,
+      "cd": 2.5,
+      "range": 26
+    },
+    {
+      "level": 5,
+      "cost": 9000,
+      "damage": 325,
+      "cd": 3,
+      "range": 27
+    },
+    {
+      "level": 6,
+      "cost": 15000,
+      "damage": 500,
+      "cd": 4,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Endo CPU",
+      "text": "Every upgrade buffs nearby units by 10% damage (Max 30%)"
+    },
+    {
+      "title": "Tinkerer",
+      "text": "Every 5s summon a Mini Endo dealing 150% of this unit's damage on contact. This player's summons gain +20% health. Does not affect summons that scale on enemy HP"
+    }
+  ],
+  "passiveDamage": {
+    "summons": [
+    {
+      "label": "Endo",
+      "healthpctofdamage": 1.70,
+      "spawncd": 5.0,
+      "spawncdboostable": false,
+      "cdscope": "local"
+    }
+  ],
+  "selfboost": [
+    {
+      "label": "Endo CPU",
+      "dmgmult": 1.30
+    }
+  ]
+}
+},
+{
+  "name": "Pirate Withered Foxy",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-38a51e48a492d3daa9385ed97b5054c4/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-e4dbb313a8d6a881c2a2ec8e4958aea3/420/420/Image/Png/noFilter",
+  "rarity": "secret",
+  "typeMain": "Starter",
+  "typeTags": [
+    "Support",
+    "Income",
+    "Slow",
+    "Stun"
+  ],
+  "element": "Water",
+  "placements": 2,
+  "attackType": "Multi",
+  "obtainment": "Pirate Event Pass Premium Lvl 30",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 900,
+      "damage": 155,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 2000,
+      "damage": 170,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 22
+    },
+    {
+      "level": 3,
+      "cost": 2250,
+      "damage": 190,
+      "type": "Line",
+      "cd": 1.5,
+      "range": 25
+    },
+    {
+      "level": 4,
+      "cost": 2750,
+      "damage": 210,
+      "type": "Line",
+      "cd": 1.4,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 3500,
+      "damage": 240,
+      "type": "Cone 65°",
+      "cd": 1.4,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 4250,
+      "damage": 270,
+      "type": "Cone 65°",
+      "cd": 1.3,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 5000,
+      "damage": 300,
+      "type": "Cone 65°",
+      "cd": 1.2,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "You are a Pirate!",
+      "text": "Every 10 attacks swap between using a Gun and a Cutlass. During Cutlass attacks apply 80% Bleed over 4s and enemies in range drop +100% bonus income. During Gun attacks stun for 1.2s and enemies in range are slowed by 10%"
+    },
+    {
+      "title": "Seafarer",
+      "text": "Water element units in range are buffed by 15%. At 3+ Water element units on the team buff this units damage by 25%."
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Seafarer",
+        "dmgmult": 1.25
+      }
+    ],
+    "dots": [
+      {
+      "label": "Intense Flame",
+          "pctofdamage": 0.80,
+          "durationsec": 4,
+          "cdboostable": true
+      }
+    ]
+  }
+},
+{
+  "name": "Cannoneer Chica",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-9e53b8f78b9bc28a9aa15b1376a96e4b/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-543e6a5597e31a9d852ede28b80bf821/420/420/Image/Png/noFilter",
+  "rarity": "secret",
+  "typeMain": "Starter",
+  "typeTags": [
+    "Knockback"
+  ],
+  "element": "Fire",
+  "placements": 2,
+  "attackType": "",
+  "obtainment": "Pirate Event Pass Free Lvl 30",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 750,
+      "damage": 320,
+      "type": "Circle",
+      "cd": 2,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 1750,
+      "damage": 385,
+      "type": "Circle",
+      "cd": 2.5,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 2250,
+      "damage": 460,
+      "type": "Circle",
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 3000,
+      "damage": 560,
+      "type": "Circle",
+      "cd": 4,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 4000,
+      "damage": 670,
+      "type": "Cone 60°",
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 5250,
+      "damage": 800,
+      "type": "Cone 60°",
+      "cd": 4,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Steel Barrage",
+      "text": "Every 5s fire a cannonball dealing 50% of this unit's damage. Upgrade the cannon every 50,000 damage dealt, up to Level 5 <br> ● Level 1: Cannonballs knockback enemies 2 tiles. <br>● Level 2: Cannonballs deal +20% damage. <br> ● Level 3:\n• Cannon cooldown reduced by 10% <br> ● Level 4: Cannonballs inflict 35% burn for 5s. <br> ● Level 5: Every attack fires an additional cannonball dealing 40% damage"
+    }
+  ],
+  "passiveDamage": {
+    "periodic": [
+      {
+        "label": "Steel Barrage (Level 5)",
+        "pctofdamage": 0.70,
+        "cd": 4.5
+      },
+      {
+        "label": "Steel Barrage (Second Cannon Ball)",
+        "pctofdamage": 0.60,
+        "cd": 4.5
+      }
+    ],
+      "dots": [
+        {
+          "label": "Steel Barrage (DoT)",
+          "pctofdamage": 0.35,
+          "durationsec": 5
+        }
+    ]
+  }
+},
+{
+  "name": "Salvaged Toy Bonnie",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-217c084228539cb32ea2bc0f8f9d6f0b/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-5d957f89b56fd4764d329bdb907c2374/420/420/Image/Png/noFilter",
+  "rarity": "mythic",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Electricity",
+  "placements": 2,
+  "attackType": "Cone",
+  "obtainment": "Toy Bonnie Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2500,
+      "damage": 350,
+      "degrees": "45°",
+      "cd": 5,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 1500,
+      "damage": 360,
+      "degrees": "45°",
+      "cd": 4.5,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 2000,
+      "damage": 370,
+      "degrees": "45°",
+      "cd": 4,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 2500,
+      "damage": 380,
+      "degrees": "45°",
+      "cd": 3,
+      "range": 26
+    },
+    {
+      "level": 5,
+      "cost": 3500,
+      "damage": 410,
+      "degrees": "75°",
+      "cd": 3,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 5000,
+      "damage": 450,
+      "degrees": "75°",
+      "cd": 3,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Energy Surplus",
+      "text": "On hit gain a stacking 25% damage boost, up to 200%, resetting on hit with max buff"
+    },
+    {
+      "title": "Resourceful",
+      "text": "For every max hit from Energy Surplus reduce all active cooldowns by 5%, up to 25%. If any active ability is used reset Resourceful"
+    }
+  ]
 }
 ]

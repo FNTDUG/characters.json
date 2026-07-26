@@ -14172,28 +14172,12 @@
     "passives": [
       {
         "title": "Fool's Gambit",
-        "text": "Spend 1k cash to flip a coin. Gain rewards for each consecutive heads flipped, each including all previous rewards. 5 and 7 heads in a row locks for 30s. 10 heads in a row locks for 240s, removes all cash, and can only trigger 3 times per match. (Upgrade 2+, Local CD: 1s)",
+        "text": "Spend 1k cash to flip a coin. Gain rewards for each consecutive heads flipped, each including all previous rewards. 5 and 7 heads in a row locks for 30s. 10 heads in a row locks for 240s, removes all cash, and can only trigger 3 times per match. <br> ●  3 Heads: Gain 5% of your current cash (max of 15k). <br> ● 5 Heads: Gain +30% crit damage for 30s. <br> ● 7 Heads: Next attack deals 777% damage. First time: Permanantly gains +7% to all stats. ● 10 Heads: Gains +50% damage, -10% cooldown, and +50% crit damage for 30s. After buff ends: Permanantly gains +20% damage and +10% crit damage. Units in range recive 20% of this unit's crit stats for 30s. Gains 1% damage per crit in range (caps at 50%). Devil's Hand recieves double buff per repetition for 30s. (Upgrade 2+, Local CD: 1s)",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-7geqyq.png"
       },
       {
-        "title": "3 Heads",
-        "text": "Gain 5% of your current cash (max of 15k)."
-      },
-      {
-        "title": "5 Heads",
-        "text": "Gain +30% crit damage for 30s."
-      },
-      {
-        "title": "7 Heads",
-        "text": "Next attack deals 777% damage. First time: Permanantly gains +7% to all stats."
-      },
-      {
-        "title": "10 Heads",
-        "text": "Gains +50% damage, -10% cooldown, and +50% crit damage for 30s. After buff ends: Permanantly gains +20% damage and +10% crit damage. Units in range recive 20% of this unit's crit stats for 30s. Gains 1% damage per crit in range (caps at 50%). Devil's Hand recieves double buff per repetition for 30s."
-      },
-      {
         "title": "The Devil's Hand",
-        "text": "For every 10k cash held, increase Fool's Gambit heads chance by 2%. If an enemy if crit from this unit, he does a follow up attack with half damage. If the follow up attack kills, Fazino will continue making follow up attacks increasing in damage by +25% (max of +200%) unit his kill chain ends."
+        "text": "For every 10k cash held, increase Fool's Gambit heads chance by 2%. If an enemy if crit from this unit, he does a follow up attack with half damage. If the follow up attack kills, Fazino will continue making follow up attacks increasing in damage by +25% (max of +200%) until his kill chain ends."
       },
       {
         "title": "Lady Luck",

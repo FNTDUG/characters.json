@@ -15,6 +15,9 @@
     },
 
     "enchants": {
+      "Range 1-3": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/image%20(1).png", "color": "#e87a00" },
+      "Damage 1-3": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/image%20(2).png", "color": "#e87a00" },
+      "Speed 1-3": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/image.png", "color": "#e87a00" },
       "Vengeance": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/veng-render.png", "color": "#e87a00" },
       "Phantom":   { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/phantom-render.png", "color": "#00ee00" },
       "Investor": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/investor-render.png", "color": "#6a5404"},

@@ -442,7 +442,9 @@
       "Rockin Bonnie": "A good choice for a Starter as he gives all units in his range -11% CD, making him quite throughout the match.",
       "Undead Chica": "Creates a steady stream of strong Summons.",
       "Bonnie": "High range Starter that can be used as a booster due to being Electric with high placements, effectively giving all nearby units -4% CD if all Bonnies are placed near each other. Spectacular in Grind Metas",
-      "Foxy": "Fair DPS Starter that can be used as a booster due to being Water with high placements, effectively giving all nearby units +15% Range if all Foxies are placed near each other. Spectacular in Water focused teams."
+      "Foxy": "Fair DPS Starter that can be used as a booster due to being Water with high placements, effectively giving all nearby units +15% Range if all Foxies are placed near each other. Spectacular in Water focused teams.",
+      "Faz-ino Spring Bonnie": "Great DPS and good Crit based support with some minor income.",
+      "Unicorn Toy Foxy": "Good DPS and decent support, giving enemies up to 15% Wither"
     },
     "support": {
       "Candy Cadet": "Gives +30% Damage and +10% Range to all units in range when in Red Candy mode, then +10% Damage and +30% Range to all units in range when in Yellow Candy mode (mode chosen on placement). Does particularly well when using his Orphans story, doubling his boosts for 30s. Boosts do not stack with other Candy Cadets.",
@@ -455,7 +457,9 @@
     "stun": {
       "Deep Sea Calamity Endo": "An absurdly good stunner, applying 1.8s Stun on attack in a very large 245° Cone. Also has the potential to Stun Bosses for 2.5s if they get too close.",
       "Krampus Purple Guy": "A great stunner applying 1.8s Stun on attack. Pair him with a Kaboom or Box Byte to help combat his shorter range for better coverage.",
-      "Ennard": "Has a good 1.5s Stun on attack while additionally stunning 4 random enemies around the map every 6s for 1.5s."
+      "Ennard": "Has a good 1.5s Stun on attack while additionally stunning 4 random enemies around the map every 6s for 1.5s.",
+      "Cthulhu Nightmare Foxy": "Attacks Stun for 1s when Warp cap has been reached.",
+      "Grand Strategist Chica": "Queen piece Stuns the 5 closest enemies on attack for 1.5s."
     },
     "slow": {
       "Deep Sea Calamity Endo": "Effectively has 30% AOE Slow.",

@@ -20840,7 +20840,7 @@
       "selfboost": [
       {
         "label": "Soul Collector",
-        "dmgmult": 1.5,
+        "dmgmult": 1.5
         }
       ]
   }

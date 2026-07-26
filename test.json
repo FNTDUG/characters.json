@@ -21139,7 +21139,7 @@
     ],
     "dots": [
       {
-      "label": "Intense Flame",
+      "label": "You are a Pirate! (Cutlass)",
           "pctofdamage": 0.80,
           "durationsec": 4,
           "cdboostable": true
@@ -21221,12 +21221,14 @@
       {
         "label": "Steel Barrage (Level 5)",
         "pctofdamage": 0.70,
-        "cd": 4.5
+        "cd": 4.5,
+        "cdscope": "local"
       },
       {
         "label": "Steel Barrage (Second Cannon Ball)",
         "pctofdamage": 0.60,
-        "cd": 4.5
+        "cd": 4.5,
+        "cdscope": "local"
       }
     ],
       "dots": [

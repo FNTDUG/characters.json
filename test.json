@@ -20637,7 +20637,7 @@
     },
     {
       "title": "Dangerous Waters",
-      "text": "Enemies in range have their regen reduced by 75%, take 10% of this unit's damage every second, 15% if the enemy has regen, and take 20% more damage from Water and Electricity units. <br> ● At 3+ Electricity units on the team reduce this unit's cooldown by 10%, buff this unit's damage by 20%, and buff Dangerous Waters damage by 50%. <br> ● At 3+ Water units on the team buff this unit's damage by 50% and range by 25%"
+      "text": "Enemies in range have their regen reduced by 75%, take 10% of this unit's damage every second, 15% if the enemy has regen, and take 20% more damage from Water and Electricity units. <br> ● At 3+ Electric units equipped, this unit gains +20% Damage, -10% CD, and enemies take +50% damage from this passive. <br> ● At 3+ Water units equipped, this unit gains +50% Damage and +25% Range."
     }
   ],
   "passiveDamage": {
@@ -20753,12 +20753,12 @@
   "passives": [
     {
       "title": "I've Come to Make an Announcement",
-      "text": "Fire a Full AoE ice cream rocket, dealing 300% damage and stunning enemies for 3 seconds. (Upgrade 0+, Global CD: 20s).",
+      "text": "Fire a Full AoE ice cream rocket, dealing 300% damage and Stunning enemies for 3s. (Upgrade 0+, Global CD: 20s).",
       "activeIcon": "https://tr.rbxcdn.com/180DAY-2274588f70b88aa43a192979df02b410/420/420/Image/Png/noFilter"
     },
     {
       "title": "Sweet Treat",
-      "text": "Every 5s drop an ice cream on the track. On hit, deal 7.5% damage and apply 1.5% slow for 5s per ice cream in the stack (Max 30). Gain +5% damage on the next attack per stack consumed."
+      "text": "Every 5s, drop an ice cream on the track. Ice cream deals 7.5% damage and applies 1.5% slow for 5s per ice cream in the stack (max 30). Gain +5% damage on the next attack per stack consumed."
     }
   ],
       "passiveDamage": {
@@ -20863,11 +20863,11 @@
   "passives": [
     {
       "title": "Ghostly Apparition",
-      "text": "If there is no ghost currently on the map, when a unit is sold, create a ghost copy with 1/4 of their damage for 3 waves. If there is a ghost currently on the map, buff this unit's damage by 50%. Follow up on ghost attacks for 50% of this unit's damage with a 3s cooldown"
+      "text": "If there is no ghost currently on the map, when a unit is sold, create a ghost copy with 1/4 of their damage for 3 waves. If there is a ghost currently on the map, this unit gains +50% Damage. Follow up on ghost attacks for 50% of this unit's damage with a 3s CD."
     },
     {
       "title": "Soul Collector",
-      "text": "Attacks buff this unit's damage by 5% for 15s, up to 50%. If an enemy dies in range, the next attack buffs by 10% instead. Deal 20% more damage to enemies below 50% HP"
+      "text": "This unit gains +5% Damage (+50% max) when it attacks for 15s. If an enemy dies in this unit's range, the next attack buffs by +10% instead. This unit deal 20% more damage to enemies below 50% HP."
     }
   ],
   "passiveDamage": {
@@ -20945,7 +20945,7 @@
   "passives": [
     {
       "title": "Water Warfare",
-      "text": "On attack generate 1 water balloon, or 2 if the team has 3+ Water units. <br> ● At 6 water balloons the next 6 attacks follow up with a water balloon in a Circle AOE, dealing 50% damage. Follow-ups apply Soaked and create a puddle that applies Soaked. <br> ● [Soaked] enemies take 10% more damage from Water units. Fire hits deal +25% damage and remove Soaked. Electric hits deal +10% damage, stun for 1.5s, and remove Soaked"
+      "text": "On attack generate 1 water balloon, or 2 if your team has 3+ Water units. <br> ● At 6 water balloons, the next 6 attacks follow up with a water balloon in a Circle AOE, dealing 50% damage. Follow-ups apply Soaked and create a puddle that applies Soaked. <br> ● [Soaked] enemies take 10% more damage from Water units. Fire attacks deal +25% damage and remove Soaked. Electric attacks deal +10% damage, Stun for 1.5s, and remove Soaked."
     }
   ],
   "passiveDamage": {
@@ -21021,11 +21021,11 @@
   "passives": [
     {
       "title": "Endo CPU",
-      "text": "Every upgrade buffs nearby units by 10% damage (Max 30%)"
+      "text": "Upgrading this unit gives all units in range +10% Damage (max +30%)."
     },
     {
       "title": "Tinkerer",
-      "text": "Every 5s summon a Mini Endo dealing 150% of this unit's damage on contact. This player's summons gain +20% health. Does not affect summons that scale on enemy HP"
+      "text": "Every 5s, summon a Mini Endo dealing 150% of this unit's damage on contact. This player's summons gain +20% health. Does not affect summons that scale on enemy HP."
     }
   ],
   "passiveDamage": {
@@ -21123,11 +21123,11 @@
   "passives": [
     {
       "title": "You are a Pirate!",
-      "text": "Every 10 attacks swap between using a Gun and a Cutlass. During Cutlass attacks apply 80% Bleed over 4s and enemies in range drop +100% bonus income. During Gun attacks stun for 1.2s and enemies in range are slowed by 10%"
+      "text": "Every 10 attacks, swap between using a Gun and a Cutlass. Cutlass attacks apply 80% Bleed for 4s and enemies in range drop +100% bonus income. Gun attacks Stun for 1.2s and enemies in range are Slowed by 10%."
     },
     {
       "title": "Seafarer",
-      "text": "Water element units in range have their damage buffed by 15%. At 3+ Water element units on the team buff this units damage by 25%."
+      "text": "Water element units in range gain +15% Damage. At 3+ Water element units equipped, this unit gains +25% Damage."
     }
   ],
   "passiveDamage": {
@@ -21213,7 +21213,7 @@
   "passives": [
     {
       "title": "Steel Barrage",
-      "text": "Every 5s fire a cannonball dealing 50% of this unit's damage. Upgrade the cannon every 50,000 damage dealt, up to Level 5 <br> ● Level 1: Cannonballs knockback enemies 2 tiles. <br>● Level 2: Cannonballs deal +20% damage. <br> ● Level 3:\n• Cannon cooldown reduced by 10% <br> ● Level 4: Cannonballs inflict 35% burn for 5s. <br> ● Level 5: Every attack fires an additional cannonball dealing 40% damage"
+      "text": "Every 5s, fire a cannonball dealing 50% of this unit's damage. Upgrade the cannon every 50,000 damage dealt, up to Level 5. <br> ● Level 1: Cannonballs Knockback enemies 2 tiles. <br>● Level 2: Cannonballs deal +20% damage. <br> ● Level 3:\n• Cannon gains -10% CD. <br> ● Level 4: Cannonballs inflict 35% Burn for 5s. <br> ● Level 5: Every attack fires an additional cannonball dealing 40% damage."
     }
   ],
   "passiveDamage": {
@@ -21304,11 +21304,11 @@
   "passives": [
     {
       "title": "Energy Surplus",
-      "text": "On hit gain a stacking 25% damage boost, up to 200%, resetting on hit with max buff"
+      "text": "This unit gains +25% Damage every attack, up to 200%. Resets after one hit with max buff."
     },
     {
       "title": "Resourceful",
-      "text": "For every max hit from Energy Surplus reduce all active cooldowns by 5%, up to 25%. If any active ability is used reset Resourceful"
+      "text": "For every max hit from Energy Surplus, reduce all Active CDs by 5%, up to 25%. If any Active Ability is used, reset Resourceful."
     }
   ]
 }

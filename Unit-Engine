@@ -6229,7 +6229,15 @@
 
           lastDisplayedUnit = unit;
           lastDisplayedModeKey = modeKey || null;
-          
+
+          // Deep-link: reflect the open unit in the URL for easy sharing
+          try {
+            if (unit && unit.name && location.pathname.indexOf("unit-engine") !== -1) {
+              var _ueBase = location.pathname.replace(/(\/unit-engine)(\/.*)?$/, "$1");
+              history.replaceState(null, "", _ueBase + "/" + encodeURIComponent(String(unit.name).replace(/\s+/g, "-")));
+            }
+          } catch (_e) {}
+
           wrapper.style.maxWidth = "600px";
           wrapper.style.margin = "0 auto";
 
@@ -7575,8 +7583,29 @@
           }
         });
 
-        
+
         rebuildValueSelect();
+
+      // Deep-link: if the URL is /unit-engine/<UnitName>, open that unit on load
+      (function () {
+        try {
+          var mm = location.pathname.match(/\/unit-engine\/([^\/?#]+)/);
+          if (!mm) return;
+          var q = String(decodeURIComponent(mm[1])).toLowerCase().replace(/[^a-z0-9]/g, "");
+          var found = characters.find(function (u) {
+            return String(u.name).toLowerCase().replace(/[^a-z0-9]/g, "") === q;
+          });
+          if (!found) return;
+          allowDisplayAnimation = false;
+          shinyToggleTriggered = false;
+          currentUnitLevel = 1;
+          isShinyMode = false;
+          if (found.name === "Scarecrow Freddy") { scarecrowMode = "raiser"; displayUnit(found, "raiser"); }
+          else if (found.name === "Mangle") { mangleModeIndex = 0; displayUnit(found, null); }
+          else if (found.modes && typeof found.modes === "object") { var keys = Object.keys(found.modes); displayUnit(found, keys.length ? keys[0] : null); }
+          else { displayUnit(found, null); }
+        } catch (_e) {}
+      })();
 
       (function () {
         function clampHoriz(el) {

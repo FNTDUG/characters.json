@@ -2697,7 +2697,8 @@
           "Fire/Rust": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/element_fire_rust-high.png",
           "Nature/Rust": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/element_nature_rust-high.png",
           "Nature/Dark": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/element_nature_dark-high.png",
-          "Dark/Water": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/element_dark_water-high.png?enable-io=true&crop=1%3A1&width=347"
+          "Dark/Water": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/element_dark_water-high.png?enable-io=true&crop=1%3A1&width=347",
+          "Water/Electricity": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/element_water_electricity-high.png?enable-io=true&crop=1%3A1&width=347"
         };
 
         function getElementIcon(elementName) {
@@ -2719,7 +2720,8 @@
         "Fire/Rust": "All attacks apply burn for 3% DMG/second & +3% CD & +6% DMG (self buff).",
         "Nature/Rust": "+1 Stock (tank 1 additional enemy/hit, this stacks) & +3% CD & +6% DMG (self buff).",
         "Nature/Dark": "+1 Stock (tank 1 additional enemy/hit, this stacks) & +3% DMG (self buff).",
-        "Dark/Water": "+3% DMG (self buff) & +3% RNG to all units within range (this stacks)."
+        "Dark/Water": "+3% DMG (self buff) & +3% RNG to all units within range (this stacks).",
+        "Water/Electricity": "+3% RNG to units within range (stacks) & -1% CD to units within range (caps at -15%)"
       };
         
       
@@ -3914,6 +3916,7 @@
           ["lore_wither",       "Lore Keeper Shadow Bonnie: Meticulous Study (+30% DMG)",                  { dmgMult: 1.30 }],
           ["lore_rust",         "Lore Keeper Shadow Bonnie: Rust Boost (+15% DMG)",                       { dmgMult: 1.15 }],
           ["liched",            "Lich Shadow Bonnie: FALL (+5% DMG)",                                     { dmgMult: 1.05, duration: 15, cd: 60 }],
+          ["mech_endo",         "Mechanic Endo 01: Endo CPU (+30% DMG)",                                   { dmgMult: 1.30 }],
           ["ballora_light",     "Mother Nature Ballora: Light Boost (+3% DMG, +3% RNG, -3% CD)",           { dmgMult: 1.03, rngMult: 1.03, cdMult: 0.97 }],
           ["ballora_light_light_light", "Mother Nature Ballora: Light Boost (+5% DMG)",                    { dmgMult: 1.05 }],
           ["ballora_nature",    "Mother Nature Ballora: Nature Boost (+2% DMG, +1% RNG, -1% CD per stack)",{ dmgMult: 1.02, rngMult: 1.01, cdMult: 0.99, stackKey: "balloranatureStacks", maxStacks: 20 }],
@@ -3979,26 +3982,34 @@
           );
         }
 
-        if (String(unit.element || "").toLowerCase() === "electricity" || String(unit.element || "").toLowerCase() === "electricity/light") {
+        if (String(unit.element || "").toLowerCase() === "electricity" || String(unit.element || "").toLowerCase() === "electricity/light" || String(unit.element || "").toLowerCase() === "water/electricity") {
           BOOST_OPTIONS.push(
-            ["babyb",             "Circus Baby: Overcharge (+25% DMG) [Electricity only]",                       { dmgMult: 1.25, elements: ["Electricity", "Electricity/Light"] }],
-            ["conductor_shocker", "Ennard: Conductor Shocker (+25% DMG, +40% RNG, -10% CD) [Electricity only]", { dmgMult: 1.25, rngMult: 1.40, cdMult: 0.90, elements: ["Electricity", "Electricity/Light"] }],
-            ["conductor_smasher", "Ennard: Conductor Smasher (+40% DMG, +45% RNG) [Electricity only]",          { dmgMult: 1.40, rngMult: 1.45, elements: ["Electricity", "Electricity/Light"] }],
-            ["stormbound",        "Stormbound Chica: Electrifying Pressure (+10% DMG) [Water & Electric only]", { dmgMult: 1.10, elements: ["Electricity", "Electricity/Light", "Water"] }]
+            ["aqua_elec",         "Aqua Strike Toy Chica (+10% DMG) [Electricity only]",                         { dmgMult: 1.10, elements: ["Electricity", "Electricity/Light", "Water/Electricity"] }],
+            ["babyb",             "Circus Baby: Overcharge (+25% DMG) [Electricity only]",                       { dmgMult: 1.25, elements: ["Electricity", "Electricity/Light", "Water/Electricity"] }],
+            ["conductor_shocker", "Ennard: Conductor Shocker (+25% DMG, +40% RNG, -10% CD) [Electricity only]", { dmgMult: 1.25, rngMult: 1.40, cdMult: 0.90, elements: ["Electricity", "Electricity/Light", "Water/Electricity"] }],
+            ["conductor_smasher", "Ennard: Conductor Smasher (+40% DMG, +45% RNG) [Electricity only]",          { dmgMult: 1.40, rngMult: 1.45, elements: ["Electricity", "Electricity/Light", "Water/Electricity"] }],
+            ["witch_ability",     "Witch of the Sea Scrapbaby: Brace the Storm (+60% DMG) [Water & Electricity only]", { dmgMult: 1.60, duration: 30, cd: 60, elements: ["Electricity", "Electricity/Light", "Water/Electricity"] }],
+            ["witch_danger",      "Witch of the Sea Scrapbaby: Dangerous Waters (+20% DMG) [Water & Electricity only]", { dmgMult: 1.20, elements: ["Electricity", "Electricity/Light", "Water/Electricity"] }],
+            ["stormbound",        "Stormbound Chica: Electrifying Pressure (+10% DMG) [Water & Electric only]", { dmgMult: 1.10, elements: ["Electricity", "Electricity/Light", "Water", "Water/Electricity"] }]
           );
         }
 
-        if (String(unit.element || "").toLowerCase() === "water" || String(unit.element || "").toLowerCase() === "dark/water") {
+        if (String(unit.element || "").toLowerCase() === "water" || String(unit.element || "").toLowerCase() === "dark/water" || String(unit.element || "").toLowerCase() === "water/electricity") {
           BOOST_OPTIONS.push(
-            ["fkf_obelisk",  "Frozen King Foxy: Frozen Obelisk (+20% DMG) [Water only]",                          { dmgMult: 1.20, elements: ["Water", "Dark/Water"] }],
-            ["ballora_water","Mother Nature Ballora: Water Boost (+10% DMG) [Water only]",                         { dmgMult: 1.10, elements: ["Water", "Dark/Water"] }],
-            ["omc_whistle",  "Old Man Consequences: Guiding Whistle (+35% DMG & +30% RNG) [Water only]",        { dmgMult: 1.35, rngMult: 1.30, elements: ["Water", "Dark/Water"] }],
-            ["stormbound",   "Stormbound Chica: Electrifying Pressure (+10% DMG) [Water & Electric only]",        { dmgMult: 1.10, elements: ["Electricity", "Electricity/Light", "Water"] }]
+            ["aqua_water",   "Aqua Strike Toy Chica (+10% DMG) [Water only]",                                     { dmgMult: 1.10, elements: ["Water", "Dark/Water", "Water/Electricity"] }],
+            ["fkf_obelisk",  "Frozen King Foxy: Frozen Obelisk (+20% DMG) [Water only]",                          { dmgMult: 1.20, elements: ["Water", "Dark/Water", "Water/Electricity"] }],
+            ["ballora_water","Mother Nature Ballora: Water Boost (+10% DMG) [Water only]",                         { dmgMult: 1.10, elements: ["Water", "Dark/Water", "Water/Electricity"] }],
+            ["omc_whistle",  "Old Man Consequences: Guiding Whistle (+35% DMG & +30% RNG) [Water only]",        { dmgMult: 1.35, rngMult: 1.30, elements: ["Water", "Dark/Water", "Water/Electricity"] }],
+            ["pirate_sea",   "Pirate Withered Foxy: Seafarer (+15%) [Water only]",                                { dmgMult: 1.35, elements: ["Water", "Dark/Water", "Water/Electricity"] }],
+            ["witch_ability","Witch of the Sea Scrapbaby: Brace the Storm (+60% DMG) [Water & Electricity only]", { dmgMult: 1.60, duration: 30, cd: 60, elements: ["Water", "Dark/Water", "Water/Electricity"] }],
+            ["witch_danger", "Witch of the Sea Scrapbaby: Dangerous Waters (+20% DMG) [Water & Electricity only]", { dmgMult: 1.20, elements: ["Water", "Dark/Water", "Water/Electricity"] }],
+            ["stormbound",   "Stormbound Chica: Electrifying Pressure (+10% DMG) [Water & Electric only]",        { dmgMult: 1.10, elements: ["Electricity", "Electricity/Light", "Water", "Water/Electricity"] }]
           );
         }
 
         if (String(unit.element || "").toLowerCase() === "fire") {
           BOOST_OPTIONS.push(
+            ["aqua_water", "Aqua Strike Toy Chica (+10% DMG) [Water only]", { dmgMult: 1.10, elements: ["Fire"] }],
             ["scorched", "Springtrap: Agonized (+25% DMG) [Fire only]", { dmgMult: 1.25, elements: ["Fire"] }]
           );
         }

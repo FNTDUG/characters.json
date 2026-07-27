@@ -6941,8 +6941,6 @@
           autocomplete.style.display = "none";
           allowDisplayAnimation = true;
           shinyToggleTriggered  = false;
-          currentUnitLevel = 1;
-          isShinyMode = false;
           document.dispatchEvent(new Event("ue-shiny-toggle"));
           if (typeof playUnitSearchSound === "function") playUnitSearchSound();
           if (item.unit.name === "Scarecrow Freddy") {
@@ -7500,9 +7498,7 @@
 
               allowDisplayAnimation = true;
               shinyToggleTriggered = false;
-              currentUnitLevel = 1;
-              isShinyMode = false;
-              
+
               if (typeof playUnitSearchSound === "function") playUnitSearchSound();
 
               if (u.name === "Scarecrow Freddy") {
@@ -7561,8 +7557,6 @@
 
           allowDisplayAnimation = true;
           shinyToggleTriggered = false;
-          currentUnitLevel = 1;
-          isShinyMode = false;
           document.dispatchEvent(new Event("ue-shiny-toggle"));
 
           if (typeof playUnitSearchSound === "function") playUnitSearchSound();
@@ -7586,7 +7580,7 @@
 
         rebuildValueSelect();
 
-      // Deep-link: if the URL is /unit-engine/<UnitName>, open that unit on load
+      // Deep-link: if the URL is /unit-engine/<UnitName>, run a real search so it renders correctly
       (function () {
         try {
           var mm = location.pathname.match(/\/unit-engine\/([^\/?#]+)/);
@@ -7596,14 +7590,11 @@
             return String(u.name).toLowerCase().replace(/[^a-z0-9]/g, "") === q;
           });
           if (!found) return;
-          allowDisplayAnimation = false;
-          shinyToggleTriggered = false;
-          currentUnitLevel = 1;
-          isShinyMode = false;
-          if (found.name === "Scarecrow Freddy") { scarecrowMode = "raiser"; displayUnit(found, "raiser"); }
-          else if (found.name === "Mangle") { mangleModeIndex = 0; displayUnit(found, null); }
-          else if (found.modes && typeof found.modes === "object") { var keys = Object.keys(found.modes); displayUnit(found, keys.length ? keys[0] : null); }
-          else { displayUnit(found, null); }
+          var _ueInput = document.getElementById("unitSearch");
+          if (!_ueInput) return;
+          _ueInput.value = found.name;
+          _ueInput.dispatchEvent(new Event("input", { bubbles: true }));
+          _ueInput.dispatchEvent(new KeyboardEvent("keydown", { key: "Enter", code: "Enter", keyCode: 13, which: 13, bubbles: true }));
         } catch (_e) {}
       })();
 

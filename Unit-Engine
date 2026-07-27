@@ -1494,6 +1494,19 @@
 
         var BYTE_LIST = ["The Box", "Boss Drain", "Reaper", "The Fan", "UFO", "KABOOM!"];
 
+        // Chips (synergy boosts). Flat synergy boosts are applied to the DPS calc;
+        // situational per-enemy passives (Overwhelming Power / Crowd Culler) and
+        // follow-up / DoT specific boosts are shown but not baked into the flat number.
+        var CHIP_LIST = [
+          { value: "none",               label: "Select Chip..." },
+          { value: "overwhelming_power", label: "Overwhelming Power (+15% DMG)" },
+          { value: "weak_point",         label: "Weak Point (+15% Crit Rate, +30% Crit DMG)" },
+          { value: "rapid_strikes",      label: "Rapid Strikes (-5% CD, +25% Follow-Up DMG)" },
+          { value: "eye_augmentation",   label: "Eye Augmentation (+15% RNG, +10% DMG)" },
+          { value: "crowd_culler",       label: "Crowd Culler (+5% DMG per enemy, cap +25%)" },
+          { value: "blazing_fire",       label: "Blazing Fire (+20% DoT DMG)" }
+        ];
+
         var BYTE_STATS = {
           "The Box":    [{ key:"cd",  label:"CD",  unit:"%", min:-13,  max:13   }, { key:"rng", label:"RNG", unit:"%", min:-26, max:26 }, { key:"dmg", label:"DMG", unit:"%", min:-26, max:26 }],
           "Boss Drain": [{ key:"dmg", label:"DMG", unit:"%", min:0,    max:13   }, { key:"bossdmg", label:"Boss DMG", unit:"%", min:0, max:32.5 }],
@@ -1545,6 +1558,7 @@
         if (!buffState.perma) buffState.perma = {};
         if (typeof buffState.temp !== "string") buffState.temp = "none";
         if (typeof buffState.enchant !== "string") buffState.enchant = "none";
+        if (typeof buffState.chip !== "string") buffState.chip = "none";
 
       if (!Array.isArray(buffState.permaSelected)) buffState.permaSelected = [];
       if (!Array.isArray(buffState.tempSelected)) buffState.tempSelected = [];
@@ -1636,6 +1650,16 @@
             costMult   *= 0.90;
             incomeMult *= 1.25;
             break;
+        }
+
+        // ── Chip (synergy) boosts ────────────────────────────────────────────
+        switch (buffState.chip) {
+          case "overwhelming_power": dmgMult *= 1.15; break;
+          case "weak_point":         critRateAdd += 0.15; critDmgAdd += 0.30; break;
+          case "rapid_strikes":      cdMult  *= 0.95; break;   // +25% follow-up dmg is situational
+          case "eye_augmentation":   rngMult *= 1.15; dmgMult *= 1.10; break;
+          case "crowd_culler":       break;                     // +5%/enemy passive (situational)
+          case "blazing_fire":       break;                     // +20% DoT dmg (situational)
         }
 
       
@@ -3788,6 +3812,7 @@
         if (!buffState.perma) buffState.perma = {};
         if (typeof buffState.temp !== "string") buffState.temp = "none";
         if (typeof buffState.enchant !== "string") buffState.enchant = "none";
+        if (typeof buffState.chip !== "string") buffState.chip = "none";
 
       if (!Array.isArray(buffState.permaSelected)) buffState.permaSelected = [];
       if (!Array.isArray(buffState.tempSelected)) buffState.tempSelected = [];
@@ -3850,6 +3875,7 @@
           buffState.permaSelected = [];
           buffState.tempSelected  = [];
           buffState.enchant       = "none";
+          buffState.chip          = "none";
           buffState.perma         = {};
           if (typeof byteState !== "undefined") { byteState.mainByte = "none"; byteState.subByte = "none"; byteState.stats = {}; byteState.subStats = {}; }
           if (typeof allowDisplayAnimation !== "undefined") allowDisplayAnimation = false;
@@ -4460,10 +4486,16 @@
         })();
 
         (function buildChipsPanel() {
-          var note = document.createElement("div");
-          note.style.cssText = "font-size:9px;opacity:0.4;text-align:center;padding:12px 0;";
-          note.textContent = "Coming soon";
-          chipsPanel.appendChild(note);
+          var chipOpts = CHIP_LIST.map(function(o) {
+            return { value: o.value, label: o.label, placeholder: o.value === "none" };
+          });
+          var chipSel = makeUESelect(chipOpts, buffState.chip || "none", function(v) {
+            buffState.chip = v;
+            if (typeof playUiClickSound === "function") playUiClickSound();
+            if (typeof allowDisplayAnimation !== "undefined") allowDisplayAnimation = false;
+            displayUnit(unit, modeKey);
+          }, { searchable: false, noMarginTop: true });
+          chipsPanel.appendChild(chipSel);
         })();
 
         var totalDpsBoost = computeTotalDpsBoost(unit, modeKey);

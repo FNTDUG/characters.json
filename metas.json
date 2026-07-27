@@ -22,7 +22,7 @@
       "Phantom":   { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/phantom-render.png", "color": "linear-gradient(180deg, #00FF13, #03D90E, #098D07)" },
       "Investor": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/investor-render.png", "color": "linear-gradient(180deg, #FFD700, #DBB700)"},
       "Hijacked": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/hijacked-render.png", "color": "linear-gradient(90deg, #2CFF70, #35e2a1, #78a7c5, #b472e6, #e14aff)"},
-      "Thespian": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/thespian-render.png", "color": "linear-gradient(180deg, , #7F3E9B, #9A49AF, #BA50BA)" },
+      "Thespian": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/thespian-render.png", "color": "linear-gradient(180deg, #7F3E9B, #9A49AF, #BA50BA)" },
       "Champion":   { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/champion-render.png", "color": "linear-gradient(180deg, #FEDE43, #CE9D37, #AD8222)" },
       "Engineer": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/engineer-render.png", "color": "linear-gradient(180deg, #FBFF00, #C2C200, #696900)"},
       "Haywire": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/haywire-render.png", "color": "linear-gradient(180deg, #00FF88, #00D672, #00934F)"},

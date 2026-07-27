@@ -325,14 +325,16 @@
 <script>
 /* ── EDIT THIS LIST ── */
 var UPDATED_UNITS = [
-  "Starfarer Princess",
-  "Cthulhu Nightmare Foxy",
-  "Gravelord Foxy",
-  "Mothman Lefty",
-  "Unicorn Toy Foxy",
-  "Grand Strategist Chica",
-  "Chipper",
-  "Old Man Consequences"
+  "Witch of the Sea Scrapbaby",
+  "Mecha-Lizabeth",
+  "Dutchman Nightmare Bonnie",
+  "Mechanic Endo 01",
+  "Aqua Strike Toy Chica",
+  "Pirate Withered Foxy",
+  "Cannoneer Chica",
+  "Salvaged Toy Bonnie",
+  "Shadow Bonnie",
+  "Withered Freddy"
 ];
 /* ────────────────── */
 

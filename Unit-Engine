@@ -5564,12 +5564,18 @@
           if (typeof cb === "function") cb();
           return;
         }
-        if (window.__ueVD.loading) {
-          if (typeof cb === "function") cb();
-          return;
-        }
+        // Queue callbacks so they all fire once the data actually finishes loading
+        if (!window.__ueVD._cbs) window.__ueVD._cbs = [];
+        if (typeof cb === "function") window.__ueVD._cbs.push(cb);
+        if (window.__ueVD.loading) return;
 
         window.__ueVD.loading = true;
+
+        function _flush() {
+          var cbs = window.__ueVD._cbs || [];
+          window.__ueVD._cbs = [];
+          cbs.forEach(function (f) { try { f(); } catch (e) {} });
+        }
 
         fetch("https://fntd2.com/all_units.json", { cache: "no-store" })
           .then(function (r) { return r.json(); })
@@ -5580,13 +5586,13 @@
         var entry = json[k];
         if (!entry || !entry.baseText) continue;
 
-        
+
         if (/pet$/i.test(k)) continue;
 
         var key = ueVDNorm(entry.baseText);
         if (!key) continue;
 
-        
+
         if (!map[key]) {
           map[key] = entry;
         }
@@ -5596,14 +5602,14 @@
             window.__ueVD.loaded = true;
             window.__ueVD.loading = false;
 
-            if (typeof cb === "function") cb();
+            _flush();
           })
           .catch(function (err) {
             console.warn("UE Value/Demand fetch failed:", err);
             window.__ueVD.byBaseText = {};
             window.__ueVD.loaded = true;
             window.__ueVD.loading = false;
-            if (typeof cb === "function") cb();
+            _flush();
           });
       }
 
@@ -6224,6 +6230,11 @@
       }
 
         function displayUnit(unit, modeKey) {
+          // Shiny guard: if this unit has no shiny variant, don't stay in shiny mode
+          var _hasShiny = unit && unit.imgShiny && typeof unit.imgShiny === "string"
+            && unit.imgShiny.trim() !== "" && unit.imgShiny.trim() !== ((unit.imgNormal || "").trim());
+          if (isShinyMode && !_hasShiny) isShinyMode = false;
+
           var rarityStyle = getRarityStyle(unit);
           var wrapper = document.createElement("div");
 

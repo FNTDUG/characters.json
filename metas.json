@@ -15,23 +15,23 @@
     },
 
     "enchants": {
-      "Range": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/image%20(1).png", "color": "#e87a00" },
-      "Damage": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/image%20(2).png", "color": "#e87a00" },
-      "Speed": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/image.png", "color": "#e87a00" },
+      "Range": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/image%20(1).png", "color": "linear-gradient(180deg, #59ABFF, #4B85FF, #4064FF)" },
+      "Damage": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/image%20(2).png", "color": "linear-gradient(180deg, #FF4245, #FF2E31, #FF1C1F)" },
+      "Speed": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/image.png", "color": "linear-gradient(180deg, #FFD741, #FFC838, #FFB72D)" },
       "Vengeance": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/veng-render.png", "color": "linear-gradient(180deg, #EA5300, #F13E00, #F72A00)" },
-      "Phantom":   { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/phantom-render.png", "color": "#00ee00" },
-      "Investor": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/investor-render.png", "color": "#6a5404"},
+      "Phantom":   { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/phantom-render.png", "color": "linear-gradient(180deg, #00FF13, #03D90E, #098D07)" },
+      "Investor": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/investor-render.png", "color": "linear-gradient(180deg, #FFD700, #DBB700)"},
       "Hijacked": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/hijacked-render.png", "color": "linear-gradient(90deg, #2CFF70, #35e2a1, #78a7c5, #b472e6, #e14aff)"},
-      "Thespian": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/thespian-render.png", "color": "#e87a00" },
-      "Champion":   { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/champion-render.png", "color": "#00ee00" },
-      "Engineer": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/engineer-render.png", "color": "#6a5404"},
-      "Haywire": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/haywire-render.png", "color": "#14D154"},
-      "Blighted": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/blighted-render.png", "color": "#6a5404"},
-      "Springlocked": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/springlocked-render.png", "color": "#14D154"},
-      "Shadow": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/shadow-render.png", "color": "#6a5404"},
-      "Scooped": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/scooped-render.png", "color": "#14D154"},
-      "Puppets Nightmare": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/puppets-nightmare-render.png", "color": "#6a5404"},
-      "Prototype": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/prototype-render.png", "color": "#14D154"}
+      "Thespian": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/thespian-render.png", "color": "linear-gradient(180deg, , #7F3E9B, #9A49AF, #BA50BA)" },
+      "Champion":   { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/champion-render.png", "color": "linear-gradient(180deg, #FEDE43, #CE9D37, #AD8222)" },
+      "Engineer": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/engineer-render.png", "color": "linear-gradient(180deg, #FBFF00, #C2C200, #696900)"},
+      "Haywire": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/haywire-render.png", "color": "linear-gradient(180deg, #00FF88, #00D672, #00934F)"},
+      "Blighted": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/blighted-render.png", "color": "linear-gradient(180deg, #C8C8C8, #ACACAC, #7E7E7E)"},
+      "Springlocked": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/springlocked-render.png", "color": "#05DBF3"},
+      "Shadow": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/shadow-render.png", "color": "linear-gradient(180deg, #8B65F6, #7D50F0, #5830B6)"},
+      "Scooped": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/scooped-render.png", "color": "linear-gradient(90deg, #E53394, #CD3899, #BA3C9D, #A840A2, #9743A6, #A958B1, #C166B6, #E079BE)"},
+      "Puppets Nightmare": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/puppets-nightmare-render.png", "color": "#574DFE"},
+      "Prototype": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/prototype-render.png", "color": "linear-gradient(180deg, #6A5DFF, #7875FF, #8891FF)"}
     },
 
     "chips": {

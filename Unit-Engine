@@ -1670,7 +1670,7 @@
 
         // ── Chip (synergy) boosts ────────────────────────────────────────────
         switch (buffState.chip) {
-          case "overwhelming_power": dmgMult *= 1.15; break;
+          case "overwhelming_power": break;   // +15% flat handled additively with its stacks below
           case "weak_point":         critRateAdd += 0.15; critDmgAdd += 0.30; break;
           case "rapid_strikes":      cdMult  *= 0.95; break;   // +25% follow-up dmg is situational
           case "eye_augmentation":   rngMult *= 1.15; dmgMult *= 1.10; break;
@@ -1687,12 +1687,11 @@
           if (_cs.critc) critRateAdd += Number(_cs.critc) / 100;
           if (_cs.critd) critDmgAdd  += Number(_cs.critd) / 100;
         }
-        // Chip per-enemy synergy stacks (enemy count × per-enemy %)
-        if (buffState.chip === "overwhelming_power" && buffState.chipStacks) {
-          dmgMult *= (1 + (Number(buffState.chipStacks) * 0.5) / 100);   // +0.5% per enemy, cap +5% (10)
-        }
-        if (buffState.chip === "crowd_culler" && buffState.chipStacks) {
-          dmgMult *= (1 + (Number(buffState.chipStacks) * 5) / 100);     // +5% per enemy, cap +25% (5)
+        // Chip per-enemy synergy (added to the flat synergy % so each enemy is exactly its per-enemy value)
+        if (buffState.chip === "overwhelming_power") {
+          dmgMult *= (1 + (15 + (Number(buffState.chipStacks) || 0) * 0.5) / 100);  // +15% flat, +0.5%/enemy (cap +5% at 10)
+        } else if (buffState.chip === "crowd_culler") {
+          dmgMult *= (1 + ((Number(buffState.chipStacks) || 0) * 5) / 100);          // +5%/enemy (cap +25% at 5)
         }
 
       

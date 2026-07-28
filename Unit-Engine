@@ -1757,6 +1757,7 @@
         var meta = BOOST_META[type];
         var factor = _applyBoostMeta(meta, unit, cdMult);
         if (factor === null || factor === undefined) return;
+        if (meta && meta.singlePlacement) { var _spDiv = getPlc(unit) || 1; factor = factor / _spDiv; }
         var r = _applyMetaMults(meta, factor, dmgMult, rngMult, cdMult, costMult, critRateMult, critDmgMult, critRateAdd, critDmgAdd);
         dmgMult = r.dmgMult; rngMult = r.rngMult; cdMult = r.cdMult;
         costMult = r.costMult; critRateMult = r.critRateMult; critDmgMult = r.critDmgMult; critRateAdd = r.critRateAdd; critDmgAdd = r.critDmgAdd;
@@ -1766,6 +1767,7 @@
         var meta = BOOST_META[type];
         var factor = _applyBoostMeta(meta, unit, cdMult);
         if (factor === null || factor === undefined) return;
+        if (meta && meta.singlePlacement) { var _spDiv = getPlc(unit) || 1; factor = factor / _spDiv; }
         var r = _applyMetaMults(meta, factor, dmgMult, rngMult, cdMult, costMult, critRateMult, critDmgMult, critRateAdd, critDmgAdd);
         dmgMult = r.dmgMult; rngMult = r.rngMult; cdMult = r.cdMult;
         costMult = r.costMult; critRateMult = r.critRateMult; critDmgMult = r.critDmgMult; critRateAdd = r.critRateAdd; critDmgAdd = r.critDmgAdd;
@@ -2934,7 +2936,10 @@
 
           var buffedCd = baseCd * mult;
           var averagedCd = (buffedCd + selectedCd) / 2;
-          mult = averagedCd / baseCd;
+          var _avgMult = averagedCd / baseCd;
+          // Love Shot only affects 1 placement — dilute the averaging by the placement count
+          var _swPlc = (typeof getPlc === "function") ? (getPlc(unit) || 1) : 1;
+          mult = mult + (_avgMult - mult) / _swPlc;
         }
       }
 
@@ -3948,7 +3953,7 @@
         permPanel.appendChild(container);
           
         var BOOST_OPTIONS = [
-          ["scott_creation",    "Animdude: My Favorite Creation (+65% DMG & +30% RNG)",                     { dmgMult: 1.65, rngMult: 1.30 }],
+          ["scott_creation",    "Animdude: My Favorite Creation (+65% DMG & +30% RNG)",                     { dmgMult: 1.65, rngMult: 1.30, singlePlacement: true }],
           ["scott_rng",         "Animdude: Endless Range (+15% RNG)",                                        { rngMult: 1.15 }],
           ["scott_dmg",         "Animdude: Endless Strength (+10% DMG)",                                     { dmgMult: 1.10 }],
           ["scott_cd",          "Animdude: Endless Speed (-7.5% CD)",                                        { cdMult: 0.925 }],
@@ -3982,7 +3987,7 @@
           ["ballora_light_light_light", "Mother Nature Ballora: Light Boost (+5% DMG)",                    { dmgMult: 1.05 }],
           ["ballora_nature",    "Mother Nature Ballora: Nature Boost (+2% DMG, +1% RNG, -1% CD per stack)",{ dmgMult: 1.02, rngMult: 1.01, cdMult: 0.99, stackKey: "balloranatureStacks", maxStacks: 20 }],
           ["ballora_rust",      "Mother Nature Ballora: Rust Wither (+10% DMG)",                          { dmgMult: 1.10 }],
-          ["movie",             "Movie Director: Eye for Talent (+25% DMG per stack)",                     { dmgMult: 1.25, stackKey: "movieStacks", maxStacks: 4 }],
+          ["movie",             "Movie Director: Eye for Talent (+25% DMG per stack)",                     { dmgMult: 1.25, stackKey: "movieStacks", maxStacks: 4, singlePlacement: true }],
           ["nature_reclaim",    "Nature Reclaimed Foxy: Drifter's Blessing (+30% DMG, +25% RNG, -5% CD)", { dmgMult: 1.30, rngMult: 1.25, cdMult: 0.95 }],
           ["NMFB",              "Nightmare Fredbear: Nightmarish Cry (+75% CD)",                          { cdMult: 1.75, duration: 10, cd: 145 }],
           ["crate",             "No. 1 Crate: Cheerleader (+20% DMG per stack)",                           { dmgMult: 1.20, stackKey: "crateStacks", maxStacks: 4 }],
@@ -4000,7 +4005,7 @@
           ["strat_chica_dmg",   "Grand Strategist Chica: Pressing the Advantage (+35% Crit DMG)",          { dmgMult: 1.25}],
           ["strat_chica_crit",   "Grand Strategist Chica: Hold the Line (+30% Crit DMG)",                  { critDmgAdd: 1.30}],
           ["spring_duo_avg",    "Spring Duo: Spotlight! (Averaged, +25% DMG, +22.5% RNG, -2.5% CD)",      { dmgMult: 1.25, rngMult: 1.225, cdMult: 0.975 }],
-          ["sweetheart_toy_foxy","Sweetheart Toy Foxy: Love Shot (-35% DMG, avg CD)",                      { dmgMult: 0.65 }],
+          ["sweetheart_toy_foxy","Sweetheart Toy Foxy: Love Shot (-35% DMG, avg CD)",                      { dmgMult: 0.65, singlePlacement: true }],
           ["unicorn_foxy",        "Unicorn Toy Foxy: Light Eater (+15% DMG)",                              { dmgMult: 1.15 }],
           ["electricityelement","Electricity Element: -1% CD to units within range (stacks)",              { cdMult: 0.99, stackKey: "electricityelementStacks", maxStacks: 15 }],
           ["waterelement",      "Water Element: +3% RNG to units within range (stacks)",                   { rngMult: 1.03, stackKey: "waterelementStacks", maxStacks: 18 }],
@@ -4207,22 +4212,24 @@
             cdWrap.appendChild(cdLabel);
 
             if (buffState.perma.sweetheartToyFoxyCd === undefined) buffState.perma.sweetheartToyFoxyCd = null;
-            var cdOpts = [
-              { value: "none", label: "Select Cooldown...", placeholder: true },
-              { value: "0.2",  label: "0.20s (Withered Freddy)" },
-              { value: "0.48", label: "0.48s (Valkyrie Chica)" },
-              { value: "1", label: "1s" },{ value: "2", label: "2s" },{ value: "3", label: "3s" },
-              { value: "4", label: "4s" },{ value: "5", label: "5s" },{ value: "6", label: "6s" },
-              { value: "7", label: "7s" },{ value: "8", label: "8s" },{ value: "9", label: "9s" },
-              { value: "10", label: "10s" }
-            ];
-            var curCd = buffState.perma.sweetheartToyFoxyCd == null ? "none" : String(buffState.perma.sweetheartToyFoxyCd);
-            var cdSel = makeUESelect(cdOpts, curCd, function(v) {
-              buffState.perma.sweetheartToyFoxyCd = v === "none" ? null : parseFloat(v);
+            var cdInp = document.createElement("input");
+            cdInp.type = "number"; cdInp.className = "ue-byte-input";
+            cdInp.min = 0; cdInp.step = "0.01";
+            cdInp.placeholder = "Second Cooldown (s)";
+            if (buffState.perma.sweetheartToyFoxyCd != null) cdInp.value = buffState.perma.sweetheartToyFoxyCd;
+            cdInp.addEventListener("blur", function() {
+              var raw = String(cdInp.value).trim();
+              if (raw === "" || isNaN(parseFloat(raw)) || parseFloat(raw) <= 0) {
+                buffState.perma.sweetheartToyFoxyCd = null; cdInp.value = "";
+              } else {
+                var v = parseFloat(raw);
+                buffState.perma.sweetheartToyFoxyCd = v; cdInp.value = v;
+              }
               if (typeof allowDisplayAnimation !== "undefined") allowDisplayAnimation = false;
               displayUnit(unit, modeKey);
-            }, { searchable: false, noMarginTop: true });
-            cdWrap.appendChild(cdSel);
+            });
+            cdInp.addEventListener("keydown", function(e) { if (e.key === "Enter") cdInp.blur(); });
+            cdWrap.appendChild(cdInp);
             wrap.appendChild(cdWrap);
           }
 

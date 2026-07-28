@@ -1687,9 +1687,12 @@
           if (_cs.critc) critRateAdd += Number(_cs.critc) / 100;
           if (_cs.critd) critDmgAdd  += Number(_cs.critd) / 100;
         }
-        // Chip per-enemy synergy stacks (Overwhelming Power / Crowd Culler)
-        if ((buffState.chip === "overwhelming_power" || buffState.chip === "crowd_culler") && buffState.chipStacks) {
-          dmgMult *= (1 + Number(buffState.chipStacks) / 100);
+        // Chip per-enemy synergy stacks (enemy count × per-enemy %)
+        if (buffState.chip === "overwhelming_power" && buffState.chipStacks) {
+          dmgMult *= (1 + (Number(buffState.chipStacks) * 0.5) / 100);   // +0.5% per enemy, cap +5% (10)
+        }
+        if (buffState.chip === "crowd_culler" && buffState.chipStacks) {
+          dmgMult *= (1 + (Number(buffState.chipStacks) * 5) / 100);     // +5% per enemy, cap +25% (5)
         }
 
       
@@ -4570,20 +4573,38 @@
           }, { searchable: false, noMarginTop: true });
           chipsPanel.appendChild(chipSel);
 
-          // Per-enemy synergy stacks (Overwhelming Power / Crowd Culler)
-          if (buffState.chip === "overwhelming_power" || buffState.chip === "crowd_culler") {
-            var _smax = buffState.chip === "crowd_culler" ? 25 : 5;
-            chipsPanel.appendChild(
-              makeChipInput({ key: "chipStacks", label: "DMG per Enemy in Range", unit: "%", min: 0, max: _smax }, buffState)
-            );
-          }
+          // Only show stacks + stats once a chip is selected
+          if (buffState.chip && buffState.chip !== "none") {
 
-          // Chip roll stats
-          var hdr = document.createElement("div");
-          hdr.style.cssText = "margin-top:10px;font-size:9px;opacity:0.55;letter-spacing:0.5px;";
-          hdr.textContent = "CHIP STATS";
-          chipsPanel.appendChild(hdr);
-          CHIP_STATS.forEach(function(s) { chipsPanel.appendChild(makeChipInput(s, buffState.chipStats)); });
+            // Per-enemy synergy stacks (Overwhelming Power / Crowd Culler) — enemy-count dropdown
+            if (buffState.chip === "overwhelming_power" || buffState.chip === "crowd_culler") {
+              var _maxStk = buffState.chip === "crowd_culler" ? 5 : 10;
+              var stkWrap = document.createElement("div");
+              stkWrap.style.marginTop = "8px";
+              var stkLbl = document.createElement("div");
+              stkLbl.textContent = "Enemies in Range";
+              stkLbl.className = "buff-panel-label";
+              stkLbl.style.fontSize = "12px";
+              stkWrap.appendChild(stkLbl);
+              var stkOpts = [{ value: 0, label: "0" }];
+              for (var i = 1; i <= _maxStk; i++) stkOpts.push({ value: i, label: String(i) });
+              var stkSel = makeUESelect(stkOpts, buffState.chipStacks || 0, function(v) {
+                buffState.chipStacks = parseInt(v, 10) || 0;
+                if (typeof playUiClickSound === "function") playUiClickSound();
+                if (typeof allowDisplayAnimation !== "undefined") allowDisplayAnimation = false;
+                displayUnit(unit, modeKey);
+              }, { searchable: false, noMarginTop: true });
+              stkWrap.appendChild(stkSel);
+              chipsPanel.appendChild(stkWrap);
+            }
+
+            // Chip roll stats
+            var hdr = document.createElement("div");
+            hdr.style.cssText = "margin-top:10px;font-size:9px;opacity:0.55;letter-spacing:0.5px;";
+            hdr.textContent = "CHIP STATS";
+            chipsPanel.appendChild(hdr);
+            CHIP_STATS.forEach(function(s) { chipsPanel.appendChild(makeChipInput(s, buffState.chipStats)); });
+          }
         })();
 
         var totalDpsBoost = computeTotalDpsBoost(unit, modeKey);

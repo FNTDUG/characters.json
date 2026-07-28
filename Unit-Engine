@@ -1149,7 +1149,10 @@
       .ue-byte-stat-range { font-size: 8px; color: rgba(255,164,91,0.8); }
       .ue-byte-input { width: 100%; padding: 6px 8px; border-radius: 8px; border: 1px solid rgba(255,164,91,0.4); background: rgba(8,6,18,0.9); color: #fff; font-size: 10px; font-family: 'Press Start 2P', cursive; box-sizing: border-box; outline: none; transition: border-color 0.15s; -moz-appearance: textfield; }
       .ue-byte-input:focus { border-color: #ffa45b; box-shadow: 0 0 0 2px rgba(255,164,91,0.15); }
-      .ue-byte-input::placeholder { color: rgba(255,255,255,0.28); }
+      .ue-byte-input::placeholder { color: rgba(255,255,255,0.28); opacity: 1; }
+      .ue-byte-input::-webkit-input-placeholder { color: rgba(255,255,255,0.28); }
+      .ue-byte-input::-moz-placeholder { color: rgba(255,255,255,0.28); opacity: 1; }
+      .ue-byte-input:-ms-input-placeholder { color: rgba(255,255,255,0.28); }
       .ue-byte-input::-webkit-outer-spin-button,
       .ue-byte-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
       .ue-byte-sublabel { font-size: 9px; opacity: 0.65; margin-top: 10px; margin-bottom: 2px; }
@@ -1514,13 +1517,27 @@
         var CHIP_STATS = [
           { key:"dmg",      label:"Damage",        unit:"%", min:0,     max:35   },
           { key:"rng",      label:"Range",         unit:"%", min:0,     max:35   },
-          { key:"cd",       label:"Cooldown",      unit:"%", min:-17.5, max:0    },
+          { key:"cd",       label:"Cooldown",      unit:"%", min:0,     max:-17.5 },
           { key:"critc",    label:"Crit Chance",   unit:"%", min:0,     max:32.5 },
           { key:"critd",    label:"Crit Damage",   unit:"%", min:0,     max:55   },
           { key:"buffpot",  label:"Buff Potency",  unit:"%", min:0,     max:40   },
           { key:"followup", label:"Follow Up DMG", unit:"%", min:0,     max:42.5 },
           { key:"dot",      label:"DoT Damage",    unit:"%", min:0,     max:40   }
         ];
+
+        // Number inputs: show the normal keyboard on mobile but only allow numeric characters
+        // (digits, one leading "-", one ".") — type="number" was giving a limited mobile keypad.
+        function ueNumericInput(inp) {
+          inp.type = "text";
+          inp.setAttribute("inputmode", "text");
+          inp.addEventListener("input", function() {
+            var neg = inp.value.charAt(0) === "-";
+            var c = inp.value.replace(/[^0-9.]/g, "");
+            var p = c.split(".");
+            c = p.shift() + (p.length ? "." + p.join("") : "");
+            inp.value = (neg ? "-" : "") + c;
+          });
+        }
 
         var BYTE_STATS = {
           "The Box":    [{ key:"cd",  label:"CD",  unit:"%", min:-13,  max:13   }, { key:"rng", label:"RNG", unit:"%", min:-26, max:26 }, { key:"dmg", label:"DMG", unit:"%", min:-26, max:26 }],
@@ -4213,7 +4230,7 @@
 
             if (buffState.perma.sweetheartToyFoxyCd === undefined) buffState.perma.sweetheartToyFoxyCd = null;
             var cdInp = document.createElement("input");
-            cdInp.type = "number"; cdInp.className = "ue-byte-input";
+            cdInp.className = "ue-byte-input"; ueNumericInput(cdInp);
             cdInp.min = 0; cdInp.step = "0.01";
             cdInp.placeholder = "Second Cooldown (s)";
             if (buffState.perma.sweetheartToyFoxyCd != null) cdInp.value = buffState.perma.sweetheartToyFoxyCd;
@@ -4429,7 +4446,7 @@
             rt.textContent = fv(s.min) + " to " + fv(effMax);
             lbl.appendChild(lt); lbl.appendChild(rt);
             var inp = document.createElement("input");
-            inp.type = "number"; inp.className = "ue-byte-input";
+            inp.className = "ue-byte-input"; ueNumericInput(inp);
             inp.min = s.min; inp.max = effMax; inp.step = "0.1";
             inp.placeholder = "Byte Stat";
             var _sv = ref[s.key];
@@ -4547,7 +4564,7 @@
             rt.textContent = fv(s.min) + " to " + fv(s.max);
             lbl.appendChild(lt); lbl.appendChild(rt);
             var inp = document.createElement("input");
-            inp.type = "number"; inp.className = "ue-byte-input";
+            inp.className = "ue-byte-input"; ueNumericInput(inp);
             inp.min = lo; inp.max = hi; inp.step = "0.1";
             inp.placeholder = "Chip Stat";
             var _sv = ref[s.key];
@@ -4588,7 +4605,7 @@
               var stkWrap = document.createElement("div");
               stkWrap.style.marginTop = "8px";
               var stkLbl = document.createElement("div");
-              stkLbl.textContent = "Enemies in Range";
+              stkLbl.textContent = "Enemies in Range (cap " + _maxStk + ")";
               stkLbl.className = "buff-panel-label";
               stkLbl.style.fontSize = "12px";
               stkWrap.appendChild(stkLbl);

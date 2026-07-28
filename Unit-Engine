@@ -1508,6 +1508,20 @@
           { value: "blazing_fire",       label: "Blazing Fire (+20% DoT DMG)" }
         ];
 
+        // Chip roll stats — max = base-stat max + sub-stat max (from worker.js chip data).
+        // dmg / rng / cd / critc / critd feed the flat DPS calc; buffpot / followup / dot
+        // are shown but situational (not baked into the flat number).
+        var CHIP_STATS = [
+          { key:"dmg",      label:"Damage",        unit:"%", min:0,     max:35   },
+          { key:"rng",      label:"Range",         unit:"%", min:0,     max:35   },
+          { key:"cd",       label:"Cooldown",      unit:"%", min:-17.5, max:0    },
+          { key:"critc",    label:"Crit Chance",   unit:"%", min:0,     max:32.5 },
+          { key:"critd",    label:"Crit Damage",   unit:"%", min:0,     max:55   },
+          { key:"buffpot",  label:"Buff Potency",  unit:"%", min:0,     max:40   },
+          { key:"followup", label:"Follow Up DMG", unit:"%", min:0,     max:42.5 },
+          { key:"dot",      label:"DoT Damage",    unit:"%", min:0,     max:40   }
+        ];
+
         var BYTE_STATS = {
           "The Box":    [{ key:"cd",  label:"CD",  unit:"%", min:-13,  max:13   }, { key:"rng", label:"RNG", unit:"%", min:-26, max:26 }, { key:"dmg", label:"DMG", unit:"%", min:-26, max:26 }],
           "Boss Drain": [{ key:"dmg", label:"DMG", unit:"%", min:0,    max:13   }, { key:"bossdmg", label:"Boss DMG", unit:"%", min:0, max:32.5 }],
@@ -1560,6 +1574,7 @@
         if (typeof buffState.temp !== "string") buffState.temp = "none";
         if (typeof buffState.enchant !== "string") buffState.enchant = "none";
         if (typeof buffState.chip !== "string") buffState.chip = "none";
+        if (!buffState.chipStats || typeof buffState.chipStats !== "object") buffState.chipStats = {};
 
       if (!Array.isArray(buffState.permaSelected)) buffState.permaSelected = [];
       if (!Array.isArray(buffState.tempSelected)) buffState.tempSelected = [];
@@ -1659,8 +1674,22 @@
           case "weak_point":         critRateAdd += 0.15; critDmgAdd += 0.30; break;
           case "rapid_strikes":      cdMult  *= 0.95; break;   // +25% follow-up dmg is situational
           case "eye_augmentation":   rngMult *= 1.15; dmgMult *= 1.10; break;
-          case "crowd_culler":       break;                     // +5%/enemy passive (situational)
+          case "crowd_culler":       break;                     // handled via chipStacks below
           case "blazing_fire":       break;                     // +20% DoT dmg (situational)
+        }
+
+        // Chip roll stats (flat ones feed the DPS calc; buffpot/followup/dot are situational)
+        if (buffState.chipStats && typeof buffState.chipStats === "object") {
+          var _cs = buffState.chipStats;
+          if (_cs.dmg)   dmgMult    *= (1 + Number(_cs.dmg)   / 100);
+          if (_cs.rng)   rngMult    *= (1 + Number(_cs.rng)   / 100);
+          if (_cs.cd)    cdMult     *= (1 + Number(_cs.cd)    / 100);
+          if (_cs.critc) critRateAdd += Number(_cs.critc) / 100;
+          if (_cs.critd) critDmgAdd  += Number(_cs.critd) / 100;
+        }
+        // Chip per-enemy synergy stacks (Overwhelming Power / Crowd Culler)
+        if ((buffState.chip === "overwhelming_power" || buffState.chip === "crowd_culler") && buffState.chipStacks) {
+          dmgMult *= (1 + Number(buffState.chipStacks) / 100);
         }
 
       
@@ -3148,7 +3177,7 @@
       if (hasDps) cols.push("DPS");
       var _permCrit = hasDps ? getPermanentCritStats(unit, modeKey) : { critC: null, critD: null };
       var _showCritC = hasDps;
-      var _showCritD = hasDps && _permCrit.critD != null;
+      var _showCritD = hasDps && (_permCrit.critD != null || (eff.critDmgAdd || 0) !== 0 || (eff.critDmgMult || 1) !== 1);
       if (_showCritC) cols.push("critc");
       if (_showCritD) cols.push("critd");
 
@@ -3205,7 +3234,7 @@
               ? (scaledDmgNum * _critM / scaledCdNum).toFixed(1)
               : "-");
             if (_showCritC) row.push((getEffectiveCritRate(unit) * 100).toFixed(1) + "%");
-            if (_showCritD) { var _deff = getBuffEffects(unit); row.push(((_permCrit.critD + (_deff.critDmgAdd || 0)) * (_deff.critDmgMult || 1)).toFixed(2) + "×"); }
+            if (_showCritD) { var _deff = getBuffEffects(unit); var _baseCritD = (_permCrit.critD != null ? _permCrit.critD : CRIT_DMG); row.push(((_baseCritD + (_deff.critDmgAdd || 0)) * (_deff.critDmgMult || 1)).toFixed(2) + "×"); }
           }
 
           if (hasEnemyPct) row.push(getEnemyVal(l));
@@ -3814,6 +3843,7 @@
         if (typeof buffState.temp !== "string") buffState.temp = "none";
         if (typeof buffState.enchant !== "string") buffState.enchant = "none";
         if (typeof buffState.chip !== "string") buffState.chip = "none";
+        if (!buffState.chipStats || typeof buffState.chipStats !== "object") buffState.chipStats = {};
 
       if (!Array.isArray(buffState.permaSelected)) buffState.permaSelected = [];
       if (!Array.isArray(buffState.tempSelected)) buffState.tempSelected = [];
@@ -3877,6 +3907,8 @@
           buffState.tempSelected  = [];
           buffState.enchant       = "none";
           buffState.chip          = "none";
+          buffState.chipStats     = {};
+          buffState.chipStacks    = 0;
           buffState.perma         = {};
           if (typeof byteState !== "undefined") { byteState.mainByte = "none"; byteState.subByte = "none"; byteState.stats = {}; byteState.subStats = {}; }
           if (typeof allowDisplayAnimation !== "undefined") allowDisplayAnimation = false;
@@ -4493,6 +4525,40 @@
         })();
 
         (function buildChipsPanel() {
+          if (!buffState.chipStats || typeof buffState.chipStats !== "object") buffState.chipStats = {};
+
+          function makeChipInput(s, ref) {
+            var lo = Math.min(s.min, s.max), hi = Math.max(s.min, s.max);
+            var row = document.createElement("div"); row.className = "ue-byte-stat-row";
+            var lbl = document.createElement("div"); lbl.className = "ue-byte-stat-lbl";
+            var lt = document.createElement("span"); lt.textContent = s.label;
+            var rt = document.createElement("span"); rt.className = "ue-byte-stat-range";
+            var suf = s.unit || "%";
+            function fv(v) { return (v > 0 ? "+" : "") + v + suf; }
+            rt.textContent = fv(s.min) + " to " + fv(s.max);
+            lbl.appendChild(lt); lbl.appendChild(rt);
+            var inp = document.createElement("input");
+            inp.type = "number"; inp.className = "ue-byte-input";
+            inp.min = lo; inp.max = hi; inp.step = "0.1";
+            inp.placeholder = "Chip Stat";
+            var _sv = ref[s.key];
+            if (_sv != null && _sv !== 0) inp.value = _sv;
+            inp.addEventListener("blur", function() {
+              var raw = String(inp.value).trim();
+              if (raw === "" || isNaN(parseFloat(raw))) {
+                ref[s.key] = 0; inp.value = "";
+                allowDisplayAnimation = false; displayUnit(unit, modeKey);
+                return;
+              }
+              var v = Math.max(lo, Math.min(hi, parseFloat(raw)));
+              inp.value = v; ref[s.key] = v;
+              allowDisplayAnimation = false; displayUnit(unit, modeKey);
+            });
+            inp.addEventListener("keydown", function(e) { if (e.key === "Enter") inp.blur(); });
+            row.appendChild(lbl); row.appendChild(inp);
+            return row;
+          }
+
           var chipOpts = CHIP_LIST.map(function(o) {
             return { value: o.value, label: o.label, placeholder: o.value === "none" };
           });
@@ -4503,6 +4569,21 @@
             displayUnit(unit, modeKey);
           }, { searchable: false, noMarginTop: true });
           chipsPanel.appendChild(chipSel);
+
+          // Per-enemy synergy stacks (Overwhelming Power / Crowd Culler)
+          if (buffState.chip === "overwhelming_power" || buffState.chip === "crowd_culler") {
+            var _smax = buffState.chip === "crowd_culler" ? 25 : 5;
+            chipsPanel.appendChild(
+              makeChipInput({ key: "chipStacks", label: "DMG per Enemy in Range", unit: "%", min: 0, max: _smax }, buffState)
+            );
+          }
+
+          // Chip roll stats
+          var hdr = document.createElement("div");
+          hdr.style.cssText = "margin-top:10px;font-size:9px;opacity:0.55;letter-spacing:0.5px;";
+          hdr.textContent = "CHIP STATS";
+          chipsPanel.appendChild(hdr);
+          CHIP_STATS.forEach(function(s) { chipsPanel.appendChild(makeChipInput(s, buffState.chipStats)); });
         })();
 
         var totalDpsBoost = computeTotalDpsBoost(unit, modeKey);

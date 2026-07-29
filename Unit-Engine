@@ -2045,8 +2045,9 @@
       );
 
       var _PASSIVE_NOTES = {
-        bleed:     'Bleed and Poison are effectively the same. Dealing a stated % of this units damage over time',
-        poison:    'Bleed and Poison are effectively the same. Dealing a stated % of this units damage over time',
+        bleed:     'Bleed, Burn, and Poison are effectively the same. Dealing a stated % of this units damage over time',
+        poison:    'Bleed, Burn, and Poison are effectively the same. Dealing a stated % of this units damage over time',
+        burn:      'Bleed, Burn, and Poison are effectively the same. Dealing a stated % of this units damage over time',
         stun:      'Stun freezes enemies for a stated amount of time, with a 7s CD (also known as lockout). This CD does not start until the Stun duration is over',
         slow:      'Slow reduces enemy movement speed for its duration. This has a cap of 60% and can come from more than 1 source',
         knockback: 'Knockback pushes enemies backward for a stated amount of tiles, with a 7s CD (also known as lockout)'

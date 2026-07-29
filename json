@@ -7700,17 +7700,24 @@
         "changes": [
           { "type": "buff",   "text": "● Active Ability [Mode Swap] added" }
         ]
+      },
+      {
+        "date": "7/29/26",
+        "changes": [
+          { "type": "nerf",   "text": "● Increased Cooldown to 0.21 (was 0.20)" },
+          { "type": "buff",   "text": "● Increased Damage to 30 (was 28)" },
+        ]
       }
     ],
     "modes": {
       "FMJ": {
         "label": "FMJ",
         "role": "damage",
-        "attackType": "Cone35°",
+        "attackType": "Cone 35°",
         "passives": [
           {
             "title": "Mode Swap",
-            "text": "This unit swaps between its Focused Fire and Faz-Metal-Jacket passives based on its current attack type. (Upgrade 0+, Local CD: 0s).",
+            "text": "Changes this unit's attack and passive between Focused Fire and Faz-Metal-Jacket. (Upgrade 0+, Local CD: 0s).",
             "activeIcon": ""
           },
           {
@@ -7719,7 +7726,7 @@
           },
           {
             "title": "Faz-Metal-Jacket",
-            "text": "This unit's attacks inflict 10% Burn for 1s (On placement, upgrades 1, 4, 5, and 6)."
+            "text": "Every second shot applies burn for 1s dealing 10% of this unit's current damage (Cone AOE)"
           }
         ],
         "levels": [
@@ -7792,7 +7799,7 @@
         "passives": [
           {
             "title": "Mode Swap",
-            "text": "This unit swaps between its Focused Fire and Faz-Metal-Jacket passives based on its current attack type. (Upgrade 0+, Local CD: 0s).",
+            "text": "Changes this unit's attack and passive between Focused Fire and Faz-Metal-Jacket. (Upgrade 0+, Local CD: 0s).",
             "activeIcon": ""
           },
           {
@@ -7801,7 +7808,7 @@
           },
           {
             "title": "Focused Fire",
-            "text": "This unit gains +3% Range for every second it's attacking the same enemy (up to +35% Range, upgrades 2 and 3)."
+            "text": "For every second that the unit targets the same enemy increase rng by 3% up to 35%. (Circle AOE)"
           }
         ],
         "levels": [

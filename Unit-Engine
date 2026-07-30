@@ -2045,9 +2045,8 @@
       );
 
       var _PASSIVE_NOTES = {
-        bleed:     'Bleed, Burn, and Poison are effectively the same. Dealing a stated % of this units damage over time',
-        poison:    'Bleed, Burn, and Poison are effectively the same. Dealing a stated % of this units damage over time',
-        burn:      'Bleed, Burn, and Poison are effectively the same. Dealing a stated % of this units damage over time',
+        bleed:     'Bleed and Poison are effectively the same. Dealing a stated % of this units damage over time',
+        poison:    'Bleed and Poison are effectively the same. Dealing a stated % of this units damage over time',
         stun:      'Stun freezes enemies for a stated amount of time, with a 7s CD (also known as lockout). This CD does not start until the Stun duration is over',
         slow:      'Slow reduces enemy movement speed for its duration. This has a cap of 60% and can come from more than 1 source',
         knockback: 'Knockback pushes enemies backward for a stated amount of tiles, with a 7s CD (also known as lockout)'
@@ -2085,11 +2084,18 @@
         }
         function hideTip() { box.style.display = 'none'; }
 
-        wrap.addEventListener('mouseenter', showTip);
-        wrap.addEventListener('mouseleave', hideTip);
+        // Desktop hover shows the tip. On touch, a tap also synthesizes
+        // mouseenter (which fires before click and would show-then-toggle-off,
+        // the old "needs 2 taps" bug). Track touch and ignore those synthesized
+        // mouse events so a single tap just toggles.
+        var _touched = false;
+        wrap.addEventListener('touchstart', function() { _touched = true; }, { passive: true });
+        wrap.addEventListener('mouseenter', function() { if (!_touched) showTip(); });
+        wrap.addEventListener('mouseleave', function() { if (!_touched) hideTip(); });
         wrap.addEventListener('click', function(e) {
           e.stopPropagation();
           if (box.style.display === 'none') { showTip(); } else { hideTip(); }
+          _touched = false;
         });
         return wrap;
       }

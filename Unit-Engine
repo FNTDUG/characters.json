@@ -6141,6 +6141,30 @@
         return outer;
       }
 
+      // Skin renders come from the cosmetics skins.json (auto-generated), so
+      // units.json only needs skin names (+ optional rarity). Names are matched
+      // normalized, also trying "<unit><skin>"/"<skin><unit>" since skins.json
+      // keys sometimes embed the unit name. Falls back to an inline skin.image.
+      var _UE_SKIN_RENDERS = null;
+      function _ueSkinNorm(x){ return String(x == null ? "" : x).toLowerCase().replace(/[^a-z0-9]/g, ""); }
+      function _ueSkinMeta(unitName, skinName){
+        var m = _UE_SKIN_RENDERS;
+        if (!m) return null;
+        return m[_ueSkinNorm(skinName)]
+            || m[_ueSkinNorm(unitName) + _ueSkinNorm(skinName)]
+            || m[_ueSkinNorm(skinName) + _ueSkinNorm(unitName)]
+            || null;
+      }
+      (function loadSkinRenders(){
+        function build(json){
+          var m = {};
+          Object.keys(json || {}).forEach(function(k){ var e = json[k] || {}; m[_ueSkinNorm(k)] = { image: e.image, rarity: e.rarity }; });
+          _UE_SKIN_RENDERS = m;
+        }
+        fetch("/inf-data/skins").then(function(r){ if (!r.ok) throw 0; return r.json(); }).then(build)
+          .catch(function(){ fetch("https://pub-ded986176f754f5fb54de94d2fb15509.r2.dev/skins.json").then(function(r){ return r.json(); }).then(build).catch(function(){}); });
+      })();
+
       function makeSkinButton(unit, rarityStyle) {
         if (!unit.skins || !unit.skins.length) return null;
 
@@ -6266,10 +6290,19 @@
       }
 
       unit.skins.forEach(skin => {
-        
-        
-        var skinRarityStyle = (skin.rarity && rarityStyles[skin.rarity.toLowerCase()])
-          ? rarityStyles[skin.rarity.toLowerCase()]
+        // A skin may be a bare name string or an object; image/rarity are
+        // pulled from skins.json when not provided inline.
+        var sName = (typeof skin === "string") ? skin : (skin.name || "");
+        var sRarity = (typeof skin === "object" && skin.rarity) ? skin.rarity : null;
+        var sMeta = _ueSkinMeta(unit.name, sName);
+        var sImage = ((typeof skin === "object" && skin.image) ? skin.image : null) || (sMeta && sMeta.image) || "";
+        if (!sRarity && sMeta && sMeta.rarity) sRarity = sMeta.rarity;
+        // A skin with "shiny" in its name always uses the shiny animation,
+        // regardless of the base rarity stored in skins.json.
+        if (/shiny/i.test(sName)) sRarity = "shiny";
+
+        var skinRarityStyle = (sRarity && rarityStyles[sRarity.toLowerCase()])
+          ? rarityStyles[sRarity.toLowerCase()]
           : unitRarityStyle;
         var isShinyRarity = skinRarityStyle.isShiny === true;
         var borderBg = isShinyRarity ? null : (skinRarityStyle.textGradient || skinRarityStyle.borderColor || "#ffa45b");
@@ -6290,8 +6323,8 @@
         cardInner.className = "ue-skin-card-inner";
 
         const img = document.createElement("img");
-        img.src = skin.image;
-        img.alt = skin.name;
+        img.src = sImage;
+        img.alt = sName;
 
         
         const tooltip = document.createElement("div");
@@ -6309,7 +6342,7 @@
         tooltipInner.className = "ue-skin-tooltip-inner";
 
         const nameSpan = document.createElement("span");
-        nameSpan.textContent = skin.name;
+        nameSpan.textContent = sName;
 
         tooltipInner.appendChild(nameSpan);
         tooltip.appendChild(tooltipInner);

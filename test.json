@@ -21061,8 +21061,8 @@
   "passiveDamage": {
     "summons": [
     {
-      "label": "Endo",
-      "healthpctofdamage": 1.70,
+      "label": "Mini Endo",
+      "healthpctofdamage": 1.80,
       "spawncd": 5.0,
       "spawncdboostable": false,
       "cdscope": "local"
@@ -21243,7 +21243,7 @@
   "passives": [
     {
       "title": "Steel Barrage",
-      "text": "Every 5s, fire a cannonball dealing 50% of this unit's damage. Upgrade the cannon every 50,000 damage dealt, up to Level 5. <br> ● Level 1: Cannonballs Knockback enemies 2 tiles. <br>● Level 2: Cannonballs deal +20% damage. <br> ● Level 3:\n• Cannon gains -10% CD. <br> ● Level 4: Cannonballs inflict 35% Burn for 5s. <br> ● Level 5: Every attack fires an additional cannonball dealing 40% damage."
+      "text": "Every 5s, fire a cannonball dealing 50% of this unit's damage. Upgrade the cannon every 50,000 damage dealt, up to Level 5. <br> ● Level 1: Cannonballs Knockback enemies 2 tiles. <br>● Level 2: Cannonballs deal +20% damage. <br> ● Level 3: Cannon gains -10% CD. <br> ● Level 4: Cannonballs inflict 35% Burn for 5s. <br> ● Level 5: Every attack fires an additional cannonball dealing 40% damage."
     }
   ],
   "passiveDamage": {

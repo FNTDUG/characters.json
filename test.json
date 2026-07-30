@@ -14854,7 +14854,7 @@
     "element": "Rust",
     "placements": 1,
     "attackType": "Cone 30°",
-    "obtainment": "Time Lord Withered Freddy Evolution (1 Clock, 3 Blossom Chicas, 20 Overgrown Foxys)",
+    "obtainment": "Time Lord Withered Freddy Evolution",
     "voicelines": [
       {
         "title": "Placement",
@@ -15655,7 +15655,7 @@
     "passives": [
       {
         "title": "Mini Rainbows",
-        "text": "Spawn a Mini Rainbow tower of a chosen element. Max one per element. You get +1 mini rainbow per missing unit slot. (Upgrade 0+, Local CD: 1s).",
+        "text": "Spawn a Mini Rainbow tower of a chosen element. Max one per element. You get +1 mini rainbow per missing unit slot. (Upgrade 0+, Local CD: 1s) <br>● Neutral: +20% Damage <br>● Dark: +10% Damage & 10% slow for 2s <br>● Light +20% Crit Rate <br>● Fire: 20% burn over 5s <br>● Water: 20% slow for 2s <br>● Nature: +1% Damage per max stock <br>● Electricity: Stuns for 0.5s on hit <br>● Rust: Applies 5% Wither",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-xvfaz4.png"
       },
       {

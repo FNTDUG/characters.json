@@ -337,7 +337,7 @@
           "Popcorn Bot",
           "Circus Baby",
           "Balloon Boy",
-          "Salvage Toy Bonnie"
+          "Salvaged Toy Bonnie"
           
         ],
         "c": [

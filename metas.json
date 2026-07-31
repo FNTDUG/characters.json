@@ -71,9 +71,9 @@
     "Story Nightmare": {
       "units": [
         { "name": "Unicorn Toy Foxy", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "War Machine Foxy", "caption": "" },
+        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "El Chip", "caption": "" },
         { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "War Machine Foxy", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Party Never Ends Cupcake", "caption": "" },
         { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
@@ -101,9 +101,9 @@
     "Event Story Nightmare": {
       "units": [
         { "name": "Unicorn Toy Foxy", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "", "caption": "" },
+        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "El Chip", "caption": "" },
         { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "War Machine Foxy", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation","enchant": "Vengeance", "replacement": "Party Never Ends Cupcake", "caption": "" },
         { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
@@ -121,9 +121,9 @@
     "Story Grind": {
       "units": [
         { "name": "Unicorn Toy Foxy", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "War Machine Foxy", "caption": "" },
+        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "El Chip", "caption": "" },
         { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Valkyrie Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Valkyrie Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "War Machine Foxy", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Party Never Ends Cupcake", "caption": "" },
         { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
@@ -131,9 +131,9 @@
     "Endless Grind": {
       "units": [
         { "name": "Bonnie", "label": "$375", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "War Machine Foxy", "caption": "" },
+        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "El Chip", "caption": "" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Commander Withered Freddy", "caption": "Place on Boss" },
-        { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Place on Boss" },
+        { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "War Machine Foxy", "caption": "Place on Boss" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Party Never Ends Cupcake", "caption": "" },
         { "name": "Fazcade", "label": "", "byte": "Pearl", "chip": "", "enchant": "Investor", "replacement": "", "caption": "" }
       ]
@@ -141,9 +141,9 @@
     "Event Endless Grind": {
       "units": [
         { "name": "Undead Chica", "label": "$600", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "War Machine Foxy", "caption": "" },
+        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "El Chip", "caption": "" },
         { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "War Machine Foxy", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Party Never Ends Cupcake", "caption": "" },
         { "name": "Fazcade", "label": "", "byte": "Pearl", "chip": "", "enchant": "Investor", "replacement": "", "caption": "" }
       ]
@@ -151,9 +151,9 @@
     "Event Story Grind": {
       "units": [
         { "name": "Undead Chica", "label": "$600", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "War Machine Foxy", "caption": "" },
+        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "El Chip", "caption": "" },
         { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "War Machine Foxy", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Party Never Ends Cupcake", "caption": "" },
         { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
@@ -161,9 +161,9 @@
     "Boss Raids Grind": {
       "units": [
         { "name": "Freddy", "label": "$250", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance",   "replacement": "War Machine Foxy", "caption": "" },
+        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance",   "replacement": "El Chip", "caption": "Place on Boss" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Commander Withered Freddy", "caption": "Place on Boss" },
-        { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Place on Boss" },
+        { "name": "Valkyrie Chica", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "War Machine Foxy", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Party Never Ends Cupcake", "caption": "" },
         { "name": "Fazcade", "label": "", "byte": "Pearl", "enchant": "Investor", "chip": "", "replacement": "", "caption": "" }
       ]

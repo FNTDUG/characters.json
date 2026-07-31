@@ -1507,6 +1507,80 @@ const enchantIcons = {
   champion:    "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-tue-jul-14-2026-02-01-58-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=347"
 };
 
+/* ── Enchant badge colors sourced from metas.json (shared.enchants[*].color).
+   Seeded with the current metas values so badges are right even before the live
+   fetch resolves; applyMetaEnchantColors() refreshes them from metas.json. ── */
+var ENCH_COLORS = {
+  haywire:"linear-gradient(180deg, #00FF88, #00D672, #00934F)",
+  phantom:"linear-gradient(180deg, #00FF13, #03D90E, #098D07)",
+  blighted:"linear-gradient(180deg, #C8C8C8, #ACACAC, #7E7E7E)",
+  springlocked:"#05DBF3",
+  shadow:"linear-gradient(180deg, #8B65F6, #7D50F0, #5830B6)",
+  vengeance:"linear-gradient(180deg, #EA5300, #F13E00, #F72A00)",
+  hijacked:"linear-gradient(90deg, #2CFF70, #35e2a1, #78a7c5, #b472e6, #e14aff)",
+  investor:"linear-gradient(180deg, #FFD700, #DBB700)",
+  engineer:"linear-gradient(180deg, #FBFF00, #C2C200, #696900)",
+  puppet_nm:"#574DFE",
+  scooped:"linear-gradient(90deg, #E53394, #CD3899, #BA3C9D, #A840A2, #9743A6, #A958B1, #C166B6, #E079BE)",
+  champion:"linear-gradient(180deg, #FEDE43, #CE9D37, #AD8222)"
+};
+var ENCH_META_MAP = { haywire:"Haywire", phantom:"Phantom", blighted:"Blighted", springlocked:"Springlocked", shadow:"Shadow", vengeance:"Vengeance", hijacked:"Hijacked", investor:"Investor", engineer:"Engineer", puppet_nm:"Puppets Nightmare", scooped:"Scooped", champion:"Champion" };
+function applyMetaEnchantColors(metas){
+  var en = (metas && metas.shared && metas.shared.enchants) || {};
+  Object.keys(ENCH_META_MAP).forEach(function(k){
+    var m = en[ENCH_META_MAP[k]];
+    if (m && m.color) ENCH_COLORS[k] = m.color;
+  });
+}
+
+/* ── Presents & cosmetics (pets/skins) pulled from the same JSONs the site uses,
+   with the same worker.js overrides so display names/rarities match everywhere. ── */
+var COSMETIC_SKINS_URL = "https://pub-ded986176f754f5fb54de94d2fb15509.r2.dev/skins.json";
+var COSMETIC_PETS_URL  = "https://pub-ded986176f754f5fb54de94d2fb15509.r2.dev/pets.json";
+var PRESENTS_JSON_URL  = "https://pub-71c3b160626949ae8220d0daad5a9fc8.r2.dev/fntd2-presents.json";
+var METAS_JSON_URL     = "https://raw.githubusercontent.com/FNTDUG/characters.json/refs/heads/main/metas.json";
+// PRESENTS_CFG.overrides (name renames) from _worker.js
+var PRESENT_NAME_OV = {
+  "Hero Present 1":"Golden Freddy Present", "Hero Present 2":"Puppet Present", "Hero Present 3":"Springtrap Present",
+  "ManglePresent":"Mangle Present", "PartyGlockPresent":"Party Glock Present", "PPCPresent":"Party Packer Cupcake Present",
+  "PuppetsAlliancePresent":"Puppet's Alliance Present", "ScarecrowPresent":"Scarecrow Freddy Present",
+  "SlasherBonniePresent":"Slasher Bonnie Present", "Sweetheart Present":"Sweetheart Toy Foxy Present",
+  "DreadbearPresent":"Dreadbear Present", "Endo02Present":"Endo 02 Present", "HalloweenPresent":"Halloween Present",
+  "JackOBonniePresent":"Jack'O Bonnie", "Season1Present":"Season 1 Present", "ShadowBonniePresent":"Shadow Bonnie Present"
+};
+// INFO_CFG skins/pets overrides + hide from _worker.js
+var COSMETIC_RARITY_OV = { "Volcanic Party Packer Cupcake":"secret" };
+var COSMETIC_HIDE = ["Shiny Signed Glacier Springtrap","Shiny Signed Scooped Ice Cream Michael"];
+function _normRar(r){ r=(r||"").toLowerCase().trim(); return r==="mythical"?"mythic":(r==="legendary"?"exclusive":r); }
+function buildDynCosmetics(skins, pets){
+  var out = [];
+  function add(obj, type){
+    if(!obj) return;
+    Object.keys(obj).forEach(function(name){
+      if(/^shiny /i.test(name)) return;                 // shiny handled as the base item's variant
+      if(COSMETIC_HIDE.indexOf(name) >= 0) return;
+      var e = obj[name] || {};
+      var sh = obj["Shiny " + name];
+      var item = { name:name, type:type, imgNormal:(e.image || ""), rarity:(COSMETIC_RARITY_OV[name] || _normRar(e.rarity)), category:"Cosmetics" };
+      if (sh && sh.image) item.imgShiny = sh.image;
+      out.push(item);
+    });
+  }
+  add(skins, "skin"); add(pets, "pet");
+  return out;
+}
+function buildDynPresents(presObj){
+  if(!presObj) return null;
+  return Object.keys(presObj).map(function(key){
+    var p = presObj[key] || {};
+    var rewards = (p.rewards || []).map(function(r){
+      // the trade UI shows odds via r.weight; presents.json stores normalized chance (~sums to 100)
+      return { amount:(r.amount != null ? r.amount : 1), type:r.type, name:r.name, weight:(r.chance != null ? r.chance : (r.weight || 0)) };
+    });
+    return { name:(PRESENT_NAME_OV[key] || key), imgNormal:(p.image || ""), rarity:_normRar(p.rarity), category:"Presents", rewards:rewards, bundle:!!p.bundle };
+  });
+}
+
 const CHAMPION_UNITS    = ["Thanatos","Slasher Bonnie","Mother Nature Ballora","Bear5","Devious Purple Guy"];
 const CHAMPION_GRADIENT = "linear-gradient(90deg,rgb(224,224,224) 0%,rgb(207,181,59) 100%)";
 
@@ -2207,7 +2281,11 @@ const GAMEPASSES = [
   { name: "Event Pass",          imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/mticket_v2-high.png", rarity: "secret", category: "Gamepasses" },
   { name: "Premium Pass Ticket",          imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/ticket_premium_pass-high.png", rarity: "secret", category: "Gamepasses" },
   { name: "Shiny Hunter Ticket",          imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/ticket_shiny_hunter-high.png", rarity: "secret", category: "Gamepasses" },
-  { name: "Quick Open Ticket",          imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/ticket_quick_open-high.png", rarity: "secret", category: "Gamepasses" },
+  { name: "Quick Open Ticket",          imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/ticket_quick_open-high.png", rarity: "secret", category: "Gamepasses" }
+];
+// Fallback presents — only used if the presents JSON fetch fails. Live data comes
+// from fntd2-presents.json via buildDynPresents(), with the worker.js name overrides.
+const PRESENTS_FALLBACK = [
   { name: "8-Bit Baby Bundle", imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/8-bit_baby_bundle-high.png?enable-io=true&crop=1%3A1&width=347", rarity: "secret", category: "Presents", rewards: [{"amount": 1, "type": "Skin", "name": "8-Bit Baby", "weight": 100}, {"amount": 1, "type": "Pet", "name": "8-Bit Circus Baby", "weight": 100}, {"amount": 1, "type": "Loading Screen", "name": "Game Over", "weight": 100}], bundle: true },
   { name: "Abyssal Ballora Present", imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/abyssal_ballora_present-high.png?enable-io=true&crop=1%3A1&width=347", rarity: "nightmare", category: "Presents", rewards: [{"amount": 1, "type": "Unit", "name": "Abyssal Ballora", "weight": 100}] },
   { name: "AFK Present", imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/afk_present-high.png?enable-io=true&crop=1%3A1&width=347", rarity: "secret", category: "Presents", rewards: [{"amount": 1, "type": "Unit", "name": "Fisherman Toy Bonnie", "weight": 87.61}, {"amount": 1, "type": "Unit", "name": "Serpent Endo", "weight": 1.8}, {"amount": 1, "type": "Unit", "name": "Shark Withered Foxy", "weight": 0.09}, {"amount": 1, "type": "Material", "name": "Ship", "weight": 10}, {"amount": 1, "type": "Material", "name": "Pressure Sensor", "weight": 0.5}] },
@@ -2417,18 +2495,30 @@ let theirItems=[];
   var _frame = document.querySelector(".trade-frame");
   if (_frame) _frame.insertBefore(_loadMsg, _frame.firstChild);
 
-  fetch("https://cdn.jsdelivr.net/gh/FNTDUG/characters.json@main/json")
-    .then(function(r) {
+  function _J(url){ return fetch(url).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; }); }
+
+  Promise.all([
+    fetch("https://cdn.jsdelivr.net/gh/FNTDUG/characters.json@main/json").then(function(r) {
       if (!r.ok) throw new Error("HTTP " + r.status);
       return r.json();
-    })
-    .then(function(data) {
+    }),
+    _J(COSMETIC_SKINS_URL),
+    _J(COSMETIC_PETS_URL),
+    _J(PRESENTS_JSON_URL),
+    _J(METAS_JSON_URL)
+  ])
+    .then(function(res) {
+      var data = res[0];
+      if (res[4]) applyMetaEnchantColors(res[4]);
+      // Pets/skins from JSON (both required to replace the fallback), presents from JSON.
+      var dynCos  = (res[1] && res[2]) ? buildDynCosmetics(res[1], res[2]) : COSMETICS;
+      var dynPres = buildDynPresents(res[3]) || PRESENTS_FALLBACK;
       units = data
         .filter(function(u) { return u.rarity !== "hero"; })
         .map(function(u) {
           return { name: u.name, imgNormal: u.imgNormal, imgShiny: u.imgShiny, rarity: u.rarity, category: "Units" };
         })
-        .concat(COSMETICS, GAMEPASSES, BYTES, COMMENTS);
+        .concat(dynCos, GAMEPASSES, dynPres, BYTES, COMMENTS);
       if (_loadMsg.parentNode) _loadMsg.parentNode.removeChild(_loadMsg);
       ueVDLoad(function() {
         buildRarityFilters();
@@ -2768,12 +2858,7 @@ function _applyDetailBadges(frame) {
   var bSz = Math.round(sz * 0.2);
   var bRad = Math.round(bSz * 0.32);
 
-  var _eColors = {
-    haywire:"#00ff84", phantom:"#00ee00", blighted:"#4d4e4f",
-    springlocked:"#1d6764", shadow:"#632f82", vengeance:"#ff7040", hijacked:"#14D154",
-    investor:"#c8a800", engineer:"#f6ca1a", puppet_nm:"#ba60ff", scooped:"#ff6b9d",
-    champion:CHAMPION_GRADIENT
-  };
+  var _eColors = ENCH_COLORS;
 
   if (currentEnchantKey && currentEnchantKey !== "none" && enchantIcons[currentEnchantKey]) {
     var eW = document.createElement("div");
@@ -2879,12 +2964,7 @@ if (unit.demand) {
 }
   
 if (unit.enchant && unit.enchant !== "none" && enchantIcons[unit.enchant]) {
-  var _eColors = {
-    haywire:"#00ff84", phantom:"#00ee00", blighted:"#4d4e4f",
-    springlocked:"#1d6764", shadow:"#632f82", vengeance:"#ff7040", hijacked:"#14D154",
-    investor:"#c8a800", engineer:"#f6ca1a", puppet_nm:"#ba60ff", scooped:"#ff6b9d",
-    champion:CHAMPION_GRADIENT
-  };
+  var _eColors = ENCH_COLORS;
   var eW = document.createElement("div");
   eW.className = "enchantBadge";
   eW.style.background = _eColors[unit.enchant] || "rgba(255,164,91,0.8)";

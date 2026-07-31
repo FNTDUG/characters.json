@@ -2513,12 +2513,14 @@ let theirItems=[];
       // Pets/skins from JSON (both required to replace the fallback), presents from JSON.
       var dynCos  = (res[1] && res[2]) ? buildDynCosmetics(res[1], res[2]) : COSMETICS;
       var dynPres = buildDynPresents(res[3]) || PRESENTS_FALLBACK;
-      units = data
-        .filter(function(u) { return u.rarity !== "hero"; })
+      var _catalog = data
         .map(function(u) {
           return { name: u.name, imgNormal: u.imgNormal, imgShiny: u.imgShiny, rarity: u.rarity, category: "Units" };
         })
         .concat(dynCos, GAMEPASSES, dynPres, BYTES, COMMENTS);
+      // Trade-calculator rule: hide untradable (hero-rarity) items across every
+      // category. DISABLED items are left in — they still show with their message.
+      units = _catalog.filter(function(it) { return !isHiddenFromTrade(it); });
       if (_loadMsg.parentNode) _loadMsg.parentNode.removeChild(_loadMsg);
       ueVDLoad(function() {
         buildRarityFilters();
@@ -3403,6 +3405,13 @@ function _resolveCosmType(unit) {
 function isDisabled(unit) {
   var prefix = _catLabel[unit.category] || "Unit";
   return DISABLED.indexOf(prefix + ": " + unit.name) !== -1;
+}
+
+// Trade-calculator visibility rule — separate from the DISABLED list below.
+// Hero-rarity items are untradable and are hidden from the picker entirely.
+// (DISABLED items are NOT hidden here; they still show, with their popup message.)
+function isHiddenFromTrade(item) {
+  return !!item && (item.rarity || "").toLowerCase() === "hero";
 }
 
 function showDisabledPopup(unit) {

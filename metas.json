@@ -285,7 +285,7 @@
         { "name": "Witch of the Sea Scrapbaby", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "", "label": "", "byte": "", "chip": "", "enchant": "", "replacement": "", "caption": "Empty Slot for Baby" },
+        { "name": "", "label": "", "byte": "", "chip": "", "enchant": "", "replacement": "", "caption": "Empty Slot for Baby" }
       ]
     }
   }

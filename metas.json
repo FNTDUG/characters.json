@@ -194,7 +194,7 @@
         { "name": "Old Man Consequences", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Witch of the Sea Scrapbaby", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Frozen King Foxy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "Cthulhu Nightmare Fox", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Cthulhu Nightmare Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "", "label": "", "byte": "", "chip": "", "enchant": "", "replacement": "", "caption": "Empty Slot for Baby" }
       ]
     },
@@ -232,7 +232,7 @@
       "units": [
         { "name": "Endo 01", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Ennard", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "Witch of the Sea Baby", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Witch of the Sea Scrapbaby", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Stormbound Chica", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Scooped Michael", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "", "label": "", "byte": "", "chip": "", "enchant": "", "replacement": "", "caption": "Empty Slot for Baby" }
@@ -240,11 +240,11 @@
     },
     "Fire 8th": {
       "units": [
-        { "name": "Cannoner Chica", "label": "$750", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Cannoneer Chica", "label": "$750", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Springtrap", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "chip": "Blazing Fire", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Headless Horseman Mangle", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "bombwork Cupcake", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengenace", "replacement": "", "caption": "" },
+        { "name": "Bombwork Cupcake", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengenace", "replacement": "", "caption": "" },
         { "name": "Molten Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
     },

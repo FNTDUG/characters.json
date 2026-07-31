@@ -227,13 +227,15 @@
         "ss": [
           "Golden Freddy",
           "Faz-ino Spring Bonnie",
+          "Pirate Withered Foxy NEW",
           "Endo 01",
           "Rockin Bonnie",
           "Unicorn Toy Foxy",
-          "Undead Chica",
+          "Cannoneer Chica NEW"
   
         ],
         "s": [
+          "Undead Chica",
           "Bonnie",
           "Foxy",
           "No. 1 Crate",

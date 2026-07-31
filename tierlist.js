@@ -405,7 +405,7 @@
           "Nightmare Chica",
           "Cthulhu Nightmare Foxy",
           "Golden Freddy",
-          "Afterbite Withered Golden Freddy"
+          "Afterbite Withered Golden Freddy",
           "Pirate Withered Foxy NEW"
         ],
         "a": [

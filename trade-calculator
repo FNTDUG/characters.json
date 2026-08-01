@@ -39,6 +39,14 @@ text-align:center;
 font-size:14px;
 }
 
+.side-title-wrap{position:relative;display:inline-flex;align-items:center;gap:6px;justify-content:center;}
+.side-title-arrow{background:none;border:none;color:#ffc84d;cursor:pointer;font-size:12px;line-height:1;padding:2px 3px;font-family:Arial,sans-serif;}
+.side-title-arrow:hover{color:#fff;}
+.side-title-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);margin-top:6px;background:rgba(20,18,30,0.97);border:1px solid rgba(255,164,91,0.4);border-radius:6px;z-index:60;box-shadow:0 6px 20px rgba(0,0,0,0.65);overflow:hidden;}
+.side-title-menu.open{display:block;}
+.side-title-menu > div{padding:9px 14px;font-size:9px;color:#fff;cursor:pointer;white-space:nowrap;font-family:'Press Start 2P',cursive;text-align:center;}
+.side-title-menu > div:hover{background:rgba(255,164,91,0.16);color:#ffc84d;}
+
 .rating{
 color:#ffd66b;
 margin-top:4px;
@@ -1290,13 +1298,31 @@ text-overflow:ellipsis;
 <div class="trade-players">
 
 <div class="player">
-My Side
+<div class="side-title-wrap">
+<span class="side-title-text" id="myTitleText">My Side</span>
+<button type="button" class="side-title-arrow" onclick="toggleSideMenu('my',event)" aria-label="Change title">&#9662;</button>
+<div class="side-title-menu" id="myTitleMenu">
+<div onclick="setSideTitle('my','My Side')">My Side</div>
+<div onclick="setSideTitle('my','Your Side')">Your Side</div>
+<div onclick="setSideTitle('my','Looking For')">Looking For</div>
+<div onclick="setSideTitle('my','Trading')">Trading</div>
+</div>
+</div>
 <div class="rating">Official Value: <span id="myValue">0</span></div>
 <div id="myCustomValue" style="display:none;color:rgb(207,181,59);margin-top:3px;font-size:9px;display:none;align-items:center;justify-content:center;gap:4px;"><span style="display:inline-block;width:14px;height:14px;border-radius:4px;padding:1px;background-image:repeating-linear-gradient(-45deg,#ffd700 0px,#ffd700 3px,#000 3px,#000 6px);box-sizing:border-box;vertical-align:middle;flex-shrink:0;"><img src="https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/image-removebg-preview-high.png?enable-io=true&crop=1%3A1&width=347" style="width:100%;height:100%;display:block;object-fit:contain;border-radius:3px;background:rgba(34,34,34,0.85);"></span>Custom Value: <span id="myCustomValueText"></span></div>
 </div>
 
 <div class="player">
-Your Side
+<div class="side-title-wrap">
+<span class="side-title-text" id="yourTitleText">Your Side</span>
+<button type="button" class="side-title-arrow" onclick="toggleSideMenu('your',event)" aria-label="Change title">&#9662;</button>
+<div class="side-title-menu" id="yourTitleMenu">
+<div onclick="setSideTitle('your','My Side')">My Side</div>
+<div onclick="setSideTitle('your','Your Side')">Your Side</div>
+<div onclick="setSideTitle('your','Looking For')">Looking For</div>
+<div onclick="setSideTitle('your','Trading')">Trading</div>
+</div>
+</div>
 <div class="rating">Official Value: <span id="yourValue">0</span></div>
 <div id="theirCustomValue" style="display:none;color:rgb(207,181,59);margin-top:3px;font-size:9px;display:none;align-items:center;justify-content:center;gap:4px;"><span style="display:inline-block;width:14px;height:14px;border-radius:4px;padding:1px;background-image:repeating-linear-gradient(-45deg,#ffd700 0px,#ffd700 3px,#000 3px,#000 6px);box-sizing:border-box;vertical-align:middle;flex-shrink:0;"><img src="https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/image-removebg-preview-high.png?enable-io=true&crop=1%3A1&width=347" style="width:100%;height:100%;display:block;object-fit:contain;border-radius:3px;background:rgba(34,34,34,0.85);"></span>Custom Value: <span id="theirCustomValueText"></span></div>
 </div>
@@ -1492,6 +1518,10 @@ Your Side
 <script src="https://cdn.jsdelivr.net/npm/lz-string@1.4.4/libs/lz-string.min.js"></script>
   
 <script>
+// Side title picker (My Side / Your Side / Looking For / Trading)
+function toggleSideMenu(side, ev){ if(ev){ev.stopPropagation();} var menu=document.getElementById(side+'TitleMenu'); if(!menu)return; var isOpen=menu.classList.contains('open'); document.querySelectorAll('.side-title-menu.open').forEach(function(m){m.classList.remove('open');}); if(!isOpen)menu.classList.add('open'); }
+function setSideTitle(side, title){ var t=document.getElementById(side+'TitleText'); if(t)t.textContent=title; var m=document.getElementById(side+'TitleMenu'); if(m)m.classList.remove('open'); }
+document.addEventListener('click', function(){ document.querySelectorAll('.side-title-menu.open').forEach(function(m){m.classList.remove('open');}); });
 const enchantIcons = {
   haywire:     "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-39-53-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
   phantom:     "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jan-07-2026-13-39-58-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",

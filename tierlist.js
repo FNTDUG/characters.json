@@ -561,7 +561,7 @@
     '@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);',
     '#tlRoot{width:100vw;position:relative;left:50%;transform:translateX(-50%);background-color:#03030a;color:#fff;font-family:"Press Start 2P",monospace;border:1px solid rgba(246,155,85,1);padding-bottom:0;box-sizing:border-box}',
     '#tlRoot *{box-sizing:border-box}',
-    '#tlHdr{position:sticky;top:0;z-index:9999;background:rgba(3,3,10,0.97);border-bottom:1px solid rgba(246,155,85,1);padding:12px 18px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}',
+    '#tlHdr{background:rgba(3,3,10,0.97);border-bottom:1px solid rgba(246,155,85,1);padding:12px 18px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}',
     '#tlTitle{font-family:"Press Start 2P",monospace;font-size:clamp(15px,4vw,24px);color:#681f62;text-shadow:0 0 14px rgba(104,31,98,0.85);white-space:nowrap}',
     '.tl-mode{display:flex;gap:6px;flex-wrap:wrap}',
     '.tl-mb{font-family:"Press Start 2P",monospace;font-size:clamp(9px,2.4vw,12px);padding:11px 14px;background:rgba(0,0,0,0.55);border:2px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.38);cursor:pointer;white-space:nowrap;transition:all .15s}',

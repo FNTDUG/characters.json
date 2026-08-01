@@ -1601,7 +1601,14 @@ function captureTradeScreenshot(){
   html2canvas(frame, {
     backgroundColor: '#0a0c1e', useCORS: true, scale: 2, logging: false,
     windowWidth: 1000, windowHeight: Math.max(2000, window.innerHeight || 900),
-    onclone: function(doc){ var ca = doc.querySelector('.counter-area'); if (ca) ca.style.display = 'none'; }
+    onclone: function(doc){
+      var ca = doc.querySelector('.counter-area'); if (ca) ca.style.display = 'none';
+      // force the clone to lay out at desktop width so the "desktop upscale" styles apply
+      if (doc.documentElement) doc.documentElement.style.width = '1000px';
+      if (doc.body) { doc.body.style.width = '1000px'; doc.body.style.margin = '0'; }
+      var app = doc.getElementById('tradeApp');
+      if (app) { app.style.width = '900px'; app.style.maxWidth = '900px'; app.style.margin = '0 auto'; }
+    }
   }).then(function(canvas){
     canvas.toBlob(function(blob){
       showShot(blob, 'fntd-trade.png');

@@ -1537,6 +1537,29 @@ function toggleSideMenu(side, ev){ if(ev){ev.stopPropagation();} var menu=docume
 function setSideTitle(side, title){ var t=document.getElementById(side+'TitleText'); if(t)t.textContent=title; var m=document.getElementById(side+'TitleMenu'); if(m)m.classList.remove('open'); }
 document.addEventListener('click', function(){ document.querySelectorAll('.side-title-menu.open').forEach(function(m){m.classList.remove('open');}); });
 
+// Save a PNG blob — on touch devices with file-share support, open the share
+// sheet so "Save Image" saves to Photos; otherwise download the file.
+function _dlBlob(blob, filename){
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a'); a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+}
+function saveImage(blob, filename){
+  if (!blob) return;
+  var file = null;
+  try { file = new File([blob], filename, { type: 'image/png' }); } catch (e) {}
+  var touch = (navigator.maxTouchPoints || 0) > 0 || ('ontouchstart' in window);
+  if (file && touch && navigator.canShare && navigator.canShare({ files: [file] })) {
+    navigator.share({ files: [file] }).catch(function (err) {
+      if (err && err.name === 'AbortError') return;
+      _dlBlob(blob, filename);
+    });
+    return;
+  }
+  _dlBlob(blob, filename);
+}
+
 // Screenshot everything from the top of the trade frame down to the win/loss/fair bar.
 function captureTradeScreenshot(){
   var btn = document.getElementById('screenshotBtn');
@@ -1552,12 +1575,7 @@ function captureTradeScreenshot(){
   var h = Math.ceil(bottom - top + 10);
   html2canvas(frame, { height: h, backgroundColor: '#0a0c1e', useCORS: true, scale: 2, logging: false }).then(function(canvas){
     canvas.toBlob(function(blob){
-      if (blob){
-        var url = URL.createObjectURL(blob);
-        var a = document.createElement('a'); a.href = url; a.download = 'fntd-trade.png';
-        document.body.appendChild(a); a.click(); document.body.removeChild(a);
-        setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
-      }
+      saveImage(blob, 'fntd-trade.png');
       if (btn) btn.disabled = false;
     }, 'image/png');
   }).catch(function(e){

@@ -463,7 +463,9 @@
         "Bonnie": "High range Starter that can be used as a booster due to being Electric with high placements, effectively giving all nearby units -4% CD if all Bonnies are placed near each other. Spectacular in Grind Metas",
         "Foxy": "Fair DPS Starter that can be used as a booster due to being Water with high placements, effectively giving all nearby units +15% Range if all Foxies are placed near each other. Spectacular in Water focused teams.",
         "Faz-ino Spring Bonnie": "Great DPS and good Crit based support with some minor income.",
-        "Unicorn Toy Foxy": "Good DPS and decent support, giving enemies up to 15% Wither"
+        "Unicorn Toy Foxy": "Good DPS and decent support, giving enemies up to 15% Wither.",
+        "Pirate Withered Foxy": "Incredibly well rounded starter. Has good DPS, Water support, good Stun, decent Slow, and boosts income.",
+        "Cannoneer Chica": "High DPS starter with Knockback to stall normal enemies."
       },
       "support": {
         "Candy Cadet": "Gives +30% Damage and +10% Range to all units in range when in Red Candy mode, then +10% Damage and +30% Range to all units in range when in Yellow Candy mode (mode chosen on placement). Does particularly well when using his Orphans story, doubling his boosts for 30s. Boosts do not stack with other Candy Cadets.",

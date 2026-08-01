@@ -42,11 +42,11 @@
         "Shark Withered Foxy",
         "Nightmare Shadow Bonnie",
         "Lolbit",
-        "Endo 01 UP",
+        "Endo 01",
         "Cannoneer Chica NEW",
-        "Rockin Bonnie UP",
+        "Rockin Bonnie ",
         "Party Never Ends Cupcake",
-	      "Movie Director Freddy",
+	    "Movie Director Freddy",
         "Fazcade"
       ],
       "a": [
@@ -290,7 +290,7 @@
         "Animdude",
         "Mechanic Endo 01",
         "Hag Withered Chica",
-        "Starfarer Princess DOWN",
+        "Starfarer Princess",
         "Barbarian Boy",
         "Crying Child",
         "Astral Bonnie",

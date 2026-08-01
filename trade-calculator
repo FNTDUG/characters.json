@@ -1595,10 +1595,14 @@ function captureTradeScreenshot(){
   if (btn) btn.disabled = true;
   // close any open side-title menus so they don't appear in the shot
   document.querySelectorAll('.side-title-menu.open').forEach(function(m){ m.classList.remove('open'); });
-  var top = frame.getBoundingClientRect().top;
-  var bottom = status.getBoundingClientRect().bottom;
-  var h = Math.ceil(bottom - top + 10);
-  html2canvas(frame, { height: h, backgroundColor: '#0a0c1e', useCORS: true, scale: 2, logging: false }).then(function(canvas){
+  // Render the clone at a desktop viewport width so mobile media queries don't
+  // apply — the screenshot looks the same as on desktop. Hide the counter link
+  // (the only thing below the win/loss/fair bar) in the clone instead of cropping.
+  html2canvas(frame, {
+    backgroundColor: '#0a0c1e', useCORS: true, scale: 2, logging: false,
+    windowWidth: 1000, windowHeight: Math.max(2000, window.innerHeight || 900),
+    onclone: function(doc){ var ca = doc.querySelector('.counter-area'); if (ca) ca.style.display = 'none'; }
+  }).then(function(canvas){
     canvas.toBlob(function(blob){
       showShot(blob, 'fntd-trade.png');
       if (btn) btn.disabled = false;

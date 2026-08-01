@@ -4,7 +4,7 @@
  var cfg = {
   "lists": {
     "all": {
-      "ss": [
+      "s": [
         "Grand Strategist Chica",
         "Astral Bonnie",
         "Cthulhu Nightmare Foxy",
@@ -13,7 +13,7 @@
         "Deep Sea Calamity Endo",
         "Gaia Chica"
       ],
-      "s": [
+      "a": [
         "Kronos Endo Freddy",
         "Frozen King Foxy",
         "Frostmancer Withered Bonnie",
@@ -94,9 +94,7 @@
         "Thanatos",
         "Gravelord Foxy",
         "No. 1 Crate UP",
-        "Devious Purple Guy DOWN"
-      ],
-      "a": [
+        "Devious Purple Guy DOWN",
         "Handunit UP",
         "Chicas Magic Rainbow",
         "Slasher Bonnie",
@@ -192,7 +190,7 @@
         "Follow Me",
         "Nightmare Bonnie",
         "Party Glock Freddy BUG",
-        "Bidybabs",
+        "Bidybabs"
       ],
       "c": [
         "Toy Bonnie",
@@ -222,9 +220,8 @@
         "Chica"
       ]
     },
-    
     "starter": {
-      "ss": [
+      "s": [
         "Golden Freddy",
         "Faz-ino Spring Bonnie",
         "Pirate Withered Foxy NEW",
@@ -232,9 +229,8 @@
         "Rockin Bonnie",
         "Unicorn Toy Foxy",
         "Cannoneer Chica NEW"
-
       ],
-      "s": [
+      "a": [
         "Undead Chica",
         "Bonnie",
         "Foxy",
@@ -247,9 +243,7 @@
         "Conductor Toy Freddy",
         "Turkey Chica",
         "Cloaked Sparky",
-        "Hor Hor Freddy"
-      ],
-      "a": [
+        "Hor Hor Freddy",
         "UFO Tangle",
         "Frosty the Snowcake",
         "Party Glock Freddy BUG",
@@ -260,28 +254,25 @@
         "Freddy With a Glock"
       ],
       "b": [
-      "Phantom Chica",
-      "Nightmare Cupcake",
-      "Santa Freddy",
-      "Nightmare Freddy",
-      "Soul Prisoner Foxy",
-      "Toy Bonnie",
-      "Jack'O Bonnie",
-      "Withered Chica"
+        "Phantom Chica",
+        "Nightmare Cupcake",
+        "Santa Freddy",
+        "Nightmare Freddy",
+        "Soul Prisoner Foxy",
+        "Toy Bonnie",
+        "Jack'O Bonnie",
+        "Withered Chica"
       ],
-      
       "c": [
-      "Bidybabs",
-      "Party Packer Cupcake BUG",
-      "Bucket Bob",
-      "Pan Stan",
-      "Phantom Bonnie"
+        "Bidybabs",
+        "Party Packer Cupcake BUG",
+        "Bucket Bob",
+        "Pan Stan",
+        "Phantom Bonnie"
       ]
     },
-
-    
     "support": {
-      "ss": [
+      "s": [
         "Candy Cadet",
         "Nature Reclaimed Foxy",
         "Psychic Friend Fredbear",
@@ -289,7 +280,7 @@
         "Spring Duo",
         "Golden Freddy"
       ],
-      "s": [
+      "a": [
         "Kronos Endo Freddy",
         "Party Never Ends Cupcake",
         "Cthulhu Nightmare Foxy",
@@ -300,9 +291,7 @@
         "No. 1 Crate",
         "Endo 01",
         "Rockin Bonnie",
-        "Hag Withered Chica"
-      ],
-      "a": [
+        "Hag Withered Chica",
         "Starfarer Princess DOWN",
         "Barbarian Boy",
         "Crying Child",
@@ -338,7 +327,6 @@
         "Circus Baby",
         "Balloon Boy",
         "Salvaged Toy Bonnie"
-        
       ],
       "c": [
         "Hacker King RWQFSFASXC",
@@ -352,22 +340,20 @@
       ]
     },
     "stun": {
-      "ss": [
+      "s": [
         "Deep Sea Calamity Endo",
         "Krampus Purple Guy",
         "Ennard",
         "Cthulhu Nightmare Foxy",
-        "Grand Strategist Chica",
+        "Grand Strategist Chica"
       ],
-      "s": [
+      "a": [
         "Pirate Withered Foxy NEW",
         "Frostmancer Withered Bonnie",
         "Kronos Endo Freddy",
         "Mangle",
         "Chicas Magic Rainbow",
-        "Trash o Tron"
-      ],
-      "a": [
+        "Trash o Tron",
         "Pan Stan",
         "Nightmare Fredbear",
         "Circus Baby",
@@ -393,24 +379,21 @@
         "Afterbite Withered Golden Freddy"
       ]
     },
-    
     "slow": {
-      "ss": [
+      "s": [
         "Deep Sea Calamity Endo",
         "Molten Freddy",
         "Frostmancer Withered Bonnie",
         "Frozen King Foxy",
-        "Grand Strategist Chica",
+        "Grand Strategist Chica"
       ],
-      "s": [
+      "a": [
         "Starfarer Princess",
         "Nightmare Chica",
         "Cthulhu Nightmare Foxy",
         "Golden Freddy",
         "Afterbite Withered Golden Freddy",
-        "Pirate Withered Foxy NEW"
-      ],
-      "a": [
+        "Pirate Withered Foxy NEW",
         "Yenndo",
         "Lore Keeper Shadow Bonnie",
         "Mother Nature Ballora",
@@ -489,7 +472,6 @@
       "Frozen King Foxy": "25% AOE Slow.",
       "Grand Strategist Chica": "15% AOE Slow + 10% Cone 180 Slow."
     }
-      
   },
   "notes": {
     "all": "",
@@ -500,13 +482,6 @@
   }
 };
   var lists = cfg.lists || {};
-  // SS tier removed: its units become S, and the old S units merge into A (above the old A units).
-  Object.keys(lists).forEach(function(m) {
-    var ls = lists[m]; if (!ls) return;
-    ls.a = (ls.s || []).concat(ls.a || []);
-    ls.s = ls.ss || [];
-    delete ls.ss;
-  });
   var allMsg = cfg.msg || {};
   function getModeMsg() {
     var m = allMsg[mode];
@@ -812,7 +787,7 @@
       z.innerHTML = '';
       var names = ls[t.id] || [];
       if (!names.length) { z.innerHTML = '<div class=tl-msg>Empty.</div>'; return; }
-      names.forEach(function(name) { z.appendChild(makeCard(name, t.id === 'ss')); });
+      names.forEach(function(name) { z.appendChild(makeCard(name, t.id === 's')); });
     });
     var cEl = document.getElementById('tlCount');
     if (cEl) { var tot = countUnits(m); cEl.textContent = tot > 0 ? ('1st - ' + ordinal(tot)) : ''; }

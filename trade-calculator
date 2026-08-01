@@ -55,6 +55,15 @@ font-size:14px;
 .tc-cam-btn[disabled]{opacity:.55;cursor:default;}
 .tc-cam-btn svg{display:block;width:22px;height:22px;}
 @media(max-width:600px){.tc-cam-btn{padding:8px 10px;}.tc-cam-btn svg{width:19px;height:19px;}}
+.tc-shot-overlay{position:fixed;inset:0;z-index:100000;background:rgba(0,0,0,0.86);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:20px;box-sizing:border-box;}
+.tc-shot-overlay img{max-width:92vw;max-height:66vh;border-radius:10px;box-shadow:0 10px 34px rgba(0,0,0,0.75);}
+.tc-shot-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;}
+.tc-shot-btn{font-family:'Press Start 2P',cursive;font-size:11px;padding:12px 18px;border-radius:10px;cursor:pointer;border:2px solid;transition:background .12s,color .12s,border-color .12s;}
+.tc-shot-save{background:#2a1f3a;border-color:#ffc84d;color:#ffc84d;}
+.tc-shot-save:hover{background:#3a2a4a;color:#fff;}
+.tc-shot-close{background:rgba(30,30,40,0.9);border-color:rgba(255,255,255,0.25);color:#ccc;}
+.tc-shot-close:hover{color:#fff;border-color:rgba(255,255,255,0.5);}
+@media(max-width:600px){.tc-shot-btn{font-size:9px;padding:10px 14px;}}
 
 .rating{
 color:#ffd66b;
@@ -1545,19 +1554,35 @@ function _dlBlob(blob, filename){
   document.body.appendChild(a); a.click(); document.body.removeChild(a);
   setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
 }
-function saveImage(blob, filename){
+// After capture, show a preview with a Save button. Saving from that button is a
+// FRESH user gesture, which is what iOS needs for navigator.share -> Save to Photos
+// (sharing straight after the async capture loses the original tap's activation).
+function showShot(blob, filename){
   if (!blob) return;
-  var file = null;
-  try { file = new File([blob], filename, { type: 'image/png' }); } catch (e) {}
+  var canShareFiles = false;
+  try { canShareFiles = !!(navigator.canShare && navigator.canShare({ files: [new File([blob], filename, { type: 'image/png' })] })); } catch (e) {}
   var touch = (navigator.maxTouchPoints || 0) > 0 || ('ontouchstart' in window);
-  if (file && touch && navigator.canShare && navigator.canShare({ files: [file] })) {
-    navigator.share({ files: [file] }).catch(function (err) {
-      if (err && err.name === 'AbortError') return;
-      _dlBlob(blob, filename);
-    });
-    return;
-  }
-  _dlBlob(blob, filename);
+  if (!(canShareFiles && touch)) { _dlBlob(blob, filename); return; }   // desktop / no file-share: download as before
+  var overlay = document.createElement('div'); overlay.className = 'tc-shot-overlay';
+  var img = document.createElement('img'); img.src = URL.createObjectURL(blob); overlay.appendChild(img);
+  function close(){ try { URL.revokeObjectURL(img.src); } catch(e){} if (overlay.parentNode) overlay.parentNode.removeChild(overlay); }
+  var actions = document.createElement('div'); actions.className = 'tc-shot-actions';
+  var save = document.createElement('button'); save.type = 'button'; save.className = 'tc-shot-btn tc-shot-save';
+  save.textContent = canShareFiles ? 'Save Image' : 'Download';
+  save.addEventListener('click', function(){
+    if (canShareFiles){
+      var file = new File([blob], filename, { type: 'image/png' });
+      navigator.share({ files: [file] }).then(close).catch(function(err){
+        if (err && err.name === 'AbortError') return;   // user cancelled the share sheet
+        _dlBlob(blob, filename); close();                // genuine failure -> download
+      });
+    } else { _dlBlob(blob, filename); close(); }
+  });
+  var closeB = document.createElement('button'); closeB.type = 'button'; closeB.className = 'tc-shot-btn tc-shot-close'; closeB.textContent = 'Close';
+  closeB.addEventListener('click', close);
+  overlay.addEventListener('click', function(e){ if (e.target === overlay) close(); });
+  actions.appendChild(save); actions.appendChild(closeB); overlay.appendChild(actions);
+  document.body.appendChild(overlay);
 }
 
 // Screenshot everything from the top of the trade frame down to the win/loss/fair bar.
@@ -1575,7 +1600,7 @@ function captureTradeScreenshot(){
   var h = Math.ceil(bottom - top + 10);
   html2canvas(frame, { height: h, backgroundColor: '#0a0c1e', useCORS: true, scale: 2, logging: false }).then(function(canvas){
     canvas.toBlob(function(blob){
-      saveImage(blob, 'fntd-trade.png');
+      showShot(blob, 'fntd-trade.png');
       if (btn) btn.disabled = false;
     }, 'image/png');
   }).catch(function(e){

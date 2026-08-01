@@ -49,12 +49,12 @@ font-size:14px;
 .side-title-menu > div:hover{background:rgba(255,164,91,0.16);color:#ffc84d;}
 
 .tc-toolbar{display:flex;justify-content:center;max-width:900px;margin:0 auto 12px;}
-.tc-cam-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(20,18,30,0.9);border:2px solid rgba(255,164,91,0.5);color:#ffc84d;font-family:'Press Start 2P',cursive;font-size:11px;padding:11px 18px;border-radius:10px;cursor:pointer;box-shadow:0 3px 0 #000,0 5px 14px rgba(0,0,0,0.5);transition:transform .1s ease,border-color .12s,color .12s;}
+.tc-cam-btn{display:inline-flex;align-items:center;justify-content:center;background:rgba(20,18,30,0.9);border:2px solid rgba(255,164,91,0.5);color:#ffc84d;padding:9px 12px;border-radius:10px;cursor:pointer;box-shadow:0 3px 0 #000,0 5px 14px rgba(0,0,0,0.5);transition:transform .1s ease,border-color .12s,color .12s;}
 .tc-cam-btn:hover{border-color:#ffc84d;color:#fff;}
 .tc-cam-btn:active{transform:translateY(2px);box-shadow:0 1px 0 #000;}
-.tc-cam-btn[disabled]{opacity:.6;cursor:default;}
-.tc-cam-ico{font-size:16px;line-height:1;}
-@media(max-width:600px){.tc-cam-btn{font-size:9px;padding:9px 13px;}.tc-cam-ico{font-size:13px;}}
+.tc-cam-btn[disabled]{opacity:.55;cursor:default;}
+.tc-cam-btn svg{display:block;width:22px;height:22px;}
+@media(max-width:600px){.tc-cam-btn{padding:8px 10px;}.tc-cam-btn svg{width:19px;height:19px;}}
 
 .rating{
 color:#ffd66b;
@@ -1301,7 +1301,7 @@ text-overflow:ellipsis;
 
 
 <div class="tc-toolbar">
-<button type="button" id="screenshotBtn" class="tc-cam-btn" onclick="captureTradeScreenshot()" aria-label="Screenshot trade"><span class="tc-cam-ico">&#128247;</span> Screenshot</button>
+<button type="button" id="screenshotBtn" class="tc-cam-btn" onclick="captureTradeScreenshot()" aria-label="Screenshot trade" title="Screenshot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></button>
 </div>
 
 <div class="trade-frame">
@@ -1540,12 +1540,11 @@ document.addEventListener('click', function(){ document.querySelectorAll('.side-
 // Screenshot everything from the top of the trade frame down to the win/loss/fair bar.
 function captureTradeScreenshot(){
   var btn = document.getElementById('screenshotBtn');
-  if (typeof html2canvas === 'undefined'){ if(btn){var o=btn.innerHTML;btn.innerHTML='<span class="tc-cam-ico">&#8987;</span> Loading...';setTimeout(function(){btn.innerHTML=o;},1500);} return; }
+  if (typeof html2canvas === 'undefined') return;   // library still loading — click again
   var frame  = document.querySelector('.trade-frame');
   var status = document.getElementById('tradeStatus');
   if (!frame || !status) return;
-  var prev = btn ? btn.innerHTML : '';
-  if (btn){ btn.disabled = true; btn.innerHTML = '<span class="tc-cam-ico">&#8987;</span> Capturing...'; }
+  if (btn) btn.disabled = true;
   // close any open side-title menus so they don't appear in the shot
   document.querySelectorAll('.side-title-menu.open').forEach(function(m){ m.classList.remove('open'); });
   var top = frame.getBoundingClientRect().top;
@@ -1559,11 +1558,11 @@ function captureTradeScreenshot(){
         document.body.appendChild(a); a.click(); document.body.removeChild(a);
         setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
       }
-      if (btn){ btn.disabled = false; btn.innerHTML = prev; }
+      if (btn) btn.disabled = false;
     }, 'image/png');
   }).catch(function(e){
     console.error('Screenshot failed:', e);
-    if (btn){ btn.disabled = false; btn.innerHTML = prev; }
+    if (btn) btn.disabled = false;
   });
 }
 const enchantIcons = {

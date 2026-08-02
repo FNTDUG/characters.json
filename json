@@ -21351,5 +21351,211 @@
       }
     ]
   }
+},
+{
+  "name": "Patient White Rabbit",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high.webp?enable-io=true&crop=1%3A1&width=347",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-ytabbp.webp?enable-io=true&crop=1%3A1&width=347",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Nature/Dark",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Vessel Plushtrap Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 9000,
+      "damage": 300,
+      "type": "Circle",
+      "cd": 4,
+      "range": 25
+    },
+    {
+      "level": 2,
+      "cost": 7000,
+      "damage": 350,
+      "type": "Circle",
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 3,
+      "cost": 8000,
+      "damage": 400,
+      "type": "Circle",
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 9500,
+      "damage": 425,
+      "type": "Circle",
+      "cd": 3.5,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 11000,
+      "damage": 500,
+      "type": "Circle",
+      "cd": 3.5,
+      "range": 29
+    },
+    {
+      "level": 6,
+      "cost": 12500,
+      "damage": 550,
+      "type": "Circle",
+      "cd": 3,
+      "range": 29
+    },
+    {
+      "level": 7,
+      "cost": 15000,
+      "damage": 700,
+      "type": "Cone 75°",
+      "cd": 3,
+      "range": 31
+    },
+    {
+      "level": 8,
+      "cost": 17500,
+      "damage": 950,
+      "type": "Cone 75°",
+      "cd": 3,
+      "range": 33
+    }
+  ],
+  "passives": [
+    {
+      "title": "Imperfect Vessel",
+      "text": "On attack apply 25% poison over 5s and buff this units damage by 10% and poison by 2.5% (Max +100% damage and +25% poison). At max buff deal 500% poison over 10s as Full AoE, stun this unit for 5s and lose these buffs"
+    },
+    {
+      "title": "Dangerous Concoction",
+      "text": "This unit deals 5% more damage for every poison instance on the enemy. Enemies in range take 40% more poison damage"
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Imperfect Vessel (Average Buff)",
+        "dmgmult": 1.50
+      }
+    ],
+    "periodic": [
+        {
+          "label": "Imperfect Vessel (AoE Attack)",
+          "pctofdamage": 2.00,
+          "hits": 1,
+          "cd": 30,
+          "stun": 5,
+          "cdboostable": true,
+          "cdscope": "local"
+        }
+      ],
+    "dots": [
+      {
+        "label": "Imperfect Vessel (Average DoT)",
+        "pctofdamage": 0.375,
+        "durationsec": 5
+      }
+    ]
+  }
+},
+{
+  "name": "Vessel Plushtrap",
+  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/thumbnail-high.webp?enable-io=true&crop=1%3A1&width=347",
+  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/thumbnail-high-zf4jlf.webp",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Nature/Dark",
+  "placements": 2,
+  "attackType": "FullAOE",
+  "obtainment": "Vessel Plushtrap Present (200 Challenge Tokens)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 5400,
+      "damage": 200,
+      "cd": 5.5,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 5000,
+      "damage": 250,
+      "cd": 5.5,
+      "range": 20
+    },
+    {
+      "level": 3,
+      "cost": 5750,
+      "damage": 325,
+      "cd": 5.5,
+      "range": 21
+    },
+    {
+      "level": 4,
+      "cost": 6500,
+      "damage": 375,
+      "cd": 5.3,
+      "range": 21
+    },
+    {
+      "level": 5,
+      "cost": 7250,
+      "damage": 450,
+      "cd": 5.3,
+      "range": 22
+    },
+    {
+      "level": 6,
+      "cost": 8250,
+      "damage": 500,
+      "cd": 5,
+      "range": 23
+    },
+    {
+      "level": 7,
+      "cost": 9500,
+      "damage": 600,
+      "cd": 5,
+      "range": 25
+    }
+  ],
+  "passives": [
+    {
+      "title": "Research Subject",
+      "text": "Buff units in range by +1% damage and range per 10k damage dealt (Max 10%). This unit receives this buff at 5x value"
+    },
+    {
+      "title": "Corrosive Substance",
+      "text": "Attacks apply 50% poison over 5s. Poison increases by +5% per 5k damage dealt in range (Max 50%)"
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Research Subject",
+        "dmgmult": 1.50
+      }
+    ],
+    "dots": [
+      {
+        "label": "Corrosive Substance",
+        "pctofdamage": 0.50,
+        "durationsec": 5
+      }
+    ]
+  }
 }
 ]

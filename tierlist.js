@@ -44,7 +44,7 @@
         "Lolbit",
         "Endo 01",
         "Cannoneer Chica NEW",
-        "Rockin Bonnie ",
+        "Rockin Bonnie",
         "Party Never Ends Cupcake",
 	    "Movie Director Freddy",
         "Fazcade"

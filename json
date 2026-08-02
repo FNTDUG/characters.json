@@ -21448,22 +21448,20 @@
         "dmgmult": 1.50
       }
     ],
-    "periodic": [
-        {
-          "label": "Imperfect Vessel (AoE Attack)",
-          "pctofdamage": 2.00,
-          "hits": 1,
-          "cd": 30,
-          "stun": 5,
-          "cdboostable": true,
-          "cdscope": "local"
-        }
-      ],
     "dots": [
       {
         "label": "Imperfect Vessel (Average DoT)",
         "pctofdamage": 0.375,
         "durationsec": 5
+      },
+      {
+          "label": "Imperfect Vessel (AoE Attack)",
+          "pctofdamage": 2.00,
+          "durationsec": 10,
+          "cd": 30,
+          "stun": 5,
+          "cdboostable": true,
+          "cdscope": "local"
       }
     ]
   }

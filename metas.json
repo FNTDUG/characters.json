@@ -5,13 +5,14 @@
     "background": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/carbon-fiber-background-wallpapers-1440x900-high.jpg?enable-io=true&width=1252",
 
     "bytes": {
-      "The Box":    { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/the-box-byte.png", "rarity": "nightmare", "note": "Increases DMG, RNG and decreases CD" },
-      "Boss Drain": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/boss-drain-byte.png", "rarity": "secret",    "note": "Increases DMG and Boss DMG" },
-      "Reaper":     { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/reaper-byte.png", "rarity": "secret",    "note": "Increases Crit DMG" },
-      "The Fan":    { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/the-fan-byte.png", "rarity": "secret",    "note": "Gives units slow" },
-      "UFO":        { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/ufo-byte.png", "rarity": "secret",    "note": "Gives units any element boost and increases active ability DMG" },
-      "KABOOM!":    { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/kaboom!-byte.png", "rarity": "mythic",    "note": "Changes attack type to Circle and increases RNG" },
-      "Pearl":      { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/pearl-byte.png", "rarity": "secret",    "note": "Increases income" }
+      "The Box":    { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/the-box-byte.png", "rarity": "nightmare",  "note": "Increases DMG, RNG and decreases CD" },
+      "Boss Drain": { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/boss-drain-byte.png", "rarity": "secret",  "note": "Increases DMG and Boss DMG" },
+      "Reaper":     { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/reaper-byte.png", "rarity": "secret",      "note": "Increases Crit DMG" },
+      "The Fan":    { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/the-fan-byte.png", "rarity": "secret",     "note": "Gives units slow" },
+      "UFO":        { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/ufo-byte.png", "rarity": "secret",         "note": "Gives units any element boost and increases active ability DMG" },
+      "KABOOM!":    { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/kaboom!-byte.png", "rarity": "mythic",     "note": "Changes attack type to Circle and increases RNG" },
+      "Pearl":      { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/pearl-byte.png", "rarity": "secret",       "note": "Increases income" },
+      "Neon Bee":   { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/neonbee.png", "rarity": "mythic",          "note": "Increases DoT DMG, DoT duration, and DMG per unique DoT on an Enemy" },
     },
 
     "enchants": {

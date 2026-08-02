@@ -12,7 +12,7 @@
       "UFO":        { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/ufo-byte.png", "rarity": "secret",         "note": "Gives units any element boost and increases active ability DMG" },
       "KABOOM!":    { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/kaboom!-byte.png", "rarity": "mythic",     "note": "Changes attack type to Circle and increases RNG" },
       "Pearl":      { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/pearl-byte.png", "rarity": "secret",       "note": "Increases income" },
-      "Neon Bee":   { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/neonbee.png", "rarity": "mythic",          "note": "Increases DoT DMG, DoT duration, and DMG per unique DoT on an Enemy" },
+      "Neon Bee":   { "url": "https://pub-147ea4ffd88444cba282e819b9168c94.r2.dev/neonbee.png", "rarity": "mythic",          "note": "Increases DoT DMG, DoT duration, and DMG per unique DoT on an Enemy" }
     },
 
     "enchants": {

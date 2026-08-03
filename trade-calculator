@@ -2554,13 +2554,14 @@ const PRESENTS_FALLBACK = [
 ];
 
 const BYTES = [
-  { name: "The Box",    imgNormal: "https://tr.rbxcdn.com/180DAY-4b19af25461691ad22d21c356410ac97/420/420/Image/Png/noFilter", rarity: "nightmare", category: "Bytes" },
-  { name: "Boss Drain", imgNormal: "https://tr.rbxcdn.com/180DAY-94227120f5540f9816e8f085f0ab5d39/420/420/Image/Png/noFilter", rarity: "secret",    category: "Bytes" },
-  { name: "Reaper",     imgNormal: "https://tr.rbxcdn.com/180DAY-e7ce24b2e8ad5cac263d3680bbf64fd1/420/420/Image/Png/noFilter", rarity: "secret",    category: "Bytes" },
-  { name: "The Fan",    imgNormal: "https://tr.rbxcdn.com/180DAY-27f75f89477ed81d7891e1842f11da2e/420/420/Image/Png/noFilter", rarity: "secret",    category: "Bytes" },
-  { name: "UFO",        imgNormal: "https://tr.rbxcdn.com/180DAY-58cf1675b1fb9037073356f04e0799ad/420/420/Image/Png/noFilter", rarity: "secret",    category: "Bytes" },
-  { name: "KABOOM!",    imgNormal: "https://tr.rbxcdn.com/180DAY-05db103928cbf22d82c9542be6710993/420/420/Image/Png/noFilter", rarity: "mythic",    category: "Bytes" },
-  { name: "Pearl",      imgNormal: "https://iili.io/CAqv7Qs.webp",                                                              rarity: "secret",    category: "Bytes" },
+  { name: "The Box",    imgNormal: "https://images.fntduserguide.com/the-box-byte.png",       rarity: "nightmare", category: "Bytes" },
+  { name: "Boss Drain", imgNormal: "https://images.fntduserguide.com/boss-drain-byte.png",    rarity: "secret",    category: "Bytes" },
+  { name: "Reaper",     imgNormal: "https://images.fntduserguide.com/reaper-byte.png",        rarity: "secret",    category: "Bytes" },
+  { name: "The Fan",    imgNormal: "https://images.fntduserguide.com/the-fan-byte.png",       rarity: "secret",    category: "Bytes" },
+  { name: "UFO",        imgNormal: "https://images.fntduserguide.com/ufo-byte.png",           rarity: "secret",    category: "Bytes" },
+  { name: "KABOOM!",    imgNormal: "https://images.fntduserguide.com/kaboom!-byte.png",       rarity: "mythic",    category: "Bytes" },
+  { name: "Pearl",      imgNormal: "https://images.fntduserguide.com/pearl-byte.png",         rarity: "secret",    category: "Bytes" },
+  { name: "Neon Bee",   imgNormal: "https://images.fntduserguide.com/neonbee.png",            rarity: "mythic",    category: "Bytes" },
 ];
 
 const COMMENTS = [

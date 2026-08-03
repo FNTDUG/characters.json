@@ -1532,10 +1532,10 @@ text-overflow:ellipsis;
   </div>
 </div>
 
-<audio id="shinyOnSound" preload="auto"><source src="https://sounds.fntduserguide.com/Sparklee%201%20Mp%203.mp3" type="audio/mpeg"></audio>
-<audio id="shinyOffSound" preload="auto"><source src="https://sounds.fntduserguide.com/undertale-sparkles.mp3" type="audio/mpeg"></audio>
-<audio id="glitchOnSound" preload="auto"><source src="https://sounds.fntduserguide.com/glitchon.mov" type="audio/mpeg"></audio>
-<audio id="glitchOffSound" preload="auto"><source src="https://sounds.fntduserguide.com/glitchoff.mov" type="audio/mpeg"></audio>
+<audio id="shinyOnSound" preload="auto"><source src="https://www.fntduserguide.com/_downloads/b83aadbb7716ae7b1b08da7cdc64697f" type="audio/mpeg"></audio>
+<audio id="shinyOffSound" preload="auto"><source src="https://www.fntduserguide.com/_downloads/1df67832e02ff99ba67364ab034cf3ca" type="audio/mpeg"></audio>
+<audio id="glitchOnSound" preload="auto"><source src="https://www.fntduserguide.com/_downloads/511061349bcf77519577b349407358b0" type="audio/mpeg"></audio>
+<audio id="glitchOffSound" preload="auto"><source src="https://www.fntduserguide.com/_downloads/8a4539ec6b2ccb83699de8b425a47e41" type="audio/mpeg"></audio>
 
 <script src="https://cdn.jsdelivr.net/npm/lz-string@1.4.4/libs/lz-string.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
@@ -1675,9 +1675,12 @@ function applyMetaEnchantColors(metas){
 
 /* ── Presents & cosmetics (pets/skins) pulled from the same JSONs the site uses,
    with the same worker.js overrides so display names/rarities match everywhere. ── */
-var COSMETIC_SKINS_URL = "https://pub-ded986176f754f5fb54de94d2fb15509.r2.dev/skins.json";
-var COSMETIC_PETS_URL  = "https://pub-ded986176f754f5fb54de94d2fb15509.r2.dev/pets.json";
-var PRESENTS_JSON_URL  = "https://pub-71c3b160626949ae8220d0daad5a9fc8.r2.dev/fntd2-presents.json";
+// Fetch through the worker's own /inf-data proxy so this always tracks the site:
+// same source as the INFO panel, image URLs auto-rewritten to the custom domains,
+// and CORS-enabled — no hardcoded r2.dev hosts to keep updated.
+var COSMETIC_SKINS_URL = "https://www.fntduserguide.com/inf-data/skins";
+var COSMETIC_PETS_URL  = "https://www.fntduserguide.com/inf-data/pets";
+var PRESENTS_JSON_URL  = "https://www.fntduserguide.com/inf-data/presents";
 var METAS_JSON_URL     = "https://raw.githubusercontent.com/FNTDUG/characters.json/refs/heads/main/metas.json";
 // PRESENTS_CFG.overrides (name renames) from _worker.js
 var PRESENT_NAME_OV = {
@@ -3389,12 +3392,8 @@ function buildEnchantPicker(vd) {
   if (oldPopup) oldPopup.parentNode.removeChild(oldPopup);
   if (picker._enchCloseHandler) document.removeEventListener("click", picker._enchCloseHandler);
 
-  var enchColors = {
-    haywire:"#00ff84", phantom:"#00ee00", blighted:"#4d4e4f",
-    springlocked:"#1d6764", shadow:"#7878cc", vengeance:"#ff7040", hijacked:"#14D154",
-    investor:"#c8a800", engineer:"#f6ca1a", puppet_nm:"#ba60ff", scooped:"#ff6b9d",
-    champion:CHAMPION_GRADIENT
-  };
+  // Enchant badge colors come from ENCH_COLORS (kept in sync with metas.json),
+  // so the dropdown badges match the main enchant badge exactly.
 
   var enchants = [
     { key:"none",        label:"None (Base)",  val:null },
@@ -3458,7 +3457,7 @@ function buildEnchantPicker(vd) {
     } else {
       var badge = document.createElement("div");
       badge.className = "enchant-opt-badge";
-      badge.style.background = enchColors[e.key] || "rgba(255,164,91,0.5)";
+      badge.style.background = ENCH_COLORS[e.key] || "rgba(255,164,91,0.5)";
       var badgeInner = document.createElement("div");
       badgeInner.className = "enchant-opt-badge-inner";
       if (enchantIcons[e.key]) {

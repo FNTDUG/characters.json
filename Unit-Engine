@@ -1356,27 +1356,27 @@
 
       
       <audio id="unitConfirmSound" preload="auto">
-        <source src="https://www.myinstants.com/media/sounds/megaman-confirm.mp3" type="audio/mpeg">
+        <source src="https://sounds.fntduserguide.com/megaman-confirm.mp3" type="audio/mpeg">
       </audio>
       
       <audio id="shinyOnSound" preload="auto">
-        <source src="https://www.fntduserguide.com/_downloads/b83aadbb7716ae7b1b08da7cdc64697f" type="audio/mpeg">
+        <source src="https://sounds.fntduserguide.com/Sparklee%201%20Mp%203.mp3" type="audio/mpeg">
       </audio>
       
       <audio id="shinyOffSound" preload="auto">
-        <source src="https://www.fntduserguide.com/_downloads/1df67832e02ff99ba67364ab034cf3ca" type="audio/mpeg">
+        <source src="https://sounds.fntduserguide.com/undertale-sparkles.mp3" type="audio/mpeg">
       </audio>
       
       <audio id="uiClickSound" preload="auto">
-        <source src="https://www.fntduserguide.com/_downloads/1a6cd3fd1adf9c5d85e033486e68c75f" type="audio/mpeg">
+        <source src="https://sounds.fntduserguide.com/button%20click.mp3" type="audio/mpeg">
       </audio>
       
       <audio id="glitchOnSound" preload="auto">
-        <source src="https://www.fntduserguide.com/_downloads/511061349bcf77519577b349407358b0" type="audio/mpeg">
+        <source src="https://sounds.fntduserguide.com/glitchon.mov" type="audio/mpeg">
       </audio>
       
       <audio id="glitchOffSound" preload="auto">
-        <source src="https://www.fntduserguide.com/_downloads/8a4539ec6b2ccb83699de8b425a47e41" type="audio/mpeg">
+        <source src="https://sounds.fntduserguide.com/glitchoff.mov" type="audio/mpeg">
       </audio>
 
       <div id="unitEngine">

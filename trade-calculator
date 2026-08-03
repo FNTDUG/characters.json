@@ -1608,6 +1608,19 @@ function captureTradeScreenshot(){
       if (doc.body) { doc.body.style.width = '1000px'; doc.body.style.margin = '0'; }
       var app = doc.getElementById('tradeApp');
       if (app) { app.style.width = '900px'; app.style.maxWidth = '900px'; app.style.margin = '0 auto'; }
+      // If the anti-tamper watermark is active, stamp it onto the captured frame too
+      // (it lives on #tradeApp, outside .trade-frame, so it wouldn't otherwise appear).
+      var liveWm = document.getElementById('inspectWatermark');
+      if (liveWm && liveWm.textContent && getComputedStyle(liveWm).display !== 'none') {
+        var cf = doc.querySelector('.trade-frame');
+        if (cf) {
+          if (getComputedStyle(cf).position === 'static') cf.style.position = 'relative';
+          var wm = doc.createElement('div');
+          wm.textContent = liveWm.textContent;
+          wm.style.cssText = (liveWm.style.cssText || '') + ';position:absolute;inset:0;z-index:2147483647;pointer-events:none;display:block';
+          cf.appendChild(wm);
+        }
+      }
     }
   }).then(function(canvas){
     canvas.toBlob(function(blob){

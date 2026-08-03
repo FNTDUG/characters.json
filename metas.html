@@ -391,7 +391,8 @@
     ensureH2C(function () {
       hideEls = hideEls || [];
       hideEls.forEach(function (el) { if (el) el.setAttribute('data-cap-hide', '1'); });
-      function unmark() { hideEls.forEach(function (el) { if (el) el.removeAttribute('data-cap-hide'); }); }
+      rootEl.setAttribute('data-cap-root', '1');
+      function unmark() { hideEls.forEach(function (el) { if (el) el.removeAttribute('data-cap-hide'); }); rootEl.removeAttribute('data-cap-root'); }
       // Render the clone at a desktop viewport width so mobile media queries don't
       // apply — the screenshot looks the same as on desktop. Hide the controls in the
       // clone (not the live DOM) so the button doesn't flash during capture.
@@ -400,6 +401,11 @@
         windowWidth: 1000, windowHeight: Math.max(2000, window.innerHeight || 900),
         onclone: function (doc) {
           doc.querySelectorAll('[data-cap-hide]').forEach(function (el) { el.style.display = 'none'; });
+          // The meta roots break out to full width with left:50%/translateX(-50%);
+          // that centering offsets the html2canvas capture, so pin the captured root
+          // to a plain 1000px block at the origin.
+          var r = doc.querySelector('[data-cap-root]');
+          if (r) { r.style.left = '0'; r.style.transform = 'none'; r.style.width = '1000px'; r.style.maxWidth = '1000px'; r.style.margin = '0'; }
           if (doc.documentElement) doc.documentElement.style.width = '1000px';
           if (doc.body) { doc.body.style.width = '1000px'; doc.body.style.margin = '0'; }
         }

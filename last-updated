@@ -325,16 +325,8 @@
 <script>
 /* ── EDIT THIS LIST ── */
 var UPDATED_UNITS = [
-  "Witch of the Sea Scrapbaby",
-  "Mecha-Lizabeth",
-  "Dutchman Nightmare Bonnie",
-  "Mechanic Endo 01",
-  "Aqua Strike Toy Chica",
-  "Pirate Withered Foxy",
-  "Cannoneer Chica",
-  "Salvaged Toy Bonnie",
-  "Shadow Bonnie",
-  "Withered Freddy"
+  "Patient White Rabbit",
+  "Vessel Plushtrap"
 ];
 /* ────────────────── */
 

@@ -135,18 +135,6 @@
         'border-radius:4px;cursor:pointer;user-select:none;transition:opacity .15s,border-color .15s,color .15s}',
       '.meta-clutter-btn:hover{background:rgba(246,155,85,0.12)}',
       '.meta-clutter-btn.cltr-off{border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.3)}',
-      '.meta-cam-btn{display:inline-flex;align-items:center;justify-content:center;margin-left:6px;padding:4px 7px;background:rgba(0,0,0,0.65);border:1px solid rgba(246,155,85,0.75);border-radius:4px;color:#ffa45b;cursor:pointer;user-select:none;transition:background .15s,border-color .15s,color .15s}',
-      '.meta-cam-btn:hover{background:rgba(246,155,85,0.12);color:#fff}',
-      '.meta-cam-btn svg{display:block;width:14px;height:14px}',
-      '.tc-shot-overlay{position:fixed;inset:0;z-index:100000;background:rgba(0,0,0,0.86);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:20px;box-sizing:border-box}',
-      '.tc-shot-overlay img{max-width:92vw;max-height:66vh;border-radius:10px;box-shadow:0 10px 34px rgba(0,0,0,0.75)}',
-      '.tc-shot-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}',
-      '.tc-shot-btn{font-family:"Press Start 2P",cursive;font-size:11px;padding:12px 18px;border-radius:10px;cursor:pointer;border:2px solid;transition:background .12s,color .12s,border-color .12s}',
-      '.tc-shot-save{background:#2a1f3a;border-color:#ffc84d;color:#ffc84d}',
-      '.tc-shot-save:hover{background:#3a2a4a;color:#fff}',
-      '.tc-shot-close{background:rgba(30,30,40,0.9);border-color:rgba(255,255,255,0.25);color:#ccc}',
-      '.tc-shot-close:hover{color:#fff;border-color:rgba(255,255,255,0.5)}',
-      '@media(max-width:600px){.tc-shot-btn{font-size:9px;padding:10px 14px}}',
       '.meta-clutter-off .meta-byte,' +
       '.meta-clutter-off .meta-chip,' +
       '.meta-clutter-off .meta-enchant,' +
@@ -341,89 +329,6 @@
     return btn;
   }
 
-  /* ── Screenshot support (lazy-loads html2canvas) ── */
-  function ensureH2C(cb) {
-    if (window.html2canvas) { cb(); return; }
-    var s = document.getElementById('h2c-lib');
-    if (s) { s.addEventListener('load', function () { if (window.html2canvas) cb(); }); return; }
-    s = document.createElement('script'); s.id = 'h2c-lib';
-    s.src = 'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js';
-    s.onload = function () { if (window.html2canvas) cb(); };
-    (document.head || document.documentElement).appendChild(s);
-  }
-  function _dlBlob(blob, filename) {
-    var url = URL.createObjectURL(blob);
-    var a = document.createElement('a'); a.href = url; a.download = filename;
-    document.body.appendChild(a); a.click(); document.body.removeChild(a);
-    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
-  }
-  // After capture, show a preview with a Save button. Saving from that fresh tap is
-  // what iOS needs for navigator.share -> Save to Photos (sharing straight after the
-  // async capture loses the original tap's activation).
-  function showShot(blob, filename) {
-    if (!blob) return;
-    var canShareFiles = false;
-    try { canShareFiles = !!(navigator.canShare && navigator.canShare({ files: [new File([blob], filename, { type: 'image/png' })] })); } catch (e) {}
-    var touch = (navigator.maxTouchPoints || 0) > 0 || ('ontouchstart' in window);
-    if (!(canShareFiles && touch)) { _dlBlob(blob, filename); return; }   // desktop / no file-share: download
-    var overlay = document.createElement('div'); overlay.className = 'tc-shot-overlay';
-    var img = document.createElement('img'); img.src = URL.createObjectURL(blob); overlay.appendChild(img);
-    function close() { try { URL.revokeObjectURL(img.src); } catch (e) {} if (overlay.parentNode) overlay.parentNode.removeChild(overlay); }
-    var actions = document.createElement('div'); actions.className = 'tc-shot-actions';
-    var save = document.createElement('button'); save.type = 'button'; save.className = 'tc-shot-btn tc-shot-save';
-    save.textContent = canShareFiles ? 'Save Image' : 'Download';
-    save.addEventListener('click', function () {
-      if (canShareFiles) {
-        var file = new File([blob], filename, { type: 'image/png' });
-        navigator.share({ files: [file] }).then(close).catch(function (err) {
-          if (err && err.name === 'AbortError') return;   // user cancelled the share sheet
-          _dlBlob(blob, filename); close();                // genuine failure -> download
-        });
-      } else { _dlBlob(blob, filename); close(); }
-    });
-    var closeB = document.createElement('button'); closeB.type = 'button'; closeB.className = 'tc-shot-btn tc-shot-close'; closeB.textContent = 'Close';
-    closeB.addEventListener('click', close);
-    overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
-    actions.appendChild(save); actions.appendChild(closeB); overlay.appendChild(actions);
-    document.body.appendChild(overlay);
-  }
-  function captureRoot(rootEl, hideEls, filename) {
-    ensureH2C(function () {
-      hideEls = hideEls || [];
-      hideEls.forEach(function (el) { if (el) el.setAttribute('data-cap-hide', '1'); });
-      rootEl.setAttribute('data-cap-root', '1');
-      function unmark() { hideEls.forEach(function (el) { if (el) el.removeAttribute('data-cap-hide'); }); rootEl.removeAttribute('data-cap-root'); }
-      // Render the clone at a desktop viewport width so mobile media queries don't
-      // apply — the screenshot looks the same as on desktop. Hide the controls in the
-      // clone (not the live DOM) so the button doesn't flash during capture.
-      window.html2canvas(rootEl, {
-        backgroundColor: '#0a0c1e', useCORS: true, scale: 2, logging: false,
-        windowWidth: 1000, windowHeight: Math.max(2000, window.innerHeight || 900),
-        onclone: function (doc) {
-          doc.querySelectorAll('[data-cap-hide]').forEach(function (el) { el.style.display = 'none'; });
-          // The meta roots break out to full width with left:50%/translateX(-50%);
-          // that centering offsets the html2canvas capture, so pin the captured root
-          // to a plain 1000px block at the origin.
-          var r = doc.querySelector('[data-cap-root]');
-          if (r) { r.style.left = '0'; r.style.transform = 'none'; r.style.width = '1000px'; r.style.maxWidth = '1000px'; r.style.margin = '0'; }
-          if (doc.documentElement) doc.documentElement.style.width = '1000px';
-          if (doc.body) { doc.body.style.width = '1000px'; doc.body.style.margin = '0'; }
-        }
-      }).then(function (canvas) {
-        unmark();
-        canvas.toBlob(function (blob) { showShot(blob, filename); }, 'image/png');
-      }).catch(function (e) { unmark(); if (window.console) console.error('screenshot failed', e); });
-    });
-  }
-  function camSlug(s) { return String(s || 'meta').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'meta'; }
-  function makeCamBtn(rootEl, controlsEl, filename) {
-    var b = document.createElement('button'); b.type = 'button'; b.className = 'meta-cam-btn';
-    b.title = 'Screenshot'; b.setAttribute('aria-label', 'Screenshot');
-    b.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>';
-    b.addEventListener('click', function () { captureRoot(rootEl, [controlsEl], filename); });
-    return b;
-  }
-
   function buildCardRow(row, META_CFG) {
     function renderCards() {
       row.innerHTML = '';
@@ -531,7 +436,6 @@
 
     var controls = document.createElement('div'); controls.className = 'metaControls';
     controls.appendChild(makeClutterBtn(root));
-    controls.appendChild(makeCamBtn(root, controls, 'fntd-' + camSlug(META_CFG.title) + '.png'));
     root.appendChild(controls);
 
     var row = document.createElement('div'); row.className = 'metaRow';
@@ -583,7 +487,6 @@
 
     var controls = document.createElement('div'); controls.className = 'seamlessControls';
     controls.appendChild(makeClutterBtn(root));
-    controls.appendChild(makeCamBtn(root, controls, 'fntd-metas-seamless.png'));
     root.appendChild(controls);
 
     /* ── page-switcher tab bar (only when multiple pages) ── */

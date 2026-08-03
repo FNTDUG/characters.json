@@ -2,7 +2,7 @@
   "shared": {
     "logoUrl":    "https://images.fntduserguide.com/circle_done.png",
     "siteUrl":    "www.fntduserguide.com",
-    "background": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/carbon-fiber-background-wallpapers-1440x900-high.jpg?enable-io=true&width=1252",
+    "background": "https://images.fntduserguide.com/carbon-fiber-background.jpg",
 
     "bytes": {
       "The Box":    { "url": "https://images.fntduserguide.com/the-box-byte.png", "rarity": "nightmare",  "note": "Increases DMG, RNG and decreases CD" },

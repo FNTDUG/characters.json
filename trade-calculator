@@ -1532,10 +1532,10 @@ text-overflow:ellipsis;
   </div>
 </div>
 
-<audio id="shinyOnSound" preload="auto"><source src="https://www.fntduserguide.com/_downloads/b83aadbb7716ae7b1b08da7cdc64697f" type="audio/mpeg"></audio>
-<audio id="shinyOffSound" preload="auto"><source src="https://www.fntduserguide.com/_downloads/1df67832e02ff99ba67364ab034cf3ca" type="audio/mpeg"></audio>
-<audio id="glitchOnSound" preload="auto"><source src="https://www.fntduserguide.com/_downloads/511061349bcf77519577b349407358b0" type="audio/mpeg"></audio>
-<audio id="glitchOffSound" preload="auto"><source src="https://www.fntduserguide.com/_downloads/8a4539ec6b2ccb83699de8b425a47e41" type="audio/mpeg"></audio>
+<audio id="shinyOnSound" preload="auto"><source src="https://sounds.fntduserguide.com/Sparklee%201%20Mp%203.mp3" type="audio/mpeg"></audio>
+<audio id="shinyOffSound" preload="auto"><source src="https://sounds.fntduserguide.com/undertale-sparkles.mp3" type="audio/mpeg"></audio>
+<audio id="glitchOnSound" preload="auto"><source src="https://sounds.fntduserguide.com/glitchon.mov" type="audio/mpeg"></audio>
+<audio id="glitchOffSound" preload="auto"><source src="https://sounds.fntduserguide.com/glitchoff.mov" type="audio/mpeg"></audio>
 
 <script src="https://cdn.jsdelivr.net/npm/lz-string@1.4.4/libs/lz-string.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>

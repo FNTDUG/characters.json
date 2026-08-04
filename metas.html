@@ -454,6 +454,14 @@
     return buildCardRow(row, META_CFG);
   }
 
+  function _metaSlug(s) { return String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, ''); }
+  // Deep link: reflect the active seamless tab in /fntd2/meta-teams/<slug> (first tab = base URL).
+  function _metaSyncUrl(slug, idx) {
+    if (location.pathname.indexOf('meta-teams') === -1) return;
+    var base = location.pathname.replace(/(meta-teams)(\/.*)?$/, '$1');
+    var np = base + (idx > 0 && slug ? '/' + slug : '');
+    try { history.replaceState(null, '', np + location.search + location.hash); } catch (e) {}
+  }
   function renderSeamless(mountEl, metasData) {
     var shared  = metasData.shared  || {};
     var seamCfg = metasData.seamless || {};
@@ -552,11 +560,27 @@
             pageWrappers.forEach(function (w, j) { w.style.display = j === i ? '' : 'none'; });
             var tabs = tabBar.querySelectorAll('.seamlessPageTab');
             for (var k = 0; k < tabs.length; k++) tabs[k].classList.toggle('seamlessPageTabActive', k === i);
+            _metaSyncUrl(_metaSlug(pages[i].pageTitle || ''), i);
           });
         }(pageIdx));
         tabBar.appendChild(tab);
       }
     });
+
+    /* Deep link: /fntd2/meta-teams/<slug> opens that tab on load. */
+    if (tabBar) {
+      var _seg = (location.pathname.match(/meta-teams\/([^\/?#]+)/) || [])[1];
+      if (_seg) {
+        _seg = decodeURIComponent(_seg).toLowerCase();
+        var _target = -1;
+        pages.forEach(function (pg, idx) { if (_metaSlug(pg.pageTitle || '') === _seg) _target = idx; });
+        if (_target > 0) {
+          pageWrappers.forEach(function (w, j) { w.style.display = j === _target ? '' : 'none'; });
+          var _tabs = tabBar.querySelectorAll('.seamlessPageTab');
+          for (var _k = 0; _k < _tabs.length; _k++) _tabs[_k].classList.toggle('seamlessPageTabActive', _k === _target);
+        }
+      }
+    }
 
     mountEl.appendChild(root);
     return reRenders;

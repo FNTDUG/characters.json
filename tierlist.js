@@ -14,7 +14,7 @@
         "Gaia Chica",
       ],
       "a": [
-		"Kronos Endo Freddy",
+        "Kronos Endo Freddy",
         "Frozen King Foxy",
         "Frostmancer Withered Bonnie",
         "Stormbound Chica",
@@ -22,7 +22,7 @@
         "Faz-ino Spring Bonnie",
         "Candy Cadet",
         "Dragon Endo 01",
-	    "Patient White Rabbit NEW",  
+        "Patient White Rabbit NEW",
         "Purifier Mercenary Toy Chica",
         "Witch of the Sea Scrapbaby",
         "Krampus Purple Guy",
@@ -49,21 +49,21 @@
         "Cannoneer Chica",
         "Rockin Bonnie",
         "Party Never Ends Cupcake",
-	    "Movie Director Freddy",
+        "Movie Director Freddy",
         "Fazcade",
         "Molten Freddy",
         "Shadow Knight Freddy",
         "Shadow Bonnie",
         "Goodnight Plushtime",
         "Fathomless Withered Foxy",
-		"Deadeye Freddy",
+        "Deadeye Freddy",
         "Blighted Endo Freddy",
         "Nightmare Fredbear",
         "Hag Withered Chica",
         "Handunit",
         "Sweetheart Toy Foxy",
         "Withered Freddy",
-		"Chicas Magic Rainbow",
+        "Chicas Magic Rainbow",
         "Lore Keeper Shadow Bonnie",
         "Mothman Lefty",
         "Aqua Strike Toy Chica",
@@ -100,7 +100,7 @@
         "Thanatos",
         "Gravelord Foxy",
         "No. 1 Crate",
-        "Devious Purple Guy", 
+        "Devious Purple Guy",
         "Slasher Bonnie",
         "Afterbite Withered Golden Freddy",
         "Super Soldier Foxy",
@@ -109,7 +109,7 @@
         "Arch Angler Toy Bonnie",
       ],
       "b": [
-	    "Bones of The Past Nightmare Freddy",
+        "Bones of The Past Nightmare Freddy",
         "Abyssal Ballora",
         "Yenndo",
         "Helpy",
@@ -139,7 +139,7 @@
         "Harlequin Mangle",
         "Freddles",
         "Phantom Bonnie",
-		"Vessel Plushtrap NEW",  
+        "Vessel Plushtrap NEW",
         "Dreadbear",
         "Puppet",
         "Rockstar Foxy",
@@ -323,7 +323,7 @@
         "Overgrown Foxy",
         "Commander Withered Freddy",
         "Mothman Lefty",
-		"Vessel Plushtrap NEW",  
+        "Vessel Plushtrap NEW",
         "Helpy",
         "Cupcake",
         "Popcorn Bot",
@@ -603,6 +603,20 @@
     '@keyframes tlBlink{0%,49%{box-shadow:0 0 0 3px #ffff00,0 0 12px #ffff00}50%,100%{box-shadow:0 0 0 3px transparent,0 0 0 transparent}}',
     '.tl-match{animation:tlBlink 1.6s step-end infinite}',
     '@keyframes shinyLoop{0%{background-position:0% 50%}100%{background-position:200% 50%}}',
+    '#tlCam{display:inline-flex;align-items:center;justify-content:center;margin-left:auto;padding:8px 10px;background:rgba(0,0,0,0.55);border:2px solid rgba(246,155,85,0.7);border-radius:8px;color:#f69b55;cursor:pointer;transition:background .15s,border-color .15s,color .15s}',
+    '#tlCam:hover{background:rgba(246,155,85,0.14);border-color:#f69b55;color:#fff}',
+    '#tlCam:active{transform:translateY(1px)}',
+    '#tlCam[disabled]{opacity:.55;cursor:default}',
+    '#tlCam svg{display:block;width:20px;height:20px}',
+    '.tc-shot-overlay{position:fixed;inset:0;z-index:100000;background:rgba(0,0,0,0.86);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:20px;box-sizing:border-box}',
+    '.tc-shot-overlay img{max-width:92vw;max-height:66vh;border-radius:10px;box-shadow:0 10px 34px rgba(0,0,0,0.75)}',
+    '.tc-shot-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}',
+    '.tc-shot-btn{font-family:"Press Start 2P",monospace;font-size:11px;padding:12px 18px;border-radius:10px;cursor:pointer;border:2px solid;transition:background .12s,color .12s,border-color .12s}',
+    '.tc-shot-save{background:#2a1f3a;border-color:#ffc84d;color:#ffc84d}',
+    '.tc-shot-save:hover{background:#3a2a4a;color:#fff}',
+    '.tc-shot-close{background:rgba(30,30,40,0.9);border-color:rgba(255,255,255,0.25);color:#ccc}',
+    '.tc-shot-close:hover{color:#fff;border-color:rgba(255,255,255,0.5)}',
+    '@media(max-width:600px){.tc-shot-btn{font-size:9px;padding:10px 14px}#tlCam{padding:6px 8px}#tlCam svg{width:17px;height:17px}}',
     '@media(max-width:600px){#tlHdr{padding:8px 10px;gap:6px}#tlTitle{font-size:8px}.tl-mb{font-size:6px;padding:6px 8px}#tlList{padding:6px 3px}.tl-lbl{width:64px;min-width:64px}.tl-nm2{font-size:22px}.tl-st{font-size:11px}.tl-card{width:52px;height:52px}.tl-units{gap:3px;padding:4px;min-height:60px}.tl-row{min-height:60px}}'
   ].join('');
 
@@ -675,6 +689,84 @@
     list.appendChild(row);
   });
   root.appendChild(list);
+
+  /* ── Screenshot support (lazy-loads html2canvas) ── */
+  function ensureH2C(cb) {
+    if (window.html2canvas) { cb(); return; }
+    var s = document.getElementById('h2c-lib');
+    if (s) { s.addEventListener('load', function () { if (window.html2canvas) cb(); }); return; }
+    s = document.createElement('script'); s.id = 'h2c-lib';
+    s.src = 'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js';
+    s.onload = function () { if (window.html2canvas) cb(); };
+    (document.head || document.documentElement).appendChild(s);
+  }
+  function _dlBlob(blob, filename) {
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a'); a.href = url; a.download = filename;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+  }
+  // After capture, show a preview with a Save button. Saving from that fresh tap is
+  // what iOS needs for navigator.share -> Save to Photos.
+  function showShot(blob, filename) {
+    if (!blob) return;
+    var canShareFiles = false;
+    try { canShareFiles = !!(navigator.canShare && navigator.canShare({ files: [new File([blob], filename, { type: 'image/png' })] })); } catch (e) {}
+    var touch = (navigator.maxTouchPoints || 0) > 0 || ('ontouchstart' in window);
+    if (!(canShareFiles && touch)) { _dlBlob(blob, filename); return; }
+    var overlay = document.createElement('div'); overlay.className = 'tc-shot-overlay';
+    var img = document.createElement('img'); img.src = URL.createObjectURL(blob); overlay.appendChild(img);
+    function close() { try { URL.revokeObjectURL(img.src); } catch (e) {} if (overlay.parentNode) overlay.parentNode.removeChild(overlay); }
+    var actions = document.createElement('div'); actions.className = 'tc-shot-actions';
+    var save = document.createElement('button'); save.type = 'button'; save.className = 'tc-shot-btn tc-shot-save';
+    save.textContent = canShareFiles ? 'Save Image' : 'Download';
+    save.addEventListener('click', function () {
+      if (canShareFiles) {
+        var file = new File([blob], filename, { type: 'image/png' });
+        navigator.share({ files: [file] }).then(close).catch(function (err) {
+          if (err && err.name === 'AbortError') return;
+          _dlBlob(blob, filename); close();
+        });
+      } else { _dlBlob(blob, filename); close(); }
+    });
+    var closeB = document.createElement('button'); closeB.type = 'button'; closeB.className = 'tc-shot-btn tc-shot-close'; closeB.textContent = 'Close';
+    closeB.addEventListener('click', close);
+    overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+    actions.appendChild(save); actions.appendChild(closeB); overlay.appendChild(actions);
+    document.body.appendChild(overlay);
+  }
+  function captureRoot(rootEl, hideEls, filename) {
+    if (camBtn) camBtn.disabled = true;
+    ensureH2C(function () {
+      hideEls = hideEls || [];
+      hideEls.forEach(function (el) { if (el) el.setAttribute('data-cap-hide', '1'); });
+      function done() { hideEls.forEach(function (el) { if (el) el.removeAttribute('data-cap-hide'); }); if (camBtn) camBtn.disabled = false; }
+      // Render the clone at a desktop viewport width so mobile media queries don't
+      // apply — the screenshot looks the same as on desktop.
+      window.html2canvas(rootEl, {
+        backgroundColor: '#03030a', useCORS: true, scale: 2, logging: false,
+        windowWidth: 1000, windowHeight: Math.max(2000, window.innerHeight || 900),
+        onclone: function (doc) {
+          doc.querySelectorAll('[data-cap-hide]').forEach(function (el) { el.style.display = 'none'; });
+          if (doc.documentElement) doc.documentElement.style.width = '1000px';
+          if (doc.body) { doc.body.style.width = '1000px'; doc.body.style.margin = '0'; }
+        }
+      }).then(function (canvas) {
+        done();
+        canvas.toBlob(function (blob) { showShot(blob, filename); }, 'image/png');
+      }).catch(function (e) { done(); if (window.console) console.error('screenshot failed', e); });
+    });
+  }
+  var camBtn = document.createElement('button');
+  camBtn.type = 'button'; camBtn.id = 'tlCam';
+  camBtn.title = 'Screenshot'; camBtn.setAttribute('aria-label', 'Screenshot');
+  camBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>';
+  camBtn.addEventListener('click', function () {
+    var active = document.querySelector('.tl-mb.on');
+    var mode = active ? (active.getAttribute('data-m') || 'all') : 'all';
+    captureRoot(root, [searchEl, camBtn], 'fntd-tierlist-' + mode + '.png');
+  });
+  hdr.appendChild(camBtn);
 
   var mount = document.getElementById('tlMount');
   if (mount) {
@@ -807,9 +899,26 @@
     b.classList.add('on');
     mode = b.getAttribute('data-m');
     renderMode(mode);
+    _tlSyncUrl(mode);
   });
 
   document.getElementById('tlSearchInput').addEventListener('input', applySearch);
+
+  // Deep link: /fntd2/tierlists-1/<mode> opens that mode; switching modes reflects it in the URL.
+  function _tlSyncUrl(m) {
+    if (location.pathname.indexOf('tierlists-1') === -1) return;
+    var base = location.pathname.replace(/(tierlists-1)(\/.*)?$/, '$1');
+    var np = base + (m && m !== 'all' ? '/' + encodeURIComponent(m) : '');
+    try { history.replaceState(null, '', np + location.search + location.hash); } catch (e) {}
+  }
+  (function () {
+    var VALID = { all: 1, starter: 1, support: 1, stun: 1, slow: 1 };
+    var seg = (location.pathname.match(/tierlists-1\/([^\/?#]+)/) || [])[1];
+    if (seg) { seg = decodeURIComponent(seg).toLowerCase(); if (VALID[seg]) mode = seg; }
+    Array.prototype.forEach.call(document.querySelectorAll('.tl-mb'), function (x) {
+      x.classList.toggle('on', x.getAttribute('data-m') === mode);
+    });
+  })();
 
   renderMode(mode);
 

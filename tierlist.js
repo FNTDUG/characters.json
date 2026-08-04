@@ -14,7 +14,7 @@
         "Gaia Chica",
       ],
       "a": [
-		"Kronos Endo Freddy",
+        "Kronos Endo Freddy",
         "Frozen King Foxy",
         "Frostmancer Withered Bonnie",
         "Stormbound Chica",
@@ -22,7 +22,7 @@
         "Faz-ino Spring Bonnie",
         "Candy Cadet",
         "Dragon Endo 01",
-	    "Patient White Rabbit NEW",  
+        "Patient White Rabbit NEW",
         "Purifier Mercenary Toy Chica",
         "Witch of the Sea Scrapbaby",
         "Krampus Purple Guy",
@@ -49,21 +49,21 @@
         "Cannoneer Chica",
         "Rockin Bonnie",
         "Party Never Ends Cupcake",
-	    "Movie Director Freddy",
+        "Movie Director Freddy",
         "Fazcade",
         "Molten Freddy",
         "Shadow Knight Freddy",
         "Shadow Bonnie",
         "Goodnight Plushtime",
         "Fathomless Withered Foxy",
-		"Deadeye Freddy",
+        "Deadeye Freddy",
         "Blighted Endo Freddy",
         "Nightmare Fredbear",
         "Hag Withered Chica",
         "Handunit",
         "Sweetheart Toy Foxy",
         "Withered Freddy",
-		"Chicas Magic Rainbow",
+        "Chicas Magic Rainbow",
         "Lore Keeper Shadow Bonnie",
         "Mothman Lefty",
         "Aqua Strike Toy Chica",
@@ -100,7 +100,7 @@
         "Thanatos",
         "Gravelord Foxy",
         "No. 1 Crate",
-        "Devious Purple Guy", 
+        "Devious Purple Guy",
         "Slasher Bonnie",
         "Afterbite Withered Golden Freddy",
         "Super Soldier Foxy",
@@ -109,7 +109,7 @@
         "Arch Angler Toy Bonnie",
       ],
       "b": [
-	    "Bones of The Past Nightmare Freddy",
+        "Bones of The Past Nightmare Freddy",
         "Abyssal Ballora",
         "Yenndo",
         "Helpy",
@@ -139,7 +139,7 @@
         "Harlequin Mangle",
         "Freddles",
         "Phantom Bonnie",
-		"Vessel Plushtrap NEW",  
+        "Vessel Plushtrap NEW",
         "Dreadbear",
         "Puppet",
         "Rockstar Foxy",
@@ -323,7 +323,7 @@
         "Overgrown Foxy",
         "Commander Withered Freddy",
         "Mothman Lefty",
-		"Vessel Plushtrap NEW",  
+        "Vessel Plushtrap NEW",
         "Helpy",
         "Cupcake",
         "Popcorn Bot",
@@ -807,9 +807,26 @@
     b.classList.add('on');
     mode = b.getAttribute('data-m');
     renderMode(mode);
+    _tlSyncUrl(mode);
   });
 
   document.getElementById('tlSearchInput').addEventListener('input', applySearch);
+
+  // Deep link: /fntd2/tierlists-1/<mode> opens that mode; switching modes reflects it in the URL.
+  function _tlSyncUrl(m) {
+    if (location.pathname.indexOf('tierlists-1') === -1) return;
+    var base = location.pathname.replace(/(tierlists-1)(\/.*)?$/, '$1');
+    var np = base + (m && m !== 'all' ? '/' + encodeURIComponent(m) : '');
+    try { history.replaceState(null, '', np + location.search + location.hash); } catch (e) {}
+  }
+  (function () {
+    var VALID = { all: 1, starter: 1, support: 1, stun: 1, slow: 1 };
+    var seg = (location.pathname.match(/tierlists-1\/([^\/?#]+)/) || [])[1];
+    if (seg) { seg = decodeURIComponent(seg).toLowerCase(); if (VALID[seg]) mode = seg; }
+    Array.prototype.forEach.call(document.querySelectorAll('.tl-mb'), function (x) {
+      x.classList.toggle('on', x.getAttribute('data-m') === mode);
+    });
+  })();
 
   renderMode(mode);
 

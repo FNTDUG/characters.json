@@ -21457,7 +21457,7 @@
       },
       {
           "label": "Imperfect Vessel (AoE Attack)",
-          "pctofdamage": 2.00,
+          "pctofdamage": 5.00,
           "durationsec": 10,
           "cd": 30,
           "stun": 5,

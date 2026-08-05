@@ -4113,10 +4113,10 @@
           );
         }
 
-        if (["Fire", "Dark", "Dark/Light", "Fire/Rust", "Nature/Dark"].indexOf(unit.element) !== -1) {
+        if (["Fire", "Dark", "Dark/Light", "Fire/Rust", "Nature/Dark", "Dark/Water"].indexOf(unit.element) !== -1) {
           BOOST_OPTIONS.push(
             ["hhm", "Headless Horseman Mangle: Hallowed Pumpkin Realm (+85% DMG) [Fire & Dark]",
-              { dmgMult: 1.85, duration: 30, cd: 100, elements: ["Fire", "Dark", "Dark/Light", "Fire/Rust", "Nature/Dark"] }]
+              { dmgMult: 1.85, duration: 30, cd: 100, elements: ["Fire", "Dark", "Dark/Light", "Fire/Rust", "Nature/Dark", "Dark/Water"] }]
           );
         }
 

@@ -2415,7 +2415,9 @@ const COSMETICS = [
   { name: "Puppet",  type: "pet", imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/puppet-pet-render-high.png", rarity: "mythic",    category: "Cosmetics" },
   { name: "Mangle",  type: "pet", imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/mangle-pet-high-rv3hju.png", rarity: "epic",    category: "Cosmetics" },
   { name: "Deer Mangle",  type: "pet", imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/deer-mangle-high.png?enable-io=true&crop=1%3A1&width=1920", rarity: "secret",    category: "Cosmetics" },
-  { name: "Frogman Hoax Purple Guy",  type: "skin", imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/frogman-hoax-purple-guy-high.png?enable-io=true&crop=1%3A1&width=347", imgShiny: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-8rximn.png?enable-io=true&crop=1%3A1&width=347", rarity: "secret",    category: "Cosmetics" }
+  { name: "Frogman Hoax Purple Guy",  type: "skin", imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/frogman-hoax-purple-guy-high.png?enable-io=true&crop=1%3A1&width=347", imgShiny: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-8rximn.png?enable-io=true&crop=1%3A1&width=347", rarity: "secret",    category: "Cosmetics" },
+  { name: "Cucurella Freddy",  type: "pet", imgNormal: "https://tr.rbxcdn.com/180DAY-b6172211839718c47e8ec226ffe85d29/420/420/Image/Png/noFilter", rarity: "exclusive",    category: "Cosmetics" },
+
 ];
 
 const GAMEPASSES = [

@@ -7294,6 +7294,12 @@
         "changes": [
           { "type": "buff",   "text": "● DMG 225-300 (was 160-250)<br>● RNG 18-24 (was 16-21)" }
         ]
+      },
+      {
+        "date": "8/2/26",
+        "changes": [
+          { "type": "buff",   "text": "● Passive [Trick or Treat!] added" }
+        ]
       }
     ],
     "levels": [
@@ -7339,7 +7345,13 @@
         "cd": 3.8,
         "cost": 2500
       }
-    ]
+    ],
+     "passives": [
+      {
+        "title": "Trick or Treat!",
+        "text": "Every 30s picks between 3 random buffs (or debuffs!) to give to itself for 30 seconds. <br>• Increase damage by 15% <br>• Decrease cooldown by 10% <br>• Decrease damage by 5% and increase cooldown by 5%"
+      }
+     ]
   },
   {
     "name": "Jack'O Bonnie",

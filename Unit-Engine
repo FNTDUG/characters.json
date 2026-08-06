@@ -2775,21 +2775,21 @@
       };
 
         var ELEMENT_ICONS = {
-          Neutral:     "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-fri-jan-16-2026-15-45-56-gmt-0600-central-standard-time-high.png",
-          Nature:      "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-tue-jan-20-2026-18-29-59-gmt-0600-central-standard-time-high.png",
-          Fire:        "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-fri-jan-16-2026-15-46-18-gmt-0600-central-standard-time-high.png",
-          Water:       "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-fri-jan-16-2026-15-46-32-gmt-0600-central-standard-time-high.png",
-          Light:       "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-fri-jan-16-2026-15-46-05-gmt-0600-central-standard-time-high.png",
-          Dark:        "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-fri-jan-16-2026-15-46-11-gmt-0600-central-standard-time-high.png",
-          Rust:        "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-fri-jan-16-2026-15-46-47-gmt-0600-central-standard-time-high.png",
-          Electricity: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-fri-jan-16-2026-15-46-41-gmt-0600-central-standard-time-high.png",
-          "Dark/Light": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/image-high.webp?enable-io=true&crop=1%3A1&width=347",
-          "Electricity/Light": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/electricity-light-element-high.png",
-          "Fire/Rust": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/element_fire_rust-high.png",
-          "Nature/Rust": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/element_nature_rust-high.png",
-          "Nature/Dark": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/element_nature_dark-high.png",
-          "Dark/Water": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/element_dark_water-high.png?enable-io=true&crop=1%3A1&width=347",
-          "Water/Electricity": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/element_water_electricity-high.png?enable-io=true&crop=1%3A1&width=347"
+          Neutral:     "https://images.fntduserguide.com/neutralelement.webp",
+          Nature:      "https://images.fntduserguide.com/natureelement.webp",
+          Fire:        "https://images.fntduserguide.com/fireelement.webp",
+          Water:       "https://images.fntduserguide.com/waterelement.webp",
+          Light:       "https://images.fntduserguide.com/lightelement.webp",
+          Dark:        "https://images.fntduserguide.com/darkelement.webp",
+          Rust:        "https://images.fntduserguide.com/rustelement.webp",
+          Electricity: "https://images.fntduserguide.com/electricityelement.webp",
+          "Dark/Light": "https://images.fntduserguide.com/dark%3Alightelement.webp",
+          "Electricity/Light": "https://images.fntduserguide.com/electricity%3Alightelement.webp",
+          "Fire/Rust": "https://images.fntduserguide.com/fire%3Arustelement.webp",
+          "Nature/Rust": "https://images.fntduserguide.com/nature%3Arustelement.webp",
+          "Nature/Dark": "https://images.fntduserguide.com/nature%3Adarkelement.webp",
+          "Dark/Water": "https://images.fntduserguide.com/dark%3Awaterelement.webp",
+          "Water/Electricity": "https://images.fntduserguide.com/water%3Aelectricityelement.webp"
         };
 
         function getElementIcon(elementName) {

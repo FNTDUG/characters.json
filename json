@@ -7349,7 +7349,7 @@
      "passives": [
       {
         "title": "Trick or Treat!",
-        "text": "Every 30s picks between 3 random buffs (or debuffs!) to give to itself for 30 seconds. <br>• Increase damage by 15% <br>• Decrease cooldown by 10% <br>• Decrease damage by 5% and increase cooldown by 5%"
+        "text": "Every 30s picks between 3 random buffs (or debuffs!) to give to itself for 30 seconds. <br>• Increase Damage by 15% <br>• Decrease Cooldown by 10% <br>• Decrease Damage by 5% and increase Cooldown by 5%"
       }
      ]
   },

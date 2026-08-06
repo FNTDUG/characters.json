@@ -2934,7 +2934,7 @@
     "passives": [
       {
         "title": "Spellbound Cards",
-        "text": "Upon activation, draw a card from the spellbound deck of cards, costing 8000 cash and gaining either 1% range boost (20%) or 1% burn (capped at 20% of this unit's damage) (Upgrade 2+, Global CD: 60s).",
+        "text": "Upon activation, draw a card from the spellbound deck of cards, costing 8000 cash and gaining either 1% range boost (20%) or 1% burn (capped at 20% of this unit's damage) (Upgrade 2+, Local CD: 60s).",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-01-03-05-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920"
       }
     ],

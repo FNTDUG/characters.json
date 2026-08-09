@@ -12548,7 +12548,7 @@
     "element": "Neutral",
     "placements": 1,
     "attackType": "Multi",
-    "obtainment": "Normal Summons, Nightmare 0.01%",
+    "obtainment":  "Summons (0.01%)",
     "levels": [
       {
         "level": 1,
@@ -15378,7 +15378,7 @@
       {
         "date": "6/6/26",
         "changes": [
-          { "type": "buff",   "text": "Placement Cost 3.15k (was 900)" }
+          { "type": "nerf",   "text": "Placement Cost increased to 3.15k (was 900)" }
         ]
       }
     ],
@@ -21565,6 +21565,1601 @@
         "label": "Corrosive Substance",
         "pctofdamage": 0.50,
         "durationsec": 5
+      }
+    ]
+  }
+},
+{
+  "name": "Mr. Hippo",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-288f0ea793114fa72984c0f969bb883f/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-21621a4dea193e15b136b983e2f0d733/420/420/Image/Png/noFilter",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support",
+    "Wither"
+  ],
+  "element": "Neutral",
+  "placements": 2,
+  "attackType": "Multi",
+  "obtainment": "Season 6 Craftable Nightmare",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 6000,
+      "damage": 500,
+      "type": "Single",
+      "cd": 3.5,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 550,
+      "type": "Single",
+      "cd": 3.5,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 4000,
+      "damage": 675,
+      "type": "Single",
+      "cd": 3.3,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 750,
+      "type": "Single",
+      "cd": 3.3,
+      "range": 26
+    },
+    {
+      "level": 5,
+      "cost": 8000,
+      "damage": 800,
+      "type": "Single",
+      "cd": 3,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 10000,
+      "damage": 925,
+      "type": "Circle",
+      "cd": 3,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 12500,
+      "damage": 1100,
+      "type": "Circle",
+      "cd": 3,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Story Time",
+      "text": "Tell a story for up to 30 seconds. While active, all units gain 1% crit chance and crit damage per second, enemies in range receive 10% wither, and Mr. Hippo follows up on other units' crits. (5s cd) (Upgrade 0+, Local CD: 90s).",
+      "activeIcon": "https://tr.rbxcdn.com/180DAY-e93b712c119b1c18db8f763cf278ba73/420/420/Image/Png/noFilter"
+    },
+    {
+      "title": "Moral of the Story",
+      "text": "This unit gains +50% crit rate and +30% crit damage. Crits in range buff this unit's damage by +2% for 20 seconds (Max +100%). Units in range gain +5% crit rate and +10% crit damage. Mediocre Melodies receive +20% crit rate and +40% crit damage instead. After this unit crits 5 times deal 100% damage in a Full AOE. If all 5 crits were consecutive, this attack deals 150% damage and is guaranteed to crit"
+    }
+  ],
+  "skins": [
+      {
+        "name": "Magician Mr. Hippo",
+        "image": "https://iili.io/C4Xwx2I.webp",
+        "rarity": "exclusive"
+      }
+],
+"passiveDamage": {
+     "selfboost": [
+        {
+          "label": "Moral of the Story",
+          "critc": 0.3,
+          "critd": 2.50
+        },
+        {
+          "label": "Story Time",
+          "dmgmult": 1.10,
+          "duration": 15,
+          "cd": 90,
+          "cdboostable": false
+        }
+    ]
+}
+},
+{
+  "name": "Planet Buster Scott",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-9430b4c1e7c8fd3a2d1c5923d2e5e5cf/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-1631d9b9c53d116691da25e02ecf65a7/420/420/Image/Png/noFilter",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support",
+    "Slow",
+    "Stun",
+    "Wither"
+  ],
+  "element": "Universal",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Overlord Scott Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 12000,
+      "damage": 250,
+      "cd": 4,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 800,
+      "damage": 290,
+
+      "cd": 4,
+      "range": 19
+    },
+    {
+      "level": 3,
+      "cost": 1200,
+      "damage": 340,
+      "cd": 4,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 2000,
+      "damage": 400,
+      "cd": 4,
+      "range": 21
+    },
+    {
+      "level": 5,
+      "cost": 3000,
+      "damage": 480,
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 6,
+      "cost": 4500,
+      "damage": 580,
+      "cd": 4,
+      "range": 24
+    },
+    {
+      "level": 7,
+      "cost": 6500,
+      "damage": 700,
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 8,
+      "cost": 10000,
+      "damage": 850,
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 9,
+      "cost": 14000,
+      "damage": 1050,
+      "cd": 4,
+      "range": 28
+    },
+    {
+      "level": 10,
+      "cost": 19000,
+      "damage": 1300,
+      "cd": 4,
+      "range": 31
+    },
+    {
+      "level": 11,
+      "cost": 25000,
+      "damage": 1600,
+      "cd": 4,
+      "range": 35
+    }
+  ],
+  "passives": [
+    {
+      "title": "Creation Arc Galactic",
+      "text": "Detonate a supernova, dealing 800% damage to all enemies, applying 100% Burn over 15s, slowing by 25% for 30s, and causing enemies to take +25% damage from all sources for 10s. (Upgrade 0+, Local CD: 120s).",
+      "activeIcon": "https://tr.rbxcdn.com/180DAY-e952fe06a252044745306c1e311a17a5/420/420/Image/Png/noFilter"
+    },
+    {
+      "title": "Rage Quit",
+      "text": "Gain +1% Rage every second, +1% when an enemy enters range, +2% when this unit kills an enemy, and +20% when this unit is stunned. At 100% Rage, for 20 seconds reduce Cooldown by 20%, gain +30% Damage, and lose 25% Range. Reset Rage when the effect ends"
+    },
+    {
+      "title": "Planet Buster",
+      "text": "Attacks pull non-Boss enemies hit 1 stud toward the main target if they are on the same path. Enemies within 3 studs of the main target receive a follow-up hit for 50% damage"
+    },
+    {
+      "title": "Alarm",
+      "text": "Every 5 seconds deal 100% damage in a Full AOE and slow enemies hit by 25% for 5 seconds"
+    },
+    {
+      "title": "The Creator",
+      "text": "For every enemy on the map gain +5% damage. Nearby units gain +1% damage and range"
+    },
+    {
+      "title": "Overlord's Pressure",
+      "text": "Attacks stun enemies for 2 seconds and deal +25% damage to enemies in stun lockout"
+    },
+    {
+      "title": "4th Wall",
+      "text": "When an enemy tries to leave this unit's range fire a 4th Wall in a line for 250% damage. Every 4th attack fire a 4th Wall toward the last enemy in range for 250% damage. After every 4th Wall activation permanently gain +5% damage (Max +50%)"
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Creation (Wither)",
+        "dmgmult": 1.25,
+        "duration": 10,
+        "cd": 120,
+        "cdboostable": false
+      },
+      {
+        "label": "Rage Quit",
+        "dmgmult": 1.30,
+        "cdmult": 0.80,
+        "rngmult": 0.75,
+        "duration": 20,
+        "cd": 25,
+        "cdboostable": false
+      },
+      {
+        "label": "The Creator (1)",
+        "dmgmult": 1.05
+      },
+      {
+        "label": "4th Wall (Boost)",
+        "dmgmult": 1.50
+      }
+    ],
+    "periodic": [
+      {
+        "label": "Alarm",
+        "pctofdamage": 1.00,
+        "cd": 5,
+        "cdboostable": false,
+        "cdscope": "local"
+      },
+      {
+        "label": "Creation (Activation)",
+        "pctofdamage": 8.00,
+        "cd": 120,
+        "cdboostable": false
+      },
+      {
+        "label": "Planet Buster (Follow-up)",
+        "pctofdamage": 0.50,
+        "cd": 4,
+        "cdboostable": true
+      },
+      {
+        "label": "4th Wall",
+        "pctofdamage": 2.50,
+        "cd": 16,
+        "cdboostable": true
+      }
+    ],
+    "dots": [
+      {
+        "label": "Creation (DoT)",
+        "pctofdamage": 1.00,
+        "durationsec": 15,
+        "cd": 120,
+        "cdboostable": false
+      }
+    ]
+  }
+},
+{
+  "name": "Overlord Scott",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-75ef2cd862d6a13c187c0e5e3c18d639/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-f3b312e4bcf42366fcb59e71333d1d25/420/420/Image/Png/noFilter",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support",
+    "Slow",
+    "Stun"
+  ],
+  "element": "Electricity",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Theory Crusher Scott Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 8500,
+      "damage": 250,
+      "cd": 4,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 800,
+      "damage": 290,
+      "cd": 4,
+      "range": 19
+    },
+    {
+      "level": 3,
+      "cost": 1200,
+      "damage": 340,
+      "cd": 4,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 2000,
+      "damage": 400,
+      "cd": 4,
+      "range": 21
+    },
+    {
+      "level": 5,
+      "cost": 3000,
+      "damage": 480,
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 6,
+      "cost": 4500,
+      "damage": 580,
+      "cd": 4,
+      "range": 24
+    },
+    {
+      "level": 7,
+      "cost": 6500,
+      "damage": 700,
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 8,
+      "cost": 10000,
+      "damage": 850,
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 9,
+      "cost": 14000,
+      "damage": 1050,
+      "cd": 4,
+      "range": 28
+    },
+    {
+      "level": 10,
+      "cost": 19000,
+      "damage": 1300,
+      "cd": 4,
+      "range": 31
+    }
+  ],
+  "passives": [
+    {
+      "title": "Rage Quit",
+      "text": "Gain +1% Rage every second, +1% when an enemy enters range, +2% when this unit kills an enemy, and +20% when this unit is stunned. At 100% Rage, for 20 seconds reduce Cooldown by 20%, gain +30% Damage, and lose 25% Range. Reset Rage when the effect ends"
+    },
+    {
+      "title": "Alarm",
+      "text": "Every 5 seconds deal 100% damage in a Full AOE and slow enemies hit by 25% for 5 seconds"
+    },
+    {
+      "title": "The Creator",
+      "text": "For every enemy on the map gain +5% damage. Nearby units gain +1% damage and range"
+    },
+    {
+      "title": "Overlord's Pressure",
+      "text": "Attacks stun enemies for 2 seconds and deal +25% damage to enemies in stun lockout"
+    },
+    {
+      "title": "4th Wall",
+      "text": "When an enemy tries to leave this unit's range fire a 4th Wall in a line for 250% damage. Every 4th attack fire a 4th Wall toward the last enemy in range for 250% damage. After every 4th Wall activation permanently gain +5% damage (Max +50%)"
+    }
+  ],
+    "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Rage Quit",
+        "dmgmult": 1.30,
+        "cdmult": 0.80,
+        "rngmult": 0.75,
+        "duration": 20,
+        "cd": 25,
+        "cdboostable": false
+      },
+      {
+        "label": "The Creator (1)",
+        "dmgmult": 1.05
+      },
+      {
+        "label": "4th Wall (Boost)",
+        "dmgmult": 1.50
+      }
+    ],
+    "periodic": [
+      {
+        "label": "Alarm",
+        "pctofdamage": 1.00,
+        "cd": 5,
+        "cdboostable": false,
+        "cdscope": "local"
+      },
+      {
+        "label": "4th Wall",
+        "pctofdamage": 2.50,
+        "cd": 16,
+        "cdboostable": true
+      }
+    ]
+  }
+},
+{
+  "name": "Theory Crusher Scott",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-3854dfd21a7a3daa8a839b2ec3289f93/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-26b3fc49501bfa3a38d59f165a02932b/420/420/Image/Png/noFilter",
+  "rarity": "mythic",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support",
+    "Slow"
+  ],
+  "element": "Electricity",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Ragequit Scott Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 6000,
+      "damage": 250,
+      "cd": 4,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 800,
+      "damage": 290,
+      "cd": 4,
+      "range": 19
+    },
+    {
+      "level": 3,
+      "cost": 1200,
+      "damage": 340,
+      "cd": 4,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 2000,
+      "damage": 400,
+      "cd": 4,
+      "range": 21
+    },
+    {
+      "level": 5,
+      "cost": 3000,
+      "damage": 480,
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 6,
+      "cost": 4500,
+      "damage": 580,
+      "cd": 4,
+      "range": 24
+    },
+    {
+      "level": 7,
+      "cost": 6500,
+      "damage": 700,
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 8,
+      "cost": 10000,
+      "damage": 850,
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 9,
+      "cost": 14000,
+      "damage": 1050,
+      "cd": 4,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Rage Quit",
+      "text": "Gain +1% Rage every second, +1% when an enemy enters range, +2% when this unit kills an enemy, and +20% when this unit is stunned. At 100% Rage, for 20 seconds reduce Cooldown by 20%, gain +30% Damage, and lose 25% Range. Reset Rage when the effect ends"
+    },
+    {
+      "title": "Alarm",
+      "text": "Every 5 seconds deal 100% damage in a Full AOE and slow enemies hit by 25% for 5 seconds"
+    },
+    {
+      "title": "The Creator",
+      "text": "For every enemy on the map gain +5% damage. Nearby units gain +1% damage and range"
+    },
+    {
+      "title": "4th Wall",
+      "text": "When an enemy tries to leave this unit's range fire a 4th Wall in a line for 250% damage. Every 4th attack fire a 4th Wall toward the last enemy in range for 250% damage. After every 4th Wall activation permanently gain +5% damage (Max +50%)"
+    }
+  ],
+      "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Rage Quit",
+        "dmgmult": 1.30,
+        "cdmult": 0.80,
+        "rngmult": 0.75,
+        "duration": 20,
+        "cd": 25,
+        "cdboostable": false
+      },
+      {
+        "label": "The Creator (1)",
+        "dmgmult": 1.05
+      },
+      {
+        "label": "4th Wall (Boost)",
+        "dmgmult": 1.50
+      }
+    ],
+    "periodic": [
+      {
+        "label": "Alarm",
+        "pctofdamage": 1.00,
+        "cd": 5,
+        "cdboostable": false,
+        "cdscope": "local"
+      },
+      {
+        "label": "4th Wall",
+        "pctofdamage": 2.50,
+        "cd": 16,
+        "cdboostable": true
+      }
+    ]
+  }
+},
+{
+  "name": "Ragequit Scott",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-fa2d301021e589085594b398517d68fa/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-64c85e7522b1ed9bf18412d0eaad52a8/420/420/Image/Png/noFilter",
+  "rarity": "epic",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Slow"
+  ],
+  "element": "Electricity",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Scott Cawthon Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 4000,
+      "damage": 250,
+      "cd": 4,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 800,
+      "damage": 290,
+      "cd": 4,
+      "range": 19
+    },
+    {
+      "level": 3,
+      "cost": 1200,
+      "damage": 340,
+      "cd": 4,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 2000,
+      "damage": 400,
+      "cd": 4,
+      "range": 21
+    },
+    {
+      "level": 5,
+      "cost": 3000,
+      "damage": 480,
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 6,
+      "cost": 4500,
+      "damage": 580,
+      "cd": 4,
+      "range": 24
+    },
+    {
+      "level": 7,
+      "cost": 6500,
+      "damage": 700,
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 8,
+      "cost": 10000,
+      "damage": 850,
+      "cd": 4,
+      "range": 26
+    }
+  ],
+  "passives": [
+    {
+      "title": "Rage Quit",
+      "text": "Gain +1% Rage every second, +1% when an enemy enters range, +2% when this unit kills an enemy, and +20% when this unit is stunned. At 100% Rage, for 20 seconds reduce Cooldown by 20%, gain +30% Damage, and lose 25% Range. Reset Rage when the effect ends"
+    },
+    {
+      "title": "Alarm",
+      "text": "Every 5 seconds deal 100% damage in a Full AOE and slow enemies hit by 25% for 5 seconds"
+    },
+    {
+      "title": "4th Wall",
+      "text": "When an enemy tries to leave this unit's range fire a 4th Wall in a line for 250% damage. Every 4th attack fire a 4th Wall toward the last enemy in range for 250% damage. After every 4th Wall activation permanently gain +5% damage (Max +50%)"
+    }
+  ],
+      "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Rage Quit",
+        "dmgmult": 1.30,
+        "cdmult": 0.80,
+        "rngmult": 0.75,
+        "duration": 20,
+        "cd": 25,
+        "cdboostable": false
+      },
+      {
+        "label": "4th Wall (Boost)",
+        "dmgmult": 1.50
+      }
+    ],
+    "periodic": [
+      {
+        "label": "Alarm",
+        "pctofdamage": 1.00,
+        "cd": 5,
+        "cdboostable": false,
+        "cdscope": "local"
+      },
+      {
+        "label": "4th Wall",
+        "pctofdamage": 2.50,
+        "cd": 16,
+        "cdboostable": true
+      }
+    ]
+  }
+},
+{
+  "name": "Scott Cawthon",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-740747fae009849e6ff58030617cf4f7/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-740747fae009849e6ff58030617cf4f7/420/420/Image/Png/noFilter",
+  "rarity": "rare",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Slow"
+  ],
+  "element": "Electricity",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Scott Plushie Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2500,
+      "damage": 250,
+      "cd": 4,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 800,
+      "damage": 290,
+      "cd": 4,
+      "range": 19
+    },
+    {
+      "level": 3,
+      "cost": 1200,
+      "damage": 340,
+      "cd": 4,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 2000,
+      "damage": 400,
+      "cd": 4,
+      "range": 21
+    },
+    {
+      "level": 5,
+      "cost": 3000,
+      "damage": 480,
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 6,
+      "cost": 4500,
+      "damage": 580,
+      "cd": 4,
+      "range": 24
+    },
+    {
+      "level": 7,
+      "cost": 6500,
+      "damage": 700,
+      "cd": 4,
+      "range": 26
+    }
+  ],
+  "passives": [
+    {
+      "title": "Alarm",
+      "text": "Every 5 seconds deal 100% damage in a Full AOE and slow enemies hit by 25% for 5 seconds"
+    },
+    {
+      "title": "4th Wall",
+      "text": "When an enemy tries to leave this unit's range fire a 4th Wall in a line for 250% damage. Every 4th attack fire a 4th Wall toward the last enemy in range for 250% damage. After every 4th Wall activation permanently gain +5% damage (Max +50%)"
+    }
+  ],
+      "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "4th Wall (Boost)",
+        "dmgmult": 1.50
+      }
+    ],
+    "periodic": [
+      {
+        "label": "Alarm",
+        "pctofdamage": 1.00,
+        "cd": 5,
+        "cdboostable": false,
+        "cdscope": "local"
+      },
+      {
+        "label": "4th Wall",
+        "pctofdamage": 2.50,
+        "cd": 16,
+        "cdboostable": true
+      }
+    ]
+  }
+},
+{
+  "name": "Scott Plushie",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-cb1ec2b7d57b18f00a0d65acbf6a4cf1/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-cb1ec2b7d57b18f00a0d65acbf6a4cf1/420/420/Image/Png/noFilter",
+  "rarity": "uncommon",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Slow"
+  ],
+  "element": "Electricity",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Anniversary Present (0.1%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 1500,
+      "damage": 250,
+      "cd": 4,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 800,
+      "damage": 290,
+      "cd": 4,
+      "range": 19
+    },
+    {
+      "level": 3,
+      "cost": 1200,
+      "damage": 340,
+      "cd": 4,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 2000,
+      "damage": 400,
+      "cd": 4,
+      "range": 21
+    },
+    {
+      "level": 5,
+      "cost": 3000,
+      "damage": 480,
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 6,
+      "cost": 4500,
+      "damage": 580,
+      "cd": 4,
+      "range": 24
+    }
+  ],
+  "passives": [
+    {
+      "title": "Alarm",
+      "text": "Every 5 seconds deal 100% damage in a Full AOE and slow enemies hit by 25% for 5 seconds"
+    }
+  ],
+      "passiveDamage": {
+    "periodic": [
+      {
+        "label": "Alarm",
+        "pctofdamage": 1.00,
+        "cd": 5,
+        "cdboostable": false,
+        "cdscope": "local"
+      }
+    ]
+  }
+},
+{
+  "name": "Nightguard Afton",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-c629403f842378334c58a2902129e0af/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-9e19347141e6b2fbc1122e5461bb1b62/420/420/Image/Png/noFilter",
+  "rarity": "exclusive",
+  "typeMain": "Endgame",
+  "typeTags": [],
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Cone45°",
+  "obtainment": "Season 6 Exclusive Pack",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 4500,
+      "damage": 200,
+      "cd": 2,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 300,
+      "cd": 2.5,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 4000,
+      "damage": 420,
+      "cd": 3,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 500,
+      "cd": 3,
+      "range": 27
+    },
+    {
+      "level": 5,
+      "cost": 8500,
+      "damage": 650,
+      "cd": 4,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 11000,
+      "damage": 850,
+      "cd": 4,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 13500,
+      "damage": 1150,
+      "cd": 4,
+      "range": 30
+    },
+    {
+      "level": 8,
+      "cost": 17000,
+      "damage": 1600,
+      "cd": 4,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Never Ending Cycle",
+      "text": "This unit gains +5% damage per unique type of enemy hit and deals +20% damage to enemy types it has hit 10+ times. The first time this unit is stunned, gain +25% damage and range. Ignores 75% of enemy damage reduction"
+    },
+    {
+      "title": "Phantom Shackles",
+      "text": "For the first 5 waves this unit is placed gain +100% cooldown and -20% damage. After 5 waves have passed remove the debuffs and gain +50% damage and +20% range, increase this unit's AOE by 20, and apply 30% burn"
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Never Ending Cycle (max)",
+        "dmgmult": 1.40
+      },
+      {
+        "label": "Phantom Shackles (boost)",
+        "dmgmult": 1.50,
+        "rngmult": 1.20
+      }
+    ],
+    "dots": [
+      {
+        "label": "Phantom Shackles (DoT)",
+        "pctofdamage": 0.30
+      }
+    ]
+}
+},
+{
+  "name": "Into the Pit Spring Bonnie",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-7feb568717a428827f8adfb67f231a85/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-b77909662c3457f26663bcdceb37cf47/420/420/Image/Png/noFilter",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Stun"
+  ],
+  "element": "Dark",
+  "placements": 2,
+  "attackType": "Line",
+  "obtainment": "Summons (0.01%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 6000,
+      "damage": 500,
+      "cd": 5,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 600,
+      "cd": 5,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 6000,
+      "damage": 800,
+      "cd": 5,
+      "range": 27
+    },
+    {
+      "level": 4,
+      "cost": 8500,
+      "damage": 1150,
+      "cd": 5,
+      "range": 29
+    },
+    {
+      "level": 5,
+      "cost": 11500,
+      "damage": 1300,
+      "cd": 4,
+      "range": 31
+    },
+    {
+      "level": 6,
+      "cost": 15000,
+      "damage": 1800,
+      "cd": 4,
+      "range": 34
+    }
+  ],
+  "passives": [
+    {
+      "title": "Into the Pit",
+      "text": "After completing 8 attacks drag the highest-HP enemy in range into the pit, stun it for 5 seconds, and apply 150% [Bleed] over 5 seconds. Units can continue attacking the enemy while it is in the pit. After 5 seconds apply [Scarred] for 15 seconds An enemy can only be dragged into the pit once. [Scarred]: Non-boss enemies lose 0.25% of their max HP every second. If this unit does not attack for 10 seconds, its attack bar resets."
+    }
+  ],
+  "passiveDamage": {
+    "dots": [
+      {
+        "label": "Into the Pit (DoT)",
+        "pctofdamage": 1.50,
+        "durationsec": 5,
+        "cd": 24,
+        "cdboostable": true
+      }
+    ]
+}
+},
+{
+  "name": "Happy Frog",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-a6419923a8a98a5969a43c8366859656/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-3b2592b495bc95d2963ffdcc2bfe2730/420/420/Image/Png/noFilter",
+  "rarity": "secret",
+  "typeMain": "Starter",
+  "element": "Neutral",
+  "placements": 3,
+  "attackType": "Cone35°",
+  "obtainment": "Season 6 Present (0.05%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 500,
+      "damage": 150,
+      "cd": 2.8,
+      "range": 17
+    },
+    {
+      "level": 2,
+      "cost": 350,
+      "damage": 175,
+      "cd": 2.8,
+      "range": 18
+    },
+    {
+      "level": 3,
+      "cost": 600,
+      "damage": 200,
+      "cd": 2.6,
+      "range": 19
+    },
+    {
+      "level": 4,
+      "cost": 900,
+      "damage": 240,
+      "cd": 2.6,
+      "range": 21
+    },
+    {
+      "level": 5,
+      "cost": 1400,
+      "damage": 290,
+      "cd": 2.4,
+      "range": 23
+    },
+    {
+      "level": 6,
+      "cost": 2000,
+      "damage": 350,
+      "cd": 2.4,
+      "range": 25
+    }
+  ],
+  "passives": [
+    {
+      "title": "Shadow Leap",
+      "text": "After defeating 8 enemies, enter [Frenzy] for 30 seconds. During [Frenzy] cooldown is reduced by 30% and damage is reduced by 20%. Defeated enemies determine [Stealth] duration. When [Frenzy] ends enter [Stealth] for 0.5 seconds per enemy defeated (Max 10 seconds). Cannot attack during [Stealth]. Gain +50% damage every second in [Stealth] (Max +500%). When [Stealth] ends the next attack deals the stored bonus damage. Enemies hit are slowed by 25% for 3 seconds. Cannot enter [Frenzy] again for 60 seconds"
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Shadow Leap (Frenzy)",
+        "dmgmult": 0.80,
+        "cdmult": 0.70,
+        "duration": 30,
+        "cd": 60
+      },
+      {
+        "label": "Shadow Leap (Stealth)",
+        "dmgmult": 5.00,
+        "stun": 10
+      }
+    ]
+  }
+},
+{
+  "name": "Vengeful Spirit",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-2f807bd6fb959d9b5863e45ac5fcf7af/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-2f807bd6fb959d9b5863e45ac5fcf7af/420/420/Image/Png/noFilter",
+  "rarity": "hero",
+  "typeMain": "Midgame-Endgame",
+  "typeTags": [
+    "Support",
+    "Slow"
+  ],
+  "element": "Dark/Neutral",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Hero Quest 8",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 3000,
+      "damage": 750,
+      "type": "Circle",
+      "cd": 6,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 3800,
+      "damage": 850,
+      "type": "Circle",
+      "cd": 6,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 4200,
+      "damage": 900,
+      "type": "Circle",
+      "cd": 6,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 4600,
+      "damage": 950,
+      "type": "Circle",
+      "cd": 6,
+      "range": 26
+    },
+    {
+      "level": 5,
+      "cost": 4900,
+      "damage": 1000,
+      "type": "Circle",
+      "cd": 5.8,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 5300,
+      "damage": 1100,
+      "type": "Circle",
+      "cd": 5.8,
+      "range": 26
+    },
+    {
+      "level": 7,
+      "cost": 5700,
+      "damage": 1200,
+      "type": "Circle",
+      "cd": 5.8,
+      "range": 26
+    },
+    {
+      "level": 8,
+      "cost": 6100,
+      "damage": 1300,
+      "type": "Circle",
+      "cd": 5.8,
+      "range": 27
+    },
+    {
+      "level": 9,
+      "cost": 6600,
+      "damage": 1350,
+      "type": "Circle",
+      "cd": 5.8,
+      "range": 27
+    },
+    {
+      "level": 10,
+      "cost": 7000,
+      "damage": 1400,
+      "type": "Cone 60°",
+      "cd": 5.6,
+      "range": 27
+    },
+    {
+      "level": 11,
+      "cost": 8600,
+      "damage": 1450,
+      "type": "Cone 60°",
+      "cd": 5.6,
+      "range": 28
+    },
+    {
+      "level": 12,
+      "cost": 8900,
+      "damage": 1500,
+      "type": "Cone 60°",
+      "cd": 5.6,
+      "range": 28
+    },
+    {
+      "level": 13,
+      "cost": 9200,
+      "damage": 1550,
+      "type": "Cone 60°",
+      "cd": 5.6,
+      "range": 28
+    },
+    {
+      "level": 14,
+      "cost": 9500,
+      "damage": 1600,
+      "type": "Cone 60°",
+      "cd": 5.4,
+      "range": 28
+    },
+    {
+      "level": 15,
+      "cost": 9600,
+      "damage": 1650,
+      "type": "Cone 60°",
+      "cd": 5.4,
+      "range": 29
+    },
+    {
+      "level": 16,
+      "cost": 9700,
+      "damage": 1700,
+      "type": "Cone 60°",
+      "cd": 5.2,
+      "range": 29
+    },
+    {
+      "level": 17,
+      "cost": 9700,
+      "damage": 1750,
+      "type": "Cone 60°",
+      "cd": 5.2,
+      "range": 29
+    },
+    {
+      "level": 18,
+      "cost": 10000,
+      "damage": 1800,
+      "type": "Cone 60°",
+      "cd": 5.2,
+      "range": 29
+    },
+    {
+      "level": 19,
+      "cost": 10000,
+      "damage": 1850,
+      "type": "Cone 60°",
+      "cd": 5,
+      "range": 30
+    },
+    {
+      "level": 20,
+      "cost": 11000,
+      "damage": 1900,
+      "type": "Cone 120°",
+      "cd": 5,
+      "range": 31
+    },
+    {
+      "level": 21,
+      "cost": 11000,
+      "damage": 2000,
+      "type": "Cone 120°",
+      "cd": 5,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Playtime",
+      "text": "For 30s, enemies are constantly set to 50 Marks that cannot be reduced. Gain +20% damage and follow up each attack with a Full AOE attack for 50% damage. (Upgrade 0+, Local CD: 90).",
+      "activeIcon": "https://tr.rbxcdn.com/180DAY-7b3a2454cb4ea3391d19ec7337889360/420/420/Image/Png/noFilter"
+    },
+    {
+      "title": "Hell of Your Own Making",
+      "text": "Neutral and Dark element units Gain +20% damage and +20% range and apply 5 Marks on hit divided by their max placements (Max 50). <br> When this unit attacks a Marked enemy consume Marks and:<br>• Apply bleed equal to the Marks consumed over 3s. <br>• Apply Dark and Neutral Wither equal to half the Marks consumed for 20s. <br>• Increase this attack's critical damage by the Marks consumed. <br>• Gain +2% damage and crit rate on the next attack per Mark consumed."
+    },
+    {
+      "title": "You're Not Going Anywhere",
+      "text": "Enemies in range are slowed by 20%. Slow increases by 1% every 3s (Max 30%). <br>When an enemy tries to leave this unit's range: <br>• Follow up with a Full AOE attack for 25% damage (3s cooldown). <br>• Stun the escaping enemy for 2s and all other enemies hit for 1s. <br>• Buff Dark and Neutral units by +20% damage for 15s."
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Playtime (Boost)",
+        "dmgmult": 1.20,
+        "duration": 30,
+        "cd": 90,
+        "cdboostable": false
+      },
+           {
+        "label": "Playtime (Follow-up)",
+        "dmgmult": 1.50,
+        "duration": 30,
+        "cd": 90,
+        "cdboostable": false
+      }
+    ],
+    "periodic": [
+      {
+        "label": "Not Going Anywhere",
+        "pctofdamage": 0.25,
+        "cd": 3,
+        "cdboostable": false
+      }
+    ]
+  }
+},
+{
+  "name": "Dee Dee",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-32c1bbd0435c1f26d41a76da2cfe5511/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-ced767d7f2a06add7151b17e2779e83b/420/420/Image/Png/noFilter",
+  "rarity": "exclusive",
+  "typeMain": "Midgame",
+  "element": "Neutral",
+  "placements": 1,
+  "attackType": "Cone90°",
+  "obtainment": "Season 6 Starter Pack",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 3500,
+      "damage": 400,
+      "cd": 3,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 475,
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 4000,
+      "damage": 525,
+      "cd": 2.8,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 5500,
+      "damage": 625,
+      "cd": 2.8,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 7500,
+      "damage": 700,
+      "cd": 2.5,
+      "range": 30
+    },
+    {
+      "level": 6,
+      "cost": 10000,
+      "damage": 850,
+      "cd": 2.5,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 14000,
+      "damage": 1050,
+      "cd": 2.5,
+      "range": 32
+    },
+    {
+      "level": 8,
+      "cost": 14000,
+      "damage": 1300,
+      "cd": 2.5,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Uh-Oh! How Unfortunate!",
+      "text": "Every 5 waves spawn a boss with 500% of this unit's damage as health. The boss does not count for kills or damage and does not affect base health. When this boss dies deal 250% of this unit's damage in a large AOE. Buff this unit's damage by 50% for 60 seconds"
+    },
+    {
+      "title": "Variety is the Spice of Life",
+      "text": "For every Neutral or unique element unit on the team buff this unit's damage by 10% (Max 50%). This unit's attack type randomly swaps between Full AOE, Circle, and Cone 90."
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Variety",
+        "dmgmult": 1.10
+      }
+    ]
+  }
+},
+{
+  "name": "Phone Guy",
+  "imgNormal": "",
+  "imgShiny": "",
+  "rarity": "secret",
+  "typeMain": "",
+  "typeTags": [],
+  "element": "Electricity",
+  "placements": 1,
+  "attackType": "Single",
+  "obtainment": "Season 6 Pass Free Tier 50",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 10000,
+      "damage": 140,
+      "cd": 0.3,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 5000,
+      "damage": 155,
+      "cd": 0.3,
+      "range": 22
+    },
+    {
+      "level": 3,
+      "cost": 7500,
+      "damage": 165,
+      "cd": 0.28,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 10000,
+      "damage": 185,
+      "cd": 0.28,
+      "range": 26
+    },
+    {
+      "level": 5,
+      "cost": 12500,
+      "damage": 205,
+      "cd": 0.28,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 15000,
+      "damage": 215,
+      "cd": 0.25,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 17500,
+      "damage": 235,
+      "cd": 0.25,
+      "range": 32
+    },
+    {
+      "level": 8,
+      "cost": 20000,
+      "damage": 260,
+      "cd": 0.25,
+      "range": 36
+    },
+    {
+      "level": 9,
+      "cost": 25000,
+      "damage": 300,
+      "cd": 0.25,
+      "range": 40
+    }
+  ],
+  "passives": [
+    {
+      "title": "Under My Watchful Eye",
+      "text": "After each kill, Phone Guy's TV switches cameras and prepares the next attack <br>• Freddy: Apply 25% [Slow] to enemies in range. <br>• Chica: Change the next attack to [Ricochet]. <br>• Foxy: Apply 15% [Wither] and 75% [Bleed] over 5s to all enemies. <br>• Bonnie: On hit, reduce the cooldown of units in range by 5% for 15s. <br>After all four cameras are used deal 200% damage to all enemies and The TV goes static for 25s"
+    }
+  ]
+},
+{
+  "name": "Anniversary Duo",
+  "imgNormal": "",
+  "imgShiny": "",
+  "rarity": "secret",
+  "typeMain": "",
+  "typeTags": [],
+  "element": "Light",
+  "placements": 1,
+  "attackType": "Cone90°",
+  "obtainment": "Anniversary Present (0.1%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 8000,
+      "damage": 400,
+      "cd": 3,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 5000,
+      "damage": 525,
+      "cd": 3,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 7500,
+      "damage": 675,
+      "cd": 2.8,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 10000,
+      "damage": 850,
+      "cd": 2.8,
+      "range": 26
+    },
+    {
+      "level": 5,
+      "cost": 15000,
+      "damage": 1000,
+      "cd": 2.5,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 20000,
+      "damage": 1250,
+      "cd": 2.5,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "The Grand Celebration",
+      "text": "Attacks apply 10% Light element Wither. Anniversary Balloon Boy counts this Wither as 30%. For every Light element unit on the team Gain +10% damage"
+    },
+    {
+      "title": "Party Planners",
+      "text": "If Anniversary Balloon Boy is in range Anniversary Balloon Boy follows up every other attack for 50% damage"
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Party Planners (Wither)",
+        "dmgmult": 1.10
+      },
+      {
+        "label": "Party Planners (Boost)",
+        "dmgmult": 1.10
       }
     ]
   }

@@ -12,7 +12,8 @@
       "UFO":        { "url": "https://images.fntduserguide.com/ufo-byte.png", "rarity": "secret",         "note": "Gives units any element boost and increases active ability DMG" },
       "KABOOM!":    { "url": "https://images.fntduserguide.com/kaboom!-byte.png", "rarity": "mythic",     "note": "Changes attack type to Circle and increases RNG" },
       "Pearl":      { "url": "https://images.fntduserguide.com/pearl-byte.png", "rarity": "secret",       "note": "Increases income" },
-      "Neon Bee":   { "url": "https://images.fntduserguide.com/neonbee.png", "rarity": "mythic",          "note": "Increases DoT DMG, DoT duration, and DMG per unique DoT on an Enemy" }
+      "Neon Bee":   { "url": "https://images.fntduserguide.com/neonbee.png", "rarity": "mythic",          "note": "Increases DoT DMG, DoT duration, and DMG per unique DoT on an Enemy" },
+      "Medpod":     { "url": "https://images.fntduserguide.com/medpod.webps", "rarity": "mythic",          "note": "Decreases Regen on nearby enemies" },
     },
 
     "enchants": {
@@ -41,7 +42,8 @@
       "Crowd Culler": { "url": "https://images.fntduserguide.com/Crowd-Culler-chip.png", "rarity": "nightmare", "note": "+5% DMG per enemy in range (max of +25%)" },
       "Weak Point": { "url": "https://images.fntduserguide.com/weak-point-chip.png", "rarity": "nightmare", "note": "+15% CritR, +30% CritD" },
       "Eye Augmentation": { "url": "https://images.fntduserguide.com/Eye-Augmentation-chip.png", "rarity": "nightmare", "note": "+15% RNG, +10% DMG" },
-      "Blazing Fire": { "url": "https://images.fntduserguide.com/blazing-fire-chip.png", "rarity": "nightmare", "note": "+20% DoT DMG, when burn is applied +20% DMG for 10s" }
+      "Blazing Fire": { "url": "https://images.fntduserguide.com/blazing-fire-chip.png", "rarity": "nightmare", "note": "+20% DoT DMG, when burn is applied +20% DMG for 10s" },
+      "Serrated Edge": { "url": "https://images.fntduserguide.com/Serrated%20Edge.webps", "rarity": "nightmare", "note": "+30% Bleed DMG, when bleed is applied +5% DMG and +15% RNG for 10s" }
     }
   },
 

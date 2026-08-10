@@ -21655,7 +21655,7 @@
   "skins": [
       {
         "name": "Magician Mr. Hippo",
-        "image": "https://iili.io/C4Xwx2I.webp",
+        "image": "https://tr.rbxcdn.com/180DAY-3a584d370f6cc57df108d6f8582b3a5c/420/420/Image/Png/noFilter",
         "rarity": "exclusive"
       }
 ],
@@ -21692,6 +21692,12 @@
   "placements": 1,
   "attackType": "Circle",
   "obtainment": "Overlord Scott Evolution",
+  "voicelines": [
+      {
+        "title": "Placement",
+        "url": "https://sounds.fntduserguide.com/ltsqueeks-pbs-placement1.mp3"
+      }
+    ],
   "levels": [
     {
       "level": 1,
@@ -21818,8 +21824,9 @@
         "cdmult": 0.80,
         "rngmult": 0.75,
         "duration": 20,
-        "cd": 25,
-        "cdboostable": false
+        "cd": 70,
+        "cdboostable": false,
+        "uptime": false
       },
       {
         "label": "The Creator (1)",
@@ -21985,8 +21992,9 @@
         "cdmult": 0.80,
         "rngmult": 0.75,
         "duration": 20,
-        "cd": 25,
-        "cdboostable": false
+        "cd": 70,
+        "cdboostable": false,
+        "uptime": false
       },
       {
         "label": "The Creator (1)",
@@ -22119,8 +22127,9 @@
         "cdmult": 0.80,
         "rngmult": 0.75,
         "duration": 20,
-        "cd": 25,
-        "cdboostable": false
+        "cd": 70,
+        "cdboostable": false,
+        "uptime": false
       },
       {
         "label": "The Creator (1)",
@@ -22241,8 +22250,9 @@
         "cdmult": 0.80,
         "rngmult": 0.75,
         "duration": 20,
-        "cd": 25,
-        "cdboostable": false
+        "cd": 70,
+        "cdboostable": false,
+        "uptime": false
       },
       {
         "label": "4th Wall (Boost)",
@@ -22367,7 +22377,7 @@
 {
   "name": "Scott Plushie",
   "imgNormal": "https://tr.rbxcdn.com/180DAY-cb1ec2b7d57b18f00a0d65acbf6a4cf1/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-cb1ec2b7d57b18f00a0d65acbf6a4cf1/420/420/Image/Png/noFilter",
+  "imgShiny": "https://cdn.discordapp.com/attachments/1302099413400944651/1536225425876058112/noFilter_1.png?ex=6a7aa0eb&is=6a794f6b&hm=81df490f96e6cff164322ea3afdf927f26bad99136061423a9571db06e959a38&",
   "rarity": "uncommon",
   "typeMain": "Midgame",
   "typeTags": [
@@ -22445,7 +22455,6 @@
   "imgShiny": "https://tr.rbxcdn.com/180DAY-9e19347141e6b2fbc1122e5461bb1b62/420/420/Image/Png/noFilter",
   "rarity": "exclusive",
   "typeMain": "Endgame",
-  "typeTags": [],
   "element": "Dark",
   "placements": 1,
   "attackType": "Cone45°",
@@ -22680,12 +22689,13 @@
         "dmgmult": 0.80,
         "cdmult": 0.70,
         "duration": 30,
-        "cd": 60
+        "cd": 80
       },
       {
         "label": "Shadow Leap (Stealth)",
         "dmgmult": 5.00,
-        "stun": 10
+        "stun": 10,
+        "cd": 110
       }
     ]
   }
@@ -22704,6 +22714,32 @@
   "placements": 1,
   "attackType": "Multi",
   "obtainment": "Hero Quest 8",
+  "voicelines": [
+      {
+        "title": "Placement 1",
+        "url": "https://sounds.fntduserguide.com/jaz-vengefulspirit-placement1.mp3"
+      },
+      {
+        "title": "Placement 2",
+        "url": "https://sounds.fntduserguide.com/jaz-vengefulspirit-placement2.mp3"
+      },
+      {
+        "title": "Placement 3",
+        "url": "https://sounds.fntduserguide.com/jaz-vengefulspirit-placement3.mp3"
+      },
+      {
+        "title": "Upgrade 1",
+        "url": "https://sounds.fntduserguide.com/jaz-vengefulspirit-upgrade1.mp3"
+      },
+      {
+        "title": "Final Upgrade",
+        "url": "https://sounds.fntduserguide.com/jaz-vengefulspirit-upgradefinal.mp3"
+      },
+      {
+        "title": "Playtime",
+        "url": "https://sounds.fntduserguide.com/jaz-vengefulspirit-ability1.mp3"
+      }
+    ],
   "levels": [
     {
       "level": 1,
@@ -22889,6 +22925,13 @@
       "text": "Enemies in range are slowed by 20%. Slow increases by 1% every 3s (Max 30%). <br>When an enemy tries to leave this unit's range: <br>• Follow up with a Full AOE attack for 25% damage (3s cooldown). <br>• Stun the escaping enemy for 2s and all other enemies hit for 1s. <br>• Buff Dark and Neutral units by +20% damage for 15s."
     }
   ],
+  "skins":[
+    {
+      "name": "Gargoyle Vengeful Spirit",
+      "image": "https://tr.rbxcdn.com/180DAY-629a5c287a3eb565a438aa55638fee94/420/420/Image/Png/noFilter",
+      "rarity": "exclusive"
+    }
+  ],
   "passiveDamage": {
     "selfboost": [
       {
@@ -23005,11 +23048,15 @@
 },
 {
   "name": "Phone Guy",
-  "imgNormal": "",
-  "imgShiny": "",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-04b88a6d9a0a82a939cb9e3b2ae5d00f/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-04b88a6d9a0a82a939cb9e3b2ae5d00f/420/420/Image/Png/noFilter",
   "rarity": "secret",
-  "typeMain": "",
-  "typeTags": [],
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Slow",
+    "Wither",
+    "Support"
+  ],
   "element": "Electricity",
   "placements": 1,
   "attackType": "Single",
@@ -23088,11 +23135,13 @@
 },
 {
   "name": "Anniversary Duo",
-  "imgNormal": "",
-  "imgShiny": "",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-c0efa5c3edac002be310097833ba7b25/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-f3fc3d2bc7e220f2ac2454681eb42743/420/420/Image/Png/noFilter",
   "rarity": "secret",
-  "typeMain": "",
-  "typeTags": [],
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Wither"
+  ],
   "element": "Light",
   "placements": 1,
   "attackType": "Cone90°",
@@ -23160,6 +23209,1010 @@
       {
         "label": "Party Planners (Boost)",
         "dmgmult": 1.10
+      }
+    ]
+  }
+},
+{
+  "name": "Anniversary Balloon Boy",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-804c04e9a70cee0086d53d52d640285c/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-804c04e9a70cee0086d53d52d640285c/420/420/Image/Png/noFilter",
+  "rarity": "epic",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Light",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Anniversary Present (79%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 5000,
+      "damage": 550,
+      "cd": 2.5,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 500,
+      "cd": 2.5,
+      "range": 21
+    },
+    {
+      "level": 3,
+      "cost": 5000,
+      "damage": 600,
+      "cd": 2.3,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 7000,
+      "damage": 700,
+      "cd": 2.3,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 10000,
+      "damage": 800,
+      "cd": 2,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 15000,
+      "damage": 1250,
+      "cd": 2,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "The Afterparty",
+      "text": "Light element units on the team gain +10% damage. Anniversary Duo instead gains +50% damage"
+    },
+    {
+      "title": "Party Planners",
+      "text": "If Anniversary Duo is placed while this unit is not placed, Anniversary Duo gains +100% damage and this unit follows up every other attack, matching Anniversary Duo's upgrade level. While placed, Anniversary Duo follows up every other attack from this unit for 50% damage. Every 5th attack automatically upgrades this unit. After 60s, both units deal 250% damage in a Full AOE, then this unit is removed and cannot be placed for 60s"
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "The Afterparty",
+        "dmgmult": 1.10
+      }
+    ]
+}
+},
+{
+  "name": "Eleanor",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-bde4a6765777beaab98945e44ba781e9/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-0152930a12544424ec8efaa1bb4ba57c/420/420/Image/Png/noFilter",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Summons (0.25%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 7500,
+      "damage": 1200,
+      "cd": 5,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 5000,
+      "damage": 1400,
+      "cd": 5,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 6000,
+      "damage": 1600,
+      "cd": 5,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 7000,
+      "damage": 1900,
+      "cd": 5,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 8500,
+      "damage": 2200,
+      "cd": 5,
+      "range": 30
+    },
+    {
+      "level": 6,
+      "cost": 10000,
+      "damage": 2600,
+      "cd": 5,
+      "range": 32
+    },
+    {
+      "level": 7,
+      "cost": 12000,
+      "damage": 3200,
+      "cd": 5,
+      "range": 32
+    },
+    {
+      "level": 8,
+      "cost": 15000,
+      "damage": 4000,
+      "cd": 5,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "To Be Beautiful",
+      "text": "Throw a pendant to the unit in range with the highest displayed damage. It gains +30% damage, fading by 1.5% every second. When the buff expires, the pendant has a 50% chance to break. (Upgrade 0+, Local CD: 130s).",
+      "activeIcon": ""
+    },
+    {
+      "title": "This Is What I've Longed For!",
+      "text": "When [To Be Beautiful]'s pendant breaks shapeshift into its recipient for 15s and copy their damage, range, element, attack type, and attack behavior. Attack 15% faster"
+    },
+    {
+      "title": "Maybe Next Time...",
+      "text": "When [To Be Beautiful]'s pendant does not break enter an enraged state until the next pendant is thrown. Change attack type to Line, gain +30% damage, and -10% cooldown"
+    }
+  ]
+},
+{
+  "name": "Samurai Duo",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-4111f4a380c20af35fb0a09ebb02eb4f/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-201c55377404ff4e8b751c8e9da50f0d/420/420/Image/Png/noFilter",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "element": "Neutral",
+  "placements": 1,
+  "attackType": "FullAOE",
+  "obtainment": "Season 6 Pass Premium Tier 50",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 6000,
+      "damage": 500,
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 700,
+      "cd": 3,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 5000,
+      "damage": 900,
+      "cd": 3,
+      "range": 27
+    },
+    {
+      "level": 4,
+      "cost": 7000,
+      "damage": 1050,
+      "cd": 3,
+      "range": 29
+    },
+    {
+      "level": 5,
+      "cost": 10000,
+      "damage": 1350,
+      "cd": 3,
+      "range": 32
+    },
+    {
+      "level": 6,
+      "cost": 15000,
+      "damage": 1700,
+      "cd": 3,
+      "range": 35
+    }
+  ],
+  "passives": [
+    {
+      "title": "Duel of Vengeance",
+      "text": "Every 3s, attack regardless of whether enemies are present. This unit is immune to stuns. On hit deal +2 shield damage, apply 40% bleed over 4s, and deal +50% damage to non-Boss enemies. Every 3rd attack stuns enemies for 1.8s, deals +30% damage, applies 30% burn and bleed over 3s, and deals +50% damage to Boss enemies"
+    }
+  ],
+  "passiveDamage": {
+    "dots":[
+      {
+        "label": "Duel (On Hit Bleed)",
+        "pctofdamage": 0.40,
+        "durationsec": 4
+      },
+      {
+        "label": "Duel (3rd Attack Burn)",
+        "pctofdamage": 0.30,
+        "durationsec": 3,
+        "cd": 6,
+        "cdboostable": true
+      },
+            {
+        "label": "Duel (3rd Attack Bleed)",
+        "pctofdamage": 0.30,
+        "durationsec": 3,
+        "cd": 6,
+        "cdboostable": true
+      }
+    ],
+    "selfboost": [
+      {
+        "label": "Duel (Normal Enemies)",
+        "dmgmult": 1.50
+      }
+    ]
+}
+},
+{
+  "name": "XOR",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-838103d493f5c0429e69a18590db969c/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-bab08e4e29a11716063b608fd4fae224/420/420/Image/Png/noFilter",
+  "rarity": "secret",
+  "typeMain": "Starter-Midgame",
+  "typeTags": [
+    "Summon"
+  ],
+  "element": "Dark",
+  "placements": 2,
+  "attackType": "",
+  "obtainment": "Season 6 Pass Premium Tier 1",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 1000,
+      "damage": 300,
+      "cd": 3,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 350,
+      "cd": 3,
+      "range": 21
+    },
+    {
+      "level": 3,
+      "cost": 5000,
+      "damage": 400,
+      "cd": 3,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 6500,
+      "damage": 500,
+      "cd": 3.5,
+      "range": 22
+    },
+    {
+      "level": 5,
+      "cost": 8000,
+      "damage": 650,
+      "cd": 3.5,
+      "range": 24
+    },
+    {
+      "level": 6,
+      "cost": 10000,
+      "damage": 750,
+      "cd": 4,
+      "range": 27
+    },
+    {
+      "level": 7,
+      "cost": 12000,
+      "damage": 950,
+      "cd": 4,
+      "range": 30
+    },
+    {
+      "level": 8,
+      "cost": 15000,
+      "damage": 1200,
+      "cd": 4,
+      "range": 35
+    }
+  ],
+  "passives": [
+    {
+      "title": "!etanutrofnU woH !hO-hU",
+      "text": "Summon a copy of every enemy currently in range with health equal to 50% of this unit's damage. A maximum of 25 copies can exist at once. (Upgrade 0+, Local CD: 60s).",
+      "activeIcon": "https://tr.rbxcdn.com/180DAY-f449057fad62bd80dd8186eac410ebce/420/420/Image/Png/noFilter"
+    },
+    {
+      "title": "Too Many to Count",
+      "text": "For every enemy in range buff this unit's damage and range by 5%. At 5+ enemies in range additionally reduce this unit's cooldown by 10%"
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Too Many to Count (Damage; 5 enemies)",
+        "dmgmult": 1.25
+      },
+      {
+        "label": "Too Many to Count (Cooldown)",
+        "cdmult": 0.90
+      }
+    ],
+    "summons": [
+      {
+        "label": "!hO-hU (5 enemies)",
+        "healthpctofdamage": 4.00,
+        "spawncd": 60,
+        "cdboostable": false
+      }
+    ]
+  }
+},
+{
+  "name": "Stitchwraith",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-09c23de0ce73bd2c315bfaa56f171fd2/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-5b7c8a352fc5bcdd328896c5b98fc5f5/420/420/Image/Png/noFilter",
+  "rarity": "secret",
+  "typeMain": "Midgame-Endgame",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Dark/Light",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Quest Shop",
+
+"modes": {
+  "jake": {
+  "label": "Jake",
+  "role": "damage",
+  "attackType": "Circle",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 3000,
+      "damage": 150,
+      "cd": 2.5,
+      "range": 15
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 200,
+      "cd": 2.5,
+      "range": 16
+    },
+    {
+      "level": 3,
+      "cost": 6000,
+      "damage": 250,
+      "cd": 2.5,
+      "range": 18
+    },
+    {
+      "level": 4,
+      "cost": 8000,
+      "damage": 325,
+      "cd": 2.5,
+      "range": 21
+    },
+    {
+      "level": 5,
+      "cost": 10000,
+      "damage": 425,
+      "cd": 2.5,
+      "range": 24
+    },
+    {
+      "level": 6,
+      "cost": 12500,
+      "damage": 550,
+      "cd": 2.5,
+      "range": 24
+    }
+  ],
+  "passives": [
+    {
+      "title": "Are You Really in Control?",
+      "text": "On placement, choose between Jake Mode and Andrew Mode. Remnant is gained from enemies defeated in this unit's range. (1 stack: 5 enemies. 2 stacks: 25 enemies. 3 stacks: 75 enemies). <br> Jake Mode: <br>• 1 stack: Units in range gain +15% damage, +10% range, and -5% cooldown. <br> • 2 stacks: Also gain +10% crit rate and +10% crit damage <br>• 3 stacks: Units in range gain +15% damage, +25% range, -5% cooldown, +20% crit rate, and +20% crit damage."
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label":  "Really in Control? (Max)",
+        "dmgmult": 1.15,
+        "rngmult": 1.25,
+        "cdmult": 0.95,
+        "critc": 0.20,
+        "critd": 2.20
+      }
+    ]
+  }
+},
+
+  "andrew": {
+    "label": "Andrew",
+    "role": "damage",
+    "attackType": "Circle",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 3000,
+        "damage": 150,
+        "cd": 2.5,
+        "range": 15
+      },
+      {
+        "level": 2,
+        "cost": 4000,
+        "damage": 200,
+        "cd": 2.5,
+        "range": 16
+      },
+      {
+        "level": 3,
+        "cost": 6000,
+        "damage": 250,
+        "cd": 2.5,
+        "range": 18
+      },
+      {
+        "level": 4,
+        "cost": 8000,
+        "damage": 325,
+        "cd": 2.5,
+        "range": 21
+      },
+      {
+        "level": 5,
+        "cost": 10000,
+        "damage": 425,
+        "cd": 2.5,
+        "range": 24
+      },
+      {
+        "level": 6,
+        "cost": 12500,
+        "damage": 550,
+        "cd": 2.5,
+        "range": 24
+      }
+    ],
+    "passives": [
+      {
+        "title": "Are You Really in Control?",
+        "text": "On placement, choose between Jake Mode and Andrew Mode. Remnant is gained from enemies defeated in this unit's range. (1 stack: 5 enemies. 2 stacks: 25 enemies. 3 stacks: 75 enemies). <br> Andrew Mode: <br>• 1 stack: Units in range gain +75% damage and -10% cooldown. <br> • 2 stacks: +125% damage, +25% range, -20% cooldown. <br>• 3 stacks: +175% damage, +40% range, and -30% cooldown. Attacks apply 25% bleed over 5 seconds and stun enemies in a small circle for 1.2 seconds"
+      }
+    ],
+    "passiveDamage": {
+      "selfboost": [
+        {
+          "label":  "Really in Control? (Max)",
+          "dmgmult": 1.75,
+          "rngmult": 1.40,
+          "cdmult": 0.70
+        }
+      ],
+      "dots":[
+        {
+          "label": "Really in Control? (Bleed)",
+          "pctofdamage": 0.25,
+          "durationsec": 5
+        }
+      ]
+  }
+}
+}
+},
+{
+  "name": "Hoax Purple Guy",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-7d51f78d4134fb23053b6e63a33e226d/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-7d51f78d4134fb23053b6e63a33e226d/420/420/Image/Png/noFilter",
+  "rarity": "secret",
+  "typeMain": "Midgame-Endgame",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Dark",
+  "placements": 2,
+  "attackType": "Multi",
+  "obtainment": "Unit Quest 4",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 3000,
+      "damage": 375,
+      "type": "Circle",
+      "cd": 2.8,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 1400,
+      "damage": 425,
+      "type": "Circle",
+      "cd": 2.8,
+      "range": 21
+    },
+    {
+      "level": 3,
+      "cost": 2500,
+      "damage": 475,
+      "type": "Circle",
+      "cd": 2.8,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 4000,
+      "damage": 500,
+      "type": "Circle",
+      "cd": 2.5,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 6000,
+      "damage": 580,
+      "type": "Line",
+      "cd": 2.5,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 9000,
+      "damage": 680,
+      "type": "Line",
+      "cd": 2.5,
+      "range": 28
+    },
+    {
+      "level": 7,
+      "cost": 12500,
+      "damage": 800,
+      "type": "Line",
+      "cd": 2.5,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Ring Ring Are You There?",
+      "text": "Every 45 seconds, Hoax receives a phone call. <br>• Call 1: +75% damage and +30% range for 30 seconds. <br>• Call 2 debuff enemies on the map for 30 seconds, applying 30% slow. Dark units gain +25% damage and range while active. <br>• Call 3: Enter frenzy for 15 secondsgiving this unit -30% cooldown. Attacks apply 35% bleed over 5 seconds"
+    }
+  ],
+  "skins":[
+      {
+        "name": "Frogman Hoax Purple Guy",
+        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/frogman-hoax-purple-guy-high.png?enable-io=true&crop=1%3A1&width=347",
+        "rarity": "secret"
+      },
+      {
+        "name": "Shiny Frogman Hoax Purple Guy",
+        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-8rximn.png?enable-io=true&crop=1%3A1&width=347",
+        "rarity": "shiny"
+      }
+  ]
+  },
+  {
+  "name": "Nedd Bear",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-f2fc9f04f347723e06d447cf6a64a99a/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-cba43da2005ccddabab8ef8689e9caa7/420/420/Image/Png/noFilter",
+  "rarity": "mythic",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Neutral",
+  "placements": 2,
+  "attackType": "Line",
+  "obtainment": "Season 6 Present (5%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2500,
+      "damage": 750,
+      "cd": 3,
+      "range": 21
+    },
+    {
+      "level": 2,
+      "cost": 1250,
+      "damage": 1000,
+      "cd": 3,
+      "range": 22
+    },
+    {
+      "level": 3,
+      "cost": 2250,
+      "damage": 1200,
+      "cd": 2.8,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 3500,
+      "damage": 1500,
+      "cd": 2.5,
+      "range": 27
+    },
+    {
+      "level": 5,
+      "cost": 5250,
+      "damage": 1600,
+      "cd": 2,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Stranger Danger",
+      "text": "This unit deals -10% damage per nearby unit. At 4+ other units in range, this unit stops attacking and boosts units within 50% range by +25% damage"
+    }
+  ]
+},
+{
+  "name": "Count the Ways Funtime Freddy",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-08ed418ed8c1507de253d62a18f288d3/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-c27756aa8f2df2a322a13183e3e46aa4/420/420/Image/Png/noFilter",
+  "rarity": "mythic",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Death"
+  ],
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Line",
+  "obtainment": "Summons (2%)",
+  "modes": {
+    "bonbon": {
+      "label": "Bon Bon",
+      "role": "damage",
+      "attackType": "Line",
+      "levels": [
+        {
+          "level": 1,
+          "cost": 8500,
+          "damage": 450,
+          "range": 24
+        },
+        {
+          "level": 2,
+          "cost": 5000,
+          "damage": 500,
+          "range": 25
+        },
+        {
+          "level": 3,
+          "cost": 7500,
+          "damage": 550,
+          "range": 27
+        },
+        {
+          "level": 4,
+          "cost": 10000,
+          "damage": 600,
+          "range": 29
+        },
+        {
+          "level": 5,
+          "cost": 13000,
+          "damage": 675,
+          "range": 31
+        },
+        {
+          "level": 6,
+          "cost": 16000,
+          "damage": 750,
+          "range": 34
+        },
+        {
+          "level": 7,
+          "cost": 20000,
+          "damage": 825,
+          "range": 34
+        }
+      ],
+        "passives": [
+    {
+      "title": "Count the Ways",
+      "text": "Every 45s, rotate between two attack modes:Bon Bon: Line attack every 1s that deals 75% damage"
+    },
+    {
+      "title": "One by One",
+      "text": "For every kill permanently gain +10% damage (Max 100%). At +100% damage throw Bon Bon onto the track. Once every second, Bon Bon attacks an enemy below 25% HP for 30% damage"
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "One by One (Max Boost)",
+        "dmgmult": 2.00
+      }
+    ],
+    "periodic":[
+      {
+        "label": "Count the Ways (Bon Bon)",
+        "pctofdamage": 0.75,
+        "cd": 1,
+        "cdboostable": false
+      },
+      {
+        "label": "One by One (Bon Bon)",
+        "pctofdamage": 0.30,
+        "cd": 1,
+        "cdboostable": false
+      }
+    ]
+  }
+},
+    "saw": {
+      "label": "Dual-Bladed Saw",
+      "role": "damage",
+      "attackType": "Cone45°",
+      "levels": [
+        {
+          "level": 1,
+          "cost": 8500,
+          "damage": 450,
+          "cd": 2.5,
+          "range": 24
+        },
+        {
+          "level": 2,
+          "cost": 5000,
+          "damage": 500,
+          "cd": 2.5,
+          "range": 25
+        },
+        {
+          "level": 3,
+          "cost": 7500,
+          "damage": 550,
+          "cd": 2.5,
+          "range": 27
+        },
+        {
+          "level": 4,
+          "cost": 10000,
+          "damage": 600,
+          "cd": 2.5,
+          "range": 29
+        },
+        {
+          "level": 5,
+          "cost": 13000,
+          "damage": 675,
+          "cd": 2.5,
+          "range": 31
+        },
+        {
+          "level": 6,
+          "cost": 16000,
+          "damage": 750,
+          "cd": 2.5,
+          "range": 34
+        },
+        {
+          "level": 7,
+          "cost": 20000,
+          "damage": 825,
+          "cd": 2.5,
+          "range": 34
+        }
+      ],
+        "passives": [
+    {
+      "title": "Count the Ways",
+      "text": "Every 45s, rotate between two attack modes: Dual-Bladed Saw Cone attack that deals 125% damage, applies 50% Bleed over 5s and Death"
+    },
+    {
+      "title": "One by One",
+      "text": "For every kill permanently gain +10% damage (Max 100%). At +100% damage throw Bon Bon onto the track. Once every second, Bon Bon attacks an enemy below 25% HP for 30% damage"
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "One by One (Max Boost)",
+        "dmgmult": 2.00
+      }
+    ],
+    "periodic":[
+      {
+        "label": "One by One (Bon Bon)",
+        "pctofdamage": 0.30,
+        "cd": 1,
+        "cdboostable": false
+      }
+    ],
+    "dots":[
+      {
+        "label": "Count the Ways (Bleed)",
+        "pctofdamage": 0.50,
+        "durationsec": 5
+      }
+    ]
+  }
+  }
+}
+},
+{
+  "name": "Pigpatch",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-bccf918ea1d7e7f22b98094a8b673d0a/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-d693ece22bf4bd66ca95a9f5051d5a4f/420/420/Image/Png/noFilter",
+  "rarity": "epic",
+  "typeMain": "Midgame",
+  "element": "Neutral",
+  "placements": 3,
+  "attackType": "Cone45°",
+  "obtainment": "Season 6 Present (15%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2500,
+      "damage": 320,
+      "cd": 3,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 1000,
+      "damage": 350,
+      "cd": 3,
+      "range": 20
+    },
+    {
+      "level": 3,
+      "cost": 1500,
+      "damage": 380,
+      "cd": 3,
+      "range": 21
+    },
+    {
+      "level": 4,
+      "cost": 2250,
+      "damage": 410,
+      "cd": 3,
+      "range": 22
+    },
+    {
+      "level": 5,
+      "cost": 3000,
+      "damage": 460,
+      "cd": 3,
+      "range": 23
+    },
+    {
+      "level": 6,
+      "cost": 4000,
+      "damage": 525,
+      "cd": 3,
+      "range": 25
+    },
+    {
+      "level": 7,
+      "cost": 5000,
+      "damage": 600,
+      "cd": 3,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Banjo Breakdown",
+      "text": "Every 8 seconds, Pigpatch cycles between 3 banjo chords. <br> • Chord I - Open Chord: Cone attack that deals 100% damage. Enemies hit are slowed by 10% for 2 seconds. <br>• Chord II - Power Chord: Line attack that deals 130% damage. <br>• Chord III - Solo Chord: Single attack that deals 180% damage with +25% crit chance and +50% crit damage"
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Banjo Breakdown (Power Chord)",
+        "dmgmult": 1.30,
+        "duration": 8,
+        "cd": 16
+      },
+      {
+        "label": "Banjo Breakdown (Solo Chord)",
+        "dmgmult": 1.80,
+        "critc": 0.25,
+        "critd": 2.50,
+        "duration": 8,
+        "cd": 16
+      }
+    ]
+  }
+},
+{
+  "name": "Orville Elephant",
+  "imgNormal": "https://tr.rbxcdn.com/180DAY-7171282144ee218a11c14dbf666356c8/420/420/Image/Png/noFilter",
+  "imgShiny": "https://tr.rbxcdn.com/180DAY-7b410935c622d72e7cdc81584c7a292b/420/420/Image/Png/noFilter",
+  "rarity": "rare",
+  "typeMain": "Starter",
+  "typeTags": [
+    "Wither",
+    "Slow"
+  ],
+  "element": "Neutral",
+  "placements": 2,
+  "attackType": "Circle",
+  "obtainment": "Season 6 Present (79.95%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 750,
+      "damage": 200,
+      "cd": 2.5,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 500,
+      "damage": 220,
+      "cd": 2.5,
+      "range": 19
+    },
+    {
+      "level": 3,
+      "cost": 850,
+      "damage": 240,
+      "cd": 2.2,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 1350,
+      "damage": 280,
+      "cd": 2.2,
+      "range": 21
+    },
+    {
+      "level": 5,
+      "cost": 2100,
+      "damage": 340,
+      "cd": 2.2,
+      "range": 23
+    },
+    {
+      "level": 6,
+      "cost": 3000,
+      "damage": 400,
+      "cd": 2.2,
+      "range": 25
+    }
+  ],
+  "passives": [
+    {
+      "title": "Magic Act",
+      "text": "Every 10th attack make an enemy [Disappear] for 2 seconds. After reappearing, the enemy takes +20% damage for 5 seconds. Bosses cannot disappear and are slowed by 15% for 2 seconds instead"
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+        "label": "Magic Act (Disappear)",
+        "dmgmult": 1.20,
+        "duration": 5,
+        "everynthattack": 10
       }
     ]
   }

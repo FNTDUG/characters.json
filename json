@@ -23915,20 +23915,21 @@
         {
           "level": 1,
           "cost": 8500,
-          "damage": 450,
+          "damage": 337.5,
           "cd": 1,
           "range": 24
         },
         {
           "level": 2,
           "cost": 5000,
-          "damage": 500,
+          "damage": 375,
+          "cd": 1,
           "range": 25
         },
         {
           "level": 3,
           "cost": 7500,
-          "damage": 550,
+          "damage": 412.5,
           "cd": 1,
           "range": 27
         },
@@ -23936,26 +23937,27 @@
           "level": 4,
           "cost": 10000,
           "damage": 600,
+          "cd": 1,
           "range": 29
         },
         {
           "level": 5,
           "cost": 13000,
-          "damage": 675,
+          "damage": 450,
           "cd": 1,
           "range": 31
         },
         {
           "level": 6,
           "cost": 16000,
-          "damage": 750,
+          "damage": 562.5,
           "cd": 1,
           "range": 34
         },
         {
           "level": 7,
           "cost": 20000,
-          "damage": 825,
+          "damage": 618.75,
           "cd": 1,
           "range": 34
         }
@@ -23979,12 +23981,6 @@
     ],
     "periodic":[
       {
-        "label": "Count the Ways (Bon Bon)",
-        "pctofdamage": 0.75,
-        "cd": 1,
-        "cdboostable": false
-      },
-      {
         "label": "One by One (Bon Bon)",
         "pctofdamage": 0.30,
         "cd": 1,
@@ -24001,49 +23997,49 @@
         {
           "level": 1,
           "cost": 8500,
-          "damage": 450,
+          "damage": 562.5,
           "cd": 2.5,
           "range": 24
         },
         {
           "level": 2,
           "cost": 5000,
-          "damage": 500,
+          "damage": 625,
           "cd": 2.5,
           "range": 25
         },
         {
           "level": 3,
           "cost": 7500,
-          "damage": 550,
+          "damage": 687.5,
           "cd": 2.5,
           "range": 27
         },
         {
           "level": 4,
           "cost": 10000,
-          "damage": 600,
+          "damage": 687.5,
           "cd": 2.5,
           "range": 29
         },
         {
           "level": 5,
           "cost": 13000,
-          "damage": 675,
+          "damage": 750,
           "cd": 2.5,
           "range": 31
         },
         {
           "level": 6,
           "cost": 16000,
-          "damage": 750,
+          "damage": 843.75,
           "cd": 2.5,
           "range": 34
         },
         {
           "level": 7,
           "cost": 20000,
-          "damage": 825,
+          "damage": 1031.25,
           "cd": 2.5,
           "range": 34
         }
@@ -24062,7 +24058,7 @@
     "selfboost": [
       {
         "label": "One by One (Max Boost)",
-        "dmgmult": 1.00
+        "dmgmult": 2.00
       }
     ],
     "periodic":[

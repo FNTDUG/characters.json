@@ -325,8 +325,29 @@
 <script>
 /* ── EDIT THIS LIST ── */
 var UPDATED_UNITS = [
-  "Patient White Rabbit",
-  "Vessel Plushtrap"
+"Planet Buster Scott",
+"Mr. Hippo",
+"Nightguard Afton",
+"Into the Pit Spring Bonnie",
+"Happy Frog",
+"Dee Dee",
+"Phone Guy",
+"Overlord Scott",
+"Anniversary Duo",
+"Anniversary Balloon Boy",
+"Eleanor",
+"Samurai Duo",
+"XOR",
+"Stitchwraith",
+"Hoax Purple Guy",
+"Theory Crusher Scott",
+"Nedd Bear",
+"Count the Ways Funtime Freddy",
+"Ragequit Scott",
+"Pigpatch",
+"Orville Elephant",
+"Scott Plushie"
+
 ];
 /* ────────────────── */
 

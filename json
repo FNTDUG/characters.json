@@ -23723,7 +23723,7 @@
     "passives": [
       {
         "title": "Are You Really in Control?",
-        "text": "On placement, choose between Jake Mode and Andrew Mode. Remnant is gained from enemies defeated in this unit's range. (1 stack: 5 enemies. 2 stacks: 25 enemies. 3 stacks: 75 enemies). <br> Andrew Mode: <br>• 1 stack: Units in range gain +75% Damage and -10% CD. <br> • 2 stacks: +125% Damage, +25% Range, -20% CD. <br>• 3 stacks: +175% Damage, +40% Range, and -30% CD. Attacks apply 25% Bleed for 5s and Stun enemies in a small circle for 1.2s."
+        "text": "On placement, choose between Jake Mode and Andrew Mode. Remnant is gained from enemies defeated in this unit's range. (1 stack: 5 enemies. 2 stacks: 25 enemies. 3 stacks: 75 enemies). <br> Andrew Mode: <br>• 1 stack: +75% Damage and -10% CD. <br> • 2 stacks: +125% Damage, +25% Range, -20% CD. <br>• 3 stacks: +175% Damage, +40% Range, and -30% CD. Attacks apply 25% Bleed for 5s and Stun enemies in a small circle for 1.2s."
       }
     ],
     "passiveDamage": {

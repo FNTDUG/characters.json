@@ -21447,11 +21447,11 @@
   "passives": [
     {
       "title": "Imperfect Vessel",
-      "text": "On attack apply 25% poison over 5s and buff this units damage by 10% and poison by 2.5% (Max +100% damage and +25% poison). At max buff deal 500% poison over 10s as Full AoE, stun this unit for 5s and lose these buffs"
+      "text": "Attacks apply 25% Poison for 5s, and this unit gains +10% Damage and +2.5% Poison (max +100% damage and +25% poison). At max buffs, this unit unit does a 500% damage AOE Poison attack that lasts 10s, then Stuns itself for 5s and loses its self buffs."
     },
     {
       "title": "Dangerous Concoction",
-      "text": "This unit deals 5% more damage for every poison instance on the enemy. Enemies in range take 40% more poison damage"
+      "text": "This unit deals 5% more damage for every Poison instance on the enemy. Enemies in range take 40% more Poison damage."
     }
   ],
   "passiveDamage": {
@@ -21546,11 +21546,11 @@
   "passives": [
     {
       "title": "Research Subject",
-      "text": "Buff units in range by +1% damage and range per 10k damage dealt (Max 10%). This unit receives this buff at 5x value"
+      "text": "Units in range gain +1% Damage and Range per 10k damage dealt (max +10%). This unit receives 5x this buff."
     },
     {
       "title": "Corrosive Substance",
-      "text": "Attacks apply 50% poison over 5s. Poison increases by +5% per 5k damage dealt in range (Max 50%)"
+      "text": "Attacks apply 50% Poison for 5s that increases by +5% per 5k damage dealt in range (max +50%)."
     }
   ],
   "passiveDamage": {
@@ -21644,12 +21644,12 @@
   "passives": [
     {
       "title": "Story Time",
-      "text": "Tell a story for up to 30 seconds. While active, all units gain 1% crit chance and crit damage per second, enemies in range receive 10% wither, and Mr. Hippo follows up on other units' crits. (5s cd) (Upgrade 0+, Local CD: 90s).",
+      "text": "Tell a story for up to 30s. While active, all units gain +1% crit chance and crit damage per second, enemies in range receive 10% Wither, and Mr. Hippo follows up on other units' crits (5s CD). (Upgrade 0+, Local CD: 90s).",
       "activeIcon": "https://tr.rbxcdn.com/180DAY-e93b712c119b1c18db8f763cf278ba73/420/420/Image/Png/noFilter"
     },
     {
       "title": "Moral of the Story",
-      "text": "This unit gains +50% crit rate and +30% crit damage. Crits in range buff this unit's damage by +2% for 20 seconds (Max +100%). Units in range gain +5% crit rate and +10% crit damage. Mediocre Melodies receive +20% crit rate and +40% crit damage instead. After this unit crits 5 times deal 100% damage in a Full AOE. If all 5 crits were consecutive, this attack deals 150% damage and is guaranteed to crit"
+      "text": "This unit gains +50% crit rate and +30% crit damage. Crits in this unit's range give it +2% Damage for 20s (max +100%). Units in range gain +5% crit rate and +10% crit damage, and the Mediocre Melodies receive +20% crit rate and +40% crit damage instead. After this unit crits 5 times, it does an AOE attack that matches its damage. If all 5 crits were consecutive, the attack deals +50% damage and is guaranteed to crit."
     }
   ],
   "skins": [
@@ -21781,32 +21781,32 @@
   "passives": [
     {
       "title": "Creation Arc Galactic",
-      "text": "Detonate a supernova, dealing 800% damage to all enemies, applying 100% Burn over 15s, slowing by 25% for 30s, and causing enemies to take +25% damage from all sources for 10s. (Upgrade 0+, Local CD: 120s).",
+      "text": "Detonate a supernova, dealing 800% damage to all enemies, applying 100% Burn for 15s, 25% Slow for 30s, and 25% Wither for 10s. (Upgrade 0+, Local CD: 120s).",
       "activeIcon": "https://tr.rbxcdn.com/180DAY-e952fe06a252044745306c1e311a17a5/420/420/Image/Png/noFilter"
     },
     {
       "title": "Rage Quit",
-      "text": "Gain +1% Rage every second, +1% when an enemy enters range, +2% when this unit kills an enemy, and +20% when this unit is stunned. At 100% Rage, for 20 seconds reduce Cooldown by 20%, gain +30% Damage, and lose 25% Range. Reset Rage when the effect ends"
+      "text": "Gain +1% Rage every second, +1% when an enemy enters range, +2% when this unit kills an enemy, and +20% when this unit is stunned. At 100% Rage, this unit gains +30% Damage, -25% Range, and -20% CD for 20s. Reset Rage when the effect ends."
     },
     {
       "title": "Planet Buster",
-      "text": "Attacks pull non-Boss enemies hit 1 stud toward the main target if they are on the same path. Enemies within 3 studs of the main target receive a follow-up hit for 50% damage"
+      "text": "Attacks pull non-Boss enemies hit 1 stud toward the main target if they are on the same path. Enemies within 3 studs of the main target receive a follow-up hit for 50% damage."
     },
     {
       "title": "Alarm",
-      "text": "Every 5 seconds deal 100% damage in a Full AOE and slow enemies hit by 25% for 5 seconds"
+      "text": "Every 5s, deal 100% damage to all enemies in range and inflict them with 25% Slow for 5s."
     },
     {
       "title": "The Creator",
-      "text": "For every enemy on the map gain +5% damage. Nearby units gain +1% damage and range"
+      "text": "For every enemy on the map, this unit gains +5% Damage and all nearby units gain +1% Damage and Range."
     },
     {
       "title": "Overlord's Pressure",
-      "text": "Attacks stun enemies for 2 seconds and deal +25% damage to enemies in stun lockout"
+      "text": "Attacks Stun enemies for 2s and deal +25% damage to enemies in stun lockout."
     },
     {
       "title": "4th Wall",
-      "text": "When an enemy tries to leave this unit's range fire a 4th Wall in a line for 250% damage. Every 4th attack fire a 4th Wall toward the last enemy in range for 250% damage. After every 4th Wall activation permanently gain +5% damage (Max +50%)"
+      "text": "When an enemy tries to leave this unit's range, fire a 4th Wall in a line for 250% damage. Every 4th attack, fire a 4th Wall toward the last enemy in range for 250% damage. After every 4th Wall activation, this unit gains +5% Damage (max +50%)."
     }
   ],
   "passiveDamage": {
@@ -21965,23 +21965,23 @@
   "passives": [
     {
       "title": "Rage Quit",
-      "text": "Gain +1% Rage every second, +1% when an enemy enters range, +2% when this unit kills an enemy, and +20% when this unit is stunned. At 100% Rage, for 20 seconds reduce Cooldown by 20%, gain +30% Damage, and lose 25% Range. Reset Rage when the effect ends"
+      "text": "Gain +1% Rage every second, +1% when an enemy enters range, +2% when this unit kills an enemy, and +20% when this unit is stunned. At 100% Rage, this unit gains +30% Damage, -25% Range, and -20% CD for 20s. Reset Rage when the effect ends."
     },
     {
       "title": "Alarm",
-      "text": "Every 5 seconds deal 100% damage in a Full AOE and slow enemies hit by 25% for 5 seconds"
+      "text": "Every 5s, deal 100% damage to all enemies in range and inflict them with 25% Slow for 5s."
     },
     {
       "title": "The Creator",
-      "text": "For every enemy on the map gain +5% damage. Nearby units gain +1% damage and range"
+      "text": "For every enemy on the map, this unit gains +5% Damage and all nearby units gain +1% Damage and Range."
     },
     {
       "title": "Overlord's Pressure",
-      "text": "Attacks stun enemies for 2 seconds and deal +25% damage to enemies in stun lockout"
+      "text": "Attacks Stun enemies for 2s and deal +25% damage to enemies in stun lockout."
     },
     {
       "title": "4th Wall",
-      "text": "When an enemy tries to leave this unit's range fire a 4th Wall in a line for 250% damage. Every 4th attack fire a 4th Wall toward the last enemy in range for 250% damage. After every 4th Wall activation permanently gain +5% damage (Max +50%)"
+      "text": "When an enemy tries to leave this unit's range, fire a 4th Wall in a line for 250% damage. Every 4th attack, fire a 4th Wall toward the last enemy in range for 250% damage. After every 4th Wall activation, this unit gains +5% Damage (max +50%)."
     }
   ],
     "passiveDamage": {
@@ -22104,19 +22104,19 @@
   "passives": [
     {
       "title": "Rage Quit",
-      "text": "Gain +1% Rage every second, +1% when an enemy enters range, +2% when this unit kills an enemy, and +20% when this unit is stunned. At 100% Rage, for 20 seconds reduce Cooldown by 20%, gain +30% Damage, and lose 25% Range. Reset Rage when the effect ends"
+      "text": "Gain +1% Rage every second, +1% when an enemy enters range, +2% when this unit kills an enemy, and +20% when this unit is stunned. At 100% Rage, this unit gains +30% Damage, -25% Range, and -20% CD for 20s. Reset Rage when the effect ends."
     },
     {
       "title": "Alarm",
-      "text": "Every 5 seconds deal 100% damage in a Full AOE and slow enemies hit by 25% for 5 seconds"
+      "text": "Every 5s, deal 100% damage to all enemies in range and inflict them with 25% Slow for 5s."
     },
     {
       "title": "The Creator",
-      "text": "For every enemy on the map gain +5% damage. Nearby units gain +1% damage and range"
+      "text": "For every enemy on the map, this unit gains +5% Damage and all nearby units gain +1% Damage and Range."
     },
     {
       "title": "4th Wall",
-      "text": "When an enemy tries to leave this unit's range fire a 4th Wall in a line for 250% damage. Every 4th attack fire a 4th Wall toward the last enemy in range for 250% damage. After every 4th Wall activation permanently gain +5% damage (Max +50%)"
+      "text": "When an enemy tries to leave this unit's range, fire a 4th Wall in a line for 250% damage. Every 4th attack, fire a 4th Wall toward the last enemy in range for 250% damage. After every 4th Wall activation, this unit gains +5% Damage (max +50%)."
     }
   ],
       "passiveDamage": {
@@ -22231,15 +22231,15 @@
   "passives": [
     {
       "title": "Rage Quit",
-      "text": "Gain +1% Rage every second, +1% when an enemy enters range, +2% when this unit kills an enemy, and +20% when this unit is stunned. At 100% Rage, for 20 seconds reduce Cooldown by 20%, gain +30% Damage, and lose 25% Range. Reset Rage when the effect ends"
+      "text": "Gain +1% Rage every second, +1% when an enemy enters range, +2% when this unit kills an enemy, and +20% when this unit is stunned. At 100% Rage, this unit gains +30% Damage, -25% Range, and -20% CD for 20s. Reset Rage when the effect ends."
     },
     {
       "title": "Alarm",
-      "text": "Every 5 seconds deal 100% damage in a Full AOE and slow enemies hit by 25% for 5 seconds"
+      "text": "Every 5s, deal 100% damage to all enemies in range and inflict them with 25% Slow for 5s."
     },
     {
       "title": "4th Wall",
-      "text": "When an enemy tries to leave this unit's range fire a 4th Wall in a line for 250% damage. Every 4th attack fire a 4th Wall toward the last enemy in range for 250% damage. After every 4th Wall activation permanently gain +5% damage (Max +50%)"
+      "text": "When an enemy tries to leave this unit's range, fire a 4th Wall in a line for 250% damage. Every 4th attack, fire a 4th Wall toward the last enemy in range for 250% damage. After every 4th Wall activation, this unit gains +5% Damage (max +50%)."
     }
   ],
       "passiveDamage": {
@@ -22343,11 +22343,11 @@
   "passives": [
     {
       "title": "Alarm",
-      "text": "Every 5 seconds deal 100% damage in a Full AOE and slow enemies hit by 25% for 5 seconds"
+      "text": "Every 5s, deal 100% damage to all enemies in range and inflict them with 25% Slow for 5s."
     },
     {
       "title": "4th Wall",
-      "text": "When an enemy tries to leave this unit's range fire a 4th Wall in a line for 250% damage. Every 4th attack fire a 4th Wall toward the last enemy in range for 250% damage. After every 4th Wall activation permanently gain +5% damage (Max +50%)"
+      "text": "When an enemy tries to leave this unit's range, fire a 4th Wall in a line for 250% damage. Every 4th attack, fire a 4th Wall toward the last enemy in range for 250% damage. After every 4th Wall activation, this unit gains +5% Damage (max +50%)."
     }
   ],
       "passiveDamage": {
@@ -22434,7 +22434,7 @@
   "passives": [
     {
       "title": "Alarm",
-      "text": "Every 5 seconds deal 100% damage in a Full AOE and slow enemies hit by 25% for 5 seconds"
+      "text": "Every 5s, deal 100% damage to all enemies in range and inflict them with 25% Slow for 5s."
     }
   ],
       "passiveDamage": {
@@ -22520,11 +22520,11 @@
   "passives": [
     {
       "title": "Never Ending Cycle",
-      "text": "This unit gains +5% damage per unique type of enemy hit and deals +20% damage to enemy types it has hit 10+ times. The first time this unit is stunned, gain +25% damage and range. Ignores 75% of enemy damage reduction"
+      "text": "This unit gains +5% Damage per unique type of enemy hit and deals +20% damage to enemy types it has hit 10+ times. The first time this unit is stunned, it gains +25% Damage and Range. Ignores 75% of enemy damage reduction."
     },
     {
       "title": "Phantom Shackles",
-      "text": "For the first 5 waves this unit is placed gain +100% cooldown and -20% damage. After 5 waves have passed remove the debuffs and gain +50% damage and +20% range, increase this unit's AOE by 20, and apply 30% burn"
+      "text": "For the first 5 waves this unit is placed, gain -20% Damage and +100% CD. After 5 waves have passed, remove the debuffs and gain +50% Damage,  +20% Range, increase this unit's AOE by 20, and apply 30% Burn."
     }
   ],
   "passiveDamage": {
@@ -22607,7 +22607,7 @@
   "passives": [
     {
       "title": "Into the Pit",
-      "text": "After completing 8 attacks drag the highest-HP enemy in range into the pit, stun it for 5 seconds, and apply 150% [Bleed] over 5 seconds. Units can continue attacking the enemy while it is in the pit. After 5 seconds apply [Scarred] for 15 seconds An enemy can only be dragged into the pit once. [Scarred]: Non-boss enemies lose 0.25% of their max HP every second. If this unit does not attack for 10 seconds, its attack bar resets."
+      "text": "After every 8 attacks, drag the highest-HP enemy in range into the pit, Stun it for 5s, and apply 150% Bleed for 5s. Units can continue attacking the enemy while it is in the pit. After 5s, apply Scarred for 15s. An enemy can only be dragged into the pit once. Scarred: Non-boss enemies lose 0.25% of their max HP every second. If this unit does not attack for 10s, its attack bar resets."
     }
   ],
   "passiveDamage": {
@@ -22679,7 +22679,7 @@
   "passives": [
     {
       "title": "Shadow Leap",
-      "text": "After defeating 8 enemies, enter [Frenzy] for 30 seconds. During [Frenzy] cooldown is reduced by 30% and damage is reduced by 20%. Defeated enemies determine [Stealth] duration. When [Frenzy] ends enter [Stealth] for 0.5 seconds per enemy defeated (Max 10 seconds). Cannot attack during [Stealth]. Gain +50% damage every second in [Stealth] (Max +500%). When [Stealth] ends the next attack deals the stored bonus damage. Enemies hit are slowed by 25% for 3 seconds. Cannot enter [Frenzy] again for 60 seconds"
+      "text": "After 8 kills, this unit Frenzies for 30s. During Frenzy, this unit gains -20% Damge and -30% CD. When Frenzy ends, enter Stealth for 0.5s per enemy killed (max 10s). Cannot attack while in Stealth. Gain +50% Damage every second in Stealth (max +500%). When Stealth ends, the next attack deals the stored bonus damage. Enemies hit by this boosted attack are Slowed by 25% for 3s. Cannot Frenzy again for 60s."
     }
   ],
   "passiveDamage": {
@@ -22915,16 +22915,16 @@
   "passives": [
     {
       "title": "Playtime",
-      "text": "For 30s, enemies are constantly set to 50 Marks that cannot be reduced. Gain +20% damage and follow up each attack with a Full AOE attack for 50% damage. (Upgrade 0+, Local CD: 90).",
+      "text": "For 30s, enemies are constantly set to 50 Marks that cannot be reduced. Gain +20% Damage and follow up each attack with a Full AOE attack for 50% damage. (Upgrade 0+, Local CD: 90).",
       "activeIcon": "https://tr.rbxcdn.com/180DAY-7b3a2454cb4ea3391d19ec7337889360/420/420/Image/Png/noFilter"
     },
     {
       "title": "Hell of Your Own Making",
-      "text": "Neutral and Dark element units Gain +20% damage and +20% range and apply 5 Marks on hit divided by their max placements (Max 50). <br> When this unit attacks a Marked enemy consume Marks and:<br>• Apply bleed equal to the Marks consumed over 3s. <br>• Apply Dark and Neutral Wither equal to half the Marks consumed for 20s. <br>• Increase this attack's critical damage by the Marks consumed. <br>• Gain +2% damage and crit rate on the next attack per Mark consumed."
+      "text": "Neutral and Dark element units gain +20% Damage, +20% Range, and apply 5 Marks on hit divided by their max placements (max 50). <br> When this unit attacks a Marked enemy consume Marks and:<br>• Apply Bleed equal to the Marks consumed for 3s. <br>• Apply Dark and Neutral Wither equal to half the Marks consumed for 20s. <br>• Increase this attack's critical damage by the Marks consumed. <br>• Gain +2% damage and crit rate on the next attack per Mark consumed."
     },
     {
       "title": "You're Not Going Anywhere",
-      "text": "Enemies in range are slowed by 20%. Slow increases by 1% every 3s (Max 30%). <br>When an enemy tries to leave this unit's range: <br>• Follow up with a Full AOE attack for 25% damage (3s cooldown). <br>• Stun the escaping enemy for 2s and all other enemies hit for 1s. <br>• Buff Dark and Neutral units by +20% damage for 15s."
+      "text": "Enemies in range are Slowed by 20%, increasing by 1% every 3s (max 30%). <br>When an enemy tries to leave this unit's range: <br>• Follow up with a Full AOE attack for 25% damage (3s CD). <br>• Stun the escaping enemy for 2s and all other enemies hit for 1s. <br>• Dark and Neutral units gain +20% Damage for 15s."
     }
   ],
   "skins":[
@@ -23053,11 +23053,11 @@
   "passives": [
     {
       "title": "Uh-Oh! How Unfortunate!",
-      "text": "Every 5 waves spawn a boss with 500% of this unit's damage as health. The boss does not count for kills or damage and does not affect base health. When this boss dies deal 250% of this unit's damage in a large AOE. Buff this unit's damage by 50% for 60 seconds"
+      "text": "Every 5 waves, spawn a boss with 500% of this unit's damage as health. The boss does not count for kills or damage and does not affect base health. When this boss dies, deal 250% of this unit's damage in a large area. Buff this unit's damage by 50% for 60s."
     },
     {
       "title": "Variety is the Spice of Life",
-      "text": "For every Neutral or unique element unit on the team buff this unit's damage by 10% (Max 50%). This unit's attack type randomly swaps between Full AOE, Circle, and Cone 90."
+      "text": "For every Neutral or unique element unit on the team, this unit gains +10% Damage (max +50%). This unit's attack type randomly swaps between AOE, Circle, and Cone 90."
     }
   ],
   "passiveDamage": {
@@ -23152,7 +23152,7 @@
   "passives": [
     {
       "title": "Under My Watchful Eye",
-      "text": "After each kill, Phone Guy's TV switches cameras and prepares the next attack <br>• Freddy: Apply 25% [Slow] to enemies in range. <br>• Chica: Change the next attack to [Ricochet]. <br>• Foxy: Apply 15% [Wither] and 75% [Bleed] over 5s to all enemies. <br>• Bonnie: On hit, reduce the cooldown of units in range by 5% for 15s. <br>After all four cameras are used deal 200% damage to all enemies and The TV goes static for 25s"
+      "text": "After each kill, Phone Guy's TV switches cameras and prepares the next attack <br>• Freddy: 25% AOE Slow. <br>• Chica: Change the next attack to Ricochet. <br>• Foxy: 15% Wither and 75% Bleed for 5s to all enemies. <br>• Bonnie: On hit, units in range gain -5% CD for 15s. <br>After all four cameras are used, deal 200% damage to all enemies and The TV goes static for 25s."
     }
   ]
 },
@@ -23216,11 +23216,11 @@
   "passives": [
     {
       "title": "The Grand Celebration",
-      "text": "Attacks apply 10% Light element Wither. Anniversary Balloon Boy counts this Wither as 30%. For every Light element unit on the team Gain +10% damage"
+      "text": "Attacks apply 10% Light element Wither. Anniversary Balloon Boy counts this Wither as 30%. For every Light element unit on the team, this unit gains +10% Damage."
     },
     {
       "title": "Party Planners",
-      "text": "If Anniversary Balloon Boy is in range Anniversary Balloon Boy follows up every other attack for 50% damage"
+      "text": "If Anniversary Balloon Boy is in range, Anniversary Balloon Boy follows up every other attack for 50% damage."
     }
   ],
   "passiveDamage": {
@@ -23296,11 +23296,11 @@
   "passives": [
     {
       "title": "The Afterparty",
-      "text": "Light element units on the team gain +10% damage. Anniversary Duo instead gains +50% damage"
+      "text": "Light element units on the team gain +10% Damage. Anniversary Duo instead gains +50% Damage."
     },
     {
       "title": "Party Planners",
-      "text": "If Anniversary Duo is placed while this unit is not placed, Anniversary Duo gains +100% damage and this unit follows up every other attack, matching Anniversary Duo's upgrade level. While placed, Anniversary Duo follows up every other attack from this unit for 50% damage. Every 5th attack automatically upgrades this unit. After 60s, both units deal 250% damage in a Full AOE, then this unit is removed and cannot be placed for 60s"
+      "text": "If Anniversary Duo is placed while this unit is not placed, Anniversary Duo gains +100% Damage and this unit follows up every other attack, matching Anniversary Duo's upgrade level. While placed, Anniversary Duo follows up every other attack from this unit for 50% damage. Every 5th attack automatically upgrades this unit. After 60s, both units deal 250% damage in a Full AOE, then this unit is removed and cannot be placed for 60s."
     }
   ],
   "passiveDamage": {
@@ -23383,16 +23383,16 @@
   "passives": [
     {
       "title": "To Be Beautiful",
-      "text": "Throw a pendant to the unit in range with the highest displayed damage. It gains +30% damage, fading by 1.5% every second. When the buff expires, the pendant has a 50% chance to break. (Upgrade 0+, Local CD: 130s).",
+      "text": "Throw a pendant to the unit in range with the highest displayed damage. It gains +30% Damage, fading by 1.5% every second. When the buff expires, the pendant has a 50% chance to break. (Upgrade 0+, Local CD: 130s).",
       "activeIcon": ""
     },
     {
       "title": "This Is What I've Longed For!",
-      "text": "When [To Be Beautiful]'s pendant breaks shapeshift into its recipient for 15s and copy their damage, range, element, attack type, and attack behavior. Attack 15% faster"
+      "text": "When [To Be Beautiful]'s pendant breaks shapeshift into its recipient for 15s and copy their damage, range, element, attack type, and attack behavior. Gains -15% CD."
     },
     {
       "title": "Maybe Next Time...",
-      "text": "When [To Be Beautiful]'s pendant does not break enter an enraged state until the next pendant is thrown. Change attack type to Line, gain +30% damage, and -10% cooldown"
+      "text": "When [To Be Beautiful]'s pendant does not break enter an enraged state until the next pendant is thrown. Change attack type to Line, gain +30% Damage, and -10% CD."
     }
   ]
 },
@@ -23453,7 +23453,7 @@
   "passives": [
     {
       "title": "Duel of Vengeance",
-      "text": "Every 3s, attack regardless of whether enemies are present. This unit is immune to stuns. On hit deal +2 shield damage, apply 40% bleed over 4s, and deal +50% damage to non-Boss enemies. Every 3rd attack stuns enemies for 1.8s, deals +30% damage, applies 30% burn and bleed over 3s, and deals +50% damage to Boss enemies"
+      "text": "Every 3s, attack regardless of whether enemies are present. This unit is immune to Stuns. On hit deal +2 shield damage, apply 40% Bleed for 4s, and deal +50% damage to non-Boss enemies. Every 3rd attack Stuns enemies for 1.8s, deals +30% damage, applies 30% Burn and Bleed for 3s, and deals +50% damage to Bosses."
     }
   ],
   "passiveDamage": {
@@ -23497,7 +23497,7 @@
   ],
   "element": "Dark",
   "placements": 2,
-  "attackType": "",
+  "attackType": "Circle",
   "obtainment": "Season 6 Pass Premium Tier 1",
   "levels": [
     {
@@ -23565,7 +23565,7 @@
     },
     {
       "title": "Too Many to Count",
-      "text": "For every enemy in range buff this unit's damage and range by 5%. At 5+ enemies in range additionally reduce this unit's cooldown by 10%"
+      "text": "For every enemy in range, this unit gains +5% Damage and Range. At 5+ enemies in range, this unit gains -10% CD."
     }
   ],
   "passiveDamage": {
@@ -23655,13 +23655,13 @@
   "passives": [
     {
       "title": "Are You Really in Control?",
-      "text": "On placement, choose between Jake Mode and Andrew Mode. Remnant is gained from enemies defeated in this unit's range. (1 stack: 5 enemies. 2 stacks: 25 enemies. 3 stacks: 75 enemies). <br> Jake Mode: <br>• 1 stack: Units in range gain +15% damage, +10% range, and -5% cooldown. <br> • 2 stacks: Also gain +10% crit rate and +10% crit damage <br>• 3 stacks: Units in range gain +15% damage, +25% range, -5% cooldown, +20% crit rate, and +20% crit damage."
+      "text": "On placement, choose between Jake Mode and Andrew Mode. Remnant is gained from enemies killed in this unit's range. (1 stack: 5 enemies. 2 stacks: 25 enemies. 3 stacks: 75 enemies). <br> Jake Mode: <br>• 1 stack: Units in range gain +15% Damage, +10% Range, and -5% CD. <br> • 2 stacks: Also gain +10% crit rate and +10% crit damage <br>• 3 stacks: Units in range gain +15% Damage, +25% Range, -5% CD, +20% crit rate, and +20% crit damage."
     }
   ],
   "passiveDamage": {
     "selfboost": [
       {
-        "label":  "Really in Control? (Max)",
+        "label":  "(Max)",
         "dmgmult": 1.15,
         "rngmult": 1.25,
         "cdmult": 0.95,
@@ -23723,7 +23723,7 @@
     "passives": [
       {
         "title": "Are You Really in Control?",
-        "text": "On placement, choose between Jake Mode and Andrew Mode. Remnant is gained from enemies defeated in this unit's range. (1 stack: 5 enemies. 2 stacks: 25 enemies. 3 stacks: 75 enemies). <br> Andrew Mode: <br>• 1 stack: Units in range gain +75% damage and -10% cooldown. <br> • 2 stacks: +125% damage, +25% range, -20% cooldown. <br>• 3 stacks: +175% damage, +40% range, and -30% cooldown. Attacks apply 25% bleed over 5 seconds and stun enemies in a small circle for 1.2 seconds"
+        "text": "On placement, choose between Jake Mode and Andrew Mode. Remnant is gained from enemies defeated in this unit's range. (1 stack: 5 enemies. 2 stacks: 25 enemies. 3 stacks: 75 enemies). <br> Andrew Mode: <br>• 1 stack: Units in range gain +75% Damage and -10% CD. <br> • 2 stacks: +125% Damage, +25% Range, -20% CD. <br>• 3 stacks: +175% Damage, +40% Range, and -30% CD. Attacks apply 25% Bleed for 5s and Stun enemies in a small circle for 1.2s."
       }
     ],
     "passiveDamage": {
@@ -23820,7 +23820,7 @@
   "passives": [
     {
       "title": "Ring Ring Are You There?",
-      "text": "Every 45 seconds, Hoax receives a phone call. <br>• Call 1: +75% damage and +30% range for 30 seconds. <br>• Call 2 debuff enemies on the map for 30 seconds, applying 30% slow. Dark units gain +25% damage and range while active. <br>• Call 3: Enter frenzy for 15 secondsgiving this unit -30% cooldown. Attacks apply 35% bleed over 5 seconds"
+      "text": "Every 45s, Hoax receives a phone call. <br>• Call 1: +75% Damage and +30% Range for 30s. <br>• Call 2: Global 30% Slow for 30s. Dark units gain +25% Damage and Range while active. <br>• Call 3: Enter Frenzy for 15s, giving this unit -30% cooldown. Attacks apply 35% Bleed for 5s."
     }
   ],
   "skins":[
@@ -23889,7 +23889,7 @@
   "passives": [
     {
       "title": "Stranger Danger",
-      "text": "This unit deals -10% damage per nearby unit. At 4+ other units in range, this unit stops attacking and boosts units within 50% range by +25% damage"
+      "text": "This unit deals -10% Damage per nearby unit. At 4+ other units in range, this unit stops attacking and units within half this unit's range gain +25% Damage."
     }
   ]
 },
@@ -23965,11 +23965,11 @@
         "passives": [
     {
       "title": "Count the Ways",
-      "text": "Every 45s, rotate between two attack modes: <br> Bon Bon: Line attack every 1s that deals 75% damage"
+      "text": "Every 45s, rotate between two attack modes: <br> Bon Bon: Line attack every secon that deals 75% damage."
     },
     {
       "title": "One by One",
-      "text": "For every kill permanently gain +10% damage (Max 100%). At +100% damage throw Bon Bon onto the track. Once every second, Bon Bon attacks an enemy below 25% HP for 30% damage"
+      "text": "For every kill, this unit gains +10% Damage (max +100%). At +100% damage, throw Bon Bon onto the track. Once every second, Bon Bon attacks an enemy below 25% HP for 30% damage."
     }
   ],
   "passiveDamage": {
@@ -24047,11 +24047,11 @@
         "passives": [
     {
       "title": "Count the Ways",
-      "text": "Every 45s, rotate between two attack modes: Dual-Bladed Saw Cone attack that deals 125% damage, applies 50% Bleed over 5s and Death"
+      "text": "Every 45s, rotate between two attack modes: Dual-Bladed Saw Cone attack that deals 125% damage, applies 50% Bleed forr 5s, and Death."
     },
     {
       "title": "One by One",
-      "text": "For every kill permanently gain +10% damage (Max 100%). At +100% damage throw Bon Bon onto the track. Once every second, Bon Bon attacks an enemy below 25% HP for 30% damage"
+      "text": "For every kill, this unit gain +10% Damage (max +100%). At +100% damage throw Bon Bon onto the track. Once every second, Bon Bon attacks an enemy below 25% HP for 30% damage."
     }
   ],
   "passiveDamage": {
@@ -24144,7 +24144,7 @@
   "passives": [
     {
       "title": "Banjo Breakdown",
-      "text": "Every 8 seconds, Pigpatch cycles between 3 banjo chords. <br> • Chord I - Open Chord: Cone attack that deals 100% damage. Enemies hit are slowed by 10% for 2 seconds. <br>• Chord II - Power Chord: Line attack that deals 130% damage. <br>• Chord III - Solo Chord: Single attack that deals 180% damage with +25% crit chance and +50% crit damage"
+      "text": "Every 8s, Pigpatch cycles between 3 banjo chords. <br> • Chord I - Open Chord: Cone attack that deals 100% damage. Enemies hit are Slowed by 10% for 2s. <br>• Chord II - Power Chord: Line attack that deals 130% damage. <br>• Chord III - Solo Chord: Single attack that deals 180% damage with +25% crit chance and +50% crit damage."
     }
   ],
   "passiveDamage": {
@@ -24227,7 +24227,7 @@
   "passives": [
     {
       "title": "Magic Act",
-      "text": "Every 10th attack make an enemy [Disappear] for 2 seconds. After reappearing, the enemy takes +20% damage for 5 seconds. Bosses cannot disappear and are slowed by 15% for 2 seconds instead"
+      "text": "Every 10th attack, make an enemy Disappear for 2s. After reappearing, the enemy gains 20% Wither for 5s. Bosses cannot disappear and are Slowed by 15% for 2s instead."
     }
   ],
   "passiveDamage": {

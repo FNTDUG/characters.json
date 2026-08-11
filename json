@@ -104,7 +104,7 @@
       {
         "date": "2/14/26",
         "changes": [
-          { "type": "nerf",   "text": "● Passive [Love Shot] DMG debuff -35% (was -20%)" }
+          { "type": "nerf",   "text": "• Passive [Love Shot] DMG debuff -35% (was -20%)" }
         ]
       }
     ],
@@ -1029,7 +1029,7 @@
       {
         "date": "3/14/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 635-800 (was 470-635)<br>● CD 1.6-1.2 (was 2)<br>● Passive CD On unit CD (was Every 3s)" }
+          { "type": "buff",   "text": "• DMG 635-800 (was 470-635)<br>• CD 1.6-1.2 (was 2)<br>• Passive CD On unit CD (was Every 3s)" }
         ]
       }
     ],
@@ -1113,7 +1113,7 @@
       {
         "date": "3/14/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 350-425 (was 0)" }
+          { "type": "buff",   "text": "• DMG 350-425 (was 0)" }
         ]
       }
     ],
@@ -1190,13 +1190,13 @@
       {
         "date": "3/29/26",
         "changes": [
-          { "type": "buff",   "text": "● Passive Addition: Together 'If 2 amalgams are in range they both gain: +10% Damage, -10% Cooldown, 5% Damage burn/second.'" }
+          { "type": "buff",   "text": "• Passive Addition: Together 'If 2 amalgams are in range they both gain: +10% Damage, -10% Cooldown, 5% Damage burn/second.'" }
         ]
       },
       {
         "date": "5/31/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 725-955 (was 650-885)<br>Traps:<br>● Toy Freddy: DMG 1.85k (was 1.35k)<br>● Toy Bonnie: DMG 1.15k (was 850)<br>● Toy Chica: DMG 1k (was 700), Slow 20% (was 12%)<br>● Mangle DMG 2.35k (was 1.85k)" }
+          { "type": "buff",   "text": "• DMG 725-955 (was 650-885)<br>Traps:<br>• Toy Freddy: DMG 1.85k (was 1.35k)<br>• Toy Bonnie: DMG 1.15k (was 850)<br>• Toy Chica: DMG 1k (was 700), Slow 20% (was 12%)<br>• Mangle DMG 2.35k (was 1.85k)" }
         ]
       }
     ],
@@ -1466,14 +1466,14 @@
     {
         "date": "4/26/26",
         "changes": [
-          { "type": "rework",   "text": "● Removed LVL's 15 & 16" },
-          { "type": "buff",   "text": "● LVL 14 DMG 340 (was 320)" }
+          { "type": "rework",   "text": "• Removed LVL's 15 & 16" },
+          { "type": "buff",   "text": "• LVL 14 DMG 340 (was 320)" }
         ]
       },
       {
         "date": "7/12/26",
         "changes": [
-          { "type": "buff",   "text": "● Anti-Regen 100% (was 40%)" }
+          { "type": "buff",   "text": "• Anti-Regen 100% (was 40%)" }
         ]
       }
     ],
@@ -1759,8 +1759,8 @@
       {
         "date": "5/23/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG Boost 30% (was 20%)" },
-          { "type": "nerf",   "text": "● CD Boost -2.5% (was -10%)" }
+          { "type": "buff",   "text": "• DMG Boost 30% (was 20%)" },
+          { "type": "nerf",   "text": "• CD Boost -2.5% (was -10%)" }
         ]
       }
     ],
@@ -1869,8 +1869,8 @@
       {
         "date": "3/14/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 400-635 (was 375-550)" },
-          { "type": "nerf",   "text": "● Placements 1 (was 2)" }
+          { "type": "buff",   "text": "• DMG 400-635 (was 375-550)" },
+          { "type": "nerf",   "text": "• Placements 1 (was 2)" }
         ]
       }
     ],
@@ -2132,7 +2132,7 @@
       {
         "date": "3/14/26",
         "changes": [
-          { "type": "nerf",   "text": "● DMG 235-365 (was 280-500)" }
+          { "type": "nerf",   "text": "• DMG 235-365 (was 280-500)" }
         ]
       }
     ],
@@ -2201,8 +2201,8 @@
       {
         "date": "3/14/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 500-675 (was 435-570)<br>● Placements 1 (was 2)" },
-          { "type": "nerf",   "text": "● Placements 1 (was 2)" }
+          { "type": "buff",   "text": "• DMG 500-675 (was 435-570)<br>• Placements 1 (was 2)" },
+          { "type": "nerf",   "text": "• Placements 1 (was 2)" }
         ]
       }
     ],
@@ -2683,7 +2683,7 @@
       {
         "date": "5/31/26",
         "changes": [
-          { "type": "buff",   "text": "● Placements 2 (was 1)<br>● +30% DMG on all LVL's<br>● -15% Cost on all LVL's<br>● Passive [Dark Night] CD debuff +3% (was +5%)<br>● Passive [Dark Night] +25% DMG (was +20%)<br>● Passive [Dark Night] CD 25s (was 45s)" }
+          { "type": "buff",   "text": "• Placements 2 (was 1)<br>• +30% DMG on all LVL's<br>• -15% Cost on all LVL's<br>• Passive [Dark Night] CD debuff +3% (was +5%)<br>• Passive [Dark Night] +25% DMG (was +20%)<br>• Passive [Dark Night] CD 25s (was 45s)" }
         ]
       }
     ],
@@ -3295,8 +3295,8 @@
       {
         "date": "7/20/26",
         "changes": [
-          { "type": "buff",   "text": "● Slow increased to 20% (was 15%)<br>● RNG increased to 25 (was 19)" },
-          { "type": "nerf",   "text": "● Passive [Holy Lake of Golden Stars] Active CD reduction reduced to 15% (was 35%)" }
+          { "type": "buff",   "text": "• Slow increased to 20% (was 15%)<br>• RNG increased to 25 (was 19)" },
+          { "type": "nerf",   "text": "• Passive [Holy Lake of Golden Stars] Active CD reduction reduced to 15% (was 35%)" }
         ]
       }
     ],
@@ -3374,7 +3374,7 @@
       {
         "date": "3/29/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 350-645 (was 250-435)" }
+          { "type": "buff",   "text": "• DMG 350-645 (was 250-435)" }
         ]
       }
     ],
@@ -3637,8 +3637,8 @@
       {
         "date": "5/23/26",
         "changes": [
-          { "type": "buff",   "text": "● Mode: Spring Bonnie: 30% RNG, -5% CD, 10% DMG (was 10% RNG, -10% CD)<br>● Mode: Fredbear: 40% DMG, 15% RNG (was 25% DMG, 25% RNG" },
-          { "type": "nerf",   "text": "● Stacking Removed" }
+          { "type": "buff",   "text": "• Mode: Spring Bonnie: 30% RNG, -5% CD, 10% DMG (was 10% RNG, -10% CD)<br>• Mode: Fredbear: 40% DMG, 15% RNG (was 25% DMG, 25% RNG" },
+          { "type": "nerf",   "text": "• Stacking Removed" }
         ]
       }
     ],
@@ -3817,20 +3817,20 @@
       {
         "date": "1/19/26",
         "changes": [
-          { "type": "buff",   "text": "● Passive [Ignited Rage] cap +75% (was +50%)<br>● Passive [Ignited Rage] per stack 15% (was 10%)" }
+          { "type": "buff",   "text": "• Passive [Ignited Rage] cap +75% (was +50%)<br>• Passive [Ignited Rage] per stack 15% (was 10%)" }
         ]
       },
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "buff",   "text": "● Passive [Agonized] will reduced other passives CD by 9% for each ⁨[Fire]⁩ Element Unit on your team.<br>● Passive Addition: Enemies hit by normal attacks are inflicted with ⁨[Scorched]⁩ and take 25% more damage from ⁨[Fire]⁩ Element Units." },
+          { "type": "buff",   "text": "• Passive [Agonized] will reduced other passives CD by 9% for each ⁨[Fire]⁩ Element Unit on your team.<br>• Passive Addition: Enemies hit by normal attacks are inflicted with ⁨[Scorched]⁩ and take 25% more damage from ⁨[Fire]⁩ Element Units." },
           { "type": "rework",   "text": "Element Fire (was Dark)" }
         ]
       },
       {
         "date": "4/26/26",
         "changes": [
-          { "type": "buff",   "text": "● RNG 22-30 (was 20-24)<br>● CD 1-2.3 (was 1-2.7)<br>● DMG 55-725 (was 37.5-598)<br>● Starting at LVL 11 FullAOE (was Cone)" }
+          { "type": "buff",   "text": "• RNG 22-30 (was 20-24)<br>• CD 1-2.3 (was 1-2.7)<br>• DMG 55-725 (was 37.5-598)<br>• Starting at LVL 11 FullAOE (was Cone)" }
         ]
       }
     ],
@@ -4111,8 +4111,8 @@
       {
         "date": "5/23/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG Boost 30% (was 15%)<br>● RNG Boost 18% (was 15%)" },
-          { "type": "nerf",   "text": "● CD Boost Removed (was -15%)" }
+          { "type": "buff",   "text": "• DMG Boost 30% (was 15%)<br>• RNG Boost 18% (was 15%)" },
+          { "type": "nerf",   "text": "• CD Boost Removed (was -15%)" }
         ]
       }
     ],
@@ -4149,7 +4149,7 @@
       {
         "date": "3/14/26",
         "changes": [
-          { "type": "buff",   "text": "● RNG 18-21 (was 20-24)" }
+          { "type": "buff",   "text": "• RNG 18-21 (was 20-24)" }
         ]
       }
     ],
@@ -4669,7 +4669,7 @@
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "buff",   "text": "● CD 3.75-3.25 (was 4-3.5)" }
+          { "type": "buff",   "text": "• CD 3.75-3.25 (was 4-3.5)" }
         ]
       }
     ],
@@ -4759,7 +4759,7 @@
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 900-1.545k (was 845-1.45k)" }
+          { "type": "buff",   "text": "• DMG 900-1.545k (was 845-1.45k)" }
         ]
       }
     ],
@@ -4865,22 +4865,22 @@
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "nerf",   "text": "● CD 7.2-6 (was 3.6-3)" },
-          { "type": "buff",   "text": "● DMG 1.65k-2.75k (was 600-1k)<br>● Passive [Necromancer's Revenge] HP cap 125k (was 50%)" }
+          { "type": "nerf",   "text": "• CD 7.2-6 (was 3.6-3)" },
+          { "type": "buff",   "text": "• DMG 1.65k-2.75k (was 600-1k)<br>• Passive [Necromancer's Revenge] HP cap 125k (was 50%)" }
         ]
       },
       {
         "date": "5/23/26",
         "changes": [
-          { "type": "buff",   "text": "● Passive [Necromancer's Revenge] HP cap inf (was 125k)<br>● Passive [Necromancer's Revenge] HP Percent 85% (was 75%)<br>● Passive [Necromancer's Revenge] No longer need to kill to Proc" },
-          { "type": "nerf",   "text": "● Passive [Necromancer's Revenge] Max summons 6 (was inf)" }
+          { "type": "buff",   "text": "• Passive [Necromancer's Revenge] HP cap inf (was 125k)<br>• Passive [Necromancer's Revenge] HP Percent 85% (was 75%)<br>• Passive [Necromancer's Revenge] No longer need to kill to Proc" },
+          { "type": "nerf",   "text": "• Passive [Necromancer's Revenge] Max summons 6 (was inf)" }
         ]
       },
       {
         "date": "7/20/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG increased to 3950 (was 2750) <br>● RNG increased to 26 (was 25)"},
-          { "type": "nerf",   "text": "● Passive [Necromancer's Revenge] Summon hp reduced to 20% (was 85%)" }
+          { "type": "buff",   "text": "• DMG increased to 3950 (was 2750) <br>• RNG increased to 26 (was 25)"},
+          { "type": "nerf",   "text": "• Passive [Necromancer's Revenge] Summon hp reduced to 20% (was 85%)" }
         ]
       }
     
@@ -5424,8 +5424,8 @@
       {
         "date": "5/23/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG Boost 30% (was 20%)" },
-          { "type": "nerf",   "text": "● CD Boost -7.5% (was -12.5%)" }
+          { "type": "buff",   "text": "• DMG Boost 30% (was 20%)" },
+          { "type": "nerf",   "text": "• CD Boost -7.5% (was -12.5%)" }
         ]
       }
     ],
@@ -5618,14 +5618,14 @@
     {
         "date": "4/26/26",
         "changes": [
-          { "type": "buff",   "text": "● Base RNG 20 (was 16)" }
+          { "type": "buff",   "text": "• Base RNG 20 (was 16)" }
         ]
       },
       {
         "date": "7/20/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG boost increased to 35% (was 10%)<br>● RNG boost increased to 30% (was 25%)" },
-          { "type": "nerf",   "text": "● CD Boost Removed (was -10%)" }
+          { "type": "buff",   "text": "• DMG boost increased to 35% (was 10%)<br>• RNG boost increased to 30% (was 25%)" },
+          { "type": "nerf",   "text": "• CD Boost Removed (was -10%)" }
         ]
       }
     ],
@@ -6165,7 +6165,7 @@
       {
         "date": "1/4/26",
         "changes": [
-          { "type": "nerf",   "text": "● DMG 1.95k-2.3k (was 2.8k-3.25k)<br>● RNG 17-22 (was 24-36)" }
+          { "type": "nerf",   "text": "• DMG 1.95k-2.3k (was 2.8k-3.25k)<br>• RNG 17-22 (was 24-36)" }
         ]
       }
     ],
@@ -6246,7 +6246,7 @@
       {
         "date": "1/6/26",
         "changes": [
-          { "type": "buff",   "text": "● Type starting at LVL 5 65 Cone (was Line)" }
+          { "type": "buff",   "text": "• Type starting at LVL 5 65 Cone (was Line)" }
         ]
       },
       {
@@ -6349,7 +6349,7 @@
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 450-725 (was 425-700)" }
+          { "type": "buff",   "text": "• DMG 450-725 (was 425-700)" }
         ]
       }
     ],
@@ -6432,19 +6432,19 @@
       {
         "date": "1/4/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 650-875 (was 650-800)<br>● DMG Gained from Passive 50% (was 30%)<br>● Passive CD 40s (was 45s)" }
+          { "type": "buff",   "text": "• DMG 650-875 (was 650-800)<br>• DMG Gained from Passive 50% (was 30%)<br>• Passive CD 40s (was 45s)" }
         ]
       },
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG Gained from Passive 75% (was 50%)<br>● Passive CD 35s (was 40s)<br>● Passive length 15s (was 10s)" }
+          { "type": "buff",   "text": "• DMG Gained from Passive 75% (was 50%)<br>• Passive CD 35s (was 40s)<br>• Passive length 15s (was 10s)" }
         ]
       },
       {
         "date": "2/14/26",
         "changes": [
-          { "type": "nerf",   "text": "● Knockback 2 tiles (was 4 tiles)" }
+          { "type": "nerf",   "text": "• Knockback 2 tiles (was 4 tiles)" }
         ]
       }
     ],
@@ -6538,7 +6538,7 @@
       {
         "date": "1/19/26",
         "changes": [
-          { "type": "nerf",   "text": "● Placements 2 (was 3)" }
+          { "type": "nerf",   "text": "• Placements 2 (was 3)" }
         ]
       }
     ],
@@ -6762,7 +6762,7 @@
     {
         "date": "12/20/25",
         "changes": [
-          { "type": "buff",   "text": "● Base DMG 100 (was 70)<br>● CD through LVL's 3-2.5 (was 3.5-2.7)" }
+          { "type": "buff",   "text": "• Base DMG 100 (was 70)<br>• CD through LVL's 3-2.5 (was 3.5-2.7)" }
         ]
       }
     ],
@@ -6917,13 +6917,13 @@
       {
         "date": "3/14/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 85-140 (was 50-65)<br>● CD 2.5-2 (was 3-2)" }
+          { "type": "buff",   "text": "• DMG 85-140 (was 50-65)<br>• CD 2.5-2 (was 3-2)" }
         ]
       },
       {
         "date": "5/23/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 100-165 (was 85-140)" }
+          { "type": "buff",   "text": "• DMG 100-165 (was 85-140)" }
         ]
       }
     ],
@@ -6995,13 +6995,13 @@
       {
         "date": "3/14/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 45-85 (was 35-60)" }
+          { "type": "buff",   "text": "• DMG 45-85 (was 35-60)" }
         ]
       },
       {
         "date": "5/23/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 60-100 (was 45-85)" }
+          { "type": "buff",   "text": "• DMG 60-100 (was 45-85)" }
         ]
       }
     ],
@@ -7064,7 +7064,7 @@
       {
         "date": "5/23/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 85-140 (was 75-125)" }
+          { "type": "buff",   "text": "• DMG 85-140 (was 75-125)" }
         ]
       }
     ],
@@ -7126,7 +7126,7 @@
       {
         "date": "5/23/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 75-140 (was 55-120)" }
+          { "type": "buff",   "text": "• DMG 75-140 (was 55-120)" }
         ]
       }
     ],
@@ -7197,19 +7197,19 @@
       {
         "date": "1/6/26",
         "changes": [
-          { "type": "buff",   "text": "● Type starting at LVL 5 65 Cone (was Line)" }
+          { "type": "buff",   "text": "• Type starting at LVL 5 65 Cone (was Line)" }
         ]
       },
       {
         "date": "3/14/26",
         "changes": [
-          { "type": "buff",   "text": "● CD 1.4-1.2 (was 1.5)<br>● DMG 125-285 (was 90-210)" }
+          { "type": "buff",   "text": "• CD 1.4-1.2 (was 1.5)<br>• DMG 125-285 (was 90-210)" }
         ]
       },
       {
         "date": "5/31/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 165-350 (was 125-285)<br>● Passive [Sword Lunge] First hit Bonus DMG 75% (was 30%)" }
+          { "type": "buff",   "text": "• DMG 165-350 (was 125-285)<br>• Passive [Sword Lunge] First hit Bonus DMG 75% (was 30%)" }
         ]
       }
     ],
@@ -7292,13 +7292,13 @@
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 225-300 (was 160-250)<br>● RNG 18-24 (was 16-21)" }
+          { "type": "buff",   "text": "• DMG 225-300 (was 160-250)<br>• RNG 18-24 (was 16-21)" }
         ]
       },
       {
         "date": "8/2/26",
         "changes": [
-          { "type": "buff",   "text": "● Passive [Trick or Treat!] added" }
+          { "type": "buff",   "text": "• Passive [Trick or Treat!] added" }
         ]
       }
     ],
@@ -7367,7 +7367,7 @@
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 145-235 (was 130-225)<br>● CD 4.5-3.8 (was 4.7-4.3)" }
+          { "type": "buff",   "text": "• DMG 145-235 (was 130-225)<br>• CD 4.5-3.8 (was 4.7-4.3)" }
         ]
       }
     ],
@@ -7469,20 +7469,20 @@
       {
         "date": "1/6/26",
         "changes": [
-          { "type": "buff",   "text": "● Type starting at LVL 6 FullAOE (was Circle)" }
+          { "type": "buff",   "text": "• Type starting at LVL 6 FullAOE (was Circle)" }
         ]
       },
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "nerf",   "text": "● placements 2 (was 3)" },
-          { "type": "buff",   "text": "● DMG 385-545 (was 250-405)" }
+          { "type": "nerf",   "text": "• placements 2 (was 3)" },
+          { "type": "buff",   "text": "• DMG 385-545 (was 250-405)" }
         ]
       },
       {
         "date": "5/31/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 430-655 (was 385-545<br>● Passive [Energy Siphon] RNG Boost 3% per Upgrade (was 2%)<br>● Passive [Energy Siphon] RNG Boost cap 75% (was 70%)" }
+          { "type": "buff",   "text": "• DMG 430-655 (was 385-545<br>• Passive [Energy Siphon] RNG Boost 3% per Upgrade (was 2%)<br>• Passive [Energy Siphon] RNG Boost cap 75% (was 70%)" }
         ]
       }
     ],
@@ -7585,19 +7585,19 @@
      {
         "date": "12/20/25",
         "changes": [
-          { "type": "buff",   "text": "● LVL 2 Type Circle (was Single)<br>● LVL 4 Type FullAOE (was Circle<br>● LVL 5 DMG 210 (was 200)" }
+          { "type": "buff",   "text": "• LVL 2 Type Circle (was Single)<br>• LVL 4 Type FullAOE (was Circle<br>• LVL 5 DMG 210 (was 200)" }
         ]
       },
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "buff",   "text": "● CD 4.2-3.7 (was 4.8-4.2)<br>● DMG 575-745 (was 500-700)" }
+          { "type": "buff",   "text": "• CD 4.2-3.7 (was 4.8-4.2)<br>• DMG 575-745 (was 500-700)" }
         ]
       },
       {
         "date": "7/26/26",
         "changes": [
-          { "type": "buff",   "text": "● Active Ability [Blackout] added" }
+          { "type": "buff",   "text": "• Active Ability [Blackout] added" }
         ]
       }
     ],
@@ -7710,14 +7710,14 @@
       {
         "date": "7/26/26",
         "changes": [
-          { "type": "buff",   "text": "● Active Ability [Mode Swap] added" }
+          { "type": "buff",   "text": "• Active Ability [Mode Swap] added" }
         ]
       },
       {
         "date": "7/29/26",
         "changes": [
-          { "type": "nerf",   "text": "● Increased Cooldown to 0.21 (was 0.20)" },
-          { "type": "buff",   "text": "● Increased Damage to 30 (was 28)" }
+          { "type": "nerf",   "text": "• Increased Cooldown to 0.21 (was 0.20)" },
+          { "type": "buff",   "text": "• Increased Damage to 30 (was 28)" }
         ]
       }
     ],
@@ -7901,19 +7901,19 @@
       {
         "date": "1/4/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 101-231 (was 80-180)<br>● Turret Type Cone (was Single)" }
+          { "type": "buff",   "text": "• DMG 101-231 (was 80-180)<br>• Turret Type Cone (was Single)" }
         ]
       },
       {
         "date": "1/6/26",
         "changes": [
-          { "type": "buff",   "text": "● Type starting at LVL 4 Line (was Circle)" }
+          { "type": "buff",   "text": "• Type starting at LVL 4 Line (was Circle)" }
         ]
       },
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 145-345 (was 101 - 231)" }
+          { "type": "buff",   "text": "• DMG 145-345 (was 101 - 231)" }
         ]
       }
     ],
@@ -8009,13 +8009,13 @@
       {
         "date": "1/6/26",
         "changes": [
-          { "type": "buff",   "text": "● Type starting at LVL 3 Circle (was Single)" }
+          { "type": "buff",   "text": "• Type starting at LVL 3 Circle (was Single)" }
         ]
       },
       {
         "date": "5/23/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 125-225 (was 100-200)" }
+          { "type": "buff",   "text": "• DMG 125-225 (was 100-200)" }
         ]
       }
     ],
@@ -8158,13 +8158,13 @@
       {
         "date": "1/6/26",
         "changes": [
-          { "type": "buff",   "text": "● Type starting at LVL 3 Single (was Circle)" }
+          { "type": "buff",   "text": "• Type starting at LVL 3 Single (was Circle)" }
         ]
       },
       {
         "date": "5/23/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 110-215 (was 90-195)" }
+          { "type": "buff",   "text": "• DMG 110-215 (was 90-195)" }
         ]
       }
     ],
@@ -8250,7 +8250,7 @@
       {
         "date": "3/14/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 225-400 (was 170-320)" }
+          { "type": "buff",   "text": "• DMG 225-400 (was 170-320)" }
         ]
       }
     ],
@@ -8350,8 +8350,8 @@
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "buff",   "text": "● CD 4.8-3.8 (was 5.2-4.5)<br>● RNG 24-31 (was 22-26)" },
-          { "type": "rework",   "text": "● Passive [Radio Static] Stun Length 3s (was 0.75s)<br>● Time in RNG 2s (was 6s)<br>● Stun Lockout 12.5s (was 10s)" }
+          { "type": "buff",   "text": "• CD 4.8-3.8 (was 5.2-4.5)<br>• RNG 24-31 (was 22-26)" },
+          { "type": "rework",   "text": "• Passive [Radio Static] Stun Length 3s (was 0.75s)<br>• Time in RNG 2s (was 6s)<br>• Stun Lockout 12.5s (was 10s)" }
         ]
       }
     ],
@@ -8624,8 +8624,8 @@
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "buff",   "text": "● RNG 22-26 (was 20)<br>● Endo HP 80% (was 10%)" },
-          { "type": "nerf",   "text": "● Shooter Endo HP 55% (was 60%)" }
+          { "type": "buff",   "text": "• RNG 22-26 (was 20)<br>• Endo HP 80% (was 10%)" },
+          { "type": "nerf",   "text": "• Shooter Endo HP 55% (was 60%)" }
         ]
       }
     ],
@@ -8752,7 +8752,7 @@
       {
         "date": "1/6/26",
         "changes": [
-          { "type": "buff",   "text": "● Type starting at LVL 6 65 Cone (was Line)" }
+          { "type": "buff",   "text": "• Type starting at LVL 6 65 Cone (was Line)" }
         ]
       }
     ],
@@ -8851,7 +8851,7 @@
       {
         "date": "4/1/26",
         "changes": [
-          { "type": "nerf",   "text": "● DMG 70-145 (was 100-715)<br>● Placement Cost 750 (was 450)<br>● LVL's Price 800-2250 (was 650-1500)" }
+          { "type": "nerf",   "text": "• DMG 70-145 (was 100-715)<br>• Placement Cost 750 (was 450)<br>• LVL's Price 800-2250 (was 650-1500)" }
         ]
       }
     ],
@@ -9151,7 +9151,7 @@
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 1.65k-2.75k (was 600-1k)<br>● 5.4-5.6 (was 9)" }
+          { "type": "buff",   "text": "• DMG 1.65k-2.75k (was 600-1k)<br>• 5.4-5.6 (was 9)" }
         ]
       }
     ],
@@ -9274,19 +9274,19 @@
       {
         "date": "1/6/26",
         "changes": [
-          { "type": "buff",   "text": "● Type starting at LVL 7 120 Cone (was 65)" }
+          { "type": "buff",   "text": "• Type starting at LVL 7 120 Cone (was 65)" }
         ]
       },
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "buff",   "text": "● CD 5.8-5.3 (was 6.4-5.6)<br>● Active Dark/Fire DMG Boost +85 (was 70%)" }
+          { "type": "buff",   "text": "• CD 5.8-5.3 (was 6.4-5.6)<br>• Active Dark/Fire DMG Boost +85 (was 70%)" }
         ]
       },
       {
         "date": "4/26/26",
         "changes": [
-          { "type": "buff",   "text": "● Active CD 100s (was 500s)" }
+          { "type": "buff",   "text": "• Active CD 100s (was 500s)" }
         ]
       }
     ],
@@ -9589,20 +9589,20 @@
       {
         "date": "11/25/25",
         "changes": [
-          { "type": "buff",   "text": "● Placement Price 750 (was 900)" }
+          { "type": "buff",   "text": "• Placement Price 750 (was 900)" }
         ]
       },
       {
         "date": "1/4/26",
         "changes": [
-          { "type": "nerf",   "text": "● Costs 1k-8k (was 750-6.5k)" },
-          { "type": "buff",   "text": "● DMG 70-445 (was 45-195)<br>● Passive [The One You Should Not Have Killed] DMG +500% (was +50%)" }
+          { "type": "nerf",   "text": "• Costs 1k-8k (was 750-6.5k)" },
+          { "type": "buff",   "text": "• DMG 70-445 (was 45-195)<br>• Passive [The One You Should Not Have Killed] DMG +500% (was +50%)" }
         ]
       },
       {
         "date": "3/29/26",
         "changes": [
-          { "type": "buff",   "text": "● Passive [Restless Soul] DMG Boost cap 150% (was 100%)<br>● Passive [Vengful Spirit] Scale per wave 3% (was 2%)<br>● Passive [Restless Soul] Scale per Endless wave 1% (was 0.8%)<br>● Passive [The One You Should Not Have Killed] Stun lockout 15s (was 30s)<br>● Passive [The One You Should Not Have Killed] Wither 25% (was 20%)<br>● DMG 100-635 (was 70-445)<br>● LVL's 10-17 Type 45 Cone (was Circle)<br>● LVL 18 Type 85 Cone (was Circle)" }
+          { "type": "buff",   "text": "• Passive [Restless Soul] DMG Boost cap 150% (was 100%)<br>• Passive [Vengful Spirit] Scale per wave 3% (was 2%)<br>• Passive [Restless Soul] Scale per Endless wave 1% (was 0.8%)<br>• Passive [The One You Should Not Have Killed] Stun lockout 15s (was 30s)<br>• Passive [The One You Should Not Have Killed] Wither 25% (was 20%)<br>• DMG 100-635 (was 70-445)<br>• LVL's 10-17 Type 45 Cone (was Circle)<br>• LVL 18 Type 85 Cone (was Circle)" }
         ]
       },
       {
@@ -9903,14 +9903,14 @@
       {
         "date": "1/4/26",
         "changes": [
-          { "type": "nerf",   "text": "● Costs 2.4k-10k (was 1.35k-9k)" },
-          { "type": "buff",   "text": "● DMG 150-400 (was 130-375)<br>● Active DMG Boost +15% (was +5%)" }
+          { "type": "nerf",   "text": "• Costs 2.4k-10k (was 1.35k-9k)" },
+          { "type": "buff",   "text": "• DMG 150-400 (was 130-375)<br>• Active DMG Boost +15% (was +5%)" }
         ]
       },
       {
         "date": "3/29/26",
         "changes": [
-          { "type": "buff",   "text": "● Starting at LVL 16 Type 145 Cone (was Circle)<br>● DMG 125-735 (was 150-400)" }
+          { "type": "buff",   "text": "• Starting at LVL 16 Type 145 Cone (was Circle)<br>• DMG 125-735 (was 150-400)" }
         ]
       },
       {
@@ -10257,7 +10257,7 @@
       {
         "date": "12/20/25",
         "changes": [
-          { "type": "buff",   "text": "● Type Circle (was Single)" }
+          { "type": "buff",   "text": "• Type Circle (was Single)" }
         ]
       }
     ],
@@ -10351,7 +10351,7 @@
       {
         "date": "1/19/26",
         "changes": [
-          { "type": "buff",   "text": "● RNG 22-30 (was 20-22)<br>● DMG 1.9k-2.75k (was 1.8k-2.4k)<br>● Passive [Frozen Obelisk] Slow 25% (was 10%)" }
+          { "type": "buff",   "text": "• RNG 22-30 (was 20-22)<br>• DMG 1.9k-2.75k (was 1.8k-2.4k)<br>• Passive [Frozen Obelisk] Slow 25% (was 10%)" }
         ]
       }
     ],
@@ -10556,21 +10556,21 @@
     {
         "date": "12/25/25",
         "changes": [
-          { "type": "nerf",   "text": "● CD through LVL's 12-10 (was 5-5.8)<br>● Active Scaling 250% (was 300%)" },
-          { "type": "buff",   "text": "● Placement Cost 10k (was 12.5k). This also affects LVL's Cost" },
-          { "type": "rework",   "text": "● Active CD 40s (was 60s)<br>● Active Duration 20s (was 60s) " }
+          { "type": "nerf",   "text": "• CD through LVL's 12-10 (was 5-5.8)<br>• Active Scaling 250% (was 300%)" },
+          { "type": "buff",   "text": "• Placement Cost 10k (was 12.5k). This also affects LVL's Cost" },
+          { "type": "rework",   "text": "• Active CD 40s (was 60s)<br>• Active Duration 20s (was 60s) " }
         ]
       },
       {
         "date": "1/4/26",
         "changes": [
-          { "type": "buff",   "text": "● Yeti Apprentice DMG 25% (was 15%)<br>● Yeti Sensei DMG 45% (was 30%)" }
+          { "type": "buff",   "text": "• Yeti Apprentice DMG 25% (was 15%)<br>• Yeti Sensei DMG 45% (was 30%)" }
         ]
       },
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "nerf",   "text": "● 205 less DMG on every LVL" }
+          { "type": "nerf",   "text": "• 205 less DMG on every LVL" }
         ]
       }
     ],
@@ -10705,7 +10705,7 @@
       {
         "date": "5/31/26",
         "changes": [
-          { "type": "buff",   "text": "● Placement Cost 950 (was 1.05k)" }
+          { "type": "buff",   "text": "• Placement Cost 950 (was 1.05k)" }
         ]
       }
     ],
@@ -10775,7 +10775,7 @@
       {
         "date": "3/22/26",
         "changes": [
-          { "type": "rework",   "text": "● DMG and CD doubled" }
+          { "type": "rework",   "text": "• DMG and CD doubled" }
         ]
       }
     ],
@@ -10891,13 +10891,13 @@
       {
         "date": "12/7/25",
         "changes": [
-          { "type": "buff",   "text": "● Placements 3 (was 2)<br>● Max Range 31 (was 24)<br>● LVL 5 DMG 210 (was 200)<br>● Placement Cost 2350 (was 2750)<br>● Passive addition: 'Enemies defeated by this unit increase its damage by .2% up to 25%.'" }
+          { "type": "buff",   "text": "• Placements 3 (was 2)<br>• Max Range 31 (was 24)<br>• LVL 5 DMG 210 (was 200)<br>• Placement Cost 2350 (was 2750)<br>• Passive addition: 'Enemies defeated by this unit increase its damage by .2% up to 25%.'" }
         ]
       },
       {
         "date": "2/7/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 150-285 (was 150-210)<br>● Passive [Broken Ornaments] Bleed length 4s (was 2s)<br>● Passive [Broken Ornaments] Bleed Scale 20% (was 10%)" }
+          { "type": "buff",   "text": "• DMG 150-285 (was 150-210)<br>• Passive [Broken Ornaments] Bleed length 4s (was 2s)<br>• Passive [Broken Ornaments] Bleed Scale 20% (was 10%)" }
         ]
       }
     ],
@@ -11068,7 +11068,7 @@
     {
         "date": "1/6/26",
         "changes": [
-          { "type": "buff",   "text": "● Type Degrees 90 (was 35)" }
+          { "type": "buff",   "text": "• Type Degrees 90 (was 35)" }
         ]
       }
     ],
@@ -11175,7 +11175,7 @@
       {
         "date": "1/6/26",
         "changes": [
-          { "type": "buff",   "text": "● Type starting at LVL 5 Single (was Circle)" }
+          { "type": "buff",   "text": "• Type starting at LVL 5 Single (was Circle)" }
         ]
       }
     ],
@@ -11421,13 +11421,13 @@
       {
         "date": "12/6/25",
         "changes": [
-          { "type": "rework",   "text": "● DMG and CD doubled" }
+          { "type": "rework",   "text": "• DMG and CD doubled" }
         ]
       },
       {
         "date": "1/6/26",
         "changes": [
-          { "type": "buff",   "text": "● Type starting at LVL 5 65 Cone (was Line)" }
+          { "type": "buff",   "text": "• Type starting at LVL 5 65 Cone (was Line)" }
         ]
       }
     ],
@@ -11523,7 +11523,7 @@
       {
         "date": "3/22/26",
         "changes": [
-          { "type": "nerf",   "text": "● Spicy Burn 20% (was 35%)" }
+          { "type": "nerf",   "text": "• Spicy Burn 20% (was 35%)" }
         ]
       }
     ],
@@ -11635,13 +11635,13 @@
       {
         "date": "4/19/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG doubled<br>● CD reduced to 1" }
+          { "type": "buff",   "text": "• DMG doubled<br>• CD reduced to 1" }
         ]
       },
       {
         "date": "4/26/26",
         "changes": [
-          { "type": "rework",   "text": "● DMG 235-310 (was 160-240)<br>● CD 2.5-2 (was 1)" }
+          { "type": "rework",   "text": "• DMG 235-310 (was 160-240)<br>• CD 2.5-2 (was 1)" }
         ]
       }
     ],
@@ -11716,8 +11716,8 @@
       {
         "date": "3/22/26",
         "changes": [
-          { "type": "buff",   "text": "● Money 250-1750 (was 200-1600)<br>● Placements 5 (was 3)" },
-          { "type": "nerf",   "text": "● LVL Prices 1350-4500 (was 900-3250)" }
+          { "type": "buff",   "text": "• Money 250-1750 (was 200-1600)<br>• Placements 5 (was 3)" },
+          { "type": "nerf",   "text": "• LVL Prices 1350-4500 (was 900-3250)" }
         ]
       }
     ],
@@ -12120,7 +12120,7 @@
       {
         "date": "1/4/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 125-400 (was 125-320)" }
+          { "type": "buff",   "text": "• DMG 125-400 (was 125-320)" }
         ]
       }
     ],
@@ -12639,7 +12639,7 @@
       {
         "date": "5/31/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 685-1.25k (was 635-1k)<br>● active 2 electric units 15% Bleed (was 10%)<br>● Mono electric Team 25% Bleed, 25% Slow (was 20% and 20%)" }
+          { "type": "buff",   "text": "• DMG 685-1.25k (was 635-1k)<br>• active 2 electric units 15% Bleed (was 10%)<br>• Mono electric Team 25% Bleed, 25% Slow (was 20% and 20%)" }
         ]
       }
     ],
@@ -13042,7 +13042,7 @@
     {
         "date": "4/26/26",
         "changes": [
-          { "type": "nerf",   "text": "● RNG 23-27 (was 25-35)" }
+          { "type": "nerf",   "text": "• RNG 23-27 (was 25-35)" }
         ]
       }
     ],
@@ -13099,8 +13099,8 @@
       {
         "date": "5/23/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG 10%/15% (was 5%/10%)<br>● RNG 10%/15% (was 5%/10%)" },
-          { "type": "nerf",   "text": "● Stacking Removed" }
+          { "type": "buff",   "text": "• DMG 10%/15% (was 5%/10%)<br>• RNG 10%/15% (was 5%/10%)" },
+          { "type": "nerf",   "text": "• Stacking Removed" }
         ]
       }
     ],
@@ -13362,10 +13362,10 @@
       {
         "date": "5/23/26",
         "changes": [
-          { "type": "buff",   "text": "● Mode: Smasher:<br>● DMG boost 40%/35% (was 30%/25%)" },
-          { "type": "nerf",   "text": "● CD Boost Removed (was -15%/-10%)" },
-          { "type": "buff",   "text": "● Mode: Shocker:<br>● DMG Boost 15%/25% (was 10%/13%)<br>● RNG Boost 20%/40% (was 15%/35%)" },
-          { "type": "nerf",   "text": "● CD Boost -5%/-10% (was -3%/-15%)" }
+          { "type": "buff",   "text": "• Mode: Smasher:<br>• DMG boost 40%/35% (was 30%/25%)" },
+          { "type": "nerf",   "text": "• CD Boost Removed (was -15%/-10%)" },
+          { "type": "buff",   "text": "• Mode: Shocker:<br>• DMG Boost 15%/25% (was 10%/13%)<br>• RNG Boost 20%/40% (was 15%/35%)" },
+          { "type": "nerf",   "text": "• CD Boost -5%/-10% (was -3%/-15%)" }
         ]
       }
     ],
@@ -14229,7 +14229,7 @@
     "passives": [
       {
         "title": "Fool's Gambit",
-        "text": "Spend 1k cash to flip a coin. Gain rewards for each consecutive heads flipped, each including all previous rewards. 5 and 7 heads in a row locks for 30s. 10 heads in a row locks for 240s, removes all cash, and can only trigger 3 times per match. <br> ●  3 Heads: Gain 5% of your current cash (max of 15k). <br> ● 5 Heads: Gain +30% crit damage for 30s. <br> ● 7 Heads: Next attack deals 777% damage. First time: Permanantly gains +7% to all stats. ● 10 Heads: Gains +50% damage, -10% cooldown, and +50% crit damage for 30s. After buff ends: Permanantly gains +20% damage and +10% crit damage. Units in range recive 20% of this unit's crit stats for 30s. Gains 1% damage per crit in range (caps at 50%). Devil's Hand recieves double buff per repetition for 30s. (Upgrade 2+, Local CD: 1s)",
+        "text": "Spend 1k cash to flip a coin. Gain rewards for each consecutive heads flipped, each including all previous rewards. 5 and 7 heads in a row locks for 30s. 10 heads in a row locks for 240s, removes all cash, and can only trigger 3 times per match. <br> •  3 Heads: Gain 5% of your current cash (max of 15k). <br> • 5 Heads: Gain +30% crit damage for 30s. <br> • 7 Heads: Next attack deals 777% damage. First time: Permanantly gains +7% to all stats. • 10 Heads: Gains +50% damage, -10% cooldown, and +50% crit damage for 30s. After buff ends: Permanantly gains +20% damage and +10% crit damage. Units in range recive 20% of this unit's crit stats for 30s. Gains 1% damage per crit in range (caps at 50%). Devil's Hand recieves double buff per repetition for 30s. (Upgrade 2+, Local CD: 1s)",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-7geqyq.png"
       },
       {
@@ -15044,7 +15044,7 @@
       {
         "date": "7/20/26",
         "changes": [
-          { "type": "buff",   "text": "● DMG increased to 1500 (was 1299)<br>● Attack type change to Cone 45° at lvl 10 and Cone 75° at lvl 16 (was Circle)" }
+          { "type": "buff",   "text": "• DMG increased to 1500 (was 1299)<br>• Attack type change to Cone 45° at lvl 10 and Cone 75° at lvl 16 (was Circle)" }
         ]
       }
     ],
@@ -15667,7 +15667,7 @@
     "passives": [
       {
         "title": "Mini Rainbows",
-        "text": "Spawn a Mini Rainbow tower of a chosen element. Max one per element. You get +1 mini rainbow per missing unit slot. (Upgrade 0+, Local CD: 1s) <br>● Neutral: +20% Damage <br>● Dark: +10% Damage & 10% slow for 2s <br>● Light +20% Crit Rate <br>● Fire: 20% burn over 5s <br>● Water: 20% slow for 2s <br>● Nature: +1% Damage per max stock <br>● Electricity: Stuns for 0.5s on hit <br>● Rust: Applies 5% Wither",
+        "text": "Spawn a Mini Rainbow tower of a chosen element. Max one per element. You get +1 mini rainbow per missing unit slot. (Upgrade 0+, Local CD: 1s) <br>• Neutral: +20% Damage <br>• Dark: +10% Damage & 10% slow for 2s <br>• Light +20% Crit Rate <br>• Fire: 20% burn over 5s <br>• Water: 20% slow for 2s <br>• Nature: +1% Damage per max stock <br>• Electricity: Stuns for 0.5s on hit <br>• Rust: Applies 5% Wither",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-xvfaz4.png"
       },
       {
@@ -16028,15 +16028,15 @@
     "passives": [
       {
         "title": "Changing of Seasons",
-        "text": "Changes form to the majority element in the team, chooses default if none are applicable (Multiple elements are equal).<br>● Neutral: +15% DMG, +10% RNG, -5% CD, gains +2% DMG, +1% RNG, and -1% CD per unique element (max 5).<br>● Nature: -10% DMG, +10% RNG, adds +1 stock, gains +20% DMG for 15s when losing a stock, and buffs teammates based on max stocks.<br>● Fire: +20% DMG, applies 20% burn, every 3 attacks detonates burns for 1.1x DMG, leaves lava pools on kill dealing 50% DMG and 10% burn over 3s.<br>● Water: Slows nearby enemies by 10%, creates whirlpools that slow and damage enemies, Water units deal 10% more DMG to whirlpooled enemies.<br>● Dark: +30% DMG, applies Fear up to 10% wither based on dark units, every 3rd hit on the same enemy deals 30% more damage.<br>● Light: +30% RNG, buffs nearby units to all stats (+5% for Light units), focuses the highest HP enemy dealing +20% damage while allies deal +5% to it.<br>● Rust: +15% DMG and RNG applies 10% wither, gains double wither value, attacks on withered enemies apply stacking slows up to 15%.<br>● Electric: -20% DMG, -10% CD, applies Static Shock dealing 7.5% DMG/s and triggering follow-up attacks on stunned enemies."
+        "text": "Changes form to the majority element in the team, chooses default if none are applicable (Multiple elements are equal).<br>• Neutral: +15% DMG, +10% RNG, -5% CD, gains +2% DMG, +1% RNG, and -1% CD per unique element (max 5).<br>• Nature: -10% DMG, +10% RNG, adds +1 stock, gains +20% DMG for 15s when losing a stock, and buffs teammates based on max stocks.<br>• Fire: +20% DMG, applies 20% burn, every 3 attacks detonates burns for 1.1x DMG, leaves lava pools on kill dealing 50% DMG and 10% burn over 3s.<br>• Water: Slows nearby enemies by 10%, creates whirlpools that slow and damage enemies, Water units deal 10% more DMG to whirlpooled enemies.<br>• Dark: +30% DMG, applies Fear up to 10% wither based on dark units, every 3rd hit on the same enemy deals 30% more damage.<br>• Light: +30% RNG, buffs nearby units to all stats (+5% for Light units), focuses the highest HP enemy dealing +20% damage while allies deal +5% to it.<br>• Rust: +15% DMG and RNG applies 10% wither, gains double wither value, attacks on withered enemies apply stacking slows up to 15%.<br>• Electric: -20% DMG, -10% CD, applies Static Shock dealing 7.5% DMG/s and triggering follow-up attacks on stunned enemies."
       },
       {
         "title": "Sprawling Roots",
-        "text": "Attacks all enemies in 66% of range every 5s for 50% DMG. Effects change depending on the form.<br>● Nature: Roots deal double damage to enemies above 50% HP.<br>● Fire: Roots deal 70% DMG and apply 25% burn.<br>● Water: Spawns an additional whirlpool on the highest HP enemy.<br>● Dark: Gains +2% DMG per enemy in range.<br>● Light: Roots deal +100% DMG to the highest hp enemy.<br>● Rust: Roots attack every 10s, deal 120% DMG and apply 5% wither.<br>● Electric: Roots attack every 2.5s for 40% DMG and apply a 0.2s stun that bypasses stun cooldowns."
+        "text": "Attacks all enemies in 66% of range every 5s for 50% DMG. Effects change depending on the form.<br>• Nature: Roots deal double damage to enemies above 50% HP.<br>• Fire: Roots deal 70% DMG and apply 25% burn.<br>• Water: Spawns an additional whirlpool on the highest HP enemy.<br>• Dark: Gains +2% DMG per enemy in range.<br>• Light: Roots deal +100% DMG to the highest hp enemy.<br>• Rust: Roots attack every 10s, deal 120% DMG and apply 5% wither.<br>• Electric: Roots attack every 2.5s for 40% DMG and apply a 0.2s stun that bypasses stun cooldowns."
       },
       {
         "title": "Nature's Blessing",
-        "text": "Gains boosts based on the number of units of the same element in the team (excluding self) requires 3/4/5 units respectively.<br>● Neutral: +1/2/5% DMG and RNG. Nature: +2/4/10% RNG.<br>● Fire: +3/6/12% DMG and burn.<br>● Water: -2/4/10% CD.<br>● Dark: +3/6/12% DMG.<br>● Light: +3/8/12% RNG.<br>● Rust: +1/2/5% DMG and RNG.<br>● Electric: -1/2/5% CD."
+        "text": "Gains boosts based on the number of units of the same element in the team (excluding self) requires 3/4/5 units respectively.<br>• Neutral: +1/2/5% DMG and RNG. Nature: +2/4/10% RNG.<br>• Fire: +3/6/12% DMG and burn.<br>• Water: -2/4/10% CD.<br>• Dark: +3/6/12% DMG.<br>• Light: +3/8/12% RNG.<br>• Rust: +1/2/5% DMG and RNG.<br>• Electric: -1/2/5% CD."
       }
     ],
   "passiveDamage": {
@@ -19880,7 +19880,7 @@
     },
     {
       "title": "Callings of the Past",
-      "text": "Lorekeeper grants different boosts to the team based on the main element of your team that affect units of that element. <br>● Water: Attacks apply 5% Slow (20% max). <br>● Dark: Attacks apply 15% Poison for 5s that can't be reapplied until it ends. <br>● Nature: Grants +1 Stock, then grants +1 bonus Stock when nature units are placed (+5 Stocks max). <br>● Rust: Attacks apply 10% Wither for 5s that can't be reapplied until it ends. <br>● Light: Attacks 15% faster. <br>● Neutral: +15% crit rate and +20% crit damage. <br>● Fire: Attacks apply +20% more Burn. <br>● Electric: Attacks Stun for 0.75s (does not bypass lockout)."
+      "text": "Lorekeeper grants different boosts to the team based on the main element of your team that affect units of that element. <br>• Water: Attacks apply 5% Slow (20% max). <br>• Dark: Attacks apply 15% Poison for 5s that can't be reapplied until it ends. <br>• Nature: Grants +1 Stock, then grants +1 bonus Stock when nature units are placed (+5 Stocks max). <br>• Rust: Attacks apply 10% Wither for 5s that can't be reapplied until it ends. <br>• Light: Attacks 15% faster. <br>• Neutral: +15% crit rate and +20% crit damage. <br>• Fire: Attacks apply +20% more Burn. <br>• Electric: Attacks Stun for 0.75s (does not bypass lockout)."
     }
   ],
   "passiveDamage": {
@@ -20068,7 +20068,7 @@
       {
         "date": "7/20/26",
         "changes": [
-          { "type": "nerf",   "text": "● Placements reduced to 1 (was 2)" }
+          { "type": "nerf",   "text": "• Placements reduced to 1 (was 2)" }
         ]
       }
       ],
@@ -20222,7 +20222,7 @@
   "passives": [
     {
       "title": "You're All Pawns on my Board.",
-    "text": "Place up to 5 Chess Pieces on the board. Pieces start as Pawns and promote after earning kills. <br>● Pawn: Single target, 80% damage, max 5. <br>● Knight: Cone 25, 65% damage, applies 15% Bleed for 2s, max 3. <br>● Rook: Line, 60% damage, Stuns the 3 closest enemies for 1s on its 10th attack, max 1. <br>● Bishop: Cone 75, 80% damage, attacks apply a secondary piercing shot to 3 enemies for 40% damage, max 2.<br>● Queen: Cone 180, 50% damage, applies 20% Bleed for 5s, applies 10% Slow for 5s, and Stuns the 5 closest enemies for 1.5s. Max 1.<br>● King: Full AoE, 65% damage, passively applies 15% Slow to enemies in range, max 1. (Upgrade 0+, Global CD: 0s).",
+    "text": "Place up to 5 Chess Pieces on the board. Pieces start as Pawns and promote after earning kills. <br>• Pawn: Single target, 80% damage, max 5. <br>• Knight: Cone 25, 65% damage, applies 15% Bleed for 2s, max 3. <br>• Rook: Line, 60% damage, Stuns the 3 closest enemies for 1s on its 10th attack, max 1. <br>• Bishop: Cone 75, 80% damage, attacks apply a secondary piercing shot to 3 enemies for 40% damage, max 2.<br>• Queen: Cone 180, 50% damage, applies 20% Bleed for 5s, applies 10% Slow for 5s, and Stuns the 5 closest enemies for 1.5s. Max 1.<br>• King: Full AoE, 65% damage, passively applies 15% Slow to enemies in range, max 1. (Upgrade 0+, Global CD: 0s).",
       "activeIcon": "https://tr.rbxcdn.com/180DAY-970aae71c4aaccc7b04c458dcccce895/420/420/Image/Png/noFilter"
     },
     {
@@ -20679,7 +20679,7 @@
     },
     {
       "title": "Dangerous Waters",
-      "text": "Enemies in range have their regen reduced by 75%, take 10% of this unit's damage every second, 15% if the enemy has regen, and take 20% more damage from Water and Electricity units. <br> ● At 3+ Electric units equipped, this unit gains +20% Damage, -10% CD, and enemies take +50% damage from this passive. <br> ● At 3+ Water units equipped, this unit gains +50% Damage and +25% Range."
+      "text": "Enemies in range have their regen reduced by 75%, take 10% of this unit's damage every second, 15% if the enemy has regen, and take 20% more damage from Water and Electricity units. <br> • At 3+ Electric units equipped, this unit gains +20% Damage, -10% CD, and enemies take +50% damage from this passive. <br> • At 3+ Water units equipped, this unit gains +50% Damage and +25% Range."
     }
   ],
   "passiveDamage": {
@@ -20987,7 +20987,7 @@
   "passives": [
     {
       "title": "Water Warfare",
-      "text": "On attack generate 1 water balloon, or 2 if your team has 3+ Water units. <br> ● At 6 water balloons, the next 6 attacks follow up with a water balloon in a Circle AOE, dealing 50% damage. Follow-ups apply Soaked and create a puddle that applies Soaked. <br> ● [Soaked] enemies take 10% more damage from Water units. Fire attacks deal +25% damage and remove Soaked. Electric attacks deal +10% damage, Stun for 1.5s, and remove Soaked."
+      "text": "On attack generate 1 water balloon, or 2 if your team has 3+ Water units. <br> • At 6 water balloons, the next 6 attacks follow up with a water balloon in a Circle AOE, dealing 50% damage. Follow-ups apply Soaked and create a puddle that applies Soaked. <br> • [Soaked] enemies take 10% more damage from Water units. Fire attacks deal +25% damage and remove Soaked. Electric attacks deal +10% damage, Stun for 1.5s, and remove Soaked."
     }
   ],
   "passiveDamage": {
@@ -21256,7 +21256,7 @@
   "passives": [
     {
       "title": "Steel Barrage",
-      "text": "Every 5s, fire a cannonball dealing 50% of this unit's damage. Upgrade the cannon every 50,000 damage dealt, up to Level 5. <br> ● Level 1: Cannonballs Knockback enemies 2 tiles. <br>● Level 2: Cannonballs deal +20% damage. <br> ● Level 3: Cannon gains -10% CD. <br> ● Level 4: Cannonballs inflict 35% Burn for 5s. <br> ● Level 5: Every attack fires an additional cannonball dealing 40% damage."
+      "text": "Every 5s, fire a cannonball dealing 50% of this unit's damage. Upgrade the cannon every 50,000 damage dealt, up to Level 5. <br> • Level 1: Cannonballs Knockback enemies 2 tiles. <br>• Level 2: Cannonballs deal +20% damage. <br> • Level 3: Cannon gains -10% CD. <br> • Level 4: Cannonballs inflict 35% Burn for 5s. <br> • Level 5: Every attack fires an additional cannonball dealing 40% damage."
     }
   ],
   "passiveDamage": {
@@ -22279,7 +22279,7 @@
 {
   "name": "Scott Cawthon",
   "imgNormal": "https://tr.rbxcdn.com/180DAY-740747fae009849e6ff58030617cf4f7/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-740747fae009849e6ff58030617cf4f7/420/420/Image/Png/noFilter",
+  "imgShiny": "https://media.discordapp.net/attachments/1302099413400944651/1536391734496469072/noFilter.png?ex=6a7be48e&is=6a7a930e&hm=1c3dab1f134dfe6f4eac048d5aef9a6dbf2f2066a6b0e87def6be85afb3e708a&=&format=webp&quality=lossless",
   "rarity": "rare",
   "typeMain": "Midgame",
   "typeTags": [
@@ -23072,7 +23072,7 @@
 {
   "name": "Phone Guy",
   "imgNormal": "https://tr.rbxcdn.com/180DAY-04b88a6d9a0a82a939cb9e3b2ae5d00f/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-04b88a6d9a0a82a939cb9e3b2ae5d00f/420/420/Image/Png/noFilter",
+  "imgShiny": "https://media.discordapp.net/attachments/1302099413400944651/1536391464626425968/noFilter.png?ex=6a7be44d&is=6a7a92cd&hm=1cb989897217f86d8e6b547a4e1fe054b8dab299ab58ba82fcc8f74c54e8269a&=&format=webp&quality=lossless",
   "rarity": "secret",
   "typeMain": "Endgame",
   "typeTags": [
@@ -23239,7 +23239,7 @@
 {
   "name": "Anniversary Balloon Boy",
   "imgNormal": "https://tr.rbxcdn.com/180DAY-804c04e9a70cee0086d53d52d640285c/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-804c04e9a70cee0086d53d52d640285c/420/420/Image/Png/noFilter",
+  "imgShiny": "https://media.discordapp.net/attachments/1302099413400944651/1536581280160944218/noFilter.png?ex=6a7bec55&is=6a7a9ad5&hm=b29beaa38dda751a75898e0917c9b680b275d536a57e8583aefa4cff82786c5c&=&format=webp&quality=lossless",
   "rarity": "epic",
   "typeMain": "Endgame",
   "typeTags": [
@@ -23749,7 +23749,7 @@
 {
   "name": "Hoax Purple Guy",
   "imgNormal": "https://tr.rbxcdn.com/180DAY-7d51f78d4134fb23053b6e63a33e226d/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-7d51f78d4134fb23053b6e63a33e226d/420/420/Image/Png/noFilter",
+  "imgShiny": "https://media.discordapp.net/attachments/1302099413400944651/1536391329322369054/noFilter.png?ex=6a7be42d&is=6a7a92ad&hm=e4ce0c6d9c20de427d8d3de03af9fbc8e5659df290ae899c9dbd749215406235&=&format=webp&quality=lossless",
   "rarity": "secret",
   "typeMain": "Midgame-Endgame",
   "typeTags": [

@@ -2791,7 +2791,7 @@
           "Dark/Water": "https://images.fntduserguide.com/dark%3Awaterelement.webp",
           "Water/Electricity": "https://images.fntduserguide.com/water%3Aelectricityelement.webp",
           "Dark/Neutral": "https://images.fntduserguide.com/darkelement.webp",
-          "Universal": "https://images.fntduserguide.com/neutralelement.webp"
+          "Universal": "https://tr.rbxcdn.com/180DAY-27d10e365d2281a1a1eb989eb32b7cf4/420/420/Image/Png/noFilter"
         };
 
         function getElementIcon(elementName) {

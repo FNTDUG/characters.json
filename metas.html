@@ -373,24 +373,83 @@
     (document.head || document.documentElement).appendChild(s);
   }
 
-  /* Cards use loading="lazy", so anything below the fold has never been fetched
-     and would land in the capture as an empty box. Force them eager and wait
-     for the fetches to settle before rendering. */
-  function _metaPreloadImages(rootEl, cb) {
-    var imgs = Array.prototype.slice.call(rootEl.querySelectorAll('img'));
-    var pending = 0, finished = false;
-    function finish() { if (!finished) { finished = true; cb(); } }
-    imgs.forEach(function (im) {
-      if (im.getAttribute('loading') === 'lazy') im.setAttribute('loading', 'eager');
-      if (!im.getAttribute('src')) return;
-      if (im.complete && im.naturalWidth > 0) return;
-      pending++;
-      var settle = function () { if (--pending <= 0) finish(); };
-      im.addEventListener('load', settle, { once: true });
-      im.addEventListener('error', settle, { once: true });
+  /* Point an <img> at a url in CORS mode. html2canvas re-requests every image
+     with crossOrigin set; if the first load was plain, the browser reuses that
+     cached non-CORS copy, the check fails, and the image is dropped from the
+     capture — instantly, with no network round trip. Setting crossOrigin on the
+     original load is what makes the cached copy usable. Must precede .src.     */
+  function _metaImgSrc(im, url) {
+    im.crossOrigin = 'anonymous';
+    im.src = url || '';
+    im.addEventListener('error', function () {
+      // CORS unavailable for this one — retry plain so the page still shows it
+      // (it just will not make it into a capture).
+      if (im.getAttribute('crossorigin')) {
+        var s = im.getAttribute('src');
+        im.removeAttribute('crossorigin');
+        im.src = s;
+      }
     });
-    if (pending === 0) finish();
-    setTimeout(finish, 8000);   // never leave the button stuck on a stalled image
+  }
+
+  /* Same problem for CSS background-image, which has no crossOrigin attribute:
+     warm the cache with a CORS fetch first, then apply it. */
+  function _metaSetBg(el, url) {
+    if (!url) return;
+    var pre = new Image();
+    pre.crossOrigin = 'anonymous';
+    var apply = function () { el.style.backgroundImage = 'url(' + url + ')'; };
+    pre.onload = apply;
+    pre.onerror = apply;   // show it regardless; only the capture suffers
+    pre.src = url;
+  }
+
+  /* Every URL the capture needs: <img> sources plus CSS background-image urls
+     (the root's artwork, rarity plates, and so on, which have no crossOrigin
+     attribute to set). */
+  function _metaImageUrls(rootEl) {
+    var urls = {};
+    Array.prototype.forEach.call(rootEl.querySelectorAll('img'), function (im) {
+      var s = im.getAttribute('src');
+      if (s && s.indexOf('data:') !== 0) urls[s] = 1;
+    });
+    var els = [rootEl].concat(Array.prototype.slice.call(rootEl.querySelectorAll('*')));
+    els.forEach(function (el) {
+      var bg;
+      try { bg = window.getComputedStyle(el).backgroundImage; } catch (e) { return; }
+      if (!bg || bg === 'none') return;
+      var re = /url\((['"]?)(.*?)\1\)/g, m;
+      while ((m = re.exec(bg))) {
+        if (m[2] && m[2].indexOf('data:') !== 0) urls[m[2]] = 1;
+      }
+    });
+    return Object.keys(urls);
+  }
+
+  /* html2canvas re-requests every image with crossOrigin set (useCORS). If the
+     browser cache only holds a plain non-CORS copy it reuses that, the CORS
+     check fails, and the image is dropped from the render — the page still
+     looks right, so the loss is invisible until you look at the screenshot.
+     Fetching each URL once in CORS mode first puts a CORS-valid copy in the
+     cache, so html2canvas's own loads all hit. Also clears loading="lazy",
+     which would otherwise leave below-the-fold cards unfetched. */
+  function _metaPreloadImages(rootEl, cb) {
+    Array.prototype.forEach.call(rootEl.querySelectorAll('img[loading]'), function (im) {
+      im.removeAttribute('loading');
+    });
+    var urls = _metaImageUrls(rootEl);
+    var pending = urls.length, finished = false;
+    function finish() { if (!finished) { finished = true; cb(); } }
+    if (!pending) return finish();
+    urls.forEach(function (u) {
+      var im = new Image();
+      im.crossOrigin = 'anonymous';
+      var settle = function () { if (--pending <= 0) finish(); };
+      im.onload = settle;
+      im.onerror = settle;   // best effort: a failure just means that one drops
+      im.src = u;
+    });
+    setTimeout(finish, 15000);   // never leave the button stuck on a stalled image
   }
 
   function _metaDlBlob(blob, filename) {
@@ -557,7 +616,7 @@
         if (enchData) {
           var eW = document.createElement('div'); eW.className = 'meta-enchant'; eW.style.background = enchData.color;
           var eI = document.createElement('div'); eI.className = 'meta-enchant-inner';
-          var eM = document.createElement('img'); eM.src = enchData.url; eM.alt = unitCfg.enchant;
+          var eM = document.createElement('img'); _metaImgSrc(eM, enchData.url); eM.alt = unitCfg.enchant;
           eI.appendChild(eM); eW.appendChild(eI); inner.appendChild(eW);
         }
 
@@ -568,7 +627,7 @@
           bW.className = 'meta-byte' + (bSh ? ' meta-shiny' : ''); bW.style.background = getRarityBg(unitCfg.byte, bR);
           if (bSh) bW.style.backgroundSize = '200% 200%';
           var bI = document.createElement('div'); bI.className = 'meta-byte-inner';
-          var bM = document.createElement('img'); bM.src = byteData.url; bM.alt = unitCfg.byte;
+          var bM = document.createElement('img'); _metaImgSrc(bM, byteData.url); bM.alt = unitCfg.byte;
           bI.appendChild(bM); bW.appendChild(bI); inner.appendChild(bW);
         }
 
@@ -578,7 +637,7 @@
           rW.className = 'meta-replacement' + (rSh ? ' meta-shiny' : ''); rW.style.background = getRarityBg(unitCfg.replacement, rR);
           if (rSh) rW.style.backgroundSize = '200% 200%';
           var rI = document.createElement('div'); rI.className = 'meta-replacement-inner';
-          var rM = document.createElement('img'); rM.src = rU.img || ''; rM.alt = unitCfg.replacement; rM.draggable = false; rM.loading = 'lazy';
+          var rM = document.createElement('img'); _metaImgSrc(rM, rU.img || ''); rM.alt = unitCfg.replacement; rM.draggable = false; rM.loading = 'lazy';
           rI.appendChild(rM); rW.appendChild(rI); inner.appendChild(rW);
         }
 
@@ -603,7 +662,7 @@
             cW.style.background = getRarityBg(unitCfg.chip, chR);
             if (chSh) cW.style.backgroundSize = '200% 200%';
             var cI = document.createElement('div'); cI.className = 'meta-chip-inner';
-            var cM = document.createElement('img'); cM.src = chipD.url; cM.alt = unitCfg.chip;
+            var cM = document.createElement('img'); _metaImgSrc(cM, chipD.url); cM.alt = unitCfg.chip;
             cI.appendChild(cM); cW.appendChild(cI); inner.appendChild(cW);
           }
         }
@@ -632,7 +691,7 @@
   function renderMeta(mountEl, META_CFG) {
     var root = document.createElement('div');
     root.className = 'metaRoot';
-    root.style.backgroundImage = 'url(' + META_CFG.background + ')';
+    _metaSetBg(root, META_CFG.background);
 
     var titleEl = document.createElement('div');
     titleEl.className = 'metaTitle'; titleEl.textContent = META_CFG.title;
@@ -650,7 +709,7 @@
 
     var footer = document.createElement('div'); footer.className = 'metaFooter';
     if (META_CFG.logoUrl) {
-      var logoEl = document.createElement('img'); logoEl.className = 'metaLogo'; logoEl.src = META_CFG.logoUrl; logoEl.alt = '';
+      var logoEl = document.createElement('img'); logoEl.className = 'metaLogo'; _metaImgSrc(logoEl, META_CFG.logoUrl); logoEl.alt = '';
       footer.appendChild(logoEl);
     }
     var siteEl = document.createElement('div'); siteEl.className = 'metaSiteUrl'; siteEl.textContent = META_CFG.siteUrl;
@@ -682,12 +741,12 @@
 
     var root = document.createElement('div');
     root.className = 'seamlessRoot';
-    root.style.backgroundImage = 'url(' + (shared.background || '') + ')';
+    _metaSetBg(root, shared.background || '');
 
     /* ── fixed header ── */
     var header = document.createElement('div'); header.className = 'seamlessHeader';
     if (shared.logoUrl) {
-      var logo = document.createElement('img'); logo.className = 'seamlessLogo'; logo.src = shared.logoUrl; logo.alt = '';
+      var logo = document.createElement('img'); logo.className = 'seamlessLogo'; _metaImgSrc(logo, shared.logoUrl); logo.alt = '';
       header.appendChild(logo);
     }
     var siteName = document.createElement('div'); siteName.className = 'seamlessSiteName';

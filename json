@@ -1446,7 +1446,8 @@
     "rarity": "apex",
     "typeMain": "Endgame",
     "typeTags": [
-      "Support"
+      "Support",
+      "Anti-Regen"
     ],
     "element": "Dark/Light",
     "placements": 1,
@@ -16929,6 +16930,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nightmare-shadow-bonnie-shiny-high.png",
     "rarity": "secret",
     "typeMain": "Midgame",
+    "typeTags": [
+      "Anti-Regen"
+    ],
     "element": "Dark",
     "placements": 1,
     "attackType": "Multi",
@@ -17335,6 +17339,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/sparky-shiny-high.png",
     "rarity": "secret",
     "typeMain": "Midgame",
+    "typeTags": [
+      "Anti-Regen"
+    ],
     "element": "Neutral",
     "placements": 2,
     "attackType": "Cone45°",
@@ -20678,7 +20685,8 @@
   "typeMain": "Endgame",
   "typeTags": [
     "Support",
-    "Bleed"
+    "Bleed",
+    "Anti-Regen"
   ],
   "element": "Water/Electricity",
   "placements": 1,

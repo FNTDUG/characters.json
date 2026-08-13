@@ -700,23 +700,72 @@
      Fetching each URL once in CORS mode first puts a CORS-valid copy in the
      cache, so html2canvas's own loads all hit. Also clears loading="lazy",
      which would otherwise leave below-the-fold cards unfetched. */
+  /* Can html2canvas read this image? It re-requests with crossOrigin, so an
+     image the browser only holds a plain non-CORS copy of will fail — drawing
+     it to a throwaway canvas and reading a pixel back is the same test. */
+  function _tlReadable(im) {
+    if (!im || !im.naturalWidth) return false;
+    try {
+      var c = document.createElement('canvas');
+      c.width = 1; c.height = 1;
+      var x = c.getContext('2d');
+      x.drawImage(im, 0, 0, 1, 1);
+      x.getImageData(0, 0, 1, 1);
+      return true;
+    } catch (e) { return false; }
+  }
+
+  /* Anything not readable gets re-fetched in CORS mode with the cache bypassed
+     and handed to the clone as a blob: url, which is same-origin and needs no
+     CORS at all. That also replaces the poisoned cache entry, so later captures
+     are cheap. Returns a { url -> blobUrl } map for onclone to apply. */
   function _tlPreloadImages(rootEl, cb) {
     Array.prototype.forEach.call(rootEl.querySelectorAll('img[loading]'), function (im) {
       im.removeAttribute('loading');
     });
-    var urls = _tlImageUrls(rootEl);
-    var pending = urls.length, finished = false;
-    function finish() { if (!finished) { finished = true; cb(); } }
-    if (!pending) return finish();
-    urls.forEach(function (u) {
-      var im = new Image();
-      im.crossOrigin = 'anonymous';
-      var settle = function () { if (--pending <= 0) finish(); };
-      im.onload = settle;
-      im.onerror = settle;   // best effort: a failure just means that one drops
-      im.src = u;
+
+    // Stripping loading="lazy" above starts those fetches; wait for them to
+    // settle before judging what still needs repair, or the capture races them.
+    var live = Array.prototype.slice.call(rootEl.querySelectorAll('img'));
+    var waiting = 0, wDone = false;
+    function afterLoads() { if (wDone) return; wDone = true; _repair(); }
+    live.forEach(function (im) {
+      if (!im.getAttribute('src') || (im.complete && im.naturalWidth > 0)) return;
+      waiting++;
+      var s = function () { if (--waiting <= 0) afterLoads(); };
+      im.addEventListener('load', s, { once: true });
+      im.addEventListener('error', s, { once: true });
     });
-    setTimeout(finish, 15000);   // never leave the button stuck on a stalled image
+    if (waiting === 0) afterLoads(); else setTimeout(afterLoads, 15000);
+
+    function _repair() {
+    var byUrl = {};
+    Array.prototype.forEach.call(rootEl.querySelectorAll('img'), function (im) {
+      var s = im.getAttribute('src');
+      if (s) byUrl[s] = byUrl[s] || im;
+    });
+
+    var need = _tlImageUrls(rootEl).filter(function (u) {
+      return !_tlReadable(byUrl[u]);
+    });
+
+    var map = {}, pending = need.length, finished = false;
+    function finish() { if (!finished) { finished = true; cb(map); } }
+    if (!pending) return finish();
+
+    need.forEach(function (u) {
+      var settle = function () { if (--pending <= 0) finish(); };
+      if (!window.fetch) return settle();
+      window.fetch(u, { mode: 'cors', cache: 'reload', credentials: 'omit' })
+        .then(function (r) { return r.ok ? r.blob() : null; })
+        .then(function (b) {
+          if (b) { try { map[u] = URL.createObjectURL(b); } catch (e) {} }
+          settle();
+        })
+        .catch(settle);   // best effort: a failure just means that one drops
+    });
+    setTimeout(finish, 20000);   // never leave the button stuck on a stalled image
+    }
   }
 
   function _tlDlBlob(blob, filename) {
@@ -784,9 +833,14 @@
       var active = document.querySelector('#tlModes .tl-mb.on');
       var mode = active ? (active.getAttribute('data-m') || 'all') : 'all';
 
-      _tlPreloadImages(tlRoot, function () {
+      _tlPreloadImages(tlRoot, function (blobMap) {
+      function _revoke() {
+        Object.keys(blobMap).forEach(function (k) {
+          try { URL.revokeObjectURL(blobMap[k]); } catch (e) {}
+        });
+      }
       withHtml2Canvas(function (ok) {
-        if (!ok) { btn.disabled = false; btn.title = 'Screenshot unavailable'; return; }
+        if (!ok) { btn.disabled = false; btn.title = 'Screenshot unavailable'; _revoke(); return; }
         window.html2canvas(tlRoot, {
           backgroundColor: '#03030a', useCORS: true, scale: 2, logging: false,
           windowWidth: 1400, windowHeight: Math.max(2000, window.innerHeight || 900),
@@ -804,6 +858,12 @@
             Array.prototype.forEach.call(doc.querySelectorAll('img[loading]'), function (im) {
               im.removeAttribute('loading');
             });
+            // Swap in the same-origin blob copies fetched above, so html2canvas
+            // never has to make a cross-origin request of its own.
+            Array.prototype.forEach.call(doc.querySelectorAll('img'), function (im) {
+              var s = im.getAttribute('src');
+              if (s && blobMap[s]) { im.removeAttribute('crossorigin'); im.src = blobMap[s]; }
+            });
             // Search box and camera are UI, not content — keep them out of the shot.
             // The mode tabs stay: they say which list this is.
             var sb = doc.getElementById('tlSearch'); if (sb) sb.style.display = 'none';
@@ -817,10 +877,12 @@
           canvas.toBlob(function (blob) {
             _tlShowShot(blob, 'fntd-tierlist-' + mode + '.png');
             btn.disabled = false;
+            _revoke();
           }, 'image/png');
         }).catch(function (e) {
           console.error('Tierlist screenshot failed:', e);
           btn.disabled = false;
+          _revoke();
         });
       });
       });

@@ -1,8 +1,8 @@
 [
   {
     "name": "Party Glock Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/party-glock-freddy-render-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-28-36-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/party-glock-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/party-glock-freddy-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Starter-Midgame",
     "element": "Light",
@@ -89,8 +89,8 @@
   },
   {
     "name": "Sweetheart Toy Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-16-2026-16-37-35-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/img_6492-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/sweetheart-toy-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/sweetheart-toy-foxy-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Endgame",
     "typeTags": [
@@ -167,8 +167,8 @@
   },
   {
     "name": "UFO Tangle",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-14-2026-19-39-11-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-14-2026-19-39-18-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/ufo-tangle.png",
+    "imgShiny": "https://units.fntduserguide.com/units/ufo-tangle-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Starter-Midgame",
     "element": "Electricity",
@@ -247,8 +247,8 @@
   },
   {
     "name": "Nightmare Fredbear",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-14-43-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-14-43-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/nightmare-fredbear.png",
+    "imgShiny": "https://units.fntduserguide.com/units/nightmare-fredbear.png",
     "rarity": "hero",
     "typeMain": "Endgame",
     "typeTags": [
@@ -536,8 +536,8 @@
   },
   {
     "name": "Fisherman Toy Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-26-2026-07-29-49-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-26-2026-07-29-54-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/fisherman-toy-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/fisherman-toy-bonnie-shiny.png",
     "rarity": "epic",
     "typeMain": "Midgame",
     "element": "Water",
@@ -589,8 +589,8 @@
   },
   {
     "name": "Blossom Chica",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-19-2026-23-33-48-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-19-2026-23-33-53-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/blossom-chica.png",
+    "imgShiny": "https://units.fntduserguide.com/units/blossom-chica-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -688,8 +688,8 @@
   },
   {
     "name": "Thanatos",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-29-2026-19-08-11-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-29-2026-19-08-26-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/thanatos.png",
+    "imgShiny": "https://units.fntduserguide.com/units/thanatos-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -1019,8 +1019,8 @@
   },
   {
     "name": "Plushtrap",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-29-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-33-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/plushtrap.png",
+    "imgShiny": "https://units.fntduserguide.com/units/plushtrap-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "element": "Dark",
@@ -1100,8 +1100,8 @@
   },
   {
     "name": "Crying Child",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-21-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-25-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/crying-child.png",
+    "imgShiny": "https://units.fntduserguide.com/units/crying-child-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Midgame",
     "typeTags": [
@@ -1181,8 +1181,8 @@
   },
   {
     "name": "Amalgam",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-14-53-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-14-59-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/amalgam.png",
+    "imgShiny": "https://units.fntduserguide.com/units/amalgam-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -1329,8 +1329,8 @@
   },
   {
     "name": "Nightmarionne",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-15-39-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-15-45-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/nightmarionne.png",
+    "imgShiny": "https://units.fntduserguide.com/units/nightmarionne-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Endgame",
     "element": "Dark",
@@ -1441,8 +1441,8 @@
   },
   {
     "name": "Astral Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-apr-05-2026-21-06-45-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-apr-05-2026-21-07-06-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/astral-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/astral-bonnie-shiny.png",
     "rarity": "apex",
     "typeMain": "Endgame",
     "typeTags": [
@@ -1674,8 +1674,8 @@
   },
   {
     "name": "Nightmare Chica",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-05-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-08-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/nightmare-chica.png",
+    "imgShiny": "https://units.fntduserguide.com/units/nightmare-chica-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -1753,8 +1753,8 @@
   },
   {
     "name": "Psychic Friend Fredbear",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-13-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-17-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/psychic-friend-fredbear.png",
+    "imgShiny": "https://units.fntduserguide.com/units/psychic-friend-fredbear-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -1862,8 +1862,8 @@
   },
   {
     "name": "Freddles",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-36-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-40-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/freddles.png",
+    "imgShiny": "https://units.fntduserguide.com/units/freddles-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -1958,8 +1958,8 @@
   },
   {
     "name": "Nightmare Endo",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-46-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-43-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/nightmare-endo.png",
+    "imgShiny": "https://units.fntduserguide.com/units/nightmare-endo-shiny.png",
     "rarity": "mythic",
     "typeMain": "Midgame-Endgame",
     "element": "Fire",
@@ -2006,8 +2006,8 @@
   },
   {
     "name": "Nightmare Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-49-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-52-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/nightmare-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/nightmare-foxy-shiny.png",
     "rarity": "mythic",
     "typeMain": "Midgame-Endgame",
     "element": "Dark",
@@ -2047,8 +2047,8 @@
   },
   {
     "name": "Nightmare Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-56-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-16-59-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/nightmare-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/nightmare-bonnie-shiny.png",
     "rarity": "epic",
     "typeMain": "Endgame",
     "element": "Dark",
@@ -2088,8 +2088,8 @@
   },
   {
     "name": "Nightmare Cupcake",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-17-02-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-17-06-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/nightmare-cupcake.png",
+    "imgShiny": "https://units.fntduserguide.com/units/nightmare-cupcake-shiny.png",
     "rarity": "epic",
     "typeMain": "Starter",
     "element": "Dark",
@@ -2129,8 +2129,8 @@
   },
   {
     "name": "Nightmare Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-20-56-02-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-20-56-06-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/nightmare-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/nightmare-freddy-shiny.png",
     "rarity": "rare",
     "typeMain": "Starter-Midgame",
     "element": "Dark",
@@ -2198,8 +2198,8 @@
   },
   {
     "name": "Nightmare BB",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-22-03-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-22-07-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/nightmare-bb.png",
+    "imgShiny": "https://units.fntduserguide.com/units/nightmare-bb-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "element": "Dark",
@@ -2282,8 +2282,8 @@
   },
   {
     "name": "Masked Bullies",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-15-21-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-15-25-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/masked-bullies.png",
+    "imgShiny": "https://units.fntduserguide.com/units/masked-bullies-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Starter-Midgame",
     "typeTags": [
@@ -2407,8 +2407,8 @@
   },
   {
     "name": "Dragon Endo 01",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-11-35-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-11-44-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/dragon-endo-01.png",
+    "imgShiny": "https://units.fntduserguide.com/units/dragon-endo-01-shiny.png",
     "rarity": "apex",
     "typeMain": "Endgame",
     "typeTags": [
@@ -2583,8 +2583,8 @@
   },
   {
     "name": "Lich Shadow Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-13-44-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-13-52-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/lich-shadow-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/lich-shadow-bonnie-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -2679,8 +2679,8 @@
   },
   {
     "name": "Shadow Knight Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-12-08-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-12-27-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/shadow-knight-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/shadow-knight-freddy-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Endgame",
     "typeTags": [
@@ -2778,8 +2778,8 @@
   },
   {
     "name": "Shepherd Fredbear",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-12-33-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-12-40-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/shepherd-fredbear.png",
+    "imgShiny": "https://units.fntduserguide.com/units/shepherd-fredbear-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Endgame",
     "typeTags": [
@@ -2883,8 +2883,8 @@
   },
   {
     "name": "Cursed Jester Spring Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-12-45-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-18-34-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/cursed-jester-spring-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/cursed-jester-spring-bonnie-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -2972,8 +2972,8 @@
   },
   {
     "name": "Barbarian Boy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-13-59-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-14-14-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/barbarian-boy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/barbarian-boy-shiny.png",
     "rarity": "secret",
     "typeMain": "Starter-Midgame",
     "typeTags": [
@@ -3039,8 +3039,8 @@
   },
   {
     "name": "Hag Withered Chica",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-14-33-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-14-39-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/hag-withered-chica.png",
+    "imgShiny": "https://units.fntduserguide.com/units/hag-withered-chica-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -3127,8 +3127,8 @@
   },
   {
     "name": "Harlequin Mangle",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-14-48-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-14-57-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/harlequin-mangle.png",
+    "imgShiny": "https://units.fntduserguide.com/units/harlequin-mangle-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "element": "Neutral",
@@ -3293,8 +3293,8 @@
   },
   {
     "name": "Starfarer Princess",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-15-05-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-15-31-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/starfarer-princess.png",
+    "imgShiny": "https://units.fntduserguide.com/units/starfarer-princess-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -3373,8 +3373,8 @@
   },
   {
     "name": "Nightmare Mangle",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-15-04-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-15-07-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/nightmare-mangle.png",
+    "imgShiny": "https://units.fntduserguide.com/units/nightmare-mangle-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -3480,8 +3480,8 @@
   },
   {
     "name": "Shark Withered Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-26-2026-07-29-22-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-26-2026-07-29-31-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/shark-withered-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/shark-withered-foxy-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "element": "Water",
@@ -3563,8 +3563,8 @@
   },
   {
     "name": "Serpent Endo",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-26-2026-07-30-19-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-26-2026-07-30-24-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/serpent-endo.png",
+    "imgShiny": "https://units.fntduserguide.com/units/serpent-endo-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame-Endgame",
     "typeTags": [
@@ -3636,8 +3636,8 @@
   },
   {
     "name": "Spring Duo",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-48-58-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/img_6397-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/spring-duo.png",
+    "imgShiny": "https://units.fntduserguide.com/units/spring-duo-shiny.png",
     "rarity": "nightmare",
     "element": "Neutral",
     "typeMain": "Endgame",
@@ -3790,8 +3790,8 @@
   },
   {
     "name": "Springtrap",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-53-12-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-53-12-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/springtrap.png",
+    "imgShiny": "https://units.fntduserguide.com/units/springtrap.png",
     "rarity": "hero",
     "typeMain": "Midgame-Endgame",
     "typeTags": [
@@ -4112,8 +4112,8 @@
   },
   {
     "name": "Golden Cupcake",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-51-27-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-51-33-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/golden-cupcake.png",
+    "imgShiny": "https://units.fntduserguide.com/units/golden-cupcake-shiny.png",
     "rarity": "mythic",
     "typeTags": [
       "Support"
@@ -4152,8 +4152,8 @@
   },
   {
     "name": "Valkyrie Chica",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-06-03-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-06-06-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/valkyrie-chica.png",
+    "imgShiny": "https://units.fntduserguide.com/units/valkyrie-chica-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "element": "Light",
@@ -4240,8 +4240,8 @@
   },
   {
     "name": "Freddy With a Glock",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-09-33-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-11-10-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/freddy-with-a-glock.png",
+    "imgShiny": "https://units.fntduserguide.com/units/freddy-with-a-glock-shiny.png",
     "rarity": "uncommon",
     "typeMain": "Starter",
     "element": "Neutral",
@@ -4281,8 +4281,8 @@
   },
   {
     "name": "Dead Soul Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-23-2026-01-13-42-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-23-2026-01-13-45-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/dead-soul-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/dead-soul-freddy-shiny.png",
     "rarity": "epic",
     "typeMain": "Midgame",
     "element": "Dark",
@@ -4322,8 +4322,8 @@
   },
   {
     "name": "Soul Prisoner Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-23-2026-01-13-35-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-23-2026-01-13-38-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/soul-prisoner-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/soul-prisoner-foxy-shiny.png",
     "rarity": "mythic",
     "typeMain": "Starter-Midgame",
     "element": "Dark",
@@ -4363,8 +4363,8 @@
   },
   {
     "name": "Cerberus Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-23-2026-01-13-25-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-23-2026-01-13-27-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/cerberus-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/cerberus-freddy-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame-Endgame",
     "typeTags": [
@@ -4465,8 +4465,8 @@
   },
   {
     "name": "Hades Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-23-2026-01-13-12-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-23-2026-01-13-16-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/hades-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/hades-bonnie-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -4563,8 +4563,8 @@
   },
   {
     "name": "Hacker King RWQFSFASXC",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-01-2026-17-27-32-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-15-51-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/hacker-king-rwqfsfasxc.png",
+    "imgShiny": "https://units.fntduserguide.com/units/hacker-king-rwqfsfasxc-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Endgame",
     "typeTags": [
@@ -4672,8 +4672,8 @@
   },
   {
     "name": "Deadeye Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-05-40-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-05-44-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/deadeye-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/deadeye-freddy-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "element": "Dark",
@@ -4759,8 +4759,8 @@
   },
   {
     "name": "Leviathan Mangle",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-05-48-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-05-51-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/leviathan-mangle.png",
+    "imgShiny": "https://units.fntduserguide.com/units/leviathan-mangle-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -4865,8 +4865,8 @@
   },
 {
     "name": "Gravelord Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-05-55-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-05-57-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/gravelord-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/gravelord-foxy-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -4975,8 +4975,8 @@
 },
   {
     "name": "Blighted Endo Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-06-10-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-06-13-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/blighted-endo-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/blighted-endo-freddy-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "element": "Dark",
@@ -5042,8 +5042,8 @@
   },
   {
     "name": "Tarnished Spring Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-06-17-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-06-20-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/tarnished-spring-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/tarnished-spring-bonnie-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -5119,8 +5119,8 @@
   },
   {
     "name": "Rockin Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-06-25-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-06-28-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/rockin-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/rockin-bonnie-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Starter-Midgame",
     "typeTags": [
@@ -5199,8 +5199,8 @@
   },
   {
     "name": "War Machine Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-06-32-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-06-35-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/war-machine-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/war-machine-foxy-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Endgame",
     "element": "Rust",
@@ -5278,8 +5278,8 @@
   },
   {
     "name": "Mecha Cupcake",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-07-07-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-07-41-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/mecha-cupcake.png",
+    "imgShiny": "https://units.fntduserguide.com/units/mecha-cupcake-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Endgame",
     "typeTags": [
@@ -5348,8 +5348,8 @@
   },
   {
     "name": "Phantom Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-52-48-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-52-57-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/phantom-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/phantom-freddy-shiny.png",
     "rarity": "rare",
     "typeMain": "Midgame",
     "element": "Fire",
@@ -5390,8 +5390,8 @@
   },
   {
     "name": "Clockwork Cupcake",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-19-2026-23-34-23-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-19-2026-23-34-27-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/clockwork-cupcake.png",
+    "imgShiny": "https://units.fntduserguide.com/units/clockwork-cupcake-shiny.png",
     "rarity": "mythic",
     "typeMain": "Midgame",
     "element": "Nature",
@@ -5431,8 +5431,8 @@
   },
   {
     "name": "Overgrown Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-19-2026-23-34-03-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-19-2026-23-34-08-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/overgrown-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/overgrown-foxy-shiny.png",
     "rarity": "secret",
     "typeTags": [
       "Support"
@@ -5481,8 +5481,8 @@
   },
   {
     "name": "Time Lord Withered Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-19-2026-23-33-36-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-19-2026-23-33-43-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/time-lord-withered-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/time-lord-withered-freddy-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -5589,8 +5589,8 @@
   },
   {
     "name": "Old Man Consequences",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/old_man_consequences_render-high-j1ah9a.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/old_man_consequences_render-high-j1ah9a.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/old-man-consequences.png",
+    "imgShiny": "https://units.fntduserguide.com/units/old-man-consequences.png",
     "rarity": "hero",
     "typeMain": "Starter-Midgame",
     "typeTags": [
@@ -5886,8 +5886,8 @@
   },
   {
     "name": "Popeyes Toy Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-19-2026-23-34-12-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-19-2026-23-34-17-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/popeyes-toy-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/popeyes-toy-freddy-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Midgame",
     "typeTags": [
@@ -5972,8 +5972,8 @@
   },
   {
     "name": "Phantom Chica",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-51-16-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-51-19-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/phantom-chica.png",
+    "imgShiny": "https://units.fntduserguide.com/units/phantom-chica-shiny.png",
     "rarity": "epic",
     "typeMain": "Starter",
     "element": "Fire",
@@ -6035,8 +6035,8 @@
   },
   {
     "name": "Phantom Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-50-53-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-fri-jan-16-2026-15-07-23-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/phantom-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/phantom-foxy-shiny.png",
     "rarity": "mythic",
     "typeMain": "Midgame",
     "element": "Fire",
@@ -6096,8 +6096,8 @@
   },
   {
     "name": "Cloaked Sparky",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-49-50-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-50-04-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/cloaked-sparky.png",
+    "imgShiny": "https://units.fntduserguide.com/units/cloaked-sparky-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Starter-Midgame",
     "element": "Dark",
@@ -6177,8 +6177,8 @@
   },
   {
     "name": "Phantom Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-50-10-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-50-15-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/phantom-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/phantom-bonnie-shiny.png",
     "rarity": "secret",
     "typeMain": "Starter-Midgame",
     "element": "Rust",
@@ -6255,8 +6255,8 @@
   },
   {
     "name": "Phantom Mangle",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-49-28-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-49-34-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/phantom-mangle.png",
+    "imgShiny": "https://units.fntduserguide.com/units/phantom-mangle-shiny.png",
     "rarity": "secret",
     "typeMain": "Starter-Midgame",
     "typeTags": [
@@ -6362,8 +6362,8 @@
   },
   {
     "name": "Phone Dude",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-47-22-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-48-27-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/phone-dude.png",
+    "imgShiny": "https://units.fntduserguide.com/units/phone-dude-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Endgame",
     "element": "Electricity",
@@ -6442,8 +6442,8 @@
   },
   {
     "name": "Follow Me",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-50-24-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-50-31-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/follow-me.png",
+    "imgShiny": "https://units.fntduserguide.com/units/follow-me-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -6551,8 +6551,8 @@
   },
   {
     "name": "Phantom BB",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-50-41-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-50-46-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/phantom-bb.png",
+    "imgShiny": "https://units.fntduserguide.com/units/phantom-bb-shiny.png",
     "rarity": "mythic",
     "typeMain": "Starter-Midgame",
     "element": "Dark",
@@ -6604,8 +6604,8 @@
   },
   {
     "name": "Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/freddy-render-high-uxn0dw.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-27-51-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/freddy-shiny.png",
     "rarity": "uncommon",
     "typeMain": "Starter",
     "typeTags": [
@@ -6665,8 +6665,8 @@
   },
   {
     "name": "Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-01-37-53-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-01-37-58-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/foxy-shiny.png",
     "rarity": "uncommon",
     "typeMain": "Starter",
     "element": "Water",
@@ -6721,8 +6721,8 @@
   },
   {
     "name": "Chica",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-28-12-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-28-16-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/chica.png",
+    "imgShiny": "https://units.fntduserguide.com/units/chica-shiny.png",
     "rarity": "uncommon",
     "typeMain": "Starter",
     "typeTags": [
@@ -6781,8 +6781,8 @@
   },
   {
     "name": "Turkey Chica",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/turkey-chica-high-a3eth2.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-tue-dec-02-2025-00-49-51-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/turkey-chica.png",
+    "imgShiny": "https://units.fntduserguide.com/units/turkey-chica-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Starter-Midgame",
     "element": "Fire",
@@ -6875,8 +6875,8 @@
   },
   {
     "name": "Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-01-37-43-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-01-37-49-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/bonnie-shiny.png",
     "rarity": "uncommon",
     "typeMain": "Starter",
     "element": "Electricity",
@@ -6936,8 +6936,8 @@
   },
   {
     "name": "PaperPals",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-38-26-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-38-32-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/paperpals.png",
+    "imgShiny": "https://units.fntduserguide.com/units/paperpals-shiny.png",
     "rarity": "rare",
     "typeMain": "Starter",
     "typeTags": [
@@ -7017,8 +7017,8 @@
   },
   {
     "name": "JJ",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-38-15-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-38-21-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/jj.png",
+    "imgShiny": "https://units.fntduserguide.com/units/jj-shiny.png",
     "rarity": "rare",
     "typeMain": "Starter",
     "element": "Light",
@@ -7086,8 +7086,8 @@
   },
   {
     "name": "Toy Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/toy-freddy-render-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-31-54-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/toy-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/toy-freddy-shiny.png",
     "rarity": "epic",
     "typeMain": "Starter-Midgame",
     "element": "Fire",
@@ -7148,8 +7148,8 @@
   },
   {
     "name": "Toy Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/toy-bonnie-render-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-30-55-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/toy-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/toy-bonnie-shiny.png",
     "rarity": "epic",
     "typeMain": "Starter-Midgame",
     "element": "Neutral",
@@ -7219,8 +7219,8 @@
   },
   {
     "name": "Withered Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/withered-foxy-render-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-32-57-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/withered-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/withered-foxy-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -7317,8 +7317,8 @@
   },
   {
     "name": "BBnJ",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-36-37-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-36-42-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/bbnj.png",
+    "imgShiny": "https://units.fntduserguide.com/units/bbnj-shiny.png",
     "rarity": "mythic",
     "typeMain": "Midgame",
     "element": "Neutral",
@@ -7392,8 +7392,8 @@
   },
   {
     "name": "Jack'O Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-36-48-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-36-53-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/jack-o-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/jack-o-bonnie-shiny.png",
     "rarity": "secret",
     "typeMain": "Starter-Midgame",
     "typeTags": [
@@ -7497,8 +7497,8 @@
   },
   {
     "name": "Shadow Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/shadow-freddy-render-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-30-43-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/shadow-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/shadow-freddy-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame-Endgame",
     "element": "Dark",
@@ -7613,8 +7613,8 @@
   },
   {
     "name": "Shadow Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/shadow-bonnie-render-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-30-25-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/shadow-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/shadow-bonnie-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -7741,8 +7741,8 @@
   },
   {
     "name": "Withered Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/withered-freddy-render-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-33-19-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/withered-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/withered-freddy-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "element": "Rust",
@@ -7931,8 +7931,8 @@
   },
   {
     "name": "Endo 02",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-39-29-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-39-34-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/endo-02.png",
+    "imgShiny": "https://units.fntduserguide.com/units/endo-02-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "element": "Electricity",
@@ -8040,8 +8040,8 @@
   },
   {
     "name": "Withered Chica",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/withered-chica-render-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-32-23-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/withered-chica.png",
+    "imgShiny": "https://units.fntduserguide.com/units/withered-chica-shiny.png",
     "rarity": "epic",
     "typeMain": "Starter-Midgame",
     "element": "Electricity",
@@ -8122,8 +8122,8 @@
   },
   {
     "name": "Toy Chica",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/toy-chica-render-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-31-27-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/toy-chica.png",
+    "imgShiny": "https://units.fntduserguide.com/units/toy-chica-shiny.png",
     "rarity": "mythic",
     "typeMain": "Starter-Midgame",
     "typeTags": [
@@ -8192,8 +8192,8 @@
   },
   {
     "name": "Withered Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/withered-bonnie-render-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-32-07-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/withered-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/withered-bonnie-shiny.png",
     "rarity": "mythic",
     "typeMain": "Starter-Midgame",
     "element": "Electricity",
@@ -8284,8 +8284,8 @@
   },
   {
     "name": "Slasher Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-35-53-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-35-58-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/slasher-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/slasher-bonnie-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Midgame-Endgame",
     "element": "Dark",
@@ -8381,8 +8381,8 @@
   },
   {
     "name": "Mangle",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/mangle-render-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-30-07-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/mangle.png",
+    "imgShiny": "https://units.fntduserguide.com/units/mangle-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Endgame",
     "typeTags": [
@@ -8656,8 +8656,8 @@
   },
   {
     "name": "Purple Guy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-37-09-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-37-15-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/purple-guy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/purple-guy-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -8784,8 +8784,8 @@
   },
   {
     "name": "Withered Golden Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/withered-golden-freddy-render-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-33-47-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/withered-golden-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/withered-golden-freddy-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -8886,8 +8886,8 @@
   },
   {
     "name": "Hor Hor Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-apr-01-2026-23-37-50-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-apr-01-2026-23-38-07-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/hor-hor-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/hor-hor-freddy-shiny.png",
     "rarity": "rare",
     "typeMain": "Starter",
     "element": "Neutral",
@@ -8964,8 +8964,8 @@
   },
   {
     "name": "John Pigpatch",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-apr-01-2026-23-37-41-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-apr-01-2026-23-37-44-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/john-pigpatch.png",
+    "imgShiny": "https://units.fntduserguide.com/units/john-pigpatch-shiny.png",
     "rarity": "epic",
     "typeMain": "Endgame",
     "element": "Electricity",
@@ -9032,8 +9032,8 @@
   },
   {
     "name": "Breadbear",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-apr-01-2026-23-36-56-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-apr-01-2026-23-36-59-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/breadbear.png",
+    "imgShiny": "https://units.fntduserguide.com/units/breadbear-shiny.png",
     "rarity": "mythic",
     "typeMain": "Midgame-Endgame",
     "element": "Nature",
@@ -9116,8 +9116,8 @@
   },
   {
     "name": "Freddy Fastbear",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-apr-01-2026-23-36-50-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-apr-01-2026-23-36-53-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/freddy-fastbear.png",
+    "imgShiny": "https://units.fntduserguide.com/units/freddy-fastbear-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -9189,8 +9189,8 @@
   },
   {
     "name": "Dreadbear",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-35-38-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-35-45-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/dreadbear.png",
+    "imgShiny": "https://units.fntduserguide.com/units/dreadbear-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "element": "Electricity",
@@ -9309,8 +9309,8 @@
   },
   {
     "name": "Headless Horseman Mangle",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-34-42-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-34-47-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/headless-horseman-mangle.png",
+    "imgShiny": "https://units.fntduserguide.com/units/headless-horseman-mangle-shiny.png",
     "rarity": "apex",
     "typeMain": "Endgame",
     "typeTags": [
@@ -9477,8 +9477,8 @@
   },
   {
     "name": "Bear5",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-apr-01-2026-23-36-43-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-apr-01-2026-23-36-46-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/bear5.png",
+    "imgShiny": "https://units.fntduserguide.com/units/bear5-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -9600,8 +9600,8 @@
   },
   {
     "name": "Golden Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/golden-freddy-render-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/golden-freddy-render-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/golden-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/golden-freddy.png",
     "rarity": "hero",
     "typeMain": "Starter-Midgame",
     "typeTags": [
@@ -9918,8 +9918,8 @@
   },
   {
     "name": "Puppet",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/the-puppet-render-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/the-puppet-render-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/puppet.png",
+    "imgShiny": "https://units.fntduserguide.com/units/puppet.png",
     "rarity": "hero",
     "typeMain": "Endgame",
     "typeTags": [
@@ -10238,8 +10238,8 @@
   },
   {
     "name": "Puppet's Alliance",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-34-51-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-34-56-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/puppet-s-alliance.png",
+    "imgShiny": "https://units.fntduserguide.com/units/puppet-s-alliance-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Midgame",
     "element": "Neutral",
@@ -10299,8 +10299,8 @@
   },
   {
     "name": "Endo 01",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-37-30-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-37-36-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/endo-01.png",
+    "imgShiny": "https://units.fntduserguide.com/units/endo-01-shiny.png",
     "rarity": "mythic",
     "typeMain": "Starter-Midgame",
     "element": "Electricity",
@@ -10375,8 +10375,8 @@
   },
   {
     "name": "Frozen King Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-tue-dec-23-2025-15-02-53-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-tue-dec-23-2025-15-03-19-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/frozen-king-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/frozen-king-foxy-shiny.png",
     "rarity": "apex",
     "typeMain": "Endgame",
     "typeTags": [
@@ -10553,8 +10553,8 @@
   },
   {
     "name": "Yeti Oni Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-fri-dec-26-2025-12-14-38-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-fri-dec-26-2025-12-17-07-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/yeti-oni-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/yeti-oni-bonnie-shiny.png",
     "rarity": "apex",
     "typeMain": "Endgame",
     "typeTags": [
@@ -10744,8 +10744,8 @@
   },
   {
     "name": "Frosty the Snowcake",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-fri-dec-26-2025-12-31-13-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-13-07-15-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/frosty-the-snowcake.png",
+    "imgShiny": "https://units.fntduserguide.com/units/frosty-the-snowcake-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Starter-Midgame",
     "typeTags": [
@@ -10814,8 +10814,8 @@
   },
   {
     "name": "Toy Maker Mangle",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-fri-dec-26-2025-12-26-41-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-thu-jan-01-2026-12-45-31-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/toy-maker-mangle.png",
+    "imgShiny": "https://units.fntduserguide.com/units/toy-maker-mangle-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Midgame-Endgame",
     "typeTags": [
@@ -10933,8 +10933,8 @@
   },
   {
     "name": "Grinch Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-27-36-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-28-25-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/grinch-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/grinch-foxy-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Midgame-Endgame",
     "typeTags": [
@@ -11019,8 +11019,8 @@
   },
   {
     "name": "Scrooge Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-27-16-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-29-53-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/scrooge-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/scrooge-freddy-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Midgame-Endgame",
     "element": "Dark",
@@ -11113,8 +11113,8 @@
   },
   {
     "name": "Mrs Claus Toy Chica",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-30-40-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-31-54-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/mrs-claus-toy-chica.png",
+    "imgShiny": "https://units.fntduserguide.com/units/mrs-claus-toy-chica-shiny.png",
     "rarity": "mythic",
     "typeMain": "Starter-Midgame",
     "element": "Neutral",
@@ -11182,8 +11182,8 @@
   },
   {
     "name": "Santa Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-32-26-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-33-28-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/santa-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/santa-freddy-shiny.png",
     "rarity": "epic",
     "typeMain": "Starter",
     "element": "Neutral",
@@ -11216,8 +11216,8 @@
   },
   {
     "name": "Frostmancer Withered Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-33-53-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-35-01-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/frostmancer-withered-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/frostmancer-withered-bonnie-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -11312,8 +11312,8 @@
   },
   {
     "name": "Krampus Purple Guy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-35-28-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-36-26-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/krampus-purple-guy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/krampus-purple-guy-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -11399,8 +11399,8 @@
   },
   {
     "name": "Movie Director Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-37-56-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-39-01-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/movie-director-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/movie-director-freddy-shiny.png",
     "rarity": "exclusive",
     "typeTags": [
       "Support",
@@ -11463,8 +11463,8 @@
   },
   {
     "name": "Conductor Toy Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-39-34-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-40-43-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/conductor-toy-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/conductor-toy-freddy-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Starter",
     "typeTags": [
@@ -11564,8 +11564,8 @@
   },
   {
     "name": "Popcorn Bot",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-tue-dec-23-2025-15-03-36-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-tue-dec-23-2025-15-03-46-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/popcorn-bot.png",
+    "imgShiny": "https://units.fntduserguide.com/units/popcorn-bot-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Midgame",
     "typeTags": [
@@ -11678,8 +11678,8 @@
   },
   {
     "name": "Undead Chica",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-38-38-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-38-42-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/undead-chica.png",
+    "imgShiny": "https://units.fntduserguide.com/units/undead-chica-shiny.png",
     "rarity": "rare",
     "typeMain": "Starter",
     "typeTags": [
@@ -11760,8 +11760,8 @@
   },
   {
     "name": "Fazcade",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-37-53-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-37-57-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/fazcade.png",
+    "imgShiny": "https://units.fntduserguide.com/units/fazcade-shiny.png",
     "rarity": "mythic",
     "typeTags": [
       "Income"
@@ -11810,8 +11810,8 @@
   },
   {
     "name": "Balloon Boy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-39-51-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-39-55-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/balloon-boy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/balloon-boy-shiny.png",
     "rarity": "secret",
     "typeTags": [
       "Support"
@@ -11861,8 +11861,8 @@
   },
   {
     "name": "Cupcake",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-39-39-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-39-44-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/cupcake.png",
+    "imgShiny": "https://units.fntduserguide.com/units/cupcake-shiny.png",
     "rarity": "epic",
     "typeTags": [
       "Support"
@@ -11914,8 +11914,8 @@
   },
   {
     "name": "Luminary Reporter Shadow Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-jan-04-2026-17-15-41-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-jan-04-2026-17-15-49-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/luminary-reporter-shadow-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/luminary-reporter-shadow-bonnie-shiny.png",
     "rarity": "exclusive",
     "element": "Light",
     "placements": 2,
@@ -12004,8 +12004,8 @@
   },
   {
     "name": "Scarecrow Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-36-04-gmt-0600-central-standard-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-36-10-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/scarecrow-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/scarecrow-freddy-shiny.png",
     "rarity": "exclusive",
     "typeTags": [
       "Support"
@@ -12141,8 +12141,8 @@
   },
   {
     "name": "Party Packer Cupcake",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/party-packer-cupcake-render-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-29-34-gmt-0600-central-standard-time-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/party-packer-cupcake.png",
+    "imgShiny": "https://units.fntduserguide.com/units/party-packer-cupcake-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Starter-Midgame",
     "typeTags": [
@@ -12283,8 +12283,8 @@
   },
   {
     "name": "Tidal Wailer Crying Child",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/bj9a2b2-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/tidal-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/tidal-wailer-crying-child.png",
+    "imgShiny": "https://units.fntduserguide.com/units/tidal-wailer-crying-child-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Midgame",
     "typeTags": [
@@ -12375,8 +12375,8 @@
   },
   {
     "name": "Lolbit",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/lolobit-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/shiny-lolbit-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/lolbit.png",
+    "imgShiny": "https://units.fntduserguide.com/units/lolbit-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Midgame-Endgame",
     "typeTags": [
@@ -12475,8 +12475,8 @@
   },
   {
     "name": "Circus Baby",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/circus-baby-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/img_3268-high-2zpg0a.png",
+    "imgNormal": "https://units.fntduserguide.com/units/circus-baby.png",
+    "imgShiny": "https://units.fntduserguide.com/units/circus-baby-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Midgame-Endgame",
     "typeTags": [
@@ -12597,8 +12597,8 @@
   },
   {
     "name": "Yenndo",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/yendo-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/shiny-yendo-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/yenndo.png",
+    "imgShiny": "https://units.fntduserguide.com/units/yenndo-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -12684,8 +12684,8 @@
   },
   {
     "name": "Scooped Michael",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/scoopy-micheal-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/img_3267-high-gxleov.png",
+    "imgNormal": "https://units.fntduserguide.com/units/scooped-michael.png",
+    "imgShiny": "https://units.fntduserguide.com/units/scooped-michael-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame-Endgame",
     "typeTags": [
@@ -12805,8 +12805,8 @@
   },
   {
     "name": "Exotic Butters",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/butter-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/shiny-butter-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/exotic-butters.png",
+    "imgShiny": "https://units.fntduserguide.com/units/exotic-butters-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame-Endgame",
     "typeTags": [
@@ -12896,8 +12896,8 @@
   },
   {
     "name": "Ballora",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/ballora-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/shiny-ballora-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/ballora.png",
+    "imgShiny": "https://units.fntduserguide.com/units/ballora-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame-Endgame",
     "element": "Electricity",
@@ -12984,8 +12984,8 @@
   },
   {
     "name": "Elizabeth",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-apr-19-2026-23-16-18-gmt-0500-central-daylight-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/img_3269-high-moj6gs.png",
+    "imgNormal": "https://units.fntduserguide.com/units/elizabeth.png",
+    "imgShiny": "https://units.fntduserguide.com/units/elizabeth-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "typeTags": [
@@ -13091,8 +13091,8 @@
   },
   {
     "name": "Bidybabs",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/bidybab-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/shiny-bab-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/bidybabs.png",
+    "imgShiny": "https://units.fntduserguide.com/units/bidybabs-shiny.png",
     "rarity": "rare",
     "typeMain": "Starter-Midgame",
     "element": "Electricity",
@@ -13146,8 +13146,8 @@
   },
   {
     "name": "Funtime Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/ft-foxy-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/shiny-fox-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/funtime-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/funtime-foxy-shiny.png",
     "rarity": "epic",
     "typeTags": [
       "Support"
@@ -13213,8 +13213,8 @@
   },
   {
     "name": "Funtime Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/ft-freddy-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/shiny-fred-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/funtime-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/funtime-freddy-shiny.png",
     "rarity": "mythic",
     "typeMain": "Midgame",
     "element": "Light",
@@ -13293,8 +13293,8 @@
   },
   {
     "name": "HandUnit",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/hand-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/shiny-hamnd-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/handunit.png",
+    "imgShiny": "https://units.fntduserguide.com/units/handunit-shiny.png",
     "rarity": "exclusive",
     "typeTags": [
       "Support"
@@ -13324,8 +13324,8 @@
   },
   {
     "name": "Minireenas",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-apr-20-2026-14-57-11-gmt-0500-central-daylight-time-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/img_3270-high-8xg36a.png",
+    "imgNormal": "https://units.fntduserguide.com/units/minireenas.png",
+    "imgShiny": "https://units.fntduserguide.com/units/minireenas-shiny.png",
     "rarity": "mythic",
     "typeMain": "Midgame",
     "typeTags": [
@@ -13402,8 +13402,8 @@
   },
   {
     "name": "Ennard",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/ennard-high-2hip05.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/ennard-high-2hip05.png",
+    "imgNormal": "https://units.fntduserguide.com/units/ennard.png",
+    "imgShiny": "https://units.fntduserguide.com/units/ennard.png",
     "rarity": "hero",
     "typeMain": "Endgame",
     "typeTags": [
@@ -13864,8 +13864,8 @@
   },
   {
     "name": "Landslide Funtime Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/landslide-funtime-foxy-high.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/landslide-funtime-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/landslide-funtime-foxy-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "typeTags": [
@@ -13953,8 +13953,8 @@
   },
   {
     "name": "Stormbound Chica",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-b092eu.png?enable-io=true&crop=1%3A1&width=347",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-asq7pz.png?enable-io=true&crop=1%3A1&width=347",
+    "imgNormal": "https://units.fntduserguide.com/units/stormbound-chica.png",
+    "imgShiny": "https://units.fntduserguide.com/units/stormbound-chica-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -14074,8 +14074,8 @@
   },
   {
     "name": "Anti-Hero Mike",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/anti-hero-mike-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/anti-hero-mike-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/anti-hero-mike.png",
+    "imgShiny": "https://units.fntduserguide.com/units/anti-hero-mike-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "element": "Neutral",
@@ -14242,8 +14242,8 @@
   },
   {
     "name": "Faz-ino Spring Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/faz-ino-spring-bonnie-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/faz-ino-spring-bonnie-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/faz-ino-spring-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/faz-ino-spring-bonnie-shiny.png",
     "rarity": "secret",
     "typeMain": "Starter",
     "element": "Dark",
@@ -14325,8 +14325,8 @@
   },
   {
     "name": "Ignited Burst Withered Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/ignited-burst-withered-freddy-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/ignited-burst-withered-freddy-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/ignited-burst-withered-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/ignited-burst-withered-freddy-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -14429,8 +14429,8 @@
   },
   {
     "name": "Detective Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/detective-bonnie-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/detective-bonnie-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/detective-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/detective-bonnie-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "typeTags": [
@@ -14521,8 +14521,8 @@
   },
   {
     "name": "Goodnight Plushtime",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/goodnight-plushtime-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/shiny-goodnight-plushtrap-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/goodnight-plushtime.png",
+    "imgShiny": "https://units.fntduserguide.com/units/goodnight-plushtime-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Endgame",
     "element": "Dark",
@@ -14609,8 +14609,8 @@
   },
   {
     "name": "Fazman",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/fazman-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/fazman-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/fazman.png",
+    "imgShiny": "https://units.fntduserguide.com/units/fazman-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "element": "Light",
@@ -14711,8 +14711,8 @@
   },
   {
     "name": "Devious Purple Guy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/devious-purple-guy-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/devious-purple-guy-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/devious-purple-guy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/devious-purple-guy-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -14837,8 +14837,8 @@
   },
   {
     "name": "Super Soldier Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/super-soldier-foxy-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/super-soldier-foxy-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/super-soldier-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/super-soldier-foxy-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "element": "Rust",
@@ -14922,8 +14922,8 @@
   },
   {
     "name": "Kronos Endo Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-kssrxx.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/bptsdyx-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/kronos-endo-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/kronos-endo-freddy-shiny.png",
     "rarity": "apex",
     "typeMain": "Endgame",
     "typeTags": [
@@ -15095,8 +15095,8 @@
   },
   {
     "name": "Chipper",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-cd3m1a.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-cd3m1a.png",
+    "imgNormal": "https://units.fntduserguide.com/units/chipper.png",
+    "imgShiny": "https://units.fntduserguide.com/units/chipper.png",
     "rarity": "hero",
     "typeMain": "Endgame",
     "typeTags": [
@@ -15337,8 +15337,8 @@
   },
   {
     "name": "Bones Of The Past Nightmare Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/bones-of-the-past-nightmare-freddy-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-ckk3zq.png",
+    "imgNormal": "https://units.fntduserguide.com/units/bones-of-the-past-nightmare-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/bones-of-the-past-nightmare-freddy-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "element": "Fire",
@@ -15428,8 +15428,8 @@
   },
   {
     "name": "Animdude",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-4xayro.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-4xayro.png",
+    "imgNormal": "https://units.fntduserguide.com/units/animdude.png",
+    "imgShiny": "https://units.fntduserguide.com/units/animdude.png",
     "rarity": "hero",
     "typeMain": "Midgame",
     "typeTags": [
@@ -15658,8 +15658,8 @@
   },
   {
     "name": "Chicas Magic Rainbow",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3n0b3v-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-6lotqf.png",
+    "imgNormal": "https://units.fntduserguide.com/units/chicas-magic-rainbow.png",
+    "imgShiny": "https://units.fntduserguide.com/units/chicas-magic-rainbow-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -15765,8 +15765,8 @@
   },
   {
     "name": "Foxy Fighters",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c2v6vzf-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/foxy-fighters-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/foxy-fighters.png",
+    "imgShiny": "https://units.fntduserguide.com/units/foxy-fighters-shiny.png",
     "rarity": "secret",
     "typeMain": "Starter",
     "typeTags": [
@@ -15896,8 +15896,8 @@
   },
   {
     "name": "Purifier Mercenary Toy Chica",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/purifier-mercenary-toy-chica-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/purifier-mercenary-toy-chica-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/purifier-mercenary-toy-chica.png",
+    "imgShiny": "https://units.fntduserguide.com/units/purifier-mercenary-toy-chica-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Endgame",
     "typeTags": [
@@ -16014,8 +16014,8 @@
   },
   {
     "name": "Mother Nature Ballora",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/mother-nature-ballora-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/mother-nature-ballora-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/mother-nature-ballora.png",
+    "imgShiny": "https://units.fntduserguide.com/units/mother-nature-ballora-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -16140,8 +16140,8 @@
   },
   {
     "name": "Michael Afton",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-khgihp.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-khgihp.png",
+    "imgNormal": "https://units.fntduserguide.com/units/michael-afton.png",
+    "imgShiny": "https://units.fntduserguide.com/units/michael-afton.png",
     "rarity": "hero",
     "typeMain": "Endgame",
     "typeTags": [
@@ -16370,8 +16370,8 @@
   },
   {
     "name": "Candy Cadet",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/candy-cadet-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/candy-cadet-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/candy-cadet.png",
+    "imgShiny": "https://units.fntduserguide.com/units/candy-cadet-shiny.png",
     "rarity": "exclusive",
     "typeTags": [
       "Support"
@@ -16406,8 +16406,8 @@
   },
   {
     "name": "Helpy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/helpy-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/helpy-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/helpy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/helpy-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Midgame",
     "typeTags": [
@@ -16498,8 +16498,8 @@
   },
   {
     "name": "Lefty",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/lefty-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/lefty-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/lefty.png",
+    "imgShiny": "https://units.fntduserguide.com/units/lefty-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Midgame",
     "typeTags": [
@@ -16669,8 +16669,8 @@
   },
   {
     "name": "Fredtrap",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/fredtrap-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/fredtrap-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/fredtrap.png",
+    "imgShiny": "https://units.fntduserguide.com/units/fredtrap-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "typeTags": [
@@ -16754,8 +16754,8 @@
   },
   {
     "name": "Funtime Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/funtime-bonnie-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/funtime-bonnie-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/funtime-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/funtime-bonnie-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "element": "Light",
@@ -16821,8 +16821,8 @@
   },
   {
     "name": "Molten Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/molten-freddy-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/molten-freddy-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/molten-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/molten-freddy-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "typeTags": [
@@ -16926,8 +16926,8 @@
   },
   {
     "name": "Nightmare Shadow Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nightmare-shadow-bonnie-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nightmare-shadow-bonnie-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/nightmare-shadow-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/nightmare-shadow-bonnie-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "typeTags": [
@@ -17004,8 +17004,8 @@
   },
   {
     "name": "Rockstar Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/rockstar-foxy-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/rockstar-foxy-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/rockstar-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/rockstar-foxy-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -17109,8 +17109,8 @@
   },
   {
     "name": "Scraptrap",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/scraptrap-high.png",
-    "imgShiny": "https://tr.rbxcdn.com/180DAY-3e238cde1b2cb30a9d56ab09e06c442c/420/420/Image/Png/noFilter",
+    "imgNormal": "https://units.fntduserguide.com/units/scraptrap.png",
+    "imgShiny": "https://units.fntduserguide.com/units/scraptrap-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "typeTags": [
@@ -17235,8 +17235,8 @@
   },
   {
     "name": "Showtime Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/showtime-freddy-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/showtime-freddy-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/showtime-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/showtime-freddy-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "typeTags": [
@@ -17335,8 +17335,8 @@
   },
   {
     "name": "Sparky",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/sparky-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/sparky-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/sparky.png",
+    "imgShiny": "https://units.fntduserguide.com/units/sparky-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "typeTags": [
@@ -17392,8 +17392,8 @@
   },
   {
     "name": "Toy Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/toy-foxy-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/toy-foxy-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/toy-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/toy-foxy-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "element": "Water",
@@ -17446,8 +17446,8 @@
   },
   {
     "name": "Rockstar Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/rockstar-freddy-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/rockstar-freddy-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/rockstar-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/rockstar-freddy-shiny.png",
     "rarity": "mythic",
     "typeMain": "Midgame",
     "element": "Light",
@@ -17533,8 +17533,8 @@
   },
   {
     "name": "Hero PaperPals",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/hero-paperpals-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/hero-paperpals-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/hero-paperpals.png",
+    "imgShiny": "https://units.fntduserguide.com/units/hero-paperpals-shiny.png",
     "rarity": "epic",
     "typeMain": "Starter",
     "typeTags": [
@@ -17598,8 +17598,8 @@
   },
   {
     "name": "Rockstar Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/rockstar-bonnie-high.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/rockstar-bonnie-shiny-high.png",
+    "imgNormal": "https://units.fntduserguide.com/units/rockstar-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/rockstar-bonnie-shiny.png",
     "rarity": "epic",
     "typeMain": "Midgame",
     "element": "Electricity",
@@ -17656,8 +17656,8 @@
   },
   {
     "name": "Bucket Bob",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-t620j9.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-i3bdxe.png",
+    "imgNormal": "https://units.fntduserguide.com/units/bucket-bob.png",
+    "imgShiny": "https://units.fntduserguide.com/units/bucket-bob-shiny.png",
     "rarity": "rare",
     "typeMain": "Starter",
     "typeTags": [
@@ -17710,8 +17710,8 @@
   },
   {
     "name": "No. 1 Crate",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-fcrxw2.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-u2bzg3.png",
+    "imgNormal": "https://units.fntduserguide.com/units/no-1-crate.png",
+    "imgShiny": "https://units.fntduserguide.com/units/no-1-crate-shiny.png",
     "rarity": "rare",
     "typeMain": "Starter",
     "element": "Neutral",
@@ -17761,8 +17761,8 @@
   },
   {
     "name": "Pan Stan",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-p7hxru.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-dryu49.png",
+    "imgNormal": "https://units.fntduserguide.com/units/pan-stan.png",
+    "imgShiny": "https://units.fntduserguide.com/units/pan-stan-shiny.png",
     "rarity": "rare",
     "typeMain": "Starter",
     "typeTags": [
@@ -17824,8 +17824,8 @@
   },
   {
     "name": "Rockstar Chica",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-p8dy4o.png",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-dc01m6.png",
+    "imgNormal": "https://units.fntduserguide.com/units/rockstar-chica.png",
+    "imgShiny": "https://units.fntduserguide.com/units/rockstar-chica-shiny.png",
     "rarity": "rare",
     "typeMain": "Starter",
     "typeTags": [
@@ -17887,8 +17887,8 @@
   },
   {
     "name": "Sole Survivor Withered Bonnie",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-56-47-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-56-52-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/sole-survivor-withered-bonnie.png",
+    "imgShiny": "https://units.fntduserguide.com/units/sole-survivor-withered-bonnie-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -17969,8 +17969,8 @@
   },
   {
     "name": "Deep Sea Calamity Endo",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/deep-sea-calamity-endo-high.png?enable-io=true&crop=1%3A1&width=816",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/deep-sea-calamity-endo-shiny-high.png?enable-io=true&crop=1%3A1&width=816",
+    "imgNormal": "https://units.fntduserguide.com/units/deep-sea-calamity-endo.png",
+    "imgShiny": "https://units.fntduserguide.com/units/deep-sea-calamity-endo-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -18073,8 +18073,8 @@
   },
   {
     "name": "Fallen Angel Nightmarionne",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-59-01-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-59-09-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/fallen-angel-nightmarionne.png",
+    "imgShiny": "https://units.fntduserguide.com/units/fallen-angel-nightmarionne-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -18198,8 +18198,8 @@
   },
   {
     "name": "Fathomless Withered Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-56-05-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=532",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-56-11-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/fathomless-withered-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/fathomless-withered-foxy-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -18304,8 +18304,8 @@
   },
   {
     "name": "Music Man",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-59-23-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-59-26-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/music-man.png",
+    "imgShiny": "https://units.fntduserguide.com/units/music-man-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "element": "Neutral",
@@ -18394,8 +18394,8 @@
   },
   {
     "name": "Roadkill Phantom Foxy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-59-59-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-00-03-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/roadkill-phantom-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/roadkill-phantom-foxy-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "typeTags": [
@@ -18472,8 +18472,8 @@
   },
   {
     "name": "Henry Emily",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-57-47-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-57-58-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/henry-emily.png",
+    "imgShiny": "https://units.fntduserguide.com/units/henry-emily-shiny.png",
     "rarity": "secret",
     "typeMain": "Starter-Midgame",
     "typeTags": [
@@ -18565,8 +18565,8 @@
   },
   {
     "name": "El Chip",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-54-41-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=532",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-55-08-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=532",
+    "imgNormal": "https://units.fntduserguide.com/units/el-chip.png",
+    "imgShiny": "https://units.fntduserguide.com/units/el-chip-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "element": "Nature",
@@ -18650,8 +18650,8 @@
   },
   {
     "name": "Firework Shadow Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-59-38-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-59-42-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/firework-shadow-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/firework-shadow-freddy-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
     "element": "Fire",
@@ -18761,8 +18761,8 @@
   },
   {
     "name": "Funtime Chica",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-58-45-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-58-50-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/funtime-chica.png",
+    "imgShiny": "https://units.fntduserguide.com/units/funtime-chica-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -18868,8 +18868,8 @@
   },
   {
     "name": "Scrap Baby",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-00-16-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-00-20-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/scrap-baby.png",
+    "imgShiny": "https://units.fntduserguide.com/units/scrap-baby-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -18975,8 +18975,8 @@
   },
   {
     "name": "Radioactive Phantom Freddy",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-00-34-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-00-38-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
+    "imgNormal": "https://units.fntduserguide.com/units/radioactive-phantom-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/radioactive-phantom-freddy-shiny.png",
     "rarity": "epic",
     "typeMain": "Starter-Midgame",
     "typeTags": ["Poison"],
@@ -19048,8 +19048,8 @@
   },
   {
     "name": "Gaia Chica",
-    "imgNormal": "https://tr.rbxcdn.com/180DAY-3e93b63663771936d836ad698a3cffff/420/420/Image/Png/noFilter",
-    "imgShiny": "https://tr.rbxcdn.com/180DAY-967f8273ed9f572a7fa407b1a2f6fdf9/420/420/Image/Png/noFilter",
+    "imgNormal": "https://units.fntduserguide.com/units/gaia-chica.png",
+    "imgShiny": "https://units.fntduserguide.com/units/gaia-chica-shiny.png",
     "rarity": "apex",
     "typeMain": "Endgame",
     "typeTags": [
@@ -19255,8 +19255,8 @@
   },
   {
     "name": "Abyssal Ballora",
-    "imgNormal": "https://tr.rbxcdn.com/180DAY-5ca8e77a4f68a51e28a8bbd6323f8f40/420/420/Image/Png/noFilter",
-    "imgShiny": "https://tr.rbxcdn.com/180DAY-caaf967147f03f514eb51a8fb69fb674/420/420/Image/Png/noFilter",
+    "imgNormal": "https://units.fntduserguide.com/units/abyssal-ballora.png",
+    "imgShiny": "https://units.fntduserguide.com/units/abyssal-ballora-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -19383,8 +19383,8 @@
   },
   {
     "name": "Nature Reclaimed Foxy",
-    "imgNormal": "https://tr.rbxcdn.com/180DAY-9735e139fd9ad7044942426f3683ffa7/420/420/Image/Png/noFilter",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-07-11-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=532",
+    "imgNormal": "https://units.fntduserguide.com/units/nature-reclaimed-foxy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/nature-reclaimed-foxy-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -19474,8 +19474,8 @@
   },
   {
     "name": "Commander Withered Freddy",
-    "imgNormal": "https://tr.rbxcdn.com/180DAY-138675b10c07c945f9598ce200dde14a/420/420/Image/Png/noFilter",
-    "imgShiny": "https://tr.rbxcdn.com/180DAY-e1ec944877d3576932d84a025b55a925/420/420/Image/Png/noFilter",
+    "imgNormal": "https://units.fntduserguide.com/units/commander-withered-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/commander-withered-freddy-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Midgame-Endgame",
     "typeTags": [
@@ -19542,8 +19542,8 @@
   },
   {
     "name": "Afterbite Withered Golden Freddy",
-    "imgNormal": "https://tr.rbxcdn.com/180DAY-66c6211384cf0a1719705eaf9959a555/420/420/Image/Png/noFilter",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-08-08-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=532",
+    "imgNormal": "https://units.fntduserguide.com/units/afterbite-withered-golden-freddy.png",
+    "imgShiny": "https://units.fntduserguide.com/units/afterbite-withered-golden-freddy-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
@@ -19651,8 +19651,8 @@
   },
   {
     "name": "Foxy.exe",
-    "imgNormal": "https://tr.rbxcdn.com/180DAY-09147abd9ac584e788a65979af3bcb1d/420/420/Image/Png/noFilter",
-    "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-09-00-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=532",
+    "imgNormal": "https://units.fntduserguide.com/units/foxy-exe.png",
+    "imgShiny": "https://units.fntduserguide.com/units/foxy-exe-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Midgame-Endgame",
     "typeTags": [
@@ -19746,8 +19746,8 @@
   },
   {
     "name": "Trash o Tron",
-    "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-54-24-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=532",
-    "imgShiny": "https://tr.rbxcdn.com/180DAY-418cfd424a8ae7b586cb2cf756d57502/420/420/Image/Png/noFilter",
+    "imgNormal": "https://units.fntduserguide.com/units/trash-o-tron.png",
+    "imgShiny": "https://units.fntduserguide.com/units/trash-o-tron-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
@@ -19902,8 +19902,8 @@
   },
     {
   "name": "Lore Keeper Shadow Bonnie",
-  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-58-18-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
-  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/wefgiwefigyweiygwefiygwefiygwef-high.png",
+  "imgNormal": "https://units.fntduserguide.com/units/lore-keeper-shadow-bonnie.png",
+  "imgShiny": "https://units.fntduserguide.com/units/lore-keeper-shadow-bonnie-shiny.png",
   "rarity": "secret",
   "typeMain": "Midgame-Endgame",
   "typeTags": [
@@ -20013,8 +20013,8 @@
 },
 {
   "name": "Party Never Ends Cupcake",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-9d5929b29629e3bc28e1fe971c83c966/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-3bb8da7ff0252398f99de5961f2c23c4/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/party-never-ends-cupcake.png",
+  "imgShiny": "https://units.fntduserguide.com/units/party-never-ends-cupcake-shiny.png",
   "rarity": "secret",
   "typeMain": "Starter-Midgame",
   "typeTags": [
@@ -20079,8 +20079,8 @@
 },
 {
   "name": "Bombwork Cupcake",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-e2110cc052a73d59ae7423616dbeae08/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-7aa219330c5e3c2d3e661c66df2f1307/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/bombwork-cupcake.png",
+  "imgShiny": "https://units.fntduserguide.com/units/bombwork-cupcake-shiny.png",
   "rarity": "secret",
   "typeMain": "Midgame",
   "element": "Fire",
@@ -20164,8 +20164,8 @@
 },
 {
   "name": "Arch Angler Toy Bonnie",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-d453ce0374b879a72ea4ff7d54e8bbab/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-ae3352f66185a9c0de2fe3a71e6c18f7/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/arch-angler-toy-bonnie.png",
+  "imgShiny": "https://units.fntduserguide.com/units/arch-angler-toy-bonnie-shiny.png",
   "rarity": "secret",
   "typeMain": "Midgame-Endgame",
   "typeTags": [
@@ -20253,8 +20253,8 @@
 },
 {
   "name": "Grand Strategist Chica",
-  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-09-37-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=532",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-4bb50f74e9e51c27ef397ff1b37bf8ac/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/grand-strategist-chica.png",
+  "imgShiny": "https://units.fntduserguide.com/units/grand-strategist-chica-shiny.png",
   "rarity": "apex",
   "typeMain": "Midgame",
   "typeTags": [
@@ -20397,8 +20397,8 @@
 },
 {
   "name": "Cthulhu Nightmare Foxy",
-  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-10-16-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=532",
-  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-10-25-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=532",
+  "imgNormal": "https://units.fntduserguide.com/units/cthulhu-nightmare-foxy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/cthulhu-nightmare-foxy-shiny.png",
   "rarity": "nightmare",
   "typeMain": "Midgame",
   "typeTags": [
@@ -20496,8 +20496,8 @@
 },
 {
   "name": "Unicorn Toy Foxy",
-  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-11-15-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=816",
-  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-11-19-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=816",
+  "imgNormal": "https://units.fntduserguide.com/units/unicorn-toy-foxy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/unicorn-toy-foxy-shiny.png",
   "rarity": "secret",
   "typeMain": "Starter-Midgame",
   "typeTags": [
@@ -20572,8 +20572,8 @@
 },
 {
   "name": "Mothman Lefty",
-  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/mothman-lefty-high.png?enable-io=true&crop=1%3A1&width=816",
-  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/mothman-lefty-shiny-high.png?enable-io=true&crop=1%3A1&width=816",
+  "imgNormal": "https://units.fntduserguide.com/units/mothman-lefty.png",
+  "imgShiny": "https://units.fntduserguide.com/units/mothman-lefty-shiny.png",
   "rarity": "nightmare",
   "typeMain": "Endgame",
   "typeTags": [
@@ -20679,8 +20679,8 @@
 },
 {
   "name": "Witch of the Sea Scrapbaby",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-5ecfdc67ca338c2536df18f093ef009a/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-1a0ff63f2ea50ef7d49e657794eab762/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/witch-of-the-sea-scrapbaby.png",
+  "imgShiny": "https://units.fntduserguide.com/units/witch-of-the-sea-scrapbaby-shiny.png",
   "rarity": "apex",
   "typeMain": "Endgame",
   "typeTags": [
@@ -20838,8 +20838,8 @@
 },
 {
   "name": "Mecha-Lizabeth",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-1a79a59bde7dda00eab9051f35572cc9/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-94977899b4498aa7cf5382d5739bad96/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/mecha-lizabeth.png",
+  "imgShiny": "https://units.fntduserguide.com/units/mecha-lizabeth-shiny.png",
   "rarity": "nightmare",
   "typeMain": "Endgame",
   "typeTags": [
@@ -20952,8 +20952,8 @@
 },
 {
   "name": "Dutchman Nightmare Bonnie",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-d37c357770a86f979d942e8a3f74da56/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-cb52a324994c2014505c6b2439f0deb4/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/dutchman-nightmare-bonnie.png",
+  "imgShiny": "https://units.fntduserguide.com/units/dutchman-nightmare-bonnie-shiny.png",
   "rarity": "nightmare",
   "typeMain": "Midgame-Endgame",
   "element": "Dark",
@@ -21039,8 +21039,8 @@
 },
 {
   "name": "Aqua Strike Toy Chica",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-0b0f91b227e9159158fe78d274c1c4c8/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-4b29842be214cb1cefee02c5e72f7ff7/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/aqua-strike-toy-chica.png",
+  "imgShiny": "https://units.fntduserguide.com/units/aqua-strike-toy-chica-shiny.png",
   "rarity": "secret",
   "typeMain": "Endgame",
   "typeTags": [
@@ -21123,8 +21123,8 @@
 },
 {
   "name": "Mechanic Endo 01",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-670b03e99412c367125f14b02819fac5/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-100bacf38b00b69c48a92c3ef57e7f54/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/mechanic-endo-01.png",
+  "imgShiny": "https://units.fntduserguide.com/units/mechanic-endo-01-shiny.png",
   "rarity": "secret",
   "typeMain": "Midgame",
   "typeTags": [
@@ -21209,8 +21209,8 @@
 },
 {
   "name": "Pirate Withered Foxy",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-38a51e48a492d3daa9385ed97b5054c4/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-e4dbb313a8d6a881c2a2ec8e4958aea3/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/pirate-withered-foxy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/pirate-withered-foxy-shiny.png",
   "rarity": "secret",
   "typeMain": "Starter",
   "typeTags": [
@@ -21311,8 +21311,8 @@
 },
 {
   "name": "Cannoneer Chica",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-9e53b8f78b9bc28a9aa15b1376a96e4b/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-543e6a5597e31a9d852ede28b80bf821/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/cannoneer-chica.png",
+  "imgShiny": "https://units.fntduserguide.com/units/cannoneer-chica-shiny.png",
   "rarity": "secret",
   "typeMain": "Starter",
   "typeTags": [
@@ -21405,8 +21405,8 @@
 },
 {
   "name": "Salvaged Toy Bonnie",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-217c084228539cb32ea2bc0f8f9d6f0b/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-5d957f89b56fd4764d329bdb907c2374/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/salvaged-toy-bonnie.png",
+  "imgShiny": "https://units.fntduserguide.com/units/salvaged-toy-bonnie-shiny.png",
   "rarity": "mythic",
   "typeMain": "Midgame",
   "typeTags": [
@@ -21487,8 +21487,8 @@
 },
 {
   "name": "Patient White Rabbit",
-  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high.webp?enable-io=true&crop=1%3A1&width=347",
-  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-ytabbp.webp?enable-io=true&crop=1%3A1&width=347",
+  "imgNormal": "https://units.fntduserguide.com/units/patient-white-rabbit.png",
+  "imgShiny": "https://units.fntduserguide.com/units/patient-white-rabbit-shiny.png",
   "rarity": "nightmare",
   "typeMain": "Endgame",
   "typeTags": [
@@ -21602,8 +21602,8 @@
 },
 {
   "name": "Vessel Plushtrap",
-  "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/thumbnail-high.webp?enable-io=true&crop=1%3A1&width=347",
-  "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/thumbnail-high-zf4jlf.webp",
+  "imgNormal": "https://units.fntduserguide.com/units/vessel-plushtrap.png",
+  "imgShiny": "https://units.fntduserguide.com/units/vessel-plushtrap-shiny.png",
   "rarity": "secret",
   "typeMain": "Endgame",
   "typeTags": [
@@ -21693,8 +21693,8 @@
 },
 {
   "name": "Mr. Hippo",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-288f0ea793114fa72984c0f969bb883f/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-21621a4dea193e15b136b983e2f0d733/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/mr-hippo.png",
+  "imgShiny": "https://units.fntduserguide.com/units/mr-hippo-shiny.png",
   "rarity": "nightmare",
   "typeMain": "Endgame",
   "typeTags": [
@@ -21800,8 +21800,8 @@
 },
 {
   "name": "Planet Buster Scott",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-9430b4c1e7c8fd3a2d1c5923d2e5e5cf/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-1631d9b9c53d116691da25e02ecf65a7/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/planet-buster-scott.png",
+  "imgShiny": "https://units.fntduserguide.com/units/planet-buster-scott-shiny.png",
   "rarity": "nightmare",
   "typeMain": "Endgame",
   "typeTags": [
@@ -22000,8 +22000,8 @@
 },
 {
   "name": "Overlord Scott",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-75ef2cd862d6a13c187c0e5e3c18d639/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-f3b312e4bcf42366fcb59e71333d1d25/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/overlord-scott.png",
+  "imgShiny": "https://units.fntduserguide.com/units/overlord-scott-shiny.png",
   "rarity": "secret",
   "typeMain": "Endgame",
   "typeTags": [
@@ -22147,8 +22147,8 @@
 },
 {
   "name": "Theory Crusher Scott",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-3854dfd21a7a3daa8a839b2ec3289f93/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-26b3fc49501bfa3a38d59f165a02932b/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/theory-crusher-scott.png",
+  "imgShiny": "https://units.fntduserguide.com/units/theory-crusher-scott-shiny.png",
   "rarity": "mythic",
   "typeMain": "Endgame",
   "typeTags": [
@@ -22282,8 +22282,8 @@
 },
 {
   "name": "Ragequit Scott",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-fa2d301021e589085594b398517d68fa/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-64c85e7522b1ed9bf18412d0eaad52a8/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/ragequit-scott.png",
+  "imgShiny": "https://units.fntduserguide.com/units/ragequit-scott-shiny.png",
   "rarity": "epic",
   "typeMain": "Endgame",
   "typeTags": [
@@ -22401,8 +22401,8 @@
 },
 {
   "name": "Scott Cawthon",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-740747fae009849e6ff58030617cf4f7/420/420/Image/Png/noFilter",
-  "imgShiny": "https://iili.io/CrPidNt.webp",
+  "imgNormal": "https://units.fntduserguide.com/units/scott-cawthon.png",
+  "imgShiny": "https://units.fntduserguide.com/units/scott-cawthon-shiny.png",
   "rarity": "rare",
   "typeMain": "Midgame",
   "typeTags": [
@@ -22499,8 +22499,8 @@
 },
 {
   "name": "Scott Plushie",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-cb1ec2b7d57b18f00a0d65acbf6a4cf1/420/420/Image/Png/noFilter",
-  "imgShiny": "https://iili.io/CUPPk37.webp",
+  "imgNormal": "https://units.fntduserguide.com/units/scott-plushie.png",
+  "imgShiny": "https://units.fntduserguide.com/units/scott-plushie-shiny.png",
   "rarity": "uncommon",
   "typeMain": "Midgame",
   "typeTags": [
@@ -22574,8 +22574,8 @@
 },
 {
   "name": "Nightguard Afton",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-c629403f842378334c58a2902129e0af/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-9e19347141e6b2fbc1122e5461bb1b62/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/nightguard-afton.png",
+  "imgShiny": "https://units.fntduserguide.com/units/nightguard-afton-shiny.png",
   "rarity": "exclusive",
   "typeMain": "Endgame",
   "typeTags": [
@@ -22675,8 +22675,8 @@
 },
 {
   "name": "Into the Pit Spring Bonnie",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-7feb568717a428827f8adfb67f231a85/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-b77909662c3457f26663bcdceb37cf47/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/into-the-pit-spring-bonnie.png",
+  "imgShiny": "https://units.fntduserguide.com/units/into-the-pit-spring-bonnie-shiny.png",
   "rarity": "nightmare",
   "typeMain": "Endgame",
   "typeTags": [
@@ -22752,8 +22752,8 @@
 },
 {
   "name": "Happy Frog",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-a6419923a8a98a5969a43c8366859656/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-3b2592b495bc95d2963ffdcc2bfe2730/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/happy-frog.png",
+  "imgShiny": "https://units.fntduserguide.com/units/happy-frog-shiny.png",
   "rarity": "secret",
   "typeMain": "Starter",
   "typeTags": [
@@ -22835,8 +22835,8 @@
 },
 {
   "name": "Vengeful Spirit",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-2f807bd6fb959d9b5863e45ac5fcf7af/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-2f807bd6fb959d9b5863e45ac5fcf7af/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/vengeful-spirit.png",
+  "imgShiny": "https://units.fntduserguide.com/units/vengeful-spirit.png",
   "rarity": "hero",
   "typeMain": "Midgame-Endgame",
   "typeTags": [
@@ -23118,8 +23118,8 @@
 },
 {
   "name": "Dee Dee",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-32c1bbd0435c1f26d41a76da2cfe5511/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-ced767d7f2a06add7151b17e2779e83b/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/dee-dee.png",
+  "imgShiny": "https://units.fntduserguide.com/units/dee-dee-shiny.png",
   "rarity": "exclusive",
   "typeMain": "Midgame",
   "element": "Neutral",
@@ -23205,8 +23205,8 @@
 },
 {
   "name": "Phone Guy",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-04b88a6d9a0a82a939cb9e3b2ae5d00f/420/420/Image/Png/noFilter",
-  "imgShiny": "https://iili.io/CUPPs6B.webp",
+  "imgNormal": "https://units.fntduserguide.com/units/phone-guy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/phone-guy-shiny.png",
   "rarity": "secret",
   "typeMain": "Endgame",
   "typeTags": [
@@ -23293,8 +23293,8 @@
 },
 {
   "name": "Anniversary Duo",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-c0efa5c3edac002be310097833ba7b25/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-f3fc3d2bc7e220f2ac2454681eb42743/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/anniversary-duo.png",
+  "imgShiny": "https://units.fntduserguide.com/units/anniversary-duo-shiny.png",
   "rarity": "secret",
   "typeMain": "Endgame",
   "typeTags": [
@@ -23373,8 +23373,8 @@
 },
 {
   "name": "Anniversary Balloon Boy",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-804c04e9a70cee0086d53d52d640285c/420/420/Image/Png/noFilter",
-  "imgShiny": "https://iili.io/Cgn2a0G.webp",
+  "imgNormal": "https://units.fntduserguide.com/units/anniversary-balloon-boy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/anniversary-balloon-boy-shiny.png",
   "rarity": "epic",
   "typeMain": "Endgame",
   "typeTags": [
@@ -23449,8 +23449,8 @@
 },
 {
   "name": "Eleanor",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-bde4a6765777beaab98945e44ba781e9/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-0152930a12544424ec8efaa1bb4ba57c/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/eleanor.png",
+  "imgShiny": "https://units.fntduserguide.com/units/eleanor-shiny.png",
   "rarity": "secret",
   "typeMain": "Endgame",
   "element": "Dark",
@@ -23533,8 +23533,8 @@
 },
 {
   "name": "Samurai Duo",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-4111f4a380c20af35fb0a09ebb02eb4f/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-201c55377404ff4e8b751c8e9da50f0d/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/samurai-duo.png",
+  "imgShiny": "https://units.fntduserguide.com/units/samurai-duo-shiny.png",
   "rarity": "secret",
   "typeMain": "Endgame",
   "typeTags": [
@@ -23628,8 +23628,8 @@
 },
 {
   "name": "XOR",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-838103d493f5c0429e69a18590db969c/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-bab08e4e29a11716063b608fd4fae224/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/xor.png",
+  "imgShiny": "https://units.fntduserguide.com/units/xor-shiny.png",
   "rarity": "secret",
   "typeMain": "Starter-Midgame",
   "typeTags": [
@@ -23731,8 +23731,8 @@
 },
 {
   "name": "Stitchwraith",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-09c23de0ce73bd2c315bfaa56f171fd2/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-5b7c8a352fc5bcdd328896c5b98fc5f5/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/stitchwraith.png",
+  "imgShiny": "https://units.fntduserguide.com/units/stitchwraith-shiny.png",
   "rarity": "secret",
   "typeMain": "Midgame-Endgame",
   "typeTags": [
@@ -23864,8 +23864,8 @@
 },
 {
   "name": "Hoax Purple Guy",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-7d51f78d4134fb23053b6e63a33e226d/420/420/Image/Png/noFilter",
-  "imgShiny": "https://iili.io/CUPQWSS.webp",
+  "imgNormal": "https://units.fntduserguide.com/units/hoax-purple-guy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/hoax-purple-guy-shiny.png",
   "rarity": "secret",
   "typeMain": "Midgame-Endgame",
   "typeTags": [
@@ -23956,8 +23956,8 @@
   },
   {
   "name": "Nedd Bear",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-f2fc9f04f347723e06d447cf6a64a99a/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-cba43da2005ccddabab8ef8689e9caa7/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/nedd-bear.png",
+  "imgShiny": "https://units.fntduserguide.com/units/nedd-bear-shiny.png",
   "rarity": "mythic",
   "typeMain": "Midgame",
   "typeTags": [
@@ -24013,8 +24013,8 @@
 },
 {
   "name": "Count the Ways Funtime Freddy",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-08ed418ed8c1507de253d62a18f288d3/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-c27756aa8f2df2a322a13183e3e46aa4/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/count-the-ways-funtime-freddy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/count-the-ways-funtime-freddy-shiny.png",
   "rarity": "mythic",
   "typeMain": "Endgame",
   "typeTags": [
@@ -24200,8 +24200,8 @@
 },
 {
   "name": "Pigpatch",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-bccf918ea1d7e7f22b98094a8b673d0a/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-d693ece22bf4bd66ca95a9f5051d5a4f/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/pigpatch.png",
+  "imgShiny": "https://units.fntduserguide.com/units/pigpatch-shiny.png",
   "rarity": "epic",
   "typeMain": "Midgame",
   "typeTags": [
@@ -24289,8 +24289,8 @@
 },
 {
   "name": "Orville Elephant",
-  "imgNormal": "https://tr.rbxcdn.com/180DAY-7171282144ee218a11c14dbf666356c8/420/420/Image/Png/noFilter",
-  "imgShiny": "https://tr.rbxcdn.com/180DAY-7b410935c622d72e7cdc81584c7a292b/420/420/Image/Png/noFilter",
+  "imgNormal": "https://units.fntduserguide.com/units/orville-elephant.png",
+  "imgShiny": "https://units.fntduserguide.com/units/orville-elephant-shiny.png",
   "rarity": "rare",
   "typeMain": "Starter",
   "typeTags": [

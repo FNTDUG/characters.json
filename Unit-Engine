@@ -6978,17 +6978,28 @@
         var currentTypeFilter      = "all";
         var currentPlacementsSort  = "all";
 
+        // Grouped: progression stage, then status effects A-Z, then roles.
+        // The status list mirrors the INFO panel's "Status Effects" tab (plus
+        // Knockback, which the engine tracks but that tab does not list).
         var UE_TYPE_OPTIONS = [
           "Starter",
           "Starter-Midgame",
           "Midgame",
           "Midgame-Endgame",
           "Endgame",
-          "Slow",
+          "Anti-Regen",
+          "Bleed",
+          "Burn",
           "Death",
-          "Wither",
           "Knockback",
+          "Malware",
+          "Poison",
+          "Rooted",
+          "Scarred",
+          "Slow",
+          "Soaked",
           "Stun",
+          "Wither",
           "Support",
           "Income",
           "Summon"

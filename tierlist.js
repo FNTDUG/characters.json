@@ -653,6 +653,26 @@
     (document.head || document.documentElement).appendChild(s);
   }
 
+  /* Cards use loading="lazy", so anything below the fold has never been fetched
+     and would land in the capture as an empty box. Force them eager and wait
+     for the fetches to settle before rendering. */
+  function _tlPreloadImages(rootEl, cb) {
+    var imgs = Array.prototype.slice.call(rootEl.querySelectorAll('img'));
+    var pending = 0, finished = false;
+    function finish() { if (!finished) { finished = true; cb(); } }
+    imgs.forEach(function (im) {
+      if (im.getAttribute('loading') === 'lazy') im.setAttribute('loading', 'eager');
+      if (!im.getAttribute('src')) return;
+      if (im.complete && im.naturalWidth > 0) return;
+      pending++;
+      var settle = function () { if (--pending <= 0) finish(); };
+      im.addEventListener('load', settle, { once: true });
+      im.addEventListener('error', settle, { once: true });
+    });
+    if (pending === 0) finish();
+    setTimeout(finish, 8000);   // never leave the button stuck on a stalled image
+  }
+
   function _tlDlBlob(blob, filename) {
     var url = URL.createObjectURL(blob);
     var a = document.createElement('a'); a.href = url; a.download = filename;
@@ -718,6 +738,7 @@
       var active = document.querySelector('#tlModes .tl-mb.on');
       var mode = active ? (active.getAttribute('data-m') || 'all') : 'all';
 
+      _tlPreloadImages(tlRoot, function () {
       withHtml2Canvas(function (ok) {
         if (!ok) { btn.disabled = false; btn.title = 'Screenshot unavailable'; return; }
         window.html2canvas(tlRoot, {
@@ -731,6 +752,12 @@
             if (cr) { cr.style.width = '1400px'; cr.style.left = '0'; cr.style.transform = 'none'; }
             if (doc.documentElement) doc.documentElement.style.width = '1400px';
             if (doc.body) { doc.body.style.width = '1400px'; doc.body.style.margin = '0'; }
+            // html2canvas renders the clone in an off-screen iframe, so images still
+            // marked loading="lazy" are never in its viewport and the browser never
+            // fetches them — they paint blank. Strip it in the clone.
+            Array.prototype.forEach.call(doc.querySelectorAll('img[loading]'), function (im) {
+              im.removeAttribute('loading');
+            });
             // Search box and camera are UI, not content — keep them out of the shot.
             // The mode tabs stay: they say which list this is.
             var sb = doc.getElementById('tlSearch'); if (sb) sb.style.display = 'none';
@@ -749,6 +776,7 @@
           console.error('Tierlist screenshot failed:', e);
           btn.disabled = false;
         });
+      });
       });
     });
     return btn;
@@ -862,8 +890,22 @@
     img.alt = name;
     img.loading = 'lazy';
     img.draggable = false;
+    // Load in CORS mode so the browser caches a CORS-valid copy. html2canvas
+    // re-requests these with crossOrigin set; if the cache only holds a plain
+    // non-CORS response the browser reuses it, the CORS check fails, and the
+    // render is silently dropped from the screenshot while the page looks fine.
+    // Must be set before .src — assigning it afterwards has no effect.
+    img.crossOrigin = 'anonymous';
     img.src = u.img || '';
     img.onerror = function() {
+      // If CORS is unavailable, retry as a plain load so the page still shows
+      // the render (it just will not appear in a capture).
+      if (this.getAttribute('crossorigin') && this.getAttribute('src')) {
+        var s = this.getAttribute('src');
+        this.removeAttribute('crossorigin');
+        this.src = s;
+        return;
+      }
       this.style.cssText = 'width:100%;height:100%;background:#1a1a2e;display:block';
       this.removeAttribute('src');
     };

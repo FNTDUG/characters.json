@@ -23606,7 +23606,7 @@
 "modes": {
   "jake": {
   "label": "Jake",
-  "role": "damage",
+  "role": "support",
   "attackType": "Circle",
   "levels": [
     {
@@ -23619,36 +23619,26 @@
     {
       "level": 2,
       "cost": 4000,
-      "damage": 200,
-      "cd": 2.5,
       "range": 16
     },
     {
       "level": 3,
       "cost": 6000,
-      "damage": 250,
-      "cd": 2.5,
       "range": 18
     },
     {
       "level": 4,
       "cost": 8000,
-      "damage": 325,
-      "cd": 2.5,
       "range": 21
     },
     {
       "level": 5,
       "cost": 10000,
-      "damage": 425,
-      "cd": 2.5,
       "range": 24
     },
     {
       "level": 6,
       "cost": 12500,
-      "damage": 550,
-      "cd": 2.5,
       "range": 24
     }
   ],
@@ -23658,17 +23648,6 @@
       "text": "On placement, choose between Jake Mode and Andrew Mode. Remnant is gained from enemies killed in this unit's range. (1 stack: 5 enemies. 2 stacks: 25 enemies. 3 stacks: 75 enemies). <br> Jake Mode: <br>• 1 stack: Units in range gain +15% Damage, +10% Range, and -5% CD. <br> • 2 stacks: Also gain +10% crit rate and +10% crit damage <br>• 3 stacks: Units in range gain +15% Damage, +25% Range, -5% CD, +20% crit rate, and +20% crit damage."
     }
   ],
-  "passiveDamage": {
-    "selfboost": [
-      {
-        "label":  "(Max)",
-        "dmgmult": 1.15,
-        "rngmult": 1.25,
-        "cdmult": 0.95,
-        "critc": 0.20,
-        "critd": 2.20
-      }
-    ]
   }
 },
 
@@ -24150,13 +24129,13 @@
   "passiveDamage": {
     "selfboost": [
       {
-        "label": "Banjo Breakdown (Power Chord)",
+        "label": "Power Chord",
         "dmgmult": 1.30,
         "duration": 8,
         "cd": 16
       },
       {
-        "label": "Banjo Breakdown (Solo Chord)",
+        "label": "Solo Chord",
         "dmgmult": 1.80,
         "critc": 0.25,
         "critd": 2.50,

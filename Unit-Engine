@@ -4073,7 +4073,7 @@
           ["rockin_bonnie_band","Rockin Bonnie: Rockin Vibes (-8% CD)",                                    { cdMult: 0.92 }],
           ["scarecrow_raiser",  "Scarecrow Freddy: Crop Raiser (+15% DMG, +15% RNG)",                     { dmgMult: 1.15, rngMult: 1.15, stackKey: "scarecrow_raiser_stacks", maxStacks: 4 }],
           ["scarecrow_guardian","Scarecrow Freddy: Guardian of the Fields (-5% DMG, -5% RNG)",             { dmgMult: 0.95, rngMult: 0.95, stackKey: "scarecrow_guardian_stacks", maxStacks: 4 }],
-          ["pbs",               "Scott Units: The Creator (+1% DMG & +1% RNG per stack)",                 { dmgMult: 0.1, rngMult: 0.1, stackKey: "psbStack", maxStacks: 50 }],
+          ["pbs",               "Scott Units: The Creator (+1% DMG & +1% RNG per stack)",                 { dmgMult: 1.01, rngMult: 1.01, stackKey: "psbStack", maxStacks: 100 }],
           ["roar",              "Shadow Knight Freddy: Roaring Scream (+25% DMG, +3% CD)",                { dmgMult: 1.25, cdMult: 1.03, duration: 15, cd: 60 }],
           ["survivor_gas",      "Sole Survivor Withered Bonnie: Mutating Gas (+30% DMG, +5% CD per stack)",{ dmgMult: 1.30, cdMult: 1.05, stackKey: "survivorStacks", maxStacks: 4 }],
           ["survivor_stun",     "Sole Survivor Withered Bonnie: Wasteland Scavenger (+25% DMG)",          { dmgMult: 1.25, duration: 10, cd: 15 }],

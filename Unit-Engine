@@ -4967,17 +4967,30 @@
         return allowed[key] || "";
       }
 
+      // Any tag missing from this map is dropped from the unit's type label, so
+      // it must stay in step with UE_TYPE_OPTIONS - the filter matches on
+      // typeTags directly and will happily find a tag that never renders here.
       function normalizeTypeTag(t) {
-        t = String(t || "").trim().toLowerCase();
-        if (t === "support") return "Support";
-        if (t === "slow")    return "Slow";
-        if (t === "stun")    return "Stun";
-        if (t === "knockback")    return "Knockback";
-        if (t === "wither")    return "Wither";
-        if (t === "death")    return "Death";
-        if (t === "income")  return "Income";
-        if (t === "summon")  return "Summon";
-        return "";
+        var allowed = {
+          "anti-regen": "Anti-Regen",
+          "bleed":      "Bleed",
+          "burn":       "Burn",
+          "death":      "Death",
+          "knockback":  "Knockback",
+          "malware":    "Malware",
+          "poison":     "Poison",
+          "rooted":     "Rooted",
+          "scarred":    "Scarred",
+          "slow":       "Slow",
+          "soaked":     "Soaked",
+          "stun":       "Stun",
+          "wither":     "Wither",
+          "income":     "Income",
+          "summon":     "Summon",
+          "support":    "Support"
+        };
+        var key = String(t || "").trim().toLowerCase();
+        return allowed[key] || "";
       }
 
       function getTypeLabel(unit, modeKey) {

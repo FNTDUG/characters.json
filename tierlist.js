@@ -5,7 +5,7 @@
   "lists": {
     "all": {
       "s": [
-        "Planet Buster Scott NEW"
+        "Planet Buster Scott NEW",
         "Grand Strategist Chica",
         "Astral Bonnie",
         "Cthulhu Nightmare Foxy",
@@ -15,7 +15,7 @@
       ],
       "a": [
         "Gaia Chica",
-        "Overlord Scott NEW"
+        "Overlord Scott NEW",
         "Kronos Endo Freddy",
         "Frozen King Foxy",
         "Frostmancer Withered Bonnie",
@@ -196,7 +196,7 @@
         "Phantom Foxy",
         "Nightmare Mangle",
         "Rockstar Bonnie",
-        "Anniversary Duo NEW"
+        "Anniversary Duo NEW",
         "John Pigpatch",
         "Popeyes Toy Freddy",
         "Nightmare Freddy",
@@ -261,7 +261,7 @@
         "Undead Chica",
         "Bonnie",
         "Foxy",
-        "No. 1 Crate"
+        "No. 1 Crate",
         "Crying Child",
         "Rockstar Chica",
         "Foxy Fighters",
@@ -282,7 +282,7 @@
         "PaperPals",
         "JJ",
         "Freddy",
-        "Freddy With a Glock"
+        "Freddy With a Glock",
         "Phantom Chica",
         "Nightmare Cupcake",
         "Santa Freddy",
@@ -332,7 +332,7 @@
         "Crying Child",
         "Astral Bonnie",
         "Mother Nature Ballora",
-        "Haox Purple Guy NEW"
+        "Haox Purple Guy NEW",
         "HandUnit"
       ],
       "b": [
@@ -367,7 +367,7 @@
         "Anniversary Duo NEW",
         "Circus Baby",
         "Balloon Boy",
-        "Salvaged Toy Bonnie"
+        "Salvaged Toy Bonnie",
         "Hacker King RWQFSFASXC",
         "Phantom Mangle",
         "Party Packer Cupcake BUG",
@@ -391,7 +391,7 @@
       "a": [
         "Pirate Withered Foxy",
         "Frostmancer Withered Bonnie",
-        "Kronos Endo Freddy"
+        "Kronos Endo Freddy",
         "Mangle",
         "Chicas Magic Rainbow",
         "Trash o Tron",
@@ -405,7 +405,7 @@
         "Mother Nature Ballora",
         "Lefty",
         "Rockstar Chica",
-        "Foxy Fighters"
+        "Foxy Fighters",
         "Landslide Funtime Foxy",
         "Lore Keeper Shadow Bonnie",
         "Vengeful Spirit NEW",

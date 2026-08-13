@@ -653,24 +653,70 @@
     (document.head || document.documentElement).appendChild(s);
   }
 
-  /* Cards use loading="lazy", so anything below the fold has never been fetched
-     and would land in the capture as an empty box. Force them eager and wait
-     for the fetches to settle before rendering. */
-  function _tlPreloadImages(rootEl, cb) {
-    var imgs = Array.prototype.slice.call(rootEl.querySelectorAll('img'));
-    var pending = 0, finished = false;
-    function finish() { if (!finished) { finished = true; cb(); } }
-    imgs.forEach(function (im) {
-      if (im.getAttribute('loading') === 'lazy') im.setAttribute('loading', 'eager');
-      if (!im.getAttribute('src')) return;
-      if (im.complete && im.naturalWidth > 0) return;
-      pending++;
-      var settle = function () { if (--pending <= 0) finish(); };
-      im.addEventListener('load', settle, { once: true });
-      im.addEventListener('error', settle, { once: true });
+  /* Point an <img> at a url in CORS mode. html2canvas re-requests every image
+     with crossOrigin set; if the first load was plain, the browser reuses that
+     cached non-CORS copy, the check fails, and the image is dropped from the
+     capture — instantly, with no network round trip. Setting crossOrigin on the
+     original load is what makes the cached copy usable. Must precede .src.     */
+  function _tlImgSrc(im, url) {
+    im.crossOrigin = 'anonymous';
+    im.src = url || '';
+    im.addEventListener('error', function () {
+      // CORS unavailable for this one — retry plain so the page still shows it
+      // (it just will not make it into a capture).
+      if (im.getAttribute('crossorigin')) {
+        var s = im.getAttribute('src');
+        im.removeAttribute('crossorigin');
+        im.src = s;
+      }
     });
-    if (pending === 0) finish();
-    setTimeout(finish, 8000);   // never leave the button stuck on a stalled image
+  }
+
+  /* Every URL the capture needs: <img> sources plus CSS background-image urls
+     (the tier row plates, which are data: URIs and need no CORS). */
+  function _tlImageUrls(rootEl) {
+    var urls = {};
+    Array.prototype.forEach.call(rootEl.querySelectorAll('img'), function (im) {
+      var s = im.getAttribute('src');
+      if (s && s.indexOf('data:') !== 0) urls[s] = 1;
+    });
+    var els = [rootEl].concat(Array.prototype.slice.call(rootEl.querySelectorAll('*')));
+    els.forEach(function (el) {
+      var bg;
+      try { bg = window.getComputedStyle(el).backgroundImage; } catch (e) { return; }
+      if (!bg || bg === 'none') return;
+      var re = /url\((['"]?)(.*?)\1\)/g, m;
+      while ((m = re.exec(bg))) {
+        if (m[2] && m[2].indexOf('data:') !== 0) urls[m[2]] = 1;
+      }
+    });
+    return Object.keys(urls);
+  }
+
+  /* html2canvas re-requests every image with crossOrigin set (useCORS). If the
+     browser cache only holds a plain non-CORS copy it reuses that, the CORS
+     check fails, and the image is dropped from the render — the page still
+     looks right, so the loss is invisible until you look at the screenshot.
+     Fetching each URL once in CORS mode first puts a CORS-valid copy in the
+     cache, so html2canvas's own loads all hit. Also clears loading="lazy",
+     which would otherwise leave below-the-fold cards unfetched. */
+  function _tlPreloadImages(rootEl, cb) {
+    Array.prototype.forEach.call(rootEl.querySelectorAll('img[loading]'), function (im) {
+      im.removeAttribute('loading');
+    });
+    var urls = _tlImageUrls(rootEl);
+    var pending = urls.length, finished = false;
+    function finish() { if (!finished) { finished = true; cb(); } }
+    if (!pending) return finish();
+    urls.forEach(function (u) {
+      var im = new Image();
+      im.crossOrigin = 'anonymous';
+      var settle = function () { if (--pending <= 0) finish(); };
+      im.onload = settle;
+      im.onerror = settle;   // best effort: a failure just means that one drops
+      im.src = u;
+    });
+    setTimeout(finish, 15000);   // never leave the button stuck on a stalled image
   }
 
   function _tlDlBlob(blob, filename) {
@@ -946,7 +992,7 @@
     statuses.forEach(function(tag, i) {
       if (i >= 4) return;
       var b = document.createElement('img');
-      b.src = STATUS_ICON[tag] || '';
+      _tlImgSrc(b, STATUS_ICON[tag] || '');
       b.style.cssText = 'position:absolute;width:26px;height:26px;' + CORNERS[i] + ';pointer-events:none;z-index:3;image-rendering:auto';
       card.appendChild(b);
     });

@@ -2023,19 +2023,41 @@
       
       
       
+      // Status-effect colours and notes are kept in step with the INFO panel's
+      // "Status Effects" tab in the site worker — that tab is the source of
+      // truth. If a colour or wording changes there, change it here too.
+      //
+      // Keys are the BASE word, never the inflected form: the regex below
+      // captures the stem and its suffix separately, and the lookup uses the
+      // stem. So 'mark' covers mark/marks/marked/marking, 'root' covers
+      // root/roots/rooted/rooting, and so on.
       var _PASSIVE_COLORS = {
         damage:'#C33333', dmg:'#C33333',
         range:'#76B7FF',  rng:'#76B7FF',
         cooldown:'#C3A6FF', cd:'#C3A6FF',
-        burn:'#FF8A3D',   bleed:'#FF6464',  poison:'#FF6464',
-        slow:'#7BB5D9',   knockback:'#7BB5D9', stun:'#7BB5D9'
+        'anti-regen':'#4ADE80', 'anti regen':'#4ADE80', antiregen:'#4ADE80',
+        bleed:'#E0313F',
+        burn:'#FF8A1F',
+        death:'#B8BCC8',
+        malware:'#4DFD8A',
+        mark:'#FF5252',
+        poison:'#A8D61A',
+        root:'#5CB469',
+        scar:'#C2569B',
+        slow:'#7FC7DD',
+        soak:'#35A8FF',
+        stun:'#7FD6F0',
+        wither:'#A98FC4',
+        knockback:'#7BB5D9'
       };
-      
-      var _CC_STANDALONE = 'burn|bleed|slow|stun|knockback|poison';
+
+      var _CC_STANDALONE = 'anti[- ]?regen|burn|bleed|slow|stun|knockback|poison|death|malware|mark|root|scar|soak|wither';
       var _CC_TWOPHRASE  = 'knocks back|knocked back';
 
-      var _SFX = '(s|ed|ing|ned|ning|er)?';
-      var _KW  = 'damage|dmg|range|rng|cooldown|cd|burn|bleed|slow|stun|knockback|poison';
+      // 'red' and 'ring' are what let scar -> scarred / scarring resolve back to
+      // the 'scar' stem; 'ned'/'ning' do the same for stun -> stunned/stunning.
+      var _SFX = '(s|ed|ing|ned|ning|red|ring|er)?';
+      var _KW  = 'damage|dmg|range|rng|cooldown|cd|anti[- ]?regen|burn|bleed|slow|stun|knockback|poison|death|malware|mark|root|scar|soak|wither';
       var _PASSIVE_RE = new RegExp(
         '([+-]?\\d+(?:\\.\\d+)?%)([ ]?)(' + _KW + ')' + _SFX + '\\b' +
         '|([+-]?\\d+(?:\\.\\d+)?%)' +
@@ -2045,10 +2067,21 @@
       );
 
       var _PASSIVE_NOTES = {
-        bleed:     'Bleed and Poison are effectively the same. Dealing a stated % of this units damage over time',
-        poison:    'Bleed and Poison are effectively the same. Dealing a stated % of this units damage over time',
-        stun:      'Stun freezes enemies for a stated amount of time, with a 7s CD (also known as lockout). This CD does not start until the Stun duration is over',
-        slow:      'Slow reduces enemy movement speed for its duration. This has a cap of 60% and can come from more than 1 source',
+        'anti-regen': 'Reduces enemy health regeneration by a %',
+        'anti regen': 'Reduces enemy health regeneration by a %',
+        antiregen:   'Reduces enemy health regeneration by a %',
+        bleed:     'Enemies take damage every second based on a % of a unit’s damage',
+        burn:      'Enemies take damage every second based on a % of a unit’s damage',
+        death:     'Enemies take 3x damage from the unit(s) that applied Death',
+        malware:   'Enemy generates +100% income',
+        mark:      'Has special effects depending on the unit that marked the enemy',
+        poison:    'Enemies take damage every second based on a % of a unit’s damage',
+        root:      'Slow that increases by 2% every second, up to 30%, then Stuns affected enemies after they reach 30% Slow from Rooted',
+        scar:      'Non-boss enemies lose 0.25% of their health every second',
+        slow:      'Reduces enemy movement speed by a % (max 60%)',
+        soak:      'Enemies receive +10% damage from Water units. Fire units deal +25% damage and remove Soaked. Electric units deal +10% damage, Stun affected enemies for 1.5s, and remove Soaked',
+        stun:      'Freezes an enemy in place for a duration (7s CD)',
+        wither:    'Increases the damage enemies receive by a %',
         knockback: 'Knockback pushes enemies backward for a stated amount of tiles, with a 7s CD (also known as lockout)'
       };
 

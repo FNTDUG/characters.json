@@ -693,8 +693,7 @@
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
-      "Death",
-      "Marked"
+      "Death"
     ],
     "element": "Dark",
     "placements": 1,
@@ -941,7 +940,7 @@
       "aoe": {
         "label": "AOE",
         "role": "damage",
-        "attackType": "Full AOE",
+        "attackType": "FullAOE",
         "levels": [
           {
             "level": 1,
@@ -3382,7 +3381,7 @@
     ],
     "element": "Dark",
     "placements": 1,
-    "attackType": "Full AOE",
+    "attackType": "FullAOE",
     "obtainment": "Normal Summons, Nightmare 0.01%",
     "balanceChanges": [
       {
@@ -6183,7 +6182,7 @@
     "typeMain": "Starter-Midgame",
     "element": "Rust",
     "placements": 1,
-    "attackType": "Full AOE",
+    "attackType": "FullAOE",
     "obtainment": "S2 Free Pass Tier 30",
     "balanceChanges": [
       {
@@ -12021,7 +12020,7 @@
         ],
         "effect": "+15% damage & +15% range, +5% enemy speed in range",
         "role": "support",
-        "attackType": "no type",
+        "attackType": "Single",
         "levels": [
           {
             "level": 1,
@@ -15901,8 +15900,7 @@
     "rarity": "exclusive",
     "typeMain": "Endgame",
     "typeTags": [
-      "Bleed",
-      "Marked"
+      "Bleed"
     ],
     "element": "Rust",
     "placements": 1,
@@ -17711,7 +17709,7 @@
     "typeMain": "Starter",
     "element": "Neutral",
     "placements": 1,
-    "attackType": "Full AOE",
+    "attackType": "FullAOE",
     "obtainment": "Summons (30%)",
     "levels": [
       {
@@ -21606,7 +21604,7 @@
   ],
   "element": "Nature/Dark",
   "placements": 2,
-  "attackType": "Full AOE",
+  "attackType": "FullAOE",
   "obtainment": "Vessel Plushtrap Present (200 Challenge Tokens)",
   "levels": [
     {
@@ -22837,7 +22835,6 @@
     "Support",
     "Slow",
     "Bleed",
-    "Marked",
     "Stun",
     "Wither"
   ],
@@ -23539,7 +23536,7 @@
   ],
   "element": "Neutral",
   "placements": 1,
-  "attackType": "Full AOE",
+  "attackType": "FullAOE",
   "obtainment": "Season 6 Pass Premium Tier 50",
   "levels": [
     {

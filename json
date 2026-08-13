@@ -692,6 +692,10 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-29-2026-19-08-26-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=347",
     "rarity": "nightmare",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Death",
+      "Marked"
+    ],
     "element": "Dark",
     "placements": 1,
     "attackType": "Single",
@@ -867,7 +871,7 @@
       "cone": {
         "label": "Cone45°",
         "role": "damage",
-        "attackType": "Cone45",
+        "attackType": "Cone45°",
         "levels": [
           {
             "level": 1,
@@ -937,7 +941,7 @@
       "aoe": {
         "label": "AOE",
         "role": "damage",
-        "attackType": "FullAOE",
+        "attackType": "Full AOE",
         "levels": [
           {
             "level": 1,
@@ -1182,6 +1186,11 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-17-14-59-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
     "rarity": "nightmare",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Burn",
+      "Slow",
+      "Stun"
+    ],
     "element": "Rust",
     "placements": 2,
     "attackType": "Multi",
@@ -2403,7 +2412,8 @@
     "rarity": "apex",
     "typeMain": "Endgame",
     "typeTags": [
-      "Support"
+      "Support",
+      "Burn"
     ],
     "element": "Fire",
     "placements": 1,
@@ -2579,7 +2589,8 @@
     "typeMain": "Endgame",
     "typeTags": [
       "Summon",
-      "Wither"
+      "Wither",
+      "Stun"
     ],
     "element": "Dark",
     "placements": 1,
@@ -2876,6 +2887,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-18-34-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
     "rarity": "nightmare",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Burn"
+    ],
     "element": "Fire",
     "placements": 2,
     "attackType": "Cone65°",
@@ -3368,7 +3382,7 @@
     ],
     "element": "Dark",
     "placements": 1,
-    "attackType": "FullAOE",
+    "attackType": "Full AOE",
     "obtainment": "Normal Summons, Nightmare 0.01%",
     "balanceChanges": [
       {
@@ -3781,7 +3795,8 @@
     "rarity": "hero",
     "typeMain": "Midgame-Endgame",
     "typeTags": [
-      "Support"
+      "Support",
+      "Bleed"
     ],
     "element": "Fire",
     "placements": 1,
@@ -4105,7 +4120,7 @@
     ],
     "element": "Light",
     "placements": 1,
-    "attackType": "no type",
+    "attackType": "No Type",
     "obtainment": "S2 Premium Pass Tier 1",
     "balanceChanges": [
       {
@@ -5031,6 +5046,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-06-20-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
     "rarity": "secret",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Bleed"
+    ],
     "element": "Dark",
     "placements": 2,
     "attackType": "Multi",
@@ -5264,6 +5282,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-feb-02-2026-15-07-41-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=1920",
     "rarity": "exclusive",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Burn"
+    ],
     "element": "Fire",
     "placements": 2,
     "attackType": "Cone",
@@ -5469,7 +5490,7 @@
     ],
     "element": "Rust",
     "placements": 1,
-    "attackType": "Mutli",
+    "attackType": "Multi",
     "obtainment": "Time Lord Withered Freddy Present (350 Raid Coins)",
     "levels": [
       {
@@ -5869,6 +5890,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-jan-19-2026-23-34-17-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
     "rarity": "exclusive",
     "typeMain": "Midgame",
+    "typeTags": [
+      "Burn"
+    ],
     "element": "Fire",
     "placements": 2,
     "attackType": "Cone35°",
@@ -6236,7 +6260,8 @@
     "rarity": "secret",
     "typeMain": "Starter-Midgame",
     "typeTags": [
-      "Support"
+      "Support",
+      "Poison"
     ],
     "element": "Fire",
     "placements": 2,
@@ -6426,7 +6451,7 @@
     ],
     "element": "Neutral",
     "placements": 1,
-    "attackType": "Mutli",
+    "attackType": "Multi",
     "obtainment": "S2 Premium Pass Tier 30",
     "balanceChanges": [
       {
@@ -6532,7 +6557,7 @@
     "typeMain": "Starter-Midgame",
     "element": "Dark",
     "placements": 2,
-    "attackType": "Mutli",
+    "attackType": "Multi",
     "obtainment": "Normal Summons, Mythic 2%",
     "balanceChanges": [
       {
@@ -6583,6 +6608,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-27-51-gmt-0600-central-standard-time-high.png",
     "rarity": "uncommon",
     "typeMain": "Starter",
+    "typeTags": [
+      "Bleed"
+    ],
     "element": "Neutral",
     "placements": 6,
     "attackType": "Single",
@@ -6697,6 +6725,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-28-16-gmt-0600-central-standard-time-high.png",
     "rarity": "uncommon",
     "typeMain": "Starter",
+    "typeTags": [
+      "Burn"
+    ],
     "element": "Fire",
     "placements": 3,
     "attackType": "Line",
@@ -6909,6 +6940,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-38-32-gmt-0600-central-standard-time-high.png",
     "rarity": "rare",
     "typeMain": "Starter",
+    "typeTags": [
+      "Bleed"
+    ],
     "element": "Neutral",
     "placements": 4,
     "attackType": "Circle",
@@ -7189,9 +7223,12 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-32-57-gmt-0600-central-standard-time-high.png",
     "rarity": "secret",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Bleed"
+    ],
     "element": "Rust",
     "placements": 2,
-    "attackType": "Mutli",
+    "attackType": "Multi",
     "obtainment": "Normal Summons (0.25%)",
     "balanceChanges": [
       {
@@ -7359,6 +7396,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-36-53-gmt-0600-central-standard-time-high.png",
     "rarity": "secret",
     "typeMain": "Starter-Midgame",
+    "typeTags": [
+      "Burn"
+    ],
     "element": "Fire",
     "placements": 4,
     "attackType": "Circle",
@@ -7577,6 +7617,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-30-25-gmt-0600-central-standard-time-high.png",
     "rarity": "secret",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Poison"
+    ],
     "element": "Dark",
     "placements": 2,
     "attackType": "Multi",
@@ -7725,7 +7768,7 @@
       "FMJ": {
         "label": "FMJ",
         "role": "damage",
-        "attackType": "Cone 35°",
+        "attackType": "Cone35°",
         "passives": [
           {
             "title": "Mode Swap",
@@ -7807,7 +7850,7 @@
       "focusedFire": {
         "label": "Focused Fire",
         "role": "damage",
-        "attackType": "Cricle",
+        "attackType": "Circle",
         "passives": [
           {
             "title": "Mode Swap",
@@ -7894,7 +7937,7 @@
     "typeMain": "Endgame",
     "element": "Electricity",
     "placements": 2,
-    "attackType": "Mutli",
+    "attackType": "Multi",
     "obtainment": "S1 Free Pass Tier 30",
     "basenodps": true,
     "balanceChanges": [
@@ -8003,7 +8046,7 @@
     "typeMain": "Starter-Midgame",
     "element": "Electricity",
     "placements": 3,
-    "attackType": "Mutli",
+    "attackType": "Multi",
     "obtainment": "Normal Summons, Epic 18%",
     "balanceChanges": [
       {
@@ -8083,9 +8126,12 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-nov-24-2025-00-31-27-gmt-0600-central-standard-time-high.png",
     "rarity": "mythic",
     "typeMain": "Starter-Midgame",
+    "typeTags": [
+      "Slow"
+    ],
     "element": "Water",
     "placements": 3,
-    "attackType": "Mutli",
+    "attackType": "Multi",
     "obtainment": "Normal summons, Mythic 2%",
     "levels": [
       {
@@ -8152,7 +8198,7 @@
     "typeMain": "Starter-Midgame",
     "element": "Electricity",
     "placements": 3,
-    "attackType": "Mutli",
+    "attackType": "Multi",
     "obtainment": "Normal summons, Mythic 2%",
     "balanceChanges": [
       {
@@ -8340,7 +8386,8 @@
     "rarity": "exclusive",
     "typeMain": "Endgame",
     "typeTags": [
-      "Stun"
+      "Stun",
+      "Bleed"
     ],
     "element": "Light",
     "placements": 2,
@@ -8746,7 +8793,7 @@
     ],
     "element": "Dark",
     "placements": 1,
-    "attackType": "Mutli",
+    "attackType": "Multi",
     "obtainment": "Normal Summons (0.01%)",
     "balanceChanges": [
       {
@@ -9073,6 +9120,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-apr-01-2026-23-36-53-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
     "rarity": "secret",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Slow"
+    ],
     "element": "Neutral",
     "placements": 1,
     "attackType": "Multi",
@@ -9145,7 +9195,7 @@
     "typeMain": "Endgame",
     "element": "Electricity",
     "placements": 2,
-    "attackType": "Mutli",
+    "attackType": "Multi",
     "obtainment": "Halloween25 Premium Pass Tier 30",
     "balanceChanges": [
       {
@@ -9264,7 +9314,10 @@
     "rarity": "apex",
     "typeMain": "Endgame",
     "typeTags": [
-      "Support"
+      "Support",
+      "Anti-Regen",
+      "Bleed",
+      "Burn"
     ],
     "element": "Fire",
     "placements": 1,
@@ -9431,7 +9484,8 @@
     "typeTags": [
       "Knockback",
       "Support",
-      "Wither"
+      "Wither",
+      "Bleed"
     ],
     "element": "Neutral",
     "placements": 1,
@@ -10331,7 +10385,7 @@
     ],
     "element": "Water",
     "placements": 1,
-    "attackType": "Mutli",
+    "attackType": "Multi",
     "obtainment": "XMAS25 Special mode, 120 pity or 0.4%",
     "voicelines": [
       {
@@ -10883,6 +10937,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-dec-10-2025-01-28-25-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
     "rarity": "nightmare",
     "typeMain": "Midgame-Endgame",
+    "typeTags": [
+      "Bleed"
+    ],
     "element": "Neutral",
     "placements": 3,
     "attackType": "Cone45°",
@@ -11169,7 +11226,7 @@
     ],
     "element": "Water",
     "placements": 2,
-    "attackType": "Mutli",
+    "attackType": "Multi",
     "obtainment": "XMAS25 Summon, Secret 0.35%",
     "balanceChanges": [
       {
@@ -11351,7 +11408,7 @@
     ],
     "element": "Light",
     "placements": 1,
-    "attackType": "no type",
+    "attackType": "No Type",
     "obtainment": "XMAS25 Exclusive Unit 1",
     "levels": [
       {
@@ -11415,7 +11472,7 @@
     ],
     "element": "Rust",
     "placements": 3,
-    "attackType": "Mutli",
+    "attackType": "Multi",
     "obtainment": "XMAS25 Exclusive Unit 2",
     "balanceChanges": [
       {
@@ -11513,7 +11570,8 @@
     "typeMain": "Midgame",
     "typeTags": [
       "Support",
-      "Knockback"
+      "Knockback",
+      "Burn"
     ],
     "element": "Fire",
     "placements": 2,
@@ -11710,7 +11768,7 @@
     ],
     "element": "Neutral",
     "placements": 5,
-    "attackType": "no type",
+    "attackType": "No Type",
     "obtainment": "Normal Summons, Mythic 2%",
     "balanceChanges": [
       {
@@ -11760,7 +11818,7 @@
     ],
     "element": "Neutral",
     "placements": 2,
-    "attackType": "no type",
+    "attackType": "No Type",
     "obtainment": "S1 Premium Pass Tier 1",
     "levels": [
       {
@@ -11811,7 +11869,7 @@
     ],
     "element": "Neutral",
     "placements": 3,
-    "attackType": "no type",
+    "attackType": "No Type",
     "obtainment": "Normal Summons, Epic 18%",
     "levels": [
       {
@@ -11963,7 +12021,7 @@
         ],
         "effect": "+15% damage & +15% range, +5% enemy speed in range",
         "role": "support",
-        "attackType": "Single",
+        "attackType": "no type",
         "levels": [
           {
             "level": 1,
@@ -12088,7 +12146,8 @@
     "rarity": "exclusive",
     "typeMain": "Starter-Midgame",
     "typeTags": [
-      "Support"
+      "Support",
+      "Burn"
     ],
     "element": "Fire",
     "placements": 1,
@@ -12322,7 +12381,8 @@
     "typeMain": "Midgame-Endgame",
     "typeTags": [
       "Support",
-      "Income"
+      "Income",
+      "Malware"
     ],
     "element": "Electricity",
     "placements": 2,
@@ -12629,7 +12689,8 @@
     "rarity": "secret",
     "typeMain": "Midgame-Endgame",
     "typeTags": [
-      "Slow"
+      "Slow",
+      "Bleed"
     ],
     "element": "Electricity",
     "placements": 2,
@@ -14097,7 +14158,7 @@
       "driving": {
         "label": "Driving",
         "role": "damage",
-        "attackType": "Cone 45°",
+        "attackType": "Cone45°",
         "levels": [
           {
             "level": 1,
@@ -14268,6 +14329,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/ignited-burst-withered-freddy-shiny-high.png",
     "rarity": "secret",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Burn"
+    ],
     "element": "Fire",
     "placements": 2,
     "attackType": "Multi",
@@ -14651,6 +14715,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/devious-purple-guy-shiny-high.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Bleed"
+    ],
     "element": "Dark",
     "placements": 1,
     "attackType": "Line",
@@ -14865,7 +14932,7 @@
     ],
     "element": "Rust",
     "placements": 1,
-    "attackType": "Cone 30°",
+    "attackType": "Cone30°",
     "obtainment": "Time Lord Withered Freddy Evolution",
     "voicelines": [
       {
@@ -15368,7 +15435,8 @@
     "typeTags": [
       "Support",
       "Knockback",
-      "Wither"
+      "Wither",
+      "Stun"
     ],
     "element": "Electricity/Light",
     "placements": 1,
@@ -15593,7 +15661,13 @@
     "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3n0b3v-high.png",
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-6lotqf.png",
     "rarity": "nightmare",
-    "typeMain": "endgame",
+    "typeMain": "Endgame",
+    "typeTags": [
+      "Burn",
+      "Slow",
+      "Stun",
+      "Wither"
+    ],
     "element": "Light",
     "placements": 1,
     "attackType": "Multi",
@@ -15694,9 +15768,9 @@
     "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c2v6vzf-high.png",
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/foxy-fighters-high.png",
     "rarity": "secret",
-    "typeMain": "starter",
+    "typeMain": "Starter",
     "typeTags": [
-      "stun"
+      "Stun"
     ],
     "element": "Rust",
     "placements": 2,
@@ -15826,6 +15900,10 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/purifier-mercenary-toy-chica-shiny-high.png",
     "rarity": "exclusive",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Bleed",
+      "Marked"
+    ],
     "element": "Rust",
     "placements": 1,
     "attackType": "Multi",
@@ -15940,12 +16018,13 @@
     "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/mother-nature-ballora-high.png",
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/mother-nature-ballora-shiny-high.png",
     "rarity": "nightmare",
-    "typeMain": "endgame",
+    "typeMain": "Endgame",
     "typeTags": [
       "Slow",
       "Wither",
       "Support",
-      "Stun"
+      "Stun",
+      "Burn"
     ],
     "element": "Nature",
     "placements": 1,
@@ -16065,11 +16144,13 @@
     "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-khgihp.png",
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-khgihp.png",
     "rarity": "hero",
-    "typeMain": "endgame",
+    "typeMain": "Endgame",
     "typeTags": [
       "Slow",
       "Stun",
-      "Support"
+      "Support",
+      "Anti-Regen",
+      "Bleed"
     ],
     "element": "Rust",
     "placements": 1,
@@ -16747,7 +16828,8 @@
     "typeMain": "Midgame",
     "typeTags": [
       "Slow",
-      "Stun"
+      "Stun",
+      "Burn"
     ],
     "element": "Fire/Rust",
     "placements": 2,
@@ -17030,7 +17112,8 @@
     "rarity": "secret",
     "typeMain": "Midgame",
     "typeTags": [
-      "Wither"
+      "Wither",
+      "Burn"
     ],
     "element": "Fire/Rust",
     "placements": 2,
@@ -17154,6 +17237,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/showtime-freddy-shiny-high.png",
     "rarity": "secret",
     "typeMain": "Midgame",
+    "typeTags": [
+      "Burn"
+    ],
     "element": "Fire",
     "placements": 2,
     "attackType": "Multi",
@@ -17253,7 +17339,7 @@
     "typeMain": "Midgame",
     "element": "Neutral",
     "placements": 2,
-    "attackType": "Cone 45°",
+    "attackType": "Cone45°",
     "obtainment": "Endless 1 Unit Quest",
     "levels": [
       {
@@ -17446,6 +17532,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/hero-paperpals-shiny-high.png",
     "rarity": "epic",
     "typeMain": "Starter",
+    "typeTags": [
+      "Bleed"
+    ],
     "element": "Neutral",
     "placements": 3,
     "attackType": "Circle",
@@ -17622,7 +17711,7 @@
     "typeMain": "Starter",
     "element": "Neutral",
     "placements": 1,
-    "attackType": "FullAOE",
+    "attackType": "Full AOE",
     "obtainment": "Summons (30%)",
     "levels": [
       {
@@ -17882,7 +17971,8 @@
     "typeTags": [
       "Slow",
       "Stun",
-      "Knockback"
+      "Knockback",
+      "Bleed"
     ],
     "element": "Water",
     "placements": 2,
@@ -17982,6 +18072,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-59-09-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
     "rarity": "nightmare",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Slow"
+    ],
     "element": "Dark/Light",
     "placements": 1,
     "attackType": "Cone",
@@ -18105,7 +18198,9 @@
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
-      "Knockback"
+      "Knockback",
+      "Bleed",
+      "Stun"
     ],
     "element": "Water",
     "placements": 1,
@@ -18300,7 +18395,9 @@
     "typeMain": "Midgame",
     "typeTags": [
       "Slow",
-      "Stun"
+      "Stun",
+      "Bleed",
+      "Poison"
     ],
     "element": "Rust",
     "placements": 2,
@@ -18373,7 +18470,7 @@
     "imgNormal": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-57-47-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-11-57-58-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
     "rarity": "secret",
-    "typeMain": "Stater-Midgame",
+    "typeMain": "Starter-Midgame",
     "typeTags": [
       "Summon"
     ],
@@ -18770,6 +18867,9 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-00-20-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
     "rarity": "secret",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Bleed"
+    ],
     "element": "Rust",
     "placements": 2,
     "attackType": "Multi",
@@ -18874,7 +18974,7 @@
     "imgShiny": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-wed-jul-22-2026-12-00-38-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
     "rarity": "epic",
     "typeMain": "Starter-Midgame",
-    "typeTags": [],
+    "typeTags": ["Poison"],
     "element": "Rust",
     "placements": 3,
     "attackType": "Circle",
@@ -18951,7 +19051,8 @@
       "Slow",
       "Support",
       "Stun",
-      "Income"
+      "Income",
+      "Rooted"
     ],
     "element": "Nature/Dark",
     "placements": 1,
@@ -19371,7 +19472,7 @@
     "imgNormal": "https://tr.rbxcdn.com/180DAY-138675b10c07c945f9598ce200dde14a/420/420/Image/Png/noFilter",
     "imgShiny": "https://tr.rbxcdn.com/180DAY-e1ec944877d3576932d84a025b55a925/420/420/Image/Png/noFilter",
     "rarity": "nightmare",
-    "typeMain": "Midgame-Engame",
+    "typeMain": "Midgame-Endgame",
     "typeTags": [
       "Support"
     ],
@@ -19550,7 +19651,9 @@
     "rarity": "nightmare",
     "typeMain": "Midgame-Endgame",
     "typeTags": [
-      "Income"
+      "Income",
+      "Bleed",
+      "Stun"
     ],
     "element": "Dark",
     "placements": 2,
@@ -19644,7 +19747,8 @@
     "typeMain": "Endgame",
     "typeTags": [
       "Support",
-      "Stun"
+      "Stun",
+      "Burn"
     ],
     "element": "Neutral",
     "placements": 1,
@@ -19801,7 +19905,9 @@
     "Wither",
     "Stun",
     "Support",
-    "Slow"
+    "Slow",
+    "Burn",
+    "Poison"
   ],
   "element": "Dark",
   "placements": 1,
@@ -20058,7 +20164,8 @@
   "rarity": "secret",
   "typeMain": "Midgame-Endgame",
   "typeTags": [
-    "Support"
+    "Support",
+    "Bleed"
   ],
   "element": "Water",
   "placements": 1,
@@ -20148,7 +20255,8 @@
   "typeTags": [
     "Support",
     "Slow",
-    "Stun"
+    "Stun",
+    "Bleed"
   ],
   "element": "Light",
   "placements": 1,
@@ -20571,7 +20679,8 @@
   "rarity": "apex",
   "typeMain": "Endgame",
   "typeTags": [
-    "Support"
+    "Support",
+    "Bleed"
   ],
   "element": "Water/Electricity",
   "placements": 1,
@@ -20728,7 +20837,8 @@
   "rarity": "nightmare",
   "typeMain": "Endgame",
   "typeTags": [
-    "Slow"
+    "Slow",
+    "Stun"
   ],
   "element":"Electricity",
   "placements": 1,
@@ -20928,7 +21038,9 @@
   "rarity": "secret",
   "typeMain": "Endgame",
   "typeTags": [
-    "Support"
+    "Support",
+    "Soaked",
+    "Stun"
   ],
   "element": "Water",
   "placements": 3,
@@ -21099,7 +21211,8 @@
     "Support",
     "Income",
     "Slow",
-    "Stun"
+    "Stun",
+    "Bleed"
   ],
   "element": "Water",
   "placements": 2,
@@ -21197,7 +21310,8 @@
   "rarity": "secret",
   "typeMain": "Starter",
   "typeTags": [
-    "Knockback"
+    "Knockback",
+    "Burn"
   ],
   "element": "Fire",
   "placements": 2,
@@ -21372,7 +21486,8 @@
   "rarity": "nightmare",
   "typeMain": "Endgame",
   "typeTags": [
-    "Support"
+    "Support",
+    "Poison"
   ],
   "element": "Nature/Dark",
   "placements": 1,
@@ -21486,11 +21601,12 @@
   "rarity": "secret",
   "typeMain": "Endgame",
   "typeTags": [
-    "Support"
+    "Support",
+    "Poison"
   ],
   "element": "Nature/Dark",
   "placements": 2,
-  "attackType": "FullAOE",
+  "attackType": "Full AOE",
   "obtainment": "Vessel Plushtrap Present (200 Challenge Tokens)",
   "levels": [
     {
@@ -21686,7 +21802,8 @@
     "Support",
     "Slow",
     "Stun",
-    "Wither"
+    "Wither",
+    "Burn"
   ],
   "element": "Universal",
   "placements": 1,
@@ -22455,6 +22572,9 @@
   "imgShiny": "https://tr.rbxcdn.com/180DAY-9e19347141e6b2fbc1122e5461bb1b62/420/420/Image/Png/noFilter",
   "rarity": "exclusive",
   "typeMain": "Endgame",
+  "typeTags": [
+    "Burn"
+  ],
   "element": "Dark",
   "placements": 1,
   "attackType": "Cone45°",
@@ -22554,7 +22674,9 @@
   "rarity": "nightmare",
   "typeMain": "Endgame",
   "typeTags": [
-    "Stun"
+    "Stun",
+    "Bleed",
+    "Scarred"
   ],
   "element": "Dark",
   "placements": 2,
@@ -22628,6 +22750,9 @@
   "imgShiny": "https://tr.rbxcdn.com/180DAY-3b2592b495bc95d2963ffdcc2bfe2730/420/420/Image/Png/noFilter",
   "rarity": "secret",
   "typeMain": "Starter",
+  "typeTags": [
+    "Slow"
+  ],
   "element": "Neutral",
   "placements": 3,
   "attackType": "Cone35°",
@@ -22710,7 +22835,11 @@
   "typeMain": "Midgame-Endgame",
   "typeTags": [
     "Support",
-    "Slow"
+    "Slow",
+    "Bleed",
+    "Marked",
+    "Stun",
+    "Wither"
   ],
   "element": "Dark/Neutral",
   "placements": 1,
@@ -23078,7 +23207,8 @@
   "typeTags": [
     "Slow",
     "Wither",
-    "Support"
+    "Support",
+    "Bleed"
   ],
   "element": "Electricity",
   "placements": 1,
@@ -23402,9 +23532,14 @@
   "imgShiny": "https://tr.rbxcdn.com/180DAY-201c55377404ff4e8b751c8e9da50f0d/420/420/Image/Png/noFilter",
   "rarity": "secret",
   "typeMain": "Endgame",
+  "typeTags": [
+    "Bleed",
+    "Burn",
+    "Stun"
+  ],
   "element": "Neutral",
   "placements": 1,
-  "attackType": "FullAOE",
+  "attackType": "Full AOE",
   "obtainment": "Season 6 Pass Premium Tier 50",
   "levels": [
     {
@@ -23729,7 +23864,9 @@
   "rarity": "secret",
   "typeMain": "Midgame-Endgame",
   "typeTags": [
-    "Support"
+    "Support",
+    "Bleed",
+    "Slow"
   ],
   "element": "Dark",
   "placements": 2,
@@ -24062,6 +24199,9 @@
   "imgShiny": "https://tr.rbxcdn.com/180DAY-d693ece22bf4bd66ca95a9f5051d5a4f/420/420/Image/Png/noFilter",
   "rarity": "epic",
   "typeMain": "Midgame",
+  "typeTags": [
+    "Slow"
+  ],
   "element": "Neutral",
   "placements": 3,
   "attackType": "Cone45°",

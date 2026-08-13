@@ -457,21 +457,6 @@
       im.removeAttribute('loading');
     });
 
-    // Stripping loading="lazy" above starts those fetches; wait for them to
-    // settle before judging what still needs repair, or the capture races them.
-    var live = Array.prototype.slice.call(rootEl.querySelectorAll('img'));
-    var waiting = 0, wDone = false;
-    function afterLoads() { if (wDone) return; wDone = true; _repair(); }
-    live.forEach(function (im) {
-      if (!im.getAttribute('src') || (im.complete && im.naturalWidth > 0)) return;
-      waiting++;
-      var s = function () { if (--waiting <= 0) afterLoads(); };
-      im.addEventListener('load', s, { once: true });
-      im.addEventListener('error', s, { once: true });
-    });
-    if (waiting === 0) afterLoads(); else setTimeout(afterLoads, 15000);
-
-    function _repair() {
     var byUrl = {};
     Array.prototype.forEach.call(rootEl.querySelectorAll('img'), function (im) {
       var s = im.getAttribute('src');
@@ -498,7 +483,6 @@
         .catch(settle);   // best effort: a failure just means that one drops
     });
     setTimeout(finish, 20000);   // never leave the button stuck on a stalled image
-    }
   }
 
   function _metaDlBlob(blob, filename) {

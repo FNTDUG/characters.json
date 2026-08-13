@@ -4125,7 +4125,7 @@
 
         if (String(unit.element || "").toLowerCase() === "fire" || String(unit.element || "").toLowerCase() === "universal") {
           BOOST_OPTIONS.push(
-            ["aqua_water", "Aqua Strike Toy Chica (+10% DMG) [Water only]", { dmgMult: 1.10, elements: ["Fire", "Universal"] }],
+            ["aqua_water", "Aqua Strike Toy Chica (+25% DMG) [Fire only]", { dmgMult: 1.25, elements: ["Fire", "Universal"] }],
             ["scorched", "Springtrap: Agonized (+25% DMG) [Fire only]", { dmgMult: 1.25, elements: ["Fire", "Universal"] }]
           );
         }

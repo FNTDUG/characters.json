@@ -332,7 +332,7 @@
         "Crying Child",
         "Astral Bonnie",
         "Mother Nature Ballora",
-        "Haox Purple Guy NEW",
+        "Hoax Purple Guy NEW",
         "HandUnit"
       ],
       "b": [

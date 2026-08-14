@@ -508,7 +508,7 @@
       "Cannoneer Chica": "High DPS starter with Knockback to stall normal enemies."
     },
     "support": {
-      "Nedd Bear": "Gives +25% Damage per placement (max +50%) when surrounded by other units."
+      "Nedd Bear": "Gives +25% Damage per placement (max +50%) when surrounded by other units.",
       "Candy Cadet": "Gives +30% Damage and +10% Range to all units in range when in Red Candy mode, then +10% Damage and +30% Range to all units in range when in Yellow Candy mode (mode chosen on placement). Does particularly well when using his Orphans story, doubling his boosts for 30s. Boosts do not stack with other Candy Cadets.",
       "Nature Reclaimed Foxy": "Gives all units in range +30% Damage, +25% Range and -5% CD. Additionally increases base health, allowing you to survive longer against normal enemies.",
       "Stitchwraith": "(Jake form) Gives various boosts to nearby units depending on how many enemies have died in this unit's range. 5 kills: +15% Damage, Range, and -5% CD. 25 kills: Previous boosts and +10% crit chance and crit damage. 75 kills: +15% Damage, +25% Range, -5% CD, +20% crit chance and crit damage.",
@@ -527,7 +527,7 @@
       "Grand Strategist Chica": "Queen piece Stuns the 5 closest enemies on attack for 1.5s."
     },
     "slow": {
-      "Vengeful Spirit": "20% AOE Slow that increases by 1% every 3s up to 30%."
+      "Vengeful Spirit": "20% AOE Slow that increases by 1% every 3s up to 30%.",
       "Deep Sea Calamity Endo": "Effectively has 30% AOE Slow.",
       "Molten Freddy": "Effectively has 30% AOE Slow, but is below Calamity Endo due to being Line.",
       "Planet Buster Scott": "25% AOE Slow every 5s and 25% AOE Slow from his Active.",

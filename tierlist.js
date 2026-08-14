@@ -17,7 +17,7 @@
         "Gaia Chica",
         "Overlord Scott NEW",
         "Kronos Endo Freddy",
-        "Nedd Bear NEW",
+        "Nedd Bear NEW BUG",
         "Frozen King Foxy",
         "Frostmancer Withered Bonnie",
         "Stormbound Chica",

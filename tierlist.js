@@ -302,11 +302,11 @@
     },
     "support": {
       "s": [
+        "Nedd Bear NEW BUG",
         "Candy Cadet",
         "Nature Reclaimed Foxy",
         "Stitchwraith NEW",
         "Psychic Friend Fredbear",
-        "Nedd Bear NEW",
         "Golden Cupcake",
         "Spring Duo",
       ],

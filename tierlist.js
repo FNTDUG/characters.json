@@ -76,7 +76,6 @@
         "Nightmare Fredbear",
         "Hag Withered Chica",
         "HandUnit",
-        "Sweetheart Toy Foxy",
         "Withered Freddy",
         "Chicas Magic Rainbow",
         "Lore Keeper Shadow Bonnie",
@@ -126,6 +125,7 @@
         "Arch Angler Toy Bonnie",
       ],
       "b": [
+        "Sweetheart Toy Foxy DOWN",
         "Bones Of The Past Nightmare Freddy",
         "Abyssal Ballora",
         "Yenndo",
@@ -337,7 +337,6 @@
       ],
       "b": [
         "Movie Director Freddy",
-        "Sweetheart Toy Foxy",
         "Chipper",
         "Grand Strategist Chica",
         "Michael Afton",
@@ -361,6 +360,7 @@
         "Vessel Plushtrap"
       ],
       "c": [
+        "Sweetheart Toy Foxy DOWN",
         "Helpy",
         "Cupcake",
         "Popcorn Bot",

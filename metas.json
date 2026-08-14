@@ -52,7 +52,7 @@
     "pages": [
       {
         "pageTitle": "FARTHEST METAS",
-        "order": ["Story Nightmare", "Endless", "Event Endless", "Event Story Nightmare", "Boss Raids"]
+        "order": ["Story Nightmare", "Endless Farthest", "Event Endless", "Event Story Nightmare", "Boss Raids"]
       },
       {
         "pageTitle": "GRIND METAS",
@@ -81,7 +81,7 @@
         { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
     },
-    "Endless": {
+    "Endless Farthest": {
       "units": [
         { "name": "Golden Freddy", "label": "$1k", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Starter" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Purifier Mercenary Toy Chica", "caption": "" },

@@ -481,6 +481,7 @@
   },
   "msg": {
     "all": {
+      "Planet Buster Scott": "Highest DPS in the game along with the best Stun, great Slow, good support, and Wither."
       "Astral Bonnie": "Incredible DPS, mild support, and fits spectacularly into Light/Dark focused teams.",
       "Deep Sea Calamity Endo": "The best staller by far, having 15% AOE Slow per placement (30% per person bringing him), 1.8s Stun on attack, and Knockback when enemies get too close. Additionally is a good supporting DPS and has an absurdly large 245° Cone attack.",
       "Kronos Endo Freddy": "Great AOE DPS and absurd Stun potential when his passives are maxed out. Additionally provides decent boosts to Rust units, minor boosts to non-Rust units, and can reapply debuffs to enemies.",
@@ -496,6 +497,7 @@
     "starter": {
       "Golden Freddy": "Great boosting in Endless (up to +30% damage per Golden Freddy), good DPS, and great stall with 20% Slow on attack and Knockback with his Active.",
       "Endo 01": "A good choice for a Starter as he gives all units in his range +15% Damage and -3% CD, making him useful throughout the whole match.",
+      "XOR": "High DPS starter with strong summons."
       "Rockin Bonnie": "A good choice for a Starter as he gives all units in his range -11% CD, making him quite throughout the match.",
       "Undead Chica": "Creates a steady stream of strong Summons.",
       "Bonnie": "High range Starter that can be used as a booster due to being Electric with high placements, effectively giving all nearby units -4% CD if all Bonnies are placed near each other. Spectacular in Grind Metas",
@@ -506,14 +508,18 @@
       "Cannoneer Chica": "High DPS starter with Knockback to stall normal enemies."
     },
     "support": {
+      "Nedd Bear": "Gives +25% Damage per placement (max +50%) when surrounded by other units."
       "Candy Cadet": "Gives +30% Damage and +10% Range to all units in range when in Red Candy mode, then +10% Damage and +30% Range to all units in range when in Yellow Candy mode (mode chosen on placement). Does particularly well when using his Orphans story, doubling his boosts for 30s. Boosts do not stack with other Candy Cadets.",
       "Nature Reclaimed Foxy": "Gives all units in range +30% Damage, +25% Range and -5% CD. Additionally increases base health, allowing you to survive longer against normal enemies.",
+      "Stitchwraith": "(Jake form) Gives various boosts to nearby units depending on how many enemies have died in this unit's range. 5 kills: +15% Damage, Range, and -5% CD. 25 kills: Previous boosts and +10% crit chance and crit damage. 75 kills: +15% Damage, +25% Range, -5% CD, +20% crit chance and crit damage."
       "Psychic Friend Fredbear": "Boosts units based on the amount of Stocks (HP) you've lost. All units in range gain -5% CD if no Stocks are lost, +15% Damage and +20% Range if you've lost 1 Stock, and +30% Damage, +25% Range, and -2.5% CD if you've lost 2 Stocks.",
       "Golden Cupcake": "Gains stacks based on the amount of Light units on your team, up to 3. Gives all units in range +10% Damage and +6% Range per stack (max of +30% Damage and +18% Range)",
       "Spring Duo": "Cycles between two sets of boosts, giving +10% Damage, +30% Range, and -5% CD when in Spring Bonnie mode, and +40% Damage and +15% Range in Fredbear mode",
       "Golden Freddy": "Grants all units up to +30% Damage (stacks with other Golden Freddys), grants double the previous boost to a random Neutral unit (max of +150%, excludes himself) every 45s for 10s, and +25% Damage and +20% Range to all Neutral units with his Active."
     },
     "stun": {
+      "Planet Buster Scott": "Attacks Stun enemies for 2s."
+      "Overlord Scott": "Attacks Stun enemies for 2s."
       "Deep Sea Calamity Endo": "An absurdly good stunner, applying 1.8s Stun on attack in a very large 245° Cone. Also has the potential to Stun Bosses for 2.5s if they get too close.",
       "Krampus Purple Guy": "A great stunner applying 1.8s Stun on attack. Pair him with a Kaboom or Box Byte to help combat his shorter range for better coverage.",
       "Ennard": "Has a good 1.5s Stun on attack while additionally stunning 4 random enemies around the map every 6s for 1.5s.",
@@ -521,8 +527,15 @@
       "Grand Strategist Chica": "Queen piece Stuns the 5 closest enemies on attack for 1.5s."
     },
     "slow": {
+      "Vengeful Spirit": "20% AOE Slow that increases by 1% every 3s up to 30%."
       "Deep Sea Calamity Endo": "Effectively has 30% AOE Slow.",
       "Molten Freddy": "Effectively has 30% AOE Slow, but is below Calamity Endo due to being Line.",
+      "Planet Buster Scott": "25% AOE Slow every 5s and 25% AOE Slow from his Active."
+      "Overlord Scott": "25% AOE Slow every 5s."
+      "Theory Crusher Scott": "25% AOE Slow every 5s."
+      "Ragequit Scott": "25% AOE Slow every 5s."
+      "Scott Cawthon": "25% AOE Slow every 5s."
+      "Scott Plushie": "25% AOE Slow every 5s."
       "Frostmancer Withered Bonnie": "RNG based AOE Slow that can go up to 45%.",
       "Frozen King Foxy": "25% AOE Slow.",
       "Grand Strategist Chica": "15% AOE Slow + 10% Cone 180 Slow."

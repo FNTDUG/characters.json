@@ -23085,18 +23085,10 @@
         "cdboostable": false
       },
       {
-       "label": "Own Making (Wither)",
-        "dmgmult": 1.025
-      },
-      {
-        "label": "Own Making (Crit)",
-        "critD": 2.05
-      },
-      {
         "label": "Own Making (DMG Boost)",
-        "dmgmult": "1.10",
-        "critC": "0.10",
-        "everynthattack": "2"
+        "dmgmult": "1.075",
+        "critC": "0.05",
+        "critD": "2.05"
       }
     ],
     "periodic": [

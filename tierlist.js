@@ -306,7 +306,7 @@
         "Nature Reclaimed Foxy",
         "Stitchwraith NEW",
         "Psychic Friend Fredbear",
-        "Nedd Bear",
+        "Nedd Bear NEW",
         "Golden Cupcake",
         "Spring Duo",
       ],

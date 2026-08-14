@@ -5836,7 +5836,7 @@
       },
       {
         "title": "Ferryman's Blessing",
-        "text": "When the player reaches 0 Base Health without a Boss exiting, Old Man Consequences prevents death, gains +166% Damage, and applies [Stun] to all enemies on the map for 6s."
+        "text": "When the player reaches 0 Base Health without a Boss exiting, Old Man Consequences prevents you from dyting, gains +166% Damage, and applies [Stun] to all enemies on the map for 6s."
       }
     ],
     "skins": [
@@ -15406,7 +15406,7 @@
     "passives": [
       {
         "title": "Deathly Bones",
-        "text": "For every 5 kills his Freddles will have 5% more damage (caps extra 65%). Then every 25 deaths within its range he will permanently spawn in an extra fire freddles capping at 3 at a time."
+        "text": "For every 5 kills his Freddles will have 5% more damage (caps extra 65%). Then every 25 kills within its range he will permanently spawn in an extra fire freddles capping at 3 at a time."
       },
       {
         "title": "Freddles of Fire",
@@ -18544,7 +18544,7 @@
     "passives": [
       {
         "title": "Machine Learning",
-        "text": "Every 5s, this unit summons an endo with stats depending on its current upgrade. This unit gains Parts whenever enemies are killed within its range (Boss kills grant 16 Parts). Parts are used to upgrade the Endo summon: Level 1 (50 Parts): Summon has 125% of this unit's damage as health, increased to 150% if another Rust unit is on the team. Level 2 (100 Parts): Summon has 200% of this unit's damage as health and explodes on death for 150% of this unit's damage in a 16 range radius. Level 3 (175 Parts): Summon has 275% of this unit's damage as health, is guaranteed to crit, and explodes for 150% of this unit's damage on death. Additionally, level 3 Endos from this unit applies 15% Exposure to enemies, increasing this units' summons damage to effected enemies within an 18 range radius for 10s."
+        "text": "Every 5s, this unit summons an endo with stats depending on its current upgrade. This unit gains Parts whenever enemies are killed within its range (Boss kills grant 16 Parts). Parts are used to upgrade the Endo summon: Level 1 (50 Parts): Summon has 125% of this unit's damage as health, increased to 150% if another Rust unit is on the team. Level 2 (100 Parts): Summon has 200% of this unit's damage as health and when dying for 150% of this unit's damage in a 16 range radius. Level 3 (175 Parts): Summon has 275% of this unit's damage as health, is guaranteed to crit, and explodes for 150% of this unit's damage on death. Additionally, level 3 Endos from this unit applies 15% Exposure to enemies, increasing this units' summons damage to effected enemies within an 18 range radius for 10s."
       },
       {
         "title": "Turning Gears",

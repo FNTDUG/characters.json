@@ -77,7 +77,7 @@
         { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "El Chip", "caption": "" },
         { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Phone Guy", "label": "",    "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "War Machine Foxy", "caption": "" },
-        { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Party Never Ends Cupcake", "caption": "" },
+        { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Nedd Bear", "caption": "" },
         { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" }
       ]
     },

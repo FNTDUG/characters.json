@@ -172,7 +172,7 @@
     },
     "Nature 5th": {
       "units": [
-        { "name": "Barbarian Boy", "label": "$850", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Starter" },
+        { "name": "Barbarian Boy", "label": "$900", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Starter" },
         { "name": "Chipper", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Gaia Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Patient White Rabbit", "label": "",  "byte": "The Box", "chip": "Blazing Fire", "enchant": "Hijacked", "replacement": "", "caption": "" },

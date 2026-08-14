@@ -4105,10 +4105,7 @@
 
         if (String(unit.element || "").toLowerCase() === "neutral" || String(unit.element || "").toLowerCase() === "dark/neutral") {
           BOOST_OPTIONS.push(
-            ["neutralelement", "Neutral Element: +3% DMG, +3% RNG, -3% CD [Neutral only]", { dmgMult: 1.03, rngMult: 1.03, cdMult: 0.97, elements: ["Neutral"] }],
-            ["veng_hell",     "Vengeful Spirit: Hell of Your Own Making (+20% DMG & +20% RNG) [Dark & Neutral only]", { dmgMult: 1.20, rngMult: 1.20, elements: ["Neutral", "Dark/Neutral", "Universal"] }],
-            ["veng_wither",   "Vengeful Spirit: Hell of Your Own Making (+0.5% DMG per stack) [Dark & Neutral only]", { dmgMult: 1.05, stackKey: "vengwitherStack", maxStacks: 50, elements: ["Neutral", "Dark/Neutral", "Universal"] }],
-            ["veng_anywhere", "Vengeful Spirit: You're Not Going Anywhere (+20% DMG) [Dark & Neutral only]", { dmgMult: 1.20, elements: ["Neutral", "Dark/Neutral", "Universal"] }],
+            ["neutralelement", "Neutral Element: +3% DMG, +3% RNG, -3% CD [Neutral only]", { dmgMult: 1.03, rngMult: 1.03, cdMult: 0.97, elements: ["Neutral"] }]
           );
         }
 
@@ -4118,10 +4115,7 @@
             ["nightmarefred", "Nightmare Fredbear: Feeding the Fear (+10% DMG, +10% RNG per stack) [Dark only]", { dmgMult: 1.10, rngMult: 1.10, stackKey: "nightmarefredStacks", maxStacks: 5 }],
             ["darkelement",   "Dark Element: +3% DMG [Dark only]",                                               { dmgMult: 1.03, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal"] }],
             ["ballora_dark",  "Mother Nature Ballora: Dark Wither (+10% DMG) [Dark only]",                       { dmgMult: 1.10, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal"]}],
-            ["nugget",        "Nightmare Chica: The First (+8% DMG) [Dark only]",                                { dmgMult: 1.08, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal"] }],
-            ["veng_hell",     "Vengeful Spirit: Hell of Your Own Making (+20% DMG & +20% RNG) [Dark & Neutral only]", { dmgMult: 1.20, rngMult: 1.20, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal"] }],
-            ["veng_wither",   "Vengeful Spirit: Hell of Your Own Making (+0.5% DMG per stack) [Dark & Neutral only]", { dmgMult: 1.05, stackKey: "vengwitherStack", maxStacks: 50, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal"] }],
-            ["veng_anywhere", "Vengeful Spirit: You're Not Going Anywhere (+20% DMG) [Dark & Neutral only]", { dmgMult: 1.20, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal"] }],
+            ["nugget",        "Nightmare Chica: The First (+8% DMG) [Dark only]",                                { dmgMult: 1.08, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal"] }]
           );
         }
 
@@ -4163,7 +4157,7 @@
           );
         }
 
-        if (["Fire", "Dark", "Dark/Light", "Fire/Rust", "Nature/Dark", "Dark/Water", "Universal"].indexOf(unit.element) !== -1) {
+        if (["Fire", "Dark", "Dark/Light", "Fire/Rust", "Nature/Dark", "Dark/Water", "Universal", "Dark/Neutral"].indexOf(unit.element) !== -1) {
           BOOST_OPTIONS.push(
             ["hhm", "Headless Horseman Mangle: Hallowed Pumpkin Realm (+85% DMG) [Fire & Dark]",
               { dmgMult: 1.85, duration: 30, cd: 100, elements: ["Fire", "Dark", "Dark/Light", "Fire/Rust", "Nature/Dark", "Dark/Water", "Universal"] }]
@@ -4226,6 +4220,13 @@
           );
         }
 
+        if (["Neutral", "Dark/Neutral", "Dark", "Dark/Light", "Fire/Rust", "Nature/Dark", "Dark/Water", "Universal"].indexOf(unit.element) !== -1) {
+          BOOST_OPTIONS.push(
+            ["veng_hell",     "Vengeful Spirit: Hell of Your Own Making (+20% DMG & +20% RNG) [Dark & Neutral only]", { dmgMult: 1.20, rngMult: 1.20, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal", "Neutral", "Dark/Neutral"] }],
+            ["veng_wither",   "Vengeful Spirit: Hell of Your Own Making (+0.5% DMG per stack) [Dark & Neutral only]", { dmgMult: 1.05, stackKey: "vengwitherStack", maxStacks: 50, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal", "Neutral", "Dark/Neutral"] }],
+            ["veng_anywhere", "Vengeful Spirit: You're Not Going Anywhere (+20% DMG) [Dark & Neutral only]", { dmgMult: 1.20, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal", "Neutral", "Dark/Neutral"] }],
+          );
+        }
         
         BOOST_OPTIONS.forEach(function(opt) {
           if (opt[2]) BOOST_META[opt[0]] = opt[2];

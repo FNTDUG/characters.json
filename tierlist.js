@@ -892,6 +892,7 @@
         if (!ok) { btn.disabled = false; btn.title = 'Screenshot unavailable'; _revoke(); return; }
         window.html2canvas(tlRoot, {
           backgroundColor: '#03030a', useCORS: true, scale: 2, logging: false,
+        imageTimeout: 30000,   // default is 15s, which slow connections overrun -> blank tiles
           windowWidth: 1400, windowHeight: Math.max(2000, window.innerHeight || 900),
           onclone: function (doc) {
             // #tlRoot is full-bleed via width:100vw + left:50% + translateX(-50%).

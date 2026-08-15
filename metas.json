@@ -63,6 +63,10 @@
         "order": ["Dark 1st", "Rust 2nd", "Water 3rd", "Light 4th", "Nature 5th", "Neutral 6th", "Electricity 7th", "Fire 8th"]
       },
       {
+        "pageTitle": "Challenges",
+        "order": ["Downpour", "Fend Off the Dark", "Nature's Blessing", "Overcoming the Odds", "Hellfire", "Nail in the Coffin"]
+      },
+      {
         "pageTitle": "MULTIPLAYER META",
         "order": ["Player 1", "Player 2", "Player 3", "Player 4"]
       }
@@ -248,6 +252,61 @@
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Lolbit", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" }
       ]
+    },
+      "Downpour": {
+      "units": [
+        { "name": "Unicorn Toy Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Pirate Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
+        { "name": "Withered Freddy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Phone Guy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Movie Director Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Nedd Bear", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" }
+      ]
+    },
+      "Fend Off the Dark": {
+      "units": [
+        { "name": "Unicorn Toy Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Pirate Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
+        { "name": "Withered Freddy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Phone Guy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Movie Director Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Nedd Bear", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" }
+      ]
+    },
+      "Nature's Blessing": {
+      "units": [
+        { "name": "Unicorn Toy Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Pirate Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
+        { "name": "Withered Freddy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Phone Guy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Movie Director Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Nedd Bear", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" }
+      ]
+    },
+      "Overcoming the Odds": {
+      "units": [
+        { "name": "Unicorn Toy Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Pirate Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
+        { "name": "Withered Freddy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Phone Guy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Movie Director Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Nedd Bear", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" }
+      ]  
+    },
+      "Hellfire": {
+      "units": [
+        { "name": "Lore Keeper Shadow Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Landslide Funtime Foxy", "caption": "" },
+        { "name": "Scraptrap", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" },
+        { "name": "Starfarer Princess", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Nightmare Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Molten Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Elizabeth", "caption": "" },
+        { "name": "Phone Guy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Withered Freddy", "caption": "" }
+      ]  
+    },
+      "Nail in the Coffin": {
+      "units": [
+        { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Yes, he can Solo" }
+      ]  
     }
   }
 }

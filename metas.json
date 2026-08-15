@@ -77,24 +77,24 @@
         { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "El Chip", "caption": "" },
         { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Phone Guy", "label": "",    "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "War Machine Foxy", "caption": "" },
-        { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Nedd Bear", "caption": "Potency" },
-        { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Potency" }
+        { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Nedd Bear", "caption": "Buff Potency" },
+        { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Buff Potency" }
       ]
     },
     "Endless Farthest": {
       "units": [
         { "name": "Golden Freddy", "label": "$1k", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Starter" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Purifier Mercenary Toy Chica", "caption": "Potency" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Purifier Mercenary Toy Chica", "caption": "Buff Potency" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "Trash o Tron", "caption": "" },
         { "name": "Overlord Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
         { "name": "Stitchwraith", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "Nedd Bear", "caption": "Jake Mode, Potency" },
-        { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Party Never Ends Cupcake", "caption": "Potency" }
+        { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Party Never Ends Cupcake", "caption": "Buff Potency" }
       ]
     },
     "Boss Raids": {
       "units": [
         { "name": "XOR", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Unicorn Toy Foxy", "caption": "Starter" },
-        { "name": "Vengeful Spirit", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Vengeful Spirit", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance",   "replacement": "Trash o Tron", "caption": "" },
         { "name": "Overlord Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance",   "replacement": "Frostmancer Withered Bonnie", "caption": "" },
         { "name": "Samurai Duo", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
@@ -108,7 +108,7 @@
         { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "War Machine Foxy", "caption": "" },
         { "name": "Nedd Bear", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" },
-        { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" }
+        { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Buff Potency" }
       ]
     },
     "Endless Grind": {

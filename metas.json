@@ -91,7 +91,7 @@
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "Trash o Tron", "caption": "Buff Potency" },
         { "name": "Overlord Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Frostmancer Withered Bonnie", "caption": "Buff Potency" },
-        { "name": "Stitchwraith", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "Nedd Bear", "caption": "Jake Mode, Potency" },
+        { "name": "Stitchwraith", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "Nedd Bear", "caption": "Jake Mode, Potency" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Party Never Ends Cupcake", "caption": "Buff Potency" }
       ]
     },
@@ -102,7 +102,7 @@
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance",   "replacement": "Trash o Tron", "caption": "Buff Potency" },
         { "name": "Overlord Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance",   "replacement": "Frostmancer Withered Bonnie", "caption": "Buff Potency" },
         { "name": "Samurai Duo", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
-        { "name": "Nedd Bear", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" }
+        { "name": "Nedd Bear", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" }
       ]
     },
     "Story Grind": {
@@ -111,7 +111,7 @@
         { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "El Chip", "caption": "" },
         { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "War Machine Foxy", "caption": "" },
-        { "name": "Nedd Bear", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" },
+        { "name": "Nedd Bear", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" },
         { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Buff Potency" }
       ]
     },
@@ -121,7 +121,7 @@
         { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked",   "replacement": "El Chip", "caption": "" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Commander Withered Freddy", "caption": "Place on Boss" },
         { "name": "Phone Guy", "label": "",    "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "War Machine Foxy", "caption": "Place on Boss" },
-        { "name": "Nedd Bear", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" },
+        { "name": "Nedd Bear", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" },
         { "name": "Fazcade", "label": "", "byte": "Pearl", "chip": "", "enchant": "Investor", "replacement": "", "caption": "" }
       ]
     },
@@ -131,7 +131,7 @@
         { "name": "Grand Strategist Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance",   "replacement": "El Chip", "caption": "Place on Boss" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Commander Withered Freddy", "caption": "Place on Boss" },
         { "name": "Phone Guy", "label": "",    "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "War Machine Foxy", "caption": "" },
-        { "name": "Nedd Bear", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Stacks W/ PLCMTS" },
+        { "name": "Nedd Bear", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Stacks W/ PLCMTS" },
         { "name": "Fazcade", "label": "", "byte": "Pearl", "enchant": "Investor", "chip": "", "replacement": "", "caption": "" }
       ]
     },
@@ -259,8 +259,8 @@
         { "name": "Pirate Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
         { "name": "Withered Freddy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Withered Freddy", "caption": "" },
-        { "name": "Movie Director Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" },
-        { "name": "Nedd Bear", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" }
+        { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "enchant": "Phantom", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Nedd Bear", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" }
       ]
     },
       "Fend Off the Dark": {
@@ -269,8 +269,8 @@
         { "name": "Pirate Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
         { "name": "Withered Freddy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Withered Freddy", "caption": "" },
-        { "name": "Movie Director Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" },
-        { "name": "Nedd Bear", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" }
+        { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "enchant": "Phantom", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Nedd Bear", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" }
       ]
     },
       "Nature's Blessing": {
@@ -279,8 +279,8 @@
         { "name": "Pirate Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
         { "name": "Withered Freddy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Withered Freddy", "caption": "" },
-        { "name": "Movie Director Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" },
-        { "name": "Nedd Bear", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" }
+        { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "enchant": "Phantom", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Nedd Bear", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" }
       ]
     },
       "Overcoming the Odds": {
@@ -289,8 +289,8 @@
         { "name": "Pirate Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
         { "name": "Withered Freddy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Withered Freddy", "caption": "" },
-        { "name": "Movie Director Freddy", "label": "", "byte": "The Box", "enchant": "Phantom", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" },
-        { "name": "Nedd Bear", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" }
+        { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "enchant": "Phantom", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Nedd Bear", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Stacks W/ PLCMTS" }
       ]  
     },
       "Hellfire": {

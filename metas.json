@@ -305,7 +305,8 @@
     },
       "Nail in the Coffin": {
       "units": [
-        { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Yes, he can Solo" }
+        { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" }
       ]  
     }
   }

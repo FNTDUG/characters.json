@@ -423,7 +423,7 @@
     },
     "slow": {
       "s": [
-        "Vengeful Spirit",
+        "Vengeful Spirit NEW",
         "Deep Sea Calamity Endo",
         "Molten Freddy",
         "Planet Buster Scott NEW",

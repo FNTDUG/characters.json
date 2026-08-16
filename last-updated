@@ -318,30 +318,15 @@
 <script>
 /* ── EDIT THIS LIST ── */
 var UPDATED_UNITS = [
-"Planet Buster Scott",
-"Mr. Hippo",
-"Nightguard Afton",
-"Into the Pit Spring Bonnie",
-"Happy Frog",
-"Dee Dee",
-"Phone Guy",
-"Overlord Scott",
-"Anniversary Duo",
-"Anniversary Balloon Boy",
-"Eleanor",
-"Samurai Duo",
-"XOR",
-"Stitchwraith",
-"Hoax Purple Guy",
-"Theory Crusher Scott",
-"Nedd Bear",
-"Count the Ways Funtime Freddy",
-"Ragequit Scott",
-"Pigpatch",
-"Orville Elephant",
-"Scott Plushie",
-"Vengeful Spirit",
-"Scott Cawthon"
+"hot Dog Guy",
+"Spirit of William Afton",
+"Pyro Spring Bonnie",
+"Spirit of Charlie Emily",
+"Spirit of Henry Emily",
+"Ocular Nightmare BB",
+"King in Purple Purple Guy",
+"Dirt Boss Freddy",
+"Void Shaper Shadow Freddy"
 
 ];
 /* ────────────────── */

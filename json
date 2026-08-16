@@ -24812,11 +24812,10 @@
 },
 {
   "name": "Ocular Nightmare BB",
-  "imgNormal": "https://units.fntduserguide.com/units/ocular-nightmare-bb.png",
-  "imgShiny": "https://units.fntduserguide.com/units/ocular-nightmare-bb-shiny.png",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1Nv3pi-vLRzVIyUuISlchOZOldiJhsIsx&sz=w500",
+  "imgShiny": "https://iili.io/Ci4ta71.webp",
   "rarity": "nightmare",
   "typeMain": "Midgame",
-  "typeTags": [],
   "element": "Dark",
   "placements": 1,
   "attackType": "Circle",
@@ -25157,8 +25156,8 @@
 },
 {
   "name": "Void Shaper Shadow Freddy",
-  "imgNormal": "https://units.fntduserguide.com/units/void-shaper-shadow-freddy.png",
-  "imgShiny": "https://units.fntduserguide.com/units/void-shaper-shadow-freddy-shiny.png",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1yvZWud4hwmSkreyFPOmDioaQLdzN9rBX&sz=w500",
+  "imgShiny": "https://iili.io/Ci4t5rB.webp",
   "rarity": "secret",
   "typeMain": "Endgame",
   "typeTags": [

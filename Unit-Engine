@@ -2855,7 +2855,9 @@
           "Dark/Water": "https://images.fntduserguide.com/dark%3Awaterelement.webp",
           "Water/Electricity": "https://images.fntduserguide.com/water%3Aelectricityelement.webp",
           "Dark/Neutral": "https://images.fntduserguide.com/darkelement.webp",
-          "Universal": "https://images.fntduserguide.com/universalelement.png"
+          "Universal": "https://images.fntduserguide.com/universalelement.png",
+          "Neutral/Rust/Nature": "https://images.fntduserguide.com/neutralelement.webp",
+          "Dark/Fire/Light": "https://images.fntduserguide.com/darkelement.webp"
         };
 
         function getElementIcon(elementName) {
@@ -2864,23 +2866,25 @@
         }
        
       const ELEMENT_INFO = {
-        Rust: "+3% CD & +6% DMG (self buff).",
-        Water: "+3% RNG to units within range (this stacks).",
-        Neutral: "+3% RNG, +3% DMG, & -3% CD (self buff).",
-        "Dark/Light": "+3% DMG & -3% CD (self buff).",
-        Nature: "+1 Stock (tank 1 additional enemy/hit, this stacks).",
-        Dark: "+3% DMG (self buff).",
+        Rust: "+3% CD & +6% DMG.",
+        Water: "+3% RNG to units within range (stacks indefinitely).",
+        Neutral: "+3% RNG, +3% DMG, & -3% CD.",
+        "Dark/Light": "+3% DMG & -3% CD.",
+        Nature: "+1 Stock per placement.",
+        Dark: "+3% DMG.",
         Electricity: "-1% CD to units within range (caps at -15%).",
-        Fire: "All attacks apply burn for 3% DMG/second (this stacks).",
-        Light: "-3% CD (self buff)." ,
-        "Electricity/Light": "-1% CD to units within range (caps at -15%) & -3% CD (self buff)",
-        "Fire/Rust": "All attacks apply burn for 3% DMG/second & +3% CD & +6% DMG (self buff).",
-        "Nature/Rust": "+1 Stock (tank 1 additional enemy/hit, this stacks) & +3% CD & +6% DMG (self buff).",
-        "Nature/Dark": "+1 Stock (tank 1 additional enemy/hit, this stacks) & +3% DMG (self buff).",
-        "Dark/Water": "+3% DMG (self buff) & +3% RNG to all units within range (this stacks).",
-        "Water/Electricity": "+3% RNG to units within range (stacks) & -1% CD to units within range (caps at -15%)",
-        "Dark/Neutral": "+6% DMG, +3% RNG, & -3% CD (self boost)",
-        "Universal": "Grants the effect of all Element boosts"
+        Fire: "All attacks apply burn for 3% DMG/second.",
+        Light: "-3% CD." ,
+        "Electricity/Light": "-3% CD (self) & -1% CD to units within range (caps at -15%) ",
+        "Fire/Rust": "All attacks apply burn for 3% DMG/second & +3% CD & +6% DMG.",
+        "Nature/Rust": "+1 Stock per placement (tank 1 additional enemy/hit) & +3% CD & +6% DMG.",
+        "Nature/Dark": "+1 Stock per placement & +3% DMG.",
+        "Dark/Water": "+3% DMG  & +3% RNG to all units within range (stacks indefinitely).",
+        "Water/Electricity": "+3% RNG to units within range (stacks indefinitely) & -1% CD to units within range (caps at -15%)",
+        "Dark/Neutral": "+6% DMG, +3% RNG, & -3% CD.",
+        "Universal": "Grants the effect of all Element boosts.",
+        "Neutral/Rust/Nature": "+9% DMG, +3% RNG, -3% CD, & +1 stock per placement.",
+        "Dark/Fire/Light": "+3% DMG, -3% CD, & 3% burn/second"
       };
         
       
@@ -4146,7 +4150,8 @@
             ["nightmarefred", "Nightmare Fredbear: Feeding the Fear (+10% DMG, +10% RNG per stack) [Dark only]", { dmgMult: 1.10, rngMult: 1.10, stackKey: "nightmarefredStacks", maxStacks: 5 }],
             ["darkelement",   "Dark Element: +3% DMG [Dark only]",                                               { dmgMult: 1.03, elements: ["Dark"] }],
             ["ballora_dark",  "Mother Nature Ballora: Dark Wither (+10% DMG) [Dark only]",                       { dmgMult: 1.10, elements: ["Dark"]}],
-            ["nugget",        "Nightmare Chica: The First (+8% DMG) [Dark only]",                                { dmgMult: 1.08, elements: ["Dark"] }]
+            ["nugget",        "Nightmare Chica: The First (+8% DMG) [Dark only]",                                { dmgMult: 1.08, elements: ["Dark"] }],
+            ["void_fred",     "Void Shaper Shadow Freddy: Corruption (+20% DMG) [Dark only]",                    { dmgMult: 1.20, elements: ["Dark"] }]
           );
         }
 
@@ -4184,6 +4189,7 @@
         if (unitHasElement(unit, "fire")) {
           BOOST_OPTIONS.push(
             ["aqua_water", "Aqua Strike Toy Chica (+25% DMG) [Fire only]", { dmgMult: 1.25, elements: ["Fire"] }],
+            ["pyro_bonnie","Pyro Spring Bonnie (+4% DMG per stack) [Fire only]", { dmgMult: 1.04, stackKey: "pyrobonnieStacks", maxStacks: 10, elements: ["Fire"] }],
             ["scorched", "Springtrap: Agonized (+25% DMG) [Fire only]", { dmgMult: 1.25, elements: ["Fire"] }]
           );
         }

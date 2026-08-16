@@ -4096,7 +4096,7 @@
           ["movie",             "Movie Director: Eye for Talent (+25% DMG per stack)",                     { dmgMult: 1.25, stackKey: "movieStacks", maxStacks: 4, singlePlacement: true }],
           ["hippo",             "Mr. Hippo: Story Time (+15% Crit Rate, +15% Crit DMG, & +10% DMG)",      { dmgMult: 1.15, critRateAdd: 0.15, critDmgAdd: 0.15, cd: 90, duration: 15, uptime: true}],
           ["nature_reclaim",    "Nature Reclaimed Foxy: Drifter's Blessing (+30% DMG, +25% RNG, -5% CD)", { dmgMult: 1.30, rngMult: 1.25, cdMult: 0.95 }],
-          ["nedd",              "Nedd Bear: Stranger Danger (+25% DMG per stack)",                         { dmgMult: 1.25, stackKey: "neddStacks", maxStacks: 8 }],
+          ["nedd",              "Nedd Bear: Stranger Danger (+25% DMG)",                                   { dmgMult: 1.25}],
           ["NMFB",              "Nightmare Fredbear: Nightmarish Cry (+75% CD)",                          { cdMult: 1.75, duration: 10, cd: 145 }],
           ["crate",             "No. 1 Crate: Cheerleader (+20% DMG per stack)",                           { dmgMult: 1.20, stackKey: "crateStacks", maxStacks: 4 }],
           ["overgrown_foxy_avg","Overgrown Foxy: Countdown (Averaged, +10% DMG, +10% RNG, -2.5% CD)",     { dmgMult: 1.10, rngMult: 1.10, cdMult: 0.975 }],

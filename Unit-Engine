@@ -1698,7 +1698,9 @@
             break;
 
           case "hijacked": {
-            var _hBasePlc = (unit && typeof unit.placements === "number") ? unit.placements : 1;
+            // Count from the boosted total, not unit.placements: with Dice the
+            // extra placements are surrendered too, so they must be paid for.
+            var _hBasePlc = getPlcRaw(unit);
             var _hLost    = Math.max(0, _hBasePlc - 1);
             dmgMult *= (2.20 + 1.80 * _hLost);
             rngMult *= 1.05;
@@ -2987,7 +2989,11 @@
       }
 
       
-      function getPlc(unit) {
+      // Placements including every boost that grants them (Dice, etc.), BEFORE
+      // Hijacked collapses the unit to a single placement. Hijacked pays out per
+      // placement given up, so it needs the count it is actually taking away —
+      // using the unit's base alone would drop the boosted ones for free.
+      function getPlcRaw(unit) {
         var base = unit.placements || 1;
         if (typeof BOOST_META !== "undefined" && buffState) {
           if (Array.isArray(buffState.permaSelected)) {
@@ -3013,8 +3019,13 @@
             if (_eMeta && _eMeta.placements) base += _eMeta.placements;
           }
         }
-        if (typeof buffState !== "undefined" && buffState.enchant === "hijacked") return 1;
         return Math.max(1, base);
+      }
+
+      function getPlc(unit) {
+        // Hijacked leaves exactly one placement on the field.
+        if (typeof buffState !== "undefined" && buffState.enchant === "hijacked") return 1;
+        return getPlcRaw(unit);
       }
 
       function getRangeBuffMultiplier(unit) {

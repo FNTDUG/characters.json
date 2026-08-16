@@ -24924,7 +24924,7 @@
       "level": 1,
       "cost": 9000,
       "damage": 450,
-      "degrees": "",
+      "degrees": "60°",
       "cd": 4,
       "range": 20
     },
@@ -24932,7 +24932,7 @@
       "level": 2,
       "cost": 3000,
       "damage": 550,
-      "degrees": "",
+      "degrees": "60°",
       "cd": 4,
       "range": 21
     },
@@ -24940,7 +24940,7 @@
       "level": 3,
       "cost": 4500,
       "damage": 700,
-      "degrees": "",
+      "degrees": "60°",
       "cd": 4,
       "range": 22
     },
@@ -24948,7 +24948,7 @@
       "level": 4,
       "cost": 6000,
       "damage": 850,
-      "degrees": "",
+      "degrees": "60°",
       "cd": 3.8,
       "range": 24
     },
@@ -24956,7 +24956,7 @@
       "level": 5,
       "cost": 8000,
       "damage": 1100,
-      "degrees": "",
+      "degrees": "60°",
       "cd": 3.8,
       "range": 25
     },
@@ -24964,7 +24964,7 @@
       "level": 6,
       "cost": 10500,
       "damage": 1250,
-      "degrees": "Cone",
+      "degrees": "60°",
       "cd": 3.5,
       "range": 26
     },
@@ -24972,7 +24972,7 @@
       "level": 7,
       "cost": 14000,
       "damage": 1400,
-      "degrees": "Cone",
+      "degrees": "60°",
       "cd": 3.5,
       "range": 28
     },

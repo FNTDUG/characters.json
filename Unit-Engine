@@ -2500,7 +2500,10 @@
                 var _hasStun    = _stunByLabel[item.label] != null;
                 var _parts = [];
                 if (_hasDps)     _parts.push("<span style=\"color:#ff8c00\">DPS:&nbsp;" + item.value.toFixed(1) + "</span>");
-                if (_hasRngItem) _parts.push("<span style=\"color:cyan\">RNG:&nbsp;+" + _rngByLabel[item.label].toFixed(1) + "</span>");
+                if (_hasRngItem) {
+                  var _rngVal = _rngByLabel[item.label];
+                  _parts.push("<span style=\"color:cyan\">RNG:&nbsp;" + (_rngVal >= 0 ? "+" : "") + _rngVal.toFixed(1) + "</span>");
+                }
                 if (_hasCrit)    _parts.push("<span style=\"color:#FFD700\">critc:&nbsp;" + (_critByLabel[item.label] * 100).toFixed(1) + "%</span>");
                 if (_hasCritDmg) _parts.push("<span style=\"color:#FFA500\">critd:&nbsp;" + _critDmgByLabel[item.label].toFixed(2) + "&times;</span>");
                 if (_hasStun)    _parts.push("<span style=\"color:#ff4444\">Stun:&nbsp;-" + _stunByLabel[item.label].toFixed(1) + "</span>");

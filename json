@@ -2554,6 +2554,18 @@
         "text": "Due to the raw ember inside of Dragon Endo, all [Fire] element units will now inflict 10% Burn for 3s. Additionally, units that already inflict Burn will now have an extra 5% Burn and 1.5s Burn duration."
       }
     ],
+    "skins":[
+      {
+        "name": "Island Vacation Dragon Endo 01",
+        "image": "https://tr.rbxcdn.com/180DAY-63fc00e007b2b96d64205f890e0fadac/420/420/Image/Png/noFilter",
+        "rarity": "secret"
+      },
+      {
+        "name": "Shiny Island Vacation Dragon Endo 01",
+        "image": "https://tr.rbxcdn.com/180DAY-bee3a967dd46f4e1f666caef85e26729/420/420/Image/Png/noFilter",
+        "rarity": "shiny"
+      }
+    ],
     "passiveDamage": {
       "dots": [
         {
@@ -4945,7 +4957,7 @@
       "level": 6,
       "cost": 7000,
       "damage": 3500,
-      "type": "Explosion",
+      
       "cd": 6.6,
       "range": 26
     },
@@ -4953,7 +4965,7 @@
       "level": 7,
       "cost": 7000,
       "damage": 3700,
-      "type": "Explosion",
+      
       "cd": 6.2,
       "range": 26
     },
@@ -4961,7 +4973,7 @@
       "level": 8,
       "cost": 8500,
       "damage": 3950,
-      "type": "Explosion",
+      
       "cd": 6,
       "range": 26
     }
@@ -5491,7 +5503,7 @@
     "element": "Rust",
     "placements": 1,
     "attackType": "Multi",
-    "obtainment": "Time Lord Withered Freddy Present (350 Raid Coins)",
+    "obtainment": "Boss Raids Shop (350 Raid Coins)",
     "levels": [
       {
         "level": 1,
@@ -12980,6 +12992,18 @@
         "title": "10 Stacks",
         "text": "5x damage Full AOE"
       }
+    ],
+    "skins":[
+      {
+        "name": "Ballad of the Street Ballora",
+        "image": "https://tr.rbxcdn.com/180DAY-f036a9bc545f308fbbc6b78ab3d93393/420/420/Image/Png/noFilter",
+        "rarity": "secret"
+      },
+      {
+        "name": "Shiny Ballad of the Street Ballora",
+        "image": "https://tr.rbxcdn.com/180DAY-f3f69a6f01952e0fd5ca12f3d381735c/420/420/Image/Png/noFilter",
+        "rarity": "shiny"
+      }
     ]
   },
   {
@@ -15152,7 +15176,7 @@
       "level": 5,
       "cost": 4000,
       "damage": 475,
-      "type": "Explosion",
+      
       "cd": 2,
       "range": 25
     },
@@ -19265,7 +19289,7 @@
     "element": "Water",
     "placements": 1,
     "attackType": "Multi",
-    "obtainment": "Abyssal Ballora Present (350 Raid Coins)",
+    "obtainment": "Boss Raids Shop (350 Raid Coins)",
     "levels": [
       {
         "level": 1,
@@ -23959,6 +23983,14 @@
   "placements": 2,
   "attackType": "Line",
   "obtainment": "Season 6 Present (5%)",
+  "balanceChanges":[
+     {
+        "date": "8/16/26",
+        "changes": [
+          { "type": "nerf",   "text": "• Passive [Stranger Danger] DMG buff -no longer stacks with placements" }
+        ]
+      }
+  ],
   "levels": [
     {
       "level": 1,
@@ -24350,6 +24382,889 @@
         "dmgmult": 1.20,
         "duration": 5,
         "everynthattack": 10
+      }
+    ]
+  }
+},
+{
+  "name": "Pyro Spring Bonnie",
+  "imgNormal": "https://units.fntduserguide.com/units/pyro-spring-bonnie.png",
+  "imgShiny": "https://units.fntduserguide.com/units/pyro-spring-bonnie-shiny.png",
+  "rarity": "apex",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Slow",
+    "Stun",
+    "Support"
+  ],
+  "element": "Fire",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Patient White Rabbit Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 7500,
+      "damage": 450,
+      "type": "Line",
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 5000,
+      "damage": 475,
+      "type": "Line",
+      "cd": 4,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 6500,
+      "damage": 500,
+      "type": "Line",
+      "cd": 4,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 8000,
+      "damage": 525,
+      "type": "Line",
+      "cd": 4,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 10000,
+      "damage": 625,
+      "type": "Line",
+      "cd": 4.5,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 12500,
+      "damage": 700,
+      "type": "Cone 90°",
+      "cd": 4.5,
+      "range": 27
+    },
+    {
+      "level": 7,
+      "cost": 15000,
+      "damage": 800,
+      "type": "Cone 90°",
+      "cd": 4.5,
+      "range": 28
+    },
+    {
+      "level": 8,
+      "cost": 17500,
+      "damage": 950,
+      "type": "Cone 90°",
+      "cd": 4.5,
+      "range": 29
+    },
+    {
+      "level": 9,
+      "cost": 20000,
+      "damage": 1150,
+      "type": "Cone 90°",
+      "cd": 4.5,
+      "range": 30
+    },
+    {
+      "level": 10,
+      "cost": 23000,
+      "damage": 1450,
+      "type": "Cone 90°",
+      "cd": 5,
+      "range": 31
+    },
+    {
+      "level": 11,
+      "cost": 27500,
+      "damage": 1700,
+      "type": "Cone 120°",
+      "cd": 5,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Now Let's Get Serious",
+      "text": "Max Heat for 20s and prevent it from decreasing. Gain +50% damage and apply 50% burn over 2s in a Full AOE on every attack during the duration. (Upgrade 10+, local CD: 90s).",
+      "activeIcon": ""
+    },
+    {
+      "title": "Cooling System",
+      "text": "On attack stun for 1.8s and slow by 10% for 5s. Every 15s follow up for 150% damage in a Circle AOE and stun for 1s, bypassing stun lockout"
+    },
+    {
+      "title": "Magnum Opus",
+      "text": "Immune to stuns and debuffs. Automatically upgrade every 3 waves"
+    },
+    {
+      "title": "Heat Exhaust",
+      "text": "On hit apply 10% burn over 5s. On attack gain 10% Heat. Apply additional burn equal to Heat and buff this unit and Fire element units by +0.4% damage per Heat. At maximum Heat apply 300% burn over 10s to all enemies, slow all enemies by 20% for 20s, and reset Heat and gain +20% cooldown for the next 3 attacks. Fire element units apply 10% burn over 5s in a Full AOE within their range on attack"
+    }
+  ],
+  "passiveDamage":{
+    "selfboost":[
+      {
+      "label": "Serious (boost)",
+      "dmgmult": 1.50,
+      "duration": 20,
+      "cd": 90
+      },
+      {
+        "label": "Heat Exhaust (avg boost)",
+        "dmgmult": 1.20
+      },
+      {
+        "label": "Heat Exhaust (max heat boost)",
+        "everynthattack": 10,
+        "cdmult": 1.20,
+        "hits": 3
+      }
+    ],
+    "periodic":[
+      {
+      "label": "Cooling System",
+      "pctofdamage": 1.50
+      }
+    ],
+    "dots":[
+      {
+      "label": "Heaxt Exhaust (avg dot)",
+      "pctofdamage": 0.60,
+      "durationsec": 5
+      },
+      {
+        "label": "Heat Exhaust (max heat dot)",
+        "everynthattack": 10,
+        "pctofdamage": 3.00,
+        "durationsec": 10
+      }
+    ]
+  }
+},
+{
+  "name": "Spirit of Charlie Emily",
+  "imgNormal": "https://units.fntduserguide.com/units/spirit-of-charlie-emily.png",
+  "imgShiny": "https://units.fntduserguide.com/units/spirit-of-charlie-emily-shiny.png",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Slow"
+  ],
+  "element": "Water/Electricity",
+  "placements": 1,
+  "attackType": "Cone 75°",
+  "obtainment": "Tower Shop (150 Coins)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 5000,
+      "damage": 500,
+      "cd": 5,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 575,
+      "cd": 5,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 3750,
+      "damage": 675,
+      "cd": 5,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 4500,
+      "damage": 800,
+      "cd": 5,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 5500,
+      "damage": 950,
+      "cd": 4.8,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 6750,
+      "damage": 1125,
+      "cd": 4.5,
+      "range": 27
+    },
+    {
+      "level": 7,
+      "cost": 8000,
+      "damage": 1325,
+      "cd": 4.2,
+      "range": 28
+    },
+    {
+      "level": 8,
+      "cost": 9500,
+      "damage": 1600,
+      "cd": 4,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Hold Them Back",
+      "text": "Enemies in range are slowed by 15% and have their stun duration increased by 25%. When a slow or stun is applied to an enemy in range follow up for 25% damage (1s cooldown). Follow up for 75% damage instead if this unit applied the effect. <br> With 4/5/6 Water or Electricity element units on the team, gain +10%/+20%/+40% damage and gain +5%/+10%/+20% range"
+    },
+    {
+      "title": "The Tower's Blessing",
+      "text": "While placed add +3 levels to the Support Spirit, gain +1% damage per Support Spirit level; levels above 25 grant +5% damage each instead. Immune to elemental bans in The Tower"
+    }
+  ],
+  "passiveDamage":{
+    "periodic":[
+      {
+        "label": "Hold Them (self follow-up)",
+        "pctofdamage": "0.75",
+        "cd": 4,
+        "cdboostable": true
+      }
+    ]
+  }
+},
+{
+  "name": "Spirit of Henry Emily",
+  "imgNormal": "https://units.fntduserguide.com/units/spirit-of-henry-emily.png",
+  "imgShiny": "https://units.fntduserguide.com/units/spirit-of-henry-emily-shiny.png",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "element":"Neutral/Rust/Nature",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Tower Shop (150 Coins)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 5000,
+      "damage": 550,
+      "cd": 5,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 700,
+      "cd": 5,
+      "range": 21
+    },
+    {
+      "level": 3,
+      "cost": 3750,
+      "damage": 850,
+      "cd": 5,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 4500,
+      "damage": 1000,
+      "cd": 5,
+      "range": 23
+    },
+    {
+      "level": 5,
+      "cost": 5500,
+      "damage": 1200,
+      "cd": 4.8,
+      "range": 25
+    },
+    {
+      "level": 6,
+      "cost": 6750,
+      "damage": 1400,
+      "cd": 4.5,
+      "range": 27
+    },
+    {
+      "level": 7,
+      "cost": 8000,
+      "damage": 1700,
+      "cd": 4.2,
+      "range": 30
+    },
+    {
+      "level": 8,
+      "cost": 9500,
+      "damage": 2000,
+      "cd": 4,
+      "range": 33
+    }
+  ],
+  "passives": [
+    {
+      "title": "Avarice",
+      "text": "Gain +0.5% damage per 1k cash held (Max +50%). Deposit cash into this unit to gain +1% damage and range per 5k deposited (Max +20%). <br> With 4/5/6 Neutral, Rust, or Nature element units on the team, gain +10%/+20%/+40% damage and +5%/+10%/+20% range (Upgrade 0+, Local CD: 0s).",
+      "activeIcon": ""
+    },
+    {
+      "title": "The Tower's Blessing",
+      "text": "While placed add +3 levels to the Economy Spirit. Gain +1% damage per Economy Spirit level. Levels above 25 grant +5% damage each instead. Immune to elemental bans in The Tower"
+    }
+  ],
+  "passiveDamage": {
+    "selfboost":[
+      {
+        "label": "Acarice (max)",
+        "dmgmult": 1.70,
+        "rngmult": 1.20
+      }
+    ]
+  }
+},
+{
+  "name": "Spirit of William Afton",
+  "imgNormal": "https://units.fntduserguide.com/units/spirit-of-william-afton.png",
+  "imgShiny": "https://units.fntduserguide.com/units/spirit-of-william-afton-shiny.png",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "element": "Dark/Fire/Light",
+  "placements": 1,
+  "attackType": "FullAOE",
+  "obtainment": "Tower Shop (150 Coins)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 5000,
+      "damage": 500,
+      "cd": 5,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 650,
+      "cd": 5,
+      "range": 21
+    },
+    {
+      "level": 3,
+      "cost": 3750,
+      "damage": 800,
+      "cd": 5,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 4500,
+      "damage": 1000,
+      "cd": 5,
+      "range": 23
+    },
+    {
+      "level": 5,
+      "cost": 5500,
+      "damage": 1200,
+      "cd": 4.8,
+      "range": 24
+    },
+    {
+      "level": 6,
+      "cost": 6750,
+      "damage": 1500,
+      "cd": 4.5,
+      "range": 25
+    },
+    {
+      "level": 7,
+      "cost": 8000,
+      "damage": 1800,
+      "cd": 4.2,
+      "range": 26
+    },
+    {
+      "level": 8,
+      "cost": 9500,
+      "damage": 2200,
+      "cd": 4,
+      "range": 26
+    }
+  ],
+  "passives": [
+    {
+      "title": "The Harder They Fall",
+      "text": "Deal more damage based on how much higher the enemy's current HP is than this unit's damage: <br> • 2x HP: +10% damage<br>• 3x HP: +15% damage<br>• 5x HP: +20% damage<br>• 10x HP: +30% damage<br>With 4/5/6 Dark, Fire, or Light element units on the team, gain +10%/+20%/+40% damage and +5%/+10%/+20% range"
+    },
+    {
+      "title": "The Tower's Blessing",
+      "text": "While placed add +3 levels to the Destruction Spirit. Gain +1% damage per Destruction Spirit level. Levels above 25 grant +5% damage each instead. Immune to elemental bans in The Tower"
+    }
+  ]
+},
+{
+  "name": "Ocular Nightmare BB",
+  "imgNormal": "https://units.fntduserguide.com/units/ocular-nightmare-bb.png",
+  "imgShiny": "https://units.fntduserguide.com/units/ocular-nightmare-bb-shiny.png",
+  "rarity": "nightmare",
+  "typeMain": "Midgame",
+  "typeTags": [],
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "Nightmare BB Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 1500,
+      "damage": 350,
+      
+      "cd": 2.5,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 400,
+      "cd": 2.5,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 3250,
+      "damage": 450,
+      "cd": 2.5,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 4000,
+      "damage": 550,
+      "cd": 2.7,
+      "range": 26
+    },
+    {
+      "level": 5,
+      "cost": 5000,
+      "damage": 700,
+      "cd": 3,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 7000,
+      "damage": 850,
+      "cd": 3,
+      "range": 28
+    },
+    {
+      "level": 7,
+      "cost": 10000,
+      "damage": 1000,
+      "cd": 3,
+      "range": 28
+    },
+    {
+      "level": 8,
+      "cost": 15000,
+      "damage": 1200,
+      "cd": 3,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "I see you",
+      "text": "This unit deals 50% more damage to enemies in the outer 50% of it's range and 30% more damage to enemies in the inner 50% of it's range"
+    },
+    {
+      "title": "Pop!",
+      "text": "Every 3 seconds spawn a stationary balloon (max of 4) on the track near this tower. When max is reached send them to the highest enemy on the track (Large AOE). Dealing 85% damage per balloon"
+    }
+  ],
+  "passiveDamage":{
+    "periodic":[
+      {
+        "label": "Pop!",
+        "pctofdamage": 3.40,
+        "cd": 12
+      }
+    ],
+    "selfboost":[
+      {
+        "label": "I see you (Outer 50%)",
+        "dmgmult": 1.50
+      }
+    ]
+  }
+},
+{
+  "name": "King in Purple Purple Guy",
+  "imgNormal": "https://units.fntduserguide.com/units/king-in-purple-purple-guy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/king-in-purple-purple-guy-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Summon"
+  ],
+  "element": "Nature/Dark",
+  "placements": 1,
+  "attackType": "Cone",
+  "obtainment": "Community Pass 2",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 9000,
+      "damage": 450,
+      "degrees": "",
+      "cd": 4,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 550,
+      "degrees": "",
+      "cd": 4,
+      "range": 21
+    },
+    {
+      "level": 3,
+      "cost": 4500,
+      "damage": 700,
+      "degrees": "",
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 850,
+      "degrees": "",
+      "cd": 3.8,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 8000,
+      "damage": 1100,
+      "degrees": "",
+      "cd": 3.8,
+      "range": 25
+    },
+    {
+      "level": 6,
+      "cost": 10500,
+      "damage": 1250,
+      "degrees": "Cone",
+      "cd": 3.5,
+      "range": 26
+    },
+    {
+      "level": 7,
+      "cost": 14000,
+      "damage": 1400,
+      "degrees": "Cone",
+      "cd": 3.5,
+      "range": 28
+    },
+    {
+      "level": 8,
+      "cost": 10500,
+      "damage": 1600,
+      "degrees": "90°",
+      "cd": 3.2,
+      "range": 30
+    },
+    {
+      "level": 9,
+      "cost": 14000,
+      "damage": 1800,
+      "degrees": "90°",
+      "cd": 3,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "The Whisperer in Darkness",
+      "text": "Non-boss enemies that die in range revive where they died as a summon with health equal to 50% of this unit's damage. Marked enemies instead revive with health equal to 100% of this unit's damage"
+    },
+    {
+      "title": "The Purple Sign",
+      "text": "Attacks apply 50% poison over 10s. The strongest enemy in range is marked with [The Purple Sign] until death. Mark enemies are always targeted by this unit and receives double poison from this unit"
+    }
+  ],
+  "passiveDamage":{
+    "dots":[
+      {
+        "label": "Purple Sign",
+        "pctofdamage": 0.50,
+        "durationsec": 10
+      }
+    ]
+  }
+},
+{
+  "name": "Dirt Boss Freddy",
+  "imgNormal": "https://units.fntduserguide.com/units/dirt-boss-freddy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/dirt-boss-freddy-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Midgame-Endgame",
+  "typeTags": [
+    "Knockback",
+    "Stun"
+  ],
+  "element": "Rust",
+  "placements": 2,
+  "attackType": "Circle",
+  "obtainment": "Community Pass 2",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2500,
+      "damage": 550,
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 650,
+      "cd": 4,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 4000,
+      "damage": 750,
+      "cd": 4,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 5000,
+      "damage": 800,
+      "cd": 4,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 6500,
+      "damage": 950,
+      "cd": 3.8,
+      "range": 27
+    },
+    {
+      "level": 6,
+      "cost": 8000,
+      "damage": 1100,
+      "cd": 3.8,
+      "range": 29
+    },
+    {
+      "level": 7,
+      "cost": 10000,
+      "damage": 1250,
+      "cd": 3.5,
+      "range": 31
+    },
+    {
+      "level": 8,
+      "cost": 13500,
+      "damage": 1500,
+      "cd": 3.5,
+      "range": 33
+    }
+  ],
+  "passives": [
+    {
+      "title": "Bulldozer",
+      "text": "Consume all Scrap and summon a bulldozer to run down the track. On contact deal 30% of this unit's damage per Scrap consumed. Knockback enemies by 0.2 tiles per Scrap consumed; Bosses are stunned for 0.2s per Scrap consumed instead. Refund 5 Scrap when the bulldozer reaches the end of the track. (Upgrade 0+, Local CD: 30s).",
+      "activeIcon": ""
+    },
+    {
+      "title": "Heavy Construction",
+      "text": "Every 3rd attack gain 1 stack of Scrap, up to 15, and deal 150% damage. Per Scrap stack Gain 3% damage and 1% range"
+    }
+  ],
+  "passiveDamage": {
+    "periodic":[
+      {
+        "label": "Construction",
+        "pctofdamage": 1.50,
+        "everynthattack": 3
+      }
+    ],
+    "summons":[
+      {
+        "label": "Bulldozer (2 scrap)",
+        "healthpctofdamage": 0.6,
+        "spawncd": 30,
+        "spawncdboostable": false
+      }
+    ]
+  }
+},
+{
+  "name": "Hot Dog Guy",
+  "imgNormal": "https://units.fntduserguide.com/units/hot-dog-guy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/hot-dog-guy-shiny.png",
+  "rarity": "secret",
+  "typeTags": [
+    "Income"
+  ],
+  "element": "Neutral",
+  "placements": 5,
+  "attackType": "No Type",
+  "obtainment": "Boss Raids Shop ()",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 450,
+      "income": "1500"
+    },
+    {
+      "level": 2,
+      "cost": 1350,
+      "income": "3000"
+    },
+    {
+      "level": 3,
+      "cost": 2500,
+      "income": "4500"
+    },
+    {
+      "level": 4,
+      "cost": 4500,
+      "income": "6000"
+    }
+  ],
+  "passives": [
+    {
+      "title": "Booming Business",
+      "text": "Generates 1500 cash at the end of each wave per upgrade. Buffs the range of itself and nearby units by 2% per Hot Dog Guy (max 35%). Generates 3% more cash per Hot Dog Guy (max 30%)"
+    }
+  ]
+},
+{
+  "name": "Void Shaper Shadow Freddy",
+  "imgNormal": "https://units.fntduserguide.com/units/void-shaper-shadow-freddy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/void-shaper-shadow-freddy-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Wither"
+  ],
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Shadow Freddy Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 4000,
+      "damage": 650,
+      "type": "Circle",
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 750,
+      "type": "Circle",
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 4000,
+      "damage": 850,
+      "type": "Circle",
+      "cd": 3,
+      "range": 25
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 1000,
+      "type": "Circle",
+      "cd": 3,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 8000,
+      "damage": 1600,
+      "type": "Circle",
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 10000,
+      "damage": 2000,
+      "type": "FullAOE",
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 7,
+      "cost": 12500,
+      "damage": 2300,
+      "type": "FullAOE",
+      "cd": 4,
+      "range": 27
+    },
+    {
+      "level": 8,
+      "cost": 15000,
+      "damage": 2600,
+      "type": "FullAOE",
+      "cd": 4,
+      "range": 27
+    },
+    {
+      "level": 9,
+      "cost": 18000,
+      "damage": 3000,
+      "type": "FullAOE",
+      "cd": 4,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Corruption",
+      "text": "Enemies in range take 20% more damage from Dark units. Attacks apply 25% Anti-Regen for 10s, each hit increases by 25% and resets the duration. If the enemy has no regen, this unit's damage increases by 10%. This unit ignores 50% of enemy damage reduction"
+    },
+    {
+      "title": "Umbral Dominion",
+      "text": "Enemies that remain in range for 10 seconds become Lost. Lost enemies take 25% more damage from this unit. Stun duration increased by 20%"
+    }
+  ],
+  "passiveDamage":{
+    "selfboost":[
+      {
+        "label": "Corruption (Wither)",
+        "dmgmult": 1.20
+      },
+      {
+        "label": "Corruption (non-regen)",
+        "dmgmult": 1.10
+      },
+      {
+        "label": "Dominion",
+        "dmgmult": 1.25
       }
     ]
   }

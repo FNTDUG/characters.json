@@ -1398,6 +1398,33 @@
       const ELEMENT_TEXT_GRADIENT =
       "linear-gradient(90deg,#b7ff9c,#79ff5c,#9aff72,#6dff52,#b7ff9c)";
 
+      // Elements resolve to the base ones they count as. A dual counts as both
+      // halves, so a Dark/Light unit answers to a Dark filter and a Light one,
+      // and picks up both elements' boosts without every list naming the combo.
+      // Anything with a "/" is split automatically; only names that are not a
+      // plain join of their parts need an entry here.
+      const ELEMENT_BASE = ["Dark","Electricity","Fire","Light","Nature","Neutral","Rust","Water"];
+      const ELEMENT_PARTS = {
+        "Universal": ELEMENT_BASE.slice()
+      };
+      function elementParts(el) {
+        var e = String(el == null ? "" : el).trim();
+        if (!e) return [];
+        if (ELEMENT_PARTS[e]) return ELEMENT_PARTS[e];
+        return e.split("/").map(function (p) { return p.trim(); }).filter(Boolean);
+      }
+      // Does this unit count as `base`? Matches the whole element name too, so a
+      // boost aimed at a specific combo ("Dark/Light") still only hits that combo.
+      function unitHasElement(unit, base) {
+        var b = String(base == null ? "" : base).trim().toLowerCase();
+        if (!b) return false;
+        var el = String((unit && unit.element) || "").trim().toLowerCase();
+        if (el === b) return true;
+        return elementParts(unit && unit.element).some(function (p) {
+          return p.toLowerCase() === b;
+        });
+      }
+
         if (typeof window.getUnitValue !== "function") {
         window.getUnitValue = function (unitName) { return null; };
       }
@@ -1719,7 +1746,8 @@
           if (_el !== meta.element.toLowerCase()) return null;
         }
         if (meta.elements) {
-          if (meta.elements.indexOf(unit.element) === -1) return null;
+          var _elOk = meta.elements.some(function (me) { return unitHasElement(unit, me); });
+          if (!_elOk) return null;
         }
         if (meta.unitNames) {
           if (meta.unitNames.indexOf(unit.name) === -1) return null;
@@ -2852,7 +2880,7 @@
         "Dark/Water": "+3% DMG (self buff) & +3% RNG to all units within range (this stacks).",
         "Water/Electricity": "+3% RNG to units within range (stacks) & -1% CD to units within range (caps at -15%)",
         "Dark/Neutral": "+6% DMG, +3% RNG, & -3% CD (self boost)",
-        "Universal": "Grants the effect of all element boosts"
+        "Universal": "Grants the effect of all Element boosts"
       };
         
       
@@ -4090,35 +4118,35 @@
           ["waterelement",      "Water Element: +3% RNG to units within range (stacks)",                   { rngMult: 1.03, stackKey: "waterelementStacks", maxStacks: 18 }],
           ];
 
-        if (String(unit.element || "").toLowerCase() === "nature" || String(unit.element || "").toLowerCase() === "nature/rust" || String(unit.element || "").toLowerCase() === "nature/dark" || String(unit.element || "").toLowerCase() === "universal") {
+        if (unitHasElement(unit, "nature")) {
           BOOST_OPTIONS.push(
             ["chipper_nature", "Chipper: Stock Stacker (+1.5% DMG, +1.5% RNG per stack) [Nature only]", { dmgMult: 1.015, rngMult: 1.015, stackKey: "chippernatureStacks", maxStacks: 20 }],
-            ["lumber",         "Chipper: Lumber Co. (+20% DMG) [Nature only]",                          { dmgMult: 1.20, elements: ["Nature", "Nature/Rust", "Nature/Dark", "Universal"] }],
-            ["gaia_domain",    "Gaia Chica: Domain (+30% DMG, -10% CD) [Nature only]",                  { dmgMult: 1.30, cdMult: 0.90, elements: ["Nature", "Nature/Rust", "Nature/Dark", "Universal"] }]
+            ["lumber",         "Chipper: Lumber Co. (+20% DMG) [Nature only]",                          { dmgMult: 1.20, elements: ["Nature"] }],
+            ["gaia_domain",    "Gaia Chica: Domain (+30% DMG, -10% CD) [Nature only]",                  { dmgMult: 1.30, cdMult: 0.90, elements: ["Nature"] }]
           );
         }
 
-        if (String(unit.element || "").toLowerCase() === "rust" || String(unit.element || "").toLowerCase() === "fire/rust" || String(unit.element || "").toLowerCase() === "nature/rust" || String(unit.element || "").toLowerCase() === "universal") {
+        if (unitHasElement(unit, "rust")) {
           BOOST_OPTIONS.push(
-            ["kronos_rust",  "Kronos Endo Freddy: In Due Time... (+36% DMG & +36% RNG) [Rust only]",           { dmgMult: 1.36, rngMult: 1.36, elements: ["Rust", "Fire/Rust", "Nature/Rust", "Universal"] }],
+            ["kronos_rust",  "Kronos Endo Freddy: In Due Time... (+36% DMG & +36% RNG) [Rust only]",           { dmgMult: 1.36, rngMult: 1.36, elements: ["Rust"] }],
             ["michael_rust", "Michael Afton: Together Again (+30% DMG, +25% RNG, -10% CD per stack) [Rust only]", { dmgMult: 1.30, rngMult: 1.25, cdMult: 0.90, stackKey: "mikeStacks", maxStacks: 4 }],
-            ["rustelement",  "Rust Element: +6% DMG, +3% CD penalty [Rust only]",                              { dmgMult: 1.06, cdMult: 1.03, elements: ["Rust", "Fire/Rust", "Nature/Rust", "Universal"] }]
+            ["rustelement",  "Rust Element: +6% DMG, +3% CD penalty [Rust only]",                              { dmgMult: 1.06, cdMult: 1.03, elements: ["Rust"] }]
           );
         }
 
-        if (String(unit.element || "").toLowerCase() === "neutral" || String(unit.element || "").toLowerCase() === "dark/neutral") {
+        if (unitHasElement(unit, "neutral")) {
           BOOST_OPTIONS.push(
             ["neutralelement", "Neutral Element: +3% DMG, +3% RNG, -3% CD [Neutral only]", { dmgMult: 1.03, rngMult: 1.03, cdMult: 0.97, elements: ["Neutral"] }]
           );
         }
 
-        if (String(unit.element || "").toLowerCase() === "dark" || String(unit.element || "").toLowerCase() === "dark/light" || String(unit.element || "").toLowerCase() === "nature/dark"|| String(unit.element || "").toLowerCase() === "dark/water" || String(unit.element || "").toLowerCase() === "dark/neutral" || String(unit.element || "").toLowerCase() === "universal") {
+        if (unitHasElement(unit, "dark")) {
           BOOST_OPTIONS.push(
-            ["hoax_guy",      "Hoax Purple Guy: Ring Ring Are You There? (+25% DMG & +25% RNG) [Dark only]",     { dmgMult: 1.25, rngMult: 1.25, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal"]}],
+            ["hoax_guy",      "Hoax Purple Guy: Ring Ring Are You There? (+25% DMG & +25% RNG) [Dark only]",     { dmgMult: 1.25, rngMult: 1.25, elements: ["Dark"]}],
             ["nightmarefred", "Nightmare Fredbear: Feeding the Fear (+10% DMG, +10% RNG per stack) [Dark only]", { dmgMult: 1.10, rngMult: 1.10, stackKey: "nightmarefredStacks", maxStacks: 5 }],
-            ["darkelement",   "Dark Element: +3% DMG [Dark only]",                                               { dmgMult: 1.03, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal"] }],
-            ["ballora_dark",  "Mother Nature Ballora: Dark Wither (+10% DMG) [Dark only]",                       { dmgMult: 1.10, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal"]}],
-            ["nugget",        "Nightmare Chica: The First (+8% DMG) [Dark only]",                                { dmgMult: 1.08, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal"] }]
+            ["darkelement",   "Dark Element: +3% DMG [Dark only]",                                               { dmgMult: 1.03, elements: ["Dark"] }],
+            ["ballora_dark",  "Mother Nature Ballora: Dark Wither (+10% DMG) [Dark only]",                       { dmgMult: 1.10, elements: ["Dark"]}],
+            ["nugget",        "Nightmare Chica: The First (+8% DMG) [Dark only]",                                { dmgMult: 1.08, elements: ["Dark"] }]
           );
         }
 
@@ -4128,42 +4156,42 @@
           );
         }
 
-        if (String(unit.element || "").toLowerCase() === "electricity" || String(unit.element || "").toLowerCase() === "electricity/light" || String(unit.element || "").toLowerCase() === "water/electricity" || String(unit.element || "").toLowerCase() === "universal") {
+        if (unitHasElement(unit, "electricity")) {
           BOOST_OPTIONS.push(
-            ["aqua_elec",         "Aqua Strike Toy Chica (+10% DMG) [Electricity only]",                         { dmgMult: 1.10, elements: ["Electricity", "Electricity/Light", "Water/Electricity", "Universal"] }],
-            ["babyb",             "Circus Baby: Overcharge (+25% DMG) [Electricity only]",                       { dmgMult: 1.25, elements: ["Electricity", "Electricity/Light", "Water/Electricity", "Universal"] }],
-            ["conductor_shocker", "Ennard: Conductor Shocker (+25% DMG, +40% RNG, -10% CD) [Electricity only]", { dmgMult: 1.25, rngMult: 1.40, cdMult: 0.90, elements: ["Electricity", "Electricity/Light", "Water/Electricity", "Universal"] }],
-            ["conductor_smasher", "Ennard: Conductor Smasher (+40% DMG, +45% RNG) [Electricity only]",          { dmgMult: 1.40, rngMult: 1.45, elements: ["Electricity", "Electricity/Light", "Water/Electricity", "Universal"] }],
-            ["witch_ability",     "Witch of the Sea Scrapbaby: Brace the Storm (+60% DMG) [Water & Electricity only]", { dmgMult: 1.60, duration: 30, cd: 60, elements: ["Electricity", "Electricity/Light", "Water/Electricity", "Universal"] }],
-            ["witch_danger",      "Witch of the Sea Scrapbaby: Dangerous Waters (+20% DMG) [Water & Electricity only]", { dmgMult: 1.20, elements: ["Electricity", "Electricity/Light", "Water/Electricity", "Universal"] }],
-            ["stormbound",        "Stormbound Chica: Electrifying Pressure (+10% DMG) [Water & Electric only]", { dmgMult: 1.10, elements: ["Electricity", "Electricity/Light", "Water", "Water/Electricity", "Universal"] }]
+            ["aqua_elec",         "Aqua Strike Toy Chica (+10% DMG) [Electricity only]",                         { dmgMult: 1.10, elements: ["Electricity"] }],
+            ["babyb",             "Circus Baby: Overcharge (+25% DMG) [Electricity only]",                       { dmgMult: 1.25, elements: ["Electricity"] }],
+            ["conductor_shocker", "Ennard: Conductor Shocker (+25% DMG, +40% RNG, -10% CD) [Electricity only]", { dmgMult: 1.25, rngMult: 1.40, cdMult: 0.90, elements: ["Electricity"] }],
+            ["conductor_smasher", "Ennard: Conductor Smasher (+40% DMG, +45% RNG) [Electricity only]",          { dmgMult: 1.40, rngMult: 1.45, elements: ["Electricity"] }],
+            ["witch_ability",     "Witch of the Sea Scrapbaby: Brace the Storm (+60% DMG) [Water & Electricity only]", { dmgMult: 1.60, duration: 30, cd: 60, elements: ["Electricity"] }],
+            ["witch_danger",      "Witch of the Sea Scrapbaby: Dangerous Waters (+20% DMG) [Water & Electricity only]", { dmgMult: 1.20, elements: ["Electricity"] }],
+            ["stormbound",        "Stormbound Chica: Electrifying Pressure (+10% DMG) [Water & Electric only]", { dmgMult: 1.10, elements: ["Electricity", "Water"] }]
           );
         }
 
-        if (String(unit.element || "").toLowerCase() === "water" || String(unit.element || "").toLowerCase() === "dark/water" || String(unit.element || "").toLowerCase() === "water/electricity" || String(unit.element || "").toLowerCase() === "universal") {
+        if (unitHasElement(unit, "water")) {
           BOOST_OPTIONS.push(
-            ["aqua_water",   "Aqua Strike Toy Chica (+10% DMG) [Water only]",                                     { dmgMult: 1.10, elements: ["Water", "Dark/Water", "Water/Electricity", "Universal"] }],
-            ["fkf_obelisk",  "Frozen King Foxy: Frozen Obelisk (+20% DMG) [Water only]",                          { dmgMult: 1.20, elements: ["Water", "Dark/Water", "Water/Electricity", "Universal"] }],
-            ["ballora_water","Mother Nature Ballora: Water Boost (+10% DMG) [Water only]",                         { dmgMult: 1.10, elements: ["Water", "Dark/Water", "Water/Electricity", "Universal"] }],
-            ["omc_whistle",  "Old Man Consequences: Guiding Whistle (+35% DMG & +30% RNG) [Water only]",        { dmgMult: 1.35, rngMult: 1.30, elements: ["Water", "Dark/Water", "Water/Electricity", "Universal"] }],
-            ["pirate_sea",   "Pirate Withered Foxy: Seafarer (+15%) [Water only]",                                { dmgMult: 1.35, elements: ["Water", "Dark/Water", "Water/Electricity", "Universal"] }],
-            ["witch_ability","Witch of the Sea Scrapbaby: Brace the Storm (+60% DMG) [Water & Electricity only]", { dmgMult: 1.60, duration: 30, cd: 60, elements: ["Water", "Dark/Water", "Water/Electricity", "Universal"] }],
-            ["witch_danger", "Witch of the Sea Scrapbaby: Dangerous Waters (+20% DMG) [Water & Electricity only]", { dmgMult: 1.20, elements: ["Water", "Dark/Water", "Water/Electricity", "Universal"] }],
-            ["stormbound",   "Stormbound Chica: Electrifying Pressure (+10% DMG) [Water & Electric only]",        { dmgMult: 1.10, elements: ["Electricity", "Electricity/Light", "Water", "Water/Electricity", "Universal"] }]
+            ["aqua_water",   "Aqua Strike Toy Chica (+10% DMG) [Water only]",                                     { dmgMult: 1.10, elements: ["Water"] }],
+            ["fkf_obelisk",  "Frozen King Foxy: Frozen Obelisk (+20% DMG) [Water only]",                          { dmgMult: 1.20, elements: ["Water"] }],
+            ["ballora_water","Mother Nature Ballora: Water Boost (+10% DMG) [Water only]",                         { dmgMult: 1.10, elements: ["Water"] }],
+            ["omc_whistle",  "Old Man Consequences: Guiding Whistle (+35% DMG & +30% RNG) [Water only]",        { dmgMult: 1.35, rngMult: 1.30, elements: ["Water"] }],
+            ["pirate_sea",   "Pirate Withered Foxy: Seafarer (+15%) [Water only]",                                { dmgMult: 1.35, elements: ["Water"] }],
+            ["witch_ability","Witch of the Sea Scrapbaby: Brace the Storm (+60% DMG) [Water & Electricity only]", { dmgMult: 1.60, duration: 30, cd: 60, elements: ["Water"] }],
+            ["witch_danger", "Witch of the Sea Scrapbaby: Dangerous Waters (+20% DMG) [Water & Electricity only]", { dmgMult: 1.20, elements: ["Water"] }],
+            ["stormbound",   "Stormbound Chica: Electrifying Pressure (+10% DMG) [Water & Electric only]",        { dmgMult: 1.10, elements: ["Electricity", "Water"] }]
           );
         }
 
-        if (String(unit.element || "").toLowerCase() === "fire" || String(unit.element || "").toLowerCase() === "universal") {
+        if (unitHasElement(unit, "fire")) {
           BOOST_OPTIONS.push(
-            ["aqua_water", "Aqua Strike Toy Chica (+25% DMG) [Fire only]", { dmgMult: 1.25, elements: ["Fire", "Universal"] }],
-            ["scorched", "Springtrap: Agonized (+25% DMG) [Fire only]", { dmgMult: 1.25, elements: ["Fire", "Universal"] }]
+            ["aqua_water", "Aqua Strike Toy Chica (+25% DMG) [Fire only]", { dmgMult: 1.25, elements: ["Fire"] }],
+            ["scorched", "Springtrap: Agonized (+25% DMG) [Fire only]", { dmgMult: 1.25, elements: ["Fire"] }]
           );
         }
 
-        if (["Fire", "Dark", "Dark/Light", "Fire/Rust", "Nature/Dark", "Dark/Water", "Universal", "Dark/Neutral"].indexOf(unit.element) !== -1) {
+        if (unitHasElement(unit, "fire") || unitHasElement(unit, "dark")) {
           BOOST_OPTIONS.push(
             ["hhm", "Headless Horseman Mangle: Hallowed Pumpkin Realm (+85% DMG) [Fire & Dark]",
-              { dmgMult: 1.85, duration: 30, cd: 100, elements: ["Fire", "Dark", "Dark/Light", "Fire/Rust", "Nature/Dark", "Dark/Water", "Universal"] }]
+              { dmgMult: 1.85, duration: 30, cd: 100, elements: ["Fire", "Dark"] }]
           );
         }
 
@@ -4209,25 +4237,25 @@
           );
         }
 
-        if (String(unit.element || "").toLowerCase() === "light" || String(unit.element || "").toLowerCase() === "dark/light" || String(unit.element || "").toLowerCase() === "electricity/light" || String(unit.element || "").toLowerCase() === "universal") {
+        if (unitHasElement(unit, "light")) {
           BOOST_OPTIONS.push(
-            ["anni_boy",          "Anniversary Balloon Boy: The Afterparty (+10% DMG) [Light only]",             { dmgMult: 1.10, elements: ["Light", "Dark/Light", "Electricity/Light", "Universal"] }],
-            ["anni_duo",          "Anniversary Duo: The Grand Celebration (+10% DMG) [Light only]",             { dmgMult: 1.10, elements: ["Light", "Dark/Light", "Electricity/Light", "Universal"] }],
-            ["ftc",               "Funtime Chica: Spotlight (+20% DMG) [Light only]",                            { dmgMult: 1.20, elements: ["Light", "Dark/Light", "Electricity/Light", "Universal"] }],
-            ["lore_light",        "Lore Keeper Shadow Bonnie: Light Boost (-15% CD) [Light only]",               { cdMult: 0.80, elements:  ["Light", "Dark/Light", "Electricity/Light", "Universal"] }],
-            ["puppet_gift",       "Puppet: Gift of Life (+40% RNG) [Light only]",                                { rngMult: 1.40, duration: 10, cd: 20, elements: ["Light", "Dark/Light", "Electricity/Light", "Universal"] }],
-            ["ballora_light_light", "Mother Nature Ballora: Light Boost (+5% DMG, +5% RNG, -5% CD) [Light only]", { dmgMult: 1.05, rngMult: 1.05, cdMult: 0.95, elements: ["Light", "Dark/Light", "Electricity/Light", "Universal"] }],
-            ["puppet_music",      "Puppet: Music Box (+50% DMG) [Light only]",                                   { dmgMult: 1.50, elements: ["Light", "Dark/Light", "Electricity/Light", "Universal"] }],
-            ["starfarer",         "Starfarer Princess: Holy Lake of Golden Stars (+30% DMG) [Light only]",       { dmgMult: 1.30, elements: ["Light", "Dark/Light", "Electricity/Light", "Universal"] }],
-            ["lightelement",      "Light Element: -3% CD [Light only]",                                          { cdMult: 0.97, elements: ["Light", "Dark/Light", "Electricity/Light", "Universal"] }]
+            ["anni_boy",          "Anniversary Balloon Boy: The Afterparty (+10% DMG) [Light only]",             { dmgMult: 1.10, elements: ["Light"] }],
+            ["anni_duo",          "Anniversary Duo: The Grand Celebration (+10% DMG) [Light only]",             { dmgMult: 1.10, elements: ["Light"] }],
+            ["ftc",               "Funtime Chica: Spotlight (+20% DMG) [Light only]",                            { dmgMult: 1.20, elements: ["Light"] }],
+            ["lore_light",        "Lore Keeper Shadow Bonnie: Light Boost (-15% CD) [Light only]",               { cdMult: 0.80, elements: ["Light"] }],
+            ["puppet_gift",       "Puppet: Gift of Life (+40% RNG) [Light only]",                                { rngMult: 1.40, duration: 10, cd: 20, elements: ["Light"] }],
+            ["ballora_light_light", "Mother Nature Ballora: Light Boost (+5% DMG, +5% RNG, -5% CD) [Light only]", { dmgMult: 1.05, rngMult: 1.05, cdMult: 0.95, elements: ["Light"] }],
+            ["puppet_music",      "Puppet: Music Box (+50% DMG) [Light only]",                                   { dmgMult: 1.50, elements: ["Light"] }],
+            ["starfarer",         "Starfarer Princess: Holy Lake of Golden Stars (+30% DMG) [Light only]",       { dmgMult: 1.30, elements: ["Light"] }],
+            ["lightelement",      "Light Element: -3% CD [Light only]",                                          { cdMult: 0.97, elements: ["Light"] }]
           );
         }
 
-        if (["Neutral", "Dark/Neutral", "Dark", "Dark/Light", "Fire/Rust", "Nature/Dark", "Dark/Water", "Universal"].indexOf(unit.element) !== -1) {
+        if (unitHasElement(unit, "neutral") || unitHasElement(unit, "dark")) {
           BOOST_OPTIONS.push(
-            ["veng_hell",     "Vengeful Spirit: Hell of Your Own Making (+20% DMG & +20% RNG) [Dark & Neutral only]", { dmgMult: 1.20, rngMult: 1.20, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal", "Neutral", "Dark/Neutral"] }],
-            ["veng_wither",   "Vengeful Spirit: Hell of Your Own Making (+0.5% DMG per stack) [Dark & Neutral only]", { dmgMult: 1.05, stackKey: "vengwitherStack", maxStacks: 50, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal", "Neutral", "Dark/Neutral"] }],
-            ["veng_anywhere", "Vengeful Spirit: You're Not Going Anywhere (+20% DMG) [Dark & Neutral only]", { dmgMult: 1.20, elements: ["Dark", "Dark/Light", "Nature/Dark", "Dark/Water", "Dark/Neutral", "Universal", "Neutral", "Dark/Neutral"] }],
+            ["veng_hell",     "Vengeful Spirit: Hell of Your Own Making (+20% DMG & +20% RNG) [Dark & Neutral only]", { dmgMult: 1.20, rngMult: 1.20, elements: ["Dark", "Neutral"] }],
+            ["veng_wither",   "Vengeful Spirit: Hell of Your Own Making (+0.5% DMG per stack) [Dark & Neutral only]", { dmgMult: 1.05, stackKey: "vengwitherStack", maxStacks: 50, elements: ["Dark", "Neutral"] }],
+            ["veng_anywhere", "Vengeful Spirit: You're Not Going Anywhere (+20% DMG) [Dark & Neutral only]", { dmgMult: 1.20, elements: ["Dark", "Neutral"] }],
           );
         }
         
@@ -7720,14 +7748,10 @@
             _valueSel._set(currentRarityFilter || "all");
           } else if (currentCategoryMode === "element") {
             opts.push({ value: "all", label: "All Elements", placeholder: true });
-            var seen = {};
-            characters.forEach(function(u) {
-              var e = String(u.element || "").trim();
-              if (!e) return;
-              seen[e.toLowerCase()] = e;
-            });
-            Object.keys(seen).sort().forEach(function(k) {
-              opts.push({ value: k, label: seen[k] });
+            // Only the base elements are listed; duals are reached through
+            // either half rather than appearing as entries of their own.
+            ELEMENT_BASE.slice().sort().forEach(function(e) {
+              opts.push({ value: e.toLowerCase(), label: e });
             });
             _valueSel._rebuild(opts);
             _valueSel._set(norm(currentElementFilter || "all"));
@@ -7783,7 +7807,7 @@
       } else if (currentCategoryMode === "element") {
         categoryMatch =
           currentElementFilter === "all" ||
-          norm(u.element) === norm(currentElementFilter);
+          unitHasElement(u, currentElementFilter);
 
       } else if (currentCategoryMode === "type") {
         categoryMatch = unitHasType(u, currentTypeFilter);

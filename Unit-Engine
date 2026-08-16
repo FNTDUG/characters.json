@@ -4083,6 +4083,7 @@
           ["handunitrng",       "Handunit: Helping Hand (+55% RNG per stack)",                              { rngMult: 1.55, stackKey: "handunitrngStacks", maxStacks: 4 }],
           ["handunitcd",        "Handunit: Helping Hand (-20% CD per stack)",                               { cdMult: 0.80,  stackKey: "handunitcdStacks", maxStacks: 4 }],
           ["helpy",             "Helpy: Little Helper (+5% DMG & +5% RNG per stack)",                      { dmgMult: 1.05, rngMult: 1.05, stackKey: "helpyStacks", maxStacks: 4 }],
+          ["hotdog",            "Hot Dog Guy: Booming Business (+2% RNG per stack)",                      { rngMult: 1.01, stackKey: "hotdogStacks", maxStacks: 18 }],
           ["kronos",            "Kronos Endo Freddy: In Due Time... (+18% DMG & +18% RNG)",                 { dmgMult: 1.18, rngMult: 1.18 }],
           ["lore_wither",       "Lore Keeper Shadow Bonnie: Meticulous Study (+30% DMG)",                  { dmgMult: 1.30 }],
           ["lore_rust",         "Lore Keeper Shadow Bonnie: Rust Boost (+15% DMG)",                       { dmgMult: 1.15 }],

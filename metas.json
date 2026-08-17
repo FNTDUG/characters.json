@@ -318,6 +318,6 @@
         { "name": "Spirit of Henry Emily", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Spirit of William Afton", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]  
-    },
+    }
   }
 }

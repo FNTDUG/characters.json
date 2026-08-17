@@ -60,7 +60,7 @@
       },
       {
         "pageTitle": "ELEMENT METAS",
-        "order": ["Dark 1st", "Rust 2nd", "Water 3rd", "Light 4th", "Fire 5th",, "Nature 6th", "Neutral 7th", "Electricity 8th"]
+        "order": ["Dark 1st", "Rust 2nd", "Water 3rd", "Light 4th", "Fire 5th", "Nature 6th", "Neutral 7th", "Electricity 8th"]
       },
       {
         "pageTitle": "CHALLENGES METAS",
@@ -291,7 +291,7 @@
         { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Withered Freddy", "caption": "" },
         { "name": "Hot Dog Guy", "label": "", "byte": "Pearl", "enchant": "Investor", "chip": "Eye Augmentation", "replacement": "", "caption": "" },
         { "name": "Golden Cupcake", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Buff Potency" }
-      ]  
+      ]
     },
       "Hellfire": {
       "units": [
@@ -301,13 +301,13 @@
         { "name": "Withered Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Molten Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Elizabeth", "caption": "" },
         { "name": "Cannoneer Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
-      ]  
+      ]
     },
       "Nail in the Coffin": {
       "units": [
         { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" }
-      ]  
+      ]
     },
     "The Tower": {
       "units": [
@@ -317,7 +317,7 @@
         { "name": "Spirit of Charlie Emily", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Spirit of Henry Emily", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Spirit of William Afton", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
-      ]  
+      ]
     }
   }
 }

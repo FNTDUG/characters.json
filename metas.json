@@ -160,8 +160,8 @@
         { "name": "Endo 01", "label": "$1k", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Animdude", "label": "", "byte": "Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Witch of the Sea Scrapbaby", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" },
-        { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Overlord Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
+        { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Overlord Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" }
       ]
     },
     "Water 4th": {

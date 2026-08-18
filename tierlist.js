@@ -440,14 +440,14 @@
         "Vengeful Spirit",
         "Deep Sea Calamity Endo",
         "Molten Freddy",
+        "Frozen King Foxy UP",
+        "Grand Strategist Chica UP",
         "Overlord Scott",
         "Theory Crusher Scott",
         "Ragequit Scott",
         "Scott Cawthon",
         "Scott Plushie",
         "Frostmancer Withered Bonnie",
-        "Grand Strategist Chica UP",
-        "Frozen King Foxy"
 
       ],
       "a": [

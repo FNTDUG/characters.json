@@ -531,6 +531,7 @@
       "Golden Freddy": "Grants all units up to +30% Damage (stacks with other Golden Freddys), grants double the previous boost to a random Neutral unit (max of +150%, excludes himself) every 45s for 10s, and +25% Damage and +20% Range to all Neutral units with his Active."
     },
     "stun": {
+      "Pyro Spring Bonnie": "Attacks Stun enemies for 1.8s. Placed highest because of coverage.",
       "Planet Buster Scott": "Attacks Stun enemies for 2s.",
       "Overlord Scott": "Attacks Stun enemies for 2s.",
       "Deep Sea Calamity Endo": "An absurdly good stunner, applying 1.8s Stun on attack in a very large 245° Cone. Also has the potential to Stun Bosses for 2.5s if they get too close.",
@@ -543,7 +544,7 @@
       "Vengeful Spirit": "20% AOE Slow that increases by 1% every 3s up to 30%.",
       "Deep Sea Calamity Endo": "Effectively has 30% AOE Slow.",
       "Molten Freddy": "Effectively has 30% AOE Slow, but is below Calamity Endo due to being Line.",
-      "Planet Buster Scott": "25% AOE Slow every 5s and 25% AOE Slow from his Active, with Micro can consistently keep 50%.",
+      "Planet Buster Scott": "25% AOE Slow every 5s and 25% global Slow from his Active, with Micro can consistently keep 50%.",
       "Overlord Scott": "25% AOE Slow every 5s.",
       "Theory Crusher Scott": "25% AOE Slow every 5s.",
       "Ragequit Scott": "25% AOE Slow every 5s.",

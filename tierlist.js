@@ -131,7 +131,7 @@
         "Arch Angler Toy Bonnie",
       ],
       "b": [
-        "Sweetheart Toy Foxy ",
+        "Sweetheart Toy Foxy",
         "Bones Of The Past Nightmare Freddy",
         "Abyssal Ballora",
         "Yenndo",
@@ -367,7 +367,7 @@
         "Commander Withered Freddy",
         "Mothman Lefty",
         "Phone Guy",
-        "Vessel Plushtrap"
+        "Vessel Plushtrap",
         "Hot Dog Guy NEW",
       ],
       "c": [
@@ -391,7 +391,7 @@
     },
     "stun": {
       "s": [
-        "Pyro Spring Bonnie NEW"
+        "Pyro Spring Bonnie NEW",
         "Planet Buster Scott",
         "Overlord Scott",
         "Deep Sea Calamity Endo",
@@ -451,7 +451,7 @@
 
       ],
       "a": [
-        "Pyro Spring Bonnie NEW"
+        "Pyro Spring Bonnie NEW",
         "Starfarer Princess",
         "Nightmare Chica",
         "Cthulhu Nightmare Foxy",

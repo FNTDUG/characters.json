@@ -158,11 +158,10 @@
     "Electricity 3rd": {
       "units": [
         { "name": "Endo 01", "label": "$1k", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Ennard", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "Stormbound Chica", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "Theory Crusher Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Overlord Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
+        { "name": "Witch of the Sea Scrapbaby", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Animdude", "label": "", "byte": "Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Overlord Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]
     },
     "Water 4th": {
@@ -259,7 +258,7 @@
         { "name": "Unicorn Toy Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Pirate Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
         { "name": "Withered Freddy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Withered Freddy", "caption": "" },
+        { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Withered Freddy", "caption": "" },
         { "name": "Hot Dog Guy", "label": "", "byte": "Pearl", "enchant": "Investor", "chip": "Eye Augmentation", "replacement": "", "caption": "" },
         { "name": "Golden Cupcake", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Buff Potency" }
       ]
@@ -269,7 +268,7 @@
         { "name": "Unicorn Toy Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Pirate Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
         { "name": "Withered Freddy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Withered Freddy", "caption": "" },
+        { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Withered Freddy", "caption": "" },
         { "name": "Hot Dog Guy", "label": "", "byte": "Pearl", "enchant": "Investor", "chip": "Eye Augmentation", "replacement": "", "caption": "" },
         { "name": "Golden Cupcake", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Buff Potency" }
       ]
@@ -279,7 +278,7 @@
         { "name": "Unicorn Toy Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Pirate Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
         { "name": "Withered Freddy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Withered Freddy", "caption": "" },
+        { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Withered Freddy", "caption": "" },
         { "name": "Hot Dog Guy", "label": "", "byte": "Pearl", "enchant": "Investor", "chip": "Eye Augmentation", "replacement": "", "caption": "" },
         { "name": "Golden Cupcake", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Buff Potency" }
       ]
@@ -289,19 +288,19 @@
         { "name": "Unicorn Toy Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Pirate Withered Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Frostmancer Withered Bonnie", "caption": "" },
         { "name": "Withered Freddy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Withered Freddy", "caption": "" },
+        { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Withered Freddy", "caption": "" },
         { "name": "Hot Dog Guy", "label": "", "byte": "Pearl", "enchant": "Investor", "chip": "Eye Augmentation", "replacement": "", "caption": "" },
         { "name": "Golden Cupcake", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Buff Potency" }
       ]
     },
       "Hellfire": {
       "units": [
-        { "name": "Lore Keeper Shadow Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Landslide Funtime Foxy", "caption": "Auto Skip off" },
+        { "name": "Lore Keeper Shadow Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Landslide Funtime Foxy", "caption": "Auto Skip off" },
         { "name": "Scraptrap", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "King in Purple Purple Guy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "King in Purple Purple Guy", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Withered Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Molten Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Elizabeth", "caption": "" },
-        { "name": "Cannoneer Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
+        { "name": "Overlord Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" }
       ]
     },
       "Nail in the Coffin": {

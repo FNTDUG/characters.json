@@ -101,7 +101,7 @@
         { "name": "Vengeful Spirit", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance",   "replacement": "Trash o Tron", "caption": "Buff Potency" },
         { "name": "Overlord Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance",   "replacement": "Frostmancer Withered Bonnie", "caption": "Buff Potency" },
-        { "name": "Samurai Duo", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
+        { "name": "Samurai Duo", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Purifier Mercenary Toy Chica", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Buff Potency" }
       ]
     },
@@ -122,7 +122,7 @@
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Commander Withered Freddy", "caption": "Place on Boss" },
         { "name": "Phone Guy", "label": "",    "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "War Machine Foxy", "caption": "Place on Boss" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Buff Potency" },
-        { "name": "Hot Dog Guy", "label": "", "byte": "Pearl", "chip": "", "enchant": "Investor", "replacement": "", "caption": "" }
+        { "name": "Hot Dog Guy", "label": "", "byte": "Pearl", "enchant": "Investor", "chip": "Eye Augmentation", "replacement": "", "caption": "" }
       ]
     },
     "Boss Raids Grind": {
@@ -132,7 +132,7 @@
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Commander Withered Freddy", "caption": "Place on Boss" },
         { "name": "Phone Guy", "label": "",    "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "War Machine Foxy", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
-        { "name": "Hot Dog Guy", "label": "", "byte": "Pearl", "enchant": "Investor", "chip": "", "replacement": "", "caption": "" }
+        { "name": "Hot Dog Guy", "label": "", "byte": "Pearl", "enchant": "Investor", "chip": "Eye Augmentation", "replacement": "", "caption": "" }
       ]
     },
     "Dark 1st": {

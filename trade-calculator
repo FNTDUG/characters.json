@@ -14,7 +14,7 @@ position:relative;
 }
 
 .trade-frame{
-background:url("https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-11-40-12-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1.6154%3A1%2Coffset-y54&width=532");
+background:url("https://images.fntduserguide.com/game-ui-background.webp");
 background-size:100% 100%;
 background-repeat:no-repeat;
 padding:22px;

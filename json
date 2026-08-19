@@ -24446,7 +24446,7 @@
       "level": 6,
       "cost": 12500,
       "damage": 700,
-      "type": "Cone 90°",
+      "type": "Cone90°",
       "cd": 4.5,
       "range": 27
     },
@@ -24454,7 +24454,7 @@
       "level": 7,
       "cost": 15000,
       "damage": 800,
-      "type": "Cone 90°",
+      "type": "Cone90°",
       "cd": 4.5,
       "range": 28
     },
@@ -24462,7 +24462,7 @@
       "level": 8,
       "cost": 17500,
       "damage": 950,
-      "type": "Cone 90°",
+      "type": "Cone90°",
       "cd": 4.5,
       "range": 29
     },
@@ -24470,7 +24470,7 @@
       "level": 9,
       "cost": 20000,
       "damage": 1150,
-      "type": "Cone 90°",
+      "type": "Cone90°",
       "cd": 4.5,
       "range": 30
     },
@@ -24478,7 +24478,7 @@
       "level": 10,
       "cost": 23000,
       "damage": 1450,
-      "type": "Cone 90°",
+      "type": "Cone90°",
       "cd": 5,
       "range": 31
     },
@@ -24486,7 +24486,7 @@
       "level": 11,
       "cost": 27500,
       "damage": 1700,
-      "type": "Cone 120°",
+      "type": "Cone120°",
       "cd": 5,
       "range": 32
     }
@@ -24495,7 +24495,7 @@
     {
       "title": "Now Let's Get Serious",
       "text": "Max Heat for 20s and prevent it from decreasing. Gain +50% damage and apply 50% burn over 2s in a Full AOE on every attack during the duration. (Upgrade 10+, local CD: 90s).",
-      "activeIcon": ""
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-mar-16-2026-22-59-43-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=347"
     },
     {
       "title": "Cooling System",
@@ -24714,7 +24714,7 @@
     {
       "title": "Avarice",
       "text": "Gain +0.5% damage per 1k cash held (Max +50%). Deposit cash into this unit to gain +1% damage and range per 5k deposited (Max +20%). <br> With 4/5/6 Neutral, Rust, or Nature element units on the team, gain +10%/+20%/+40% damage and +5%/+10%/+20% range (Upgrade 0+, Local CD: 0s).",
-      "activeIcon": ""
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-mar-16-2026-22-59-43-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=347"
     },
     {
       "title": "The Tower's Blessing",
@@ -25088,7 +25088,7 @@
     {
       "title": "Bulldozer",
       "text": "Consume all Scrap and summon a bulldozer to run down the track. On contact deal 30% of this unit's damage per Scrap consumed. Knockback enemies by 0.2 tiles per Scrap consumed; Bosses are stunned for 0.2s per Scrap consumed instead. Refund 5 Scrap when the bulldozer reaches the end of the track. (Upgrade 0+, Local CD: 30s).",
-      "activeIcon": ""
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-mar-16-2026-22-59-43-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=347"
     },
     {
       "title": "Heavy Construction",
@@ -25124,7 +25124,7 @@
   "element": "Neutral",
   "placements": 5,
   "attackType": "No Type",
-  "obtainment": "Boss Raids Shop ()",
+  "obtainment": "Boss Raids Shop (150)",
   "levels": [
     {
       "level": 1,

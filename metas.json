@@ -82,7 +82,7 @@
         { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "War Machine Foxy", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "Nedd Bear", "caption": "Buff Potency" },
-        { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Buff Potency" }
+        { "name": "Hot Dog Guy", "label": "", "byte": "Pearl", "enchant": "Investor", "chip": "Eye Augmentation", "replacement": "", "caption": "" }
       ]
     },
     "Endless Farthest": {
@@ -112,7 +112,7 @@
         { "name": "Commander Withered Freddy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Phone Guy", "label": "", "byte": "KABOOM!", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "War Machine Foxy", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
-        { "name": "Movie Director Freddy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Buff Potency" }
+        { "name": "Hot Dog Guy", "label": "", "byte": "Pearl", "enchant": "Investor", "chip": "Eye Augmentation", "replacement": "", "caption": "" }
       ]
     },
     "Endless Grind": {

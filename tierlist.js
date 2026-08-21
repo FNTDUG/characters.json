@@ -494,7 +494,8 @@
   },
   "msg": {
     "all": {
-      "Planet Buster Scott": "Highest DPS in the game along with the best Stun, great Slow, good support, and Wither.",
+      "Planet Buster Scott": "Highest DPS in the game along with spectacular Stun, great Slow, good support, and Wither.",
+      "Overlord Scott": "A weaker Planet Buster scott, but still very good DPS, spectacular Slow, and good support.",
       "Astral Bonnie": "Incredible DPS, mild support, and fits spectacularly into Light/Dark focused teams.",
       "Deep Sea Calamity Endo": "The best staller by far, having 15% AOE Slow per placement (30% per person bringing him), 1.8s Stun on attack, and Knockback when enemies get too close. Additionally is a good supporting DPS and has an absurdly large 245° Cone attack.",
       "Kronos Endo Freddy": "Great AOE DPS and absurd Stun potential when his passives are maxed out. Additionally provides decent boosts to Rust units, minor boosts to non-Rust units, and can reapply debuffs to enemies.",
@@ -523,6 +524,9 @@
     "support": {
       "Candy Cadet": "Gives +30% Damage and +10% Range to all units in range when in Red Candy mode, then +10% Damage and +30% Range to all units in range when in Yellow Candy mode (mode chosen on placement). Does particularly well when using his Orphans story, doubling his boosts for 30s. Boosts do not stack with other Candy Cadets.",
       "Nature Reclaimed Foxy": "Gives all units in range +30% Damage, +25% Range and -5% CD. Additionally increases base health, allowing you to survive longer against normal enemies.",
+      "Planet Buster Scott": "Gives all units in range +1% Damage and +1% Range for every enemy on the map, a very strong boost when enemies begin to build up in late game.",
+      "Overlord Scott": "Gives all units in range +1% Damage and +1% Range for every enemy on the map, a very strong boost when enemies begin to build up in late game.",
+      "Theory Crusher Scott": "Gives all units in range +1% Damage and +1% Range for every enemy on the map, a very strong boost when enemies begin to build up in late game.",
       "Stitchwraith": "(Jake form) Gives various boosts to nearby units depending on how many enemies have died in this unit's range. 5 kills: +15% Damage, Range, and -5% CD. 25 kills: Previous boosts and +10% crit chance and crit damage. 75 kills: +15% Damage, +25% Range, -5% CD, +20% crit chance and crit damage.",
       "Psychic Friend Fredbear": "Boosts units based on the amount of Stocks (HP) you've lost. All units in range gain -5% CD if no Stocks are lost, +15% Damage and +20% Range if you've lost 1 Stock, and +30% Damage, +25% Range, and -2.5% CD if you've lost 2 Stocks.",
       "Golden Cupcake": "Gains stacks based on the amount of Light units on your team, up to 3. Gives all units in range +10% Damage and +6% Range per stack (max of +30% Damage and +18% Range)",

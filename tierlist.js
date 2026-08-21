@@ -319,7 +319,6 @@
         "Nature Reclaimed Foxy",
         "Psychic Friend Fredbear",
         "Golden Cupcake",
-        "Spring Duo",
       ],
       "a": [
         "Golden Freddy",
@@ -332,6 +331,7 @@
         "No. 1 Crate",
         "Endo 01",
         "Rockin Bonnie",
+        "Spring Duo DOWN",
         "Mechanic Endo 01",
         "Hag Withered Chica",
         "Pyro Spring Bonnie",
@@ -447,6 +447,7 @@
         "Ragequit Scott",
         "Scott Cawthon",
         "Scott Plushie",
+        "Pirate Withered Foxy",
         "Frostmancer Withered Bonnie",
       ],
       "a": [
@@ -455,7 +456,6 @@
         "Nightmare Chica",
         "Cthulhu Nightmare Foxy",
         "Golden Freddy",
-        "Pirate Withered Foxy",
         "Afterbite Withered Golden Freddy",
         "Yenndo"
       ],
@@ -530,11 +530,10 @@
       "Stitchwraith": "(Jake form) Gives various boosts to nearby units depending on how many enemies have died in this unit's range. 5 kills: +15% Damage, Range, and -5% CD. 25 kills: Previous boosts and +10% crit chance and crit damage. 75 kills: +15% Damage, +25% Range, -5% CD, +20% crit chance and crit damage.",
       "Psychic Friend Fredbear": "Boosts units based on the amount of Stocks (HP) you've lost. All units in range gain -5% CD if no Stocks are lost, +15% Damage and +20% Range if you've lost 1 Stock, and +30% Damage, +25% Range, and -2.5% CD if you've lost 2 Stocks.",
       "Golden Cupcake": "Gains stacks based on the amount of Light units on your team, up to 3. Gives all units in range +10% Damage and +6% Range per stack (max of +30% Damage and +18% Range)",
-      "Spring Duo": "Cycles between two sets of boosts, giving +10% Damage, +30% Range, and -5% CD when in Spring Bonnie mode, and +40% Damage and +15% Range in Fredbear mode",
       "Golden Freddy": "Grants all units up to +30% Damage (stacks with other Golden Freddys), grants double the previous boost to a random Neutral unit (max of +150%, excludes himself) every 45s for 10s, and +25% Damage and +20% Range to all Neutral units with his Active."
     },
     "stun": {
-      "Pyro Spring Bonnie": "Attacks Stun enemies for 1.8s. Placed highest because of coverage.",
+      "Pyro Spring Bonnie": "Attacks Stun enemies for 1.8s, with an additional 1s every 15s that bypasses Stun Lockout. Placed highest because of coverage.",
       "Planet Buster Scott": "Attacks Stun enemies for 2s.",
       "Overlord Scott": "Attacks Stun enemies for 2s.",
       "Deep Sea Calamity Endo": "An absurdly good stunner, applying 1.8s Stun on attack in a very large 245° Cone. Also has the potential to Stun Bosses for 2.5s if they get too close.",

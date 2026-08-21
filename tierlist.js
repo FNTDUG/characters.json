@@ -258,8 +258,8 @@
     "starter": {
       "s": [
         "Golden Freddy",
+        "Pirate Withered Foxy UP",
         "Faz-ino Spring Bonnie",
-        "Pirate Withered Foxy",
         "Endo 01",
         "XOR",
         "Unicorn Toy Foxy",

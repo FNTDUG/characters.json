@@ -15099,7 +15099,7 @@
     "skins": [
       {
         "name": "Oxidized Kronos",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/oxidized-kronos-high.png",
+        "image": "https://tr.rbxcdn.com/180DAY-f20c53e7313275ce5491e2b332887fd5/420/420/Image/Png/noFilter",
         "rarity": "secret"
       }
     ],
@@ -25835,19 +25835,18 @@
     }
   ],
   "passiveDamage":{
-    "periodic":[
-      {
-        "label": "Blessed Spear",
-        "everynthattack": 10,
-        "hits": 5,
-        "pctofdamage": 1.50
-      }
-    ],
     "selfboost": [
       {
         "label": "Favor (Boost)",
         "dmgmult": 1.20,
         "rngmult": 1.10
+      },
+      {
+        "label": "Blessed Spear",
+        "dmgmult": 1.50,
+        "hits": 5,
+        "cd": 30,
+        "cdboostable": true
       }
     ],
     "dots":[
@@ -25956,5 +25955,3 @@
   }
 }
 ]
-
-        

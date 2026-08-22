@@ -122,6 +122,7 @@
         "Grinch Foxy",
         "Withered Freddy DOWN",
         "Nightmarionne",
+        "Nightmare Chica UP",
         "Arch Angler Toy Bonnie",
         "Hot Dog Guy DOWN",
         "Movie Director Freddy DOWN",
@@ -140,7 +141,6 @@
         "Barbarian Boy",
         "Sweetheart Toy Foxy DOWN",
         "Leviathan Mangle",
-        "Nightmare Chica",
         "Cursed Jester Spring Bonnie",
         "Scrooge Freddy",
         "Tarnished Spring Bonnie",
@@ -562,7 +562,7 @@
     }
   },
   "notes": {
-    "all": "",
+    "all": "S Tier is top Tier Meta Units. A Tier is usable, good replacements. B & C Tiers is trash",
     "starter": "",
     "support": "",
     "stun": "",

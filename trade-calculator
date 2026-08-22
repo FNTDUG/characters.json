@@ -2367,7 +2367,7 @@ const COSMETICS = [
   { name: "Circus Duo",   imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3upkzb-high.png", rarity: "nightmare",    category: "Cosmetics" },
   { name: "Undead Rider Mike",  type: "skin", imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/undead-rider-mike-skin-high.png", imgShiny: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/shiny-undead-rider-mike-skin-high.png", rarity: "exclusive",    category: "Cosmetics" },
   { name: "Undead Rider Mike",  type: "pet", imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/undead-rider-mike-pet-high-32zftf.png", imgShiny:"https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/shiny-undead-rider-mike-pet-high-x5kixo.png", rarity: "exclusive",    category: "Cosmetics" },
-  { name: "Oxidized Kronos",   imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/oxidized-kronos-high.png", rarity: "secret",    category: "Cosmetics" },
+  { name: "Oxidized Kronos",   imgNormal: "https://tr.rbxcdn.com/180DAY-f20c53e7313275ce5491e2b332887fd5/420/420/Image/Png/noFilter", rarity: "secret",    category: "Cosmetics" },
   { name: "Meltdown Mangle",   imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/meltdown-mangle-high.png", rarity: "mythic",    category: "Cosmetics" },
   { name: "Data Bolt Lolbit",   imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/data-bolt-lolbit-high.png", rarity: "secret",    category: "Cosmetics" },
   { name: "Professor Ennard",   imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/professor-ennard-high.png", rarity: "exclusive",    category: "Cosmetics" },

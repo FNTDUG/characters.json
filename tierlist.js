@@ -597,7 +597,7 @@
    // A tier above S holding one unit. It is not part of every list \u2014 see
    // PBS_MODES \u2014 so the row is built here and hidden per mode in renderMode.
    var TIERS = [
-     {id:'pbs',name:'PBS',stars:'\u2605\u2605\u2605\u2605\u2605'},
+     {id:'pbs',name:'PBS',stars:''},
      {id:'s',  name:'S',  stars:'\u2605\u2605\u2605\u2605'},
      {id:'a',  name:'A',  stars:'\u2605\u2605\u2605'},
      {id:'b',  name:'B',  stars:'\u2605\u2605'},
@@ -606,8 +606,6 @@
    // The lists PBS appears on. Everywhere else the row is hidden and Planet
    // Buster Scott stays in that list's S tier.
    var PBS_MODES = {all:1, slow:1};
-   // Every other row is a crop of one shared photo; this one is its own thing.
-   var PBS_BG = 'linear-gradient(90deg,#000000,#0F051B,#270E51,#4A2B7B,#6F0829,#C40648,#B43178,#EAB5DE)';
 
    var RARITY = {
      uncommon:  'linear-gradient(90deg,#5CFF4D,#3FFF8F)',
@@ -668,17 +666,22 @@
      '.tl-lbl{width:82px;min-width:82px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6px 4px;gap:2px;background:rgba(4,4,14,1);border-radius:5px 0 0 5px;border-right:1px solid rgba(255,255,255,.07)}',
      '.tl-st{font-family:"Press Start 2P",monospace;font-size:clamp(12px,3.5vw,17px);letter-spacing:1px;line-height:1;color:#c862be}',
      '.tl-nm2{font-family:Arial,Helvetica,sans-serif;font-weight:800;font-size:clamp(26px,7vw,36px);line-height:1.1;color:#c862be;text-shadow:0 0 14px #681f62,0 0 30px #681f62}',
-     '.tl-row[data-t=pbs] .tl-st,.tl-row[data-t=pbs] .tl-nm2{color:#EAB5DE;text-shadow:0 0 14px #6F0829,0 0 30px #C40648}',
-     /* Five stars at the shared size would be 90px inside an 82px label. */
-     '.tl-row[data-t=pbs] .tl-st{font-size:clamp(9px,2.6vw,13px)}',
+     /* Where the other tiers have one hue for their label and band, this one has
+        the gradient. Painted into the glyphs via background-clip, so text-shadow
+        has to go — it draws off the glyph shape and would smear under
+        transparent text. drop-shadow gives the same halo off the painted result. */
+     /* Only the light half of the palette. The full ramp ends on #000 against a
+        near-black label, which left the S unreadable. */
+     '.tl-row[data-t=pbs] .tl-nm2{background-image:linear-gradient(90deg,#C40648,#B43178,#EAB5DE);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 0 8px #6F0829) drop-shadow(0 0 18px #C40648)}',
+     '.tl-row[data-t=pbs] .tl-st{display:none}',
      '.tl-row[data-t=s] .tl-st,.tl-row[data-t=s] .tl-nm2{color:#ff7f7f;text-shadow:0 0 14px #8b0000,0 0 30px #8b0000}',
      '.tl-row[data-t=a] .tl-st,.tl-row[data-t=a] .tl-nm2{color:#ffbf7f;text-shadow:0 0 14px #7a3500,0 0 30px #7a3500}',
      '.tl-row[data-t=b] .tl-st,.tl-row[data-t=b] .tl-nm2{color:#ffff6d;text-shadow:0 0 14px #7a7a00,0 0 30px #7a7a00}',
      '.tl-row[data-t=c] .tl-st,.tl-row[data-t=c] .tl-nm2{color:#bfff7f;text-shadow:0 0 14px #3a6600,0 0 30px #3a6600}',
      '.tl-band{flex:1;border-radius:0 5px 5px 0}',
-     /* Darker than the other bands: those tint a photo, this sits over a bright
-        gradient and the cards need to stay readable at the pink end. */
-     '.tl-row[data-t=pbs] .tl-band{background:rgba(15,5,27,0.42)}',
+     /* The other bands are one colour at .18 over the photo; this is the gradient
+        at the same strength, so the row reads as tinted rather than painted. */
+     '.tl-row[data-t=pbs] .tl-band{background:linear-gradient(90deg,rgba(0,0,0,.18),rgba(15,5,27,.18),rgba(39,14,81,.18),rgba(74,43,123,.18),rgba(111,8,41,.18),rgba(196,6,72,.18),rgba(180,49,120,.18),rgba(234,181,222,.18))}',
      '.tl-row[data-t=ss] .tl-band{background:rgba(200,98,190,0.2)}',
      '.tl-row[data-t=s]  .tl-band{background:rgba(255,127,127,0.18)}',
      '.tl-row[data-t=a]  .tl-band{background:rgba(255,191,127,0.18)}',
@@ -1018,12 +1021,12 @@
 
    var list = document.createElement('div');
    list.id = 'tlList';
-   var TIER_BG_POS = {ss:'50% 0%',s:'50% 25%',a:'50% 50%',b:'50% 75%',c:'50% 100%'};
+   var TIER_BG_POS = {pbs:'50% 0%',ss:'50% 0%',s:'50% 25%',a:'50% 50%',b:'50% 75%',c:'50% 100%'};
    TIERS.forEach(function(t) {
      var row = document.createElement('div');
      row.className = 'tl-row';
      row.setAttribute('data-t', t.id);
-     row.style.backgroundImage = (t.id === 'pbs') ? PBS_BG : 'url(' + BG + ')';
+     row.style.backgroundImage = 'url(' + BG + ')';
      row.style.backgroundPosition = TIER_BG_POS[t.id] || '50% 50%';
      var lbl = document.createElement('div');
      lbl.className = 'tl-lbl';

@@ -314,7 +314,7 @@
      "support": {
        "s": [
          "Stitchwraith UP",
-         "Planet Buster Scott UP",
+         "Planet Buster Scott BUG UP",
          "Overlord Scott UP",
          "Theory Crusher Scott UP",
          "Candy Cadet",
@@ -394,7 +394,7 @@
      "stun": {
        "s": [
          "Pyro Spring Bonnie",
-         "Planet Buster Scott",
+         "Planet Buster Scott BUG",
          "Overlord Scott",
          "Deep Sea Calamity Endo",
          "Ennard",
@@ -438,7 +438,7 @@
      },
      "slow": {
        "pbs": [
-         "Planet Buster Scott"
+         "Planet Buster Scott BUG"
        ],
        "s": [
          "Vengeful Spirit",

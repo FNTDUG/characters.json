@@ -25268,5 +25268,693 @@
       }
     ]
   }
+},
+{
+  "name": "DJ 101Bit",
+  "imgNormal": "https://units.fntduserguide.com/units/dj-101bit.png",
+  "imgShiny": "https://units.fntduserguide.com/units/dj-101bit-shiny.png",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support",
+    "Knockback"
+  ],
+  "element": "Electricity",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Merchant Shop",
+
+"modes": {
+  "red": {
+  "label": "Red Track",
+  "role": "damage",
+  "attackType": "Multi",
+"levels": [
+    {
+      "level": 1,
+      "cost": 5000,
+      "damage": 250,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 290,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 4000,
+      "damage": 350,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 420,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 27
+    },
+    {
+      "level": 5,
+      "cost": 8500,
+      "damage": 700,
+      "type": "Circle",
+      "cd": 2,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 11000,
+      "damage": 850,
+      "type": "Cone 75°",
+      "cd": 2,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 14000,
+      "damage": 1000,
+      "type": "Cone 75°",
+      "cd": 2,
+      "range": 32
+    },
+    {
+      "level": 8,
+      "cost": 18000,
+      "damage": 1200,
+      "type": "Cone 75°",
+      "cd": 2,
+      "range": 34
+    }
+  ],
+ "passives": [
+    {
+      "title": "Red Track",
+      "text": "Switch to the red track. This unit and units in range gain +20% damage. Enemies in range take 25% of this unit's damage every second. (Upgrade 0+, Local CD: 0s).",
+      "activeIcon": "https://tr.rbxcdn.com/180DAY-520f998e021c673007af46b0facddef7/420/420/Image/Png/noFilter"
+    },
+    {
+      "title": "Intense Reverb",
+      "text": "On hit knock enemies back 1 tile. Each enemy hit reverberates into the nearest 3 enemies within 5 tiles, dealing 20% damage"
+    }
+  ],
+  "passiveDamage":{
+    "selfboost": [
+      {
+        "label": "Red Track (boost)",
+        "dmgmult": 1.20
+      },
+      {
+        "label": "Reverb",
+        "dmgmult": 1.2
+      }
+    ],
+    "periodic": [
+      {
+        "label": "Red Track (periodic)",
+        "pctofdamage": 0.25,
+        "cd": 1,
+        "cdboostable": false
+      }
+    ]
+  }
+  },
+  "green": {
+    "label": "Green Track",
+    "role": "damage",
+    "attackType": "Multi",
+   "levels": [
+    {
+      "level": 1,
+      "cost": 5000,
+      "damage": 250,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 290,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 4000,
+      "damage": 350,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 420,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 27
+    },
+    {
+      "level": 5,
+      "cost": 8500,
+      "damage": 700,
+      "type": "Circle",
+      "cd": 2,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 11000,
+      "damage": 850,
+      "type": "Cone 75°",
+      "cd": 2,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 14000,
+      "damage": 1000,
+      "type": "Cone 75°",
+      "cd": 2,
+      "range": 32
+    },
+    {
+      "level": 8,
+      "cost": 18000,
+      "damage": 1200,
+      "type": "Cone 75°",
+      "cd": 2,
+      "range": 34
+    }
+    ],
+    "passives": [
+    {
+      "title": "Green Track",
+      "text": "Switch to the green track. This unit and units in range gain +25% range. Enemies in range are slowed by 20%. (Upgrade 0+, Global CD: undefineds).",
+      "activeIcon": "https://tr.rbxcdn.com/180DAY-69c880400caf6ab05820c8fd3e54faba/420/420/Image/Png/noFilter"
+    },
+    {
+      "title": "Intense Reverb",
+      "text": "On hit knock enemies back 1 tile. Each enemy hit reverberates into the nearest 3 enemies within 5 tiles, dealing 20% damage"
+    }
+  ],
+    "passiveDamage": {
+      "selfboost": [
+      {
+        "label": "Green Track (boost)",
+        "rngmult": 1.25
+      },
+      {
+        "label": "Reverb",
+        "dmgmult": 1.2
+      }
+    ]
+  }
+}
+}
+},
+{
+  "name": "High Voltage Rockstar Freddy",
+  "imgNormal": "https://units.fntduserguide.com/units/high-voltage-rockstar-freddy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/high-voltage-rockstar-freddy-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Starter-Midgame",
+  "typeTags": [
+    "Support",
+    "Stun"
+  ],
+  "element": "Electricity",
+  "placements": 2,
+  "attackType": "Ricochet",
+  "obtainment": "Merchant Shop",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 1000,
+      "damage": 500,
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 2750,
+      "damage": 600,
+      "cd": 4,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 4250,
+      "damage": 750,
+      "cd": 4.5,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 950,
+      "cd": 4.5,
+      "range": 26
+    },
+    {
+      "level": 5,
+      "cost": 8250,
+      "damage": 1250,
+      "cd": 5,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 11000,
+      "damage": 1600,
+      "cd": 5,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 14500,
+      "damage": 2000,
+      "cd": 5,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Power Grid",
+      "text": "Gain +5% damage per [Electricity] unit on the team (Max +20%). The nearest 3 [Electricity] units also receive this buff."
+    },
+    {
+      "title": "Static Shock",
+      "text": "Attacks apply [Static], causing enemies to deal 10% of this unit's damage every second to nearby enemies. Whenever this unit or its [Static] hits an enemy gain 1 [Shock]. At 50 [Shock] deal 250% damage in a Full AOE. Damage increases by 50% per [Electricity] unit in range (Max +500%). Stun enemies for 1.5 seconds. At 3+ enemies with [Static] gain +2 ricochets"
+    }
+  ],
+  "passiveDamage":{
+    "dots":[
+      {
+        "label": "Static Shock (dot)",
+        "pctofdamage": 0.1
+      }
+    ],
+    "periodic":[
+      {
+        "label": "Static Shock (max static)",
+        "pctofdamage": 2.50,
+        "cd": 25
+      }
+    ]
+  }
+},
+{
+  "name": "Phantom Withered Chica",
+  "imgNormal": "https://units.fntduserguide.com/units/phantom-withered-chica.png",
+  "imgShiny": "https://units.fntduserguide.com/units/phantom-withered-chica-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Wither",
+    "Slow"
+  ],
+  "element": "Nature/Dark",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Quest Shop",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 5000,
+      "damage": 220,
+      "type": "Cone 90°",
+      "cd": 1.2,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 260,
+      "type": "Cone 90°",
+      "cd": 1.2,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 6000,
+      "damage": 400,
+      "type": "Cone 90°",
+      "cd": 1.5,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 8000,
+      "damage": 480,
+      "type": "Cone 90°",
+      "cd": 1.5,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 10000,
+      "damage": 725,
+      "type": "Cone 90°",
+      "cd": 2,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 12500,
+      "damage": 850,
+      "type": "FullAOE",
+      "cd": 2,
+      "range": 26
+    },
+    {
+      "level": 7,
+      "cost": 15000,
+      "damage": 1000,
+      "type": "FullAOE",
+      "cd": 2,
+      "range": 26
+    }
+  ],
+  "passives": [
+    {
+      "title": "Soulbound",
+      "text": "Enemies in this unit's range gain 1% Dark wither every second (Max 25%). Whenever an enemy with HP more than 300% of this unit's damage is in range deal 25% of this unit's damage every second to all enemies in range. Whenever an enemy enters this unit's range for the first time apply a 20% slow for 8s; when this slow expires, deal 150% damage to that enemy"
+    }
+  ],
+  "passiveDamage":{
+    "selfboost":[
+      {
+        "label": "Soulbound (wither)",
+        "dmgmult": 1.25
+      }
+    ],
+    "periodic":[
+      {
+        "label": "Soulbound (periodic)",
+        "pctofdamage": 0.25,
+        "cd": 1
+      }
+    ]
+  }
+},
+{
+  "name": "Phantom Endo 02",
+  "imgNormal": "https://units.fntduserguide.com/units/phantom-endo-02.png",
+  "imgShiny": "https://units.fntduserguide.com/units/phantom-endo-02-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Stun",
+    "Poision"
+  ],
+  "element": "Dark",
+  "placements": 3,
+  "attackType": "Line",
+  "obtainment": "Quest Shop",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2000,
+      "damage": 480,
+      "cd": 6,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 525,
+      "cd": 6,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 3750,
+      "damage": 575,
+      "cd": 5.5,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 4500,
+      "damage": 650,
+      "cd": 5.5,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 5500,
+      "damage": 750,
+      "cd": 5.5,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 6500,
+      "damage": 850,
+      "cd": 5,
+      "range": 28
+    },
+    {
+      "level": 7,
+      "cost": 7500,
+      "damage": 1000,
+      "cd": 5,
+      "range": 30
+    },
+    {
+      "level": 8,
+      "cost": 9000,
+      "damage": 1200,
+      "cd": 5,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Apparition",
+      "text": "Every 3rd attack follow up for 100% damage and apply 50% poison over 5s. Every time this unit performs a follow-up increase follow-up attack damage by an additional 5% (Cap of 40%). When a follow-up attack hits a slowed enemy in range stun the enemy for 1.2s. Every time a follow-up attack stuns an enemy, deal 80% damage to that enemy (10s cd)"
+    }
+  ],
+  "passiveDamage":{
+    "periodic":[
+      {
+        "label": "Apparition (Max FuA)",
+        "pctofdamage": 1.40,
+        "everynthattack": 3
+      }
+    ],
+    "dots":[
+      {
+        "label": "Apparition (DoT)",
+        "pctofdamage": 0.50,
+        "durationsec": 5,
+        "everynthattack": 3
+      }
+    ]
+  }
+},
+{
+  "name": "White Lily Toy Foxy",
+  "imgNormal": "https://units.fntduserguide.com/units/white-lily-toy-foxy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/white-lily-toy-foxy-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Starter-Midgame",
+  "typeTags": [
+    "Support",
+    "Poison"
+  ],
+  "element": "Nature",
+  "placements": 2,
+  "attackType": "Multi",
+  "obtainment": "Quest Shop",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 1000,
+      "damage": 260,
+      "type": "Circle",
+      "cd": 2,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 3500,
+      "damage": 320,
+      "type": "Circle",
+      "cd": 2,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 5000,
+      "damage": 400,
+      "type": "Circle",
+      "cd": 2,
+      "range": 25
+    },
+    {
+      "level": 4,
+      "cost": 7000,
+      "damage": 500,
+      "type": "Circle",
+      "cd": 2,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 10000,
+      "damage": 950,
+      "type": "Circle",
+      "cd": 3,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 13500,
+      "damage": 1200,
+      "type": "Line",
+      "cd": 3,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Fae's Blessing",
+      "text": "Every 10 attacks gain [Blessed Spear] for 5 attacks. While [Blessed Spear] is active attacks deal +50% damage and deal +2 shield damage, nature units in range become immune to stuns, and every attack generates a stack of [Favor] for 10s (Cap of 3). <br> For every stack of [Favor], activate the following effects: <br>• 1 stack: Nature units in range receive +10% range<br>• 2 stacks: Attacks apply 50% poison over 5s <br>• 3 stacks: Nature units receive +20% damage"
+    }
+  ],
+  "passiveDamage":{
+    "periodic":[
+      {
+        "label": "Blessed Spear",
+        "everynthattack": 10,
+        "hits": 5,
+        "pctofdamage": 1.50
+      }
+    ],
+    "selfboost": [
+      {
+        "label": "Favor (Boost)",
+        "dmgmult": 1.20,
+        "rngmult": 1.10
+      }
+    ],
+    "dots":[
+      {
+        "label": "Favor (DoT)",
+        "pctofdamage": 0.50,
+        "durationsec": 5,
+        "everynthattack": 10
+      }
+    ]
+  }
+},
+{
+  "name": "Malachite Foxy",
+  "imgNormal": "https://units.fntduserguide.com/units/malachite-foxy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/malachite-foxy-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Slow",
+    "Poison",
+    "Stun"
+  ],
+  "element": "Nature",
+  "placements": 1,
+  "attackType": "Cone 120°",
+  "obtainment": "Quest Shop",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 6000,
+      "damage": 250,
+      "cd": 2.5,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 3500,
+      "damage": 300,
+      "cd": 2.5,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 5000,
+      "damage": 350,
+      "cd": 2.5,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 6500,
+      "damage": 400,
+      "cd": 2.3,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 8000,
+      "damage": 475,
+      "cd": 2.3,
+      "range": 30
+    },
+    {
+      "level": 6,
+      "cost": 10000,
+      "damage": 550,
+      "cd": 2,
+      "range": 32
+    },
+    {
+      "level": 7,
+      "cost": 13000,
+      "damage": 650,
+      "cd": 2,
+      "range": 35
+    },
+    {
+      "level": 8,
+      "cost": 17500,
+      "damage": 800,
+      "cd": 2,
+      "range": 35
+    }
+  ],
+  "passives": [
+    {
+      "title": "Gemstone Heart",
+      "text": "On hit apply a stack of Crystallize which applies 50% poison over 5s. If there are 3+ Nature units on the team, follow up for 25% damage and 50% poison. When Crystallize reaches 5 stacks stun the enemy for 2s, apply 200% poison over 10s. While this poison is active, slow for 20%"
+    }
+  ],
+  "passiveDamage":{
+    "dots":[
+      {
+        "label": "Crystallize",
+        "pctofdamage": 0.50,
+        "durationsec": 5
+      },
+      {
+        "label": "Max Crystallize",
+        "pctofdamage": 2.00,
+        "durationsec": 10,
+        "everynthattack": 5
+      }
+    ]
+  }
 }
 ]
+
+        

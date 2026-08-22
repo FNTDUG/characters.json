@@ -15144,7 +15144,7 @@
       "level": 1,
       "cost": 4500,
       "damage": 325,
-      "type": "Cricle",
+      "type": "Circle",
       "cd": 2,
       "range": 21
     },
@@ -15168,7 +15168,7 @@
       "level": 4,
       "cost": 3000,
       "damage": 450,
-      "type": "Cricle",
+      "type": "Circle",
       "cd": 2,
       "range": 24
     },
@@ -15176,7 +15176,7 @@
       "level": 5,
       "cost": 4000,
       "damage": 475,
-      
+      "type": "Circle",
       "cd": 2,
       "range": 25
     },
@@ -15216,7 +15216,7 @@
       "level": 10,
       "cost": 7000,
       "damage": 820,
-      "type": "Cone 45°",
+      "type": "Cone45°",
       "cd": 3.8,
       "range": 26
     },
@@ -15224,7 +15224,7 @@
       "level": 11,
       "cost": 8000,
       "damage": 870,
-      "type": "Cone 45°",
+      "type": "Cone45°",
       "cd": 3.8,
       "range": 26
     },
@@ -15232,7 +15232,7 @@
       "level": 12,
       "cost": 8000,
       "damage": 930,
-      "type": "Cone 45°",
+      "type": "Cone45°",
       "cd": 3.6,
       "range": 27
     },
@@ -15240,7 +15240,7 @@
       "level": 13,
       "cost": 9000,
       "damage": 970,
-      "type": "Cone 45°",
+      "type": "Cone45°",
       "cd": 3.6,
       "range": 27
     },
@@ -15248,7 +15248,7 @@
       "level": 14,
       "cost": 10000,
       "damage": 1040,
-      "type": "Cone 45°",
+      "type": "Cone45°",
       "cd": 3.4,
       "range": 28
     },
@@ -15256,7 +15256,7 @@
       "level": 15,
       "cost": 10000,
       "damage": 1090,
-      "type": "Cone 45°",
+      "type": "Cone45°",
       "cd": 3.4,
       "range": 29
     },
@@ -15264,7 +15264,7 @@
       "level": 16,
       "cost": 11000,
       "damage": 1140,
-      "type": "Cone 75°",
+      "type": "Cone75°",
       "cd": 3.2,
       "range": 30
     },
@@ -15272,7 +15272,7 @@
       "level": 17,
       "cost": 11000,
       "damage": 1195,
-      "type": "Cone 75°",
+      "type": "Cone75°",
       "cd": 3.2,
       "range": 30
     },
@@ -15280,7 +15280,7 @@
       "level": 18,
       "cost": 11500,
       "damage": 1235,
-      "type": "Cone 75°",
+      "type": "Cone75°",
       "cd": 3,
       "range": 30
     },
@@ -15288,7 +15288,7 @@
       "level": 19,
       "cost": 12000,
       "damage": 1300,
-      "type": "Cone 75°",
+      "type": "Cone75°",
       "cd": 3,
       "range": 31
     },
@@ -15296,7 +15296,7 @@
       "level": 20,
       "cost": 12500,
       "damage": 1380,
-      "type": "Cone 75°",
+      "type": "Cone75°",
       "cd": 3,
       "range": 32
     },
@@ -15304,7 +15304,7 @@
       "level": 21,
       "cost": 15000,
       "damage": 1500,
-      "type": "Cone 75°",
+      "type": "Cone75°",
       "cd": 2.8,
       "range": 33
     }
@@ -20471,7 +20471,7 @@
       "level": 5,
       "cost": 10000,
       "damage": 1300,
-      "type": "Cone 120°",
+      "type": "Cone120°",
       "cd": 3,
       "range": 25
     },
@@ -20479,7 +20479,7 @@
       "level": 6,
       "cost": 15000,
       "damage": 1600,
-      "type": "Cone 120°",
+      "type": "Cone120°",
       "cd": 3,
       "range": 28
     }
@@ -20777,7 +20777,7 @@
       "level": 8,
       "cost": 12500,
       "damage": 925,
-      "type": "Cone 120°",
+      "type": "Cone120°",
       "cd": 4.2,
       "range": 32
     },
@@ -20785,7 +20785,7 @@
       "level": 9,
       "cost": 15000,
       "damage": 1050,
-      "type": "Cone 120°",
+      "type": "Cone120°",
       "cd": 4.2,
       "range": 32
     },
@@ -20793,7 +20793,7 @@
       "level": 10,
       "cost": 20000,
       "damage": 1200,
-      "type": "Cone 120°",
+      "type": "Cone120°",
       "cd": 4,
       "range": 34
     },
@@ -20801,7 +20801,7 @@
       "level": 11,
       "cost": 25000,
       "damage": 1400,
-      "type": "Cone 120°",
+      "type": "Cone120°",
       "cd": 4,
       "range": 34
     }
@@ -21113,7 +21113,7 @@
       "level": 5,
       "cost": 7500,
       "damage": 450,
-      "type": "Cone 45°",
+      "type": "Cone45°",
       "cd": 2.2,
       "range": 30
     },
@@ -21121,7 +21121,7 @@
       "level": 6,
       "cost": 10000,
       "damage": 500,
-      "type": "Cone 45°",
+      "type": "Cone45°",
       "cd": 2,
       "range": 32
     }
@@ -21285,7 +21285,7 @@
       "level": 5,
       "cost": 3500,
       "damage": 240,
-      "type": "Cone 65°",
+      "type": "Cone65°",
       "cd": 1.4,
       "range": 28
     },
@@ -21293,7 +21293,7 @@
       "level": 6,
       "cost": 4250,
       "damage": 270,
-      "type": "Cone 65°",
+      "type": "Cone65°",
       "cd": 1.3,
       "range": 30
     },
@@ -21301,7 +21301,7 @@
       "level": 7,
       "cost": 5000,
       "damage": 300,
-      "type": "Cone 65°",
+      "type": "Cone65°",
       "cd": 1.2,
       "range": 30
     }
@@ -21384,7 +21384,7 @@
       "level": 5,
       "cost": 4000,
       "damage": 670,
-      "type": "Cone 60°",
+      "type": "Cone60°",
       "cd": 4,
       "range": 26
     },
@@ -21392,7 +21392,7 @@
       "level": 6,
       "cost": 5250,
       "damage": 800,
-      "type": "Cone 60°",
+      "type": "Cone60°",
       "cd": 4,
       "range": 28
     }
@@ -21576,7 +21576,7 @@
       "level": 7,
       "cost": 15000,
       "damage": 700,
-      "type": "Cone 75°",
+      "type": "Cone75°",
       "cd": 3,
       "range": 31
     },
@@ -21584,7 +21584,7 @@
       "level": 8,
       "cost": 17500,
       "damage": 950,
-      "type": "Cone 75°",
+      "type": "Cone75°",
       "cd": 3,
       "range": 33
     }
@@ -22977,7 +22977,7 @@
       "level": 10,
       "cost": 7000,
       "damage": 1400,
-      "type": "Cone 60°",
+      "type": "Cone60°",
       "cd": 5.6,
       "range": 27
     },
@@ -22985,7 +22985,7 @@
       "level": 11,
       "cost": 8600,
       "damage": 1450,
-      "type": "Cone 60°",
+      "type": "Cone60°",
       "cd": 5.6,
       "range": 28
     },
@@ -22993,7 +22993,7 @@
       "level": 12,
       "cost": 8900,
       "damage": 1500,
-      "type": "Cone 60°",
+      "type": "Cone60°",
       "cd": 5.6,
       "range": 28
     },
@@ -23001,7 +23001,7 @@
       "level": 13,
       "cost": 9200,
       "damage": 1550,
-      "type": "Cone 60°",
+      "type": "Cone60°",
       "cd": 5.6,
       "range": 28
     },
@@ -23009,7 +23009,7 @@
       "level": 14,
       "cost": 9500,
       "damage": 1600,
-      "type": "Cone 60°",
+      "type": "Cone60°",
       "cd": 5.4,
       "range": 28
     },
@@ -23017,7 +23017,7 @@
       "level": 15,
       "cost": 9600,
       "damage": 1650,
-      "type": "Cone 60°",
+      "type": "Cone60°",
       "cd": 5.4,
       "range": 29
     },
@@ -23025,7 +23025,7 @@
       "level": 16,
       "cost": 9700,
       "damage": 1700,
-      "type": "Cone 60°",
+      "type": "Cone60°",
       "cd": 5.2,
       "range": 29
     },
@@ -23033,7 +23033,7 @@
       "level": 17,
       "cost": 9700,
       "damage": 1750,
-      "type": "Cone 60°",
+      "type": "Cone60°",
       "cd": 5.2,
       "range": 29
     },
@@ -23041,7 +23041,7 @@
       "level": 18,
       "cost": 10000,
       "damage": 1800,
-      "type": "Cone 60°",
+      "type": "Cone60°",
       "cd": 5.2,
       "range": 29
     },
@@ -23049,7 +23049,7 @@
       "level": 19,
       "cost": 10000,
       "damage": 1850,
-      "type": "Cone 60°",
+      "type": "Cone60°",
       "cd": 5,
       "range": 30
     },
@@ -23057,7 +23057,7 @@
       "level": 20,
       "cost": 11000,
       "damage": 1900,
-      "type": "Cone 120°",
+      "type": "Cone120°",
       "cd": 5,
       "range": 31
     },
@@ -23065,7 +23065,7 @@
       "level": 21,
       "cost": 11000,
       "damage": 2000,
-      "type": "Cone 120°",
+      "type": "Cone120°",
       "cd": 5,
       "range": 32
     }
@@ -24561,7 +24561,7 @@
   ],
   "element": "Water/Electricity",
   "placements": 1,
-  "attackType": "Cone 75°",
+  "attackType": "Cone75°",
   "obtainment": "Tower Shop (150 Coins)",
   "levels": [
     {
@@ -25334,7 +25334,7 @@
       "level": 6,
       "cost": 11000,
       "damage": 850,
-      "type": "Cone 75°",
+      "type": "Cone75°",
       "cd": 2,
       "range": 30
     },
@@ -25342,7 +25342,7 @@
       "level": 7,
       "cost": 14000,
       "damage": 1000,
-      "type": "Cone 75°",
+      "type": "Cone75°",
       "cd": 2,
       "range": 32
     },
@@ -25350,7 +25350,7 @@
       "level": 8,
       "cost": 18000,
       "damage": 1200,
-      "type": "Cone 75°",
+      "type": "Cone75°",
       "cd": 2,
       "range": 34
     }
@@ -25436,7 +25436,7 @@
       "level": 6,
       "cost": 11000,
       "damage": 850,
-      "type": "Cone 75°",
+      "type": "Cone75°",
       "cd": 2,
       "range": 30
     },
@@ -25444,7 +25444,7 @@
       "level": 7,
       "cost": 14000,
       "damage": 1000,
-      "type": "Cone 75°",
+      "type": "Cone75°",
       "cd": 2,
       "range": 32
     },
@@ -25452,7 +25452,7 @@
       "level": 8,
       "cost": 18000,
       "damage": 1200,
-      "type": "Cone 75°",
+      "type": "Cone75°",
       "cd": 2,
       "range": 34
     }
@@ -25593,7 +25593,7 @@
       "level": 1,
       "cost": 5000,
       "damage": 220,
-      "type": "Cone 90°",
+      "type": "Cone90°",
       "cd": 1.2,
       "range": 22
     },
@@ -25601,7 +25601,7 @@
       "level": 2,
       "cost": 4000,
       "damage": 260,
-      "type": "Cone 90°",
+      "type": "Cone90°",
       "cd": 1.2,
       "range": 23
     },
@@ -25609,7 +25609,7 @@
       "level": 3,
       "cost": 6000,
       "damage": 400,
-      "type": "Cone 90°",
+      "type": "Cone90°",
       "cd": 1.5,
       "range": 24
     },
@@ -25617,7 +25617,7 @@
       "level": 4,
       "cost": 8000,
       "damage": 480,
-      "type": "Cone 90°",
+      "type": "Cone90°",
       "cd": 1.5,
       "range": 25
     },
@@ -25625,7 +25625,7 @@
       "level": 5,
       "cost": 10000,
       "damage": 725,
-      "type": "Cone 90°",
+      "type": "Cone90°",
       "cd": 2,
       "range": 26
     },
@@ -25872,7 +25872,7 @@
   ],
   "element": "Nature",
   "placements": 1,
-  "attackType": "Cone 120°",
+  "attackType": "Cone120°",
   "obtainment": "Quest Shop",
   "levels": [
     {

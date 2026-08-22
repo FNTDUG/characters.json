@@ -2418,8 +2418,13 @@ const COSMETICS = [
   { name: "Frogman Hoax Purple Guy",  type: "skin", imgNormal: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/frogman-hoax-purple-guy-high.png?enable-io=true&crop=1%3A1&width=347", imgShiny: "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-8rximn.png?enable-io=true&crop=1%3A1&width=347", rarity: "secret",    category: "Cosmetics" },
   { name: "Cucurella Freddy",  type: "pet", imgNormal: "https://tr.rbxcdn.com/180DAY-b6172211839718c47e8ec226ffe85d29/420/420/Image/Png/noFilter", rarity: "exclusive",    category: "Cosmetics" },
   { name: "Magician Mr. Hippo",  type: "skin", imgNormal: "https://tr.rbxcdn.com/180DAY-3a584d370f6cc57df108d6f8582b3a5c/420/420/Image/Png/noFilter", rarity: "exclusive",    category: "Cosmetics" },
-  { name: "Gargoyle Vengeful Spirit",  type: "skin", imgNormal: "https://tr.rbxcdn.com/180DAY-629a5c287a3eb565a438aa55638fee94/420/420/Image/Png/noFilter", rarity: "exclusive",    category: "Cosmetics" }
-
+  { name: "Gargoyle Vengeful Spirit",  type: "skin", imgNormal: "https://tr.rbxcdn.com/180DAY-629a5c287a3eb565a438aa55638fee94/420/420/Image/Png/noFilter", rarity: "exclusive",    category: "Cosmetics" },
+  { name: "Magician Mr. Hippo",  type: "pet", imgNormal: "https://tr.rbxcdn.com/180DAY-6d49207467087675d97bf5536b7f6628/420/420/Image/Png/noFilter", rarity: "exclusive",    category: "Cosmetics" },
+  { name: "Nightguard Afton",  type: "pet", imgNormal: "https://tr.rbxcdn.com/180DAY-ba1f96dc11870b69512ac8a1ba79b7e6/420/420/Image/Png/noFilter", rarity: "exclusive",    category: "Cosmetics" },
+  { name: "Island Vacation Dragon Endo 01",  type: "pet", imgNormal: "https://tr.rbxcdn.com/180DAY-6d2b0c567792680b30d00e79c616698a/420/420/Image/Png/noFilter", imgShiny: "https://tr.rbxcdn.com/180DAY-8a2e9c4218082cb6728220883c14e674/420/420/Image/Png/noFilter", rarity: "exclusive",    category: "Cosmetics" },
+  { name: "Ballard of the Streets Ballora",  type: "pet", imgNormal: "https://tr.rbxcdn.com/180DAY-97772683fae41dce9630d3c9b01bda60/420/420/Image/Png/noFilter", imgShiny: "https://tr.rbxcdn.com/180DAY-97772683fae41dce9630d3c9b01bda60/420/420/Image/Png/noFilter", rarity: "exclusive",    category: "Cosmetics" },
+  { name: "Island Vacation Dragon Endo 01",  type: "skin", imgNormal: "https://tr.rbxcdn.com/180DAY-63fc00e007b2b96d64205f890e0fadac/420/420/Image/Png/noFilter", imgShiny: "https://tr.rbxcdn.com/180DAY-bee3a967dd46f4e1f666caef85e26729/420/420/Image/Png/noFilter", rarity: "exclusive",    category: "Cosmetics" },
+  { name: "Ballard of the Streets Ballora",  type: "skin", imgNormal: "https://tr.rbxcdn.com/180DAY-f036a9bc545f308fbbc6b78ab3d93393/420/420/Image/Png/noFilter", imgShiny: "https://tr.rbxcdn.com/180DAY-f3f69a6f01952e0fd5ca12f3d381735c/420/420/Image/Png/noFilter", rarity: "exclusive",    category: "Cosmetics" },
 ];
 
 const GAMEPASSES = [

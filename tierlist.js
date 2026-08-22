@@ -69,6 +69,7 @@
          "Cannoneer Chica",
          "Rockin Bonnie",
          "Starfarer Princess UP",
+         "Nightmare Fredbear UP",
          "Spring Duo DOWN",
          "Shadow Knight Freddy",
          "Shadow Bonnie",
@@ -76,7 +77,6 @@
          "Fathomless Withered Foxy",
          "Deadeye Freddy",
          "Blighted Endo Freddy",
-         "Nightmare Fredbear",
          "Chipper UP",
          "Hag Withered Chica",
          "Fallen Angel Nightmarionne UP",
@@ -562,7 +562,7 @@
      }
    },
    "notes": {
-     "all": "S Tier is top Tier Meta Units. A Tier is usable, good replacements. B & C Tiers is trash",
+     "all": "Rankings are in order first-last. S Tier is top Tier Meta Units. A Tier is usable, good replacements. B & C Tiers is trash",
      "starter": "",
      "support": "",
      "stun": "",

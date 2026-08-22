@@ -5,7 +5,7 @@
   "lists": {
     "all": {
       "s": [
-        "Planet Buster Scott",
+        "Planet Buster Scott BUG",
         "Grand Strategist Chica",
         "Overlord Scott UP",
         "Cthulhu Nightmare Foxy",

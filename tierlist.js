@@ -679,14 +679,12 @@
     '.tl-row[data-t=b] .tl-st,.tl-row[data-t=b] .tl-nm2{color:#ffff6d;text-shadow:0 0 14px #7a7a00,0 0 30px #7a7a00}',
     '.tl-row[data-t=c] .tl-st,.tl-row[data-t=c] .tl-nm2{color:#bfff7f;text-shadow:0 0 14px #3a6600,0 0 30px #3a6600}',
     '.tl-band{flex:1;border-radius:0 5px 5px 0}',
-    /* Two layers. On top, the gradient at .18 — the strength the other bands
-       tint their photo with, so this row reads as tinted rather than painted.
-       Under it a flat lift, because 50% 0% is the darkest crop of the shared
-       photo and the row sat heavier than the rest. A background layer rather
-       than a blend mode or a filter: html2canvas behind the screenshot button
-       does not implement blend modes, and a filter on the row would have washed
-       out the unit cards along with it. */
-    '.tl-row[data-t=pbs] .tl-band{background:linear-gradient(90deg,rgba(0,0,0,.18),rgba(15,5,27,.18),rgba(39,14,81,.18),rgba(74,43,123,.18),rgba(111,8,41,.18),rgba(196,6,72,.18),rgba(180,49,120,.18),rgba(234,181,222,.18)),linear-gradient(rgba(255,214,240,.17),rgba(255,214,240,.17))}',
+    /* The same three stops as the label, so the band and the text are one
+       gradient. Heavier than the other bands' .18 because the full eight-colour
+       ramp at that strength went muddy — its dark half cancelled the light half
+       and the row just looked grubby. Carrying only the light stops, at .5, the
+       photo still reads through and the gradient is unmistakably the text's. */
+    '.tl-row[data-t=pbs] .tl-band{background:linear-gradient(90deg,rgba(196,6,72,.5),rgba(180,49,120,.5),rgba(234,181,222,.5))}',
     '.tl-row[data-t=ss] .tl-band{background:rgba(200,98,190,0.2)}',
     '.tl-row[data-t=s]  .tl-band{background:rgba(255,127,127,0.18)}',
     '.tl-row[data-t=a]  .tl-band{background:rgba(255,191,127,0.18)}',

@@ -318,15 +318,12 @@
 <script>
 /* ── EDIT THIS LIST ── */
 var UPDATED_UNITS = [
-"Hot Dog Guy",
-"Spirit of William Afton",
-"Pyro Spring Bonnie",
-"Spirit of Charlie Emily",
-"Spirit of Henry Emily",
-"Ocular Nightmare BB",
-"King in Purple Purple Guy",
-"Dirt Boss Freddy",
-"Void Shaper Shadow Freddy"
+"Phantom Withered Chica",
+"DJ 101Bit",
+"High Voltage Rockstar Freddy",
+"Malachite Foxy",
+"Phantom Endo 02",
+"White Lily Toy Foxy"
 
 ];
 /* ────────────────── */

@@ -25460,7 +25460,7 @@
     "passives": [
     {
       "title": "Green Track",
-      "text": "Switch to the green track. This unit and units in range gain +25% range. Enemies in range are slowed by 20%. (Upgrade 0+, Global CD: undefineds).",
+      "text": "Switch to the green track. This unit and units in range gain +25% range. Enemies in range are slowed by 20%. (Upgrade 0+, Local CD: 0s).",
       "activeIcon": "https://tr.rbxcdn.com/180DAY-69c880400caf6ab05820c8fd3e54faba/420/420/Image/Png/noFilter"
     },
     {

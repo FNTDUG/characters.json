@@ -26,7 +26,6 @@
          "Pirate Withered Foxy UP",
          "Frostmancer Withered Bonnie",
          "Animdude UP",
-         "Vengeful Spirit UP",
          "Old Man Consequences UP",
          "XOR DOWN",
          "Faz-ino Spring Bonnie DOWN",

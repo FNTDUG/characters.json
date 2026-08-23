@@ -25495,7 +25495,7 @@
   ],
   "element": "Electricity",
   "placements": 2,
-  "attackType": "Ricochet",
+  "attackType": "Ricochet X3",
   "obtainment": "Merchant Shop",
   "levels": [
     {

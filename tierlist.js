@@ -417,7 +417,7 @@
         "Lich Shadow Bonnie NEW",
         "Nightmare Fredbear",
         "Circus Baby",
-        "Aqua Strike Toy Chica NEW"
+        "Aqua Strike Toy Chica NEW",
       ],
       "b": [
         "Abyssal Ballora",
@@ -433,8 +433,8 @@
         "Molten Freddy NEW",
         "Fathomless Withered Foxy NEW",
         "Nightmare Mangle",
-        "Roadkill Phantom Foxy NEW"
-        "Yenndo"
+        "Roadkill Phantom Foxy NEW",
+        "Yenndo",
         "Foxy.exe NEW",
         "Phantom Endo 02 NEW",
       ],

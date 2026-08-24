@@ -397,22 +397,27 @@
         "Planet Buster Scott BUG",
         "Overlord Scott",
         "Deep Sea Calamity Endo",
+        "Samurai Duo NEW",
         "Ennard",
         "Krampus Purple Guy",
         "Cthulhu Nightmare Foxy",
         "Grand Strategist Chica",
       ],
       "a": [
+        "Malachite Foxy NEW",
         "Pirate Withered Foxy",
         "Frostmancer Withered Bonnie",
+        "Mecha-Lizabeth NEW",
         "Kronos Endo Freddy",
         "Dirt Boss Freddy DOWN",
         "Mangle",
         "Chicas Magic Rainbow",
         "Trash o Tron",
         "Pan Stan",
+        "Lich Shadow Bonnie NEW",
         "Nightmare Fredbear",
         "Circus Baby",
+        "Aqua Strike Toy Chica NEW"
       ],
       "b": [
         "Abyssal Ballora",
@@ -425,15 +430,23 @@
         "Lore Keeper Shadow Bonnie",
         "Vengeful Spirit",
         "Animdude",
+        "Molten Freddy NEW",
+        "Fathomless Withered Foxy NEW",
         "Nightmare Mangle",
+        "Roadkill Phantom Foxy NEW"
         "Yenndo"
+        "Foxy.exe NEW",
+        "Phantom Endo 02 NEW",
       ],
       "c": [
         "Gaia Chica",
         "Michael Afton",
         "Time Lord Withered Freddy",
+        "Amalgam NEW",
+        "Into the Pit Spring Bonnie NEW",
         "Old Man Consequences",
-        "Afterbite Withered Golden Freddy"
+        "Afterbite Withered Golden Freddy",
+        "High Voltage Rockstar Freddy BUG NEW"
       ]
     },
     "slow": {

@@ -314,11 +314,11 @@
     "support": {
       "s": [
         "Stitchwraith UP",
+        "Candy Cadet",
+        "Nature Reclaimed Foxy",
         "Planet Buster Scott BUG UP",
         "Overlord Scott UP",
         "Theory Crusher Scott UP",
-        "Candy Cadet",
-        "Nature Reclaimed Foxy",
         "Psychic Friend Fredbear",
         "Golden Cupcake",
       ],
@@ -508,7 +508,7 @@
         "Mecha-Lizabeth BUG"
       ]
     },
-    "summoners": {
+    "summon": {
       "s": [
         "XOR",
         "Yeti Oni Bonnie"
@@ -599,7 +599,7 @@
       "Frozen King Foxy": "25% AOE Slow.",
       "Grand Strategist Chica": "15% AOE Slow + 10% Cone 180 Slow."
     },
-    "summoners": {
+    "summon": {
       "XOR": "",
       "Yeti Oni Bonnie": ""
     }
@@ -610,7 +610,7 @@
     "support": "",
     "stun": "",
     "slow": "",
-    "summoners": ""
+    "summon": ""
   }
 };
   var lists = cfg.lists || {};
@@ -1041,7 +1041,7 @@
   var modeDiv = document.createElement('div');
   modeDiv.className = 'tl-mode';
   modeDiv.id = 'tlModes';
-  [['all','Every Unit'],['starter','Starter'],['support','Support'],['stun','Stun'],['slow','Slow'],['summoners','Summoners']].forEach(function(p) {
+  [['all','Every Unit'],['starter','Starter'],['support','Support'],['stun','Stun'],['slow','Slow'],['summon','Summon']].forEach(function(p) {
     var b = document.createElement('button');
     b.className = 'tl-mb' + (p[0] === 'all' ? ' on' : '');
     b.setAttribute('data-m', p[0]);
@@ -1261,7 +1261,7 @@
     try { history.replaceState(null, '', np + location.search + location.hash); } catch (e) {}
   }
   (function () {
-    var VALID = { all: 1, starter: 1, support: 1, stun: 1, slow: 1, summoners: 1 };
+    var VALID = { all: 1, starter: 1, support: 1, stun: 1, slow: 1, summon: 1 };
     var seg = (location.pathname.match(/tierlists-1\/([^\/?#]+)/) || [])[1];
     if (seg) { seg = decodeURIComponent(seg).toLowerCase(); if (VALID[seg]) mode = seg; }
     Array.prototype.forEach.call(document.querySelectorAll('.tl-mb'), function (x) {

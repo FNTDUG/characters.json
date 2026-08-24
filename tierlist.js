@@ -494,6 +494,32 @@
          "Orville Elephant",
          "Roadkill Phantom Foxy"
        ]
+     },
+    "Summoners": {
+       "s": [
+         "XOR",
+         "Yeti Oni Bonnie"
+       ],
+       "a": [
+         "Purple Guy",
+         "Dirt Boss Freddy",
+         "Mechanic Endo 01",
+         "Lich Shadow Bonnie",
+         "Shepherd Fredbear",
+         "Undead Chica",
+         "Gravelord",
+         "Henry Emily"
+       ],
+       "b": [
+         "Party Never Ends Cupcake",
+         "Toy Maker Mangle",
+         "Conductor Toy Freddy"
+       ],
+       "c": [
+         "Freddkes",
+         "King in Purple Purple Guy",
+         "Puppet"
+       ]
      }
    },
    "msg": {
@@ -559,14 +585,18 @@
        "Frostmancer Withered Bonnie": "RNG based AOE Slow that can go up to 45%.",
        "Frozen King Foxy": "25% AOE Slow.",
        "Grand Strategist Chica": "15% AOE Slow + 10% Cone 180 Slow."
-     }
+     },
+    "Summoners": {
+       "XOR": "",
+       "Yeti Oni Bonnie": ""
    },
    "notes": {
      "all": "Rankings are in order first-last. S Tier is top Tier Meta Units. A Tier is usable, good replacements. B & C Tiers is trash",
      "starter": "",
      "support": "",
      "stun": "",
-     "slow": ""
+     "slow": "",
+     "Summoners": ""
    }
  };
    var lists = cfg.lists || {};

@@ -407,7 +407,7 @@
         "Malachite Foxy NEW",
         "Pirate Withered Foxy",
         "Frostmancer Withered Bonnie",
-        "Mecha-Lizabeth NEW",
+        "Mecha-Lizabeth BUG NEW",
         "Kronos Endo Freddy",
         "Dirt Boss Freddy BUG DOWN",
         "Mangle",
@@ -500,12 +500,12 @@
         "Crying Child",
         "Scooped Michael",
         "Michael Afton",
-        "Mecha-Lizabeth",
         "Elizabeth",
         "Happy Frog",
         "Pigpatch",
         "Orville Elephant",
-        "Roadkill Phantom Foxy"
+        "Roadkill Phantom Foxy",
+        "Mecha-Lizabeth BUG"
       ]
     },
     "summoners": {

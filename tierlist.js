@@ -409,7 +409,7 @@
         "Frostmancer Withered Bonnie",
         "Mecha-Lizabeth NEW",
         "Kronos Endo Freddy",
-        "Dirt Boss Freddy DOWN",
+        "Dirt Boss Freddy BUG DOWN",
         "Mangle",
         "Chicas Magic Rainbow",
         "Trash o Tron",
@@ -515,7 +515,7 @@
       ],
       "a": [
         "Purple Guy",
-        "Dirt Boss Freddy",
+        "Dirt Boss Freddy BUG",
         "Mechanic Endo 01",
         "Lich Shadow Bonnie",
         "Shepherd Fredbear",

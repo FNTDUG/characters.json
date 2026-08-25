@@ -5031,6 +5031,7 @@
           "bleed":      "Bleed",
           "burn":       "Burn",
           "death":      "Death",
+          "income":     "Income",
           "knockback":  "Knockback",
           "malware":    "Malware",
           "poison":     "Poison",
@@ -5039,11 +5040,10 @@
           "slow":       "Slow",
           "soaked":     "Soaked",
           "stun":       "Stun",
-          "wither":     "Wither",
-          "income":     "Income",
           "summon":     "Summon",
           "support":    "Support",
-          "trap":       "Trap"
+          "trap":       "Trap",
+          "wither":     "Wither"
         };
         var key = String(t || "").trim().toLowerCase();
         return allowed[key] || "";

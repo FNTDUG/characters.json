@@ -7032,10 +7032,10 @@
 
         if (needed <= available) return;
 
-        var scale = (available - 8) / needed;
+        var scale = (available - (fill ? 20 : 8)) / needed;
         if (scale < 0.60) scale = 0.60;
 
-        if (fill) table.style.setProperty("width", (available / scale) + "px", "important");
+        if (fill) table.style.setProperty("width", (container.clientWidth / scale) + "px", "important");
 
         table.style.transformOrigin = origin || "top center";
         table.style.transform = "scale(" + scale.toFixed(3) + ")";

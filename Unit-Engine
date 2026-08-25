@@ -2471,8 +2471,25 @@
             }
 
             
+            var _costText = (function() {
+              var _cLvls = (getActiveLevels(unit, modeKey).levels || []);
+              var _cMult = getBuffEffects(unit).costMult || 1;
+              var _cSum  = 0, _cAny = false;
+              for (var _ci = 0; _ci < _cLvls.length; _ci++) {
+                var _cv = Number(_cLvls[_ci].cost);
+                if (isFinite(_cv)) { _cSum += _cv; _cAny = true; }
+              }
+              if (!_cAny) return "";
+              var _cTot = Math.round(_cSum * _cMult);
+              var _cTxt = _cTot >= 1000
+                ? (Math.floor(_cTot / 100) / 10).toFixed(1).replace(/\.0$/, "") + "k"
+                : String(_cTot);
+              return "<span style=\"color:#681f62\"> | </span><span style=\"color:#00ff00\">Cost:&nbsp;$"
+                   + _cTxt + "</span>";
+            })();
+
             html += "<tr><th style=\"" + th2 + "\">" + header + "</th></tr>";
-            html += "<tr><td><span style=\"color:#ff8c00\">DPS:&nbsp;" + maxedText + "</span>" + _rngText + "</td></tr>";
+            html += "<tr><td><span style=\"color:#ff8c00\">DPS:&nbsp;" + maxedText + "</span>" + _rngText + _costText + "</td></tr>";
 
             
             var _rngByLabel = {};

@@ -6939,7 +6939,7 @@
           requestAnimationFrame(function() {
             requestAnimationFrame(function() {
               ueFitContainer(statsContainer);
-              ueFitContainer(_sumBox, "top left");
+              ueFitContainer(_sumBox, "top left", true);
             });
           });
           if (typeof ResizeObserver !== "undefined") {
@@ -6951,7 +6951,7 @@
             if (_sumBox) {
               var _fitRO2 = new ResizeObserver(function() {
                 _fitRO2.disconnect();
-                ueFitContainer(_sumBox, "top left");
+                ueFitContainer(_sumBox, "top left", true);
               });
               _fitRO2.observe(_sumBox);
             }
@@ -7016,7 +7016,7 @@
         }
       }
         
-      function ueFitContainer(container, origin) {
+      function ueFitContainer(container, origin, fill) {
         if (!container) return;
         if (window.innerWidth <= 768) return;
 
@@ -7024,6 +7024,7 @@
         if (!table) return;
 
         table.style.transform = "";
+        table.style.removeProperty("width");
         container.style.height = "";
 
         var available = container.getBoundingClientRect().width;
@@ -7033,6 +7034,8 @@
 
         var scale = (available - 8) / needed;
         if (scale < 0.60) scale = 0.60;
+
+        if (fill) table.style.setProperty("width", (available / scale) + "px", "important");
 
         table.style.transformOrigin = origin || "top center";
         table.style.transform = "scale(" + scale.toFixed(3) + ")";

@@ -9,12 +9,12 @@
       ],
       "s": [
         "Grand Strategist Chica",
-        "Overlord Scott UP",
         "Cthulhu Nightmare Foxy",
         "Nature Reclaimed Foxy",
         "Golden Freddy",
       ],
       "a": [
+        "Overlord Scott UP",
         "Astral Bonnie DOWN",
         "Pyro Spring Bonnie",
         "Gaia Chica",

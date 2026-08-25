@@ -2489,6 +2489,7 @@
             })();
 
             html += "<tr><th style=\"" + th2 + "\">" + header + "</th></tr>";
+            dpsBox.setAttribute("data-ue-summary", "1");
             html += "<tr><td><span style=\"color:#ff8c00\">DPS:&nbsp;" + maxedText + "</span>" + _rngText + _costText + "</td></tr>";
 
             
@@ -6933,9 +6934,12 @@
       scrollWrap.appendChild(tabs);
       wrapper.appendChild(scrollWrap);
 
+          var _sumBox = (dpsBox && dpsBox.getAttribute("data-ue-summary") === "1") ? dpsBox : null;
+
           requestAnimationFrame(function() {
             requestAnimationFrame(function() {
               ueFitContainer(statsContainer);
+              ueFitContainer(_sumBox, "top left");
             });
           });
           if (typeof ResizeObserver !== "undefined") {
@@ -6944,6 +6948,13 @@
               ueFitContainer(statsContainer);
             });
             _fitRO.observe(statsContainer);
+            if (_sumBox) {
+              var _fitRO2 = new ResizeObserver(function() {
+                _fitRO2.disconnect();
+                ueFitContainer(_sumBox, "top left");
+              });
+              _fitRO2.observe(_sumBox);
+            }
           }
 
           
@@ -7005,7 +7016,7 @@
         }
       }
         
-      function ueFitContainer(container) {
+      function ueFitContainer(container, origin) {
         if (!container) return;
         if (window.innerWidth <= 768) return;
 
@@ -7023,7 +7034,7 @@
         var scale = (available - 8) / needed;
         if (scale < 0.60) scale = 0.60;
 
-        table.style.transformOrigin = "top center";
+        table.style.transformOrigin = origin || "top center";
         table.style.transform = "scale(" + scale.toFixed(3) + ")";
         container.style.height = (table.offsetHeight * scale) + "px";
       }
@@ -8006,6 +8017,7 @@
           clampHoriz(el);
         });
       })();
+
         
       })();
           })

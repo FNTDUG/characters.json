@@ -594,7 +594,8 @@
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
-      "Income"
+      "Income",
+      "Trap"
     ],
     "element": "Nature",
     "placements": 2,
@@ -1188,7 +1189,8 @@
     "typeTags": [
       "Burn",
       "Slow",
-      "Stun"
+      "Stun",
+      "Trap"
     ],
     "element": "Rust",
     "placements": 2,
@@ -5903,7 +5905,8 @@
     "rarity": "exclusive",
     "typeMain": "Midgame",
     "typeTags": [
-      "Burn"
+      "Burn",
+      "Trap"
     ],
     "element": "Fire",
     "placements": 2,
@@ -7409,7 +7412,8 @@
     "rarity": "secret",
     "typeMain": "Starter-Midgame",
     "typeTags": [
-      "Burn"
+      "Burn",
+      "Trap"
     ],
     "element": "Fire",
     "placements": 4,
@@ -12702,7 +12706,8 @@
     "typeMain": "Midgame-Endgame",
     "typeTags": [
       "Slow",
-      "Bleed"
+      "Bleed",
+      "Trap"
     ],
     "element": "Electricity",
     "placements": 2,
@@ -13013,7 +13018,8 @@
     "rarity": "secret",
     "typeMain": "Midgame",
     "typeTags": [
-      "Slow"
+      "Slow",
+      "Trap"
     ],
     "element": "Electricity",
     "placements": 2,
@@ -14354,7 +14360,8 @@
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
-      "Burn"
+      "Burn",
+      "Trap"
     ],
     "element": "Fire",
     "placements": 2,
@@ -15460,7 +15467,8 @@
       "Support",
       "Knockback",
       "Wither",
-      "Stun"
+      "Stun",
+      "Trap"
     ],
     "element": "Electricity/Light",
     "placements": 1,
@@ -16173,7 +16181,8 @@
       "Stun",
       "Support",
       "Anti-Regen",
-      "Bleed"
+      "Bleed",
+      "Trap"
     ],
     "element": "Rust",
     "placements": 1,
@@ -17853,7 +17862,8 @@
     "rarity": "rare",
     "typeMain": "Starter",
     "typeTags": [
-      "Stun"
+      "Stun",
+      "Trap"
     ],
     "element": "Water",
     "placements": 3,
@@ -19081,7 +19091,8 @@
       "Support",
       "Stun",
       "Income",
-      "Rooted"
+      "Rooted",
+      "Trap"
     ],
     "element": "Nature/Dark",
     "placements": 1,
@@ -20868,7 +20879,8 @@
   "typeMain": "Endgame",
   "typeTags": [
     "Slow",
-    "Stun"
+    "Stun",
+    "Trap"
   ],
   "element":"Electricity",
   "placements": 1,
@@ -24042,7 +24054,8 @@
   "rarity": "mythic",
   "typeMain": "Endgame",
   "typeTags": [
-    "Death"
+    "Death",
+    "Trap"
   ],
   "element": "Dark",
   "placements": 1,

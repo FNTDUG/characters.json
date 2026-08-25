@@ -2480,7 +2480,8 @@
                 if (isFinite(_cv)) { _cSum += _cv; _cAny = true; }
               }
               if (!_cAny) return "";
-              var _cTot = Math.round(_cSum * _cMult);
+              var _cPlc = (typeof getPlc === "function") ? (getPlc(unit) || 1) : 1;
+              var _cTot = Math.round(_cSum * _cMult * _cPlc);
               var _cTxt = _cTot >= 1000
                 ? (Math.floor(_cTot / 100) / 10).toFixed(1).replace(/\.0$/, "") + "k"
                 : String(_cTot);

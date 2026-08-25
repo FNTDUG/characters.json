@@ -24107,7 +24107,7 @@
         "passives": [
     {
       "title": "Count the Ways",
-      "text": "Every 45s, rotate between two attack modes: <br> Bon Bon: Line attack every secon that deals 75% damage."
+      "text": "Every 45s, rotate between two attack modes:<br>Bon Bon: Line attack every second that deals 75% damage."
     },
     {
       "title": "One by One",
@@ -24189,7 +24189,7 @@
         "passives": [
     {
       "title": "Count the Ways",
-      "text": "Every 45s, rotate between two attack modes: Dual-Bladed Saw Cone attack that deals 125% damage, applies 50% Bleed forr 5s, and Death."
+      "text": "Every 45s, rotate between two attack modes: Dual-Bladed Saw Cone attack that deals 125% damage, applies 50% Bleed for 5s, and Death."
     },
     {
       "title": "One by One",

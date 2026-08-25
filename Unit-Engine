@@ -5042,7 +5042,8 @@
           "wither":     "Wither",
           "income":     "Income",
           "summon":     "Summon",
-          "support":    "Support"
+          "support":    "Support",
+          "trap":       "Trap"
         };
         var key = String(t || "").trim().toLowerCase();
         return allowed[key] || "";
@@ -7070,7 +7071,8 @@
           "Wither",
           "Support",
           "Income",
-          "Summon"
+          "Summon",
+          "Trap"
         ];
 
         function norm(v) { return String(v || "").trim().toLowerCase(); }

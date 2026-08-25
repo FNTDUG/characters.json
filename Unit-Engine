@@ -7060,6 +7060,7 @@
           "Bleed",
           "Burn",
           "Death",
+          "Income",
           "Knockback",
           "Malware",
           "Poison",
@@ -7068,11 +7069,10 @@
           "Slow",
           "Soaked",
           "Stun",
-          "Wither",
-          "Support",
-          "Income",
           "Summon",
-          "Trap"
+          "Support",
+          "Trap",
+          "Wither"
         ];
 
         function norm(v) { return String(v || "").trim().toLowerCase(); }

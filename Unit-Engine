@@ -4161,7 +4161,7 @@
             ["chipper_nature", "Chipper: Stock Stacker (+1.5% DMG, +1.5% RNG per stack) [Nature only]", { dmgMult: 1.015, rngMult: 1.015, stackKey: "chippernatureStacks", maxStacks: 20 }],
             ["lumber",         "Chipper: Lumber Co. (+20% DMG) [Nature only]",                          { dmgMult: 1.20, elements: ["Nature"] }],
             ["gaia_domain",    "Gaia Chica: Growmain Expansion (+30% DMG, -10% CD) [Nature only]",      { dmgMult: 1.30, cdMult: 0.90, duration: 30, cd: 90, elements: ["Nature"] }],
-            ["lily_fox",    "White Lily Toy Foxy: Fae's Blessing (+20% DMG, +10% RNG) [Nature only]",   { dmgMult: 1.20, rnMult: 1.10, duration: 10, cd: 30, elements: ["Nature"] }]
+            ["lily_fox",    "White Lily Toy Foxy: Fae's Blessing (+20% DMG, +10% RNG) [Nature only]",   { dmgMult: 1.20, rngMult: 1.10, duration: 10, cd: 30, elements: ["Nature"] }]
           );
         }
 

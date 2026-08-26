@@ -4102,8 +4102,8 @@
           ["cupcake",           "Cupcake: Birthday Boy (+3% DMG/RNG, -3% CD)",                              { dmgMult: 1.03, rngMult: 1.03, cdMult: 0.97 }],
           ["balloon",           "Balloon Boy: Stolen Batteries (+10% RNG per stack)",                        { rngMult: 1.10, stackKey: "balloonStacks", maxStacks: 2 }],
           ["barb",              "Barbarian Boy: War Cry (+15% DMG per stack)",                               { dmgMult: 1.15, stackKey: "barbStacks", maxStacks: 2 }],
-          ["dj_red",            "DJ 101bit: Red Track (+20% DMG)",                                           { dmgMult: 1.20}],
-          ["dj_green",          "DJ 101bit: Green Track (+25% RNG)",                                         { rngMult: 1.20}],
+          ["dj_red",            "DJ 101bit: Red Track (+20% DMG per stack)",                                 { dmgMult: 1.20, stackKey: "djredStacks", maxStacks: 4}],
+          ["dj_green",          "DJ 101bit: Green Track (+25% RNG per stack)",                               { rngMult: 1.20, stackKey: "djgreenStacks", maxStacks: 4}],
           ["endo_01",           "Endo 01: Endo CPU (+15% DMG)",                                              { dmgMult: 1.15 }],
           ["funtime",           "Funtime Foxy: Showtime! (Averaged, +12.86% DMG/RNG)",                      { dmgMult: 1.1286, rngMult: 1.1286 }],
           ["golden_blessing",   "Golden Cupcake: Golden Blessing (+10% DMG & +6% RNG per stack)",           { dmgMult: 1.10, rngMult: 1.06, stackKey: "goldenBlessingStacks", maxStacks: 3 }],
@@ -4115,7 +4115,7 @@
           ["handunitrng",       "Handunit: Helping Hand (+55% RNG per stack)",                              { rngMult: 1.55, stackKey: "handunitrngStacks", maxStacks: 4 }],
           ["handunitcd",        "Handunit: Helping Hand (-20% CD per stack)",                               { cdMult: 0.80,  stackKey: "handunitcdStacks", maxStacks: 4 }],
           ["helpy",             "Helpy: Little Helper (+5% DMG & +5% RNG per stack)",                      { dmgMult: 1.05, rngMult: 1.05, stackKey: "helpyStacks", maxStacks: 4 }],
-          ["Highvolt",          "High Voltage Rockstar Freddy: Power Grid (+5% DMG per stack)",             { dmgMult: 1.05, stackKey: "voltStacks", maxStacks: 4 }],
+          ["Highvolt",          "High Voltage Rockstar Freddy: Power Grid (+5% DMG per stack)",             { dmgMult: 1.05, stackKey: "voltStacks", maxStacks: 8 }],
           ["hotdog",            "Hot Dog Guy: Booming Business (+2% RNG per stack)",                      { rngMult: 1.01, stackKey: "hotdogStacks", maxStacks: 18 }],
           ["kronos",            "Kronos Endo Freddy: In Due Time... (+18% DMG & +18% RNG)",                 { dmgMult: 1.18, rngMult: 1.18 }],
           ["lore_wither",       "Lore Keeper Shadow Bonnie: Meticulous Study (+30% DMG)",                  { dmgMult: 1.30 }],
@@ -4161,7 +4161,7 @@
             ["chipper_nature", "Chipper: Stock Stacker (+1.5% DMG, +1.5% RNG per stack) [Nature only]", { dmgMult: 1.015, rngMult: 1.015, stackKey: "chippernatureStacks", maxStacks: 20 }],
             ["lumber",         "Chipper: Lumber Co. (+20% DMG) [Nature only]",                          { dmgMult: 1.20, elements: ["Nature"] }],
             ["gaia_domain",    "Gaia Chica: Growmain Expansion (+30% DMG, -10% CD) [Nature only]",      { dmgMult: 1.30, cdMult: 0.90, duration: 30, cd: 90, elements: ["Nature"] }],
-            ["lily_fox",    "White Lily Toy Foxy: Fae's Blessing (+20% DMG, +10% RNG) [Nature only]",   { dmgMult: 1.20, rngMult: 1.10, duration: 10, cd: 30, elements: ["Nature"] }]
+            ["lily_fox",       "White Lily Toy Foxy: Fae's Blessing (+20% DMG, +10% RNG) [Nature only]",{ dmgMult: 1.20, rngMult: 1.10, duration: 10, cd: 30, stackKey: "lilyStacks", maxStacks: 4, elements: ["Nature"] }]
           );
         }
 

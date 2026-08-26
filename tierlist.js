@@ -268,6 +268,7 @@
         "Golden Freddy",
         "Pirate Withered Foxy UP",
         "High Voltage Rockstar Freddy BUG NEW",
+        "White Lily Toy Foxy NEW",
         "Faz-ino Spring Bonnie",
         "Endo 01",
         "XOR",

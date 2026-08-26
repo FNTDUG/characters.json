@@ -60,7 +60,7 @@
       },
       {
         "pageTitle": "ELEMENT METAS",
-        "order": ["Nature 1st", "Dark 2nd", "Rust 3rd", "Neutral 4th", "Electricity 5th", "Water 6th", "Light 7th", "Fire 8th"]
+        "order": ["Nature 1st", "Dark 2nd", "Rust 3rd", "Electricity 4th", "Neutral 5th", "Water 6th", "Light 7th", "Fire 8th"]
       },
       {
         "pageTitle": "CHALLENGES METAS",
@@ -164,7 +164,16 @@
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]
     },
-    "Neutral 4th": {
+    "Electricity 4th": {
+      "units": [
+        { "name": "High Voltage Rockstar Freddy", "label": "$1k", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Animdude", "label": "", "byte": "Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Witch of the Sea Scrapbaby", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" },
+        { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "DJ 101Bit", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
+      ]
+    },
+    "Neutral 5th": {
       "units": [
         { "name": "Golden Freddy", "label": "$1k", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Starter" },
         { "name": "Purple Guy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
@@ -172,15 +181,6 @@
         { "name": "Trash o Tron", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Mr. Hippo", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
-      ]
-    },
-    "Electricity 5th": {
-      "units": [
-        { "name": "Endo 01", "label": "$1k", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Animdude", "label": "", "byte": "Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "Witch of the Sea Scrapbaby", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "" },
-        { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "DJ 101Bit", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]
     },
     "Water 6th": {

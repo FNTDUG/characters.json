@@ -15660,7 +15660,7 @@
       },
       {
         "title": "A World Under My Control",
-        "text": "Opens a chip selection screen. Pick 2 chips for permanent buffs and effects. (Upgrade 0+, Local CD: 1s).",
+        "text": "Opens a chip selection screen. Pick 2 chips for permanent buffs and effects. <br>• Endless Range: 15% range buff to your team. <br>• Endless Strength: 10% damagae buff to your team. <br>• Endless Speed: 7.5% cooldown reduction to your team.<br>• Curse Status: All units apply 10% burn on hit. <br>• Pizza: Spawns 3 pizzas that deal 100% damage when walked over. <br>• Freddles: Spawns Freddles ever 2s dealing 33% damage, applying 5% wither for 5s. <br>• Counter Bite: When losing a stock, attack the full map for 500% damage. <br>• Block Unscrew: All units deal 10% more damage to bosses. <br>• (Upgrade 0+, Local CD: 1s).",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-df656x.png"
       },
       {
@@ -15669,7 +15669,7 @@
       },
       {
         "title": "Familiar Tools",
-        "text": "Bonuses based on equipped byte: Box - every 10s rotates through Damage, Range and Cooldown and gives an extra 50% of the % the byte gives on that stat.  Boss Drain - attacks on bosses deal +10% damage and apply 10% Wither.  Reaper - executes non-boss enemies below 5% HP, +50% crit chance.  KABOOM! - every other attack toggles +50% damage and +30% range.  The Fan - -20% cooldown, every 10s next attack knocks back enemies 1.5 studs."
+        "text": "Bonuses based on equipped byte: <br>• Box - every 10s rotates through Damage, Range and Cooldown and gives an extra 50% of the % the byte gives on that stat.  <br>• Boss Drain - attacks on bosses deal +10% damage and apply 10% Wither.<br>•  Reaper - executes non-boss enemies below 5% HP, +50% crit chance. <br>• KABOOM! - every other attack toggles +50% damage and +30% range.<br>•  The Fan - -20% cooldown, every 10s next attack knocks back enemies 1.5 studs."
       }
     ],
     "passiveDamage": {
@@ -25573,6 +25573,12 @@
     }
   ],
   "passiveDamage":{
+    "selfboost":[
+      {
+        "label": "Power Grid",
+        "dmgmult": "1.10"
+      }
+    ],
     "dots":[
       {
         "label": "Static Shock (dot)",
@@ -25852,8 +25858,11 @@
     "selfboost": [
       {
         "label": "Favor (Boost)",
-        "dmgmult": 1.20,
-        "rngmult": 1.10
+        "dmgmult": 1.40,
+        "rngmult": 1.20,
+        "duration": 10,
+        "cd": 30,
+        "cdboostable": true
       },
       {
         "label": "Blessed Spear",

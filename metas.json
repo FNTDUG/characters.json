@@ -149,7 +149,7 @@
         { "name": "Faz-ino Spring Bonnie", "label": "$900", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Starter" },
         { "name": "Vengeful Spirit", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
-        { "name": "Gaia Chica", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Gaia Chica", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "Stitchwraith", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Buff Potency" }
       ]

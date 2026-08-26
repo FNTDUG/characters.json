@@ -167,7 +167,7 @@
     "Electricity 4th": {
       "units": [
         { "name": "High Voltage Rockstar Freddy", "label": "$1k", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter, Potency" },
-        { "name": "Ennard", "label": "", "byte": "Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Shocker, Potency" },
+        { "name": "Ennard", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Shocker, Potency" },
         { "name": "Witch of the Sea Scrapbaby", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "DJ 101Bit", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" }

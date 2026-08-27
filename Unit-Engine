@@ -3978,14 +3978,59 @@
 
       
       function computeTotalDpsBoost(unit, modeKey) {
-        var eff = getBuffEffects(unit);
+        var boosted = computeUnitDps(unit, modeKey);
+        var boostedMaxed = boosted ? boosted.maxed : null;
+        if (boostedMaxed == null || !isFinite(boostedMaxed) || boostedMaxed <= 0) return 0;
 
-        
-        var cdMult = getCooldownMultiplier(unit, 1);
-        if (isGlitchedMode) cdMult /= GLITCH_CD_MULT;
+        var saved = {
+          permaSelected: buffState.permaSelected,
+          tempSelected:  buffState.tempSelected,
+          enchant:       buffState.enchant,
+          chip:          buffState.chip,
+          chipStats:     buffState.chipStats,
+          chipStacks:    buffState.chipStacks,
+          perma:         buffState.perma,
+          permaType:     (typeof currentPermaBoostType !== "undefined") ? currentPermaBoostType : null,
+          byte:          (typeof byteState !== "undefined")
+                           ? { mainByte: byteState.mainByte, subByte: byteState.subByte,
+                               stats: byteState.stats, subStats: byteState.subStats }
+                           : null
+        };
 
-        var mult = eff.damageMult / cdMult;
+        var bare;
+        try {
+          buffState.permaSelected = [];
+          buffState.tempSelected  = [];
+          buffState.enchant       = "none";
+          buffState.chip          = "none";
+          buffState.chipStats     = {};
+          buffState.chipStacks    = 0;
+          buffState.perma         = {};
+          if (typeof currentPermaBoostType !== "undefined") currentPermaBoostType = "none";
+          if (typeof byteState !== "undefined") {
+            byteState.mainByte = "none"; byteState.subByte = "none";
+            byteState.stats = {}; byteState.subStats = {};
+          }
+          bare = computeUnitDps(unit, modeKey);
+        } finally {
+          buffState.permaSelected = saved.permaSelected;
+          buffState.tempSelected  = saved.tempSelected;
+          buffState.enchant       = saved.enchant;
+          buffState.chip          = saved.chip;
+          buffState.chipStats     = saved.chipStats;
+          buffState.chipStacks    = saved.chipStacks;
+          buffState.perma         = saved.perma;
+          if (saved.permaType !== null) currentPermaBoostType = saved.permaType;
+          if (saved.byte) {
+            byteState.mainByte = saved.byte.mainByte; byteState.subByte = saved.byte.subByte;
+            byteState.stats = saved.byte.stats;       byteState.subStats = saved.byte.subStats;
+          }
+        }
 
+        var bareMaxed = bare ? bare.maxed : null;
+        if (bareMaxed == null || !isFinite(bareMaxed) || bareMaxed <= 0) return 0;
+
+        var mult = boostedMaxed / bareMaxed;
         if (!isFinite(mult) || mult <= 0) return 0;
         return (mult - 1) * 100;
       }

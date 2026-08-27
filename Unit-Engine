@@ -2430,14 +2430,34 @@
           var th2 = "border-bottom:1px solid rgba(255,164,91,0.3);";
           var html = "<table style=\"text-align:center;\">";
 
+          var _costAmt = (function() {
+            var _cLvls = (getActiveLevels(unit, modeKey).levels || []);
+            var _cMult = getBuffEffects(unit).costMult || 1;
+            var _cSum  = 0, _cAny = false;
+            for (var _ci = 0; _ci < _cLvls.length; _ci++) {
+              var _cv = Number(_cLvls[_ci].cost);
+              if (isFinite(_cv)) { _cSum += _cv; _cAny = true; }
+            }
+            if (!_cAny) return "";
+            var _cPlc = (typeof getPlc === "function") ? (getPlc(unit) || 1) : 1;
+            var _cTot = Math.round(_cSum * _cMult * _cPlc);
+            return _cTot >= 1000
+              ? (Math.floor(_cTot / 100) / 10).toFixed(1).replace(/\.0$/, "") + "k"
+              : String(_cTot);
+          })();
+
           if (!showWTable) {
-            
+
             html += "<tr><th colspan=\"2\" style=\"" + th2 + "\">Total DPS</th></tr>"
               + "<tr>"
               + "<th style=\"" + th2 + "\">Placement DPS</th>"
               + "<th style=\"" + th2 + "\">Maxed DPS</th>"
               + "</tr>"
               + "<tr><td>" + placementText + "</td><td>" + maxedText + "</td></tr>";
+            if (_costAmt) {
+              html += "<tr><td colspan=\"2\" style=\"border-top:1px solid rgba(255,164,91,0.3);\">"
+                    + "<span style=\"color:#00ff00\">Cost:&nbsp;$" + _costAmt + "</span></td></tr>";
+            }
           } else {
             
             var parts = [];
@@ -2471,23 +2491,9 @@
             }
 
             
-            var _costText = (function() {
-              var _cLvls = (getActiveLevels(unit, modeKey).levels || []);
-              var _cMult = getBuffEffects(unit).costMult || 1;
-              var _cSum  = 0, _cAny = false;
-              for (var _ci = 0; _ci < _cLvls.length; _ci++) {
-                var _cv = Number(_cLvls[_ci].cost);
-                if (isFinite(_cv)) { _cSum += _cv; _cAny = true; }
-              }
-              if (!_cAny) return "";
-              var _cPlc = (typeof getPlc === "function") ? (getPlc(unit) || 1) : 1;
-              var _cTot = Math.round(_cSum * _cMult * _cPlc);
-              var _cTxt = _cTot >= 1000
-                ? (Math.floor(_cTot / 100) / 10).toFixed(1).replace(/\.0$/, "") + "k"
-                : String(_cTot);
-              return "<span style=\"color:#681f62\"> | </span><span style=\"color:#00ff00\">Cost:&nbsp;$"
-                   + _cTxt + "</span>";
-            })();
+            var _costText = _costAmt
+              ? "<span style=\"color:#681f62\"> | </span><span style=\"color:#00ff00\">Cost:&nbsp;$" + _costAmt + "</span>"
+              : "";
 
             html += "<tr><th style=\"" + th2 + "\">" + header + "</th></tr>";
             dpsBox.setAttribute("data-ue-summary", "1");

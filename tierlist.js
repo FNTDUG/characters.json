@@ -554,7 +554,31 @@
         "King in Purple Purple Guy",
         "Puppet"
       ]
-    }
+    },
+    "knockback": {
+      "s": [
+        "Minireenas",
+        "DJ 101Bit"
+      ],
+      "a": [
+        "Cannoneer Chica",
+        "Follow Me",
+        "Bear5",
+        "Animdude"
+      ],
+      "b": [
+        "Stormbound Chica",
+        "Cerberus Freddy",
+        "Popcorn Bot",
+        "Deep Sea Calamity Endo",
+        "Fathomless Withered Foxy"
+      ],
+      "c": [
+        "Masked Bullies",
+        "Golden Freddy",
+        "Dirt Boss Freddy"
+      ]
+    } 
   },
   "msg": {
     "all": {
@@ -631,7 +655,8 @@
     "support": "",
     "stun": "",
     "slow": "",
-    "summon": ""
+    "summon": "",
+    "knockback": ""
   }
 };
   var lists = cfg.lists || {};

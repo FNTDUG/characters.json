@@ -2448,9 +2448,7 @@
 
           if (!showWTable) {
 
-            var _nCols = _costAmt ? 3 : 2;
-            html += "<tr><th colspan=\"" + _nCols + "\" style=\"" + th2 + "\">Total DPS</th></tr>"
-              + "<tr>"
+            html += "<tr>"
               + "<th style=\"" + th2 + "\">Placement DPS</th>"
               + "<th style=\"" + th2 + "\">Maxed DPS</th>"
               + (_costAmt ? "<th style=\"" + th2 + "\">Cost</th>" : "")

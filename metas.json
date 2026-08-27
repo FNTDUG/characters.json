@@ -314,9 +314,9 @@
     },
     "The Tower": {
       "units": [
-        { "name": "Conductor Toy Freddy", "label": "$550", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "White Lily Toy Foxy", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Pirate Withered Foxy", "label": "$900", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
-        { "name": "Unicorn Toy Foxy", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "High Voltage Rockstar Freddy", "label": "$1k", "byte": "Pearl", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Spirit of Charlie Emily", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Spirit of Henry Emily", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Spirit of William Afton", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }

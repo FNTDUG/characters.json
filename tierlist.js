@@ -576,7 +576,9 @@
       "c": [
         "Masked Bullies",
         "Golden Freddy",
-        "Dirt Boss Freddy"
+        "Dirt Boss Freddy",
+        "Afterbite Withered Golden Freddy",
+        "Planet Buster Scott BUG"
       ]
     } 
   },

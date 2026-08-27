@@ -647,6 +647,10 @@
     "summon": {
       "XOR": "",
       "Yeti Oni Bonnie": ""
+    },
+    "knockback":{
+      "DJ 101Bit": "",
+      "Minireenas": ""
     }
   },
   "notes": {

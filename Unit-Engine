@@ -993,6 +993,12 @@
         box-sizing: border-box;
       }
 
+      #unitEngine .unit-table-container[data-ue-totals] table {
+        width: 100% !important;
+        min-width: 0;
+        table-layout: fixed;
+      }
+
       .unit-table-container {
         scroll-snap-type: x mandatory;
       }
@@ -2448,6 +2454,7 @@
 
           if (!showWTable) {
 
+            dpsBox.setAttribute("data-ue-totals", "1");
             html += "<tr>"
               + "<th style=\"" + th2 + "\">Placement DPS</th>"
               + "<th style=\"" + th2 + "\">Maxed DPS</th>"

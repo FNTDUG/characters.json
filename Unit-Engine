@@ -2448,19 +2448,18 @@
 
           if (!showWTable) {
 
-            html += "<tr><th colspan=\"2\" style=\"" + th2 + "\">Total DPS</th></tr>"
+            var _nCols = _costAmt ? 3 : 2;
+            html += "<tr><th colspan=\"" + _nCols + "\" style=\"" + th2 + "\">Total DPS</th></tr>"
               + "<tr>"
               + "<th style=\"" + th2 + "\">Placement DPS</th>"
               + "<th style=\"" + th2 + "\">Maxed DPS</th>"
+              + (_costAmt ? "<th style=\"" + th2 + "\">Cost</th>" : "")
               + "</tr>"
               + "<tr>"
               + "<td><span style=\"color:#ff8c00\">" + placementText + "</span></td>"
               + "<td><span style=\"color:#ff8c00\">" + maxedText + "</span></td>"
+              + (_costAmt ? "<td><span style=\"color:#00ff00\">$" + _costAmt + "</span></td>" : "")
               + "</tr>";
-            if (_costAmt) {
-              html += "<tr><th colspan=\"2\" style=\"" + th2 + "border-top:1px solid rgba(255,164,91,0.3);\">Cost</th></tr>"
-                    + "<tr><td colspan=\"2\"><span style=\"color:#00ff00\">$" + _costAmt + "</span></td></tr>";
-            }
           } else {
             
             var parts = [];

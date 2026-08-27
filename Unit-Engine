@@ -993,10 +993,12 @@
         box-sizing: border-box;
       }
 
-      #unitEngine .unit-table-container[data-ue-totals] table {
-        width: 100% !important;
-        min-width: 0;
-        table-layout: fixed;
+      @media (min-width: 769px) {
+        #unitEngine .unit-table-container[data-ue-totals] table {
+          width: 100% !important;
+          min-width: 0;
+          table-layout: fixed;
+        }
       }
 
       .unit-table-container {

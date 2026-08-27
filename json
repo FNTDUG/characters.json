@@ -21845,7 +21845,8 @@
     "Slow",
     "Stun",
     "Wither",
-    "Burn"
+    "Burn",
+    "Knockback"
   ],
   "element": "Universal",
   "placements": 1,

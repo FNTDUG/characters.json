@@ -599,8 +599,10 @@
       "Cthulhu Nightmare Foxy": "Good DPS, great support to half the team, and good Slow and Stun."
     },
     "starter": {
-      "Golden Freddy": "Great boosting in Endless (up to +30% damage per Golden Freddy), good DPS, and great stall with 20% Slow on attack and Knockback with his Active.",
+      "Golden Freddy": "Great boosting in Endless (up to +30% Damage per Golden Freddy), good DPS, and great stall with 20% Slow on attack and Knockback with his Active.",
       "Endo 01": "A good choice for a Starter as he gives all units in his range +15% Damage and -3% CD, making him useful throughout the whole match.",
+      "High Voltage Rockstar Freddy": "High DPS starter with up to +40% Damage to the 3 closest units to him.",
+      "White Lily Toy Foxy": "High DPS starter with up to +40% Damage and +20% Range to all Nature units in range and the ability to deal extra shield damage and make Nature units immune to Stuns with her Blessed Spear.",
       "XOR": "High DPS starter with strong summons.",
       "Rockin Bonnie": "A good choice for a Starter as he gives all units in his range -11% CD, making him quite throughout the match.",
       "Undead Chica": "Creates a steady stream of strong Summons.",
@@ -613,6 +615,9 @@
     },
     "support": {
       "Candy Cadet": "Gives +30% Damage and +10% Range to all units in range when in Red Candy mode, then +10% Damage and +30% Range to all units in range when in Yellow Candy mode (mode chosen on placement). Does particularly well when using his Orphans story, doubling his boosts for 30s. Boosts do not stack with other Candy Cadets.",
+      "DJ 101Bit": "Can swap between giving all nearby units +20% Damage or +25% Range. Placed higher than other units because she can stack with other placements of herself.",
+      "High Voltage Rockstar Freddy": "Each placement of him gives +20% Damage to the 3 units closest to him.",
+      "White Lily Toy Foxy": "Can give Nature units +20% Damage and +10% Range per placement when she has stacks of Favor.",
       "Nature Reclaimed Foxy": "Gives all units in range +30% Damage, +25% Range and -5% CD. Additionally increases base health, allowing you to survive longer against normal enemies.",
       "Planet Buster Scott": "Gives all units in range +1% Damage and +1% Range for every enemy on the map, a very strong boost when enemies begin to build up in late game.",
       "Overlord Scott": "Gives all units in range +1% Damage and +1% Range for every enemy on the map, a very strong boost when enemies begin to build up in late game.",
@@ -626,6 +631,7 @@
       "Pyro Spring Bonnie": "Attacks Stun enemies for 1.8s, with an additional 1s every 15s that bypasses Stun Lockout. Placed highest because of coverage.",
       "Planet Buster Scott": "Attacks Stun enemies for 2s.",
       "Overlord Scott": "Attacks Stun enemies for 2s.",
+      "Samurai Duo": "Every 3rd attack Stuns enemies for 1.8s.",
       "Deep Sea Calamity Endo": "An absurdly good stunner, applying 1.8s Stun on attack in a very large 245° Cone. Also has the potential to Stun Bosses for 2.5s if they get too close.",
       "Krampus Purple Guy": "A great stunner applying 1.8s Stun on attack. Pair him with a Kaboom or Box Byte to help combat his shorter range for better coverage.",
       "Ennard": "Has a good 1.5s Stun on attack while additionally stunning 4 random enemies around the map every 6s for 1.5s.",
@@ -633,7 +639,9 @@
       "Grand Strategist Chica": "Queen piece Stuns the 5 closest enemies on attack for 1.5s."
     },
     "slow": {
-      "Vengeful Spirit": "20% AOE Slow that increases by 1% every 3s up to 30%.",
+      "Vengeful Spirit": "Instant 20% AOE Slow that increases by 1% every 3s up to 30%.",
+      "DJ 101Bit": "Instant 20% AOE Slow when set to Green Track.",
+      "Spirit of Charlie Emily": "Instant 15% AOE Slow.",
       "Deep Sea Calamity Endo": "Effectively has 30% AOE Slow.",
       "Molten Freddy": "Effectively has 30% AOE Slow, but is below Calamity Endo due to being Line.",
       "Planet Buster Scott": "25% AOE Slow every 5s and 25% global Slow from his Active, with Micro can consistently keep 50%.",
@@ -642,21 +650,21 @@
       "Ragequit Scott": "25% AOE Slow every 5s.",
       "Scott Cawthon": "25% AOE Slow every 5s.",
       "Scott Plushie": "25% AOE Slow every 5s.",
-      "Frostmancer Withered Bonnie": "RNG based AOE Slow that can go up to 45%.",
-      "Frozen King Foxy": "25% AOE Slow.",
+      "Frostmancer Withered Bonnie": "Instant RNG based AOE Slow that can go up to 45%.",
+      "Frozen King Foxy": "Instant 25% AOE Slow.",
       "Grand Strategist Chica": "15% AOE Slow + 10% Cone 180 Slow."
     },
     "summon": {
-      "XOR": "",
-      "Yeti Oni Bonnie": ""
+      "XOR": "Can spawn up to 25 summons with health equal to half this unit's damage every 60s.",
+      "Yeti Oni Bonnie": "Spawns high health summons of varying strength every 9s and can spawn 2 summons with health equal to 2.5x this unit's damage every 40s."
     },
     "knockback":{
-      "DJ 101Bit": "",
-      "Minireenas": ""
+      "DJ 101Bit": "Attacks Knockback enemies by 1 tile. Placed higher than Minireenas because of coverage.",
+      "Minireenas": "Attacks Knockback enemies by 2 tiles."
     }
   },
   "notes": {
-    "all": "Rankings are in order first-last. S Tier is top Tier Meta Units. A Tier is usable, good replacements. B & C Tiers is trash",
+    "all": "Rankings are ordered first-last. S Tier is for top Tier Meta units, A Tier units are usable and good replacements if you don't have S Tiers, then B & C Tiers are often trash.",
     "starter": "",
     "support": "",
     "stun": "",

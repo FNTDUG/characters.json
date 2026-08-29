@@ -659,7 +659,7 @@
       "Yeti Oni Bonnie": "Spawns high health summons of varying strength every 9s and can spawn 2 summons with health equal to 2.5x this unit's damage every 40s."
     },
     "knockback":{
-      "DJ 101Bit": "Attacks Knockback enemies by 1 tile. Placed higher than Minireenas because of coverage.",
+      "DJ 101Bit": "Attacks Knockback enemies by 1 tile.",
       "Minireenas": "Attacks Knockback enemies by 2 tiles."
     }
   },

@@ -23812,7 +23812,7 @@
   "passives": [
     {
       "title": "Are You Really in Control?",
-      "text": "On placement, choose between Jake Mode and Andrew Mode. Remnant is gained from enemies killed in this unit's range. (1 stack: 5 enemies. 2 stacks: 25 enemies. 3 stacks: 75 enemies). <br> Jake Mode: <br>• 1 stack: Units in range gain +15% Damage, +10% Range, and -5% CD. <br> • 2 stacks: Also gain +10% crit rate and +10% crit damage <br>• 3 stacks: Units in range gain +15% Damage, +25% Range, -5% CD, +20% crit rate, and +20% crit damage."
+      "text": "On placement, choose between Jake Mode and Andrew Mode. Jake mode cannot attack. Remnant is gained from enemies killed in this unit's range. (1 stack: 5 enemies. 2 stacks: 25 enemies. 3 stacks: 75 enemies). <br> Jake Mode: <br>• 1 stack: Units in range gain +15% Damage, +10% Range, and -5% CD. <br> • 2 stacks: Also gain +10% crit rate and +10% crit damage <br>• 3 stacks: Units in range gain +15% Damage, +25% Range, -5% CD, +20% crit rate, and +20% crit damage."
     }
   ]
 },
@@ -23868,7 +23868,7 @@
     "passives": [
       {
         "title": "Are You Really in Control?",
-        "text": "On placement, choose between Jake Mode and Andrew Mode. Remnant is gained from enemies defeated in this unit's range. (1 stack: 5 enemies. 2 stacks: 25 enemies. 3 stacks: 75 enemies). <br> Andrew Mode: <br>• 1 stack: +75% Damage and -10% CD. <br> • 2 stacks: +125% Damage, +25% Range, -20% CD. <br>• 3 stacks: +175% Damage, +40% Range, and -30% CD. Attacks apply 25% Bleed for 5s and Stun enemies in a small circle for 1.2s."
+        "text": "On placement, choose between Jake Mode and Andrew Mode. Remnant is gained from enemies killed in this unit's range. (1 stack: 5 enemies. 2 stacks: 25 enemies. 3 stacks: 75 enemies). <br> Andrew Mode: <br>• 1 stack: +75% Damage and -10% CD. <br> • 2 stacks: +125% Damage, +25% Range, -20% CD. <br>• 3 stacks: +175% Damage, +40% Range, and -30% CD. Attacks apply 25% Bleed for 5s and Stun enemies in a small circle for 1.2s."
       }
     ],
     "passiveDamage": {

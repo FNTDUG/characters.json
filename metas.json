@@ -214,7 +214,7 @@
     },
       "Player 1": {
       "units": [
-        { "name": "Void Shaper Shadow Freddy", "label": "$4k", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Void Shaper Shadow Freddy", "label": "$4k", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
         { "name": "Overlord Scott", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
@@ -247,7 +247,7 @@
         { "name": "White Lily Toy Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
         { "name": "Spirit of Charlie Emily", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Overlord Scott", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
-        { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "DJ 101Bit", "label": "", "byte": "The Box", "enchant": "Vengeance", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" },
         { "name": "Gaia Chica", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" }
       ]

@@ -99,7 +99,7 @@
         { "name": "High Voltage Rockstar Freddy", "label": "$1k", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter, Potency" },
         { "name": "Samurai Duo", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Deep Sea Calamity Endo", "caption": "Buff Potency" },
-        { "name": "DJ 101Bit", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance",   "replacement": "", "caption": "Buff Potency" },
+        { "name": "DJ 101Bit", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance",   "replacement": "", "caption": "Red, Potency" },
         { "name": "Overlord Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Void Shaper Shadow Freddy", "caption": "Buff Potency" },
         { "name": "Stitchwraith", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "1 Jake Mode, Potency" }
       ]

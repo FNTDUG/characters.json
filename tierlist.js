@@ -316,7 +316,8 @@
         "Party Packer Cupcake BUG",
         "Bucket Bob",
         "Pan Stan",
-        "Phantom Bonnie"
+        "Phantom Bonnie",
+        "Lefty"
       ]
     },
     "support": {

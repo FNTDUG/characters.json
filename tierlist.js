@@ -317,7 +317,8 @@
         "Bucket Bob",
         "Pan Stan",
         "Phantom Bonnie",
-        "Lefty"
+        "Lefty",
+        "Chica"
       ]
     },
     "support": {

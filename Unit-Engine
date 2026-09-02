@@ -3023,12 +3023,17 @@
       }
 
       
+      function isHeroRarity(unit) {
+        return String((unit && unit.rarity) || "").toLowerCase() === "hero";
+      }
+
       // Placements including every boost that grants them (Dice, etc.), BEFORE
       // Hijacked collapses the unit to a single placement. Hijacked pays out per
       // placement given up, so it needs the count it is actually taking away —
       // using the unit's base alone would drop the boosted ones for free.
       function getPlcRaw(unit) {
         var base = unit.placements || 1;
+        if (isHeroRarity(unit)) return Math.max(1, base);
         if (typeof BOOST_META !== "undefined" && buffState) {
           if (Array.isArray(buffState.permaSelected)) {
             buffState.permaSelected.forEach(function(type) {

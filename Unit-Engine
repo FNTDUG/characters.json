@@ -5311,6 +5311,14 @@
 
         pt.appendChild(icon);
 
+        titleText.textContent = "";
+        String(p.title).split("/").forEach(function (part, i, arr) {
+          var last = i === arr.length - 1;
+          titleText.appendChild(document.createTextNode(last ? part : part + "/"));
+          if (!last) titleText.appendChild(document.createElement("wbr"));
+        });
+        titleText.style.minWidth = "0";
+
         
         titleText.style.background = ELEMENT_TEXT_GRADIENT;
         titleText.style.webkitBackgroundClip = "text";

@@ -6373,6 +6373,7 @@
       // units.json only needs skin names (+ optional rarity). Names are matched
       // normalized, also trying "<unit><skin>"/"<skin><unit>" since skins.json
       // keys sometimes embed the unit name. Falls back to an inline skin.image.
+      var UE_SKIN_PLACEHOLDER = "https://images.fntduserguide.com/placeholder-freddy.png";
       var _UE_SKIN_RENDERS = null;
       function _ueSkinNorm(x){ return String(x == null ? "" : x).toLowerCase().replace(/[^a-z0-9]/g, ""); }
       function _ueSkinMeta(unitName, skinName){
@@ -6390,7 +6391,7 @@
           _UE_SKIN_RENDERS = m;
         }
         fetch("/inf-data/skins").then(function(r){ if (!r.ok) throw 0; return r.json(); }).then(build)
-          .catch(function(){ fetch("https://pub-ded986176f754f5fb54de94d2fb15509.r2.dev/skins.json").then(function(r){ return r.json(); }).then(build).catch(function(){}); });
+          .catch(function(){ fetch("https://cosmetics.fntduserguide.com/skins.json").then(function(r){ if (!r.ok) throw 0; return r.json(); }).then(build).catch(function(){}); });
       })();
 
       function makeSkinButton(unit, rarityStyle) {
@@ -6551,8 +6552,12 @@
         cardInner.className = "ue-skin-card-inner";
 
         const img = document.createElement("img");
-        img.src = sImage;
+        img.src = sImage || UE_SKIN_PLACEHOLDER;
         img.alt = sName;
+        img.addEventListener("error", function () {
+          if (img.src === UE_SKIN_PLACEHOLDER) return;
+          img.src = UE_SKIN_PLACEHOLDER;
+        });
 
         
         const tooltip = document.createElement("div");

@@ -479,17 +479,14 @@
     "skins": [
       {
         "name": "Remnant Fredbear",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-08-2026-22-47-41-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
         "rarity": "exclusive"
       },
       {
         "name": "Depth Fredbear",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/depth-fredbear-high.png",
         "rarity": "secret"
       },
       {
         "name": "Hazard Fredbear",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/hazard-fredbear-high.png",
         "rarity": "secret"
       }
     ],
@@ -1632,7 +1629,6 @@
     "skins": [
       {
         "name": "Radiant Astral Bonnie",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/radiant-astral-bonnie-high.png",
         "rarity": "radiant"
       }
     ],
@@ -2375,7 +2371,6 @@
     "skins": [
       {
         "name": "Mafia Masked Bullies",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/bjb9rmg-high.png?enable-io=true&crop=1%3A1&width=347",
         "rarity": "exclusive"
       }
     ],
@@ -2559,12 +2554,10 @@
     "skins":[
       {
         "name": "Island Vacation Dragon Endo 01",
-        "image": "https://tr.rbxcdn.com/180DAY-63fc00e007b2b96d64205f890e0fadac/420/420/Image/Png/noFilter",
         "rarity": "secret"
       },
       {
-        "name": "Shiny Island Vacation Dragon Endo 01",
-        "image": "https://tr.rbxcdn.com/180DAY-bee3a967dd46f4e1f666caef85e26729/420/420/Image/Png/noFilter",
+        "name": "Shiny Vacation Island Dragon Endo 01",
         "rarity": "shiny"
       }
     ],
@@ -3797,8 +3790,7 @@
     },
     "skins": [
       {
-        "name": "Clown Duo",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3upkzb-high.png"
+        "name": "Circus Duo"
       }
     ]
   },
@@ -4050,28 +4042,23 @@
     ],
     "skins": [
       {
-        "name": "Jack'O Springtrap",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-tue-feb-10-2026-12-55-09-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
+        "name": "Jack'O Trap",
         "rarity": "exclusive"
       },
       {
         "name": "Easter Springtrap",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-29-2026-20-15-40-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
         "rarity": "exclusive"
       },
       {
         "name": "Dark Springtrap",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/st-skin-high.png",
         "rarity": "secret"
       },
       {
         "name": "Glacier Springtrap",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/glacier-springtrap-skin-high.png?enable-io=true&crop=1%3A1&width=226",
         "rarity": "exclusive"
       },
       {
         "name": "Shiny Glacier Springtrap",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/glacier-springtrap-shiny-skin-high.png?enable-io=true&crop=1%3A1&width=226",
         "rarity": "shiny"
       }
     ],
@@ -5574,7 +5561,6 @@
     "skins": [
       {
         "name": "ClockBear",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3upgkx-high.png",
         "rarity": "secret"
       }
     ],
@@ -5856,17 +5842,14 @@
     "skins": [
       {
         "name": "Deep Sea Nautilus",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-14-2026-23-11-09-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=347",
         "rarity": "nightmare"
       },
       {
         "name": "Hypnos",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-29-2026-20-15-09-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920",
         "rarity": "exclusive"
       },
       {
         "name": "Vintage OMC",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/vintage-omc-high.png",
         "rarity": "secret"
       }
     ],
@@ -7015,7 +6998,6 @@
     "skins": [
       {
         "name": "Dragonic PaperPals",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-23-42-37-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=347",
         "rarity": "mythic"
       }
     ],
@@ -8665,7 +8647,6 @@
     "skins": [
       {
         "name": "Meltdown Mangle",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/meltdown-mangle-high.png",
         "rarity": "mythic"
       }
     ]
@@ -8772,8 +8753,7 @@
     ],
     "skins": [
       {
-        "name": "Dave Miller",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/untitled-high.png?enable-io=true&crop=1%3A1&width=347"
+        "name": "Dave Miller"
       }
     ],
     "passiveDamage": {
@@ -9460,7 +9440,6 @@
     "skins": [
       {
         "name": "Wandering Soul",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/wandering-soul-high-s20q7c.png?enable-io=true&crop=1%3A1&width=226",
         "rarity": "nightmare"
       }
     ],
@@ -9881,22 +9860,18 @@
     "skins": [
       {
         "name": "Fredbear",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-tue-feb-10-2026-13-57-37-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
         "rarity": "rare"
       },
       {
         "name": "Linkage Golden Freddy",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/bp3lnst-high.png?enable-io=true&crop=1%3A1&width=226",
         "rarity": "exclusive"
       },
       {
         "name": "Shiny Linkage Golden Freddy",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/linkage_freddy_skin_v2_render-high.png",
         "rarity": "shiny"
       },
       {
         "name": "Excalibur",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/excalibur-golden-freddy-high.png",
         "rarity": "secret"
       }
     ],
@@ -10179,32 +10154,26 @@
     "skins": [
       {
         "name": "Tragedy",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-tue-feb-10-2026-13-23-11-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
         "rarity": "rare"
       },
       {
         "name": "Puppeteer",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-tue-feb-10-2026-13-23-15-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347",
         "rarity": "rare"
       },
       {
         "name": "Monarch",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-mar-23-2026-00-40-23-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=347",
         "rarity": "exclusive"
       },
       {
         "name": "Dark Knight",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-mar-23-2026-22-47-51-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=347",
         "rarity": "mythic"
       },
       {
         "name": "Anubis Wrath",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/anubis-wrath-high.png",
         "rarity": "secret"
       },
       {
         "name": "Security Puppet",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/security-puppet-high.png",
         "rarity": "secret"
       }
     ],
@@ -10377,8 +10346,7 @@
     ],
     "skins": [
       {
-        "name": "Mendo",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3uiaas-high.png"
+        "name": "Mendo"
       }
     ],
     "passiveDamage": {
@@ -12188,7 +12156,6 @@
     "skins": [
       {
         "name": "Volcanic Party Packer Cupcake",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/bpq5htq-high.png?enable-io=true&crop=1%3A1&width=1252",
         "rarity": "exclusive"
       }
     ],
@@ -12476,7 +12443,6 @@
     "skins": [
       {
         "name": "Data Bolt Lolbit",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/data-bolt-lolbit-high.png",
         "rarity": "secret"
       }
     ],
@@ -12579,7 +12545,6 @@
     "skins": [
       {
         "name": "8-Bit Baby",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/baby-skin-high.png",
         "rarity": "exclusive"
       }
     ],
@@ -12798,12 +12763,10 @@
     "skins": [
       {
         "name": "Scooped Ice Cream Michael",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/scooped-ice-cream-michael-skin-high.png?enable-io=true&crop=1%3A1&width=226",
         "rarity": "exclusive"
       },
       {
         "name": "Shiny Scooped Ice Cream Michael",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/scooped-ice-cream-shiny-skin-high.png?enable-io=true&crop=1%3A1&width=226",
         "rarity": "Shiny"
       }
     ],
@@ -13001,13 +12964,11 @@
     ],
     "skins":[
       {
-        "name": "Ballad of the Street Ballora",
-        "image": "https://tr.rbxcdn.com/180DAY-f036a9bc545f308fbbc6b78ab3d93393/420/420/Image/Png/noFilter",
+        "name": "Ballad of the Streets Ballora",
         "rarity": "secret"
       },
       {
-        "name": "Shiny Ballad of the Street Ballora",
-        "image": "https://tr.rbxcdn.com/180DAY-f3f69a6f01952e0fd5ca12f3d381735c/420/420/Image/Png/noFilter",
+        "name": "Shiny Ballad of the Streets Ballora",
         "rarity": "shiny"
       }
     ]
@@ -13237,7 +13198,6 @@
     "skins": [
       {
         "name": "Pridetime Foxy",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3ubidv-high.png",
         "rarity": "exclusive"
       }
     ]
@@ -13883,12 +13843,10 @@
     "skins": [
       {
         "name": "Showtime Ennard",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/enard-skin-high.png",
         "rarity": "exclusive"
       },
       {
         "name": "Professor Ennard",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/professor-ennard-high.png",
         "rarity": "exclusive"
       }
     ]
@@ -14261,12 +14219,10 @@
     "skins": [
       {
         "name": "Undead Rider Mike",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/undead-rider-mike-skin-high.png",
         "rarity": "exclusive"
       },
       {
         "name": "Shiny Undead Rider Mike",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/shiny-undead-rider-mike-skin-high.png",
         "rarity": "shiny"
       }
     ]
@@ -14838,13 +14794,11 @@
     ],
     "skins": [
       {
-        "name": "Mad Doctor Purple Guy",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/mad-doctor-devious-purple-guy-skin-high.png?enable-io=true&crop=1%3A1&width=226",
+        "name": "Mad Doctor Devious Purple Guy",
         "rarity": "nightmare"
       },
       {
-        "name": "Shiny Mad Doctor Purple Guy",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/mad-doctor-devious-purple-guy-shiny-skin-high.png?enable-io=true&crop=1%3A1&width=226",
+        "name": "Shiny Mad Doctor Devious Purple Guy",
         "rarity": "shiny"
       }
     ],
@@ -15110,7 +15064,6 @@
     "skins": [
       {
         "name": "Oxidized Kronos",
-        "image": "https://tr.rbxcdn.com/180DAY-f20c53e7313275ce5491e2b332887fd5/420/420/Image/Png/noFilter",
         "rarity": "secret"
       }
     ],
@@ -15342,7 +15295,6 @@
     "skins": [
       {
         "name": "Chipper's Revenge",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3uir87-high.png",
         "rarity": "secret"
       }
     ],
@@ -15888,17 +15840,14 @@
     "skins": [
       {
         "name": "Toy Chica",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3uii6l-high.png",
         "rarity": "secret"
       },
       {
         "name": "Nightmare Chica",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3uq0ns-high.png",
         "rarity": "secret"
       },
       {
         "name": "JJ",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/c3urd5g-high.png",
         "rarity": "secret"
       }
     ],
@@ -16384,7 +16333,6 @@
     "skins": [
       {
         "name": "Puppet Boy Michael",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/puppet-boy-michael-high.png",
         "rarity": "exclusive"
       }
     ],
@@ -16659,7 +16607,6 @@
     "skins": [
       {
         "name": "Dark Knight Lefty",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/dark-knight-lefty-high.png",
         "rarity": "exclusive"
       }
     ],
@@ -21822,7 +21769,6 @@
   "skins": [
       {
         "name": "Magician Mr. Hippo",
-        "image": "https://tr.rbxcdn.com/180DAY-3a584d370f6cc57df108d6f8582b3a5c/420/420/Image/Png/noFilter",
         "rarity": "exclusive"
       }
 ],
@@ -23110,7 +23056,6 @@
   "skins":[
     {
       "name": "Gargoyle Vengeful Spirit",
-      "image": "https://tr.rbxcdn.com/180DAY-629a5c287a3eb565a438aa55638fee94/420/420/Image/Png/noFilter",
       "rarity": "exclusive"
     }
   ],
@@ -23982,12 +23927,10 @@
   "skins":[
       {
         "name": "Frogman Hoax Purple Guy",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/frogman-hoax-purple-guy-high.png?enable-io=true&crop=1%3A1&width=347",
         "rarity": "secret"
       },
       {
         "name": "Shiny Frogman Hoax Purple Guy",
-        "image": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-8rximn.png?enable-io=true&crop=1%3A1&width=347",
         "rarity": "shiny"
       }
   ]

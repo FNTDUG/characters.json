@@ -534,7 +534,8 @@
     "summon": {
       "s": [
         "XOR",
-        "Yeti Oni Bonnie"
+        "Yeti Oni Bonnie",
+        "Fazman"
       ],
       "a": [
         "Purple Guy",
@@ -549,12 +550,16 @@
       "b": [
         "Party Never Ends Cupcake",
         "Toy Maker Mangle",
-        "Conductor Toy Freddy"
+        "Conductor Toy Freddy",
+        "Bones Of The Past Nightmare Freddy",
+        "Freddy Fastbear"
       ],
       "c": [
         "Freddles",
         "King in Purple Purple Guy",
-        "Puppet"
+        "Puppet",
+        "Animdude",
+        "Fallen Angel Nightmarionne"
       ]
     },
     "knockback": {

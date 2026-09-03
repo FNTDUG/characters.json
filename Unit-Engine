@@ -2086,10 +2086,11 @@
         soak:'#35A8FF',
         stun:'#7FD6F0',
         wither:'#A98FC4',
-        knockback:'#7BB5D9'
+        knockback:'#7BB5D9',
+        cash:'#D8A52A'
       };
 
-      var _CC_STANDALONE = 'anti[- ]?regen|burn|bleed|slow|stun|knockback|poison|death|malware|mark|root|scar|soak|wither';
+      var _CC_STANDALONE = 'anti[- ]?regen|burn|bleed|slow|stun|knockback|poison|death|malware|mark|root|scar|soak|wither|cash';
       var _CC_TWOPHRASE  = 'knocks back|knocked back';
 
       // 'red' and 'ring' are what let scar -> scarred / scarring resolve back to

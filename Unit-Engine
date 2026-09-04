@@ -1403,6 +1403,12 @@
 
       <script>
 
+      // Fire's element passive: every attack applies a burn ticking this share of the
+      // unit's damage per second, lasting 1s. Stacks without limit, so how many are alive
+      // at once is just the attack rate — one attack contributes pct x damage, and the
+      // attacks land 1/cd times a second. Nothing for the user to set.
+      var FIRE_BURN_PCT_PER_SEC = 0.03;
+
       const ELEMENT_TEXT_GRADIENT =
       "linear-gradient(90deg,#b7ff9c,#79ff5c,#9aff72,#6dff52,#b7ff9c)";
 
@@ -1808,11 +1814,14 @@
         return { dmgMult: dmgM, rngMult: rngM, cdMult: cdM, costMult: costM, critRateMult: critRM, critDmgMult: critDM, critRateAdd: critRADD, critDmgAdd: critDADD };
       }
 
+      var burnPctPerSec = 0;
+
       permaList.forEach(function(type) {
         var meta = BOOST_META[type];
         var factor = _applyBoostMeta(meta, unit, cdMult);
         if (factor === null || factor === undefined) return;
         if (meta && meta.singlePlacement) { var _spDiv = getPlc(unit) || 1; factor = factor / _spDiv; }
+        if (typeof meta.burnPctPerSec === "number") burnPctPerSec += meta.burnPctPerSec * factor;
         var r = _applyMetaMults(meta, factor, dmgMult, rngMult, cdMult, costMult, critRateMult, critDmgMult, critRateAdd, critDmgAdd);
         dmgMult = r.dmgMult; rngMult = r.rngMult; cdMult = r.cdMult;
         costMult = r.costMult; critRateMult = r.critRateMult; critDmgMult = r.critDmgMult; critRateAdd = r.critRateAdd; critDmgAdd = r.critDmgAdd;
@@ -1823,6 +1832,7 @@
         var factor = _applyBoostMeta(meta, unit, cdMult);
         if (factor === null || factor === undefined) return;
         if (meta && meta.singlePlacement) { var _spDiv = getPlc(unit) || 1; factor = factor / _spDiv; }
+        if (typeof meta.burnPctPerSec === "number") burnPctPerSec += meta.burnPctPerSec * factor;
         var r = _applyMetaMults(meta, factor, dmgMult, rngMult, cdMult, costMult, critRateMult, critDmgMult, critRateAdd, critDmgAdd);
         dmgMult = r.dmgMult; rngMult = r.rngMult; cdMult = r.cdMult;
         costMult = r.costMult; critRateMult = r.critRateMult; critDmgMult = r.critDmgMult; critRateAdd = r.critRateAdd; critDmgAdd = r.critDmgAdd;
@@ -1852,6 +1862,7 @@
               case "water":       rngMult *= 1.03; break;
               case "electricity": cdMult  *= 0.99; break;
               case "rust":        dmgMult *= 1.06; cdMult  *= 1.03; break;
+              case "fire":        burnPctPerSec += FIRE_BURN_PCT_PER_SEC; break;
             }
             if (_uDmg !== 0 && _uEl !== "none" && unit && unit.element) {
               var _uUnit = String(unit.element||"").toLowerCase();
@@ -1884,7 +1895,8 @@
           critRateMult: critRateMult,
           critDmgMult:  critDmgMult,
           critRateAdd:  critRateAdd,
-          critDmgAdd:   critDmgAdd
+          critDmgAdd:   critDmgAdd,
+          burnPctPerSec: burnPctPerSec
         };
       }
 
@@ -3703,6 +3715,14 @@
           items: []
         };
 
+        var _burnPct = 0;
+        try { _burnPct = (getBuffEffects(unit) || {}).burnPctPerSec || 0; } catch (e) { _burnPct = 0; }
+        if (_burnPct > 0 && isFinite(effAttackCd) && effAttackCd > 0) {
+          var _burnDps = _burnPct * _dotBase / effAttackCd;
+          result.dot += _burnDps;
+          result.items.push({ label: "Fire Element (Burn)", valuePerPlc: _burnDps, isGlobal: false, stunFrac: 0 });
+        }
+
         var pd = resolvePd(unit, modeKey);
         if (!pd) return result;
 
@@ -4292,7 +4312,9 @@
           BOOST_OPTIONS.push(
             ["aqua_water", "Aqua Strike Toy Chica (+25% DMG) [Fire only]", { dmgMult: 1.25, elements: ["Fire"] }],
             ["pyro_bonnie","Pyro Spring Bonnie (+4% DMG per stack) [Fire only]", { dmgMult: 1.04, stackKey: "pyrobonnieStacks", maxStacks: 10, elements: ["Fire"] }],
-            ["scorched", "Springtrap: Agonized (+25% DMG) [Fire only]", { dmgMult: 1.25, elements: ["Fire"] }]
+            ["scorched", "Springtrap: Agonized (+25% DMG) [Fire only]", { dmgMult: 1.25, elements: ["Fire"] }],
+            ["fireelement", "Fire Element: 3% DMG/sec burn for 1s on every attack [Fire only]",
+              { burnPctPerSec: FIRE_BURN_PCT_PER_SEC, elements: ["Fire"] }]
           );
         }
 

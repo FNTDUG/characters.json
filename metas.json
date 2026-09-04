@@ -235,7 +235,7 @@
       "Player 3": {
       "units": [
         { "name": "White Lily Toy Foxy", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
-        { "name": "Golden Cupcake", "label": "", "byte": "UFO", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Golden Cupcake", "label": "", "byte": "UFO", "chip": "", "enchant": "Phantom", "replacement": "", "caption": "Buff Potency" },
         { "name": "Overlord Scott", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "DJ 101Bit", "label": "", "byte": "The Box", "enchant": "Vengeance", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" },

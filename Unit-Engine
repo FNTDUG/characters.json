@@ -1403,6 +1403,14 @@
 
       <script>
 
+      // Buff Potency is a per-boost figure the user types in, Unit Boosts only, capped at
+      // +63%. It scales what the boost is worth rather than how many stacks are up: a
+      // +10% boost at +10% potency is worth +11%.
+      var BUFF_POTENCY_MAX = 63;
+      // A multiplier is worth (m - 1); potency scales that, so it reads the same whether
+      // the boost raises a stat (1.10 -> 1.11) or lowers one (0.90 -> 0.89).
+      function _potMult(mult, pot) { return pot ? 1 + (mult - 1) * (1 + pot) : mult; }
+
       // Cooldown floors. Unit Boosts and bytes are capped together at -50%; boss raids
       // carry their own -50% cap; enchants and chips are not capped at all.
       var CD_BOOST_FLOOR = 0.5;
@@ -1796,7 +1804,8 @@
         return uptimeFactor * stacks;
       }
 
-      function _applyMetaMults(meta, factor, dmgM, rngM, cdM, costM, critRM, critDM, critRADD, critDADD) {
+      function _applyMetaMults(meta, factor, dmgM, rngM, cdM, costM, critRM, critDM, critRADD, critDADD, pot) {
+        pot = pot || 0;
         
         
         
@@ -1807,14 +1816,14 @@
           var v = mult < 1 ? Math.pow(mult, f) : 1 + (mult - 1) * f;
           return base * Math.max(0.01, v);
         }
-        if (typeof meta.dmgMult      === "number") dmgM    = _m(dmgM,  meta.dmgMult,  factor);
-        if (typeof meta.rngMult      === "number") rngM    = _m(rngM,  meta.rngMult,  factor);
-        if (typeof meta.cdMult       === "number") cdM     = _m(cdM,   meta.cdMult,   factor);
-        if (typeof meta.costMult     === "number") costM   = _m(costM, meta.costMult, factor);
-        if (typeof meta.critRateMult === "number") critRM  += (meta.critRateMult - 1) * factor;
-        if (typeof meta.critDmgMult  === "number") critDM  += (meta.critDmgMult  - 1) * factor;
-        if (typeof meta.critRateAdd  === "number") critRADD += meta.critRateAdd  * factor;
-        if (typeof meta.critDmgAdd   === "number") critDADD += meta.critDmgAdd   * factor;
+        if (typeof meta.dmgMult      === "number") dmgM    = _m(dmgM,  _potMult(meta.dmgMult, pot),  factor);
+        if (typeof meta.rngMult      === "number") rngM    = _m(rngM,  _potMult(meta.rngMult, pot),  factor);
+        if (typeof meta.cdMult       === "number") cdM     = _m(cdM,   _potMult(meta.cdMult, pot),   factor);
+        if (typeof meta.costMult     === "number") costM   = _m(costM, _potMult(meta.costMult, pot), factor);
+        if (typeof meta.critRateMult === "number") critRM  += (meta.critRateMult - 1) * (1 + pot) * factor;
+        if (typeof meta.critDmgMult  === "number") critDM  += (meta.critDmgMult  - 1) * (1 + pot) * factor;
+        if (typeof meta.critRateAdd  === "number") critRADD += meta.critRateAdd  * (1 + pot) * factor;
+        if (typeof meta.critDmgAdd   === "number") critDADD += meta.critDmgAdd   * (1 + pot) * factor;
         return { dmgMult: dmgM, rngMult: rngM, cdMult: cdM, costMult: costM, critRateMult: critRM, critDmgMult: critDM, critRateAdd: critRADD, critDmgAdd: critDADD };
       }
 
@@ -1830,8 +1839,9 @@
         var factor = _applyBoostMeta(meta, unit, cdMult);
         if (factor === null || factor === undefined) return;
         if (meta && meta.singlePlacement) { var _spDiv = getPlc(unit) || 1; factor = factor / _spDiv; }
-        if (typeof meta.burnPctPerSec === "number") burnPctPerSec += meta.burnPctPerSec * factor;
-        var r = _applyMetaMults(meta, factor, dmgMult, rngMult, cdMult, costMult, critRateMult, critDmgMult, critRateAdd, critDmgAdd);
+        var _pot = boostPotency(type);
+        if (typeof meta.burnPctPerSec === "number") burnPctPerSec += meta.burnPctPerSec * (1 + _pot) * factor;
+        var r = _applyMetaMults(meta, factor, dmgMult, rngMult, cdMult, costMult, critRateMult, critDmgMult, critRateAdd, critDmgAdd, _pot);
         dmgMult = r.dmgMult; rngMult = r.rngMult; cdMult = r.cdMult;
         costMult = r.costMult; critRateMult = r.critRateMult; critDmgMult = r.critDmgMult; critRateAdd = r.critRateAdd; critDmgAdd = r.critDmgAdd;
       });
@@ -3091,6 +3101,13 @@
           }
         }
         return Math.max(1, base);
+      }
+
+      function boostPotency(key) {
+        if (typeof buffState === "undefined" || !buffState || !buffState.perma) return 0;
+        var v = Number(buffState.perma["pot:" + key]);
+        if (!isFinite(v) || v <= 0) return 0;
+        return Math.min(v, BUFF_POTENCY_MAX) / 100;
       }
 
       function getPlc(unit) {
@@ -4532,6 +4549,39 @@
             cdInp.addEventListener("keydown", function(e) { if (e.key === "Enter") cdInp.blur(); });
             cdWrap.appendChild(cdInp);
             wrap.appendChild(cdWrap);
+          }
+
+          // Buff Potency — last, so on a stacking boost it sits under the stack count.
+          if (selectedValue && selectedValue !== "none") {
+            var potKey = "pot:" + selectedValue;
+            var potWrap = document.createElement("div");
+            potWrap.style.marginTop = "4px";
+            var potLabel = document.createElement("div");
+            potLabel.textContent = "Buff Potency";
+            potLabel.className = "buff-panel-label";
+            potLabel.style.fontSize = "12px";
+            potWrap.appendChild(potLabel);
+
+            var potInp = document.createElement("input");
+            potInp.className = "ue-byte-input"; ueNumericInput(potInp);
+            potInp.min = 0; potInp.max = BUFF_POTENCY_MAX; potInp.step = "0.1";
+            potInp.placeholder = "0 to +" + BUFF_POTENCY_MAX + "%";
+            if (buffState.perma[potKey] != null) potInp.value = buffState.perma[potKey];
+            potInp.addEventListener("blur", function() {
+              var raw = String(potInp.value).trim();
+              var v = parseFloat(raw);
+              if (raw === "" || isNaN(v) || v <= 0) {
+                delete buffState.perma[potKey]; potInp.value = "";
+              } else {
+                if (v > BUFF_POTENCY_MAX) v = BUFF_POTENCY_MAX;
+                buffState.perma[potKey] = v; potInp.value = v;
+              }
+              if (typeof allowDisplayAnimation !== "undefined") allowDisplayAnimation = false;
+              displayUnit(unit, modeKey);
+            });
+            potInp.addEventListener("keydown", function(e) { if (e.key === "Enter") potInp.blur(); });
+            potWrap.appendChild(potInp);
+            wrap.appendChild(potWrap);
           }
 
           container.appendChild(wrap);

@@ -3671,6 +3671,14 @@
             }
           });
 
+          var _burnPct = 0;
+          try { _burnPct = (getBuffEffects(unit) || {}).burnPctPerSec || 0; } catch (e) { _burnPct = 0; }
+          if (_burnPct > 0 && isFinite(rWith.effCd) && rWith.effCd > 0) {
+            var _burnDps = _burnPct * rWith.D_noCrit / rWith.effCd * plc;
+            totalWith += _burnDps;
+            if (_burnDps > 0.05) bItems.push({ label: "Fire Element (Burn)", value: _burnDps });
+          }
+
           return { total: totalWith, breakdown: bItems };
         }
 
@@ -3714,14 +3722,6 @@
           stunFraction: 0,
           items: []
         };
-
-        var _burnPct = 0;
-        try { _burnPct = (getBuffEffects(unit) || {}).burnPctPerSec || 0; } catch (e) { _burnPct = 0; }
-        if (_burnPct > 0 && isFinite(effAttackCd) && effAttackCd > 0) {
-          var _burnDps = _burnPct * _dotBase / effAttackCd;
-          result.dot += _burnDps;
-          result.items.push({ label: "Fire Element (Burn)", valuePerPlc: _burnDps, isGlobal: false, stunFrac: 0 });
-        }
 
         var pd = resolvePd(unit, modeKey);
         if (!pd) return result;

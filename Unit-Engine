@@ -1403,6 +1403,10 @@
 
       <script>
 
+      // Cooldown floors. Unit Boosts and bytes are capped together at -50%; boss raids
+      // carry their own -50% cap; enchants and chips are not capped at all.
+      var CD_BOOST_FLOOR = 0.5;
+
       // Fire's element passive: every attack applies a burn ticking this share of the
       // unit's damage per second, lasting 1s. Stacks without limit, so how many are alive
       // at once is just the attack rate — one attack contributes pct x damage, and the
@@ -1816,6 +1820,11 @@
 
       var burnPctPerSec = 0;
 
+      // Enchants and chips are already applied; boss raids and bytes come after. Each
+      // layer is bracketed so the cooldown floors can be applied per group: Unit Boosts
+      // and bytes share one, boss raids has its own, enchants and chips have none.
+      var _cdBeforePerma = cdMult;
+
       permaList.forEach(function(type) {
         var meta = BOOST_META[type];
         var factor = _applyBoostMeta(meta, unit, cdMult);
@@ -1827,6 +1836,9 @@
         costMult = r.costMult; critRateMult = r.critRateMult; critDmgMult = r.critDmgMult; critRateAdd = r.critRateAdd; critDmgAdd = r.critDmgAdd;
       });
 
+      var _cdPermaOnly = (_cdBeforePerma > 0) ? (cdMult / _cdBeforePerma) : 1;
+      var _cdBeforeTemp = cdMult;
+
       tempList.forEach(function(type) {
         var meta = BOOST_META[type];
         var factor = _applyBoostMeta(meta, unit, cdMult);
@@ -1837,6 +1849,9 @@
         dmgMult = r.dmgMult; rngMult = r.rngMult; cdMult = r.cdMult;
         costMult = r.costMult; critRateMult = r.critRateMult; critDmgMult = r.critDmgMult; critRateAdd = r.critRateAdd; critDmgAdd = r.critDmgAdd;
       });
+
+        var _cdTempOnly = (_cdBeforeTemp > 0) ? (cdMult / _cdBeforeTemp) : 1;
+        var _cdBeforeByte = cdMult;
 
         // ── Byte boosts ────────────────────────────────────────────────────────
         function _applyByteBoosts(bm, bs) {
@@ -1877,6 +1892,7 @@
           _applyByteBoosts(byteState.mainByte, byteState.stats    || {});
           _applyByteBoosts(byteState.subByte,  byteState.subStats || {});
         }
+        var _cdByteOnly = (_cdBeforeByte > 0) ? (cdMult / _cdBeforeByte) : 1;
 
         if (!isFinite(dmgMult) || dmgMult <= 0) dmgMult = 1;
         if (!isFinite(rngMult)      || rngMult      <= 0) rngMult      = 1;
@@ -1896,7 +1912,10 @@
           critDmgMult:  critDmgMult,
           critRateAdd:  critRateAdd,
           critDmgAdd:   critDmgAdd,
-          burnPctPerSec: burnPctPerSec
+          burnPctPerSec: burnPctPerSec,
+          cdMultPerma: (isFinite(_cdPermaOnly) && _cdPermaOnly > 0) ? _cdPermaOnly : 1,
+          cdMultTemp:  (isFinite(_cdTempOnly)  && _cdTempOnly  > 0) ? _cdTempOnly  : 1,
+          cdMultByte:  (isFinite(_cdByteOnly)  && _cdByteOnly  > 0) ? _cdByteOnly  : 1
         };
       }
 
@@ -3089,12 +3108,14 @@
       function getCooldownMultiplier(unit, baseCd) {
 
         
-        var mult = getBuffEffects(unit).cdMult;
+        var _cdEff = getBuffEffects(unit);
+        var mult = _cdEff.cdMult;
 
         
         var buffedCd = baseCd * mult;
 
       
+      var _lsRatio = 1;
       if (buffState.permaSelected?.includes("sweetheart_toy_foxy")) {
 
         var selectedCd = buffState.perma.sweetheartToyFoxyCd;
@@ -3107,9 +3128,28 @@
           var _avgMult = averagedCd / baseCd;
           // Love Shot only affects 1 placement — dilute the averaging by the placement count
           var _swPlc = (typeof getPlc === "function") ? (getPlc(unit) || 1) : 1;
-          mult = mult + (_avgMult - mult) / _swPlc;
+          var _lsMult = mult + (_avgMult - mult) / _swPlc;
+          // Love Shot is a Unit Boost, so its share of the change belongs to that layer
+          // and is floored along with it below.
+          if (mult > 0) _lsRatio = _lsMult / mult;
+          mult = _lsMult;
         }
       }
+
+      // Floors, per group. Unit Boosts and bytes share one, boss raids has its own, and
+      // whatever is left — enchants and chips — multiplies underneath both, uncapped.
+      (function () {
+        var pm = (_cdEff.cdMultPerma || 1) * _lsRatio;
+        var by = _cdEff.cdMultByte || 1;
+        var tp = _cdEff.cdMultTemp || 1;
+        var grouped = pm * by * tp;
+        if (!isFinite(grouped) || grouped <= 0) return;
+        var uncapped = mult / grouped;                    // enchants + chips
+        if (!isFinite(uncapped) || uncapped <= 0) return;
+        var g1 = pm * by; if (g1 < CD_BOOST_FLOOR) g1 = CD_BOOST_FLOOR;
+        var g2 = tp;      if (g2 < CD_BOOST_FLOOR) g2 = CD_BOOST_FLOOR;
+        mult = g1 * g2 * uncapped;
+      })();
 
         if (isGlitchedMode) mult *= GLITCH_CD_MULT;
 

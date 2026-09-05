@@ -7269,6 +7269,44 @@
         var currentElementFilter   = "all";
         var currentTypeFilter      = "all";
         var currentPlacementsSort  = "all";
+        var currentStatSort        = "all";
+
+        // Max-level value of a stat, for the "Filter by Stats" sort. A unit whose levels
+        // sit under modes rather than at the top level is read from its first mode, and
+        // one with no usable number sorts to the end rather than to the top.
+        function maxLevelStat(u, key) {
+          var lvls = (u && u.levels && u.levels.length) ? u.levels : null;
+          if (!lvls && u && u.modes) {
+            for (var mk in u.modes) {
+              if (u.modes[mk] && u.modes[mk].levels && u.modes[mk].levels.length) { lvls = u.modes[mk].levels; break; }
+            }
+          }
+          if (!lvls) return null;
+          for (var i = lvls.length - 1; i >= 0; i--) {
+            var v = Number(lvls[i][key]);
+            if (isFinite(v)) return v;
+          }
+          return null;
+        }
+
+        // Cost is cumulative rather than a max-level reading: the Cost cell adds every
+        // level's cost and multiplies by placements, so the sort uses the same figure.
+        function totalCostStat(u) {
+          var lvls = (u && u.levels && u.levels.length) ? u.levels : null;
+          if (!lvls && u && u.modes) {
+            for (var mk in u.modes) {
+              if (u.modes[mk] && u.modes[mk].levels && u.modes[mk].levels.length) { lvls = u.modes[mk].levels; break; }
+            }
+          }
+          if (!lvls) return null;
+          var sum = 0, any = false;
+          for (var i = 0; i < lvls.length; i++) {
+            var c = Number(lvls[i].cost);
+            if (isFinite(c)) { sum += c; any = true; }
+          }
+          if (!any) return null;
+          return sum * ((u.placements || 1));
+        }
 
         // Grouped: progression stage, then status effects A-Z, then roles.
         // The status list mirrors the INFO panel's "Status Effects" tab (plus
@@ -7353,18 +7391,20 @@
             { value: "rarity",     label: "Filter by Rarity" },
             { value: "element",    label: "Filter by Element" },
             { value: "type",       label: "Filter by Type" },
-            { value: "placements", label: "Filter by Placements" }
+            { value: "placements", label: "Filter by Placements" },
+            { value: "stats",      label: "Filter by Stats" }
           ],
           "all",
           function(v) {
             currentCategoryMode = v || "all";
             if (currentCategoryMode === "all") {
-              currentRarityFilter = currentElementFilter = currentTypeFilter = currentPlacementsSort = "all";
+              currentRarityFilter = currentElementFilter = currentTypeFilter = currentPlacementsSort = currentStatSort = "all";
             } else {
               if (currentCategoryMode === "rarity")     currentRarityFilter    = "all";
               if (currentCategoryMode === "element")    currentElementFilter   = "all";
               if (currentCategoryMode === "type")       currentTypeFilter      = "all";
               if (currentCategoryMode === "placements") currentPlacementsSort  = "all";
+              if (currentCategoryMode === "stats")      currentStatSort        = "all";
             }
             rebuildValueSelect();
             updateDropdown(input.value);
@@ -7380,6 +7420,7 @@
             if (currentCategoryMode === "element")    currentElementFilter  = v;
             if (currentCategoryMode === "type")       currentTypeFilter     = v;
             if (currentCategoryMode === "placements") currentPlacementsSort = v;
+            if (currentCategoryMode === "stats")      currentStatSort       = v;
             updateDropdown(input.value);
           },
           { searchable: false, noMarginTop: true }
@@ -8016,6 +8057,14 @@
             opts.push({ value: "least", label: "Least" });
             _valueSel._rebuild(opts);
             _valueSel._set(currentPlacementsSort || "all");
+          } else if (currentCategoryMode === "stats") {
+            opts.push({ value: "all",    label: "Select...", placeholder: true });
+            opts.push({ value: "damage", label: "Damage (High-Low)" });
+            opts.push({ value: "range",  label: "Range (High-Low)" });
+            opts.push({ value: "cd",     label: "Cooldown (High-Low)" });
+            opts.push({ value: "cost",   label: "Cost (High-Low)" });
+            _valueSel._rebuild(opts);
+            _valueSel._set(currentStatSort || "all");
           }
         }
         
@@ -8070,6 +8119,13 @@
             if (currentCategoryMode === "placements" && currentPlacementsSort !== "all") {
               var pA = a.placements || 1, pB = b.placements || 1;
               if (pA !== pB) return currentPlacementsSort === "most" ? pB - pA : pA - pB;
+            }
+            if (currentCategoryMode === "stats" && currentStatSort !== "all") {
+              var sA = currentStatSort === "cost" ? totalCostStat(a) : maxLevelStat(a, currentStatSort);
+              var sB = currentStatSort === "cost" ? totalCostStat(b) : maxLevelStat(b, currentStatSort);
+              if (sA == null && sB != null) return 1;
+              if (sB == null && sA != null) return -1;
+              if (sA != null && sB != null && sA !== sB) return sB - sA;
             }
             var rDiff = getRarityRank(a.rarity) - getRarityRank(b.rarity);
             if (rDiff !== 0) return rDiff;

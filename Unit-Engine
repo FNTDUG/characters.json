@@ -4301,7 +4301,7 @@
 
         if (unitHasElement(unit, "nature")) {
           BOOST_OPTIONS.push(
-            ["chipper_nature", "Chipper: Stock Stacker (+1.5% DMG, +1.5% RNG per stack) [Nature only]", { dmgMult: 1.015, rngMult: 1.015, stackKey: "chippernatureStacks", maxStacks: 20 }],
+            ["chipper_nature", "Chipper: Stock Stacker (+1.5% DMG, +1.5% RNG per stack) [Nature only]", { dmgMult: 1.015, rngMult: 1.015, stackKey: "chippernatureStacks", maxStacks: 20, elements: ["Nature"] }],
             ["lumber",         "Chipper: Lumber Co. (+20% DMG) [Nature only]",                          { dmgMult: 1.20, elements: ["Nature"] }],
             ["gaia_domain",    "Gaia Chica: Growmain Expansion (+30% DMG, -10% CD) [Nature only]",      { dmgMult: 1.30, cdMult: 0.90, duration: 30, cd: 90, elements: ["Nature"] }],
             ["lily_fox",       "White Lily Toy Foxy: Fae's Blessing (+20% DMG, +10% RNG) [Nature only]",{ dmgMult: 1.20, rngMult: 1.10, duration: 10, cd: 30, stackKey: "lilyStacks", maxStacks: 4, elements: ["Nature"] }]
@@ -4311,7 +4311,7 @@
         if (unitHasElement(unit, "rust")) {
           BOOST_OPTIONS.push(
             ["kronos_rust",  "Kronos Endo Freddy: In Due Time... (+36% DMG & +36% RNG) [Rust only]",           { dmgMult: 1.36, rngMult: 1.36, elements: ["Rust"] }],
-            ["michael_rust", "Michael Afton: Together Again (+30% DMG, +25% RNG, -10% CD per stack) [Rust only]", { dmgMult: 1.30, rngMult: 1.25, cdMult: 0.90, stackKey: "mikeStacks", maxStacks: 4 }],
+            ["michael_rust", "Michael Afton: Together Again (+30% DMG, +25% RNG, -10% CD per stack) [Rust only]", { dmgMult: 1.30, rngMult: 1.25, cdMult: 0.90, stackKey: "mikeStacks", maxStacks: 4, elements: ["Rust"] }],
             ["rustelement",  "Rust Element: +6% DMG, +3% CD penalty [Rust only]",                              { dmgMult: 1.06, cdMult: 1.03, elements: ["Rust"] }]
           );
         }
@@ -4325,7 +4325,7 @@
         if (unitHasElement(unit, "dark")) {
           BOOST_OPTIONS.push(
             ["hoax_guy",      "Hoax Purple Guy: Ring Ring Are You There? (+25% DMG & +25% RNG) [Dark only]",     { dmgMult: 1.25, rngMult: 1.25, elements: ["Dark"]}],
-            ["nightmarefred", "Nightmare Fredbear: Feeding the Fear (+10% DMG, +10% RNG per stack) [Dark only]", { dmgMult: 1.10, rngMult: 1.10, stackKey: "nightmarefredStacks", maxStacks: 5 }],
+            ["nightmarefred", "Nightmare Fredbear: Feeding the Fear (+10% DMG, +10% RNG per stack) [Dark only]", { dmgMult: 1.10, rngMult: 1.10, stackKey: "nightmarefredStacks", maxStacks: 5, elements: ["Dark"] }],
             ["darkelement",   "Dark Element: +3% DMG [Dark only]",                                               { dmgMult: 1.03, elements: ["Dark"] }],
             ["pwc",            "Phantom Withered Chica: Soulbound (+25% DMG) [Dark only]",                       { dmgMult: 1.25, elements: ["Dark"] }],
             ["ballora_dark",  "Mother Nature Ballora: Dark Wither (+10% DMG) [Dark only]",                       { dmgMult: 1.10, elements: ["Dark"]}],
@@ -5196,6 +5196,9 @@
             isShinyMode = !isShinyMode;
             allowDisplayAnimation = false;
             displayUnit(unit, modeKey);
+            // the DPS panel paints names from isShinyMode, so redraw it if it is open
+            if (typeof _dpsBtnActive !== "undefined" && _dpsBtnActive &&
+                typeof _buildDpsChart === "function") _buildDpsChart();
           });
 
           inner.appendChild(label);
@@ -7802,8 +7805,6 @@
           lowLbl.style.cssText = _xLblCss + "right:4px;";
           scrollShell.appendChild(lowLbl);
 
-          _dpsPanel.appendChild(scrollShell);
-
           
           var listDiv = document.createElement("div");
           listDiv.style.cssText = [
@@ -7829,24 +7830,43 @@
               "transition:background 0.12s"
             ].join(";");
 
-            var rdot = document.createElement("div");
-            rdot.style.cssText = "width:8px;height:8px;border-radius:50%;flex-shrink:0;background:" + (_DOT_COLOR_FB[String(it.unit.rarity||"").toLowerCase()] || "#aaa") + ";";
-
             var rname = document.createElement("span");
             rname.textContent = it.unit.name;
-            rname.style.cssText = "flex:1;font-family:'Press Start 2P',cursive;font-size:9px;color:#fff;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;";
+            rname.style.cssText = "flex:1;font-family:'Press Start 2P',cursive;font-size:9px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;";
+
+            // The name carries the rarity now, so the colour dot that used to sit beside
+            // it is gone. Shiny wins over rarity, and takes the same looping gradient the
+            // unit frame uses.
+            var _rk = String(it.unit.rarity || "").toLowerCase();
+            var _rs = (typeof rarityStyles !== "undefined" && (rarityStyles[_rk] || rarityStyles["default"])) || null;
+            var _shinyOn = (typeof isShinyMode !== "undefined") && isShinyMode;
+            var _grad = _shinyOn
+              ? ((typeof getShinyGradient === "function") ? getShinyGradient(it.unit.name) : null)
+              : (_rs && _rs.textGradient);
+            if (_grad) {
+              rname.style.background = _grad;
+              rname.style.backgroundSize = "200% 200%";
+              rname.style.webkitBackgroundClip = "text";
+              rname.style.backgroundClip = "text";
+              rname.style.webkitTextFillColor = "transparent";
+              rname.style.color = "transparent";
+              if (_shinyOn) rname.style.animation = "shinyBorderLoop 6s linear infinite";
+            } else {
+              rname.style.color = (_rs && _rs.textColor) || _DOT_COLOR_FB[_rk] || "#fff";
+            }
 
             var rdps = document.createElement("span");
             rdps.textContent = fmtDps(it.dps);
             rdps.style.cssText = "font-family:'Press Start 2P',cursive;font-size:9px;color:#ff8c00;white-space:nowrap;flex-shrink:0;";
 
-            row.appendChild(rdot); row.appendChild(rname); row.appendChild(rdps);
+            row.appendChild(rname); row.appendChild(rdps);
             row.addEventListener("mouseenter", function() { row.style.background = "rgba(104,31,98,0.3)"; });
             row.addEventListener("mouseleave", function() { row.style.background = ""; });
             row.addEventListener("click",      function() { _selectDpsUnit(it); });
             listDiv.appendChild(row);
           });
           _dpsPanel.appendChild(listDiv);
+          _dpsPanel.appendChild(scrollShell);
 
           
           var _showList = false;

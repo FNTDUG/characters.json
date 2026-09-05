@@ -2639,6 +2639,9 @@
 
         var SHINY_DAMAGE_MULT = 1.10;
         var isShinyMode = false;
+        // Set by the DPS panel's IIFE below; displayUnit calls it so the panel restates
+        // itself whenever a boost, level or mode changes. Null until that IIFE runs.
+        var _ueDpsRefresh = null;
         var isGlitchedMode = false;
         var GLITCH_DMG_MULT = 1.25;
         var GLITCH_RNG_MULT = 1.125;
@@ -5196,9 +5199,6 @@
             isShinyMode = !isShinyMode;
             allowDisplayAnimation = false;
             displayUnit(unit, modeKey);
-            // the DPS panel paints names from isShinyMode, so redraw it if it is open
-            if (typeof _dpsBtnActive !== "undefined" && _dpsBtnActive &&
-                typeof _buildDpsChart === "function") _buildDpsChart();
           });
 
           inner.appendChild(label);
@@ -7186,6 +7186,13 @@
             var _newTabHeader = result.querySelector('.buff-tabs-header');
             if (_newTabHeader && _savedTabScroll > 0) _newTabHeader.scrollLeft = _savedTabScroll;
           });
+
+        // The DPS panel is a snapshot of every unit under the current boosts, so it goes
+        // stale the moment any of them change. Everything that changes them ends up here,
+        // which makes this the one place worth redrawing from.
+        if (typeof _ueDpsRefresh === "function") {
+          try { _ueDpsRefresh(); } catch (e) {}
+        }
       }
         
         
@@ -7434,6 +7441,8 @@
 
         
         var _dpsBtnActive = false;
+        var _dpsShowList  = false;
+        _ueDpsRefresh = function () { if (_dpsBtnActive) _buildDpsChart(); };
         var _dpsTip       = null;
         var _dpsMobTarget = null;
 
@@ -7551,12 +7560,18 @@
           var tn = document.createElement("div");
           tn.textContent = item.unit.name;
           tn.style.cssText = "font-size:7px;text-align:center;margin-bottom:5px;line-height:1.5;word-break:break-word;";
-          if (rs && rs.textGradient) {
-            tn.style.backgroundImage = rs.textGradient;
+          var _tnShiny = (typeof isShinyMode !== "undefined") && isShinyMode;
+          var _tnGrad = _tnShiny
+            ? ((typeof getShinyGradient === "function") ? getShinyGradient(item.unit.name) : null)
+            : (rs && rs.textGradient);
+          if (_tnGrad) {
+            tn.style.backgroundImage = _tnGrad;
+            tn.style.backgroundSize = "200% 200%";
             tn.style.webkitBackgroundClip = "text";
             tn.style.backgroundClip = "text";
             tn.style.webkitTextFillColor = "transparent";
             tn.style.color = "transparent";
+            if (_tnShiny) tn.style.animation = "shinyBorderLoop 6s linear infinite";
           } else {
             tn.style.color = (rs && rs.textColor) || "#fff";
           }
@@ -7869,7 +7884,6 @@
           _dpsPanel.appendChild(scrollShell);
 
           
-          var _showList = false;
           var toggleBtn = document.createElement("button");
           toggleBtn.type = "button";
           toggleBtn.textContent = "Name List";
@@ -7896,9 +7910,8 @@
             toggleBtn.style.borderColor = "rgba(255,164,91,0.4)";
             toggleBtn.style.background  = "rgba(8,6,18,0.9)";
           });
-          toggleBtn.addEventListener("click", function() {
-            _showList = !_showList;
-            if (_showList) {
+          function _applyListView() {
+            if (_dpsShowList) {
               scrollShell.style.display = "none";
               listDiv.style.display     = "block";
               toggleBtn.textContent     = "Chart";
@@ -7911,7 +7924,12 @@
               toggleBtn.style.color     = "#fff";
               toggleBtn.style.borderColor = "rgba(255,164,91,0.4)";
             }
+          }
+          toggleBtn.addEventListener("click", function() {
+            _dpsShowList = !_dpsShowList;
+            _applyListView();
           });
+          _applyListView();
           _dpsPanel.appendChild(toggleBtn);
 
           var hint = document.createElement("div");

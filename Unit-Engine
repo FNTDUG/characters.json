@@ -7441,7 +7441,7 @@
 
         
         var _dpsBtnActive = false;
-        var _dpsShowList  = false;
+        var _dpsShowList  = true;   // the panel opens on the name list; the button swaps to the chart
         _ueDpsRefresh = function () { if (_dpsBtnActive) _buildDpsChart(); };
         var _dpsTip       = null;
         var _dpsMobTarget = null;

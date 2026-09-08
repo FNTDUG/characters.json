@@ -2441,6 +2441,7 @@
           } else if (unit.passives) {
             passivesArr = unit.passives;
           }
+          passivesArr = ueGateList(unit, passivesArr);
 
           
           
@@ -2680,6 +2681,13 @@
       }
 
       function resolvePd(unit, modeKey) {
+        var base = resolvePdBase(unit, modeKey);
+        if (!base || !ueHeroPathsFor(unit)) return base;
+        var out = {}, k;
+        for (k in base) out[k] = ueGateList(unit, base[k] || []);
+        return out;
+      }
+      function resolvePdBase(unit, modeKey) {
         if (unit && unit.modes && typeof unit.modes === "object") {
           var _mk = (modeKey && unit.modes[modeKey]) ? modeKey : Object.keys(unit.modes)[0];
           if (_mk && unit.modes[_mk] && unit.modes[_mk].passiveDamage) {
@@ -2992,6 +3000,39 @@
         }
         return out.length ? out : null;
       }
+      // A tier carries "levels" — per-level stat overrides merged onto the unit's own,
+      // the same way a mode swaps in its own levels. Tiers do not push passives or
+      // passiveDamage: those live on the unit and declare which tier unlocks them.
+      function ueHeroPathContrib(unit) {
+        var paths = ueHeroPathsFor(unit);
+        if (!paths) return null;
+        var sel = ueHeroPathSel[unit.name] || [0, 0, 0];
+        var lvlOv = [];
+        for (var p = 0; p < paths.length; p++) {
+          for (var t = 0; t < (sel[p] || 0); t++) {
+            var tier = paths[p][t];
+            if (tier && Array.isArray(tier.levels) && tier.levels.length) lvlOv = lvlOv.concat(tier.levels);
+          }
+        }
+        return lvlOv.length ? { levels: lvlOv } : null;
+      }
+
+      // Gate for anything in passives / passiveDamage. An entry with "path" and "tier"
+      // only counts once that path is selected to at least that tier, so W/ ACTIVE(S) &
+      // PASSIVE(S) reflects the build actually picked rather than everything the hero
+      // could ever have. Entries without a gate are base kit and always show.
+      function ueTierUnlocked(unit, entry) {
+        if (!entry || entry.path == null || entry.tier == null) return true;
+        if (!ueHeroPathsFor(unit)) return true;
+        var sel = ueHeroPathSel[unit.name] || [0, 0, 0];
+        var pi = Number(entry.path) - 1;
+        return pi >= 0 && pi < sel.length && (sel[pi] || 0) >= Number(entry.tier);
+      }
+      function ueGateList(unit, list) {
+        if (!Array.isArray(list)) return list;
+        return list.filter(function (e) { return ueTierUnlocked(unit, e); });
+      }
+
       function ueHeroPathSelFor(unit) {
         if (!ueHeroPathSel[unit.name]) ueHeroPathSel[unit.name] = [0, 0, 0];
         return ueHeroPathSel[unit.name];
@@ -3351,16 +3392,38 @@
           var mk = modeKey || scarecrowMode || Object.keys(unit.modes)[0];
           var mode = unit.modes[mk] || unit.modes[Object.keys(unit.modes)[0]];
           return {
-            levels: mode.levels || [],
+            levels: ueApplyPathLevels(unit, mode.levels || []),
             modeMeta: mode
           };
         }
 
         
         return {
-          levels: unit.levels || [],
+          levels: ueApplyPathLevels(unit, unit.levels || []),
           modeMeta: null
         };
+      }
+
+      // A hero's selected tiers can restate any stat at any level. Entries are matched
+      // on "level" and merged over the base, in tier order, so a later tier wins. Only
+      // the levels and fields that actually change need listing.
+      function ueApplyPathLevels(unit, levels) {
+        var c = ueHeroPathContrib(unit);
+        if (!c || !c.levels.length || !levels.length) return levels;
+        var out = levels.map(function (l) {
+          var copy = {};
+          for (var k in l) copy[k] = l[k];
+          return copy;
+        });
+        for (var i = 0; i < c.levels.length; i++) {
+          var ov = c.levels[i];
+          if (!ov) continue;
+          for (var j = 0; j < out.length; j++) {
+            if (Number(out[j].level) !== Number(ov.level)) continue;
+            for (var f in ov) { if (f !== 'level') out[j][f] = ov[f]; }
+          }
+        }
+        return out;
       }
 
         
@@ -5997,6 +6060,10 @@
             if (typeof playUiClickSound === "function") playUiClickSound();
             openHeroPathsModal(unit, rarityStyle, function (build) {
               pathShell.textContent = "Hero Tree: " + build;
+              // Redraw so the stats table, the passives dropdown and the
+              // W/ ACTIVE(S) & PASSIVE(S) header reflect the new build. The modal is
+              // appended to <body>, so it survives the redraw.
+              try { allowDisplayAnimation = false; displayUnit(unit, modeKey); } catch (e) {}
             });
           });
 

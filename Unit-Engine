@@ -3044,10 +3044,11 @@
             '.uhp-eff{font-size:8px!important;line-height:1.95!important}' +
             '.uhp-title{font-size:9px!important}' +
             '.uhp-close{top:8px!important;right:8px!important;width:32px!important;height:32px!important;font-size:14px!important}' +
-            '.uhp-overlay{background-image:linear-gradient(rgba(3,2,8,.82),rgba(3,2,8,.82)),url(' + HERO_PATH_BG + ')!important;' +
-              'background-size:auto,cover!important;background-position:center,center!important;' +
-              'background-repeat:no-repeat,no-repeat!important}' +
-            '.uhp-frame{background-image:none!important;background-color:rgba(7,6,15,.55)!important}' +
+            // The background stays on the frame. Sized to the frame's width rather
+            // than covering it, because a stacked mobile layout can be several
+            // viewports tall and cover scales the image to that height.
+            '.uhp-frame{background-size:100% auto!important;background-position:center top!important;' +
+              'background-repeat:repeat-y!important}' +
           '}';
         document.head.appendChild(st);
       }

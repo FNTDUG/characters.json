@@ -318,12 +318,10 @@
 <script>
 /* ── EDIT THIS LIST ── */
 var UPDATED_UNITS = [
-"Phantom Withered Chica",
-"DJ 101Bit",
-"High Voltage Rockstar Freddy",
-"Malachite Foxy",
-"Phantom Endo 02",
-"White Lily Toy Foxy"
+"Void Drifter Molten Freddy",
+"Neon Punk Nightmare Chica",
+"Model 2.9 Detective Funtime Foxy",
+"Cyberdata Withered Bonnie"
 
 ];
 /* ────────────────── */

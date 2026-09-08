@@ -3027,13 +3027,16 @@
           '.uhp-row{display:flex;align-items:flex-start;gap:4px;flex-wrap:nowrap;justify-content:safe center}' +
           '.uhp-title{font-family:"Press Start 2P",cursive;font-size:11px;line-height:1.7}' +
           '.uhp-eff{font-family:"Press Start 2P",cursive;font-size:9px;line-height:2;color:#e2e2e2}' +
+          '.uhp-descbody{flex:1;min-width:0;max-height:190px;overflow-y:auto}' +
           '.uhp-lab{font-family:"Press Start 2P",cursive;font-size:9px;letter-spacing:0;line-height:1.5}' +
           '@media(max-width:760px){' +
             '.uhp-body{padding:12px!important;gap:12px!important}' +
             '.uhp-side{width:100%!important;flex:1 1 100%!important;flex-direction:row!important;' +
               'flex-wrap:wrap;align-items:center;gap:10px!important}' +
             '.uhp-portrait{flex:0 0 88px;width:88px}' +
-            '.uhp-build{flex:1;min-width:110px;font-size:15px!important;padding:8px!important}' +
+            '.uhp-build{flex:1;min-width:110px;font-size:15px!important;padding:8px!important;' +
+              'margin-right:42px!important}' +
+            '.uhp-descbody{max-height:132px!important}' +
             '.uhp-resets{flex:1 1 100%;flex-direction:row!important;flex-wrap:wrap}' +
             '.uhp-resets button{flex:1 1 auto;width:auto!important;padding:8px 10px!important}' +
             '.uhp-cell{width:80px!important}' +
@@ -3126,7 +3129,8 @@
         descBar.style.cssText = 'position:relative;margin:0 18px 18px;background:rgba(10,8,22,.9);' +
           'border:1px solid rgba(255,164,91,.3);border-radius:10px;padding:12px 14px;display:flex;gap:12px;align-items:flex-start';
         var dMain = document.createElement('div');
-        dMain.style.cssText = 'flex:1;min-width:0;max-height:190px;overflow-y:auto';
+        dMain.className = 'uhp-descbody';
+        dMain.style.cssText = 'flex:1;min-width:0';
         descBar.appendChild(dMain);
 
         var closeBtn = document.createElement('button');
@@ -3154,41 +3158,50 @@
         document.addEventListener('keydown', onKey);
         overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
 
-        var shown = null;
-        function showDesc(pi, ti) {
-          shown = (pi === null) ? null : [pi, ti];
+        // The bar shows the whole current build rather than one clicked node, so a
+        // cross-path 2-5-0 lists Path 1 tiers 1-2 then Path 2 tiers 1-5. Deriving it
+        // from sel also means it survives closing the modal, since sel is kept per
+        // unit in ueHeroPathSel.
+        function drawDesc() {
           dMain.innerHTML = '';
-          var h = document.createElement('div');
-          h.className = 'uhp-title';
-          h.style.color = accent;
-          if (pi === null) {
-            h.textContent = unit.name;
+          var taken = false, p, k;
+          for (p = 0; p < paths.length; p++) if (sel[p] > 0) taken = true;
+          if (!taken) {
+            var h0 = document.createElement('div');
+            h0.className = 'uhp-title';
+            h0.style.color = accent;
+            h0.textContent = unit.name;
             var p0 = document.createElement('div');
             p0.className = 'uhp-eff';
             p0.style.cssText = 'margin-top:7px';
             p0.textContent = 'Select a Tier to view its details.';
-            dMain.appendChild(h); dMain.appendChild(p0);
+            dMain.appendChild(h0); dMain.appendChild(p0);
             return;
           }
-          h.textContent = 'Path ' + (pi + 1);
-          dMain.appendChild(h);
-          // Every tier up to the one clicked, since taking a node means owning the
-          // ones beneath it. t.q (the tier-5 unlock quest) stays out — the INFO panel
-          // covers unlock requirements; this modal is about the build.
-          for (var k = 0; k <= ti; k++) {
-            var line = document.createElement('div');
-            line.className = 'uhp-eff';
-            line.style.cssText = 'margin-top:7px';
-            var lb = document.createElement('span');
-            lb.textContent = '● Tier ' + (k + 1) + ': ';
-            lb.style.cssText = 'color:' + accent + ';white-space:nowrap';
-            line.appendChild(lb);
-            // Same colouriser the passives dropdown runs on p.text, so numbers and
-            // keywords highlight identically in both places.
-            var eff = document.createElement('span');
-            applyPassiveColorize(eff, paths[pi][k].e || '');
-            line.appendChild(eff);
-            dMain.appendChild(line);
+          for (p = 0; p < paths.length; p++) {
+            if (!sel[p]) continue;
+            var h = document.createElement('div');
+            h.className = 'uhp-title';
+            h.style.color = accent;
+            h.style.marginTop = dMain.children.length ? '12px' : '0';
+            h.textContent = 'Path ' + (p + 1);
+            dMain.appendChild(h);
+            // Tiers are cumulative, so a selection of N lists 1..N. t.q (the tier-5
+            // unlock quest) stays out — the INFO panel covers unlock requirements.
+            for (k = 0; k < sel[p]; k++) {
+              var line = document.createElement('div');
+              line.className = 'uhp-eff';
+              line.style.cssText = 'margin-top:7px';
+              var lb = document.createElement('span');
+              lb.textContent = '● Tier ' + (k + 1) + ': ';
+              lb.style.cssText = 'color:' + accent + ';white-space:nowrap';
+              line.appendChild(lb);
+              // Same colouriser the passives dropdown runs on p.text.
+              var eff = document.createElement('span');
+              applyPassiveColorize(eff, paths[p][k].e || '');
+              line.appendChild(eff);
+              dMain.appendChild(line);
+            }
           }
         }
 
@@ -3208,11 +3221,7 @@
               b.style.cssText = 'width:100%;padding:9px;border-radius:9px;cursor:pointer;border:1px solid ' + accent +
                 ';background:rgba(255,164,91,.12);color:' + accent +
                 ';font-family:Audiowide,sans-serif;font-size:11px;letter-spacing:1px';
-              b.onclick = function () {
-                sel[p] = 0;
-                if (shown && shown[0] === p) { shown = null; showDesc(null); }
-                draw();
-              };
+              b.onclick = function () { sel[p] = 0; draw(); };
               resetWrap.appendChild(b);
             })(p);
           }
@@ -3265,7 +3274,6 @@
               lab.style.cssText = 'margin-top:7px;color:' + (owned ? accent : 'rgba(255,255,255,.65)');
               cell.appendChild(ring); cell.appendChild(lab);
               cell.onclick = function () {
-                showDesc(pi, ti);
                 // Clicking the tier you are already on does nothing. It used to step
                 // back down, which left the build at 1-0-0 while the bar still read
                 // Tier 2. Dropping to a lower tier is done by clicking that tier.
@@ -3287,11 +3295,10 @@
           gridWrap.appendChild(scroller);
           drawStats();
           drawResets();
-          if (shown) showDesc(shown[0], shown[1]);
+          drawDesc();
         }
 
         draw();
-        showDesc(null);
         document.body.appendChild(overlay);
       }
 

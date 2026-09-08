@@ -3044,6 +3044,10 @@
             '.uhp-eff{font-size:8px!important;line-height:1.95!important}' +
             '.uhp-title{font-size:9px!important}' +
             '.uhp-close{top:8px!important;right:8px!important;width:32px!important;height:32px!important;font-size:14px!important}' +
+            '.uhp-overlay{background-image:linear-gradient(rgba(3,2,8,.82),rgba(3,2,8,.82)),url(' + HERO_PATH_BG + ')!important;' +
+              'background-size:auto,cover!important;background-position:center,center!important;' +
+              'background-repeat:no-repeat,no-repeat!important}' +
+            '.uhp-frame{background-image:none!important;background-color:rgba(7,6,15,.55)!important}' +
           '}';
         document.head.appendChild(st);
       }
@@ -3058,11 +3062,13 @@
         var sel = ueHeroPathSelFor(unit);
 
         var overlay = document.createElement('div');
+        overlay.className = 'uhp-overlay';
         overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;height:100vh;height:100dvh;' +
-          'z-index:2147483000;background:rgba(0,0,0,.78);display:flex;align-items:center;justify-content:center;' +
+          'z-index:2147483000;background:rgba(0,0,0,.78);display:flex;align-items:safe center;justify-content:safe center;' +
           'overflow:auto;padding:16px;padding-bottom:calc(16px + env(safe-area-inset-bottom))';
 
         var frame = document.createElement('div');
+        frame.className = 'uhp-frame';
         frame.style.cssText = 'position:relative;width:100%;max-width:1120px;border-radius:14px;overflow:hidden;' +
           'border:2px solid ' + accent + ';background:#07060f url(' + HERO_PATH_BG + ') center/cover no-repeat;' +
           'box-shadow:0 24px 70px rgba(0,0,0,.75)';
@@ -3159,7 +3165,7 @@
             var p0 = document.createElement('div');
             p0.className = 'uhp-eff';
             p0.style.cssText = 'margin-top:7px';
-            p0.textContent = 'Select an upgrade to view its details.';
+            p0.textContent = 'Select a Tier to view its details.';
             dMain.appendChild(h); dMain.appendChild(p0);
             return;
           }
@@ -3213,6 +3219,15 @@
 
         function draw() {
           gridWrap.innerHTML = '';
+          // One scroller wrapping all three rows, so dragging any path moves them
+          // together and the tiers stay aligned in a column. overflow-x:auto forces
+          // overflow-y from visible to auto, so pad the clip box out or it shears the
+          // selected ring's glow, then pull the extra back off with margin.
+          var scroller = document.createElement('div');
+          scroller.style.cssText = 'overflow-x:auto;padding:16px 4px;margin:-12px 0';
+          var stack = document.createElement('div');
+          stack.style.cssText = 'display:inline-flex;flex-direction:column;gap:14px;min-width:100%';
+          scroller.appendChild(stack);
           paths.forEach(function (tiers, pi) {
             var row = document.createElement('div');
             row.className = 'uhp-row';
@@ -3266,14 +3281,9 @@
               };
               row.appendChild(cell);
             });
-            var scroller = document.createElement('div');
-            // overflow-x:auto forces overflow-y from visible to auto, so the row clips
-            // the selected ring's glow. Pad the clip box out and pull the extra back
-            // off with margin so row spacing is unchanged.
-            scroller.style.cssText = 'overflow-x:auto;padding:16px 4px;margin:-12px 0';
-            scroller.appendChild(row);
-            gridWrap.appendChild(scroller);
+            stack.appendChild(row);
           });
+          gridWrap.appendChild(scroller);
           drawStats();
           drawResets();
           if (shown) showDesc(shown[0], shown[1]);

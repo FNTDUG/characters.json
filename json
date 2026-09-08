@@ -249,7 +249,13 @@
     "name": "Nightmare Fredbear",
     "paths": [
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "nightmare-fredbear-path1-tier1.webp", "desc": "Deals 5% more Damage to enemies afflicted by a Status Effect."},
           {"icon": "nightmare-fredbear-path1-tier2.webp", "desc": "Deals 10% more Damage to enemies afflicted by a Status Effect."},
@@ -259,7 +265,13 @@
         ]
       },
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "nightmare-fredbear-path2-tier1.webp", "desc": "Attacks Slow enemies by 10%."},
           {"icon": "nightmare-fredbear-path2-tier2.webp", "desc": "Increase the Attack Slow to 15%."},
@@ -269,7 +281,13 @@
         ]
       },
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "nightmare-fredbear-path3-tier1.webp", "desc": "Increases this unit's Damage and the Damage of Dark units by 3% for each Dark Unit in Range. (Max 15%)"},
           {"icon": "nightmare-fredbear-path3-tier2.webp", "desc": "Increases the Dark unit Damage boost to 5% and its Cap to 25%."},
@@ -3660,7 +3678,13 @@
     "name": "Springtrap",
     "paths": [
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "springtrap-path1-tier1.webp", "desc": "Gain +15% Damage."},
           {"icon": "springtrap-path1-tier2.webp", "desc": "This unit and nearby Fire units gain +10% Range."},
@@ -3670,7 +3694,13 @@
         ]
       },
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "springtrap-path2-tier1.webp", "desc": "Attacks apply 10% Burn."},
           {"icon": "springtrap-path2-tier2.webp", "desc": "Deal 5% more Damage per burn instance on the enemy, up to 20%."},
@@ -3680,7 +3710,13 @@
         ]
       },
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "springtrap-path3-tier1.webp", "desc": "Attacks apply 10% Bleed."},
           {"icon": "springtrap-path3-tier2.webp", "desc": "Attacks follow up with an axe for 20% Damage."},
@@ -9202,7 +9238,13 @@
     "name": "Golden Freddy",
     "paths": [
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "golden-freddy-path1-tier1.png", "desc": "This unit Gains +5% Damage per Neutral unit on the team."},
           {"icon": "golden-freddy-path1-tier2.png", "desc": "Attacks follow-up for 20% Damage on hit."},
@@ -9212,7 +9254,13 @@
         ]
       },
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "golden-freddy-path2-tier1.png", "desc": "Units in Range gain +1% Damage per wave passed, up to +10%."},
           {"icon": "golden-freddy-path2-tier2.png", "desc": "Neutral Units in Range gain +10% Damage."},
@@ -9222,7 +9270,13 @@
         ]
       },
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "golden-freddy-path3-tier1.png", "desc": "Attacks slow enemies by 10% for 5s, this slow cannot stack."},
           {"icon": "golden-freddy-path3-tier2.png", "desc": "Increases this units Range by 30%."},
@@ -9378,7 +9432,13 @@
     "name": "Puppet",
     "paths": [
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "puppet-path1-tier1.png", "desc": "This unit will gain 5% Damage for every second it does not attack."},
           {"icon": "puppet-path1-tier2.png", "desc": "This unit gains 2% Damage and 3% Range for every enemy in Range."},
@@ -9388,7 +9448,13 @@
         ]
       },
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "puppet-path2-tier1.png", "desc": "Attacks Slow enemy's hit by 10% for 5 seconds. This slow cannot stack."},
           {"icon": "puppet-path2-tier2.png", "desc": "Every 5s, summon a soul that deals 20% Damage, and Slows by 10% for 3s upon contact."},
@@ -9398,7 +9464,13 @@
         ]
       },
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "puppet-path3-tier1.png", "desc": "Enemies in range receive 10% Light Wither."},
           {"icon": "puppet-path3-tier2.png", "desc": "Light units in range gain +10% Damage."},
@@ -12723,7 +12795,13 @@
     "name": "Ennard",
     "paths": [
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "ennard-path1-tier1.png", "desc": "Attacks Stun enemies for 0.8s."},
           {"icon": "ennard-path1-tier2.png", "desc": "Increases the attack Stun duration."},
@@ -12733,7 +12811,13 @@
         ]
       },
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "ennard-path2-tier1.png", "desc": "Every 6s , places a coil trap that deals 20% Damage upon contact, up to 3 traps."},
           {"icon": "ennard-path2-tier2.png", "desc": "Increase coil trap Damage to 25%."},
@@ -12743,7 +12827,13 @@
         ]
       },
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "ennard-path3-tier1.png", "desc": "Units in range gain 5% Damage."},
           {"icon": "ennard-path3-tier2.png", "desc": "The previous Damage boost is now increased to 10%."},
@@ -14780,7 +14870,13 @@
     "name": "Animdude",
     "paths": [
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "animdude-path1-tier1.webp", "desc": "Units in range gain +5% Damage and Range."},
           {"icon": "animdude-path1-tier2.webp", "desc": "Increases the boost to +10% Damage and Range"},
@@ -14790,7 +14886,13 @@
         ]
       },
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "animdude-path2-tier1.webp", "desc": "Attacks Slow enemies for 8s."},
           {"icon": "animdude-path2-tier2.webp", "desc": "Increases the Slow to 15%"},
@@ -14800,7 +14902,13 @@
         ]
       },
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "animdude-path3-tier1.webp", "desc": "This Unit gains +20% Critical Damage."},
           {"icon": "animdude-path3-tier2.webp", "desc": "Increases this units Critical Damage Boost to 30%."},
@@ -15353,7 +15461,13 @@
     "name": "Michael Afton",
     "paths": [
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "michael-afton-path1-tier1.webp", "desc": "This unit gains 15% Damage."},
           {"icon": "michael-afton-path1-tier2.webp", "desc": "Every 15 seconds, summons an ally with health equal to 100% of this unit's Damage."},
@@ -15363,7 +15477,13 @@
         ]
       },
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "michael-afton-path2-tier1.webp", "desc": "Every 15s, rotate between +15% Damage, +15% Range, and -10% cooldown."},
           {"icon": "michael-afton-path2-tier2.webp", "desc": "Unlocks an Active that places up to 3 audio lures. Lures have 25% of this units Range and Damage, and slows enemies by 5% for 3 seconds on hit."},
@@ -15373,7 +15493,13 @@
         ]
       },
       {
-        "levels": [],
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
         "tiers": [
           {"icon": "michael-afton-path3-tier1.webp", "desc": "Attacks apply 15% Bleed."},
           {"icon": "michael-afton-path3-tier2.webp", "desc": "Attacks Slow enemies by 10% for 5 seconds."},
@@ -21913,7 +22039,13 @@
   "name": "Vengeful Spirit",
   "paths": [
     {
-      "levels": [],
+      "levels": [
+        { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+        { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+        { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+        { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+        { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+      ],
       "tiers": [
         {"icon": "vengeful-spirit-path1-tier1.webp", "desc": "Dark and Neutral units gain 10% Damage and 20% Range."},
         {"icon": "vengeful-spirit-path1-tier2.webp", "desc": "Increase the Damage boost to 15%."},
@@ -21923,7 +22055,13 @@
       ]
     },
     {
-      "levels": [],
+      "levels": [
+        { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+        { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+        { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+        { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+        { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+      ],
       "tiers": [
         {"icon": "vengeful-spirit-path2-tier1.webp", "desc": "Gain +15% Crit Chance and +25% Crit Damage"},
         {"icon": "vengeful-spirit-path2-tier2.webp", "desc": "Increase Crit Chance to 20% and Crit Damage to 40%"},
@@ -21933,7 +22071,13 @@
       ]
     },
     {
-      "levels": [],
+      "levels": [
+        { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+        { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+        { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+        { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+        { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+      ],
       "tiers": [
         {"icon": "vengeful-spirit-path3-tier1.webp", "desc": "Enemies in range are Slowed by 10%"},
         {"icon": "vengeful-spirit-path3-tier2.webp", "desc": "Enemies in range Slowed by 15%, Attacks inflict 5% Dark and Neutral Wither."},

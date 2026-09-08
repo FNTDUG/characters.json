@@ -2153,7 +2153,7 @@
         bleed:     'Enemies take damage every second based on a % of a unit’s damage',
         burn:      'Enemies take damage every second based on a % of a unit’s damage',
         death:     'Enemies take 3x damage from the unit(s) that applied Death',
-        malware:   'Enemy generates +100% income',
+        malware:   'Enemies take +35% damage from DoT effects and are Stunned 15% longer',
         mark:      'Has special effects depending on the unit that marked the enemy',
         poison:    'Enemies take damage every second based on a % of a unit’s damage',
         root:      'Slow that increases by 2% every second, up to 30%, then Stuns affected enemies after they reach 30% Slow from Rooted',
@@ -4234,11 +4234,12 @@
         permPanel.appendChild(container);
           
         var BOOST_OPTIONS = [
+          ["scott_base",         "Animdude: Base Effect (+10% Crit Rate & +15% Crit DMG)",                  { critRateAdd: 0.10, critDmgAdd: 0.15 }],
+          ["scott_t2top",        "Animdude: Top Path Tier 2 (+10% DMG & +10% RNG)",                        { dmgMult: 1.10, rngMult: 1.10 }],
           ["scott_creation",    "Animdude: My Favorite Creation (+65% DMG & +30% RNG)",                     { dmgMult: 1.65, rngMult: 1.30, singlePlacement: true }],
-          ["scott_rng",         "Animdude: Endless Range (+15% RNG)",                                        { rngMult: 1.15 }],
-          ["scott_dmg",         "Animdude: Endless Strength (+10% DMG)",                                     { dmgMult: 1.10 }],
-          ["scott_cd",          "Animdude: Endless Speed (-7.5% CD)",                                        { cdMult: 0.925 }],
-          ["astral_b",          "Astral Bonnie: Orion's Belt (+2% DMG, +3% RNG per stack)",                  { dmgMult: 1.02, rngMult: 1.03, stackKey: "astral_bStacks", maxStacks: 15 }],
+          ["scott_t2bot",       "Animdude: Bottom Path Tier 2 (+15% Crit DMG)",                            { critDmgAdd: 0.15 }],
+          ["scott_bot",         "Animdude: Max Bottom Path (+30% DMG)",                                     { dmgMult: 1.30 }],
+          ["astral_b",          "Astral Bonnie: Orion's Belt (+2% DMG, +3% RNG per stack)",                 { dmgMult: 1.02, rngMult: 1.03, stackKey: "astral_bStacks", maxStacks: 15 }],
           ["candy_red",         "Candy Cadet: Red Candy (+30% DMG & +10% RNG)",                              { dmgMult: 1.30, rngMult: 1.10 }],
           ["candy_yellow",      "Candy Cadet: Yellow Candy (+10% DMG & +30% RNG)",                          { dmgMult: 1.10, rngMult: 1.30 }],
           ["chipper",           "Chipper: Stock Stacker (+0.5% DMG, +0.5% RNG per stack)",                  { dmgMult: 1.005, rngMult: 1.005, stackKey: "chipperStacks", maxStacks: 20 }],
@@ -4252,10 +4253,13 @@
           ["dj_red",            "DJ 101bit: Red Track (+20% DMG per stack)",                                 { dmgMult: 1.20, stackKey: "djredStacks", maxStacks: 4}],
           ["dj_green",          "DJ 101bit: Green Track (+25% RNG per stack)",                               { rngMult: 1.20, stackKey: "djgreenStacks", maxStacks: 4}],
           ["endo_01",           "Endo 01: Endo CPU (+15% DMG)",                                              { dmgMult: 1.15 }],
+          ["ennard_mid",      "Ennard: Max Middle Path (+15% DMG & +20% RNG)",                               { dmgMult: 1.15, rngMult: 1.20}],
+          ["ennard_sync",      "Ennard: Sycned Unit (+20% DMG & -5% CD)",                               { dmgMult: 1.20, singlePlacement: true}],
+          ["ennard_bot",      "Ennard: Max Bottom Path (+15% DMG & -5% CD)",                               { dmgMult: 1.15, cdMult: 0.95}],
           ["funtime",           "Funtime Foxy: Showtime! (Averaged, +12.86% DMG/RNG)",                      { dmgMult: 1.1286, rngMult: 1.1286 }],
           ["golden_blessing",   "Golden Cupcake: Golden Blessing (+10% DMG & +6% RNG per stack)",           { dmgMult: 1.10, rngMult: 1.06, stackKey: "goldenBlessingStacks", maxStacks: 3 }],
-          ["gf_soul",           "Golden Freddy: Restless Soul (+30% DMG per stack)",                        { dmgMult: 1.30, stackKey: "gfsoulStacks", maxStacks: 4 }],
-          ["gf_passive",        "Golden Freddy: Shouldn't Have Killed Me (+40% DMG, +20% RNG)",             { dmgMult: 1.40, rngMult: 1.20, duration: 120, cd: 200, uptime: "true" }],
+          ["gf_t1",             "Golden Freddy: Middle Path Tier 2 (+10% DMG)",                             { dmgMult: 1.10}],
+          ["gf_mid",            "Golden Freddy: Max Middle Path (+30% DMG & +15% RNG)",                    { dmgMult: 1.30, rngMult: 1.15}],
           ["hacked",            "Hacker King RWQFSFASXC: Decode (+10% DMG)",                              { dmgMult: 1.10, duration: 8, cd: 45 }],
           ["hagged",            "Hag Withered Chica: Debilitating Toxin (+15% DMG)",                      { dmgMult: 1.15, duration: 3, cd: 7.5, cdboostable: "true" }],
           ["handunitdmg",       "Handunit: Helping Hand (+50% DMG per stack)",                              { dmgMult: 1.50, stackKey: "handunitdmgStacks", maxStacks: 4 }],
@@ -4277,7 +4281,7 @@
           ["hippo",             "Mr. Hippo: Story Time (+15% Crit Rate, +15% Crit DMG, & +10% DMG)",      { dmgMult: 1.15, critRateAdd: 0.15, critDmgAdd: 0.15, cd: 90, duration: 15, uptime: true}],
           ["nature_reclaim",    "Nature Reclaimed Foxy: Drifter's Blessing (+30% DMG, +25% RNG, -5% CD)", { dmgMult: 1.30, rngMult: 1.25, cdMult: 0.95 }],
           ["nedd",              "Nedd Bear: Stranger Danger (+25% DMG)",                                   { dmgMult: 1.25}],
-          ["NMFB",              "Nightmare Fredbear: Nightmarish Cry (+75% CD)",                          { cdMult: 1.75, duration: 10, cd: 145 }],
+          ["nmfb_feartop",     "Nightmare Fredbear: Max Top Path Fear Average (+16.25% DMG)",             { dmgMult: 1.1625}],
           ["crate",             "No. 1 Crate: Cheerleader (+20% DMG per stack)",                           { dmgMult: 1.20, stackKey: "crateStacks", maxStacks: 4 }],
           ["overgrown_foxy_avg","Overgrown Foxy: Countdown (Averaged, +10% DMG, +10% RNG, -2.5% CD)",     { dmgMult: 1.10, rngMult: 1.10, cdMult: 0.975 }],
           ["party_cup",         "Party Never Ends Cupcake: Birthday Boy (+15% DMG, +15% RNG, -5% CD)",     { dmgMult: 1.15, rngMult: 1.15, cdMult: 0.95 }],
@@ -4286,6 +4290,8 @@
           ["phone_boost",       "Phone Guy: Bonnie Cam (-5% CD)",                                          { cdMult: 0.95, }],
           ["popcorn",           "Popcorn Bot: Sweet Popcorn (Averaged, +3.89% DMG/RNG, -3.89% CD per stack)", { dmgMult: 1.0389, rngMult: 1.0389, cdMult: 0.9611, stackKey: "popcornStacks", maxStacks: 4 }],
           ["promise",           "Psychic Friend Fredbear: Promise (+30% DMG, +25% RNG, -2.5% CD)",        { dmgMult: 1.30, rngMult: 1.25, cdMult: 0.975 }],
+          ["puppet_wither",     "Puppet: Max Bottom Path Wither (+10% DMG)",                              { dmgMult: 1.10}],
+          ["puppet_string",      "Puppet: Max Bottom Path Strings (+20% DMG +10% RNG)",                   { dmgMult: 1.20, rngMult: 1.10}],
           ["rockin_bonnie_band","Rockin Bonnie: Rockin Vibes (-8% CD)",                                    { cdMult: 0.92 }],
           ["scarecrow_raiser",  "Scarecrow Freddy: Crop Raiser (+15% DMG, +15% RNG)",                     { dmgMult: 1.15, rngMult: 1.15, stackKey: "scarecrow_raiser_stacks", maxStacks: 4 }],
           ["scarecrow_guardian","Scarecrow Freddy: Guardian of the Fields (-5% DMG, -5% RNG)",             { dmgMult: 0.95, rngMult: 0.95, stackKey: "scarecrow_guardian_stacks", maxStacks: 4 }],
@@ -4316,21 +4322,30 @@
         if (unitHasElement(unit, "rust")) {
           BOOST_OPTIONS.push(
             ["kronos_rust",  "Kronos Endo Freddy: In Due Time... (+36% DMG & +36% RNG) [Rust only]",           { dmgMult: 1.36, rngMult: 1.36, elements: ["Rust"] }],
-            ["michael_rust", "Michael Afton: Together Again (+30% DMG, +25% RNG, -10% CD per stack) [Rust only]", { dmgMult: 1.30, rngMult: 1.25, cdMult: 0.90, stackKey: "mikeStacks", maxStacks: 4, elements: ["Rust"] }],
+            ["michael_base", "Michael Afton: Base Effect (+20% DMG, +10% RNG) [Rust only]",                    { dmgMult: 1.20, rngMult: 1.10, elements: ["Rust"] }],
+            ["michael_top", "Michael Afton: Max Top Path (+15% DMG) [Rust only]",                              { dmgMult: 1.15, elements: ["Rust"] }],
+            ["michael_bot", "Michael Afton: Max Bottom Path (+20% DMG & +15% RNG) [Rust only]",                { dmgMult: 1.20, rngMult: 1.15, elements: ["Rust"] }],
             ["rustelement",  "Rust Element: +6% DMG, +3% CD penalty [Rust only]",                              { dmgMult: 1.06, cdMult: 1.03, elements: ["Rust"] }]
           );
         }
 
         if (unitHasElement(unit, "neutral")) {
           BOOST_OPTIONS.push(
-            ["neutralelement", "Neutral Element: +3% DMG, +3% RNG, -3% CD [Neutral only]", { dmgMult: 1.03, rngMult: 1.03, cdMult: 0.97, elements: ["Neutral"] }]
+            ["gf_base", "Golden Freddy: Base Effect (+25% DMG) [Neutral only]", { dmgMult: 1.25, elements: ["Neutral"] }],
+            ["gf_t2_neutral", "Golden Freddy: Middle Path Tier 2 (+10% DMG) [Neutral only]", { dmgMult: 1.10, elements: ["Neutral"] }],
+            ["gf_max_neutral", "Golden Freddy: Max Middle Path (30% DMG & +15% RNG) [Neutral only]", { dmgMult: 1.30, rngMult: 1.15, elements: ["Neutral"] }],
+            ["neutralelement",  "Neutral Element: +3% DMG, +3% RNG, -3% CD [Neutrak only]",                              { dmgMult: 1.03, rngMult: 1.03, cdMult: 0.97, elements: ["Neutral"] }]
           );
         }
 
         if (unitHasElement(unit, "dark")) {
           BOOST_OPTIONS.push(
             ["hoax_guy",      "Hoax Purple Guy: Ring Ring Are You There? (+25% DMG & +25% RNG) [Dark only]",     { dmgMult: 1.25, rngMult: 1.25, elements: ["Dark"]}],
-            ["nightmarefred", "Nightmare Fredbear: Feeding the Fear (+10% DMG, +10% RNG per stack) [Dark only]", { dmgMult: 1.10, rngMult: 1.10, stackKey: "nightmarefredStacks", maxStacks: 5, elements: ["Dark"] }],
+            ["nmfb_top",      "Nightmare Fredbear: Base Effect (+3% DMG & +3% RNG per stack) [Dark only]", { dmgMult: 1.03, rngMult: 1.03, stackKey: "nmfb_base_stack", maxStacks: 6, elements: ["Dark"] }],
+            ["nmfb_feartopdark",  "Nightmare Fredbear: Max Top Path Fear Average (+32.5% DMG) [Dark only]",      { dmgMult: 1.325, elements: ["Dark"] }],
+            ["nmfb_pulsetop", "Nightmare Fredbear: Max Top Path Pulse Wither (+25% DMG) [Dark only]",      { dmgMult: 1.25, elements: ["Dark"] }],
+            ["nmfb_t2bot",    "Nightmare Fredbear: Top Path Tier 2 (+5% DMG per stack) [Dark only]",            { dmgMult: 1.05, stackKey: "nmfb_t2_stack", maxStacks: 5, elements: ["Dark"] }],
+            ["nmfb_bot",      "Nightmare Fredbear: Max Top Path (+5% DMG per stack) [Dark only]",            { dmgMult: 1.05, stackKey: "nmfb_bot_stack", maxStacks: 10, elements: ["Dark"] }],
             ["darkelement",   "Dark Element: +3% DMG [Dark only]",                                               { dmgMult: 1.03, elements: ["Dark"] }],
             ["pwc",            "Phantom Withered Chica: Soulbound (+25% DMG) [Dark only]",                       { dmgMult: 1.25, elements: ["Dark"] }],
             ["ballora_dark",  "Mother Nature Ballora: Dark Wither (+10% DMG) [Dark only]",                       { dmgMult: 1.10, elements: ["Dark"]}],
@@ -4339,18 +4354,13 @@
           );
         }
 
-        if (String(unit.element || "").toLowerCase() === "dark/light") {
-          BOOST_OPTIONS.push(
-            ["dark/lightelement", "Dark/Light Element: +3% DMG, -3% CD", { dmgMult: 1.03, cdMult: 0.97, elements: ["Dark/Light"] }]
-          );
-        }
 
         if (unitHasElement(unit, "electricity")) {
           BOOST_OPTIONS.push(
             ["aqua_elec",         "Aqua Strike Toy Chica (+10% DMG) [Electricity only]",                         { dmgMult: 1.10, elements: ["Electricity"] }],
             ["babyb",             "Circus Baby: Overcharge (+25% DMG) [Electricity only]",                       { dmgMult: 1.25, elements: ["Electricity"] }],
-            ["conductor_shocker", "Ennard: Conductor Shocker (+25% DMG, +40% RNG, -10% CD) [Electricity only]", { dmgMult: 1.25, rngMult: 1.40, cdMult: 0.90, elements: ["Electricity"] }],
-            ["conductor_smasher", "Ennard: Conductor Smasher (+40% DMG, +45% RNG) [Electricity only]",          { dmgMult: 1.40, rngMult: 1.45, elements: ["Electricity"] }],
+            ["ennard_base",      "Ennard: Base Effect (+15% DMG & -10% CD) [Electricity only]",                 { dmgMult: 1.15, cdMult: 0.90, elements: ["Electricity"] }],
+            ["ennard_top",       "Ennard: Max Top Path (+30% DMG)",                                           { dmgMult: 1.30, duration: 7, cd: 10, elements: ["Electricity"] }],
             ["witch_ability",     "Witch of the Sea Scrapbaby: Brace the Storm (+60% DMG) [Water & Electricity only]", { dmgMult: 1.60, duration: 30, cd: 60, elements: ["Electricity"] }],
             ["witch_danger",      "Witch of the Sea Scrapbaby: Dangerous Waters (+20% DMG) [Water & Electricity only]", { dmgMult: 1.20, elements: ["Electricity"] }],
             ["stormbound",        "Stormbound Chica: Electrifying Pressure (+10% DMG) [Water & Electric only]", { dmgMult: 1.10, elements: ["Electricity", "Water"] }]
@@ -4362,7 +4372,10 @@
             ["aqua_water",   "Aqua Strike Toy Chica (+10% DMG) [Water only]",                                     { dmgMult: 1.10, elements: ["Water"] }],
             ["fkf_obelisk",  "Frozen King Foxy: Frozen Obelisk (+20% DMG) [Water only]",                          { dmgMult: 1.20, elements: ["Water"] }],
             ["ballora_water","Mother Nature Ballora: Water Boost (+10% DMG) [Water only]",                         { dmgMult: 1.10, elements: ["Water"] }],
-            ["omc_whistle",  "Old Man Consequences: Guiding Whistle (+35% DMG & +30% RNG) [Water only]",        { dmgMult: 1.35, rngMult: 1.30, elements: ["Water"] }],
+            ["omc_base",    "Old Man Consequences: Base Effect (+15% DMG & +15% RNG) [Water only]",             { dmgMult: 1.15, rngMult: 1.15, elements: ["Water"] }],
+            ["omc_t1",    "Old Man Consequences: Mid Path Tier 1 (+5% RNG) [Water only]",                   { rngMult: 1.05, elements: ["Water"] }],
+            ["omc_maxmid",  "Old Man Consequences: Max Mid Path (+45% DMG & +5% RNG [Water only]",             { dmgMult: 1.45, rngMult: 1.05, elements: ["Water"] }],
+            ["omc_pools",  "Old Man Consequences: Max Mid Path Pools (+120% DMG) [Water only]",             { dmgMult: 2.30, elements: ["Water"] }],
             ["pirate_sea",   "Pirate Withered Foxy: Seafarer (+15%) [Water only]",                                { dmgMult: 1.35, elements: ["Water"] }],
             ["witch_ability","Witch of the Sea Scrapbaby: Brace the Storm (+60% DMG) [Water & Electricity only]", { dmgMult: 1.60, duration: 30, cd: 60, elements: ["Water"] }],
             ["witch_danger", "Witch of the Sea Scrapbaby: Dangerous Waters (+20% DMG) [Water & Electricity only]", { dmgMult: 1.20, elements: ["Water"] }],
@@ -4374,7 +4387,10 @@
           BOOST_OPTIONS.push(
             ["aqua_water", "Aqua Strike Toy Chica (+25% DMG) [Fire only]", { dmgMult: 1.25, elements: ["Fire"] }],
             ["pyro_bonnie","Pyro Spring Bonnie (+4% DMG per stack) [Fire only]", { dmgMult: 1.04, stackKey: "pyrobonnieStacks", maxStacks: 10, elements: ["Fire"] }],
-            ["scorched", "Springtrap: Agonized (+25% DMG) [Fire only]", { dmgMult: 1.25, elements: ["Fire"] }],
+            ["sping_base", "Springtrap: Base Effect (+15% DMG) [Fire only]", { dmgMult: 1.15, elements: ["Fire"] }],
+            ["sping_t2", "Springtrap: Top Path Tier 2 (+10% DMG) [Fire only]", { dmgMult: 1.10, elements: ["Fire"] }],
+            ["sping_rage", "Springtrap: Ignited Rage (+40% DMG & +20% RNG) [Fire only]", { dmgMult: 1.40, rngMult: 1.20, duration: 30, cd: 60, elements: ["Fire"] }],
+            ["sping_permrage", "Springtrap: Permanent Rage Stacks (+60% DMG & +30% RNG) [Fire only]", { dmgMult: 1.60, rngMult: 1.30, elements: ["Fire"] }],
             ["fireelement", "Fire Element: 3% DMG/sec burn for 1s on every attack [Fire only]",
               { burnPctPerSec: FIRE_BURN_PCT_PER_SEC, elements: ["Fire"] }]
           );
@@ -4435,9 +4451,11 @@
             ["anni_duo",          "Anniversary Duo: The Grand Celebration (+10% DMG) [Light only]",             { dmgMult: 1.10, elements: ["Light"] }],
             ["ftc",               "Funtime Chica: Spotlight (+20% DMG) [Light only]",                            { dmgMult: 1.20, elements: ["Light"] }],
             ["lore_light",        "Lore Keeper Shadow Bonnie: Light Boost (-15% CD) [Light only]",               { cdMult: 0.80, elements: ["Light"] }],
-            ["puppet_gift",       "Puppet: Gift of Life (+40% RNG) [Light only]",                                { rngMult: 1.40, duration: 10, cd: 20, elements: ["Light"] }],
             ["ballora_light_light", "Mother Nature Ballora: Light Boost (+5% DMG, +5% RNG, -5% CD) [Light only]", { dmgMult: 1.05, rngMult: 1.05, cdMult: 0.95, elements: ["Light"] }],
-            ["puppet_music",      "Puppet: Music Box (+50% DMG) [Light only]",                                   { dmgMult: 1.50, elements: ["Light"] }],
+            ["puppet_base",         "Puppet: Base Effect (+10% DMG & +20% RNG) [Light only]",                 { dmgMult: 1.10, rngMult: 1.20, elements: ["Light"] }],
+            ["puppet_t2",         "Puppet: Bottom Path Tier 2 (+20% DMG) [Light only]",                          { dmgMult: 1.20, elements: ["Light"] }],
+            ["puppet_lightwither",  "Puppet: Max Bottom Path Wither (+30% DMG) [Light only]",                 { dmgMult: 1.30, elements: ["Light"] }],
+            ["puppet_lightstring",   "Puppet: Max Bottom Path Strings (+30% DMG +20% RNG) [Light only]",         { dmgMult: 1.30, rngMult: 1.20, elements: ["Light"] }],
             ["starfarer",         "Starfarer Princess: Holy Lake of Golden Stars (+30% DMG) [Light only]",       { dmgMult: 1.30, elements: ["Light"] }],
             ["lightelement",      "Light Element: -3% CD [Light only]",                                          { cdMult: 0.97, elements: ["Light"] }]
           );
@@ -4445,9 +4463,11 @@
 
         if (unitHasElement(unit, "neutral") || unitHasElement(unit, "dark")) {
           BOOST_OPTIONS.push(
-            ["veng_hell",     "Vengeful Spirit: Hell of Your Own Making (+20% DMG & +20% RNG) [Dark & Neutral only]", { dmgMult: 1.20, rngMult: 1.20, elements: ["Dark", "Neutral"] }],
-            ["veng_wither",   "Vengeful Spirit: Hell of Your Own Making (+0.5% DMG per stack) [Dark & Neutral only]", { dmgMult: 1.05, stackKey: "vengwitherStack", maxStacks: 50, elements: ["Dark", "Neutral"] }],
-            ["veng_anywhere", "Vengeful Spirit: You're Not Going Anywhere (+20% DMG) [Dark & Neutral only]", { dmgMult: 1.20, elements: ["Dark", "Neutral"] }],
+            ["veng_base",     "Vengeful Spirit: Base Effect (+20% DMG) [Dark & Neutral only]", { dmgMult: 1.20, elements: ["Dark", "Neutral"] }],
+            ["veng_t2top",   "Vengeful Spirit: Top Path Tier 2 (+15% DMG & +20% RNG) [Dark & Neutral only]", { dmgMult: 1.15, rngMult:1.20, elements: ["Dark", "Neutral"] }],
+            ["veng_topelement", "Vengeful Spirit: Max Top Path (-5% CD & +30% Crit Rate) [Dark & Neutral only]", { cdMult: 0.95, critRateAdd: 0.30, elements: ["Dark", "Neutral"] }],
+            ["veng_t2bot",    "Vengeful Spirit: Bottom Path Tier 2 (+5% DMG) [Dark & Neutral only]", { dmgMult: 1.05, elements: ["Dark", "Neutral"] }],
+            ["veng_botmark", "Vengeful Spirit: Max Bottom Path Marks (+0.5% DMG per stack) [Dark & Neutral only]", { dmgMult: 1.005, stackKey: "vengefulmarkStack", maxStacks: 50, elements: ["Dark", "Neutral"] }],
           );
         }
         

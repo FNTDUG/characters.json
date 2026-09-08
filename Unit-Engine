@@ -3010,7 +3010,36 @@
       }
       function ueRound(n) { return (Math.round(n * 100) / 100).toLocaleString('en-US'); }
 
+      // Injected once. Inline styles cannot carry media queries, and the modal needs
+      // real breakpoints rather than JS size maths that has to re-run on rotate.
+      function ueEnsureHeroPathStyle() {
+        if (document.getElementById('uhp-style')) return;
+        var st = document.createElement('style');
+        st.id = 'uhp-style';
+        st.textContent =
+          '.uhp-eff{font-family:"Press Start 2P",cursive;font-size:9px;line-height:2;color:#e2e2e2}' +
+          '.uhp-lab{font-family:"Press Start 2P",cursive;font-size:9px;letter-spacing:0;line-height:1.5}' +
+          '@media(max-width:760px){' +
+            '.uhp-body{padding:12px!important;gap:12px!important}' +
+            '.uhp-side{width:100%!important;flex:1 1 100%!important;flex-direction:row!important;' +
+              'flex-wrap:wrap;align-items:center;gap:10px!important}' +
+            '.uhp-portrait{flex:0 0 88px;width:88px}' +
+            '.uhp-build{flex:1;min-width:110px;font-size:15px!important;padding:8px!important}' +
+            '.uhp-resets{flex:1 1 100%;flex-direction:row!important;flex-wrap:wrap}' +
+            '.uhp-resets button{flex:1 1 auto;width:auto!important;padding:8px 10px!important}' +
+            '.uhp-cell{width:80px!important}' +
+            '.uhp-ring{width:72px!important;height:72px!important}' +
+            '.uhp-dash{flex-basis:12px!important;margin-top:36px!important}' +
+            '.uhp-lab{font-size:7px!important}' +
+            '.uhp-desc{margin:0 12px 12px!important;padding:10px 12px!important}' +
+            '.uhp-eff{font-size:8px!important;line-height:1.95!important}' +
+            '.uhp-close{top:8px!important;right:8px!important;width:32px!important;height:32px!important;font-size:14px!important}' +
+          '}';
+        document.head.appendChild(st);
+      }
+
       function openHeroPathsModal(unit, rarityStyle, onChange) {
+        ueEnsureHeroPathStyle();
         var paths = ueHeroPathsFor(unit);
         if (!paths) return;
         var accent = (rarityStyle && rarityStyle.borderColor) || '#ffa45b';
@@ -3032,12 +3061,15 @@
         frame.appendChild(scrim);
 
         var body = document.createElement('div');
+        body.className = 'uhp-body';
         body.style.cssText = 'position:relative;display:flex;flex-wrap:wrap;gap:18px;padding:18px';
 
         // ── left: portrait + live stats ──
         var side = document.createElement('div');
+        side.className = 'uhp-side';
         side.style.cssText = 'width:230px;flex:0 0 auto;display:flex;flex-direction:column;gap:12px';
         var pFrame = document.createElement('div');
+        pFrame.className = 'uhp-portrait';
         pFrame.style.cssText = 'padding:2px;border-radius:12px;background:' + grad;
         var pIn = document.createElement('div');
         pIn.style.cssText = 'background:rgba(10,8,22,.9);border-radius:10px;overflow:hidden;line-height:0';
@@ -3050,6 +3082,7 @@
         // The stat readout lives in the engine's own table — duplicating it here
         // would show one set of numbers while the page shows another.
         var buildBox = document.createElement('div');
+        buildBox.className = 'uhp-build';
         buildBox.style.cssText = 'background:rgba(10,8,22,.88);border:1px solid rgba(255,164,91,.25);border-radius:10px;' +
           'padding:10px;text-align:center;font-family:Audiowide,sans-serif;font-size:17px;letter-spacing:3px;color:' + accent;
         side.appendChild(buildBox);
@@ -3058,6 +3091,7 @@
         // two appear once two paths are in play. This is also the only way to take a
         // single path back to zero, which cross-path swapping needs.
         var resetWrap = document.createElement('div');
+        resetWrap.className = 'uhp-resets';
         resetWrap.style.cssText = 'display:flex;flex-direction:column;gap:8px';
         side.appendChild(resetWrap);
 
@@ -3070,6 +3104,7 @@
 
         // ── bottom: description bar ──
         var descBar = document.createElement('div');
+        descBar.className = 'uhp-desc';
         descBar.style.cssText = 'position:relative;margin:0 18px 18px;background:rgba(10,8,22,.9);' +
           'border:1px solid rgba(255,164,91,.3);border-radius:10px;padding:12px 14px;display:flex;gap:12px;align-items:flex-start';
         var dMain = document.createElement('div');
@@ -3078,6 +3113,7 @@
 
         var closeBtn = document.createElement('button');
         closeBtn.type = 'button';
+        closeBtn.className = 'uhp-close';
         closeBtn.setAttribute('aria-label', 'Close');
         closeBtn.innerHTML = '&#x2715;';
         // Same treatment as the site's ad dismiss button, scaled up from 23px.
@@ -3121,7 +3157,8 @@
           // covers unlock requirements; this modal is about the build.
           for (var k = 0; k <= ti; k++) {
             var line = document.createElement('div');
-            line.style.cssText = 'font-size:13px;color:#e2e2e2;line-height:1.65;margin-top:5px';
+            line.className = 'uhp-eff';
+            line.style.cssText = 'margin-top:7px';
             var lb = document.createElement('span');
             lb.textContent = '● Tier ' + (k + 1) + ': ';
             lb.style.cssText = 'font-family:Audiowide,sans-serif;font-size:11px;color:' + accent + ';white-space:nowrap';
@@ -3165,14 +3202,17 @@
             tiers.forEach(function (t, ti) {
               if (ti > 0) {
                 var dash = document.createElement('div');
+                dash.className = 'uhp-dash';
                 dash.style.cssText = 'flex:0 0 18px;height:3px;background:rgba(255,255,255,.35);margin-top:52px';
                 row.appendChild(dash);
               }
               var owned = sel[pi] > ti;
               var legal = ueHeroPathLegal(sel, pi, ti + 1);
               var cell = document.createElement('div');
+              cell.className = 'uhp-cell';
               cell.style.cssText = 'flex:0 0 auto;width:114px;text-align:center;cursor:pointer;user-select:none';
               var ring = document.createElement('div');
+              ring.className = 'uhp-ring';
               ring.style.cssText = 'width:106px;height:106px;margin:0 auto;border-radius:50%;padding:4px;' +
                 'background:' + (owned ? grad : 'rgba(255,255,255,.22)') + ';' +
                 'box-shadow:' + (owned ? '0 0 14px rgba(255,164,91,.55)' : 'none') + ';' +
@@ -3188,8 +3228,8 @@
               disc.appendChild(im); ring.appendChild(disc);
               var lab = document.createElement('div');
               lab.textContent = 'Tier ' + (ti + 1);
-              lab.style.cssText = 'margin-top:6px;font-family:Audiowide,sans-serif;font-size:13px;letter-spacing:.5px;' +
-                'color:' + (owned ? accent : 'rgba(255,255,255,.65)');
+              lab.className = 'uhp-lab';
+              lab.style.cssText = 'margin-top:7px;color:' + (owned ? accent : 'rgba(255,255,255,.65)');
               cell.appendChild(ring); cell.appendChild(lab);
               cell.onclick = function () {
                 showDesc(pi, ti);

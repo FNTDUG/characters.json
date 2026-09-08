@@ -7712,7 +7712,7 @@
       {
         "title": "Blackout",
         "text": "Darkens the map for 15s. Every enemy taken down by this unit during these 15s grants a permanent +0.2% damage and range buff, up to 20%. (Upgrade 6+ Local CD: 60s)",
-        "activeIcon": ""
+        "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-19-21-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
       },
       {
         "title": "Agonizing Energy",
@@ -7771,7 +7771,7 @@
           {
             "title": "Mode Swap",
             "text": "Changes this unit's attack and passive between Focused Fire and Faz-Metal-Jacket. (Upgrade 0+, Local CD: 0s).",
-            "activeIcon": ""
+            "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-19-21-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
           },
           {
             "title": "Armor Piercing Rounds",
@@ -7853,7 +7853,7 @@
           {
             "title": "Mode Swap",
             "text": "Changes this unit's attack and passive between Focused Fire and Faz-Metal-Jacket. (Upgrade 0+, Local CD: 0s).",
-            "activeIcon": ""
+            "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-19-21-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
           },
           {
             "title": "Armor Piercing Rounds",
@@ -12433,7 +12433,7 @@
     "passives": [
       {
         "title": "Digital Disruption",
-        "text": "Enemies within this unit's range are infected with Malware. Malware increases damage from DoT effects by 35% and increases stun duration from all sources by 15%. Each time a Malware-infected enemy is defeated, this unit's CD cycles through -10%, -20%, -30% boosts, then resets to base on the 4th kill."
+        "text": "Enemies within this unit's range are infected with Malware. Each time a Malware-infected enemy is defeated, this unit's CD cycles through -10%, -20%, -30% boosts, then resets to base on the 4th kill."
       },
       {
         "title": "Hacked",
@@ -20455,7 +20455,7 @@
     {
       "title": "Star Spawn",
       "text": "Warp a unit in range. Warped units receive +30% Damage, Range, and become Dark/Water. (Upgrade 0+, Local CD: 0s).",
-      "activeIcon": ""
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-19-21-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
     },
     {
       "title": "Depths of Insanity",
@@ -23502,7 +23502,7 @@
     {
       "title": "To Be Beautiful",
       "text": "Throw a pendant to the unit in range with the highest displayed damage. It gains +30% Damage, fading by 1.5% every second. When the buff expires, the pendant has a 50% chance to break. (Upgrade 0+, Local CD: 130s).",
-      "activeIcon": ""
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-19-21-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
     },
     {
       "title": "This Is What I've Longed For!",
@@ -25927,6 +25927,466 @@
         "pctofdamage": 2.00,
         "durationsec": 10,
         "everynthattack": 5
+      }
+    ]
+  }
+},
+{
+  "name": "Void Drifter Molten Freddy",
+  "imgNormal": "https://units.fntduserguide.com/units/void-drifter-molten-freddy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/void-drifter-molten-freddy-shiny.png",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Slow",
+    "Burn",
+    "Summon",
+    "Support"
+  ],
+  "element": "Fire",
+  "placements": 1,
+  "attackType": "Line",
+  "obtainment": "Cyber Event Gamemode (3 prestiges)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 8000,
+      "damage": 650,
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 725,
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 5000,
+      "damage": 930,
+      "cd": 3.5,
+      "range": 25
+    },
+    {
+      "level": 4,
+      "cost": 7500,
+      "damage": 1025,
+      "cd": 3.5,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 10000,
+      "damage": 1420,
+      "cd": 4.2,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 12000,
+      "damage": 1600,
+      "cd": 4.2,
+      "range": 27
+    },
+    {
+      "level": 7,
+      "cost": 15000,
+      "damage": 1850,
+      "cd": 4.2,
+      "range": 28
+    },
+    {
+      "level": 8,
+      "cost": 18000,
+      "damage": 2450,
+      "cd": 5,
+      "range": 30
+    },
+    {
+      "level": 9,
+      "cost": 21000,
+      "damage": 2800,
+      "cd": 5,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Digital Waves",
+      "text": "Spawn a Void Drifter Molten Freddy summon that deals 250% of this unit's damage on contact. (Upgrade 0+, Local CD: 20s).",
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-19-21-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
+    },
+    {
+      "title": "Cybernetic Underworld",
+      "text": "Whenever an enemy in range is stunned deal 60% damage to that enemy and gain +15% range for 20s (max +30%). If 3 or more Fire and/or Electricity units are in range slow enemies in range by 15%, grant units in range gain +20% range, and attacks apply 60% burn over 6s"
+    }
+  ],
+  "passiveDamage": {
+    "summons": [
+      {
+          "label": "Digital Waves",
+          "healthpctofdamage": 2.50,
+          "spawncd": 20,
+          "cdboostable": false
+      }
+    ],
+    "selfboost": [
+      {
+        "label": "Cybernetic (boost)",
+        "rngmult": 1.30,
+        "duration": 20,
+        "cd": 7
+      }
+    ],
+    "periodic": [
+      {
+        "label": "Cybernetic (damage)",
+        "pctofdamage": 0.6,
+        "cd": 7,
+        "cdboostable": false
+      }
+    ]
+  }
+},
+{
+  "name": "Neon Punk Nightmare Chica",
+  "imgNormal": "https://iili.io/n32z8ss.webp",
+  "imgShiny": "https://drive.google.com/thumbnail?id=1tlgL7Ea_pL4vTrbwWFk51tobnBDsq0b-&sz=w500",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Stun"
+  ],
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Cyber Event Free Tier 50",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 4500,
+      "damage": 500,
+      "type": "Circle",
+      "cd": 4,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 600,
+      "type": "Circle",
+      "cd": 4,
+      "range": 19
+    },
+    {
+      "level": 3,
+      "cost": 4500,
+      "damage": 725,
+      "type": "Circle",
+      "cd": 3.75,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 6500,
+      "damage": 875,
+      "type": "Circle",
+      "cd": 3.75,
+      "range": 21
+    },
+    {
+      "level": 5,
+      "cost": 9000,
+      "damage": 1100,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 23
+    },
+    {
+      "level": 6,
+      "cost": 12000,
+      "damage": 1350,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 25
+    },
+    {
+      "level": 7,
+      "cost": 15000,
+      "damage": 1650,
+      "type": "Line",
+      "cd": 3.25,
+      "range": 27
+    },
+    {
+      "level": 8,
+      "cost": 19000,
+      "damage": 2000,
+      "type": "Line",
+      "cd": 3,
+      "range": 27
+    }
+  ],
+  "passives": [
+    {
+      "title": "Encore",
+      "text": "Gain 1 [Bass] every 3 seconds and whenever a [Dark] unit gets a kill in range. At 20 [Bass] change to Full AOE for 20 seconds and gain +25% damage for 20 seconds. When Encore ends deal 200% damage to enemies in range and stun enemies hit for 1.5 seconds. Reset [Bass]"
+    },
+    {
+      "title": "Lone Wolf",
+      "text": "If this is the only Chica unit on the team, gain +15% critical chance and +35% critical damage."
+    }
+  ],
+  "passiveDamage":{
+    "selfboost": [
+      {
+        "label": "Lone Wolf",
+        "critc": 0.20,
+        "critd": 2.35
+      },
+      {
+        "label": "Encore (boost)",
+        "dmgmult": 1.25,
+        "duration": 20,
+        "cd": 60,
+        "uptime": false
+      }
+    ],
+    "periodic": [
+      {
+        "label": "Encore (damage)",
+        "pctofdamage": 2.0,
+        "cd": 80
+      }
+    ]
+  }
+},
+{
+  "name": "Model 2.9 Defective Funtime Foxy",
+  "imgNormal": "https://units.fntduserguide.com/units/model-2-9-defective-funtime-foxy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/model-2-9-defective-funtime-foxy-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Slow",
+    "Stun",
+    "Bleed",
+    "Malware"
+  ],
+  "element": "Electricity",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Not Currently Obtainable",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 10000,
+      "damage": 650,
+      "type": "Circle",
+      "cd": 4,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 4500,
+      "damage": 750,
+      "type": "Circle",
+      "cd": 4,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 6000,
+      "damage": 825,
+      "type": "Circle",
+      "cd": 3.75,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 7500,
+      "damage": 950,
+      "type": "Line",
+      "cd": 3.75,
+      "range": 27
+    },
+    {
+      "level": 5,
+      "cost": 9000,
+      "damage": 1050,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 29
+    },
+    {
+      "level": 6,
+      "cost": 12000,
+      "damage": 1200,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 31
+    },
+    {
+      "level": 7,
+      "cost": 15000,
+      "damage": 1450,
+      "type": "Cone 120°",
+      "cd": 3.25,
+      "range": 33
+    },
+    {
+      "level": 8,
+      "cost": 20000,
+      "damage": 1750,
+      "type": "Cone 120°",
+      "cd": 3,
+      "range": 33
+    }
+  ],
+  "passives": [
+    {
+      "title": "City of Tomorrow",
+      "text": "On hit apply 25% bleed over 5 seconds and deal +25% damage to slowed or bleeding enemies. When Techno-Genesis activates apply 100% bleed over 10 seconds to enemies in range, become immune to stuns for 15 seconds, and apply Malware to enemies in range for 10 seconds."
+    },
+    {
+      "title": "Techno-Genesis",
+      "text": "Whenever a unit in range uses an active ability (15s cooldown) deal 250% damage in a Full AOE, deal 10 shield damage, and slow enemies by 20% for 10 seconds. When the slow expires, stun affected enemies for 1.8 seconds"
+    }
+  ],
+  "passiveDamage": {
+    "dots": [
+      {
+        "label": "City (DoT)",
+        "pctofdamage": 0.25,
+        "durationsec": 5
+      },
+      {
+        "label": "Techno (DoT)",
+        "pctofdamage": 1.00,
+        "durationsec": 10,
+        "cd": 15,
+        "cdboostable": false
+      }
+    ],
+    "periodic": [
+      {
+        "label": "Techno (damage)",
+        "pctofdamage": 2.50,
+        "cd": 15,
+        "cdboostable": false
+      }
+    ],
+    "selfboost": [
+      {
+        "label": "City (boost)",
+        "dmgmult": 1.25
+      }
+    ]
+  }
+},
+{
+  "name": "Cyberdata Withered Bonnie",
+  "imgNormal": "https://iili.io/n32zieS.webp",
+  "imgShiny": "https://drive.google.com/thumbnail?id=1kKjFRVMVJnm1miMbROD-ULATYDrwFM3r&sz=w500",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support",
+    "Stun",
+    "Slow"
+  ],
+  "element": "Electricity",
+  "placements": 1,
+  "attackType": "Cone",
+  "obtainment": "Cyber Event Premium Tier 50",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 7447,
+      "damage": 225,
+      "degrees": "45°",
+      "cd": 4.5,
+      "range": 25
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 290,
+      "degrees": "45°",
+      "cd": 4.5,
+      "range": 26
+    },
+    {
+      "level": 3,
+      "cost": 6000,
+      "damage": 360,
+      "degrees": "45°",
+      "cd": 4,
+      "range": 27
+    },
+    {
+      "level": 4,
+      "cost": 8000,
+      "damage": 540,
+      "degrees": "45°",
+      "cd": 4,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 10000,
+      "damage": 870,
+      "degrees": "45°",
+      "cd": 4,
+      "range": 29
+    },
+    {
+      "level": 6,
+      "cost": 12500,
+      "damage": 700,
+      "degrees": "45°",
+      "cd": 3,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 15000,
+      "damage": 875,
+      "degrees": "75°",
+      "cd": 3,
+      "range": 32
+    },
+    {
+      "level": 8,
+      "cost": 18000,
+      "damage": 1125,
+      "degrees": "75°",
+      "cd": 3,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "0FF3NS1V3 PR0T0C0L",
+      "text": "Gain +60% Crit Rate and +40% Crit Damage. Nearby units gain +15% Crit Rate and +10% Crit Damage. If fewer than 3 enemies are in range, or an enemy in range has at least 10x this unit's damage as health gain +50% damage. On Crit, follow up for 50% damage"
+    },
+    {
+      "title": "F1R3W4LL",
+      "text": "On Hit deal +1 shield damage, slow enemies by 20%, and stun for 2s. When an enemy tries to leave range Stun for 5s and deal 200% damage"
+    }
+  ],
+  "passiveDamage":{
+    "selfboost":[
+      {
+      "label": "Protocall (boost)",
+      "critc": 0.65,
+      "critd": 2.40
+      },
+      {
+        "label": "Protocall (10x enemy hp)",
+        "dmgmult": 1.50
       }
     ]
   }

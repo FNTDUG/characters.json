@@ -26178,7 +26178,7 @@
   "element": "Electricity",
   "placements": 1,
   "attackType": "Multi",
-  "obtainment": "Not Currently Obtainable",
+  "obtainment": "Currently Unobtainable",
   "levels": [
     {
       "level": 1,

@@ -3035,17 +3035,23 @@
         return !!ueHeroPathsFor(unit) && ueHeroPrimaryPath(unit) < 0;
       }
       function ueHeroPickNotice(rarityStyle) {
+        var accent = (rarityStyle && rarityStyle.borderColor) || '#ffa45b';
         var box = document.createElement('div');
-        box.className = 'unit-table-container';
         box.style.cssText = 'background:rgba(10,8,22,.92);border:1px dashed rgba(255,164,91,.45);' +
-          'border-radius:8px;margin-bottom:12px;padding:22px 18px;text-align:center';
+          'border-radius:8px;margin-bottom:12px;padding:26px 16px;text-align:center;' +
+          'overflow:visible;white-space:normal;overflow-wrap:break-word';
         var t = document.createElement('div');
-        t.style.cssText = 'font-family:"Press Start 2P",cursive;font-size:9px;line-height:2;' +
-          'color:' + ((rarityStyle && rarityStyle.borderColor) || '#ffa45b');
-        t.textContent = 'SELECT A PATH TO AT LEAST TIER ' + UE_PRIMARY_TIER;
+        t.style.cssText = 'font-size:9px;line-height:2.2;letter-spacing:1px;color:' + accent;
+        t.appendChild(document.createTextNode('SELECT A PATH'));
+        t.appendChild(document.createElement('br'));
+        t.appendChild(document.createTextNode('TO TIER ' + UE_PRIMARY_TIER));
         var sub2 = document.createElement('div');
-        sub2.style.cssText = 'margin-top:10px;font-size:12px;color:rgba(255,255,255,.55);line-height:1.6';
-        sub2.textContent = 'Stats depend on the path taken. Open Hero Tree to choose one.';
+        sub2.style.cssText = 'margin-top:16px;font-size:7px;line-height:2.4;' +
+          'color:rgba(255,255,255,.5);white-space:normal;overflow-wrap:break-word';
+        ['STATS DEPEND ON', 'THE PATH TAKEN'].forEach(function (line, i) {
+          if (i) sub2.appendChild(document.createElement('br'));
+          sub2.appendChild(document.createTextNode(line));
+        });
         box.appendChild(t); box.appendChild(sub2);
         return box;
       }

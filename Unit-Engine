@@ -4243,6 +4243,7 @@
           ["candy_yellow",      "Candy Cadet: Yellow Candy (+10% DMG & +30% RNG)",                          { dmgMult: 1.10, rngMult: 1.30 }],
           ["chipper",           "Chipper: Stock Stacker (+0.5% DMG, +0.5% RNG per stack)",                  { dmgMult: 1.005, rngMult: 1.005, stackKey: "chipperStacks", maxStacks: 20 }],
           ["comm_freddy",       "Commander Withered Freddy: Strength In Numbers (+1% DMG per stack)",        { dmgMult: 1.01, stackKey: "commanderStacks", maxStacks: 4 }],
+          ["cyber_bon",         "Cyberdata Withered Bonnie: 0FF3NS1V3 PR0T0C0L (+15% Cirt Rate & +10% Crit Rate)",{ critRateAdd: 0.15, critDmgAdd: 0.10 }],
           ["child",             "Crying Child: Thermal Runaway (+25% DMG)",                                { dmgMult: 1.25, duration: 16, cd: 30 }],
           ["cthulhu",           "Cthulhu Nightmare Foxy: Star Spawn (+30% DMG & +30% RNG)",                 { dmgMult: 1.30, rngMult: 1.30}],
           ["cupcake",           "Cupcake: Birthday Boy (+3% DMG/RNG, -3% CD)",                              { dmgMult: 1.03, rngMult: 1.03, cdMult: 0.97 }],
@@ -4298,6 +4299,7 @@
           ["spring_duo_avg",    "Spring Duo: Spotlight! (Averaged, +25% DMG, +22.5% RNG, -2.5% CD)",      { dmgMult: 1.25, rngMult: 1.225, cdMult: 0.975 }],
           ["sweetheart_toy_foxy","Sweetheart Toy Foxy: Love Shot (-35% DMG, avg CD)",                      { dmgMult: 0.65, singlePlacement: true }],
           ["unicorn_foxy",       "Unicorn Toy Foxy: Light Eater (+15% DMG)",                              { dmgMult: 1.15 }],
+          ["void_molten",       "Void Drifter Molten Freddy: Cyberneetic Underworld (+20% RNG)",          { rngMult: 1.20 }],
           ["electricityelement","Electricity Element: -1% CD to units within range (stacks)",              { cdMult: 0.99, stackKey: "electricityelementStacks", maxStacks: 15 }],
           ["waterelement",      "Water Element: +3% RNG to units within range (stacks)",                   { rngMult: 1.03, stackKey: "waterelementStacks", maxStacks: 18 }],
           ];

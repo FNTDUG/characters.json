@@ -3018,6 +3018,13 @@
         st.id = 'uhp-style';
         st.textContent =
           '.uhp-desc{font-family:"Press Start 2P",cursive}' +
+          // The colouriser tags keywords with a hover badge. Useful in the passives
+          // dropdown, noise in a tier list, so it is hidden here only.
+          '.uhp-desc .ue-kw-info{display:none!important}' +
+          // safe center keeps the row centred when it fits but falls back to
+          // flex-start when it overflows — plain "center" pushes Tier 1 into
+          // negative scroll space where it cannot be reached.
+          '.uhp-row{display:flex;align-items:flex-start;gap:4px;flex-wrap:nowrap;justify-content:safe center}' +
           '.uhp-title{font-family:"Press Start 2P",cursive;font-size:11px;line-height:1.7}' +
           '.uhp-eff{font-family:"Press Start 2P",cursive;font-size:9px;line-height:2;color:#e2e2e2}' +
           '.uhp-lab{font-family:"Press Start 2P",cursive;font-size:9px;letter-spacing:0;line-height:1.5}' +
@@ -3051,8 +3058,9 @@
         var sel = ueHeroPathSelFor(unit);
 
         var overlay = document.createElement('div');
-        overlay.style.cssText = 'position:fixed;inset:0;z-index:2147483000;background:rgba(0,0,0,.78);' +
-          'display:flex;align-items:center;justify-content:center;padding:16px;overflow:auto';
+        overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;height:100vh;height:100dvh;' +
+          'z-index:2147483000;background:rgba(0,0,0,.78);display:flex;align-items:center;justify-content:center;' +
+          'overflow:auto;padding:16px;padding-bottom:calc(16px + env(safe-area-inset-bottom))';
 
         var frame = document.createElement('div');
         frame.style.cssText = 'position:relative;width:100%;max-width:1120px;border-radius:14px;overflow:hidden;' +
@@ -3207,7 +3215,7 @@
           gridWrap.innerHTML = '';
           paths.forEach(function (tiers, pi) {
             var row = document.createElement('div');
-            row.style.cssText = 'display:flex;align-items:flex-start;gap:4px;justify-content:center;flex-wrap:nowrap';
+            row.className = 'uhp-row';
             tiers.forEach(function (t, ti) {
               if (ti > 0) {
                 var dash = document.createElement('div');

@@ -2347,6 +2347,7 @@
 
       
       function makeStatsTable(unit, rarityStyle, modeKey) {
+        if (ueHeroAwaitingPath(unit)) return ueHeroPickNotice(rarityStyle);
         var data = buildStats(unit, modeKey);
         var cols = data.cols || [];
         var rows = data.rows || [];
@@ -2426,6 +2427,9 @@
       }
 
         function makeDpsTable(unit, modeKey) {
+          // No committed path means no placement/maxed DPS, no cost, and no
+          // W/ ACTIVE(S) & PASSIVE(S) — the notice from makeStatsTable stands in.
+          if (ueHeroAwaitingPath(unit)) return null;
           var dps = computeUnitDps(unit, modeKey);
           var _pd = resolvePd(unit, modeKey);
 
@@ -3000,22 +3004,6 @@
         }
         return out.length ? out : null;
       }
-      // A tier carries "levels" — per-level stat overrides merged onto the unit's own,
-      // the same way a mode swaps in its own levels. Tiers do not push passives or
-      // passiveDamage: those live on the unit and declare which tier unlocks them.
-      function ueHeroPathContrib(unit) {
-        var paths = ueHeroPathsFor(unit);
-        if (!paths) return null;
-        var sel = ueHeroPathSel[unit.name] || [0, 0, 0];
-        var lvlOv = [];
-        for (var p = 0; p < paths.length; p++) {
-          for (var t = 0; t < (sel[p] || 0); t++) {
-            var tier = paths[p][t];
-            if (tier && Array.isArray(tier.levels) && tier.levels.length) lvlOv = lvlOv.concat(tier.levels);
-          }
-        }
-        return lvlOv.length ? { levels: lvlOv } : null;
-      }
 
       // Gate for anything in passives / passiveDamage. An entry with "path" and "tier"
       // only counts once that path is selected to at least that tier, so W/ ACTIVE(S) &
@@ -3031,6 +3019,35 @@
       function ueGateList(unit, list) {
         if (!Array.isArray(list)) return list;
         return list.filter(function (e) { return ueTierUnlocked(unit, e); });
+      }
+
+      var UE_PRIMARY_TIER = 3;
+      function ueHeroPrimaryPath(unit) {
+        if (!ueHeroPathsFor(unit)) return -1;
+        var sel = ueHeroPathSel[unit.name] || [0, 0, 0];
+        for (var i = 0; i < sel.length; i++) if ((sel[i] || 0) >= UE_PRIMARY_TIER) return i;
+        return -1;
+      }
+      // A hero whose build has not committed to a path yet: the stats table, the
+      // W/ ACTIVE(S) & PASSIVE(S) table and the placement/maxed/cost row all depend on
+      // which path you took, so none of them can be shown.
+      function ueHeroAwaitingPath(unit) {
+        return !!ueHeroPathsFor(unit) && ueHeroPrimaryPath(unit) < 0;
+      }
+      function ueHeroPickNotice(rarityStyle) {
+        var box = document.createElement('div');
+        box.className = 'unit-table-container';
+        box.style.cssText = 'background:rgba(10,8,22,.92);border:1px dashed rgba(255,164,91,.45);' +
+          'border-radius:8px;margin-bottom:12px;padding:22px 18px;text-align:center';
+        var t = document.createElement('div');
+        t.style.cssText = 'font-family:"Press Start 2P",cursive;font-size:9px;line-height:2;' +
+          'color:' + ((rarityStyle && rarityStyle.borderColor) || '#ffa45b');
+        t.textContent = 'SELECT A PATH TO AT LEAST TIER ' + UE_PRIMARY_TIER;
+        var sub2 = document.createElement('div');
+        sub2.style.cssText = 'margin-top:10px;font-size:12px;color:rgba(255,255,255,.55);line-height:1.6';
+        sub2.textContent = 'Stats depend on the path taken. Open Hero Tree to choose one.';
+        box.appendChild(t); box.appendChild(sub2);
+        return box;
       }
 
       function ueHeroPathSelFor(unit) {
@@ -3404,26 +3421,17 @@
         };
       }
 
-      // A hero's selected tiers can restate any stat at any level. Entries are matched
-      // on "level" and merged over the base, in tier order, so a later tier wins. Only
-      // the levels and fields that actually change need listing.
+      // Heroes on the path system have no levels of their own — each path states its
+      // own, so the committed path supplies the stat table. Falls through to whatever
+      // was passed in for every other unit, and for a hero with no path picked yet
+      // (which the tier-3 notice covers anyway).
       function ueApplyPathLevels(unit, levels) {
-        var c = ueHeroPathContrib(unit);
-        if (!c || !c.levels.length || !levels.length) return levels;
-        var out = levels.map(function (l) {
-          var copy = {};
-          for (var k in l) copy[k] = l[k];
-          return copy;
-        });
-        for (var i = 0; i < c.levels.length; i++) {
-          var ov = c.levels[i];
-          if (!ov) continue;
-          for (var j = 0; j < out.length; j++) {
-            if (Number(out[j].level) !== Number(ov.level)) continue;
-            for (var f in ov) { if (f !== 'level') out[j][f] = ov[f]; }
-          }
-        }
-        return out;
+        var raw = unit && unit.paths;
+        if (!Array.isArray(raw)) return levels;
+        var pi = ueHeroPrimaryPath(unit);
+        if (pi < 0 || !raw[pi]) return levels;
+        var own = raw[pi].levels;
+        return (Array.isArray(own) && own.length) ? own : levels;
       }
 
         

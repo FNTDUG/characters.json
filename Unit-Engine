@@ -3008,7 +3008,7 @@
         var paths = ueHeroPathsFor(unit) || [];
         for (var p = 0; p < paths.length; p++) {
           for (var t = 0; t < sel[p]; t++) {
-            var st = (paths[p][t] && paths[p][t].s) || {};
+            var st = (paths[p][t] && paths[p][t].stats) || {};
             if (st.dmg) dmg *= st.dmg;
             if (st.rng) rng *= st.rng;
             if (st.cd) cd *= st.cd;
@@ -3206,7 +3206,7 @@
               line.appendChild(lb);
               // Same colouriser the passives dropdown runs on p.text.
               var eff = document.createElement('span');
-              applyPassiveColorize(eff, paths[p][k].e || '');
+              applyPassiveColorize(eff, paths[p][k].desc || '');
               line.appendChild(eff);
               dMain.appendChild(line);
             }
@@ -3271,7 +3271,7 @@
               disc.style.cssText = 'width:100%;height:100%;border-radius:50%;overflow:hidden;background:#14101f;' +
                 'display:flex;align-items:center;justify-content:center';
               var im = document.createElement('img');
-              im.src = HERO_PATH_IMG + slug + '-paths/' + t.i;
+              im.src = HERO_PATH_IMG + slug + '-paths/' + t.icon;
               im.alt = 'Tier ' + (ti + 1);
               im.loading = 'lazy';
               im.style.cssText = 'width:100%;height:100%;object-fit:contain';

@@ -4339,7 +4339,7 @@
             }
           }
           
-          var interval = (rawInterval > 0 && src.externalCd !== false)
+          var interval = (rawInterval > 0 && src.externalcd !== false)
             ? Math.max(rawInterval, 7) : rawInterval;
           var uptime = alwaysOn ? 1
             : (src.uptime === true || (src.duration > 0 && interval > 0))
@@ -4405,7 +4405,7 @@
             }
           }
           
-          var interval = (rawInterval > 0 && src.externalCd !== false)
+          var interval = (rawInterval > 0 && src.externalcd !== false)
             ? Math.max(rawInterval, 7) : rawInterval;
           var ccText;
           if (src.tiles > 0) {
@@ -5068,9 +5068,9 @@
       ["factory_1", "Factory New I (+2.5% DMG, +2.5% RNG, & -2.5% CD)",   { dmgMult: 1.025, rngMult: 1.025, cdMult: 0.975, stackKey: "factorystack1", maxStacks: 20 }],
       ["factory_2", "Factory New II (+5% DMG, +5% RNG, & -5% CD)",   { dmgMult: 1.05, rngMult: 1.05, cdMult: 0.95, stackKey: "factorystack2", maxStacks: 20 }],
       ["factory_3", "Factory New III (+7.5% DMG, +7.5% RNG, & -7.5% CD)",   { dmgMult: 1.075, rngMult: 1.075, cdMult: 0.925,stackKey: "factorystack3", maxStacks: 20 }],
-      ["factory_4", "Factory New IV (+12% DMG, +12% RNG, & -12% CD)",   { dmgMult: 1.12, rngMult: 1.12, cdMult: 0.88, rngMult: 1.12, cdMult: 0.88, stackKey: "factorystack4", maxStacks: 20 }],
+      ["factory_4", "Factory New IV (+12% DMG, +12% RNG, & -12% CD)",   { dmgMult: 1.12, rngMult: 1.12, cdMult: 0.88, stackKey: "factorystack4", maxStacks: 20 }],
       ["factory_5", "Factory New V (+15% DMG, +15% RNG, & -15% CD)",   { dmgMult: 1.15, rngMult: 1.15, cdMult: 0.85, stackKey: "factorystack5", maxStacks: 20 }],
-      ["factory_6", "Factory New VI (+17.5% DMG, +17.5% RNG, & -17.5% CD)",   { dmgMult: 1.175, rngMult: 1.175, cdMult: 0., stackKey: "factorystack6", maxStacks: 20 }],
+      ["factory_6", "Factory New VI (+17.5% DMG, +17.5% RNG, & -17.5% CD)",   { dmgMult: 1.175, rngMult: 1.175, cdMult: 0.825, stackKey: "factorystack6", maxStacks: 20 }],
       ["bk_1", "Boss Killer I (+5%  Boss DMG)",   { dmgMult: 1.05, stackKey: "bkstack1", maxStacks: 20 }],
       ["bk_2", "Boss Killer II (+7.5% Boss DMG)",   { dmgMult: 1.075, stackKey: "bkstack2", maxStacks: 20 }],
       ["bk_3", "Boss Killer III (+10% Boss DMG)",   { dmgMult: 1.10, stackKey: "bkstack3", maxStacks: 20 }],

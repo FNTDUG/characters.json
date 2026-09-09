@@ -7363,8 +7363,8 @@
       "selfboost": [
         {
           "label": "Blackout",
-          "dmgmult": "1.20",
-          "rngmult": "1.20"
+          "dmgmult": 1.20,
+          "rngmult": 1.20
         }
       ],
       "dots": [
@@ -9417,7 +9417,7 @@
         "label": "killed me (KB)",
         "cd": 200,
         "tiles": 2,
-        "externalCd": false
+        "externalcd": false
       }
     ],
       "slows": [
@@ -13382,7 +13382,7 @@
       {
         "label": "Landslide (Stun)",
         "cd": 60,
-        "externalCd": false,
+        "externalcd": false,
         "cdboostable": false,
         "cdscope": "global",
         "duration": 1.2
@@ -14896,7 +14896,7 @@
         "tiers": [
           {"icon": "animdude-path2-tier1.webp", "desc": "Attacks Slow enemies for 8s."},
           {"icon": "animdude-path2-tier2.webp", "desc": "Increases the Slow to 15%"},
-          {"icon": "animdude-path2-tier3.webp", "desc": "Enemies leaving Range are struck by a 4th Wall for 150% samage and are Stunned for 2s. Unlocks \"A World Under My Control\" with one selectable Chip."},
+          {"icon": "animdude-path2-tier3.webp", "desc": "Enemies leaving Range are struck by a 4th Wall for 150% Damage and are Stunned for 2s. Unlocks \"A World Under My Control\" with one selectable Chip."},
           {"icon": "animdude-path2-tier4.webp", "desc": "Increases 4th Wall damage to 200%."},
           {"icon": "animdude-path2-tier5.webp", "desc": "Increases 4th Wall damage to 250% and increases stun to 3s. \"A World Under My Control\" can select 2 Chips."}
         ]
@@ -19352,7 +19352,7 @@
           "dmgmult": 1.45
         }
       ],
-      "Periodic": [
+      "periodic": [
         {
           "label": "Short Fuse",
           "pctofdamage": 2.0,
@@ -22167,9 +22167,9 @@
       },
       {
         "label": "Own Making (DMG Boost)",
-        "dmgmult": "1.075",
-        "critC": "0.05",
-        "critD": "2.05"
+        "dmgmult": 1.075,
+        "critc": 0.05,
+        "critd": 2.05
       }
     ],
     "periodic": [
@@ -23691,7 +23691,7 @@
     "periodic":[
       {
         "label": "Hold Them (self follow-up)",
-        "pctofdamage": "0.75",
+        "pctofdamage": 0.75,
         "cd": 4,
         "cdboostable": true
       }
@@ -24620,7 +24620,7 @@
     "selfboost":[
       {
         "label": "Power Grid",
-        "dmgmult": "1.10"
+        "dmgmult": 1.10
       }
     ],
     "dots":[

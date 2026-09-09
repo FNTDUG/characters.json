@@ -344,6 +344,14 @@
         "url": "https://sounds.fntduserguide.com/Nitro%20Nmfredbear%20Eternalnightmare%20Mp%203.mp3"
       }
     ],
+    "balanceChanges": [
+      {
+        "date": "9/7/26",
+        "changes": [
+          { "type": "rework",   "text": "• Full kit rework" }
+        ]
+      }
+    ],
     "passives": [
       {
         "title": "Nightmarish Cry",
@@ -3789,6 +3797,12 @@
         "changes": [
           { "type": "buff",   "text": "• RNG 22-30 (was 20-24)<br>• CD 1-2.3 (was 1-2.7)<br>• DMG 55-725 (was 37.5-598)<br>• Starting at LVL 11 FullAOE (was Cone)" }
         ]
+      },
+      {
+        "date": "9/7/26",
+        "changes": [
+          { "type": "rework",   "text": "• Full kit rework" }
+        ]
       }
     ],
     "passives": [
@@ -5466,6 +5480,12 @@
         "changes": [
           { "type": "buff",   "text": "• DMG boost increased to 35% (was 10%)<br>• RNG boost increased to 30% (was 25%)" },
           { "type": "nerf",   "text": "• CD Boost Removed (was -10%)" }
+        ]
+      },
+      {
+        "date": "9/7/26",
+        "changes": [
+          { "type": "rework",   "text": "• Full kit rework" }
         ]
       }
     ],
@@ -9368,6 +9388,12 @@
         "changes": [
           { "type": "nerf",   "text": "Passive [Restless Soul] DMG boost reduced to 30% (was 75%)" }
         ]
+      },
+      {
+        "date": "9/7/26",
+        "changes": [
+          { "type": "rework",   "text": "• Full kit rework" }
+        ]
       }
     ],
     "passives": [
@@ -9548,6 +9574,12 @@
         "date": "6/6/26",
         "changes": [
           { "type": "buff",   "text": "Full Kit rework" }
+        ]
+      },
+      {
+        "date": "9/7/26",
+        "changes": [
+          { "type": "rework",   "text": "• Full kit rework" }
         ]
       }
     ],
@@ -12873,6 +12905,14 @@
     "placements": 1,
     "attackType": "Multi",
     "obtainment": "Hero Quest 6",
+    "balanceChanges": [
+      {
+        "date": "9/7/26",
+        "changes": [
+          { "type": "rework",   "text": "• Full kit rework" }
+        ]
+      }
+    ],
     "modes": {
       "smasher": {
         "label": "Smasher",
@@ -14961,6 +15001,12 @@
         "changes": [
           { "type": "nerf",   "text": "Placement Cost increased to 3.15k (was 900)" }
         ]
+      },
+      {
+        "date": "9/7/26",
+        "changes": [
+          { "type": "rework",   "text": "• Full kit rework" }
+        ]
       }
     ],
     "passives": [
@@ -15549,6 +15595,14 @@
     "placements": 1,
     "attackType": "Multi",
     "obtainment": "Hero Quest 7",
+    "balanceChanges": [
+      {
+        "date": "9/7/26",
+        "changes": [
+          { "type": "rework",   "text": "• Full kit rework" }
+        ]
+      }
+    ],
     "passives": [
       {
         "title": "Today's Sponsorship",
@@ -22155,6 +22209,14 @@
         "url": "https://sounds.fntduserguide.com/jaz-vengefulspirit-ability1.mp3"
       }
     ],
+  "balanceChanges": [
+    {
+      "date": "9/7/26",
+      "changes": [
+        { "type": "rework",   "text": "• Full kit rework" }
+      ]
+    }
+  ],
   "passives": [
     {
       "title": "Playtime",

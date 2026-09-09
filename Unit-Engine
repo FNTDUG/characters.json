@@ -3300,6 +3300,8 @@
         }
 
         function draw() {
+          var prevX = gridWrap.firstChild ? gridWrap.firstChild.scrollLeft : 0;
+          var prevY = overlay.scrollTop;
           gridWrap.innerHTML = '';
           // One scroller wrapping all three rows, so dragging any path moves them
           // together and the tiers stay aligned in a column. overflow-x:auto forces
@@ -3365,9 +3367,11 @@
             stack.appendChild(row);
           });
           gridWrap.appendChild(scroller);
+          scroller.scrollLeft = prevX;
           drawStats();
           drawResets();
           drawDesc();
+          overlay.scrollTop = prevY;
         }
 
         draw();

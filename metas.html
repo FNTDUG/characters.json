@@ -106,6 +106,11 @@
         'width:clamp(14px,24%,48px);border-radius:8px;padding:2px;pointer-events:none}',
       '.meta-enchant-inner{width:100%;height:100%;border-radius:6px;overflow:hidden;background:rgba(14,11,28,0.88)}',
       '.meta-enchant-inner img{width:100%;height:100%;object-fit:cover;display:block}',
+      '.meta-path{position:absolute;left:2px;top:50%;transform:translateY(-50%);z-index:2;aspect-ratio:1/1;' +
+        'width:clamp(16px,28%,54px);border-radius:9px;padding:2px;pointer-events:none}',
+      '.meta-path.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
+      '.meta-path-inner{width:100%;height:100%;border-radius:7px;overflow:hidden;background:rgba(14,11,28,0.88)}',
+      '.meta-path-inner img{width:100%;height:100%;object-fit:cover;display:block}',
       '.meta-replacement{position:absolute;bottom:2px;right:2px;z-index:2;aspect-ratio:1/1;' +
         'width:clamp(16px,28%,54px);border-radius:9px;padding:2px;pointer-events:none}',
       '.meta-replacement.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
@@ -159,6 +164,7 @@
 
       '.meta-clutter-off .meta-byte,' +
       '.meta-clutter-off .meta-chip,' +
+      '.meta-clutter-off .meta-path,' +
       '.meta-clutter-off .meta-enchant,' +
       '.meta-clutter-off .meta-replacement,' +
       '.meta-clutter-off .meta-label{display:none!important}',
@@ -207,6 +213,8 @@
         '.meta-chip-inner{border-radius:5px}' +
         '.meta-enchant{top:2px;left:2px;padding:1px;border-radius:6px}' +
         '.meta-enchant-inner{border-radius:5px}' +
+        '.meta-path{left:2px;padding:1px;border-radius:6px}' +
+        '.meta-path-inner{border-radius:5px}' +
         '.meta-replacement{bottom:2px;right:2px;padding:1px;border-radius:6px}' +
         '.meta-replacement-inner{border-radius:5px}' +
         '.meta-label{bottom:2px;left:2px;padding:1px}' +
@@ -276,6 +284,30 @@
   };
   var SHINY_DEF = 'linear-gradient(90deg,red,orange,yellow,lime,cyan,blue,magenta,red)';
 
+  var PATH_IMG = 'https://images.fntduserguide.com/';
+
+  function metaPathInfo(unitCfg, u) {
+    var raw = unitCfg && unitCfg.path;
+    if (!raw || !u || !Array.isArray(u.paths) || !u.paths.length) return null;
+    var tiers = String(raw).split('-').map(function (n) { return parseInt(n, 10) || 0; });
+    var pi = -1, best = 0;
+    for (var i = 0; i < tiers.length; i++) {
+      if (tiers[i] > best) { best = tiers[i]; pi = i; }
+    }
+    if (pi < 0 || best < 1) return null;
+    var path = u.paths[pi];
+    if (!path || !Array.isArray(path.tiers) || !path.tiers[best - 1]) return null;
+    var icon = path.tiers[best - 1].icon;
+    if (!icon) return null;
+    var slug = String(unitCfg.name).toLowerCase().split(' ').join('-');
+    return {
+      url: PATH_IMG + slug + '-paths/' + icon,
+      pathNo: pi + 1,
+      tier: best,
+      build: tiers.join('-')
+    };
+  }
+
   function getRarityBg(name, rar) {
     if (rar === 'shiny') return SHINY[name] || SHINY_DEF;
     return RARITY[rar] || '#888888';
@@ -324,6 +356,11 @@
     var enchData = META_CFG.enchants[unitCfg.enchant];
     if (enchData) {
       tipInner.appendChild(tipRow(enchData.color, false, enchData.url, 'Enchant: ' + unitCfg.enchant));
+    }
+    var pathInfo = metaPathInfo(unitCfg, u);
+    if (pathInfo) {
+      tipInner.appendChild(tipRow(getRarityBg(unitCfg.name, rar), sh, pathInfo.url,
+        'Path ' + pathInfo.pathNo + ' \u00b7 Tier ' + pathInfo.tier + ' (' + pathInfo.build + ')'));
     }
     var role = u.role || u.type || '';
     if (role) {
@@ -681,6 +718,17 @@
           eI.appendChild(eM); eW.appendChild(eI); inner.appendChild(eW);
         }
 
+        var pInfo = metaPathInfo(unitCfg, u);
+        if (pInfo) {
+          var pW = document.createElement('div');
+          pW.className = 'meta-path' + (isShiny ? ' meta-shiny' : ''); pW.style.background = bg;
+          if (isShiny) pW.style.backgroundSize = '200% 200%';
+          var pI = document.createElement('div'); pI.className = 'meta-path-inner';
+          var pM = document.createElement('img'); _metaImgSrc(pM, pInfo.url);
+          pM.alt = 'Path ' + pInfo.pathNo + ' Tier ' + pInfo.tier;
+          pI.appendChild(pM); pW.appendChild(pI); inner.appendChild(pW);
+        }
+
         var byteData = META_CFG.bytes[unitCfg.byte];
         if (byteData) {
           var bR = (byteData.rarity || '').toLowerCase(), bSh = bR === 'shiny';
@@ -976,7 +1024,7 @@
   xC.onload = function () {
     try {
       JSON.parse(xC.responseText).forEach(function (u) {
-        unitMap[u.name] = { img: u.imgNormal || '', rarity: u.rarity || '', role: u.role || u.type || '' };
+        unitMap[u.name] = { img: u.imgNormal || '', rarity: u.rarity || '', role: u.role || u.type || '', paths: u.paths || null };
       });
     } catch (e) {}
     unitMapReady = true;

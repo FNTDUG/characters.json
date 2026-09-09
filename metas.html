@@ -106,11 +106,22 @@
         'width:clamp(14px,24%,48px);border-radius:8px;padding:2px;pointer-events:none}',
       '.meta-enchant-inner{width:100%;height:100%;border-radius:6px;overflow:hidden;background:rgba(14,11,28,0.88)}',
       '.meta-enchant-inner img{width:100%;height:100%;object-fit:cover;display:block}',
-      '.meta-path{position:absolute;left:2px;top:50%;transform:translateY(-50%);z-index:2;aspect-ratio:1/1;' +
+      '.meta-path{position:absolute;z-index:2;aspect-ratio:1/1;' +
         'width:clamp(16px,28%,54px);border-radius:9px;padding:2px;pointer-events:none}',
+      '.meta-path.path-tl{top:2px;left:2px}',
+      '.meta-path.path-tr{top:2px;right:2px}',
+      '.meta-path.path-bl{bottom:2px;left:2px}',
+      '.meta-path.path-br{bottom:2px;right:2px}',
+      '.meta-path.path-ml{left:2px;top:50%;transform:translateY(-50%)}',
       '.meta-path.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
       '.meta-path-inner{width:100%;height:100%;border-radius:7px;overflow:hidden;background:rgba(14,11,28,0.88)}',
       '.meta-path-inner img{width:100%;height:100%;object-fit:cover;display:block}',
+      '.meta-path-pair .meta-path-inner{position:relative;overflow:visible}',
+      '.meta-path-pair .meta-path-inner img{position:absolute;width:68%!important;height:68%!important;' +
+        'object-fit:contain}',
+      '.meta-path-pair .meta-path-inner img.path-b{right:0;bottom:0;opacity:.7}',
+      '.meta-path-pair .meta-path-inner img.path-a{left:0;top:0;' +
+        'filter:drop-shadow(1px 1px 0 rgba(0,0,0,.95))}',
       '.meta-replacement{position:absolute;bottom:2px;right:2px;z-index:2;aspect-ratio:1/1;' +
         'width:clamp(16px,28%,54px);border-radius:9px;padding:2px;pointer-events:none}',
       '.meta-replacement.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
@@ -213,7 +224,7 @@
         '.meta-chip-inner{border-radius:5px}' +
         '.meta-enchant{top:2px;left:2px;padding:1px;border-radius:6px}' +
         '.meta-enchant-inner{border-radius:5px}' +
-        '.meta-path{left:2px;padding:1px;border-radius:6px}' +
+        '.meta-path{padding:1px;border-radius:6px}' +
         '.meta-path-inner{border-radius:5px}' +
         '.meta-replacement{bottom:2px;right:2px;padding:1px;border-radius:6px}' +
         '.meta-replacement-inner{border-radius:5px}' +
@@ -290,22 +301,55 @@
     var raw = unitCfg && unitCfg.path;
     if (!raw || !u || !Array.isArray(u.paths) || !u.paths.length) return null;
     var tiers = String(raw).split('-').map(function (n) { return parseInt(n, 10) || 0; });
-    var pi = -1, best = 0;
-    for (var i = 0; i < tiers.length; i++) {
-      if (tiers[i] > best) { best = tiers[i]; pi = i; }
-    }
-    if (pi < 0 || best < 1) return null;
-    var path = u.paths[pi];
-    if (!path || !Array.isArray(path.tiers) || !path.tiers[best - 1]) return null;
-    var icon = path.tiers[best - 1].icon;
-    if (!icon) return null;
     var slug = String(unitCfg.name).toLowerCase().split(' ').join('-');
+
+    function leg(i) {
+      var tier = tiers[i] || 0;
+      if (tier < 1) return null;
+      var path = u.paths[i];
+      if (!path || !Array.isArray(path.tiers) || !path.tiers[tier - 1]) return null;
+      var icon = path.tiers[tier - 1].icon;
+      if (!icon) return null;
+      return { url: PATH_IMG + slug + '-paths/' + icon, pathNo: i + 1, tier: tier };
+    }
+
+    var taken = [];
+    for (var i = 0; i < tiers.length; i++) {
+      var l = leg(i);
+      if (l) taken.push(l);
+    }
+    if (!taken.length) return null;
+    taken.sort(function (a, b) { return b.tier - a.tier || a.pathNo - b.pathNo; });
+
     return {
-      url: PATH_IMG + slug + '-paths/' + icon,
-      pathNo: pi + 1,
-      tier: best,
+      primary: taken[0],
+      secondary: taken[1] || null,
       build: tiers.join('-')
     };
+  }
+
+  function metaPathCorner(unitCfg, META_CFG) {
+    var hasEnch = !!META_CFG.enchants[unitCfg.enchant];
+    var hasByte = !!META_CFG.bytes[unitCfg.byte];
+    var hasChip = !!(unitCfg.chip && META_CFG.chips && META_CFG.chips[unitCfg.chip]);
+    var hasLabel = !!unitCfg.label;
+    var hasRepl = !!unitCfg.replacement;
+
+    var used = {};
+    if (hasEnch) used.tl = 1;
+    if (hasByte) used.tr = 1;
+    if (hasLabel) used.bl = 1;
+    if (hasRepl) used.br = 1;
+    if (hasChip) {
+      if (hasLabel) { if (!hasRepl) used.br = 1; }
+      else used.bl = 1;
+    }
+
+    var order = ['br', 'bl', 'tl', 'tr'];
+    for (var i = 0; i < order.length; i++) {
+      if (!used[order[i]]) return 'path-' + order[i];
+    }
+    return 'path-ml';
   }
 
   function getRarityBg(name, rar) {
@@ -359,8 +403,8 @@
     }
     var pathInfo = metaPathInfo(unitCfg, u);
     if (pathInfo) {
-      tipInner.appendChild(tipRow(getRarityBg(unitCfg.name, rar), sh, pathInfo.url,
-        'Path ' + pathInfo.pathNo + ' \u00b7 Tier ' + pathInfo.tier + ' (' + pathInfo.build + ')'));
+      tipInner.appendChild(tipRow(getRarityBg(unitCfg.name, rar), sh, pathInfo.primary.url,
+        'Hero Tree: ' + pathInfo.build));
     }
     var role = u.role || u.type || '';
     if (role) {
@@ -721,12 +765,21 @@
         var pInfo = metaPathInfo(unitCfg, u);
         if (pInfo) {
           var pW = document.createElement('div');
-          pW.className = 'meta-path' + (isShiny ? ' meta-shiny' : ''); pW.style.background = bg;
+          pW.className = 'meta-path ' + metaPathCorner(unitCfg, META_CFG) +
+            (pInfo.secondary ? ' meta-path-pair' : '') + (isShiny ? ' meta-shiny' : '');
+          pW.style.background = bg;
           if (isShiny) pW.style.backgroundSize = '200% 200%';
           var pI = document.createElement('div'); pI.className = 'meta-path-inner';
-          var pM = document.createElement('img'); _metaImgSrc(pM, pInfo.url);
-          pM.alt = 'Path ' + pInfo.pathNo + ' Tier ' + pInfo.tier;
-          pI.appendChild(pM); pW.appendChild(pI); inner.appendChild(pW);
+          var legs = pInfo.secondary ? [['path-b', pInfo.secondary], ['path-a', pInfo.primary]]
+                                     : [['', pInfo.primary]];
+          legs.forEach(function (pr) {
+            var pM = document.createElement('img');
+            if (pr[0]) pM.className = pr[0];
+            _metaImgSrc(pM, pr[1].url);
+            pM.alt = 'Path ' + pr[1].pathNo + ' Tier ' + pr[1].tier;
+            pI.appendChild(pM);
+          });
+          pW.appendChild(pI); inner.appendChild(pW);
         }
 
         var byteData = META_CFG.bytes[unitCfg.byte];

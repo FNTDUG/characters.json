@@ -257,11 +257,11 @@
           { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
         ],
         "tiers": [
-          {"icon": "nightmare-fredbear-path1-tier1.webp", "desc": "Deals 5% more Damage to enemies afflicted by a Status Effect."},
-          {"icon": "nightmare-fredbear-path1-tier2.webp", "desc": "Deals 10% more Damage to enemies afflicted by a Status Effect."},
-          {"icon": "nightmare-fredbear-path1-tier3.webp", "desc": "Increases this unit's Damage based on Fear stacks, with Dark units gaining 1/4 of the bonus. At maximum Fear, deal 200% of this unit's Damage in an AOE Pulse and buffs all units by 20% for 10s, resetting Fear."},
+          {"icon": "nightmare-fredbear-path1-tier1.webp", "desc": "Deals 5% more damage to enemies afflicted by a Status Effect."},
+          {"icon": "nightmare-fredbear-path1-tier2.webp", "desc": "Deals 10% more damage to enemies afflicted by a Status Effect."},
+          {"icon": "nightmare-fredbear-path1-tier3.webp", "desc": "Increases this unit's Damage based on Fear stacks, with Dark units gaining 1/4 of the bonus. At maximum Fear, deal 200% of this unit's Damage in an AOE Pulse and give all units +20% Damage for 10s, resetting Fear."},
           {"icon": "nightmare-fredbear-path1-tier4.webp", "desc": "Increases the Pulse's Damage to 250% and retain 10% of maximum Fear after it activates. Enemies hit by the Pulse receive a permanent 5% Dark Wither."},
-          {"icon": "nightmare-fredbear-path1-tier5.webp", "desc": "Dark Units also receive the Full Fear Damage bonus, while Non-Dark units receive Half. Increases the Pulse's Damage boost to 25% and retains 20% of maximum Fear."}
+          {"icon": "nightmare-fredbear-path1-tier5.webp", "desc": "Dark Units also receive the Full Fear Damage bonus, while Non-Dark units receive Half. Increases the Pulse's Damage boost to 25% and retain 20% of maximum Fear."}
         ]
       },
       {
@@ -274,10 +274,10 @@
         ],
         "tiers": [
           {"icon": "nightmare-fredbear-path2-tier1.webp", "desc": "Attacks Slow enemies by 10%."},
-          {"icon": "nightmare-fredbear-path2-tier2.webp", "desc": "Increase the Attack Slow to 15%."},
-          {"icon": "nightmare-fredbear-path2-tier3.webp", "desc": "Increases the Attack Slow to 20% and applies Wither equal to current Fear Stack. At maximum Fear, transforms into Nightmare for 20s and deal 25% More Damage to Slowed enemies, then reset Fear."},
-          {"icon": "nightmare-fredbear-path2-tier4.webp", "desc": "Transforming releases a wave that slows all enemies by 25% and applies Death. Increases the Nightmare transformation time to 25s."},
-          {"icon": "nightmare-fredbear-path2-tier5.webp", "desc": "The Nightmare transformation gains 1s Per Dark Unit equipped and releases it's wave every 5s. Nightmare deals 50% more Damage to Slowed enemies."}
+          {"icon": "nightmare-fredbear-path2-tier2.webp", "desc": "Increases Slow to 15%."},
+          {"icon": "nightmare-fredbear-path2-tier3.webp", "desc": "Increases Slow to 20% and applies Wither equal to current Fear Stack. At maximum Fear, transform into Nightmare for 20s and deal 25% more damage to Slowed enemies, then reset Fear."},
+          {"icon": "nightmare-fredbear-path2-tier4.webp", "desc": "Transforming releases a wave that slows all enemies by 25% and applies Death. Nightmare transformation duration increased to 25s."},
+          {"icon": "nightmare-fredbear-path2-tier5.webp", "desc": "Nightmare transformation gains 1s per Dark unit equipped and releases it's wave every 5s. Nightmare deals 50% more damage to slowed enemies."}
         ]
       },
       {
@@ -289,11 +289,11 @@
           { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
         ],
         "tiers": [
-          {"icon": "nightmare-fredbear-path3-tier1.webp", "desc": "Increases this unit's Damage and the Damage of Dark units by 3% for each Dark Unit in Range. (Max 15%)"},
-          {"icon": "nightmare-fredbear-path3-tier2.webp", "desc": "Increases the Dark unit Damage boost to 5% and its Cap to 25%."},
-          {"icon": "nightmare-fredbear-path3-tier3.webp", "desc": "Unlocks \"Nightmarish Cry\". While Active, attacks anywhere on the map and deals up to 50% more Damage based on distance, then resets Fear. Duration increases by 0.5s per Fear Stack held on use."},
+          {"icon": "nightmare-fredbear-path3-tier1.webp", "desc": "Dark units receive +3% Damage for each Dark unit in Range (max +15%)."},
+          {"icon": "nightmare-fredbear-path3-tier2.webp", "desc": "Increases the Dark unit Damage boost to +5% and its cap to +25%."},
+          {"icon": "nightmare-fredbear-path3-tier3.webp", "desc": "Unlocks \"Nightmarish Cry\". While active, this unit cam attack anywhere on the map and deals up to 50% more Damage based on distance, then resets Fear. Duration increases by 0.5s per Fear stack held on use."},
           {"icon": "nightmare-fredbear-path3-tier4.webp", "desc": "Nightmarish Cry Stuns every enemy for 0.8s, increases it's distance bonus Damage Cap to 75% and grants this unit +5% Damage per Placed Dark Unit. (Max 25%)"},
-          {"icon": "nightmare-fredbear-path3-tier5.webp", "desc": "Increases the Global Stun to 1s and the Dark unit Damage Cap to 50%. Nightmarish Cry increases duration by 1s per Fear Stack used."}
+          {"icon": "nightmare-fredbear-path3-tier5.webp", "desc": "Increases the global Stun to 1s and the Dark unit Damage boost cap to +50%. Nightmarish Cry increases duration by 1s per Fear stack used."}
         ]
       }
     ],
@@ -3689,7 +3689,7 @@
           {"icon": "springtrap-path1-tier1.webp", "desc": "Gain +15% Damage."},
           {"icon": "springtrap-path1-tier2.webp", "desc": "This unit and nearby Fire units gain +10% Range."},
           {"icon": "springtrap-path1-tier3.webp", "desc": "Double this units Fire Wither values."},
-          {"icon": "springtrap-path1-tier4.webp", "desc": "Unlocks Ignited Rage, granting Fire units +40% damage and +20% range for 30 seconds."},
+          {"icon": "springtrap-path1-tier4.webp", "desc": "Unlocks Ignited Rage, granting Fire units +40% Damage and +20% Range for 30s."},
           {"icon": "springtrap-path1-tier5.webp", "desc": "Each Ignited Rage use permanently retains 30% of its buff values, up to 5 times."}
         ]
       },
@@ -3703,10 +3703,10 @@
         ],
         "tiers": [
           {"icon": "springtrap-path2-tier1.webp", "desc": "Attacks apply 10% Burn."},
-          {"icon": "springtrap-path2-tier2.webp", "desc": "Deal 5% more Damage per burn instance on the enemy, up to 20%."},
-          {"icon": "springtrap-path2-tier3.webp", "desc": "Increases this units burn to 50%."},
-          {"icon": "springtrap-path2-tier4.webp", "desc": "Burn Damage taken in Range is increased by 30%, and Burning enemies in Range are Slowed by 20%."},
-          {"icon": "springtrap-path2-tier5.webp", "desc": "Increases this unit's Burn to 75% and its Slow to 35%. Attacks gain Bonus Damage equal to 20% of currently remaining Burn Damage on target."}
+          {"icon": "springtrap-path2-tier2.webp", "desc": "Deal 5% more damage per burn instance on the enemy, up to 20%."},
+          {"icon": "springtrap-path2-tier3.webp", "desc": "Increases this units Burn by 50%."},
+          {"icon": "springtrap-path2-tier4.webp", "desc": "Burn damage taken in Range is increased by 30%, and burning enemies in range are Slowed by 20%."},
+          {"icon": "springtrap-path2-tier5.webp", "desc": "Increases this unit's Burn to 75% and its Slow to 35%. Attacks gain bonus damage equal to 20% of currently remaining Burn damage on target."}
         ]
       },
       {
@@ -3719,10 +3719,10 @@
         ],
         "tiers": [
           {"icon": "springtrap-path3-tier1.webp", "desc": "Attacks apply 10% Bleed."},
-          {"icon": "springtrap-path3-tier2.webp", "desc": "Attacks follow up with an axe for 20% Damage."},
-          {"icon": "springtrap-path3-tier3.webp", "desc": "Axe follow ups continue at 90%, 80%, 60%, 40%, and 20% Damage until one misses."},
-          {"icon": "springtrap-path3-tier4.webp", "desc": "After 5 missed follow up attacks, deal 100% Damage in a Full AOE and place 3 audio lures that slow enemies in their area by 20%."},
-          {"icon": "springtrap-path3-tier5.webp", "desc": "Every attack has a 5% chance to trigger a Springlock Failure, dealing 400% damage and 400% Bleed over 5 seconds in double this units range. This unit is stunned for its next 2 attacks, then gains +25% damage for 10s."}
+          {"icon": "springtrap-path3-tier2.webp", "desc": "Attacks follow up with an axe for 20% damage."},
+          {"icon": "springtrap-path3-tier3.webp", "desc": "Axe follow ups continue at 90%, 80%, 60%, 40%, and 20% damage until one misses."},
+          {"icon": "springtrap-path3-tier4.webp", "desc": "After 5 missed follow up attacks, deal 100% Damage in a Full AOE and place 3 audio lures that Slow enemies in their area by 20%."},
+          {"icon": "springtrap-path3-tier5.webp", "desc": "Every attack has a 5% chance to trigger a Springlock Failure, dealing 400% damage and 400% Bleed for 5s in double this units range. This unit is stunned for its next 2 attacks, then gains +25% Damage for 10s."}
         ]
       }
     ],
@@ -5359,11 +5359,11 @@
           { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
         ],
         "tiers": [
-          {"icon": "old-man-consequences-path1-tier1.webp", "desc": "Deals +20% Damage to enemies in the Outer-Half of this units range. Enemies in the Inner-Half are Slowed by 10%."},
-          {"icon": "old-man-consequences-path1-tier2.webp", "desc": "Deals +10% Damage to Bosses."},
+          {"icon": "old-man-consequences-path1-tier1.webp", "desc": "Deals +20% damage to enemies in the outer half of this units range. Enemies in the inner half are Slowed by 10%."},
+          {"icon": "old-man-consequences-path1-tier2.webp", "desc": "Deals +10% damage to Bosses."},
           {"icon": "old-man-consequences-path1-tier3.png", "desc": "Attacks follow-up on Bosses for 30% Damage. Nearby Water units gain +10% Range, increased to +20% when a Boss is alive."},
           {"icon": "old-man-consequences-path1-tier4.webp", "desc": "Each follow-up against the same Boss grants +3% Damage until it dies and Slows it by 1%, up to 10%. Units in range gain +10% Range."},
-          {"icon": "old-man-consequences-path1-tier5.png", "desc": "Unlocks: The One That Got Away. When a Boss tries to leave this units range automatically trigger this active at 2x Damage regardless of Cooldown, then put it on cooldown."}
+          {"icon": "old-man-consequences-path1-tier5.png", "desc": "Unlocks: The One That Got Away. When a Boss tries to leave this units range automatically trigger this active at 2x Damage regardless of CD, then put it on CD."}
         ]
       },
       {
@@ -5375,10 +5375,10 @@
           { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
         ],
         "tiers": [
-          {"icon": "old-man-consequences-path2-tier1.webp", "desc": "Gains +10% Range. Nearby Water Units gain +5% Range."},
-          {"icon": "old-man-consequences-path2-tier2.webp", "desc": "Gains +1% Damage for each enemy on the Map."},
-          {"icon": "old-man-consequences-path2-tier3.webp", "desc": "Places two Poolss that deal 150% Damage on contact. Water Units in range gain +10% Damage."},
-          {"icon": "old-man-consequences-path2-tier4.webp", "desc": "Increases the Pool Cap to 3 and Pool Damage to 150%. The water-unit buff increases to +20%. Deals 10% more Damage to an enemy for each Pool they've triggered."},
+          {"icon": "old-man-consequences-path2-tier1.webp", "desc": "Gains +10% Range. Nearby Water units gain +5% Range."},
+          {"icon": "old-man-consequences-path2-tier2.webp", "desc": "Gains +1% Damage for each enemy on the map."},
+          {"icon": "old-man-consequences-path2-tier3.webp", "desc": "Places two Pools that deal 150% Damage on contact. Water Units in range gain +10% Damage."},
+          {"icon": "old-man-consequences-path2-tier4.webp", "desc": "Increases the Pool cap to 3 and Pool damage to 150%. The water unit buff increases to +20%. Deals 10% more damage to an enemy for each Pool they've triggered."},
           {"icon": "old-man-consequences-path2-tier5.webp", "desc": "Increases the Pool cap to 5. Interacting with a Pool removes it, granting Water Units in range an additional +10% Damage and this unit +100% Damage for 120s. Retain +25% Damage permanently after this ends. (Max 1 time)"}
         ]
       },
@@ -5391,11 +5391,11 @@
           { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
         ],
         "tiers": [
-          {"icon": "old-man-consequences-path3-tier1.webp", "desc": "Every 10s, Hook the leading enemy and stun for 1s."},
+          {"icon": "old-man-consequences-path3-tier1.webp", "desc": "Every 10s, Hook the leading enemy and stun it for 1s."},
           {"icon": "old-man-consequences-path3-tier2.webp", "desc": "Hooks deal 100% Damage and Slow enemies by 15% for 10s."},
-          {"icon": "old-man-consequences-path3-tier3.webp", "desc": "Hooks hit in a Small Circle, slow by 20% for 10s, and Knock Back 2 tiles. Bosses are Stunned for 2s instead."},
+          {"icon": "old-man-consequences-path3-tier3.webp", "desc": "Hooks hit in a small Circle, Slow by 20% for 10s, and Knockback enemies 2 tiles. Bosses are Stunned for 2s instead."},
           {"icon": "old-man-consequences-path3-tier4.webp", "desc": "Casts an additional Hook at the highest-health enemy on the map and increases the Hook Damage to 200%."},
-          {"icon": "old-man-consequences-path3-tier5.webp", "desc": "Increases the Stun on Hook to 2s. Bosses are Knocked-Back instead of Stunned and the Slow increases to 30%."}
+          {"icon": "old-man-consequences-path3-tier5.webp", "desc": "Increases the Stun on Hook to 2s. Bosses receive Knockback instead of Stun and the Slow increases to 30%."}
         ]
       }
     ],
@@ -9247,10 +9247,10 @@
         ],
         "tiers": [
           {"icon": "golden-freddy-path1-tier1.png", "desc": "This unit Gains +5% Damage per Neutral unit on the team."},
-          {"icon": "golden-freddy-path1-tier2.png", "desc": "Attacks follow-up for 20% Damage on hit."},
-          {"icon": "golden-freddy-path1-tier3.png", "desc": "Every 10s, attacking teleports this unit to the main target, following-up for 10% Damage whilst applying 25% Bleed."},
-          {"icon": "golden-freddy-path1-tier4.png", "desc": "Teleporting summons a clone at the previous location that deals 25% of this units Damage and lasts for 15s."},
-          {"icon": "golden-freddy-path1-tier5.png", "desc": "Clone Duration increased to 25s. Enemies passing a clone are Stunned for 1s and take 250% Damage. When a clone expires, this unit follows up in a Full AOE for 100% Damage."}
+          {"icon": "golden-freddy-path1-tier2.png", "desc": "Attacks follow-up for 20% damage on hit."},
+          {"icon": "golden-freddy-path1-tier3.png", "desc": "Every 10s, attacking teleports this unit to the main target, following-up for 10% damage and applying 25% Bleed."},
+          {"icon": "golden-freddy-path1-tier4.png", "desc": "Teleporting summons a clone at the previous location that deals 25% of this units damage and lasts for 15s."},
+          {"icon": "golden-freddy-path1-tier5.png", "desc": "Clone duration increased to 25s. Enemies passing a clone are Stunned for 1s and take 250% damage. When a clone expires, this unit follows up in a Full AOE for 100% damage."}
         ]
       },
       {
@@ -9262,11 +9262,11 @@
           { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
         ],
         "tiers": [
-          {"icon": "golden-freddy-path2-tier1.png", "desc": "Units in Range gain +1% Damage per wave passed, up to +10%."},
-          {"icon": "golden-freddy-path2-tier2.png", "desc": "Neutral Units in Range gain +10% Damage."},
+          {"icon": "golden-freddy-path2-tier1.png", "desc": "Units in range gain +1% Damage per wave passed, up to +10%."},
+          {"icon": "golden-freddy-path2-tier2.png", "desc": "Neutral Units in range gain +10% Damage."},
           {"icon": "golden-freddy-path2-tier3.png", "desc": "Wave bonus increases to +3% Damage per wave, up to +30% and the Neutral unit bonus increases to +15%."},
-          {"icon": "golden-freddy-path2-tier4.png", "desc": "Refunds all cash spent on this unit and generates 25,000$. Increase income gain by 20% and the Range of units in range by 15%."},
-          {"icon": "golden-freddy-path2-tier5.png", "desc": "Gains +1% Damage and +0.5% Range per current Wave. Every 15s, two random Neutral Units in range gain +15% Damage and Range for 10s."}
+          {"icon": "golden-freddy-path2-tier4.png", "desc": "Refunds all cash spent on this unit and generates $25,000. Increase income gain by 20% and give all units in range +15% Range."},
+          {"icon": "golden-freddy-path2-tier5.png", "desc": "Gains +1% Damage and +0.5% Range per wave. Every 15s, two random Neutral units in range gain +15% Damage and Range for 10s."}
         ]
       },
       {
@@ -9278,11 +9278,11 @@
           { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
         ],
         "tiers": [
-          {"icon": "golden-freddy-path3-tier1.png", "desc": "Attacks slow enemies by 10% for 5s, this slow cannot stack."},
-          {"icon": "golden-freddy-path3-tier2.png", "desc": "Increases this units Range by 30%."},
+          {"icon": "golden-freddy-path3-tier1.png", "desc": "Attacks Slow enemies by 10% for 5s. This slow cannot stack."},
+          {"icon": "golden-freddy-path3-tier2.png", "desc": "Gain +30% Range."},
           {"icon": "golden-freddy-path3-tier3.png", "desc": "Every 12s, deals 150% Damage to enemies in range and Stuns them for 1.5s."},
-          {"icon": "golden-freddy-path3-tier4.png", "desc": "Increases the attack slow to 40%. Slowed enemies take 10% more Damage and this unit deals 25% more Damage to enemies in stun Lockout."},
-          {"icon": "golden-freddy-path3-tier5.png", "desc": "Increases the Stun to 2s, enemies in Stun Lockout are Slowed by 10% for 12s. Unlock “It's Me” which Stuns all enemies for 5s and deals 500% Damage."}
+          {"icon": "golden-freddy-path3-tier4.png", "desc": "Increase Slow to 40%. Slowed enemies take 10% more Damage and this unit deals 25% more damage to enemies in stun Lockout."},
+          {"icon": "golden-freddy-path3-tier5.png", "desc": "Increase Stun to 2s, enemies in Stun Lockout are Slowed by 10% for 12s. Unlock “It's Me” which Stuns all enemies for 5s and deals 500% Damage."}
         ]
       }
     ],
@@ -9440,11 +9440,11 @@
           { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
         ],
         "tiers": [
-          {"icon": "puppet-path1-tier1.png", "desc": "This unit will gain 5% Damage for every second it does not attack."},
-          {"icon": "puppet-path1-tier2.png", "desc": "This unit gains 2% Damage and 3% Range for every enemy in Range."},
-          {"icon": "puppet-path1-tier3.png", "desc": "Deals 1% more Damage to an enemy for every second it remains in Range (Max of 30%)"},
-          {"icon": "puppet-path1-tier4.png", "desc": "Unlocks \"Wind The Music Box\". This unit will stop attacking while winding and starts storing increased base Damage for it's next attack. Manually winding this increases the scaling speed by 1.5x."},
-          {"icon": "puppet-path1-tier5.png", "desc": "This unit will gain increased Range when winding, and stored Damage is multiplied based on how greater the enemies health is than this units Damage. Manual winding is increased to 2x speed."}
+          {"icon": "puppet-path1-tier1.png", "desc": "This unit gains +5% Damage for every second it does not attack."},
+          {"icon": "puppet-path1-tier2.png", "desc": "This unit gains +2% Damage and +3% Range for every enemy in its range."},
+          {"icon": "puppet-path1-tier3.png", "desc": "Deals 1% more Damage to an enemy for every second it remains in range (max of 30%)."},
+          {"icon": "puppet-path1-tier4.png", "desc": "Unlocks \"Wind The Music Box\". This unit will stop attacking while winding and starts storing increased base damage for it's next attack. Manual winding increases the scaling speed by 1.5x."},
+          {"icon": "puppet-path1-tier5.png", "desc": "This unit will gain increased range when winding, and stored Damage is multiplied based on how greater the enemies health is than this units damage. Manual winding is increased to 2x speed."}
         ]
       },
       {
@@ -9456,11 +9456,11 @@
           { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
         ],
         "tiers": [
-          {"icon": "puppet-path2-tier1.png", "desc": "Attacks Slow enemy's hit by 10% for 5 seconds. This slow cannot stack."},
-          {"icon": "puppet-path2-tier2.png", "desc": "Every 5s, summon a soul that deals 20% Damage, and Slows by 10% for 3s upon contact."},
-          {"icon": "puppet-path2-tier3.png", "desc": "After a summon contacts an enemy, it gains 3% more contact Damage and moves 5% faster. While in this units Range, release a small Full AOE pulse every 2s for 50% Damage."},
-          {"icon": "puppet-path2-tier4.png", "desc": "On this units cooldown. summons a ghost for 50% of this unit's Damage as health. The ghost explodes for 25% Damage in a small AOE when defeated."},
-          {"icon": "puppet-path2-tier5.png", "desc": "This unit gains +5% Damage for each enemy on the track and each of its summons. Summons now slow enemies by 20% for 5s."}
+          {"icon": "puppet-path2-tier1.png", "desc": "Attacks Slow enemies by 10% for 5s. This Slow cannot stack."},
+          {"icon": "puppet-path2-tier2.png", "desc": "Every 5s, summon a soul that deals 20% Damage and Slows by 10% for 3s upon contact."},
+          {"icon": "puppet-path2-tier3.png", "desc": "After a summon contacts an enemy, it gains 3% more contact damage and moves 5% faster. While in this units Range, release a small Full AOE pulse every 2s for 50% Damage."},
+          {"icon": "puppet-path2-tier4.png", "desc": "On this units cooldown, summons a ghost for 50% of this unit's Damage as health. The ghost explodes for 25% Damage in a small AOE when defeated."},
+          {"icon": "puppet-path2-tier5.png", "desc": "This unit gains +5% Damage for each enemy on the track and each of its summons. Summons now Slow enemies by 20% for 5s."}
         ]
       },
       {
@@ -9476,7 +9476,7 @@
           {"icon": "puppet-path3-tier2.png", "desc": "Light units in range gain +10% Damage."},
           {"icon": "puppet-path3-tier3.png", "desc": "Increases Light Wither to 30% and applies 10% Wither for all other elements."},
           {"icon": "puppet-path3-tier4.png", "desc": "Strings the 2 nearest units, granting +20% Damage and +10% Range. Light units instead gain +30% Damage and +20% Range."},
-          {"icon": "puppet-path3-tier5.png", "desc": "Increases the string cap to 4. When a strung unit attacks, this unit follows up for 25% Damage (1s Cooldown) and strung units stun enemies for 1.5s on hit."}
+          {"icon": "puppet-path3-tier5.png", "desc": "Increases the string cap to 4. When a strung unit attacks, this unit follows up for 25% Damage (1s CD) and strung units Stun enemies for 1.5s on hit."}
         ]
       }
     ],
@@ -12804,10 +12804,10 @@
         ],
         "tiers": [
           {"icon": "ennard-path1-tier1.png", "desc": "Attacks Stun enemies for 0.8s."},
-          {"icon": "ennard-path1-tier2.png", "desc": "Increases the attack Stun duration."},
-          {"icon": "ennard-path1-tier3.png", "desc": "Every 12 seconds, release a Full AOE shock that deals 70% Damage and Stuns enemies for 1 second."},
-          {"icon": "ennard-path1-tier4.png", "desc": "Reduces the shock interval to 10 seconds. Shocks grant Electric units in range 25% Damage for 5s."},
-          {"icon": "ennard-path1-tier5.png", "desc": "Increases shock Damage to 85%, Stun duration to 1.2 seconds, and it's Electric Damage boost to 30% for 7 seconds."}
+          {"icon": "ennard-path1-tier2.png", "desc": "Increases Stun duration."},
+          {"icon": "ennard-path1-tier3.png", "desc": "Every 12s, release a Full AOE shock that deals 70% damage and Stuns enemies for 1s."},
+          {"icon": "ennard-path1-tier4.png", "desc": "Reduces the shock interval to 10s. Shocks grant Electric units in range +25% Damage for 5s."},
+          {"icon": "ennard-path1-tier5.png", "desc": "Increases shock damage to 85%, Stun duration to 1.2s, and it's Electric Damage boost to +30% for 7s."}
         ]
       },
       {
@@ -12819,11 +12819,11 @@
           { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
         ],
         "tiers": [
-          {"icon": "ennard-path2-tier1.png", "desc": "Every 6s , places a coil trap that deals 20% Damage upon contact, up to 3 traps."},
-          {"icon": "ennard-path2-tier2.png", "desc": "Increase coil trap Damage to 25%."},
-          {"icon": "ennard-path2-tier3.png", "desc": "Coil traps gain range equal to 25% of this units Range, allowing this unit to attack enemies within their Range. Increases trap cap to 5."},
-          {"icon": "ennard-path2-tier4.png", "desc": "Increases coil trap Damage to 30%. Units in range gain 15% range, and every fourth attack leaves a coil trap behind."},
-          {"icon": "ennard-path2-tier5.png", "desc": "Coil traps inherit 50% of this units Range. Triggering one grants units in range 15% Damage and an additional 20% Range for 10 seconds. Coil traps are now left every third attack."}
+          {"icon": "ennard-path2-tier1.png", "desc": "Every 6s, places a coil trap that deals 20% damage upon contact, up to 3 traps."},
+          {"icon": "ennard-path2-tier2.png", "desc": "Increase coil trap damage to 25%."},
+          {"icon": "ennard-path2-tier3.png", "desc": "Coil traps gain range equal to 25% of this units range, allowing this unit to attack enemies within their Range. Increases trap cap to 5."},
+          {"icon": "ennard-path2-tier4.png", "desc": "Increases coil trap damage to 30%. Units in range gain +15% Range, and every fourth attack leaves a coil trap behind."},
+          {"icon": "ennard-path2-tier5.png", "desc": "Coil traps inherit 50% of this units Range. Triggering one grants units in range +15% Damage and +20% Range for 10s. Coil traps are now left every third attack."}
         ]
       },
       {
@@ -12835,11 +12835,11 @@
           { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
         ],
         "tiers": [
-          {"icon": "ennard-path3-tier1.png", "desc": "Units in range gain 5% Damage."},
-          {"icon": "ennard-path3-tier2.png", "desc": "The previous Damage boost is now increased to 10%."},
-          {"icon": "ennard-path3-tier3.png", "desc": "Unlocks an Active that syncs to a selected unit. Every 10 seconds, this unit follows up for 25% of the synced units Damage, and deals 2 shield Damage when that unit attacks."},
-          {"icon": "ennard-path3-tier4.png", "desc": "Increases follow up shield Damage to 5, reduces its cooldown to 7 seconds, and grants the synced unit 15% Damage."},
-          {"icon": "ennard-path3-tier5.png", "desc": "Follow up attacks deal 35% of the synced units Damage on a 5s cooldown. The synced unit gain 20% Damage, while all units in Range gain 15% Damage and -5% Cooldown."}
+          {"icon": "ennard-path3-tier1.png", "desc": "Units in range gain +5% Damage."},
+          {"icon": "ennard-path3-tier2.png", "desc": "Damage boost increased to +10%."},
+          {"icon": "ennard-path3-tier3.png", "desc": "Unlocks an Active that syncs to a selected unit. Every 10s, this unit follows up for 25% of the synced units Damage, and deals 2 shield damage when that unit attacks."},
+          {"icon": "ennard-path3-tier4.png", "desc": "Increases follow up shield damage to 5, reduces its cooldown to 7s, and grants the synced unit +15% Damage."},
+          {"icon": "ennard-path3-tier5.png", "desc": "Follow up attacks deal 35% of the synced units Damage on a 5s CD. The synced unit gains +20% Damage, while all units in Range gain +15% Damage and -5% Cooldown."}
         ]
       }
     ],
@@ -14880,9 +14880,9 @@
         "tiers": [
           {"icon": "animdude-path1-tier1.webp", "desc": "Units in range gain +5% Damage and Range."},
           {"icon": "animdude-path1-tier2.webp", "desc": "Increases the boost to +10% Damage and Range"},
-          {"icon": "animdude-path1-tier3.webp", "desc": "Unlocks My Favorite Creation, allowing a selected unit to gain +50% Damage and +25% Range. In PVP, the Unit selected is also 25% Cheaper and a second unit can be selected."},
-          {"icon": "animdude-path1-tier4.webp", "desc": "Follows-up when a buffed unit attack with a 1s Cooldown. Increased the selected units boosts to +55% Damage and +30% Range."},
-          {"icon": "animdude-path1-tier5.webp", "desc": "Follow-ups gain additional Damage equal to 30% of the buffed unit's Damage. Increases the Damage boost to +65% and allows it to inherit this unit's equipped Byte Passive."}
+          {"icon": "animdude-path1-tier3.webp", "desc": "Unlocks My Favorite Creation, allowing a selected unit to gain +50% Damage and +25% Range. In PVP, the unit selected is also 25% cheaper and a second unit can be selected."},
+          {"icon": "animdude-path1-tier4.webp", "desc": "Follows-up when a buffed unit attack with a 1s CD. Increased the selected units boosts to +55% Damage and +30% Range."},
+          {"icon": "animdude-path1-tier5.webp", "desc": "Follow-ups gain additional damage equal to 30% of the buffed unit's damage. Increases the Damage boost to +65% and allows it to inherit this unit's equipped Byte Passive."}
         ]
       },
       {
@@ -14896,9 +14896,9 @@
         "tiers": [
           {"icon": "animdude-path2-tier1.webp", "desc": "Attacks Slow enemies for 8s."},
           {"icon": "animdude-path2-tier2.webp", "desc": "Increases the Slow to 15%"},
-          {"icon": "animdude-path2-tier3.webp", "desc": "Enemies leaving Range are struck by a 4th Wall for 150% Damage and are Stunned for 2s. Unlocks \"A World Under My Control\" with one selectable Chip."},
-          {"icon": "animdude-path2-tier4.webp", "desc": "Increases 4th Wall Damage to 200% while retaining its 2s Stun."},
-          {"icon": "animdude-path2-tier5.webp", "desc": "Increases 4th Wall Damage to 250% and increases stun to 3s. \"A World Under My Control\" can select 2 Chips."}
+          {"icon": "animdude-path2-tier3.webp", "desc": "Enemies leaving Range are struck by a 4th Wall for 150% samage and are Stunned for 2s. Unlocks \"A World Under My Control\" with one selectable Chip."},
+          {"icon": "animdude-path2-tier4.webp", "desc": "Increases 4th Wall damage to 200%."},
+          {"icon": "animdude-path2-tier5.webp", "desc": "Increases 4th Wall damage to 250% and increases stun to 3s. \"A World Under My Control\" can select 2 Chips."}
         ]
       },
       {
@@ -14910,11 +14910,11 @@
           { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
         ],
         "tiers": [
-          {"icon": "animdude-path3-tier1.webp", "desc": "This Unit gains +20% Critical Damage."},
-          {"icon": "animdude-path3-tier2.webp", "desc": "Increases this units Critical Damage Boost to 30%."},
-          {"icon": "animdude-path3-tier3.webp", "desc": "Attacks Follow-up for 30% Damage. Repeated Follow-ups against the same enemy gain +10% Damage up to +50%."},
+          {"icon": "animdude-path3-tier1.webp", "desc": "This unit gains +20% Critical Damage."},
+          {"icon": "animdude-path3-tier2.webp", "desc": "Increases this units Critical Damage Boost to +30%."},
+          {"icon": "animdude-path3-tier3.webp", "desc": "Attacks Follow-up for 30% Damage. Repeated Follow-ups against the same enemy gain +10% damage up to +50%."},
           {"icon": "animdude-path3-tier4.webp", "desc": "Units in range gain +15% Damage. Each Critical Hit increases their Crit Chance by +1% up to +30%."},
-          {"icon": "animdude-path3-tier5.webp", "desc": "Deals +30% Damage to Bosses and increases follow-up Damage to 50%. Critical Hits apply 15% Wither for 5s."}
+          {"icon": "animdude-path3-tier5.webp", "desc": "Deals +30% damage to Bosses and increases follow-up Damage to 50%. Critical Hits apply 15% Wither for 5s."}
         ]
       }
     ],
@@ -15469,11 +15469,11 @@
           { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
         ],
         "tiers": [
-          {"icon": "michael-afton-path1-tier1.webp", "desc": "This unit gains 15% Damage."},
-          {"icon": "michael-afton-path1-tier2.webp", "desc": "Every 15 seconds, summons an ally with health equal to 100% of this unit's Damage."},
-          {"icon": "michael-afton-path1-tier3.webp", "desc": "Summons are created on this unit's cooldown with 50% Damage as Health. When a summon dies, enemies in a small AOE receive 15% Rust Wither."},
-          {"icon": "michael-afton-path1-tier4.webp", "desc": "This unit gains 2% Damage for every one of its summons on the track."},
-          {"icon": "michael-afton-path1-tier5.webp", "desc": "Unlocks an Active that consumes a chosen amount of Scrap to create up to 50 bonus summons with 10% Health per Scrap. Summon Health increases by 1% per Scrap held, up to 20%. Attacks generate 3 Scrap, enemy deaths generate 1, and boss deaths generate 15."}
+          {"icon": "michael-afton-path1-tier1.webp", "desc": "Gain +15% Damage."},
+          {"icon": "michael-afton-path1-tier2.webp", "desc": "Every 15s, summons an ally with health equal to 100% of this unit's damage."},
+          {"icon": "michael-afton-path1-tier3.webp", "desc": "Summons are created on this unit's CD with 50% Damage as health. When a summon dies, enemies in a small area receive 15% Rust Wither."},
+          {"icon": "michael-afton-path1-tier4.webp", "desc": "This unit gains +2% Damage for every one of its summons on the track."},
+          {"icon": "michael-afton-path1-tier5.webp", "desc": "Unlocks an Active that consumes a chosen amount of Scrap to create up to 50 bonus summons with 10% health per Scrap. Summon health increases by 1% per Scrap held, up to 20%. Attacks generate 3 Scrap, enemy deaths generate 1, and Boss deaths generate 15."}
         ]
       },
       {
@@ -15486,10 +15486,10 @@
         ],
         "tiers": [
           {"icon": "michael-afton-path2-tier1.webp", "desc": "Every 15s, rotate between +15% Damage, +15% Range, and -10% cooldown."},
-          {"icon": "michael-afton-path2-tier2.webp", "desc": "Unlocks an Active that places up to 3 audio lures. Lures have 25% of this units Range and Damage, and slows enemies by 5% for 3 seconds on hit."},
-          {"icon": "michael-afton-path2-tier3.webp", "desc": "Unlocks an Active that selects advertisements, generating cash and granting a different effect for each advertisements."},
-          {"icon": "michael-afton-path2-tier4.webp", "desc": "Increases the advertisement cap by 1, and enhances all advertisements. Every 15 seconds, places a TV trap with a random advertisement; only one of each advertisement may exist at once."},
-          {"icon": "michael-afton-path2-tier5.webp", "desc": "Attacks generate a trap in Range that deals 100% Damage on contact and Slows enemies by 25% for 5 seconds."}
+          {"icon": "michael-afton-path2-tier2.webp", "desc": "Unlocks an Active that places up to 3 audio lures. Lures have 25% of this units Damage and Range, and Slow enemies by 5% for 3s on hit."},
+          {"icon": "michael-afton-path2-tier3.webp", "desc": "Unlocks an Active that selects ads, generating cash and granting a different effect for each ad."},
+          {"icon": "michael-afton-path2-tier4.webp", "desc": "Increases the ad cap by 1, and enhances all ads. Every 15s, places a TV trap with a random ad; only one of each ad may exist at once."},
+          {"icon": "michael-afton-path2-tier5.webp", "desc": "Attacks generate a trap in range that deals 100% Damage on contact and Slows enemies by 25% for 5s."}
         ]
       },
       {
@@ -15502,10 +15502,10 @@
         ],
         "tiers": [
           {"icon": "michael-afton-path3-tier1.webp", "desc": "Attacks apply 15% Bleed."},
-          {"icon": "michael-afton-path3-tier2.webp", "desc": "Attacks Slow enemies by 10% for 5 seconds."},
-          {"icon": "michael-afton-path3-tier3.webp", "desc": "Rust units gain 20% Damage and 15% Range. Bleed damage dealt in Range is increased by 25%."},
-          {"icon": "michael-afton-path3-tier4.webp", "desc": "The attacks Slow increases to 30%. The first enemy is slowed by 40%, and receives 5% Bleed every second."},
-          {"icon": "michael-afton-path3-tier5.webp", "desc": "Every third attack applies 100% Bleed over 5 seconds to all enemies hit, and deal 30% more Damage to bleeding enemies."}
+          {"icon": "michael-afton-path3-tier2.webp", "desc": "Attacks Slow enemies by 10% for 5s."},
+          {"icon": "michael-afton-path3-tier3.webp", "desc": "Rust units gain +20% Damage and +15% Range. Bleed damage dealt in range is increased by 25%."},
+          {"icon": "michael-afton-path3-tier4.webp", "desc": "Slow increased to 30%. The first enemy is slowed by 40%, and receives 5% Bleed every second."},
+          {"icon": "michael-afton-path3-tier5.webp", "desc": "Every third attack applies 100% Bleed for 5s to all enemies hit, and deal 30% more damage to bleeding enemies."}
         ]
       }
     ],
@@ -22047,11 +22047,11 @@
         { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
       ],
       "tiers": [
-        {"icon": "vengeful-spirit-path1-tier1.webp", "desc": "Dark and Neutral units gain 10% Damage and 20% Range."},
-        {"icon": "vengeful-spirit-path1-tier2.webp", "desc": "Increase the Damage boost to 15%."},
-        {"icon": "vengeful-spirit-path1-tier3.webp", "desc": "Attacks against Marked enemies consume their Marks to increase the attacks Damage (40s Cooldown). When a Dark or Neutral unit attacks, this unit performs a follow up attack for 10% Damage (6s Cooldown)."},
-        {"icon": "vengeful-spirit-path1-tier4.webp", "desc": "Reduces the attack boost Cooldown to 30s, and reduce Dark and Neutrals units Cooldown by 5%. Follow up Damage is increased to 15%, and its Cooldown is reduced to 6 seconds."},
-        {"icon": "vengeful-spirit-path1-tier5.webp", "desc": "Increases the Critical Chance of Dark and Neutral units by 30%. This unit gains 25% Critical Damage, and 5% per Dark and Neutral unit on the team. Half of this boost is shared to other units in Range. Follow up attack Damage is increased to 25%, and the area of effect is now also increased to 45 Degrees."}
+        {"icon": "vengeful-spirit-path1-tier1.webp", "desc": "Dark and Neutral units gain +10% Damage and +20% Range."},
+        {"icon": "vengeful-spirit-path1-tier2.webp", "desc": "Increase the Damage boost to +15%."},
+        {"icon": "vengeful-spirit-path1-tier3.webp", "desc": "Attacks against Marked enemies consume their Marks to increase the attacks Damage (40s CD). When a Dark or Neutral unit attacks, this unit performs a follow up attack for 10% Damage (6s CD)."},
+        {"icon": "vengeful-spirit-path1-tier4.webp", "desc": "Reduces the attack boost CD to 30s, and Dark and Neutral units receive -5% CD. Follow up Damage is increased to 15%, and its CD is reduced to 6s."},
+        {"icon": "vengeful-spirit-path1-tier5.webp", "desc": "Dark and Neutral units gain +30% Crit Chance. This unit gains 25% Crit Damage, and an additional +5% per Dark and Neutral unit on the team. Half of this boost is shared to other units in range. Follow up attack damage is increased to 25%, and the area of effect is now also increased to 45 Degrees."}
       ]
     },
     {
@@ -22064,10 +22064,10 @@
       ],
       "tiers": [
         {"icon": "vengeful-spirit-path2-tier1.webp", "desc": "Gain +15% Crit Chance and +25% Crit Damage"},
-        {"icon": "vengeful-spirit-path2-tier2.webp", "desc": "Increase Crit Chance to 20% and Crit Damage to 40%"},
-        {"icon": "vengeful-spirit-path2-tier3.webp", "desc": "Attacks consume Marks to increase this unit's Crit Rate by 1% and Crit Damage by 3% per Mark for 15s (60s Cooldown). After landing a Critical Hit, this unit repeatedly follows-up for 50% Damage until an attack doesn't Crit or the cap of 3 Follow-Ups is hit."},
+        {"icon": "vengeful-spirit-path2-tier2.webp", "desc": "Increase Crit Chance to +20% and Crit Damage to +40%"},
+        {"icon": "vengeful-spirit-path2-tier3.webp", "desc": "Attacks consume Marks to increase this unit's Crit Rate by 1% and Crit Damage by 3% per Mark for 15s (60s CD). After landing a Critical Hit, this unit repeatedly follows-up for 50% Damage until an attack doesn't Crit or a follow-up cap of 3 is hit."},
         {"icon": "vengeful-spirit-path2-tier4.webp", "desc": "Unlocks the Playtime ability and increases the follow-up cap to 4."},
-        {"icon": "vengeful-spirit-path2-tier5.webp", "desc": "Reduces Playtime's Cooldown to 90s, resets the cooldown of the tier 3 Critical Boost when Playtime is activated and increases the Follow-Up Cap to 5."}
+        {"icon": "vengeful-spirit-path2-tier5.webp", "desc": "Reduces Playtime's CD to 90s, resets the CD of the tier 3 Critical Boost when Playtime is activated and increases the follow-up cap to 5."}
       ]
     },
     {
@@ -22080,10 +22080,10 @@
       ],
       "tiers": [
         {"icon": "vengeful-spirit-path3-tier1.webp", "desc": "Enemies in range are Slowed by 10%"},
-        {"icon": "vengeful-spirit-path3-tier2.webp", "desc": "Enemies in range Slowed by 15%, Attacks inflict 5% Dark and Neutral Wither."},
-        {"icon": "vengeful-spirit-path3-tier3.webp", "desc": "Slow increases by 1% Per second enemy remains in range up to 30%. Wither is no longer a Fixed Value and is now equal to 1/4 Marks consumed"},
+        {"icon": "vengeful-spirit-path3-tier2.webp", "desc": "Slow increased to 15%. Attacks inflict 5% Dark and Neutral Wither."},
+        {"icon": "vengeful-spirit-path3-tier3.webp", "desc": "Slow increases by 1% per second an enemy remains in range up to 30%. Wither is no longer a fixed value and is now equal to 1/4 Marks consumed"},
         {"icon": "vengeful-spirit-path3-tier4.webp", "desc": "Wither is now 1/2 of Marks consumed and inflicts Bleed equal to the amount of Marks consumed over 3s."},
-        {"icon": "vengeful-spirit-path3-tier5.webp", "desc": "When an enemy attempts to leave this units range, release a Full AOE attack for 25% Damage and Stuns enemies hit for 2s and increases the Damage of Dark and Neutral unit by 20% for 15s. (3s cooldown)"}
+        {"icon": "vengeful-spirit-path3-tier5.webp", "desc": "When an enemy attempts to leave this units range, release a Full AOE attack for 25% damage and Stun enemies hit for 2s and increases the Damage of Dark and Neutral units by +20% for 15s (3s CD)."}
       ]
     }
   ],

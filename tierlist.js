@@ -19,7 +19,7 @@
          "Pyro Spring Bonnie",
          "Gaia Chica",
          "Kronos Endo Freddy",
-         "Vengeful Spirit P1 UP",
+         "Vengeful Spirit UP P1",
          "Deep Sea Calamity Endo DOWN",
          "Void Shaper Shadow Freddy",
          "DJ 101Bit NEW",
@@ -855,7 +855,7 @@
      '#tlTip{position:absolute;pointer-events:none;opacity:0;transition:opacity .18s;z-index:10000;display:none;padding:2px;border-radius:8px}',
      '#tlTipInner{font-family:"Press Start 2P",monospace;font-size:8px;line-height:1.7;background:rgba(6,3,18,0.97);color:#fff;padding:9px 12px;border-radius:6px;text-align:center;max-width:196px;word-break:normal;overflow-wrap:break-word}',
      '.tl-tip-note{margin-top:6px;border-top:1px solid rgba(255,255,255,0.2);padding-top:6px;display:none}',
-     '.tl-tip-path{margin-top:5px;font-size:0.85em;opacity:0.85;display:none}',
+     '.tl-tip-path{margin-top:5px;font-size:1.15em;opacity:0.9;display:none}',
      '.tl-path{position:absolute;bottom:2px;right:2px;width:30px;height:30px;border-radius:6px;' +
        'padding:2px;pointer-events:none;z-index:3;background:rgba(0,0,0,0.55)}',
      '.tl-path-in{width:100%;height:100%;border-radius:4px;overflow:hidden;background:rgba(14,11,28,0.9)}',
@@ -885,7 +885,7 @@
      '@keyframes tlBlink{0%,49%{box-shadow:0 0 0 3px #ffff00,0 0 12px #ffff00}50%,100%{box-shadow:0 0 0 3px transparent,0 0 0 transparent}}',
      '.tl-match{animation:tlBlink 1.6s step-end infinite}',
      '@keyframes shinyLoop{0%{background-position:0% 50%}100%{background-position:200% 50%}}',
-     '@media(max-width:600px){#tlHdr{padding:8px 10px;gap:6px}#tlTitle{font-size:8px}.tl-mb{font-size:6px;padding:6px 8px}#tlList{padding:6px 3px}.tl-lbl{width:64px;min-width:64px}.tl-nm2{font-size:22px}.tl-st{font-size:11px}.tl-card{width:52px;height:52px}.tl-units{gap:3px;padding:4px;min-height:60px}.tl-row{min-height:60px}}'
+     '@media(max-width:600px){#tlHdr{padding:8px 10px;gap:6px}#tlTitle{font-size:8px}.tl-mb{font-size:6px;padding:6px 8px}#tlList{padding:6px 3px}.tl-lbl{width:64px;min-width:64px}.tl-nm2{font-size:22px}.tl-st{font-size:11px}.tl-card{width:52px;height:52px}.tl-units{gap:3px;padding:4px;min-height:60px}.tl-row{min-height:60px}.tl-path{width:21px;height:21px;border-radius:5px;padding:1px}.tl-path-in{border-radius:3px}.tl-tip-path{font-size:0.95em}}'
    ].join('');
 
    var style = document.createElement('style');

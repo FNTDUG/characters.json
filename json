@@ -24171,7 +24171,7 @@
     },
     {
       "title": "The Purple Sign",
-      "text": "Attacks apply 50% poison over 10s. The strongest enemy in range is marked with [The Purple Sign] until death. Mark enemies are always targeted by this unit and receives double poison from this unit"
+      "text": "Attacks apply 50% poison over 10s. The strongest enemy in range is marked with [The Purple Sign] until it dies. Mark enemies are always targeted by this unit and receives double poison from this unit"
     }
   ],
   "passiveDamage":{

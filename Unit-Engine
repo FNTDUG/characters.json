@@ -4656,11 +4656,15 @@
         permPanel.appendChild(container);
           
         var BOOST_OPTIONS = [
-          ["scott_base",         "Animdude: Base Effect (+10% Crit Rate & +15% Crit DMG)",                  { critRateAdd: 0.10, critDmgAdd: 0.15 }],
-          ["scott_t2top",        "Animdude: Top Path Tier 2 (+10% DMG & +10% RNG)",                        { dmgMult: 1.10, rngMult: 1.10 }],
+          ["scott_base",        "Animdude: Base Effect (+10% Crit Rate & +15% Crit DMG)",                  { critRateAdd: 0.10, critDmgAdd: 0.15 }],
+          ["scott_t2top",       "Animdude: Top Path Tier 2 (+10% DMG & +10% RNG)",                        { dmgMult: 1.10, rngMult: 1.10 }],
           ["scott_creation",    "Animdude: My Favorite Creation (+65% DMG & +30% RNG)",                     { dmgMult: 1.65, rngMult: 1.30, singlePlacement: true }],
+          ["scott_dmg",         "Animdude: Endless Strength (+10% DMG)",                                     { dmgMult: 1.10}],
+          ["scott_rng",         "Animdude: Endless Range (+15% RNG)",                                         { rngMult: 1.15}],
+          ["scott_cd",          "Animdude: Endless Speed (-7.5% CD)",                                         { cdMult: 0.925}],
+          ["scott_cd",          "Animdude: Freddles (+10% CD)",                                         { dmgMult: 1.10}],
           ["scott_t2bot",       "Animdude: Bottom Path Tier 2 (+15% Crit DMG)",                            { critDmgAdd: 0.15 }],
-          ["scott_bot",         "Animdude: Max Bottom Path (+30% DMG)",                                     { dmgMult: 1.30 }],
+          ["scott_bot",         "Animdude: Max Bottom Path (+30% DMG & +30% Crit Rate)",                    { dmgMult: 1.30, critRateAdd: 0.30}],
           ["astral_b",          "Astral Bonnie: Orion's Belt (+2% DMG, +3% RNG per stack)",                 { dmgMult: 1.02, rngMult: 1.03, stackKey: "astral_bStacks", maxStacks: 15 }],
           ["candy_red",         "Candy Cadet: Red Candy (+30% DMG & +10% RNG)",                              { dmgMult: 1.30, rngMult: 1.10 }],
           ["candy_yellow",      "Candy Cadet: Yellow Candy (+10% DMG & +30% RNG)",                          { dmgMult: 1.10, rngMult: 1.30 }],

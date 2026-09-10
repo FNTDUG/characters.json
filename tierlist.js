@@ -893,15 +893,18 @@
     '#tlTipInner{font-family:"Press Start 2P",monospace;font-size:8px;line-height:1.7;background:rgba(6,3,18,0.97);color:#fff;padding:9px 12px;border-radius:6px;text-align:center;max-width:196px;word-break:normal;overflow-wrap:break-word}',
     '.tl-tip-note{margin-top:6px;border-top:1px solid rgba(255,255,255,0.2);padding-top:6px;display:none}',
     '.tl-tip-path{margin-top:5px;font-size:1.15em;opacity:0.9;display:none}',
-    '.tl-path{position:absolute;bottom:2px;right:2px;width:30px;height:30px;border-radius:6px;' +
-      'padding:2px;pointer-events:none;z-index:3;background:rgba(0,0,0,0.55)}',
-    '.tl-path-in{width:100%;height:100%;border-radius:4px;overflow:hidden;background:rgba(14,11,28,0.9)}',
-    '.tl-path-in img{width:100%;height:100%;object-fit:contain;display:block}',
+    /* The tier art is already a self-contained circular emblem on its own dark
+       plate, so it needs no frame — a box around it just reads as a black
+       square. It sits bare like the status icons, with a shadow to lift it off
+       whatever card art is underneath. */
+    '.tl-path{position:absolute;bottom:0;right:0;width:32px;height:32px;pointer-events:none;z-index:3}',
+    '.tl-path-in{width:100%;height:100%}',
+    '.tl-path-in img{width:100%;height:100%;object-fit:contain;display:block;' +
+      'filter:drop-shadow(0 1px 2px rgba(0,0,0,0.95))}',
     '.tl-path.tl-path-pair .tl-path-in{position:relative}',
-    '.tl-path-pair .tl-path-in img{position:absolute;left:50%;top:50%;width:64%;height:64%}',
-    '.tl-path-pair .tl-path-in img.path-b{transform:translate(-30%,-30%);opacity:.7}',
-    '.tl-path-pair .tl-path-in img.path-a{transform:translate(-70%,-70%);' +
-      'filter:drop-shadow(1px 1px 0 rgba(0,0,0,.95))}',
+    '.tl-path-pair .tl-path-in img{position:absolute;left:50%;top:50%;width:68%;height:68%}',
+    '.tl-path-pair .tl-path-in img.path-b{transform:translate(-29%,-29%);opacity:.75}',
+    '.tl-path-pair .tl-path-in img.path-a{transform:translate(-71%,-71%)}',
 
     '.tl-msg{padding:24px;text-align:center;color:rgba(255,255,255,.35);font-size:12px;width:100%}',
 
@@ -927,7 +930,7 @@
     '@keyframes tlBlink{0%,49%{box-shadow:0 0 0 3px #ffff00,0 0 12px #ffff00}50%,100%{box-shadow:0 0 0 3px transparent,0 0 0 transparent}}',
     '.tl-match{animation:tlBlink 1.6s step-end infinite}',
     '@keyframes shinyLoop{0%{background-position:0% 50%}100%{background-position:200% 50%}}',
-    '@media(max-width:600px){#tlHdr{padding:8px 10px;gap:6px}#tlTitle{font-size:8px}.tl-mb{font-size:6px;padding:6px 8px}#tlList{padding:6px 3px}.tl-lbl{width:64px;min-width:64px}.tl-nm2{font-size:22px}.tl-st{font-size:11px}.tl-card{width:52px;height:52px}.tl-units{gap:3px;padding:4px;min-height:60px}.tl-row{min-height:60px}.tl-path{width:21px;height:21px;border-radius:5px;padding:1px}.tl-path-in{border-radius:3px}.tl-tip-path{font-size:0.95em}}'
+    '@media(max-width:600px){#tlHdr{padding:8px 10px;gap:6px}#tlTitle{font-size:8px}.tl-mb{font-size:6px;padding:6px 8px}#tlList{padding:6px 3px}.tl-lbl{width:64px;min-width:64px}.tl-nm2{font-size:22px}.tl-st{font-size:11px}.tl-card{width:52px;height:52px}.tl-units{gap:3px;padding:4px;min-height:60px}.tl-row{min-height:60px}.tl-path{width:23px;height:23px}.tl-tip-path{font-size:0.95em}}'
   ].join('');
 
   var style = document.createElement('style');

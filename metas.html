@@ -448,30 +448,15 @@
 
   function hideTip() { _tipCur = null; tip.style.opacity = '0'; tip.style.display = 'none'; }
 
-  /* Touch. A tap also synthesises the hover pair — mouseenter on the card
-     tapped, mouseleave on the one left behind — and the leave is not reliably
-     delivered before the tap resolves. Arriving late it closed a tooltip that
-     had only just opened, which is why moving from one card to another looked
-     like it bugged out.
-     Once a touch has been seen the hover handlers stand down entirely and taps
-     drive the tooltip on their own, so the ordering cannot matter. On the way
-     in, a leave only ever closes the tooltip it owns, so a stray leave from the
-     card you came from cannot close the one you just opened. */
-  var _tipCur = null, _tipTouch = false, _tipAt = 0;
-  document.addEventListener('touchstart', function () { _tipTouch = true; },
-    { passive: true, capture: true });
+  /* Cards open their own tooltip (see the bindings above). These two only
+     dismiss it, when the tap or click lands anywhere that is not a card. */
+  var _tipCur = null, _tipAt = 0;
+  function _tipCardOf(t) { return t && t.closest ? t.closest('.meta-card') : null; }
+  document.addEventListener('touchstart', function (ev) {
+    if (!_tipCardOf(ev.target)) hideTip();
+  }, { passive: true, capture: true });
   document.addEventListener('click', function (ev) {
-    var c = ev.target && ev.target.closest ? ev.target.closest('.meta-card') : null;
-    if (c && typeof c._metaShowTip === 'function') {
-      var now = Date.now();
-      // Same card again closes it, but only past the window in which a single
-      // tap can deliver a second, synthesised click.
-      if (c === _tipCur && now - _tipAt > 400) { hideTip(); return; }
-      c._metaShowTip();
-      _tipAt = now;
-      return;
-    }
-    hideTip();
+    if (!_tipCardOf(ev.target)) hideTip();
   }, true);
   document.addEventListener('scroll', hideTip, { passive: true, capture: true });
 
@@ -878,15 +863,25 @@
         card.appendChild(inner);
 
         (function (c, cfg, data) {
-          c._metaShowTip = function () { _tipCur = c; showTip(c, cfg, data, META_CFG); };
-          c.addEventListener('mouseenter', function () {
-            if (_tipTouch) return;
-            c._metaShowTip();
-          });
+          c._metaShowTip = function () {
+            _tipCur = c; _tipAt = Date.now();
+            showTip(c, cfg, data, META_CFG);
+          };
+          c.addEventListener('mouseenter', c._metaShowTip);
+          // Only ever closes the tooltip this card owns. A tap synthesises a
+          // leave on the card you came from, and it can land after the new one
+          // has opened — unguarded it closed a tooltip belonging to a different
+          // card, which is what made tapping from one unit to another fail.
           c.addEventListener('mouseleave', function () {
-            if (_tipTouch) return;
             if (_tipCur === c) hideTip();
           });
+          // The dependable touch signal. iOS does not deliver a click to
+          // document for a tap on a plain div, so the tooltip cannot be driven
+          // from delegation alone — this is bound to the card itself.
+          c.addEventListener('touchstart', function () {
+            if (_tipCur === c && Date.now() - _tipAt > 400) { hideTip(); return; }
+            c._metaShowTip();
+          }, { passive: true });
         }(card, unitCfg, u));
 
         var slot = document.createElement('div'); slot.className = 'meta-slot';

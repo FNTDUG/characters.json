@@ -54,6 +54,7 @@
         "Dirt Boss Freddy BUG",
         "Trash o Tron",
         "El Chip",
+        "Model 2.9 Defective Funtime Foxy NEW",
         "Malachite Foxy",
         "Yeti Oni Bonnie",
         "Spirit of Henry Emily",

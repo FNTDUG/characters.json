@@ -4,7 +4,7 @@
   var cfg = {
    "lists": {
      "all": {
-       "pbs": [
+       "op": [
          "Planet Buster Scott BUG"
        ],
        "s": [
@@ -19,7 +19,7 @@
          "Pyro Spring Bonnie",
          "Gaia Chica",
          "Kronos Endo Freddy",
-         "Vengeful Spirit UP P1",
+         "Vengeful Spirit UP",
          "Deep Sea Calamity Endo DOWN",
          "Void Shaper Shadow Freddy",
          "DJ 101Bit NEW",
@@ -464,7 +464,7 @@
        ]
      },
      "slow": {
-       "pbs": [
+       "op": [
          "Planet Buster Scott BUG"
        ],
        "s": [
@@ -714,18 +714,18 @@
    lnk.href = 'https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap';
    (document.head || document.documentElement).appendChild(lnk);
 
-   // A tier above S holding one unit. It is not part of every list \u2014 see
-   // PBS_MODES \u2014 so the row is built here and hidden per mode in renderMode.
+   // A tier above S. It is not part of every list \u2014 see OP_MODES \u2014 so the
+   // row is built here and hidden per mode in renderMode.
    var TIERS = [
-     {id:'pbs',name:'PBS',stars:''},
+     {id:'op', name:'OP', stars:''},
      {id:'s',  name:'S',  stars:'\u2605\u2605\u2605\u2605'},
      {id:'a',  name:'A',  stars:'\u2605\u2605\u2605'},
      {id:'b',  name:'B',  stars:'\u2605\u2605'},
      {id:'c',  name:'C',  stars:'\u2605'}
    ];
-   // The lists PBS appears on. Everywhere else the row is hidden and Planet
-   // Buster Scott stays in that list's S tier.
-   var PBS_MODES = {all:1, slow:1};
+   // The lists OP appears on. Everywhere else the row is hidden and whatever
+   // would have sat there stays in that list's S tier.
+   var OP_MODES = {all:1, slow:1};
 
    var RARITY = {
      uncommon:  'linear-gradient(90deg,#5CFF4D,#3FFF8F)',
@@ -825,13 +825,13 @@
         transparent text. drop-shadow gives the same halo off the painted result.
         Only the light half of the palette here: the full ramp ends on #000
         against a near-black label, which left the S unreadable. */
-     '.tl-row[data-t=pbs] .tl-nm2{background-image:linear-gradient(90deg,#C40648,#B43178,#EAB5DE);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 0 5px rgba(196,6,72,.5))}',
-     '.tl-row[data-t=pbs] .tl-st{display:none}',
+     '.tl-row[data-t=op] .tl-nm2{background-image:linear-gradient(90deg,#A855F7,#E879F9,#A5F3FC);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 0 5px rgba(196,6,72,.5))}',
+     '.tl-row[data-t=op] .tl-st{display:none}',
     /* Three letters, where every other tier is one. At the shared clamp it came
        out 74px inside 73px of content box — flush to both edges and reading as
        off-centre. The 22px floor matches what the mobile rule already gave it,
        which was the size that looked right. */
-    '.tl-row[data-t=pbs] .tl-nm2{font-size:clamp(22px,4.4vw,26px)}',
+    '.tl-row[data-t=op] .tl-nm2{font-size:clamp(26px,5.2vw,32px)}',
      '.tl-row[data-t=s] .tl-st,.tl-row[data-t=s] .tl-nm2{color:#ff7f7f;text-shadow:0 0 14px #8b0000,0 0 30px #8b0000}',
      '.tl-row[data-t=a] .tl-st,.tl-row[data-t=a] .tl-nm2{color:#ffbf7f;text-shadow:0 0 14px #7a3500,0 0 30px #7a3500}',
      '.tl-row[data-t=b] .tl-st,.tl-row[data-t=b] .tl-nm2{color:#ffff6d;text-shadow:0 0 14px #7a7a00,0 0 30px #7a7a00}',
@@ -842,7 +842,7 @@
         ramp at that strength went muddy — its dark half cancelled the light half
         and the row just looked grubby. Carrying only the light stops, at .5, the
         photo still reads through and the gradient is unmistakably the text's. */
-     '.tl-row[data-t=pbs] .tl-band{background:linear-gradient(90deg,rgba(196,6,72,.5),rgba(180,49,120,.5),rgba(234,181,222,.5))}',
+     '.tl-row[data-t=op] .tl-band{background:linear-gradient(90deg,rgba(168,85,247,.5),rgba(232,121,249,.5),rgba(165,243,252,.5))}',
      '.tl-row[data-t=ss] .tl-band{background:rgba(200,98,190,0.2)}',
      '.tl-row[data-t=s]  .tl-band{background:rgba(255,127,127,0.18)}',
      '.tl-row[data-t=a]  .tl-band{background:rgba(255,191,127,0.18)}',
@@ -1188,7 +1188,7 @@
 
    var list = document.createElement('div');
    list.id = 'tlList';
-   var TIER_BG_POS = {pbs:'50% 0%',ss:'50% 0%',s:'50% 25%',a:'50% 50%',b:'50% 75%',c:'50% 100%'};
+   var TIER_BG_POS = {op:'50% 0%',ss:'50% 0%',s:'50% 25%',a:'50% 50%',b:'50% 75%',c:'50% 100%'};
    TIERS.forEach(function(t) {
      var row = document.createElement('div');
      row.className = 'tl-row';
@@ -1364,17 +1364,17 @@
        var z = document.getElementById('tl_' + t.id);
        if (!z) return;
        z.innerHTML = '';
-       // The row is built once for every mode, so PBS is hidden rather than
+       // The row is built once for every mode, so OP is hidden rather than
        // left showing an empty band on the lists it does not belong to.
-       if (t.id === 'pbs') {
-         var prow = document.querySelector('.tl-row[data-t=pbs]');
-         if (prow) prow.style.display = PBS_MODES[m] ? '' : 'none';
-         if (!PBS_MODES[m]) return;
+       if (t.id === 'op') {
+         var prow = document.querySelector('.tl-row[data-t=op]');
+         if (prow) prow.style.display = OP_MODES[m] ? '' : 'none';
+         if (!OP_MODES[m]) return;
        }
        var names = ls[t.id] || [];
        if (!names.length) { z.innerHTML = '<div class=tl-msg>Empty.</div>'; return; }
        // Second arg turns on the unit's blurb, which S tier already gets.
-       names.forEach(function(name) { z.appendChild(makeCard(name, t.id === 's' || t.id === 'pbs')); });
+       names.forEach(function(name) { z.appendChild(makeCard(name, t.id === 's' || t.id === 'op')); });
      });
      var cEl = document.getElementById('tlCount');
      if (cEl) { var tot = countUnits(m); cEl.textContent = tot > 0 ? ('1st - ' + ordinal(tot)) : ''; }

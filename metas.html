@@ -446,7 +446,27 @@
     tip.style.left = left + 'px'; tip.style.top = top + 'px'; tip.style.opacity = '1';
   }
 
-  function hideTip() { tip.style.opacity = '0'; tip.style.display = 'none'; }
+  function hideTip() { _tipCur = null; tip.style.opacity = '0'; tip.style.display = 'none'; }
+
+  /* Touch. A tap synthesises mouseenter on the card tapped and mouseleave on
+     the one left behind, but not reliably in that order — when the leave lands
+     last the tooltip is hidden the instant it opens, which is why tapping from
+     one card straight to another appeared to do nothing. Handled here on click
+     during the capture phase so the tap always resolves to a show, after any
+     leave the browser decided to fire. Tapping off a card, or scrolling,
+     dismisses it. */
+  var _tipCur = null;
+  document.addEventListener('click', function (ev) {
+    var c = ev.target && ev.target.closest ? ev.target.closest('.meta-card') : null;
+    if (c && typeof c._metaShowTip === 'function') {
+      if (c === _tipCur) { hideTip(); return; }
+      _tipCur = c;
+      c._metaShowTip();
+      return;
+    }
+    hideTip();
+  }, true);
+  document.addEventListener('scroll', hideTip, { passive: true, capture: true });
 
   /* ── Capture ──────────────────────────────────────────────────────────────
      Same behaviour as the trade calculator's screenshot button. html2canvas is
@@ -851,7 +871,8 @@
         card.appendChild(inner);
 
         (function (c, cfg, data) {
-          c.addEventListener('mouseenter', function () { showTip(c, cfg, data, META_CFG); });
+          c._metaShowTip = function () { showTip(c, cfg, data, META_CFG); };
+          c.addEventListener('mouseenter', c._metaShowTip);
           c.addEventListener('mouseleave', hideTip);
         }(card, unitCfg, u));
 

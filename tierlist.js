@@ -20,7 +20,7 @@
         "Gaia Chica",
         "Cyberdata Withered Bonnie NEW",
         "Kronos Endo Freddy",
-        "Vengeful Spirit",
+        "Vengeful Spirit P1",
         "Deep Sea Calamity Endo",
         "Void Shaper Shadow Freddy",
         "DJ 101Bit",

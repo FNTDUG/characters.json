@@ -18,7 +18,7 @@
          "Astral Bonnie",
          "Pyro Spring Bonnie",
          "Gaia Chica",
-         "Cyberdata Withered Bonnie NEW"
+         "Cyberdata Withered Bonnie NEW",
          "Kronos Endo Freddy",
          "Vengeful Spirit",
          "Deep Sea Calamity Endo",

@@ -19,7 +19,7 @@
          "Pyro Spring Bonnie",
          "Gaia Chica",
          "Kronos Endo Freddy",
-         "Vengeful Spirit UP",
+         "Vengeful Spirit P1 UP",
          "Deep Sea Calamity Endo DOWN",
          "Void Shaper Shadow Freddy",
          "DJ 101Bit NEW",
@@ -763,7 +763,10 @@
    };
    var CORNERS = ['top:2px;left:2px','top:2px;right:2px','bottom:2px;left:2px','bottom:2px;right:2px'];
 
-   var BUILD_RE = /^\d+(?:-\d+)+$/;
+   // A tier-list entry ranks one path, so it carries a single path token: P2 for
+   // path 2 at its final tier, or P2-3 to pin a specific tier. A bare number
+   // cannot be used — several units end their name in one (Endo 01, Endo 02).
+   var PATH_RE = /^P(\d+)(?:-(\d+))?$/i;
 
    function parseUnit(str) {
      var parts = str.split(' ');
@@ -772,7 +775,7 @@
      while (parts.length > 1) {
        var last = parts[parts.length - 1];
        if (STATUS_TAGS.indexOf(last) !== -1) { tags.unshift(parts.pop()); continue; }
-       if (!path && BUILD_RE.test(last)) { path = parts.pop(); continue; }
+       if (!path && PATH_RE.test(last)) { path = parts.pop(); continue; }
        break;
      }
      return { name: parts.join(' '), tags: tags, path: path };
@@ -783,21 +786,22 @@
    function tlPathInfo(name, pathStr) {
      var u = unitMap[name];
      if (!pathStr || !u || !Array.isArray(u.paths) || !u.paths.length) return null;
-     var tiers = String(pathStr).split('-').map(function (n) { return parseInt(n, 10) || 0; });
+     var m = PATH_RE.exec(pathStr);
+     if (!m) return null;
+     var pathNo = parseInt(m[1], 10);
+     var path = u.paths[pathNo - 1];
+     if (!path || !Array.isArray(path.tiers) || !path.tiers.length) return null;
+     var tier = m[2] ? parseInt(m[2], 10) : path.tiers.length;
+     if (!(tier >= 1) || !path.tiers[tier - 1]) return null;
+     var icon = path.tiers[tier - 1].icon;
+     if (!icon) return null;
      var slug = String(name).toLowerCase().split(' ').join('-');
-     var taken = [];
-     for (var i = 0; i < tiers.length; i++) {
-       var tier = tiers[i] || 0;
-       if (tier < 1) continue;
-       var path = u.paths[i];
-       if (!path || !Array.isArray(path.tiers) || !path.tiers[tier - 1]) continue;
-       var icon = path.tiers[tier - 1].icon;
-       if (!icon) continue;
-       taken.push({ url: PATH_IMG + slug + '-paths/' + icon, pathNo: i + 1, tier: tier });
-     }
-     if (!taken.length) return null;
-     taken.sort(function (a, b) { return b.tier - a.tier || a.pathNo - b.pathNo; });
-     return { primary: taken[0], secondary: taken[1] || null, build: tiers.join('-') };
+     return {
+       url: PATH_IMG + slug + '-paths/' + icon,
+       pathNo: pathNo,
+       tier: tier,
+       pinned: !!m[2]
+     };
    }
 
    var CSS = [
@@ -856,11 +860,7 @@
        'padding:2px;pointer-events:none;z-index:3;background:rgba(0,0,0,0.55)}',
      '.tl-path-in{width:100%;height:100%;border-radius:4px;overflow:hidden;background:rgba(14,11,28,0.9)}',
      '.tl-path-in img{width:100%;height:100%;object-fit:contain;display:block}',
-     '.tl-path.tl-path-pair .tl-path-in{position:relative}',
-     '.tl-path-pair .tl-path-in img{position:absolute;left:50%;top:50%;width:64%;height:64%}',
-     '.tl-path-pair .tl-path-in img.path-b{transform:translate(-30%,-30%);opacity:.7}',
-     '.tl-path-pair .tl-path-in img.path-a{transform:translate(-70%,-70%);' +
-       'filter:drop-shadow(1px 1px 0 rgba(0,0,0,.95))}',
+
      '.tl-msg{padding:24px;text-align:center;color:rgba(255,255,255,.35);font-size:12px;width:100%}',
 
      '#tlNote{padding:10px 18px;font-family:Press Start 2P,monospace;font-size:10px;line-height:2;color:rgba(246,155,85,0.9);background:rgba(3,3,10,0.97);border-bottom:1px solid rgba(246,155,85,1);display:none}',
@@ -1293,7 +1293,8 @@
        }
        tipName.textContent = name;
        if (pInfo) {
-         tipPath.textContent = 'Hero Tree: ' + pInfo.build;
+         tipPath.textContent = 'Hero Tree: Path ' + pInfo.pathNo +
+           (pInfo.pinned ? ' \u00b7 Tier ' + pInfo.tier : '');
          tipPath.style.display = 'block';
        } else {
          tipPath.style.display = 'none';
@@ -1328,18 +1329,13 @@
 
      if (pInfo) {
        var pW = document.createElement('div');
-       pW.className = 'tl-path' + (pInfo.secondary ? ' tl-path-pair' : '');
+       pW.className = 'tl-path';
        var pI = document.createElement('div');
        pI.className = 'tl-path-in';
-       var legs = pInfo.secondary ? [['path-b', pInfo.secondary], ['path-a', pInfo.primary]]
-                                  : [['', pInfo.primary]];
-       legs.forEach(function (pr) {
-         var pM = document.createElement('img');
-         if (pr[0]) pM.className = pr[0];
-         _tlImgSrc(pM, pr[1].url);
-         pM.alt = 'Path ' + pr[1].pathNo + ' Tier ' + pr[1].tier;
-         pI.appendChild(pM);
-       });
+       var pM = document.createElement('img');
+       _tlImgSrc(pM, pInfo.url);
+       pM.alt = 'Path ' + pInfo.pathNo + ' Tier ' + pInfo.tier;
+       pI.appendChild(pM);
        pW.appendChild(pI);
        card.appendChild(pW);
      }

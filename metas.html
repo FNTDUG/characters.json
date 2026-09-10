@@ -84,7 +84,7 @@
       '.seamlessPageTab.seamlessPageTabActive{background:rgba(246,155,85,0.18);border-color:rgba(246,155,85,1);color:#ffa45b}',
 
       '.meta-card{width:100%;aspect-ratio:1/1;' +
-        'border-radius:12px;padding:3px;position:relative;cursor:default}',
+        'border-radius:12px;padding:3px;position:relative;cursor:pointer}',
       '.meta-card.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
       '.meta-card-inner{position:relative;width:100%;height:100%;' +
         'border-radius:9px;overflow:hidden;background:rgba(14,11,28,0.88)}',
@@ -479,7 +479,7 @@
   document.addEventListener('click', function (ev) {
     var c = _tipCardOf(ev.target);
     if (c && typeof c._metaShowTip === 'function') {
-      ev.stopPropagation(); _tipCur = c; c._metaShowTip(); return;
+      _tipCur = c; c._metaShowTip(); return;
     }
     _tipCur = null; hideTip();
   }, true);
@@ -892,6 +892,7 @@
         card._metaShowTip = (function (c, cfg, data) {
           return function () { showTip(c, cfg, data, META_CFG); };
         }(card, unitCfg, u));
+        card.addEventListener('click', function () { _tipCur = card; card._metaShowTip(); });
 
         var slot = document.createElement('div'); slot.className = 'meta-slot';
         slot.appendChild(card);

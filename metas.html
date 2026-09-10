@@ -450,34 +450,42 @@
     tip.style.left = left + 'px'; tip.style.top = top + 'px'; tip.style.opacity = '1';
   }
 
-  function hideTip() { _tipCur = null; tip.style.opacity = '0'; tip.style.display = 'none'; }
+  function hideTip() { tip.style.opacity = '0'; tip.style.display = 'none'; }
 
-  /* Cards open their own tooltip (see the bindings above). Everything here only
-     dismisses it.
+  /* Delegated, and deliberately the same shape as the reward tooltips on the
+     story and challenges pages, which do not suffer this on mobile.
 
-     A tap also synthesises a whole mouse sequence — enter, leave, move, click —
-     delivered over the next few hundred milliseconds, and any of those landing
-     on the wrong element closed a tooltip that had just opened. Once a touch has
-     been seen every mouse path stands down and touch drives the tooltip alone,
-     so none of that sequence can reach it. Hover is untouched on a device that
-     never fires a touch. */
-  var _tipCur = null, _tipAt = 0, _tipTouch = false;
+     A tap synthesises a whole mouse sequence after it — over, out, move, down,
+     up, click — and any of those can land on the wrong element. Rather than try
+     to suppress them, the click is allowed to re-show: it is the last event a
+     tap delivers, so whatever closed the tooltip mid-sequence, the tap still
+     ends on the right one being open.
+
+     mouseout only closes when the pointer has genuinely left the card it is
+     showing for — moving into that card's own children does not count, and nor
+     does the stray out from the card you came from, because by then _tipCur is
+     already the new one. */
+  var _tipCur = null;
   function _tipCardOf(t) { return t && t.closest ? t.closest('.meta-card') : null; }
-  document.addEventListener('touchstart', function (ev) {
-    _tipTouch = true;
-    if (!_tipCardOf(ev.target)) hideTip();
-  }, { passive: true, capture: true });
+  document.addEventListener('mouseover', function (ev) {
+    var c = _tipCardOf(ev.target);
+    if (c && c !== _tipCur && typeof c._metaShowTip === 'function') { _tipCur = c; c._metaShowTip(); }
+  });
+  document.addEventListener('mouseout', function (ev) {
+    if (!_tipCur) return;
+    if (ev.relatedTarget && _tipCur.contains(ev.relatedTarget)) return;
+    _tipCur = null; hideTip();
+  });
   document.addEventListener('click', function (ev) {
-    if (_tipTouch) return;
-    if (!_tipCardOf(ev.target)) hideTip();
+    var c = _tipCardOf(ev.target);
+    if (c && typeof c._metaShowTip === 'function') {
+      ev.stopPropagation(); _tipCur = c; c._metaShowTip(); return;
+    }
+    _tipCur = null; hideTip();
   }, true);
-  // Scrolling dismisses it, since the tooltip is fixed and would otherwise hang
-  // over content it no longer belongs to. The delay matters on touch: the tap
-  // that opens a tooltip nearly always emits a scroll of its own, and without
-  // this the tooltip closed a few milliseconds after opening.
-  document.addEventListener('scroll', function () {
-    if (Date.now() - _tipAt > 400) hideTip();
-  }, { passive: true, capture: true });
+  // On window rather than document-in-capture: a page scroll should dismiss it,
+  // but the jitter a tap produces inside a scrolling panel should not.
+  window.addEventListener('scroll', function () { _tipCur = null; hideTip(); }, { passive: true });
 
   /* ── Capture ──────────────────────────────────────────────────────────────
      Same behaviour as the trade calculator's screenshot button. html2canvas is
@@ -881,26 +889,8 @@
 
         card.appendChild(inner);
 
-        (function (c, cfg, data) {
-          c._metaShowTip = function () {
-            _tipCur = c; _tipAt = Date.now();
-            showTip(c, cfg, data, META_CFG);
-          };
-          c.addEventListener('mouseenter', function () {
-            if (_tipTouch) return;
-            c._metaShowTip();
-          });
-          c.addEventListener('mouseleave', function () {
-            if (_tipTouch) return;
-            if (_tipCur === c) hideTip();
-          });
-          // The dependable touch signal. iOS does not deliver a click to
-          // document for a tap on a plain div, so the tooltip cannot be driven
-          // from delegation alone — this is bound to the card itself.
-          c.addEventListener('touchstart', function () {
-            if (_tipCur === c && Date.now() - _tipAt > 400) { hideTip(); return; }
-            c._metaShowTip();
-          }, { passive: true });
+        card._metaShowTip = (function (c, cfg, data) {
+          return function () { showTip(c, cfg, data, META_CFG); };
         }(card, unitCfg, u));
 
         var slot = document.createElement('div'); slot.className = 'meta-slot';

@@ -12907,6 +12907,15 @@
     "obtainment": "Hero Quest 6",
     "balanceChanges": [
       {
+        "date": "5/23/26",
+        "changes": [
+          { "type": "buff",   "text": "• Mode: Smasher:<br>• DMG boost 40%/35% (was 30%/25%)" },
+          { "type": "nerf",   "text": "• CD Boost Removed (was -15%/-10%)" },
+          { "type": "buff",   "text": "• Mode: Shocker:<br>• DMG Boost 15%/25% (was 10%/13%)<br>• RNG Boost 20%/40% (was 15%/35%)" },
+          { "type": "nerf",   "text": "• CD Boost -5%/-10% (was -3%/-15%)" }
+        ]
+      },
+      {
         "date": "9/7/26",
         "changes": [
           { "type": "rework",   "text": "• Full kit rework" }
@@ -12918,17 +12927,6 @@
         "label": "Smasher",
         "role": "damage",
         "attackType": "Multi",
-        "balanceChanges": [
-      {
-        "date": "5/23/26",
-        "changes": [
-          { "type": "buff",   "text": "• Mode: Smasher:<br>• DMG boost 40%/35% (was 30%/25%)" },
-          { "type": "nerf",   "text": "• CD Boost Removed (was -15%/-10%)" },
-          { "type": "buff",   "text": "• Mode: Shocker:<br>• DMG Boost 15%/25% (was 10%/13%)<br>• RNG Boost 20%/40% (was 15%/35%)" },
-          { "type": "nerf",   "text": "• CD Boost -5%/-10% (was -3%/-15%)" }
-        ]
-      }
-    ],
         "levels": [
           {
             "level": 1,

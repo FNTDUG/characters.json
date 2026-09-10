@@ -4662,7 +4662,7 @@
           ["scott_dmg",         "Animdude: Endless Strength (+10% DMG)",                                     { dmgMult: 1.10}],
           ["scott_rng",         "Animdude: Endless Range (+15% RNG)",                                         { rngMult: 1.15}],
           ["scott_cd",          "Animdude: Endless Speed (-7.5% CD)",                                         { cdMult: 0.925}],
-          ["scott_cd",          "Animdude: Freddles (+10% CD)",                                         { dmgMult: 1.10}],
+          ["scott_freddles",    "Animdude: Freddles (+10% DMG)",                                         { dmgMult: 1.10}],
           ["scott_t2bot",       "Animdude: Bottom Path Tier 2 (+15% Crit DMG)",                            { critDmgAdd: 0.15 }],
           ["scott_bot",         "Animdude: Max Bottom Path (+30% DMG & +30% Crit Rate)",                    { dmgMult: 1.30, critRateAdd: 0.30}],
           ["astral_b",          "Astral Bonnie: Orion's Belt (+2% DMG, +3% RNG per stack)",                 { dmgMult: 1.02, rngMult: 1.03, stackKey: "astral_bStacks", maxStacks: 15 }],

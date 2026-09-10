@@ -443,6 +443,10 @@
     var left = Math.max(4, Math.min(r.left + r.width / 2 - tw / 2, window.innerWidth - tw - 4));
     var top  = r.bottom + 6;
     if (top + th > window.innerHeight - 4) top = r.top - th - 6;
+    // Flipping above a card high on the screen puts a tall tooltip off the top
+    // of a phone, where it is simply invisible. Clamped into view instead —
+    // overlapping the card reads better than not appearing at all.
+    top = Math.max(4, Math.min(top, window.innerHeight - th - 4));
     tip.style.left = left + 'px'; tip.style.top = top + 'px'; tip.style.opacity = '1';
   }
 
@@ -458,7 +462,13 @@
   document.addEventListener('click', function (ev) {
     if (!_tipCardOf(ev.target)) hideTip();
   }, true);
-  document.addEventListener('scroll', hideTip, { passive: true, capture: true });
+  // Scrolling dismisses it, since the tooltip is fixed and would otherwise hang
+  // over content it no longer belongs to. The delay matters on touch: the tap
+  // that opens a tooltip nearly always emits a scroll of its own, and without
+  // this the tooltip closed a few milliseconds after opening.
+  document.addEventListener('scroll', function () {
+    if (Date.now() - _tipAt > 400) hideTip();
+  }, { passive: true, capture: true });
 
   /* ── Capture ──────────────────────────────────────────────────────────────
      Same behaviour as the trade calculator's screenshot button. html2canvas is

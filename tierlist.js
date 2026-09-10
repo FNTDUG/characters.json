@@ -897,7 +897,7 @@
        plate, so it needs no frame — a box around it just reads as a black
        square. It sits bare like the status icons, with a shadow to lift it off
        whatever card art is underneath. */
-    '.tl-path{position:absolute;bottom:4px;right:4px;width:32px;height:32px;pointer-events:none;z-index:3}',
+    '.tl-path{position:absolute;bottom:3px;right:3px;width:32px;height:32px;pointer-events:none;z-index:3}',
     '.tl-path-in{width:100%;height:100%;position:relative}',
     '.tl-path-in img{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);' +
       'width:76%;height:76%;object-fit:contain;display:block;' +
@@ -930,7 +930,7 @@
     '@keyframes tlBlink{0%,49%{box-shadow:0 0 0 3px #ffff00,0 0 12px #ffff00}50%,100%{box-shadow:0 0 0 3px transparent,0 0 0 transparent}}',
     '.tl-match{animation:tlBlink 1.6s step-end infinite}',
     '@keyframes shinyLoop{0%{background-position:0% 50%}100%{background-position:200% 50%}}',
-    '@media(max-width:600px){#tlHdr{padding:8px 10px;gap:6px}#tlTitle{font-size:8px}.tl-mb{font-size:6px;padding:6px 8px}#tlList{padding:6px 3px}.tl-lbl{width:64px;min-width:64px}.tl-nm2{font-size:22px}.tl-st{font-size:11px}.tl-card{width:52px;height:52px}.tl-units{gap:3px;padding:4px;min-height:60px}.tl-row{min-height:60px}.tl-path{bottom:4px;right:4px;width:23px;height:23px}.tl-tip-path{font-size:0.95em}}'
+    '@media(max-width:600px){#tlHdr{padding:8px 10px;gap:6px}#tlTitle{font-size:8px}.tl-mb{font-size:6px;padding:6px 8px}#tlList{padding:6px 3px}.tl-lbl{width:64px;min-width:64px}.tl-nm2{font-size:22px}.tl-st{font-size:11px}.tl-card{width:52px;height:52px}.tl-units{gap:3px;padding:4px;min-height:60px}.tl-row{min-height:60px}.tl-path{bottom:3px;right:3px;width:22px;height:22px}.tl-tip-path{font-size:0.95em}}'
   ].join('');
 
   var style = document.createElement('style');

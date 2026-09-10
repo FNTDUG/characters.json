@@ -467,20 +467,30 @@
      already the new one. */
   var _tipCur = null;
   function _tipCardOf(t) { return t && t.closest ? t.closest('.meta-card') : null; }
+  /* One tap reaches this three ways — mouseover, the card's own click and the
+     delegated one — and showTip restarts its fade every call, which read as a
+     flicker. Asking for the tooltip that is already up is a no-op. */
+  function tipShowFor(c) {
+    if (!c || typeof c._metaShowTip !== 'function') return;
+    if (_tipCur === c && tip.style.display === 'block') return;
+    _tipCur = c;
+    c._metaShowTip();
+  }
   document.addEventListener('mouseover', function (ev) {
-    var c = _tipCardOf(ev.target);
-    if (c && c !== _tipCur && typeof c._metaShowTip === 'function') { _tipCur = c; c._metaShowTip(); }
+    tipShowFor(_tipCardOf(ev.target));
   });
   document.addEventListener('mouseout', function (ev) {
     if (!_tipCur) return;
+    // Only the card actually showing may close it. A tap fires an out on the
+    // card you came from too, and honouring that closed the one just opened —
+    // relatedTarget alone does not catch it, since it is often null on iOS.
+    if (!_tipCur.contains(ev.target)) return;
     if (ev.relatedTarget && _tipCur.contains(ev.relatedTarget)) return;
     _tipCur = null; hideTip();
   });
   document.addEventListener('click', function (ev) {
     var c = _tipCardOf(ev.target);
-    if (c && typeof c._metaShowTip === 'function') {
-      _tipCur = c; c._metaShowTip(); return;
-    }
+    if (c) { tipShowFor(c); return; }
     _tipCur = null; hideTip();
   }, true);
   // On window rather than document-in-capture: a page scroll should dismiss it,
@@ -892,7 +902,7 @@
         card._metaShowTip = (function (c, cfg, data) {
           return function () { showTip(c, cfg, data, META_CFG); };
         }(card, unitCfg, u));
-        card.addEventListener('click', function () { _tipCur = card; card._metaShowTip(); });
+        card.addEventListener('click', function () { tipShowFor(card); });
 
         var slot = document.createElement('div'); slot.className = 'meta-slot';
         slot.appendChild(card);

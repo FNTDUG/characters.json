@@ -3651,9 +3651,7 @@
       
       
       function getPermanentCritStats(unit, modeKey) {
-        var rawPd = (unit && unit.modes && modeKey && unit.modes[modeKey] && unit.modes[modeKey].passiveDamage)
-          ? unit.modes[modeKey].passiveDamage
-          : (unit && unit.passiveDamage) || null;
+        var rawPd = resolvePd(unit, modeKey);
         var result = { critC: null, critD: null };
         if (!rawPd) return result;
         var sbs = rawPd.selfboost || [];
@@ -5831,9 +5829,14 @@
 
         if (passives.length) {
           passives.forEach(function (p) {
+            var locked = !ueTierUnlocked(unit, p);
             var block = document.createElement("div");
             block.style.margin = "10px 0";
             block.style.textAlign = "center";
+            if (locked) {
+              block.style.opacity = "0.4";
+              block.style.filter = "grayscale(1)";
+            }
 
       var pt = document.createElement("div");
       pt.style.display = "inline-flex";
@@ -5897,6 +5900,16 @@
       }
 
       pt.appendChild(titleText);
+
+      if (locked) {
+        var lockTag = document.createElement("span");
+        lockTag.textContent = "\uD83D\uDD12 Path " + p.path + " \u00B7 Tier " + p.tier;
+        lockTag.style.fontSize = "10px";
+        lockTag.style.fontWeight = "normal";
+        lockTag.style.color = "#bbb";
+        lockTag.style.whiteSpace = "nowrap";
+        pt.appendChild(lockTag);
+      }
 
             var ptext = document.createElement("div");
             ptext.classList.add("ue-passive-text");

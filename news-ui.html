@@ -1,0 +1,423 @@
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Audiowide&display=swap" rel="stylesheet">
+<style>
+#ugNews{--nw-accent:#ffa45b;--nw-ink:#f2eef8;--nw-ink2:rgba(242,238,248,.66);--nw-ink3:rgba(242,238,248,.42);--nw-panel:rgba(9,6,20,.9);--nw-panel2:rgba(255,255,255,.035);--nw-line:rgba(255,255,255,.09);color:var(--nw-ink);margin:6px auto 30px;max-width:900px;font-size:15px;line-height:1.55}
+#ugNews *{box-sizing:border-box}
+#ugNews a{color:var(--nw-accent);text-decoration:none}
+#ugNews a:hover{text-decoration:underline}
+#ugNews button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+#ugNews :focus-visible{outline:2px solid var(--nw-accent);outline-offset:3px;border-radius:4px}
+#ugNews .nw-avatar,#ugNews .nw-post-av,#ugNews .nw-media img,#ugNews .nw-media video{margin:0;display:block}
+#ugNews .nw-entry-img{margin:10px 0 4px}
+
+.nw-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.nw-tab{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:14px 16px 16px;background:var(--nw-panel);border:1px solid var(--nw-line);border-radius:12px;text-align:left;color:var(--nw-ink2);transition:color .15s,border-color .15s,background .15s}
+.nw-tab:hover{color:var(--nw-ink);border-color:rgba(255,255,255,.2)}
+.nw-tab-name{font-family:'Audiowide',sans-serif;font-size:15px;letter-spacing:.3px;color:inherit}
+.nw-tab-sub{font-size:12px;color:var(--nw-ink3)}
+.nw-tab::after{content:'';position:absolute;left:16px;right:16px;bottom:0;height:3px;border-radius:3px 3px 0 0;background:var(--tab-accent);opacity:0;transform:scaleX(.4);transition:opacity .2s,transform .25s}
+.nw-tab[aria-selected="true"]{color:var(--nw-ink);border-color:color-mix(in srgb,var(--tab-accent) 55%,transparent);background:linear-gradient(180deg,color-mix(in srgb,var(--tab-accent) 12%,transparent),var(--nw-panel) 70%)}
+.nw-tab[aria-selected="true"] .nw-tab-sub{color:var(--tab-accent)}
+.nw-tab[aria-selected="true"]::after{opacity:1;transform:scaleX(1)}
+
+.nw-mast{position:relative;overflow:hidden;display:flex;align-items:center;gap:18px;padding:20px 22px;border:1px solid var(--nw-line);border-left:4px solid var(--nw-accent);border-radius:12px;background:var(--nw-panel);margin-bottom:16px}
+.nw-mast::before{content:'';position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(to bottom,transparent 0 3px,rgba(0,0,0,.14) 3px 4px)}
+.nw-mast-banner{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.14;filter:saturate(.8)}
+.nw-mast-banner::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,6,20,.2),rgba(9,6,20,.95) 65%)}
+.nw-mast>*{position:relative}
+.nw-avatar{flex:0 0 auto;width:72px;height:72px;border-radius:50%;object-fit:cover;background:#1a1330;border:2px solid var(--nw-accent);box-shadow:0 0 18px color-mix(in srgb,var(--nw-accent) 40%,transparent)}
+.nw-mast-body{min-width:0;flex:1}
+.nw-mast-name{font-family:'Audiowide',sans-serif;font-size:22px;line-height:1.2;color:#fff;text-shadow:0 0 10px color-mix(in srgb,var(--nw-accent) 45%,transparent)}
+.nw-mast-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:5px;font-size:13px;color:var(--nw-ink2)}
+.nw-mast-meta a{color:var(--nw-accent)}
+.nw-mast-blurb{margin-top:8px;font-size:14px;color:var(--nw-ink2);max-width:60ch}
+.nw-official{flex:0 0 auto;align-self:flex-start;font-family:'Audiowide',sans-serif;font-size:10px;letter-spacing:.6px;padding:6px 10px;border-radius:999px;border:1px solid color-mix(in srgb,var(--nw-accent) 60%,transparent);color:var(--nw-accent);background:color-mix(in srgb,var(--nw-accent) 10%,transparent);white-space:nowrap}
+
+.nw-grid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:16px;align-items:start}
+.nw-col{background:var(--nw-panel);border:1px solid var(--nw-line);border-radius:12px;min-width:0}
+.nw-col-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 18px;border-bottom:1px solid var(--nw-line)}
+.nw-col-title{font-family:'Audiowide',sans-serif;font-size:14px;color:#fff}
+.nw-col-title small{display:block;font-family:inherit;font-size:11px;color:var(--nw-ink3);margin-top:2px;font-family:'Franklin Gothic Medium','Franklin Gothic',Arial,sans-serif}
+
+.nw-filters{display:flex;flex-wrap:wrap;gap:6px;padding:12px 18px 0}
+.nw-chip{font-size:12px;padding:5px 11px;border-radius:999px;border:1px solid var(--nw-line);color:var(--nw-ink2);background:var(--nw-panel2)}
+.nw-chip:hover{color:var(--nw-ink);border-color:rgba(255,255,255,.22)}
+.nw-chip[aria-pressed="true"]{color:#0a0612;background:var(--chip,var(--nw-accent));border-color:transparent;font-weight:700}
+
+.nw-ledger{list-style:none;margin:0;padding:8px 0 6px}
+.nw-entry{display:grid;grid-template-columns:88px 1fr;gap:0 16px;padding:16px 18px;border-bottom:1px solid var(--nw-line)}
+.nw-entry:last-child{border-bottom:0}
+.nw-stamp{font-family:'Press Start 2P',cursive;font-size:9px;line-height:1.7;color:var(--nw-ink2);padding-top:5px}
+.nw-stamp b{display:block;font-size:15px;color:#fff;line-height:1.1;margin-bottom:3px}
+.nw-entry-body{min-width:0;border-left:2px solid var(--entry-accent,var(--nw-accent));padding-left:14px}
+.nw-tag{display:inline-block;font-family:'Audiowide',sans-serif;font-size:10px;letter-spacing:.5px;padding:3px 9px;border-radius:5px;color:#0a0612;background:var(--entry-accent,var(--nw-accent));margin-bottom:7px}
+.nw-entry-title{font-family:'Audiowide',sans-serif;font-size:16px;line-height:1.3;color:#fff;margin:0 0 6px}
+.nw-entry-text{color:var(--nw-ink2);font-size:14.5px}
+.nw-entry-text p{margin:0 0 8px}
+.nw-entry-text ul{margin:0 0 8px 18px;padding:0}
+.nw-entry-img{display:block;width:100%;max-width:520px;border-radius:8px;margin:10px 0 4px;border:1px solid var(--nw-line)}
+.nw-entry-link{display:inline-block;margin-top:8px;font-family:'Audiowide',sans-serif;font-size:11px;padding:7px 12px;border-radius:7px;border:1px solid color-mix(in srgb,var(--entry-accent,var(--nw-accent)) 60%,transparent);color:var(--entry-accent,var(--nw-accent))}
+.nw-entry-link:hover{background:color-mix(in srgb,var(--entry-accent,var(--nw-accent)) 14%,transparent);text-decoration:none}
+.nw-empty{padding:26px 18px;color:var(--nw-ink2);font-size:14px;text-align:center}
+.nw-empty b{display:block;font-family:'Audiowide',sans-serif;font-size:13px;color:#fff;margin-bottom:6px}
+
+.nw-follow{font-family:'Audiowide',sans-serif;font-size:10px;padding:6px 11px;border-radius:999px;border:1px solid var(--nw-line);color:var(--nw-ink2);white-space:nowrap}
+.nw-follow:hover{color:#fff;border-color:rgba(255,255,255,.3);text-decoration:none}
+.nw-feed{list-style:none;margin:0;padding:0}
+.nw-post{padding:14px 16px;border-bottom:1px solid var(--nw-line)}
+.nw-post:last-child{border-bottom:0}
+.nw-post-head{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.nw-post-av{width:34px;height:34px;border-radius:50%;object-fit:cover;background:#1a1330;flex:0 0 auto}
+.nw-post-who{min-width:0;line-height:1.25}
+.nw-post-name{font-weight:700;font-size:13.5px;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nw-post-handle{font-size:12px;color:var(--nw-ink3)}
+.nw-post-time{margin-left:auto;font-size:12px;color:var(--nw-ink3);white-space:nowrap}
+.nw-post-time:hover{color:var(--nw-ink)}
+.nw-post-text{font-size:14px;color:var(--nw-ink);word-break:break-word}
+.nw-post-text a{color:var(--nw-accent)}
+.nw-media{display:grid;gap:4px;margin-top:10px;border-radius:9px;overflow:hidden}
+.nw-media.n2,.nw-media.n3,.nw-media.n4{grid-template-columns:1fr 1fr}
+.nw-media img,.nw-media video{display:block;width:100%;height:100%;object-fit:cover;background:#000;aspect-ratio:16/10;margin:0}
+.nw-media.n1 img,.nw-media.n1 video{aspect-ratio:auto;max-height:340px}
+.nw-media.n3 :first-child{grid-row:span 2;aspect-ratio:auto}
+.nw-quote{margin-top:10px;padding:10px 12px;border:1px solid var(--nw-line);border-radius:9px;font-size:13px;color:var(--nw-ink2)}
+.nw-quote b{color:#fff;font-weight:700}
+.nw-post-stats{display:flex;gap:16px;margin-top:10px;font-size:12px;color:var(--nw-ink3)}
+.nw-post-stats span::before{display:inline-block;margin-right:5px;color:var(--nw-ink3)}
+.nw-st-reply::before{content:'\21A9'}
+.nw-st-rt::before{content:'\21BB'}
+.nw-st-like::before{content:'\2665'}
+.nw-skel{padding:14px 16px;border-bottom:1px solid var(--nw-line)}
+.nw-skel i{display:block;height:12px;border-radius:6px;background:var(--nw-panel2);margin-bottom:8px;animation:nwPulse 1.4s ease-in-out infinite}
+.nw-skel i:nth-child(1){width:45%}.nw-skel i:nth-child(2){width:95%}.nw-skel i:nth-child(3){width:70%;margin-bottom:0}
+@keyframes nwPulse{0%,100%{opacity:.5}50%{opacity:1}}
+.nw-retry{margin-top:10px;font-family:'Audiowide',sans-serif;font-size:11px;padding:7px 12px;border-radius:7px;border:1px solid var(--nw-line);color:var(--nw-ink)}
+.nw-retry:hover{border-color:var(--nw-accent);color:var(--nw-accent)}
+.nw-more{display:block;width:100%;padding:12px;font-family:'Audiowide',sans-serif;font-size:11px;color:var(--nw-ink2);border-top:1px solid var(--nw-line)}
+.nw-more:hover{color:var(--nw-accent)}
+
+.nw-swap{animation:nwIn .28s ease-out}
+@keyframes nwIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){#ugNews *{animation:none!important;transition:none!important}}
+
+@media (max-width:820px){.nw-grid{grid-template-columns:1fr}}
+@media (max-width:600px){
+  #ugNews{font-size:14px}
+  .nw-tabs{grid-template-columns:1fr;gap:6px}
+  .nw-tab{flex-direction:row;align-items:baseline;justify-content:space-between;padding:12px 14px}
+  .nw-tab::after{left:0;right:auto;top:0;bottom:0;width:3px;height:auto;border-radius:12px 0 0 12px;transform:scaleY(.4)}
+  .nw-tab[aria-selected="true"]::after{transform:scaleY(1)}
+  .nw-mast{gap:14px;padding:16px}
+  .nw-avatar{width:56px;height:56px}
+  .nw-mast-name{font-size:18px}
+  .nw-official{display:none}
+  .nw-entry{grid-template-columns:1fr;gap:8px;padding:14px}
+  .nw-stamp{display:flex;align-items:baseline;gap:8px;padding:0}
+  .nw-stamp b{font-size:12px;margin:0}
+}
+</style>
+
+<div id="ugNews">
+  <div class="nw-tabs" role="tablist" aria-label="News source"></div>
+  <div class="nw-mast" id="nwMast"></div>
+  <div class="nw-grid">
+    <section class="nw-col" id="nwLedgerCol" aria-live="polite">
+      <div class="nw-col-head"><div class="nw-col-title">Announcements<small id="nwLedgerCount"></small></div></div>
+      <div class="nw-filters" id="nwFilters"></div>
+      <ol class="nw-ledger" id="nwLedger"></ol>
+    </section>
+    <aside class="nw-col" id="nwXCol">
+      <div class="nw-col-head"><div class="nw-col-title">On X<small id="nwXSub"></small></div><a class="nw-follow" id="nwFollow" target="_blank" rel="noopener noreferrer" hidden>Follow</a></div>
+      <div id="nwXBody"></div>
+    </aside>
+  </div>
+</div>
+
+<script>
+(function () {
+  var CFG = {
+    xEndpoint: '/news-x/',
+    xPageSize: 8,
+    tags: {
+      update:    { label: 'Update',     color: '#f69b55' },
+      event:     { label: 'Event',      color: '#c084fc' },
+      sneak:     { label: 'Sneak peek', color: '#4dd0e1' },
+      community: { label: 'Community',  color: '#86f786' },
+      notice:    { label: 'Notice',     color: '#ff6b6b' }
+    },
+    sources: [
+      {
+        key: 'scottgames',
+        name: 'Scottgames',
+        sub: 'Studio news',
+        blurb: 'Announcements from the studio behind Five Nights TD and Bite By Night.',
+        accent: '#ffa45b',
+        handle: '',
+        avatar: 'https://images.fntduserguide.com/circle_done.png',
+        posts: [
+          {
+            date: '2026-09-10',
+            tag: 'notice',
+            title: 'The news page is live',
+            body: '<p>Official announcements from the studio and both games now live here, alongside their latest posts on X. Patch notes for the guide itself stay on the Patch Notes pages.</p>',
+            link: { label: 'Open patch notes', href: '/patch-notes' }
+          }
+        ]
+      },
+      {
+        key: 'fntd',
+        name: 'Five Nights TD',
+        sub: 'Game news',
+        blurb: 'Updates, events and sneak peeks for Five Nights TD.',
+        accent: '#c084fc',
+        handle: 'FiveNightsTD',
+        avatar: 'https://images.fntduserguide.com/circle_done.png',
+        posts: [
+          {
+            date: '2026-09-10',
+            tag: 'update',
+            title: 'Example: a game update announcement',
+            body: '<p>Replace this entry. Each announcement takes a date, a tag, a title, a short body and an optional link or image.</p><ul><li>Tags: update, event, sneak, community, notice</li><li>Body accepts HTML</li></ul>',
+            link: { label: 'Open the Unit Engine', href: '/fntd2/unit-engine' }
+          }
+        ]
+      },
+      {
+        key: 'bbn',
+        name: 'Bite By Night',
+        sub: 'Game news',
+        blurb: 'Updates, events and sneak peeks for Bite By Night.',
+        accent: '#ff3c3b',
+        handle: '',
+        avatar: 'https://images.fntduserguide.com/circle_done.png',
+        posts: [
+          {
+            date: '2026-09-10',
+            tag: 'event',
+            title: 'Example: an event announcement',
+            body: '<p>Replace this entry. Add an <b>image</b> field with a URL to show artwork under the text.</p>',
+            image: '',
+            link: { label: 'Killer Terminal', href: '/bbn/killer-terminal' }
+          }
+        ]
+      }
+    ]
+  };
+
+  var root = document.getElementById('ugNews');
+  var tabsEl = root.querySelector('.nw-tabs');
+  var mastEl = document.getElementById('nwMast');
+  var ledgerEl = document.getElementById('nwLedger');
+  var filtersEl = document.getElementById('nwFilters');
+  var countEl = document.getElementById('nwLedgerCount');
+  var xBody = document.getElementById('nwXBody');
+  var xSub = document.getElementById('nwXSub');
+  var followEl = document.getElementById('nwFollow');
+  var feedCache = {};
+  var current = null;
+  var activeTag = 'all';
+  var shown = CFG.xPageSize;
+
+  function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+  function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+  function num(n) { n = Number(n) || 0; if (n >= 1e6) return (n / 1e6).toFixed(1).replace(/\.0$/, '') + 'M'; if (n >= 1e3) return (n / 1e3).toFixed(1).replace(/\.0$/, '') + 'K'; return String(n); }
+  var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  function parseDate(s) { var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s || ''); return m ? new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3])) : new Date(s); }
+  function stamp(d) { return { day: String(d.getDate()).padStart(2, '0'), rest: MONTHS[d.getMonth()] + ' ' + d.getFullYear() }; }
+  function longDate(d) { return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }); }
+  function ago(iso) {
+    var t = new Date(iso).getTime(); if (!isFinite(t)) return '';
+    var s = Math.max(0, (Date.now() - t) / 1000);
+    if (s < 60) return 'just now';
+    if (s < 3600) return Math.floor(s / 60) + 'm';
+    if (s < 86400) return Math.floor(s / 3600) + 'h';
+    if (s < 86400 * 30) return Math.floor(s / 86400) + 'd';
+    var d = new Date(t);
+    return MONTHS[d.getMonth()] + ' ' + d.getDate() + (d.getFullYear() !== new Date().getFullYear() ? ' ' + d.getFullYear() : '');
+  }
+  function sourceByKey(k) { for (var i = 0; i < CFG.sources.length; i++) if (CFG.sources[i].key === k) return CFG.sources[i]; return null; }
+
+  function buildTabs() {
+    CFG.sources.forEach(function (src, i) {
+      var b = el('button', 'nw-tab');
+      b.type = 'button';
+      b.setAttribute('role', 'tab');
+      b.setAttribute('aria-selected', 'false');
+      b.setAttribute('aria-controls', 'nwLedgerCol');
+      b.id = 'nwTab-' + src.key;
+      b.style.setProperty('--tab-accent', src.accent);
+      b.innerHTML = '<span class="nw-tab-name">' + esc(src.name) + '</span><span class="nw-tab-sub">' + esc(src.sub || '') + '</span>';
+      b.addEventListener('click', function () { select(src.key, true); });
+      b.addEventListener('keydown', function (e) {
+        if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+        e.preventDefault();
+        var n = (i + (e.key === 'ArrowRight' ? 1 : -1) + CFG.sources.length) % CFG.sources.length;
+        select(CFG.sources[n].key, true);
+        tabsEl.children[n].focus();
+      });
+      tabsEl.appendChild(b);
+    });
+  }
+
+  function select(key, fromUser) {
+    var src = sourceByKey(key) || CFG.sources[0];
+    if (current && current.key === src.key) return;
+    current = src;
+    activeTag = 'all';
+    shown = CFG.xPageSize;
+    root.style.setProperty('--nw-accent', src.accent);
+    Array.prototype.forEach.call(tabsEl.children, function (b) {
+      var on = b.id === 'nwTab-' + src.key;
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+      b.tabIndex = on ? 0 : -1;
+    });
+    if (fromUser) {
+      try { history.replaceState(null, '', '#' + src.key); } catch (e) {}
+    }
+    renderMast(src, feedCache[src.handle] || null);
+    renderLedger(src);
+    renderX(src);
+    [mastEl, ledgerEl.parentNode, xBody.parentNode].forEach(function (n) {
+      n.classList.remove('nw-swap'); void n.offsetWidth; n.classList.add('nw-swap');
+    });
+  }
+
+  function renderMast(src, feed) {
+    var user = feed && feed.user;
+    var avatar = (user && user.avatar) || src.avatar || '';
+    var html = '';
+    if (user && user.banner) html += '<div class="nw-mast-banner" style="background-image:url(' + esc(user.banner) + ')"></div>';
+    html += '<img class="nw-avatar" alt="" src="' + esc(avatar) + '">';
+    html += '<div class="nw-mast-body"><div class="nw-mast-name">' + esc((user && user.name) || src.name) + '</div>';
+    var meta = [];
+    if (src.handle) meta.push('<a href="https://x.com/' + esc(src.handle) + '" target="_blank" rel="noopener noreferrer">@' + esc(src.handle) + '</a>');
+    if (user && user.followers != null) meta.push(num(user.followers) + ' followers');
+    if (feed && feed.posts && feed.posts.length) meta.push('Last post ' + ago(feed.posts[0].date));
+    if (meta.length) html += '<div class="nw-mast-meta"><span>' + meta.join('</span><span>') + '</span></div>';
+    if (src.blurb) html += '<div class="nw-mast-blurb">' + esc(src.blurb) + '</div>';
+    html += '</div><span class="nw-official">Official source</span>';
+    mastEl.innerHTML = html;
+  }
+
+  function renderLedger(src) {
+    var posts = (src.posts || []).slice().sort(function (a, b) { return parseDate(b.date) - parseDate(a.date); });
+    var tagsPresent = [];
+    posts.forEach(function (p) { if (p.tag && CFG.tags[p.tag] && tagsPresent.indexOf(p.tag) < 0) tagsPresent.push(p.tag); });
+    filtersEl.innerHTML = '';
+    filtersEl.hidden = tagsPresent.length < 2;
+    if (!filtersEl.hidden) {
+      [['all', { label: 'All', color: src.accent }]].concat(tagsPresent.map(function (t) { return [t, CFG.tags[t]]; })).forEach(function (pair) {
+        var c = el('button', 'nw-chip', esc(pair[1].label));
+        c.type = 'button';
+        c.style.setProperty('--chip', pair[1].color);
+        c.setAttribute('aria-pressed', activeTag === pair[0] ? 'true' : 'false');
+        c.addEventListener('click', function () { activeTag = pair[0]; renderLedger(src); });
+        filtersEl.appendChild(c);
+      });
+    }
+    var list = activeTag === 'all' ? posts : posts.filter(function (p) { return p.tag === activeTag; });
+    countEl.textContent = list.length ? list.length + (list.length === 1 ? ' post' : ' posts') : '';
+    ledgerEl.innerHTML = '';
+    if (!list.length) {
+      ledgerEl.appendChild(el('li', 'nw-empty', '<b>Nothing posted yet</b>Announcements for ' + esc(src.name) + ' will appear here.'));
+      return;
+    }
+    list.forEach(function (p) {
+      var d = parseDate(p.date), st = stamp(d);
+      var tag = CFG.tags[p.tag];
+      var li = el('li', 'nw-entry');
+      li.style.setProperty('--entry-accent', (tag && tag.color) || src.accent);
+      var html = '<time class="nw-stamp" datetime="' + esc(p.date) + '" title="' + esc(longDate(d)) + '"><b>' + st.day + '</b>' + st.rest + '</time>';
+      html += '<div class="nw-entry-body">';
+      if (tag) html += '<span class="nw-tag">' + esc(tag.label) + '</span>';
+      html += '<h3 class="nw-entry-title">' + esc(p.title) + '</h3>';
+      if (p.body) html += '<div class="nw-entry-text">' + p.body + '</div>';
+      if (p.image) html += '<img class="nw-entry-img" alt="" loading="lazy" src="' + esc(p.image) + '">';
+      if (p.link && p.link.href) html += '<a class="nw-entry-link" href="' + esc(p.link.href) + '"' + (/^https?:/.test(p.link.href) ? ' target="_blank" rel="noopener noreferrer"' : '') + '>' + esc(p.link.label || 'Read more') + '</a>';
+      html += '</div>';
+      li.innerHTML = html;
+      ledgerEl.appendChild(li);
+    });
+  }
+
+  function renderX(src) {
+    var h = src.handle;
+    followEl.hidden = !h;
+    if (h) { followEl.href = 'https://x.com/' + h; followEl.textContent = 'Follow @' + h; }
+    xSub.textContent = h ? '@' + h : '';
+    xBody.innerHTML = '';
+    if (!h) {
+      xBody.appendChild(el('div', 'nw-empty', '<b>No X account linked</b>Posts will show here once ' + esc(src.name) + ' has an account set up.'));
+      return;
+    }
+    if (feedCache[h]) { paintFeed(src, feedCache[h]); return; }
+    for (var i = 0; i < 3; i++) xBody.appendChild(el('div', 'nw-skel', '<i></i><i></i><i></i>'));
+    fetch(CFG.xEndpoint + encodeURIComponent(h), { headers: { accept: 'application/json' } })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function (data) {
+        feedCache[h] = data;
+        if (current !== src) return;
+        renderMast(src, data);
+        paintFeed(src, data);
+      })
+      .catch(function () {
+        if (current !== src) return;
+        xBody.innerHTML = '';
+        var box = el('div', 'nw-empty', '<b>X did not answer</b>Posts could not be loaded right now. <a href="https://x.com/' + esc(h) + '" target="_blank" rel="noopener noreferrer">Open @' + esc(h) + ' on X</a> instead.<br>');
+        var retry = el('button', 'nw-retry', 'Try again');
+        retry.type = 'button';
+        retry.addEventListener('click', function () { renderX(src); });
+        box.appendChild(retry);
+        xBody.appendChild(box);
+      });
+  }
+
+  function paintFeed(src, data) {
+    var posts = (data && data.posts) || [];
+    xBody.innerHTML = '';
+    if (!posts.length) {
+      xBody.appendChild(el('div', 'nw-empty', '<b>No posts yet</b>@' + esc(src.handle) + ' has not posted anything public.'));
+      return;
+    }
+    var list = el('ul', 'nw-feed');
+    posts.slice(0, shown).forEach(function (p) { list.appendChild(postCard(p, data.user)); });
+    xBody.appendChild(list);
+    if (posts.length > shown) {
+      var more = el('button', 'nw-more', 'Show older posts');
+      more.type = 'button';
+      more.addEventListener('click', function () { shown += CFG.xPageSize; paintFeed(src, data); });
+      xBody.appendChild(more);
+    }
+  }
+
+  function postCard(p, user) {
+    var li = el('li', 'nw-post');
+    var who = p.user || user || {};
+    var d = new Date(p.date);
+    var html = '<div class="nw-post-head"><img class="nw-post-av" alt="" loading="lazy" src="' + esc(who.avatar || '') + '"><div class="nw-post-who"><div class="nw-post-name">' + esc(who.name || '') + '</div><div class="nw-post-handle">@' + esc(who.handle || '') + '</div></div>';
+    html += '<a class="nw-post-time" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(isFinite(d) ? d.toLocaleString() : '') + '">' + esc(ago(p.date)) + '</a></div>';
+    if (p.repostOf) html += '<div class="nw-post-handle" style="margin-bottom:6px">Reposted from @' + esc(p.repostOf) + '</div>';
+    html += '<div class="nw-post-text">' + (p.html || esc(p.text)) + '</div>';
+    if (p.media && p.media.length) {
+      var n = Math.min(p.media.length, 4);
+      html += '<div class="nw-media n' + n + '">';
+      p.media.slice(0, 4).forEach(function (m) {
+        if (m.type === 'video' && m.src) html += '<video controls preload="none" playsinline poster="' + esc(m.thumb || '') + '" src="' + esc(m.src) + '"></video>';
+        else html += '<a href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer"><img alt="" loading="lazy" src="' + esc(m.thumb || m.src || '') + '"></a>';
+      });
+      html += '</div>';
+    }
+    if (p.quote) html += '<a class="nw-quote" style="display:block" href="' + esc(p.quote.url) + '" target="_blank" rel="noopener noreferrer"><b>' + esc(p.quote.name) + '</b> @' + esc(p.quote.handle) + '<br>' + esc(p.quote.text) + '</a>';
+    html += '<div class="nw-post-stats"><span class="nw-st-reply">' + num(p.replies) + '</span><span class="nw-st-rt">' + num(p.reposts) + '</span><span class="nw-st-like">' + num(p.likes) + '</span></div>';
+    li.innerHTML = html;
+    return li;
+  }
+
+  buildTabs();
+  var hashKey = (location.hash || '').replace(/^#/, '');
+  select(sourceByKey(hashKey) ? hashKey : CFG.sources[0].key, false);
+  window.addEventListener('hashchange', function () {
+    var k = (location.hash || '').replace(/^#/, '');
+    if (sourceByKey(k)) select(k, false);
+  });
+})();
+</script>

@@ -50,11 +50,6 @@
 .nx-screen-msg b{font-family:'Audiowide',sans-serif;font-size:16px;color:#fff;font-weight:400}
 .nx-screen-msg span{color:var(--mute);max-width:44ch}
 
-.nx-notice{position:relative;padding:18px 20px 18px 22px;margin-bottom:12px;border-radius:14px;background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--sig)}
-.nx-notice-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin-bottom:6px}
-.nx-notice-kind{font-family:'Audiowide',sans-serif;font-size:11px;color:var(--sig)}
-.nx-notice-date{font-size:12px;color:var(--faint)}
-.nx-notice-title{font-family:'Audiowide',sans-serif;font-size:18px;line-height:1.3;color:#fff;margin:0 0 6px;font-weight:400}
 .nx-rich{color:var(--mute);font-size:15px;word-break:break-word}
 .nx-rich p{margin:0 0 10px}
 .nx-rich h4{font-family:'Audiowide',sans-serif;font-weight:400;color:#fff;font-size:15px;margin:14px 0 6px}
@@ -68,8 +63,6 @@
 .nx-rich .nx-emoji{display:inline-block;width:1.35em;height:1.35em;vertical-align:-.3em;object-fit:contain}
 .nx-rich .nx-spoiler{background:#2a2540;color:transparent;border-radius:3px;cursor:pointer}
 .nx-rich .nx-spoiler.nx-open{color:inherit;background:rgba(255,255,255,.08)}
-.nx-notice-img{width:100%;border-radius:10px;margin-top:10px!important;border:1px solid var(--line)}
-.nx-notice .nx-btn{margin-top:12px}
 
 #nxTimeline:not(:empty){background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:4px 20px 8px}
 .nx-item-meta{flex-wrap:wrap}
@@ -80,7 +73,6 @@
 .nx-item{position:relative;padding:18px 0 18px 20px;border-bottom:1px solid var(--line)}
 .nx-day:last-child .nx-item:last-child{border-bottom:0}
 .nx-item::before{content:'';position:absolute;left:-4px;top:26px;width:7px;height:7px;border-radius:50%;background:var(--panel2);box-shadow:0 0 0 1px var(--faint)}
-.nx-item.nx-is-notice::before{background:var(--sig);box-shadow:0 0 0 3px color-mix(in srgb,var(--sig) 25%,transparent)}
 .nx-item-meta{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:12.5px;color:var(--faint)}
 .nx-item-meta b{color:var(--mute);font-weight:700}
 .nx-item-meta a{color:var(--faint)}
@@ -96,7 +88,6 @@
 .nx-stats svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2}
 #ugNews .nx-more{display:block;width:100%;margin-top:14px;padding:12px;border-radius:12px;border:1px dashed var(--line)!important;font-family:'Audiowide',sans-serif;font-size:11px;color:var(--mute)}
 #ugNews .nx-more:hover{color:#fff;border-color:rgba(255,255,255,.25)!important}
-.nx-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;margin-top:22px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--faint)}
 .nx-skel{height:14px;border-radius:7px;background:var(--panel2);margin:10px 0;animation:nxPulse 1.3s ease-in-out infinite}
 @keyframes nxPulse{50%{opacity:.45}}
 
@@ -153,6 +144,63 @@
   #ugNews .nx-card-thumb img{min-height:96px}
   .nx-play{width:50px;height:50px}
 }
+#ugNews [hidden]{display:none!important}
+.nx-modes{display:flex;gap:8px;margin:-2px 0 14px}
+#ugNews .nx-mode{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--mute);font-family:'Audiowide',sans-serif;font-size:12px;transition:color .15s,border-color .15s,background .15s}
+#ugNews .nx-mode:hover{color:#fff;border-color:rgba(255,255,255,.22)}
+#ugNews .nx-mode svg{width:15px;height:15px;fill:currentColor;flex:0 0 auto}
+#ugNews .nx-mode[aria-selected="true"]{color:#0a0612;background:var(--sig);border-color:transparent}
+.dc{background:#313338;border:1px solid rgba(255,255,255,.06);border-radius:16px;overflow:hidden;color:#dbdee1;font-family:'gg sans','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:15px;line-height:1.375}
+.dc-head{display:flex;align-items:center;gap:8px;min-width:0;padding:12px 16px;border-bottom:1px solid #1f2023;box-shadow:0 1px 0 rgba(4,4,5,.2)}
+.dc-head>svg{width:22px;height:22px;fill:#80848e;flex:0 0 auto}
+.dc-hash{color:#80848e;font-size:22px;line-height:1}
+.dc-chan{color:#f2f3f5;font-weight:700;white-space:nowrap}
+.dc-server{min-width:0;padding-left:10px;border-left:1px solid #3f4147;color:#949ba4;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#ugNews .dc-join{margin-left:auto;flex:0 0 auto;padding:6px 14px;border-radius:4px;background:#248046;color:#fff;font-size:13px;font-weight:600;text-decoration:none}
+#ugNews .dc-join:hover{background:#1a6334;text-decoration:none}
+.dc-body{padding:4px 0 16px}
+.dc-pins{margin:12px 16px 4px;padding:10px 0 8px;border-radius:8px;background:#2b2d31;border:1px solid #1f2023}
+.dc-pins-title{display:flex;align-items:center;gap:6px;padding:0 16px 2px;color:#949ba4;font-size:12px;font-weight:600}
+.dc-pins-title svg{width:14px;height:14px;fill:currentColor}
+.dc-pins .dc-msg{margin-top:8px}
+.dc-divider{display:flex;align-items:center;gap:8px;margin:18px 16px 4px;color:#949ba4;font-size:12px;font-weight:600}
+.dc-divider::before,.dc-divider::after{content:'';flex:1;height:1px;background:#3f4147}
+.dc-msg{display:grid;grid-template-columns:40px minmax(0,1fr);gap:0 16px;margin-top:14px;padding:3px 16px}
+.dc-msg:hover{background:rgba(2,2,2,.06)}
+.dc-msg.dc-cont{margin-top:0;padding-top:1px}
+#ugNews .dc-av{width:40px;height:40px;margin-top:2px;border-radius:50%;object-fit:cover;background:#1e1f22}
+.dc-gutter{padding-top:3px;font-size:11px;color:#949ba4;text-align:right;opacity:0;white-space:nowrap}
+.dc-msg:hover .dc-gutter{opacity:1}
+.dc-main{min-width:0}
+.dc-meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px}
+.dc-name{color:#f2f3f5;font-weight:600}
+.dc-time{color:#949ba4;font-size:12px}
+.dc .nx-rich{color:#dbdee1;font-size:15px;line-height:1.375}
+.dc .nx-rich p{margin:0 0 4px}
+.dc .nx-rich b,.dc .nx-rich strong{color:inherit}
+.dc .nx-rich h4{margin:10px 0 4px;color:#f2f3f5;font-family:inherit;font-size:20px;font-weight:700}
+.dc .nx-rich small{color:#949ba4}
+.dc .nx-rich blockquote{border-left:4px solid #4e5058}
+.dc .nx-rich code{background:#2b2d31;color:#dbdee1}
+#ugNews .dc .nx-rich a{color:#00a8fc}
+.dc-title{margin:0 0 2px;color:#f2f3f5;font-weight:700}
+.dc .nx-media{max-width:520px;margin-top:6px;border:0;border-radius:8px}
+#ugNews .dc-btn{display:inline-flex;margin-top:8px;padding:6px 14px;border-radius:4px;background:#4e5058;color:#fff;font-size:14px;font-weight:500;text-decoration:none}
+#ugNews .dc-btn:hover{background:#6d6f78;text-decoration:none}
+.dc-empty{display:flex;flex-direction:column;align-items:center;gap:8px;padding:44px 20px;text-align:center;color:#949ba4}
+.dc-empty b{color:#f2f3f5;font-size:16px}
+.dc-empty svg{width:48px;height:48px;fill:#4e5058}
+#ugNews .dc-more{display:block;width:calc(100% - 32px);margin:14px 16px 0;padding:10px;border-radius:6px;background:#2b2d31;color:#dbdee1;font-size:14px}
+#ugNews .dc-more:hover{background:#35373c}
+@media (max-width:640px){
+  .nx-modes{gap:6px}
+  #ugNews .nx-mode{flex:1}
+  .dc-msg{grid-template-columns:36px minmax(0,1fr);gap:0 12px;padding:3px 12px}
+  #ugNews .dc-av{width:36px;height:36px}
+  .dc-server{display:none}
+  .dc-divider{margin:16px 12px 4px}
+  .dc-pins{margin:12px 12px 4px}
+}
 @media (prefers-reduced-motion:reduce){#ugNews *,#ugNews *::before{animation:none!important;transition:none!important}}
 @media (max-width:640px){
   #ugNews{font-size:14px}
@@ -178,13 +226,13 @@
 
 <div id="ugNews">
   <div class="nx-switch" role="tablist" aria-label="News source"></div>
+  <div class="nx-modes" role="tablist" aria-label="Feed type"></div>
   <section class="nx-monitor" id="nxMonitor" aria-live="polite">
     <div class="nx-screen" id="nxScreen"></div>
     <div class="nx-static" aria-hidden="true"></div>
   </section>
-  <div id="nxNotices"></div>
   <div id="nxTimeline"></div>
-  <div class="nx-foot" id="nxFoot"></div>
+  <div id="nxDiscord" hidden></div>
 </div>
 <style>.nx-short{display:none}@media (max-width:640px){.nx-full{display:none}.nx-short{display:inline}}</style>
 <script>
@@ -196,31 +244,36 @@
     mediaProxy: '/news-media?u=',
     pageSize: 10,
     sources: [
-      { key: 'scottgames', name: 'ScottGames', short: 'FNAF', handle: 'FNAF_ScottGames', color: '#ffb13b' },
-      { key: 'fntd', name: 'Five Nights TD', short: 'FNTD', handle: 'FiveNightsTD', color: '#b98bff' },
-      { key: 'bbn', name: 'Bite By Night', short: 'BBN', handle: 'bitebynightdev', color: '#ff4b4b' }
+      { key: 'scottgames', name: 'ScottGames', short: 'FNAF', handle: 'FNAF_ScottGames', color: '#ffb13b', discord: '' },
+      { key: 'fntd', name: 'Five Nights TD', short: 'FNTD', handle: 'FiveNightsTD', color: '#b98bff', discord: 'https://discord.gg/fivenightstd' },
+      { key: 'bbn', name: 'Bite By Night', short: 'BBN', handle: 'bitebynightdev', color: '#ff4b4b', discord: 'https://discord.gg/bitebynight' }
     ],
     fallbackAvatar: 'https://images.fntduserguide.com/circle_done.png'
   };
 
   var root = document.getElementById('ugNews');
   var switchEl = root.querySelector('.nx-switch');
+  var modesEl = root.querySelector('.nx-modes');
   var monitor = document.getElementById('nxMonitor');
   var screen = document.getElementById('nxScreen');
-  var noticesEl = document.getElementById('nxNotices');
   var timelineEl = document.getElementById('nxTimeline');
-  var footEl = document.getElementById('nxFoot');
+  var discordEl = document.getElementById('nxDiscord');
   var feeds = {};
   var extras = {};
   var notices = null;
   var current = null;
+  var mode = 'x';
   var shown = CFG.pageSize;
+  var dcShown = CFG.pageSize;
   var registry = {};
-  var noticeSeq = 0;
+  var seq = 0;
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   var DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   var X_SVG = '<svg class="nx-xmark" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.8-6.3L6.4 22H3.3l7.3-8.3L1 2h6.3l4.4 5.8zm-1.1 18h1.7L6.3 3.9H4.5z"/></svg>';
+  var DC_PATH = 'M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.1 13.1 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z';
+  var DC_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + DC_PATH + '"/></svg>';
+  var PIN_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3a1 1 0 0 1 .7 1.7L15.4 6l2.6 5.2 1.3-1.3a1 1 0 1 1 1.4 1.4L17 14.9l-.1.1 4.8 4.8a1 1 0 0 1-1.4 1.4L15.5 16.4l-3.6 3.7a1 1 0 0 1-1.4-1.4l1.3-1.3L6.6 14.8l-1.3 1.3a1 1 0 0 1-1.4-1.4L15.3 3.3A1 1 0 0 1 16 3z"/></svg>';
   var PLAY = '<span class="nx-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>';
   var ICONS = {
     reply: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.1A8 8 0 1 1 21 12z"/></svg>',
@@ -233,6 +286,7 @@
   function toDate(s) { var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s || ''); return m ? new Date(+m[1], +m[2] - 1, +m[3], 12) : new Date(s); }
   function dayKey(d) { return d.getFullYear() + '-' + d.getMonth() + '-' + d.getDate(); }
   function clock(d) { return d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }); }
+  function shortDate(d) { return (d.getMonth() + 1) + '/' + d.getDate() + '/' + d.getFullYear(); }
   function dur(ms) { var s = Math.max(0, Math.round((ms || 0) / 1000)); return Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2); }
   function pbs(u, size) {
     if (!/^https:\/\/pbs\.twimg\.com\/(media|ext_tw_video_thumb|amplify_video_thumb|tweet_video_thumb)\//.test(u || '')) return u || '';
@@ -264,7 +318,23 @@
     return null;
   }
   function avatarOf(src) { var u = userOf(src); return (u && u.avatar) || CFG.fallbackAvatar; }
-  function isLoading(src) { return feeds[src.handle] === 'loading' || notices === null || extras[src.key] === 'loading'; }
+  function xLoading(src) { return feeds[src.handle] === 'loading' || notices === null || extras[src.key] === 'loading'; }
+  function xItems(src) {
+    return postsFor(src).map(function (p) { return { date: new Date(p.date), post: p }; }).sort(function (a, b) { return b.date - a.date; });
+  }
+  function msgsFor(src) {
+    var list = (notices && Array.isArray(notices[src.key])) ? notices[src.key] : [];
+    return list.map(function (n) { return { n: n, date: n.time ? new Date(n.time) : toDate(n.date), hasTime: !!n.time }; })
+      .filter(function (m) { return isFinite(m.date); })
+      .sort(function (a, b) { return b.date - a.date; });
+  }
+
+  function tabKeys(list, i, onPick, e) {
+    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+    e.preventDefault();
+    var n = (i + (e.key === 'ArrowRight' ? 1 : -1) + list.length) % list.length;
+    onPick(n);
+  }
 
   function buildSwitch() {
     CFG.sources.forEach(function (src, i) {
@@ -274,37 +344,57 @@
       b.id = 'nxCam-' + src.key;
       b.setAttribute('role', 'tab');
       b.setAttribute('aria-selected', 'false');
-      b.setAttribute('aria-controls', 'nxMonitor');
       b.style.setProperty('--cam', src.color);
       b.innerHTML = '<img class="nx-cam-av" alt="" src="' + esc(CFG.fallbackAvatar) + '"><span class="nx-cam-name"><span class="nx-full">' + esc(src.name) + '</span><span class="nx-short">' + esc(src.short) + '</span></span><span class="nx-cam-when">Tuning in</span><span class="nx-rec" aria-hidden="true"></span>';
       b.addEventListener('click', function () { select(src.key, true); });
-      b.addEventListener('keydown', function (e) {
-        if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
-        e.preventDefault();
-        var n = (i + (e.key === 'ArrowRight' ? 1 : -1) + CFG.sources.length) % CFG.sources.length;
-        select(CFG.sources[n].key, true);
-        switchEl.children[n].focus();
-      });
+      b.addEventListener('keydown', function (e) { tabKeys(CFG.sources, i, function (n) { select(CFG.sources[n].key, true); switchEl.children[n].focus(); }, e); });
       switchEl.appendChild(b);
+    });
+  }
+
+  var MODES = [{ key: 'x', label: 'Twitter', icon: X_SVG }, { key: 'discord', label: 'Discord', icon: DC_SVG }];
+  function buildModes() {
+    MODES.forEach(function (md, i) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'nx-mode';
+      b.id = 'nxMode-' + md.key;
+      b.setAttribute('role', 'tab');
+      b.setAttribute('aria-selected', 'false');
+      b.innerHTML = md.icon + '<span>' + md.label + '</span>';
+      b.addEventListener('click', function () { setMode(md.key, true); });
+      b.addEventListener('keydown', function (e) { tabKeys(MODES, i, function (n) { setMode(MODES[n].key, true); modesEl.children[n].focus(); }, e); });
+      modesEl.appendChild(b);
     });
   }
 
   function paintSwitch() {
     CFG.sources.forEach(function (src) {
       var b = document.getElementById('nxCam-' + src.key);
-      var items = itemsFor(src);
+      var xi = xItems(src), ms = msgsFor(src);
+      var latest = null;
+      if (xi.length) latest = xi[0].date;
+      if (ms.length && (!latest || ms[0].date > latest)) latest = ms[0].date;
       b.querySelector('.nx-cam-av').src = avatarOf(src);
-      b.querySelector('.nx-cam-when').textContent = items.length ? ago(items[0].date) : (isLoading(src) ? 'Tuning in' : 'No signal');
+      b.querySelector('.nx-cam-when').textContent = latest ? ago(latest) : (xLoading(src) ? 'Tuning in' : 'No signal');
     });
   }
 
-  function itemsFor(src) {
-    var out = postsFor(src).map(function (p) { return { kind: 'x', date: new Date(p.date), post: p }; });
-    ((notices && Array.isArray(notices[src.key]) && notices[src.key]) || []).forEach(function (n) {
-      if (!n.pinned) out.push({ kind: 'notice', date: toDate(n.date), notice: n });
+  function paintModes() {
+    Array.prototype.forEach.call(modesEl.children, function (b) {
+      var on = b.id === 'nxMode-' + mode;
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+      b.tabIndex = on ? 0 : -1;
+      b.setAttribute('aria-controls', b.id === 'nxMode-x' ? 'nxMonitor' : 'nxDiscord');
     });
-    out.sort(function (a, b) { return b.date - a.date; });
-    return out;
+  }
+
+  function writeHash() {
+    try { history.replaceState(null, '', '#' + current.key + (mode === 'discord' ? '/discord' : '')); } catch (e) {}
+  }
+  function readHash() {
+    var parts = (location.hash || '').replace(/^#/, '').split('/');
+    return { key: parts[0], mode: parts[1] === 'discord' ? 'discord' : 'x' };
   }
 
   function select(key, fromUser) {
@@ -312,18 +402,28 @@
     var changed = !current || current.key !== src.key;
     current = src;
     shown = CFG.pageSize;
+    dcShown = CFG.pageSize;
     root.style.setProperty('--sig', src.color);
     Array.prototype.forEach.call(switchEl.children, function (b) {
       var on = b.id === 'nxCam-' + src.key;
       b.setAttribute('aria-selected', on ? 'true' : 'false');
       b.tabIndex = on ? 0 : -1;
     });
-    if (fromUser) { try { history.replaceState(null, '', '#' + src.key); } catch (e) {} }
-    if (changed) {
+    if (fromUser) writeHash();
+    if (changed && mode === 'x') {
       monitor.classList.remove('nx-switching');
       void monitor.offsetWidth;
       monitor.classList.add('nx-switching');
     }
+    render();
+  }
+
+  function setMode(m, fromUser) {
+    if (m === mode) return;
+    mode = m;
+    shown = CFG.pageSize;
+    dcShown = CFG.pageSize;
+    if (fromUser) writeHash();
     render();
   }
 
@@ -332,11 +432,18 @@
   function render() {
     var src = current;
     paintSwitch();
-    var items = itemsFor(src);
-    renderScreen(src, items[0], isLoading(src));
-    renderNotices(src);
-    renderTimeline(src, items.slice(1), isLoading(src));
-    renderFoot(src);
+    paintModes();
+    var isX = mode === 'x';
+    monitor.hidden = !isX;
+    timelineEl.hidden = !isX;
+    discordEl.hidden = isX;
+    if (isX) {
+      var items = xItems(src);
+      renderScreen(src, items[0], xLoading(src));
+      renderTimeline(src, items.slice(1), xLoading(src));
+    } else {
+      renderDiscord(src);
+    }
     wireGifs();
   }
 
@@ -348,8 +455,12 @@
     if (n === 1) {
       var m0 = list[0], r = m0.w && m0.h ? m0.w / m0.h : 0;
       if (m0.type !== 'photo') { cls += ' nx-vid'; if (!r) r = 16 / 9; }
-      if (r) { style = ' style="aspect-ratio:' + Math.max(m0.type === 'photo' ? 0.75 : 0.8, Math.min(r, 2.2)).toFixed(4) + '"'; if (m0.type === 'photo' && (r > 2.2 || r < 0.75)) cls += ' nx-fit'; }
-      else cls += ' nx-free';
+      if (r) {
+        style = ' style="aspect-ratio:' + Math.max(m0.type === 'photo' ? 0.75 : 0.8, Math.min(r, 2.2)).toFixed(4) + '"';
+        if (m0.type === 'photo' && (r > 2.2 || r < 0.75)) cls += ' nx-fit';
+      } else {
+        cls += ' nx-free';
+      }
     }
     return '<div class="' + cls + '"' + style + '>' + list.map(function (m, i) { return cellHtml(id, m, i, n === 1); }).join('') + '</div>';
   }
@@ -388,41 +499,13 @@
       screen.innerHTML = '<div class="nx-screen-msg"><b>No signal from ' + esc(src.name) + '</b><span>Posts could not be loaded right now. The latest ones are always on X.</span><a class="nx-btn" href="https://x.com/' + esc(src.handle) + '" target="_blank" rel="noopener noreferrer">Open @' + esc(src.handle) + ' on X</a></div>';
       return;
     }
-    var html = '<div class="nx-lead-body">';
-    if (lead.kind === 'x') {
-      var p = lead.post, who = p.user || userOf(src) || {};
-      html += repostHtml(src, p);
-      html += '<div class="nx-lead-src"><img alt="" src="' + esc(who.avatar || avatarOf(src)) + '"><span><b>' + esc(who.name || src.name) + '</b> @' + esc(who.handle || src.handle) + '</span><span class="nx-lead-clock" title="' + esc(lead.date.toLocaleString()) + '">' + esc(clock(lead.date)) + '</span></div>';
-      if (p.text) html += '<div class="nx-lead-text' + (p.text.length > 200 ? ' nx-long' : '') + '">' + (p.html || esc(p.text)) + '</div>';
-      html += mediaHtml('x' + p.id, p.url, p.media) + cardHtml(p.card) + quoteHtml(p);
-      html += '<div class="nx-lead-actions"><a class="nx-btn" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer">' + X_SVG + ' View on X</a><a class="nx-btn nx-quiet" href="https://x.com/' + esc(src.handle) + '" target="_blank" rel="noopener noreferrer">Follow @' + esc(src.handle) + '</a></div>';
-    } else {
-      var n = lead.notice;
-      html += '<div class="nx-lead-src"><img alt="" src="' + esc(avatarOf(src)) + '"><span><b>' + esc(src.name) + '</b> announcement</span><span class="nx-lead-clock">' + esc(MONTHS[lead.date.getMonth()] + ' ' + lead.date.getDate()) + '</span></div>';
-      if (n.title) html += '<div class="nx-lead-text">' + esc(n.title) + '</div>';
-      if (n.body) html += '<div class="nx-rich" style="margin-top:10px">' + n.body + '</div>';
-      if (n.image) html += mediaHtml('n' + (noticeSeq++), '', [{ type: 'photo', src: n.image, thumb: n.image }]);
-      if (n.link && n.link.href) html += '<div class="nx-lead-actions">' + linkBtn(n.link) + '</div>';
-    }
-    screen.innerHTML = html + '</div>';
-  }
-
-  function linkBtn(link) {
-    var ext = /^https?:/.test(link.href);
-    return '<a class="nx-btn" href="' + esc(link.href) + '"' + (ext ? ' target="_blank" rel="noopener noreferrer"' : '') + '>' + esc(link.label || 'Read more') + '</a>';
-  }
-
-  function renderNotices(src) {
-    var list = ((notices && Array.isArray(notices[src.key]) && notices[src.key]) || []).filter(function (n) { return n.pinned; });
-    list.sort(function (a, b) { return toDate(b.date) - toDate(a.date); });
-    noticesEl.innerHTML = list.map(function (n) {
-      var d = toDate(n.date);
-      return '<article class="nx-notice"><div class="nx-notice-head"><span class="nx-notice-kind">Pinned announcement</span><span class="nx-notice-date">' + esc(MONTHS[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear()) + '</span></div>' +
-        (n.title ? '<h3 class="nx-notice-title">' + esc(n.title) + '</h3>' : '') +
-        (n.body ? '<div class="nx-rich">' + n.body + '</div>' : '') +
-        (n.image ? mediaHtml('n' + (noticeSeq++), '', [{ type: 'photo', src: n.image, thumb: n.image }]) : '') +
-        (n.link && n.link.href ? linkBtn(n.link) : '') + '</article>';
-    }).join('');
+    var p = lead.post, who = p.user || userOf(src) || {};
+    var html = '<div class="nx-lead-body">' + repostHtml(src, p);
+    html += '<div class="nx-lead-src"><img alt="" src="' + esc(who.avatar || avatarOf(src)) + '"><span><b>' + esc(who.name || src.name) + '</b> @' + esc(who.handle || src.handle) + '</span><span class="nx-lead-clock" title="' + esc(lead.date.toLocaleString()) + '">' + esc(clock(lead.date)) + '</span></div>';
+    if (p.text) html += '<div class="nx-lead-text' + (p.text.length > 200 ? ' nx-long' : '') + '">' + (p.html || esc(p.text)) + '</div>';
+    html += mediaHtml('x' + p.id, p.url, p.media) + cardHtml(p.card) + quoteHtml(p);
+    html += '<div class="nx-lead-actions"><a class="nx-btn" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer">' + X_SVG + ' View on X</a><a class="nx-btn nx-quiet" href="https://x.com/' + esc(src.handle) + '" target="_blank" rel="noopener noreferrer">Follow @' + esc(src.handle) + '</a></div></div>';
+    screen.innerHTML = html;
   }
 
   function renderTimeline(src, items, loading) {
@@ -440,7 +523,7 @@
     var html = groups.map(function (g) {
       var d = g.date, sub = dayKey(d) === dayKey(today) ? 'Today' : dayKey(d) === dayKey(yest) ? 'Yesterday' : DAYS[d.getDay()];
       if (d.getFullYear() !== today.getFullYear()) sub += ' ' + d.getFullYear();
-      return '<section class="nx-day"><div class="nx-day-label"><b>' + MONTHS[d.getMonth()] + ' ' + d.getDate() + '</b>' + sub + '</div><div class="nx-day-items">' + g.items.map(function (it) { return it.kind === 'x' ? xItem(src, it) : noticeItem(it); }).join('') + '</div></section>';
+      return '<section class="nx-day"><div class="nx-day-label"><b>' + MONTHS[d.getMonth()] + ' ' + d.getDate() + '</b>' + sub + '</div><div class="nx-day-items">' + g.items.map(function (it) { return xItem(src, it); }).join('') + '</div></section>';
     }).join('');
     if (items.length > shown) html += '<button type="button" class="nx-more" id="nxMore">Show older posts</button>';
     timelineEl.innerHTML = html;
@@ -459,27 +542,64 @@
     return html;
   }
 
-  function noticeItem(it) {
-    var n = it.notice;
-    return '<article class="nx-item nx-is-notice"><div class="nx-item-meta"><b style="color:var(--sig)">Announcement</b></div>' +
-      (n.title ? '<h3 class="nx-item-title">' + esc(n.title) + '</h3>' : '') +
-      (n.body ? '<div class="nx-rich">' + n.body + '</div>' : '') +
-      (n.image ? mediaHtml('n' + (noticeSeq++), '', [{ type: 'photo', src: n.image, thumb: n.image }]) : '') +
-      (n.link && n.link.href ? linkBtn(n.link) : '') + '</article>';
+  function authorOf(src, n) {
+    var a = n.author;
+    var name = typeof a === 'string' ? a : (a && a.name);
+    return { name: name || src.name, avatar: (a && typeof a === 'object' && a.avatar) || avatarOf(src) };
   }
 
-  function renderFoot(src) {
-    var f = feedOf(src), left = '';
-    if (f && f.posts && f.posts.length) {
-      left = 'Posts from @' + esc(src.handle) + ' on X';
-      if (f.fetchedAt) left += ', checked ' + esc(ago(new Date(f.fetchedAt)));
-      left += f.stale ? '. X is limiting requests, so this is the last saved copy.' : '.';
-    } else if (extrasOf(src).length) {
-      left = 'Selected posts from @' + esc(src.handle) + ' on X.';
-    } else if (!isLoading(src)) {
-      left = 'X posts are unavailable right now.';
+  function dcTime(m) {
+    if (!m.hasTime) return shortDate(m.date);
+    var t = clock(m.date);
+    if (dayKey(m.date) === dayKey(new Date())) return 'Today at ' + t;
+    if (dayKey(m.date) === dayKey(new Date(Date.now() - 86400000))) return 'Yesterday at ' + t;
+    return shortDate(m.date) + ' ' + t;
+  }
+
+  function dcMsg(src, m, prev) {
+    var n = m.n, who = authorOf(src, n);
+    var cont = !!(prev && m.hasTime && prev.hasTime && authorOf(src, prev.n).name === who.name && Math.abs(prev.date - m.date) < 420000);
+    var imgs = Array.isArray(n.images) ? n.images : (n.image ? [n.image] : []);
+    var html = '<article class="dc-msg' + (cont ? ' dc-cont' : '') + '">';
+    html += cont ? '<span class="dc-gutter" aria-hidden="true">' + esc(clock(m.date)) + '</span>' : '<img class="dc-av" alt="" loading="lazy" src="' + esc(who.avatar) + '">';
+    html += '<div class="dc-main">';
+    if (!cont) html += '<div class="dc-meta"><span class="dc-name">' + esc(who.name) + '</span><time class="dc-time" datetime="' + esc(m.date.toISOString()) + '" title="' + esc(m.date.toLocaleString()) + '">' + esc(dcTime(m)) + '</time></div>';
+    html += '<div class="dc-content nx-rich">' + (n.title ? '<div class="dc-title">' + esc(n.title) + '</div>' : '') + (n.body || '') + '</div>';
+    if (imgs.length) html += mediaHtml('d' + (seq++), '', imgs.slice(0, 4).map(function (u) { return { type: 'photo', src: u, thumb: u }; }));
+    if (n.link && n.link.href) html += '<a class="dc-btn" href="' + esc(n.link.href) + '"' + (/^https?:/.test(n.link.href) ? ' target="_blank" rel="noopener noreferrer"' : '') + '>' + esc(n.link.label || 'Open link') + '</a>';
+    return html + '</div></article>';
+  }
+
+  function renderDiscord(src) {
+    var msgs = msgsFor(src);
+    var head = '<div class="dc-head">' + DC_SVG + '<span class="dc-hash" aria-hidden="true">#</span><span class="dc-chan">announcements</span><span class="dc-server">' + esc(src.name) + '</span>' + (src.discord ? '<a class="dc-join" href="' + esc(src.discord) + '" target="_blank" rel="noopener noreferrer">Join server</a>' : '') + '</div>';
+    var open = '<section class="dc" aria-label="' + esc(src.name) + ' Discord messages">';
+    if (!msgs.length) {
+      var waiting = notices === null;
+      discordEl.innerHTML = open + head + '<div class="dc-empty">' + DC_SVG + '<b>' + (waiting ? 'Loading messages' : 'No messages yet') + '</b>' + (waiting ? '' : '<span>Discord announcements from ' + esc(src.name) + ' will show up here.</span>') + '</div></section>';
+      return;
     }
-    footEl.innerHTML = '<span>' + left + '</span><a href="https://x.com/' + esc(src.handle) + '" target="_blank" rel="noopener noreferrer">Follow @' + esc(src.handle) + '</a>';
+    var pinned = msgs.filter(function (m) { return m.n.pinned; });
+    var rest = msgs.filter(function (m) { return !m.n.pinned; });
+    var html = open + head + '<div class="dc-body">';
+    if (pinned.length) {
+      html += '<div class="dc-pins"><div class="dc-pins-title">' + PIN_SVG + (pinned.length === 1 ? 'Pinned message' : pinned.length + ' pinned messages') + '</div>' + pinned.map(function (m) { return dcMsg(src, m, null); }).join('') + '</div>';
+    }
+    var prev = null, lastDay = null;
+    rest.slice(0, dcShown).forEach(function (m) {
+      var k = dayKey(m.date);
+      if (k !== lastDay) {
+        html += '<div class="dc-divider" role="separator"><span>' + esc(m.date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })) + '</span></div>';
+        lastDay = k;
+        prev = null;
+      }
+      html += dcMsg(src, m, prev);
+      prev = m;
+    });
+    if (rest.length > dcShown) html += '<button type="button" class="dc-more" id="dcMore">Load older messages</button>';
+    discordEl.innerHTML = html + '</div></section>';
+    var more = document.getElementById('dcMore');
+    if (more) more.addEventListener('click', function () { dcShown += CFG.pageSize; renderDiscord(src); wireGifs(); });
   }
 
   var gifObserver = ('IntersectionObserver' in window && !reduceMotion) ? new IntersectionObserver(function (entries) {
@@ -612,12 +732,17 @@
   }
 
   buildSwitch();
-  var hash = (location.hash || '').replace(/^#/, '');
+  buildModes();
+  var start = readHash();
+  mode = start.mode;
   CFG.sources.forEach(function (src) { feeds[src.handle] = 'loading'; });
-  select(source(hash) ? hash : CFG.sources[0].key, false);
+  select(source(start.key) ? start.key : CFG.sources[0].key, false);
   window.addEventListener('hashchange', function () {
-    var k = (location.hash || '').replace(/^#/, '');
-    if (source(k) && (!current || current.key !== k)) select(k, false);
+    var h = readHash();
+    var modeChanged = h.mode !== mode;
+    mode = h.mode;
+    if (source(h.key) && (!current || current.key !== h.key)) select(h.key, false);
+    else if (modeChanged) render();
   });
 
   fetch(CFG.announcements, { cache: 'no-cache' })

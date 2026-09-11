@@ -244,9 +244,9 @@
     mediaProxy: '/news-media?u=',
     pageSize: 10,
     sources: [
-      { key: 'scottgames', name: 'ScottGames', short: 'FNAF', handle: 'FNAF_ScottGames', color: '#ffb13b', discord: '' },
-      { key: 'fntd', name: 'Five Nights TD', short: 'FNTD', handle: 'FiveNightsTD', color: '#b98bff', discord: 'https://discord.gg/fivenightstd' },
-      { key: 'bbn', name: 'Bite By Night', short: 'BBN', handle: 'bitebynightdev', color: '#ff4b4b', discord: 'https://discord.gg/bitebynight' }
+      { key: 'scottgames', name: 'ScottGames', short: 'FNAF', handle: 'FNAF_ScottGames', color: '#ffb13b', discord: '', hasDiscord: false },
+      { key: 'fntd', name: 'Five Nights TD', short: 'FNTD', handle: 'FiveNightsTD', color: '#b98bff', discord: 'https://discord.gg/fivenightstd', hasDiscord: true },
+      { key: 'bbn', name: 'Bite By Night', short: 'BBN', handle: 'bitebynightdev', color: '#ff4b4b', discord: 'https://discord.gg/bitebynight', hasDiscord: true }
     ],
     fallbackAvatar: 'https://images.fntduserguide.com/circle_done.png'
   };
@@ -302,6 +302,7 @@
     if (s < 86400 * 14) { var dd = Math.floor(s / 86400); return dd + (dd === 1 ? ' day ago' : ' days ago'); }
     return MONTHS[d.getMonth()] + ' ' + d.getDate() + (d.getFullYear() !== new Date().getFullYear() ? ', ' + d.getFullYear() : '');
   }
+  function viewOf(src) { return mode === 'discord' && src && src.hasDiscord ? 'discord' : 'x'; }
   function source(k) { for (var i = 0; i < CFG.sources.length; i++) if (CFG.sources[i].key === k) return CFG.sources[i]; return null; }
   function feedOf(src) { var f = feeds[src.handle]; return f && f !== 'loading' ? f : null; }
   function extrasOf(src) { return Array.isArray(extras[src.key]) ? extras[src.key] : []; }
@@ -363,7 +364,7 @@
       b.setAttribute('aria-selected', 'false');
       b.innerHTML = md.icon + '<span>' + md.label + '</span>';
       b.addEventListener('click', function () { setMode(md.key, true); });
-      b.addEventListener('keydown', function (e) { tabKeys(MODES, i, function (n) { setMode(MODES[n].key, true); modesEl.children[n].focus(); }, e); });
+      b.addEventListener('keydown', function (e) { tabKeys(MODES, i, function (n) { if (MODES[n].key === 'discord' && !current.hasDiscord) return; setMode(MODES[n].key, true); modesEl.children[n].focus(); }, e); });
       modesEl.appendChild(b);
     });
   }
@@ -381,8 +382,10 @@
   }
 
   function paintModes() {
+    var view = viewOf(current);
     Array.prototype.forEach.call(modesEl.children, function (b) {
-      var on = b.id === 'nxMode-' + mode;
+      if (b.id === 'nxMode-discord') b.hidden = !current.hasDiscord;
+      var on = b.id === 'nxMode-' + view;
       b.setAttribute('aria-selected', on ? 'true' : 'false');
       b.tabIndex = on ? 0 : -1;
       b.setAttribute('aria-controls', b.id === 'nxMode-x' ? 'nxMonitor' : 'nxDiscord');
@@ -390,7 +393,7 @@
   }
 
   function writeHash() {
-    try { history.replaceState(null, '', '#' + current.key + (mode === 'discord' ? '/discord' : '')); } catch (e) {}
+    try { history.replaceState(null, '', '#' + current.key + (viewOf(current) === 'discord' ? '/discord' : '')); } catch (e) {}
   }
   function readHash() {
     var parts = (location.hash || '').replace(/^#/, '').split('/');
@@ -410,7 +413,7 @@
       b.tabIndex = on ? 0 : -1;
     });
     if (fromUser) writeHash();
-    if (changed && mode === 'x') {
+    if (changed && viewOf(src) === 'x') {
       monitor.classList.remove('nx-switching');
       void monitor.offsetWidth;
       monitor.classList.add('nx-switching');
@@ -419,7 +422,8 @@
   }
 
   function setMode(m, fromUser) {
-    if (m === mode) return;
+    if (m === 'discord' && !current.hasDiscord) return;
+    if (m === viewOf(current)) return;
     mode = m;
     shown = CFG.pageSize;
     dcShown = CFG.pageSize;
@@ -433,7 +437,7 @@
     var src = current;
     paintSwitch();
     paintModes();
-    var isX = mode === 'x';
+    var isX = viewOf(src) === 'x';
     monitor.hidden = !isX;
     timelineEl.hidden = !isX;
     discordEl.hidden = isX;

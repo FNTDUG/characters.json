@@ -33,13 +33,7 @@
 
 .nx-lead{position:relative;display:block;color:inherit}
 .nx-lead:hover{text-decoration:none}
-.nx-lead-media{position:relative;aspect-ratio:16/9;background:#000}
-.nx-lead-media img,.nx-lead-media video{width:100%;height:100%;object-fit:cover}
-.nx-lead-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(5,4,11,.92));pointer-events:none;z-index:1}
-.nx-lead-media.nx-has-video::after{display:none}
 .nx-lead-body{position:relative;z-index:2;padding:22px 24px 24px}
-.nx-lead-media+.nx-lead-body{margin-top:-120px}
-.nx-lead-media.nx-has-video+.nx-lead-body{margin-top:0}
 .nx-lead-src{display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:13px;color:var(--mute)}
 .nx-lead-src img{width:26px;height:26px;border-radius:50%}
 .nx-lead-src b{color:#fff;font-weight:700}
@@ -95,11 +89,6 @@
 .nx-xmark{width:13px;height:13px;fill:currentColor;flex:0 0 auto}
 .nx-item-text{font-size:15px;color:var(--ink);word-break:break-word}
 .nx-item-title{font-family:'Audiowide',sans-serif;font-size:16px;color:#fff;margin:0 0 6px;font-weight:400}
-.nx-thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(120px,100%),1fr));gap:6px;margin-top:10px;max-width:520px}
-.nx-thumbs.nx-one{grid-template-columns:1fr}
-.nx-thumbs a,.nx-thumbs video{display:block;border-radius:9px;overflow:hidden;background:#000;border:1px solid var(--line)}
-.nx-thumbs img{width:100%;aspect-ratio:16/10;object-fit:cover}
-.nx-thumbs.nx-one img,.nx-thumbs.nx-one video{aspect-ratio:auto;max-height:320px;width:100%;object-fit:cover}
 .nx-quote{display:block;margin-top:10px;padding:10px 12px;border-radius:10px;border:1px solid var(--line);font-size:13.5px;color:var(--mute)}
 .nx-quote b{color:#fff}
 .nx-stats{display:flex;gap:18px;margin-top:10px;font-size:12px;color:var(--faint)}
@@ -111,6 +100,59 @@
 .nx-skel{height:14px;border-radius:7px;background:var(--panel2);margin:10px 0;animation:nxPulse 1.3s ease-in-out infinite}
 @keyframes nxPulse{50%{opacity:.45}}
 
+.nx-media{position:relative;display:grid;gap:2px;margin-top:12px;border:1px solid rgba(255,255,255,.14);border-radius:16px;overflow:hidden;background:#000}
+.nx-m1{max-height:560px}
+.nx-m2,.nx-m3,.nx-m4{grid-template-columns:1fr 1fr;aspect-ratio:16/9}
+.nx-m3,.nx-m4{grid-template-rows:1fr 1fr}
+.nx-m3>:first-child{grid-row:1/span 2}
+#ugNews .nx-cell{position:relative;display:block;width:100%;height:100%;min-width:0;min-height:0;overflow:hidden;background:#15121f;cursor:pointer;border-radius:0}
+#ugNews .nx-cell img,#ugNews .nx-cell video{width:100%;height:100%;object-fit:cover}
+#ugNews .nx-m1.nx-free{aspect-ratio:16/9}
+#ugNews .nx-fit .nx-cell img{object-fit:contain;background:#000}
+#ugNews .nx-vid .nx-cell img,#ugNews .nx-vid .nx-cell video,#ugNews .nx-playing video{object-fit:contain;background:#000}
+#ugNews .nx-playing{cursor:default}
+.nx-play{position:absolute;left:50%;top:50%;width:60px;height:60px;transform:translate(-50%,-50%);border-radius:50%;background:#1d9bf0;border:3px solid #fff;display:grid;place-items:center;box-shadow:0 2px 14px rgba(0,0,0,.45);transition:transform .15s;pointer-events:none}
+.nx-play svg{width:26px;height:26px;fill:#fff;margin-left:3px}
+#ugNews .nx-vcell:hover .nx-play,#ugNews .nx-card-lg:hover .nx-play{transform:translate(-50%,-50%) scale(1.06)}
+.nx-badge{position:absolute;left:10px;bottom:10px;padding:1px 6px;border-radius:5px;background:rgba(0,0,0,.77);color:#fff;font:700 12px/1.45 system-ui,-apple-system,'Segoe UI',sans-serif;pointer-events:none}
+.nx-badge-r{left:auto;right:10px}
+#ugNews .nx-card{display:block;margin-top:12px;border:1px solid rgba(255,255,255,.14);border-radius:16px;overflow:hidden;color:inherit;text-decoration:none;background:var(--panel2)}
+.nx-card-img{position:relative;display:block;aspect-ratio:1.91/1;background:#000}
+#ugNews .nx-card-img img{width:100%;height:100%;object-fit:cover}
+.nx-card-pill{position:absolute;left:10px;bottom:10px;max-width:calc(100% - 20px);padding:2px 8px;border-radius:5px;background:rgba(0,0,0,.77);color:#fff;font-size:13px;line-height:1.45;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nx-card-from{margin-top:5px;font-size:12.5px;color:var(--faint)}
+#ugNews .nx-card-sm{display:flex}
+.nx-card-thumb{flex:0 0 128px;align-self:stretch;background:#000;border-right:1px solid rgba(255,255,255,.14)}
+#ugNews .nx-card-thumb img{width:100%;height:100%;min-height:128px;object-fit:cover}
+.nx-card-body{display:flex;flex-direction:column;justify-content:center;gap:2px;padding:10px 14px;min-width:0;font-size:14px}
+.nx-card-domain{color:var(--faint);font-size:13px}
+.nx-card-title{color:#fff}
+.nx-card-desc{color:var(--mute);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.nx-repost{display:flex;align-items:center;gap:6px;margin-bottom:5px;font-size:12.5px;font-weight:700;color:var(--faint)}
+.nx-repost svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2}
+.nx-lead-body .nx-media,.nx-lead-body .nx-card{margin-top:14px}
+#nxLightbox{position:fixed;inset:0;z-index:10050;display:flex;align-items:center;justify-content:center;padding:60px 64px;background:rgba(0,0,0,.92)}
+#nxLightbox[hidden]{display:none}
+#nxLightbox .nx-lb-fig{margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;width:100%;height:100%}
+#nxLightbox .nx-lb-fig img{display:block;max-width:100%;max-height:calc(100vh - 150px);object-fit:contain;margin:0}
+#nxLightbox figcaption{color:rgba(255,255,255,.72);font:13px system-ui,-apple-system,'Segoe UI',sans-serif}
+#nxLightbox .nx-lb-close,#nxLightbox .nx-lb-nav{position:absolute;display:grid;place-items:center;width:40px;height:40px;padding:0;border:0;border-radius:50%;background:rgba(40,40,48,.85);color:#fff;font:22px/1 system-ui,sans-serif;cursor:pointer}
+#nxLightbox .nx-lb-close{top:14px;left:14px;font-size:16px}
+#nxLightbox .nx-lb-nav{top:50%;transform:translateY(-50%);font-size:30px}
+#nxLightbox .nx-lb-prev{left:14px}
+#nxLightbox .nx-lb-next{right:14px}
+#nxLightbox .nx-lb-nav[hidden]{display:none}
+#nxLightbox .nx-lb-close:hover,#nxLightbox .nx-lb-nav:hover{background:rgba(75,75,86,.95)}
+#nxLightbox :focus-visible{outline:2px solid #fff;outline-offset:2px}
+#nxLightbox .nx-lb-link{position:absolute;top:16px;right:16px;padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.35);color:#fff;font:600 13px system-ui,-apple-system,'Segoe UI',sans-serif;text-decoration:none}
+#nxLightbox .nx-lb-link:hover{background:rgba(255,255,255,.1)}
+@media (max-width:640px){
+  #nxLightbox{padding:60px 8px 72px}
+  #nxLightbox .nx-lb-nav{top:auto;bottom:16px;transform:none}
+  .nx-card-thumb{flex-basis:96px}
+  #ugNews .nx-card-thumb img{min-height:96px}
+  .nx-play{width:50px;height:50px}
+}
 @media (prefers-reduced-motion:reduce){#ugNews *,#ugNews *::before{animation:none!important;transition:none!important}}
 @media (max-width:640px){
   #ugNews{font-size:14px}
@@ -123,7 +165,6 @@
   .nx-static{inset:6px;border-radius:11px}
   .nx-screen{border-radius:11px}
   .nx-lead-body{padding:16px}
-  .nx-lead-media+.nx-lead-body{margin-top:-70px}
   .nx-day{grid-template-columns:minmax(0,1fr)}
   .nx-day-label{position:static;padding:16px 0 4px;display:flex;align-items:baseline;gap:8px}
   .nx-day-label b{font-size:11px;margin:0}
@@ -151,6 +192,8 @@
   var CFG = {
     announcements: 'https://raw.githubusercontent.com/FNTDUG/characters.json/refs/heads/main/news.json',
     xEndpoint: '/news-x/',
+    postsEndpoint: '/news-posts?ids=',
+    mediaProxy: '/news-media?u=',
     pageSize: 10,
     sources: [
       { key: 'scottgames', name: 'ScottGames', short: 'FNAF', handle: 'FNAF_ScottGames', color: '#ffb13b' },
@@ -168,12 +211,17 @@
   var timelineEl = document.getElementById('nxTimeline');
   var footEl = document.getElementById('nxFoot');
   var feeds = {};
+  var extras = {};
   var notices = null;
   var current = null;
   var shown = CFG.pageSize;
+  var registry = {};
+  var noticeSeq = 0;
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   var DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   var X_SVG = '<svg class="nx-xmark" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.8-6.3L6.4 22H3.3l7.3-8.3L1 2h6.3l4.4 5.8zm-1.1 18h1.7L6.3 3.9H4.5z"/></svg>';
+  var PLAY = '<span class="nx-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>';
   var ICONS = {
     reply: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.1A8 8 0 1 1 21 12z"/></svg>',
     repost: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4M21 13v2a3 3 0 0 1-3 3H3"/></svg>',
@@ -181,10 +229,16 @@
   };
 
   function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
-  function num(n) { n = Number(n) || 0; if (n >= 1e6) return (n / 1e6).toFixed(1).replace(/\.0$/, '') + 'M'; if (n >= 1e3) return (n / 1e3).toFixed(1).replace(/\.0$/, '') + 'K'; return String(n); }
+  function num(n) { n = Number(n) || 0; if (!n) return ''; if (n >= 1e6) return (n / 1e6).toFixed(1).replace(/\.0$/, '') + 'M'; if (n >= 1e3) return (n / 1e3).toFixed(1).replace(/\.0$/, '') + 'K'; return String(n); }
   function toDate(s) { var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s || ''); return m ? new Date(+m[1], +m[2] - 1, +m[3], 12) : new Date(s); }
   function dayKey(d) { return d.getFullYear() + '-' + d.getMonth() + '-' + d.getDate(); }
   function clock(d) { return d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }); }
+  function dur(ms) { var s = Math.max(0, Math.round((ms || 0) / 1000)); return Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2); }
+  function pbs(u, size) {
+    if (!/^https:\/\/pbs\.twimg\.com\/(media|ext_tw_video_thumb|amplify_video_thumb|tweet_video_thumb)\//.test(u || '')) return u || '';
+    return /[?&]name=\w+/.test(u) ? u.replace(/([?&])name=\w+/, '$1name=' + size) : u + (u.indexOf('?') > -1 ? '&' : '?') + 'name=' + size;
+  }
+  function vsrc(u) { return /^https:\/\/video\.twimg\.com\//.test(u || '') ? CFG.mediaProxy + encodeURIComponent(u) : (u || ''); }
   function ago(d) {
     var s = (Date.now() - d.getTime()) / 1000;
     if (!isFinite(s)) return '';
@@ -196,7 +250,21 @@
   }
   function source(k) { for (var i = 0; i < CFG.sources.length; i++) if (CFG.sources[i].key === k) return CFG.sources[i]; return null; }
   function feedOf(src) { var f = feeds[src.handle]; return f && f !== 'loading' ? f : null; }
-  function avatarOf(src) { var f = feedOf(src); return (f && f.user && f.user.avatar) || CFG.fallbackAvatar; }
+  function extrasOf(src) { return Array.isArray(extras[src.key]) ? extras[src.key] : []; }
+  function postsFor(src) {
+    var seen = {}, out = [], f = feedOf(src);
+    ((f && f.posts) || []).concat(extrasOf(src)).forEach(function (p) { if (p && p.id && !seen[p.id]) { seen[p.id] = 1; out.push(p); } });
+    return out;
+  }
+  function userOf(src) {
+    var f = feedOf(src);
+    if (f && f.user) return f.user;
+    var ex = extrasOf(src);
+    for (var i = 0; i < ex.length; i++) if (ex[i].user && !ex[i].repostOf) return ex[i].user;
+    return null;
+  }
+  function avatarOf(src) { var u = userOf(src); return (u && u.avatar) || CFG.fallbackAvatar; }
+  function isLoading(src) { return feeds[src.handle] === 'loading' || notices === null || extras[src.key] === 'loading'; }
 
   function buildSwitch() {
     CFG.sources.forEach(function (src, i) {
@@ -226,18 +294,13 @@
       var b = document.getElementById('nxCam-' + src.key);
       var items = itemsFor(src);
       b.querySelector('.nx-cam-av').src = avatarOf(src);
-      var when = b.querySelector('.nx-cam-when');
-      if (items.length) when.textContent = ago(items[0].date);
-      else if (feeds[src.handle] === 'loading' || notices === null) when.textContent = 'Tuning in';
-      else when.textContent = 'No signal';
+      b.querySelector('.nx-cam-when').textContent = items.length ? ago(items[0].date) : (isLoading(src) ? 'Tuning in' : 'No signal');
     });
   }
 
   function itemsFor(src) {
-    var out = [];
-    var f = feedOf(src);
-    if (f && f.posts) f.posts.forEach(function (p) { out.push({ kind: 'x', date: new Date(p.date), post: p }); });
-    ((notices && notices[src.key]) || []).forEach(function (n) {
+    var out = postsFor(src).map(function (p) { return { kind: 'x', date: new Date(p.date), post: p }; });
+    ((notices && Array.isArray(notices[src.key]) && notices[src.key]) || []).forEach(function (n) {
       if (!n.pinned) out.push({ kind: 'notice', date: toDate(n.date), notice: n });
     });
     out.sort(function (a, b) { return b.date - a.date; });
@@ -264,15 +327,59 @@
     render();
   }
 
+  function refresh(src) { if (src && current && current.key !== src.key) paintSwitch(); else render(); }
+
   function render() {
     var src = current;
     paintSwitch();
     var items = itemsFor(src);
-    var loading = feeds[src.handle] === 'loading' || notices === null;
-    renderScreen(src, items[0], loading);
+    renderScreen(src, items[0], isLoading(src));
     renderNotices(src);
-    renderTimeline(src, items.slice(1), loading);
+    renderTimeline(src, items.slice(1), isLoading(src));
     renderFoot(src);
+    wireGifs();
+  }
+
+  function mediaHtml(id, url, media) {
+    var list = (media || []).filter(function (m) { return m && (m.src || m.thumb); }).slice(0, 4);
+    if (!list.length) return '';
+    registry[id] = { media: list, url: url || '' };
+    var n = list.length, cls = 'nx-media nx-m' + n, style = '';
+    if (n === 1) {
+      var m0 = list[0], r = m0.w && m0.h ? m0.w / m0.h : 0;
+      if (m0.type !== 'photo') { cls += ' nx-vid'; if (!r) r = 16 / 9; }
+      if (r) { style = ' style="aspect-ratio:' + Math.max(m0.type === 'photo' ? 0.75 : 0.8, Math.min(r, 2.2)).toFixed(4) + '"'; if (m0.type === 'photo' && (r > 2.2 || r < 0.75)) cls += ' nx-fit'; }
+      else cls += ' nx-free';
+    }
+    return '<div class="' + cls + '"' + style + '>' + list.map(function (m, i) { return cellHtml(id, m, i, n === 1); }).join('') + '</div>';
+  }
+
+  function cellHtml(id, m, i, one) {
+    var alt = esc(m.alt || '');
+    if (m.type === 'gif') {
+      return '<div class="nx-cell"><video class="nx-gif" muted loop playsinline preload="none"' + (reduceMotion ? ' controls' : '') + ' poster="' + esc(pbs(m.thumb, 'medium')) + '" data-src="' + esc(vsrc(m.src)) + '" aria-label="' + (alt || 'Animated GIF') + '"></video><span class="nx-badge">GIF</span></div>';
+    }
+    if (m.type === 'video') {
+      return '<button type="button" class="nx-cell nx-vcell" data-video="' + esc(vsrc(m.src)) + '" data-poster="' + esc(pbs(m.thumb, 'large')) + '" aria-label="Play video' + (m.duration ? ', ' + dur(m.duration) : '') + '"><img alt="' + alt + '" loading="lazy" src="' + esc(pbs(m.thumb, 'medium')) + '">' + PLAY + (m.duration ? '<span class="nx-badge">' + dur(m.duration) + '</span>' : '') + '</button>';
+    }
+    return '<button type="button" class="nx-cell nx-pcell" data-media="' + esc(id) + '" data-i="' + i + '" aria-label="' + (alt ? 'Open image: ' + alt : 'Open image') + '"><img alt="' + alt + '" loading="lazy" src="' + esc(pbs(m.thumb || m.src, one ? 'large' : 'medium')) + '">' + (m.alt ? '<span class="nx-badge nx-badge-r">ALT</span>' : '') + '</button>';
+  }
+
+  function cardHtml(c) {
+    if (!c || !c.url) return '';
+    var link = ' href="' + esc(c.url) + '" target="_blank" rel="noopener noreferrer"';
+    if (c.kind === 'large' && c.image) {
+      return '<a class="nx-card nx-card-lg"' + link + '><span class="nx-card-img"><img alt="" loading="lazy" src="' + esc(c.image) + '">' + (c.player ? PLAY : '') + (c.title ? '<span class="nx-card-pill">' + esc(c.title) + '</span>' : '') + '</span></a>' + (c.domain ? '<div class="nx-card-from">From ' + esc(c.domain) + '</div>' : '');
+    }
+    return '<a class="nx-card nx-card-sm"' + link + '>' + (c.image ? '<span class="nx-card-thumb"><img alt="" loading="lazy" src="' + esc(c.image) + '"></span>' : '') + '<span class="nx-card-body">' + (c.domain ? '<span class="nx-card-domain">' + esc(c.domain) + '</span>' : '') + '<span class="nx-card-title">' + esc(c.title) + '</span>' + (c.description ? '<span class="nx-card-desc">' + esc(c.description) + '</span>' : '') + '</span></a>';
+  }
+
+  function quoteHtml(p) {
+    return p.quote ? '<a class="nx-quote" href="' + esc(p.quote.url) + '" target="_blank" rel="noopener noreferrer"><b>' + esc(p.quote.name) + '</b> @' + esc(p.quote.handle) + '<br>' + esc(p.quote.text) + '</a>' : '';
+  }
+
+  function repostHtml(src, p) {
+    return p.repostOf ? '<div class="nx-repost">' + ICONS.repost + esc(src.name) + ' reposted</div>' : '';
   }
 
   function renderScreen(src, lead, loading) {
@@ -281,28 +388,23 @@
       screen.innerHTML = '<div class="nx-screen-msg"><b>No signal from ' + esc(src.name) + '</b><span>Posts could not be loaded right now. The latest ones are always on X.</span><a class="nx-btn" href="https://x.com/' + esc(src.handle) + '" target="_blank" rel="noopener noreferrer">Open @' + esc(src.handle) + ' on X</a></div>';
       return;
     }
-    var html = '';
+    var html = '<div class="nx-lead-body">';
     if (lead.kind === 'x') {
-      var p = lead.post, who = p.user || (feedOf(src) && feedOf(src).user) || {};
-      var m = p.media && p.media[0];
-      if (m) {
-        var isVid = m.type === 'video' && m.src;
-        html += '<div class="nx-lead-media' + (isVid ? ' nx-has-video' : '') + '">' + (isVid ? '<video controls playsinline preload="none" poster="' + esc(m.thumb) + '" src="' + esc(m.src) + '"></video>' : '<img alt="" src="' + esc((m.src || m.thumb || '') + (m.src && m.src.indexOf('pbs.twimg.com') > -1 ? '?name=large' : '')) + '">') + '</div>';
-      }
-      html += '<div class="nx-lead-body"><div class="nx-lead-src"><img alt="" src="' + esc(who.avatar || avatarOf(src)) + '"><span><b>' + esc(who.name || src.name) + '</b> @' + esc(who.handle || src.handle) + '</span><span class="nx-lead-clock" title="' + esc(lead.date.toLocaleString()) + '">' + esc(clock(lead.date)) + '</span></div>';
-      if (p.repostOf) html += '<div class="nx-item-meta">Reposted by ' + esc(src.name) + '</div>';
-      html += '<div class="nx-lead-text' + ((p.text || '').length > 200 ? ' nx-long' : '') + '">' + (p.html || esc(p.text)) + '</div>';
-      html += '<div class="nx-lead-actions"><a class="nx-btn" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer">' + X_SVG + ' View on X</a><a class="nx-btn nx-quiet" href="https://x.com/' + esc(src.handle) + '" target="_blank" rel="noopener noreferrer">Follow @' + esc(src.handle) + '</a></div></div>';
+      var p = lead.post, who = p.user || userOf(src) || {};
+      html += repostHtml(src, p);
+      html += '<div class="nx-lead-src"><img alt="" src="' + esc(who.avatar || avatarOf(src)) + '"><span><b>' + esc(who.name || src.name) + '</b> @' + esc(who.handle || src.handle) + '</span><span class="nx-lead-clock" title="' + esc(lead.date.toLocaleString()) + '">' + esc(clock(lead.date)) + '</span></div>';
+      if (p.text) html += '<div class="nx-lead-text' + (p.text.length > 200 ? ' nx-long' : '') + '">' + (p.html || esc(p.text)) + '</div>';
+      html += mediaHtml('x' + p.id, p.url, p.media) + cardHtml(p.card) + quoteHtml(p);
+      html += '<div class="nx-lead-actions"><a class="nx-btn" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer">' + X_SVG + ' View on X</a><a class="nx-btn nx-quiet" href="https://x.com/' + esc(src.handle) + '" target="_blank" rel="noopener noreferrer">Follow @' + esc(src.handle) + '</a></div>';
     } else {
       var n = lead.notice;
-      if (n.image) html += '<div class="nx-lead-media"><img alt="" src="' + esc(n.image) + '"></div>';
-      html += '<div class="nx-lead-body"><div class="nx-lead-src"><img alt="" src="' + esc(avatarOf(src)) + '"><span><b>' + esc(src.name) + '</b> announcement</span><span class="nx-lead-clock">' + esc(MONTHS[lead.date.getMonth()] + ' ' + lead.date.getDate()) + '</span></div>';
-      html += '<div class="nx-lead-text">' + esc(n.title || '') + '</div>';
+      html += '<div class="nx-lead-src"><img alt="" src="' + esc(avatarOf(src)) + '"><span><b>' + esc(src.name) + '</b> announcement</span><span class="nx-lead-clock">' + esc(MONTHS[lead.date.getMonth()] + ' ' + lead.date.getDate()) + '</span></div>';
+      if (n.title) html += '<div class="nx-lead-text">' + esc(n.title) + '</div>';
       if (n.body) html += '<div class="nx-rich" style="margin-top:10px">' + n.body + '</div>';
+      if (n.image) html += mediaHtml('n' + (noticeSeq++), '', [{ type: 'photo', src: n.image, thumb: n.image }]);
       if (n.link && n.link.href) html += '<div class="nx-lead-actions">' + linkBtn(n.link) + '</div>';
-      html += '</div>';
     }
-    screen.innerHTML = html;
+    screen.innerHTML = html + '</div>';
   }
 
   function linkBtn(link) {
@@ -311,14 +413,14 @@
   }
 
   function renderNotices(src) {
-    var list = ((notices && notices[src.key]) || []).filter(function (n) { return n.pinned; });
+    var list = ((notices && Array.isArray(notices[src.key]) && notices[src.key]) || []).filter(function (n) { return n.pinned; });
     list.sort(function (a, b) { return toDate(b.date) - toDate(a.date); });
     noticesEl.innerHTML = list.map(function (n) {
       var d = toDate(n.date);
       return '<article class="nx-notice"><div class="nx-notice-head"><span class="nx-notice-kind">Pinned announcement</span><span class="nx-notice-date">' + esc(MONTHS[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear()) + '</span></div>' +
         (n.title ? '<h3 class="nx-notice-title">' + esc(n.title) + '</h3>' : '') +
         (n.body ? '<div class="nx-rich">' + n.body + '</div>' : '') +
-        (n.image ? '<img class="nx-notice-img" alt="" loading="lazy" src="' + esc(n.image) + '">' : '') +
+        (n.image ? mediaHtml('n' + (noticeSeq++), '', [{ type: 'photo', src: n.image, thumb: n.image }]) : '') +
         (n.link && n.link.href ? linkBtn(n.link) : '') + '</article>';
     }).join('');
   }
@@ -328,9 +430,8 @@
       timelineEl.innerHTML = loading ? '<div class="nx-skel" style="width:70%"></div><div class="nx-skel" style="width:90%"></div>' : '';
       return;
     }
-    var visible = items.slice(0, shown);
     var groups = [], last = null;
-    visible.forEach(function (it) {
+    items.slice(0, shown).forEach(function (it) {
       var k = dayKey(it.date);
       if (!last || last.key !== k) { last = { key: k, date: it.date, items: [] }; groups.push(last); }
       last.items.push(it);
@@ -344,21 +445,17 @@
     if (items.length > shown) html += '<button type="button" class="nx-more" id="nxMore">Show older posts</button>';
     timelineEl.innerHTML = html;
     var more = document.getElementById('nxMore');
-    if (more) more.addEventListener('click', function () { shown += CFG.pageSize; renderTimeline(src, items, false); });
+    if (more) more.addEventListener('click', function () { shown += CFG.pageSize; renderTimeline(src, items, false); wireGifs(); });
   }
 
+  function stat(kind, label, n) { return '<span title="' + label + '">' + ICONS[kind] + num(n) + '</span>'; }
+
   function xItem(src, it) {
-    var p = it.post, who = p.user || (feedOf(src) && feedOf(src).user) || {};
-    var html = '<article class="nx-item"><div class="nx-item-meta">' + X_SVG + '<b>' + esc(who.name || src.name) + '</b>' + (p.repostOf ? '<span>reposted</span>' : '<span class="nx-handle">@' + esc(who.handle || src.handle) + '</span>') + '<a class="nx-time" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(it.date.toLocaleString()) + '">' + esc(clock(it.date)) + '</a></div>';
-    html += '<div class="nx-item-text">' + (p.html || esc(p.text)) + '</div>';
-    if (p.media && p.media.length) {
-      html += '<div class="nx-thumbs' + (p.media.length === 1 ? ' nx-one' : '') + '">' + p.media.slice(0, 4).map(function (m) {
-        if (m.type === 'video' && m.src) return '<video controls playsinline preload="none" poster="' + esc(m.thumb) + '" src="' + esc(m.src) + '"></video>';
-        return '<a href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer"><img alt="" loading="lazy" src="' + esc(m.thumb || m.src) + '"></a>';
-      }).join('') + '</div>';
-    }
-    if (p.quote) html += '<a class="nx-quote" href="' + esc(p.quote.url) + '" target="_blank" rel="noopener noreferrer"><b>' + esc(p.quote.name) + '</b> @' + esc(p.quote.handle) + '<br>' + esc(p.quote.text) + '</a>';
-    html += '<div class="nx-stats"><span title="Replies">' + ICONS.reply + num(p.replies) + '</span><span title="Reposts">' + ICONS.repost + num(p.reposts) + '</span><span title="Likes">' + ICONS.like + num(p.likes) + '</span></div></article>';
+    var p = it.post, who = p.user || userOf(src) || {};
+    var html = '<article class="nx-item">' + repostHtml(src, p) + '<div class="nx-item-meta">' + X_SVG + '<b>' + esc(who.name || src.name) + '</b><span class="nx-handle">@' + esc(who.handle || src.handle) + '</span><a class="nx-time" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(it.date.toLocaleString()) + '">' + esc(clock(it.date)) + '</a></div>';
+    if (p.text) html += '<div class="nx-item-text">' + (p.html || esc(p.text)) + '</div>';
+    html += mediaHtml('x' + p.id, p.url, p.media) + cardHtml(p.card) + quoteHtml(p);
+    html += '<div class="nx-stats">' + stat('reply', 'Replies', p.replies) + stat('repost', 'Reposts', p.reposts) + stat('like', 'Likes', p.likes) + '</div></article>';
     return html;
   }
 
@@ -367,28 +464,152 @@
     return '<article class="nx-item nx-is-notice"><div class="nx-item-meta"><b style="color:var(--sig)">Announcement</b></div>' +
       (n.title ? '<h3 class="nx-item-title">' + esc(n.title) + '</h3>' : '') +
       (n.body ? '<div class="nx-rich">' + n.body + '</div>' : '') +
-      (n.image ? '<div class="nx-thumbs nx-one"><a href="' + esc(n.image) + '" target="_blank" rel="noopener noreferrer"><img alt="" loading="lazy" src="' + esc(n.image) + '"></a></div>' : '') +
+      (n.image ? mediaHtml('n' + (noticeSeq++), '', [{ type: 'photo', src: n.image, thumb: n.image }]) : '') +
       (n.link && n.link.href ? linkBtn(n.link) : '') + '</article>';
   }
 
   function renderFoot(src) {
-    var f = feedOf(src);
-    var left = '';
+    var f = feedOf(src), left = '';
     if (f && f.posts && f.posts.length) {
       left = 'Posts from @' + esc(src.handle) + ' on X';
       if (f.fetchedAt) left += ', checked ' + esc(ago(new Date(f.fetchedAt)));
-      if (f.stale) left += '. X is limiting requests, so this is the last saved copy.';
-    } else if (feeds[src.handle] !== 'loading') {
+      left += f.stale ? '. X is limiting requests, so this is the last saved copy.' : '.';
+    } else if (extrasOf(src).length) {
+      left = 'Selected posts from @' + esc(src.handle) + ' on X.';
+    } else if (!isLoading(src)) {
       left = 'X posts are unavailable right now.';
     }
     footEl.innerHTML = '<span>' + left + '</span><a href="https://x.com/' + esc(src.handle) + '" target="_blank" rel="noopener noreferrer">Follow @' + esc(src.handle) + '</a>';
   }
 
+  var gifObserver = ('IntersectionObserver' in window && !reduceMotion) ? new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      var v = en.target;
+      if (en.isIntersecting) {
+        if (!v.getAttribute('src') && v.dataset.src) v.src = v.dataset.src;
+        var pr = v.play();
+        if (pr && pr.catch) pr.catch(function () {});
+      } else if (!v.paused) {
+        v.pause();
+      }
+    });
+  }, { threshold: 0.4 }) : null;
+
+  function wireGifs() {
+    root.querySelectorAll('video.nx-gif').forEach(function (v) {
+      if (gifObserver) gifObserver.observe(v);
+      else if (!v.getAttribute('src')) v.src = v.dataset.src;
+    });
+  }
+
+  var lb = null, lbState = null;
+  function buildLightbox() {
+    lb = document.createElement('div');
+    lb.id = 'nxLightbox';
+    lb.hidden = true;
+    lb.setAttribute('role', 'dialog');
+    lb.setAttribute('aria-modal', 'true');
+    lb.setAttribute('aria-label', 'Image viewer');
+    lb.innerHTML = '<button type="button" class="nx-lb-close" aria-label="Close">&#x2715;</button><button type="button" class="nx-lb-nav nx-lb-prev" aria-label="Previous image">&#x2039;</button><figure class="nx-lb-fig"><img alt=""><figcaption></figcaption></figure><button type="button" class="nx-lb-nav nx-lb-next" aria-label="Next image">&#x203A;</button><a class="nx-lb-link" target="_blank" rel="noopener noreferrer">View post on X</a>';
+    document.body.appendChild(lb);
+    lb.addEventListener('click', function (e) { if (e.target === lb || e.target.classList.contains('nx-lb-fig')) closeLightbox(); });
+    lb.querySelector('.nx-lb-close').addEventListener('click', closeLightbox);
+    lb.querySelector('.nx-lb-prev').addEventListener('click', function () { stepLightbox(-1); });
+    lb.querySelector('.nx-lb-next').addEventListener('click', function () { stepLightbox(1); });
+    document.addEventListener('keydown', function (e) {
+      if (!lb || lb.hidden) return;
+      if (e.key === 'Escape') { e.stopPropagation(); closeLightbox(); }
+      else if (e.key === 'ArrowLeft') stepLightbox(-1);
+      else if (e.key === 'ArrowRight') stepLightbox(1);
+    }, true);
+  }
+  function openLightbox(id, i) {
+    var entry = registry[id];
+    if (!entry) return;
+    var photos = entry.media.filter(function (m) { return m.type === 'photo'; });
+    var start = photos.indexOf(entry.media[i]);
+    if (!lb) buildLightbox();
+    lbState = { photos: photos, i: start < 0 ? 0 : start, url: entry.url, back: document.activeElement };
+    paintLightbox();
+    lb.hidden = false;
+    document.documentElement.style.overflow = 'hidden';
+    lb.querySelector('.nx-lb-close').focus();
+  }
+  function paintLightbox() {
+    var m = lbState.photos[lbState.i], many = lbState.photos.length > 1;
+    var img = lb.querySelector('.nx-lb-fig img');
+    img.src = pbs(m.src || m.thumb, 'large');
+    img.alt = m.alt || '';
+    lb.querySelector('figcaption').textContent = many ? (lbState.i + 1) + ' of ' + lbState.photos.length : (m.alt || '');
+    lb.querySelector('.nx-lb-prev').hidden = !many;
+    lb.querySelector('.nx-lb-next').hidden = !many;
+    var link = lb.querySelector('.nx-lb-link');
+    link.hidden = !lbState.url;
+    if (lbState.url) link.href = lbState.url;
+  }
+  function stepLightbox(d) {
+    if (!lbState || lbState.photos.length < 2) return;
+    lbState.i = (lbState.i + d + lbState.photos.length) % lbState.photos.length;
+    paintLightbox();
+  }
+  function closeLightbox() {
+    if (!lb) return;
+    lb.hidden = true;
+    document.documentElement.style.overflow = '';
+    if (lbState && lbState.back && lbState.back.focus) lbState.back.focus();
+  }
+
   root.addEventListener('click', function (e) {
-    var sp = e.target.closest && e.target.closest('.nx-spoiler');
-    if (sp) sp.classList.add('nx-open');
+    if (!e.target.closest) return;
+    var sp = e.target.closest('.nx-spoiler');
+    if (sp) { sp.classList.add('nx-open'); return; }
+    var v = e.target.closest('.nx-vcell');
+    if (v) {
+      var cell = document.createElement('div');
+      cell.className = 'nx-cell nx-playing';
+      var video = document.createElement('video');
+      video.controls = true;
+      video.playsInline = true;
+      video.preload = 'auto';
+      video.poster = v.dataset.poster || '';
+      video.src = v.dataset.video;
+      cell.appendChild(video);
+      v.replaceWith(cell);
+      var pr = video.play();
+      if (pr && pr.catch) pr.catch(function () {});
+      video.focus();
+      return;
+    }
+    var ph = e.target.closest('.nx-pcell');
+    if (ph) openLightbox(ph.dataset.media, +ph.dataset.i);
   });
+  root.addEventListener('load', function (e) {
+    var img = e.target;
+    if (!img || img.tagName !== 'IMG' || !img.closest) return;
+    var box = img.closest('.nx-media.nx-free');
+    if (!box || !img.naturalWidth || !img.naturalHeight) return;
+    var r = img.naturalWidth / img.naturalHeight;
+    box.classList.remove('nx-free');
+    if (r > 2.2 || r < 0.75) box.classList.add('nx-fit');
+    box.style.aspectRatio = Math.max(0.75, Math.min(r, 2.2)).toFixed(4);
+  }, true);
   monitor.addEventListener('animationend', function () { monitor.classList.remove('nx-switching'); });
+
+  function loadExtras() {
+    var map = (notices && notices.xPosts) || {};
+    CFG.sources.forEach(function (src) {
+      var ids = (Array.isArray(map[src.key]) ? map[src.key] : []).map(function (v) {
+        var m = /status(?:es)?\/(\d{5,25})/.exec(String(v)) || /^\s*(\d{5,25})\s*$/.exec(String(v));
+        return m ? m[1] : null;
+      }).filter(Boolean).slice(0, 40);
+      if (!ids.length) { extras[src.key] = []; return; }
+      extras[src.key] = 'loading';
+      fetch(CFG.postsEndpoint + ids.join(','), { headers: { accept: 'application/json' } })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .catch(function () { return null; })
+        .then(function (d) { extras[src.key] = d && Array.isArray(d.posts) ? d.posts : []; refresh(src); });
+    });
+  }
 
   buildSwitch();
   var hash = (location.hash || '').replace(/^#/, '');
@@ -402,7 +623,7 @@
   fetch(CFG.announcements, { cache: 'no-cache' })
     .then(function (r) { return r.ok ? r.json() : {}; })
     .catch(function () { return {}; })
-    .then(function (data) { notices = data || {}; render(); });
+    .then(function (data) { notices = data || {}; loadExtras(); render(); });
 
   CFG.sources.forEach(function (src) {
     fetch(CFG.xEndpoint + encodeURIComponent(src.handle), { headers: { accept: 'application/json' } })
@@ -410,7 +631,7 @@
       .catch(function () { return null; })
       .then(function (data) {
         feeds[src.handle] = data && data.posts ? data : { posts: [], unavailable: true };
-        render();
+        refresh(src);
       });
   });
 })();

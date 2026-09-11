@@ -1,423 +1,417 @@
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Audiowide&display=swap" rel="stylesheet">
 <style>
-#ugNews{--nw-accent:#ffa45b;--nw-ink:#f2eef8;--nw-ink2:rgba(242,238,248,.66);--nw-ink3:rgba(242,238,248,.42);--nw-panel:rgba(9,6,20,.9);--nw-panel2:rgba(255,255,255,.035);--nw-line:rgba(255,255,255,.09);color:var(--nw-ink);margin:6px auto 30px;max-width:900px;font-size:15px;line-height:1.55}
+#ugNews{--sig:#ffb13b;--ink:#efeaf7;--mute:#a79fb8;--faint:#6f6782;--panel:#0d0a1a;--panel2:#141026;--line:rgba(255,255,255,.08);max-width:780px;margin:4px auto 36px;color:var(--ink);font-size:15px;line-height:1.55}
 #ugNews *{box-sizing:border-box}
-#ugNews a{color:var(--nw-accent);text-decoration:none}
+#ugNews img,#ugNews video{margin:0;display:block;max-width:100%}
+#ugNews a{color:var(--sig);text-decoration:none}
 #ugNews a:hover{text-decoration:underline}
-#ugNews button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-#ugNews :focus-visible{outline:2px solid var(--nw-accent);outline-offset:3px;border-radius:4px}
-#ugNews .nw-avatar,#ugNews .nw-post-av,#ugNews .nw-media img,#ugNews .nw-media video{margin:0;display:block}
-#ugNews .nw-entry-img{margin:10px 0 4px}
+#ugNews button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+#ugNews :focus-visible{outline:2px solid var(--sig);outline-offset:3px;border-radius:6px}
 
-.nw-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
-.nw-tab{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:14px 16px 16px;background:var(--nw-panel);border:1px solid var(--nw-line);border-radius:12px;text-align:left;color:var(--nw-ink2);transition:color .15s,border-color .15s,background .15s}
-.nw-tab:hover{color:var(--nw-ink);border-color:rgba(255,255,255,.2)}
-.nw-tab-name{font-family:'Audiowide',sans-serif;font-size:15px;letter-spacing:.3px;color:inherit}
-.nw-tab-sub{font-size:12px;color:var(--nw-ink3)}
-.nw-tab::after{content:'';position:absolute;left:16px;right:16px;bottom:0;height:3px;border-radius:3px 3px 0 0;background:var(--tab-accent);opacity:0;transform:scaleX(.4);transition:opacity .2s,transform .25s}
-.nw-tab[aria-selected="true"]{color:var(--nw-ink);border-color:color-mix(in srgb,var(--tab-accent) 55%,transparent);background:linear-gradient(180deg,color-mix(in srgb,var(--tab-accent) 12%,transparent),var(--nw-panel) 70%)}
-.nw-tab[aria-selected="true"] .nw-tab-sub{color:var(--tab-accent)}
-.nw-tab[aria-selected="true"]::after{opacity:1;transform:scaleX(1)}
+.nx-switch{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+#ugNews .nx-cam{position:relative;display:grid;grid-template-columns:44px 1fr;align-items:center;gap:4px 12px;padding:12px 14px;border-radius:14px;background:var(--panel);border:1px solid var(--line);text-align:left;overflow:hidden;transition:border-color .2s,background .2s}
+#ugNews .nx-cam:hover{border-color:rgba(255,255,255,.2)}
+#ugNews .nx-cam-av{grid-row:span 2;width:44px;height:44px;border-radius:50%;object-fit:cover;background:var(--panel2);filter:grayscale(.85) brightness(.7);transition:filter .25s}
+#ugNews .nx-cam-name{font-family:'Audiowide',sans-serif;font-size:14px;line-height:1.2;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#ugNews .nx-cam-when{font-size:12px;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#ugNews .nx-cam::before{content:'';position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--cam);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+#ugNews .nx-cam[aria-selected="true"]{background:linear-gradient(160deg,color-mix(in srgb,var(--cam) 16%,var(--panel)),var(--panel) 60%);border-color:color-mix(in srgb,var(--cam) 50%,transparent)}
+#ugNews .nx-cam[aria-selected="true"]::before{transform:scaleX(1)}
+#ugNews .nx-cam[aria-selected="true"] .nx-cam-av{filter:none;box-shadow:0 0 0 2px var(--cam)}
+#ugNews .nx-cam[aria-selected="true"] .nx-cam-name{color:#fff}
+#ugNews .nx-cam[aria-selected="true"] .nx-cam-when{color:var(--cam)}
+.nx-rec{position:absolute;top:10px;right:10px;width:7px;height:7px;border-radius:50%;background:var(--cam);opacity:0}
+#ugNews .nx-cam[aria-selected="true"] .nx-rec{opacity:1;animation:nxRec 1.6s steps(1) infinite}
+@keyframes nxRec{50%{opacity:.15}}
 
-.nw-mast{position:relative;overflow:hidden;display:flex;align-items:center;gap:18px;padding:20px 22px;border:1px solid var(--nw-line);border-left:4px solid var(--nw-accent);border-radius:12px;background:var(--nw-panel);margin-bottom:16px}
-.nw-mast::before{content:'';position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(to bottom,transparent 0 3px,rgba(0,0,0,.14) 3px 4px)}
-.nw-mast-banner{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.14;filter:saturate(.8)}
-.nw-mast-banner::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,6,20,.2),rgba(9,6,20,.95) 65%)}
-.nw-mast>*{position:relative}
-.nw-avatar{flex:0 0 auto;width:72px;height:72px;border-radius:50%;object-fit:cover;background:#1a1330;border:2px solid var(--nw-accent);box-shadow:0 0 18px color-mix(in srgb,var(--nw-accent) 40%,transparent)}
-.nw-mast-body{min-width:0;flex:1}
-.nw-mast-name{font-family:'Audiowide',sans-serif;font-size:22px;line-height:1.2;color:#fff;text-shadow:0 0 10px color-mix(in srgb,var(--nw-accent) 45%,transparent)}
-.nw-mast-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:5px;font-size:13px;color:var(--nw-ink2)}
-.nw-mast-meta a{color:var(--nw-accent)}
-.nw-mast-blurb{margin-top:8px;font-size:14px;color:var(--nw-ink2);max-width:60ch}
-.nw-official{flex:0 0 auto;align-self:flex-start;font-family:'Audiowide',sans-serif;font-size:10px;letter-spacing:.6px;padding:6px 10px;border-radius:999px;border:1px solid color-mix(in srgb,var(--nw-accent) 60%,transparent);color:var(--nw-accent);background:color-mix(in srgb,var(--nw-accent) 10%,transparent);white-space:nowrap}
+.nx-monitor{position:relative;padding:10px;border-radius:22px;background:linear-gradient(180deg,#1b1630,#0c0918);border:1px solid rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 18px 40px rgba(0,0,0,.55);margin-bottom:22px}
+.nx-screen{position:relative;overflow:hidden;border-radius:14px;background:#05040b;min-height:220px;isolation:isolate}
+.nx-screen::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:3;background:repeating-linear-gradient(to bottom,rgba(255,255,255,.025) 0 1px,transparent 1px 3px),radial-gradient(120% 90% at 50% 50%,transparent 55%,rgba(0,0,0,.55))}
+.nx-static{position:absolute;inset:10px;border-radius:14px;pointer-events:none;z-index:4;opacity:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.4 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");background-color:#1a1726}
+.nx-monitor.nx-switching .nx-static{animation:nxStatic .32s steps(6) forwards}
+@keyframes nxStatic{0%{opacity:.95;background-position:0 0}40%{opacity:.8;background-position:-60px 40px}80%{opacity:.35;background-position:30px -70px}100%{opacity:0;background-position:90px 20px}}
 
-.nw-grid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:16px;align-items:start}
-.nw-col{background:var(--nw-panel);border:1px solid var(--nw-line);border-radius:12px;min-width:0}
-.nw-col-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 18px;border-bottom:1px solid var(--nw-line)}
-.nw-col-title{font-family:'Audiowide',sans-serif;font-size:14px;color:#fff}
-.nw-col-title small{display:block;font-family:inherit;font-size:11px;color:var(--nw-ink3);margin-top:2px;font-family:'Franklin Gothic Medium','Franklin Gothic',Arial,sans-serif}
+.nx-lead{position:relative;display:block;color:inherit}
+.nx-lead:hover{text-decoration:none}
+.nx-lead-media{position:relative;aspect-ratio:16/9;background:#000}
+.nx-lead-media img,.nx-lead-media video{width:100%;height:100%;object-fit:cover}
+.nx-lead-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(5,4,11,.92));pointer-events:none;z-index:1}
+.nx-lead-media.nx-has-video::after{display:none}
+.nx-lead-body{position:relative;z-index:2;padding:22px 24px 24px}
+.nx-lead-media+.nx-lead-body{margin-top:-120px}
+.nx-lead-media.nx-has-video+.nx-lead-body{margin-top:0}
+.nx-lead-src{display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:13px;color:var(--mute)}
+.nx-lead-src img{width:26px;height:26px;border-radius:50%}
+.nx-lead-src b{color:#fff;font-weight:700}
+.nx-lead-clock{margin-left:auto;font-family:'Press Start 2P',cursive;font-size:9px;color:var(--sig);white-space:nowrap}
+.nx-lead-text{font-family:'Audiowide',sans-serif;font-size:clamp(17px,2.6vw,22px);line-height:1.4;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.7);max-width:62ch;word-break:break-word}
+.nx-lead-text a{color:var(--sig)}
+.nx-lead-text.nx-long{font-family:inherit;font-size:16px;line-height:1.6}
+.nx-lead-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.nx-btn{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:9px;font-family:'Audiowide',sans-serif;font-size:11px;letter-spacing:.3px;border:1px solid color-mix(in srgb,var(--sig) 55%,transparent);color:var(--sig);background:color-mix(in srgb,var(--sig) 8%,transparent)}
+.nx-btn:hover{background:color-mix(in srgb,var(--sig) 18%,transparent);text-decoration:none!important}
+.nx-btn.nx-quiet{border-color:var(--line);color:var(--mute);background:transparent}
+.nx-btn.nx-quiet:hover{color:#fff;border-color:rgba(255,255,255,.25)}
+.nx-screen-msg{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:220px;padding:30px 24px;text-align:center;gap:8px}
+.nx-screen-msg b{font-family:'Audiowide',sans-serif;font-size:16px;color:#fff;font-weight:400}
+.nx-screen-msg span{color:var(--mute);max-width:44ch}
 
-.nw-filters{display:flex;flex-wrap:wrap;gap:6px;padding:12px 18px 0}
-.nw-chip{font-size:12px;padding:5px 11px;border-radius:999px;border:1px solid var(--nw-line);color:var(--nw-ink2);background:var(--nw-panel2)}
-.nw-chip:hover{color:var(--nw-ink);border-color:rgba(255,255,255,.22)}
-.nw-chip[aria-pressed="true"]{color:#0a0612;background:var(--chip,var(--nw-accent));border-color:transparent;font-weight:700}
+.nx-notice{position:relative;padding:18px 20px 18px 22px;margin-bottom:12px;border-radius:14px;background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--sig)}
+.nx-notice-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin-bottom:6px}
+.nx-notice-kind{font-family:'Audiowide',sans-serif;font-size:11px;color:var(--sig)}
+.nx-notice-date{font-size:12px;color:var(--faint)}
+.nx-notice-title{font-family:'Audiowide',sans-serif;font-size:18px;line-height:1.3;color:#fff;margin:0 0 6px;font-weight:400}
+.nx-rich{color:var(--mute);font-size:15px;word-break:break-word}
+.nx-rich p{margin:0 0 10px}
+.nx-rich h4{font-family:'Audiowide',sans-serif;font-weight:400;color:#fff;font-size:15px;margin:14px 0 6px}
+.nx-rich ul,.nx-rich ol{margin:0 0 10px 20px;padding:0}
+.nx-rich li{margin-bottom:3px}
+.nx-rich blockquote{margin:0 0 10px;padding-left:12px;border-left:3px solid var(--line)}
+.nx-rich code{font-size:13px;padding:1px 5px;border-radius:4px;background:var(--panel2);color:#fff}
+.nx-rich small{display:block;font-size:12px;color:var(--faint);margin-bottom:8px}
+.nx-rich b,.nx-rich strong{color:#fff}
+.nx-rich u{text-decoration-color:var(--sig)}
+.nx-rich .nx-emoji{display:inline-block;width:1.35em;height:1.35em;vertical-align:-.3em;object-fit:contain}
+.nx-rich .nx-spoiler{background:#2a2540;color:transparent;border-radius:3px;cursor:pointer}
+.nx-rich .nx-spoiler.nx-open{color:inherit;background:rgba(255,255,255,.08)}
+.nx-notice-img{width:100%;border-radius:10px;margin-top:10px!important;border:1px solid var(--line)}
+.nx-notice .nx-btn{margin-top:12px}
 
-.nw-ledger{list-style:none;margin:0;padding:8px 0 6px}
-.nw-entry{display:grid;grid-template-columns:88px 1fr;gap:0 16px;padding:16px 18px;border-bottom:1px solid var(--nw-line)}
-.nw-entry:last-child{border-bottom:0}
-.nw-stamp{font-family:'Press Start 2P',cursive;font-size:9px;line-height:1.7;color:var(--nw-ink2);padding-top:5px}
-.nw-stamp b{display:block;font-size:15px;color:#fff;line-height:1.1;margin-bottom:3px}
-.nw-entry-body{min-width:0;border-left:2px solid var(--entry-accent,var(--nw-accent));padding-left:14px}
-.nw-tag{display:inline-block;font-family:'Audiowide',sans-serif;font-size:10px;letter-spacing:.5px;padding:3px 9px;border-radius:5px;color:#0a0612;background:var(--entry-accent,var(--nw-accent));margin-bottom:7px}
-.nw-entry-title{font-family:'Audiowide',sans-serif;font-size:16px;line-height:1.3;color:#fff;margin:0 0 6px}
-.nw-entry-text{color:var(--nw-ink2);font-size:14.5px}
-.nw-entry-text p{margin:0 0 8px}
-.nw-entry-text ul{margin:0 0 8px 18px;padding:0}
-.nw-entry-img{display:block;width:100%;max-width:520px;border-radius:8px;margin:10px 0 4px;border:1px solid var(--nw-line)}
-.nw-entry-link{display:inline-block;margin-top:8px;font-family:'Audiowide',sans-serif;font-size:11px;padding:7px 12px;border-radius:7px;border:1px solid color-mix(in srgb,var(--entry-accent,var(--nw-accent)) 60%,transparent);color:var(--entry-accent,var(--nw-accent))}
-.nw-entry-link:hover{background:color-mix(in srgb,var(--entry-accent,var(--nw-accent)) 14%,transparent);text-decoration:none}
-.nw-empty{padding:26px 18px;color:var(--nw-ink2);font-size:14px;text-align:center}
-.nw-empty b{display:block;font-family:'Audiowide',sans-serif;font-size:13px;color:#fff;margin-bottom:6px}
+#nxTimeline:not(:empty){background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:4px 20px 8px}
+.nx-item-meta{flex-wrap:wrap}
+.nx-day{display:grid;grid-template-columns:96px minmax(0,1fr);gap:0 18px;position:relative}
+.nx-day-label{position:sticky;top:64px;align-self:start;padding-top:18px;font-family:'Press Start 2P',cursive;font-size:9px;line-height:1.8;color:var(--faint)}
+.nx-day-label b{display:block;font-size:16px;line-height:1.1;color:#fff;font-weight:400;margin-bottom:2px}
+.nx-day-items{border-left:1px solid var(--line);min-width:0}
+.nx-item{position:relative;padding:18px 0 18px 20px;border-bottom:1px solid var(--line)}
+.nx-day:last-child .nx-item:last-child{border-bottom:0}
+.nx-item::before{content:'';position:absolute;left:-4px;top:26px;width:7px;height:7px;border-radius:50%;background:var(--panel2);box-shadow:0 0 0 1px var(--faint)}
+.nx-item.nx-is-notice::before{background:var(--sig);box-shadow:0 0 0 3px color-mix(in srgb,var(--sig) 25%,transparent)}
+.nx-item-meta{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:12.5px;color:var(--faint)}
+.nx-item-meta b{color:var(--mute);font-weight:700}
+.nx-item-meta a{color:var(--faint)}
+.nx-item-meta a:hover{color:#fff}
+.nx-item-meta .nx-time{margin-left:auto;white-space:nowrap}
+.nx-xmark{width:13px;height:13px;fill:currentColor;flex:0 0 auto}
+.nx-item-text{font-size:15px;color:var(--ink);word-break:break-word}
+.nx-item-title{font-family:'Audiowide',sans-serif;font-size:16px;color:#fff;margin:0 0 6px;font-weight:400}
+.nx-thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(120px,100%),1fr));gap:6px;margin-top:10px;max-width:520px}
+.nx-thumbs.nx-one{grid-template-columns:1fr}
+.nx-thumbs a,.nx-thumbs video{display:block;border-radius:9px;overflow:hidden;background:#000;border:1px solid var(--line)}
+.nx-thumbs img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.nx-thumbs.nx-one img,.nx-thumbs.nx-one video{aspect-ratio:auto;max-height:320px;width:100%;object-fit:cover}
+.nx-quote{display:block;margin-top:10px;padding:10px 12px;border-radius:10px;border:1px solid var(--line);font-size:13.5px;color:var(--mute)}
+.nx-quote b{color:#fff}
+.nx-stats{display:flex;gap:18px;margin-top:10px;font-size:12px;color:var(--faint)}
+.nx-stats span{display:inline-flex;align-items:center;gap:5px}
+.nx-stats svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2}
+#ugNews .nx-more{display:block;width:100%;margin-top:14px;padding:12px;border-radius:12px;border:1px dashed var(--line)!important;font-family:'Audiowide',sans-serif;font-size:11px;color:var(--mute)}
+#ugNews .nx-more:hover{color:#fff;border-color:rgba(255,255,255,.25)!important}
+.nx-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;margin-top:22px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--faint)}
+.nx-skel{height:14px;border-radius:7px;background:var(--panel2);margin:10px 0;animation:nxPulse 1.3s ease-in-out infinite}
+@keyframes nxPulse{50%{opacity:.45}}
 
-.nw-follow{font-family:'Audiowide',sans-serif;font-size:10px;padding:6px 11px;border-radius:999px;border:1px solid var(--nw-line);color:var(--nw-ink2);white-space:nowrap}
-.nw-follow:hover{color:#fff;border-color:rgba(255,255,255,.3);text-decoration:none}
-.nw-feed{list-style:none;margin:0;padding:0}
-.nw-post{padding:14px 16px;border-bottom:1px solid var(--nw-line)}
-.nw-post:last-child{border-bottom:0}
-.nw-post-head{display:flex;align-items:center;gap:9px;margin-bottom:8px}
-.nw-post-av{width:34px;height:34px;border-radius:50%;object-fit:cover;background:#1a1330;flex:0 0 auto}
-.nw-post-who{min-width:0;line-height:1.25}
-.nw-post-name{font-weight:700;font-size:13.5px;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.nw-post-handle{font-size:12px;color:var(--nw-ink3)}
-.nw-post-time{margin-left:auto;font-size:12px;color:var(--nw-ink3);white-space:nowrap}
-.nw-post-time:hover{color:var(--nw-ink)}
-.nw-post-text{font-size:14px;color:var(--nw-ink);word-break:break-word}
-.nw-post-text a{color:var(--nw-accent)}
-.nw-media{display:grid;gap:4px;margin-top:10px;border-radius:9px;overflow:hidden}
-.nw-media.n2,.nw-media.n3,.nw-media.n4{grid-template-columns:1fr 1fr}
-.nw-media img,.nw-media video{display:block;width:100%;height:100%;object-fit:cover;background:#000;aspect-ratio:16/10;margin:0}
-.nw-media.n1 img,.nw-media.n1 video{aspect-ratio:auto;max-height:340px}
-.nw-media.n3 :first-child{grid-row:span 2;aspect-ratio:auto}
-.nw-quote{margin-top:10px;padding:10px 12px;border:1px solid var(--nw-line);border-radius:9px;font-size:13px;color:var(--nw-ink2)}
-.nw-quote b{color:#fff;font-weight:700}
-.nw-post-stats{display:flex;gap:16px;margin-top:10px;font-size:12px;color:var(--nw-ink3)}
-.nw-post-stats span::before{display:inline-block;margin-right:5px;color:var(--nw-ink3)}
-.nw-st-reply::before{content:'\21A9'}
-.nw-st-rt::before{content:'\21BB'}
-.nw-st-like::before{content:'\2665'}
-.nw-skel{padding:14px 16px;border-bottom:1px solid var(--nw-line)}
-.nw-skel i{display:block;height:12px;border-radius:6px;background:var(--nw-panel2);margin-bottom:8px;animation:nwPulse 1.4s ease-in-out infinite}
-.nw-skel i:nth-child(1){width:45%}.nw-skel i:nth-child(2){width:95%}.nw-skel i:nth-child(3){width:70%;margin-bottom:0}
-@keyframes nwPulse{0%,100%{opacity:.5}50%{opacity:1}}
-.nw-retry{margin-top:10px;font-family:'Audiowide',sans-serif;font-size:11px;padding:7px 12px;border-radius:7px;border:1px solid var(--nw-line);color:var(--nw-ink)}
-.nw-retry:hover{border-color:var(--nw-accent);color:var(--nw-accent)}
-.nw-more{display:block;width:100%;padding:12px;font-family:'Audiowide',sans-serif;font-size:11px;color:var(--nw-ink2);border-top:1px solid var(--nw-line)}
-.nw-more:hover{color:var(--nw-accent)}
-
-.nw-swap{animation:nwIn .28s ease-out}
-@keyframes nwIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){#ugNews *{animation:none!important;transition:none!important}}
-
-@media (max-width:820px){.nw-grid{grid-template-columns:1fr}}
-@media (max-width:600px){
+@media (prefers-reduced-motion:reduce){#ugNews *,#ugNews *::before{animation:none!important;transition:none!important}}
+@media (max-width:640px){
   #ugNews{font-size:14px}
-  .nw-tabs{grid-template-columns:1fr;gap:6px}
-  .nw-tab{flex-direction:row;align-items:baseline;justify-content:space-between;padding:12px 14px}
-  .nw-tab::after{left:0;right:auto;top:0;bottom:0;width:3px;height:auto;border-radius:12px 0 0 12px;transform:scaleY(.4)}
-  .nw-tab[aria-selected="true"]::after{transform:scaleY(1)}
-  .nw-mast{gap:14px;padding:16px}
-  .nw-avatar{width:56px;height:56px}
-  .nw-mast-name{font-size:18px}
-  .nw-official{display:none}
-  .nw-entry{grid-template-columns:1fr;gap:8px;padding:14px}
-  .nw-stamp{display:flex;align-items:baseline;gap:8px;padding:0}
-  .nw-stamp b{font-size:12px;margin:0}
+  .nx-switch{gap:6px}
+  #ugNews .nx-cam{grid-template-columns:1fr;justify-items:center;text-align:center;padding:12px 6px 10px;gap:6px}
+  #ugNews .nx-cam-av{grid-row:auto;width:40px;height:40px}
+  #ugNews .nx-cam-name{font-size:11px;max-width:100%}
+  #ugNews .nx-cam-when{font-size:10.5px}
+  .nx-monitor{padding:6px;border-radius:16px}
+  .nx-static{inset:6px;border-radius:11px}
+  .nx-screen{border-radius:11px}
+  .nx-lead-body{padding:16px}
+  .nx-lead-media+.nx-lead-body{margin-top:-70px}
+  .nx-day{grid-template-columns:minmax(0,1fr)}
+  .nx-day-label{position:static;padding:16px 0 4px;display:flex;align-items:baseline;gap:8px}
+  .nx-day-label b{font-size:11px;margin:0}
+  .nx-day-items{border-left:0}
+  .nx-item{padding-left:0}
+  .nx-item::before{display:none}
+  #nxTimeline:not(:empty){padding:0 14px 8px;border-radius:14px}
+  .nx-handle{display:none}
 }
 </style>
 
 <div id="ugNews">
-  <div class="nw-tabs" role="tablist" aria-label="News source"></div>
-  <div class="nw-mast" id="nwMast"></div>
-  <div class="nw-grid">
-    <section class="nw-col" id="nwLedgerCol" aria-live="polite">
-      <div class="nw-col-head"><div class="nw-col-title">Announcements<small id="nwLedgerCount"></small></div></div>
-      <div class="nw-filters" id="nwFilters"></div>
-      <ol class="nw-ledger" id="nwLedger"></ol>
-    </section>
-    <aside class="nw-col" id="nwXCol">
-      <div class="nw-col-head"><div class="nw-col-title">On X<small id="nwXSub"></small></div><a class="nw-follow" id="nwFollow" target="_blank" rel="noopener noreferrer" hidden>Follow</a></div>
-      <div id="nwXBody"></div>
-    </aside>
-  </div>
+  <div class="nx-switch" role="tablist" aria-label="News source"></div>
+  <section class="nx-monitor" id="nxMonitor" aria-live="polite">
+    <div class="nx-screen" id="nxScreen"></div>
+    <div class="nx-static" aria-hidden="true"></div>
+  </section>
+  <div id="nxNotices"></div>
+  <div id="nxTimeline"></div>
+  <div class="nx-foot" id="nxFoot"></div>
 </div>
-
+<style>.nx-short{display:none}@media (max-width:640px){.nx-full{display:none}.nx-short{display:inline}}</style>
 <script>
 (function () {
   var CFG = {
+    announcements: 'https://raw.githubusercontent.com/FNTDUG/characters.json/refs/heads/main/news.json',
     xEndpoint: '/news-x/',
-    xPageSize: 8,
-    tags: {
-      update:    { label: 'Update',     color: '#f69b55' },
-      event:     { label: 'Event',      color: '#c084fc' },
-      sneak:     { label: 'Sneak peek', color: '#4dd0e1' },
-      community: { label: 'Community',  color: '#86f786' },
-      notice:    { label: 'Notice',     color: '#ff6b6b' }
-    },
+    pageSize: 10,
     sources: [
-      {
-        key: 'scottgames',
-        name: 'ScottGames',
-        sub: 'Official FNAF',
-        blurb: 'The official Five Nights at Freddy\'s account, run by ScottGames.',
-        accent: '#ffa45b',
-        handle: 'FNAF_ScottGames',
-        avatar: 'https://images.fntduserguide.com/circle_done.png',
-        posts: [
-          {
-            date: '2026-09-10',
-            tag: 'notice',
-            title: 'The news page is live',
-            body: '<p>Official Five Nights at Freddy\'s announcements and the latest posts from the games now live here, alongside their posts on X. Patch notes for the guide itself stay on the Patch Notes pages.</p>',
-            link: { label: 'Open patch notes', href: '/patch-notes' }
-          }
-        ]
-      },
-      {
-        key: 'fntd',
-        name: 'Five Nights TD',
-        sub: 'Game news',
-        blurb: 'Updates, events and sneak peeks for Five Nights TD.',
-        accent: '#c084fc',
-        handle: 'FiveNightsTD',
-        avatar: 'https://images.fntduserguide.com/circle_done.png',
-        posts: [
-          {
-            date: '2026-09-10',
-            tag: 'update',
-            title: 'Example: a game update announcement',
-            body: '<p>Replace this entry. Each announcement takes a date, a tag, a title, a short body and an optional link or image.</p><ul><li>Tags: update, event, sneak, community, notice</li><li>Body accepts HTML</li></ul>',
-            link: { label: 'Open the Unit Engine', href: '/fntd2/unit-engine' }
-          }
-        ]
-      },
-      {
-        key: 'bbn',
-        name: 'Bite By Night',
-        sub: 'Game news',
-        blurb: 'Updates, events and sneak peeks for Bite By Night.',
-        accent: '#ff3c3b',
-        handle: '',
-        avatar: 'https://images.fntduserguide.com/circle_done.png',
-        posts: [
-          {
-            date: '2026-09-10',
-            tag: 'event',
-            title: 'Example: an event announcement',
-            body: '<p>Replace this entry. Add an <b>image</b> field with a URL to show artwork under the text.</p>',
-            image: '',
-            link: { label: 'Killer Terminal', href: '/bbn/killer-terminal' }
-          }
-        ]
-      }
-    ]
+      { key: 'scottgames', name: 'ScottGames', short: 'FNAF', handle: 'FNAF_ScottGames', color: '#ffb13b' },
+      { key: 'fntd', name: 'Five Nights TD', short: 'FNTD', handle: 'FiveNightsTD', color: '#b98bff' },
+      { key: 'bbn', name: 'Bite By Night', short: 'BBN', handle: 'bitebynightdev', color: '#ff4b4b' }
+    ],
+    fallbackAvatar: 'https://images.fntduserguide.com/circle_done.png'
   };
 
   var root = document.getElementById('ugNews');
-  var tabsEl = root.querySelector('.nw-tabs');
-  var mastEl = document.getElementById('nwMast');
-  var ledgerEl = document.getElementById('nwLedger');
-  var filtersEl = document.getElementById('nwFilters');
-  var countEl = document.getElementById('nwLedgerCount');
-  var xBody = document.getElementById('nwXBody');
-  var xSub = document.getElementById('nwXSub');
-  var followEl = document.getElementById('nwFollow');
-  var feedCache = {};
+  var switchEl = root.querySelector('.nx-switch');
+  var monitor = document.getElementById('nxMonitor');
+  var screen = document.getElementById('nxScreen');
+  var noticesEl = document.getElementById('nxNotices');
+  var timelineEl = document.getElementById('nxTimeline');
+  var footEl = document.getElementById('nxFoot');
+  var feeds = {};
+  var notices = null;
   var current = null;
-  var activeTag = 'all';
-  var shown = CFG.xPageSize;
+  var shown = CFG.pageSize;
+  var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  var DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  var X_SVG = '<svg class="nx-xmark" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.8-6.3L6.4 22H3.3l7.3-8.3L1 2h6.3l4.4 5.8zm-1.1 18h1.7L6.3 3.9H4.5z"/></svg>';
+  var ICONS = {
+    reply: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.1A8 8 0 1 1 21 12z"/></svg>',
+    repost: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4M21 13v2a3 3 0 0 1-3 3H3"/></svg>',
+    like: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.5-9.2C1 8.4 3.2 5 6.6 5c2.1 0 3.6 1.2 5.4 3.2C13.8 6.2 15.3 5 17.4 5 20.8 5 23 8.4 21.5 11.8 19.5 16.4 12 21 12 21z"/></svg>'
+  };
 
   function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
-  function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
   function num(n) { n = Number(n) || 0; if (n >= 1e6) return (n / 1e6).toFixed(1).replace(/\.0$/, '') + 'M'; if (n >= 1e3) return (n / 1e3).toFixed(1).replace(/\.0$/, '') + 'K'; return String(n); }
-  var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  function parseDate(s) { var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s || ''); return m ? new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3])) : new Date(s); }
-  function stamp(d) { return { day: String(d.getDate()).padStart(2, '0'), rest: MONTHS[d.getMonth()] + ' ' + d.getFullYear() }; }
-  function longDate(d) { return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }); }
-  function ago(iso) {
-    var t = new Date(iso).getTime(); if (!isFinite(t)) return '';
-    var s = Math.max(0, (Date.now() - t) / 1000);
+  function toDate(s) { var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s || ''); return m ? new Date(+m[1], +m[2] - 1, +m[3], 12) : new Date(s); }
+  function dayKey(d) { return d.getFullYear() + '-' + d.getMonth() + '-' + d.getDate(); }
+  function clock(d) { return d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }); }
+  function ago(d) {
+    var s = (Date.now() - d.getTime()) / 1000;
+    if (!isFinite(s)) return '';
     if (s < 60) return 'just now';
-    if (s < 3600) return Math.floor(s / 60) + 'm';
-    if (s < 86400) return Math.floor(s / 3600) + 'h';
-    if (s < 86400 * 30) return Math.floor(s / 86400) + 'd';
-    var d = new Date(t);
-    return MONTHS[d.getMonth()] + ' ' + d.getDate() + (d.getFullYear() !== new Date().getFullYear() ? ' ' + d.getFullYear() : '');
+    if (s < 3600) return Math.floor(s / 60) + ' min ago';
+    if (s < 86400) { var h = Math.floor(s / 3600); return h + (h === 1 ? ' hour ago' : ' hours ago'); }
+    if (s < 86400 * 14) { var dd = Math.floor(s / 86400); return dd + (dd === 1 ? ' day ago' : ' days ago'); }
+    return MONTHS[d.getMonth()] + ' ' + d.getDate() + (d.getFullYear() !== new Date().getFullYear() ? ', ' + d.getFullYear() : '');
   }
-  function sourceByKey(k) { for (var i = 0; i < CFG.sources.length; i++) if (CFG.sources[i].key === k) return CFG.sources[i]; return null; }
+  function source(k) { for (var i = 0; i < CFG.sources.length; i++) if (CFG.sources[i].key === k) return CFG.sources[i]; return null; }
+  function feedOf(src) { var f = feeds[src.handle]; return f && f !== 'loading' ? f : null; }
+  function avatarOf(src) { var f = feedOf(src); return (f && f.user && f.user.avatar) || CFG.fallbackAvatar; }
 
-  function buildTabs() {
+  function buildSwitch() {
     CFG.sources.forEach(function (src, i) {
-      var b = el('button', 'nw-tab');
+      var b = document.createElement('button');
       b.type = 'button';
+      b.className = 'nx-cam';
+      b.id = 'nxCam-' + src.key;
       b.setAttribute('role', 'tab');
       b.setAttribute('aria-selected', 'false');
-      b.setAttribute('aria-controls', 'nwLedgerCol');
-      b.id = 'nwTab-' + src.key;
-      b.style.setProperty('--tab-accent', src.accent);
-      b.innerHTML = '<span class="nw-tab-name">' + esc(src.name) + '</span><span class="nw-tab-sub">' + esc(src.sub || '') + '</span>';
+      b.setAttribute('aria-controls', 'nxMonitor');
+      b.style.setProperty('--cam', src.color);
+      b.innerHTML = '<img class="nx-cam-av" alt="" src="' + esc(CFG.fallbackAvatar) + '"><span class="nx-cam-name"><span class="nx-full">' + esc(src.name) + '</span><span class="nx-short">' + esc(src.short) + '</span></span><span class="nx-cam-when">Tuning in</span><span class="nx-rec" aria-hidden="true"></span>';
       b.addEventListener('click', function () { select(src.key, true); });
       b.addEventListener('keydown', function (e) {
         if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
         e.preventDefault();
         var n = (i + (e.key === 'ArrowRight' ? 1 : -1) + CFG.sources.length) % CFG.sources.length;
         select(CFG.sources[n].key, true);
-        tabsEl.children[n].focus();
+        switchEl.children[n].focus();
       });
-      tabsEl.appendChild(b);
+      switchEl.appendChild(b);
     });
+  }
+
+  function paintSwitch() {
+    CFG.sources.forEach(function (src) {
+      var b = document.getElementById('nxCam-' + src.key);
+      var items = itemsFor(src);
+      b.querySelector('.nx-cam-av').src = avatarOf(src);
+      var when = b.querySelector('.nx-cam-when');
+      if (items.length) when.textContent = ago(items[0].date);
+      else if (feeds[src.handle] === 'loading' || notices === null) when.textContent = 'Tuning in';
+      else when.textContent = 'No signal';
+    });
+  }
+
+  function itemsFor(src) {
+    var out = [];
+    var f = feedOf(src);
+    if (f && f.posts) f.posts.forEach(function (p) { out.push({ kind: 'x', date: new Date(p.date), post: p }); });
+    ((notices && notices[src.key]) || []).forEach(function (n) {
+      if (!n.pinned) out.push({ kind: 'notice', date: toDate(n.date), notice: n });
+    });
+    out.sort(function (a, b) { return b.date - a.date; });
+    return out;
   }
 
   function select(key, fromUser) {
-    var src = sourceByKey(key) || CFG.sources[0];
-    if (current && current.key === src.key) return;
+    var src = source(key) || CFG.sources[0];
+    var changed = !current || current.key !== src.key;
     current = src;
-    activeTag = 'all';
-    shown = CFG.xPageSize;
-    root.style.setProperty('--nw-accent', src.accent);
-    Array.prototype.forEach.call(tabsEl.children, function (b) {
-      var on = b.id === 'nwTab-' + src.key;
+    shown = CFG.pageSize;
+    root.style.setProperty('--sig', src.color);
+    Array.prototype.forEach.call(switchEl.children, function (b) {
+      var on = b.id === 'nxCam-' + src.key;
       b.setAttribute('aria-selected', on ? 'true' : 'false');
       b.tabIndex = on ? 0 : -1;
     });
-    if (fromUser) {
-      try { history.replaceState(null, '', '#' + src.key); } catch (e) {}
+    if (fromUser) { try { history.replaceState(null, '', '#' + src.key); } catch (e) {} }
+    if (changed) {
+      monitor.classList.remove('nx-switching');
+      void monitor.offsetWidth;
+      monitor.classList.add('nx-switching');
     }
-    renderMast(src, feedCache[src.handle] || null);
-    renderLedger(src);
-    renderX(src);
-    [mastEl, ledgerEl.parentNode, xBody.parentNode].forEach(function (n) {
-      n.classList.remove('nw-swap'); void n.offsetWidth; n.classList.add('nw-swap');
-    });
+    render();
   }
 
-  function renderMast(src, feed) {
-    var user = feed && feed.user;
-    var avatar = (user && user.avatar) || src.avatar || '';
+  function render() {
+    var src = current;
+    paintSwitch();
+    var items = itemsFor(src);
+    var loading = feeds[src.handle] === 'loading' || notices === null;
+    renderScreen(src, items[0], loading);
+    renderNotices(src);
+    renderTimeline(src, items.slice(1), loading);
+    renderFoot(src);
+  }
+
+  function renderScreen(src, lead, loading) {
+    if (!lead) {
+      if (loading) { screen.innerHTML = '<div class="nx-screen-msg"><div class="nx-skel" style="width:60%"></div><div class="nx-skel" style="width:80%"></div><div class="nx-skel" style="width:40%"></div></div>'; return; }
+      screen.innerHTML = '<div class="nx-screen-msg"><b>No signal from ' + esc(src.name) + '</b><span>Posts could not be loaded right now. The latest ones are always on X.</span><a class="nx-btn" href="https://x.com/' + esc(src.handle) + '" target="_blank" rel="noopener noreferrer">Open @' + esc(src.handle) + ' on X</a></div>';
+      return;
+    }
     var html = '';
-    if (user && user.banner) html += '<div class="nw-mast-banner" style="background-image:url(' + esc(user.banner) + ')"></div>';
-    html += '<img class="nw-avatar" alt="" src="' + esc(avatar) + '">';
-    html += '<div class="nw-mast-body"><div class="nw-mast-name">' + esc((user && user.name) || src.name) + '</div>';
-    var meta = [];
-    if (src.handle) meta.push('<a href="https://x.com/' + esc(src.handle) + '" target="_blank" rel="noopener noreferrer">@' + esc(src.handle) + '</a>');
-    if (user && user.followers != null) meta.push(num(user.followers) + ' followers');
-    if (feed && feed.posts && feed.posts.length) meta.push('Last post ' + ago(feed.posts[0].date));
-    if (meta.length) html += '<div class="nw-mast-meta"><span>' + meta.join('</span><span>') + '</span></div>';
-    if (src.blurb) html += '<div class="nw-mast-blurb">' + esc(src.blurb) + '</div>';
-    html += '</div><span class="nw-official">Official source</span>';
-    mastEl.innerHTML = html;
+    if (lead.kind === 'x') {
+      var p = lead.post, who = p.user || (feedOf(src) && feedOf(src).user) || {};
+      var m = p.media && p.media[0];
+      if (m) {
+        var isVid = m.type === 'video' && m.src;
+        html += '<div class="nx-lead-media' + (isVid ? ' nx-has-video' : '') + '">' + (isVid ? '<video controls playsinline preload="none" poster="' + esc(m.thumb) + '" src="' + esc(m.src) + '"></video>' : '<img alt="" src="' + esc((m.src || m.thumb || '') + (m.src && m.src.indexOf('pbs.twimg.com') > -1 ? '?name=large' : '')) + '">') + '</div>';
+      }
+      html += '<div class="nx-lead-body"><div class="nx-lead-src"><img alt="" src="' + esc(who.avatar || avatarOf(src)) + '"><span><b>' + esc(who.name || src.name) + '</b> @' + esc(who.handle || src.handle) + '</span><span class="nx-lead-clock" title="' + esc(lead.date.toLocaleString()) + '">' + esc(clock(lead.date)) + '</span></div>';
+      if (p.repostOf) html += '<div class="nx-item-meta">Reposted by ' + esc(src.name) + '</div>';
+      html += '<div class="nx-lead-text' + ((p.text || '').length > 200 ? ' nx-long' : '') + '">' + (p.html || esc(p.text)) + '</div>';
+      html += '<div class="nx-lead-actions"><a class="nx-btn" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer">' + X_SVG + ' View on X</a><a class="nx-btn nx-quiet" href="https://x.com/' + esc(src.handle) + '" target="_blank" rel="noopener noreferrer">Follow @' + esc(src.handle) + '</a></div></div>';
+    } else {
+      var n = lead.notice;
+      if (n.image) html += '<div class="nx-lead-media"><img alt="" src="' + esc(n.image) + '"></div>';
+      html += '<div class="nx-lead-body"><div class="nx-lead-src"><img alt="" src="' + esc(avatarOf(src)) + '"><span><b>' + esc(src.name) + '</b> announcement</span><span class="nx-lead-clock">' + esc(MONTHS[lead.date.getMonth()] + ' ' + lead.date.getDate()) + '</span></div>';
+      html += '<div class="nx-lead-text">' + esc(n.title || '') + '</div>';
+      if (n.body) html += '<div class="nx-rich" style="margin-top:10px">' + n.body + '</div>';
+      if (n.link && n.link.href) html += '<div class="nx-lead-actions">' + linkBtn(n.link) + '</div>';
+      html += '</div>';
+    }
+    screen.innerHTML = html;
   }
 
-  function renderLedger(src) {
-    var posts = (src.posts || []).slice().sort(function (a, b) { return parseDate(b.date) - parseDate(a.date); });
-    var tagsPresent = [];
-    posts.forEach(function (p) { if (p.tag && CFG.tags[p.tag] && tagsPresent.indexOf(p.tag) < 0) tagsPresent.push(p.tag); });
-    filtersEl.innerHTML = '';
-    filtersEl.hidden = tagsPresent.length < 2;
-    if (!filtersEl.hidden) {
-      [['all', { label: 'All', color: src.accent }]].concat(tagsPresent.map(function (t) { return [t, CFG.tags[t]]; })).forEach(function (pair) {
-        var c = el('button', 'nw-chip', esc(pair[1].label));
-        c.type = 'button';
-        c.style.setProperty('--chip', pair[1].color);
-        c.setAttribute('aria-pressed', activeTag === pair[0] ? 'true' : 'false');
-        c.addEventListener('click', function () { activeTag = pair[0]; renderLedger(src); });
-        filtersEl.appendChild(c);
-      });
-    }
-    var list = activeTag === 'all' ? posts : posts.filter(function (p) { return p.tag === activeTag; });
-    countEl.textContent = list.length ? list.length + (list.length === 1 ? ' post' : ' posts') : '';
-    ledgerEl.innerHTML = '';
-    if (!list.length) {
-      ledgerEl.appendChild(el('li', 'nw-empty', '<b>Nothing posted yet</b>Announcements for ' + esc(src.name) + ' will appear here.'));
+  function linkBtn(link) {
+    var ext = /^https?:/.test(link.href);
+    return '<a class="nx-btn" href="' + esc(link.href) + '"' + (ext ? ' target="_blank" rel="noopener noreferrer"' : '') + '>' + esc(link.label || 'Read more') + '</a>';
+  }
+
+  function renderNotices(src) {
+    var list = ((notices && notices[src.key]) || []).filter(function (n) { return n.pinned; });
+    list.sort(function (a, b) { return toDate(b.date) - toDate(a.date); });
+    noticesEl.innerHTML = list.map(function (n) {
+      var d = toDate(n.date);
+      return '<article class="nx-notice"><div class="nx-notice-head"><span class="nx-notice-kind">Pinned announcement</span><span class="nx-notice-date">' + esc(MONTHS[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear()) + '</span></div>' +
+        (n.title ? '<h3 class="nx-notice-title">' + esc(n.title) + '</h3>' : '') +
+        (n.body ? '<div class="nx-rich">' + n.body + '</div>' : '') +
+        (n.image ? '<img class="nx-notice-img" alt="" loading="lazy" src="' + esc(n.image) + '">' : '') +
+        (n.link && n.link.href ? linkBtn(n.link) : '') + '</article>';
+    }).join('');
+  }
+
+  function renderTimeline(src, items, loading) {
+    if (!items.length) {
+      timelineEl.innerHTML = loading ? '<div class="nx-skel" style="width:70%"></div><div class="nx-skel" style="width:90%"></div>' : '';
       return;
     }
-    list.forEach(function (p) {
-      var d = parseDate(p.date), st = stamp(d);
-      var tag = CFG.tags[p.tag];
-      var li = el('li', 'nw-entry');
-      li.style.setProperty('--entry-accent', (tag && tag.color) || src.accent);
-      var html = '<time class="nw-stamp" datetime="' + esc(p.date) + '" title="' + esc(longDate(d)) + '"><b>' + st.day + '</b>' + st.rest + '</time>';
-      html += '<div class="nw-entry-body">';
-      if (tag) html += '<span class="nw-tag">' + esc(tag.label) + '</span>';
-      html += '<h3 class="nw-entry-title">' + esc(p.title) + '</h3>';
-      if (p.body) html += '<div class="nw-entry-text">' + p.body + '</div>';
-      if (p.image) html += '<img class="nw-entry-img" alt="" loading="lazy" src="' + esc(p.image) + '">';
-      if (p.link && p.link.href) html += '<a class="nw-entry-link" href="' + esc(p.link.href) + '"' + (/^https?:/.test(p.link.href) ? ' target="_blank" rel="noopener noreferrer"' : '') + '>' + esc(p.link.label || 'Read more') + '</a>';
-      html += '</div>';
-      li.innerHTML = html;
-      ledgerEl.appendChild(li);
+    var visible = items.slice(0, shown);
+    var groups = [], last = null;
+    visible.forEach(function (it) {
+      var k = dayKey(it.date);
+      if (!last || last.key !== k) { last = { key: k, date: it.date, items: [] }; groups.push(last); }
+      last.items.push(it);
     });
+    var today = new Date(), yest = new Date(Date.now() - 86400000);
+    var html = groups.map(function (g) {
+      var d = g.date, sub = dayKey(d) === dayKey(today) ? 'Today' : dayKey(d) === dayKey(yest) ? 'Yesterday' : DAYS[d.getDay()];
+      if (d.getFullYear() !== today.getFullYear()) sub += ' ' + d.getFullYear();
+      return '<section class="nx-day"><div class="nx-day-label"><b>' + MONTHS[d.getMonth()] + ' ' + d.getDate() + '</b>' + sub + '</div><div class="nx-day-items">' + g.items.map(function (it) { return it.kind === 'x' ? xItem(src, it) : noticeItem(it); }).join('') + '</div></section>';
+    }).join('');
+    if (items.length > shown) html += '<button type="button" class="nx-more" id="nxMore">Show older posts</button>';
+    timelineEl.innerHTML = html;
+    var more = document.getElementById('nxMore');
+    if (more) more.addEventListener('click', function () { shown += CFG.pageSize; renderTimeline(src, items, false); });
   }
 
-  function renderX(src) {
-    var h = src.handle;
-    followEl.hidden = !h;
-    if (h) { followEl.href = 'https://x.com/' + h; followEl.textContent = 'Follow @' + h; }
-    xSub.textContent = h ? '@' + h : '';
-    xBody.innerHTML = '';
-    if (!h) {
-      xBody.appendChild(el('div', 'nw-empty', '<b>No X account linked</b>Posts will show here once ' + esc(src.name) + ' has an account set up.'));
-      return;
-    }
-    if (feedCache[h]) { paintFeed(src, feedCache[h]); return; }
-    for (var i = 0; i < 3; i++) xBody.appendChild(el('div', 'nw-skel', '<i></i><i></i><i></i>'));
-    fetch(CFG.xEndpoint + encodeURIComponent(h), { headers: { accept: 'application/json' } })
-      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-      .then(function (data) {
-        feedCache[h] = data;
-        if (current !== src) return;
-        renderMast(src, data);
-        paintFeed(src, data);
-      })
-      .catch(function () {
-        if (current !== src) return;
-        xBody.innerHTML = '';
-        var box = el('div', 'nw-empty', '<b>X did not answer</b>Posts could not be loaded right now. <a href="https://x.com/' + esc(h) + '" target="_blank" rel="noopener noreferrer">Open @' + esc(h) + ' on X</a> instead.<br>');
-        var retry = el('button', 'nw-retry', 'Try again');
-        retry.type = 'button';
-        retry.addEventListener('click', function () { renderX(src); });
-        box.appendChild(retry);
-        xBody.appendChild(box);
-      });
-  }
-
-  function paintFeed(src, data) {
-    var posts = (data && data.posts) || [];
-    xBody.innerHTML = '';
-    if (!posts.length) {
-      xBody.appendChild(el('div', 'nw-empty', '<b>No posts yet</b>@' + esc(src.handle) + ' has not posted anything public.'));
-      return;
-    }
-    var list = el('ul', 'nw-feed');
-    posts.slice(0, shown).forEach(function (p) { list.appendChild(postCard(p, data.user)); });
-    xBody.appendChild(list);
-    if (posts.length > shown) {
-      var more = el('button', 'nw-more', 'Show older posts');
-      more.type = 'button';
-      more.addEventListener('click', function () { shown += CFG.xPageSize; paintFeed(src, data); });
-      xBody.appendChild(more);
-    }
-  }
-
-  function postCard(p, user) {
-    var li = el('li', 'nw-post');
-    var who = p.user || user || {};
-    var d = new Date(p.date);
-    var html = '<div class="nw-post-head"><img class="nw-post-av" alt="" loading="lazy" src="' + esc(who.avatar || '') + '"><div class="nw-post-who"><div class="nw-post-name">' + esc(who.name || '') + '</div><div class="nw-post-handle">@' + esc(who.handle || '') + '</div></div>';
-    html += '<a class="nw-post-time" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(isFinite(d) ? d.toLocaleString() : '') + '">' + esc(ago(p.date)) + '</a></div>';
-    if (p.repostOf) html += '<div class="nw-post-handle" style="margin-bottom:6px">Reposted from @' + esc(p.repostOf) + '</div>';
-    html += '<div class="nw-post-text">' + (p.html || esc(p.text)) + '</div>';
+  function xItem(src, it) {
+    var p = it.post, who = p.user || (feedOf(src) && feedOf(src).user) || {};
+    var html = '<article class="nx-item"><div class="nx-item-meta">' + X_SVG + '<b>' + esc(who.name || src.name) + '</b>' + (p.repostOf ? '<span>reposted</span>' : '<span class="nx-handle">@' + esc(who.handle || src.handle) + '</span>') + '<a class="nx-time" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(it.date.toLocaleString()) + '">' + esc(clock(it.date)) + '</a></div>';
+    html += '<div class="nx-item-text">' + (p.html || esc(p.text)) + '</div>';
     if (p.media && p.media.length) {
-      var n = Math.min(p.media.length, 4);
-      html += '<div class="nw-media n' + n + '">';
-      p.media.slice(0, 4).forEach(function (m) {
-        if (m.type === 'video' && m.src) html += '<video controls preload="none" playsinline poster="' + esc(m.thumb || '') + '" src="' + esc(m.src) + '"></video>';
-        else html += '<a href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer"><img alt="" loading="lazy" src="' + esc(m.thumb || m.src || '') + '"></a>';
-      });
-      html += '</div>';
+      html += '<div class="nx-thumbs' + (p.media.length === 1 ? ' nx-one' : '') + '">' + p.media.slice(0, 4).map(function (m) {
+        if (m.type === 'video' && m.src) return '<video controls playsinline preload="none" poster="' + esc(m.thumb) + '" src="' + esc(m.src) + '"></video>';
+        return '<a href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer"><img alt="" loading="lazy" src="' + esc(m.thumb || m.src) + '"></a>';
+      }).join('') + '</div>';
     }
-    if (p.quote) html += '<a class="nw-quote" style="display:block" href="' + esc(p.quote.url) + '" target="_blank" rel="noopener noreferrer"><b>' + esc(p.quote.name) + '</b> @' + esc(p.quote.handle) + '<br>' + esc(p.quote.text) + '</a>';
-    html += '<div class="nw-post-stats"><span class="nw-st-reply">' + num(p.replies) + '</span><span class="nw-st-rt">' + num(p.reposts) + '</span><span class="nw-st-like">' + num(p.likes) + '</span></div>';
-    li.innerHTML = html;
-    return li;
+    if (p.quote) html += '<a class="nx-quote" href="' + esc(p.quote.url) + '" target="_blank" rel="noopener noreferrer"><b>' + esc(p.quote.name) + '</b> @' + esc(p.quote.handle) + '<br>' + esc(p.quote.text) + '</a>';
+    html += '<div class="nx-stats"><span title="Replies">' + ICONS.reply + num(p.replies) + '</span><span title="Reposts">' + ICONS.repost + num(p.reposts) + '</span><span title="Likes">' + ICONS.like + num(p.likes) + '</span></div></article>';
+    return html;
   }
 
-  buildTabs();
-  var hashKey = (location.hash || '').replace(/^#/, '');
-  select(sourceByKey(hashKey) ? hashKey : CFG.sources[0].key, false);
+  function noticeItem(it) {
+    var n = it.notice;
+    return '<article class="nx-item nx-is-notice"><div class="nx-item-meta"><b style="color:var(--sig)">Announcement</b></div>' +
+      (n.title ? '<h3 class="nx-item-title">' + esc(n.title) + '</h3>' : '') +
+      (n.body ? '<div class="nx-rich">' + n.body + '</div>' : '') +
+      (n.image ? '<div class="nx-thumbs nx-one"><a href="' + esc(n.image) + '" target="_blank" rel="noopener noreferrer"><img alt="" loading="lazy" src="' + esc(n.image) + '"></a></div>' : '') +
+      (n.link && n.link.href ? linkBtn(n.link) : '') + '</article>';
+  }
+
+  function renderFoot(src) {
+    var f = feedOf(src);
+    var left = '';
+    if (f && f.posts && f.posts.length) {
+      left = 'Posts from @' + esc(src.handle) + ' on X';
+      if (f.fetchedAt) left += ', checked ' + esc(ago(new Date(f.fetchedAt)));
+      if (f.stale) left += '. X is limiting requests, so this is the last saved copy.';
+    } else if (feeds[src.handle] !== 'loading') {
+      left = 'X posts are unavailable right now.';
+    }
+    footEl.innerHTML = '<span>' + left + '</span><a href="https://x.com/' + esc(src.handle) + '" target="_blank" rel="noopener noreferrer">Follow @' + esc(src.handle) + '</a>';
+  }
+
+  root.addEventListener('click', function (e) {
+    var sp = e.target.closest && e.target.closest('.nx-spoiler');
+    if (sp) sp.classList.add('nx-open');
+  });
+  monitor.addEventListener('animationend', function () { monitor.classList.remove('nx-switching'); });
+
+  buildSwitch();
+  var hash = (location.hash || '').replace(/^#/, '');
+  CFG.sources.forEach(function (src) { feeds[src.handle] = 'loading'; });
+  select(source(hash) ? hash : CFG.sources[0].key, false);
   window.addEventListener('hashchange', function () {
     var k = (location.hash || '').replace(/^#/, '');
-    if (sourceByKey(k)) select(k, false);
+    if (source(k) && (!current || current.key !== k)) select(k, false);
+  });
+
+  fetch(CFG.announcements, { cache: 'no-cache' })
+    .then(function (r) { return r.ok ? r.json() : {}; })
+    .catch(function () { return {}; })
+    .then(function (data) { notices = data || {}; render(); });
+
+  CFG.sources.forEach(function (src) {
+    fetch(CFG.xEndpoint + encodeURIComponent(src.handle), { headers: { accept: 'application/json' } })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .catch(function () { return null; })
+      .then(function (data) {
+        feeds[src.handle] = data && data.posts ? data : { posts: [], unavailable: true };
+        render();
+      });
   });
 })();
 </script>

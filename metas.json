@@ -5,7 +5,7 @@
     "background": "https://images.fntduserguide.com/carbon-fiber-background.jpg",
 
     "bytes": {
-      "The Box, Boss Drain":    { "url": "https://images.fntduserguide.com/the-box-byte.png", "rarity": "nightmare",  "note": "Increases DMG, RNG and decreases CD" },
+      "The Box":    { "url": "https://images.fntduserguide.com/the-box-byte.png", "rarity": "nightmare",  "note": "Increases DMG, RNG and decreases CD" },
       "Boss Drain": { "url": "https://images.fntduserguide.com/boss-drain-byte.png", "rarity": "secret",  "note": "Increases DMG and Boss DMG" },
       "Reaper":     { "url": "https://images.fntduserguide.com/reaper-byte.png", "rarity": "secret",      "note": "Increases Crit DMG" },
       "The Fan":    { "url": "https://images.fntduserguide.com/the-fan-byte.png", "rarity": "secret",     "note": "Gives units slow" },

@@ -358,6 +358,10 @@
         "text": "Nightmare Fredbear can attack any enemy and deals extra damage to enemies farther from him. Becomes stronger as more upgrades are selected in path 3. (Global CD: 145s)",
         "path": 3, "tier": 3,
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-mar-16-2026-23-33-30-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
+      },
+      {
+        "title": "Base Effect",
+        "text": "This unit gains +3% Damage and Range for every Dark unit on the team, and gains a Fear stack every attack. Fear gives this unit +5% Damage and -0.5% CD per stack (10 stacks max)."
       }
     ],
     "skins": [

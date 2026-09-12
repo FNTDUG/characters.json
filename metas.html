@@ -95,6 +95,12 @@
       '.meta-byte.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
       '.meta-byte-inner{width:100%;height:100%;border-radius:7px;overflow:hidden;background:rgba(14,11,28,0.88)}',
       '.meta-byte-inner img{width:100%;height:100%;object-fit:cover;display:block}',
+      '.meta-byte-pair .meta-byte-inner{position:relative;overflow:hidden}',
+      '.meta-byte-pair .meta-byte-inner img{position:absolute;left:50%;top:50%;' +
+        'width:64%!important;height:64%!important;object-fit:contain}',
+      '.meta-byte-pair .meta-byte-inner img.byte-b{transform:translate(-30%,-30%);opacity:.7}',
+      '.meta-byte-pair .meta-byte-inner img.byte-a{transform:translate(-70%,-70%);' +
+        'filter:drop-shadow(1px 1px 0 rgba(0,0,0,.95))}',
       '.meta-chip{position:absolute;bottom:2px;left:2px;z-index:2;aspect-ratio:1/1;' +
         'width:clamp(16px,28%,54px);border-radius:9px;padding:2px;pointer-events:none}',
       '.meta-chip.meta-shiny{background-size:200% 200%;animation:metaShiny 6s linear infinite}',
@@ -334,9 +340,22 @@
     };
   }
 
+  function metaBytes(unitCfg, META_CFG) {
+    var raw = unitCfg && unitCfg.byte;
+    var names = Array.isArray(raw) ? raw : String(raw || '').split(/\s*[,+/&]\s*/);
+    var out = [], seen = {};
+    names.forEach(function (n) {
+      n = String(n || '').trim();
+      if (!n || seen[n] || !META_CFG.bytes[n]) return;
+      seen[n] = 1;
+      out.push({ name: n, data: META_CFG.bytes[n] });
+    });
+    return out;
+  }
+
   function metaPathCorner(unitCfg, META_CFG) {
     var hasEnch = !!META_CFG.enchants[unitCfg.enchant];
-    var hasByte = !!META_CFG.bytes[unitCfg.byte];
+    var hasByte = metaBytes(unitCfg, META_CFG).length > 0;
     var hasChip = !!(unitCfg.chip && META_CFG.chips && META_CFG.chips[unitCfg.chip]);
     var hasLabel = !!unitCfg.label;
     var hasRepl = !!unitCfg.replacement;
@@ -403,11 +422,10 @@
       return row;
     }
 
-    var byteData = META_CFG.bytes[unitCfg.byte];
-    if (byteData) {
-      var bR = (byteData.rarity || '').toLowerCase();
-      tipInner.appendChild(tipRow(getRarityBg(unitCfg.byte, bR), bR === 'shiny', byteData.url, 'Byte: ' + unitCfg.byte + (byteData.note ? '\n' + byteData.note : '')));
-    }
+    metaBytes(unitCfg, META_CFG).forEach(function (b) {
+      var bR = (b.data.rarity || '').toLowerCase();
+      tipInner.appendChild(tipRow(getRarityBg(b.name, bR), bR === 'shiny', b.data.url, 'Byte: ' + b.name + (b.data.note ? '\n' + b.data.note : '')));
+    });
     var chipData = META_CFG.chips && META_CFG.chips[unitCfg.chip];
     if (chipData) {
       var chR = (chipData.rarity || '').toLowerCase();
@@ -850,15 +868,22 @@
           pW.appendChild(pI); inner.appendChild(pW);
         }
 
-        var byteData = META_CFG.bytes[unitCfg.byte];
-        if (byteData) {
-          var bR = (byteData.rarity || '').toLowerCase(), bSh = bR === 'shiny';
+        var bytes = metaBytes(unitCfg, META_CFG);
+        if (bytes.length) {
+          var bR = (bytes[0].data.rarity || '').toLowerCase(), bSh = bR === 'shiny';
           var bW = document.createElement('div');
-          bW.className = 'meta-byte' + (bSh ? ' meta-shiny' : ''); bW.style.background = getRarityBg(unitCfg.byte, bR);
+          bW.className = 'meta-byte' + (bSh ? ' meta-shiny' : '') + (bytes.length > 1 ? ' meta-byte-pair' : '');
+          bW.style.background = getRarityBg(bytes[0].name, bR);
           if (bSh) bW.style.backgroundSize = '200% 200%';
           var bI = document.createElement('div'); bI.className = 'meta-byte-inner';
-          var bM = document.createElement('img'); _metaImgSrc(bM, byteData.url); bM.alt = unitCfg.byte;
-          bI.appendChild(bM); bW.appendChild(bI); inner.appendChild(bW);
+          var bLegs = bytes.length > 1 ? [['byte-b', bytes[1]], ['byte-a', bytes[0]]] : [['', bytes[0]]];
+          bLegs.forEach(function (pr) {
+            var bM = document.createElement('img');
+            if (pr[0]) bM.className = pr[0];
+            _metaImgSrc(bM, pr[1].data.url); bM.alt = pr[1].name;
+            bI.appendChild(bM);
+          });
+          bW.appendChild(bI); inner.appendChild(bW);
         }
 
         if (unitCfg.replacement) {

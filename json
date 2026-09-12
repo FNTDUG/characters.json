@@ -13084,6 +13084,7 @@
           {
             "title": "Base Effect",
             "text": "All Electric units gain +15% Damage and -10% CD."
+          }
         ],
         "passiveDamage": {
           "periodic": [

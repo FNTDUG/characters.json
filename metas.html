@@ -353,6 +353,25 @@
     return out;
   }
 
+  function metaGradStops(css) {
+    return String(css || '').match(/#[0-9a-fA-F]{3,8}\b|rgba?\([^)]*\)/g) || [];
+  }
+
+  function metaByteBg(bytes) {
+    var a = bytes[0], b = bytes[1];
+    var ra = (a.data.rarity || '').toLowerCase();
+    var bgA = getRarityBg(a.name, ra);
+    if (!b) return bgA;
+    var rb = (b.data.rarity || '').toLowerCase();
+    if (ra === rb || ra === 'shiny' || rb === 'shiny') return bgA;
+    var sa = metaGradStops(bgA), sb = metaGradStops(getRarityBg(b.name, rb));
+    if (!sa.length || !sb.length) return bgA;
+    var stops = [];
+    sa.forEach(function (c, i) { stops.push(c + ' ' + Math.round(sa.length > 1 ? i / (sa.length - 1) * 42 : 0) + '%'); });
+    sb.forEach(function (c, i) { stops.push(c + ' ' + Math.round(58 + (sb.length > 1 ? i / (sb.length - 1) * 42 : 42)) + '%'); });
+    return 'linear-gradient(135deg,' + stops.join(',') + ')';
+  }
+
   function metaPathCorner(unitCfg, META_CFG) {
     var hasEnch = !!META_CFG.enchants[unitCfg.enchant];
     var hasByte = metaBytes(unitCfg, META_CFG).length > 0;
@@ -873,7 +892,7 @@
           var bR = (bytes[0].data.rarity || '').toLowerCase(), bSh = bR === 'shiny';
           var bW = document.createElement('div');
           bW.className = 'meta-byte' + (bSh ? ' meta-shiny' : '') + (bytes.length > 1 ? ' meta-byte-pair' : '');
-          bW.style.background = getRarityBg(bytes[0].name, bR);
+          bW.style.background = metaByteBg(bytes);
           if (bSh) bW.style.backgroundSize = '200% 200%';
           var bI = document.createElement('div'); bI.className = 'meta-byte-inner';
           var bLegs = bytes.length > 1 ? [['byte-b', bytes[1]], ['byte-a', bytes[0]]] : [['', bytes[0]]];

@@ -80,7 +80,7 @@
         { "name": "Grand Strategist Chica", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Valkyrie Chica", "caption": "" },
         { "name": "Commander Withered Freddy", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Phone Guy", "label": "", "byte": "KABOOM!, The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box, Boss Drain, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
         { "name": "Hot Dog Guy", "label": "", "byte": "Pearl, UFO", "enchant": "Investor", "chip": "", "replacement": "", "caption": "" }
       ]
     },
@@ -136,7 +136,7 @@
     },
     "Light 1st": {
       "units": [
-        { "name": "Unicorn Toy Foxy", "label": "$1k", "byte": "The Box, Boss Drain, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Unicorn Toy Foxy", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Puppet", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Hijacked", "path": "2-5-0", "replacement": "", "caption": "Place in back, Potency" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "Grand Strategist Chica", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },

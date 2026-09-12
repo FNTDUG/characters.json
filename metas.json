@@ -137,7 +137,7 @@
     "Light 1st": {
       "units": [
         { "name": "Unicorn Toy Foxy", "label": "$1k", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Puppet", "label": "", "byte": "Boss Drain", "chip": "Overwhelming Power", "enchant": "Hijacked", "path": "2-5-0", "replacement": "", "caption": "Place in back, Potency" },
+        { "name": "Puppet", "label": "", "byte": "The Box", "chip": "Overwhelming Power", "enchant": "Hijacked", "path": "2-5-0", "replacement": "", "caption": "Place in back, Potency" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Grand Strategist Chica", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
@@ -186,11 +186,11 @@
     "Fire 6th": {
       "units": [
         { "name": "Cannoneer Chica", "label": "$750", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Springtrap", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "path": "5-0-2", "replacement": "", "caption": "" },
         { "name": "Pyro Spring Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Dragon Endo 01", "label": "", "byte": "The Box", "chip": "Blazing Fire", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "Headless Horseman Mangle", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "Springtrap", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "path": "5-0-2", "replacement": "", "caption": "" }
+        { "name": "Headless Horseman Mangle", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" }
       ]
     },
     "Neutral 7th": {

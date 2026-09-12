@@ -76,9 +76,9 @@
   "metas": {
     "Story Nightmare": {
       "units": [
-        { "name": "Unicorn Toy Foxy", "label": "$1k", "byte": "The Box, Boss Drain, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box, Boss Drain, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Valkyrie Chica", "caption": "" },
-        { "name": "Commander Withered Freddy", "label": "", "byte": "The Box, Boss Drain, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Unicorn Toy Foxy", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Valkyrie Chica", "caption": "" },
+        { "name": "Commander Withered Freddy", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" },
         { "name": "Phone Guy", "label": "", "byte": "KABOOM!, The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box, Boss Drain, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
         { "name": "Hot Dog Guy", "label": "", "byte": "Pearl, UFO", "enchant": "Investor", "chip": "", "replacement": "", "caption": "" }
@@ -86,8 +86,8 @@
     },
     "Endless Farthest": {
       "units": [
-        { "name": "White Lily Toy Foxy", "label": "$1k", "byte": "The Box, Boss Drain, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter, Potency" },
-        { "name": "Vengeful Spirit", "label": "", "byte": "The Box, Boss Drain, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "path": "", "replacement": "", "caption": "Buff Potency" },
+        { "name": "White Lily Toy Foxy", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter, Potency" },
+        { "name": "Vengeful Spirit", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "path": "", "replacement": "", "caption": "Buff Potency" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Deep Sea Calamity Endo", "caption": "Buff Potency" },
         { "name": "Gaia Chica", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },

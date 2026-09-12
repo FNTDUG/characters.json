@@ -3804,7 +3804,7 @@
         "text": "Nearby Fire units gain +40% Damage and +20% Range for 30s. Becomes stronger as more upgrades are selected in 1. (Local CD: 60s)",
         "path": 1, "tier": 4,
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-01-03-14-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347"
-      },
+      }
     ],
     "skins": [
       {
@@ -5481,7 +5481,7 @@
         "text": "All enemies take 200% of this unit's damage, Bosses take 500% instead. Automatically activates at 2x power if a Boss leaves this unit's range, regardless of CD. (Local CD: 90s).",
         "path": 1, "tier": 5,
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-01-02-56-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347"
-      },
+      }
     ],
     "skins": [
       {
@@ -9377,7 +9377,7 @@
         "text": "All enemies take 500% of this unit's damage and are Stunned for 5s. (Upgrade 18+, Local CD: 90s).",
         "path": 3, "tier": 5,
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-01-03-05-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347"
-      },
+      }
     ],
     "skins": [
       {
@@ -9553,7 +9553,7 @@
         "text": "This unit stops attacking and builds power for its next attack, and can be manually wound at 1.5x efficiency. Becomes stronger as more upgrades are selected in path 1. (Local CD: 0s).",
         "path": 1, "tier": 4,
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-01-03-00-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347"
-      },
+      }
     ],
     "skins": [
       {
@@ -13060,7 +13060,7 @@
             "text": "Select a unit to 'sync' with Ennard. Every 10s, Ennard will attack with the synced unit, dealing 25% of the synced unit's damage and dealing 2 shield damage. Becomes stronger as more upgrades are selected in path 3. (Local CD: 0s)",
             "path": 3, "tier": 3,
             "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/enard-ability-high.png"
-          },
+          }
         ],
         "passiveDamage": {
           "periodic": [
@@ -13255,7 +13255,7 @@
             "text": "Select a unit to 'sync' with Ennard. Every 10s, Ennard will attack with the synced unit, dealing 25% of the synced unit's damage and dealing 2 shield damage. Becomes stronger as more upgrades are selected in path 3. (Local CD: 0s)",
             "path": 3, "tier": 3,
             "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/enard-ability-high.png"
-          },
+          }
         ],
         "passiveDamage": {
           "periodic": [
@@ -14954,7 +14954,7 @@
         "text": "Opens a chip selection screen. Pick 1 chip for permanent buffs and effects, increased to 2 at tier 5. <br>• Endless Range: 15% range buff to your team.<br>• Endless Strength: 10% damage buff to your team.<br>• Endless Speed: 7.5% cooldown reduction to your team.<br>• Curse Status: All units apply 10% burn on hit.<br>• Pizza: Spawns 3 pizzas that deal 100% damage when walked over.<br>• Freddles: Spawns Freddles every 2s dealing 33% damage, and apply 5% wither for 5s.<br>• Counter Bite: When losing a stock, attack the full map for 500% damage.<br>• Block Unscrew: All units deal 10% more damage to Bosses.<br>• (Local CD: 1s)",
         "path": 2, "tier": 3,
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-df656x.png"
-      },
+      }
     ],
     "passiveDamage": {
       "onnthattack": [
@@ -15540,13 +15540,13 @@
       {
         "title": "Ads",
         "text": "Place up to 3 Audio Lures that can attack and have 25% of this unit's damage and range. Audio Lure attacks Slow enemies by 5% for 3s. (Local CD: 10s)",
-        "path": 2, "tier": 2,
+        "path": 2, "tier": 2
       },
       {
         "title": "Salvage Assembly",
         "text": "Consume a selected amount of Scrap to create up to 50 summons with 10% of this unit's damage as health per Scrap consumed. (Local CD: 30s)",
-        "path": 1, "tier": 5,
-      },
+        "path": 1, "tier": 5
+      }
     ],
     "skins": [
       {
@@ -22153,7 +22153,7 @@
       "text": "For 30s, enemies are constantly set to 50 Marks that cannot be reduced. Gain +20% Damage and follow up each attack with a Full AOE attack for 50% damage. Resets tier 3's crit boost when upgraded to tier 5. (Local CD: 90s)",
       "path": 2, "tier": 4,
       "activeIcon": "https://tr.rbxcdn.com/180DAY-7b3a2454cb4ea3391d19ec7337889360/420/420/Image/Png/noFilter"
-    },
+    }
   ],
   "skins":[
     {

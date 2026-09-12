@@ -136,7 +136,7 @@
     },
     "Light 1st": {
       "units": [
-        { "name": "Unicorn Toy Foxy", "label": "$1k", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Unicorn Toy Foxy", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Puppet", "label": "", "byte": "The Box", "chip": "Overwhelming Power", "enchant": "Hijacked", "path": "2-5-0", "replacement": "", "caption": "Place in back, Potency" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Grand Strategist Chica", "label": "",  "byte": "The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },

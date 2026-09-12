@@ -355,18 +355,10 @@
     "passives": [
       {
         "title": "Nightmarish Cry",
-        "text": "Stun all current enemies for 10s, and all other units gain +75% CD for 10s. During this time, Nightmare Fredbear can attack anywhere on the map and deals 1%-75% increased damage based on distance from this unit (Upgrade 19+, Global CD: 145s).",
+        "text": "Nightmare Fredbear can attack anywhere and deals extra damage to enemies farther from him.",
+        "path": 1, "tier": 3,
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-mon-mar-16-2026-23-33-30-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
       },
-      {
-        "title": "Darkest Eclipse",
-        "text": "Swap to Nightmare for 30s; Unleash a wave of darkness, slowing all enemies by 25% and applying Death. When attacking a slowed enemy, deal 125% damage."
-      },
-      {
-        "title": "Feeding the Fear",
-        "text": "All Dark units gain +10% Damage and Range for every other Dark unit on your team. Nightmare Fredbear himself instead gains +20% Damage and +10% Range for every other Dark unit on your team. Nightmare Fredbear gains a stack of Fear each time he attacks. Fear grants Nightmare Fredbear +5% Damage and -0.5% CD per stack and he can hold up to 10 stacks (+50% Damage, -5% CD). At max Fear, activate Darkest Eclipse."
-      }
-    ],
     "skins": [
       {
         "name": "Remnant Fredbear",

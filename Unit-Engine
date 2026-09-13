@@ -2264,7 +2264,7 @@
                 n6.style.webkitBackgroundClip = 'text';
                 n6.style.backgroundClip = 'text';
                 n6.style.webkitTextFillColor = 'transparent';
-                n6.style.fontWeight = 'bold';
+                n6.style.backgroundSize = '210px 100%';
                 n6.textContent = elemWord;
                 el.appendChild(n6);
               } else {

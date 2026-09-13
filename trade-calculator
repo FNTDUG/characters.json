@@ -2425,6 +2425,7 @@ const COSMETICS = [
   { name: "Ballard of the Streets Ballora",  type: "pet", imgNormal: "https://tr.rbxcdn.com/180DAY-97772683fae41dce9630d3c9b01bda60/420/420/Image/Png/noFilter", imgShiny: "https://tr.rbxcdn.com/180DAY-97772683fae41dce9630d3c9b01bda60/420/420/Image/Png/noFilter", rarity: "exclusive",    category: "Cosmetics" },
   { name: "Island Vacation Dragon Endo 01",  type: "skin", imgNormal: "https://tr.rbxcdn.com/180DAY-63fc00e007b2b96d64205f890e0fadac/420/420/Image/Png/noFilter", imgShiny: "https://tr.rbxcdn.com/180DAY-bee3a967dd46f4e1f666caef85e26729/420/420/Image/Png/noFilter", rarity: "exclusive",    category: "Cosmetics" },
   { name: "Ballard of the Streets Ballora",  type: "skin", imgNormal: "https://tr.rbxcdn.com/180DAY-f036a9bc545f308fbbc6b78ab3d93393/420/420/Image/Png/noFilter", imgShiny: "https://tr.rbxcdn.com/180DAY-f3f69a6f01952e0fd5ca12f3d381735c/420/420/Image/Png/noFilter", rarity: "exclusive",    category: "Cosmetics" },
+  { name: "Forever Slumber Fredbear",  type: "skin", imgNormal: "https://tr.rbxcdn.com/180DAY-e8eb087469c5fb10b9e0a857dfe67250/420/420/Image/Png/noFilter", rarity: "secret",    category: "Cosmetics" },
 ];
 
 const GAMEPASSES = [

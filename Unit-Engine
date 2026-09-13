@@ -8639,7 +8639,7 @@
             _valueSel._rebuild(opts);
             _valueSel._set(norm(currentElementFilter || "all"));
           } else if (currentCategoryMode === "type") {
-            opts.push({ value: "all", label: "All Types", placeholder: true });
+            opts.push({ value: "all", label: "All Tags", placeholder: true });
             UE_TYPE_OPTIONS.forEach(function(t) {
               opts.push({ value: norm(t), label: t });
             });

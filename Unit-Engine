@@ -5947,12 +5947,12 @@
           lockBox.style.background = "rgba(255,255,255,0.04)";
           lockBox.style.border = "1px solid rgba(255,255,255,0.08)";
           lockBox.style.textAlign = "center";
-          lockBox.style.fontSize = "11px";
-          lockBox.style.lineHeight = "1.8";
+          lockBox.classList.add("ue-passive-text");
+          lockBox.style.fontSize = "13px";
+          lockBox.style.lineHeight = "1.4";
           var lockHead = document.createElement("div");
-          lockHead.textContent = hasRealPassives ? "Unlocked by Hero Tree" : "This unit's abilities unlock through the Hero Tree";
+          lockHead.textContent = hasRealPassives ? "Unlocked by the Hero Tree" : "This unit's abilities unlock through the Hero Tree";
           lockHead.style.fontFamily = "'Audiowide', sans-serif";
-          lockHead.style.fontSize = "12px";
           lockHead.style.color = "rgba(255,255,255,0.75)";
           lockHead.style.marginBottom = "6px";
           lockBox.appendChild(lockHead);
@@ -5964,6 +5964,7 @@
             nm.style.fontWeight = "bold";
             line.appendChild(nm);
             line.appendChild(document.createTextNode(" unlocks at Path " + p.path + ", Tier " + p.tier));
+            line.style.marginTop = "4px";
             lockBox.appendChild(line);
           });
           passiveContent.appendChild(lockBox);

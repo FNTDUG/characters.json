@@ -5820,7 +5820,17 @@
         passives = unit.passives.slice();
       }
 
-      
+        if (passives.length && typeof passives[0] === "string") {
+          passives = passives.map(function (txt, idx) {
+            return { title: "Passive " + (idx + 1), text: txt };
+          });
+        }
+
+        var lockedPassives = ueHeroPathsFor(unit)
+          ? passives.filter(function (p) { return p && typeof p === "object" && !ueTierUnlocked(unit, p); })
+          : [];
+        passives = ueGateList(unit, passives);
+        var hasRealPassives = passives.length > 0;
 
       if (unit && unit.element) {
 
@@ -5839,15 +5849,7 @@
 
       }
 
-        if (passives.length && typeof passives[0] === "string") {
-          passives = passives.map(function (txt, idx) {
-            return { title: "Passive " + (idx + 1), text: txt };
-          });
-        }
-
         var passiveContent = document.createElement("div");
-
-        passives = ueGateList(unit, passives);
 
         if (passives.length) {
           passives.forEach(function (p) {
@@ -5932,12 +5934,42 @@
             block.appendChild(ptext);
             passiveContent.appendChild(block);
           });
-        } else {
+        }
+        if (!hasRealPassives && !lockedPassives.length) {
           var none = document.createElement("div");
           none.textContent = "No passive abilities listed.";
           none.style.padding = "10px 0";
           none.style.fontSize = "13px";
           passiveContent.appendChild(none);
+        }
+        if (lockedPassives.length) {
+          var lockBox = document.createElement("div");
+          lockBox.style.margin = "12px 0 6px";
+          lockBox.style.padding = "10px 12px";
+          lockBox.style.borderRadius = "8px";
+          lockBox.style.background = "rgba(255,255,255,0.04)";
+          lockBox.style.border = "1px solid rgba(255,255,255,0.08)";
+          lockBox.style.textAlign = "center";
+          lockBox.style.fontSize = "11px";
+          lockBox.style.lineHeight = "1.8";
+          var lockHead = document.createElement("div");
+          lockHead.textContent = hasRealPassives ? "Unlocked by the Hero Tree" : "This unit's abilities unlock through the Hero Tree";
+          lockHead.style.fontFamily = "'Audiowide', sans-serif";
+          lockHead.style.fontSize = "12px";
+          lockHead.style.color = "rgba(255,255,255,0.75)";
+          lockHead.style.marginBottom = "6px";
+          lockBox.appendChild(lockHead);
+          lockedPassives.slice().sort(function (a, b) { return (Number(a.path) - Number(b.path)) || (Number(a.tier) - Number(b.tier)); }).forEach(function (p) {
+            var line = document.createElement("div");
+            var nm = document.createElement("span");
+            nm.textContent = p.title || "Passive";
+            nm.style.color = p.activeIcon ? "#feaa00" : "#ff3c3b";
+            nm.style.fontWeight = "bold";
+            line.appendChild(nm);
+            line.appendChild(document.createTextNode(" unlocks at Path " + p.path + ", Tier " + p.tier));
+            lockBox.appendChild(line);
+          });
+          passiveContent.appendChild(lockBox);
         }
 
         passivePanel.appendChild(passiveContent);

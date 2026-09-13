@@ -5950,7 +5950,7 @@
           lockBox.style.fontSize = "11px";
           lockBox.style.lineHeight = "1.8";
           var lockHead = document.createElement("div");
-          lockHead.textContent = hasRealPassives ? "Unlocked by the Hero Tree" : "This unit's abilities unlock through the Hero Tree";
+          lockHead.textContent = hasRealPassives ? "Unlocked by Hero Tree" : "This unit's abilities unlock through the Hero Tree";
           lockHead.style.fontFamily = "'Audiowide', sans-serif";
           lockHead.style.fontSize = "12px";
           lockHead.style.color = "rgba(255,255,255,0.75)";

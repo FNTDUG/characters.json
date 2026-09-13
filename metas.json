@@ -183,7 +183,7 @@
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" }
       ]
     },
-    "Neutral 6thth": {
+    "Neutral 6th": {
       "units": [
         { "name": "Crying Child", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Vengeful Spirit", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "path": "5-2-0", "replacement": "", "caption": "Buff Potency" },

@@ -2138,13 +2138,19 @@
       // the 'scar' stem; 'ned'/'ning' do the same for stun -> stunned/stunning.
       var _SFX = '(s|ed|ing|ned|ning|red|ring|er)?';
       var _KW  = 'damage|dmg|range|rng|cooldown|cd|anti[- ]?regen|burn|bleed|slow|stun|knockback|poison|death|malware|mark|root|scar|soak|wither';
+      var _ELEMENT_WORDS = ['Neutral', 'Nature', 'Dark', 'Water', 'Rust', 'Electricity', 'Fire', 'Light'];
+      var _ELEMENT_ALT = _ELEMENT_WORDS.join('|');
       var _PASSIVE_RE = new RegExp(
         '([+-]?\\d+(?:\\.\\d+)?%)([ ]?)(' + _KW + ')' + _SFX + '\\b' +
         '|([+-]?\\d+(?:\\.\\d+)?%)' +
         '|\\b(' + _CC_STANDALONE + ')' + _SFX + '\\b' +
-        '|(' + _CC_TWOPHRASE + ')\\b',
+        '|(' + _CC_TWOPHRASE + ')\\b' +
+        '|\\b((?:' + _ELEMENT_ALT + ')(?:/(?:' + _ELEMENT_ALT + '))*)\\b',
         'gi'
       );
+      function _isElementToken(t) {
+        return String(t || '').split('/').every(function (w) { return _ELEMENT_WORDS.indexOf(w) !== -1; });
+      }
 
       var _PASSIVE_NOTES = {
         'anti-regen': 'Reduces enemy health regeneration by a %',
@@ -2249,8 +2255,22 @@
             var pct2 = m[5];
             var ccWord = m[6], ccSfx = m[7];
             var twoPhrase = m[8];
+            var elemWord = m[9];
 
-            if (pct1 !== undefined) {
+            if (elemWord !== undefined) {
+              if (_isElementToken(elemWord)) {
+                var n6 = document.createElement('span');
+                n6.style.background = ELEMENT_TEXT_GRADIENT;
+                n6.style.webkitBackgroundClip = 'text';
+                n6.style.backgroundClip = 'text';
+                n6.style.webkitTextFillColor = 'transparent';
+                n6.style.fontWeight = 'bold';
+                n6.textContent = elemWord;
+                el.appendChild(n6);
+              } else {
+                el.appendChild(document.createTextNode(elemWord));
+              }
+            } else if (pct1 !== undefined) {
 
               var n1 = document.createElement('span');
               n1.style.color = '#6FC77F';

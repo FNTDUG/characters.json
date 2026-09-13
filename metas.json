@@ -60,7 +60,7 @@
       },
       {
         "pageTitle": "ELEMENT METAS",
-        "order": ["Light 1st", "Nature 2nd", "Dark 3rd", "Electricity 4th", "Rust 5th", "Neutral 6th", "Fire 7th", "Water 8th"]
+        "order": ["Nature 1st", "Dark 2nd", "Electricity 3rd", "Rust 4th", "Neutral 5th", "Light 6th", "Fire 7th", "Water 8th"]
       },
       {
         "pageTitle": "CHALLENGES METAS",
@@ -134,17 +134,7 @@
         { "name": "Hot Dog Guy", "label": "", "byte": "Pearl, UFO", "enchant": "Investor", "chip": "", "replacement": "", "caption": "" }
       ]
     },
-    "Light 1st": {
-      "units": [
-        { "name": "Unicorn Toy Foxy", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Puppet", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Hijacked", "path": "2-5-0", "replacement": "", "caption": "Place in back, Potency" },
-        { "name": "Astral Bonnie", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
-        { "name": "Grand Strategist Chica", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
-        { "name": "Stitchwraith", "label": "", "byte": "UFO, The Box", "enchant": "Phantom", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" }
-      ]
-    },
-    "Nature 2nd": {
+    "Nature 1st": {
       "units": [
         { "name": "White Lily Toy Foxy", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter, Potency" },
         { "name": "Malachite Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
@@ -154,7 +144,7 @@
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" }
       ]
     },
-    "Dark 3rd": {
+    "Dark 2nd": {
       "units": [
         { "name": "Faz-ino Spring Bonnie", "label": "$900", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Starter" },
         { "name": "Vengeful Spirit", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "path": "5-2-0", "replacement": "", "caption": "Buff Potency" },
@@ -164,7 +154,7 @@
         { "name": "Stitchwraith", "label": "", "byte": "UFO, The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Jake Mode, Potency" }
       ]
     },
-    "Electricity 4th": {
+    "Electricity 3rd": {
       "units": [
         { "name": "High Voltage Rockstar Freddy", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter, Potency" },
         { "name": "Ennard", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "path": "0-2-5", "replacement": "", "caption": "Buff Potency" },
@@ -173,7 +163,7 @@
         { "name": "DJ 101Bit", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" }
       ]
     },
-    "Rust 5th": {
+    "Rust 4th": {
       "units": [
         { "name": "Undead Chica", "label": "$600", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Michael Afton", "label": "", "byte": "The Box, Boss Drain", "chip": "Blazing Fire", "enchant": "Hijacked", "path": "0-2-5", "replacement": "", "caption": "Buff Potency" },
@@ -183,7 +173,7 @@
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" }
       ]
     },
-    "Neutral 6th": {
+    "Neutral 5th": {
       "units": [
         { "name": "Crying Child", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Vengeful Spirit", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "path": "5-2-0", "replacement": "", "caption": "Buff Potency" },
@@ -191,6 +181,16 @@
         { "name": "Trash o Tron", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "Mr. Hippo", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
+      ]
+    },
+    "Light 6th": {
+      "units": [
+        { "name": "Unicorn Toy Foxy", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Puppet", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Hijacked", "path": "2-5-0", "replacement": "", "caption": "Place in back, Potency" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Grand Strategist Chica", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Stitchwraith", "label": "", "byte": "UFO, The Box", "enchant": "Phantom", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" }
       ]
     },
     "Fire 7th": {

@@ -5849,6 +5849,10 @@
 
       }
 
+        if (!hasRealPassives && !lockedPassives.length) {
+          passives.push({ title: "NO PASSIVE", text: "This unit has no passive." });
+        }
+
         var passiveContent = document.createElement("div");
 
         if (passives.length) {
@@ -5935,13 +5939,6 @@
             passiveContent.appendChild(block);
           });
         }
-        if (!hasRealPassives && !lockedPassives.length) {
-          var none = document.createElement("div");
-          none.textContent = "This Unit has no Passive/Active.";
-          none.style.padding = "10px 0";
-          none.style.fontSize = "13px";
-          passiveContent.appendChild(none);
-        }
         if (lockedPassives.length) {
           var lockBox = document.createElement("div");
           lockBox.style.margin = "12px 0 6px";
@@ -5953,7 +5950,7 @@
           lockBox.style.fontSize = "11px";
           lockBox.style.lineHeight = "1.8";
           var lockHead = document.createElement("div");
-          lockHead.textContent = hasRealPassives ? "Unlocked by Hero Tree" : "This unit's abilities unlock through the Hero Tree";
+          lockHead.textContent = hasRealPassives ? "Unlocked by the Hero Tree" : "This unit's abilities unlock through the Hero Tree";
           lockHead.style.fontFamily = "'Audiowide', sans-serif";
           lockHead.style.fontSize = "12px";
           lockHead.style.color = "rgba(255,255,255,0.75)";

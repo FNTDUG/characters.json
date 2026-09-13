@@ -60,7 +60,7 @@
       },
       {
         "pageTitle": "ELEMENT METAS",
-        "order": ["Light 1st", "Nature 2nd", "Dark 3rd", "Electricity 4th", "Rust 5th", "Fire 6th", "Neutral 7th", "Water 8th"]
+        "order": ["Light 1st", "Nature 2nd", "Dark 3rd", "Electricity 4th", "Rust 5th", "Neutral 6th", "Fire 7th", "Water 8th"]
       },
       {
         "pageTitle": "CHALLENGES METAS",
@@ -183,17 +183,7 @@
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" }
       ]
     },
-    "Fire 6th": {
-      "units": [
-        { "name": "Cannoneer Chica", "label": "$750", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "Springtrap", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "path": "5-0-2", "replacement": "", "caption": "" },
-        { "name": "Pyro Spring Bonnie", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "Dragon Endo 01", "label": "", "byte": "The Box, Boss Drain", "chip": "Blazing Fire", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
-        { "name": "Headless Horseman Mangle", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" }
-      ]
-    },
-    "Neutral 7th": {
+    "Neutral 6thth": {
       "units": [
         { "name": "Crying Child", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Vengeful Spirit", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "path": "5-2-0", "replacement": "", "caption": "Buff Potency" },
@@ -201,6 +191,16 @@
         { "name": "Trash o Tron", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "Mr. Hippo", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "" }
+      ]
+    },
+    "Fire 7th": {
+      "units": [
+        { "name": "Cannoneer Chica", "label": "$750", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Springtrap", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "path": "5-0-2", "replacement": "", "caption": "" },
+        { "name": "Pyro Spring Bonnie", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Dragon Endo 01", "label": "", "byte": "The Box, Boss Drain", "chip": "Blazing Fire", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Headless Horseman Mangle", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" }
       ]
     },
     "Water 8th": {

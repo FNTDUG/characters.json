@@ -1724,7 +1724,7 @@ function buildDynPresents(presObj){
   });
 }
 
-const CHAMPION_UNITS    = ["Thanatos","Slasher Bonnie","Mother Nature Ballora","Bear5","Devious Purple Guy"];
+const CHAMPION_UNITS    = ["Thanatos","Slasher Bonnie","Mother Nature Ballora","Bear5","Devious Purple Guy","Void Drifter Molten Freddy"];
 const CHAMPION_GRADIENT = "linear-gradient(90deg,rgb(224,224,224) 0%,rgb(207,181,59) 100%)";
 
 var currentEnchantKey = "none";

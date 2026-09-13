@@ -4684,6 +4684,7 @@
           ["scott_t2bot",       "Animdude: Bottom Path Tier 2 (+15% Crit DMG)",                            { critDmgAdd: 0.15 }],
           ["scott_bot",         "Animdude: Max Bottom Path (+30% DMG & +30% Crit Rate)",                    { dmgMult: 1.30, critRateAdd: 0.30}],
           ["astral_b",          "Astral Bonnie: Orion's Belt (+2% DMG, +3% RNG per stack)",                 { dmgMult: 1.02, rngMult: 1.03, stackKey: "astral_bStacks", maxStacks: 15 }],
+          ["bedtime_all",       "Bedtime Psychic Fredbear: As the Moon Shifts Max Boost (+10% DMG, +5% RNG per stack)", { dmgMult: 1.10, rngMult: 1.05}],
           ["candy_red",         "Candy Cadet: Red Candy (+30% DMG & +10% RNG)",                              { dmgMult: 1.30, rngMult: 1.10 }],
           ["candy_yellow",      "Candy Cadet: Yellow Candy (+10% DMG & +30% RNG)",                          { dmgMult: 1.10, rngMult: 1.30 }],
           ["chipper",           "Chipper: Stock Stacker (+0.5% DMG, +0.5% RNG per stack)",                  { dmgMult: 1.005, rngMult: 1.005, stackKey: "chipperStacks", maxStacks: 20 }],
@@ -4725,7 +4726,7 @@
           ["hippo",             "Mr. Hippo: Story Time (+15% Crit Rate, +15% Crit DMG, & +10% DMG)",      { dmgMult: 1.15, critRateAdd: 0.15, critDmgAdd: 0.15, cd: 90, duration: 15, uptime: true}],
           ["nature_reclaim",    "Nature Reclaimed Foxy: Drifter's Blessing (+30% DMG, +25% RNG, -5% CD)", { dmgMult: 1.30, rngMult: 1.25, cdMult: 0.95 }],
           ["nedd",              "Nedd Bear: Stranger Danger (+25% DMG)",                                   { dmgMult: 1.25}],
-          ["nmfb_feartop",     "Nightmare Fredbear: Max Top Path Fear Average (+16.25% DMG)",             { dmgMult: 1.1625}],
+          ["nmfb_feartop",      "Nightmare Fredbear: Max Top Path Fear Average (+16.25% DMG)",             { dmgMult: 1.1625}],
           ["crate",             "No. 1 Crate: Cheerleader (+20% DMG per stack)",                           { dmgMult: 1.20, stackKey: "crateStacks", maxStacks: 4 }],
           ["overgrown_foxy_avg","Overgrown Foxy: Countdown (Averaged, +10% DMG, +10% RNG, -2.5% CD)",     { dmgMult: 1.10, rngMult: 1.10, cdMult: 0.975 }],
           ["party_cup",         "Party Never Ends Cupcake: Birthday Boy (+15% DMG, +15% RNG, -5% CD)",     { dmgMult: 1.15, rngMult: 1.15, cdMult: 0.95 }],
@@ -4806,8 +4807,7 @@
             ["ennard_base",      "Ennard: Base Effect (+15% DMG & -10% CD) [Electricity only]",                 { dmgMult: 1.15, cdMult: 0.90, elements: ["Electricity"] }],
             ["ennard_top",       "Ennard: Max Top Path (+30% DMG)",                                           { dmgMult: 1.30, duration: 7, cd: 10, elements: ["Electricity"] }],
             ["witch_ability",     "Witch of the Sea Scrapbaby: Brace the Storm (+60% DMG) [Water & Electricity only]", { dmgMult: 1.60, duration: 30, cd: 60, elements: ["Electricity"] }],
-            ["witch_danger",      "Witch of the Sea Scrapbaby: Dangerous Waters (+20% DMG) [Water & Electricity only]", { dmgMult: 1.20, elements: ["Electricity"] }],
-            ["stormbound",        "Stormbound Chica: Electrifying Pressure (+10% DMG) [Water & Electric only]", { dmgMult: 1.10, elements: ["Electricity", "Water"] }]
+            ["witch_danger",      "Witch of the Sea Scrapbaby: Dangerous Waters (+20% DMG) [Water & Electricity only]", { dmgMult: 1.20, elements: ["Electricity"] }]
           );
         }
 
@@ -4889,6 +4889,17 @@
           );
         }
 
+        if (["Daydream Rockstar Foxy", "Bedtime Psychic Fredbear", "Nightterror Rockstar Bonnie"].indexOf(unit.name) !== -1) {
+          BOOST_OPTIONS.push(
+            ["bedtime_dreamer", "Bedtime Psychic Fredbear: As the Moon Shifts Max Boost (+30% DMG & +20% RNG) [Dreamer Units only]",
+              { dmgMult: 1.30, rngMult: 1.20, unitNames: ["Daydream Rockstar Foxy", "Bedtime Psychic Fredbear", "Nightterror Rockstar Bonnie"] }],
+            ["daydream_dreamer", "Daydream Rockstar Foxy: Sunlit Mornings (+20% DMG & +30% Crit Rate) [Dreamer Units only]",
+              { dmgMult: 1.20, critRateAdd: 0.30, unitNames: ["Daydream Rockstar Foxy", "Bedtime Psychic Fredbear", "Nightterror Rockstar Bonnie"] }],
+            ["terror_dreamer", "Nightterror Rockstar Bonnie: By My All Seeing Eye (+50% DMG & +20% RNG) [Dreamer Units only]",
+              { dmgMult: 1.50, rngMult: 1.20, stackKey: "terrordreamStack", maxStacks: 4, unitNames: ["Daydream Rockstar Foxy", "Bedtime Psychic Fredbear", "Nightterror Rockstar Bonnie"] }]
+          );
+        }
+
         if (unitHasElement(unit, "light")) {
           BOOST_OPTIONS.push(
             ["anni_boy",          "Anniversary Balloon Boy: The Afterparty (+10% DMG) [Light only]",             { dmgMult: 1.10, elements: ["Light"] }],
@@ -4912,6 +4923,12 @@
             ["veng_topelement", "Vengeful Spirit: Max Top Path (-5% CD & +30% Crit Rate) [Dark & Neutral only]", { cdMult: 0.95, critRateAdd: 0.30, elements: ["Dark", "Neutral"] }],
             ["veng_t2bot",    "Vengeful Spirit: Bottom Path Tier 2 (+5% DMG) [Dark & Neutral only]", { dmgMult: 1.05, elements: ["Dark", "Neutral"] }],
             ["veng_botmark", "Vengeful Spirit: Max Bottom Path Marks (+0.5% DMG per stack) [Dark & Neutral only]", { dmgMult: 1.005, stackKey: "vengefulmarkStack", maxStacks: 50, elements: ["Dark", "Neutral"] }],
+          );
+        }
+
+        if (unitHasElement(unit, "light") || unitHasElement(unit, "dark")) {
+          BOOST_OPTIONS.push(
+            ["terror_all",        "Nightterror Rockstar Bonnie: By My All Seeing Eye (+25% DMG & +10% RNG)", { dmgMult: 1.25, rngMult: 1.10, stackKey: "terrorallStack", maxStacks: 4, elements: ["Dark", "Light"]}]
           );
         }
         

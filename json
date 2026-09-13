@@ -376,6 +376,10 @@
       {
         "name": "Hazard Fredbear",
         "rarity": "secret"
+      },
+      {
+        "name": "Forever Slumber Fredbear",
+        "rarity": "secret"
       }
     ],
     "passiveDamage": {
@@ -15568,14 +15572,12 @@
       {
         "title": "Audio Lures",
         "text": "Place up to 3 Audio Lures that can attack and have 25% of this unit's damage and range. Audio Lure attacks Slow enemies by 5% for 3s. (Local CD: 10s)",
-        "path": 2, "tier": 2,
-        "activeIcon": "https://units.fntduserguide.com/units/michael-afton.png"
+        "path": 2, "tier": 2
       },
       {
         "title": "Salvage Assembly",
         "text": "Consume a selected amount of Scrap to create up to 50 summons with 10% of this unit's damage as health per Scrap consumed. (Local CD: 30s)",
-        "path": 1, "tier": 5,
-        "activeIcon": "https://units.fntduserguide.com/units/michael-afton.png"
+        "path": 1, "tier": 5
       },
       {
         "title": "Base Effect",
@@ -25557,5 +25559,302 @@
       }
     ]
   }
+},
+{
+  "name": "Bedtime Psychic Fredbear",
+  "imgNormal": "https://units.fntduserguide.com/units/bedtime-psychic-fredbear.png",
+  "imgShiny": "https://units.fntduserguide.com/units/bedtime-psychic-fredbear-shiny.png",
+  "rarity": "mythic",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Slow",
+    "Support"
+  ],
+  "element": "Light",
+  "placements": 1,
+  "attackType": "Cone 30°",
+  "obtainment": "Slumber Present (97.9%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2500,
+      "damage": 600,
+      "cd": 5,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 750,
+      "cd": 5,
+      "range": 21
+    },
+    {
+      "level": 3,
+      "cost": 4000,
+      "damage": 1000,
+      "cd": 5,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 1200,
+      "cd": 4.8,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 8000,
+      "damage": 1500,
+      "cd": 4.8,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 10000,
+      "damage": 1750,
+      "cd": 4.5,
+      "range": 28
+    },
+    {
+      "level": 7,
+      "cost": 13000,
+      "damage": 2150,
+      "cd": 4.5,
+      "range": 30
+    },
+    {
+      "level": 8,
+      "cost": 16000,
+      "damage": 2550,
+      "cd": 4.2,
+      "range": 33
+    }
+  ],
+  "passives": [
+    {
+      "title": "As the Moon Shifts",
+      "text": "Every attack has a 50% chance to increase or decrease the TV's moon phase. Increase the chance to advance by 20% per [Dreamer] on the team. <br>• New Moon: Cone 30, [Dreamer] units gain +5% damage. <br>• Crescent Moon: Cone 45, [Dreamer] units gain +10% damage. <br>• Quarter Moon: Cone 75, apply 10% slow on hit, [Dreamer] units gain +20% damage. <br>• Gibbous Moon: Cone 120, apply 15% slow on hit, [Dreamer] units gain +30% damage. <br>• Full Moon: Cone 180, apply 20% slow on hit, [Dreamer] units gain +30% damage and +20% range, other units gain +10% damage and +5% range."
+    }
+  ]
+},
+{
+  "name": "Nightterror Rockstar Bonnie",
+  "imgNormal": "https://units.fntduserguide.com/units/nightterror-rockstar-bonnie.png",
+  "imgShiny": "https://units.fntduserguide.com/units/nightterror-rockstar-bonnie-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support",
+    "Stun",
+    "Burn"
+  ],
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Slumber Present (2%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 4000,
+      "damage": 200,
+      "type": "Line",
+      "cd": 2,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 3500,
+      "damage": 250,
+      "type": "Line",
+      "cd": 2,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 4500,
+      "damage": 300,
+      "type": "Line",
+      "cd": 2,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 5500,
+      "damage": 350,
+      "type": "Line",
+      "cd": 2.5,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 7000,
+      "damage": 420,
+      "type": "Line",
+      "cd": 2,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 9000,
+      "damage": 500,
+      "type": "Line",
+      "cd": 2,
+      "range": 27
+    },
+    {
+      "level": 7,
+      "cost": 12000,
+      "damage": 750,
+      "type": "Cone 75°",
+      "cd": 2.5,
+      "range": 30
+    },
+    {
+      "level": 8,
+      "cost": 15000,
+      "damage": 850,
+      "type": "Cone 75°",
+      "cd": 2.5,
+      "range": 31
+    },
+    {
+      "level": 9,
+      "cost": 18000,
+      "damage": 1000,
+      "type": "Cone 75°",
+      "cd": 2.5,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "By My All Seeing Eye",
+      "text": "On hit apply 50% burn over 10 seconds, increased by 25% per other [Dreamer] on the team. Stun for 1 second, increased by 0.5 seconds per other [Dreamer] on the team. <br> [Dark] and [Light] units gain +25% damage and +10% range. <br> [Dreamer] units receive double this unit's buffs and apply 20% of this unit's damage as burn over 5 seconds"
+    }
+  ],
+  "passiveDamage": {
+    "dots": [
+      {
+        "label": "All Seeing Eye (DoT)",
+        "pctofdamage": 0.50,
+        "durationsec": 10
+      }
+    ],
+    "selfboost": [
+      {
+        "label": "All Seeing Eye (boost)",
+        "dmgmult": 1.50,
+        "rngmult": 1.20
+      }
+    ]
+  }
+},
+{
+  "name": "Daydream Rockstar Foxy",
+  "imgNormal": "https://units.fntduserguide.com/units/daydream-rockstar-foxy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/daydream-rockstar-foxy-shiny.png",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support"
+  ],
+  "element": "Light",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Slumber Present (0.1%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 5000,
+      "damage": 650,
+      "type": "Circle",
+      "cd": 6,
+      "range": 21
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 700,
+      "type": "Circle",
+      "cd": 6,
+      "range": 21
+    },
+    {
+      "level": 3,
+      "cost": 5000,
+      "damage": 825,
+      "type": "Circle",
+      "cd": 6,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 950,
+      "type": "Circle",
+      "cd": 6,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 7500,
+      "damage": 1300,
+      "type": "Cone 60°",
+      "cd": 6.5,
+      "range": 25
+    },
+    {
+      "level": 6,
+      "cost": 9000,
+      "damage": 1450,
+      "type": "Cone 60°",
+      "cd": 6.5,
+      "range": 26
+    },
+    {
+      "level": 7,
+      "cost": 10500,
+      "damage": 1600,
+      "type": "Cone 60°",
+      "cd": 6.5,
+      "range": 26
+    },
+    {
+      "level": 8,
+      "cost": 12000,
+      "damage": 2050,
+      "type": "Cone 60°",
+      "cd": 7.5,
+      "range": 28
+    },
+    {
+      "level": 9,
+      "cost": 14000,
+      "damage": 2250,
+      "type": "Cone 120°",
+      "cd": 7.5,
+      "range": 28
+    },
+    {
+      "level": 10,
+      "cost": 16000,
+      "damage": 2500,
+      "type": "Cone 120°",
+      "cd": 7.5,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Radiant Dreams",
+      "text": "While this unit is on the team with 3+ Light units, follow up on Light unit's attacks for 125% damage and apply 50% burn over 5 seconds (5s cooldown). When another Dreamer attacks, follow up for 50% damage in a Full AOE and apply 25% burn over 5 seconds (5s cooldown)"
+    },
+    {
+      "title": "Sunlit Mornings",
+      "text": "Link to the 2 highest-damage units in range. Dreamer units are additionally linked and gain +20% damage and +30% critical rate. Whenever this unit or a linked unit gets a kill gain 1 Daydream. At 10 Daydream gain +25% critical rate and +50% critical damage for 30 seconds. The next 3 attacks deal +50% damage, or +100% damage to Dark enemies, and are guaranteed to critically hit"
+    }
+  ]
 }
 ]

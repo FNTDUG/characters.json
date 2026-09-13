@@ -15568,12 +15568,14 @@
       {
         "title": "Audio Lures",
         "text": "Place up to 3 Audio Lures that can attack and have 25% of this unit's damage and range. Audio Lure attacks Slow enemies by 5% for 3s. (Local CD: 10s)",
-        "path": 2, "tier": 2
+        "path": 2, "tier": 2,
+        "activeIcon": "https://units.fntduserguide.com/units/michael-afton.png"
       },
       {
         "title": "Salvage Assembly",
         "text": "Consume a selected amount of Scrap to create up to 50 summons with 10% of this unit's damage as health per Scrap consumed. (Local CD: 30s)",
-        "path": 1, "tier": 5
+        "path": 1, "tier": 5,
+        "activeIcon": "https://units.fntduserguide.com/units/michael-afton.png"
       },
       {
         "title": "Base Effect",

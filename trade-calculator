@@ -1015,6 +1015,7 @@ text-overflow:ellipsis;
   border:none;
   white-space:nowrap;
   user-select:none;
+  transition:opacity 0.15s, box-shadow 0.15s, transform 0.15s;
 }
 .rarity-tab-inner{
   padding:7px 14px;
@@ -2205,6 +2206,9 @@ if (existsEl) {
 
       existsEl.classList.add("ue-exists-gradient");
       existsEl.style.backgroundImage = rarityStyle.textGradient;
+      existsEl.style.backgroundSize = "100% 1lh";
+      existsEl.style.backgroundOrigin = "content-box";
+      existsEl.style.backgroundRepeat = "repeat-y";
 
       existsEl.style.webkitBackgroundClip = "text";
       existsEl.style.backgroundClip = "text";
@@ -2865,15 +2869,28 @@ function buildRarityFilters() {
   updateRarityFiltersActive();
 }
 
+function _tabRgb(col) {
+  var m = String(col || "").match(/^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i);
+  if (m) return [parseInt(m[1], 16), parseInt(m[2], 16), parseInt(m[3], 16)];
+  m = String(col || "").match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/i);
+  return m ? [+m[1], +m[2], +m[3]] : [255, 255, 255];
+}
+
 function updateRarityFiltersActive() {
   var container = document.getElementById("rarityFilters");
   if (!container) return;
+  var anyActive = currentRarityFilter !== "all";
   container.querySelectorAll(".rarity-tab").forEach(function(btn) {
     var isActive = btn.dataset.rarityKey === currentRarityFilter;
     btn.classList.toggle("active", isActive);
-    var col = btn.dataset.rarityColor || "";
+    var c = _tabRgb(btn.dataset.rarityColor);
+    var st = rarityStyles[btn.dataset.rarityKey];
+    var tint = (st && st.fill) ? st.fill : "rgb(" + Math.round(c[0] * 0.2) + "," + Math.round(c[1] * 0.2) + "," + Math.round(c[2] * 0.2) + ")";
     var inner = btn.querySelector(".rarity-tab-inner");
-    if (inner) inner.style.backgroundColor = isActive ? "rgba(104,31,98,0.35)" : "rgba(8,6,18,0.92)";
+    if (inner) inner.style.backgroundColor = isActive ? tint : "rgba(8,6,18,0.92)";
+    btn.style.boxShadow = isActive ? "0 0 0 1px rgba(255,255,255,0.65), 0 0 12px rgba(" + c[0] + "," + c[1] + "," + c[2] + ",0.6)" : "none";
+    btn.style.transform = isActive ? "translateY(-1px)" : "";
+    btn.style.opacity = (anyActive && !isActive) ? "0.5" : "1";
   });
 }
 
@@ -3747,7 +3764,10 @@ if (detailShiny) {
 }
 
 else if (rarityStyle?.borderGradient) {
-  nameEl.style.backgroundImage = rarityStyle.borderGradient;
+  nameEl.style.backgroundImage = rarityStyle.borderGradient.replace("180deg", "90deg");
+  nameEl.style.backgroundSize = "100% 1lh";
+  nameEl.style.backgroundOrigin = "content-box";
+  nameEl.style.backgroundRepeat = "repeat-y";
 
   nameEl.style.webkitBackgroundClip = "text";
   nameEl.style.webkitTextFillColor = "transparent";
@@ -4054,7 +4074,10 @@ function openPresentDetail(unit) {
   // Name
   var nameEl = document.createElement("div");
   nameEl.style.cssText = "font-family:'Audiowide',sans-serif;font-size:16px;margin-bottom:12px;text-align:center;";
-  nameEl.style.backgroundImage = rs.borderGradient;
+  nameEl.style.backgroundImage = rs.borderGradient.replace("180deg", "90deg");
+  nameEl.style.backgroundSize = "100% 1lh";
+  nameEl.style.backgroundOrigin = "content-box";
+  nameEl.style.backgroundRepeat = "repeat-y";
   nameEl.style.webkitBackgroundClip = "text";
   nameEl.style.backgroundClip = "text";
   nameEl.style.webkitTextFillColor = "transparent";

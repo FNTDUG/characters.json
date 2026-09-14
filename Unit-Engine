@@ -2140,7 +2140,7 @@
       var _KW  = 'damage|dmg|range|rng|cooldown|cd|anti[- ]?regen|burn|bleed|slow|stun|knockback|poison|death|malware|mark|root|scar|soak|wither';
       var _ELEMENT_WORDS = ['Neutral', 'Nature', 'Dark', 'Water', 'Rust', 'Electricity', 'Fire', 'Light'];
       var _ELEMENT_ALT = _ELEMENT_WORDS.join('|');
-      var _ATTACK_ALT = '(?:\\d+(?:\\.\\d+)?\\s*(?:\u00b0|degrees?)\\s+)?cone(?:\\s+aoe)?|full\\s+aoe|continuous|explosion|ricochet|single|line|aoe|full';
+      var _ATTACK_ALT = '(?:\\d+(?:\\.\\d+)?\\s*(?:\u00b0|degrees?)\\s+)?cone(?:\\s+aoe)?|circle(?:\\s+aoe)?|full\\s*aoe|continuous|explo(?:sions?|sives?|d(?:e|es|ed|ing))|ricochet(?:s|ed|ing|ted|ting)?|bounc(?:e|es|ed|ing)|area[ -]of[ -]effect|single|line|aoe|full';
       var _PASSIVE_RE = new RegExp(
         '([+-]?\\d+(?:\\.\\d+)?%)([ ]?)(' + _KW + ')' + _SFX + '\\b' +
         '|([+-]?\\d+(?:\\.\\d+)?%)' +

@@ -2140,12 +2140,14 @@
       var _KW  = 'damage|dmg|range|rng|cooldown|cd|anti[- ]?regen|burn|bleed|slow|stun|knockback|poison|death|malware|mark|root|scar|soak|wither';
       var _ELEMENT_WORDS = ['Neutral', 'Nature', 'Dark', 'Water', 'Rust', 'Electricity', 'Fire', 'Light'];
       var _ELEMENT_ALT = _ELEMENT_WORDS.join('|');
+      var _ATTACK_ALT = '(?:\\d+(?:\\.\\d+)?\\s*(?:\u00b0|degrees?)\\s+)?cone(?:\\s+aoe)?|full\\s+aoe|continuous|explosion|ricochet|single|line|aoe|full';
       var _PASSIVE_RE = new RegExp(
         '([+-]?\\d+(?:\\.\\d+)?%)([ ]?)(' + _KW + ')' + _SFX + '\\b' +
         '|([+-]?\\d+(?:\\.\\d+)?%)' +
         '|\\b(' + _CC_STANDALONE + ')' + _SFX + '\\b' +
         '|(' + _CC_TWOPHRASE + ')\\b' +
-        '|\\b((?:' + _ELEMENT_ALT + ')(?:/(?:' + _ELEMENT_ALT + '))*)\\b',
+        '|\\b((?:' + _ELEMENT_ALT + ')(?:/(?:' + _ELEMENT_ALT + '))*)\\b' +
+        '|\\b(' + _ATTACK_ALT + ')\\b',
         'gi'
       );
       function _isElementToken(t) {
@@ -2256,8 +2258,18 @@
             var ccWord = m[6], ccSfx = m[7];
             var twoPhrase = m[8];
             var elemWord = m[9];
+            var atkWord = m[10];
 
-            if (elemWord !== undefined) {
+            if (atkWord !== undefined) {
+              if (/^full$/i.test(atkWord) && atkWord !== 'Full') {
+                el.appendChild(document.createTextNode(atkWord));
+              } else {
+                var n7 = document.createElement('span');
+                n7.style.color = '#E9B17C';
+                n7.textContent = atkWord;
+                el.appendChild(n7);
+              }
+            } else if (elemWord !== undefined) {
               if (_isElementToken(elemWord)) {
                 var n6 = document.createElement('span');
                 n6.style.background = ELEMENT_TEXT_GRADIENT;

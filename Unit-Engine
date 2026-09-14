@@ -5742,7 +5742,9 @@
           "income":     "Income",
           "knockback":  "Knockback",
           "malware":    "Malware",
+          "mediocre melody": "Mediocre Melody",
           "poison":     "Poison",
+          "rockstar":   "Rockstar",
           "rooted":     "Rooted",
           "scarred":    "Scarred",
           "slow":       "Slow",
@@ -5751,6 +5753,7 @@
           "summon":     "Summon",
           "support":    "Support",
           "trap":       "Trap",
+          "trash gang": "Trash Gang",
           "wither":     "Wither"
         };
         var key = String(t || "").trim().toLowerCase();
@@ -7930,7 +7933,9 @@
           "Income",
           "Knockback",
           "Malware",
+          "Mediocre Melody",
           "Poison",
+          "Rockstar",
           "Rooted",
           "Scarred",
           "Slow",
@@ -7939,6 +7944,7 @@
           "Summon",
           "Support",
           "Trap",
+          "Trash Gang",
           "Wither"
         ];
 

@@ -25568,7 +25568,8 @@
   "typeMain": "Midgame",
   "typeTags": [
     "Slow",
-    "Support"
+    "Support",
+    "Dreamer"
   ],
   "element": "Light",
   "placements": 1,
@@ -25648,7 +25649,8 @@
   "typeTags": [
     "Support",
     "Stun",
-    "Burn"
+    "Burn",
+    "Dreamer"
   ],
   "element": "Dark",
   "placements": 1,
@@ -25758,7 +25760,8 @@
   "rarity": "nightmare",
   "typeMain": "Endgame",
   "typeTags": [
-    "Support"
+    "Support",
+    "Dreamer"
   ],
   "element": "Light",
   "placements": 1,

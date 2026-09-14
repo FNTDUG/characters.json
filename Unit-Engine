@@ -1404,6 +1404,32 @@
       </div>
 
       <script>
+      function ueRarityTextGradient(g) {
+        g = String(g || "");
+        if (g.indexOf("linear-gradient(180deg") !== 0) return g;
+        var body = g.slice(g.indexOf(",") + 1, g.lastIndexOf(")"));
+        var parts = [], depth = 0, cur = "";
+        for (var i = 0; i < body.length; i++) {
+          var ch = body.charAt(i);
+          if (ch === "(") depth++;
+          if (ch === ")") depth--;
+          if (ch === "," && depth === 0) { parts.push(cur); cur = ""; } else cur += ch;
+        }
+        parts.push(cur);
+        var last = parts.length - 1;
+        return "linear-gradient(180deg," + parts.map(function (p, i) {
+          p = p.trim();
+          var sp = p.lastIndexOf(" "), pos = last ? i / last : 0, col = p;
+          if (sp > 0 && p.charAt(p.length - 1) === "%") { pos = parseFloat(p.slice(sp + 1)) / 100; col = p.slice(0, sp).trim(); }
+          var off = pos - 0.5;
+          return col + " calc(50% " + (off < 0 ? "- " : "+ ") + Math.abs(off).toFixed(3) + "cap)";
+        }).join(",") + ")";
+      }
+
+      function ueSetRarityTextGradient(el, g) {
+        el.style.backgroundImage = g;
+        el.style.backgroundImage = ueRarityTextGradient(g);
+      }
 
       // Buff Potency is a per-boost figure the user types in, Unit Boosts only, capped at
       // +63%. It scales what the boost is worth rather than how many stacks are up: a
@@ -6268,7 +6294,7 @@
         
         if (rarityStyle?.textGradient) {
           text.classList.add("ue-exists-gradient");
-          text.style.backgroundImage = rarityStyle.textGradient.replace("180deg", "90deg");
+          ueSetRarityTextGradient(text, rarityStyle.textGradient);
           text.style.backgroundSize = "100% 1lh";
           text.style.backgroundOrigin = "content-box";
           text.style.backgroundRepeat = "repeat-y";
@@ -7145,7 +7171,7 @@
         icon.textContent = unit.skins.length === 1 ? "SKIN" : "SKINS";
 
         if (rarityStyle.textGradient) {
-          icon.style.backgroundImage = rarityStyle.textGradient.replace("180deg", "90deg");
+          ueSetRarityTextGradient(icon, rarityStyle.textGradient);
           icon.style.backgroundSize = "100% 1lh";
           icon.style.backgroundOrigin = "content-box";
           icon.style.backgroundRepeat = "repeat-y";
@@ -7436,7 +7462,7 @@
           title.style.textAlign = "center";
 
           if (rarityStyle.textGradient) {
-              title.style.backgroundImage = rarityStyle.textGradient.replace("180deg", "90deg");
+              ueSetRarityTextGradient(title, rarityStyle.textGradient);
               title.style.backgroundSize = "100% 1lh";
               title.style.backgroundOrigin = "content-box";
               title.style.backgroundRepeat = "repeat-y";
@@ -7989,7 +8015,7 @@
           }
 
           if (style.textGradient) {
-            el.style.backgroundImage = style.textGradient.replace("180deg", "90deg");
+            ueSetRarityTextGradient(el, style.textGradient);
             el.style.backgroundSize = "100% 1lh";
             el.style.backgroundOrigin = "content-box";
             el.style.backgroundRepeat = "repeat-y";
@@ -8171,9 +8197,9 @@
           var _tnShiny = (typeof isShinyMode !== "undefined") && isShinyMode;
           var _tnGrad = _tnShiny
             ? ((typeof getShinyGradient === "function") ? getShinyGradient(item.unit.name) : null)
-            : (rs && rs.textGradient && rs.textGradient.replace("180deg", "90deg"));
+            : (rs && rs.textGradient);
           if (_tnGrad) {
-            tn.style.backgroundImage = _tnGrad;
+            ueSetRarityTextGradient(tn, _tnGrad);
             tn.style.backgroundSize = _tnShiny ? "200% 200%" : "100% 1lh";
             if (!_tnShiny) { tn.style.backgroundOrigin = "content-box"; tn.style.backgroundRepeat = "repeat-y"; }
             tn.style.webkitBackgroundClip = "text";
@@ -8466,9 +8492,9 @@
             var _shinyOn = (typeof isShinyMode !== "undefined") && isShinyMode;
             var _grad = _shinyOn
               ? ((typeof getShinyGradient === "function") ? getShinyGradient(it.unit.name) : null)
-              : (_rs && _rs.textGradient && _rs.textGradient.replace("180deg", "90deg"));
+              : (_rs && _rs.textGradient);
             if (_grad) {
-              rname.style.background = _grad;
+              ueSetRarityTextGradient(rname, _grad);
               rname.style.backgroundSize = _shinyOn ? "200% 200%" : "100% 1lh";
               if (!_shinyOn) { rname.style.backgroundOrigin = "content-box"; rname.style.backgroundRepeat = "repeat-y"; }
               rname.style.webkitBackgroundClip = "text";

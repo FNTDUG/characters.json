@@ -15747,7 +15747,8 @@
     "typeMain": "Midgame",
     "typeTags": [
       "Stun",
-      "Support"
+      "Support",
+      "Rockstar"
     ],
     "element": "Light",
     "placements": 1,
@@ -16251,7 +16252,8 @@
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
-      "Support"
+      "Support",
+      "Rockstar"
     ],
     "element": "Nature",
     "placements": 1,
@@ -16692,6 +16694,9 @@
     "imgShiny": "https://units.fntduserguide.com/units/rockstar-freddy-shiny.png",
     "rarity": "mythic",
     "typeMain": "Midgame",
+    "typeTags": [
+      "Rockstar"
+    ],
     "element": "Light",
     "placements": 2,
     "attackType": "Multi",
@@ -16844,6 +16849,9 @@
     "imgShiny": "https://units.fntduserguide.com/units/rockstar-bonnie-shiny.png",
     "rarity": "epic",
     "typeMain": "Midgame",
+    "typeTags": [
+      "Rockstar"
+    ],
     "element": "Electricity",
     "placements": 1,
     "attackType": "Circle",
@@ -16903,7 +16911,8 @@
     "rarity": "rare",
     "typeMain": "Starter",
     "typeTags": [
-      "Slow"
+      "Slow",
+      "Trash Gang"
     ],
     "element": "Neutral",
     "placements": 1,
@@ -16956,6 +16965,9 @@
     "imgShiny": "https://units.fntduserguide.com/units/no-1-crate-shiny.png",
     "rarity": "rare",
     "typeMain": "Starter",
+    "typeTags": [
+      "Trash Gang"
+    ],
     "element": "Neutral",
     "placements": 1,
     "attackType": "FullAOE",
@@ -17008,7 +17020,8 @@
     "rarity": "rare",
     "typeMain": "Starter",
     "typeTags": [
-      "Stun"
+      "Stun",
+      "Trash Gang"
     ],
     "element": "Neutral",
     "placements": 1,
@@ -17072,7 +17085,8 @@
     "typeMain": "Starter",
     "typeTags": [
       "Stun",
-      "Trap"
+      "Trap",
+      "Rockstar"
     ],
     "element": "Water",
     "placements": 3,
@@ -20945,7 +20959,8 @@
   "typeMain": "Endgame",
   "typeTags": [
     "Support",
-    "Wither"
+    "Wither",
+    "Mediocre Melody"
   ],
   "element": "Neutral",
   "placements": 2,
@@ -22003,7 +22018,8 @@
   "rarity": "secret",
   "typeMain": "Starter",
   "typeTags": [
-    "Slow"
+    "Slow",
+    "Mediocre Melody"
   ],
   "element": "Neutral",
   "placements": 3,
@@ -23085,7 +23101,8 @@
   "rarity": "mythic",
   "typeMain": "Midgame",
   "typeTags": [
-    "Support"
+    "Support",
+    "Mediocre Melody"
   ],
   "element": "Neutral",
   "placements": 2,
@@ -23338,7 +23355,8 @@
   "rarity": "epic",
   "typeMain": "Midgame",
   "typeTags": [
-    "Slow"
+    "Slow",
+    "Mediocre Melody"
   ],
   "element": "Neutral",
   "placements": 3,
@@ -23428,7 +23446,8 @@
   "typeMain": "Starter",
   "typeTags": [
     "Wither",
-    "Slow"
+    "Slow",
+    "Mediocre Melody"
   ],
   "element": "Neutral",
   "placements": 2,

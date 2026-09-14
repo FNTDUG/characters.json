@@ -6265,7 +6265,10 @@
         
         if (rarityStyle?.textGradient) {
           text.classList.add("ue-exists-gradient");
-          text.style.backgroundImage = rarityStyle.textGradient;
+          text.style.backgroundImage = rarityStyle.textGradient.replace("180deg", "90deg");
+          text.style.backgroundSize = "100% 1lh";
+          text.style.backgroundOrigin = "content-box";
+          text.style.backgroundRepeat = "repeat-y";
 
           text.style.webkitBackgroundClip = "text";
           text.style.backgroundClip = "text";
@@ -7139,7 +7142,10 @@
         icon.textContent = unit.skins.length === 1 ? "SKIN" : "SKINS";
 
         if (rarityStyle.textGradient) {
-          icon.style.backgroundImage = rarityStyle.textGradient;
+          icon.style.backgroundImage = rarityStyle.textGradient.replace("180deg", "90deg");
+          icon.style.backgroundSize = "100% 1lh";
+          icon.style.backgroundOrigin = "content-box";
+          icon.style.backgroundRepeat = "repeat-y";
           icon.style.webkitBackgroundClip = "text";
           icon.style.backgroundClip = "text";
           icon.style.webkitTextFillColor = "transparent";
@@ -7427,7 +7433,10 @@
           title.style.textAlign = "center";
 
           if (rarityStyle.textGradient) {
-              title.style.backgroundImage = rarityStyle.textGradient;
+              title.style.backgroundImage = rarityStyle.textGradient.replace("180deg", "90deg");
+              title.style.backgroundSize = "100% 1lh";
+              title.style.backgroundOrigin = "content-box";
+              title.style.backgroundRepeat = "repeat-y";
               title.style.webkitBackgroundClip = "text";
               title.style.color = "transparent";
           } else {
@@ -7964,6 +7973,9 @@
           el.style.webkitBackgroundClip = "";
           el.style.backgroundClip = "";
           el.style.webkitTextFillColor = "";
+          el.style.backgroundSize = "";
+          el.style.backgroundOrigin = "";
+          el.style.backgroundRepeat = "";
 
           if (style.textColor) {
             el.style.color = style.textColor;
@@ -7971,7 +7983,10 @@
           }
 
           if (style.textGradient) {
-            el.style.backgroundImage = style.textGradient;
+            el.style.backgroundImage = style.textGradient.replace("180deg", "90deg");
+            el.style.backgroundSize = "100% 1lh";
+            el.style.backgroundOrigin = "content-box";
+            el.style.backgroundRepeat = "repeat-y";
             el.style.webkitBackgroundClip = "text";
             el.style.backgroundClip = "text";
             el.style.webkitTextFillColor = "transparent";
@@ -8150,10 +8165,11 @@
           var _tnShiny = (typeof isShinyMode !== "undefined") && isShinyMode;
           var _tnGrad = _tnShiny
             ? ((typeof getShinyGradient === "function") ? getShinyGradient(item.unit.name) : null)
-            : (rs && rs.textGradient);
+            : (rs && rs.textGradient && rs.textGradient.replace("180deg", "90deg"));
           if (_tnGrad) {
             tn.style.backgroundImage = _tnGrad;
-            tn.style.backgroundSize = "200% 200%";
+            tn.style.backgroundSize = _tnShiny ? "200% 200%" : "100% 1lh";
+            if (!_tnShiny) { tn.style.backgroundOrigin = "content-box"; tn.style.backgroundRepeat = "repeat-y"; }
             tn.style.webkitBackgroundClip = "text";
             tn.style.backgroundClip = "text";
             tn.style.webkitTextFillColor = "transparent";
@@ -8444,10 +8460,11 @@
             var _shinyOn = (typeof isShinyMode !== "undefined") && isShinyMode;
             var _grad = _shinyOn
               ? ((typeof getShinyGradient === "function") ? getShinyGradient(it.unit.name) : null)
-              : (_rs && _rs.textGradient);
+              : (_rs && _rs.textGradient && _rs.textGradient.replace("180deg", "90deg"));
             if (_grad) {
               rname.style.background = _grad;
-              rname.style.backgroundSize = "200% 200%";
+              rname.style.backgroundSize = _shinyOn ? "200% 200%" : "100% 1lh";
+              if (!_shinyOn) { rname.style.backgroundOrigin = "content-box"; rname.style.backgroundRepeat = "repeat-y"; }
               rname.style.webkitBackgroundClip = "text";
               rname.style.backgroundClip = "text";
               rname.style.webkitTextFillColor = "transparent";

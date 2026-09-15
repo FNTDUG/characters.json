@@ -25,7 +25,7 @@
          "Void Shaper Shadow Freddy",
          "DJ 101Bit",
          "Stitchwraith",
-         "Daydream Rockstar Foxy linked", "Nightterror Rockstar Bonnie linked", "Bedtime Psychic Fredbear" 
+         "Daydream Rockstar Foxy linked", "Nightterror Rockstar Bonnie linked", "Bedtime Psychic Fredbear", 
          "Pirate Withered Foxy",
          "Frostmancer Withered Bonnie",
          "Animdude",

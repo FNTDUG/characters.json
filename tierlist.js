@@ -25,7 +25,7 @@
          "DJ 101Bit",
          "Stitchwraith",
          "Animdude 5-0-2 UP",
-         "Daydream Rockstar Foxy linked", "Nightterror Rockstar Bonnie linked", "Bedtime Psychic Fredbear", 
+         "Daydream Rockstar Foxy NEW linked", "Nightterror Rockstar Bonnie NEW linked", "Bedtime Psychic Fredbear NEW", 
          "Pirate Withered Foxy",
          "Frostmancer Withered Bonnie",
          "High Voltage Rockstar Freddy BUG",

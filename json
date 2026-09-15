@@ -14985,7 +14985,7 @@
       },
        {
         "title": "Base Effect",
-        "text": "All units gain +10% Crit Chance and +15% Crit Damage. This unit receives bonuses based on the Byte is has equipped: <br>• Box: Rotates between Damage, Range, and CD every 10s, giving Animdude +50% of the current stat in rotation. <br>• Boss Drain: Animdude does +10% damage to Bosses and inflicts them with 10% Wither. <br>• Reaper: Animdude gains +50% Crit Chance and can execute enemies below 5% HP. <br>• KABOOM!: Every other attack, Animdude swaps between gaining +50% Damage or +30% Range. <br>• The Fan: Animdude gains -20% CD and can knockback enemies 1.5 studs on attack (10s CD)."
+        "text": "All units gain +10% Crit Chance and +15% Crit Damage. <br> This unit also receives bonuses based on the Byte is has equipped: <br>• Box: Rotates between Damage, Range, and CD every 10s, giving Animdude +50% of the current stat in rotation. <br>• Boss Drain: Animdude does +10% damage to Bosses and inflicts them with 10% Wither. <br>• Reaper: Animdude gains +50% Crit Chance and can execute enemies below 5% HP. <br>• KABOOM!: Every other attack, Animdude swaps between gaining +50% Damage or +30% Range. <br>• The Fan: Animdude gains -20% CD and can knockback enemies 1.5 studs on attack (10s CD)."
       }
     ],
     "passiveDamage": {

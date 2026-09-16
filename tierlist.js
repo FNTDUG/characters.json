@@ -23,7 +23,7 @@
          "Void Shaper Shadow Freddy",
          "DJ 101Bit",
          "Animdude 5-0-2 UP",
-         "Daydream Rockstar Foxy NEW BUG linked", "Nightterror Rockstar Bonnie NEW linked", "Bedtime Psychic Fredbear NEW", 
+         "Nightterror Rockstar Bonnie NEW linked", "Bedtime Psychic Fredbear linked NEW", "Daydream Rockstar Foxy NEW BUG", 
          "Pirate Withered Foxy",
          "Frostmancer Withered Bonnie",
          "Cthulhu Nightmare Foxy DOWN",

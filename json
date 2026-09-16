@@ -14973,7 +14973,7 @@
     "passives": [
       {
         "title": "My Favorite Creation",
-        "text": "Select one unit in range to give it +50% Damage and +25% Range. In PvP, 2 units can be buffed and also have upgrade costs reduced by 25%. Becomes stronger as more upgrades are selected in path 1. (Local CD: 0s)",
+        "text": "Select one unit in range to give it +50% Damage and +25% Range. In PvP, 2 units can be buffed and also have upgrade costs reduced by 25%. Becomes stronger as more upgrades are selected in path 1. (Local CD: 43s)",
         "path": 1, "tier": 3,
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/nofilter-high-arle88.png"
       },

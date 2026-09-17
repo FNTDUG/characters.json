@@ -337,7 +337,7 @@
         "Planet Buster Scott BUG",
         "Overlord Scott",
         "Theory Crusher Scott",
-        "Michael Afton 0-0-5 UP",
+        "Michael Afton 0-0-5 UP BUG",
         "Psychic Friend Fredbear",
         "Golden Cupcake",
         "White Lily Toy Foxy UP",
@@ -465,7 +465,7 @@
       ],
       "c": [
         "Gaia Chica",
-        "Michael Afton 0-5-0",
+        "Michael Afton 0-5-0 BUG",
         "Time Lord Withered Freddy",
         "Amalgam",
         "Into the Pit Spring Bonnie",
@@ -478,7 +478,7 @@
         "Planet Buster Scott BUG"
       ],
       "s": [
-        "Michael Afton 0-0-5 UP",
+        "Michael Afton 0-0-5 UP BUG",
         "Vengeful Spirit 0-0-5",
         "Deep Sea Calamity Endo",
         "Molten Freddy",
@@ -550,7 +550,7 @@
     "summon": {
       "s": [
         "Puppet 0-5-0 UP",
-        "Michael Afton 5-0-0 NEW",
+        "Michael Afton 5-0-0 NEW BUG",
         "Void Drifter Molten Freddy NEW",
         "XOR",
         "Yeti Oni Bonnie",

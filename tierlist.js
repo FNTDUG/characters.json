@@ -22,7 +22,7 @@
          "Deep Sea Calamity Endo",
          "Void Shaper Shadow Freddy",
          "DJ 101Bit",
-         "Nightterror Rockstar Bonnie NEW linked", "Bedtime Psychic Fredbear linked NEW", "Daydream Rockstar Foxy NEW BUG", 
+         "Nightterror Rockstar Bonnie NEW linked", "Bedtime Psychic Fredbear linked NEW", "Daydream Rockstar Foxy NEW", 
          "Pirate Withered Foxy",
          "Frostmancer Withered Bonnie",
          "Animdude 5-0-2 UP",
@@ -333,6 +333,7 @@
          "Candy Cadet",
          "Nature Reclaimed Foxy",
          "Animdude 5-0-0 UP",
+         "Nightterror Rockstar Bonnie NEW linked", "Bedtime Psychic Fredbear linked NEW", "Daydream Rockstar Foxy NEW",
          "Planet Buster Scott BUG",
          "Overlord Scott",
          "Theory Crusher Scott",
@@ -345,7 +346,7 @@
        ],
        "a": [
          "Nightmare Fredbear 5-0-0",
-         "Ennard 0-0-5 NEW"
+         "Ennard 0-0-5 NEW",
          "Golden Freddy 0-0-5",
          "Kronos Endo Freddy",
          "Party Never Ends Cupcake",
@@ -478,7 +479,7 @@
          "Planet Buster Scott BUG"
        ],
        "s": [
-         "Michael Afton 0-0-5 UP"
+         "Michael Afton 0-0-5 UP",
          "Vengeful Spirit 0-0-5",
          "Deep Sea Calamity Endo",
          "Molten Freddy",
@@ -550,7 +551,7 @@
      "summon": {
        "s": [
          "Puppet 0-5-0 UP",
-         "Michael Afton 5-0-0 NEW"
+         "Michael Afton 5-0-0 NEW",
          "Void Drifter Molten Freddy NEW",
          "XOR",
          "Yeti Oni Bonnie",

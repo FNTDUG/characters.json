@@ -617,7 +617,8 @@
       "Kronos Endo Freddy": "Great AOE DPS and absurd Stun potential when his passives are maxed out. Additionally provides decent boosts to Rust units, minor boosts to non-Rust units, and can reapply debuffs to enemies.",
       "Frozen King Foxy": "Great choice as a supporting unit in most teams with 25% AOE Slow and 20% Wither for Water element units.",
       "Dragon Endo 01": "Great DPS and DoT, additionally increasing the DoT for other Fire units and having global DoT with his Active.",
-      "Nature Reclaimed Foxy": "Spectacular support, giving all units in range +30% Damage, +25% Range and -5% CD, on top of boosting your base's health. He also does fair DPS by himself with some bonus DPS to Bosses.",
+      "Stitchwraith": "Spectacular support in Jake mode, giving all units in range up to +15% Damage, +25% Range, -5% CD, +20% Crit Chance and +20% Crit Damage.",
+      "Nature Reclaimed Foxy": "Strong support, giving all units in range +30% Damage, +25% Range and -5% CD, on top of boosting your base's health. He also does fair DPS by himself with some bonus DPS to Bosses.",
       "Golden Freddy": "Great boosting in Endless (up to +30% damage per Golden Freddy), good DPS, and great stall with 20% Slow on attack and Knockback with his Active.",
       "Frostmancer Withered Bonnie": "Spectacular stall unit with varied AOE Slow (0%-45%, varies with RNG) and Single target 1s Stun (7s CD).",
       "Grand Strategist Chica": "Incredible DPS, good Slow, Stun, and support. Great in many teams, especially Light focused ones.",
@@ -644,7 +645,11 @@
       "DJ 101Bit": "Can swap between giving all nearby units +20% Damage or +25% Range. Placed higher than other units because she can stack with other placements of herself.",
       "High Voltage Rockstar Freddy": "Each placement of him gives +20% Damage to the 3 units closest to him.",
       "White Lily Toy Foxy": "Can give Nature units +20% Damage and +10% Range per placement when she has stacks of Favor.",
+      "Animdude": "Gives one random unit in range up to +65% Damage and +30% Range sharing Animdude's Byte passive with the connected unit. In PVP, 2 random units can be chosen and they additionally have 25% cheaper upgrades."
       "Nature Reclaimed Foxy": "Gives all units in range +30% Damage, +25% Range and -5% CD. Additionally increases base health, allowing you to survive longer against normal enemies.",
+      "Nightterror Rockstar Bonnie": "Dark and Light units gain +25% Damage and +10% Range. Dreamer units receive 2x these boosts and gain 20% of this unit's damage as Burn.",
+      "Bedtime Psychic Fredbear": "Can give all units in range +10% Damage and +5% Range. Dreamer units instead gain +30% Damage and +20% Range.",
+      "Daydream Rockstar Foxy": "Gives all Dreamer units +20% Damage and +30% Crit Chance.",
       "Planet Buster Scott": "Gives all units in range +1% Damage and +1% Range for every enemy on the map, a very strong boost when enemies begin to build up in late game.",
       "Overlord Scott": "Gives all units in range +1% Damage and +1% Range for every enemy on the map, a very strong boost when enemies begin to build up in late game.",
       "Theory Crusher Scott": "Gives all units in range +1% Damage and +1% Range for every enemy on the map, a very strong boost when enemies begin to build up in late game.",
@@ -654,22 +659,30 @@
       "Golden Freddy": "Grants all units up to +30% Damage (stacks with other Golden Freddys), grants double the previous boost to a random Neutral unit (max of +150%, excludes himself) every 45s for 10s, and +25% Damage and +20% Range to all Neutral units with his Active."
     },
     "stun": {
-      "Pyro Spring Bonnie": "Attacks Stun enemies for 1.8s, with an additional 1s every 15s that bypasses Stun Lockout. Placed highest because of coverage.",
+      "Pyro Spring Bonnie": "Attacks Stun enemies for 1.8s, with an additional 1s Stun every 15s that bypasses Stun Lockout.",
+      "Cyberdata Withered Bonnie": "Attacks Stun enemies for 2s, and enemies that try to leave this unit's range are Stunned for 5s.",
       "Planet Buster Scott": "Attacks Stun enemies for 2s.",
       "Overlord Scott": "Attacks Stun enemies for 2s.",
       "Samurai Duo": "Every 3rd attack Stuns enemies for 1.8s.",
       "Deep Sea Calamity Endo": "An absurdly good stunner, applying 1.8s Stun on attack in a very large 245° Cone. Also has the potential to Stun Bosses for 2.5s if they get too close.",
       "Krampus Purple Guy": "A great stunner applying 1.8s Stun on attack. Pair him with a Kaboom or Box Byte to help combat his shorter range for better coverage.",
-      "Ennard": "Has a good 1.5s Stun on attack while additionally stunning 4 random enemies around the map every 6s for 1.5s.",
+      "Golden Freddy": "Active ability can Stun all enemies for 5s and he Stuns all enemies in his range for 2s every 12s.",
+      "Ennard": "Attacks Stun enemies for 0.8s and all enemies in range are Stunned for 1.2s every 10s.",
       "Cthulhu Nightmare Foxy": "Attacks Stun for 1s when Warp cap has been reached.",
       "Grand Strategist Chica": "Queen piece Stuns the 5 closest enemies on attack for 1.5s."
     },
     "slow": {
-      "Vengeful Spirit": "Instant 20% AOE Slow that increases by 1% every 3s up to 30%.",
+      "Vengeful Spirit": "Instant 15% AOE Slow that increases by 1% every second up to 30%.",
+      "Michael Afton": "Can inflict 40% Slow on one enemy and 30% Slow to other enemies for 5s.",
       "DJ 101Bit": "Instant 20% AOE Slow when set to Green Track.",
       "Spirit of Charlie Emily": "Instant 15% AOE Slow.",
       "Deep Sea Calamity Endo": "Effectively has 30% AOE Slow.",
       "Molten Freddy": "Effectively has 30% AOE Slow, but is below Calamity Endo due to being Line.",
+      "Springtrap": "Burning enemies in his range receive 35% Slow.",
+      "Old Man Consequences": "Hooked enemies receive 30% Slow for 10s.",
+      "Nightmare Fredbear": "Attacks give enemies 20% Slow and all enemies receive 25% Slow when he transforms into Nightmare.",
+      "Cyberdata Withered Bonnie": "Attacks give enemies 20% Slow.",
+      "Void Drifter Molten Freddy": "All enemies in range receive 15% Slow if 3 or more Fire/Electric units are in this unit's range.",
       "Planet Buster Scott": "25% AOE Slow every 5s and 25% global Slow from his Active, with Micro can consistently keep 50%.",
       "Overlord Scott": "25% AOE Slow every 5s.",
       "Theory Crusher Scott": "25% AOE Slow every 5s.",
@@ -681,8 +694,12 @@
       "Grand Strategist Chica": "15% AOE Slow + 10% Cone 180 Slow."
     },
     "summon": {
+      "Puppet": "Spawns summons on this unit's CD with half this unit's damage as health that get 3% stronger every enemy they go through and release a small explosion when they die for 25% of their damage.",
+      "Michael Afton": "Spawns summons on this unit's CD with half this unit's damage as health. Additionally, this unit has an Active that consumes a chosen amount of Scrap to create up to 50 bonus summons with 10% health per Scrap. Summon health increases by 1% per Scrap held, up to 20%. All summons from this unit also inflict enemies with 15% Rust Wither when they die.",
+      "Void Drifter Molten Freddy": "Every 20s, this unit can create a summon with 250% of this unit's damage as health.",
       "XOR": "Can spawn up to 25 summons with health equal to half this unit's damage every 60s.",
-      "Yeti Oni Bonnie": "Spawns high health summons of varying strength every 9s and can spawn 2 summons with health equal to 2.5x this unit's damage every 40s."
+      "Yeti Oni Bonnie": "Spawns high health summons of varying strength every 9s and can spawn 2 summons with health equal to 2.5x this unit's damage every 40s.",
+      "Fazman": "Every 60s, this unit spawns a summon that goes along the track twice and has no set health but does 275% of this unit's damage to every enemy it passes through"
     },
     "knockback":{
       "DJ 101Bit": "Attacks Knockback enemies by 1 tile.",

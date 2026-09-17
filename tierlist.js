@@ -332,20 +332,25 @@
          "DJ 101Bit",
          "Candy Cadet",
          "Nature Reclaimed Foxy",
+         "Animdude 5-0-0 UP",
          "Planet Buster Scott BUG",
          "Overlord Scott",
          "Theory Crusher Scott",
+         "Michael Afton UP",
          "Psychic Friend Fredbear",
          "Golden Cupcake",
+         "White Lily Toy Foxy UP",
          "High Voltage Rockstar Freddy BUG",
-         "White Lily Toy Foxy",
+         "Vengeful Spirit 5-0-0 NEW"
        ],
        "a": [
-         "Golden Freddy",
-         "Animdude",
+         "Nightmare Fredbear 5-0-0",
+         "Ennard 0-0-5 NEW"
+         "Golden Freddy 0-0-5",
          "Kronos Endo Freddy",
          "Party Never Ends Cupcake",
          "Cthulhu Nightmare Foxy",
+         "Puppet 0-0-5 UP",
          "Scarecrow Freddy",
          "Funtime Foxy",
          "No. 1 Crate",
@@ -355,6 +360,7 @@
          "Phantom Withered Chica",
          "Mechanic Endo 01",
          "Hag Withered Chica",
+         "Springtrap 5-0-0 UP",
          "Pyro Spring Bonnie",
          "Starfarer Princess",
          "Mr. Hippo",
@@ -372,13 +378,9 @@
          "Grand Strategist Chica",
          "Michael Afton",
          "Old Man Consequences",
-         "Ennard",
-         "Nightmare Fredbear",
-         "Puppet",
          "Aqua Strike Toy Chica",
          "Frozen King Foxy",
          "Lore Keeper Shadow Bonnie",
-         "Springtrap",
          "Pirate Withered Foxy",
          "Witch of the Sea Scrapbaby",
          "Funtime Chica",
@@ -416,14 +418,16 @@
          "Cyberdata Withered Bonnie NEW",
          "Planet Buster Scott BUG",
          "Overlord Scott",
+         "Ennard 5-0-0 UP"
          "Deep Sea Calamity Endo",
          "Samurai Duo",
-         "Ennard",
          "Krampus Purple Guy",
+         "Golden Freddy 0-0-5",
          "Cthulhu Nightmare Foxy",
          "Grand Strategist Chica",
        ],
        "a": [
+         "Old Man Consequences 0-0-5 UP",
          "Malachite Foxy",
          "Pirate Withered Foxy",
          "Frostmancer Withered Bonnie",
@@ -437,7 +441,7 @@
          "Trash o Tron",
          "Pan Stan",
          "Lich Shadow Bonnie",
-         "Nightmare Fredbear",
+         "Nightmare Fredbear 0-0-5",
          "Circus Baby",
          "Aqua Strike Toy Chica",
        ],
@@ -449,9 +453,8 @@
          "Rockstar Chica",
          "Foxy Fighters",
          "Landslide Funtime Foxy",
+         "Animdude 0-5-0 UP",
          "Lore Keeper Shadow Bonnie",
-         "Vengeful Spirit",
-         "Animdude",
          "Molten Freddy",
          "Fathomless Withered Foxy",
          "Nightmare Mangle",
@@ -462,11 +465,10 @@
        ],
        "c": [
          "Gaia Chica",
-         "Michael Afton",
+         "Michael Afton 0-5-0",
          "Time Lord Withered Freddy",
          "Amalgam",
          "Into the Pit Spring Bonnie",
-         "Old Man Consequences",
          "Afterbite Withered Golden Freddy",
          "High Voltage Rockstar Freddy BUG"
        ]
@@ -476,10 +478,14 @@
          "Planet Buster Scott BUG"
        ],
        "s": [
-         "Vengeful Spirit",
+         "Michael Afton 0-0-5 UP"
+         "Vengeful Spirit 0-0-5",
          "Deep Sea Calamity Endo",
          "Molten Freddy",
+         "Springtrap 0-5-0 NEW",
          "Frozen King Foxy",
+         "Nightmare Fredbear 0-5-0 UP",
+         "Old Man Consequences 0-0-5 NEW"
          "Grand Strategist Chica",
          "DJ 101Bit",
          "Cyberdata Withered Bonnie NEW",
@@ -494,12 +500,12 @@
          "Frostmancer Withered Bonnie",
        ],
        "a": [
+         "Animdude 0-5-0 NEW",
          "Pyro Spring Bonnie",
          "Starfarer Princess",
          "Nightmare Chica",
          "Cthulhu Nightmare Foxy",
          "Model 2.9 Defective Funtime Foxy NEW",
-         "Golden Freddy",
          "Afterbite Withered Golden Freddy",
          "Malachite Foxy",
          "Yenndo"
@@ -517,7 +523,7 @@
          "Phantom Withered Chica",
          "Frosty the Snowcake",
          "Amalgam",
-         "Puppet",
+         "Puppet 0-5-0",
          "Chicas Magic Rainbow",
          "Chipper",
          "Detective Bonnie",
@@ -526,12 +532,10 @@
        "c": [
          "Leviathan Mangle",
          "Tidal Wailer Crying Child",
-         "Nightmare Fredbear",
          "Fallen Angel Nightmarionne",
          "Hacker King RWQFSFASXC",
          "Crying Child",
          "Scooped Michael",
-         "Michael Afton",
          "Elizabeth",
          "Toy Chica",
          "Happy Frog",
@@ -539,11 +543,14 @@
          "Pigpatch",
          "Orville Elephant",
          "Roadkill Phantom Foxy",
-         "Mecha-Lizabeth BUG"
+         "Mecha-Lizabeth BUG",
+         "Golden Freddy 0-0-5 DOWN BUG",
        ]
      },
      "summon": {
        "s": [
+         "Puppet 0-5-0 UP",
+         "Michael Afton 5-0-0 NEW"
          "Void Drifter Molten Freddy NEW",
          "XOR",
          "Yeti Oni Bonnie",
@@ -569,8 +576,7 @@
        "c": [
          "Freddles",
          "King in Purple Purple Guy",
-         "Puppet",
-         "Animdude",
+         "Animdude 0-5-0",
          "Fallen Angel Nightmarionne"
        ]
      },
@@ -586,6 +592,7 @@
          "Animdude"
        ],
        "b": [
+         "Old Man Consequences 0-5-0 NEW",
          "Stormbound Chica",
          "Cerberus Freddy",
          "Popcorn Bot",

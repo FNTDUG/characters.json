@@ -645,7 +645,7 @@
       "DJ 101Bit": "Can swap between giving all nearby units +20% Damage or +25% Range. Placed higher than other units because she can stack with other placements of herself.",
       "High Voltage Rockstar Freddy": "Each placement of him gives +20% Damage to the 3 units closest to him.",
       "White Lily Toy Foxy": "Can give Nature units +20% Damage and +10% Range per placement when she has stacks of Favor.",
-      "Animdude": "Gives one random unit in range up to +65% Damage and +30% Range sharing Animdude's Byte passive with the connected unit. In PVP, 2 random units can be chosen and they additionally have 25% cheaper upgrades."
+      "Animdude": "Gives one random unit in range up to +65% Damage and +30% Range sharing Animdude's Byte passive with the connected unit. In PVP, 2 random units can be chosen and they additionally have 25% cheaper upgrades.",
       "Nature Reclaimed Foxy": "Gives all units in range +30% Damage, +25% Range and -5% CD. Additionally increases base health, allowing you to survive longer against normal enemies.",
       "Nightterror Rockstar Bonnie": "Dark and Light units gain +25% Damage and +10% Range. Dreamer units receive 2x these boosts and gain 20% of this unit's damage as Burn.",
       "Bedtime Psychic Fredbear": "Can give all units in range +10% Damage and +5% Range. Dreamer units instead gain +30% Damage and +20% Range.",
@@ -655,6 +655,7 @@
       "Theory Crusher Scott": "Gives all units in range +1% Damage and +1% Range for every enemy on the map, a very strong boost when enemies begin to build up in late game.",
       "Stitchwraith": "(Jake form) Gives various boosts to nearby units depending on how many enemies have died in this unit's range. 5 kills: +15% Damage, Range, and -5% CD. 25 kills: Previous boosts and +10% crit chance and crit damage. 75 kills: +15% Damage, +25% Range, -5% CD, +20% crit chance and crit damage.",
       "Psychic Friend Fredbear": "Boosts units based on the amount of Stocks (HP) you've lost. All units in range gain -5% CD if no Stocks are lost, +15% Damage and +20% Range if you've lost 1 Stock, and +30% Damage, +25% Range, and -2.5% CD if you've lost 2 Stocks.",
+      "Vengeful Spirit": "Dark and Neutral units gain -5% CD and +30% Crit Chance. Units in range gain half of this unit's Crit Damage self boosts.",
       "Golden Cupcake": "Gains stacks based on the amount of Light units on your team, up to 3. Gives all units in range +10% Damage and +6% Range per stack (max of +30% Damage and +18% Range)",
       "Golden Freddy": "Grants all units up to +30% Damage (stacks with other Golden Freddys), grants double the previous boost to a random Neutral unit (max of +150%, excludes himself) every 45s for 10s, and +25% Damage and +20% Range to all Neutral units with his Active."
     },

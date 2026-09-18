@@ -27,7 +27,7 @@
         "Frostmancer Withered Bonnie",
         "Animdude 5-0-2 UP",
         "Vengeful Spirit 5-2-0 DOWN",
-        "Old Man Consequences 5-2-0",
+        "Old Man Consequences 2-0-5",
         "Cthulhu Nightmare Foxy DOWN",
         "Nightmare Fredbear 0-5-2 UP",
         "Puppet 0-5-2 UP",

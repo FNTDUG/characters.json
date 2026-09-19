@@ -5,10 +5,11 @@
   "lists": {
     "all": {
       "op": [
-        "Planet Buster Scott BUG"
+        "Planet Buster Scott BUG",
       ],
       "s": [
         "Grand Strategist Chica",
+        "Old Man Consequences 2-0-5 UP",
         "Stitchwraith UP",
         "Nature Reclaimed Foxy"
       ],
@@ -27,7 +28,6 @@
         "Frostmancer Withered Bonnie",
         "Animdude 5-0-2 UP",
         "Vengeful Spirit 5-2-0 DOWN",
-        "Old Man Consequences 2-0-5",
         "Cthulhu Nightmare Foxy DOWN",
         "Nightmare Fredbear 0-5-2 UP",
         "Puppet 0-5-2 UP",
@@ -581,13 +581,15 @@
       ]
     },
     "knockback": {
+      "op": [
+        "Old Man Consequences 0-0-5 NEW",
+      ],
       "s": [
         "Minireenas",
         "DJ 101Bit"
       ],
       "a": [
         "Cannoneer Chica",
-        "Old Man Consequences 0-5-0 NEW",
         "Follow Me",
         "Bear5",
         "Animdude"

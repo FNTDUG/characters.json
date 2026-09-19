@@ -26,6 +26,7 @@
         "Nightterror Rockstar Bonnie NEW linked", "Bedtime Psychic Fredbear linked NEW", "Daydream Rockstar Foxy NEW",
         "Pirate Withered Foxy",
         "Frostmancer Withered Bonnie",
+        "Golden Freddy 0-4-2 UP",
         "Animdude 5-0-2 UP",
         "Vengeful Spirit 5-2-0 DOWN",
         "Cthulhu Nightmare Foxy DOWN",
@@ -34,7 +35,6 @@
         "White Lily Toy Foxy",
         "High Voltage Rockstar Freddy BUG DOWN",
         "Michael Afton 5-2-0 UP BUG",
-        "Golden Freddy 0-5-2 DOWN",
         "XOR",
         "Faz-ino Spring Bonnie",
         "Stormbound Chica",
@@ -271,9 +271,9 @@
     "starter": {
       "s": [
         "Pirate Withered Foxy",
+        "Golden Freddy 0-4-2 UP",
         "High Voltage Rockstar Freddy BUG",
         "White Lily Toy Foxy",
-        "Golden Freddy",
         "Faz-ino Spring Bonnie",
         "Endo 01",
         "XOR",

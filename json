@@ -13702,6 +13702,9 @@
     "imgShiny": "https://units.fntduserguide.com/units/faz-ino-spring-bonnie-shiny.png",
     "rarity": "secret",
     "typeMain": "Starter",
+    "typeTags": [
+      "Crit"
+    ],
     "element": "Dark",
     "placements": 1,
     "attackType": "Circle",
@@ -14299,6 +14302,9 @@
     "imgShiny": "https://units.fntduserguide.com/units/super-soldier-foxy-shiny.png",
     "rarity": "secret",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Crit"
+    ],
     "element": "Rust",
     "placements": 2,
     "attackType": "Line",
@@ -14950,7 +14956,8 @@
       "Wither",
       "Stun",
       "Trap",
-      "Summon"
+      "Summon",
+      "Crit"
     ],
     "element": "Electricity/Light",
     "placements": 1,
@@ -15014,7 +15021,8 @@
       "Burn",
       "Slow",
       "Stun",
-      "Wither"
+      "Wither",
+      "Crit"
     ],
     "element": "Light",
     "placements": 1,
@@ -16253,7 +16261,8 @@
     "typeMain": "Endgame",
     "typeTags": [
       "Support",
-      "Rockstar"
+      "Rockstar",
+      "Crit"
     ],
     "element": "Nature",
     "placements": 1,
@@ -16359,7 +16368,8 @@
     "typeMain": "Midgame",
     "typeTags": [
       "Wither",
-      "Burn"
+      "Burn",
+      "Crit"
     ],
     "element": "Fire/Rust",
     "placements": 2,
@@ -17735,7 +17745,8 @@
     "rarity": "secret",
     "typeMain": "Starter-Midgame",
     "typeTags": [
-      "Summon"
+      "Summon",
+      "Crit"
     ],
     "element": "Rust",
     "placements": 1,
@@ -17912,6 +17923,9 @@
     "imgShiny": "https://units.fntduserguide.com/units/firework-shadow-freddy-shiny.png",
     "rarity": "secret",
     "typeMain": "Midgame",
+    "typeTags": [
+      "Crit"
+    ],
     "element": "Fire",
     "placements": 2,
     "attackType": "Circle",
@@ -18024,7 +18038,8 @@
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
-      "Support"
+      "Support",
+      "Crit"
     ],
     "element": "Light",
     "placements": 1,
@@ -19172,7 +19187,8 @@
     "Support",
     "Slow",
     "Burn",
-    "Poison"
+    "Poison",
+    "Crit"
   ],
   "element": "Dark",
   "placements": 1,
@@ -19521,7 +19537,8 @@
     "Support",
     "Slow",
     "Stun",
-    "Bleed"
+    "Bleed",
+    "Crit"
   ],
   "element": "Light",
   "placements": 1,
@@ -20961,7 +20978,8 @@
   "typeTags": [
     "Support",
     "Wither",
-    "Mediocre Melody"
+    "Mediocre Melody",
+    "Crit"
   ],
   "element": "Neutral",
   "placements": 2,
@@ -22160,7 +22178,8 @@
     "Slow",
     "Bleed",
     "Stun",
-    "Wither"
+    "Wither",
+    "Crit"
   ],
   "element": "Dark/Neutral",
   "placements": 1,
@@ -22879,7 +22898,8 @@
   "rarity": "secret",
   "typeMain": "Midgame-Endgame",
   "typeTags": [
-    "Support"
+    "Support",
+    "Crit"
   ],
   "element": "Dark/Light",
   "placements": 1,
@@ -23357,7 +23377,8 @@
   "typeMain": "Midgame",
   "typeTags": [
     "Slow",
-    "Mediocre Melody"
+    "Mediocre Melody",
+    "Crit"
   ],
   "element": "Neutral",
   "placements": 3,
@@ -25246,7 +25267,8 @@
   "rarity": "secret",
   "typeMain": "Endgame",
   "typeTags": [
-    "Stun"
+    "Stun",
+    "Crit"
   ],
   "element": "Dark",
   "placements": 1,
@@ -25484,7 +25506,8 @@
   "typeTags": [
     "Support",
     "Stun",
-    "Slow"
+    "Slow",
+    "Crit"
   ],
   "element": "Electricity",
   "placements": 1,
@@ -25781,7 +25804,8 @@
   "typeMain": "Endgame",
   "typeTags": [
     "Support",
-    "Dreamer"
+    "Dreamer",
+    "Crit"
   ],
   "element": "Light",
   "placements": 1,

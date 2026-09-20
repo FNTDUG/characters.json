@@ -1431,32 +1431,16 @@
         el.style.backgroundImage = ueRarityTextGradient(g);
       }
 
-      // Buff Potency is a per-boost figure the user types in, Unit Boosts only, capped at
-      // +63%. It scales what the boost is worth rather than how many stacks are up: a
-      // +10% boost at +10% potency is worth +11%.
       var BUFF_POTENCY_MAX = 63;
-      // A multiplier is worth (m - 1); potency scales that, so it reads the same whether
-      // the boost raises a stat (1.10 -> 1.11) or lowers one (0.90 -> 0.89).
       function _potMult(mult, pot) { return pot ? 1 + (mult - 1) * (1 + pot) : mult; }
 
-      // Cooldown floors. Unit Boosts and bytes are capped together at -50%; boss raids
-      // carry their own -50% cap; enchants and chips are not capped at all.
       var CD_BOOST_FLOOR = 0.5;
 
-      // Fire's element passive: every attack applies a burn ticking this share of the
-      // unit's damage per second, lasting 1s. Stacks without limit, so how many are alive
-      // at once is just the attack rate — one attack contributes pct x damage, and the
-      // attacks land 1/cd times a second. Nothing for the user to set.
       var FIRE_BURN_PCT_PER_SEC = 0.03;
 
       const ELEMENT_TEXT_GRADIENT =
       "linear-gradient(90deg,#b7ff9c,#79ff5c,#9aff72,#6dff52,#b7ff9c)";
 
-      // Elements resolve to the base ones they count as. A dual counts as both
-      // halves, so a Dark/Light unit answers to a Dark filter and a Light one,
-      // and picks up both elements' boosts without every list naming the combo.
-      // Anything with a "/" is split automatically; only names that are not a
-      // plain join of their parts need an entry here.
       const ELEMENT_BASE = ["Dark","Electricity","Fire","Light","Nature","Neutral","Rust","Water"];
       const ELEMENT_PARTS = {
         "Universal": ELEMENT_BASE.slice()
@@ -1467,8 +1451,6 @@
         if (ELEMENT_PARTS[e]) return ELEMENT_PARTS[e];
         return e.split("/").map(function (p) { return p.trim(); }).filter(Boolean);
       }
-      // Does this unit count as `base`? Matches the whole element name too, so a
-      // boost aimed at a specific combo ("Dark/Light") still only hits that combo.
       function unitHasElement(unit, base) {
         var b = String(base == null ? "" : base).trim().toLowerCase();
         if (!b) return false;
@@ -1579,9 +1561,6 @@
 
         var BYTE_LIST = ["The Box", "Boss Drain", "Reaper", "The Fan", "UFO", "KABOOM!"];
 
-        // Chips (synergy boosts). Flat synergy boosts are applied to the DPS calc;
-        // situational per-enemy passives (Overwhelming Power / Crowd Culler) and
-        // follow-up / DoT specific boosts are shown but not baked into the flat number.
         var CHIP_LIST = [
           { value: "none",               label: "Select Chip..." },
           { value: "overwhelming_power", label: "Overwhelming Power (+15% DMG)" },
@@ -1592,9 +1571,6 @@
           { value: "blazing_fire",       label: "Blazing Fire (+20% DoT DMG)" }
         ];
 
-        // Chip roll stats — max = base-stat max + sub-stat max (from worker.js chip data).
-        // dmg / rng / cd / critc / critd feed the flat DPS calc; buffpot / followup / dot
-        // are shown but situational (not baked into the flat number).
         var CHIP_STATS = [
           { key:"dmg",      label:"Damage",        unit:"%", min:0,     max:35   },
           { key:"rng",      label:"Range",         unit:"%", min:0,     max:35   },
@@ -1606,8 +1582,6 @@
           { key:"dot",      label:"DoT Damage",    unit:"%", min:0,     max:40   }
         ];
 
-        // Number inputs: show the normal keyboard on mobile but only allow numeric characters
-        // (digits, one leading "-", one ".") — type="number" was giving a limited mobile keypad.
         function ueNumericInput(inp) {
           inp.type = "text";
           inp.setAttribute("inputmode", "text");
@@ -1752,8 +1726,6 @@
             break;
 
           case "hijacked": {
-            // Count from the boosted total, not unit.placements: with Dice the
-            // extra placements are surrendered too, so they must be paid for.
             var _hBasePlc = getPlcRaw(unit);
             var _hLost    = Math.max(0, _hBasePlc - 1);
             dmgMult *= (2.20 + 1.80 * _hLost);
@@ -1768,17 +1740,15 @@
             break;
         }
 
-        // ── Chip (synergy) boosts ────────────────────────────────────────────
         switch (buffState.chip) {
-          case "overwhelming_power": break;   // +15% flat handled additively with its stacks below
+          case "overwhelming_power": break;  
           case "weak_point":         critRateAdd += 0.15; critDmgAdd += 0.30; break;
-          case "rapid_strikes":      cdMult  *= 0.95; break;   // +25% follow-up dmg is situational
+          case "rapid_strikes":      cdMult  *= 0.95; break;  
           case "eye_augmentation":   rngMult *= 1.15; dmgMult *= 1.10; break;
-          case "crowd_culler":       break;                     // handled via chipStacks below
-          case "blazing_fire":       break;                     // +20% DoT dmg (situational)
+          case "crowd_culler":       break;                    
+          case "blazing_fire":       break;                    
         }
 
-        // Chip roll stats (flat ones feed the DPS calc; buffpot/followup/dot are situational)
         if (buffState.chipStats && typeof buffState.chipStats === "object") {
           var _cs = buffState.chipStats;
           if (_cs.dmg)   dmgMult    *= (1 + Number(_cs.dmg)   / 100);
@@ -1787,11 +1757,10 @@
           if (_cs.critc) critRateAdd += Number(_cs.critc) / 100;
           if (_cs.critd) critDmgAdd  += Number(_cs.critd) / 100;
         }
-        // Chip per-enemy synergy (added to the flat synergy % so each enemy is exactly its per-enemy value)
         if (buffState.chip === "overwhelming_power") {
-          dmgMult *= (1 + (15 + (Number(buffState.chipStacks) || 0) * 0.5) / 100);  // +15% flat, +0.5%/enemy (cap +5% at 10)
+          dmgMult *= (1 + (15 + (Number(buffState.chipStacks) || 0) * 0.5) / 100); 
         } else if (buffState.chip === "crowd_culler") {
-          dmgMult *= (1 + ((Number(buffState.chipStacks) || 0) * 5) / 100);          // +5%/enemy (cap +25% at 5)
+          dmgMult *= (1 + ((Number(buffState.chipStacks) || 0) * 5) / 100);         
         }
 
       
@@ -1857,9 +1826,6 @@
 
       var burnPctPerSec = 0;
 
-      // Enchants and chips are already applied; boss raids and bytes come after. Each
-      // layer is bracketed so the cooldown floors can be applied per group: Unit Boosts
-      // and bytes share one, boss raids has its own, enchants and chips have none.
       var _cdBeforePerma = cdMult;
 
       permaList.forEach(function(type) {
@@ -1891,7 +1857,6 @@
         var _cdTempOnly = (_cdBeforeTemp > 0) ? (cdMult / _cdBeforeTemp) : 1;
         var _cdBeforeByte = cdMult;
 
-        // ── Byte boosts ────────────────────────────────────────────────────────
         function _applyByteBoosts(bm, bs) {
           if (!bm || bm === "none") return;
           if (bm === "The Box") {
@@ -2130,14 +2095,6 @@
       
       
       
-      // Status-effect colours and notes are kept in step with the INFO panel's
-      // "Status Effects" tab in the site worker — that tab is the source of
-      // truth. If a colour or wording changes there, change it here too.
-      //
-      // Keys are the BASE word, never the inflected form: the regex below
-      // captures the stem and its suffix separately, and the lookup uses the
-      // stem. So 'mark' covers mark/marks/marked/marking, 'root' covers
-      // root/roots/rooted/rooting, and so on.
       var _PASSIVE_COLORS = {
         damage:'#C33333', dmg:'#C33333',
         range:'#76B7FF',  rng:'#76B7FF',
@@ -2162,8 +2119,6 @@
       var _CC_STANDALONE = 'anti[- ]?regen|burn|bleed|slow|stun|knockback|poison|death|malware|mark|root|scar|soak|wither|cash';
       var _CC_TWOPHRASE  = 'knocks back|knocked back';
 
-      // 'red' and 'ring' are what let scar -> scarred / scarring resolve back to
-      // the 'scar' stem; 'ned'/'ning' do the same for stun -> stunned/stunning.
       var _SFX = '(s|ed|ing|ned|ning|red|ring|er)?';
       var _KW  = 'damage|dmg|range|rng|cooldown|cd|anti[- ]?regen|burn|bleed|slow|stun|knockback|poison|death|malware|mark|root|scar|soak|wither';
       var _ELEMENT_WORDS = ['Neutral', 'Nature', 'Dark', 'Water', 'Rust', 'Electricity', 'Fire', 'Light'];
@@ -2209,7 +2164,6 @@
         wrap.className = 'ue-kw-info';
         if (color) wrap.style.color = color;
 
-        // Append box to body so it escapes every overflow/clip ancestor
         var box = document.createElement('div');
         box.className = 'ue-kw-info-box';
         box.textContent = note;
@@ -2217,8 +2171,6 @@
         document.body.appendChild(box);
 
         function showTip() {
-          // Close any other open tip (the touch path suppresses the document
-          // click that would otherwise handle this).
           document.querySelectorAll('.ue-kw-info-box').forEach(function(b) { if (b !== box) b.style.display = 'none'; });
           box.style.display = 'block';
           var wr  = wrap.getBoundingClientRect();
@@ -2239,9 +2191,6 @@
           if (box.style.display === 'none' || !box.style.display) showTip(); else hideTip();
         }
 
-        // Touch: toggle on touchend and preventDefault, which suppresses the
-        // synthesized mouseenter + click. Firing both alongside the tap was
-        // what made it "need 2 taps". Mouse: hover to show, click to toggle.
         var _isTouch = false;
         wrap.addEventListener('touchend', function(e) {
           _isTouch = true;
@@ -2425,8 +2374,6 @@
         var html = "<table>";
 
         html += "<tr>";
-        // Heroes on the path system are upgraded by tier, not level. Relabelled at
-        // render only — "Lvl" stays the column key everything downstream looks up by.
         var lvlLabel = ueHeroPathsFor(unit) ? "Tier" : "Lvl";
         cols.forEach(function(col, i) {
           html += "<th style='border-bottom:2px solid #ffa45b;" +
@@ -2487,8 +2434,6 @@
       }
 
         function makeDpsTable(unit, modeKey) {
-          // No committed path means no placement/maxed DPS, no cost, and no
-          // W/ ACTIVE(S) & PASSIVE(S) — the notice from makeStatsTable stands in.
           if (ueHeroAwaitingPath(unit)) return null;
           var dps = computeUnitDps(unit, modeKey);
           var _pd = resolvePd(unit, modeKey);
@@ -2707,8 +2652,6 @@
 
         var SHINY_DAMAGE_MULT = 1.10;
         var isShinyMode = false;
-        // Set by the DPS panel's IIFE below; displayUnit calls it so the panel restates
-        // itself whenever a boost, level or mode changes. Null until that IIFE runs.
         var _ueDpsRefresh = null;
         var isGlitchedMode = false;
         var GLITCH_DMG_MULT = 1.25;
@@ -3057,13 +3000,7 @@
       var HERO_PATH_IMG = 'https://images.fntduserguide.com/';
       var HERO_PATH_BG  = 'https://cosmetics.fntduserguide.com/loading-screens/camera.png';
       
-      // ── Hero Tree ────────────────────────────────────────────────
-      // Cross-path rule: one path may reach 5, a second at most 2, the third
-      // must stay at 0. Partial builds are legal, so 3-2-0 and 0-2-4 are valid
-      // resting states, not just steps toward 5-2-0.
       var ueHeroPathSel = {};
-      // Paths live on the unit in units.json as [{tiers:[...]},...]; flattened here to
-      // the [[tier,...],...] shape the modal walks.
       function ueHeroPathsFor(unit) {
         var raw = unit && unit.paths;
         if (!Array.isArray(raw) || !raw.length) return null;
@@ -3075,10 +3012,6 @@
         return out.length ? out : null;
       }
 
-      // Gate for anything in passives / passiveDamage. An entry with "path" and "tier"
-      // only counts once that path is selected to at least that tier, so W/ ACTIVE(S) &
-      // PASSIVE(S) reflects the build actually picked rather than everything the hero
-      // could ever have. Entries without a gate are base kit and always show.
       function ueTierUnlocked(unit, entry) {
         if (!entry || entry.path == null || entry.tier == null) return true;
         if (!ueHeroPathsFor(unit)) return true;
@@ -3098,9 +3031,6 @@
         for (var i = 0; i < sel.length; i++) if ((sel[i] || 0) >= UE_PRIMARY_TIER) return i;
         return -1;
       }
-      // A hero whose build has not committed to a path yet: the stats table, the
-      // W/ ACTIVE(S) & PASSIVE(S) table and the placement/maxed/cost row all depend on
-      // which path you took, so none of them can be shown.
       function ueHeroAwaitingPath(unit) {
         return !!ueHeroPathsFor(unit) && ueHeroPrimaryPath(unit) < 0;
       }
@@ -3152,20 +3082,13 @@
       }
       function ueRound(n) { return (Math.round(n * 100) / 100).toLocaleString('en-US'); }
 
-      // Injected once. Inline styles cannot carry media queries, and the modal needs
-      // real breakpoints rather than JS size maths that has to re-run on rotate.
       function ueEnsureHeroPathStyle() {
         if (document.getElementById('uhp-style')) return;
         var st = document.createElement('style');
         st.id = 'uhp-style';
         st.textContent =
           '.uhp-desc{font-family:"Press Start 2P",cursive}' +
-          // The colouriser tags keywords with a hover badge. Useful in the passives
-          // dropdown, noise in a tier list, so it is hidden here only.
           '.uhp-desc .ue-kw-info{display:none!important}' +
-          // safe center keeps the row centred when it fits but falls back to
-          // flex-start when it overflows — plain "center" pushes Tier 1 into
-          // negative scroll space where it cannot be reached.
           '.uhp-row{display:flex;align-items:flex-start;gap:4px;flex-wrap:nowrap;justify-content:safe center}' +
           '.uhp-title{font-family:"Press Start 2P",cursive;font-size:11px;line-height:1.7}' +
           '.uhp-eff{font-family:"Press Start 2P",cursive;font-size:9px;line-height:2;color:#e2e2e2}' +
@@ -3189,9 +3112,6 @@
             '.uhp-eff{font-size:8px!important;line-height:1.95!important}' +
             '.uhp-title{font-size:9px!important}' +
             '.uhp-close{top:8px!important;right:8px!important;width:32px!important;height:32px!important;font-size:14px!important}' +
-            // The background stays on the frame. Sized to the frame's width rather
-            // than covering it, because a stacked mobile layout can be several
-            // viewports tall and cover scales the image to that height.
             '.uhp-frame{background-size:100% auto!important;background-position:center top!important;' +
               'background-repeat:repeat-y!important}' +
           '}';
@@ -3227,7 +3147,6 @@
         body.className = 'uhp-body';
         body.style.cssText = 'position:relative;display:flex;flex-wrap:wrap;gap:18px;padding:18px';
 
-        // ── left: portrait + live stats ──
         var side = document.createElement('div');
         side.className = 'uhp-side';
         side.style.cssText = 'width:230px;flex:0 0 auto;display:flex;flex-direction:column;gap:12px';
@@ -3242,17 +3161,12 @@
         pImg.style.cssText = 'width:100%;aspect-ratio:1;object-fit:cover;display:block';
         pIn.appendChild(pImg); pFrame.appendChild(pIn); side.appendChild(pFrame);
 
-        // The stat readout lives in the engine's own table — duplicating it here
-        // would show one set of numbers while the page shows another.
         var buildBox = document.createElement('div');
         buildBox.className = 'uhp-build';
         buildBox.style.cssText = 'background:rgba(10,8,22,.88);border:1px solid rgba(255,164,91,.25);border-radius:10px;' +
           'padding:10px;text-align:center;font-family:Audiowide,sans-serif;font-size:17px;letter-spacing:3px;color:' + accent;
         side.appendChild(buildBox);
 
-        // One reset per path that has something in it, so nothing shows at 0-0-0 and
-        // two appear once two paths are in play. This is also the only way to take a
-        // single path back to zero, which cross-path swapping needs.
         var resetWrap = document.createElement('div');
         resetWrap.className = 'uhp-resets';
         resetWrap.style.cssText = 'display:flex;flex-direction:column;gap:8px';
@@ -3260,12 +3174,10 @@
 
         body.appendChild(side);
 
-        // ── right: the 3x5 grid ──
         var gridWrap = document.createElement('div');
         gridWrap.style.cssText = 'flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:10px';
         body.appendChild(gridWrap);
 
-        // ── bottom: description bar ──
         var descBar = document.createElement('div');
         descBar.className = 'uhp-desc';
         descBar.style.cssText = 'position:relative;margin:0 18px 18px;background:rgba(10,8,22,.9);' +
@@ -3280,7 +3192,6 @@
         closeBtn.className = 'uhp-close';
         closeBtn.setAttribute('aria-label', 'Close');
         closeBtn.innerHTML = '&#x2715;';
-        // Same treatment as the site's ad dismiss button, scaled up from 23px.
         closeBtn.style.cssText = 'position:absolute;top:12px;right:12px;z-index:3;width:38px;height:38px;border-radius:50%;' +
           'background:rgba(255,255,255,.06);border:1px solid rgba(255,164,91,.28);color:rgba(255,255,255,.5);' +
           'font-size:16px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;' +
@@ -3300,10 +3211,6 @@
         document.addEventListener('keydown', onKey);
         overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
 
-        // The bar shows the whole current build rather than one clicked node, so a
-        // cross-path 2-5-0 lists Path 1 tiers 1-2 then Path 2 tiers 1-5. Deriving it
-        // from sel also means it survives closing the modal, since sel is kept per
-        // unit in ueHeroPathSel.
         function drawDesc() {
           dMain.innerHTML = '';
           var taken = false, p, k;
@@ -3328,8 +3235,6 @@
             h.style.marginTop = dMain.children.length ? '12px' : '0';
             h.textContent = 'Path ' + (p + 1);
             dMain.appendChild(h);
-            // Tiers are cumulative, so a selection of N lists 1..N. t.q (the tier-5
-            // unlock quest) stays out — the INFO panel covers unlock requirements.
             for (k = 0; k < sel[p]; k++) {
               var line = document.createElement('div');
               line.className = 'uhp-eff';
@@ -3338,7 +3243,6 @@
               lb.textContent = '● Tier ' + (k + 1) + ': ';
               lb.style.cssText = 'color:' + accent + ';white-space:nowrap';
               line.appendChild(lb);
-              // Same colouriser the passives dropdown runs on p.text.
               var eff = document.createElement('span');
               applyPassiveColorize(eff, paths[p][k].desc || '');
               line.appendChild(eff);
@@ -3373,10 +3277,6 @@
           var prevX = gridWrap.firstChild ? gridWrap.firstChild.scrollLeft : 0;
           var prevY = overlay.scrollTop;
           gridWrap.innerHTML = '';
-          // One scroller wrapping all three rows, so dragging any path moves them
-          // together and the tiers stay aligned in a column. overflow-x:auto forces
-          // overflow-y from visible to auto, so pad the clip box out or it shears the
-          // selected ring's glow, then pull the extra back off with margin.
           var scroller = document.createElement('div');
           scroller.style.cssText = 'overflow-x:auto;padding:16px 4px;margin:-12px 0';
           var stack = document.createElement('div');
@@ -3418,9 +3318,6 @@
               lab.style.cssText = 'margin-top:7px;color:' + (owned ? accent : 'rgba(255,255,255,.65)');
               cell.appendChild(ring); cell.appendChild(lab);
               cell.onclick = function () {
-                // Clicking the tier you are already on does nothing. It used to step
-                // back down, which left the build at 1-0-0 while the bar still read
-                // Tier 2. Dropping to a lower tier is done by clicking that tier.
                 var want = ti + 1;
                 if (want === sel[pi]) return;
                 if (ueHeroPathLegal(sel, pi, want)) { sel[pi] = want; draw(); }
@@ -3501,10 +3398,6 @@
         };
       }
 
-      // Heroes on the path system have no levels of their own — each path states its
-      // own, so the committed path supplies the stat table. Falls through to whatever
-      // was passed in for every other unit, and for a hero with no path picked yet
-      // (which the tier-3 notice covers anyway).
       function ueApplyPathLevels(unit, levels) {
         var raw = unit && unit.paths;
         if (!Array.isArray(raw)) return levels;
@@ -3564,10 +3457,6 @@
         return String((unit && unit.rarity) || "").toLowerCase() === "hero";
       }
 
-      // Placements including every boost that grants them (Dice, etc.), BEFORE
-      // Hijacked collapses the unit to a single placement. Hijacked pays out per
-      // placement given up, so it needs the count it is actually taking away —
-      // using the unit's base alone would drop the boosted ones for free.
       function getPlcRaw(unit) {
         var base = unit.placements || 1;
         if (isHeroRarity(unit)) return Math.max(1, base);
@@ -3606,7 +3495,6 @@
       }
 
       function getPlc(unit) {
-        // Hijacked leaves exactly one placement on the field.
         if (typeof buffState !== "undefined" && buffState.enchant === "hijacked") return 1;
         return getPlcRaw(unit);
       }
@@ -3638,25 +3526,20 @@
           var buffedCd = baseCd * mult;
           var averagedCd = (buffedCd + selectedCd) / 2;
           var _avgMult = averagedCd / baseCd;
-          // Love Shot only affects 1 placement — dilute the averaging by the placement count
           var _swPlc = (typeof getPlc === "function") ? (getPlc(unit) || 1) : 1;
           var _lsMult = mult + (_avgMult - mult) / _swPlc;
-          // Love Shot is a Unit Boost, so its share of the change belongs to that layer
-          // and is floored along with it below.
           if (mult > 0) _lsRatio = _lsMult / mult;
           mult = _lsMult;
         }
       }
 
-      // Floors, per group. Unit Boosts and bytes share one, boss raids has its own, and
-      // whatever is left — enchants and chips — multiplies underneath both, uncapped.
       (function () {
         var pm = (_cdEff.cdMultPerma || 1) * _lsRatio;
         var by = _cdEff.cdMultByte || 1;
         var tp = _cdEff.cdMultTemp || 1;
         var grouped = pm * by * tp;
         if (!isFinite(grouped) || grouped <= 0) return;
-        var uncapped = mult / grouped;                    // enchants + chips
+        var uncapped = mult / grouped;                   
         if (!isFinite(uncapped) || uncapped <= 0) return;
         var g1 = pm * by; if (g1 < CD_BOOST_FLOOR) g1 = CD_BOOST_FLOOR;
         var g2 = tp;      if (g2 < CD_BOOST_FLOOR) g2 = CD_BOOST_FLOOR;
@@ -5087,7 +4970,6 @@
             wrap.appendChild(cdWrap);
           }
 
-          // Buff Potency — last, so on a stacking boost it sits under the stack count.
           if (selectedValue && selectedValue !== "none") {
             var potKey = "pot:" + selectedValue;
             var potWrap = document.createElement("div");
@@ -5320,7 +5202,7 @@
             inp.min = s.min; inp.max = effMax; inp.step = "0.1";
             inp.placeholder = "Byte Stat";
             var _sv = ref[s.key];
-            if (_sv != null && _sv !== 0) inp.value = _sv;   // empty field shows the gray "Byte Stat" placeholder
+            if (_sv != null && _sv !== 0) inp.value = _sv;  
             inp.addEventListener("blur", function() {
               var raw = String(inp.value).trim();
               if (raw === "" || isNaN(parseFloat(raw))) {
@@ -5466,10 +5348,8 @@
           }, { searchable: false, noMarginTop: true });
           chipsPanel.appendChild(chipSel);
 
-          // Only show stacks + stats once a chip is selected
           if (buffState.chip && buffState.chip !== "none") {
 
-            // Per-enemy synergy stacks (Overwhelming Power / Crowd Culler) — enemy-count dropdown
             if (buffState.chip === "overwhelming_power" || buffState.chip === "crowd_culler") {
               var _maxStk = buffState.chip === "crowd_culler" ? 5 : 10;
               var stkWrap = document.createElement("div");
@@ -5491,7 +5371,6 @@
               chipsPanel.appendChild(stkWrap);
             }
 
-            // Chip roll stats
             var hdr = document.createElement("div");
             hdr.style.cssText = "margin-top:10px;font-size:9px;opacity:0.55;letter-spacing:0.5px;";
             hdr.textContent = "CHIP STATS";
@@ -5755,9 +5634,6 @@
         return allowed[key] || "";
       }
 
-      // Any tag missing from this map is dropped from the unit's type label, so
-      // it must stay in step with UE_TYPE_OPTIONS - the filter matches on
-      // typeTags directly and will happily find a tag that never renders here.
       function normalizeTypeTag(t) {
         var allowed = {
           "anti-regen": "Anti-Regen",
@@ -6175,9 +6051,6 @@
           row.appendChild(modeContainer);
         }
 
-        // Paths button — same shell as Mode, shown only for heroes that have paths.
-        // Chipper is a hero but was skipped by the rework, so they get nothing until
-        // their tiers exist on the unit in units.json.
         if (ueHeroPathsFor(unit)) {
           var pathContainer = document.createElement("div");
           pathContainer.classList.add("paths-container");
@@ -6204,9 +6077,6 @@
             if (typeof playUiClickSound === "function") playUiClickSound();
             openHeroPathsModal(unit, rarityStyle, function (build) {
               pathShell.textContent = "Hero Tree: " + build;
-              // Redraw so the stats table, the passives dropdown and the
-              // W/ ACTIVE(S) & PASSIVE(S) header reflect the new build. The modal is
-              // appended to <body>, so it survives the redraw.
               try { allowDisplayAnimation = false; displayUnit(unit, modeKey); } catch (e) {}
             });
           });
@@ -6712,7 +6582,6 @@
           if (typeof cb === "function") cb();
           return;
         }
-        // Queue callbacks so they all fire once the data actually finishes loading
         if (!window.__ueVD._cbs) window.__ueVD._cbs = [];
         if (typeof cb === "function") window.__ueVD._cbs.push(cb);
         if (window.__ueVD.loading) return;
@@ -7098,10 +6967,6 @@
         return outer;
       }
 
-      // Skin renders come from the cosmetics skins.json (auto-generated), so
-      // units.json only needs skin names (+ optional rarity). Names are matched
-      // normalized, also trying "<unit><skin>"/"<skin><unit>" since skins.json
-      // keys sometimes embed the unit name. Falls back to an inline skin.image.
       var UE_SKIN_PLACEHOLDER = "https://images.fntduserguide.com/placeholder-freddy.png";
       var _UE_SKIN_RENDERS = null;
       function _ueSkinNorm(x){ return String(x == null ? "" : x).toLowerCase().replace(/[^a-z0-9]/g, ""); }
@@ -7251,15 +7116,11 @@
       }
 
       unit.skins.forEach(skin => {
-        // A skin may be a bare name string or an object; image/rarity are
-        // pulled from skins.json when not provided inline.
         var sName = (typeof skin === "string") ? skin : (skin.name || "");
         var sRarity = (typeof skin === "object" && skin.rarity) ? skin.rarity : null;
         var sMeta = _ueSkinMeta(unit.name, sName);
         var sImage = ((typeof skin === "object" && skin.image) ? skin.image : null) || (sMeta && sMeta.image) || "";
         if (!sRarity && sMeta && sMeta.rarity) sRarity = sMeta.rarity;
-        // A skin with "shiny" in its name always uses the shiny animation,
-        // regardless of the base rarity stored in skins.json.
         if (/shiny/i.test(sName)) sRarity = "shiny";
 
         var skinRarityStyle = (sRarity && rarityStyles[sRarity.toLowerCase()])
@@ -7420,7 +7281,6 @@
       }
 
         function displayUnit(unit, modeKey) {
-          // Shiny guard: if this unit has no shiny variant, don't stay in shiny mode
           var _hasShiny = unit && unit.imgShiny && typeof unit.imgShiny === "string"
             && unit.imgShiny.trim() !== "" && unit.imgShiny.trim() !== ((unit.imgNormal || "").trim());
           if (isShinyMode && !_hasShiny) isShinyMode = false;
@@ -7431,7 +7291,6 @@
           lastDisplayedUnit = unit;
           lastDisplayedModeKey = modeKey || null;
 
-          // Deep-link: reflect the open unit in the URL for easy sharing
           try {
             if (unit && unit.name && location.pathname.indexOf("unit-engine") !== -1) {
               var _ueBase = location.pathname.replace(/(\/unit-engine)(\/.*)?$/, "$1");
@@ -7812,9 +7671,6 @@
             if (_newTabHeader && _savedTabScroll > 0) _newTabHeader.scrollLeft = _savedTabScroll;
           });
 
-        // The DPS panel is a snapshot of every unit under the current boosts, so it goes
-        // stale the moment any of them change. Everything that changes them ends up here,
-        // which makes this the one place worth redrawing from.
         if (typeof _ueDpsRefresh === "function") {
           try { _ueDpsRefresh(); } catch (e) {}
         }
@@ -7906,9 +7762,6 @@
         var currentPlacementsSort  = "all";
         var currentStatSort        = "all";
 
-        // Max-level value of a stat, for the "Filter by Stats" sort. A unit whose levels
-        // sit under modes rather than at the top level is read from its first mode, and
-        // one with no usable number sorts to the end rather than to the top.
         function maxLevelStat(u, key) {
           var lvls = (u && u.levels && u.levels.length) ? u.levels : null;
           if (!lvls && u && u.modes) {
@@ -7924,8 +7777,6 @@
           return null;
         }
 
-        // Cost is cumulative rather than a max-level reading: the Cost cell adds every
-        // level's cost and multiplies by placements, so the sort uses the same figure.
         function totalCostStat(u) {
           var lvls = (u && u.levels && u.levels.length) ? u.levels : null;
           if (!lvls && u && u.modes) {
@@ -7943,9 +7794,6 @@
           return sum * ((u.placements || 1));
         }
 
-        // Grouped: progression stage, then status effects A-Z, then roles.
-        // The status list mirrors the INFO panel's "Status Effects" tab (plus
-        // Knockback, which the engine tracks but that tab does not list).
         var UE_TYPE_OPTIONS = [
           "Starter",
           "Starter-Midgame",
@@ -8077,7 +7925,7 @@
 
         
         var _dpsBtnActive = false;
-        var _dpsShowList  = true;   // the panel opens on the name list; the button swaps to the chart
+        var _dpsShowList  = true;  
         _ueDpsRefresh = function () { if (_dpsBtnActive) _buildDpsChart(); };
         var _dpsTip       = null;
         var _dpsMobTarget = null;
@@ -8486,9 +8334,6 @@
             rname.textContent = it.unit.name;
             rname.style.cssText = "flex:1;font-family:'Press Start 2P',cursive;font-size:9px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;";
 
-            // The name carries the rarity now, so the colour dot that used to sit beside
-            // it is gone. Shiny wins over rarity, and takes the same looping gradient the
-            // unit frame uses.
             var _rk = String(it.unit.rarity || "").toLowerCase();
             var _rs = (typeof rarityStyles !== "undefined" && (rarityStyles[_rk] || rarityStyles["default"])) || null;
             var _shinyOn = (typeof isShinyMode !== "undefined") && isShinyMode;
@@ -8713,8 +8558,6 @@
             _valueSel._set(currentRarityFilter || "all");
           } else if (currentCategoryMode === "element") {
             opts.push({ value: "all", label: "All Elements", placeholder: true });
-            // Only the base elements are listed; duals are reached through
-            // either half rather than appearing as entries of their own.
             ELEMENT_BASE.slice().sort().forEach(function(e) {
               opts.push({ value: e.toLowerCase(), label: e });
             });
@@ -8913,7 +8756,6 @@
 
         rebuildValueSelect();
 
-      // Deep-link: if the URL is /unit-engine/<UnitName>, run a real search so it renders correctly
       (function () {
         try {
           var mm = location.pathname.match(/\/unit-engine\/([^\/?#]+)/);

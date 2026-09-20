@@ -616,6 +616,7 @@
        "Overlord Scott": "A weaker Planet Buster scott, but still very good DPS, spectacular Slow, and good support.",
        "Astral Bonnie": "Incredible DPS, mild support, and fits spectacularly into Light/Dark focused teams.",
        "Deep Sea Calamity Endo": "The best staller by far, having 15% AOE Slow per placement (30% per person bringing him), 1.8s Stun on attack, and Knockback when enemies get too close. Additionally is a good supporting DPS and has an absurdly large 245° Cone attack.",
+       "Old Man Consequences": "Very good stall, being able to afflict enemies with up to 40% Slow, 2s Stun, 2 tile Knockback, and is the only unit that can Knockback Bosses.", 
        "Kronos Endo Freddy": "Great AOE DPS and absurd Stun potential when his passives are maxed out. Additionally provides decent boosts to Rust units, minor boosts to non-Rust units, and can reapply debuffs to enemies.",
        "Frozen King Foxy": "Great choice as a supporting unit in most teams with 25% AOE Slow and 20% Wither for Water element units.",
        "Dragon Endo 01": "Great DPS and DoT, additionally increasing the DoT for other Fire units and having global DoT with his Active.",

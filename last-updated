@@ -14,9 +14,6 @@
   100% { background-position: 200% 50%; }
 }
 
-/* ------------------------------------------------
-   MAIN CONTAINER
------------------------------------------------- */
 .updated-panel {
   max-width: 650px;
   width: 95%;
@@ -44,7 +41,6 @@
   position: relative;
 }
 
-/* scanline overlay */
 .updated-panel::before {
   content: '';
   position: absolute;
@@ -61,9 +57,6 @@
   border-radius: inherit;
 }
 
-/* ------------------------------------------------
-   HEADER
------------------------------------------------- */
 .updated-header {
   background: linear-gradient(180deg,
     #120326 0%,
@@ -80,7 +73,6 @@
   border-radius: 16px 16px 0 0;
 }
 
-/* corner diamonds */
 .updated-header::before,
 .updated-header::after {
   content: '◆';
@@ -107,9 +99,6 @@
     0 0 36px rgba(255, 164, 91, 0.18);
 }
 
-/* ------------------------------------------------
-   BODY
------------------------------------------------- */
 .updated-body {
   padding: 16px 14px;
   position: relative;
@@ -133,9 +122,6 @@
   max-width: calc(84px * 7 + 6px * 6);
 }
 
-/* ------------------------------------------------
-   UNIT CARDS
------------------------------------------------- */
 .updated-card {
   width: 84px;
   height: 84px;
@@ -169,7 +155,6 @@
   box-shadow: 0 0 14px rgba(255, 164, 91, 0.55);
 }
 
-/* gradient border via ::before mask trick */
 .updated-card::before {
   content: "";
   position: absolute;
@@ -193,9 +178,6 @@
   pointer-events: none;
 }
 
-/* ------------------------------------------------
-   RARITY BACKGROUNDS + BORDERS
------------------------------------------------- */
 .rarity-uncommon {
   background: #103316;
 }
@@ -277,9 +259,6 @@
   background: linear-gradient(180deg,#FF6600,#FFCC33);
 }
 
-/* ------------------------------------------------
-   MOBILE
------------------------------------------------- */
 @media (max-width: 600px) {
   .updated-header {
     padding: 16px 30px 14px;
@@ -325,14 +304,12 @@
 </div>
 
 <script>
-/* ── EDIT THIS LIST ── */
 var UPDATED_UNITS = [
 "Nightterror Rockstar Bonnie",
 "Daydream Rockstar Foxy",
 "Bedtime Psychic Fredbear"
 
 ];
-/* ────────────────── */
 
 var UNITS_JSON_URL = 'https://raw.githubusercontent.com/FNTDUG/characters.json/refs/heads/main/json';
 

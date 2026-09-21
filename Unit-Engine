@@ -4876,7 +4876,7 @@
 
         if (unitHasElement(unit, "light") || unitHasElement(unit, "dark")) {
           BOOST_OPTIONS.push(
-            ["terror_all",        "Nightterror Rockstar Bonnie: By My All Seeing Eye (+25% DMG & +10% RNG) [Dark & Light Only]", { dmgMult: 1.25, rngMult: 1.10, stackKey: "terrorallStack", maxStacks: 4, elements: ["Dark", "Light"]}]
+            ["terror_all",        "Nightterror Rockstar Bonnie: By My All Seeing Eye (+25% DMG & +10% RNG) [Dark & Light Only]", { dmgMult: 1.25, rngMult: 1.10, stackKey: "terrorallStack", maxStacks: 4, elements: ["Dark", "Light"]}],
             ["black_hole",        "Black Hole Foxy: Cosmic Calamity (+15% DMG) [Dark & Light Only]", { dmgMult: 1.15, elements: ["Dark", "Light"]}],
             ["horizon_hole_element",      "Black Hole Foxy: Passing The Event Horizon (+25% DMG) [Dark & Light Only]", { dmgMult: 1.25, duration: 30, cd: 60, elements: ["Dark", "Light"]}]
           );

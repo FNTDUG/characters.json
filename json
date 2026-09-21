@@ -1338,12 +1338,13 @@
     "typeMain": "Endgame",
     "typeTags": [
       "Support",
-      "Anti-Regen"
+      "Anti-Regen",
+      "Astral"
     ],
     "element": "Dark/Light",
     "placements": 1,
     "attackType": "Multi",
-    "obtainment": "Coin Summons (0.0005%). Soul Summons (0.001%)",
+    "obtainment": "Coin Summons (0.0005%)",
     "voicelines": [
       {
         "title": "Placement",
@@ -14878,6 +14879,16 @@
         "text": "Every 20s, summon a Fire Freddle with half of this unit's damage as health."
       }
     ],
+    "skins":[
+      {
+        "name": "Eternal Hellfire Bones of The Past Nightare Freddy",
+        "rarity": "exclusive"
+      },
+      {
+        "name": "Shiny Hellfire Bones of The Past Nightare Freddy",
+        "rarity": "shiny"
+      }
+    ],
     "passiveDamage": {
       "summons": [
         {
@@ -15596,6 +15607,14 @@
       {
         "name": "Puppet Boy Michael",
         "rarity": "exclusive"
+      },
+      {
+        "name": "Dreamer Micheal Afton",
+        "rarity": "exclusive"
+      },
+      {
+        "name": "Shiny Dreamer Micheal Afton",
+        "rarity": "Shiny"
       }
     ],
     "passiveDamage": {
@@ -19686,7 +19705,7 @@
   "element": "Dark/Water",
   "placements": 1,
   "attackType": "Multi",
-  "obtainment": "Clan Tournaments",
+  "obtainment": "Season 3 Clan Tournaments",
   "levels": [
     {
       "level": 1,
@@ -25901,6 +25920,655 @@
     {
       "title": "Sunlit Mornings",
       "text": "Link to the 2 highest-damage units in range. Dreamer units are additionally linked and gain +20% damage and +30% critical rate. Whenever this unit or a linked unit gets a kill gain 1 Daydream. At 10 Daydream gain +25% critical rate and +50% critical damage for 30 seconds. The next 3 attacks deal +50% damage, or +100% damage to Dark enemies, and are guaranteed to critically hit"
+    }
+  ]
+},
+{
+  "name": "Black Hole Foxy",
+  "imgNormal": "https://units.fntduserguide.com/units/black-hole-foxy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/black-hole-foxy-shiny.png",
+  "rarity": "apex",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support",
+    "Slow",
+    "Wither",
+    "Burn",
+    "Astral"
+  ],
+  "element": "Dark/Light",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Coin Summons (0.0005%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 15600,
+      "damage": 475,
+      "type": "Circle",
+      "cd": 3,
+      "range": 23
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 550,
+      "type": "Circle",
+      "cd": 3,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 5000,
+      "damage": 650,
+      "type": "Circle",
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 900,
+      "type": "Circle",
+      "cd": 3.5,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 7500,
+      "damage": 1000,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 9000,
+      "damage": 1150,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 28
+    },
+    {
+      "level": 7,
+      "cost": 10500,
+      "damage": 1350,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 29
+    },
+    {
+      "level": 8,
+      "cost": 12000,
+      "damage": 2000,
+      "type": "Line",
+      "cd": 4.5,
+      "range": 32
+    },
+    {
+      "level": 9,
+      "cost": 13500,
+      "damage": 2300,
+      "type": "Cone 90°",
+      "cd": 4.5,
+      "range": 33
+    },
+    {
+      "level": 10,
+      "cost": 15000,
+      "damage": 2700,
+      "type": "Cone 90°",
+      "cd": 4.5,
+      "range": 33
+    },
+    {
+      "level": 11,
+      "cost": 17000,
+      "damage": 3300,
+      "type": "Cone 90°",
+      "cd": 4.5,
+      "range": 35
+    },
+    {
+      "level": 12,
+      "cost": 19000,
+      "damage": 4000,
+      "type": "Cone 90°",
+      "cd": 4.5,
+      "range": 35
+    }
+  ],
+  "passives": [
+    {
+      "title": "Passing The Event Horizon",
+      "text": "For 30 seconds apply 25% Dark wither, 25% Light wither, and 15% normal wither. If a unit is both Dark and Light count it as 40% wither. This unit becomes Full AOE, attacks apply 30% burn on hit. (Upgrade 0+, Global CD: 60s).",
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-19-21-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
+    },
+    {
+      "title": "Nothing Escapes a Black Hole",
+      "text": "On attack spawn a mini black hole on the main target with 20% of this unit's range for 30 seconds (max 3). While an enemy is in a black hole deal 5% of this unit's damage every second and slow them by 10%. When a black hole expires or is replaced deal 20% of this unit's damage as burn within 50% of this unit's range around the black hole"
+    },
+    {
+      "title": "Cosmic Calamity",
+      "text": "Astral tag units are buffed by 25% and Dark and Light units are buffed by 15%. As enemies get closer to this unit slow them by 1% for every 1% of this unit's range they approach (max 25%). When an enemy enters within 20% of this unit's range deal 200% of this unit's damage (once per enemy)"
+    }
+  ],
+"passiveDamage":{
+  "selfboost":[
+    {
+      "label": "Passing Horizon (wither)",
+      "dmgmult": 1.40,
+      "duration": 30,
+      "cd": 60
+    },
+    {
+      "label": "Calamity (boost)",
+      "dmgmult": 1.25
+    }
+  ],
+  "dots":[
+    {
+      "label": "Passing Horizon (burn)",
+      "pctofdamage": 0.30,
+      "duration": 30,
+      "cd": 60,
+      "cdboostable": false
+    }
+  ],
+  "periodic":[
+    {
+      "label": "Blackhole",
+      "pctofdamage": 0.15,
+      "cd": 1,
+      "cdboostable": false
+    },
+    {
+      "label": "Blackhole expire",
+      "pctofdamage": 0.20,
+      "cd": 4.5,
+      "cdboostable": true
+    }
+  ]
+}
+},
+{
+  "name": "Crewmate Lolbit",
+  "imgNormal": "https://units.fntduserguide.com/units/crewmate-lolbit.png",
+  "imgShiny": "https://units.fntduserguide.com/units/crewmate-lolbit-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Midgame-Endgame",
+  "typeTags": [
+    "Income"
+  ],
+  "element": "Water",
+  "placements": 2,
+  "attackType": "Cone",
+  "obtainment": "Community Pass 3",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 4000,
+      "damage": 225,
+      "degrees": "120°",
+      "cd": 3,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 250,
+      "degrees": "120°",
+      "cd": 2.8,
+      "range": 19
+    },
+    {
+      "level": 3,
+      "cost": 5000,
+      "damage": 275,
+      "degrees": "120°",
+      "cd": 2.8,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 290,
+      "degrees": "120°",
+      "cd": 2.5,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 7000,
+      "damage": 340,
+      "degrees": "90°",
+      "cd": 2.5,
+      "range": 25
+    },
+    {
+      "level": 6,
+      "cost": 9000,
+      "damage": 350,
+      "degrees": "90°",
+      "cd": 2.2,
+      "range": 27
+    },
+    {
+      "level": 7,
+      "cost": 11000,
+      "damage": 400,
+      "degrees": "90°",
+      "cd": 2.2,
+      "range": 29
+    },
+    {
+      "level": 8,
+      "cost": 13500,
+      "damage": 450,
+      "degrees": "90°",
+      "cd": 2.2,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Endless Fortune",
+      "text": "For each Gold stack held gain 5% damage. For every 10,000 cash held gain 5% damage (max 50%). At 10 Gold stacks, enter Gold Rush for 30 seconds which grants an additional 25% damage, doubles this unit's and nearby allies' income bonuses, and gains 100% Crit Rate. After Gold Rush ends reset Gold and increase the chance to generate Gold by 20% for 10 seconds and 2% permanently"
+    },
+    {
+      "title": "Plunder!",
+      "text": "On hit generate 50% more income and have a 50% chance to gain a [Gold] stack (max 10). Nearby Foxy and Pirate units generate 20% more income on hit"
+    }
+  ],
+  "passiveDamage": {
+    "selfboost": [
+      {
+      "label": "Endless Fortune (max cash)",
+      "dmgmult": 1.50
+      },
+      {
+      "label": "Endless Fortune (max gold)",
+      "dmgmult": 1.50
+      },
+      {
+      "label": "Gold Rush",
+      "dmgmult": 1.25,
+      "critc": 1,
+      "duration": 30,
+      "cd": 22,
+      "cdboostable": true
+      }
+    ]
+  }
+},
+{
+  "name": "Knife Thrower Bear5",
+  "imgNormal": "https://units.fntduserguide.com/units/knife-thrower-bear5.png",
+  "imgShiny": "https://units.fntduserguide.com/units/knife-thrower-bear5-shiny.png",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Slow",
+    "Stun",
+    "Bleed",
+    "Knockback",
+    "Circus"
+  ],
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Season 4 Clan Present (0.05%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 7500,
+      "damage": 500,
+      "type": "Line",
+      "cd": 5,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 600,
+      "type": "Line",
+      "cd": 5,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 4000,
+      "damage": 700,
+      "type": "Line",
+      "cd": 5,
+      "range": 25
+    },
+    {
+      "level": 4,
+      "cost": 5500,
+      "damage": 950,
+      "type": "Line",
+      "cd": 5.5,
+      "range": 27
+    },
+    {
+      "level": 5,
+      "cost": 7000,
+      "damage": 1200,
+      "type": "Cone 45°",
+      "cd": 5.5,
+      "range": 27
+    },
+    {
+      "level": 6,
+      "cost": 9000,
+      "damage": 1600,
+      "type": "Cone 45°",
+      "cd": 5.5,
+      "range": 28
+    },
+    {
+      "level": 7,
+      "cost": 11500,
+      "damage": 2000,
+      "type": "Cone 45°",
+      "cd": 6,
+      "range": 31
+    },
+    {
+      "level": 8,
+      "cost": 15000,
+      "damage": 2400,
+      "type": "Cone 75°",
+      "cd": 6,
+      "range": 32
+    },
+    {
+      "level": 9,
+      "cost": 19000,
+      "damage": 2900,
+      "type": "Cone 75°",
+      "cd": 6,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "And For My Final Act!",
+      "text": "Throws 10 knives. Each has a 33% chance to hit, dealing 10% damage and applying 20% bleed over 4s globally. Misses grant +10% damage for 60s. (Upgrade 0+, Global CD: 90s).",
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-19-21-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
+    },
+    {
+      "title": "Don't Flinch!",
+      "text": "Attacks randomly apply one effect: <br> 40% chance: Apply 20% slow for 15 seconds <br> 30% chance: Apply 100% bleed over 10 seconds <br> 20% chance: Knock back 2 tiles and stun for 2 seconds; bosses are stunned for 3 seconds instead <br> 10% chance: Guarantee a critical hit with +200% critical damage. After the guaranteed critical hit gain +35% critical rate and +75% critical damage for the next 3 attacks"
+    }
+  ]
+},
+{
+  "name": "Motorist Purple Guy",
+  "imgNormal": "https://units.fntduserguide.com/units/motorist-purple-guy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/motorist-purple-guy-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Summon"
+  ],
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Community Pass 3",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 6000,
+      "damage": 800,
+      "type": "Line",
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 3500,
+      "damage": 950,
+      "type": "Line",
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 3,
+      "cost": 4750,
+      "damage": 1050,
+      "type": "Line",
+      "cd": 3.8,
+      "range": 23
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 1200,
+      "type": "Line",
+      "cd": 3.8,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 7500,
+      "damage": 1400,
+      "type": "Line",
+      "cd": 3.8,
+      "range": 25
+    },
+    {
+      "level": 6,
+      "cost": 9500,
+      "damage": 1550,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 28
+    },
+    {
+      "level": 7,
+      "cost": 12000,
+      "damage": 1800,
+      "type": "Cone 75°",
+      "cd": 3.5,
+      "range": 30
+    },
+    {
+      "level": 8,
+      "cost": 15000,
+      "damage": 2100,
+      "type": "Cone 75°",
+      "cd": 3.5,
+      "range": 32
+    },
+    {
+      "level": 9,
+      "cost": 18000,
+      "damage": 2400,
+      "type": "Cone 75°",
+      "cd": 3.2,
+      "range": 34
+    }
+  ],
+  "passives": [
+    {
+      "title": "Highway Maniac",
+      "text": "This unit cannot have its cooldown reduced externally and has a cooldown reduction cap of 80%. On attack reduce this unit's cooldown by 5%. Has a chance equal to half of this unit's current cooldown reduction to become stunned for 5 seconds and reset its cooldown reduction. When this unit stuns itself, that attack deals 250% of this unit's damage instead"
+    },
+    {
+      "title": "Hectic Traffic",
+      "text": "Every 2 attacks summon a car with 50% of this unit's damage as HP. Car summons move 10% faster per car summon on the track gain 2% HP per car summon on the track. For each car summon on the track increase this unit's damage by 2%"
+    }
+  ]
+},
+{
+  "name": "Ringmaster Funtime Freddy",
+  "imgNormal": "https://units.fntduserguide.com/units/ringmaster-funtime-freddy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/ringmaster-funtime-freddy-shiny.png",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support",
+    "Stun",
+    "Slow",
+    "Circus"
+  ],
+  "element": "Light",
+  "placements": 1,
+  "attackType": "Cone 30°",
+  "obtainment": "Season 4 Clan Tournaments",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 5000,
+      "damage": 300,
+      "cd": 7,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 390,
+      "cd": 7,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 4000,
+      "damage": 500,
+      "cd": 7,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 650,
+      "cd": 7,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 8000,
+      "damage": 900,
+      "cd": 7.5,
+      "range": 30
+    },
+    {
+      "level": 6,
+      "cost": 10000,
+      "damage": 1100,
+      "cd": 7.5,
+      "range": 32
+    },
+    {
+      "level": 7,
+      "cost": 12500,
+      "damage": 1350,
+      "cd": 7.5,
+      "range": 32
+    },
+    {
+      "level": 8,
+      "cost": 15000,
+      "damage": 1750,
+      "cd": 8,
+      "range": 32
+    },
+    {
+      "level": 9,
+      "cost": 18000,
+      "damage": 2100,
+      "cd": 8,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "The Ring Master",
+      "text": "If Sad Clown Helpy is on the team increase this unit's cooldown by 20% and gain +50% damage. If Knife Thrower Bear5 is on the team reduce Knife Thrower Bear5's active cooldown by 40%, the highest-damage unit in range without Circus gains Circus and +25% damage and this unit's AOE increases by 30 degrees"
+    },
+    {
+      "title": "Let The Cheers Commence",
+      "text": "Nearby Circus units apply 5% slow on hit. When a [Circus] unit attacks (4s cooldown) follow up in a 180-degree cone for 50% damage, apply 50% bleed over 5 seconds, and stun enemies for 1.5 seconds. Every fifth follow-up buff Circus units by 20% damage for 10 seconds and replace the 1.5-second stun with a 2.5-second stun that bypasses stun cooldown"
+    }
+  ]
+},
+{
+  "name": "Sad Clown Helpy",
+  "imgNormal": "https://units.fntduserguide.com/units/sad-clown-helpy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/sad-clown-helpy-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Circus"
+  ],
+  "element": "Light",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 3000,
+      "damage": 120,
+      "type": "Cone 120°",
+      "cd": 1,
+      "range": 15
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 150,
+      "type": "Cone 120°",
+      "cd": 1,
+      "range": 15
+    },
+    {
+      "level": 3,
+      "cost": 6000,
+      "damage": 200,
+      "type": "Cone 120°",
+      "cd": 1,
+      "range": 16
+    },
+    {
+      "level": 4,
+      "cost": 8000,
+      "damage": 270,
+      "type": "Cone 120°",
+      "cd": 1,
+      "range": 17
+    },
+    {
+      "level": 5,
+      "cost": 10000,
+      "damage": 350,
+      "type": "Cone 120°",
+      "cd": 1,
+      "range": 18
+    },
+    {
+      "level": 6,
+      "cost": 12500,
+      "damage": 470,
+      "type": "FullAOE",
+      "cd": 1,
+      "range": 19
+    },
+    {
+      "level": 7,
+      "cost": 15000,
+      "damage": 600,
+      "type": "FullAOE",
+      "cd": 1,
+      "range": 20
+    }
+  ],
+  "passives": [
+    {
+      "title": "Perilous Plummet",
+      "text": "Copies the cooldown of the highest-cooldown unit in range exactly. For every second of copied cooldown gain +100% base damage and an additional +5% base damage per second. Gain +10% base range"
     }
   ]
 }

@@ -4618,6 +4618,7 @@
           ["scott_bot",         "Animdude: Max Bottom Path (+30% DMG & +30% Crit Rate)",                    { dmgMult: 1.30, critRateAdd: 0.30}],
           ["astral_b",          "Astral Bonnie: Orion's Belt (+2% DMG, +3% RNG per stack)",                 { dmgMult: 1.02, rngMult: 1.03, stackKey: "astral_bStacks", maxStacks: 15 }],
           ["bedtime_all",       "Bedtime Psychic Fredbear: As the Moon Shifts Max Boost (+10% DMG, +5% RNG per stack)", { dmgMult: 1.10, rngMult: 1.05}],
+          ["horizon_hole",      "Black Hole Foxy: Passing The Event Horizon (+15% DMG)",                      { dmgMult: 1.15, duration: 30, cd: 60}],
           ["candy_red",         "Candy Cadet: Red Candy (+30% DMG & +10% RNG)",                              { dmgMult: 1.30, rngMult: 1.10 }],
           ["candy_yellow",      "Candy Cadet: Yellow Candy (+10% DMG & +30% RNG)",                          { dmgMult: 1.10, rngMult: 1.30 }],
           ["chipper",           "Chipper: Stock Stacker (+0.5% DMG, +0.5% RNG per stack)",                  { dmgMult: 1.005, rngMult: 1.005, stackKey: "chipperStacks", maxStacks: 20 }],
@@ -4833,6 +4834,20 @@
           );
         }
 
+        if (["Astral Bonnie", "Black Hole Foxy"].indexOf(unit.name) !== -1) {
+          BOOST_OPTIONS.push(
+            ["astral_hole", "Black Hole Foxy: Cosmic Calamity (+25% DMG) [Astral Units only]",
+              { dmgMult: 1.25, unitNames: ["Astral Bonnie", "Black Hole Foxy"] }]
+          );
+        }
+
+        if (["Sad Clown Helpy", "Knife Thrower Bear5"].indexOf(unit.name) !== -1) {
+          BOOST_OPTIONS.push(
+            ["ringmaster", "Ringmaster Funtime Freddy: Let The Cheers Commence (+20% DMG) [Circus Units only]",
+              { dmgMult: 1.20, duration: 10, cd: 16, unitNames: ["Sad Clown Helpy", "Knife Thrower Bear5"] }]
+          );
+        }
+
         if (unitHasElement(unit, "light")) {
           BOOST_OPTIONS.push(
             ["anni_boy",          "Anniversary Balloon Boy: The Afterparty (+10% DMG) [Light only]",             { dmgMult: 1.10, elements: ["Light"] }],
@@ -4861,7 +4876,9 @@
 
         if (unitHasElement(unit, "light") || unitHasElement(unit, "dark")) {
           BOOST_OPTIONS.push(
-            ["terror_all",        "Nightterror Rockstar Bonnie: By My All Seeing Eye (+25% DMG & +10% RNG)", { dmgMult: 1.25, rngMult: 1.10, stackKey: "terrorallStack", maxStacks: 4, elements: ["Dark", "Light"]}]
+            ["terror_all",        "Nightterror Rockstar Bonnie: By My All Seeing Eye (+25% DMG & +10% RNG) [Dark & Light Only]", { dmgMult: 1.25, rngMult: 1.10, stackKey: "terrorallStack", maxStacks: 4, elements: ["Dark", "Light"]}],
+            ["black_hole",        "Black Hole Foxy: Cosmic Calamity (+15% DMG) [Dark & Light Only]", { dmgMult: 1.15, elements: ["Dark", "Light"]}],
+            ["horizon_hole_element",      "Black Hole Foxy: Passing The Event Horizon (+25% DMG) [Dark & Light Only]", { dmgMult: 1.25, duration: 30, cd: 60, elements: ["Dark", "Light"]}]
           );
         }
         

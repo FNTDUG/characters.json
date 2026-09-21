@@ -305,10 +305,12 @@
 
 <script>
 var UPDATED_UNITS = [
-"Nightterror Rockstar Bonnie",
-"Daydream Rockstar Foxy",
-"Bedtime Psychic Fredbear"
-
+"Black Hole Foxy",
+"Crewmate Lolbit",
+"Knife Thrower Bear5",
+"Motorist Purple Guy",
+"Ringmaster Funtime Freddy",
+"Sad Clown Helpy"
 ];
 
 var UNITS_JSON_URL = 'https://raw.githubusercontent.com/FNTDUG/characters.json/refs/heads/main/json';

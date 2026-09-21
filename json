@@ -19982,7 +19982,8 @@
   "typeTags": [
     "Support",
     "Bleed",
-    "Anti-Regen"
+    "Anti-Regen",
+    "Pirate"
   ],
   "element": "Water/Electricity",
   "placements": 1,
@@ -20253,6 +20254,9 @@
   "imgShiny": "https://units.fntduserguide.com/units/dutchman-nightmare-bonnie-shiny.png",
   "rarity": "nightmare",
   "typeMain": "Midgame-Endgame",
+  "typeTags": [
+    "Pirate"
+  ],
   "element": "Dark",
   "placements": 1,
   "attackType": "Circle",
@@ -20515,7 +20519,8 @@
     "Income",
     "Slow",
     "Stun",
-    "Bleed"
+    "Bleed",
+    "Pirate"
   ],
   "element": "Water",
   "placements": 2,
@@ -20614,7 +20619,8 @@
   "typeMain": "Starter",
   "typeTags": [
     "Knockback",
-    "Burn"
+    "Burn",
+    "Pirate"
   ],
   "element": "Fire",
   "placements": 2,
@@ -26098,7 +26104,8 @@
   "rarity": "secret",
   "typeMain": "Midgame-Endgame",
   "typeTags": [
-    "Income"
+    "Income",
+    "Pirate"
   ],
   "element": "Water",
   "placements": 2,

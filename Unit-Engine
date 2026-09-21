@@ -1741,12 +1741,12 @@
         }
 
         switch (buffState.chip) {
-          case "overwhelming_power": break;  
+          case "overwhelming_power": break;
           case "weak_point":         critRateAdd += 0.15; critDmgAdd += 0.30; break;
-          case "rapid_strikes":      cdMult  *= 0.95; break;  
+          case "rapid_strikes":      cdMult  *= 0.95; break;
           case "eye_augmentation":   rngMult *= 1.15; dmgMult *= 1.10; break;
-          case "crowd_culler":       break;                    
-          case "blazing_fire":       break;                    
+          case "crowd_culler":       break;
+          case "blazing_fire":       break;
         }
 
         if (buffState.chipStats && typeof buffState.chipStats === "object") {
@@ -1758,9 +1758,9 @@
           if (_cs.critd) critDmgAdd  += Number(_cs.critd) / 100;
         }
         if (buffState.chip === "overwhelming_power") {
-          dmgMult *= (1 + (15 + (Number(buffState.chipStacks) || 0) * 0.5) / 100); 
+          dmgMult *= (1 + (15 + (Number(buffState.chipStacks) || 0) * 0.5) / 100);
         } else if (buffState.chip === "crowd_culler") {
-          dmgMult *= (1 + ((Number(buffState.chipStacks) || 0) * 5) / 100);         
+          dmgMult *= (1 + ((Number(buffState.chipStacks) || 0) * 5) / 100);
         }
 
       
@@ -3539,7 +3539,7 @@
         var tp = _cdEff.cdMultTemp || 1;
         var grouped = pm * by * tp;
         if (!isFinite(grouped) || grouped <= 0) return;
-        var uncapped = mult / grouped;                   
+        var uncapped = mult / grouped;
         if (!isFinite(uncapped) || uncapped <= 0) return;
         var g1 = pm * by; if (g1 < CD_BOOST_FLOOR) g1 = CD_BOOST_FLOOR;
         var g2 = tp;      if (g2 < CD_BOOST_FLOOR) g2 = CD_BOOST_FLOOR;
@@ -5219,7 +5219,7 @@
             inp.min = s.min; inp.max = effMax; inp.step = "0.1";
             inp.placeholder = "Byte Stat";
             var _sv = ref[s.key];
-            if (_sv != null && _sv !== 0) inp.value = _sv;  
+            if (_sv != null && _sv !== 0) inp.value = _sv;
             inp.addEventListener("blur", function() {
               var raw = String(inp.value).trim();
               if (raw === "" || isNaN(parseFloat(raw))) {
@@ -5654,8 +5654,10 @@
       function normalizeTypeTag(t) {
         var allowed = {
           "anti-regen": "Anti-Regen",
+          "astral":     "Astral",
           "bleed":      "Bleed",
           "burn":       "Burn",
+          "circus":     "Circus",
           "crit":       "Crit",
           "dreamer":    "Dreamer",
           "death":      "Death",
@@ -5663,6 +5665,7 @@
           "knockback":  "Knockback",
           "malware":    "Malware",
           "mediocre melody": "Mediocre Melody",
+          "pirate":     "Pirate",
           "poison":     "Poison",
           "rockstar":   "Rockstar",
           "rooted":     "Rooted",
@@ -7818,8 +7821,10 @@
           "Midgame-Endgame",
           "Endgame",
           "Anti-Regen",
+          "Astral",
           "Bleed",
           "Burn",
+          "Circus",
           "Crit",
           "Dreamer",
           "Death",
@@ -7827,6 +7832,7 @@
           "Knockback",
           "Malware",
           "Mediocre Melody",
+          "Pirate",
           "Poison",
           "Rockstar",
           "Rooted",
@@ -7942,7 +7948,7 @@
 
         
         var _dpsBtnActive = false;
-        var _dpsShowList  = true;  
+        var _dpsShowList  = true;
         _ueDpsRefresh = function () { if (_dpsBtnActive) _buildDpsChart(); };
         var _dpsTip       = null;
         var _dpsMobTarget = null;

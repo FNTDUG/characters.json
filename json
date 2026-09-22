@@ -26177,7 +26177,7 @@
       "range": 30
     }
   ],
-  "passives": [
+    "passives": [
     {
       "title": "Endless Fortune",
       "text": "For each Gold stack held gain 5% damage. For every 10,000 cash held gain 5% damage (max 50%). At 10 Gold stacks, enter Gold Rush for 30 seconds which grants an additional 25% damage, doubles this unit's and nearby allies' income bonuses, and gains 100% Crit Rate. After Gold Rush ends reset Gold and increase the chance to generate Gold by 20% for 10 seconds and 2% permanently"
@@ -26200,10 +26200,11 @@
       {
       "label": "Gold Rush",
       "dmgmult": 1.25,
-      "critc": 1,
+      "critc": 1.00,
       "duration": 30,
       "cd": 22,
-      "cdboostable": true
+      "cdboostable": true,
+      "uptime": false
       }
     ]
   }

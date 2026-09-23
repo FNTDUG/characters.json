@@ -9318,7 +9318,8 @@
     "typeTags": [
       "Slow",
       "Knockback",
-      "Support"
+      "Support",
+      "Income"
     ],
     "element": "Neutral",
     "placements": 1,

@@ -5427,7 +5427,8 @@
     "typeMain": "Starter-Midgame",
     "typeTags": [
       "Support",
-      "Stun"
+      "Stun",
+      "Boss Knockback"
     ],
     "element": "Water",
     "placements": 1,

@@ -19808,7 +19808,7 @@
   "element": "Light",
   "placements": 3,
   "attackType": "Ricochet X4",
-  "obtainment": "Season 3 Clan Present (0.05%)",
+  "obtainment": "Season 3 Clan Present (0.5%)",
   "levels": [
     {
       "level": 1,
@@ -26520,7 +26520,7 @@
   "element": "Light",
   "placements": 1,
   "attackType": "Multi",
-  "obtainment": "Season 4 Clan Present (0.05%)",
+  "obtainment": "Season 4 Clan Present (0.5%)",
   "levels": [
     {
       "level": 1,

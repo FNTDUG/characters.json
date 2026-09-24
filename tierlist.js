@@ -634,7 +634,7 @@
        "High Voltage Rockstar Freddy": "High DPS starter with up to +40% Damage to the 3 closest units to him.",
        "White Lily Toy Foxy": "High DPS starter with up to +40% Damage and +20% Range to all Nature units in range and the ability to deal extra shield damage and make Nature units immune to Stuns with her Blessed Spear.",
        "XOR": "High DPS starter with strong summons.",
-       "Rockin Bonnie": "A good choice for a Starter as he gives all units in his range -11% CD, making him quite throughout the match.",
+       "Rockin Bonnie": "A good choice for a Starter as he gives all units in his range -11% CD, making him quite useful throughout the match.",
        "Undead Chica": "Creates a steady stream of strong Summons.",
        "Bonnie": "High range Starter that can be used as a booster due to being Electric with high placements, effectively giving all nearby units -4% CD if all Bonnies are placed near each other. Spectacular in Grind Metas",
        "Foxy": "Fair DPS Starter that can be used as a booster due to being Water with high placements, effectively giving all nearby units +15% Range if all Foxies are placed near each other. Spectacular in Water focused teams.",

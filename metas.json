@@ -89,7 +89,7 @@
         { "name": "White Lily Toy Foxy", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter, Potency" },
         { "name": "Old Man Consequences", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "path": "2-0-5", "replacement": "", "caption": "Auto Skip off" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Deep Sea Calamity Endo", "caption": "Buff Potency" },
-        { "name": "Gaia Chica", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Black Hole Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": " Gaia Chica", "caption": "Buff Potency" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
         { "name": "Stitchwraith", "label": "", "byte": "UFO, The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Jake Mode, Potency" }
       ]
@@ -97,11 +97,11 @@
     "Boss Raids": {
       "units": [
         { "name": "Unicorn Toy Foxy", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
-        { "name": "DJ 101Bit", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Red, Potency" },
+        { "name": "Black Hole Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "DJ 101Bit", "caption": "Buff Potency" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Hijacked", "replacement": "Deep Sea Calamity Endo", "caption": "Buff Potency" },
-        { "name": "Daydream Rockstar Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Blazing Fire", "enchant": "Vengeance",   "replacement": "", "caption": "Buff Potency" },
+        { "name": "Knife Thrower Bear5", "label": "", "byte": "The Box, Boss Drain", "chip": "Blazing Fire", "enchant": "Vengeance",   "replacement": "", "caption": "" },
         { "name": "Nightterror Rockstar Bonnie", "label": "", "byte": "The Box, Boss Drain", "chip": "Blazing Fire", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
-        { "name": "Bedtime Psychic Fredbear", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" }
+        { "name": "Motorist Purple Guy", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "" }
       ]
     },
     "Story Grind": {
@@ -219,7 +219,7 @@
         { "name": "Nightterror Rockstar Bonnie", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "DJ 101Bit", "label": "", "byte": "The Box, Boss Drain", "enchant": "Vengeance", "chip": "Eye Augmentation", "replacement": "", "caption": "Red, Potency" },
-        { "name": "Gaia Chica", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "path": "", "replacement": "", "caption": "Buff Potency" }
+        { "name": "Black Hole Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "path": "", "replacement": "", "caption": "Buff Potency" }
       ]
     },
       "Player 2": {
@@ -229,7 +229,7 @@
         { "name": "Nightterror Rockstar Bonnie", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "DJ 101Bit", "label": "", "byte": "The Box, Boss Drain", "enchant": "Vengeance", "chip": "Eye Augmentation", "replacement": "", "caption": "Red, Potency" },
-        { "name": "Gaia Chica", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" }
+        { "name": "Black Hole Foxy", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" }
       ]
     },
       "Player 3": {
@@ -239,7 +239,7 @@
         { "name": "Nightterror Rockstar Bonnie", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "DJ 101Bit", "label": "", "byte": "The Box, Boss Drain", "enchant": "Vengeance", "chip": "Eye Augmentation", "replacement": "", "caption": "Red, Potency" },
-        { "name": "Gaia Chica", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" }
+        { "name": "Black Hole Foxy", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" }
       ]
     },
       "Player 4": {
@@ -249,7 +249,7 @@
         { "name": "Nightterror Rockstar Bonnie", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "DJ 101Bit", "label": "", "byte": "The Box, Boss Drain", "enchant": "Vengeance", "chip": "Eye Augmentation", "replacement": "", "caption": "Red, Potency" },
-        { "name": "Gaia Chica", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" }
+        { "name": "Black Hole Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" }
       ]
     },
       "Downpour": {

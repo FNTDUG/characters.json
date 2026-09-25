@@ -631,7 +631,8 @@
      "all": {
        "Planet Buster Scott": "Highest DPS in the game along with spectacular Stun, great Slow, good support, and Wither.",
        "Overlord Scott": "A weaker Planet Buster scott, but still very good DPS, spectacular Slow, and good support.",
-       "Astral Bonnie": "Incredible DPS, mild support, and fits spectacularly into Light/Dark focused teams.",
+       "Black Hole Foxy": "High DPS, great Slow, and good Light/Dark and Wither based support.",
+       "Astral Bonnie": "High DPS, mild support, and fits spectacularly into Light/Dark focused teams.",
        "Deep Sea Calamity Endo": "The best staller by far, having 15% AOE Slow per placement (30% per person bringing him), 1.8s Stun on attack, and Knockback when enemies get too close. Additionally is a good supporting DPS and has an absurdly large 245° Cone attack.",
        "Old Man Consequences": "Very good stall, being able to afflict enemies with up to 40% Slow, 2s Stun, 2 tile Knockback, and is the only unit that can Knockback Bosses.", 
        "Kronos Endo Freddy": "Great AOE DPS and absurd Stun potential when his passives are maxed out. Additionally provides decent boosts to Rust units, minor boosts to non-Rust units, and can reapply debuffs to enemies.",
@@ -663,6 +664,7 @@
      "support": {
        "Candy Cadet": "Gives +30% Damage and +10% Range to all units in range when in Red Candy mode, then +10% Damage and +30% Range to all units in range when in Yellow Candy mode (mode chosen on placement). Does particularly well when using his Orphans story, doubling his boosts for 30s. Boosts do not stack with other Candy Cadets.",
        "DJ 101Bit": "Can swap between giving all nearby units +20% Damage or +25% Range. Placed higher than other units because she can stack with other placements of herself.",
+       "Black Hole Foxy": "Gives nearby Astral units gain +25% Damage, Light/Dark units gain +15% Damage, and he can inflict enemies with 40% Light + Dark Wither, 25% Light/Dark Wither, and 15% Wither.",
        "High Voltage Rockstar Freddy": "Each placement of him gives +20% Damage to the 3 units closest to him.",
        "White Lily Toy Foxy": "Can give Nature units +20% Damage and +10% Range per placement when she has stacks of Favor.",
        "Animdude": "Gives one random unit in range up to +65% Damage and +30% Range sharing Animdude's Byte passive with the connected unit. In PVP, 2 random units can be chosen and they additionally have 25% cheaper upgrades.",
@@ -673,6 +675,7 @@
        "Planet Buster Scott": "Gives all units in range +1% Damage and +1% Range for every enemy on the map, a very strong boost when enemies begin to build up in late game.",
        "Overlord Scott": "Gives all units in range +1% Damage and +1% Range for every enemy on the map, a very strong boost when enemies begin to build up in late game.",
        "Theory Crusher Scott": "Gives all units in range +1% Damage and +1% Range for every enemy on the map, a very strong boost when enemies begin to build up in late game.",
+       "Michael Afton": "Gives Rust units +20% Damage, +15% Range, and all Bleed applied within his range is increased by +25%.",
        "Stitchwraith": "(Jake form) Gives various boosts to nearby units depending on how many enemies have died in this unit's range. 5 kills: +15% Damage, Range, and -5% CD. 25 kills: Previous boosts and +10% crit chance and crit damage. 75 kills: +15% Damage, +25% Range, -5% CD, +20% crit chance and crit damage.",
        "Psychic Friend Fredbear": "Boosts units based on the amount of Stocks (HP) you've lost. All units in range gain -5% CD if no Stocks are lost, +15% Damage and +20% Range if you've lost 1 Stock, and +30% Damage, +25% Range, and -2.5% CD if you've lost 2 Stocks.",
        "Vengeful Spirit": "Dark and Neutral units gain -5% CD and +30% Crit Chance. Units in range gain half of this unit's Crit Damage self boosts.",
@@ -680,6 +683,7 @@
        "Golden Freddy": "Grants all units up to +30% Damage (stacks with other Golden Freddys), grants double the previous boost to a random Neutral unit (max of +150%, excludes himself) every 45s for 10s, and +25% Damage and +20% Range to all Neutral units with his Active."
      },
      "stun": {
+       "Ringmaster Funtime Freddy": "Circus Follow-Up attacks Stun enemies for 1.5s and every 5th Circus Follow-Up attack Stuns enemies for 2.5s while bypassing Stun Lockout.",
        "Pyro Spring Bonnie": "Attacks Stun enemies for 1.8s, with an additional 1s Stun every 15s that bypasses Stun Lockout.",
        "Cyberdata Withered Bonnie": "Attacks Stun enemies for 2s, and enemies that try to leave this unit's range are Stunned for 5s.",
        "Planet Buster Scott": "Attacks Stun enemies for 2s.",
@@ -695,6 +699,7 @@
      "slow": {
        "Vengeful Spirit": "Instant 15% AOE Slow that increases by 1% every second up to 30%.",
        "Michael Afton": "Can inflict 40% Slow on one enemy and 30% Slow to other enemies for 5s.",
+       "Black Hole Foxy": "Enemies are Slowed by 1% per 1% of his range that they're within (25% max) and his Black Holes Slow enemies by 10%.",
        "DJ 101Bit": "Instant 20% AOE Slow when set to Green Track.",
        "Spirit of Charlie Emily": "Instant 15% AOE Slow.",
        "Deep Sea Calamity Endo": "Effectively has 30% AOE Slow.",
@@ -716,6 +721,7 @@
      },
      "summon": {
        "Puppet": "Spawns summons on this unit's CD with half this unit's damage as health that get 3% stronger every enemy they go through and release a small explosion when they die for 25% of their damage.",
+       "Motorist Purple Guy": "Spawns summons with half this unit's health every 2 attacks and every summon he has on the track increases the movement speed of his summons by 10%, gives him +5% Damage, and gives his summons +2% HP.",
        "Michael Afton": "Spawns summons on this unit's CD with half this unit's damage as health. Additionally, this unit has an Active that consumes a chosen amount of Scrap to create up to 50 bonus summons with 10% health per Scrap. Summon health increases by 1% per Scrap held, up to 20%. All summons from this unit also inflict enemies with 15% Rust Wither when they die.",
        "Void Drifter Molten Freddy": "Every 20s, this unit can create a summon with 250% of this unit's damage as health.",
        "XOR": "Can spawn up to 25 summons with health equal to half this unit's damage every 60s.",
@@ -723,6 +729,7 @@
        "Fazman": "Every 60s, this unit spawns a summon that goes along the track twice and has no set health but does 275% of this unit's damage to every enemy it passes through"
      },
      "knockback":{
+       "Old Man Consequences": "Hooks Knockback enemies and Bosses by 2 tiles.",
        "DJ 101Bit": "Attacks Knockback enemies by 1 tile.",
        "Minireenas": "Attacks Knockback enemies by 2 tiles."
      }

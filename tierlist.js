@@ -340,6 +340,7 @@
          "DJ 101Bit",
          "Candy Cadet",
          "Nature Reclaimed Foxy",
+         "Black Hole Foxy NEW",
          "Animdude 5-0-0",
          "Nightterror Rockstar Bonnie linked", "Bedtime Psychic Fredbear linked", "Daydream Rockstar Foxy",
          "Planet Buster Scott BUG",
@@ -382,6 +383,7 @@
          "HandUnit"
        ],
        "b": [
+         "Ringmaster Funtime Freddy NEW",
          "Movie Director Freddy",
          "Chipper",
          "Grand Strategist Chica",
@@ -422,6 +424,7 @@
      },
      "stun": {
        "s": [
+         "Ringmaster Funtime Freddy NEW",
          "Pyro Spring Bonnie",
          "Cyberdata Withered Bonnie",
          "Planet Buster Scott BUG",
@@ -444,6 +447,7 @@
          "Model 2.9 Defective Funtime Foxy",
          "Kronos Endo Freddy",
          "Dirt Boss Freddy BUG",
+         "Knife Thrower Bear5 NEW",
          "Mangle",
          "Chicas Magic Rainbow",
          "Trash o Tron",
@@ -487,6 +491,7 @@
        ],
        "s": [
          "Michael Afton 0-0-5 BUG",
+         "Black Hole Foxy NEW",
          "Vengeful Spirit 0-0-5",
          "Deep Sea Calamity Endo",
          "Molten Freddy",
@@ -513,6 +518,7 @@
          "Starfarer Princess",
          "Nightmare Chica",
          "Cthulhu Nightmare Foxy",
+         "Knife Thrower Bear5 NEW",
          "Model 2.9 Defective Funtime Foxy",
          "Afterbite Withered Golden Freddy",
          "Malachite Foxy",
@@ -552,12 +558,14 @@
          "Orville Elephant",
          "Roadkill Phantom Foxy",
          "Mecha-Lizabeth BUG",
+         "Ringmaster Funtime Freddy NEW",
          "Golden Freddy 0-0-5 BUG",
        ]
      },
      "summon": {
        "s": [
          "Puppet 0-5-0",
+         "Motorist Purple Guy NEW",
          "Michael Afton 5-0-0 BUG",
          "Void Drifter Molten Freddy",
          "XOR",
@@ -598,6 +606,7 @@
        ],
        "a": [
          "Cannoneer Chica",
+         "Knife Thrower Bear5 NEW",
          "Follow Me",
          "Bear5",
          "Animdude"

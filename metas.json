@@ -139,7 +139,7 @@
         { "name": "Faz-ino Spring Bonnie", "label": "$900", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Starter" },
         { "name": "Vengeful Spirit", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "path": "5-2-0", "replacement": "", "caption": "Buff Potency" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
-        { "name": "Black Hole Foxy", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Black Hole Foxy", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "Stitchwraith", "label": "", "byte": "UFO, The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Jake Mode, Potency" }
       ]
@@ -149,7 +149,7 @@
         { "name": "Unicorn Toy Foxy", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
         { "name": "Puppet", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Hijacked", "path": "2-0-5", "replacement": "", "caption": "Buff Potency" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
-        { "name": "Black Hole Foxy", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Black Hole Foxy", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "Stitchwraith", "label": "", "byte": "UFO, The Box", "enchant": "Phantom", "chip": "Eye Augmentation", "replacement": "", "caption": "Buff Potency" }
       ]

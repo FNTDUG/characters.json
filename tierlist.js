@@ -35,14 +35,14 @@
          "Puppet 0-5-2",
          "White Lily Toy Foxy",
          "High Voltage Rockstar Freddy BUG",
-         "Motorist Purple Guy NEW"
+         "Motorist Purple Guy NEW",
          "Michael Afton 5-2-0 BUG",
          "XOR",
          "Faz-ino Spring Bonnie",
          "Stormbound Chica",
          "Dragon Endo 01",
          "Headless Horseman Mangle",
-         "Ringmaster Funtime Freddy NEW"
+         "Ringmaster Funtime Freddy NEW",
          "Samurai Duo",
          "Candy Cadet",
          "Theory Crusher Scott",
@@ -50,7 +50,7 @@
          "Void Drifter Molten Freddy",
          "Ennard 0-2-5",
          "Purifier Mercenary Toy Chica",
-         "Crewmate Lolbit NEW"
+         "Crewmate Lolbit NEW",
          "Spirit of Charlie Emily",
          "Witch of the Sea Scrapbaby",
          "Krampus Purple Guy",
@@ -66,7 +66,7 @@
          "Yeti Oni Bonnie",
          "Spirit of Henry Emily",
          "Golden Cupcake",
-        "Sad Clown Helpy NEW"
+        "Sad Clown Helpy NEW",
          "Party Never Ends Cupcake",
          "Funtime Foxy",
          "Psychic Friend Fredbear",
@@ -75,7 +75,7 @@
          "Aqua Strike Toy Chica",
          "Sole Survivor Withered Bonnie",
          "Lolbit",
-         "Knife Thrower Bear5 NEW"
+         "Knife Thrower Bear5 NEW",
          "Spirit of William Afton",
          "Shark Withered Foxy",
          "Commander Withered Freddy",

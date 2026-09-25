@@ -9,7 +9,7 @@
        ],
        "s": [
          "Grand Strategist Chica",
-         "Black Hole Foxy NEW"
+         "Black Hole Foxy NEW",
          "Old Man Consequences 2-0-5",
          "Stitchwraith",
          "Nature Reclaimed Foxy"
@@ -97,7 +97,7 @@
          "Chipper",
          "Hag Withered Chica",
          "Fallen Angel Nightmarionne",
-         "Daydream Rockstar Foxy",
+         "Daydream Rockstar Foxy DOWN",
          "Goodnight Plushtime",
          "Nedd Bear",
          "Foxy.exe",

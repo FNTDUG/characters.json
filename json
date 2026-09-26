@@ -3449,7 +3449,7 @@
     "passives": [
       {
         "title": "Blood In The Water",
-        "text": "Enemies take +2% Damage from Shark Withered Foxy for every second they're within his range.."
+        "text": "Enemies take +2% damage from this unit for every second they're within his range."
       }
     ],
     "passiveDamage": {
@@ -12187,7 +12187,7 @@
     "passives": [
       {
         "title": "Soft-Served",
-        "text": "When activated, Scooped Michael spews a bit of ennard on the track right beside him. This trap can hit 10 enemies, inflicting enemies with 5% Bleed, but if there are 2 other Electric units present within your team, Bleed increases to 15%.  If the team is Mono-Electric, Bleed stat increases to 25%, along with Exponential Slow in which every tick enemies lose 0.5% movement speed up to 25% till death. Max of 3 traps at a time  (Upgrade 4+, Local CD: 35s).",
+        "text": "When activated, Scooped Michael spews a bit of ennard on the track right beside him. This trap can hit 10 enemies, inflicting enemies with 5% Bleed, but if there are 2 other Electric units present within your team, Bleed increases to 15%.  If the team is Mono-Electric, Bleed stat increases to 25%, along with Exponential Slow in which every tick enemies lose 0.5% movement speed up to 25% until they die. Max of 3 traps at a time  (Upgrade 4+, Local CD: 35s).",
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/miechal-abilityu-high.png"
       }
     ],

@@ -278,7 +278,7 @@
           {"icon": "nightmare-fredbear-path2-tier1.webp", "desc": "Attacks Slow enemies by 10%.", "cost": "Free"},
           {"icon": "nightmare-fredbear-path2-tier2.webp", "desc": "Increases Slow to 15%.", "cost": "Free"},
           {"icon": "nightmare-fredbear-path2-tier3.webp", "desc": "Increases Slow to 20% and applies Wither equal to current Fear Stack. At maximum Fear, transform into Nightmare for 20s and deal 25% more damage to Slowed enemies, then reset Fear.", "cost": "30k Tokens"},
-          {"icon": "nightmare-fredbear-path2-tier4.webp", "desc": "Transforming releases a wave that slows all enemies by 25% and applies Death. Nightmare transformation duration increased to 25s.", "cost": "60k Tokens"},
+          {"icon": "nightmare-fredbear-path2-tier4.png", "desc": "Transforming releases a wave that slows all enemies by 25% and applies Death. Nightmare transformation duration increased to 25s.", "cost": "60k Tokens"},
           {"icon": "nightmare-fredbear-path2-tier5.webp", "desc": "Nightmare transformation gains 1s per Dark unit equipped and releases it's wave every 5s. Nightmare deals 50% more damage to slowed enemies.", "cost": "Quest", "quest": "Reach 500 cumulative waves in Boss Raids with Nightmare Fredbear equipped"}
         ]
       },

@@ -27519,7 +27519,7 @@
   ],
   "passives": [
     {
-      "title": "Unluckly Spill",
+      "title": "Unlucky Spill",
       "text": "On attack, have a 50% chance to leave a coffee pool for 10s, this chance increases by the current coffee fill percent. Only a max of 5 pools can exist at a time. <br> When an enemy steps in a pool, apply 50% of this units Damage as Burn over 3 seconds, fill the coffee machine by 3, and increase this units next attack by 10%, up to 50%."
     },
     {
@@ -27702,7 +27702,7 @@
   "passives": [
     {
       "title": "Unchained Beast",
-      "text": "Every third attack launch an enhanced attack that deals 50% more damage. After 4 enhanced attacks enter an enhanced state for 20 seconds. During the enhcanced State every other attack is enhanced, dealing 75% more damage."
+      "text": "Every third attack launch an enhanced attack that deals 50% more damage. After 4 enhanced attacks enter an enhanced state for 20 seconds. During the enhanced State every other attack is enhanced, dealing 75% more damage."
     }
   ],
   "passiveDamage":{

@@ -305,12 +305,31 @@
 
 <script>
 var UPDATED_UNITS = [
-"Black Hole Foxy",
-"Crewmate Lolbit",
-"Knife Thrower Bear5",
-"Motorist Purple Guy",
-"Ringmaster Funtime Freddy",
-"Sad Clown Helpy"
+"Animdude",
+"Ennard",
+"Glitchtrap",
+"Golden Freddy",
+"Michael Afton",
+"Nightmare Fredbear",
+"Old Man Consequences",
+"Puppet",
+"Springtrap",
+"Vengeful Spirit",
+"Bigfoot Dreadbear",
+"Flipside Fredbear",
+"Princess",
+"Coffee",
+"Adventure Lolbit and Mendo Duo",
+"Movie William Afton",
+"White Rabbit",
+"Twisted Wolf",
+"Security Owl",
+"Movie Mike and Abby Duo",
+"Grimm Foxy",
+"Freddy in Space",
+"Redbear",
+"Tangle",
+"8-Bit Freddy"
 ];
 
 var UNITS_JSON_URL = 'https://raw.githubusercontent.com/FNTDUG/characters.json/refs/heads/main/json';

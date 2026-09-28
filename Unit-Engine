@@ -2963,10 +2963,11 @@
           "Nature/Dark": "https://images.fntduserguide.com/nature%3Adarkelement.webp",
           "Dark/Water": "https://images.fntduserguide.com/dark%3Awaterelement.webp",
           "Water/Electricity": "https://images.fntduserguide.com/water%3Aelectricityelement.webp",
-          "Dark/Neutral": "https://images.fntduserguide.com/darkelement.webp",
+          "Dark/Neutral": "https://images.fntduserguide.com/dark%3Aneutral.png",
           "Universal": "https://images.fntduserguide.com/universalelement.png",
-          "Neutral/Rust/Nature": "https://images.fntduserguide.com/neutralelement.webp",
-          "Dark/Fire/Light": "https://images.fntduserguide.com/darkelement.webp"
+          "Neutral/Rust/Nature": "https://images.fntduserguide.com/nature%3Arust%3Aneutral.png",
+          "Dark/Fire/Light": "https://images.fntduserguide.com/dark%3Afire%3Alight.png",
+          "Dark/Electricity": "https://images.fntduserguide.com/dark%3Aelec.png"
         };
 
         function getElementIcon(elementName) {
@@ -2993,7 +2994,8 @@
         "Dark/Neutral": "+6% DMG, +3% RNG, & -3% CD.",
         "Universal": "Grants the effect of all Element boosts.",
         "Neutral/Rust/Nature": "+9% DMG, +3% RNG, -3% CD, & +1 stock per placement.",
-        "Dark/Fire/Light": "+3% DMG, -3% CD, & 3% burn/second"
+        "Dark/Fire/Light": "+3% DMG, -3% CD, & 3% burn/second",
+        "Dark/Electricity": "+3% DMG & -1% CD to all units within range (capts at -15%)"
       };
         
       
@@ -4607,6 +4609,8 @@
         permPanel.appendChild(container);
           
         var BOOST_OPTIONS = [
+          ["adventure_lolbit",  "Adventure Lolbit and Mendo Duo: Lolbit Boost (+30% DMG)",                  { dmgMult: 1.30 }],
+          ["adventure_mendo",   "Adventure Lolbit and Mendo Duo: Mendo Boost (+20% RNG)",                  { rngMult: 1.20 }],
           ["scott_base",        "Animdude: Base Effect (+10% Crit Rate & +15% Crit DMG)",                  { critRateAdd: 0.10, critDmgAdd: 0.15 }],
           ["scott_t2top",       "Animdude: Top Path Tier 2 (+10% DMG & +10% RNG)",                        { dmgMult: 1.10, rngMult: 1.10 }],
           ["scott_creation",    "Animdude: My Favorite Creation (+65% DMG & +30% RNG)",                     { dmgMult: 1.65, rngMult: 1.30, singlePlacement: true }],
@@ -4636,6 +4640,8 @@
           ["ennard_sync",      "Ennard: Sycned Unit (+20% DMG & -5% CD)",                               { dmgMult: 1.20, singlePlacement: true}],
           ["ennard_bot",      "Ennard: Max Bottom Path (+15% DMG & -5% CD)",                               { dmgMult: 1.15, cdMult: 0.95}],
           ["funtime",           "Funtime Foxy: Showtime! (Averaged, +12.86% DMG/RNG)",                      { dmgMult: 1.1286, rngMult: 1.1286 }],
+          ["glitch_t2bot",      "Glitchtrap: Bottom Path Tier 2 (10% DMG & 10% RNG)",                      { dmgMult: 1.10, rngMult: 1.10 }],
+          ["glitch_mindcontrol","Glitchtrap: Digital Mind Control (55% DMG, 20% RNG, & -10% CD)",          { dmgMult: 1.55, rngMult: 1.20, cdMult: 0.90 }],
           ["golden_blessing",   "Golden Cupcake: Golden Blessing (+10% DMG & +6% RNG per stack)",           { dmgMult: 1.10, rngMult: 1.06, stackKey: "goldenBlessingStacks", maxStacks: 3 }],
           ["gf_t1",             "Golden Freddy: Middle Path Tier 2 (+10% DMG)",                             { dmgMult: 1.10}],
           ["gf_mid",            "Golden Freddy: Max Middle Path (+30% DMG & +15% RNG)",                    { dmgMult: 1.30, rngMult: 1.15}],
@@ -4668,11 +4674,13 @@
           ["phone_wither",      "Phone Guy: Foxy Cam (+15% DMG)",                                          { dmgMult: 1.15, }],
           ["phone_boost",       "Phone Guy: Bonnie Cam (-5% CD)",                                          { cdMult: 0.95, }],
           ["popcorn",           "Popcorn Bot: Sweet Popcorn (Averaged, +3.89% DMG/RNG, -3.89% CD per stack)", { dmgMult: 1.0389, rngMult: 1.0389, cdMult: 0.9611, stackKey: "popcornStacks", maxStacks: 4 }],
+          ["princess",          "Princess: Caught in a Loop (+30% Crit DMG & +15% Crit Rate)",              { critRateAdd: 1.15, critDmgAdd: 1.30}],
+          ["princess_dark",      "Princess: Fend off The Dark (+25% DMG)",                     { dmgMult: 1.25 }],
           ["promise",           "Psychic Friend Fredbear: Promise (+30% DMG, +25% RNG, -2.5% CD)",        { dmgMult: 1.30, rngMult: 1.25, cdMult: 0.975 }],
           ["puppet_wither",     "Puppet: Max Bottom Path Wither (+10% DMG)",                              { dmgMult: 1.10}],
-          ["puppet_string",      "Puppet: Max Bottom Path Strings (+20% DMG +10% RNG)",                   { dmgMult: 1.20, rngMult: 1.10}],
+          ["puppet_string",     "Puppet: Max Bottom Path Strings (+20% DMG +10% RNG)",                   { dmgMult: 1.20, rngMult: 1.10}],
           ["rockin_bonnie_band","Rockin Bonnie: Rockin Vibes (-8% CD)",                                    { cdMult: 0.92 }],
-          ["scarecrow_raiser",  "Scarecrow Freddy: Crop Raiser (+15% DMG, +15% RNG)",                     { dmgMult: 1.15, rngMult: 1.15, stackKey: "scarecrow_raiser_stacks", maxStacks: 4 }],
+          ["scarecrow_raiser",  "Scarecrow Freddy: Crop Raiser (+15% DMG & +15% RNG)",                     { dmgMult: 1.15, rngMult: 1.15, stackKey: "scarecrow_raiser_stacks", maxStacks: 4 }],
           ["scarecrow_guardian","Scarecrow Freddy: Guardian of the Fields (-5% DMG, -5% RNG)",             { dmgMult: 0.95, rngMult: 0.95, stackKey: "scarecrow_guardian_stacks", maxStacks: 4 }],
           ["pbs",               "Scott Units: The Creator (+1% DMG & +1% RNG per stack)",                 { dmgMult: 1.01, rngMult: 1.01, stackKey: "psbStack", maxStacks: 100 }],
           ["roar",              "Shadow Knight Freddy: Roaring Scream (+25% DMG, +3% CD)",                { dmgMult: 1.25, cdMult: 1.03, duration: 15, cd: 60 }],
@@ -4855,6 +4863,7 @@
             ["ftc",               "Funtime Chica: Spotlight (+20% DMG) [Light only]",                            { dmgMult: 1.20, elements: ["Light"] }],
             ["lore_light",        "Lore Keeper Shadow Bonnie: Light Boost (-15% CD) [Light only]",               { cdMult: 0.80, elements: ["Light"] }],
             ["ballora_light_light", "Mother Nature Ballora: Light Boost (+5% DMG, +5% RNG, -5% CD) [Light only]", { dmgMult: 1.05, rngMult: 1.05, cdMult: 0.95, elements: ["Light"] }],
+            ["princess_light",      "Princess: Fend off The Dark (+20% DMG) [Light only]",                     { dmgMult: 1.20, elements: ["Light"] }],
             ["puppet_base",         "Puppet: Base Effect (+10% DMG & +20% RNG) [Light only]",                 { dmgMult: 1.10, rngMult: 1.20, elements: ["Light"] }],
             ["puppet_t2",         "Puppet: Bottom Path Tier 2 (+20% DMG) [Light only]",                          { dmgMult: 1.20, elements: ["Light"] }],
             ["puppet_lightwither",  "Puppet: Max Bottom Path Wither (+30% DMG) [Light only]",                 { dmgMult: 1.30, elements: ["Light"] }],
@@ -4879,6 +4888,15 @@
             ["terror_all",        "Nightterror Rockstar Bonnie: By My All Seeing Eye (+25% DMG & +10% RNG) [Dark & Light Only]", { dmgMult: 1.25, rngMult: 1.10, stackKey: "terrorallStack", maxStacks: 4, elements: ["Dark", "Light"]}],
             ["black_hole",        "Black Hole Foxy: Cosmic Calamity (+15% DMG) [Dark & Light Only]", { dmgMult: 1.15, elements: ["Dark", "Light"]}],
             ["horizon_hole_element",      "Black Hole Foxy: Passing The Event Horizon (+25% DMG) [Dark & Light Only]", { dmgMult: 1.25, duration: 30, cd: 60, elements: ["Dark", "Light"]}]
+          );
+        }
+
+        if (unitHasElement(unit, "electricity") || unitHasElement(unit, "dark")) {
+          BOOST_OPTIONS.push(
+            ["Glitch_base",        "Glitchtrap: Base Effect (+15% DMG) [Dark & Electricity Only]", { dmgMult: 1.15, elements: ["Dark", "Electricity"]}],
+            ["Glitch_top_wither",  "Glitchtrap: Max Top Path Wither (+20% DMG) [Dark & Electricity Only]", { dmgMult: 1.20, elements: ["Dark", "Electricity"]}],
+            ["Glitch_top",         "Glitchtrap: Max Top Path (+1.25% DMG per stack) [Dark & Electricity Only]", { dmgMult: 1.0125, stackKey: "glitchtopstack", maxStacks: 8, elements: ["Dark", "Electricity"]}],
+            ["Glitch_bot",         "Glitchtrap: Max Bottom Path (+20% & +20% RNG DMG) [Dark & Electricity Only]", { dmgMult: 1.20, rngMult: 1.20, elements: ["Dark", "Electricity"]}],
           );
         }
         

@@ -24365,8 +24365,8 @@
 },
 {
   "name": "Void Shaper Shadow Freddy",
-  "imgNormal": "https://drive.google.com/thumbnail?id=1yvZWud4hwmSkreyFPOmDioaQLdzN9rBX&sz=w500",
-  "imgShiny": "https://iili.io/Ci4t5rB.webp",
+  "imgNormal": "https://iili.io/Ci4t5rB.webp",
+  "imgShiny": "https://units.fntduserguide.com/units/void-shaper-shadow-freddy-shiny.png",
   "rarity": "secret",
   "typeMain": "Endgame",
   "typeTags": [
@@ -25294,7 +25294,7 @@
 {
   "name": "Neon Punk Nightmare Chica",
   "imgNormal": "https://iili.io/n32z8ss.webp",
-  "imgShiny": "https://drive.google.com/thumbnail?id=1tlgL7Ea_pL4vTrbwWFk51tobnBDsq0b-&sz=w500",
+  "imgShiny": "https://units.fntduserguide.com/units/neon-punk-nightmare-chica-shiny.png",
   "rarity": "secret",
   "typeMain": "Endgame",
   "typeTags": [
@@ -25530,8 +25530,8 @@
 },
 {
   "name": "Cyberdata Withered Bonnie",
-  "imgNormal": "https://iili.io/n32zieS.webp",
-  "imgShiny": "https://drive.google.com/thumbnail?id=1kKjFRVMVJnm1miMbROD-ULATYDrwFM3r&sz=w500",
+  "imgNormal": "https://units.fntduserguide.com/units/cyberdata-withered-bonnie.png",
+  "imgShiny": "https://units.fntduserguide.com/units/cyberdata-withered-bonnie-shiny.png",
   "rarity": "secret",
   "typeMain": "Endgame",
   "typeTags": [
@@ -26585,5 +26585,1560 @@
       "text": "Copies the cooldown of the highest-cooldown unit in range exactly. For every second of copied cooldown gain +100% base damage and an additional +5% base damage per second. Gain +10% base range"
     }
   ]
+},
+  {
+    "name": "Glitchtrap",
+    "paths": [
+      {
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 6, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
+        "tiers": [
+          {"icon": "https://tr.rbxcdn.com/180DAY-cf6743f9dbb7a13646b20e77a2481890/420/420/Image/Png/noFilter", "desc": "Increases this unit's Damage by 5% for each Dark or Electricity Unit in range, up to 25%.", "cost": "Free"},
+          {"icon": "https://tr.rbxcdn.com/180DAY-1dadbda5703a883d254542d1d8440a52/420/420/Image/Png/noFilter", "desc": "Increases the Damage boost cap from 25% to 40%.", "cost": "Free"},
+          {"icon": "https://tr.rbxcdn.com/180DAY-49be59ccebf7b7d8c5b8ac6d56222b68/420/420/Image/Png/noFilter", "desc": "When attacking, unleashes a follow-up attack that deals 25% Damage and inflicts 10% Dark and Electric Wither for 5s. When a follow-up Critically hits, gain 10% Crit Damage and 5% Crit Rate, up to 30% and 15%. When it does not Critically hit, lose 5% Crit Damage and 1% Crit Rate.", "cost": "25k Tokens"},
+          {"icon": "https://tr.rbxcdn.com/180DAY-0e9dbfd6076c1a45ae7608e995a184ec/420/420/Image/Png/noFilter", "desc": "All units in range gain 1/4th of this unit's Dark and Electric self Damage boost. Increases the Crit Damage cap to 50% and the Crit Rate cap to 25%, additionally grant 25% bonus Crit Rate against enemies affected by Wither.", "cost": "50k Tokens"},
+          {"icon": "https://tr.rbxcdn.com/180DAY-858a5bab7c0594a81c3fa8fb9e75d238/420/420/Image/Png/noFilter", "desc": "Increases follow-up Damage to 30% and Wither to 20%. If the follow-up Critically hits, it triggers once more. (This can happen once per attack).", "cost": "Quest", "quest": "Deal 100 million damage with Dark or Electricity units while GLitchtrap is equipped."}
+        ]
+      },
+      {
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 6, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
+        "tiers": [
+          {"icon": "https://tr.rbxcdn.com/180DAY-6294240ea000de89701aa4f105e52305/420/420/Image/Png/noFilter", "desc": "Every 7s, spawns a summon with health equal to 30% of this unit's damage.", "cost": "Free"},
+          {"icon": "https://tr.rbxcdn.com/180DAY-da173b1c6d9770d1972393b313d45913/420/420/Image/Png/noFilter", "desc": "Reduces the summon cooldown to 5s.", "cost": "Free"},
+          {"icon": "https://tr.rbxcdn.com/180DAY-1125a43ef4626f6957e491fd7cf87b05/420/420/Image/Png/noFilter", "desc": "Summons three minions at a time. While a summon is on the track, other units in range gain 10% damage. This unit gains 3% damage per summon on the track, up to 75%.", "cost": "35k Tokens"},
+          {"icon": "https://tr.rbxcdn.com/180DAY-9ee2c9344f33fc1f16b1e9fd4d4f6568/420/420/Image/Png/noFilter", "desc": "Unlocks Glitched Minions. Activating it instantly summons five minions and spawns two temporary sub-towers with 25% of this unit's damage and this unit's base range and cooldown. Their attacks inflict 15% Dark and Electricity Wither. The sub-towers last for 60s. Cooldown: 120s.", "cost": "75k Tokens"},
+          {"icon": "https://tr.rbxcdn.com/180DAY-cc09292db8f83452aad2c6e695b9d2dc/420/420/Image/Png/noFilter", "desc": "Glitched Minions also summons a Glitchtrap Sprite with health equal to 300% of this unit's damage and spawns a third sub-tower. Normal summon health increases to 40% of this unit's damage. The damage boost from summons increases to 20%.", "cost": "Quest", "quest": "Deal 10 million damage with Glitchtrap"}
+        ]
+      },
+      {
+        "levels": [
+          { "level": 1, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 2, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 3, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 4, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 5, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 },
+          { "level": 6, "cost": 0, "damage": 0, "type": "", "cd": 0, "range": 0 }
+        ],
+        "tiers": [
+          {"icon": "https://tr.rbxcdn.com/180DAY-ced281eaa0450b4098b8a205de4e1645/420/420/Image/Png/noFilter", "desc": "Boosts the damage and range of all units in range by 5%.", "cost": "Free"},
+          {"icon": "https://tr.rbxcdn.com/180DAY-32a45d2c0de1b7972114863d8ee8f9f5/420/420/Image/Png/noFilter", "desc": "Increases the damage and range boosts to 10%.", "cost": "Free"},
+          {"icon": "https://tr.rbxcdn.com/180DAY-883e26380b0ff79a61a44ac0a4215f59/420/420/Image/Png/noFilter", "desc": "The boost becomes global. Dark and Electricity units receive double the boost.", "cost": "30k Tokens"},
+          {"icon": "https://tr.rbxcdn.com/180DAY-40ef1d10ec15a4bc81af4121a68a148f/420/420/Image/Png/noFilter", "desc": "Unlocks Digital Mind Control, which requires 24 Tapes. Kills in range have a 1 in 16 chance to grant one Tape. Select one unit to gain 55% damage, 20% range, and 10% cooldown reduction for 25s. Tapes cannot be generated while the effect is active.", "cost": "60k Tokens"},
+          {"icon": "https://tr.rbxcdn.com/180DAY-bedbe6be3764aaaf0701b95c128c2a8b/420/420/Image/Png/noFilter", "desc": "Reduces the Tape requirement to 16. Digital Mind Control applies its buffs permanently and can affect one additional unit. Tapes grant this unit, Dark and Electricity units, and Digital Mind Control targets up to 16% damage based on the number of Tapes held.", "cost": "Quest", "quest": "Clear 30 nights with Glitchtrap equipped"}
+        ]
+      }
+    ],
+    "imgNormal": "https://units.fntduserguide.com/units/glitchtrap.png",
+    "imgShiny": "https://units.fntduserguide.com/units/glitchtrap.png",
+    "rarity": "hero",
+    "typeMain": "Endgame",
+    "typeTags": [
+      "Wither",
+      "Summon",
+      "Support"
+    ],
+    "element": "Dark/Electricity",
+    "placements": 1,
+    "attackType": "Multi",
+    "obtainment": "Hero Quest 11",
+    "passives": [
+      {
+        "title": "Glitched Minions",
+        "text": "Instantly summons five minions and spawns two temporary sub-towers with 25% of this unit's damage and this unit's base range and cooldown. Their attacks inflict 15% Dark and Electricity Wither. The sub-towers last for 60s. Becomes stronger as more upgrades are selected in path 2 (Local CD: 120s)",
+        "path": 2, "tier": 4,
+        "activeIcon": "https://tr.rbxcdn.com/180DAY-cf676f4eb34162cf2751ff7282873c82/420/420/Image/Png/noFilter"
+      },
+      {
+        "title": "Digital Mind Control",
+        "text": "Requires 24 Tapes to use. Select one unit to gain 55% damage, 20% range, and 10% cooldown reduction for 25s. Tapes cannot be generated while the effect is active.Becomes stronger as more upgrades are selected in path 3 (Local CD: 120s)",
+        "path": 3, "tier": 4,
+        "activeIcon": "https://tr.rbxcdn.com/180DAY-cf676f4eb34162cf2751ff7282873c82/420/420/Image/Png/noFilter"
+      },
+      {
+        "title": "Base Effect",
+        "text": "+15% Damage to Dark and Electric Units."
+      }
+    ],
+    "skins": [
+      {
+        "name": "Malhare",
+        "rarity": "exclusive"
+      }
+    ]
+  },
+{
+  "name": "Flipside Fredbear",
+  "imgNormal": "https://units.fntduserguide.com/units/flipside-fredbear.png",
+  "imgShiny": "https://units.fntduserguide.com/units/flipside-fredbear-shiny.png",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Knockback",
+    "Stun"
+  ],
+  "element": "Neutral",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Season 7 Craftable Nightmare",
+"levels": [
+    {
+      "level": 1,
+      "cost": 9999,
+      "damage": 950,
+      "type": "Circle",
+      "cd": 4,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 1100,
+      "type": "Circle",
+      "cd": 4,
+      "range": 20
+    },
+    {
+      "level": 3,
+      "cost": 5000,
+      "damage": 1300,
+      "type": "Circle",
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 1400,
+      "type": "Circle",
+      "cd": 3.6,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 7500,
+      "damage": 1600,
+      "type": "Cone 30°",
+      "cd": 3.6,
+      "range": 25
+    },
+    {
+      "level": 6,
+      "cost": 9000,
+      "damage": 1800,
+      "type": "Cone 30°",
+      "cd": 3.6,
+      "range": 27
+    },
+    {
+      "level": 7,
+      "cost": 11000,
+      "damage": 1900,
+      "type": "Cone 30°",
+      "cd": 3.2,
+      "range": 27
+    },
+    {
+      "level": 8,
+      "cost": 13000,
+      "damage": 2200,
+      "type": "Cone 30°",
+      "cd": 3.2,
+      "range": 30
+    },
+    {
+      "level": 9,
+      "cost": 15000,
+      "damage": 2600,
+      "type": "Cone 90°",
+      "cd": 3.2,
+      "range": 32
+    },
+    {
+      "level": 10,
+      "cost": 17500,
+      "damage": 3000,
+      "type": "Cone 90°",
+      "cd": 3,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Rearranged",
+      "text": "Enemies in Range will start to walk back 0.5 studs per second for 4s, and will be stunned after this duration ends. <br> For each enemy killed during this duration, this unit will gain 1% Damage and 0.25% Range, up to 300% Damage and 75% Range.",
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-19-21-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
+    },
+    {
+      "title": "Welcome To The Flipside",
+      "text": "Every 15s, this unit has a 15% chance to upgrade once, or 25% chance to downgrade once. If this unit is downgraded, buff this units Damage and Range by 20% for 30 seconds. <br> Whenever a non-boss enemy reaches the exit, this unit will open a portal for the next 30s. This portal will send all enemies that go through it back to the start of the track, and deal 20% of their Health as Damage. During this duration, this unit is max upgraded and teleported to the end of the track, then this unit deals 200% Damage onto all enemies on the map. <br> After this duration is over, lose upgrades every 5s until reaching 0, then automatically sell this unit and prevent it from being placed for 90 seconds."
+    },
+    {
+      "title": "edispilF ehT oT emocleW",
+      "text": "Attacks against non-boss enemies will knockback enemies by 2 tiles. If an enemy collides with another during the knockback, deal 1% of the enemies current Health per level this unit has, and knock the other enemy back 2 tiles."
+    }
+  ],
+    "skins": [
+      {
+        "name": "Flipside CLockbear",
+        "rarity": "exclusive"
+      }
+    ]
+},
+{
+  "name": "White Rabbit",
+  "imgNormal": "https://units.fntduserguide.com/units/white-rabbit.png",
+  "imgShiny": "https://units.fntduserguide.com/units/white-rabbit-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "element": "Light",
+  "placements": 2,
+  "attackType": "Line",
+  "obtainment": "Season 7 Present (0.05%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 3500,
+      "damage": 250,
+      "cd": 2,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 325,
+      "cd": 2,
+      "range": 22
+    },
+    {
+      "level": 3,
+      "cost": 5000,
+      "damage": 400,
+      "cd": 2,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 6500,
+      "damage": 700,
+      "cd": 3,
+      "range": 26
+    },
+    {
+      "level": 5,
+      "cost": 8500,
+      "damage": 800,
+      "cd": 3,
+      "range": 29
+    },
+    {
+      "level": 6,
+      "cost": 11000,
+      "damage": 1200,
+      "cd": 4,
+      "range": 32
+    },
+    {
+      "level": 7,
+      "cost": 13500,
+      "damage": 1500,
+      "cd": 4,
+      "range": 35
+    }
+  ],
+  "passives": [
+    {
+      "title": "Mirror Mayhem",
+      "text": "Place up to 3 mirrors within this units Range. Mirrors face the center of their formation. (Local CD: 1s)",
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-19-21-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
+    },
+    {
+      "title": "House of Mirrors",
+      "text": "Mirrors connect to others, dealing 20% of this units Damage every second. If a beam passes through a unit, buff this unit and the unit hits Damage by 10%, up up to 100%. If the unit is inside the triangle formed by three mirrors, gain 50% Damage."
+    }
+  ],
+  "passiveDamage": {
+    "periodic":[
+      {
+        "label": "Mirrors",
+        "pctofdamage": 0.20,
+        "cd": 1
+      }
+    ],
+    "selfboost":[
+      {
+        "label": "Mirrors (boost)",
+        "dmgmult": 1.50
+      }
+    ]
+  }
+},
+{
+  "name": "Redbear",
+  "imgNormal": "https://units.fntduserguide.com/units/redbear.png",
+  "imgShiny": "https://units.fntduserguide.com/units/redbear-shiny.png",
+  "rarity": "mythic",
+  "typeMain": "Midgame",
+    "typeTags": [
+    "Stun"
+  ],
+  "element": "Neutral",
+  "placements": 3,
+  "attackType": "Multi",
+  "obtainment": "Season 7 Present (5%)",
+   "levels": [
+    {
+      "level": 1,
+      "cost": 2500,
+      "damage": 250,
+      "type": "Single",
+      "cd": 2.5,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 1500,
+      "damage": 300,
+      "type": "Single",
+      "cd": 2.5,
+      "range": 18
+    },
+    {
+      "level": 3,
+      "cost": 2500,
+      "damage": 350,
+      "type": "Single",
+      "cd": 2.2,
+      "range": 19
+    },
+    {
+      "level": 4,
+      "cost": 3500,
+      "damage": 450,
+      "type": "Single",
+      "cd": 2.2,
+      "range": 19
+    },
+    {
+      "level": 5,
+      "cost": 5000,
+      "damage": 550,
+      "type": "Single",
+      "cd": 2.2,
+      "range": 21
+    },
+    {
+      "level": 6,
+      "cost": 6500,
+      "damage": 650,
+      "type": "Circle",
+      "cd": 2,
+      "range": 22
+    },
+    {
+      "level": 7,
+      "cost": 8000,
+      "damage": 800,
+      "type": "Circle",
+      "cd": 2,
+      "range": 22
+    }
+  ],
+  "passives": [
+    {
+      "title": "Mic Toss",
+      "text": "Every 4 attacks, throw a mic at this units target, dealing 200% of this units Damage, and stunning for 1s, while also dealing 100% of this units Damage in a Circle AoE."
+    }
+  ],
+  "passiveDamage":{
+    "periodic":[
+      {
+        "label": "Mic Toss",
+        "pctofdamage": 2,
+        "everynthattack": 4
+      }
+    ]
+  }
+},
+{
+  "name": "Tangle",
+  "imgNormal": "https://units.fntduserguide.com/units/tangle.png",
+  "imgShiny": "https://units.fntduserguide.com/units/tangle-shiny.png",
+  "rarity": "epic",
+  "typeMain": "Endgame",
+    "typeTags": [
+    "Trap",
+    "Summon"
+  ],
+  "element": "Neutral",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Season 7 Present (15%)",
+   "levels": [
+    {
+      "level": 1,
+      "cost": 5555,
+      "damage": 1000,
+      "type": "Single",
+      "cd": 4,
+      "range": 16
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 1200,
+      "type": "Single",
+      "cd": 4,
+      "range": 17
+    },
+    {
+      "level": 3,
+      "cost": 4800,
+      "damage": 1400,
+      "type": "Single",
+      "cd": 4,
+      "range": 19
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 2200,
+      "type": "Single",
+      "cd": 5.5,
+      "range": 21
+    },
+    {
+      "level": 5,
+      "cost": 10000,
+      "damage": 8000,
+      "type": "Circle",
+      "cd": 5.5,
+      "range": 23
+    },
+    {
+      "level": 6,
+      "cost": 11500,
+      "damage": 3200,
+      "type": "Circle",
+      "cd": 6,
+      "range": 25
+    },
+    {
+      "level": 7,
+      "cost": 16000,
+      "damage": 3500,
+      "type": "Circle",
+      "cd": 6,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Funhouse",
+      "text": "Every 5 seconds, spawn a tent on to the track as a trap, up to 4 tents. For every 10 seconds a trap is active, summon an Endo with Health equal to 20% of this units Damage. When an enemy walks over a trap, deal 50% Damage and break the trap. Upon impact, the trap has a chance for one of the following effects: <br>• 50% chance to deal 50% of this units Damage as Bleed over 5s <br>• 20% chance to Slow enemies by 30% for 5s <br>• 20% Chance to Stun for 5s <br>• 10% Chance to deal 50% of the current HP of the enemy, up to 500% of this units Damage."
+    }
+  ],
+  "passiveDamage":{
+  "summons": [
+        {
+          "label": "Endo Summons",
+          "healthpctofdamage": 0.2,
+          "spawncd": 3.33,
+          "spawncdboostable": false
+        },
+        {
+          "label": "Tent Trap",
+          "healthpctofdamage": 0.5,
+          "spawncd": 5,
+          "spawncdboostable": false
+        }
+      ]
+  }
+},
+{
+  "name": "8-Bit Freddy",
+  "imgNormal": "https://units.fntduserguide.com/units/8-bit-freddy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/8-bit-freddy-shiny.png",
+  "rarity": "rare",
+  "typeMain": "Starter",
+  "element": "Neutral",
+  "placements": 2,
+  "attackType": "Line",
+  "obtainment": "Season 7 Present (15%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 750,
+      "damage": 150,
+      "cd": 1.5,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 1200,
+      "damage": 175,
+      "cd": 1.5,
+      "range": 21
+    },
+    {
+      "level": 3,
+      "cost": 2000,
+      "damage": 200,
+      "cd": 1.2,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 3000,
+      "damage": 250,
+      "cd": 1.2,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 4500,
+      "damage": 300,
+      "cd": 1,
+      "range": 26
+    }
+  ],
+  "passives": [
+    {
+      "title": "GAME OV3R",
+      "text": "Every third attack, this unit will inflict Breakable on all enemies hit. Breakable increases the amount of shields hits deplete by 1."
+    }
+  ]
+},
+{
+  "name": "Grimm Foxy",
+  "imgNormal": "https://units.fntduserguide.com/units/grimm-foxy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/grimm-foxy-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Starter-Midgame",
+    "typeTags": [
+    "Burn",
+    "Summon"
+  ],
+  "element": "Fire",
+  "placements": 2,
+  "attackType": "Multi",
+  "obtainment": "Season 7 Pass Premium Tier 1",
+    "levels": [
+    {
+      "level": 1,
+      "cost": 1000,
+      "damage": 150,
+      "type": "Circle",
+      "cd": 3,
+      "range": 21
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 175,
+      "type": "Circle",
+      "cd": 3,
+      "range": 22
+    },
+    {
+      "level": 3,
+      "cost": 5500,
+      "damage": 200,
+      "type": "Circle",
+      "cd": 2.9,
+      "range": 23
+    },
+    {
+      "level": 4,
+      "cost": 7000,
+      "damage": 240,
+      "type": "Line",
+      "cd": 2.8,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 9000,
+      "damage": 280,
+      "type": "Line",
+      "cd": 2.7,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 12000,
+      "damage": 310,
+      "type": "Line",
+      "cd": 2.5,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 17000,
+      "damage": 375,
+      "type": "Line",
+      "cd": 2.5,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Blazing Rush",
+      "text": "On attack, apply 50% Burn over 5s. Every 15s, this unit becomes enraged for 10 seconds. While enraged, this unit gains +20% Damage, and the Burn is increased to 100%. <br> When an enemy leaves this units Range, create a clone that follows the leaving enemy, with 20% of this units Damage, max of 2. Clones cannot enrage but still apply 50% burn based on their own attack. While a Clone is on the map, this unit will be permanently enraged."
+    }
+  ],
+  "passiveDamage":{
+    "selfboost":[
+      {
+        "label": "Enraged (boost)",
+        "dmgmult": 1.20
+      }
+    ],
+    "periodic":[
+      {
+        "label": "Clones",
+        "pctofdamage": 0.20,
+        "cd": 2.5,
+        "cdboostable": true
+      }
+    ],
+    "dots":[
+      {
+        "label": "Enraged (DoT)",
+        "pctofdamage": 1,
+        "durationsec": 5
+      },
+      {
+        "label": "Clone's DoT",
+        "pctofdamage": 0.50,
+        "durationsec": 5
+      }
+    ]
+  }
+},
+{
+  "name": "Adventure Lolbit and Mendo Duo",
+  "imgNormal": "https://units.fntduserguide.com/units/adventure-lolbit-and-mendo-duo.png",
+  "imgShiny": "https://units.fntduserguide.com/units/adventure-lolbit-and-mendo-duo-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+    "typeTags": [
+    "Support",
+    "Income"
+  ],
+  "element": "Neutral",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Season 7 Pass Premium Tier 50",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 8000,
+      "damage": 300,
+      "type": "Circle",
+      "cd": 3,
+      "range": 21
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 350,
+      "type": "Circle",
+      "cd": 3,
+      "range": 22
+    },
+    {
+      "level": 3,
+      "cost": 5000,
+      "damage": 375,
+      "type": "Circle",
+      "cd": 2.5,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 450,
+      "type": "Cone 30°",
+      "cd": 2.5,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 7000,
+      "damage": 550,
+      "type": "Cone 30°",
+      "cd": 2.5,
+      "range": 27
+    },
+    {
+      "level": 6,
+      "cost": 9000,
+      "damage": 620,
+      "type": "Cone 30°",
+      "cd": 2.2,
+      "range": 29
+    },
+    {
+      "level": 7,
+      "cost": 11000,
+      "damage": 700,
+      "type": "Cone 30°",
+      "cd": 2.2,
+      "range": 31
+    },
+    {
+      "level": 8,
+      "cost": 13500,
+      "damage": 800,
+      "type": "Cone 30°",
+      "cd": 2.2,
+      "range": 33
+    }
+  ],
+  "passives": [
+    {
+      "title": "Assorted Inventory",
+      "text": "Upgrades in this units shop will cost cash, you can get a various upgrades, with some having a limited stock. <br>• +1% Damage - $1000 (Infinite Stock), price is increased by 5% per purchase. <br>• +2% Range - $5000 (10 Stock). <br>• +1% Crit Rate - $3000 (50 Stock). <br>• +1% Crit Damage (25 Stock). <br>• Apply Lolbit Tag to the highest Damage unit in Range - $10000 (1 Stock). <br>• Apply Mendo Tag to the fasting attacking unit in Range - $10000 (1 Stock)."
+    },
+    {
+      "title": "Merchant Union",
+      "text": "Units in Range generate 25% more Cash. Lolbit or Mendo tagged units generate 50% more Cash, and units with both tags generate 100% more Cash. At the end of a wave, generate $1000, and $250 for every buff purchased. <br> Lolbit Tag units gain 30% Damage, and when they attack, this unit will follow-up for 100% Damage. (10s Cooldown) <br> Mendo Tag units gain 20% Range, and when they attack, this unit follows up for 50% Damage. (5s Cooldown)"
+    }
+  ],
+  "passiveDamage":{
+    "selfboost":[
+      {
+        "label": "Assorted Inventory",
+        "dmgmult": 1.20,
+        "rngmult": 1.20,
+        "critc": 0.55,
+        "critd": 2.25
+      }
+    ],
+    "periodic":[
+      {
+        "label": "Lolbit FUA",
+        "pctofdamage": 1,
+        "cd": 10,
+        "cdboostable": false
+        
+      },
+      {
+        "label": "Mendo FUA",
+        "pctofdamage": 0.50,
+        "cd": 5,
+        "cdboostable": false
+      }
+    ]
+  }
+},
+{
+  "name": "Security Owl",
+  "imgNormal": "https://units.fntduserguide.com/units/ringmaster-funtime-freddy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/ringmaster-funtime-freddy-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+    "typeTags": [
+    "Knockback",
+    "Boss Knockback"
+  ],
+  "element": "Neutral",
+  "placements": 1,
+  "attackType": "Cone 45°",
+  "obtainment": "Season 7 Pass Free Tier 50",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 20000,
+      "damage": 1000,
+      "cd": 4,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 6000,
+      "damage": 1250,
+      "cd": 4,
+      "range": 21
+    },
+    {
+      "level": 3,
+      "cost": 7000,
+      "damage": 1500,
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 8000,
+      "damage": 2000,
+      "cd": 4.5,
+      "range": 26
+    },
+    {
+      "level": 5,
+      "cost": 9000,
+      "damage": 2300,
+      "cd": 4.5,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 11000,
+      "damage": 2600,
+      "cd": 4.5,
+      "range": 26
+    },
+    {
+      "level": 7,
+      "cost": 13000,
+      "damage": 3600,
+      "cd": 5.5,
+      "range": 30
+    },
+    {
+      "level": 8,
+      "cost": 15000,
+      "damage": 4000,
+      "cd": 5.5,
+      "range": 31
+    },
+    {
+      "level": 9,
+      "cost": 17500,
+      "damage": 4800,
+      "cd": 6,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Alarm",
+      "text": "Whenever an enemy leaves this units Range, deal 10% of this units Damage for every second the enemy was in Range, up to 500% Damage. <br> Whenever an enemy reaches the base, knockback all enemies by 5 tiles, bosses included."
+    },
+    {
+      "title": "Security",
+      "text": "For each enemy in Range, gain 2% Damage and Range. Once an enemy has spent 10 seconds in this units Range, deal 50% more Damage to that enemy."
+    }
+  ]
+},
+{
+  "name": "Coffee",
+  "imgNormal": "https://units.fntduserguide.com/units/coffee.png",
+  "imgShiny": "https://units.fntduserguide.com/units/coffee-shiny.png",
+  "rarity": "exclusive",
+  "typeMain": "Endgame",
+    "typeTags": [
+    "Burn"
+  ],
+  "element": "Fire",
+  "placements": 2,
+  "attackType": "Circle",
+  "obtainment": "Season 7 Exclusive Pack",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 5000,
+      "damage": 550,
+      "cd": 3,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 650,
+      "cd": 3,
+      "range": 21
+    },
+    {
+      "level": 3,
+      "cost": 4500,
+      "damage": 750,
+      "cd": 3,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 6500,
+      "damage": 850,
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 8500,
+      "damage": 900,
+      "cd": 2.5,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 11000,
+      "damage": 1000,
+      "cd": 2.5,
+      "range": 28
+    },
+    {
+      "level": 7,
+      "cost": 16000,
+      "damage": 1300,
+      "cd": 2,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Unluckly Spill",
+      "text": "On attack, have a 50% chance to leave a coffee pool for 10s, this chance increases by the current coffee fill percent. Only a max of 5 pools can exist at a time. <br> When an enemy steps in a pool, apply 50% of this units Damage as Burn over 3 seconds, fill the coffee machine by 3, and increase this units next attack by 10%, up to 50%."
+    },
+    {
+      "title": "Coffee?",
+      "text": "When an enemy in Range dies, fill the coffee machine by 10%, if the enemy has a DoT effect, this is instead increased to 20%. This coffee machine drains by 1% every second. <br> On attack, apply Burn equal to the current coffee fill over 5s. When the coffee fill is over 50%, enemies in Range take 10% more Burn Damage."
+    }
+  ],
+  "passiveDamage":{
+    "dots":[
+      {
+        "label": "Coffee Pool",
+        "pctofdamage": 0.50,
+        "durationsec": 3
+      },
+      {
+        "label": "Coffee? (50% coffee)",
+        "pctofdamage": 0.50,
+        "durationsec": 5
+      }
+    ]
+  }
+},
+{
+  "name": "Princess",
+  "imgNormal": "https://units.fntduserguide.com/units/princess.png",
+  "imgShiny": "https://units.fntduserguide.com/units/princess-shiny.png",
+  "rarity": "exclusive",
+  "typeMain": "Starter-Midgame",
+    "typeTags": [
+    "Support",
+    "Wither"
+  ],
+  "element": "Light",
+  "placements": 2,
+  "attackType": "Circle",
+  "obtainment": "Season 7 Exclusive Pack",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 1000,
+      "damage": 250,
+      "cd": 2,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 2500,
+      "damage": 400,
+      "cd": 2.5,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 4000,
+      "damage": 550,
+      "cd": 3,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 850,
+      "cd": 3,
+      "range": 27
+    },
+    {
+      "level": 5,
+      "cost": 8500,
+      "damage": 1450,
+      "cd": 4,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 11000,
+      "damage": 1800,
+      "cd": 4,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Caught in a Loop",
+      "text": "The 3 towers with the most DPS receive this units lanterns. These lanterns will increase Crit Rate by 10%, and Crit Damage by 30%."
+    },
+    {
+      "title": "Fend off The Dark",
+      "text": "If any Dark element units or enemies are in Range, buff Light element units Damage by 20%. Whenever a Light enemy attacks a Dark enemy, that enemy will take 25% more Damage."
+    }
+  ],
+  "passiveDamage":{
+    "selfboost":[
+      {
+        "label": "Fend off The Dark",
+        "dmgmult": 1.45
+      }
+    ]
+  }
+},
+{
+  "name": "Twisted Wolf",
+  "imgNormal": "https://units.fntduserguide.com/units/twisted-wolf.png",
+  "imgShiny": "https://units.fntduserguide.com/units/twisted-wolf-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+    "typeTags": [
+    "Support",
+    "Wither"
+  ],
+  "element": "Neutral",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Endless 8 Unit Quest",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 6000,
+      "damage": 650,
+      "type": "Line",
+      "cd": 3,
+      "range": 23
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 800,
+      "type": "Line",
+      "cd": 3,
+      "range": 26
+    },
+    {
+      "level": 3,
+      "cost": 5500,
+      "damage": 1000,
+      "type": "Line",
+      "cd": 3,
+      "range": 29
+    },
+    {
+      "level": 4,
+      "cost": 7000,
+      "damage": 800,
+      "type": "Line",
+      "cd": 2,
+      "range": 32
+    },
+    {
+      "level": 5,
+      "cost": 9000,
+      "damage": 1000,
+      "type": "Cone 30°",
+      "cd": 2,
+      "range": 34
+    },
+    {
+      "level": 6,
+      "cost": 12000,
+      "damage": 1100,
+      "type": "Cone 30°",
+      "cd": 1.75,
+      "range": 35
+    },
+    {
+      "level": 7,
+      "cost": 15000,
+      "damage": 1400,
+      "type": "Cone 30°",
+      "cd": 1.75,
+      "range": 36
+    },
+    {
+      "level": 8,
+      "cost": 19000,
+      "damage": 1500,
+      "type": "Cone 30°",
+      "cd": 1.5,
+      "range": 37
+    }
+  ],
+  "passives": [
+    {
+      "title": "Unchained Beast",
+      "text": "Every third attack launch an enhanced attack that deals 50% more damage. After 4 enhanced attacks enter an enhanced state for 20 seconds. During the enhcanced State every other attack is enhanced, dealing 75% more damage."
+    }
+  ],
+  "passiveDamage":{
+    "periodic":[
+      {
+        "label": "Enchanced Attack",
+        "pctofdamage": 1.5,
+        "everynthattack": 3
+      }
+    ],
+    "selfboost":[
+    {
+        "label": "Enchanced State",
+        "dmgmult": 1.37500,
+        "duration": 20,
+        "cd": 18,
+        "cdboostable": true
+      }
+    ]
+  }
+},
+{
+  "name": "Freddy in Space",
+  "imgNormal": "https://units.fntduserguide.com/units/freddy-in-space.png",
+  "imgShiny": "https://units.fntduserguide.com/units/freddy-in-space-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "element": "Neutral",
+  "placements": 2,
+  "attackType": "Cone 30°",
+  "obtainment": "Summons (0.25%)",
+ "levels": [
+    {
+      "level": 1,
+      "cost": 3500,
+      "damage": 350,
+      "cd": 5,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 375,
+      "cd": 5,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 4500,
+      "damage": 400,
+      "cd": 4.5,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 6500,
+      "damage": 450,
+      "cd": 4.5,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 8500,
+      "damage": 475,
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 11000,
+      "damage": 550,
+      "cd": 4,
+      "range": 28
+    },
+    {
+      "level": 7,
+      "cost": 14500,
+      "damage": 550,
+      "cd": 3.5,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Galactic Cupcake Reinforcement",
+      "text": "Every wave, a Galactic Cupcake spawns on the track, up to 9 cupcakes per placement. For every Cupcake increase this units Cone will increase by 10 degrees, and gain 10% Damage. For every 3 Cupcakes owned follow up for 50% Damage on hit."
+    }
+  ],
+  "passiveDamage":{
+    "selfboost":[
+      {
+        "label": "Cupcake Boost",
+        "dmgmult": 1.90
+      }
+    ],
+    "periodic":[
+      {
+        "label": "Cupcake FUA",
+        "pctofdamage": 0.5,
+        "cd": 3.5,
+        "cdboostable": true
+      }
+    ]
+  }
+},
+{
+  "name": "Movie Mike and Abby Duo",
+  "imgNormal": "https://units.fntduserguide.com/units/movie-mike-and-abby-duo.png",
+  "imgShiny": "https://units.fntduserguide.com/units/movie-mike-and-abby-duo-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "element": "Neutral",
+  "placements": 1,
+  "attackType": "Continuous - Cone",
+  "obtainment": "5% when completing any challenge",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 8000,
+      "damage": 350,
+      "degrees": "30°",
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 425,
+      "degrees": "30°",
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 5500,
+      "damage": 500,
+      "degrees": "30°",
+      "cd": 3,
+      "range": 25
+    },
+    {
+      "level": 4,
+      "cost": 7500,
+      "damage": 575,
+      "degrees": "30°",
+      "cd": 3,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 9500,
+      "damage": 600,
+      "degrees": "30°",
+      "cd": 2.5,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 12000,
+      "damage": 700,
+      "degrees": "60°",
+      "cd": 2.5,
+      "range": 29
+    },
+    {
+      "level": 7,
+      "cost": 14500,
+      "damage": 800,
+      "degrees": "60°",
+      "cd": 2.5,
+      "range": 30
+    },
+    {
+      "level": 8,
+      "cost": 17500,
+      "damage": 950,
+      "degrees": "60°",
+      "cd": 2.5,
+      "range": 32
+    },
+    {
+      "level": 9,
+      "cost": 20000,
+      "damage": 1100,
+      "degrees": "60°",
+      "cd": 2.5,
+      "range": 34
+    }
+  ],
+  "passives": [
+    {
+      "title": "Symmetry, Huh?",
+      "text": "On Placement; Gain +50% Damage. For every 2% Damage buff on this unit; Gain 1% Crit Rate. Crit Rate over 100% is converted into Crit Damage"
+    },
+    {
+      "title": "They Just Want to Play",
+      "text": "Abby matches the highest Damage and lowest Cooldown of any Freddy, Chica, Bonnie, or Foxy unit in her Range. Her damage cannot exceed twice this units base damage and her cooldown cannot fall below 75% of this units base cooldown."
+    }
+  ],
+  "passiveDamage":{
+    "selfboost":[
+      {
+        "label": "Symmetry",
+        "dmgmult": 1.50,
+        "critc": 0.30
+      }
+    ]
+  }
+},
+{
+  "name": "Movie William Afton",
+  "imgNormal": "https://units.fntduserguide.com/units/movie-william-afton.png",
+  "imgShiny": "https://units.fntduserguide.com/units/movie-william-afton-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+    "typeTags": [
+    "Summon",
+    "Bleed"
+  ],
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Cone",
+  "obtainment": "1% every boss raid wave or 350 raid tokens",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 6000,
+      "damage": 450,
+      "degrees": "30°",
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 3500,
+      "damage": 500,
+      "degrees": "30°",
+      "cd": 4,
+      "range": 22
+    },
+    {
+      "level": 3,
+      "cost": 4750,
+      "damage": 550,
+      "degrees": "30°",
+      "cd": 3.8,
+      "range": 23
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 650,
+      "degrees": "30°",
+      "cd": 3.8,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 7500,
+      "damage": 600,
+      "degrees": "30°",
+      "cd": 3.8,
+      "range": 25
+    },
+    {
+      "level": 6,
+      "cost": 9500,
+      "damage": 520,
+      "degrees": "30°",
+      "cd": 3,
+      "range": 27
+    },
+    {
+      "level": 7,
+      "cost": 12000,
+      "damage": 600,
+      "degrees": "45°",
+      "cd": 3,
+      "range": 29
+    },
+    {
+      "level": 8,
+      "cost": 15000,
+      "damage": 700,
+      "degrees": "45°",
+      "cd": 3,
+      "range": 30
+    },
+    {
+      "level": 9,
+      "cost": 18000,
+      "damage": 800,
+      "degrees": "45°",
+      "cd": 3,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "I Always Come Back",
+      "text": "Gain 1 Token for every takedown or 0.5 Tokens for every assisted takedown <br>• Wake Up Children! - 10 Tokens: On takedown, summon a Child with this unit's displayed Damage. After all options are purchased, every other assisted takedown also summons one. <br>• I Made You! - 25 Tokens: For every unique Freddy, Foxy, Bonnie, and Chica unit in range, increase this units damage and range by 10%. <br>• Ahaha Lucky Me! - 50 Tokens: Increase Crit Rate and Crit Damage by 50%. After Purchasing all upgrades, Afton dons the mask.",
+      "activeIcon": ""
+    },
+    {
+      "title": "The Yellow Rabbit",
+      "text": "On hit apply 50% Bleed over 2 seconds. If the enemy was already Bleeding, follow-up for 100% Damage and apply the Bleed again."
+    }
+  ],
+  "passiveDamage":{
+    "summons":[
+      {
+        "label": "Wake Up Children",
+        "healthpctofdamage": 1,
+        "spawncd": 6,
+        "spawncdboostable": true
+      }
+    ],
+    "dots":[
+      {
+        "label": "Yellow Rabbit (DoT)",
+        "pctofdamage": 0.5,
+        "durationsec": 2
+      }
+    ],
+    "periodic":[
+      {
+        "label": "Yellow Rabbit (FUA)",
+        "pctofdamage": 1,
+        "everynthattack": 2
+      }
+    ],
+    "selfboost":[
+      {
+        "label": "Lucky Me",
+        "critc": 0.55,
+        "critd": 2.50
+      }
+    ]
+  }
+},
+{
+  "name": "Bigfoot Dreadbear",
+  "imgNormal": "https://units.fntduserguide.com/units/bigfoot-dreadbear.png",
+  "imgShiny": "https://units.fntduserguide.com/units/bigfoot-dreadbear-shiny.png",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+    "typeTags": [
+    "Trap",
+    "Stun",
+    "Knockback"
+  ],
+  "element": "Nature/Dark",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Season 3 Clan Reward (Top 50)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 6000,
+      "damage": 400,
+      "type": "Line",
+      "cd": 4,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 3500,
+      "damage": 500,
+      "type": "Line",
+      "cd": 4,
+      "range": 18
+    },
+    {
+      "level": 3,
+      "cost": 4750,
+      "damage": 600,
+      "type": "Line",
+      "cd": 3.8,
+      "range": 19
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 700,
+      "type": "Line",
+      "cd": 3.8,
+      "range": 20
+    },
+    {
+      "level": 5,
+      "cost": 7500,
+      "damage": 800,
+      "type": "Line",
+      "cd": 3.8,
+      "range": 21
+    },
+    {
+      "level": 6,
+      "cost": 9500,
+      "damage": 850,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 25
+    },
+    {
+      "level": 7,
+      "cost": 12000,
+      "damage": 950,
+      "type": "Cone 60°",
+      "cd": 3.5,
+      "range": 25
+    },
+    {
+      "level": 8,
+      "cost": 15000,
+      "damage": 1050,
+      "type": "Cone 60°",
+      "cd": 3.2,
+      "range": 26
+    },
+    {
+      "level": 9,
+      "cost": 18000,
+      "damage": 1200,
+      "type": "Cone 60°",
+      "cd": 3.2,
+      "range": 26
+    }
+  ],
+  "passives": [
+    {
+      "title": "Hidden in Plain Sight",
+      "text": "This unit is immune to Stuns and Debuffs. Based on the number of units sharing an element: <br> 2 or more; Gain 25% Damage. <br> 4 or more; Gain 50% Damage and 20% Range. <br> 6; Gain 100% Damage and 50% Range"
+    },
+    {
+      "title": "A Crack in the Forest",
+      "text": "Every 10s: Place a Tree Trap on the track within range (Max 6). Increase the trap cap by 1 for each Nature or Dark unit on the team. With 6 Nature or Dark units on the team, place 2 Trees at a time. <br> Tree Traps deal 100% Damage on contact, Stun for 2s, and leave 3 Log traps behind after triggering. <br> Log Traps deal 20% Damage and Knockback 2 tiles. (Bosses are Stunned for 1s instead)"
+    }
+  ],
+  "passiveDamage":{
+    "summons":[
+      {
+        "label": "Tree Trap",
+        "healthpctofdamage": 1,
+        "spawncd": 10,
+        "spawncdboostable": false
+      },
+      {
+        "label": "Log Trap",
+        "healthpctofdamage": 0.6,
+        "spawncd": 10,
+        "spawncdboostable": false
+      }
+    ]
+  }
 }
 ]

@@ -26617,11 +26617,11 @@
           { "level": 6, "cost": 52500, "damage": 4600, "type": "Cone 75°", "cd": 5, "range": 34 }
         ],
         "tiers": [
-          {"icon": "https://iili.io/n5AwaSI.png", "desc": "Increases this unit's Damage by 5% for each Dark or Electricity Unit in range, up to 25%.", "cost": "Free"},
-          {"icon": "https://iili.io/n5ANO1R.png", "desc": "Increases the Damage boost cap from 25% to 40%.", "cost": "Free"},
-          {"icon": "https://iili.io/n5Ae3ns.png", "desc": "When attacking, unleashes a follow-up attack that deals 25% Damage and inflicts 10% Dark and Electric Wither for 5s. When a follow-up Critically hits, gain 10% Crit Damage and 5% Crit Rate, up to 30% and 15%. When it does not Critically hit, lose 5% Crit Damage and 1% Crit Rate.", "cost": "25k Tokens"},
-          {"icon": "https://iili.io/n5AkdJV.png", "desc": "All units in range gain 1/4th of this unit's Dark and Electric self Damage boost. Increases the Crit Damage cap to 50% and the Crit Rate cap to 25%, additionally grant 25% bonus Crit Rate against enemies affected by Wither.", "cost": "50k Tokens"},
-          {"icon": "https://iili.io/n5AehKv.png", "desc": "Increases follow-up Damage to 30% and Wither to 20%. If the follow-up Critically hits, it triggers once more. (This can happen once per attack).", "cost": "Quest", "quest": "Deal 100 million damage with Dark or Electricity units while GLitchtrap is equipped."}
+          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path1_tier1.png", "desc": "Increases this unit's Damage by 5% for each Dark or Electricity Unit in range, up to 25%.", "cost": "Free"},
+          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path1_tier2.png", "desc": "Increases the Damage boost cap from 25% to 40%.", "cost": "Free"},
+          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path1_tier3.png", "desc": "When attacking, unleashes a follow-up attack that deals 25% Damage and inflicts 10% Dark and Electric Wither for 5s. When a follow-up Critically hits, gain 10% Crit Damage and 5% Crit Rate, up to 30% and 15%. When it does not Critically hit, lose 5% Crit Damage and 1% Crit Rate.", "cost": "25k Tokens"},
+          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path1_tier4.png", "desc": "All units in range gain 1/4th of this unit's Dark and Electric self Damage boost. Increases the Crit Damage cap to 50% and the Crit Rate cap to 25%, additionally grant 25% bonus Crit Rate against enemies affected by Wither.", "cost": "50k Tokens"},
+          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path1_tier5.png", "desc": "Increases follow-up Damage to 30% and Wither to 20%. If the follow-up Critically hits, it triggers once more. (This can happen once per attack).", "cost": "Quest", "quest": "Deal 100 million damage with Dark or Electricity units while GLitchtrap is equipped."}
         ]
       },
       {
@@ -26634,11 +26634,11 @@
           { "level": 6, "cost": 100000, "damage": 2100, "type": "Line", "cd": 3, "range": 28 }
         ],
         "tiers": [
-          {"icon": "https://iili.io/n5AknqJ.png", "desc": "Every 7s, spawns a summon with health equal to 30% of this unit's damage.", "cost": "Free"},
-          {"icon": "https://iili.io/n5AkXI9.png", "desc": "Reduces the summon cooldown to 5s.", "cost": "Free"},
-          {"icon": "https://iili.io/n5Av24f.png", "desc": "Summons three minions at a time. While a summon is on the track, other units in range gain 10% damage. This unit gains 3% damage per summon on the track, up to 75%.", "cost": "35k Tokens"},
-          {"icon": "https://iili.io/n5AvCT7.png", "desc": "Unlocks Glitched Minions. Activating it instantly summons five minions and spawns two temporary sub-towers with 25% of this unit's damage and this unit's base range and cooldown. Their attacks inflict 15% Dark and Electricity Wither. The sub-towers last for 60s. Cooldown: 120s.", "cost": "75k Tokens"},
-          {"icon": "https://iili.io/n5Av1Cg.png", "desc": "Glitched Minions also summons a Glitchtrap Sprite with health equal to 300% of this unit's damage and spawns a third sub-tower. Normal summon health increases to 40% of this unit's damage. The damage boost from summons increases to 20%.", "cost": "Quest", "quest": "Deal 10 million damage with Glitchtrap"}
+          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path2_tier1.png", "desc": "Every 7s, spawns a summon with health equal to 30% of this unit's damage.", "cost": "Free"},
+          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path2_tier2.png", "desc": "Reduces the summon cooldown to 5s.", "cost": "Free"},
+          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path2_tier3.png", "desc": "Summons three minions at a time. While a summon is on the track, other units in range gain 10% damage. This unit gains 3% damage per summon on the track, up to 75%.", "cost": "35k Tokens"},
+          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path2_tier4.png", "desc": "Unlocks Glitched Minions. Activating it instantly summons five minions and spawns two temporary sub-towers with 25% of this unit's damage and this unit's base range and cooldown. Their attacks inflict 15% Dark and Electricity Wither. The sub-towers last for 60s. Cooldown: 120s.", "cost": "75k Tokens"},
+          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path2_tier5.png", "desc": "Glitched Minions also summons a Glitchtrap Sprite with health equal to 300% of this unit's damage and spawns a third sub-tower. Normal summon health increases to 40% of this unit's damage. The damage boost from summons increases to 20%.", "cost": "Quest", "quest": "Deal 10 million damage with Glitchtrap"}
         ]
       },
       {
@@ -26651,11 +26651,11 @@
           { "level": 6, "cost": 65000, "damage": 3400, "type": "FullAOE", "cd": 5, "range": 30 }
         ],
         "tiers": [
-          {"icon": "https://iili.io/n5A8jlj.png", "desc": "Boosts the damage and range of all units in range by 5%.", "cost": "Free"},
-          {"icon": "https://iili.io/n5A860J.png", "desc": "Increases the damage and range boosts to 10%.", "cost": "Free"},
-          {"icon": "https://iili.io/n5ASpTB.png", "desc": "The boost becomes global. Dark and Electricity units receive double the boost.", "cost": "30k Tokens"},
-          {"icon": "https://iili.io/n5AUlZ7.png", "desc": "Unlocks Digital Mind Control, which requires 24 Tapes. Kills in range have a 1 in 16 chance to grant one Tape. Select one unit to gain 55% damage, 20% range, and 10% cooldown reduction for 25s. Tapes cannot be generated while the effect is active.", "cost": "60k Tokens"},
-          {"icon": "https://iili.io/n5AUiwN.png", "desc": "Reduces the Tape requirement to 16. Digital Mind Control applies its buffs permanently and can affect one additional unit. Tapes grant this unit, Dark and Electricity units, and Digital Mind Control targets up to 16% damage based on the number of Tapes held.", "cost": "Quest", "quest": "Clear 30 nights with Glitchtrap equipped"}
+          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path3_tier1.png", "desc": "Boosts the damage and range of all units in range by 5%.", "cost": "Free"},
+          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path3_tier2.png", "desc": "Increases the damage and range boosts to 10%.", "cost": "Free"},
+          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path3_tier3.png", "desc": "The boost becomes global. Dark and Electricity units receive double the boost.", "cost": "30k Tokens"},
+          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path3_tier4.png", "desc": "Unlocks Digital Mind Control, which requires 24 Tapes. Kills in range have a 1 in 16 chance to grant one Tape. Select one unit to gain 55% damage, 20% range, and 10% cooldown reduction for 25s. Tapes cannot be generated while the effect is active.", "cost": "60k Tokens"},
+          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path3_tier5.png", "desc": "Reduces the Tape requirement to 16. Digital Mind Control applies its buffs permanently and can affect one additional unit. Tapes grant this unit, Dark and Electricity units, and Digital Mind Control targets up to 16% damage based on the number of Tapes held.", "cost": "Quest", "quest": "Clear 30 nights with Glitchtrap equipped"}
         ]
       }
     ],
@@ -27365,8 +27365,8 @@
 },
 {
   "name": "Security Owl",
-  "imgNormal": "https://units.fntduserguide.com/units/security-owl.png",
-  "imgShiny": "https://units.fntduserguide.com/units/security-owl-shiny.png",
+  "imgNormal": "https://units.fntduserguide.com/units/ringmaster-funtime-freddy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/ringmaster-funtime-freddy-shiny.png",
   "rarity": "secret",
   "typeMain": "Endgame",
     "typeTags": [
@@ -27625,6 +27625,10 @@
   "imgShiny": "https://units.fntduserguide.com/units/twisted-wolf-shiny.png",
   "rarity": "secret",
   "typeMain": "Endgame",
+    "typeTags": [
+    "Support",
+    "Wither"
+  ],
   "element": "Neutral",
   "placements": 1,
   "attackType": "Multi",

@@ -27625,10 +27625,6 @@
   "imgShiny": "https://units.fntduserguide.com/units/twisted-wolf-shiny.png",
   "rarity": "secret",
   "typeMain": "Endgame",
-    "typeTags": [
-    "Support",
-    "Wither"
-  ],
   "element": "Neutral",
   "placements": 1,
   "attackType": "Multi",

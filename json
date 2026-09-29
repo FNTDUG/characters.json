@@ -15610,7 +15610,8 @@
           "pctofdamage": 0.5,
           "cd": 2,
           "cdboostable": true,
-          "path": 1, "tier": 3
+          "path": 1, "tier": 3,
+          "upgrades": "Top Path Tier 2 Summons"
         },
         {
           "label": "Salvage Assembly (Max Scrap)",

@@ -395,36 +395,33 @@
           "cdmult": 0.975
         },
         {
-          "label": "Top Path Tier 1 Staus",
+          "label": "Top Path Tier 1 Boost",
           "dmgmult": 1.05,
           "path": 1, "tier": 1
         },
         {
-          "label": "Top Path Tier 2 Status",
+          "label": "Top Path Tier 2 Boost",
           "dmgmult": 1.1,
-          "path": 1, "tier": 2,
-          "upgrades": "Top Path Tier 1 Status"
+          "path": 1, "tier": 2
         },
         {
           "label": "Top Path Tier 3 (Avg. Fear)",
           "dmgmult": 1.5,
-          "path": 1, "tier": 3,
-          "upgrades": "Base Effect (Avg. Fear)"
+          "path": 1, "tier": 3
         },
         {
-          "label": "Tier 3 Pulse Boost",
+          "label": "Top Path Tier 3 Pulse Boost",
           "dmgmult": 1.25,
           "cd": 20,
           "cdboostable": true,
           "path": 1, "tier": 3
         },
         {
-          "label": "Tier 5 Pulse Boost",
+          "label": "Top Path Tier 5 Pulse Boost",
           "dmgmult": 1.30,
           "cd": 20,
           "cdboostable": true,
-          "path": 1, "tier": 5,
-          "upgrades": "Tier 5 Pulse Boost"
+          "path": 1, "tier": 5
         },
         {
           "label": "Middle Path Tier 3 (Avg. Wither)",
@@ -447,8 +444,7 @@
           "cd":15,
           "cdboostable": true,
           "uptime": false,
-          "path": 2, "tier": 4,
-          "upgrades": "Tier 3 Transformation"
+          "path": 2, "tier": 4
         },
         {
           "label": "Tier 5 Transformation",
@@ -457,8 +453,7 @@
           "cd": 15,
           "cdboostable": true,
           "uptime": false,
-          "path": 2, "tier": 5,
-          "upgrades": "Tier 4 Transformation"
+          "path": 2, "tier": 5
         },
         {
           "label": "Tier 3 Nightmarish Cry",
@@ -474,34 +469,31 @@
           "duration": 12.5,
           "cd": 145,
           "cdboostable": false,
-          "path": 3, "tier": 4,
-          "upgrades": "Tier 3 Nightmarish Cry"
+          "path": 3, "tier": 4
         },
         {
-          "label": "Tier 5 Nightmarish Cry",
+          "label": "Tier 4 Nightmarish Cry",
           "dmgmult": 1.80,
           "duration": 15,
           "cd": 145,
           "cdboostable": false,
-          "path": 3, "tier": 5,
-          "upgrades": "Tier 4 Nightmarish Cry"
+          "path": 3, "tier": 4
         }
       ],
       "periodic":[
         {
-          "label": "Tier 3 Pulse",
-          "pctofdamage": 2,
+          "label": "Top Path Tier 3 Pulse",
+          "pct": 2,
           "cd": 20,
           "cdboostable": true,
           "path": 1, "tier": 3
         },
         {
-          "label": "Tier 4 Pulse",
-          "pctofdamage": 2.5,
+          "label": "Top Path Tier 4 Pulse",
+          "pct": 2.5,
           "cd": 20,
           "cdboostable": true,
-          "path": 1, "tier": 4,
-          "upgrades": "Tier 3 Pulse"
+          "path": 1, "tier": 4
         }
       ]
     }
@@ -3942,9 +3934,8 @@
         },
         {
           "label": "Top Path Tier 3 Wither",
-          "dmgmult": 1.30,
-          "path": 1, "tier": 3,
-          "upgrades": "Base Effect"
+          "dmgmult": 1.15,
+          "path": 1, "tier": 3
         },
         {
           "label": "Ignited Rage",
@@ -3977,18 +3968,16 @@
           "label": "Middle Path Tier 3 Burn",
           "pctofdamage": 0.15,
           "durationsec": 1,
-          "path": 2, "tier": 3,
-          "upgrades": "Middle Path Tier 1 Burn"
+          "path": 2, "tier": 3
         },
         {
           "label": "Middle Path Tier 5 Burn",
           "pctofdamage": 0.75,
           "durationsec": 1,
-          "path": 2, "tier": 5,
-          "upgrades": "Middle Path Tier 3 Burn"
+          "path": 2, "tier": 5
         },
         {
-          "label": "Bottom Path Tier 1 Bleed",
+          "label": "Bottom Path Tier 1 Burn",
           "pctofdamage": 0.10,
           "durationsec": 1,
           "path": 3, "tier": 1
@@ -5643,8 +5632,7 @@
         {
           "label": "Top Path Tier 2 Boss Boost",
           "dmgmult": 1.10,
-          "path": 1, "tier": 2,
-          "upgrades": "Top Path Tier 2 Boss Boost"
+          "path": 1, "tier": 2
         },
         {
           "label": "Top Path Tier 3 Boost",
@@ -5690,8 +5678,7 @@
           "label": "Bottom Path Tier 4 Hook",
           "pctofdamage": 2,
           "cd": 10,
-          "path": 3, "tier": 4,
-          "upgrades": "Bottom Path Tier 4 Hook"
+          "path": 3, "tier": 4
         }
       ]
     }
@@ -9595,16 +9582,9 @@
           "path": 2, "tier": 2
         },
         {
-          "label": "Middle Path Wave Boost",
+          "label": "Middle Path Tier 3 Boost",
           "dmgmult": 1.45,
-          "path": 2, "tier": 3,
-          "upgrades": "Middle Path Tier 1 Boost"
-        },
-        {
-          "label": "Middle Path Neutral Boost",
-          "dmgmult": "1.15",
-          "path": 2, "tier": 3,
-          "upgrades": "Middle Path Tier 2 Boost"
+          "path": 2, "tier": 3
         },
         {
           "label": "Middle Path Tier 4 Boost",
@@ -9838,10 +9818,9 @@
           "path": 3, "tier": 2
         },
         {
-          "label": "Bottom Path Tier 3 Wither",
+          "label": "Bottom Path Tier 3 Boost",
           "dmgmult": 1.3,
-          "path": 3, "tier": 2,
-          "upgrades": "Bottom Path Tier 1 Wither"
+          "path": 3, "tier": 2
         }
       ],
       "summons":[
@@ -9860,8 +9839,7 @@
           "attackcdboostable": false,
           "spawncd": 5,
           "spawncdboostable": false,
-          "path": 2, "tier": 3,
-          "upgrades": "Tier 2 Soul Summons"
+          "path": 2, "tier": 3
         },
         {
           "label": "Tier 4 Ghost Summons",
@@ -13152,16 +13130,14 @@
               "pctofdamage": 0.70,
               "cd": 10.0,
               "cdboostable": false,
-              "path": 1, "tier": 4,
-              "upgrades": "Top Path Tier 3 Shock"
+              "path": 1, "tier": 4
             },
             {
               "label": "Top Path Tier 5 Shock",
               "pctofdamage": 0.85,
               "cd": 10.0,
               "cdboostable": false,
-              "path": 1, "tier": 5,
-              "upgrades": "Top Path Tier 4 Shock"
+              "path": 1, "tier": 5
             }
           ],
           "selfboost":[
@@ -13172,7 +13148,7 @@
             },
             {
               "label": "Top Path Tier 4 Boost",
-              "dmgmult": 1.25,
+              "dmgmult": 0.25,
               "cd": 10.0,
               "duration": 5,
               "cdboostable": false,
@@ -13180,12 +13156,11 @@
             },
             {
               "label": "Top Path Tier 5 Boost",
-              "dmgmult": 1.30,
+              "dmgmult": 0.30,
               "cd": 10.0,
               "duration": 7,
               "cdboostable": false,
-              "path": 1, "tier": 5,
-              "upgrades": "Top Path Tier 4 Boost"
+              "path": 1, "tier": 5
             },
             {
               "label": "Middle Path Tier 4 Boost",
@@ -13209,13 +13184,12 @@
             {
               "label": "Bottom Path Tier 2 Boost",
               "dmgmult": 1.10,
-              "path": 3, "tier": 2,
-              "upgrades": "Bottom Path Tier 1 Boost"
+              "path": 3, "tier": 2
             },
                         {
               "label": "Bottom Path Tier 5 Boost",
               "dmgmult": 1.05,
-              "cdmult": 0.95,
+              "cdmult": 0.90,
               "path": 3, "tier": 5
             }
           ],
@@ -13232,16 +13206,14 @@
               "healthpctofdamage": 0.25,
               "spawncd": 6.0,
               "spawncdboostable": false,
-              "path": 2, "tier": 2,
-              "upgrades": "Middle Path Tier 1 Traps"
+              "path": 2, "tier": 2
             },
             {
               "label": "Middle Path Tier 4 Traps",
               "healthpctofdamage": 0.30,
               "spawncd": 6.0,
               "spawncdboostable": false,
-              "path": 2, "tier": 4,
-              "upgrades": "Middle Path Tier 2 Traps"
+              "path": 2, "tier": 4
             }
           ]
         },
@@ -14963,8 +14935,7 @@
           "label": "Top Path Tier 2",
           "dmgmult": 1.1,
           "rngmult": 1.1,
-          "path": 1, "tier": 2,
-          "upgrades": "Top Path Tier 1"
+          "path": 1, "tier": 2
         },
         {
           "label": "Bottom Path Tier 1",
@@ -14974,8 +14945,7 @@
         {
           "label": "Bottom Path Tier 2",
           "critd": 2.3,
-          "path": 3, "tier": 2,
-          "upgrades": "Bottom Path Tier 1"
+          "path": 3, "tier": 2
         },
         {
           "label": "Bottom Path Tier 4",
@@ -14999,8 +14969,7 @@
           "label": "Bottom Path Tier 5 FUA",
           "pctofdamage": 0.50,
           "everynthattack": 1,
-          "path": 3, "tier": 5,
-          "upgrades": "Bottom Path Tier 3 FUA"
+          "path": 3, "tier": 5
         }
       ]
     }
@@ -22333,8 +22302,7 @@
         "label": "Top Path Tier 2 Boost",
         "dmgmult": 1.15,
         "rngmult": 1.2,
-        "path": 1, "tier": 2,
-        "upgrades": "Top Path Tier 1 Boost"
+        "path": 1, "tier": 2
       },
       {
         "label": "Top Path Tier 3 Mark Boost",
@@ -22346,8 +22314,7 @@
         "label": "Top Path Tier 4 Mark Boost",
         "dmgmult": 1.025,
         "cd": 30,
-        "path": 1, "tier": 4,
-        "upgrades": "Top Path Tier 4 Mark Boost"
+        "path": 1, "tier": 4
       },
       {
         "label": "Top Path Tier 4 Boost",
@@ -22369,15 +22336,13 @@
         "label": "Middle Path Tier 2 Crit Boost",
         "critd": 2.40,
         "critc": 0.25,
-        "path": 2, "tier": 2,
-        "upgrades": "Middle Path Tier 1 Crit Boost"
+        "path": 2, "tier": 2
       },
       {
         "label": "Middle Path Tier 3 Crit Boost",
         "critd": 2.30,
         "critc": 0.15,
-        "path": 2, "tier": 3,
-        "upgrades": "Middle Path Tier 2 Crit Boost"
+        "path": 2, "tier": 3
       },
       {
         "label": "Playtime",
@@ -22394,14 +22359,12 @@
       {
         "label": "Bottom Path Tier 3 Wither",
         "dmgmult": 1.025,
-        "path": 3, "tier": 3,
-        "upgrades": "Bottom Path TIer 2 Wither"
+        "path": 3, "tier": 3
       },
       {
         "label": "Bottom Path Tier 4 Wither",
         "dmgmult": 1.05,
-        "path": 3, "tier": 4,
-        "upgrades": "Bottom Path Tier 3 Wither"
+        "path": 3, "tier": 4
       },
       {
         "label": "Bottom Path Tier 5 Boost",
@@ -22422,16 +22385,14 @@
         "pctofdamage": 0.15,
         "cd": 6,
         "cdboostable": false,
-        "path": 1, "tier": 4,
-        "upgrades": "Top Path Tier 3 FUA"
+        "path": 1, "tier": 4
       },
       {
         "label": "Top Path Tier 5 FUA",
         "pctofdamage": 0.25,
         "cd": 6,
         "cdboostable": false,
-        "path": 1, "tier": 5,
-        "upgrades": "Top Path Tier 4 FUA"
+        "path": 1, "tier": 5
       }
     ],
     "dots":[
@@ -26752,11 +26713,11 @@
           { "level": 6, "cost": 52500, "damage": 4600, "type": "Cone 75°", "cd": 5, "range": 34 }
         ],
         "tiers": [
-          {"icon": "glitchtrap-path-icons/path1_tier1.png", "desc": "Increases this unit's Damage by 5% for each Dark or Electricity Unit in range, up to 25%.", "cost": "Free"},
-          {"icon": "glitchtrap-path-icons/path1_tier2.png", "desc": "Increases the Damage boost cap from 25% to 40%.", "cost": "Free"},
-          {"icon": "glitchtrap-path-icons/path1_tier3.png", "desc": "When attacking, unleashes a follow-up attack that deals 25% Damage and inflicts 10% Dark and Electric Wither for 5s. When a follow-up Critically hits, gain 10% Crit Damage and 5% Crit Rate, up to 30% and 15%. When it does not Critically hit, lose 5% Crit Damage and 1% Crit Rate.", "cost": "25k Tokens"},
-          {"icon": "glitchtrap-path-icons/path1_tier4.png", "desc": "All units in range gain 1/4th of this unit's Dark and Electric self Damage boost. Increases the Crit Damage cap to 50% and the Crit Rate cap to 25%, additionally grant 25% bonus Crit Rate against enemies affected by Wither.", "cost": "50k Tokens"},
-          {"icon": "glitchtrap-path-icons/path1_tier5.png", "desc": "Increases follow-up Damage to 30% and Wither to 20%. If the follow-up Critically hits, it triggers once more. (This can happen once per attack).", "cost": "Quest", "quest": "Deal 100 million damage with Dark or Electricity units while GLitchtrap is equipped."}
+          {"icon": "glitchtrap-path1-tier1.png", "desc": "Increases this unit's Damage by 5% for each Dark or Electricity Unit in range, up to 25%.", "cost": "Free"},
+          {"icon": "glitchtrap-path1-tier2.png", "desc": "Increases the Damage boost cap from 25% to 40%.", "cost": "Free"},
+          {"icon": "glitchtrap-path1-tier3.png", "desc": "When attacking, unleashes a follow-up attack that deals 25% Damage and inflicts 10% Dark and Electric Wither for 5s. When a follow-up Critically hits, gain 10% Crit Damage and 5% Crit Rate, up to 30% and 15%. When it does not Critically hit, lose 5% Crit Damage and 1% Crit Rate.", "cost": "25k Tokens"},
+          {"icon": "glitchtrap-path1-tier4.png", "desc": "All units in range gain 1/4th of this unit's Dark and Electric self Damage boost. Increases the Crit Damage cap to 50% and the Crit Rate cap to 25%, additionally grant 25% bonus Crit Rate against enemies affected by Wither.", "cost": "50k Tokens"},
+          {"icon": "glitchtrap-path1-tier5.png", "desc": "Increases follow-up Damage to 30% and Wither to 20%. If the follow-up Critically hits, it triggers once more. (This can happen once per attack).", "cost": "Quest", "quest": "Deal 100 million damage with Dark or Electricity units while GLitchtrap is equipped."}
         ]
       },
       {
@@ -26769,11 +26730,11 @@
           { "level": 6, "cost": 100000, "damage": 2100, "type": "Line", "cd": 3, "range": 28 }
         ],
         "tiers": [
-          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path2_tier1.png", "desc": "Every 7s, spawns a summon with health equal to 30% of this unit's damage.", "cost": "Free"},
-          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path2_tier2.png", "desc": "Reduces the summon cooldown to 5s.", "cost": "Free"},
-          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path2_tier3.png", "desc": "Summons three minions at a time. While a summon is on the track, other units in range gain 10% damage. This unit gains 3% damage per summon on the track, up to 75%.", "cost": "35k Tokens"},
-          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path2_tier4.png", "desc": "Unlocks Glitched Minions. Activating it instantly summons five minions and spawns two temporary sub-towers with 25% of this unit's damage and this unit's base range and cooldown. Their attacks inflict 15% Dark and Electricity Wither. The sub-towers last for 60s. Cooldown: 120s.", "cost": "75k Tokens"},
-          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path2_tier5.png", "desc": "Glitched Minions also summons a Glitchtrap Sprite with health equal to 300% of this unit's damage and spawns a third sub-tower. Normal summon health increases to 40% of this unit's damage. The damage boost from summons increases to 20%.", "cost": "Quest", "quest": "Deal 10 million damage with Glitchtrap"}
+          {"icon": "glitchtrap-path2-tier1.png", "desc": "Every 7s, spawns a summon with health equal to 30% of this unit's damage.", "cost": "Free"},
+          {"icon": "glitchtrap-path2-tier2.png", "desc": "Reduces the summon cooldown to 5s.", "cost": "Free"},
+          {"icon": "glitchtrap-path2-tier3.png", "desc": "Summons three minions at a time. While a summon is on the track, other units in range gain 10% damage. This unit gains 3% damage per summon on the track, up to 75%.", "cost": "35k Tokens"},
+          {"icon": "glitchtrap-path2-tier4.png", "desc": "Unlocks Glitched Minions. Activating it instantly summons five minions and spawns two temporary sub-towers with 25% of this unit's damage and this unit's base range and cooldown. Their attacks inflict 15% Dark and Electricity Wither. The sub-towers last for 60s. Cooldown: 120s.", "cost": "75k Tokens"},
+          {"icon": "glitchtrap-path2-tier5.png", "desc": "Glitched Minions also summons a Glitchtrap Sprite with health equal to 300% of this unit's damage and spawns a third sub-tower. Normal summon health increases to 40% of this unit's damage. The damage boost from summons increases to 20%.", "cost": "Quest", "quest": "Deal 10 million damage with Glitchtrap"}
         ]
       },
       {
@@ -26786,11 +26747,11 @@
           { "level": 6, "cost": 65000, "damage": 3400, "type": "FullAOE", "cd": 5, "range": 30 }
         ],
         "tiers": [
-          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path3_tier1.png", "desc": "Boosts the damage and range of all units in range by 5%.", "cost": "Free"},
-          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path3_tier2.png", "desc": "Increases the damage and range boosts to 10%.", "cost": "Free"},
-          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path3_tier3.png", "desc": "The boost becomes global. Dark and Electricity units receive double the boost.", "cost": "30k Tokens"},
-          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path3_tier4.png", "desc": "Unlocks Digital Mind Control, which requires 24 Tapes. Kills in range have a 1 in 16 chance to grant one Tape. Select one unit to gain 55% damage, 20% range, and 10% cooldown reduction for 25s. Tapes cannot be generated while the effect is active.", "cost": "60k Tokens"},
-          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path3_tier5.png", "desc": "Reduces the Tape requirement to 16. Digital Mind Control applies its buffs permanently and can affect one additional unit. Tapes grant this unit, Dark and Electricity units, and Digital Mind Control targets up to 16% damage based on the number of Tapes held.", "cost": "Quest", "quest": "Clear 30 nights with Glitchtrap equipped"}
+          {"icon": "glitchtrap-path3-tier1.png", "desc": "Boosts the damage and range of all units in range by 5%.", "cost": "Free"},
+          {"icon": "glitchtrap-path3-tier2.png", "desc": "Increases the damage and range boosts to 10%.", "cost": "Free"},
+          {"icon": "glitchtrap-path3-tier3.png", "desc": "The boost becomes global. Dark and Electricity units receive double the boost.", "cost": "30k Tokens"},
+          {"icon": "glitchtrap-path3-tier4.png", "desc": "Unlocks Digital Mind Control, which requires 24 Tapes. Kills in range have a 1 in 16 chance to grant one Tape. Select one unit to gain 55% damage, 20% range, and 10% cooldown reduction for 25s. Tapes cannot be generated while the effect is active.", "cost": "60k Tokens"},
+          {"icon": "glitchtrap-path3-tier5.png", "desc": "Reduces the Tape requirement to 16. Digital Mind Control applies its buffs permanently and can affect one additional unit. Tapes grant this unit, Dark and Electricity units, and Digital Mind Control targets up to 16% damage based on the number of Tapes held.", "cost": "Quest", "quest": "Clear 30 nights with Glitchtrap equipped"}
         ]
       }
     ],
@@ -26852,8 +26813,7 @@
           "label": "Top Path Tier 4 Crit Boost",
           "critc": 0.25,
           "critd": 2.50,
-          "path": 1, "tier": 4,
-          "upgrades": "Top Path Tier 3 Crit Boost"
+          "path": 1, "tier": 4
         },
         {
           "label": "Top Path Tier 3 Wither",
@@ -26863,8 +26823,7 @@
         {
           "label": "Top Path Tier 5 Wither",
           "dmgmult": 1.20,
-          "path": 1, "tier": 5,
-          "upgrades": "Top Path Tier 3 Wither"
+          "path": 1, "tier": 5
         },
         {
           "label": "Middle Path Wither",
@@ -26881,15 +26840,13 @@
         "label": "Bottom Path Tier 2 Boost",
         "dmgmult": 1.1,
         "rngmult": 1.1,
-        "path": 3, "tier": 2,
-        "upgrades": "Bottom Path Tier 1 Boost"
+        "path": 3, "tier": 2
         },
         {
         "label": "Bottom Path Tier 3 Boost",
         "dmgmult": 1.2,
         "rngmult": 1.2,
-        "path": 3, "tier": 3,
-        "upgrades": "Bottom Path Tier 2 Boost"
+        "path": 3, "tier": 3
         },
         {
         "label": "Bottom Path Tier 5 Boost",
@@ -26908,8 +26865,7 @@
           "label": "Top Path Tier 5 FUA",
           "pctofdamage": 0.30,
           "everynthattack": 1,
-          "path": 1, "tier": 5,
-          "upgrades": "To Path Tier 3 FUA"
+          "path": 1, "tier": 5
         }
       ],
       "summons":[
@@ -26925,24 +26881,21 @@
           "healthpctofdamage": 0.30,
           "spawncd": 5,
           "spawncdboostable": false,
-          "path": 2, "tier": 2,
-          "upgrades": "Middle Path Tier 1 Summons"
+          "path": 2, "tier": 2
         },
         {
           "label": "Middle Path Tier 3 Summons",
           "healthpctofdamage": 0.90,
           "spawncd": 5,
           "spawncdboostable": false,
-          "path": 2, "tier": 3,
-          "upgrades": "Middle Path Tier 2 Summons"
+          "path": 2, "tier": 3
         },
         {
           "label": "Middle Path Tier 5 Summons",
           "healthpctofdamage": 1.20,
           "spawncd": 5,
           "spawncdboostable": false,
-          "path": 2, "tier": 5,
-          "upgrades": "Middle Path Tier 3 Summons"
+          "path": 2, "tier": 5
         },
         {
           "label": "Glitched Minions Tier 4",
@@ -26960,8 +26913,7 @@
           "attackcdboostable": true,
           "spawncd": 120,
           "spawncdboostable": false,
-          "path": 2, "tier": 5,
-          "upgrades": "Glitched Minions Tier 4"
+          "path": 2, "tier": 5
         },
         {
           "label": "Glitchtrap Sprite",

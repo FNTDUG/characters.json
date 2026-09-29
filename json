@@ -13153,7 +13153,6 @@
               "dmgmult": 0.25,
               "cd": 10.0,
               "duration": 5,
-              "cdboostable": false,
               "path": 1, "tier": 4
             },
             {
@@ -13161,7 +13160,6 @@
               "dmgmult": 0.30,
               "cd": 10.0,
               "duration": 7,
-              "cdboostable": false,
               "path": 1, "tier": 5,
               "upgrades": "Top Path Tier 4 Boost"
             },

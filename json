@@ -15013,17 +15013,39 @@
       }
     ],
     "passiveDamage": {
-      "onnthattack": [
-        {
-          "label": "Alarm (Hit)",
-          "pctofdamage": 0.5,
-          "everynthattack": 1
-        }
-      ],
       "selfboost": [
         {
-          "label": "Alarm (Boost, maxed)",
-          "dmgmult": 2.0
+          "label": "Base Effect",
+          "critc": 0.15,
+          "critd": 2.10
+        },
+        {
+          "label": "Top Path Tier 2",
+          "dmgmult": 1.1,
+          "rngmult": 1.1,
+          "path": 1, "tier": 2
+        },
+        {
+          "label": "Bottom Path Tier 2",
+          "critd": 2.3,
+          "path": 3, "tier": 2
+        },
+        {
+          "label": "Bottom Path Tier 4",
+          "dmgmult": 1.15,
+          "path": 3, "tier": 4
+        },
+        {
+          "label": "Bottom Path Tier 5 Wither",
+          "dmgmult": 1.15,
+          "path": 3, "tier": 5
+        }
+      ],
+      "onnthattack":[
+        {
+          "label": "Bottom Path FUA",
+          "pctofdamage": 0.50,
+          "everynthattack": 1
         }
       ]
     }
@@ -27463,7 +27485,7 @@
     "Burn"
   ],
   "element": "Fire",
-  "placements": 2,
+  "placements": 1,
   "attackType": "Circle",
   "obtainment": "Season 7 Exclusive Pack",
   "levels": [

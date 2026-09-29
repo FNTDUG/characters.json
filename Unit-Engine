@@ -2717,27 +2717,15 @@
         var selfBoosts = pd ? (pd.selfboost || []) : [];
         if (!selfBoosts.length) return result;
 
-        var _gcm = getCritMult(unit);
-        var _spmEff       = getBuffEffects(unit);
-        var _critRateMult = _spmEff.critRateMult || 1;
-        var _critDmgMult  = _spmEff.critDmgMult  || 1;
-        var _critRateAdd  = _spmEff.critRateAdd   || 0;
-        var _critDmgAdd   = _spmEff.critDmgAdd    || 0;
+        var critSteps = ueSelfCritSteps(unit, selfBoosts);
 
-        selfBoosts.forEach(function(bp) {
+        selfBoosts.forEach(function(bp, bi) {
           if (!bp) return;
           var uptime = selfBoostUptime(bp, effAttackCd, extCdMult);
           var rawDmgMult    = typeof bp.dmgmult === "number" ? bp.dmgmult : null;
           var effectiveDmgMult = rawDmgMult;
-          if ((typeof bp.critc === "number" || typeof bp.critd === "number") && _gcm > 0) {
-            var ec = typeof bp.critc === "number" ? Math.min(1, bp.critc * _critRateMult + _critRateAdd) : getCritRate(unit);
-            var ed = ((typeof bp.critd === "number" ? bp.critd : CRIT_DMG) + _critDmgAdd) * _critDmgMult;
-            var selfCritMult = 1 + ec * (ed - 1);
-            if (effectiveDmgMult !== null) {
-              effectiveDmgMult = effectiveDmgMult * selfCritMult / _gcm;
-            } else {
-              effectiveDmgMult = selfCritMult / _gcm;
-            }
+          if (critSteps[bi]) {
+            effectiveDmgMult = (rawDmgMult !== null ? rawDmgMult : 1) * critSteps[bi].ratio;
           }
           if (effectiveDmgMult !== null) result.dmgMult     *= 1 + (effectiveDmgMult - 1) * uptime;
           if (rawDmgMult      !== null) result.noCritDmgMult *= 1 + (rawDmgMult      - 1) * uptime;
@@ -2783,7 +2771,56 @@
         return 1;
       }
 
-      
+      var CRIT_RATE_BASE = 0.05;
+
+      function ueCritBaseRate(unit) {
+        return (unit && typeof unit.critC === "number") ? unit.critC : CRIT_RATE_BASE;
+      }
+
+      function ueHasCrit(sb) {
+        return !!sb && (typeof sb.critc === "number" || typeof sb.critd === "number");
+      }
+
+      function ueSbIsPermanent(sb) {
+        if (!sb) return false;
+        if (sb.uptime === false) return true;
+        if (sb.uptime === true) return false;
+        return !(sb.duration > 0 && (sb.cd > 0 || (sb.everynthattack || 0) > 0));
+      }
+
+      function ueSelfCritSteps(unit, boosts) {
+        var eff = getBuffEffects(unit);
+        var crm = eff.critRateMult || 1, cdm = eff.critDmgMult || 1;
+        var cra = eff.critRateAdd  || 0, cda = eff.critDmgAdd  || 0;
+        var baseR = ueCritBaseRate(unit);
+        function rate(r) { return Math.min(1, r * crm + cra); }
+        function dmg(d)  { return (d + cda) * cdm; }
+        function mult(r, d) { return 1 + rate(r) * (dmg(d) - 1); }
+        function dR(sb) { return typeof sb.critc === "number" ? sb.critc - baseR : 0; }
+        function dD(sb) { return typeof sb.critd === "number" ? sb.critd - CRIT_DMG : 0; }
+
+        var permR = baseR, permD = CRIT_DMG;
+        boosts.forEach(function (sb) {
+          if (ueHasCrit(sb) && ueSbIsPermanent(sb)) { permR += dR(sb); permD += dD(sb); }
+        });
+
+        var runR = baseR, runD = CRIT_DMG;
+        return boosts.map(function (sb) {
+          if (!ueHasCrit(sb)) return null;
+          var r0, d0, r1, d1;
+          if (ueSbIsPermanent(sb)) {
+            r0 = runR; d0 = runD;
+            runR += dR(sb); runD += dD(sb);
+            r1 = runR; d1 = runD;
+          } else {
+            r0 = permR; d0 = permD;
+            r1 = permR + dR(sb); d1 = permD + dD(sb);
+          }
+          return { ratio: mult(r1, d1) / mult(r0, d0), critRate: rate(r1), critDmg: dmg(d1) };
+        });
+      }
+
+
       window.__ueExists = {
         loaded: false,
         loading: false,
@@ -3023,7 +3060,42 @@
       }
       function ueGateList(unit, list) {
         if (!Array.isArray(list)) return list;
-        return list.filter(function (e) { return ueTierUnlocked(unit, e); });
+        return ueApplyUpgrades(list.filter(function (e) { return ueTierUnlocked(unit, e); }));
+      }
+
+      function ueUpgradeKey(e) {
+        if (!e || typeof e !== "object") return "";
+        var k = e.title != null ? e.title : e.label;
+        return String(k == null ? "" : k).trim().toLowerCase();
+      }
+
+      function ueApplyUpgrades(list) {
+        var byKey = {}, targets = [], uppers = [];
+        list.forEach(function (e) {
+          var k = ueUpgradeKey(e);
+          if (k && !byKey[k]) byKey[k] = e;
+        });
+        list.forEach(function (e) {
+          if (!e || typeof e !== "object" || e.upgrades == null) return;
+          var t = byKey[String(e.upgrades).trim().toLowerCase()];
+          if (t && t !== e && targets.indexOf(t) === -1) { targets.push(t); uppers.push(e); }
+        });
+        if (!targets.length) return list;
+        function finalOf(e) {
+          for (var guard = 0; guard < list.length; guard++) {
+            var i = targets.indexOf(e);
+            if (i === -1) return e;
+            e = uppers[i];
+          }
+          return e;
+        }
+        var out = [];
+        list.forEach(function (e) {
+          if (uppers.indexOf(e) !== -1) return;
+          var f = finalOf(e);
+          if (out.indexOf(f) === -1) out.push(f);
+        });
+        return out;
       }
 
       var UE_PRIMARY_TIER = 3;
@@ -3609,16 +3681,12 @@
         var rawPd = resolvePd(unit, modeKey);
         var result = { critC: null, critD: null };
         if (!rawPd) return result;
-        var sbs = rawPd.selfboost || [];
-        for (var _i = 0; _i < sbs.length; _i++) {
-          var sb = sbs[_i];
-          if (!sb) continue;
-          var _hasTiming = (sb.duration > 0) && (sb.cd > 0 || (sb.everynthattack || 0) > 0);
-          var _isPerm   = (sb.uptime !== true) && !_hasTiming;
-          if (!_isPerm) continue;
-          if (result.critC === null && typeof sb.critc === "number") result.critC = sb.critc;
-          if (result.critD === null && typeof sb.critd === "number") result.critD = sb.critd;
-        }
+        var baseR = ueCritBaseRate(unit);
+        (rawPd.selfboost || []).forEach(function (sb) {
+          if (!ueHasCrit(sb) || !ueSbIsPermanent(sb)) return;
+          if (typeof sb.critc === "number") result.critC = (result.critC !== null ? result.critC : baseR) + (sb.critc - baseR);
+          if (typeof sb.critd === "number") result.critD = (result.critD !== null ? result.critD : CRIT_DMG) + (sb.critd - CRIT_DMG);
+        });
         return result;
       }
 
@@ -3981,10 +4049,11 @@
         
         var _pdSelf = resolvePd(unit, modeKey);
         var _selfBoosts = _pdSelf ? (_pdSelf.selfboost || []) : [];
+        var _critSteps  = ueSelfCritSteps(unit, _selfBoosts);
 
-        
-        
-        
+
+
+
         function multForFirstN(n, effAcd, extCdMult) {
           var m = { dmgMult: 1, rngMult: 1, cdMult: 1, noCritDmgMult: 1 };
           for (var bi = 0; bi < n && bi < _selfBoosts.length; bi++) {
@@ -3993,16 +4062,8 @@
             var ut = selfBoostUptime(bp, effAcd, extCdMult);
             var rawDmgMult = typeof bp.dmgmult === "number" ? bp.dmgmult : null;
             var effectiveDmgMult = rawDmgMult;
-            if ((typeof bp.critc === "number" || typeof bp.critd === "number") && _critMult > 0) {
-              var _mfnEff = getBuffEffects(unit);
-              var _crm = _mfnEff.critRateMult || 1;
-              var _cdm = _mfnEff.critDmgMult  || 1;
-              var _cra = _mfnEff.critRateAdd  || 0;
-              var _cda = _mfnEff.critDmgAdd   || 0;
-              var ec = typeof bp.critc === "number" ? Math.min(1, bp.critc * _crm + _cra) : getCritRate(unit);
-              var ed = ((typeof bp.critd === "number" ? bp.critd : CRIT_DMG) + _cda) * _cdm;
-              var scm = 1 + ec * (ed - 1);
-              effectiveDmgMult = (effectiveDmgMult !== null ? effectiveDmgMult : 1) * scm / _critMult;
+            if (_critSteps[bi]) {
+              effectiveDmgMult = (rawDmgMult !== null ? rawDmgMult : 1) * _critSteps[bi].ratio;
             }
             if (effectiveDmgMult !== null) m.dmgMult     *= 1 + (effectiveDmgMult - 1) * ut;
             if (rawDmgMult      !== null) m.noCritDmgMult *= 1 + (rawDmgMult      - 1) * ut;
@@ -4062,12 +4123,8 @@
                 var lbl = bp.label || "Self Buff";
                 var ut = selfBoostUptime(bp, _effAcd, _extCdMult);
                 if (ut < 0.999) lbl += " (" + Math.round(ut * 100) + "%)";
-                var _bpEff = getBuffEffects(unit);
-                var _bpCRM = _bpEff.critRateMult || 1; var _bpCDM = _bpEff.critDmgMult || 1;
-                var _bpCRA = _bpEff.critRateAdd  || 0; var _bpCDA = _bpEff.critDmgAdd  || 0;
-                var _bpCritRate = (typeof bp.critc === "number") ? Math.min(1, bp.critc * _bpCRM + _bpCRA) : ((typeof bp.critd === "number") ? getCritRate(unit) : null);
-                var _bpCritDmg  = _bpCritRate != null ? ((typeof bp.critd === "number" ? bp.critd : CRIT_DMG) + _bpCDA) * _bpCDM : null;
-                bItems.push({ label: lbl, value: delta > 0.05 ? delta : 0, critRate: _bpCritRate, critDmg: _bpCritDmg });
+                var _bpCs = _critSteps[bi];
+                bItems.push({ label: lbl, value: delta > 0.05 ? delta : 0, critRate: _bpCs ? _bpCs.critRate : null, critDmg: _bpCs ? _bpCs.critDmg : null });
                 
                 var _sbHasNth = bp.everynthattack > 0 && isFinite(_effAcd) && _effAcd > 0;
                 var _sbHasTiming = bp.duration > 0 && (bp.cd > 0 || _sbHasNth);
@@ -4098,7 +4155,7 @@
               return;
             }
             var val = item.isSummon ? item.valuePerPlc : (item.isGlobal ? item.valuePerPlc : item.valuePerPlc * plc);
-            if (val > 0.05) bItems.push({ label: item.label, value: val, critRate: item.critRate });
+            if (val > 0.05) bItems.push({ label: item.label, value: val, critRate: item.critRate, critDmg: item.critDmg });
             
             if (item.stunFrac > 0.005) {
               var stunLoss = rBase.attackDps * item.stunFrac * plc;
@@ -4161,6 +4218,17 @@
         var pd = resolvePd(unit, modeKey);
         if (!pd) return result;
 
+        var _permCs = getPermanentCritStats(unit, modeKey);
+        var _cEff   = getBuffEffects(unit);
+        function _srcCrit(src) {
+          if (!ueHasCrit(src)) return null;
+          var r = typeof src.critc === "number" ? src.critc : (_permCs.critC !== null ? _permCs.critC : ueCritBaseRate(unit));
+          var d = typeof src.critd === "number" ? src.critd : (_permCs.critD !== null ? _permCs.critD : CRIT_DMG);
+          var rate = Math.min(1, r * (_cEff.critRateMult || 1) + (_cEff.critRateAdd || 0));
+          var dmg  = (d + (_cEff.critDmgAdd || 0)) * (_cEff.critDmgMult || 1);
+          return { rate: rate, dmg: dmg, D: D_noCrit * (1 + rate * (dmg - 1)) };
+        }
+
         (pd.dots || []).forEach(function(src) {
           var divisor;
           if (src.everynthattack > 0 && isFinite(effAttackCd) && effAttackCd > 0) {
@@ -4203,27 +4271,16 @@
               ? src.attackcd * getCooldownMultiplier(unit, src.attackcd) * selfMult.cdMult
               : src.attackcd;
             if (isFinite(aCd) && aCd > 0) {
-              var _sEff = getBuffEffects(unit);
-              var _sCRM = _sEff.critRateMult || 1; var _sCDM = _sEff.critDmgMult || 1;
-              var _sCRA = _sEff.critRateAdd  || 0; var _sCDA = _sEff.critDmgAdd  || 0;
-              var _sumCritR = typeof src.critc === "number" ? Math.min(1, src.critc * _sCRM + _sCRA) : getCritRate(unit);
-              var _sumCritD = ((typeof src.critd === "number" ? src.critd : CRIT_DMG) + _sCDA) * _sCDM;
-              var _sumD = (typeof src.critc === "number" || typeof src.critd === "number")
-                ? D_noCrit * (1 + _sumCritR * (_sumCritD - 1))
-                : D;
-              dps += (src.attackpctofdamage * _sumD / aCd) * maxAct;
+              var _sc = _srcCrit(src);
+              dps += (src.attackpctofdamage * (_sc ? _sc.D : D) / aCd) * maxAct;
             }
           }
 
           if (dps <= 0) return;
           var glob = src.cdscope === "global";
           if (glob) result.summonGlobal += dps; else result.summonLocal += dps;
-          var _sEff2 = getBuffEffects(unit);
-          var _sCRM2 = _sEff2.critRateMult || 1; var _sCDM2 = _sEff2.critDmgMult || 1;
-          var _sCRA2 = _sEff2.critRateAdd  || 0; var _sCDA2 = _sEff2.critDmgAdd  || 0;
-          var _sumCritRate = typeof src.critc === "number" ? Math.min(1, src.critc * _sCRM2 + _sCRA2) : (typeof src.critd === "number" ? getCritRate(unit) : null);
-          var _sumCritDmg  = _sumCritRate != null ? ((typeof src.critd === "number" ? src.critd : CRIT_DMG) + _sCDA2) * _sCDM2 : null;
-          result.items.push({ label: src.label || "Summon", valuePerPlc: dps, isGlobal: glob, isSummon: true, critRate: _sumCritRate, critDmg: _sumCritDmg });
+          var _sc2 = _srcCrit(src);
+          result.items.push({ label: src.label || "Summon", valuePerPlc: dps, isGlobal: glob, isSummon: true, critRate: _sc2 ? _sc2.rate : null, critDmg: _sc2 ? _sc2.dmg : null });
         });
 
         (pd.periodic || []).forEach(function(src) {
@@ -4236,24 +4293,15 @@
               : src.cd;
           }
           if (!isFinite(pCd) || pCd <= 0) return;
-          var _pEff = getBuffEffects(unit);
-          var _pCRM = _pEff.critRateMult || 1; var _pCDM = _pEff.critDmgMult || 1;
-          var _pCRA = _pEff.critRateAdd  || 0; var _pCDA = _pEff.critDmgAdd  || 0;
-          var _pCritRateCalc = typeof src.critc === "number" ? Math.min(1, src.critc * _pCRM + _pCRA) : getCritRate(unit);
-          var _pCritDmgCalc  = ((typeof src.critd === "number" ? src.critd : CRIT_DMG) + _pCDA) * _pCDM;
-          var _pD = (typeof src.critc === "number" || typeof src.critd === "number")
-            ? D_noCrit * (1 + _pCritRateCalc * (_pCritDmgCalc - 1))
-            : D;
-          var dps = (src.pctofdamage * _pD * (src.hits || 1)) / pCd;
+          var _pc = _srcCrit(src);
+          var dps = (src.pctofdamage * (_pc ? _pc.D : D) * (src.hits || 1)) / pCd;
           var stunFrac_p = (src.stun > 0) ? src.stun / pCd : 0;
           var glob = src.cdscope === "global";
           if (glob) result.periodicGlobal += dps; else result.periodicLocal += dps;
           result.stunFraction += stunFrac_p;
           var pLabel = src.label || "Periodic";
           if ((src.everynthattack || 0) > 1) pLabel += " (every " + src.everynthattack + ")";
-          var _pCritRate = typeof src.critc === "number" ? Math.min(1, src.critc * _pCRM + _pCRA) : (typeof src.critd === "number" ? getCritRate(unit) : null);
-          var _pCritDmg  = _pCritRate != null ? ((typeof src.critd === "number" ? src.critd : CRIT_DMG) + _pCDA) * _pCDM : null;
-          result.items.push({ label: pLabel, valuePerPlc: dps, isGlobal: glob, stunFrac: stunFrac_p, critRate: _pCritRate, critDmg: _pCritDmg });
+          result.items.push({ label: pLabel, valuePerPlc: dps, isGlobal: glob, stunFrac: stunFrac_p, critRate: _pc ? _pc.rate : null, critDmg: _pc ? _pc.dmg : null });
         });
 
         (pd.onnthattack || []).forEach(function(src) {
@@ -4261,23 +4309,14 @@
           if (!(src.everynthattack > 0)) return;
           var interval = effAttackCd * src.everynthattack;
           if (!isFinite(interval) || interval <= 0) return;
-          var _nEff = getBuffEffects(unit);
-          var _nCRM = _nEff.critRateMult || 1; var _nCDM = _nEff.critDmgMult || 1;
-          var _nCRA = _nEff.critRateAdd  || 0; var _nCDA = _nEff.critDmgAdd  || 0;
-          var _nCritRateCalc = typeof src.critc === "number" ? Math.min(1, src.critc * _nCRM + _nCRA) : getCritRate(unit);
-          var _nCritDmgCalc  = ((typeof src.critd === "number" ? src.critd : CRIT_DMG) + _nCDA) * _nCDM;
-          var _nD = (typeof src.critc === "number" || typeof src.critd === "number")
-            ? D_noCrit * (1 + _nCritRateCalc * (_nCritDmgCalc - 1))
-            : D;
-          var dps = (src.pctofdamage * _nD) / interval;
+          var _nc = _srcCrit(src);
+          var dps = (src.pctofdamage * (_nc ? _nc.D : D)) / interval;
           var stunFrac_n = (src.stun > 0) ? src.stun / interval : 0;
           result.nth += dps;
           result.stunFraction += stunFrac_n;
           var nLabel = src.label || "Follow-up";
           if (src.everynthattack > 1) nLabel += " (every " + src.everynthattack + ")";
-          var _nCritRate = typeof src.critc === "number" ? Math.min(1, src.critc * _nCRM + _nCRA) : (typeof src.critd === "number" ? getCritRate(unit) : null);
-          var _nCritDmg  = _nCritRate != null ? ((typeof src.critd === "number" ? src.critd : CRIT_DMG) + _nCDA) * _nCDM : null;
-          result.items.push({ label: nLabel, valuePerPlc: dps, isGlobal: false, stunFrac: stunFrac_n, critRate: _nCritRate, critDmg: _nCritDmg });
+          result.items.push({ label: nLabel, valuePerPlc: dps, isGlobal: false, stunFrac: stunFrac_n, critRate: _nc ? _nc.rate : null, critDmg: _nc ? _nc.dmg : null });
         });
 
         
@@ -5951,6 +5990,12 @@
             nm.style.fontWeight = "bold";
             line.appendChild(nm);
             line.appendChild(document.createTextNode(" Path " + p.path + ", Tier " + p.tier));
+            if (p.upgrades != null && String(p.upgrades).trim()) {
+              var up = document.createElement("span");
+              up.textContent = " (upgrades " + p.upgrades + ")";
+              up.style.color = "rgba(255,255,255,0.55)";
+              line.appendChild(up);
+            }
             line.style.marginTop = "4px";
             lockBox.appendChild(line);
           });

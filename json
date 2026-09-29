@@ -26941,7 +26941,8 @@
           "healthpctofdamage": 1.20,
           "spawncd": 5,
           "spawncdboostable": false,
-          "path": 2, "tier": 5
+          "path": 2, "tier": 5,
+          "upgrades": "Middle Path Tier 3 Summons"
         },
         {
           "label": "Glitched Minions Tier 4",

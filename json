@@ -13130,14 +13130,16 @@
               "pctofdamage": 0.70,
               "cd": 10.0,
               "cdboostable": false,
-              "path": 1, "tier": 4
+              "path": 1, "tier": 4,
+              "upgrades": "Top Path Tier 3 Shock"
             },
             {
               "label": "Top Path Tier 5 Shock",
               "pctofdamage": 0.85,
               "cd": 10.0,
               "cdboostable": false,
-              "path": 1, "tier": 5
+              "path": 1, "tier": 5,
+              "upgrades": "Top Path Tier 4 Shock"
             }
           ],
           "selfboost":[
@@ -13160,7 +13162,8 @@
               "cd": 10.0,
               "duration": 7,
               "cdboostable": false,
-              "path": 1, "tier": 5
+              "path": 1, "tier": 5,
+              "upgrades": "Top Path Tier 4 Boost"
             },
             {
               "label": "Middle Path Tier 4 Boost",
@@ -13184,12 +13187,13 @@
             {
               "label": "Bottom Path Tier 2 Boost",
               "dmgmult": 1.10,
-              "path": 3, "tier": 2
+              "path": 3, "tier": 2,
+              "upgrades": "Bottom Path Tier 1 Boost"
             },
                         {
               "label": "Bottom Path Tier 5 Boost",
               "dmgmult": 1.05,
-              "cdmult": 0.90,
+              "cdmult": 0.95,
               "path": 3, "tier": 5
             }
           ],
@@ -13206,14 +13210,16 @@
               "healthpctofdamage": 0.25,
               "spawncd": 6.0,
               "spawncdboostable": false,
-              "path": 2, "tier": 2
+              "path": 2, "tier": 2,
+              "upgrades": "Middle Path Tier 1 Traps"
             },
             {
               "label": "Middle Path Tier 4 Traps",
               "healthpctofdamage": 0.30,
               "spawncd": 6.0,
               "spawncdboostable": false,
-              "path": 2, "tier": 4
+              "path": 2, "tier": 4,
+              "upgrades": "Middle Path Tier 2 Traps"
             }
           ]
         },
@@ -14935,7 +14941,8 @@
           "label": "Top Path Tier 2",
           "dmgmult": 1.1,
           "rngmult": 1.1,
-          "path": 1, "tier": 2
+          "path": 1, "tier": 2,
+          "upgrades": "Top Path Tier 1"
         },
         {
           "label": "Bottom Path Tier 1",
@@ -14945,7 +14952,8 @@
         {
           "label": "Bottom Path Tier 2",
           "critd": 2.3,
-          "path": 3, "tier": 2
+          "path": 3, "tier": 2,
+          "upgrades": "Bottom Path Tier 1"
         },
         {
           "label": "Bottom Path Tier 4",
@@ -14969,7 +14977,8 @@
           "label": "Bottom Path Tier 5 FUA",
           "pctofdamage": 0.50,
           "everynthattack": 1,
-          "path": 3, "tier": 5
+          "path": 3, "tier": 5,
+          "upgrades": "Bottom Path Tier 3 FUA"
         }
       ]
     }

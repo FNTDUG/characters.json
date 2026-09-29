@@ -385,40 +385,115 @@
     "passiveDamage": {
       "selfboost": [
         {
-          "label": "Nightmarish Cry (Maxed)",
-          "dmgmult": 1.75,
-          "duration": 10,
-          "cd": 145,
-          "uptime": true
+          "label": "Base Effect",
+          "dmgmult": 1.03,
+          "rngmult": 1.03
         },
         {
-          "label": "Eclipse (Boost)",
+          "label": "Base Effect (Avg. Fear)",
           "dmgmult": 1.25,
-          "everynthattack": 10,
-          "duration": 30
+          "cdmult": 0.975
         },
         {
-          "label": "Feeding the Fear (Maxed)",
+          "label": "Top Path Tier 1 Boost",
+          "dmgmult": 1.05,
+          "path": 1, "tier": 1
+        },
+        {
+          "label": "Top Path Tier 2 Boost",
+          "dmgmult": 1.1,
+          "path": 1, "tier": 2
+        },
+        {
+          "label": "Top Path Tier 3 (Avg. Fear)",
           "dmgmult": 1.5,
-          "cdmult": 0.95
+          "path": 1, "tier": 3
+        },
+        {
+          "label": "Top Path Tier 3 Pulse Boost",
+          "dmgmult": 1.25,
+          "cd": 20,
+          "cdboostable": true,
+          "path": 1, "tier": 3
+        },
+        {
+          "label": "Top Path Tier 5 Pulse Boost",
+          "dmgmult": 1.30,
+          "cd": 20,
+          "cdboostable": true,
+          "path": 1, "tier": 5
+        },
+        {
+          "label": "Middle Path Tier 3 (Avg. Wither)",
+          "dmgmult": 1.05,
+          "path": 2, "tier": 3
+        },
+        {
+          "label": "Tier 3 Transformation",
+          "dmgmult": 1.25,
+          "duration": 20,
+          "cd":15,
+          "cdboostable": true,
+          "uptime": false,
+          "path": 2, "tier": 3
+        },
+        {
+          "label": "Tier 4 Transformation",
+          "dmgmult": 1.25,
+          "duration": 25,
+          "cd":15,
+          "cdboostable": true,
+          "uptime": false,
+          "path": 2, "tier": 4
+        },
+        {
+          "label": "Tier 5 Transformation",
+          "dmgmult": 1.50,
+          "duration": 26,
+          "cd": 15,
+          "cdboostable": true,
+          "uptime": false,
+          "path": 2, "tier": 5
+        },
+        {
+          "label": "Tier 3 Nightmarish Cry",
+          "dmgmult": 1.50,
+          "duration": 12.5,
+          "cd": 145,
+          "cdboostable": false,
+          "path": 3, "tier": 3
+        },
+        {
+          "label": "Tier 4 Nightmarish Cry",
+          "dmgmult": 1.80,
+          "duration": 12.5,
+          "cd": 145,
+          "cdboostable": false,
+          "path": 3, "tier": 4
+        },
+        {
+          "label": "Tier 4 Nightmarish Cry",
+          "dmgmult": 1.80,
+          "duration": 15,
+          "cd": 145,
+          "cdboostable": false,
+          "path": 3, "tier": 4
         }
       ],
-      "stuns": [
-      {
-        "label": "Nightmarish Cry (Stun)",
-        "cd": 145,
-        "duration": 10,
-        "cdboostable": false,
-        "cdscope": "local",
-        "uptime": true
-         }
-        ],
-      "slows": [
+      "periodic":[
         {
-          "label": "Eclipse (Slow)",
-          "pct": 0.25,
-          "everynthattack": 10,
-          "duration": 30
+          "label": "Top Path Tier 3 Pulse",
+          "pct": 2,
+          "cd": 20,
+          "cdboostable": true,
+          "path": 1, "tier": 3
+        },
+        {
+          "label": "Top Path Tier 4 Pulse",
+          "pct": 2.5,
+          "cd": 20,
+          "cdboostable": true,
+          "path": 1, "tier": 4
         }
       ]
     }
@@ -3844,48 +3919,75 @@
     "passiveDamage": {
       "selfboost": [
         {
-          "label": "Ignited Rage (maxed)",
-          "dmgmult": 2.0,
-          "duration": 5,
-          "cd": 30,
-          "uptime": true
+          "label": "Base Effect",
+          "dmgmult": 1.15
         },
         {
-          "label": "Ignited Rage stackes (maxed)",
-          "dmgmult": 1.75
+          "label": "Top Path Tier 1 Boost",
+          "dmgmult": 1.1,
+          "path": 1, "tier": 1
         },
         {
-          "label": "Scorched",
-          "dmgmult": 1.25,
-          "everynthattack": 1
+          "label": "Top Path Tier 2 Boost",
+          "rngmult": 1.1,
+          "path": 1, "tier": 2
+        },
+        {
+          "label": "Top Path Tier 3 Wither",
+          "dmgmult": 1.15,
+          "path": 1, "tier": 3
+        },
+        {
+          "label": "Ignited Rage",
+          "dmgmult": 1.40,
+          "rngmult": 1.20,
+          "duration": 30,
+          "cd": 60,
+          "path": 1, "tier": 4
+        },
+        {
+          "label": "Permanent Ignited Rage Stacks",
+          "dmgmult": 1.60,
+          "rngmult": 1.30,
+          "path": 1, "tier": 5
+        },
+        {
+          "label": "Middle Path Tier 2 Boost",
+          "dmgmult": 1.05,
+          "path":21, "tier": 2
         }
       ],
       "dots": [
         {
-          "label": "Axe Toss (bleed)",
-          "pctofdamage": 0.025,
+          "label": "Middle Path Tier 1 Burn",
+          "pctofdamage": 0.1,
           "durationsec": 1,
-          "cd": 20,
-          "cdboostable": false,
-          "cdscope": "local"
+          "path": 2, "tier": 1
+        },
+        {
+          "label": "Middle Path Tier 3 Burn",
+          "pctofdamage": 0.15,
+          "durationsec": 1,
+          "path": 2, "tier": 3
+        },
+        {
+          "label": "Middle Path Tier 5 Burn",
+          "pctofdamage": 0.75,
+          "durationsec": 1,
+          "path": 2, "tier": 5
+        },
+        {
+          "label": "Bottom Path Tier 1 Burn",
+          "pctofdamage": 0.10,
+          "durationsec": 1,
+          "path": 3, "tier": 1
         }
       ],
       "periodic": [
         {
-          "label": "Axe Toss (recall)",
-          "pctofdamage": 0.7,
-          "hits": 1,
-          "cd": 20.0,
-          "cdboostable": false,
-          "cdscope": "local"
-        },
-        {
-          "label": "Axe Toss (impact)",
-          "pctofdamage": 0.7,
-          "hits": 1,
-          "cd": 20.0,
-          "cdboostable": false,
-          "cdscope": "local"
+          "label": "Bottom Path Tier 2 FUA",
+          "pctofdamage": 0.2,
+          "everynthattack": 1
         }
       ]
     }
@@ -5399,7 +5501,7 @@
           {"icon": "old-man-consequences-path2-tier1.webp", "desc": "Gains +10% Range. Nearby Water units gain +5% Range.", "cost": "Free"},
           {"icon": "old-man-consequences-path2-tier2.webp", "desc": "Gains +1% Damage for each enemy on the map.", "cost": "Free"},
           {"icon": "old-man-consequences-path2-tier3.webp", "desc": "Places two Pools that deal 150% Damage on contact. Water Units in range gain +10% Damage.", "cost": "30k Tokens"},
-          {"icon": "old-man-consequences-path2-tier4.webp", "desc": "Increases the Pool cap to 3 and Pool damage to 150%. The water unit buff increases to +20%. Deals 10% more damage to an enemy for each Pool they've triggered.", "cost": "60k Tokens"},
+          {"icon": "old-man-consequences-path2-tier4.webp", "desc": "Increases the Pool cap to 3 and Pool damage to 250%. The water unit buff increases to +20%. Deals 10% more damage to an enemy for each Pool they've triggered.", "cost": "60k Tokens"},
           {"icon": "old-man-consequences-path2-tier5.webp", "desc": "Increases the Pool cap to 5. Interacting with a Pool removes it, granting Water Units in range an additional +10% Damage and this unit +100% Damage for 120s. Retain +25% Damage permanently after this ends. (Max 1 time)", "cost": "Quest", "quest": "Defeat 75 bosses with Old Man Consequences equipped"}
         ]
       },
@@ -5516,29 +5618,67 @@
       }
     ],
     "passiveDamage": {
-      "periodic": [
-        {
-          "label": "Hellish (Enemies)",
-          "pctofdamage": 15.84,
-          "hits": 1,
-          "cd": 90.0,
-          "cdboostable": false,
-          "cdscope": "global"
-        },
-        {
-          "label": "Hellish (Bosses)",
-          "pctofdamage": 48.0,
-          "hits": 1,
-          "cd": 90.0,
-          "cdboostable": false,
-          "cdscope": "global"
-        }
-      ],
       "selfboost": [
         {
-          "label": "Guiding Whistle",
-          "dmgmult": 1.35,
-          "rngmult": 1.30
+          "label": "Base Effect",
+          "dmgmult": 1.15,
+          "rngmult": 1.15
+        },
+        {
+          "label": "Top Path Tier 1 Outer Boost",
+          "dmgmult": 1.20,
+          "path": 1, "tier": 1
+        },
+        {
+          "label": "Top Path Tier 2 Boss Boost",
+          "dmgmult": 1.10,
+          "path": 1, "tier": 2
+        },
+        {
+          "label": "Top Path Tier 3 Boost",
+          "dmgmult": 1.15,
+          "path": 1, "tier": 3
+        },
+        {
+          "label": "Top Path Tier 4 Boost",
+          "rngmult": 1.10,
+          "path": 1, "tier": 4
+        },
+        {
+          "label": "Middle Path Tier 1 Boost",
+          "rngmult": 1.10,
+          "path": 2, "tier": 1
+        },
+        {
+          "label": "Middle Path Tier 5 Boost",
+          "dmgmult": 2.25,
+          "path": 2, "tier": 5
+        }
+      ],
+      "periodic":[
+        {
+          "label": "Top Path Tier 3 Boss FUA",
+          "pctofdamage": 0.3,
+          "everynthattack": 1,
+          "path": 1, "tier": 3
+        },
+        {
+          "label": "The One That Got Away",
+          "pctofdamage": 2,
+          "cd": 90,
+          "path": 1, "tier": 5
+        },
+        {
+          "label": "Bottom Path Tier 2 Hook",
+          "pctofdamage": 1,
+          "cd": 10,
+          "path": 3, "tier": 2
+        },
+        {
+          "label": "Bottom Path Tier 4 Hook",
+          "pctofdamage": 2,
+          "cd": 10,
+          "path": 3, "tier": 4
         }
       ]
     }
@@ -9393,7 +9533,7 @@
     "passives": [
       {
         "title": "It's Me.",
-        "text": "All enemies take 500% of this unit's damage and are Stunned for 5s. (Upgrade 18+, Local CD: 90s).",
+        "text": "All enemies take 500% of this unit's damage and are Stunned for 5s. (Local CD: 90s).",
         "path": 3, "tier": 5,
         "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sat-mar-07-2026-01-03-05-gmt-0600-central-standard-time-high.png?enable-io=true&crop=1%3A1&width=347"
       },
@@ -9423,32 +9563,84 @@
     "passiveDamage": {
       "selfboost": [
         {
-          "label": "killed me (Boost)",
-          "dmgmult": 1.4,
-          "rngmult": 1.2,
-          "cd": 200,
-          "duration": 120,
-          "uptime": true
+          "label": "Base Effect",
+          "dmgmult": 1.25
         },
         {
-          "label": "Restless Soul (Maxed)",
-          "rngmult": 1.1,
-          "cdmult": 0.95,
-          "dmgmult": 1.3
+          "label": "Top Path Tier 1 Boost",
+          "dmgmult": 1.05,
+          "path": 1, "tier": 1
+        },
+        {
+          "label": "Middle Path Tier 1 Boost",
+          "dmgmult": 1.10,
+          "path": 2, "tier": 1
+        },
+        {
+          "label": "Middle Path Tier 2 Boost",
+          "dmgmult": 1.10,
+          "path": 2, "tier": 2
+        },
+        {
+          "label": "Middle Path Tier 3 Boost",
+          "dmgmult": 1.45,
+          "path": 2, "tier": 3
+        },
+        {
+          "label": "Middle Path Tier 4 Boost",
+          "rngmult": 1.15,
+          "path": 2, "tier": 4
+        },
+        {
+          "label": "Bottom Path Tier 2 Boost",
+          "rngmult": 1.30,
+          "path": 3, "tier": 2
         }
       ],
-      "knockback": [
-      {
-        "label": "killed me (KB)",
-        "cd": 200,
-        "tiles": 2,
-        "externalcd": false
-      }
-    ],
-      "slows": [
+      "onnthattack": [
         {
-          "label": "Vengeful (Slow)",
-          "pct": 0.2
+          "label": "Top Path Tier 2 FUA",
+          "pctofdamage": 0.20,
+          "everynthattack": 1,
+          "path": 1, "tier": 2
+        }
+      ],
+      "periodic":[
+        {
+          "label": "Top Path Teleport",
+          "pctofdamage": 0.35,
+          "cd": 10,
+          "path": 1, "tier": 3
+        },
+        {
+          "label": "Top Path Clone Expire",
+          "pctofdamage": 1,
+          "cd": 25,
+          "path": 1, "tier": 5
+        },
+        {
+          "label": "Bottom Path AOE Attack",
+          "pctofdamage": 1.5,
+          "cd": 12,
+          "path": 3, "tier": 3
+        },
+        {
+          "label": "It's Me",
+          "pctofdamage": 5,
+          "cd": 90,
+          "path": 3, "tier": 5
+        }
+      ],
+      "summons": [
+        {
+          "label": "Top Path Clone",
+          "healthpctofdamage": 2.5,
+          "attackpctofdamage": 0.25,
+          "attackcd": 4,
+          "attackcdboostable": true,
+          "spawncd": 10,
+          "spawncdboostable": false,
+          "path": 1, "tier": 5
         }
       ]
     }
@@ -9611,44 +9803,50 @@
     "passiveDamage": {
       "selfboost": [
         {
-          "label": "Gift of Life",
-          "rngmult": 1.4,
-          "duration": 10,
-          "cd": 20,
-          "uptime": true
+          "label": "Base Effect",
+          "rngmult": 1.2,
+          "dmgmult": 1.1
         },
         {
-          "label": "Music Box (stack 1)",
-          "dmgmult": 2.0
+          "label": "Bottom Path Tier 1 Wither",
+          "dmgmult": 1.1,
+          "path": 3, "tier": 1
         },
         {
-          "label": "Music Box (stack 2)",
-          "rngmult": 1.5
+          "label": "Bottom Path Tier 2 Boost",
+          "dmgmult": 1.1,
+          "path": 3, "tier": 2
         },
         {
-          "label": "Music Box (stack 3)",
-          "dmgmult": 1.3
-        },
-        {
-          "label": "Music Box (stack 4)",
-          "dmgmult": 1.2
+          "label": "Bottom Path Tier 3 Boost",
+          "dmgmult": 1.3,
+          "path": 3, "tier": 2
         }
       ],
-      "summons": [
+      "summons":[
         {
-          "label": "Gift of Life (Summon)",
-          "healthpctofdamage": 0.6,
-          "spawncd": 15,
-          "spawncdboostable": false
-        }
-      ],
-      "slows": [
+          "label": "Tier 2 Soul Summons",
+          "healthpctofdamage": 0.2,
+          "spawncd": 5,
+          "spawncdboostable": false,
+          "path": 2, "tier": 2
+        },
         {
-          "label": "Gift of Life (Slow)",
-          "pct": 0.20,
-          "cd": 15,
-          "duration": 5,
-          "uptime": true
+          "label": "Tier 3 Soul Summons",
+          "healthpctofdamage": 0.23,
+          "attackpctofdamage": 0.50,
+          "attackcd": 2,
+          "attackcdboostable": false,
+          "spawncd": 5,
+          "spawncdboostable": false,
+          "path": 2, "tier": 3
+        },
+        {
+          "label": "Tier 4 Ghost Summons",
+          "healthpctofdamage": 0.75,
+          "spawncd": 3,
+          "spawncdboostable": true,
+          "path": 2, "tier": 4
         }
       ]
     }
@@ -12906,181 +13104,6 @@
         ]
       }
     ],
-    "modes": {
-      "smasher": {
-        "label": "Smasher",
-        "role": "damage",
-        "attackType": "Multi",
-        "levels": [
-          {
-            "level": 1,
-            "cost": 8000,
-            "type": "Line",
-            "damage": 181.9,
-            "cd": 1,
-            "range": 20
-          },
-          {
-            "level": 2,
-            "cost": 2500,
-            "type": "Line",
-            "damage": 242.5,
-            "cd": 1,
-            "range": 20
-          },
-          {
-            "level": 3,
-            "cost": 2750,
-            "type": "Line",
-            "damage": 303.1,
-            "cd": 1,
-            "range": 21
-          },
-          {
-            "level": 4,
-            "cost": 3000,
-            "type": "Line",
-            "damage": 363.7,
-            "cd": 1,
-            "range": 21
-          },
-          {
-            "level": 5,
-            "cost": 4000,
-            "type": "Line",
-            "damage": 424.3,
-            "cd": 1,
-            "range": 21
-          },
-          {
-            "level": 6,
-            "cost": 4000,
-            "type": "Line",
-            "damage": 495,
-            "cd": 1,
-            "range": 22
-          },
-          {
-            "level": 7,
-            "cost": 4250,
-            "type": "Line",
-            "damage": 555.6,
-            "cd": 1,
-            "range": 22
-          },
-          {
-            "level": 8,
-            "cost": 4250,
-            "type": "Line",
-            "damage": 636.4,
-            "cd": 1,
-            "range": 23
-          },
-          {
-            "level": 9,
-            "cost": 6000,
-            "type": "Line",
-            "damage": 707.1,
-            "cd": 3,
-            "range": 23
-          },
-          {
-            "level": 10,
-            "cost": 5000,
-            "type": "Line",
-            "damage": 782.8,
-            "cd": 2.8,
-            "range": 24
-          },
-          {
-            "level": 11,
-            "cost": 7500,
-            "type": "Line",
-            "damage": 838.4,
-            "cd": 2.6,
-            "range": 20
-          },
-          {
-            "level": 12,
-            "cost": 6500,
-            "type": "Line",
-            "damage": 909.1,
-            "cd": 2.4,
-            "range": 21
-          },
-          {
-            "level": 13,
-            "cost": 6500,
-            "type": "Line",
-            "damage": 974.7,
-            "cd": 2.3,
-            "range": 21
-          },
-          {
-            "level": 14,
-            "cost": 7000,
-            "type": "Line",
-            "damage": 1035.3,
-            "cd": 2.2,
-            "range": 22
-          },
-          {
-            "level": 15,
-            "cost": 7000,
-            "type": "FullAOE",
-            "damage": 1101,
-            "cd": 2.1,
-            "range": 22
-          },
-          {
-            "level": 16,
-            "cost": 8500,
-            "type": "FullAOE",
-            "damage": 1257.5,
-            "cd": 3,
-            "range": 23
-          },
-          {
-            "level": 17,
-            "cost": 7500,
-            "type": "FullAOE",
-            "damage": 1308,
-            "cd": 2.8,
-            "range": 23
-          },
-          {
-            "level": 18,
-            "cost": 8000,
-            "type": "FullAOE",
-            "damage": 1333.3,
-            "cd": 2.7,
-            "range": 24
-          },
-          {
-            "level": 19,
-            "cost": 8000,
-            "type": "FullAOE",
-            "damage": 1404,
-            "cd": 2.6,
-            "range": 25
-          },
-          {
-            "level": 20,
-            "cost": 9000,
-            "type": "FullAOE",
-            "damage": 1454.5,
-            "cd": 2.6,
-            "range": 26
-          },
-          {
-            "level": 21,
-            "cost": 10000,
-            "type": "FullAOE",
-            "damage": 1535.3,
-            "cd": 2.5,
-            "range": 28
-          }
-        ],
         "passives": [
           {
             "title": "Sync",
@@ -13096,222 +13119,104 @@
         "passiveDamage": {
           "periodic": [
             {
-              "label": "Coiling Combination (Smasher)",
-              "pctofdamage": 3.45,
-              "hits": 3,
+              "label": "Top Path Tier 3 Shock",
+              "pctofdamage": 0.70,
+              "cd": 12.0,
+              "cdboostable": false,
+              "path": 1, "tier": 3
+            },
+            {
+              "label": "Top Path Tier 4 Shock",
+              "pctofdamage": 0.70,
               "cd": 10.0,
               "cdboostable": false,
-              "cdscope": "global"
-            }
-          ]
-        }
-      },
-      "shocker": {
-        "label": "Shocker",
-        "role": "damage",
-        "attackType": "Multi",
-        "levels": [
-          {
-            "level": 1,
-            "cost": 8000,
-            "type": "Line",
-            "damage": 131.4,
-            "cd": 1,
-            "range": 20
-          },
-          {
-            "level": 2,
-            "cost": 2500,
-            "type": "Line",
-            "damage": 151.6,
-            "cd": 1,
-            "range": 20
-          },
-          {
-            "level": 3,
-            "cost": 2750,
-            "type": "Line",
-            "damage": 168.7,
-            "cd": 1,
-            "range": 21
-          },
-          {
-            "level": 4,
-            "cost": 3000,
-            "type": "Line",
-            "damage": 197.6,
-            "cd": 1,
-            "range": 21
-          },
-          {
-            "level": 5,
-            "cost": 4000,
-            "type": "Line",
-            "damage": 228.3,
-            "cd": 1,
-            "range": 21
-          },
-          {
-            "level": 6,
-            "cost": 4000,
-            "type": "Line",
-            "damage": 258.1,
-            "cd": 1,
-            "range": 22
-          },
-          {
-            "level": 7,
-            "cost": 4250,
-            "type": "Line",
-            "damage": 287.9,
-            "cd": 1,
-            "range": 22
-          },
-          {
-            "level": 8,
-            "cost": 4250,
-            "type": "Line",
-            "damage": 317.7,
-            "cd": 1,
-            "range": 23
-          },
-          {
-            "level": 9,
-            "cost": 6000,
-            "type": "Line",
-            "damage": 347.5,
-            "cd": 1,
-            "range": 23
-          },
-          {
-            "level": 10,
-            "cost": 5000,
-            "type": "Line",
-            "damage": 377.3,
-            "cd": 1,
-            "range": 24
-          },
-          {
-            "level": 11,
-            "cost": 7500,
-            "type": "Line",
-            "damage": 407.1,
-            "cd": 1,
-            "range": 20
-          },
-          {
-            "level": 12,
-            "cost": 6500,
-            "type": "Line",
-            "damage": 436.9,
-            "cd": 1,
-            "range": 21
-          },
-          {
-            "level": 13,
-            "cost": 6500,
-            "type": "Line",
-            "damage": 466.7,
-            "cd": 1,
-            "range": 22
-          },
-          {
-            "level": 14,
-            "cost": 7000,
-            "type": "Line",
-            "damage": 496.5,
-            "cd": 1,
-            "range": 22
-          },
-          {
-            "level": 15,
-            "cost": 7000,
-            "type": "Cone75°",
-            "damage": 526.3,
-            "cd": 1,
-            "range": 25
-          },
-          {
-            "level": 16,
-            "cost": 8500,
-            "type": "Cone75°",
-            "damage": 556.1,
-            "cd": 2,
-            "range": 24
-          },
-          {
-            "level": 17,
-            "cost": 7500,
-            "type": "Cone75°",
-            "damage": 686.9,
-            "cd": 1.9,
-            "range": 24
-          },
-          {
-            "level": 18,
-            "cost": 8000,
-            "type": "Cone75°",
-            "damage": 716.7,
-            "cd": 1.8,
-            "range": 25
-          },
-          {
-            "level": 19,
-            "cost": 8000,
-            "type": "Cone75°",
-            "damage": 746.5,
-            "cd": 1.8,
-            "range": 26
-          },
-          {
-            "level": 20,
-            "cost": 9000,
-            "type": "Cone75°",
-            "damage": 776.3,
-            "cd": 1.7,
-            "range": 27
-          },
-          {
-            "level": 21,
-            "cost": 10000,
-            "type": "Cone75°",
-            "damage": 907,
-            "cd": 1.6,
-            "range": 29
-          }
-        ],
-        "passives": [
-          {
-            "title": "Sync",
-            "text": "Select a unit to 'sync' with Ennard. Every 10s, Ennard will attack with the synced unit, dealing 25% of the synced unit's damage and dealing 2 shield damage. Becomes stronger as more upgrades are selected in path 3. (Local CD: 0s)",
-            "path": 3, "tier": 3,
-            "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/enard-ability-high.png"
-          }
-        ],
-        "passiveDamage": {
-          "periodic": [
+              "path": 1, "tier": 4
+            },
             {
-              "label": "Coiling (Shocker, DMG)",
-              "pctofdamage": 0.4,
-              "hits": 4,
-              "cd": 6.0,
+              "label": "Top Path Tier 5 Shock",
+              "pctofdamage": 0.85,
+              "cd": 10.0,
               "cdboostable": false,
-              "cdscope": "global"
+              "path": 1, "tier": 5
             }
           ],
-       "stuns": [
-      {
-        "label": "Coiling (Shocker, Stun)",
-        "cd": 6,
-        "duration": 1.5,
-        "cdboostable": false,
-        "cdscope": "local",
-        "uptime": true
+          "selfboost":[
+            {
+              "label": "Base Effect",
+              "cdmult": 0.90,
+              "dmgmult": 1.15
+            },
+            {
+              "label": "Top Path Tier 4 Boost",
+              "dmgmult": 0.25,
+              "cd": 10.0,
+              "duration": 5,
+              "cdboostable": false,
+              "path": 1, "tier": 4
+            },
+            {
+              "label": "Top Path Tier 5 Boost",
+              "dmgmult": 0.30,
+              "cd": 10.0,
+              "duration": 7,
+              "cdboostable": false,
+              "path": 1, "tier": 5
+            },
+            {
+              "label": "Middle Path Tier 4 Boost",
+              "rngmult": 1.15,
+              "path": 2, "tier": 4
+            },
+            {
+              "label": "Middle Path Tier 5 Boost",
+              "dmgmult": 1.15,
+              "rngmult": 1.20,
+              "cd": 6,
+              "duration": 10,
+              "cdboostable": false,
+              "path": 2, "tier": 5
+            },
+            {
+              "label": "Bottom Path Tier 1 Boost",
+              "dmgmult": 1.05,
+              "path": 3, "tier": 1
+            },
+            {
+              "label": "Bottom Path Tier 2 Boost",
+              "dmgmult": 1.10,
+              "path": 3, "tier": 2
+            },
+                        {
+              "label": "Bottom Path Tier 5 Boost",
+              "dmgmult": 1.05,
+              "cdmult": 0.90,
+              "path": 3, "tier": 5
+            }
+          ],
+          "summons":[
+            {
+              "label": "Middle Path Tier 1 Traps",
+              "healthpctofdamage": 0.20,
+              "spawncd": 6.0,
+              "spawncdboostable": false,
+              "path": 2, "tier": 1
+            },
+            {
+              "label": "Middle Path Tier 2 Traps",
+              "healthpctofdamage": 0.25,
+              "spawncd": 6.0,
+              "spawncdboostable": false,
+              "path": 2, "tier": 2
+            },
+            {
+              "label": "Middle Path Tier 4 Traps",
+              "healthpctofdamage": 0.30,
+              "spawncd": 6.0,
+              "spawncdboostable": false,
+              "path": 2, "tier": 4
             }
           ]
-        }
-      }
-    },
+        },
     "skins": [
       {
         "name": "Showtime Ennard",
@@ -15020,10 +14925,22 @@
           "critd": 2.10
         },
         {
+          "label": "Top Path Tier 1",
+          "dmgmult": 1.05,
+          "rngmult": 1.05,
+          "path": 1, "tier": 1
+        },
+        
+        {
           "label": "Top Path Tier 2",
           "dmgmult": 1.1,
           "rngmult": 1.1,
           "path": 1, "tier": 2
+        },
+        {
+          "label": "Bottom Path Tier 1",
+          "critd": 2.20,
+          "path": 3, "tier": 1
         },
         {
           "label": "Bottom Path Tier 2",
@@ -15043,9 +14960,16 @@
       ],
       "onnthattack":[
         {
-          "label": "Bottom Path FUA",
+          "label": "Bottom Path Tier 3 FUA",
+          "pctofdamage": 0.30,
+          "everynthattack": 1,
+          "path": 3, "tier": 3
+        },
+        {
+          "label": "Bottom Path Tier 5 FUA",
           "pctofdamage": 0.50,
-          "everynthattack": 1
+          "everynthattack": 1,
+          "path": 3, "tier": 5
         }
       ]
     }
@@ -15648,20 +15572,90 @@
     "passiveDamage": {
       "selfboost": [
         {
-          "label": "Together (Boost)",
-          "dmgmult": 1.3,
-          "rngmult": 1.25,
-          "cdmult": 0.9
+          "label": "Base Effect",
+          "dmgmult": 1.20,
+          "rngmult": 1.10
+        },
+        {
+          "label": "Top Path Tier 1 Boost",
+          "dmgmult": 1.15,
+          "path": 1, "tier": 1
+        },
+        {
+          "label": "Middle Path Tier 1 Boost",
+          "dmgmult": 1.15,
+          "rngmult": 1.15,
+          "cdmult": 0.90,
+          "duration": 15,
+          "cooldown": 30,
+          "path": 2, "tier": 1
+        },
+        {
+          "label": "Bottom Path Tier 3 Boost",
+          "dmgmult": 1.20,
+          "rngmult": 1.15,
+          "path": 3, "tier": 3
         }
       ],
-      "periodic": [
+      "summons": [
         {
-          "label": "Salvage",
-          "pctofdamage": 0.75,
-          "hits": 1,
-          "cd": 10.0,
+          "label": "Top Path Tier 2 Summons",
+          "pctofdamage": 1,
+          "cd": 15.0,
           "cdboostable": false,
-          "cdscope": "global"
+          "path": 1, "tier": 2
+        },
+        {
+          "label": "Top Path Tier 3 Summons",
+          "pctofdamage": 0.5,
+          "cd": 2,
+          "cdboostable": true,
+          "path": 1, "tier": 3
+        },
+        {
+          "label": "Salvage Assembly (Max Scrap)",
+          "pctofdamage": 5,
+          "cd": 66,
+          "cdboostable": true,
+          "path": 1, "tier": 5
+        }
+      ],
+      "periodic":[
+        {
+          "label": "Audio Lures",
+          "pctofdamage": 0.75,
+          "cd": 3,
+          "cdboostable": true,
+          "path": 2, "tier": 2
+        },
+        {
+          "label": "Middle Path Tier 5 Traps",
+          "pctofdamage": 1,
+          "cd": 3,
+          "cdboostable": true,
+          "path": 2, "tier": 5
+        }
+      ],
+      "dots":[
+        {
+          "label": "Bottom Path Tier 1 DoT",
+          "pctofdamage": 0.15,
+          "durationsec": 1,
+          "path": 3, "tier": 1
+        },
+        {
+          "label": "Bottom Path Tier 4 DoT",
+          "pctofdamage": 0.05,
+          "durationsec": 1,
+          "path": 3, "tier": 4
+        },
+        {
+          "label": "Bottom Path Tier 5 DoT",
+          "pctofdamage": 1,
+          "durationsec": 1,
+          "cd": 4,
+          "cdboostable": true,
+          "path": 3, "tier": 5
         }
       ]
     }
@@ -22182,7 +22176,7 @@
       "tiers": [
         {"icon": "vengeful-spirit-path1-tier1.webp", "desc": "Dark and Neutral units gain +10% Damage and +20% Range.", "cost": "Free"},
         {"icon": "vengeful-spirit-path1-tier2.webp", "desc": "Increase the Damage boost to +15%.", "cost": "Free"},
-        {"icon": "vengeful-spirit-path1-tier3.webp", "desc": "Attacks against Marked enemies consume their Marks to increase the attacks Damage (40s CD). When a Dark or Neutral unit attacks, this unit performs a follow up attack for 10% Damage (6s CD).", "cost": "25k Tokens"},
+        {"icon": "vengeful-spirit-path1-tier3.webp", "desc": "Attacks against Marked enemies consume their Marks to increase the attacks Damage by 0.25% per mark consumed (40s CD). When a Dark or Neutral unit attacks, this unit performs a follow up attack for 10% Damage (8s CD).", "cost": "25k Tokens"},
         {"icon": "vengeful-spirit-path1-tier4.webp", "desc": "Reduces the attack boost CD to 30s, and Dark and Neutral units receive -5% CD. Follow up Damage is increased to 15%, and its CD is reduced to 6s.", "cost": "50k Tokens"},
         {"icon": "vengeful-spirit-path1-tier5.webp", "desc": "Dark and Neutral units gain +30% Crit Chance. This unit gains 25% Crit Damage, and an additional +5% per Dark and Neutral unit on the team. Half of this boost is shared to other units in range. Follow up attack damage is increased to 25%, and the area of effect is now also increased to 45 Degrees.", "cost": "Quest", "quest": "Reach 300 cumulative waves in Game 7 Endless with Vengeful Spirit equipped"}
       ]
@@ -22294,39 +22288,118 @@
   "passiveDamage": {
     "selfboost": [
       {
-        "label": "Playtime (Boost)",
+        "label": "Base Effect",
+        "dmgmult": 1.20
+      },
+      {
+        "label": "Top Path Tier 1 Boost",
+        "dmgmult": 1.1,
+        "rngmult": 1.2,
+        "path": 1, "tier": 1
+      },
+      {
+        "label": "Top Path Tier 2 Boost",
+        "dmgmult": 1.15,
+        "rngmult": 1.2,
+        "path": 1, "tier": 2
+      },
+      {
+        "label": "Top Path Tier 3 Mark Boost",
+        "dmgmult": 1.025,
+        "cd": 40,
+        "path": 1, "tier": 3
+      },
+      {
+        "label": "Top Path Tier 4 Mark Boost",
+        "dmgmult": 1.025,
+        "cd": 30,
+        "path": 1, "tier": 4
+      },
+      {
+        "label": "Top Path Tier 4 Boost",
+        "cdmult": 0.95,
+        "path": 1, "tier": 4
+      },
+      {
+        "label": "Top Path Tier 5 Crit Boost",
+        "critd": 2.30,
+        "path": 1, "tier": 4
+      },
+      {
+        "label": "Middle Path Tier 1 Crit Boost",
+        "critd": 2.25,
+        "critc": 0.20,
+        "path": 2, "tier": 1
+      },
+      {
+        "label": "Middle Path Tier 2 Crit Boost",
+        "critd": 2.40,
+        "critc": 0.25,
+        "path": 2, "tier": 2
+      },
+      {
+        "label": "Middle Path Tier 3 Crit Boost",
+        "critd": 2.30,
+        "critc": 0.15,
+        "path": 2, "tier": 3
+      },
+      {
+        "label": "Playtime",
+        "dmgmult": 0.7,
+        "cd": 90,
+        "duration": 30,
+        "path": 2, "tier": 4
+      },
+      {
+        "label": "Bottom Path Tier 2 Wither",
+        "dmgmult": 1.05,
+        "path": 3, "tier": 2
+      },
+      {
+        "label": "Bottom Path Tier 3 Wither",
+        "dmgmult": 1.025,
+        "path": 3, "tier": 3
+      },
+      {
+        "label": "Bottom Path Tier 4 Wither",
+        "dmgmult": 1.05,
+        "path": 3, "tier": 4
+      },
+      {
+        "label": "Bottom Path Tier 5 Boost",
         "dmgmult": 1.20,
-        "duration": 30,
-        "cd": 90,
-        "cdboostable": false
-      },
-      {
-        "label": "Playtime (Follow-up)",
-        "dmgmult": 1.50,
-        "duration": 30,
-        "cd": 90,
-        "cdboostable": false
-      },
-      {
-        "label": "Own Making (DMG Boost)",
-        "dmgmult": 1.075,
-        "critc": 0.05,
-        "critd": 2.05
+        "path": 3, "tier": 5
       }
     ],
     "periodic": [
       {
-        "label": "Not Going Anywhere",
+        "label": "Top Path Tier 3 FUA",
+        "pctofdamage": 0.10,
+        "cd": 8,
+        "cdboostable": false,
+        "path": 1, "tier": 3
+      },
+      {
+        "label": "Top Path Tier 4 FUA",
+        "pctofdamage": 0.15,
+        "cd": 6,
+        "cdboostable": false,
+        "path": 1, "tier": 4
+      },
+      {
+        "label": "Top Path Tier 5 FUA",
         "pctofdamage": 0.25,
-        "cd": 3,
-        "cdboostable": false
+        "cd": 6,
+        "cdboostable": false,
+        "path": 1, "tier": 5
       }
     ],
     "dots":[
       {
-        "label": "Own Making (Bleed)",
-        "pctofdamage": 0.05,
-        "duration": 3
+        "label": "Bottom Path Tier 4 Bleed",
+        "pctofdamage": 0.10,
+        "durationsec": 3,
+        "path": 3, "tier": 4
       }
     ]
   }
@@ -26717,7 +26790,139 @@
         "name": "Malhare",
         "rarity": "exclusive"
       }
-    ]
+    ],
+    "passiveDamage":{
+      "selfboost":[
+        {
+          "label": "Base Effect",
+          "dmgmult": 1.15
+        },
+        {
+          "label": "Top Path Tier 1 Boost",
+          "dmgmult": 1.05,
+          "path": 1, "tier": 1
+        },
+        {
+          "label": "Top Path Tier 3 Crit Boost",
+          "critc": 0.15,
+          "critd": 2.30,
+          "path": 1, "tier": 3
+        },
+        {
+          "label": "Top Path Tier 4 Crit Boost",
+          "critc": 0.25,
+          "critd": 2.50,
+          "path": 1, "tier": 4
+        },
+        {
+          "label": "Top Path Tier 3 Wither",
+          "dmgmult": 1.10,
+          "path": 1, "tier": 3
+        },
+        {
+          "label": "Top Path Tier 5 Wither",
+          "dmgmult": 1.20,
+          "path": 1, "tier": 5
+        },
+        {
+          "label": "Middle Path Wither",
+          "dmgmult": 1.15,
+          "path": 2, "tier": 4
+        },
+        {
+        "label": "Bottom Path Tier 1 Boost",
+        "dmgmult": 1.05,
+        "rngmult": 1.05,
+        "path": 3, "tier": 1
+        },
+        {
+        "label": "Bottom Path Tier 2 Boost",
+        "dmgmult": 1.1,
+        "rngmult": 1.1,
+        "path": 3, "tier": 2
+        },
+        {
+        "label": "Bottom Path Tier 3 Boost",
+        "dmgmult": 1.2,
+        "rngmult": 1.2,
+        "path": 3, "tier": 3
+        },
+        {
+        "label": "Bottom Path Tier 5 Boost",
+        "dmgmult": 1.16,
+        "path": 3, "tier": 5
+        }
+      ],
+      "onnthattack":[
+        {
+          "label": "Top Path Tier 3 FUA",
+          "pctofdamage": 0.25,
+          "everynthattack": 1,
+          "path": 1, "tier": 3
+        },
+        {
+          "label": "Top Path Tier 5 FUA",
+          "pctofdamage": 0.30,
+          "everynthattack": 1,
+          "path": 1, "tier": 5
+        }
+      ],
+      "summons":[
+        {
+          "label": "Middle Path Tier 1 Summons",
+          "healthpctofdamage": 0.30,
+          "spawncd": 7,
+          "spawncdboostable": false,
+          "path": 2, "tier": 1
+        },
+        {
+          "label": "Middle Path Tier 2 Summons",
+          "healthpctofdamage": 0.30,
+          "spawncd": 5,
+          "spawncdboostable": false,
+          "path": 2, "tier": 2
+        },
+        {
+          "label": "Middle Path Tier 3 Summons",
+          "healthpctofdamage": 0.90,
+          "spawncd": 5,
+          "spawncdboostable": false,
+          "path": 2, "tier": 3
+        },
+        {
+          "label": "Middle Path Tier 5 Summons",
+          "healthpctofdamage": 1.20,
+          "spawncd": 5,
+          "spawncdboostable": false,
+          "path": 2, "tier": 5
+        },
+        {
+          "label": "Glitched Minions Tier 4",
+          "attackpctofdamage": "0.50",
+          "attackcd": 3,
+          "attackcdboostable": true,
+          "spawncd": 120,
+          "spawncdboostable": false,
+          "path": 2, "tier": 4
+        },
+        {
+          "label": "Glitched Minions Tier 5",
+          "attackpctofdamage": "0.75",
+          "attackcd": 3,
+          "attackcdboostable": true,
+          "spawncd": 120,
+          "spawncdboostable": false,
+          "path": 2, "tier": 5
+        },
+        {
+          "label": "Glitchtrap Sprite",
+          "healthpctofdamage": 3,
+          "spawncd": 120,
+          "spawncdboostable": false,
+          "path": 2, "tier": 5
+        }
+      ]
+    }
   },
 {
   "name": "Flipside Fredbear",
@@ -27062,7 +27267,7 @@
     {
       "level": 5,
       "cost": 10000,
-      "damage": 8000,
+      "damage": 2600,
       "type": "Circle",
       "cd": 5.5,
       "range": 23

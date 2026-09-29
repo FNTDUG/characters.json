@@ -13150,16 +13150,18 @@
             },
             {
               "label": "Top Path Tier 4 Boost",
-              "dmgmult": 0.25,
+              "dmgmult": 1.25,
               "cd": 10.0,
               "duration": 5,
+              "cdboostable": false,
               "path": 1, "tier": 4
             },
             {
               "label": "Top Path Tier 5 Boost",
-              "dmgmult": 0.30,
+              "dmgmult": 1.30,
               "cd": 10.0,
               "duration": 7,
+              "cdboostable": false,
               "path": 1, "tier": 5,
               "upgrades": "Top Path Tier 4 Boost"
             },

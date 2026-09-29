@@ -308,7 +308,8 @@
       "Slow",
       "Stun",
       "Support",
-      "Death"
+      "Death",
+      "Wither"
     ],
     "element": "Dark",
     "placements": 1,
@@ -395,33 +396,36 @@
           "cdmult": 0.975
         },
         {
-          "label": "Top Path Tier 1 Boost",
+          "label": "Top Path Tier 1 Staus",
           "dmgmult": 1.05,
           "path": 1, "tier": 1
         },
         {
-          "label": "Top Path Tier 2 Boost",
+          "label": "Top Path Tier 2 Status",
           "dmgmult": 1.1,
-          "path": 1, "tier": 2
+          "path": 1, "tier": 2,
+          "upgrades": "Top Path Tier 1 Status"
         },
         {
           "label": "Top Path Tier 3 (Avg. Fear)",
           "dmgmult": 1.5,
-          "path": 1, "tier": 3
+          "path": 1, "tier": 3,
+          "upgrades": "Base Effect (Avg. Fear)"
         },
         {
-          "label": "Top Path Tier 3 Pulse Boost",
+          "label": "Tier 3 Pulse Boost",
           "dmgmult": 1.25,
           "cd": 20,
           "cdboostable": true,
           "path": 1, "tier": 3
         },
         {
-          "label": "Top Path Tier 5 Pulse Boost",
+          "label": "Tier 5 Pulse Boost",
           "dmgmult": 1.30,
           "cd": 20,
           "cdboostable": true,
-          "path": 1, "tier": 5
+          "path": 1, "tier": 5,
+          "upgrades": "Tier 5 Pulse Boost"
         },
         {
           "label": "Middle Path Tier 3 (Avg. Wither)",
@@ -444,7 +448,8 @@
           "cd":15,
           "cdboostable": true,
           "uptime": false,
-          "path": 2, "tier": 4
+          "path": 2, "tier": 4,
+          "upgrades": "Tier 3 Transformation"
         },
         {
           "label": "Tier 5 Transformation",
@@ -453,7 +458,8 @@
           "cd": 15,
           "cdboostable": true,
           "uptime": false,
-          "path": 2, "tier": 5
+          "path": 2, "tier": 5,
+          "upgrades": "Tier 4 Transformation"
         },
         {
           "label": "Tier 3 Nightmarish Cry",
@@ -469,31 +475,34 @@
           "duration": 12.5,
           "cd": 145,
           "cdboostable": false,
-          "path": 3, "tier": 4
+          "path": 3, "tier": 4,
+          "upgrades": "Tier 3 Nightmarish Cry"
         },
         {
-          "label": "Tier 4 Nightmarish Cry",
+          "label": "Tier 5 Nightmarish Cry",
           "dmgmult": 1.80,
           "duration": 15,
           "cd": 145,
           "cdboostable": false,
-          "path": 3, "tier": 4
+          "path": 3, "tier": 5,
+          "upgrades": "Tier 4 Nightmarish Cry"
         }
       ],
       "periodic":[
         {
-          "label": "Top Path Tier 3 Pulse",
-          "pct": 2,
+          "label": "Tier 3 Pulse",
+          "pctofdamage": 2,
           "cd": 20,
           "cdboostable": true,
           "path": 1, "tier": 3
         },
         {
-          "label": "Top Path Tier 4 Pulse",
-          "pct": 2.5,
+          "label": "Tier 4 Pulse",
+          "pctofdamage": 2.5,
           "cd": 20,
           "cdboostable": true,
-          "path": 1, "tier": 4
+          "path": 1, "tier": 4,
+          "upgrades": "Tier 3 Pulse"
         }
       ]
     }
@@ -3823,7 +3832,8 @@
     "typeMain": "Midgame-Endgame",
     "typeTags": [
       "Support",
-      "Bleed"
+      "Bleed",
+      "Burn"
     ],
     "element": "Fire",
     "placements": 1,
@@ -3934,8 +3944,9 @@
         },
         {
           "label": "Top Path Tier 3 Wither",
-          "dmgmult": 1.15,
-          "path": 1, "tier": 3
+          "dmgmult": 1.30,
+          "path": 1, "tier": 3,
+          "upgrades": "Base Effect"
         },
         {
           "label": "Ignited Rage",
@@ -3968,16 +3979,18 @@
           "label": "Middle Path Tier 3 Burn",
           "pctofdamage": 0.15,
           "durationsec": 1,
-          "path": 2, "tier": 3
+          "path": 2, "tier": 3,
+          "upgrades": "Middle Path Tier 1 Burn"
         },
         {
           "label": "Middle Path Tier 5 Burn",
           "pctofdamage": 0.75,
           "durationsec": 1,
-          "path": 2, "tier": 5
+          "path": 2, "tier": 5,
+          "upgrades": "Middle Path Tier 3 Burn"
         },
         {
-          "label": "Bottom Path Tier 1 Burn",
+          "label": "Bottom Path Tier 1 Bleed",
           "pctofdamage": 0.10,
           "durationsec": 1,
           "path": 3, "tier": 1
@@ -5530,7 +5543,10 @@
     "typeTags": [
       "Support",
       "Stun",
-      "Boss Knockback"
+      "Boss Knockback",
+      "Slow",
+      "Trap",
+      "Knockback"
     ],
     "element": "Water",
     "placements": 1,
@@ -5632,7 +5648,8 @@
         {
           "label": "Top Path Tier 2 Boss Boost",
           "dmgmult": 1.10,
-          "path": 1, "tier": 2
+          "path": 1, "tier": 2,
+          "upgrades": "Top Path Tier 2 Boss Boost"
         },
         {
           "label": "Top Path Tier 3 Boost",
@@ -5678,7 +5695,8 @@
           "label": "Bottom Path Tier 4 Hook",
           "pctofdamage": 2,
           "cd": 10,
-          "path": 3, "tier": 4
+          "path": 3, "tier": 4,
+          "upgrades": "Bottom Path Tier 4 Hook"
         }
       ]
     }
@@ -9459,7 +9477,8 @@
       "Slow",
       "Knockback",
       "Support",
-      "Income"
+      "Income",
+      "Stun"
     ],
     "element": "Neutral",
     "placements": 1,
@@ -9582,9 +9601,16 @@
           "path": 2, "tier": 2
         },
         {
-          "label": "Middle Path Tier 3 Boost",
+          "label": "Middle Path Wave Boost",
           "dmgmult": 1.45,
-          "path": 2, "tier": 3
+          "path": 2, "tier": 3,
+          "upgrades": "Middle Path Tier 1 Boost"
+        },
+        {
+          "label": "Middle Path Neutral Boost",
+          "dmgmult": "1.15",
+          "path": 2, "tier": 3,
+          "upgrades": "Middle Path Tier 2 Boost"
         },
         {
           "label": "Middle Path Tier 4 Boost",
@@ -9707,7 +9733,8 @@
     "typeTags": [
       "Support",
       "Slow",
-      "Summon"
+      "Summon",
+      "Wither"
     ],
     "element": "Light",
     "placements": 1,
@@ -9818,9 +9845,10 @@
           "path": 3, "tier": 2
         },
         {
-          "label": "Bottom Path Tier 3 Boost",
+          "label": "Bottom Path Tier 3 Wither",
           "dmgmult": 1.3,
-          "path": 3, "tier": 2
+          "path": 3, "tier": 2,
+          "upgrades": "Bottom Path Tier 1 Wither"
         }
       ],
       "summons":[
@@ -9839,7 +9867,8 @@
           "attackcdboostable": false,
           "spawncd": 5,
           "spawncdboostable": false,
-          "path": 2, "tier": 3
+          "path": 2, "tier": 3,
+          "upgrades": "Tier 2 Soul Summons"
         },
         {
           "label": "Tier 4 Ghost Summons",
@@ -13081,7 +13110,8 @@
     "typeMain": "Endgame",
     "typeTags": [
       "Stun",
-      "Support"
+      "Support",
+      "Trap"
     ],
     "element": "Electricity",
     "placements": 1,
@@ -13130,14 +13160,16 @@
               "pctofdamage": 0.70,
               "cd": 10.0,
               "cdboostable": false,
-              "path": 1, "tier": 4
+              "path": 1, "tier": 4,
+              "upgrades": "Top Path Tier 3 Shock"
             },
             {
               "label": "Top Path Tier 5 Shock",
               "pctofdamage": 0.85,
               "cd": 10.0,
               "cdboostable": false,
-              "path": 1, "tier": 5
+              "path": 1, "tier": 5,
+              "upgrades": "Top Path Tier 4 Shock"
             }
           ],
           "selfboost":[
@@ -13148,7 +13180,7 @@
             },
             {
               "label": "Top Path Tier 4 Boost",
-              "dmgmult": 0.25,
+              "dmgmult": 1.25,
               "cd": 10.0,
               "duration": 5,
               "cdboostable": false,
@@ -13156,11 +13188,12 @@
             },
             {
               "label": "Top Path Tier 5 Boost",
-              "dmgmult": 0.30,
+              "dmgmult": 1.30,
               "cd": 10.0,
               "duration": 7,
               "cdboostable": false,
-              "path": 1, "tier": 5
+              "path": 1, "tier": 5,
+              "upgrades": "Top Path Tier 4 Boost"
             },
             {
               "label": "Middle Path Tier 4 Boost",
@@ -13184,12 +13217,13 @@
             {
               "label": "Bottom Path Tier 2 Boost",
               "dmgmult": 1.10,
-              "path": 3, "tier": 2
+              "path": 3, "tier": 2,
+              "upgrades": "Bottom Path Tier 1 Boost"
             },
                         {
               "label": "Bottom Path Tier 5 Boost",
               "dmgmult": 1.05,
-              "cdmult": 0.90,
+              "cdmult": 0.95,
               "path": 3, "tier": 5
             }
           ],
@@ -13206,14 +13240,16 @@
               "healthpctofdamage": 0.25,
               "spawncd": 6.0,
               "spawncdboostable": false,
-              "path": 2, "tier": 2
+              "path": 2, "tier": 2,
+              "upgrades": "Middle Path Tier 1 Traps"
             },
             {
               "label": "Middle Path Tier 4 Traps",
               "healthpctofdamage": 0.30,
               "spawncd": 6.0,
               "spawncdboostable": false,
-              "path": 2, "tier": 4
+              "path": 2, "tier": 4,
+              "upgrades": "Middle Path Tier 2 Traps"
             }
           ]
         },
@@ -14935,7 +14971,8 @@
           "label": "Top Path Tier 2",
           "dmgmult": 1.1,
           "rngmult": 1.1,
-          "path": 1, "tier": 2
+          "path": 1, "tier": 2,
+          "upgrades": "Top Path Tier 1"
         },
         {
           "label": "Bottom Path Tier 1",
@@ -14945,7 +14982,8 @@
         {
           "label": "Bottom Path Tier 2",
           "critd": 2.3,
-          "path": 3, "tier": 2
+          "path": 3, "tier": 2,
+          "upgrades": "Bottom Path Tier 1"
         },
         {
           "label": "Bottom Path Tier 4",
@@ -14969,7 +15007,8 @@
           "label": "Bottom Path Tier 5 FUA",
           "pctofdamage": 0.50,
           "everynthattack": 1,
-          "path": 3, "tier": 5
+          "path": 3, "tier": 5,
+          "upgrades": "Bottom Path Tier 3 FUA"
         }
       ]
     }
@@ -15519,7 +15558,8 @@
       "Support",
       "Anti-Regen",
       "Bleed",
-      "Trap"
+      "Trap",
+      "Income"
     ],
     "element": "Rust",
     "placements": 1,
@@ -22302,7 +22342,8 @@
         "label": "Top Path Tier 2 Boost",
         "dmgmult": 1.15,
         "rngmult": 1.2,
-        "path": 1, "tier": 2
+        "path": 1, "tier": 2,
+        "upgrades": "Top Path Tier 1 Boost"
       },
       {
         "label": "Top Path Tier 3 Mark Boost",
@@ -22314,7 +22355,8 @@
         "label": "Top Path Tier 4 Mark Boost",
         "dmgmult": 1.025,
         "cd": 30,
-        "path": 1, "tier": 4
+        "path": 1, "tier": 4,
+        "upgrades": "Top Path Tier 4 Mark Boost"
       },
       {
         "label": "Top Path Tier 4 Boost",
@@ -22336,13 +22378,15 @@
         "label": "Middle Path Tier 2 Crit Boost",
         "critd": 2.40,
         "critc": 0.25,
-        "path": 2, "tier": 2
+        "path": 2, "tier": 2,
+        "upgrades": "Middle Path Tier 1 Crit Boost"
       },
       {
         "label": "Middle Path Tier 3 Crit Boost",
         "critd": 2.30,
         "critc": 0.15,
-        "path": 2, "tier": 3
+        "path": 2, "tier": 3,
+        "upgrades": "Middle Path Tier 2 Crit Boost"
       },
       {
         "label": "Playtime",
@@ -22359,12 +22403,14 @@
       {
         "label": "Bottom Path Tier 3 Wither",
         "dmgmult": 1.025,
-        "path": 3, "tier": 3
+        "path": 3, "tier": 3,
+        "upgrades": "Bottom Path TIer 2 Wither"
       },
       {
         "label": "Bottom Path Tier 4 Wither",
         "dmgmult": 1.05,
-        "path": 3, "tier": 4
+        "path": 3, "tier": 4,
+        "upgrades": "Bottom Path Tier 3 Wither"
       },
       {
         "label": "Bottom Path Tier 5 Boost",
@@ -22385,14 +22431,16 @@
         "pctofdamage": 0.15,
         "cd": 6,
         "cdboostable": false,
-        "path": 1, "tier": 4
+        "path": 1, "tier": 4,
+        "upgrades": "Top Path Tier 3 FUA"
       },
       {
         "label": "Top Path Tier 5 FUA",
         "pctofdamage": 0.25,
         "cd": 6,
         "cdboostable": false,
-        "path": 1, "tier": 5
+        "path": 1, "tier": 5,
+        "upgrades": "Top Path Tier 4 FUA"
       }
     ],
     "dots":[
@@ -26813,7 +26861,8 @@
           "label": "Top Path Tier 4 Crit Boost",
           "critc": 0.25,
           "critd": 2.50,
-          "path": 1, "tier": 4
+          "path": 1, "tier": 4,
+          "upgrades": "Top Path Tier 3 Crit Boost"
         },
         {
           "label": "Top Path Tier 3 Wither",
@@ -26823,7 +26872,8 @@
         {
           "label": "Top Path Tier 5 Wither",
           "dmgmult": 1.20,
-          "path": 1, "tier": 5
+          "path": 1, "tier": 5,
+          "upgrades": "Top Path Tier 3 Wither"
         },
         {
           "label": "Middle Path Wither",
@@ -26840,13 +26890,15 @@
         "label": "Bottom Path Tier 2 Boost",
         "dmgmult": 1.1,
         "rngmult": 1.1,
-        "path": 3, "tier": 2
+        "path": 3, "tier": 2,
+        "upgrades": "Bottom Path Tier 1 Boost"
         },
         {
         "label": "Bottom Path Tier 3 Boost",
         "dmgmult": 1.2,
         "rngmult": 1.2,
-        "path": 3, "tier": 3
+        "path": 3, "tier": 3,
+        "upgrades": "Bottom Path Tier 2 Boost"
         },
         {
         "label": "Bottom Path Tier 5 Boost",
@@ -26865,7 +26917,8 @@
           "label": "Top Path Tier 5 FUA",
           "pctofdamage": 0.30,
           "everynthattack": 1,
-          "path": 1, "tier": 5
+          "path": 1, "tier": 5,
+          "upgrades": "To Path Tier 3 FUA"
         }
       ],
       "summons":[
@@ -26881,21 +26934,24 @@
           "healthpctofdamage": 0.30,
           "spawncd": 5,
           "spawncdboostable": false,
-          "path": 2, "tier": 2
+          "path": 2, "tier": 2,
+          "upgrades": "Middle Path Tier 1 Summons"
         },
         {
           "label": "Middle Path Tier 3 Summons",
           "healthpctofdamage": 0.90,
           "spawncd": 5,
           "spawncdboostable": false,
-          "path": 2, "tier": 3
+          "path": 2, "tier": 3,
+          "upgrades": "Middle Path Tier 2 Summons"
         },
         {
           "label": "Middle Path Tier 5 Summons",
           "healthpctofdamage": 1.20,
           "spawncd": 5,
           "spawncdboostable": false,
-          "path": 2, "tier": 5
+          "path": 2, "tier": 5,
+          "upgrades": "Middle Path Tier 3 Summons"
         },
         {
           "label": "Glitched Minions Tier 4",
@@ -26913,7 +26969,8 @@
           "attackcdboostable": true,
           "spawncd": 120,
           "spawncdboostable": false,
-          "path": 2, "tier": 5
+          "path": 2, "tier": 5,
+          "upgrades": "Glitched Minions Tier 4"
         },
         {
           "label": "Glitchtrap Sprite",

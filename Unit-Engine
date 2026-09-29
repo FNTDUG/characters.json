@@ -2675,11 +2675,18 @@
         var out = {};
         Object.keys(pd).forEach(function(k) {
           var v = pd[k];
-          out[k.toLowerCase()] = Array.isArray(v)
+          var cat = k.toLowerCase();
+          out[cat] = Array.isArray(v)
             ? v.map(function(src) {
                 if (!src || typeof src !== "object") return src;
                 var s = {};
                 Object.keys(src).forEach(function(f) { s[f.toLowerCase()] = src[f]; });
+                if (s.cd == null && s.cooldown != null) s.cd = s.cooldown;
+                if (cat === "summons" && s.healthpctofdamage == null && s.healthflat == null && s.attackpctofdamage == null) {
+                  if (s.pctofdamage != null) s.healthpctofdamage = s.pctofdamage;
+                  if (s.spawncd == null && s.cd != null) s.spawncd = s.cd;
+                  if (s.spawncdboostable == null && s.cdboostable != null) s.spawncdboostable = s.cdboostable;
+                }
                 return s;
               })
             : v;

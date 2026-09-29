@@ -26752,11 +26752,11 @@
           { "level": 6, "cost": 52500, "damage": 4600, "type": "Cone 75°", "cd": 5, "range": 34 }
         ],
         "tiers": [
-          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path1_tier1.png", "desc": "Increases this unit's Damage by 5% for each Dark or Electricity Unit in range, up to 25%.", "cost": "Free"},
-          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path1_tier2.png", "desc": "Increases the Damage boost cap from 25% to 40%.", "cost": "Free"},
-          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path1_tier3.png", "desc": "When attacking, unleashes a follow-up attack that deals 25% Damage and inflicts 10% Dark and Electric Wither for 5s. When a follow-up Critically hits, gain 10% Crit Damage and 5% Crit Rate, up to 30% and 15%. When it does not Critically hit, lose 5% Crit Damage and 1% Crit Rate.", "cost": "25k Tokens"},
-          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path1_tier4.png", "desc": "All units in range gain 1/4th of this unit's Dark and Electric self Damage boost. Increases the Crit Damage cap to 50% and the Crit Rate cap to 25%, additionally grant 25% bonus Crit Rate against enemies affected by Wither.", "cost": "50k Tokens"},
-          {"icon": "https://images.fntduserguide.com/glitchtrap-path-icons/path1_tier5.png", "desc": "Increases follow-up Damage to 30% and Wither to 20%. If the follow-up Critically hits, it triggers once more. (This can happen once per attack).", "cost": "Quest", "quest": "Deal 100 million damage with Dark or Electricity units while GLitchtrap is equipped."}
+          {"icon": "glitchtrap-path-icons/path1_tier1.png", "desc": "Increases this unit's Damage by 5% for each Dark or Electricity Unit in range, up to 25%.", "cost": "Free"},
+          {"icon": "glitchtrap-path-icons/path1_tier2.png", "desc": "Increases the Damage boost cap from 25% to 40%.", "cost": "Free"},
+          {"icon": "glitchtrap-path-icons/path1_tier3.png", "desc": "When attacking, unleashes a follow-up attack that deals 25% Damage and inflicts 10% Dark and Electric Wither for 5s. When a follow-up Critically hits, gain 10% Crit Damage and 5% Crit Rate, up to 30% and 15%. When it does not Critically hit, lose 5% Crit Damage and 1% Crit Rate.", "cost": "25k Tokens"},
+          {"icon": "glitchtrap-path-icons/path1_tier4.png", "desc": "All units in range gain 1/4th of this unit's Dark and Electric self Damage boost. Increases the Crit Damage cap to 50% and the Crit Rate cap to 25%, additionally grant 25% bonus Crit Rate against enemies affected by Wither.", "cost": "50k Tokens"},
+          {"icon": "glitchtrap-path-icons/path1_tier5.png", "desc": "Increases follow-up Damage to 30% and Wither to 20%. If the follow-up Critically hits, it triggers once more. (This can happen once per attack).", "cost": "Quest", "quest": "Deal 100 million damage with Dark or Electricity units while GLitchtrap is equipped."}
         ]
       },
       {

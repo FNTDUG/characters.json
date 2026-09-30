@@ -3468,6 +3468,9 @@
     "imgShiny": "https://units.fntduserguide.com/units/shark-withered-foxy-shiny.png",
     "rarity": "nightmare",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Shark"
+    ],
     "element": "Water",
     "placements": 2,
     "attackType": "Multi",
@@ -19528,7 +19531,8 @@
   "typeMain": "Midgame-Endgame",
   "typeTags": [
     "Support",
-    "Bleed"
+    "Bleed",
+    "Shark"
   ],
   "element": "Water",
   "placements": 1,

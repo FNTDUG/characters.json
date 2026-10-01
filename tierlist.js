@@ -302,7 +302,7 @@
          "Endo 01",
          "XOR",
          "Unicorn Toy Foxy",
-         "Rockin Bonnie",
+         "Rockin Bonnie"
        ],
        "a": [
          "Cannoneer Chica",
@@ -422,7 +422,7 @@
          "Mothman Lefty",
          "Phone Guy",
          "Vessel Plushtrap",
-         "Hot Dog Guy",
+         "Hot Dog Guy"
        ],
        "c": [
          "Sweetheart Toy Foxy",
@@ -456,7 +456,7 @@
          "Krampus Purple Guy",
          "Golden Freddy 0-0-5",
          "Cthulhu Nightmare Foxy",
-         "Grand Strategist Chica",
+         "Grand Strategist Chica"
        ],
        "a": [
          "Old Man Consequences 0-0-5",
@@ -476,7 +476,7 @@
          "Lich Shadow Bonnie",
          "Nightmare Fredbear 0-0-5",
          "Circus Baby",
-         "Aqua Strike Toy Chica",
+         "Aqua Strike Toy Chica"
        ],
        "b": [
          "Abyssal Ballora",
@@ -496,7 +496,7 @@
          "Yenndo",
          "Foxy.exe",
          "Phantom Endo 02",
-         "Grimm Foxy NEW",
+         "Grimm Foxy NEW"
        ],
        "c": [
          "Gaia Chica",
@@ -534,7 +534,7 @@
          "Scott Cawthon",
          "Scott Plushie",
          "Pirate Withered Foxy",
-         "Frostmancer Withered Bonnie",
+         "Frostmancer Withered Bonnie"
        ],
        "a": [
          "Animdude 0-5-0",
@@ -584,7 +584,7 @@
          "Roadkill Phantom Foxy",
          "Mecha-Lizabeth BUG",
          "Ringmaster Funtime Freddy",
-         "Golden Freddy 0-0-5 BUG",
+         "Golden Freddy 0-0-5 BUG"
        ]
      },
      "summon": {
@@ -621,8 +621,8 @@
          "Freddles",
          "King in Purple Purple Guy",
          "Animdude 0-5-0",
-         "Fallen Angel Nightmarionne"
-         "Grimm Foxy NEW",
+         "Fallen Angel Nightmarionne",
+         "Grimm Foxy NEW"
        ]
      },
      "knockback": {

@@ -295,6 +295,7 @@
        "s": [
          "Pirate Withered Foxy",
          "Golden Freddy 0-4-2",
+         "Princess NEW",
          "High Voltage Rockstar Freddy BUG",
          "White Lily Toy Foxy",
          "Faz-ino Spring Bonnie",
@@ -315,6 +316,7 @@
          "Masked Bullies",
          "Barbarian Boy",
          "Conductor Toy Freddy",
+         "Grimm Foxy NEW",
          "Turkey Chica",
          "Cloaked Sparky",
          "Hor Hor Freddy"
@@ -324,6 +326,7 @@
          "Happy Frog",
          "Frosty the Snowcake",
          "Party Glock Freddy BUG",
+         "8-Bit Freddy NEW",
          "Orville Elephant",
          "Hero PaperPals",
          "PaperPals",
@@ -363,6 +366,7 @@
          "Theory Crusher Scott",
          "Michael Afton 0-0-5 BUG",
          "Psychic Friend Fredbear",
+         "Glitchtrap 0-0-5 NEW BUG",
          "Golden Cupcake",
          "White Lily Toy Foxy",
          "High Voltage Rockstar Freddy BUG",
@@ -373,6 +377,7 @@
          "Ennard 0-0-5",
          "Golden Freddy 0-0-5",
          "Kronos Endo Freddy",
+         "Adventure Lolbit and Mendo Duo NEW",
          "Party Never Ends Cupcake",
          "Cthulhu Nightmare Foxy",
          "Puppet 0-0-5",
@@ -380,6 +385,7 @@
          "Funtime Foxy",
          "No. 1 Crate",
          "Endo 01",
+         "White Rabbit NEW",
          "Rockin Bonnie",
          "Spring Duo",
          "Phantom Withered Chica",
@@ -485,16 +491,19 @@
          "Molten Freddy",
          "Fathomless Withered Foxy",
          "Nightmare Mangle",
+         "Redbear NEW",
          "Roadkill Phantom Foxy",
          "Yenndo",
          "Foxy.exe",
          "Phantom Endo 02",
+         "Grimm Foxy NEW",
        ],
        "c": [
          "Gaia Chica",
          "Michael Afton 0-5-0 BUG",
          "Time Lord Withered Freddy",
          "Amalgam",
+         "Tangle NEW",
          "Into the Pit Spring Bonnie",
          "Afterbite Withered Golden Freddy",
          "High Voltage Rockstar Freddy BUG"
@@ -566,6 +575,7 @@
          "Crying Child",
          "Scooped Michael",
          "Elizabeth",
+         "Tangle NEW",
          "Toy Chica",
          "Happy Frog",
          "Freddy Fastbear",
@@ -582,6 +592,7 @@
          "Puppet 0-5-0",
          "Motorist Purple Guy",
          "Michael Afton 5-0-0 BUG",
+         "Glitchtrap 0-5-0 NEW",
          "Void Drifter Molten Freddy",
          "XOR",
          "Yeti Oni Bonnie",
@@ -595,12 +606,14 @@
          "Shepherd Fredbear",
          "Undead Chica",
          "Gravelord Foxy",
+         "Movie William Afton NEW",
          "Henry Emily"
        ],
        "b": [
          "Party Never Ends Cupcake",
          "Toy Maker Mangle",
          "Conductor Toy Freddy",
+         "Tangle NEW",
          "Bones Of The Past Nightmare Freddy",
          "Freddy Fastbear"
        ],
@@ -609,6 +622,7 @@
          "King in Purple Purple Guy",
          "Animdude 0-5-0",
          "Fallen Angel Nightmarionne"
+         "Grimm Foxy NEW",
        ]
      },
      "knockback": {
@@ -616,6 +630,7 @@
          "Old Man Consequences 0-0-5",
        ],
        "s": [
+         "Flipside Fredbear NEW",
          "Minireenas",
          "DJ 101Bit"
        ],
@@ -637,6 +652,7 @@
          "Masked Bullies",
          "Golden Freddy",
          "Dirt Boss Freddy",
+         "Security Owl NEW",
          "Afterbite Withered Golden Freddy",
          "Planet Buster Scott BUG"
        ]

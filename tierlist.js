@@ -663,6 +663,7 @@
    "msg": {
      "all": {
        "Planet Buster Scott": "Highest DPS in the game along with spectacular Stun, great Slow, good support, and Wither.",
+       "Security Owl": "Can Perma Stall with the right setup, also has decent DPS.",
        "Overlord Scott": "A weaker Planet Buster scott, but still very good DPS, spectacular Slow, and good support.",
        "Black Hole Foxy": "High DPS, great Slow, and good Light/Dark and Wither based support.",
        "Astral Bonnie": "High DPS, mild support, and fits spectacularly into Light/Dark focused teams.",
@@ -682,6 +683,7 @@
      "starter": {
        "Golden Freddy": "Great boosting in Endless (up to +30% Damage per Golden Freddy), good DPS, and great stall with 20% Slow on attack and Knockback with his Active.",
        "Endo 01": "A good choice for a Starter as he gives all units in his range +15% Damage and -3% CD, making him useful throughout the whole match.",
+       "Princess": "High DPS, gives your 3 strongest units +30% Crit Damage and +10% Crit Chance, gives Light units +20% Damage if there's a Dark unit or enemy in range, and makes Light units deal 25% more damage to Dark enemies.",
        "High Voltage Rockstar Freddy": "High DPS starter with up to +40% Damage to the 3 closest units to him.",
        "White Lily Toy Foxy": "High DPS starter with up to +40% Damage and +20% Range to all Nature units in range and the ability to deal extra shield damage and make Nature units immune to Stuns with her Blessed Spear.",
        "XOR": "High DPS starter with strong summons.",
@@ -702,6 +704,7 @@
        "White Lily Toy Foxy": "Can give Nature units +20% Damage and +10% Range per placement when she has stacks of Favor.",
        "Animdude": "Gives one random unit in range up to +65% Damage and +30% Range sharing Animdude's Byte passive with the connected unit. In PVP, 2 random units can be chosen and they additionally have 25% cheaper upgrades.",
        "Nature Reclaimed Foxy": "Gives all units in range +30% Damage, +25% Range and -5% CD. Additionally increases base health, allowing you to survive longer against normal enemies.",
+       "Glitchtrap": "Gives all units +10% Damage and Range (+20% for Dark/Electric units), can give Mind Controlled units +55% Damage, +20% Range, and -10% CD, then can also give himself Dark/Electric units, and Mind Controlled units up to +16% Damage based on how many tapes he's holding.",
        "Nightterror Rockstar Bonnie": "Dark and Light units gain +25% Damage and +10% Range. Dreamer units receive 2x these boosts and gain 20% of this unit's damage as Burn.",
        "Bedtime Psychic Fredbear": "Can give all units in range +10% Damage and +5% Range. Dreamer units instead gain +30% Damage and +20% Range.",
        "Daydream Rockstar Foxy": "Gives all Dreamer units +20% Damage and +30% Crit Chance.",
@@ -756,13 +759,16 @@
        "Puppet": "Spawns summons on this unit's CD with half this unit's damage as health that get 3% stronger every enemy they go through and release a small explosion when they die for 25% of their damage.",
        "Motorist Purple Guy": "Spawns summons with half this unit's health every 2 attacks and every summon he has on the track increases the movement speed of his summons by 10%, gives him +5% Damage, and gives his summons +2% HP.",
        "Michael Afton": "Spawns summons on this unit's CD with half this unit's damage as health. Additionally, this unit has an Active that consumes a chosen amount of Scrap to create up to 50 bonus summons with 10% health per Scrap. Summon health increases by 1% per Scrap held, up to 20%. All summons from this unit also inflict enemies with 15% Rust Wither when they die.",
+       "Glitchtrap": "Spawns 3 summons with 40% of this unit's damage every 5s, can spawn 5 summons at once and a 300% health summon with his active, and creates 3 sub-units for 60s that each deal 25% of this unit's damage that inflict 15% Dark/Electric Wither.",
        "Void Drifter Molten Freddy": "Every 20s, this unit can create a summon with 250% of this unit's damage as health.",
        "XOR": "Can spawn up to 25 summons with health equal to half this unit's damage every 60s.",
        "Yeti Oni Bonnie": "Spawns high health summons of varying strength every 9s and can spawn 2 summons with health equal to 2.5x this unit's damage every 40s.",
        "Fazman": "Every 60s, this unit spawns a summon that goes along the track twice and has no set health but does 275% of this unit's damage to every enemy it passes through"
      },
      "knockback":{
+       "Security Owl": "Knocks enemies and Bosses back 5 tiles if they get near the exit.",
        "Old Man Consequences": "Hooks Knockback enemies and Bosses by 2 tiles.",
+       "Flipside Fredbear": "Attacks Knockback enemies by 2 tiles, other enemies contacted by enemies that were Knockedback by this unit also receive 2 tile Knockback, and his Active Knocksback enemies by 0.5 tiles a second for 4s.",
        "DJ 101Bit": "Attacks Knockback enemies by 1 tile.",
        "Minireenas": "Attacks Knockback enemies by 2 tiles."
      }

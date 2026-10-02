@@ -369,6 +369,7 @@
          "Psychic Friend Fredbear",
          "Glitchtrap 0-0-5 NEW BUG",
          "Golden Cupcake",
+         "Princess NEW",
          "White Lily Toy Foxy",
          "High Voltage Rockstar Freddy BUG",
          "Vengeful Spirit 5-0-0"

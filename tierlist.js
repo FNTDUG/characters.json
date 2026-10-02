@@ -5,6 +5,7 @@
    "lists": {
      "all": {
        "op": [
+         "Security Owl NEW BUG",
          "Planet Buster Scott BUG",
        ],
        "s": [
@@ -66,7 +67,6 @@
          "El Chip",
          "Model 2.9 Defective Funtime Foxy",
          "Malachite Foxy",
-         "Security Owl NEW",
          "Yeti Oni Bonnie",
          "Twisted Wolf NEW",
          "Spirit of Henry Emily",
@@ -627,6 +627,7 @@
      },
      "knockback": {
        "op": [
+         "Security Owl NEW BUG",
          "Old Man Consequences 0-0-5",
        ],
        "s": [
@@ -652,7 +653,6 @@
          "Masked Bullies",
          "Golden Freddy",
          "Dirt Boss Freddy",
-         "Security Owl NEW",
          "Afterbite Withered Golden Freddy",
          "Planet Buster Scott BUG"
        ]

@@ -593,7 +593,7 @@
          "Puppet 0-5-0",
          "Motorist Purple Guy",
          "Michael Afton 5-0-0 BUG",
-         "Glitchtrap 0-5-0 NEW",
+         "Glitchtrap 0-5-0 NEW BUG",
          "Void Drifter Molten Freddy",
          "XOR",
          "Yeti Oni Bonnie",

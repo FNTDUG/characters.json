@@ -45,6 +45,7 @@
          "Glitchtrap 2-0-5 BUG NEW",
          "Dragon Endo 01",
          "Headless Horseman Mangle",
+         "Flipside Fredbear NEW",
          "Ringmaster Funtime Freddy",
          "Samurai Duo",
          "Candy Cadet",

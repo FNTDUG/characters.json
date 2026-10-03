@@ -1,0 +1,183 @@
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Audiowide&display=swap" rel="stylesheet">
+
+<style>
+/* settings */
+.ns-panel {
+  --ns-width: 35%;                 /* how wide the panel is */
+  --ns-height: 270px;               /* how tall before it scrolls, none to grow */
+  --ns-align: center;                 /* left or center for the text */
+  --ns-slice: 18;
+  --ns-border: 20px;
+  --ns-pad: 10px 10px 10px;         /* space between the frame and the text */
+  --ns-gap: 22px;                   /* space under the panel */
+  --ns-bullets: outside;
+  --ns-bullet-pad: 16px;
+  --ns-art: url('https://images.fntduserguide.com/game-ui-background.webp');
+}
+
+.ns-panel {
+  width: var(--ns-width);
+  max-width: 100%;
+  margin: 0 auto var(--ns-gap);
+  border-style: solid;
+  border-width: var(--ns-border);
+  border-color: transparent;
+  border-image-source: var(--ns-art);
+  border-image-slice: var(--ns-slice) fill;
+  border-image-repeat: stretch;
+  border-image-width: var(--ns-border);
+  box-sizing: border-box;
+}
+.ns-panel * { box-sizing: border-box; }
+
+.ns-body {
+  max-height: var(--ns-height);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: var(--ns-pad);
+  text-align: var(--ns-align);
+  font-family: 'Press Start 2P', cursive;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,164,91,.45) transparent;
+}
+.ns-body::-webkit-scrollbar { width: 8px; }
+.ns-body::-webkit-scrollbar-track { background: rgba(0,0,0,.35); border-radius: 4px; }
+.ns-body::-webkit-scrollbar-thumb { background: rgba(255,164,91,.45); border-radius: 4px; }
+.ns-body::-webkit-scrollbar-thumb:hover { background: rgba(255,164,91,.7); }
+
+.ns-body h2 {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #ffc861;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000;
+  margin: 0 0 12px;
+}
+.ns-body h3 {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #ffb14a;
+  letter-spacing: 1px;
+  margin: 18px 0 8px;
+}
+.ns-body p {
+  font-size: 10px;
+  line-height: 2.1;
+  color: #cfcfcf;
+  margin: 0 0 12px;
+}
+.ns-body p b { color: #fff; }
+.ns-body ul {
+  margin: 0 0 12px;
+  padding-left: var(--ns-bullet-pad);
+  list-style-position: var(--ns-bullets);
+}
+.ns-body li {
+  font-size: 10px;
+  line-height: 2.1;
+  color: #cfcfcf;
+  margin-bottom: 6px;
+}
+.ns-body a { color: #ffa45b; }
+
+@media (max-width: 720px) {
+  .ns-panel { --ns-border: 16px; --ns-pad: 13px 14px 15px; }
+  .ns-body h2 { font-size: 13px; }
+}
+</style>
+
+<template data-note="security-owl-stall-endless" data-width="35%" data-height="270px" data-align="center">
+  <h2>Meta Explanation</h2>
+  <p>With good Slow and Stun units near the exit, you can repeatedly trigger Security Owl’s Knockback, leading to Perma Stall.<br>Ringmaster and Void Shaper are needed in Boss Raids because enemies cannot be slowed.</p>
+</template>
+
+<template data-note="security-owl-stall-br" data-width="35%" data-height="270px" data-align="center">
+  <h2>Meta Explanation</h2>
+  <p>With good Slow and Stun units near the exit, you can repeatedly trigger Security Owl’s Knockback, leading to Perma Stall.<br>Gravelord is needed for Endless because his summons scale with enemy health.</p>
+</template>
+
+<script>
+(function () {
+  var KEYS = ['width', 'height', 'align', 'slice', 'border', 'pad', 'gap', 'bullets', 'bullet-pad', 'art'];
+  var own = document.currentScript;
+  var host = own && own.parentNode;
+  var direct = !host || host === document.head || host === document.body || host === document.documentElement;
+
+  function quote(v) {
+    return window.CSS && CSS.escape ? CSS.escape(v) : v.replace(/["\\]/g, '\\$&');
+  }
+
+  function rules(tpl, prefix) {
+    var out = [];
+    for (var i = 0; i < KEYS.length; i++) {
+      var v = tpl.getAttribute('data-' + prefix + KEYS[i]);
+      if (v !== null && v !== '') out.push('--ns-' + KEYS[i] + ':' + v);
+    }
+    return out.join(';');
+  }
+
+  function buildCss(tpls) {
+    var css = '';
+    for (var i = 0; i < tpls.length; i++) {
+      var sel = '[data-note="' + quote(tpls[i].getAttribute('data-note')) + '"]:not(template) > .ns-panel';
+      var desk = rules(tpls[i], '');
+      var mob = rules(tpls[i], 'mobile-');
+      if (desk) css += sel + '{' + desk + '}';
+      if (mob) css += '@media (max-width: 720px){' + sel + '{' + mob + '}}';
+    }
+    var tag = document.getElementById('nsNoteCSS');
+    if (!tag) {
+      tag = document.createElement('style');
+      tag.id = 'nsNoteCSS';
+      (document.head || document.documentElement).appendChild(tag);
+    }
+    tag.textContent = css;
+  }
+
+  function fill(slot, tpls) {
+    var name = slot.getAttribute('data-note');
+    for (var i = 0; i < tpls.length; i++) {
+      if (tpls[i].getAttribute('data-note') !== name) continue;
+      var panel = document.createElement('div');
+      panel.className = 'ns-panel';
+      var body = document.createElement('div');
+      body.className = 'ns-body';
+      body.appendChild(tpls[i].content.cloneNode(true));
+      panel.appendChild(body);
+      slot.innerHTML = '';
+      slot.appendChild(panel);
+      slot.setAttribute('data-ns-done', '');
+      return;
+    }
+  }
+
+  function render() {
+    var tpls = document.querySelectorAll('template[data-note]');
+    buildCss(tpls);
+    if (direct) {
+      var wanted = decodeURIComponent(location.hash.slice(1));
+      document.body.style.cssText = 'margin:0;padding:22px 18px;background:#07060f';
+      var old = document.querySelectorAll('[data-ns-preview]');
+      for (var j = 0; j < old.length; j++) old[j].parentNode.removeChild(old[j]);
+      for (var k = 0; k < tpls.length; k++) {
+        var n = tpls[k].getAttribute('data-note');
+        if (wanted && n !== wanted) continue;
+        var slot = document.createElement('div');
+        slot.setAttribute('data-note', n);
+        slot.setAttribute('data-ns-preview', '');
+        document.body.appendChild(slot);
+        fill(slot, tpls);
+      }
+      return;
+    }
+    var slots = document.querySelectorAll('[data-note]:not(template):not([data-ns-done])');
+    for (var s = 0; s < slots.length; s++) fill(slots[s], tpls);
+  }
+
+  window.nsNotesRender = render;
+  if (direct) window.addEventListener('hashchange', render);
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', render);
+  else render();
+})();
+</script>

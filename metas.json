@@ -86,7 +86,7 @@
     },
     "Endless 7 Farthest": {
       "units": [
-        { "name": "Princess", "label": "$900", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter, Potency" },
+        { "name": "Princess", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter, Potency" },
         { "name": "Security Owl", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Auto Skip off" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Deep Sea Calamity Endo", "caption": "Buff Potency" },
         { "name": "Black Hole Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Gaia Chica", "caption": "Buff Potency" },
@@ -96,7 +96,7 @@
     },
     "Boss Raids": {
       "units": [
-        { "name": "Princess", "label": "$900", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Princess", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Starter, Potency" },
         { "name": "Security Owl", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Auto Skip off" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "Deep Sea Calamity Endo", "caption": "Buff Potency" },
         { "name": "Black Hole Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "DJ 101Bit", "caption": "Buff Potency" },
@@ -146,7 +146,7 @@
     },
     "Light 2nd": {
       "units": [
-        { "name": "Princess", "label": "$900", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter, Potency" },
+        { "name": "Princess", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter, Potency" },
         { "name": "Puppet", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Hijacked", "path": "2-0-5", "replacement": "", "caption": "Buff Potency" },
         { "name": "Astral Bonnie", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "Black Hole Foxy", "label": "",  "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },

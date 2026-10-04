@@ -28447,5 +28447,545 @@
       }
     ]
   }
+},
+  {
+  "name": "Executioner Nightmare Mangle",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1MXAgF_Om3oYZ9bB7kJggbzbC2UZ3Kt3z&sz=w500",
+  "imgShiny": "https://iili.io/ncR5wQf.png",
+  "rarity": "nightmare",
+  "typeMain": "Midgame",
+    "typeTags": [
+      "Bleed",
+      "Stun",
+      "Support"
+  ],
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "FullAOE",
+  "obtainment": "Nightmare Mangle Evolution",
+   "levels": [
+    {
+      "level": 1,
+      "cost": 3500,
+      "damage": 375,
+      "cd": 3,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 4250,
+      "damage": 450,
+      "cd": 3,
+      "range": 18
+    },
+    {
+      "level": 3,
+      "cost": 5000,
+      "damage": 525,
+      "cd": 3,
+      "range": 19
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 600,
+      "cd": 2.8,
+      "range": 19
+    },
+    {
+      "level": 5,
+      "cost": 7250,
+      "damage": 700,
+      "cd": 2.8,
+      "range": 20
+    },
+    {
+      "level": 6,
+      "cost": 8500,
+      "damage": 800,
+      "cd": 2.5,
+      "range": 22
+    },
+    {
+      "level": 7,
+      "cost": 10000,
+      "damage": 950,
+      "cd": 2.5,
+      "range": 24
+    },
+    {
+      "level": 8,
+      "cost": 12000,
+      "damage": 1050,
+      "cd": 2.2,
+      "range": 26
+    },
+    {
+      "level": 9,
+      "cost": 13750,
+      "damage": 1200,
+      "cd": 2.2,
+      "range": 26
+    }
+  ],
+  "passives": [
+    {
+      "title": "Static Scream",
+      "text": "Reduce this units Damage by 50% for 10 seconds. During this time, attacks Stun for 3 seconds. (Global CD: 90s)",
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-19-21-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
+    },
+    {
+      "title": "The Nightmare",
+      "text": "Decrease this unit's placement Cost by 50% per other Nightmare tagged unit on the team. When this unit is placed gain +100% Damage, decreasing by 10% per wave. Other Nightmare units instead gain +3% Damage per wave passed for this unit."
+    },
+    {
+      "title": "Rend",
+      "text": "Attacks apply 40% Bleed over 4 seconds. Every 3rd attack the Bleed is increased to 65% over 5 seconds, and a Follow-up is performed on the weakest enemy in range for 75% Damage as Bleed over 10 seconds."
+    }
+  ],
+  "passiveDamage":{
+    "dots":[
+      {
+        "label": "Rend",
+        "pctofdamage": 0.4,
+        "durationsec": 4
+      },
+      {
+        "label": "Rend (3rd attack)",
+        "pctofdamage": 0.65,
+        "durationsec": 5,
+        "cd": 5.1,
+        "cdboostable": true
+      },
+      {
+        "label": "Rend (FUA)",
+        "pctofdamage": 0.75,
+        "durationsec": 10,
+        "cd": 5.1,
+        "cdboostable": true
+      }
+    ]
+  }
+},
+{
+  "name": "Trapper Yenndo",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1EhJj9-EjCdBHGpIxa4kZWLyigwh1lmAg&sz=w500",
+  "imgShiny": "https://iili.io/naUIiqQ.webp",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+    "typeTags": [
+      "Slow",
+      "Poison",
+      "Stun"
+  ],
+  "element": "Neutral",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Yenndo Evolution",
+ "levels": [
+    {
+      "level": 1,
+      "cost": 8000,
+      "damage": 350,
+      "type": "Circle",
+      "cd": 3,
+      "range": 23
+    },
+    {
+      "level": 2,
+      "cost": 5200,
+      "damage": 450,
+      "type": "Circle",
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 5850,
+      "damage": 550,
+      "type": "Circle",
+      "cd": 3,
+      "range": 25
+    },
+    {
+      "level": 4,
+      "cost": 6500,
+      "damage": 650,
+      "type": "Circle",
+      "cd": 3,
+      "range": 27
+    },
+    {
+      "level": 5,
+      "cost": 7200,
+      "damage": 850,
+      "type": "Circle",
+      "cd": 3.5,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 8250,
+      "damage": 1000,
+      "type": "Circle",
+      "cd": 3.5,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 9800,
+      "damage": 1400,
+      "type": "Circle",
+      "cd": 4,
+      "range": 31
+    },
+    {
+      "level": 8,
+      "cost": 12000,
+      "damage": 1600,
+      "type": "Cone 120°",
+      "cd": 4,
+      "range": 32
+    },
+    {
+      "level": 9,
+      "cost": 15000,
+      "damage": 1800,
+      "type": "Cone 120°",
+      "cd": 4,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Watse Cleaner",
+      "text": "Enemies that get closer to this unit are Slowed by 1% for every 2% closer they get, up to 20%. <br> After this unit follows up 10 times. (20-second cooldown) Apply 100% poison over 10 seconds to all enemies in range. Reapply current poisons based on their remaining damage at 60% value. If this condition is reached while on cooldown, activate immediately after the cooldown ends and increase the reapplied poison value by 1% per second waited"
+    },
+    {
+      "title": "Toxic Spill",
+      "text": "This unit's attacks apply 75% poison over 10 seconds. <br>Create a toxic pool within 50% of this unit's range. Enemies that enter the pool are stunned for 2.5 seconds once per enemy. While enemies are in the pool, apply 10% poison over 2 seconds every second and slow them by 15%. <br> When a unit in the pool applies poison to an enemy, buff that unit's damage by 25% for 10 seconds and follow up for 10% damage as poison over 3 seconds. (2-second cooldown per unit). <br> When an enemy dies in the pool Increase its area by 5% for 30 seconds, up to 125% of this unit's range."
+    }
+  ],
+  "passiveDamage":{
+    "dots":[
+      {
+        "label": "Toxic Spill",
+        "pctofdamage": 0.75,
+        "durationsec": 10
+      },
+      {
+        "label": "Toxic Pool",
+        "pctofdamage": 0.20,
+        "durationsec": 2
+      },
+      {
+        "label": "Pool FUA",
+        "pctofdamage": 0.10,
+        "durationsec": 3,
+        "cd": 2
+      },
+      {
+        "label": "Waste Cleaner",
+        "pctofdamage": 1,
+        "durationsec": 10,
+        "cd": 20
+      }
+    ],
+    "selfboost":[
+      {
+        "label": "Toxic Pool (boost)",
+        "dmgmult": 1.25
+      }
+    ]
+  }
+},
+{
+  "name": "Blue Baron Sparky",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1Qqt1jc-YHv_jDdP-tlQ40xOrSgbR7hsU&sz=w500",
+  "imgShiny": "https://iili.io/naUTEEQ.webp",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+    "typeTags": [
+      "Anti-Regen"
+  ],
+  "element": "Neutral",
+  "placements": 2,
+  "attackType": "Multi",
+  "obtainment": "Sparky Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2500,
+      "damage": 280,
+      "type": "Line",
+      "cd": 2.5,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 2000,
+      "damage": 300,
+      "type": "Line",
+      "cd": 2.2,
+      "range": 24
+    },
+    {
+      "level": 3,
+      "cost": 3250,
+      "damage": 325,
+      "type": "Line",
+      "cd": 2,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 4500,
+      "damage": 375,
+      "type": "Line",
+      "cd": 1.8,
+      "range": 29
+    },
+    {
+      "level": 5,
+      "cost": 6000,
+      "damage": 425,
+      "type": "Cone 40°",
+      "cd": 1.5,
+      "range": 32
+    },
+    {
+      "level": 6,
+      "cost": 7500,
+      "damage": 475,
+      "type": "Cone 40°",
+      "cd": 1.5,
+      "range": 32
+    },
+    {
+      "level": 7,
+      "cost": 9250,
+      "damage": 550,
+      "type": "Cone 40°",
+      "cd": 1.5,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Watse Cleaner",
+      "text": "Enemies that get closer to this unit are Slowed by 1% for every 2% closer they get, up to 20%. <br> After this unit follows up 10 times. (20-second cooldown) Apply 100% poison over 10 seconds to all enemies in range. Reapply current poisons based on their remaining damage at 60% value. If this condition is reached while on cooldown, activate immediately after the cooldown ends and increase the reapplied poison value by 1% per second waited"
+    },
+    {
+      "title": "Toxic Spill",
+      "text": "This unit's attacks apply 75% poison over 10 seconds. <br>Create a toxic pool within 50% of this unit's range. Enemies that enter the pool are stunned for 2.5 seconds once per enemy. While enemies are in the pool, apply 10% poison over 2 seconds every second and slow them by 15%. <br> When a unit in the pool applies poison to an enemy, buff that unit's damage by 25% for 10 seconds and follow up for 10% damage as poison over 3 seconds. (2-second cooldown per unit). <br> When an enemy dies in the pool Increase its area by 5% for 30 seconds, up to 125% of this unit's range."
+    }
+  ],
+  "passiveDamage":{
+    "selfboost":[
+      {
+        "label": "Suppoer Meneuver (boost)",
+        "dmgmult": 1.65
+      }
+    ],
+    "periodic":[
+      {
+        "label": "Suppoer Meneuver",
+        "pctofdamage": 0.5,
+        "cd": 2,
+        "cdboostable": false
+      }
+    ]
+  }
+},
+{
+  "name": "Scrapbear",
+  "imgNormal": "https://drive.google.com/thumbnail?id=16oFdxeHxs9TJwTYBR3wArbLKYF50qLCw&sz=w500",
+  "imgShiny": "https://iili.io/naUTK7t.webp",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+    "typeTags": [
+      "Wither"
+  ],
+  "element": "Rust",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Fredtrap Evolution",
+    "levels": [
+    {
+      "level": 1,
+      "cost": 3000,
+      "damage": 600,
+      "type": "Line",
+      "cd": 3,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 2000,
+      "damage": 640,
+      "type": "Line",
+      "cd": 3,
+      "range": 20
+    },
+    {
+      "level": 3,
+      "cost": 2500,
+      "damage": 700,
+      "type": "Line",
+      "cd": 3,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 3250,
+      "damage": 775,
+      "type": "Line",
+      "cd": 2.8,
+      "range": 21
+    },
+    {
+      "level": 5,
+      "cost": 4500,
+      "damage": 900,
+      "type": "Cone 30°",
+      "cd": 2.8,
+      "range": 23
+    },
+    {
+      "level": 6,
+      "cost": 6250,
+      "damage": 1000,
+      "type": "Cone 30°",
+      "cd": 2.5,
+      "range": 25
+    },
+    {
+      "level": 7,
+      "cost": 9000,
+      "damage": 1100,
+      "type": "Cone 50°",
+      "cd": 2.5,
+      "range": 28
+    },
+    {
+      "level": 8,
+      "cost": 12500,
+      "damage": 1250,
+      "type": "Cone 50°",
+      "cd": 2.5,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Rusting Soul",
+      "text": "On attack Follow up in a Full AOE for 50% damage and inflict Breakable on enemies, causing them to take +1 shield damage on hit. <br> While this unit is placed Breakable can stack up to 5 times. Enemies with Breakable take 1% more damage per stack; this effect can apply alongside Withers. If there are only Rust element units on the map increase the Breakable damage buff to 3%"
+    },
+    {
+      "title": "You Think That'd Stop Me?",
+      "text": "When a shielded enemy enters this unit's range Follow up on that enemy and deal up to 30 shield damage. When the shield breaks, instantly deal 40% of this unit's damage per shield broken by this passive's follow up and stun for 2 seconds and instantly inflict 3 Breakable."
+    }
+  ],
+  "passiveDamage":{
+    "periodic":[
+      {
+        "label": "Rusting Soul",
+        "pctofdamage": 0.5,
+        "everynthattack": 1
+      }
+    ],
+    "selfboost":[
+      {
+        "label": "Breakable Wither",
+        "dmgmult": 1.05
+      }
+    ]
+  }
+},
+{
+  "name": "Bubble Toy Foxy",
+  "imgNormal": "https://drive.google.com/thumbnail?id=1ahaPyCVnwwuo90g9NySYDm1bARO_ztAz&sz=w500",
+  "imgShiny": "https://iili.io/naUTU3N.webp",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+    "typeTags": [
+      "Trap"
+  ],
+  "element": "Water",
+  "placements": 2,
+  "attackType": "Circle",
+  "obtainment": "Yenndo Evolution",
+   "levels": [
+    {
+      "level": 1,
+      "cost": 4500,
+      "damage": 300,
+      "cd": 2.5,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 360,
+      "cd": 2.5,
+      "range": 20
+    },
+    {
+      "level": 3,
+      "cost": 4500,
+      "damage": 450,
+      "cd": 2.5,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 6000,
+      "damage": 500,
+      "cd": 2,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 8500,
+      "damage": 600,
+      "cd": 2,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 11500,
+      "damage": 720,
+      "cd": 2,
+      "range": 28
+    },
+    {
+      "level": 7,
+      "cost": 14000,
+      "damage": 850,
+      "cd": 1.75,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Bubble Palooza",
+      "text": "This unit can gain up to 500 [Bubble] stacks <br>• Gain 2 stacks when a [Water] unit in range attacks. <br>• Gain 3 stacks when an enemy is slowed in range. <br>• Gain 5 stacks when this unit hits a Mystery enemy. <br>• Gain 50 stacks when a Mystery enemy in range dies <br> Every 2 seconds, Lose 10 [Bubble] stacks. <br> Every 5 seconds Spawn a bubble on the track that deals 75% damage on contact and applies 1% [Water] wither per 25 [Bubble] stacks (max 1). Enemies within 5 tiles of the bubble popping take half of its damage. For every 100 [Bubble] stacks Increase the bubble trap cap by 1 and Increase bubble damage by 10%"
+    },
+    {
+      "title": "Cleansing Solution",
+      "text": "On hit against a Mystery enemy, Deal 10% of the enemy's max health. When a Mystery enemy dies in this unit's range The spawned enemy loses 35% of its max health."
+    }
+  ],
+  "passiveDamage":{
+    "summons":[
+      {
+        "label": "Bubble Trap",
+        "healthpctofdamage": 0.75,
+        "spawncd": 5,
+        "spawncdboostable": false
+      }
+      ]
+  }
 }
+]
 ]

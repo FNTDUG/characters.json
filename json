@@ -14491,6 +14491,10 @@
       {
         "name": "Lion Tamer Kronos Endo Freddy",
         "rarity": "secret"
+      },
+      {
+        "name": "Shiny Lion Tamer Kronos Endo Freddy",
+        "rarity": "shiny"
       }
     ],
     "passiveDamage": {

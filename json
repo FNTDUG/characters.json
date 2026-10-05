@@ -28996,7 +28996,8 @@
   "rarity": "secret",
   "typeMain": "Midgame",
     "typeTags": [
-      "Anti-Regen"
+      "Anti-Regen",
+      "Support"
   ],
   "element": "Neutral",
   "placements": 2,
@@ -29062,24 +29063,24 @@
   ],
   "passives": [
     {
-      "title": "Watse Cleaner",
-      "text": "Enemies that get closer to this unit are Slowed by 1% for every 2% closer they get, up to 20%. <br> After this unit follows up 10 times. (20-second cooldown) Apply 100% poison over 10 seconds to all enemies in range. Reapply current poisons based on their remaining damage at 60% value. If this condition is reached while on cooldown, activate immediately after the cooldown ends and increase the reapplied poison value by 1% per second waited"
+      "title": "Dog Tags",
+      "text": "For every unique tag in range gain +4% damage and range. If there are more than 7 unique tags in range nearby units gain +5% range"
     },
     {
-      "title": "Toxic Spill",
-      "text": "This unit's attacks apply 75% poison over 10 seconds. <br>Create a toxic pool within 50% of this unit's range. Enemies that enter the pool are stunned for 2.5 seconds once per enemy. While enemies are in the pool, apply 10% poison over 2 seconds every second and slow them by 15%. <br> When a unit in the pool applies poison to an enemy, buff that unit's damage by 25% for 10 seconds and follow up for 10% damage as poison over 3 seconds. (2-second cooldown per unit). <br> When an enemy dies in the pool Increase its area by 5% for 30 seconds, up to 125% of this unit's range."
+      "title": "Support Meneuver",
+      "text": "Attacks apply 40% Anti-Regen. When a regeneration enemy gets within 75% of this unit's range follow up for 50% damage and apply 65% Anti-Regen. Buff this unit's damage dealt to enemies by their current Anti-Regen value."
     }
   ],
   "passiveDamage":{
     "selfboost":[
       {
-        "label": "Suppoer Meneuver (boost)",
+        "label": "Support Meneuver (boost)",
         "dmgmult": 1.65
       }
     ],
     "periodic":[
       {
-        "label": "Suppoer Meneuver",
+        "label": "Support Meneuver",
         "pctofdamage": 0.5,
         "cd": 2,
         "cdboostable": false
@@ -29206,7 +29207,7 @@
   "element": "Water",
   "placements": 2,
   "attackType": "Circle",
-  "obtainment": "Yenndo Evolution",
+  "obtainment": "Toy Foxy Evolution",
    "levels": [
     {
       "level": 1,

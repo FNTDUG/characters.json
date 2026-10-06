@@ -518,6 +518,10 @@
     "imgShiny": "https://units.fntduserguide.com/units/fisherman-toy-bonnie-shiny.png",
     "rarity": "epic",
     "typeMain": "Midgame",
+    "typeTags": [
+      "Bonnie",
+      "Toy"
+    ],
     "element": "Water",
     "placements": 3,
     "attackType": "Multi",
@@ -2133,6 +2137,10 @@
     "imgShiny": "https://units.fntduserguide.com/units/nightmare-freddy-shiny.png",
     "rarity": "rare",
     "typeMain": "Starter-Midgame",
+    "typeTags": [
+      "Freddy",
+      "Nightmare"
+    ],
     "element": "Dark",
     "placements": 3,
     "attackType": "Multi",
@@ -5365,6 +5373,9 @@
     "imgShiny": "https://units.fntduserguide.com/units/clockwork-cupcake-shiny.png",
     "rarity": "mythic",
     "typeMain": "Midgame",
+    "typeTags":[
+      "Cupcake"
+    ],
     "element": "Nature",
     "placements": 3,
     "attackType": "Circle",
@@ -8074,7 +8085,9 @@
     "rarity": "mythic",
     "typeMain": "Starter-Midgame",
     "typeTags": [
-      "Slow"
+      "Slow",
+      "Chica",
+      "Toy"
     ],
     "element": "Water",
     "placements": 3,
@@ -9627,7 +9640,9 @@
       "Knockback",
       "Support",
       "Income",
-      "Stun"
+      "Stun",
+      "Freddy",
+      "Golden"
     ],
     "element": "Neutral",
     "placements": 1,
@@ -13043,6 +13058,9 @@
     "imgShiny": "https://units.fntduserguide.com/units/funtime-freddy-shiny.png",
     "rarity": "mythic",
     "typeMain": "Midgame",
+    "typeTags":[
+      "Freddy"
+    ],
     "element": "Light",
     "placements": 3,
     "attackType": "Multi",
@@ -17153,7 +17171,8 @@
     "rarity": "epic",
     "typeMain": "Midgame",
     "typeTags": [
-      "Rockstar"
+      "Rockstar",
+      "Bonnie"
     ],
     "element": "Electricity",
     "placements": 1,
@@ -18555,7 +18574,10 @@
     "imgShiny": "https://units.fntduserguide.com/units/radioactive-phantom-freddy-shiny.png",
     "rarity": "epic",
     "typeMain": "Starter-Midgame",
-    "typeTags": ["Poison"],
+    "typeTags": [
+      "Poison",
+      "Freddy"
+    ],
     "element": "Rust",
     "placements": 3,
     "attackType": "Circle",
@@ -29095,7 +29117,8 @@
   "rarity": "secret",
   "typeMain": "Midgame",
     "typeTags": [
-      "Wither"
+      "Wither",
+      "Freddy"
   ],
   "element": "Rust",
   "placements": 1,

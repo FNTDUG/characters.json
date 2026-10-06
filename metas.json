@@ -97,7 +97,7 @@
     "Boss Raids": {
       "units": [
         { "name": "Princess", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Starter, Potency" },
-        { "name": "Security Owl", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Auto Skip off" },
+        { "name": "Security Owl", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Auto Skip off" },
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "Deep Sea Calamity Endo", "caption": "Buff Potency" },
         { "name": "Black Hole Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "DJ 101Bit", "caption": "Buff Potency" },
         { "name": "Ringmaster Funtime Freddy", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "" },

@@ -360,8 +360,10 @@
        ]
      },
      "support": {
+      "op": [
+         "Executioner Nightmare Mangle NEW"
+       ],
        "s": [
-        "Executioner Nightmare Mangle NEW",
          "Stitchwraith",
          "DJ 101Bit",
          "Candy Cadet",

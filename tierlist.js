@@ -556,7 +556,7 @@
          "Knife Thrower Bear5",
          "Model 2.9 Defective Funtime Foxy",
          "Afterbite Withered Golden Freddy",
-         "Trapper Yenndo NEW"
+         "Trapper Yenndo NEW",
          "Malachite Foxy",
          "Yenndo"
        ],

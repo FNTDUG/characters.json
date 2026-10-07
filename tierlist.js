@@ -710,7 +710,7 @@
      },
      "support": {
        "Candy Cadet": "Gives +30% Damage and +10% Range to all units in range when in Red Candy mode, then +10% Damage and +30% Range to all units in range when in Yellow Candy mode (mode chosen on placement). Does particularly well when using his Orphans story, doubling his boosts for 30s. Boosts do not stack with other Candy Cadets.",
-       "Executioner Nightmare Mangle": "Gsive Nightmare tag units +3% Damage per wave, uncapped.",
+       "Executioner Nightmare Mangle": "Gives Nightmare tag units +3% Damage per wave, uncapped.",
        "DJ 101Bit": "Can swap between giving all nearby units +20% Damage or +25% Range. Placed higher than other units because she can stack with other placements of herself.",
        "Black Hole Foxy": "Gives nearby Astral units gain +25% Damage, Light/Dark units gain +15% Damage, and he can inflict enemies with 40% Light + Dark Wither, 25% Light/Dark Wither, and 15% Wither.",
        "High Voltage Rockstar Freddy": "Each placement of him gives +20% Damage to the 3 units closest to him.",

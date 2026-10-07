@@ -837,7 +837,7 @@
      {id:'b',  name:'B',  stars:'\u2605\u2605'},
      {id:'c',  name:'C',  stars:'\u2605'}
    ];
-   var OP_MODES = {all:1, slow:1, knockback:1};
+   var OP_MODES = {all:1, slow:1, knockback:1, support:1};
 
    var RARITY = {
      uncommon:  'linear-gradient(180deg,#3FFF8E,#5CFF4E)',

@@ -674,6 +674,7 @@
      "all": {
        "Planet Buster Scott": "Highest DPS in the game along with spectacular Stun, great Slow, good support, and Wither.",
        "Security Owl": "Can Perma Stall with the right setup, also has decent DPS.",
+       "Executioner Nightmare Mangle": "Can be used as a starter and can technically give an infinite Damage boost to units with the Nightmare tag.",
        "Overlord Scott": "A weaker Planet Buster scott, but still very good DPS, spectacular Slow, and good support.",
        "Black Hole Foxy": "High DPS, great Slow, and good Light/Dark and Wither based support.",
        "Astral Bonnie": "High DPS, mild support, and fits spectacularly into Light/Dark focused teams.",
@@ -692,6 +693,7 @@
      },
      "starter": {
        "Golden Freddy": "Great boosting in Endless (up to +30% Damage per Golden Freddy), good DPS, and great stall with 20% Slow on attack and Knockback with his Active.",
+       "Executioner Nightmare Mangle": "Free to place if you have 2 Nightmare tag units on your team, good DPS, and gives all Nightmare tag units +3% Damage per wave.",
        "Endo 01": "A good choice for a Starter as he gives all units in his range +15% Damage and -3% CD, making him useful throughout the whole match.",
        "Princess": "High DPS, gives your 3 strongest units +30% Crit Damage and +10% Crit Chance, gives Light units +20% Damage if there's a Dark unit or enemy in range, and makes Light units deal 25% more damage to Dark enemies.",
        "High Voltage Rockstar Freddy": "High DPS starter with up to +40% Damage to the 3 closest units to him.",
@@ -708,6 +710,7 @@
      },
      "support": {
        "Candy Cadet": "Gives +30% Damage and +10% Range to all units in range when in Red Candy mode, then +10% Damage and +30% Range to all units in range when in Yellow Candy mode (mode chosen on placement). Does particularly well when using his Orphans story, doubling his boosts for 30s. Boosts do not stack with other Candy Cadets.",
+       "Executioner Nightmare Mangle": "Gsive Nightmare tag units +3% Damage per wave, uncapped.",
        "DJ 101Bit": "Can swap between giving all nearby units +20% Damage or +25% Range. Placed higher than other units because she can stack with other placements of herself.",
        "Black Hole Foxy": "Gives nearby Astral units gain +25% Damage, Light/Dark units gain +15% Damage, and he can inflict enemies with 40% Light + Dark Wither, 25% Light/Dark Wither, and 15% Wither.",
        "High Voltage Rockstar Freddy": "Each placement of him gives +20% Damage to the 3 units closest to him.",

@@ -1,5 +1,4 @@
-
-(function() {
+ (function() {
    if (document.getElementById('tlRoot')) return;
 
   var cfg = {
@@ -162,7 +161,7 @@
          "Movie Director Freddy",
          "Fazcade",
          "Super Soldier Foxy",
-         "Salvaged Toy Bonnie"
+         "Salvaged Toy Bonnie",
        ],
        "b": [
          "Mangle",
@@ -362,7 +361,7 @@
      },
      "support": {
        "s": [
-         "Executioner Nightmare Mangle NEW",
+        "Executioner Nightmare Mangle NEW",
          "Stitchwraith",
          "DJ 101Bit",
          "Candy Cadet",
@@ -641,7 +640,7 @@
      "knockback": {
        "op": [
          "Security Owl BUG",
-         "Old Man Consequences 0-0-5",
+         "Old Man Consequences 0-0-5"
        ],
        "s": [
          "Flipside Fredbear",
@@ -1537,4 +1536,3 @@
    xhr.onerror = function() { renderMode(mode); };
    xhr.send();
  })();
-]

@@ -67,8 +67,12 @@
         "order": ["Downpour", "Fend Off the Dark", "Nature's Blessing", "Overcoming the Odds", "Hellfire", "Nail in the Coffin"]
       },
       {
-        "pageTitle": "MULTIPLAYER META",
+        "pageTitle": "MULTIPLAYER ENDLESS META",
         "order": ["Player 1", "Player 2", "Player 3", "Player 4"]
+      },
+      {
+        "pageTitle": "MULTIPLAYER BR META",
+        "order": ["Player 1 BR", "Player 2 BR", "Player 3 BR", "Player 4 BR"]
       }
     ]
   },
@@ -250,6 +254,46 @@
         { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
         { "name": "DJ 101Bit", "label": "", "byte": "The Box, Boss Drain", "enchant": "Vengeance", "chip": "Eye Augmentation", "replacement": "", "caption": "Red, Potency" },
         { "name": "Spirit of Charlie Emily", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "" }
+      ]
+    },
+    "Player 1 BR": {
+      "units": [
+        { "name": "Void Shaper Shadow Freddy", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Security Owl", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Auto skip off" },
+        { "name": "Nightterror Rockstar Bonnie", "label": "",  "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Ringmaster Funtime Freddy", "label": "", "byte": "The Box, Boss Drain", "enchant": "Vengeance", "chip": "Eye Augmentation", "replacement": "", "caption": "Red, Potency" },
+        { "name": "Cthulhu Nightmare Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" }
+      ]
+    },
+      "Player 2 BR": {
+      "units": [
+        { "name": "Executioner Nightmare Mangle", "label": "Free", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Stormbound Chica", "label": "Free", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Nightterror Rockstar Bonnie", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Dirt Boss Freddy", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
+        { "name": "DJ 101Bit", "label": "", "byte": "The Box, Boss Drain", "enchant": "Vengeance", "chip": "Eye Augmentation", "replacement": "", "caption": "Red, Potency" },
+        { "name": "Cthulhu Nightmare Foxy", "label": "",  "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" }
+      ]
+    },
+      "Player 3 BR": {
+      "units": [
+        { "name": "Executioner Nightmare Mangle", "label": "Free", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Stormbound Chica", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "" },
+        { "name": "Nightterror Rockstar Bonnie", "label": "",  "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Dirt Boss Freddy", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
+        { "name": "DJ 101Bit", "label": "", "byte": "The Box, Boss Drain", "enchant": "Vengeance", "chip": "Overwhelming Power", "replacement": "", "caption": "Red, Potency" },
+        { "name": "Cthulhu Nightmare Foxy", "label": "",  "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" }
+      ]
+    },
+      "Player 4 BR": {
+      "units": [
+        { "name": "Executioner Nightmare Mangle", "label": "Free", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Stormbound Chica", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Hijacked", "replacement": "", "caption": "" },
+        { "name": "Nightterror Rockstar Bonnie", "label": "",  "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
+        { "name": "Dirt Boss Freddy", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Hijacked", "replacement": "", "caption": "Buff Potency" },
+        { "name": "DJ 101Bit", "label": "", "byte": "The Box, Boss Drain", "enchant": "Vengeance", "chip": "Overwhelming Power", "replacement": "", "caption": "Red, Potency" },
+        { "name": "Spirit of Charlie Emily", "label": "", "byte": "The Box, Boss Drain", "chip": "Overwhelming Power", "enchant": "Hijacked", "replacement": "", "caption": "" }
       ]
     },
       "Downpour": {

@@ -5737,7 +5737,7 @@
           "lolbit":     "Lolbit",
           "malware":    "Malware",
           "mediocre melody": "Mediocre Melody",
-          "menndo":     "Menndo",
+          "mendo":      "Mendo",
           "nightmare":  "Nightmare",
           "pirate":     "Pirate",
           "poison":     "Poison",
@@ -7908,29 +7908,43 @@
           "Anti-Regen",
           "Astral",
           "Bleed",
+          "Bonnie",
           "Boss Knockback",
           "Burn",
+          "Chica",
           "Circus",
           "Crit",
-          "Dreamer",
+          "Cupcake",
           "Death",
+          "Dreamer",
+          "Foxy",
+          "Freddy",
+          "Golden",
           "Income",
           "Knockback",
+          "Lolbit",
           "Malware",
           "Mediocre Melody",
+          "Mendo",
+          "Nightmare",
           "Pirate",
           "Poison",
+          "Purple Guy",
           "Rockstar",
           "Rooted",
           "Scarred",
+          "Shadow",
+          "Shark",
           "Slow",
           "Soaked",
           "Stun",
           "Summon",
           "Support",
+          "Toy",
           "Trap",
           "Trash Gang",
-          "Wither"
+          "Wither",
+          "Withered"
         ];
 
         function norm(v) { return String(v || "").trim().toLowerCase(); }
@@ -8705,7 +8719,15 @@
 
           if (norm(u.typeMain) === wanted) return true;
 
-          var tags = Array.isArray(u.typeTags) ? u.typeTags : [];
+          var tags = Array.isArray(u.typeTags) ? u.typeTags.slice() : [];
+          if (u.modes && typeof u.modes === "object") {
+            for (var mk in u.modes) {
+              var md = u.modes[mk];
+              if (!md) continue;
+              if (norm(md.typeMain) === wanted) return true;
+              if (Array.isArray(md.typeTags)) tags = tags.concat(md.typeTags);
+            }
+          }
           for (var i = 0; i < tags.length; i++) {
             if (norm(tags[i]) === wanted) return true;
           }

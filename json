@@ -28876,7 +28876,7 @@
     },
     {
       "title": "The Nightmare",
-      "text": "Decrease this unit's placement Cost by 50% per other Nightmare tagged unit on the team. When this unit is placed gain +100% Damage, decreasing by 10% per wave. Other Nightmare units instead gain +3% Damage per wave passed for this unit."
+      "text": "Decrease this unit's placement Cost by 50% per other Nightmare tagged unit on the team. When this unit is placed gain +100% Damage, decreasing by 10% per wave. Other Nightmare units instead gain +3% Damage per wave passed for this unit, up to 30%."
     },
     {
       "title": "Rend",

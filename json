@@ -314,7 +314,8 @@
       "Stun",
       "Support",
       "Death",
-      "Wither"
+      "Wither",
+      "Nightmare"
     ],
     "element": "Dark",
     "placements": 1,
@@ -578,7 +579,8 @@
     "typeTags": [
       "Income",
       "Trap",
-      "Chica"
+      "Chica",
+      "Toy"
     ],
     "element": "Nature",
     "placements": 2,
@@ -1321,6 +1323,9 @@
     "imgShiny": "https://units.fntduserguide.com/units/nightmarionne-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Nightmare"
+    ],
     "element": "Dark",
     "placements": 1,
     "attackType": "Multi",
@@ -2808,7 +2813,8 @@
     "typeMain": "Endgame",
     "typeTags": [
       "Summon",
-      "Income"
+      "Income",
+      "Nightmare"
     ],
     "element": "Nature",
     "placements": 2,
@@ -3675,7 +3681,9 @@
     "element": "Neutral",
     "typeMain": "Endgame",
     "typeTags": [
-      "Support"
+      "Support",
+      "Bonnie",
+      "Freddy"
     ],
     "placements": 1,
     "attackType": "Multi",
@@ -4640,7 +4648,8 @@
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags":[
-      "Freddy"
+      "Freddy",
+      "Withered"
     ],
     "element": "Dark",
     "placements": 2,
@@ -8253,7 +8262,8 @@
     "rarity": "exclusive",
     "typeMain": "Midgame-Endgame",
     "typeTags":[
-      "Bonnie"
+      "Bonnie",
+      "Withered"
     ],
     "element": "Dark",
     "placements": 3,
@@ -10835,7 +10845,8 @@
     "rarity": "nightmare",
     "typeMain": "Midgame-Endgame",
     "typeTags":[
-      "Freddy"
+      "Freddy",
+      "Withered"
     ],
     "element": "Dark",
     "placements": 2,
@@ -11140,7 +11151,8 @@
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
-      "Stun"
+      "Stun",
+      "Purple Guy"
     ],
     "element": "Dark",
     "placements": 2,
@@ -11228,7 +11240,8 @@
     "typeTags": [
       "Support",
       "Income",
-      "Freddy"
+      "Freddy",
+      "Withered"
     ],
     "element": "Light",
     "placements": 1,
@@ -14131,6 +14144,9 @@
     "imgShiny": "https://units.fntduserguide.com/units/goodnight-plushtime-shiny.png",
     "rarity": "exclusive",
     "typeMain": "Endgame",
+    "typeTags": [
+      "Nightmare",
+    ],
     "element": "Dark",
     "placements": 1,
     "attackType": "Multi",
@@ -14326,7 +14342,8 @@
     "rarity": "nightmare",
     "typeMain": "Endgame",
     "typeTags": [
-      "Bleed"
+      "Bleed",
+      "Purple Guy"
     ],
     "element": "Dark",
     "placements": 1,
@@ -14450,7 +14467,8 @@
     "rarity": "secret",
     "typeMain": "Endgame",
     "typeTags": [
-      "Crit"
+      "Crit",
+      "Foxy"
     ],
     "element": "Rust",
     "placements": 2,
@@ -17661,7 +17679,8 @@
     "typeMain": "Endgame",
     "typeTags": [
       "Slow",
-      "Summon"
+      "Summon",
+      "Nightmare"
     ],
     "element": "Dark/Light",
     "placements": 1,
@@ -18657,7 +18676,8 @@
       "Income",
       "Rooted",
       "Trap",
-      "Chica"
+      "Chica",
+      "Toy"
     ],
     "element": "Nature/Dark",
     "placements": 1,
@@ -21248,7 +21268,8 @@
   "typeMain": "Endgame",
   "typeTags": [
     "Support",
-    "Poison"
+    "Poison",
+    "Nightmare"
   ],
   "element": "Nature/Dark",
   "placements": 2,
@@ -22221,7 +22242,8 @@
   "rarity": "exclusive",
   "typeMain": "Endgame",
   "typeTags": [
-    "Burn"
+    "Burn",
+    "Purple Guy"
   ],
   "element": "Dark",
   "placements": 1,
@@ -22910,7 +22932,9 @@
   "rarity": "secret",
   "typeMain": "Endgame",
   "typeTags": [
-    "Wither"
+    "Wither",
+    "Chica",
+    "Cupcake"
   ],
   "element": "Light",
   "placements": 1,
@@ -23152,7 +23176,9 @@
   "typeTags": [
     "Bleed",
     "Burn",
-    "Stun"
+    "Stun",
+    "Freddy",
+    "Foxy"
   ],
   "element": "Neutral",
   "placements": 1,
@@ -24543,7 +24569,8 @@
   "typeMain": "Endgame",
   "typeTags": [
     "Summon",
-    "Poison"
+    "Poison",
+    "Purple Guy"
   ],
   "element": "Nature/Dark",
   "placements": 1,
@@ -28652,7 +28679,8 @@
     "typeTags": [
     "Trap",
     "Stun",
-    "Knockback"
+    "Knockback",
+    "Nightmare"
   ],
   "element": "Nature/Dark",
   "placements": 1,

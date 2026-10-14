@@ -4,8 +4,7 @@
   var cfg = {
    "lists": {
      "all": {
-       "op": [
-         "Security Owl BUG",
+       "op": {
          "Planet Buster Scott BUG"
        ],
        "s": [
@@ -69,6 +68,7 @@
          "El Chip",
          "Model 2.9 Defective Funtime Foxy",
          "Malachite Foxy",
+         "Security Owl ",
          "Yeti Oni Bonnie",
          "Twisted Wolf",
          "Spirit of Henry Emily",

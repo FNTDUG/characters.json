@@ -4,7 +4,7 @@
   var cfg = {
    "lists": {
      "all": {
-       "op": {
+       "op": [
          "Planet Buster Scott BUG"
        ],
        "s": [

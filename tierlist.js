@@ -380,7 +380,7 @@
          "Golden Cupcake",
          "Princess",
          "White Lily Toy Foxy",
-         "Executioner Nightmare Mangle NEW"
+         "Executioner Nightmare Mangle NEW",
          "High Voltage Rockstar Freddy BUG",
          "Vengeful Spirit 5-0-0"
        ],

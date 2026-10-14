@@ -11,7 +11,6 @@
          "Grand Strategist Chica",
          "Black Hole Foxy",
          "Old Man Consequences 2-0-5",
-         "Executioner Nightmare Mangle NEW",
          "Stitchwraith",
          "Nature Reclaimed Foxy"
        ],
@@ -37,6 +36,7 @@
          "Princess",
          "White Lily Toy Foxy",
          "High Voltage Rockstar Freddy BUG",
+         "Executioner Nightmare Mangle NEW",
          "Motorist Purple Guy",
          "Michael Afton 5-2-0 BUG",
          "XOR",
@@ -68,7 +68,7 @@
          "El Chip",
          "Model 2.9 Defective Funtime Foxy",
          "Malachite Foxy",
-         "Security Owl ",
+         "Security Owl",
          "Yeti Oni Bonnie",
          "Twisted Wolf",
          "Spirit of Henry Emily",
@@ -300,11 +300,11 @@
      "starter": {
        "s": [
          "Pirate Withered Foxy",
-         "Executioner Nightmare Mangle NEW",
          "Golden Freddy 0-4-2",
          "Princess",
          "High Voltage Rockstar Freddy BUG",
          "White Lily Toy Foxy",
+         "Executioner Nightmare Mangle NEW",
          "Faz-ino Spring Bonnie",
          "Endo 01",
          "XOR",
@@ -360,9 +360,6 @@
        ]
      },
      "support": {
-      "op": [
-         "Executioner Nightmare Mangle NEW"
-       ],
        "s": [
          "Stitchwraith",
          "DJ 101Bit",
@@ -380,6 +377,7 @@
          "Golden Cupcake",
          "Princess",
          "White Lily Toy Foxy",
+         "Executioner Nightmare Mangle NEW"
          "High Voltage Rockstar Freddy BUG",
          "Vengeful Spirit 5-0-0"
        ],
@@ -641,7 +639,6 @@
      },
      "knockback": {
        "op": [
-         "Security Owl BUG",
          "Old Man Consequences 0-0-5"
        ],
        "s": [
@@ -667,6 +664,7 @@
          "Masked Bullies",
          "Golden Freddy",
          "Dirt Boss Freddy",
+         "Security Owl",
          "Afterbite Withered Golden Freddy",
          "Planet Buster Scott BUG"
        ]

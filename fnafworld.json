@@ -2155,7 +2155,7 @@
       "color": "Blazing Orange",
       "hex": "#ff6a00",
       "type": "Damage",
-      "description": "A bouncing buzzsaw that deals huge damage.",
+      "description": "A bouncing buzzsaw that deals huge damage. Chance to do 0 damage.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/buzzsaw.webp"
     },
@@ -2187,7 +2187,7 @@
       "color": "Yellow",
       "hex": "#ffd84a",
       "type": "Special",
-      "description": "Three endos will help you fight!",
+      "description": "Three endos will help you fight! Each has a chance to crit for 1000 damage.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/endo-army.webp"
     },
@@ -2195,7 +2195,7 @@
       "color": "Yellow",
       "hex": "#ffd84a",
       "type": "Special",
-      "description": "Chance to kill multiple enemies.",
+      "description": "Chance to kill multiple enemies. Lower chance on bosses.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/esc-key.webp"
     },
@@ -2251,7 +2251,7 @@
       "color": "Pink",
       "hex": "#ff6fb5",
       "type": "Heal",
-      "description": "Higher healing for all members.",
+      "description": "Highest healing for all members.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/happy-jam-2.webp"
     },
@@ -2259,7 +2259,7 @@
       "color": "Yellow",
       "hex": "#ffd84a",
       "type": "Special",
-      "description": "Chance to turn an enemy to stone.",
+      "description": "Very high chance to turn an enemy to stone.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/haunting.webp"
     },
@@ -2291,7 +2291,7 @@
       "color": "Red",
       "hex": "#ff4d4d",
       "type": "Damage",
-      "description": "Hotter cheese, more damage.",
+      "description": "Hotter cheese, more DOT damage.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/hot-cheese-2.webp"
     },
@@ -2339,7 +2339,7 @@
       "color": "Yellow",
       "hex": "#ffd84a",
       "type": "Special",
-      "description": "Mimics every attack you do.",
+      "description": "Mimics every attack you do. Cannot mimic the same attack twice in a row.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/mimic-ball.webp"
     },
@@ -2355,7 +2355,7 @@
       "color": "Yellow",
       "hex": "#ffd84a",
       "type": "Special",
-      "description": "Swap out your characters for random characters.",
+      "description": "Swap out your characters for random Low-tier characters.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/mystery-box.webp"
     },
@@ -2363,7 +2363,7 @@
       "color": "Yellow",
       "hex": "#ffd84a",
       "type": "Special",
-      "description": "Swap out your characters for random characters.",
+      "description": "Swap out your characters for random High-tier characters.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/mystery-box-2.webp"
     },
@@ -2379,7 +2379,7 @@
       "color": "Yellow",
       "hex": "#ffd84a",
       "type": "Special",
-      "description": "Makes the party invincible for a few seconds.",
+      "description": "Makes the party invincible for 5 seconds.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/neon-wall-2.webp"
     },
@@ -2411,7 +2411,7 @@
       "color": "Red",
       "hex": "#ff4d4d",
       "type": "Damage",
-      "description": "Explosive in high numbers.",
+      "description": "Explosive in high numbers. Must be used three times before it activates.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/poppers.webp"
     },
@@ -2523,7 +2523,7 @@
       "color": "Black",
       "hex": "#2b2b33",
       "type": "Instant kill",
-      "description": "30% chance to kill one enemy.",
+      "description": "30% chance to kill one enemy. Lower chance on bosses.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/unscrew.webp"
     },
@@ -2531,7 +2531,7 @@
       "color": "Black",
       "hex": "#2b2b33",
       "type": "Instant kill",
-      "description": "50% chance to kill one enemy.",
+      "description": "50% chance to kill one enemy. Lower chance on bosses.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/unscrew-2.webp"
     },

@@ -1,0 +1,2793 @@
+{
+  "worlds": [
+    {
+      "name": "Fazbear Hills",
+      "color": "#4fd36b",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/fazbear-hills.webp",
+      "about": "Fazbear Hills is the first area in FNaF World. In this area, the player will be able to use Fazbear tokens to buy endoskeletons from Mendo to upgrade their defense, as well as play a fishing mini-game with DeeDee to earn Fazbear tokens."
+    },
+    {
+      "name": "Choppy's Woods",
+      "color": "#2bb673",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/choppys-woods.webp",
+      "about": "Choppy's Woods is the second location to be found in FNaF World. It holds an entrance to the Mysterious Mine and connects many of the locations together, including Fazbear Hills, Dusting Fields, and Lilygear Lake."
+    },
+    {
+      "name": "Dusting Fields",
+      "color": "#6fd0ff",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/dusting-fields.webp",
+      "about": "Dusting Fields is the third location encountered in FNaF World that connects to Choppy's Woods as well as a section of the Mysterious Mine."
+    },
+    {
+      "name": "Lilygear Lake",
+      "color": "#2fc4c9",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/lilygear-lake.webp",
+      "about": "Lilygear Lake is the fourth location encountered in FNaF World that is connected to Choppy's Woods' north area, its west area, and Blacktomb Yard."
+    },
+    {
+      "name": "Mysterious Mine",
+      "color": "#d79b45",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/mysterious-mine.webp",
+      "about": "Mysterious Mine is the main cave system in FNaF World that has several entrances in Choppy's Woods (north and west areas) and Dusting Fields."
+    },
+    {
+      "name": "Blacktomb Yard",
+      "color": "#9b86e8",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/blacktomb-yard.webp",
+      "about": "Blacktomb Yard is the fifth location encountered in FNaF World, and the final to be encountered in the demo version of the game. It holds the first and main entrance to the Deep-Metal Mine, as well as being connected to Lilygear Lake."
+    },
+    {
+      "name": "Deep-Metal Mine",
+      "color": "#8fa8bf",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/deep-metal-mine.webp",
+      "about": "Deep-Metal Mine is a smaller mine mainly found in Blacktomb Yard and is used to get into Pinwheel Circus in FNaF World."
+    },
+    {
+      "name": "Pinwheel Circus",
+      "color": "#ff5d5d",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/pinwheel-circus.webp",
+      "about": "The Pinwheel Circus is the penultimate location encountered in FNaF World and the home to the Normal Mode final boss, Security."
+    },
+    {
+      "name": "Pinwheel Funhouse",
+      "color": "#ff63d0",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/pinwheel-funhouse.webp",
+      "about": "Pinwheel Funhouse is the final location the player usually finds in FNaF World and is only connected to Pinwheel Circus and Lilygear Lake."
+    },
+    {
+      "name": "&*___TWRE",
+      "color": "#b8ff3d",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/and-twre.webp",
+      "about": "&*___TWRE is the glitched world in FNaF World that the player can access through three different \"breakpoints\" around the map, mainly only to gain red chips."
+    },
+    {
+      "name": "Halloween Backstage",
+      "color": "#ff9a1f",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/halloween-backstage.webp",
+      "about": "Halloween Backstage is a location that was introduced in Update 2 of FNaF World that can be accessed from two different warps in Fazbear Hills, and connects to the very final location, the Geist Lair."
+    },
+    {
+      "name": "Geist Lair",
+      "color": "#a45cff",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/geist-lair.webp",
+      "about": "Geist Lair is the final location the character can ever encounter in the game, holding the hardest boss, Chica's Magic Rainbow, and being locked behind Halloween Backstage, which is usually found after the main story is beaten."
+    },
+    {
+      "name": "Halloween Edition",
+      "color": "#ffbf3d",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/halloween-edition.webp",
+      "about": "FNaF World: Halloween Edition was a troll release with its own areas, enemies and bosses. Some of its enemies came back in the real game."
+    }
+  ],
+  "party": [
+    {
+      "id": "freddy",
+      "name": "Freddy",
+      "number": 1,
+      "update": "Update 1",
+      "world": "Fazbear Hills",
+      "game": "Five Nights at Freddy's",
+      "health": 105,
+      "attacks": [
+        "Mic Toss",
+        "Pizza Wheel",
+        "Birthday"
+      ],
+      "quote": "Back to basics!",
+      "unlock": "One of the 8 starter characters, so you have them from the beginning.",
+      "about": "Adventure Freddy, or Freddy as named in-game, is the main protagonist of FNaF World, being the first out of the eight starter characters in the game, and originated from Five Nights at Freddy's. Freddy is also seen on the overworld, representing the player as you move around.",
+      "tips": "Being one of the starter characters, Freddy won't be around for long in your team. He doesn't have a category he excels in, but he makes great uses of his single target attack, his spread attack, and his supporting ability, those being Mic Toss, Pizza Wheel, and Birthday, respectively. Birthday in particular is most likely Freddy's best attack, giving the whole party a great boost in every category for a decent amount of time.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/freddy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/freddy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/freddy.webp"
+    },
+    {
+      "id": "bonnie",
+      "name": "Bonnie",
+      "number": 2,
+      "update": "Update 1",
+      "world": "Fazbear Hills",
+      "game": "Five Nights at Freddy's",
+      "health": 110,
+      "attacks": [
+        "Bite",
+        "Bash Jam",
+        "Happy Jam"
+      ],
+      "quote": "Jammin!",
+      "unlock": "One of the 8 starter characters, so you have them from the beginning.",
+      "about": "Adventure Bonnie, or Bonnie as named in-game, is an animatronic that first appeared in Five Nights at Freddy's, and is one of the eight starting characters in the game.",
+      "tips": "Being one of the starter characters, Bonnie will be phased out of your party fairly soon into your run. Like Freddy, he has an all-around moveset, including a single target attack, multi-target attack, and a healing move, those being Bite, Bash Jam, and Happy Jam, respectively.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/bonnie.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/bonnie.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/bonnie.webp"
+    },
+    {
+      "id": "chica",
+      "name": "Chica",
+      "number": 3,
+      "update": "Update 1",
+      "world": "Fazbear Hills",
+      "game": "Five Nights at Freddy's",
+      "health": 115,
+      "attacks": [
+        "Cupcakes",
+        "Party Favors",
+        "Regen Song"
+      ],
+      "quote": "Let's Eat!",
+      "unlock": "One of the 8 starter characters, so you have them from the beginning.",
+      "about": "Adventure Chica, or Chica as named in-game, is an animatronic first appearing in Five Nights at Freddy's and one of eight starter characters in FNaF World.",
+      "tips": "Being one of the starter characters, Chica will be replaced in your team rather quickly. Her role is almost completely as a healer only being able to deal minor damage in her Party Favors attack. Her moves are all more-or-less the same, those being Cupcakes, Party Favors, and Regen Song, but the best healing move has to be Cupcakes, even though they range around the same amount. During late game, she's basically useless as the healing moves heal lower and lower percentages of the newer party member's health.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/chica.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/chica.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/chica.webp"
+    },
+    {
+      "id": "foxy",
+      "name": "Foxy",
+      "number": 4,
+      "update": "Update 1",
+      "world": "Fazbear Hills",
+      "game": "Five Nights at Freddy's",
+      "health": 120,
+      "attacks": [
+        "Hook",
+        "Jumpscare",
+        "Hot Cheese"
+      ],
+      "quote": "Back-In-Order!",
+      "unlock": "One of the 8 starter characters, so you have them from the beginning.",
+      "about": "Adventure Foxy, or Foxy as named in-game, is a starting character in FNaF World originating from the first Five Nights at Freddy's.",
+      "tips": "Foxy is a unique starting character with one of the best abilities in the game: Jumpscare. His damage output with Hot Cheese is also great when Jumpscare isn't required, however, due to the amount of mid-game characters that also have Jumpscare and other abilities that outclass both Hook and Hot Cheese, Foxy should, in most cases, be replaced the first chance you get with another Animatronic that has Jumpscare.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/foxy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/foxy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/foxy.webp"
+    },
+    {
+      "id": "toy-bonnie",
+      "name": "Toy Bonnie",
+      "number": 5,
+      "update": "Update 1",
+      "world": "Fazbear Hills",
+      "game": "Five Nights at Freddy's",
+      "health": 125,
+      "attacks": [
+        "Bash Jam",
+        "Munchies",
+        "Prize Ball"
+      ],
+      "quote": "Something new!",
+      "unlock": "One of the 8 starter characters, so you have them from the beginning.",
+      "about": "Adventure Toy Bonnie, or Toy Bonnie as named in-game, is a starting character in your party in FNaF World that first appeared in Five Nights at Freddy's 2.",
+      "tips": "Toy Bonnie is one of the most offensive starting characters you will have at the beginning. Bash Jam and Munchies do fairly good multi-target damage and Prize Ball being able to pull out a whole string of different moves makes him viable for longer than most starting animatronics. However, his lack of utility makes him less useful in the long-term because his damage output simply gets outclassed by any animatronic with stronger attacks and should be replaced accordingly.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/toy-bonnie.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/toy-bonnie.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/toy-bonnie.webp"
+    },
+    {
+      "id": "toy-chica",
+      "name": "Toy Chica",
+      "number": 6,
+      "update": "Update 1",
+      "world": "Fazbear Hills",
+      "game": "Five Nights at Freddy's 2",
+      "health": 130,
+      "attacks": [
+        "Cupcake",
+        "Birthday",
+        "Waterhose"
+      ],
+      "quote": "Let's Party!",
+      "unlock": "One of the 8 starter characters, so you have them from the beginning.",
+      "about": "Adventure Toy Chica, or Toy Chica as named in-game, is a starting character in your party in FNaF World that first appeared in Five Nights at Freddy's 2.",
+      "tips": "Being a starter character, Toy Chica won't get too much time in the limelight, but she has arguably the most viable moveset of all the starter characters, utilizing moves like Birthday and Waterhose that provide constant support, rather than utilizing attack moves that would usually get phased out compared to later moves.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/toy-chica.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/toy-chica.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/toy-chica.webp"
+    },
+    {
+      "id": "toy-freddy",
+      "name": "Toy Freddy",
+      "number": 7,
+      "update": "Update 1",
+      "world": "Fazbear Hills",
+      "game": "Five Nights at Freddy's 2",
+      "health": 135,
+      "attacks": [
+        "Mic Toss",
+        "Party Favors",
+        "Speed Song"
+      ],
+      "quote": "Still Freddy- but shiny.",
+      "unlock": "One of the 8 starter characters, so you have them from the beginning.",
+      "about": "Adventure Toy Freddy, or Toy Freddy as named in-game, is a starting character to your party in FNaF World that first appeared in Five Nights at Freddy's 2.",
+      "tips": "Toy Freddy is a starter animatronic, which means he won't last very long on the team, but his support move, Speed Song, gives him an edge over arguably not many of the other starters. Speed is most likely the most useful boost the player can get but besides that Toy Freddy becomes cannon-fodder with lackluster health and even worse damaging attacks. There is never going to be a time where he is useful late-game, being quickly outclassed in the only department he can excel at.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/toy-freddy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/toy-freddy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/toy-freddy.webp"
+    },
+    {
+      "id": "mangle",
+      "name": "Mangle",
+      "number": 8,
+      "update": "Update 1",
+      "world": "Fazbear Hills",
+      "game": "Five Nights at Freddy's 2",
+      "health": 140,
+      "attacks": [
+        "Hook",
+        "Poppers",
+        "Prize Ball"
+      ],
+      "quote": "Kids can be so cruel...",
+      "unlock": "One of the 8 starter characters, so you have them from the beginning.",
+      "about": "Adventure Mangle, or Mangle as named in-game, is a starting character to the player's party in FNaF World that first appeared in Five Nights at Freddy's 2.",
+      "tips": "Mangle isn't a really strong starter character in any capacity. Since they rely on attacking moves, they quickly get outclassed by attacks gained further in the game. Hook is useless, Poppers can barely be used, especially in late-game when Mangle can get killed easily, and Prize Ball only contains some decent moves here and there. Mangle is recommended to get rid of rather quickly.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/mangle.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/mangle.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/mangle.webp"
+    },
+    {
+      "id": "balloon-boy",
+      "name": "Balloon Boy",
+      "number": 9,
+      "update": "Update 1",
+      "world": "Fazbear Hills",
+      "game": "Five Nights at Freddy's 2",
+      "health": 145,
+      "attacks": [
+        "Balloons",
+        "Hot Cheese",
+        "Munchies"
+      ],
+      "quote": "Everyone's favorite!",
+      "unlock": "Beat them in a challenger battle in Fazbear Hills.",
+      "about": "Adventure Balloon Boy, or Balloon Boy as named in-game, is an unlockable character in FNaF World found in Fazbear Hills, originating from Five Nights at Freddy's 2.",
+      "tips": "Being still a rather early character in the party roster, Balloon Boy finds himself to not be very useful especially in late game, thanks to his \"damaging-only\" moveset that will quickly get outclassed by other attacks, and has no support whatsoever. His signature move, Balloons, is easily his worst, dealing minimal damage to a couple enemies at a time, but Hot Cheese and Munchies are slightly better, especially Hot Cheese when dealing with early bosses.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/balloon-boy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/balloon-boy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/balloon-boy.webp"
+    },
+    {
+      "id": "jj",
+      "name": "JJ",
+      "number": 10,
+      "update": "Update 1",
+      "world": "Fazbear Hills",
+      "game": "Five Nights at Freddy's 2",
+      "health": 150,
+      "attacks": [
+        "Balloons",
+        "Poppers",
+        "Unscrew"
+      ],
+      "quote": "Because one wasn't enough!",
+      "unlock": "Beat them in a challenger battle in Fazbear Hills.",
+      "about": "Adventure JJ, or JJ as named in-game, is an unlockable character found in Fazbear Hills that originates from Five Nights at Freddy's 2.",
+      "tips": "JJ is another fairly useless character, but can be used for her instant-kill move, Unscrew. Both Balloons and Poppers are absolutely useless, but with Unscrew she has a chance of defeating much harder enemies. Granted, with the limited move pool and mediocre health she will still be replaced by much better options, but she is much better off than her counterpart Balloon Boy.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/jj.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/jj.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/jj.webp"
+    },
+    {
+      "id": "phantom-freddy",
+      "name": "Phantom Freddy",
+      "number": 11,
+      "update": "Update 1",
+      "world": "Fazbear Hills",
+      "game": "Five Nights at Freddy's 3",
+      "health": 155,
+      "attacks": [
+        "Gloom Song",
+        "Sludge",
+        "Rainy Day"
+      ],
+      "quote": "Just taking a stroll.",
+      "unlock": "Beat them in a challenger battle in Fazbear Hills.",
+      "about": "Phantom Freddy is an unlockable character found in Fazbear Hills that originates from Five Nights at Freddy's 3.",
+      "tips": "Phantom Freddy is actually a pretty decent character with all of the debuffs needed to handle enemies, which can be very useful for most of the game. Sadly, since he has no damaging moves and low health he isn't considered very often, and with the chip, Curse: Status, it can do everything he can in much less time and one less party member slot.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/phantom-freddy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/phantom-freddy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/phantom-freddy.webp"
+    },
+    {
+      "id": "phantom-chica",
+      "name": "Phantom Chica",
+      "number": 12,
+      "update": "Update 1",
+      "world": "Fazbear Hills",
+      "game": "Five Nights at Freddy's 3",
+      "health": 160,
+      "attacks": [
+        "Toxic Bite",
+        "Sludge",
+        "Unscrew"
+      ],
+      "quote": "Stop calling me a watermelon.",
+      "unlock": "Beat them in a challenger battle in Fazbear Hills.",
+      "about": "Adventure Phantom Chica, or Phantom Chica as named in-game, is an unlockable character in Fazbear Hills that originates from Five Nights at Freddy's 3.",
+      "tips": "Phantom Chica is yet another underrated character to use on the team, featuring moves like Sludge and Unscrew that can be vital in a fight, though yet again she will be outclassed by different characters pretty quickly. With lower health, the best case for her is to use Unscrew and Sludge as much as possible before getting quickly killed.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/phantom-chica.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/phantom-chica.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/phantom-chica.webp"
+    },
+    {
+      "id": "phantom-balloon-boy",
+      "name": "Phantom Balloon Boy",
+      "number": 13,
+      "update": "Update 1",
+      "world": "Choppy's Woods",
+      "game": "Five Nights at Freddy's 3",
+      "health": 165,
+      "attacks": [
+        "Toxic Balloon",
+        "Gloom Balloon",
+        "Rainy Day"
+      ],
+      "quote": "Because reasons.",
+      "unlock": "Beat them in a challenger battle in Choppy's Woods.",
+      "about": "Adventure Phantom Balloon Boy, or Phantom Balloon Boy as named in-game, is an unlockable character in Choppy's Woods that originates from Five Nights at Freddy's 3.",
+      "tips": "Phantom Balloon Boy is yet again another underrated Phantom animatronic that provides great debuffs that can be used throughout the game having the same amount of effect on every enemy. Gloom Balloon and Rainy Day are almost essential to use quickly with him, but Toxic Balloon isn't terrible to use late game.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/phantom-balloon-boy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/phantom-balloon-boy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/phantom-balloon-boy.webp"
+    },
+    {
+      "id": "phantom-foxy",
+      "name": "Phantom Foxy",
+      "number": 14,
+      "update": "Update 1",
+      "world": "Choppy's Woods",
+      "game": "Five Nights at Freddy's 3",
+      "health": 170,
+      "attacks": [
+        "Jumpscare",
+        "Toxic Bite",
+        "Unscrew"
+      ],
+      "quote": "Because you can never have too much Foxy.",
+      "unlock": "Beat them in a challenger battle in Choppy's Woods.",
+      "about": "Adventure Phantom Foxy, or Phantom Foxy as named in-game, is an unlockable character in Choppy's Woods that originates from Five Nights at Freddy's 3.",
+      "tips": "Phantom Foxy isn't as viable as most of the Phantom animatronics, possessing no debuff move whatsoever, but Jumpscare can be fairly useful, as well as Unscrew, making for a decent stun-and-kill combo (if both land accordingly). Late-game, Phantom Foxy isn't recommended at all, with mediocre health and hard-to-hit moves, he'll be cannon-fodder sooner or later.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/phantom-foxy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/phantom-foxy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/phantom-foxy.webp"
+    },
+    {
+      "id": "phantom-mangle",
+      "name": "Phantom Mangle",
+      "number": 15,
+      "update": "Update 1",
+      "world": "Choppy's Woods",
+      "game": "Five Nights at Freddy's 3",
+      "health": 175,
+      "attacks": [
+        "Toxic Bite",
+        "Mystery Box",
+        "Pizza Wheel 2"
+      ],
+      "quote": "Because he/she needed to be weirder",
+      "unlock": "Beat them in a challenger battle in Choppy's Woods.",
+      "about": "Adventure Phantom Mangle, or Phantom Mangle as named in-game, is an unlockable character in Choppy's Woods that originates from Five Nights at Freddy's 3.",
+      "tips": "Phantom Mangle seems like one of the best options for the Phantom animatronics, but with no debuffs nor instant-kill attacks, they're on the lower end of the roster. Pizza Wheel 2 and Toxic Bite can still pack a fairly decent punch, but the best bet is Mystery Box that could give the player a better team overall, including Nightmare animatronics and possibly better.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/phantom-mangle.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/phantom-mangle.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/phantom-mangle.webp"
+    },
+    {
+      "id": "withered-bonnie",
+      "name": "Withered Bonnie",
+      "number": 16,
+      "update": "Update 1",
+      "world": "Choppy's Woods",
+      "game": "Five Nights at Freddy's 2",
+      "health": 180,
+      "attacks": [
+        "Eye Beam",
+        "Pizza Wheel",
+        "Unscrew 2"
+      ],
+      "quote": "Look into my eye!",
+      "unlock": "Beat them in a challenger battle in Choppy's Woods.",
+      "about": "Adventure Withered Bonnie, or Withered Bonnie as named in-game, is an unlockable character in Choppy's Woods that originates from Five Nights at Freddy's 2.",
+      "tips": "Withered Bonnie is a pretty good attacker, possibly the first in the roster, utilizing Eye Beam for potentially high damage, and Unscrew 2 is one of the most powerful attacks that can be used, as long as it hits. Pizza Wheel isn't nearly as effective though and brings his usefulness down, as well as his mediocre health.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/withered-bonnie.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/withered-bonnie.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/withered-bonnie.webp"
+    },
+    {
+      "id": "withered-chica",
+      "name": "Withered Chica",
+      "number": 17,
+      "update": "Update 1",
+      "world": "Dusting Fields",
+      "game": "Five Nights at Freddy's 2",
+      "health": 185,
+      "attacks": [
+        "Bite",
+        "Cupcake",
+        "Prize Ball 2"
+      ],
+      "quote": "What happened to Chica?!",
+      "unlock": "Beat them in a challenger battle in Dusting Fields.",
+      "about": "Adventure Withered Chica, or Withered Chica as named in-game, is an unlockable character in Dusting Fields that originates from Five Nights at Freddy's 2.",
+      "tips": "Withered Chica isn't great considering she usually gets unlocked after the Phantom animatronics and is arguably worse than them. Bite is almost completely useless by the time you get her, and Cupcake doesn't do much better. Prize Ball 2 is the player's best bet, and most of the moves can be utilized pretty well especially around mid-game. She isn't recommended to stay on the team long, but can pack a punch occasionally.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/withered-chica.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/withered-chica.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/withered-chica.webp"
+    },
+    {
+      "id": "withered-freddy",
+      "name": "Withered Freddy",
+      "number": 18,
+      "update": "Update 1",
+      "world": "Dusting Fields",
+      "game": "Five Nights at Freddy's 2",
+      "health": 190,
+      "attacks": [
+        "Mic Toss",
+        "Gloom Song",
+        "Esc Key"
+      ],
+      "quote": "Because we needed one more.",
+      "unlock": "Beat them in a challenger battle in Dusting Fields.",
+      "about": "Adventure Withered Freddy, or Withered Freddy as named in-game, is an unlockable character in Dusting Fields that originates from Five Nights at Freddy's 2.",
+      "tips": "Withered Freddy can act as a decent all-around fighter, using his debuff, Gloom Song, to lower the strength of enemies so he can use Esc Key more effectively with a lower chance of getting killed thanks to the attack debuff. Mic Toss is effectively useless, especially by the time the player unlocks him, so his best bet is possibly an insta-kill or two before he gets knocked off.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/withered-freddy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/withered-freddy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/withered-freddy.webp"
+    },
+    {
+      "id": "withered-foxy",
+      "name": "Withered Foxy",
+      "number": 19,
+      "update": "Update 1",
+      "world": "Dusting Fields",
+      "game": "Five Nights at Freddy's 2",
+      "health": 195,
+      "attacks": [
+        "Hook",
+        "Rainy Day",
+        "Hot Cheese 2"
+      ],
+      "quote": "Still Foxy- but more YAAARG!",
+      "unlock": "Beat them in a challenger battle in Dusting Fields.",
+      "about": "Adventure Withered Foxy, or Withered Foxy as named in-game, is an unlockable character in Dusting Fields that originates from Five Nights at Freddy's 2.",
+      "tips": "Withered Foxy is almost certainly the best of his Withered counterparts, Withered Bonnie being a close second, but Withered Foxy's moveset outclasses most others before him with Rainy Day and Hot Cheese 2 being the standouts. Rainy Day is one of the best debuff moves, as enemies become much easier to kill with their defenses lowered, and Hot Cheese 2 can deal a LOT of damage over time, especially on bosses. He can stay on the team for most of the game, even having alright health to stay in battle longer.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/withered-foxy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/withered-foxy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/withered-foxy.webp"
+    },
+    {
+      "id": "shadow-freddy",
+      "name": "Shadow Freddy",
+      "number": 20,
+      "update": "Update 1",
+      "world": "Dusting Fields",
+      "game": "Five Nights at Freddy's 2",
+      "health": 200,
+      "attacks": [
+        "Unscrew",
+        "Esc Key",
+        "Waterhose"
+      ],
+      "quote": "I will eat your soul.",
+      "unlock": "Beat them in a challenger battle in Dusting Fields.",
+      "about": "Adventure Shadow Freddy, or Shadow Freddy as named in-game, is an unlockable character in Dusting Fields that originates from Five Nights at Freddy's 2.",
+      "tips": "Shadow Freddy is a very hit-or-miss character, only dealing insta-kill moves. His moveset could either be one of the best, or one of the worst in terms of dealing with enemies, but one thing that is for certain is that he is pretty useless when dealing with bosses. Waterhose will not affect bosses and both Unscrew and Esc Key have much lower chances of killing a boss compared to killing an enemy. He isn't recommended for late-game, but could be useful in places like &*TWRE where only enemies reside.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/shadow-freddy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/shadow-freddy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/shadow-freddy.webp"
+    },
+    {
+      "id": "marionette",
+      "name": "Marionette",
+      "number": 21,
+      "update": "Update 1",
+      "world": "Lilygear Lake",
+      "game": "Five Nights at Freddy's 2",
+      "health": 205,
+      "attacks": [
+        "Prize Ball 2",
+        "Mystery Box",
+        "Esc Key"
+      ],
+      "quote": "Think outside the box!",
+      "unlock": "Beat them in a challenger battle in Lilygear Lake.",
+      "about": "Adventure Marionette, or Marionette as named in-game, is an unlockable character in Lilygear Lake that originates from Five Nights at Freddy's 2.",
+      "tips": "Marionette is another character that almost exclusively relies on chance for her moves. Prize Ball 2 can house pretty decent attacks, and Mystery Box could be used very well considering how the player's team looks in the current battle. Esc Key is probably the best move to work with as long as it's used with grouped enemies. Marionette isn't recommended to stay in the team long-term, but can work well mid-game.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/marionette.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/marionette.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/marionette.webp"
+    },
+    {
+      "id": "phantom-marionette",
+      "name": "Phantom Marionette",
+      "number": 22,
+      "update": "Update 1",
+      "world": "Lilygear Lake",
+      "game": "Five Nights at Freddy's 3",
+      "health": 210,
+      "attacks": [
+        "Jumpscare",
+        "Hot Cheese 2",
+        "Mystery Box 2"
+      ],
+      "quote": "Put it back in the box!",
+      "unlock": "Beat them in a challenger battle in Lilygear Lake.",
+      "about": "Adventure Phantom Marionette, or Phantom Marionette as named in-game, is an unlockable character in Lilygear Lake that originates from Five Nights at Freddy's 3.",
+      "tips": "Phantom Marionette can be a pretty powerful attacker, especially in mid-game, when Hot Cheese 2 and Jumpscare can be used even more usefully. While all of their moves are pretty good, the most useful is likely Mystery Box 2, where the player can get the most powerful characters for the whole battle, which in many cases can turn the tides if the player's team isn't very powerful itself.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/phantom-marionette.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/phantom-marionette.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/phantom-marionette.webp"
+    },
+    {
+      "id": "golden-freddy",
+      "name": "Golden Freddy",
+      "number": 23,
+      "update": "Update 1",
+      "world": "Lilygear Lake",
+      "game": "Five Nights at Freddy's",
+      "health": 215,
+      "attacks": [
+        "Jumpscare",
+        "Rainy Day 2",
+        "Haunting"
+      ],
+      "quote": "It's me.",
+      "unlock": "Beat them in a challenger battle in Lilygear Lake.",
+      "about": "Adventure Golden Freddy, or Golden Freddy as named in-game, is an unlockable character in Lilygear Lake that originates from Five Nights at Freddy's.",
+      "tips": "Golden Freddy isn't the greatest character to work with in the game, but Rainy Day 2 and Haunting can be used to seriously debuff the enemy while dealing consistent damage. Rainy Day 2 is the most powerful debuff in the game, lowering defense while dealing damage, and Haunting, while not as powerful, can completely stop an enemy for a decent amount of time, though it will be useless against bosses, the same goes for Jumpscare. He isn't recommended for late-game but can do decent towards mid-game.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/golden-freddy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/golden-freddy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/golden-freddy.webp"
+    },
+    {
+      "id": "paperpals",
+      "name": "Paperpals",
+      "number": 24,
+      "update": "Update 1",
+      "world": "Lilygear Lake",
+      "game": "Five Nights at Freddy's 2",
+      "health": 220,
+      "attacks": [
+        "Prize Ball 2",
+        "Mystery Box 2",
+        "Mimic Ball"
+      ],
+      "quote": "Huh?",
+      "unlock": "Beat them in a challenger battle in Lilygear Lake.",
+      "about": "Adventure Paperpals, or Paperpals as named in-game, are unlockable characters in Lilygear Lake that originates from Five Nights at Freddy's 2.",
+      "tips": "Paperpals are going to stay in the team for a good amount of time because of one move, Mimic Ball. Mimic Ball is one of the most powerful moves, especially with a good team roster, for its ability to duplicate any attack, no matter what the power. While it will eventually get outclassed by other characters with Mimic Ball or the Auto: Mimic chip, Paperpals can be pretty good at handling both enemies and bosses.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/paperpals.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/paperpals.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/paperpals.webp"
+    },
+    {
+      "id": "nightmare-freddy",
+      "name": "Nightmare Freddy",
+      "number": 25,
+      "update": "Update 1",
+      "world": "Blacktomb Yard",
+      "game": "Five Nights at Freddy's 4",
+      "health": 225,
+      "attacks": [
+        "Bite 2",
+        "Sludge",
+        "Freddles"
+      ],
+      "quote": "The more, the merrier.",
+      "unlock": "Beat them in a challenger battle in Blacktomb Yard.",
+      "about": "Adventure Nightmare Freddy, or Nightmare Freddy as named in-game, is an unlockable character in Blacktomb Yard that originates from Five Nights at Freddy's 4.",
+      "tips": "Nightmare Freddy isn't the most powerful, especially of his Nightmare counterparts, but Freddles is a pretty powerful attack, especially when dealing with hordes of enemies. Bite 2 won't be very useful once it's finally unlocked, and Sludge is a fairly helpful debuff, but there will be better characters that will use that attack slot for better purposes. In late-game, he wouldn't be recommended at all.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/nightmare-freddy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/nightmare-freddy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-freddy.webp"
+    },
+    {
+      "id": "nightmare-bonnie",
+      "name": "Nightmare Bonnie",
+      "number": 26,
+      "update": "Update 1",
+      "world": "Blacktomb Yard",
+      "game": "Five Nights at Freddy's 4",
+      "health": 230,
+      "attacks": [
+        "Bite 2",
+        "Rainy Day 2",
+        "Pizza Wheel 2"
+      ],
+      "quote": "Let's get mean!",
+      "unlock": "Beat them in a challenger battle in Blacktomb Yard.",
+      "about": "Adventure Nightmare Bonnie, or Nightmare Bonnie as named in-game, is an unlockable character in Blacktomb Yard that originates from Five Nights at Freddy's 4.",
+      "tips": "Nightmare Bonnie is possibly the best of his Nightmare counterparts, with Rainy Day 2 and Pizza Wheel 2 doing pretty good damage with even better debuffs. Bite 2 isn't worth much especially when it's unlocked, but Rainy Day 2 can deal decent damage while lowering defenses to deal even more damage, and Pizza Wheel 2 does slightly less damage than Freddles but still does decent AOE damage.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/nightmare-bonnie.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/nightmare-bonnie.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-bonnie.webp"
+    },
+    {
+      "id": "nightmare-chica",
+      "name": "Nightmare Chica",
+      "number": 27,
+      "update": "Update 1",
+      "world": "Blacktomb Yard",
+      "game": "Five Nights at Freddy's 4",
+      "health": 235,
+      "attacks": [
+        "Bite 2",
+        "Bad Pizza",
+        "Waterhose"
+      ],
+      "quote": "Making you a sandwich.",
+      "unlock": "Beat them in a challenger battle in Blacktomb Yard.",
+      "about": "Adventure Nightmare Chica, or Nightmare Chica as named in-game, is an unlockable character in Blacktomb Yard that originates from Five Nights at Freddy's 4.",
+      "tips": "Nightmare Chica is alright compared to her Nightmare counterparts, Bad Pizza easily being the best of her moves. Bad Pizza attacks all enemies on screen and has potential to deal massive damage all around, possibly one of the best moves the player can have so far. Bite 2 and Waterhose aren't great though, with Bite 2 being effectively useless when unlocked, and Waterhose already having a better counterpart on weaker characters' attack rosters.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/nightmare-chica.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/nightmare-chica.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-chica.webp"
+    },
+    {
+      "id": "nightmare-foxy",
+      "name": "Nightmare Foxy",
+      "number": 28,
+      "update": "Update 1",
+      "world": "Blacktomb Yard",
+      "game": "Five Nights at Freddy's 4",
+      "health": 240,
+      "attacks": [
+        "Bite 2",
+        "Unscrew 2",
+        "Hot Cheese 2"
+      ],
+      "quote": "Out of order since FNaF 1.",
+      "unlock": "Beat them in a challenger battle in Blacktomb Yard.",
+      "about": "Adventure Nightmare Foxy, or Nightmare Foxy as named in-game, is an unlockable character in Blacktomb Yard that originates from Five Nights at Freddy's 4.",
+      "tips": "Nightmare Foxy is most likely the second best of his Nightmare counterparts, utilizing pretty good moves all around. Bite 2 is effectively useless when unlocked, but can still deal decent single-double target damage, and Hot Cheese 2 is very good at dealing damage to multiple enemies at a time, as well as good damage against bosses. Unscrew 2 might be the best out of the moves though, having a 50% chance of killing an enemy, and a lower but decent chance of killing a boss.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/nightmare-foxy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/nightmare-foxy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-foxy.webp"
+    },
+    {
+      "id": "endo-01",
+      "name": "Endo-01",
+      "number": 29,
+      "update": "Update 1",
+      "world": "Deep-Metal Mine",
+      "game": "Five Nights at Freddy's",
+      "health": 245,
+      "attacks": [
+        "Power Song",
+        "Armor Song",
+        "Endo Army"
+      ],
+      "quote": "Because look at him!",
+      "unlock": "Beat them in a challenger battle in Deep-Metal Mine.",
+      "about": "Adventure Endo-01, or Endo-01 as named in-game, is an unlockable character in Deep-Metal Mine that originates from Five Nights at Freddy's.",
+      "tips": "Endo-01 is a pretty good character with its signature move, Endo Army, as well as some pretty good support moves in Power and Armor Song. Endo Army will make three endos appear and constantly shoot towards enemies for a decent amount of time before disappearing, making it one of the best attacking moves in the game. While Endo Army is active, Endo-01 can use its support moves to buff the other party members, making it a viable option for late-game.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/endo-01.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/endo-01.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/endo-01.webp"
+    },
+    {
+      "id": "endo-02",
+      "name": "Endo-02",
+      "number": 30,
+      "update": "Update 1",
+      "world": "Deep-Metal Mine",
+      "game": "Five Nights at Freddy's 2",
+      "health": 250,
+      "attacks": [
+        "Speed Song",
+        "Endo Army",
+        "Neon Wall"
+      ],
+      "quote": "Not as cute, but more useful.",
+      "unlock": "Beat them in a challenger battle in Deep-Metal Mine.",
+      "about": "Adventure Endo-02, or Endo-02 as named in-game, is an unlockable character in Deep-Metal Mine that originates from Five Nights at Freddy's 2.",
+      "tips": "Endo-02 is objectively better than its counterpart, Endo-01, replacing Power Song with Speed Song to dish out attacks faster instead of stronger, and replacing Armor Song with Neon Wall, which is just a better Armor Song, greatly increasing the whole team's defense. If the player does not have Auto: Shield, Endo-02 will likely be a mainstay by the time the player acquires it.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/endo-02.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/endo-02.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/endo-02.webp"
+    },
+    {
+      "id": "plushtrap",
+      "name": "Plushtrap",
+      "number": 31,
+      "update": "Update 1",
+      "world": "Deep-Metal Mine",
+      "game": "Five Nights at Freddy's 4",
+      "health": 255,
+      "attacks": [
+        "Toxic Bite",
+        "Bad Pizza",
+        "Sludge"
+      ],
+      "quote": "Because the world needed a plush version.",
+      "unlock": "Beat them in a challenger battle in Deep-Metal Mine.",
+      "about": "Adventure Plushtrap, or Plushtrap as named in-game, is an unlockable character in Deep-Metal Mine that originates from Five Nights at Freddy's 4.",
+      "tips": "Plushtrap isn't great, especially by the time the player unlocks it, being outclassed by the Nightmare animatronics and the Endos that came before him. Bad Pizza is an amazing move, but gets downplayed thanks to the other two attacks in the roster, Toxic Bite and Sludge, which are pretty mediocre. Sludge has better characters that use it, and even then it doesn't need to be used if the player has better attackers.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/plushtrap.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/plushtrap.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/plushtrap.webp"
+    },
+    {
+      "id": "endoplush",
+      "name": "Endoplush",
+      "number": 32,
+      "update": "Update 1",
+      "world": "Deep-Metal Mine",
+      "game": "FNaF World",
+      "health": 260,
+      "attacks": [
+        "Neon Wall",
+        "Eye Beam",
+        "Waterhose 2"
+      ],
+      "quote": "Because character quota.",
+      "unlock": "Beat them in a challenger battle in Deep-Metal Mine.",
+      "about": "Adventure Endoplush, or Endoplush as named in-game, is an unlockable character in Deep-Metal Mine that is actually an original character in FNaF World.",
+      "tips": "Endoplush is one of the better characters to unlock, holding both Neon Wall and Waterhose 2, as well as a potentially powerful attack, being Eye Beam. Neon Wall could easily be set up at the start of the battle to decrease damage done to the party, Eye Beam can be used mid-battle to whittle down the enemies' health, and Waterhose 2 can be used to easily clean them up towards the end of the battle. This setup can make Endoplush a character that makes it to the final battle.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/endoplush.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/endoplush.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/endoplush.webp"
+    },
+    {
+      "id": "springtrap",
+      "name": "Springtrap",
+      "number": 33,
+      "update": "Update 1",
+      "world": "Pinwheel Circus",
+      "game": "Five Nights at Freddy's 3",
+      "health": 265,
+      "attacks": [
+        "Bite 2",
+        "Springlocks",
+        "Rainy Day"
+      ],
+      "quote": "Cuter in person; still a killer.",
+      "unlock": "Beat them in a challenger battle in Pinwheel Circus.",
+      "about": "Adventure Springtrap, or Springtrap as named in-game, is an unlockable character in Pinwheel Circus that originates from Five Nights at Freddy's 3.",
+      "tips": "Springtrap can be a pretty powerful member of the player's army when utilizing his signature move, Springlocks, but his other moves are lacking. Rainy Day not only has a better counterpart that can deal damage, Rainy Day 2, but several characters also have it so it will most likely already be in effect. Bite 2 is practically useless at the point that Springtrap is unlocked, but Springlocks can do its damage and more, having the potential to be one of the most powerful moves in the game.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/springtrap.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/springtrap.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/springtrap.webp"
+    },
+    {
+      "id": "rwqfsfasxc",
+      "name": "RWQFSFASXC",
+      "number": 34,
+      "update": "Update 1",
+      "world": "Pinwheel Circus",
+      "game": "Five Nights at Freddy's 2",
+      "health": 270,
+      "attacks": [
+        "Haunting",
+        "Mimic Ball",
+        "Gift Boxes"
+      ],
+      "quote": "SAY MY NAME!",
+      "unlock": "Beat them in a challenger battle in Pinwheel Circus.",
+      "about": "Adventure RWQFSFASXC, or RWQFSFASXC as named in-game, is an unlockable character in Pinwheel Circus that originates from Five Nights at Freddy's 2.",
+      "tips": "RWQFSFASXC is one of the best characters found in the game, utilizing no attack moves, but rather the two most powerful support moves, those being Mimic Ball and the coveted Gift Boxes. While both of these moves can be replaced by their corresponding chips, the fact that RWQFSFASXC can keep restocking the Gift Boxes makes him a mainstay as he can constantly keep the party alive. Haunting isn't a great move, but it can be used while both of the support moves are already active.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/rwqfsfasxc.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/rwqfsfasxc.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/rwqfsfasxc.webp"
+    },
+    {
+      "id": "crying-child",
+      "name": "Crying Child",
+      "number": 35,
+      "update": "Update 1",
+      "world": "Pinwheel Circus",
+      "game": "Five Nights at Freddy's 2",
+      "health": 275,
+      "attacks": [
+        "Power Song",
+        "Armor Song",
+        "Gift Boxes"
+      ],
+      "quote": "Still sad.",
+      "unlock": "Beat them in a challenger battle in Pinwheel Circus.",
+      "about": "Adventure Crying Child, or Crying Child as named in-game, is an unlockable character in Pinwheel Circus that originates from Five Nights at Freddy's 2.",
+      "tips": "Crying Child is another one of the better characters in the game thanks to the unbalanced move of Gift Boxes. Granted, the other two moves Crying Child has, Power and Armor Song, are not the most powerful of moves, but they can be used to buff other party members which, if it's the right characters, can do wonders against some of the toughest bosses. Power Song is the more powerful of the two, so it's imperative to put that down first. All of these moves can also be replicated using Chips.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/crying-child.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/crying-child.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/crying-child.webp"
+    },
+    {
+      "id": "funtime-foxy",
+      "name": "Funtime Foxy",
+      "number": 36,
+      "update": "Update 1",
+      "world": "Pinwheel Circus",
+      "game": "Five Nights at Freddy's 2",
+      "health": 280,
+      "attacks": [
+        "Happy Jam 2",
+        "Cosmic Song",
+        "Gift Boxes"
+      ],
+      "quote": "It wasn't meant to last.",
+      "unlock": "Beat them in a challenger battle in Pinwheel Circus.",
+      "about": "Adventure Funtime Foxy, or Funtime Foxy as named in-game, is an unlockable character in Pinwheel Circus that originates from Five Nights at Freddy's 2.",
+      "tips": "Funtime Foxy is arguably the best character found in Update 1, having some of the best moves in the game and is much easier to find than later characters like Spring Bonnie. Happy Jam 2 is probably the weakest of these moves thanks to the other healing move Funtime Foxy has, Gift Boxes, but Happy Jam 2 is very useful to quickly heal teammates.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/funtime-foxy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/funtime-foxy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/funtime-foxy.webp"
+    },
+    {
+      "id": "nightmare-fredbear",
+      "name": "Nightmare Fredbear",
+      "number": 37,
+      "update": "Update 1",
+      "world": "Pinwheel Funhouse",
+      "game": "Five Nights at Freddy's 4",
+      "health": 285,
+      "attacks": [
+        "Toxic Bite 2",
+        "Freddles",
+        "Mega Bite"
+      ],
+      "quote": "Getting down to business.",
+      "unlock": "Beat them in a challenger battle in Pinwheel Funhouse.",
+      "about": "Adventure Nightmare Fredbear, or Nightmare Fredbear as named in-game, is an unlockable character in Pinwheel Funhouse that originates from Five Nights at Freddy's 4.",
+      "tips": "Nightmare Fredbear is one of the hardest characters to find, and with that being said, the moves are almost not worth the wait. Toxic Bite 2 is a pretty powerful move, dealing large damage as well as residual poison damage, and Mega Bite is one of the most powerful single hit damaging moves, but Freddles is subpar at this point of the game, and no supporting moves seriously cripples these \"all-damage\" characters when the endgame is guaranteed to need supporting characters.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/nightmare-fredbear.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/nightmare-fredbear.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-fredbear.webp"
+    },
+    {
+      "id": "nightmare",
+      "name": "Nightmare",
+      "number": 38,
+      "update": "Update 1",
+      "world": "Pinwheel Funhouse",
+      "game": "Five Nights at Freddy's 4",
+      "health": 290,
+      "attacks": [
+        "Toxic Bite 2",
+        "Rainy Day 2",
+        "Mega Bite"
+      ],
+      "quote": null,
+      "unlock": "Beat them in a challenger battle in Pinwheel Funhouse.",
+      "about": "Adventure Nightmare is an unlockable character found in Pinwheel Funhouse. He first appeared in Five Nights at Freddy's 4 as a more aggressive version of Nightmare Fredbear, and is one of the biggest characters in the game.",
+      "tips": "Nightmare is one of the hardest characters to unlock. Toxic Bite 2 and Mega Bite deal big damage, and Rainy Day 2 lowers enemy defenses while adding shock damage.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/nightmare.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/nightmare.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare.webp"
+    },
+    {
+      "id": "fredbear",
+      "name": "Fredbear",
+      "number": 39,
+      "update": "Update 1",
+      "world": "Pinwheel Funhouse",
+      "game": "Five Nights at Freddy's 4",
+      "health": 295,
+      "attacks": [
+        "Mega Bite",
+        "Regen Song",
+        "Mimic Ball"
+      ],
+      "quote": "Where it all started.",
+      "unlock": "Beat them in a challenger battle in Pinwheel Funhouse.",
+      "about": "Fredbear is an unlockable character and the guide who leads the player through FNaF World. He is found in Pinwheel Funhouse.",
+      "tips": "Fredbear mixes a heavy hitter with support: Mega Bite deals more damage than Bite or Bite 2, Regen Song gives the party a regen effect, and Mimic Ball repeats your attacks for a while. Along with Spring Bonnie, he is one of the rarest characters in Update 1.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/fredbear.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/fredbear.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/fredbear.webp"
+    },
+    {
+      "id": "spring-bonnie",
+      "name": "Spring Bonnie",
+      "number": 40,
+      "update": "Update 1",
+      "world": "Pinwheel Funhouse",
+      "game": "Five Nights at Freddy's 3",
+      "health": 300,
+      "attacks": [
+        "Springlocks",
+        "Happy Jam 2",
+        "Cosmic Song"
+      ],
+      "quote": null,
+      "unlock": "Beat them in a challenger battle in Pinwheel Funhouse.",
+      "about": "Spring Bonnie is an unlockable character found in Pinwheel Funhouse. They are based on the golden rabbit from the Five Nights at Freddy's 3 and 4 minigames.",
+      "tips": "Spring Bonnie functions similar to Funtime Foxy, both are the only ones capable of using Cosmic song and are considered \"multi-use\" characters. Spring Bonnie can brutally damage enemies and bosses using Cosmic Song and Springlocks, both of which can hit all enemies in the screen, while Happy Jam 2 heals all party members and is very useful when at low health. It is advised to have Spring Bonnie in the final battle of either normal or hard difficulty.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/spring-bonnie.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/spring-bonnie.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/spring-bonnie.webp"
+    },
+    {
+      "id": "jack-o-bonnie",
+      "name": "Jack-O-Bonnie",
+      "number": 41,
+      "update": "Update 2",
+      "world": "Halloween Backstage",
+      "game": "Five Nights at Freddy's 4: Halloween Edition",
+      "health": 305,
+      "attacks": [
+        "Haunting",
+        "Jack-O-Bomb",
+        "Slasher"
+      ],
+      "quote": "Not canon, but still here.",
+      "unlock": "Finish the FNaF 57: Freddy in Space minigame with 1 to 8 upgrades.",
+      "about": "Jack-O-Bonnie is a jack-o-lantern animatronic that debuted in Five Nights at Freddy's 4: Halloween Edition. He is a counterpart of Bonnie and a reskin of Nightmare Bonnie, added in Update 2.",
+      "tips": "Jack-O-Bonnie can be considered the strongest character in the game damage-wise. Jack-O-Bomb and Slasher are known for their high damage, and Slasher in particular is almost vital for the enemies in the Geist Lair.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/jack-o-bonnie.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/jack-o-bonnie.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/jack-o-bonnie.webp"
+    },
+    {
+      "id": "jack-o-chica",
+      "name": "Jack-O-Chica",
+      "number": 42,
+      "update": "Update 2",
+      "world": "Halloween Backstage",
+      "game": "Five Nights at Freddy's 4: Halloween Edition",
+      "health": null,
+      "attacks": [
+        "Haunting",
+        "Jack-O-Bomb",
+        "Buzzsaw"
+      ],
+      "quote": "Feeling empty inside.",
+      "unlock": "Finish the Foxy Fighters minigame with a B rank or lower.",
+      "about": "Jack-O-Chica is a character added in Update 2. She comes from Five Nights at Freddy's 4: Halloween Edition and is a reskin of Nightmare Chica.",
+      "tips": "Two of her attacks are Blazing Orange heavy hitters: Jack-O-Bomb rains pumpkins on the enemies for huge damage, and Buzzsaw bounces around for massive damage. Haunting can turn an enemy to stone.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/jack-o-chica.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/jack-o-chica.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/jack-o-chica.webp"
+    },
+    {
+      "id": "animdude",
+      "name": "Animdude",
+      "number": 43,
+      "update": "Update 2",
+      "world": "Halloween Backstage",
+      "game": "There Is No Pause Button!",
+      "health": null,
+      "attacks": [
+        "Neon Wall",
+        "4th Wall",
+        "Mega Virus"
+      ],
+      "quote": null,
+      "unlock": "Finish the Chica's Magic Rainbow minigame in more than 3 minutes.",
+      "about": "Animdude is Scott Cawthon's own sprite from There Is No Pause Button!, and the final boss of FNaF World before he became playable.",
+      "tips": "Animdude is extremely powerful as a playable character. Neon Wall halves the damage from any attack, Mega Virus deals high damage over time (great on strong bosses) and 4th Wall is one of the strongest attacks in the game, piercing through defenses. He is almost a must for the Geist Lair.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/animdude.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/animdude.webp",
+      "attackAnimation": null
+    },
+    {
+      "id": "mr-chipper",
+      "name": "Mr. Chipper",
+      "number": 44,
+      "update": "Update 2",
+      "world": "Halloween Backstage",
+      "game": "Chipper & Sons Lumber Co.",
+      "health": null,
+      "attacks": [
+        "Buzzsaw",
+        "Hocus Pocus",
+        "Mimic Ball"
+      ],
+      "quote": null,
+      "unlock": "Finish the Chica's Magic Rainbow minigame in under 3 minutes.",
+      "about": "Mr. Chipper, or just Chipper, is the father of the main character in Chipper & Sons Lumber Co. He appeared as a boss in Update 1 and became a party member in Update 2.",
+      "tips": "Mr. Chipper's attacks focus on enemy manipulation: Hocus Pocus can turn enemies into weaker ones and Mimic Ball repeats your attacks, while Buzzsaw deals very high damage.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/mr-chipper.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/mr-chipper.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/mr-chipper.webp"
+    },
+    {
+      "id": "nightmare-balloon-boy",
+      "name": "Nightmare Balloon Boy",
+      "number": 45,
+      "update": "Update 2",
+      "world": "Halloween Backstage",
+      "game": "Five Nights at Freddy's 4: Halloween Edition",
+      "health": null,
+      "attacks": [
+        "Bubble Breath",
+        "Mega Bite",
+        "Balloons 2"
+      ],
+      "quote": null,
+      "unlock": "Finish the Foxy Fighters minigame with an A rank.",
+      "about": "Nightmare Balloon Boy first appeared in Five Nights at Freddy's 4: Halloween Edition, where he replaced Plushtrap. He was added to FNaF World in Update 2.",
+      "tips": "Nightmare Balloon Boy's role in the game is to help the player along with other party members to defeat encountered enemies and bosses. Balloon Boy is one of the most powerful characters in the game and is extremely useful on taking down enemies with Balloons 2, an Blazing Orange attack that launches a multitude of balloons that all choose randomly a target, guaranteeing massive damage on enemies, same with Mega Bite that hits all enemies and does huge amounts of damage.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/nightmare-balloon-boy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/nightmare-balloon-boy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-balloon-boy.webp"
+    },
+    {
+      "id": "nightmarionne",
+      "name": "Nightmarionne",
+      "number": 46,
+      "update": "Update 2",
+      "world": "Halloween Backstage",
+      "game": "Five Nights at Freddy's 4: Halloween Edition",
+      "health": null,
+      "attacks": [
+        "Prize Ball 2",
+        "Bubble Breath",
+        "4th Wall"
+      ],
+      "quote": null,
+      "unlock": "Beat the Foxy.EXE minigame.",
+      "about": "Nightmarionne first appeared in Five Nights at Freddy's 4: Halloween Edition, where it replaced Nightmare on Nightmare mode. It became playable in Update 2.",
+      "tips": "Nightmarionne's role in the game is to help the player along with other party members to defeat all the enemies and bosses. Nightmarionne is mostly a damager and supports the party with Bubble Breath.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/nightmarionne.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/nightmarionne.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmarionne.webp"
+    },
+    {
+      "id": "coffee",
+      "name": "Coffee",
+      "number": 47,
+      "update": "Update 2",
+      "world": "Halloween Backstage",
+      "game": "The Desolate Hope",
+      "health": null,
+      "attacks": [
+        "Gift Boxes",
+        "Mega Virus",
+        "Neon Wall 2"
+      ],
+      "quote": null,
+      "unlock": "Finish the FNaF 57: Freddy in Space minigame without any upgrades.",
+      "about": "Adventure Coffee is a coffee pot added in Update 2. He comes from The Desolate Hope, an older game by Scott Cawthon.",
+      "tips": "Coffee's attacks are more supportive than offensive. Gift Boxes and Neon Wall 2 can't damage enemies but are vital for survival in areas like the Geist Lair, and Mega Virus drains large amounts of health from enemies.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/coffee.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/coffee.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/coffee.webp"
+    },
+    {
+      "id": "purple-guy",
+      "name": "Purple Guy",
+      "number": 48,
+      "update": "Update 2",
+      "world": "Halloween Backstage",
+      "game": "Five Nights at Freddy's 2",
+      "health": 305,
+      "attacks": [
+        "Speed Song",
+        "Slasher",
+        "Hocus Pocus"
+      ],
+      "quote": "I take 10 seconds to draw!",
+      "unlock": "Finish the FNaF 57: Freddy in Space minigame with every upgrade.",
+      "about": "Adventure Purple Guy is a pixelated sprite based on his look in the Five Nights at Freddy's 3 minigames. He was added in Update 2 as one of the Halloween characters.",
+      "tips": "Purple Guy pairs Slasher's 1 in 10 chance of a 99,999 damage hit with Hocus Pocus, which can turn strong enemies into weaker ones, and Speed Song to make the whole party faster.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/purple-guy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/purple-guy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/purple-guy.webp"
+    }
+  ],
+  "bosses": [
+    {
+      "id": "auto-chipper",
+      "name": "Auto Chipper",
+      "update": "Update 1",
+      "worlds": [
+        "Fazbear Hills",
+        "Choppy's Woods"
+      ],
+      "health": {
+        "normal": 300,
+        "hard": 600
+      },
+      "attack": {
+        "normal": "40-59",
+        "hard": "80-119"
+      },
+      "about": "Auto Chipper is a boss encountered in both Fazbear Hills and Choppy's Woods that mostly guards Grey Chests, specifically guarding the Headstart: Defense, Headstart: Strength, and Evercomet: Weak.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/auto-chipper.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/auto-chipper.webp"
+    },
+    {
+      "id": "bouncer",
+      "name": "Bouncer",
+      "update": "Update 1",
+      "worlds": [
+        "Dusting Fields"
+      ],
+      "health": {
+        "normal": 1000,
+        "hard": 2000
+      },
+      "attack": {
+        "normal": "60-79",
+        "hard": "120-158"
+      },
+      "about": "Bouncer is a boss found in Dusting Fields in FNaF World, and is the first mandatory boss, guarding a necessary glitched object.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/bouncer.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/bouncer.webp"
+    },
+    {
+      "id": "browboy",
+      "name": "Browboy",
+      "update": "Update 1",
+      "worlds": [
+        "Pinwheel Circus"
+      ],
+      "health": {
+        "normal": 5000,
+        "hard": 10000
+      },
+      "attack": {
+        "normal": "250-349",
+        "hard": "500-698"
+      },
+      "about": "Browboy is a boss found in Pinwheel Circus.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/browboy.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/browboy.webp"
+    },
+    {
+      "id": "bubba",
+      "name": "Bubba",
+      "update": "Update 1",
+      "worlds": [
+        "Pinwheel Funhouse"
+      ],
+      "health": {
+        "normal": 15000,
+        "hard": 30000
+      },
+      "attack": {
+        "normal": "250-349",
+        "hard": "500-698"
+      },
+      "about": "Bubba is a boss encountered in Pinwheel Funhouse that guards the path to Porkpatch, both of which are mandatory to defeat.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/bubba.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/bubba.webp"
+    },
+    {
+      "id": "chippers-revenge",
+      "name": "Chipper's Revenge",
+      "update": "Update 1",
+      "worlds": [
+        "Mysterious Mine"
+      ],
+      "health": {
+        "normal": 200000,
+        "hard": 200000
+      },
+      "attack": {
+        "normal": "3000-3099",
+        "hard": "6000-6198"
+      },
+      "about": "Chipper's Revenge is the final boss of one of the endings. He is based on Chipper from another game made by Scott Cawthon, which is Chipper and Son's Lumber Co.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/chippers-revenge.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/chippers-revenge.webp"
+    },
+    {
+      "id": "mad-endo",
+      "name": "Mad Endo",
+      "update": "Update 1",
+      "worlds": [
+        "Choppy's Woods",
+        "Deep-Metal Mine"
+      ],
+      "health": {
+        "normal": 4000,
+        "hard": 8000
+      },
+      "attack": {
+        "normal": "200-209",
+        "hard": "400-418"
+      },
+      "about": "Mad Endo and Overclock are both bosses found throughout FNaF World guarding different chests and one of the buttons locking the pathway to Security. Mad Endo in FNaF World: Halloween Edition is a regular enemy found in Area 1.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/mad-endo.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/mad-endo.webp"
+    },
+    {
+      "id": "overclock",
+      "name": "Overclock",
+      "update": "Update 1",
+      "worlds": [
+        "Deep-Metal Mine"
+      ],
+      "health": {
+        "normal": 15000,
+        "hard": 30000
+      },
+      "attack": {
+        "normal": "200-299",
+        "hard": "400-598"
+      },
+      "about": "Overclock is a boss found in Deep-Metal Mine in FNaF World, and is one of the \"Key Guardians\" that needs to be beaten to unlock the pathway to Security.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/overclock.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/overclock.webp"
+    },
+    {
+      "id": "gold-endo",
+      "name": "Gold Endo",
+      "update": "Update 1",
+      "worlds": [
+        "Pinwheel Funhouse"
+      ],
+      "health": null,
+      "attack": null,
+      "about": "Gold Endo is a secret boss that shows up at random in Pinwheel Funhouse. A golden counterpart of Mad Endo, it drops 500 to 1,000 Fazbear Tokens when beaten.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/gold-endo.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/gold-endo.webp"
+    },
+    {
+      "id": "eyesore",
+      "name": "Eyesore",
+      "update": "Update 1",
+      "worlds": [
+        "Mysterious Mine"
+      ],
+      "health": {
+        "normal": 1000,
+        "hard": 2000
+      },
+      "attack": {
+        "normal": "40-59",
+        "hard": "80-118"
+      },
+      "about": "Eyesore is one of the bosses in FNaF World. It is a giant, dirt covered eye with five root-like \"legs\" and an orange iris. It resides in the Mysterious Mine and guards two yellow chests.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/eyesore.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/eyesore.webp"
+    },
+    {
+      "id": "porkpatch",
+      "name": "Porkpatch",
+      "update": "Update 1",
+      "worlds": [
+        "Lilygear Lake"
+      ],
+      "health": {
+        "normal": 10000,
+        "hard": 20000
+      },
+      "attack": {
+        "normal": "450-549",
+        "hard": "900-1098"
+      },
+      "about": "Porkpatch is a boss enemy in FNaF World, and appears to be based off one of the children from The Happiest Day Minigame from Five Nights at Freddy's 3 and Nightmare Freddy from Five Nights at Freddy's 4.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/porkpatch.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/porkpatch.webp"
+    },
+    {
+      "id": "scott-cawthon",
+      "name": "Scott Cawthon",
+      "update": "Update 1",
+      "worlds": [
+        "Fazbear Hills"
+      ],
+      "health": {
+        "normal": null,
+        "hard": 100000
+      },
+      "attack": {
+        "normal": null,
+        "hard": "2000-2998"
+      },
+      "about": "Scott Cawthon is the final boss of Hard mode. He starts as a running sprite, then turns into a giant voxel figure with a floating head.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/scott-cawthon.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/scott-cawthon.webp"
+    },
+    {
+      "id": "seagoon",
+      "name": "Seagoon",
+      "update": "Update 1",
+      "worlds": [
+        "Lilygear Lake"
+      ],
+      "health": {
+        "normal": 2000,
+        "hard": 4000
+      },
+      "attack": {
+        "normal": "90-109",
+        "hard": "180-218"
+      },
+      "about": "Seagoon is a sea monster boss found in Lilygear Lake. Supergoon is its stronger counterpart.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/seagoon.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/seagoon.webp"
+    },
+    {
+      "id": "security",
+      "name": "Security",
+      "update": "Update 1",
+      "worlds": [
+        "Pinwheel Circus"
+      ],
+      "health": {
+        "normal": 50000,
+        "hard": 100000
+      },
+      "attack": {
+        "normal": "999-1997",
+        "hard": "1998-3994"
+      },
+      "about": "Security (also known as Security OWL) is the final boss to the normal mode of FNaF World, found at the end of the world, Pinwheel Circus, or the World 6.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/security.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/security.webp"
+    },
+    {
+      "id": "snowcone",
+      "name": "Snowcone",
+      "update": "Update 1",
+      "worlds": [
+        "Dusting Fields"
+      ],
+      "health": {
+        "normal": 15000,
+        "hard": 30000
+      },
+      "attack": {
+        "normal": "200-499",
+        "hard": "400-998"
+      },
+      "about": "Snowcone is a boss found in Dusting Fields in FNaF World, and is one of the \"Key Guardians\" that needs to be beaten to unlock the pathway to Security.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/snowcone.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/snowcone.webp"
+    },
+    {
+      "id": "supergoon",
+      "name": "Supergoon",
+      "update": "Update 1",
+      "worlds": [
+        "Lilygear Lake"
+      ],
+      "health": {
+        "normal": 10000,
+        "hard": 20000
+      },
+      "attack": {
+        "normal": "400-669",
+        "hard": "800-1398"
+      },
+      "about": "Supergoon is a boss in FNaF World that guards a button that you must press to open up the path to Security.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/supergoon.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/supergoon.webp"
+    },
+    {
+      "id": "chicas-magic-rainbow",
+      "name": "Chica's Magic Rainbow",
+      "update": "Update 2",
+      "worlds": [
+        "Geist Lair"
+      ],
+      "health": {
+        "normal": 500000,
+        "hard": 500000
+      },
+      "attack": {
+        "normal": 999,
+        "hard": 999
+      },
+      "about": "Chica's Magic Rainbow is the main antagonist and final boss of update 2 of FNaF World. As the name suggests, it is a rainbow. However, its personality conflicts greatly with its outward appearance as it is rude, impatient, taunting, obnoxious, vengeful, and arrogant.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/chicas-magic-rainbow.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/chicas-magic-rainbow.webp"
+    },
+    {
+      "id": "purplegeist",
+      "name": "PurpleGeist",
+      "update": "Update 2",
+      "worlds": [
+        "Geist Lair"
+      ],
+      "health": null,
+      "attack": null,
+      "about": "PurpleGeist is a boss in the Geist Lair, based on Purple Guy. Chica's Magic Rainbow uses him to trick the player into thinking he is the final boss of Update 2.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/purplegeist.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/purplegeist.webp"
+    },
+    {
+      "id": "he-anchovy",
+      "name": "Anchovy",
+      "update": "Halloween Edition",
+      "worlds": [
+        "Halloween Edition"
+      ],
+      "health": {
+        "normal": 40,
+        "hard": null
+      },
+      "attack": {
+        "normal": "16-17",
+        "hard": null
+      },
+      "about": "Anchovy is an enemy encountered in Area 4 of FNaF World (Halloween Edition). It represents a modified version of a Cheesehead with more health points and can deal more damage. It has a 33% chance of being encountered.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/he-anchovy.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/he-anchovy.webp"
+    },
+    {
+      "id": "he-party-hat-a",
+      "name": "Party Hat A",
+      "update": "Halloween Edition",
+      "worlds": [
+        "Halloween Edition"
+      ],
+      "health": null,
+      "attack": null,
+      "about": "Party Hat A is a hat with pink and white stripes, yellow glowing eyes, along with arms and legs.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/he-party-hat-a.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/he-party-hat-a.webp"
+    },
+    {
+      "id": "he-party-hat-b",
+      "name": "Party Hat B",
+      "update": "Halloween Edition",
+      "worlds": [
+        "Halloween Edition"
+      ],
+      "health": null,
+      "attack": null,
+      "about": "Party Hat B is a hat with red and orange stripes, light green eyes, along with arms and legs.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/he-party-hat-b.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/he-party-hat-b.webp"
+    },
+    {
+      "id": "he-purplegeist",
+      "name": "Purplegeist",
+      "update": "Halloween Edition",
+      "worlds": [
+        "Halloween Edition"
+      ],
+      "health": null,
+      "attack": null,
+      "about": "Purplegeist is the final boss of FNaF World: Halloween Edition, based on Purple Guy.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/he-purplegeist.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/he-purplegeist.webp"
+    }
+  ],
+  "enemies": [
+    {
+      "id": "2222",
+      "name": "!2222",
+      "update": "Update 1",
+      "worlds": [
+        "&*___TWRE"
+      ],
+      "health": {
+        "normal": 3390,
+        "hard": 6780
+      },
+      "attack": {
+        "normal": "104-108",
+        "hard": "208-212"
+      },
+      "about": "_!2222 is a glitched enemy in FNaF World. The glitched enemies can appear as many different enemy characters in FNaF World. However, _!2222 specifically appears as Boxbyte and Graveweed.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/2222.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/2222.webp"
+    },
+    {
+      "id": "and",
+      "name": "% ^^&(",
+      "update": "Update 1",
+      "worlds": [
+        "&*___TWRE"
+      ],
+      "health": {
+        "normal": 3135,
+        "hard": 6270
+      },
+      "attack": {
+        "normal": "100-104",
+        "hard": "200-204"
+      },
+      "about": "%_^^&( is a glitched enemy in FNaF World. In battle, the enemy constantly flickers between the idle sprites of Ballboy and Mechrab.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/and.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/and.webp"
+    },
+    {
+      "id": "ballboy",
+      "name": "Ballboy",
+      "update": "Update 1",
+      "worlds": [
+        "Pinwheel Circus"
+      ],
+      "health": {
+        "normal": 2655,
+        "hard": 5310
+      },
+      "attack": {
+        "normal": "92-96",
+        "hard": "184-188"
+      },
+      "about": "Ballboy is an enemy found in Pinwheel Circus. He first showed up in the Halloween Edition troll release and came back in the real game.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/ballboy.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/ballboy.webp"
+    },
+    {
+      "id": "beartrap",
+      "name": "Beartrap",
+      "update": "Update 1",
+      "worlds": [
+        "Blacktomb Yard"
+      ],
+      "health": {
+        "normal": 1290,
+        "hard": 2580
+      },
+      "attack": {
+        "normal": "64-68",
+        "hard": "128-132"
+      },
+      "about": "Beartrap is an enemy found in Blacktomb Yard and was first introduced in FNaF World. It has a 33% encounter rate in Blacktomb Yard.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/beartrap.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/beartrap.webp"
+    },
+    {
+      "id": "blacktrap",
+      "name": "Blacktrap",
+      "update": "Update 1",
+      "worlds": [
+        "Deep-Metal Mine"
+      ],
+      "health": {
+        "normal": 2010,
+        "hard": 4020
+      },
+      "attack": {
+        "normal": "80-84",
+        "hard": "160-164"
+      },
+      "about": "Blacktrap is a modified Beartrap that appears in Deep-Metal Mine instead of Blacktomb Yard and has much more health and damage. It has a 33% encounter rate in Deep-Metal Mine.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/blacktrap.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/blacktrap.webp"
+    },
+    {
+      "id": "bouncepot",
+      "name": "Bouncepot",
+      "update": "Update 1",
+      "worlds": [
+        "Fazbear Hills"
+      ],
+      "health": {
+        "normal": 15,
+        "hard": 30
+      },
+      "attack": {
+        "normal": "4-8",
+        "hard": "8-12"
+      },
+      "about": "Bouncepot is an introductory enemy found in Fazbear Hills, first introduced in FNaF World. It has a 33% chance of encountering.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/bouncepot.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/bouncepot.webp"
+    },
+    {
+      "id": "boxbyte",
+      "name": "Boxbyte",
+      "update": "Update 1",
+      "worlds": [
+        "Dusting Fields"
+      ],
+      "health": {
+        "normal": 190,
+        "hard": 380
+      },
+      "attack": {
+        "normal": "24-28",
+        "hard": "48-52"
+      },
+      "about": "Boxbyte is an enemy found in Dusting Fields in FNaF World and has a 33% chance of being encountered.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/boxbyte.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/boxbyte.webp"
+    },
+    {
+      "id": "chillax",
+      "name": "Chillax",
+      "update": "Update 1",
+      "worlds": [
+        "Dusting Fields"
+      ],
+      "health": {
+        "normal": 255,
+        "hard": 510
+      },
+      "attack": {
+        "normal": "28-32",
+        "hard": "56-60"
+      },
+      "about": "Chillax is an enemy in FNaF World. They are only spotted in the Dusting Fields. Chillax seems to be a form of a hermit crab.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/chillax.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/chillax.webp"
+    },
+    {
+      "id": "chop-n-roll",
+      "name": "Chop 'N Roll",
+      "update": "Update 1",
+      "worlds": [
+        "Choppy's Woods"
+      ],
+      "health": {
+        "normal": 135,
+        "hard": 270
+      },
+      "attack": {
+        "normal": "20-24",
+        "hard": "40-44"
+      },
+      "about": "Chop 'N Roll's are enemies encountered in FNAF World. They might be based off of Scott's older game \"Chipper & Sons Lumber Co.\" They are found in the area \"Choppy's Woods\", and exist as enemies in \"Foxy Fighters.\"",
+      "card": "https://fnaf-world.fntduserguide.com/cards/chop-n-roll.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/chop-n-roll.webp"
+    },
+    {
+      "id": "colossal",
+      "name": "Colossal",
+      "update": "Update 1",
+      "worlds": [
+        "Lilygear Lake"
+      ],
+      "health": {
+        "normal": 615,
+        "hard": 1230
+      },
+      "attack": {
+        "normal": "44-48",
+        "hard": "88-92"
+      },
+      "about": "Colossal is an enemy found in Lilygear Lake.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/colossal.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/colossal.webp"
+    },
+    {
+      "id": "crabapple",
+      "name": "Crabapple",
+      "update": "Update 1",
+      "worlds": [
+        "Lilygear Lake"
+      ],
+      "health": {
+        "normal": 510,
+        "hard": 1020
+      },
+      "attack": {
+        "normal": "40-44",
+        "hard": "80-84"
+      },
+      "about": "They look like regular crabs and have orange and red skin. They have black and white eyes that are similar to the endoskeleton eyes of the animatronics. They have 3 pairs of legs and red pincers.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/crabapple.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/crabapple.webp"
+    },
+    {
+      "id": "dogfight",
+      "name": "Dogfight",
+      "update": "Update 1",
+      "worlds": [
+        "Pinwheel Circus"
+      ],
+      "health": {
+        "normal": 2430,
+        "hard": 4860
+      },
+      "attack": {
+        "normal": "88-92",
+        "hard": "176-180"
+      },
+      "about": "Dogfights are a type of enemy in FNaF World found in Pinwheel Circus. They resemble purple fighter airplanes.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/dogfight.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/dogfight.webp"
+    },
+    {
+      "id": "flan",
+      "name": "Flan",
+      "update": "Update 1",
+      "worlds": [
+        "Dusting Fields"
+      ],
+      "health": {
+        "normal": 330,
+        "hard": 660
+      },
+      "attack": {
+        "normal": "32-36",
+        "hard": "64-68"
+      },
+      "about": "Flan is one of the several enemies encountered in FNaF World. It can be found in Dusting Fields.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/flan.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/flan.webp"
+    },
+    {
+      "id": "gearrat",
+      "name": "Gearrat",
+      "update": "Update 1",
+      "worlds": [
+        "Fazbear Hills",
+        "Choppy's Woods"
+      ],
+      "health": {
+        "normal": 55,
+        "hard": 110
+      },
+      "attack": {
+        "normal": "12-16",
+        "hard": "24-28"
+      },
+      "about": "Gearrat is a brown rat's head on top of a spinning brown gear. It has a tail with a flashing red ball on the end.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/gearrat.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/gearrat.webp"
+    },
+    {
+      "id": "x",
+      "name": ">>>>>>",
+      "update": "Update 1",
+      "worlds": [
+        "&*___TWRE"
+      ],
+      "health": {
+        "normal": 2890,
+        "hard": 5780
+      },
+      "attack": {
+        "normal": "96-100",
+        "hard": "192-196"
+      },
+      "about": ">>>>>> is 1 of the 3 glitched enemies in FNaF World. This enemy's sprite switches between a Prototype and a Gearrat. It can use the Snowball attack, which can deal a lot of damage to your team.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/x.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/x.webp"
+    },
+    {
+      "id": "goldmine",
+      "name": "Goldmine",
+      "update": "Update 1",
+      "worlds": [
+        "Mysterious Mine"
+      ],
+      "health": {
+        "normal": 990,
+        "hard": 1980
+      },
+      "attack": {
+        "normal": "56-60",
+        "hard": "112-116"
+      },
+      "about": "Goldmine is an enemy found in the Mysterious Mine. Quarry is its counterpart.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/goldmine.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/goldmine.webp"
+    },
+    {
+      "id": "graveweed",
+      "name": "Graveweed",
+      "update": "Update 1",
+      "worlds": [
+        "Blacktomb Yard"
+      ],
+      "health": {
+        "normal": 1135,
+        "hard": 2270
+      },
+      "attack": {
+        "normal": "60-64",
+        "hard": "120-124"
+      },
+      "about": "Graveweed is a modified Bouncepot found in Blacktomb Yard that has much more health and much more of a punch to it. It has a 33% encounter rate in Blacktomb Yard.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/graveweed.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/graveweed.webp"
+    },
+    {
+      "id": "mechrab",
+      "name": "Mechrab",
+      "update": "Update 1",
+      "worlds": [
+        "Fazbear Hills"
+      ],
+      "health": {
+        "normal": 30,
+        "hard": 60
+      },
+      "attack": {
+        "normal": "8-12",
+        "hard": "16-20"
+      },
+      "about": "Mechrab is a robotic crab with a pink spiral shell, robotic legs, and a body with huge magenta eyes and light blue eyelids. It appears similar to Chillax. At the end of its shell, there is an antenna with a red ball on it.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/mechrab.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/mechrab.webp"
+    },
+    {
+      "id": "meringue",
+      "name": "Meringue",
+      "update": "Update 1",
+      "worlds": [
+        "Pinwheel Circus"
+      ],
+      "health": {
+        "normal": 2215,
+        "hard": 4430
+      },
+      "attack": {
+        "normal": "84-88",
+        "hard": "168-172"
+      },
+      "about": "Meringue is a cake-like enemy that is similar to Half-Bake and Mudpie, as opposed to either of them, Meringue looks more like an actual cake without any facial accessories. It is primarily found in Pinwheel Circus.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/meringue.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/meringue.webp"
+    },
+    {
+      "id": "metalman",
+      "name": "Metalman",
+      "update": "Update 1",
+      "worlds": [
+        "Mysterious Mine"
+      ],
+      "health": {
+        "normal": 855,
+        "hard": 1710
+      },
+      "attack": {
+        "normal": "52-56",
+        "hard": "104-108"
+      },
+      "about": "Metalman is a relative of Chop 'N Roll. Metalman is made of complete steel, as opposed to Chop 'N Roll, who is made of wood. Metalman has an iron roller with metal spikes on it that is used as its main way of movement.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/metalman.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/metalman.webp"
+    },
+    {
+      "id": "prototype",
+      "name": "Prototype",
+      "update": "Update 1",
+      "worlds": [
+        "Blacktomb Yard"
+      ],
+      "health": {
+        "normal": 1455,
+        "hard": 2910
+      },
+      "attack": {
+        "normal": "68-72",
+        "hard": "136-140"
+      },
+      "about": "Prototype is an enemy found in both FNaF World and FNaF World (Halloween Edition), and found in Blacktomb Yard and Area 2, respectively. Prototype is an animatronic bear with an endoskeleton-like body, and has a 33% chance of encountering in both games.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/prototype.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/prototype.webp"
+    },
+    {
+      "id": "quarry",
+      "name": "Quarry",
+      "update": "Update 1",
+      "worlds": [
+        "Mysterious Mine"
+      ],
+      "health": {
+        "normal": 730,
+        "hard": 1460
+      },
+      "attack": {
+        "normal": "48-52",
+        "hard": "96-100"
+      },
+      "about": "Quarry is an enemy found in the Mysterious Mine. Goldmine is its counterpart.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/quarry.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/quarry.webp"
+    },
+    {
+      "id": "redbear",
+      "name": "Redbear",
+      "update": "Update 1",
+      "worlds": [
+        "Pinwheel Funhouse"
+      ],
+      "health": {
+        "normal": 3930,
+        "hard": 7860
+      },
+      "attack": {
+        "normal": "112-116",
+        "hard": "224-228"
+      },
+      "about": "Redbear is an enemy in FNaF World and FNaF World: Halloween Edition.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/redbear.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/redbear.webp"
+    },
+    {
+      "id": "seaweed",
+      "name": "Seaweed",
+      "update": "Update 1",
+      "worlds": [
+        "Lilygear Lake"
+      ],
+      "health": {
+        "normal": 415,
+        "hard": 830
+      },
+      "attack": {
+        "normal": "36-40",
+        "hard": "72-76"
+      },
+      "about": "Seaweed is a green enemy that looks like Rot and Flan.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/seaweed.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/seaweed.webp"
+    },
+    {
+      "id": "tangle",
+      "name": "Tangle",
+      "update": "Update 1",
+      "worlds": [
+        "Pinwheel Funhouse"
+      ],
+      "health": {
+        "normal": 3655,
+        "hard": 7310
+      },
+      "attack": {
+        "normal": "108-112",
+        "hard": "216-220"
+      },
+      "about": "Tangle is an enemy encountered in both FNaF World and FNaF World (Halloween Edition), in both Pinwheel Funhouse and Area 2, respectively. Tangle represents a discount or knockoff Mangle, and has a 33% chance of encountering.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/tangle.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/tangle.webp"
+    },
+    {
+      "id": "tombstack",
+      "name": "Tombstack",
+      "update": "Update 1",
+      "worlds": [
+        "Deep-Metal Mine"
+      ],
+      "health": {
+        "normal": 1630,
+        "hard": 3260
+      },
+      "attack": {
+        "normal": "72-76",
+        "hard": "144-148"
+      },
+      "about": "Tombstack is a black, totempole-like enemy with red eyes, black ears and white buck teeth. Its insides show an orange/brown color when it jumps up and down, strangely, Tombstacks appear to be stationary, yet the rest of the body is capable of moving. Tombstacks also have a brown tail at the base segment.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/tombstack.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/tombstack.webp"
+    },
+    {
+      "id": "totemole",
+      "name": "Totemole",
+      "update": "Update 1",
+      "worlds": [
+        "Choppy's Woods"
+      ],
+      "health": {
+        "normal": 90,
+        "hard": 180
+      },
+      "attack": {
+        "normal": "16-20",
+        "hard": "32-36"
+      },
+      "about": "Totemole is a totem pole-like creature with rodent features that is completely composed out of wood. It has buck teeth, yellow eyes, wooden ears, a tail, and three segments that constantly shift in different directions.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/totemole.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/totemole.webp"
+    },
+    {
+      "id": "white-rabbit",
+      "name": "White Rabbit",
+      "update": "Update 1",
+      "worlds": [
+        "Pinwheel Funhouse"
+      ],
+      "health": {
+        "normal": 4215,
+        "hard": 8230
+      },
+      "attack": {
+        "normal": "116-120",
+        "hard": "232-236"
+      },
+      "about": "White Rabbit is an enemy in FNaF World that only appears in Pinwheel Funhouse. A reference to the fact that Bonnie was originally a white rabbit in the first version of FNaF 1.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/white-rabbit.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/white-rabbit.webp"
+    },
+    {
+      "id": "neon",
+      "name": "Neon",
+      "update": "Update 2",
+      "worlds": [
+        "Geist Lair"
+      ],
+      "health": {
+        "normal": 13015,
+        "hard": 26030
+      },
+      "attack": {
+        "normal": "204-208",
+        "hard": "408-412"
+      },
+      "about": "Neon is an enemy in FNaF World which is introduced in Update 2. Neon's design is pixelated and quite simple same with all other enemies encountered in Geist Lair. Neon is mostly yellow with orange for the eyes and mouth, as well as having small ears on it and what seems to be eyebrows on its face.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/neon.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/neon.webp"
+    },
+    {
+      "id": "p-goon",
+      "name": "P.Goon",
+      "update": "Update 2",
+      "worlds": [
+        "Geist Lair"
+      ],
+      "health": {
+        "normal": 14055,
+        "hard": 28110
+      },
+      "attack": {
+        "normal": "212-216",
+        "hard": "424-428"
+      },
+      "about": "P.Goons are 8-bit enemies found in the Geist Lair, the area added in Update 2.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/p-goon.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/p-goon.webp"
+    },
+    {
+      "id": "jangle",
+      "name": "Jangle",
+      "update": "Update 2",
+      "worlds": [
+        "Geist Lair"
+      ],
+      "health": {
+        "normal": 13530,
+        "hard": 27060
+      },
+      "attack": {
+        "normal": "208-212",
+        "hard": "416-420"
+      },
+      "about": "Jangle is an 8-bit enemy encountered in the final location of FNaF World, the Geist Lair. It has a 33% chance of being encountered.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/jangle.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/jangle.webp"
+    },
+    {
+      "id": "he-big-jack",
+      "name": "Big Jack",
+      "update": "Halloween Edition",
+      "worlds": [
+        "Halloween Edition"
+      ],
+      "health": null,
+      "attack": null,
+      "about": "Big Jack is an enemy that appears in FNaF World Halloween Edition.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/he-big-jack.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/he-big-jack.webp"
+    },
+    {
+      "id": "he-brow-boy",
+      "name": "Brow Boy",
+      "update": "Halloween Edition",
+      "worlds": [
+        "Halloween Edition"
+      ],
+      "health": {
+        "normal": 35,
+        "hard": null
+      },
+      "attack": {
+        "normal": "14-15",
+        "hard": null
+      },
+      "about": "Brow Boy is an enemy in the FNAF World Halloween Edition.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/he-brow-boy.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/he-brow-boy.webp"
+    },
+    {
+      "id": "he-cheesehead",
+      "name": "Cheesehead",
+      "update": "Halloween Edition",
+      "worlds": [
+        "Halloween Edition"
+      ],
+      "health": {
+        "normal": 6,
+        "hard": null
+      },
+      "attack": {
+        "normal": "6-7",
+        "hard": null
+      },
+      "about": "Cheesehead is an introductory enemy found in FNaF World (Halloween Edition) and is the only introductory enemy that doesn't come back in some capacity to the main game, FNaF World. It has a 33% chance of being encountered in both Area 1 and Area 2.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/he-cheesehead.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/he-cheesehead.webp"
+    },
+    {
+      "id": "he-half-bake",
+      "name": "Half-Bake",
+      "update": "Halloween Edition",
+      "worlds": [
+        "Halloween Edition"
+      ],
+      "health": {
+        "normal": 30,
+        "hard": null
+      },
+      "attack": {
+        "normal": "12-13",
+        "hard": null
+      },
+      "about": "Half-Bake is a strange creature that sports the appearance of a cake that has pink frosting, what seem to be strawberries, and three candles on the top. Half-Bake also has a face that is always in an angered state, which is very odd.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/he-half-bake.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/he-half-bake.webp"
+    },
+    {
+      "id": "he-madjack",
+      "name": "Madjack",
+      "update": "Halloween Edition",
+      "worlds": [
+        "Halloween Edition"
+      ],
+      "health": null,
+      "attack": null,
+      "about": "Madjack is an enemy in FNaF World Halloween Edition.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/he-madjack.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/he-madjack.webp"
+    },
+    {
+      "id": "he-mini-p",
+      "name": "Mini P",
+      "update": "Halloween Edition",
+      "worlds": [
+        "Halloween Edition"
+      ],
+      "health": null,
+      "attack": null,
+      "about": "Mini P is an enemy in FNaF World: Halloween Edition.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/he-mini-p.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/he-mini-p.webp"
+    },
+    {
+      "id": "he-mudpie",
+      "name": "Mudpie",
+      "update": "Halloween Edition",
+      "worlds": [
+        "Halloween Edition"
+      ],
+      "health": null,
+      "attack": null,
+      "about": "While Mudpie looks very similar to Half-Bake, the coloring of both of them aren't the exact same, while Half-Bake has pink, yellow and red coloring, Mudpie has brown and dark grey colors on the body, dark brown for the arms and black eyes and mouth. There is also a candle present at the top of the head and it has orange toppings on it.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/he-mudpie.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/he-mudpie.webp"
+    },
+    {
+      "id": "he-prototype",
+      "name": "Prototype",
+      "update": "Halloween Edition",
+      "worlds": [
+        "Halloween Edition"
+      ],
+      "health": {
+        "normal": 21,
+        "hard": null
+      },
+      "attack": {
+        "normal": "10-11",
+        "hard": null
+      },
+      "about": "Prototype is an enemy found in both FNaF World and FNaF World (Halloween Edition), and found in Blacktomb Yard and Area 2, respectively. Prototype is an animatronic bear with an endoskeleton-like body, and has a 33% chance of encountering in both games.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/he-prototype.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/he-prototype.webp"
+    },
+    {
+      "id": "he-quad-endo",
+      "name": "Quad Endo",
+      "update": "Halloween Edition",
+      "worlds": [
+        "Halloween Edition"
+      ],
+      "health": null,
+      "attack": null,
+      "about": "Quad Endo is an 8-bit endoskeleton enemy in FNaF World: Halloween Edition.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/he-quad-endo.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/he-quad-endo.webp"
+    },
+    {
+      "id": "he-security",
+      "name": "Security",
+      "update": "Halloween Edition",
+      "worlds": [
+        "Halloween Edition"
+      ],
+      "health": null,
+      "attack": null,
+      "about": "In the Halloween version, Security is a humanoid robot with long wire-like arms which seem to function as whips, or used to be hands. Security's most distinctive feature is the camera which functions as a head for it, strands of wires are seen at the end of its head along with an antenna with a red ball on it on the top of the camera.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/he-security.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/he-security.webp"
+    },
+    {
+      "id": "he-xangle",
+      "name": "Xangle",
+      "update": "Halloween Edition",
+      "worlds": [
+        "Halloween Edition"
+      ],
+      "health": null,
+      "attack": null,
+      "about": "Xangle is an enemy in FNaF World: Halloween Edition.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/he-xangle.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/he-xangle.webp"
+    },
+    {
+      "id": "rot",
+      "name": "Rot",
+      "update": "Update 1",
+      "worlds": [
+        "Deep-Metal Mine"
+      ],
+      "health": {
+        "normal": 1815,
+        "hard": 3630
+      },
+      "attack": {
+        "normal": "76-80",
+        "hard": "152-156"
+      },
+      "about": "Rot is an enemy found in Deep-Metal Mine.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/rot.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/rot.webp"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "8-bit-fredbear",
+      "name": "8-bit Fredbear",
+      "update": "Update 1",
+      "worlds": [
+        "Fazbear Hills"
+      ],
+      "about": "8-bit Fredbear (also known as Glitched Fredbear or Sprite Fredbear) is a counterpart to the NPC Fredbear who appears only in dialogue cutscenes. If the player idles on Fredbear's last dialogue, where the 'Done' button appears, for a few seconds, 8-bit Fredbear will appear and give the player warnings and guidance to obtain the Clock Ending.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/8-bit-fredbear.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/8-bit-fredbear.webp"
+    },
+    {
+      "id": "deedee",
+      "name": "DeeDee",
+      "update": "Update 1",
+      "worlds": [
+        "Fazbear Hills"
+      ],
+      "about": "DeeDee is a character that appears in FNaF World. She is the owner of DeeDee's Fishing Hole. She's the only Balloon Boy counterpart that isn't player that also isn't an enemy.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/deedee.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/deedee.webp"
+    },
+    {
+      "id": "desk-man",
+      "name": "Desk Man",
+      "update": "Update 1",
+      "worlds": [
+        "Fazbear Hills"
+      ],
+      "about": "\"Desk Man\" is a character that appeared after the game's official release and update 2. He is found in the grey house in Fazbear Hills.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/desk-man.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/desk-man.webp"
+    },
+    {
+      "id": "fredbear",
+      "name": "Fredbear",
+      "update": "Update 1",
+      "worlds": [
+        "Fazbear Hills"
+      ],
+      "about": "When Fredbear is done talking and you don't press DONE, he starts glitching out and becomes an 8-bit version of himself. This Fredbear will tell you secrets and give you information that you will need throughout the game.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/fredbear.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/fredbear.webp"
+    },
+    {
+      "id": "lolbit",
+      "name": "Lolbit",
+      "update": "Update 1",
+      "worlds": [
+        "Fazbear Hills"
+      ],
+      "about": "Lolbit is a helper in FNaF World that sells Bytes for the player to use, and the Bytes change depending on Lolbit’s location. They acts as a helper and vendor for the player.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/lolbit.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/lolbit.webp"
+    },
+    {
+      "id": "mendo",
+      "name": "Mendo",
+      "update": "Update 1",
+      "worlds": [
+        "Fazbear Hills"
+      ],
+      "about": "Mendo is the shop owner that you can purchase upgrades for your endoskeleton to increase your defense. In Fazbear Hills, Mendo sells reinforced, steel, and titanium upgrades at his shop, Mendo's Endo-Upgrades.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/mendo.webp",
+      "image": "https://fnaf-world.fntduserguide.com/foes/mendo.webp"
+    }
+  ],
+  "attacks": {
+    "4th Wall": {
+      "color": "Purple",
+      "hex": "#a56bff",
+      "type": "Debuff",
+      "description": "High damage that pierces defenses.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/4th-wall.webp"
+    },
+    "Armor Song": {
+      "color": "White",
+      "hex": "#f4f4f4",
+      "type": "Buff",
+      "description": "Raises defense power.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/armor-song.webp"
+    },
+    "Bad Pizza": {
+      "color": "Green",
+      "hex": "#5fe06a",
+      "type": "Poison",
+      "description": "High damage to all enemies.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/bad-pizza.webp"
+    },
+    "Balloons": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "Damage",
+      "description": "Three random-damage hits.",
+      "damage": "(Level + [0~2] + 5) × [0~3] + 1; 3 Projectiles",
+      "icon": "https://fnaf-world.fntduserguide.com/moves/balloons.webp"
+    },
+    "Balloons 2": {
+      "color": "Blazing Orange",
+      "hex": "#ff6a00",
+      "type": "Damage",
+      "description": "A storm of balloons that damages every enemy.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/balloons-2.webp"
+    },
+    "Bash Jam": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "Damage",
+      "description": "Low damage, all enemies.",
+      "damage": "Level + 10 + [0~19] + [0~5]",
+      "icon": "https://fnaf-world.fntduserguide.com/moves/bash-jam.webp"
+    },
+    "Birthday": {
+      "color": "White",
+      "hex": "#f4f4f4",
+      "type": "Buff",
+      "description": "Raises attack, defense, and speed for a while.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/birthday.webp"
+    },
+    "Bite": {
+      "color": "Orange",
+      "hex": "#ff9a2e",
+      "type": "Bite",
+      "description": "Low-damage bite attack.",
+      "damage": "Level+20+[0~4]",
+      "icon": "https://fnaf-world.fntduserguide.com/moves/bite.webp"
+    },
+    "Bite 2": {
+      "color": "Orange",
+      "hex": "#ff9a2e",
+      "type": "Bite",
+      "description": "High-damage bite attack.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/bite-2.webp"
+    },
+    "Bubble Breath": {
+      "color": "Pink",
+      "hex": "#ff6fb5",
+      "type": "Heal",
+      "description": "Shields the party from the toxic air in the Geist Lair.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/bubble-breath.webp"
+    },
+    "Buzzsaw": {
+      "color": "Blazing Orange",
+      "hex": "#ff6a00",
+      "type": "Damage",
+      "description": "A bouncing buzzsaw that deals huge damage.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/buzzsaw.webp"
+    },
+    "Cosmic Song": {
+      "color": "White",
+      "hex": "#f4f4f4",
+      "type": "Buff",
+      "description": "Calls for a storm of comets.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/cosmic-song.webp"
+    },
+    "Cupcake": {
+      "color": "Pink",
+      "hex": "#ff6fb5",
+      "type": "Heal",
+      "description": "Heals all party members.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/cupcake.webp"
+    },
+    "Cupcakes": {
+      "color": "Pink",
+      "hex": "#ff6fb5",
+      "type": "Heal",
+      "description": "Heals all party members.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/cupcakes.webp"
+    },
+    "Endo Army": {
+      "color": "Yellow",
+      "hex": "#ffd84a",
+      "type": "Special",
+      "description": "Three endos will help you fight!",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/endo-army.webp"
+    },
+    "Esc Key": {
+      "color": "Yellow",
+      "hex": "#ffd84a",
+      "type": "Special",
+      "description": "Chance to kill multiple enemies.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/esc-key.webp"
+    },
+    "Eye Beam": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "Damage",
+      "description": "Medium damage, chance of critical hit!",
+      "damage": "Level × 2 + 50 + [0~29] + 10% Chance of 1000",
+      "icon": "https://fnaf-world.fntduserguide.com/moves/eye-beam.webp"
+    },
+    "Freddles": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "Damage",
+      "description": "Storm of Freddles causes high-damage.",
+      "damage": "Level + 20 + [0~19]; 4-15 Projectiles; 33.33% chance to hit an overlapping target every 0.1 seconds",
+      "icon": "https://fnaf-world.fntduserguide.com/moves/freddles.webp"
+    },
+    "Gift Boxes": {
+      "color": "Yellow",
+      "hex": "#ffd84a",
+      "type": "Special",
+      "description": "Auto-resurrect party members.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/gift-boxes.webp"
+    },
+    "Gloom Balloon": {
+      "color": "Purple",
+      "hex": "#a56bff",
+      "type": "Debuff",
+      "description": "Lowers enemy attack power.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/gloom-balloon.webp"
+    },
+    "Gloom Song": {
+      "color": "Purple",
+      "hex": "#a56bff",
+      "type": "Debuff",
+      "description": "Lowers enemy attack power.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/gloom-song.webp"
+    },
+    "Happy Jam": {
+      "color": "Pink",
+      "hex": "#ff6fb5",
+      "type": "Heal",
+      "description": "Heals all party members.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/happy-jam.webp"
+    },
+    "Happy Jam 2": {
+      "color": "Pink",
+      "hex": "#ff6fb5",
+      "type": "Heal",
+      "description": "Higher healing for all members.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/happy-jam-2.webp"
+    },
+    "Haunting": {
+      "color": "Yellow",
+      "hex": "#ffd84a",
+      "type": "Special",
+      "description": "Chance to turn an enemy to stone.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/haunting.webp"
+    },
+    "Hocus Pocus": {
+      "color": "Yellow",
+      "hex": "#ffd84a",
+      "type": "Special",
+      "description": "Chance to turn enemies into weaker ones.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/hocus-pocus.webp"
+    },
+    "Hook": {
+      "color": "Orange",
+      "hex": "#ff9a2e",
+      "type": "Bite",
+      "description": "Low damage hook attack.",
+      "damage": "Level+15+[0~4]",
+      "icon": "https://fnaf-world.fntduserguide.com/moves/hook.webp"
+    },
+    "Hot Cheese": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "Damage",
+      "description": "Damage-over-time effect.",
+      "damage": "Level + 5 + [0~3]; 3 Projectiles; 20% chance of hitting an overlapping target every 0.25 seconds; 61 Seconds",
+      "icon": "https://fnaf-world.fntduserguide.com/moves/hot-cheese.webp"
+    },
+    "Hot Cheese 2": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "Damage",
+      "description": "Hotter cheese, more damage.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/hot-cheese-2.webp"
+    },
+    "Jack-O-Bomb": {
+      "color": "Blazing Orange",
+      "hex": "#ff6a00",
+      "type": "Damage",
+      "description": "Rains pumpkin bombs for maximum area damage.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/jack-o-bomb.webp"
+    },
+    "Jumpscare": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "Damage",
+      "description": "Stuns enemies for a few seconds.",
+      "damage": "Stuns enemies; 2~8 Seconds (Enemy); 1~3 Seconds (Boss)",
+      "icon": "https://fnaf-world.fntduserguide.com/moves/jumpscare.webp"
+    },
+    "Mega Bite": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "Damage",
+      "description": "Maximum damage bite.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/mega-bite.webp"
+    },
+    "Mega Virus": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "Damage",
+      "description": "Virus drains enemy life.",
+      "damage": "99 × [0~9] (Stackable); 50% chance to hit an overlapping target every 0.25 seconds; 61 Seconds",
+      "icon": "https://fnaf-world.fntduserguide.com/moves/mega-virus.webp"
+    },
+    "Mic Toss": {
+      "color": "Orange",
+      "hex": "#ff9a2e",
+      "type": "Bite",
+      "description": "Killing them softly!",
+      "damage": "Level×Multiplier+10+[0~4]",
+      "icon": "https://fnaf-world.fntduserguide.com/moves/mic-toss.webp"
+    },
+    "Mimic Ball": {
+      "color": "Yellow",
+      "hex": "#ffd84a",
+      "type": "Special",
+      "description": "Mimics every attack you do.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/mimic-ball.webp"
+    },
+    "Munchies": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "Damage",
+      "description": "Damage-over-time effect.",
+      "damage": "Level + 5 + [0~4]; 50% chance of hitting every 0.5 seconds; 3 Uses",
+      "icon": "https://fnaf-world.fntduserguide.com/moves/munchies.webp"
+    },
+    "Mystery Box": {
+      "color": "Yellow",
+      "hex": "#ffd84a",
+      "type": "Special",
+      "description": "Swap out your characters for random characters.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/mystery-box.webp"
+    },
+    "Mystery Box 2": {
+      "color": "Yellow",
+      "hex": "#ffd84a",
+      "type": "Special",
+      "description": "Swap out your characters for random characters.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/mystery-box-2.webp"
+    },
+    "Neon Wall": {
+      "color": "Yellow",
+      "hex": "#ffd84a",
+      "type": "Special",
+      "description": "Force field blocks 50% damage.",
+      "damage": "Reduces enemy attack by 50%; Can block Alarm; 30 Seconds (-3 w/ Alarm)",
+      "icon": "https://fnaf-world.fntduserguide.com/moves/neon-wall.webp"
+    },
+    "Neon Wall 2": {
+      "color": "Yellow",
+      "hex": "#ffd84a",
+      "type": "Special",
+      "description": "Makes the party invincible for a few seconds.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/neon-wall-2.webp"
+    },
+    "Party Favors": {
+      "color": "Pink",
+      "hex": "#ff6fb5",
+      "type": "Heal",
+      "description": "Low damage, plus some healing.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/party-favors.webp"
+    },
+    "Pizza Wheel": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "Damage",
+      "description": "Multiple hits for multiple enemies.",
+      "damage": "Level + 1 + [0~1]; 3-6 Projectiles",
+      "icon": "https://fnaf-world.fntduserguide.com/moves/pizza-wheel.webp"
+    },
+    "Pizza Wheel 2": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "Damage",
+      "description": "Bigger pizza, better damage.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/pizza-wheel-2.webp"
+    },
+    "Poppers": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "Damage",
+      "description": "Explosive in high numbers.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/poppers.webp"
+    },
+    "Power Song": {
+      "color": "White",
+      "hex": "#f4f4f4",
+      "type": "Buff",
+      "description": "Raises attack power.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/power-song.webp"
+    },
+    "Prize Ball": {
+      "color": "Yellow",
+      "hex": "#ffd84a",
+      "type": "Special",
+      "description": "Random low-tier attack.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/prize-ball.webp"
+    },
+    "Prize Ball 2": {
+      "color": "Yellow",
+      "hex": "#ffd84a",
+      "type": "Special",
+      "description": "Random high-tier attack.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/prize-ball-2.webp"
+    },
+    "Rainy Day": {
+      "color": "Purple",
+      "hex": "#a56bff",
+      "type": "Debuff",
+      "description": "Lowers enemy defenses.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/rainy-day.webp"
+    },
+    "Rainy Day 2": {
+      "color": "Purple",
+      "hex": "#a56bff",
+      "type": "Debuff",
+      "description": "Lowers enemy defenses, plus shock damages.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/rainy-day-2.webp"
+    },
+    "Regen Song": {
+      "color": "Pink",
+      "hex": "#ff6fb5",
+      "type": "Heal",
+      "description": "Refills life during battle.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/regen-song.webp"
+    },
+    "Slasher": {
+      "color": "Purple",
+      "hex": "#a56bff",
+      "type": "Debuff",
+      "description": "A 1 in 10 chance to deal 99,999 damage.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/slasher.webp"
+    },
+    "Sludge": {
+      "color": "Purple",
+      "hex": "#a56bff",
+      "type": "Debuff",
+      "description": "Slows enemies down.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/sludge.webp"
+    },
+    "Speed Song": {
+      "color": "White",
+      "hex": "#f4f4f4",
+      "type": "Buff",
+      "description": "Increases party speed.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/speed-song.webp"
+    },
+    "Springlocks": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "Damage",
+      "description": "Maximum area damage.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/springlocks.webp"
+    },
+    "Toxic Balloon": {
+      "color": "Green",
+      "hex": "#5fe06a",
+      "type": "Poison",
+      "description": "Inflicts enemies with poison.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/toxic-balloon.webp"
+    },
+    "Toxic Bite": {
+      "color": "Green",
+      "hex": "#5fe06a",
+      "type": "Poison",
+      "description": "Bite damage, plus poison.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/toxic-bite.webp"
+    },
+    "Toxic Bite 2": {
+      "color": "Green",
+      "hex": "#5fe06a",
+      "type": "Poison",
+      "description": "Higher bite damage, plus poison.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/toxic-bite-2.webp"
+    },
+    "Unscrew": {
+      "color": "Black",
+      "hex": "#2b2b33",
+      "type": "Instant kill",
+      "description": "30% chance to kill one enemy.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/unscrew.webp"
+    },
+    "Unscrew 2": {
+      "color": "Black",
+      "hex": "#2b2b33",
+      "type": "Instant kill",
+      "description": "50% chance to kill one enemy.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/unscrew-2.webp"
+    },
+    "Waterhose": {
+      "color": "Black",
+      "hex": "#2b2b33",
+      "type": "Instant kill",
+      "description": "Kills all enemies under 30% health.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/waterhose.webp"
+    },
+    "Waterhose 2": {
+      "color": "Black",
+      "hex": "#2b2b33",
+      "type": "Instant kill",
+      "description": "Kills all enemies under 50% health.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/waterhose-2.webp"
+    }
+  }
+}

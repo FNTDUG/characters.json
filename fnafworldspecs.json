@@ -1,0 +1,597 @@
+{
+  "worlds": [
+    {
+      "name": "Fazbear Hills",
+      "color": "#4fd36b",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/fazbear-hills.webp",
+      "about": "Fazbear Hills is the first area in FNaF World. In this area, the player will be able to use Fazbear tokens to buy endoskeletons from Mendo to upgrade their defense, as well as play a fishing mini-game with DeeDee to earn Fazbear tokens."
+    },
+    {
+      "name": "Choppy's Woods",
+      "color": "#2bb673",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/choppys-woods.webp",
+      "about": "Choppy's Woods is the second location to be found in FNaF World. It holds an entrance to the Mysterious Mine and connects many of the locations together, including Fazbear Hills, Dusting Fields, and Lilygear Lake."
+    },
+    {
+      "name": "Dusting Fields",
+      "color": "#6fd0ff",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/dusting-fields.webp",
+      "about": "Dusting Fields is the third location encountered in FNaF World that connects to Choppy's Woods as well as a section of the Mysterious Mine."
+    },
+    {
+      "name": "Lilygear Lake",
+      "color": "#2fc4c9",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/lilygear-lake.webp",
+      "about": "Lilygear Lake is the fourth location encountered in FNaF World that is connected to Choppy's Woods' north area, its west area, and Blacktomb Yard."
+    },
+    {
+      "name": "Mysterious Mine",
+      "color": "#d79b45",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/mysterious-mine.webp",
+      "about": "Mysterious Mine is the main cave system in FNaF World that has several entrances in Choppy's Woods (north and west areas) and Dusting Fields."
+    },
+    {
+      "name": "Blacktomb Yard",
+      "color": "#9b86e8",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/blacktomb-yard.webp",
+      "about": "Blacktomb Yard is the fifth location encountered in FNaF World, and the final to be encountered in the demo version of the game. It holds the first and main entrance to the Deep-Metal Mine, as well as being connected to Lilygear Lake."
+    },
+    {
+      "name": "Deep-Metal Mine",
+      "color": "#8fa8bf",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/deep-metal-mine.webp",
+      "about": "Deep-Metal Mine is a smaller mine mainly found in Blacktomb Yard and is used to get into Pinwheel Circus in FNaF World."
+    },
+    {
+      "name": "Pinwheel Circus",
+      "color": "#ff5d5d",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/pinwheel-circus.webp",
+      "about": "The Pinwheel Circus is the penultimate location encountered in FNaF World and the home to the Normal Mode final boss, Security."
+    },
+    {
+      "name": "Pinwheel Funhouse",
+      "color": "#ff63d0",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/pinwheel-funhouse.webp",
+      "about": "Pinwheel Funhouse is the final location the player usually finds in FNaF World and is only connected to Pinwheel Circus and Lilygear Lake."
+    },
+    {
+      "name": "&*___TWRE",
+      "color": "#b8ff3d",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/and-twre.webp",
+      "about": "&*___TWRE is the glitched world in FNaF World that the player can access through three different \"breakpoints\" around the map, mainly only to gain red chips."
+    }
+  ],
+  "groups": {
+    "bytes": [
+      {
+        "name": "Byte Bee",
+        "color": "#ffd23f",
+        "about": "These Bytes shoot stingers at enemies for extra damage! Buy all three from Lolbit in Fazbear Hills for 250 Faz Tokens."
+      },
+      {
+        "name": "Byte Medpod",
+        "color": "#ff6fb5",
+        "about": "These Medpods will heal you during battles! Buy all three from Lolbit in Choppy's Woods for 625 Faz Tokens."
+      },
+      {
+        "name": "Byte Grim Reaper",
+        "color": "#9aa4c7",
+        "about": "These Reapers have a chance to instantly kill enemies! Buy all three from Lolbit in Dusting Fields for 2,600 Faz Tokens."
+      },
+      {
+        "name": "Byte Shield",
+        "color": "#6fd0ff",
+        "about": "These Shields block base damage from all attacks! Buy all three from Lolbit in Mysterious Mine for 2,550 Faz Tokens."
+      },
+      {
+        "name": "Byte Bomb",
+        "color": "#ff5d5d",
+        "about": "These Bombs detonate once per battle for instant damage! Buy all three from Lolbit in Blacktomb Yard for 6,097 Faz Tokens."
+      },
+      {
+        "name": "Byte Eye",
+        "color": "#a56bff",
+        "about": "These Eyebots work on bosses and steadily drain their life! Buy all three from Lolbit in Deep-Metal Mine for 6,700 Faz Tokens."
+      },
+      {
+        "name": "Byte UFO",
+        "color": "#4fd36b",
+        "about": "These UFOs shoot lasers for very high damage! Buy all three from Lolbit in Pinwheel Circus for 2,200 Faz Tokens."
+      },
+      {
+        "name": "Special Bytes",
+        "color": "#ffe866",
+        "about": "Special Bytes don't take up a Byte slot. You earn them instead of buying them."
+      }
+    ],
+    "chips": [
+      {
+        "name": "Green",
+        "color": "#3ec74a",
+        "about": "Green chips are the most common. Most are found in chests out in the open.",
+        "icon": "https://fnaf-world.fntduserguide.com/specs/chips/green.webp"
+      },
+      {
+        "name": "Gold",
+        "color": "#ffb21f",
+        "about": "Gold chips are rarer. Most are guarded by an Eyesore or a Mad Endo.",
+        "icon": "https://fnaf-world.fntduserguide.com/specs/chips/gold.webp"
+      },
+      {
+        "name": "Red",
+        "color": "#ff3b3b",
+        "about": "Red chips are the rarest and the most useful against tough bosses. Most are hidden in the glitched world, &*___TWRE.",
+        "icon": "https://fnaf-world.fntduserguide.com/specs/chips/red.webp"
+      }
+    ]
+  },
+  "bytes": [
+    {
+      "id": "gnat",
+      "name": "Gnat",
+      "group": "Byte Bee",
+      "tier": 1,
+      "price": 25,
+      "world": "Fazbear Hills",
+      "effect": "These Bytes shoot stingers at enemies for extra damage!",
+      "unlock": "Buy it from Lolbit in Fazbear Hills for 25 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/gnat.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/gnat.webp"
+    },
+    {
+      "id": "neon-bee",
+      "name": "Neon Bee",
+      "group": "Byte Bee",
+      "tier": 2,
+      "price": 75,
+      "world": "Fazbear Hills",
+      "effect": "These Bytes shoot stingers at enemies for extra damage!",
+      "unlock": "Buy it from Lolbit in Fazbear Hills for 75 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/neon-bee.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/neon-bee.webp"
+    },
+    {
+      "id": "neon-wasp",
+      "name": "Neon Wasp",
+      "group": "Byte Bee",
+      "tier": 3,
+      "price": 150,
+      "world": "Fazbear Hills",
+      "effect": "These Bytes shoot stingers at enemies for extra damage!",
+      "unlock": "Buy it from Lolbit in Fazbear Hills for 150 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/neon-wasp.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/neon-wasp.webp"
+    },
+    {
+      "id": "medpod-1",
+      "name": "Medpod 1",
+      "group": "Byte Medpod",
+      "tier": 1,
+      "price": 25,
+      "world": "Choppy's Woods",
+      "effect": "These Medpods will heal you during battles!",
+      "unlock": "Buy it from Lolbit in Choppy's Woods for 25 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/medpod-1.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/medpod-1.webp"
+    },
+    {
+      "id": "medpod-2",
+      "name": "Medpod 2",
+      "group": "Byte Medpod",
+      "tier": 2,
+      "price": 100,
+      "world": "Choppy's Woods",
+      "effect": "These Medpods will heal you during battles!",
+      "unlock": "Buy it from Lolbit in Choppy's Woods for 100 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/medpod-2.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/medpod-2.webp"
+    },
+    {
+      "id": "mega-med",
+      "name": "Mega-Med",
+      "group": "Byte Medpod",
+      "tier": 3,
+      "price": 500,
+      "world": "Choppy's Woods",
+      "effect": "These Medpods will heal you during battles!",
+      "unlock": "Buy it from Lolbit in Choppy's Woods for 500 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/mega-med.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/mega-med.webp"
+    },
+    {
+      "id": "mini-reaper",
+      "name": "Mini Reaper",
+      "group": "Byte Grim Reaper",
+      "tier": 1,
+      "price": 100,
+      "world": "Dusting Fields",
+      "effect": "These Reapers have a chance to instantly kill enemies!",
+      "unlock": "Buy it from Lolbit in Dusting Fields for 100 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/mini-reaper.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/mini-reaper.webp"
+    },
+    {
+      "id": "reaper",
+      "name": "Reaper",
+      "group": "Byte Grim Reaper",
+      "tier": 2,
+      "price": 500,
+      "world": "Dusting Fields",
+      "effect": "These Reapers have a chance to instantly kill enemies!",
+      "unlock": "Buy it from Lolbit in Dusting Fields for 500 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/reaper.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/reaper.webp"
+    },
+    {
+      "id": "x-reaper",
+      "name": "X-Reaper",
+      "group": "Byte Grim Reaper",
+      "tier": 3,
+      "price": 2000,
+      "world": "Dusting Fields",
+      "effect": "These Reapers have a chance to instantly kill enemies!",
+      "unlock": "Buy it from Lolbit in Dusting Fields for 2,000 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/x-reaper.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/x-reaper.webp"
+    },
+    {
+      "id": "block5",
+      "name": "Block5",
+      "group": "Byte Shield",
+      "tier": 1,
+      "price": 50,
+      "world": "Mysterious Mine",
+      "effect": "These Shields block base damage from all attacks!",
+      "unlock": "Buy it from Lolbit in Mysterious Mine for 50 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/block5.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/block5.webp"
+    },
+    {
+      "id": "block20",
+      "name": "Block20",
+      "group": "Byte Shield",
+      "tier": 2,
+      "price": 500,
+      "world": "Mysterious Mine",
+      "effect": "These Shields block base damage from all attacks!",
+      "unlock": "Buy it from Lolbit in Mysterious Mine for 500 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/block20.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/block20.webp"
+    },
+    {
+      "id": "block50",
+      "name": "Block50",
+      "group": "Byte Shield",
+      "tier": 3,
+      "price": 2000,
+      "world": "Mysterious Mine",
+      "effect": "These Shields block base damage from all attacks!",
+      "unlock": "Buy it from Lolbit in Mysterious Mine for 2,000 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/block50.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/block50.webp"
+    },
+    {
+      "id": "pop-pop",
+      "name": "Pop-Pop",
+      "group": "Byte Bomb",
+      "tier": 1,
+      "price": 99,
+      "world": "Blacktomb Yard",
+      "effect": "These Bombs detonate once per battle for instant damage!",
+      "unlock": "Buy it from Lolbit in Blacktomb Yard for 99 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/pop-pop.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/pop-pop.webp"
+    },
+    {
+      "id": "boom",
+      "name": "BOOM!",
+      "group": "Byte Bomb",
+      "tier": 2,
+      "price": 999,
+      "world": "Blacktomb Yard",
+      "effect": "These Bombs detonate once per battle for instant damage!",
+      "unlock": "Buy it from Lolbit in Blacktomb Yard for 999 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/boom.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/boom.webp"
+    },
+    {
+      "id": "kaboom",
+      "name": "KABOOM!",
+      "group": "Byte Bomb",
+      "tier": 3,
+      "price": 4999,
+      "world": "Blacktomb Yard",
+      "effect": "These Bombs detonate once per battle for instant damage!",
+      "unlock": "Buy it from Lolbit in Blacktomb Yard for 4,999 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/kaboom.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/kaboom.webp"
+    },
+    {
+      "id": "bossdrain01",
+      "name": "BossDrain01",
+      "group": "Byte Eye",
+      "tier": 1,
+      "price": 200,
+      "world": "Deep-Metal Mine",
+      "effect": "These Eyebots work on bosses and steadily drain their life!",
+      "unlock": "Buy it from Lolbit in Deep-Metal Mine for 200 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/bossdrain01.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/bossdrain01.webp"
+    },
+    {
+      "id": "bossdrain02",
+      "name": "BossDrain02",
+      "group": "Byte Eye",
+      "tier": 2,
+      "price": 1500,
+      "world": "Deep-Metal Mine",
+      "effect": "These Eyebots work on bosses and steadily drain their life!",
+      "unlock": "Buy it from Lolbit in Deep-Metal Mine for 1,500 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/bossdrain02.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/bossdrain02.webp"
+    },
+    {
+      "id": "bossdrain-x",
+      "name": "BossDrain-X",
+      "group": "Byte Eye",
+      "tier": 3,
+      "price": 5000,
+      "world": "Deep-Metal Mine",
+      "effect": "These Eyebots work on bosses and steadily drain their life!",
+      "unlock": "Buy it from Lolbit in Deep-Metal Mine for 5,000 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/bossdrain-x.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/bossdrain-x.webp"
+    },
+    {
+      "id": "mini-fo",
+      "name": "Mini-FO",
+      "group": "Byte UFO",
+      "tier": 1,
+      "price": 200,
+      "world": "Pinwheel Circus",
+      "effect": "These UFOs shoot lasers for very high damage!",
+      "unlock": "Buy it from Lolbit in Pinwheel Circus for 200 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/mini-fo.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/mini-fo.webp"
+    },
+    {
+      "id": "ufo",
+      "name": "UFO",
+      "group": "Byte UFO",
+      "tier": 2,
+      "price": 500,
+      "world": "Pinwheel Circus",
+      "effect": "These UFOs shoot lasers for very high damage!",
+      "unlock": "Buy it from Lolbit in Pinwheel Circus for 500 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/ufo.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/ufo.webp"
+    },
+    {
+      "id": "x-fo",
+      "name": "X-FO",
+      "group": "Byte UFO",
+      "tier": 3,
+      "price": 1500,
+      "world": "Pinwheel Circus",
+      "effect": "These UFOs shoot lasers for very high damage!",
+      "unlock": "Buy it from Lolbit in Pinwheel Circus for 1,500 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/x-fo.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/x-fo.webp"
+    },
+    {
+      "id": "the-pearl",
+      "name": "The Pearl",
+      "group": "Special Bytes",
+      "tier": null,
+      "price": null,
+      "world": "Fazbear Hills",
+      "effect": "Heals your party members slowly.",
+      "unlock": "Catch the Pearl at DeeDee's Fishing Hole in Fazbear Hills 5 times.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/the-pearl.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/the-pearl.webp"
+    },
+    {
+      "id": "the-fan",
+      "name": "The Fan",
+      "group": "Special Bytes",
+      "tier": null,
+      "price": null,
+      "world": "Fazbear Hills",
+      "effect": "Stands at the front of your party, can't be killed, and randomly shoots lasers at the enemies.",
+      "unlock": "Unlock all 48 characters. It can't be earned in Fixed Party mode.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/cards/the-fan.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/bytes/the-fan.webp"
+    }
+  ],
+  "chips": [
+    {
+      "id": "headstart-defense",
+      "name": "Headstart: Defense",
+      "group": "Green",
+      "world": "Fazbear Hills",
+      "effect": "Start battle with a temporary defense boost.",
+      "unlock": "Path to the right behind Auto Chipper in Fazbear Hills.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/headstart-defense.webp"
+    },
+    {
+      "id": "headstart-strength",
+      "name": "Headstart: Strength",
+      "group": "Green",
+      "world": "Fazbear Hills",
+      "effect": "Start battle with a temporary strength boost.",
+      "unlock": "Behind Auto Chipper in Fazbear Hills.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/headstart-strength.webp"
+    },
+    {
+      "id": "headstart-speed",
+      "name": "Headstart: Speed",
+      "group": "Green",
+      "world": "Choppy's Woods",
+      "effect": "Start battle with a temporary speed boost.",
+      "unlock": "Behind tall stump in Choppy's Woods near Lilygear Lake.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/headstart-speed.webp"
+    },
+    {
+      "id": "evercomet-weak",
+      "name": "Evercomet: Weak",
+      "group": "Green",
+      "world": "Choppy's Woods",
+      "effect": "Comets may occasionally fall.",
+      "unlock": "Behind Auto Chipper in Choppy's Woods.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/evercomet-weak.webp"
+    },
+    {
+      "id": "quickstart-party",
+      "name": "Quickstart: Party",
+      "group": "Green",
+      "world": "Dusting Fields",
+      "effect": "Your party has the element of surprise!",
+      "unlock": "Behind a fake dead tree in Dusting Fields.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/quickstart-party.webp"
+    },
+    {
+      "id": "block-jumpscare",
+      "name": "Block: Jumpscare",
+      "group": "Green",
+      "world": "Blacktomb Yard",
+      "effect": "Makes you immune to Jumpscare.",
+      "unlock": "In the back left corner of Blacktomb Yard.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/block-jumpscare.webp"
+    },
+    {
+      "id": "run-luck",
+      "name": "Run: Luck",
+      "group": "Green",
+      "world": "Lilygear Lake",
+      "effect": "Running away is more successful.",
+      "unlock": "On the left of a false tree near Lilygear Lake.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/run-luck.webp"
+    },
+    {
+      "id": "endless-defense",
+      "name": "Endless: Defense",
+      "group": "Gold",
+      "world": "Mysterious Mine",
+      "effect": "Permanent defense boost.",
+      "unlock": "In the Mysterious Mine entrance at the top-left area of Lilygear Lake. Behind an Eyesore at the top right of the mine.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/endless-defense.webp"
+    },
+    {
+      "id": "endless-strength",
+      "name": "Endless: Strength",
+      "group": "Gold",
+      "world": "Mysterious Mine",
+      "effect": "Permanent strength boost.",
+      "unlock": "In the Mysterious Mine entrance at the top-left area of Lilygear Lake. At the top left of the mine, unguarded.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/endless-strength.webp"
+    },
+    {
+      "id": "endless-speed",
+      "name": "Endless: Speed",
+      "group": "Gold",
+      "world": "Mysterious Mine",
+      "effect": "Permanent speed boost.",
+      "unlock": "In the Mysterious Mine entrance in Choppy's Woods. Behind an Eyesore at the bottom left of the mine.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/endless-speed.webp"
+    },
+    {
+      "id": "evercomet-strong",
+      "name": "Evercomet: Strong",
+      "group": "Gold",
+      "world": "Mysterious Mine",
+      "effect": "Frequent comets will fall.",
+      "unlock": "In the Mysterious Mine entrance in Dusting Fields. Go up and to the right to a pathway that goes around to an Eyesore. The chip is to its right.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/evercomet-strong.webp"
+    },
+    {
+      "id": "auto-giftboxes",
+      "name": "Auto: Giftboxes",
+      "group": "Gold",
+      "world": "Mysterious Mine",
+      "effect": "Your party begins each battle with an extra life.",
+      "unlock": "In the Mysterious Mine entrance in Dusting Fields. Go up and to the left to an Eyesore. The chip is to its left.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/auto-giftboxes.webp"
+    },
+    {
+      "id": "auto-regen",
+      "name": "Auto: Regen",
+      "group": "Gold",
+      "world": "Pinwheel Circus",
+      "effect": "Your party regenerates life.",
+      "unlock": "At the furthest point north of Pinwheel Circus between two tents, unguarded.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/auto-regen.webp"
+    },
+    {
+      "id": "find-characters",
+      "name": "Find: Characters",
+      "group": "Gold",
+      "world": "Deep-Metal Mine",
+      "effect": "More luck for finding new characters!",
+      "unlock": "In the Deep-Metal Mine at the top-left corner, near Lolbit and guarded by Mad Endo.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/find-characters.webp"
+    },
+    {
+      "id": "curse-status",
+      "name": "Curse: Status",
+      "group": "Red",
+      "world": "Deep-Metal Mine",
+      "effect": "Enemies begin battle with all status ailments.",
+      "unlock": "In the Deep-Metal Mine entrance at the green tent in front of Browboy at Pinwheel Circus, following the path and guarded by Mad Endo.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/curse-status.webp"
+    },
+    {
+      "id": "freddle-fury",
+      "name": "Freddle: Fury",
+      "group": "Red",
+      "world": "Deep-Metal Mine",
+      "effect": "Freddles constantly attack!",
+      "unlock": "Through fake mushrooms in the passage from Lilygear Lake to Blacktomb Yard, and through a fake tree going to a hidden entrance to Deep-Metal Mine through a gravestone. Guarded by Mad Endo.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/freddle-fury.webp"
+    },
+    {
+      "id": "auto-shield",
+      "name": "Auto: Shield",
+      "group": "Red",
+      "world": "&*___TWRE",
+      "effect": "Shield automatically activates.",
+      "unlock": "In the &*___TWRE entrance in Choppy's Woods, walk all the way to Lilygear Lake and it's found in the middle of the lake between walls.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/auto-shield.webp"
+    },
+    {
+      "id": "auto-mimic",
+      "name": "Auto: Mimic",
+      "group": "Red",
+      "world": "&*___TWRE",
+      "effect": "A Mimic Ball automatically activates.",
+      "unlock": "In the &*___TWRE entrance in Blacktomb Yard, walk all the way to Mysterious Mine and it's found on top of wooden planks.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/auto-mimic.webp"
+    },
+    {
+      "id": "counter-bite",
+      "name": "Counter: Bite",
+      "group": "Red",
+      "world": "Pinwheel Funhouse",
+      "effect": "Enemy attacks are countered with a damaging bite!",
+      "unlock": "In Pinwheel Funhouse, after beating Bubba, take the tent behind him, go to the leftmost tent, and go through the fake wall on the left to a tent leading to it.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/counter-bite.webp"
+    },
+    {
+      "id": "pizza-fury",
+      "name": "Pizza: Fury",
+      "group": "Red",
+      "world": "Lilygear Lake",
+      "effect": "A steady stream of pizzas keeps rolling in.",
+      "unlock": "In an area either accessed from a whirlpool in Lilygear Lake or behind Pinwheel Circus, go through a path of fake trees and mushrooms to a Mad Endo guarding it.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/pizza-fury.webp"
+    },
+    {
+      "id": "block-unscrew",
+      "name": "Block: Unscrew",
+      "group": "Red",
+      "world": "&*___TWRE",
+      "effect": "Unscrew and Esc Key are blocked.",
+      "unlock": "In the &*___TWRE entrance in Dusting Fields, walk all the way to Fazbear Hills and it's found between trees.",
+      "image": "https://fnaf-world.fntduserguide.com/specs/chips/block-unscrew.webp"
+    }
+  ]
+}

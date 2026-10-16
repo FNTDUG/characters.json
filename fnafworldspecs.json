@@ -123,6 +123,13 @@
         "about": "Red chips are the rarest and the most useful against tough bosses. Most are hidden in the glitched world, &*___TWRE.",
         "icon": "https://fnaf-world.fntduserguide.com/specs/chips/red.webp"
       }
+    ],
+    "armor": [
+      {
+        "name": "Mendo's Endo-Upgrades",
+        "color": "#5b7bff",
+        "about": "Mendo is a blue endoskeleton who runs an upgrade shop in Fazbear Hills, next to DeeDee's Fishing Hole and Lolbit's Byte Store. Each upgrade raises your party's Defense. Buying all three costs 10,750 Faz Tokens. You can't switch back to an older upgrade, so buy them in order: Reinforced, then Steel, then Titanium."
+      }
     ]
   },
   "bytes": [
@@ -592,6 +599,60 @@
       "effect": "Unscrew and Esc Key are blocked.",
       "unlock": "In the &*___TWRE entrance in Dusting Fields, walk all the way to Fazbear Hills and it's found between trees.",
       "image": "https://fnaf-world.fntduserguide.com/specs/chips/block-unscrew.webp"
+    }
+  ],
+  "armor": [
+    {
+      "id": "basic-endoskeleton",
+      "name": "Basic Endoskeleton",
+      "group": "Mendo's Endo-Upgrades",
+      "tier": 1,
+      "price": 0,
+      "defense": 0,
+      "world": "Fazbear Hills",
+      "effect": "The default endoskeleton. It gives +0 Defense.",
+      "unlock": "Every party starts with it equipped.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/armor/basic-endoskeleton.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/armor/basic-endoskeleton.webp"
+    },
+    {
+      "id": "reinforced-endoskeleton",
+      "name": "Reinforced Endoskeleton",
+      "group": "Mendo's Endo-Upgrades",
+      "tier": 2,
+      "price": 250,
+      "defense": 10,
+      "world": "Fazbear Hills",
+      "effect": "Gives your party +10 Defense.",
+      "unlock": "Buy it from Mendo in Fazbear Hills for 250 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/armor/reinforced-endoskeleton.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/armor/reinforced-endoskeleton.webp"
+    },
+    {
+      "id": "steel-endoskeleton",
+      "name": "Steel Endoskeleton",
+      "group": "Mendo's Endo-Upgrades",
+      "tier": 3,
+      "price": 1500,
+      "defense": 20,
+      "world": "Fazbear Hills",
+      "effect": "Gives your party +20 Defense.",
+      "unlock": "Buy it from Mendo in Fazbear Hills for 1,500 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/armor/steel-endoskeleton.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/armor/steel-endoskeleton.webp"
+    },
+    {
+      "id": "titanium-endoskeleton",
+      "name": "Titanium Endoskeleton",
+      "group": "Mendo's Endo-Upgrades",
+      "tier": 4,
+      "price": 9000,
+      "defense": 100,
+      "world": "Fazbear Hills",
+      "effect": "Gives your party +100 Defense. It's the strongest and most expensive upgrade.",
+      "unlock": "Buy it from Mendo in Fazbear Hills for 9,000 Faz Tokens.",
+      "card": "https://fnaf-world.fntduserguide.com/specs/armor/titanium-endoskeleton.webp",
+      "image": "https://fnaf-world.fntduserguide.com/specs/armor/titanium-endoskeleton.webp"
     }
   ]
 }

@@ -205,7 +205,7 @@
       "tier": 1,
       "price": 100,
       "world": "Dusting Fields",
-      "effect": "These Reapers have a chance to instantly kill enemies!",
+      "effect": "These Reapers have a chance to instantly kill enemies! 0.0005% chance on bosses!",
       "unlock": "Buy it from Lolbit in Dusting Fields for 100 Faz Tokens.",
       "card": "https://fnaf-world.fntduserguide.com/specs/cards/mini-reaper.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/mini-reaper.webp"
@@ -217,7 +217,7 @@
       "tier": 2,
       "price": 500,
       "world": "Dusting Fields",
-      "effect": "These Reapers have a chance to instantly kill enemies!",
+      "effect": "These Reapers have a chance to instantly kill enemies! 0.0005% chance on bosses!",
       "unlock": "Buy it from Lolbit in Dusting Fields for 500 Faz Tokens.",
       "card": "https://fnaf-world.fntduserguide.com/specs/cards/reaper.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/reaper.webp"
@@ -229,7 +229,7 @@
       "tier": 3,
       "price": 2000,
       "world": "Dusting Fields",
-      "effect": "These Reapers have a chance to instantly kill enemies!",
+      "effect": "These Reapers have a chance to instantly kill enemies! 0.0005% chance on bosses!",
       "unlock": "Buy it from Lolbit in Dusting Fields for 2,000 Faz Tokens.",
       "card": "https://fnaf-world.fntduserguide.com/specs/cards/x-reaper.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/x-reaper.webp"
@@ -313,7 +313,7 @@
       "tier": 1,
       "price": 200,
       "world": "Deep-Metal Mine",
-      "effect": "These Eyebots work on bosses and steadily drain their life!",
+      "effect": "These Eyebots work on bosses. This one has a DPS of 60!",
       "unlock": "Buy it from Lolbit in Deep-Metal Mine for 200 Faz Tokens.",
       "card": "https://fnaf-world.fntduserguide.com/specs/cards/bossdrain01.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/bossdrain01.webp"
@@ -325,7 +325,7 @@
       "tier": 2,
       "price": 1500,
       "world": "Deep-Metal Mine",
-      "effect": "These Eyebots work on bosses and steadily drain their life!",
+      "effect": "These Eyebots work on bosses. This one has a DPS of 120!",
       "unlock": "Buy it from Lolbit in Deep-Metal Mine for 1,500 Faz Tokens.",
       "card": "https://fnaf-world.fntduserguide.com/specs/cards/bossdrain02.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/bossdrain02.webp"
@@ -337,7 +337,7 @@
       "tier": 3,
       "price": 5000,
       "world": "Deep-Metal Mine",
-      "effect": "These Eyebots work on bosses and steadily drain their life!",
+      "effect": "These Eyebots work on bosses. This one has a DPS of 180!",
       "unlock": "Buy it from Lolbit in Deep-Metal Mine for 5,000 Faz Tokens.",
       "card": "https://fnaf-world.fntduserguide.com/specs/cards/bossdrain-x.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/bossdrain-x.webp"
@@ -398,7 +398,7 @@
       "price": null,
       "world": "Fazbear Hills",
       "effect": "Stands at the front of your party, can't be killed, and randomly shoots lasers at the enemies.",
-      "unlock": "Unlock all 48 characters. It can't be earned in Fixed Party mode.",
+      "unlock": "Unlock all 40 characters. It can't be earned in Fixed Party mode.",
       "card": "https://fnaf-world.fntduserguide.com/specs/cards/the-fan.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/the-fan.webp"
     }
@@ -445,7 +445,7 @@
       "name": "Quickstart: Party",
       "group": "Green",
       "world": "Dusting Fields",
-      "effect": "Your party has the element of surprise!",
+      "effect": "The enemies are stunned for the start of the battle!",
       "unlock": "Behind a fake dead tree in Dusting Fields.",
       "image": "https://fnaf-world.fntduserguide.com/specs/chips/quickstart-party.webp"
     },
@@ -553,7 +553,7 @@
       "name": "Auto: Shield",
       "group": "Red",
       "world": "&*___TWRE",
-      "effect": "Shield automatically activates.",
+      "effect": "Neon-Wall automatically activates.",
       "unlock": "In the &*___TWRE entrance in Choppy's Woods, walk all the way to Lilygear Lake and it's found in the middle of the lake between walls.",
       "image": "https://fnaf-world.fntduserguide.com/specs/chips/auto-shield.webp"
     },

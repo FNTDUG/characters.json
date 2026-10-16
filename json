@@ -4922,7 +4922,7 @@
       "level": 6,
       "cost": 7000,
       "damage": 3500,
-      
+      "type": "Circle",
       "cd": 6.6,
       "range": 26
     },
@@ -4930,7 +4930,7 @@
       "level": 7,
       "cost": 7000,
       "damage": 3700,
-      
+      "type": "Circle",
       "cd": 6.2,
       "range": 26
     },
@@ -4938,7 +4938,7 @@
       "level": 8,
       "cost": 8500,
       "damage": 3950,
-      
+      "type": "Circle",
       "cd": 6,
       "range": 26
     }

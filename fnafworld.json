@@ -870,7 +870,7 @@
         "Rainy Day 2",
         "Mega Bite"
       ],
-      "quote": null,
+      "quote": "This is why you wake up.",
       "unlock": "Beat them in a challenger battle in Pinwheel Funhouse.",
       "about": "Adventure Nightmare is an unlockable character found in Pinwheel Funhouse. He first appeared in Five Nights at Freddy's 4 as a more aggressive version of Nightmare Fredbear, and is one of the biggest characters in the game.",
       "tips": "Nightmare is one of the hardest characters to unlock. Toxic Bite 2 and Mega Bite deal big damage, and Rainy Day 2 lowers enemy defenses while adding shock damage.",
@@ -912,7 +912,7 @@
         "Happy Jam 2",
         "Cosmic Song"
       ],
-      "quote": null,
+      "quote": "Male? Female? It's a Rabbit, who cares.",
       "unlock": "Beat them in a challenger battle in Pinwheel Funhouse.",
       "about": "Spring Bonnie is an unlockable character found in Pinwheel Funhouse. They are based on the golden rabbit from the Five Nights at Freddy's 3 and 4 minigames.",
       "tips": "Spring Bonnie functions similar to Funtime Foxy, both are the only ones capable of using Cosmic song and are considered \"multi-use\" characters. Spring Bonnie can brutally damage enemies and bosses using Cosmic Song and Springlocks, both of which can hit all enemies in the screen, while Happy Jam 2 heals all party members and is very useful when at low health. It is advised to have Spring Bonnie in the final battle of either normal or hard difficulty.",
@@ -948,7 +948,7 @@
       "update": "Update 2",
       "world": "Halloween Backstage",
       "game": "Five Nights at Freddy's 4: Halloween Edition",
-      "health": null,
+      "health": 310,
       "attacks": [
         "Haunting",
         "Jack-O-Bomb",
@@ -969,13 +969,13 @@
       "update": "Update 2",
       "world": "Halloween Backstage",
       "game": "There Is No Pause Button!",
-      "health": null,
+      "health": 315,
       "attacks": [
         "Neon Wall",
         "4th Wall",
         "Mega Virus"
       ],
-      "quote": null,
+      "quote": "The one pulling the strings.",
       "unlock": "Finish the Chica's Magic Rainbow minigame in more than 3 minutes.",
       "about": "Animdude is Scott Cawthon's own sprite from There Is No Pause Button!, and the final boss of FNaF World before he became playable.",
       "tips": "Animdude is extremely powerful as a playable character. Neon Wall halves the damage from any attack, Mega Virus deals high damage over time (great on strong bosses) and 4th Wall is one of the strongest attacks in the game, piercing through defenses. He is almost a must for the Geist Lair.",
@@ -990,13 +990,13 @@
       "update": "Update 2",
       "world": "Halloween Backstage",
       "game": "Chipper & Sons Lumber Co.",
-      "health": null,
+      "health": 320,
       "attacks": [
         "Buzzsaw",
         "Hocus Pocus",
         "Mimic Ball"
       ],
-      "quote": null,
+      "quote": "A chip off the old block.",
       "unlock": "Finish the Chica's Magic Rainbow minigame in under 3 minutes.",
       "about": "Mr. Chipper, or just Chipper, is the father of the main character in Chipper & Sons Lumber Co. He appeared as a boss in Update 1 and became a party member in Update 2.",
       "tips": "Mr. Chipper's attacks focus on enemy manipulation: Hocus Pocus can turn enemies into weaker ones and Mimic Ball repeats your attacks, while Buzzsaw deals very high damage.",
@@ -1011,13 +1011,13 @@
       "update": "Update 2",
       "world": "Halloween Backstage",
       "game": "Five Nights at Freddy's 4: Halloween Edition",
-      "health": null,
+      "health": 325,
       "attacks": [
         "Bubble Breath",
         "Mega Bite",
         "Balloons 2"
       ],
-      "quote": null,
+      "quote": "Some things cant be made cute.",
       "unlock": "Finish the Foxy Fighters minigame with an A rank.",
       "about": "Nightmare Balloon Boy first appeared in Five Nights at Freddy's 4: Halloween Edition, where he replaced Plushtrap. He was added to FNaF World in Update 2.",
       "tips": "Nightmare Balloon Boy's role in the game is to help the player along with other party members to defeat encountered enemies and bosses. Balloon Boy is one of the most powerful characters in the game and is extremely useful on taking down enemies with Balloons 2, an Blazing Orange attack that launches a multitude of balloons that all choose randomly a target, guaranteeing massive damage on enemies, same with Mega Bite that hits all enemies and does huge amounts of damage.",
@@ -1032,13 +1032,13 @@
       "update": "Update 2",
       "world": "Halloween Backstage",
       "game": "Five Nights at Freddy's 4: Halloween Edition",
-      "health": null,
+      "health": 330,
       "attacks": [
         "Prize Ball 2",
         "Bubble Breath",
         "4th Wall"
       ],
-      "quote": null,
+      "quote": "I'm taller in person.",
       "unlock": "Beat the Foxy.EXE minigame.",
       "about": "Nightmarionne first appeared in Five Nights at Freddy's 4: Halloween Edition, where it replaced Nightmare on Nightmare mode. It became playable in Update 2.",
       "tips": "Nightmarionne's role in the game is to help the player along with other party members to defeat all the enemies and bosses. Nightmarionne is mostly a damager and supports the party with Bubble Breath.",
@@ -1053,13 +1053,13 @@
       "update": "Update 2",
       "world": "Halloween Backstage",
       "game": "The Desolate Hope",
-      "health": null,
+      "health": 335,
       "attacks": [
         "Gift Boxes",
         "Mega Virus",
         "Neon Wall 2"
       ],
-      "quote": null,
+      "quote": "Time for a coffee break!",
       "unlock": "Finish the FNaF 57: Freddy in Space minigame without any upgrades.",
       "about": "Adventure Coffee is a coffee pot added in Update 2. He comes from The Desolate Hope, an older game by Scott Cawthon.",
       "tips": "Coffee's attacks are more supportive than offensive. Gift Boxes and Neon Wall 2 can't damage enemies but are vital for survival in areas like the Geist Lair, and Mega Virus drains large amounts of health from enemies.",
@@ -1074,7 +1074,7 @@
       "update": "Update 2",
       "world": "Halloween Backstage",
       "game": "Five Nights at Freddy's 2",
-      "health": 305,
+      "health": 340,
       "attacks": [
         "Speed Song",
         "Slasher",

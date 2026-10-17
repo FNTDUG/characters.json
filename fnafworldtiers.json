@@ -85,7 +85,78 @@
         "Chica",
         "Balloon Boy",
         "Mangle"
-        
+      ]
+    },
+    "moves": {
+      "s": [
+        "Mega Bite",
+        "Springlocks",
+        "Jack-O-Bomb",
+        "Buzzsaw",
+        "Haunting",
+        "Gift Boxes",
+        "Happy Jam 2",
+        "Cosmic Song",
+        "Mega Virus",
+        "Neon Wall 2",
+        "Bubble Breath",
+        "Slasher",
+        "Toxic Bite 2",
+        "Rainy Day 2"
+      ],
+      "a": [
+        "Balloons 2",
+        "Freddles",
+        "4th Wall",
+        "Hocus Pocus",
+        "Mimic Ball",
+        "Regen Song",
+        "Waterhose 2",
+        "Unscrew 2",
+        "Prize Ball 2",
+        "Neon Wall",
+        "Power Song",
+        "Armor Song",
+        "Speed Song",
+        "Esc Key",
+        "Bite 2",
+        "Endo Army",
+        "Bad Pizza",
+        "Jumpscare"
+      ],
+      "b": [
+        "Pizza Wheel 2",
+        "Hot Cheese 2",
+        "Eye Beam",
+        "Mystery Box 2",
+        "Waterhose",
+        "Unscrew",
+        "Birthday",
+        "Toxic Bite",
+        "Sludge",
+        "Gloom Song",
+        "Rainy Day",
+        "Cupcake",
+        "Cupcakes",
+        "Happy Jam",
+        "Prize Ball",
+        "Party Favors"
+      ],
+      "c": [
+        "Pizza Wheel",
+        "Hot Cheese",
+        "Munchies",
+        "Balloons",
+        "Bash Jam",
+        "Toxic Balloon",
+        "Gloom Balloon",
+        "Poppers",
+        "Mic Toss",
+        "Hook",
+        "Bite"
+      ],
+      "d": [
+        "Mystery Box"
       ]
     },
     "bytes": {
@@ -165,10 +236,12 @@
     },
     "chips": {
       "Auto: Shield": "Example message. Write why it sits in this tier."
-    }
+    },
+    "moves": {}
   },
   "notes": {
     "party": "Ranked best first inside each tier. Tap a character to see why. Tierlist's are ranked for fights for said characters stage of the game (Halloween against Rainbow, Reg against Scott/Owl), not general play.",
+    "moves": "Ranked best first inside each tier. Tap a move to see who has it.",
     "bytes": "Ranked best first inside each tier.",
     "chips": "Ranked best first inside each tier."
   }

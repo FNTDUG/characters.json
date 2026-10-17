@@ -1163,7 +1163,7 @@
       "name": "Sparky",
       "number": 49,
       "update": "Update 2",
-      "world": "Deep Metal Mines",
+      "world": "Deep-Metal Mines",
       "game": "Five Nights at Freddy's",
       "health": 345,
       "attacks": [
@@ -1185,7 +1185,7 @@
       "name": "Withered Golden Freddy",
       "number": 51,
       "update": "Update 2",
-      "world": "Mysterious Mines",
+      "world": "Mysterious Mine",
       "game": "Five Nights at Freddy's 2",
       "health": 350,
       "attacks": [

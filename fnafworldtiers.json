@@ -1,0 +1,174 @@
+{
+  "tiers": [
+    {
+      "id": "s",
+      "name": "S",
+      "color": "#ff4d6a"
+    },
+    {
+      "id": "a",
+      "name": "A",
+      "color": "#ff9a2e"
+    },
+    {
+      "id": "b",
+      "name": "B",
+      "color": "#ffd93b"
+    },
+    {
+      "id": "c",
+      "name": "C",
+      "color": "#5ccf4f"
+    },
+    {
+      "id": "d",
+      "name": "D",
+      "color": "#4fb4ff"
+    }
+  ],
+  "lists": {
+    "party": {
+      "s": [
+        "Fredbear",
+        "Spring Bonnie",
+        "Nightmare Fredbear",
+        "Nightmare",
+        "Purple Guy",
+        "Golden Freddy",
+        "Funtime Foxy",
+        "Endo-01",
+        "Nightmarionne"
+      ],
+      "a": [
+        "Crying Child",
+        "Endo-02",
+        "RWQFSFASXC",
+        "Springtrap",
+        "Jack-O-Bonnie",
+        "Jack-O-Chica",
+        "Coffee",
+        "Animdude",
+        "Mr. Chipper",
+        "Nightmare Balloon Boy",
+        "Shadow Freddy",
+        "Paperpals",
+        "Endoplush"
+      ],
+      "b": [
+        "Phantom Marionette",
+        "Marionette",
+        "Nightmare Foxy",
+        "Nightmare Bonnie",
+        "Nightmare Chica",
+        "Nightmare Freddy",
+        "Withered Foxy",
+        "Withered Freddy",
+        "Withered Bonnie",
+        "Withered Chica",
+        "Plushtrap",
+        "Phantom Mangle",
+        "Toy Chica",
+        "JJ"
+      ],
+      "c": [
+        "Phantom Foxy",
+        "Phantom Balloon Boy",
+        "Phantom Chica",
+        "Phantom Freddy",
+        "Balloon Boy",
+        "Mangle",
+        "Toy Freddy",
+        "Toy Bonnie",
+        "Chica"
+      ],
+      "d": [
+        "Foxy",
+        "Bonnie",
+        "Freddy"
+      ]
+    },
+    "bytes": {
+      "s": [
+        "BossDrain-X",
+        "Block50",
+        "X-FO",
+        "Neon Wasp",
+        "The Pearl"
+      ],
+      "a": [
+        "X-Reaper",
+        "Mega-Med",
+        "KABOOM!",
+        "BossDrain02",
+        "Block20",
+        "The Fan"
+      ],
+      "b": [
+        "UFO",
+        "Reaper",
+        "Neon Bee",
+        "Medpod 2",
+        "BOOM!",
+        "BossDrain01"
+      ],
+      "c": [
+        "Mini-FO",
+        "Mini Reaper",
+        "Gnat",
+        "Medpod 1",
+        "Block5",
+        "Pop-Pop"
+      ],
+      "d": []
+    },
+    "chips": {
+      "s": [
+        "Auto: Shield",
+        "Auto: Regen",
+        "Auto: Giftboxes",
+        "Curse: Status",
+        "Endless: Speed"
+      ],
+      "a": [
+        "Endless: Strength",
+        "Endless: Defense",
+        "Evercomet: Strong",
+        "Auto: Mimic",
+        "Freddle: Fury",
+        "Pizza: Fury"
+      ],
+      "b": [
+        "Headstart: Speed",
+        "Headstart: Strength",
+        "Headstart: Defense",
+        "Counter: Bite",
+        "Block: Unscrew",
+        "Block: Jumpscare"
+      ],
+      "c": [
+        "Evercomet: Weak",
+        "Quickstart: Party",
+        "Run: Luck",
+        "Find: Characters"
+      ],
+      "d": []
+    }
+  },
+  "msg": {
+    "party": {
+      "Fredbear": "Mega Bite hits hard, Regen Song keeps the whole party topped up and Mimic Ball copies the enemy's best attack.",
+      "Spring Bonnie": "Springlocks, Happy Jam 2 and Cosmic Song: strong damage plus healing and buffs in one slot."
+    },
+    "bytes": {
+      "The Pearl": "Example message. Write why it sits in this tier."
+    },
+    "chips": {
+      "Auto: Shield": "Example message. Write why it sits in this tier."
+    }
+  },
+  "notes": {
+    "party": "Ranked best first inside each tier. Tap a character to see why.",
+    "bytes": "Ranked best first inside each tier.",
+    "chips": "Ranked best first inside each tier."
+  }
+}

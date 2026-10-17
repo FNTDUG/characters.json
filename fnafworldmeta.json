@@ -1,0 +1,41 @@
+{
+  "pages": [
+    {
+      "pageTitle": "Meta Teams",
+      "order": [
+        "Example Team"
+      ]
+    }
+  ],
+  "metas": {
+    "Example Team": {
+      "caption": "Example team. Swap in a real one.",
+      "world": "",
+      "party1": [
+        "Fredbear",
+        "Spring Bonnie",
+        "Nightmare Fredbear",
+        "Nightmare"
+      ],
+      "party2": [
+        "Golden Freddy",
+        "Shadow Freddy",
+        "Purple Guy",
+        "Mr. Chipper"
+      ],
+      "bytes": [
+        "KABOOM!",
+        "X-FO",
+        "BossDrain-X",
+        "Mega-Med"
+      ],
+      "chips": [
+        "Auto: Shield",
+        "Auto: Regen",
+        "Headstart: Strength",
+        "Evercomet: Strong"
+      ],
+      "notes": ""
+    }
+  }
+}

@@ -3,7 +3,8 @@
     {
       "pageTitle": "Meta Teams",
       "order": [
-        "Example Team"
+        "Example Team",
+        "Example Team 2"
       ]
     }
   ],
@@ -36,6 +37,38 @@
         "Evercomet: Strong"
       ],
       "notes": ""
+    },
+    "Example Team 2": {
+      "caption": "Second example team. Swap in a real one.",
+      "world": "Pinwheel Circus",
+      "party1": [
+        {
+          "name": "Freddy",
+          "caption": "Starter"
+        },
+        "Bonnie",
+        "Chica",
+        "Foxy"
+      ],
+      "party2": [
+        "Toy Freddy",
+        "Toy Bonnie",
+        "Toy Chica",
+        "Mangle"
+      ],
+      "bytes": [
+        "Neon Wasp",
+        "Block50",
+        "X-Reaper",
+        "The Pearl"
+      ],
+      "chips": [
+        "Auto: Regen",
+        "Endless: Defense",
+        "Freddle: Fury",
+        "Pizza: Fury"
+      ],
+      "notes": "Notes go here, like when to switch to Party 2."
     }
   }
 }

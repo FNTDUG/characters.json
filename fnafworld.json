@@ -1135,6 +1135,72 @@
       "head": "https://fnaf-world.fntduserguide.com/heads/v3/purple-guy.webp",
       "idle": "https://fnaf-world.fntduserguide.com/idle/purple-guy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/purple-guy.webp"
+    },
+    {
+      "id": "nightmare-mangle",
+      "name": "Nightmare Mangle",
+      "number": 49,
+      "update": "Update 3",
+      "world": "Halloween Backstage",
+      "game": "Five Nights at Freddy's 4",
+      "health": 355,
+      "attacks": [
+        "Mega Prize",
+        "Mega Bite",
+        "Buzzsaw"
+      ],
+      "quote": "Im nightmare freddy and im in your head",
+      "unlock": "Finish the FNaF 57: Freddy in Space minigame with every upgrade.",
+      "about": "Adventure Purple Guy is a pixelated sprite based on his look in the Five Nights at Freddy's 3 minigames. He was added in Update 2 as one of the Halloween characters.",
+      "tips": "Purple Guy pairs Slasher's 1 in 10 chance of a 99,999 damage hit with Hocus Pocus, which can turn strong enemies into weaker ones, and Speed Song to make the whole party faster.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/purple-guy.webp",
+      "head": "https://fnaf-world.fntduserguide.com/heads/v3/purple-guy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/purple-guy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/purple-guy.webp"
+    },
+    {
+      "id": "sparky",
+      "name": "Sparky",
+      "number": 49,
+      "update": "Update 2",
+      "world": "Deep Metal Mines",
+      "game": "Five Nights at Freddy's",
+      "health": 345,
+      "attacks": [
+        "Bite 2",
+        "Unscrew 2",
+        "Rainy Day 2"
+      ],
+      "quote": "I take 10 seconds to draw!",
+      "unlock": "Alien invader. Coming to you. Taking you down.",
+      "about": "Adventure Purple Guy is a pixelated sprite based on his look in the Five Nights at Freddy's 3 minigames. He was added in Update 2 as one of the Halloween characters.",
+      "tips": "Purple Guy pairs Slasher's 1 in 10 chance of a 99,999 damage hit with Hocus Pocus, which can turn strong enemies into weaker ones, and Speed Song to make the whole party faster.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/purple-guy.webp",
+      "head": "https://fnaf-world.fntduserguide.com/heads/v3/purple-guy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/purple-guy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/purple-guy.webp"
+    },
+    {
+      "id": "withered-golden-freddy",
+      "name": "Withered Golden Freddy",
+      "number": 51,
+      "update": "Update 2",
+      "world": "Mysterious Mines",
+      "game": "Five Nights at Freddy's 2",
+      "health": 350,
+      "attacks": [
+        "Pizza Wheel 2",
+        "Esc Key",
+        "Jumpscare"
+      ],
+      "quote": "Guillotina Mewgenics",
+      "unlock": "Finish the FNaF 57: Freddy in Space minigame with every upgrade.",
+      "about": "Adventure Purple Guy is a pixelated sprite based on his look in the Five Nights at Freddy's 3 minigames. He was added in Update 2 as one of the Halloween characters.",
+      "tips": "Purple Guy pairs Slasher's 1 in 10 chance of a 99,999 damage hit with Hocus Pocus, which can turn strong enemies into weaker ones, and Speed Song to make the whole party faster.",
+      "card": "https://fnaf-world.fntduserguide.com/cards/purple-guy.webp",
+      "head": "https://fnaf-world.fntduserguide.com/heads/v3/purple-guy.webp",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/purple-guy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/purple-guy.webp"
     }
   ],
   "bosses": [

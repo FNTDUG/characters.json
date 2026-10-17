@@ -174,7 +174,7 @@
       "number": 5,
       "update": "Update 1",
       "world": "Fazbear Hills",
-      "game": "Five Nights at Freddy's",
+      "game": "Five Nights at Freddy's 2",
       "health": 125,
       "attacks": [
         "Bash Jam",
@@ -922,7 +922,7 @@
       "number": 39,
       "update": "Update 1",
       "world": "Pinwheel Funhouse",
-      "game": "Five Nights at Freddy's 4",
+      "game": "Five Nights at Freddy's 3",
       "health": 295,
       "attacks": [
         "Mega Bite",

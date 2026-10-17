@@ -9,66 +9,63 @@
     }
   ],
   "metas": {
-    "Example Team": {
+    "Scott Killer": {
       "caption": "Example team. Swap in a real one.",
       "world": "",
       "party1": [
-        "Fredbear",
+        "Endo-02",
         "Spring Bonnie",
-        "Nightmare Fredbear",
-        "Nightmare"
+        "Funtime Foxy",
+        "Golden Freddy"
       ],
       "party2": [
-        "Golden Freddy",
-        "Shadow Freddy",
-        "Purple Guy",
-        "Mr. Chipper"
+        "Crying Child",
+        "RWQFSFASXC",
+        "Endo-01",
+        "Springtrap"
       ],
       "bytes": [
-        "KABOOM!",
-        "X-FO",
+        "Block50",
+        "BossDrain02",
         "BossDrain-X",
-        "Mega-Med"
+        "Block20"
       ],
       "chips": [
         "Auto: Shield",
-        "Auto: Regen",
-        "Headstart: Strength",
-        "Evercomet: Strong"
+        "Endless: Speed",
+        "Auto: Giftboxes",
+        "Curse: Status"
       ],
-      "notes": ""
+      "notes": "Fighting Scott is more defeat him before he defeats you... unless you were to grind for level-ups his damage is too high to face-tank, even with Shield. Only swap to party two if your Funtime Foxy passed or you really need Giftboxes now."
     },
-    "Example Team 2": {
-      "caption": "Second example team. Swap in a real one.",
-      "world": "Pinwheel Circus",
+    "Rainbow Killer": {
+      "caption": "Team meant for Rainbow.",
+      "world": "Geist Layer",
       "party1": [
-        {
-          "name": "Freddy",
-          "caption": "Starter"
-        },
-        "Bonnie",
-        "Chica",
-        "Foxy"
+        "Jack o' Bonnie",
+        "Purple Guy",
+        "Nightmarionne",
+        "Coffee"
       ],
       "party2": [
-        "Toy Freddy",
-        "Toy Bonnie",
-        "Toy Chica",
-        "Mangle"
+        "Funtime Foxy",
+        "RWQFSFASXC",
+        "Crying Child",
+        "Nightmare Balloon Boy"
       ],
       "bytes": [
-        "Neon Wasp",
-        "Block50",
-        "X-Reaper",
-        "The Pearl"
+        "BossDrain-X",
+        "BossDrain02",
+        "X-FO",
+        "UFO"
       ],
       "chips": [
-        "Auto: Regen",
-        "Endless: Defense",
-        "Freddle: Fury",
-        "Pizza: Fury"
+        "Endless: Speed",
+        "Endless: Strength",
+        "Auto: Giftboxes",
+        "Curse: Status"
       ],
-      "notes": "Notes go here, like when to switch to Party 2."
+      "notes": "GAMBLINGGGGG, on harder difficulties, we find it easier to hope and pray with slasher spam. Only swap to team two if a member on team one dies."
     }
   }
 }

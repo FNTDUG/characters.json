@@ -29,38 +29,35 @@
   "lists": {
     "party": {
       "s": [
-        "Fredbear",
-        "Spring Bonnie",
-        "Nightmare Fredbear",
-        "Nightmare",
-        "Purple Guy",
-        "Golden Freddy",
         "Funtime Foxy",
+        "Spring Bonnie",
         "Endo-01",
-        "Nightmarionne"
-      ],
-      "a": [
-        "Crying Child",
         "Endo-02",
-        "RWQFSFASXC",
-        "Springtrap",
+        "Golden Freddy",
         "Jack-O-Bonnie",
         "Jack-O-Chica",
+        "Crying Child",
         "Coffee",
+        "RWQFSFASXC"
+      ],
+      "a": [
+        "Nightmare Fredbear",
+        "Nightmarionne",
+        "Springtrap",
+        "Fredbear",
         "Animdude",
         "Mr. Chipper",
         "Nightmare Balloon Boy",
-        "Shadow Freddy",
-        "Paperpals",
+        "Nightmare Freddy",
+        "Nightmare",
         "Endoplush"
       ],
       "b": [
-        "Phantom Marionette",
-        "Marionette",
+        "Purple Guy",
         "Nightmare Foxy",
-        "Nightmare Bonnie",
         "Nightmare Chica",
-        "Nightmare Freddy",
+        "Nightmare Bonnie",
+        "Phantom Marionette",
         "Withered Foxy",
         "Withered Freddy",
         "Withered Bonnie",
@@ -68,23 +65,27 @@
         "Plushtrap",
         "Phantom Mangle",
         "Toy Chica",
-        "JJ"
+        "Bonnie",
       ],
       "c": [
         "Phantom Foxy",
         "Phantom Balloon Boy",
         "Phantom Chica",
         "Phantom Freddy",
-        "Balloon Boy",
-        "Mangle",
-        "Toy Freddy",
+        "Freddy",
+        "Shadow Freddy",
+        "Paperpals",
+        "Foxy",
         "Toy Bonnie",
-        "Chica"
+        "Marionette"
       ],
       "d": [
-        "Foxy",
-        "Bonnie",
-        "Freddy"
+        "JJ",
+        "Toy Freddy",
+        "Chica",
+        "Balloon Boy",
+        "Mangle"
+        
       ]
     },
     "bytes": {
@@ -167,7 +168,7 @@
     }
   },
   "notes": {
-    "party": "Ranked best first inside each tier. Tap a character to see why.",
+    "party": "Ranked best first inside each tier. Tap a character to see why. Tierlist's are ranked for fights for said characters stage of the game (Halloween against Rainbow, Reg against Scott/Owl), not general play.",
     "bytes": "Ranked best first inside each tier.",
     "chips": "Ranked best first inside each tier."
   }

@@ -49,11 +49,11 @@
         "Mr. Chipper",
         "Nightmare Balloon Boy",
         "Nightmare Freddy",
-        "Nightmare",
-        "Endoplush"
+        "Nightmare"
       ],
       "b": [
         "Purple Guy",
+        "Phantom Freddy",
         "Nightmare Foxy",
         "Nightmare Chica",
         "Nightmare Bonnie",
@@ -61,25 +61,25 @@
         "Withered Foxy",
         "Withered Freddy",
         "Withered Bonnie",
-        "Withered Chica",
+        "Endoplush",
         "Plushtrap",
         "Phantom Mangle",
-        "Toy Chica",
         "Bonnie"
       ],
       "c": [
         "Phantom Foxy",
+        "Foxy",
         "Phantom Balloon Boy",
         "Phantom Chica",
-        "Phantom Freddy",
+        "Toy Chica",
         "Freddy",
         "Shadow Freddy",
         "Paperpals",
-        "Foxy",
         "Toy Bonnie",
         "Marionette"
       ],
       "d": [
+        "Withered Chica",
         "JJ",
         "Toy Freddy",
         "Chica",
@@ -89,18 +89,17 @@
     },
     "moves": {
       "s": [
-        "Mega Bite",
-        "Springlocks",
-        "Jack-O-Bomb",
-        "Buzzsaw",
-        "Haunting",
         "Gift Boxes",
         "Happy Jam 2",
-        "Cosmic Song",
+        "Endo Army",
+        "Haunting",
+        "Springlocks",
         "Mega Virus",
+        "Buzzsaw",
+        "Jack-O-Bomb",
+        "Cosmic Song",
+        "Neon Wall",
         "Neon Wall 2",
-        "Bubble Breath",
-        "Slasher",
         "Toxic Bite 2",
         "Rainy Day 2"
       ],
@@ -108,90 +107,91 @@
         "Balloons 2",
         "Freddles",
         "4th Wall",
-        "Hocus Pocus",
+        "Jumpscare",
+        "Slasher",
         "Mimic Ball",
         "Regen Song",
         "Waterhose 2",
         "Unscrew 2",
+        "Mega Bite",
         "Prize Ball 2",
-        "Neon Wall",
+        "Sludge",
+        "Gloom Balloon",
+        "Gloom Song",
+        "Rainy Day",
         "Power Song",
         "Armor Song",
         "Speed Song",
         "Esc Key",
         "Bite 2",
-        "Endo Army",
+        "Bubble Breath",
         "Bad Pizza",
-        "Jumpscare"
+        "Hocus Pocus"
       ],
       "b": [
         "Pizza Wheel 2",
         "Hot Cheese 2",
         "Eye Beam",
-        "Mystery Box 2",
         "Waterhose",
         "Unscrew",
         "Birthday",
         "Toxic Bite",
-        "Sludge",
-        "Gloom Song",
-        "Rainy Day",
         "Cupcake",
-        "Cupcakes",
-        "Happy Jam",
-        "Prize Ball",
-        "Party Favors"
+        "Happy Jam"
       ],
       "c": [
         "Pizza Wheel",
         "Hot Cheese",
-        "Munchies",
-        "Balloons",
         "Bash Jam",
-        "Toxic Balloon",
-        "Gloom Balloon",
+        "Toxic Balloon"
+      ],
+      "d": [
+        "Prize Ball",
+        "Party Favors",
+        "Balloons",
+        "Munchies",
         "Poppers",
         "Mic Toss",
         "Hook",
-        "Bite"
-      ],
-      "d": [
+        "Bite",
+        "Mystery Box 2",
         "Mystery Box"
       ]
     },
     "bytes": {
       "s": [
+        "The Fan",
+        "The Pearl",
         "BossDrain-X",
+        "BossDrain02",
         "Block50",
-        "X-FO",
-        "Neon Wasp",
-        "The Pearl"
+        "Block20",
+        "X-FO"  
       ],
       "a": [
+        "BossDrain01",
+        "UFO",
         "X-Reaper",
         "Mega-Med",
-        "KABOOM!",
-        "BossDrain02",
-        "Block20",
-        "The Fan"
+        "Medpod 2"
       ],
       "b": [
-        "UFO",
-        "Reaper",
+        "Neon Wasp",
         "Neon Bee",
-        "Medpod 2",
+        "Reaper",
+        "KABOOM!",
         "BOOM!",
-        "BossDrain01"
+        "Block5"
       ],
       "c": [
         "Mini-FO",
         "Mini Reaper",
         "Gnat",
-        "Medpod 1",
-        "Block5",
-        "Pop-Pop"
+        "Medpod 1"
       ],
-      "d": []
+      "d": [
+        "Pop-Pop"
+      ]
     },
     "chips": {
       "s": [
@@ -202,8 +202,10 @@
         "Endless: Speed"
       ],
       "a": [
-        "Endless: Strength",
         "Endless: Defense",
+        "Block: Unscrew",
+        "Block: Jumpscare",
+        "Endless: Strength",
         "Evercomet: Strong",
         "Auto: Mimic",
         "Freddle: Fury",
@@ -213,9 +215,7 @@
         "Headstart: Speed",
         "Headstart: Strength",
         "Headstart: Defense",
-        "Counter: Bite",
-        "Block: Unscrew",
-        "Block: Jumpscare"
+        "Counter: Bite"
       ],
       "c": [
         "Evercomet: Weak",

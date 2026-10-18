@@ -55,34 +55,34 @@
         "Purple Guy",
         "Phantom Freddy",
         "Nightmare Foxy",
-        "Nightmare Chica",
         "Nightmare Bonnie",
+        "Nightmare Chica",
         "Phantom Marionette",
-        "Withered Foxy",
-        "Withered Freddy",
         "Withered Bonnie",
+        "Withered Foxy",
+        "Phantom Chica",
+        "Phantom Mangle",
+        "Toy Chica",
         "Endoplush",
         "Plushtrap",
-        "Phantom Mangle",
+        "Freddy",
         "Bonnie"
       ],
       "c": [
         "Phantom Foxy",
         "Foxy",
         "Phantom Balloon Boy",
-        "Phantom Chica",
-        "Toy Chica",
-        "Freddy",
+        "Withered Freddy",
         "Shadow Freddy",
         "Paperpals",
         "Toy Bonnie",
-        "Marionette"
+        "Marionette",
+        "Chica"
       ],
       "d": [
         "Withered Chica",
         "JJ",
         "Toy Freddy",
-        "Chica",
         "Balloon Boy",
         "Mangle"
       ]
@@ -228,8 +228,7 @@
   },
   "msg": {
     "party": {
-      "Fredbear": "Mega Bite hits hard, Regen Song keeps the whole party topped up and Mimic Ball copies the enemy's best attack.",
-      "Spring Bonnie": "Springlocks, Happy Jam 2 and Cosmic Song: strong damage plus healing and buffs in one slot."
+      "Spring Bonnie": "High damage along with THE best healing move in the game."
     },
     "bytes": {
       "The Pearl": "Example message. Write why it sits in this tier."
@@ -240,9 +239,9 @@
     "moves": {}
   },
   "notes": {
-    "party": "Ranked best first inside each tier. Tap a character to see why. Tierlist's are ranked for fights for said characters stage of the game (Halloween against Rainbow, Reg against Scott/Owl), not general play.",
+    "party": "Ranked best first inside each tier. Tap a character to see why. Tierlist's are ranked for fights for said characters stage of the game (Halloween against Rainbow, Reg against Scott/Owl) along with stage which it is obtained. THIS IS FIRST VERSION, WILL BE CHANGED ONCE WE GET MORE FEEDBACK.",
     "moves": "Ranked best first inside each tier. Tap a move to see who has it.",
     "bytes": "Ranked best first inside each tier.",
-    "chips": "Ranked best first inside each tier."
+    "chips": "Ranked best first inside each tier. Based on usefulness in battle, not general play."
   }
 }

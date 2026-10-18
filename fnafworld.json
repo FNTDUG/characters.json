@@ -1347,12 +1347,12 @@
         "Pinwheel Funhouse"
       ],
       "health": {
-        "normal": 20000,
-        "hard": 40000
+        "normal": 15000,
+        "hard": 30000
       },
       "attack": {
-        "normal": "250-349",
-        "hard": "500-698"
+        "normal": "200-299",
+        "hard": "400-598"
       },
       "about": "Gold Endo is a secret boss that shows up at random in Pinwheel Funhouse. A golden counterpart of Mad Endo, it drops 500 to 1,000 Fazbear Tokens when beaten.",
       "card": "https://fnaf-world.fntduserguide.com/cards/gold-endo.webp",

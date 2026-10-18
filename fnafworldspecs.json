@@ -64,37 +64,37 @@
   "groups": {
     "bytes": [
       {
-        "name": "Byte Bee",
+        "name": "Bee Byte",
         "color": "#ffd23f",
         "about": "These Bytes shoot stingers at enemies for extra damage! Buy all three from Lolbit in Fazbear Hills for 250 Faz Tokens."
       },
       {
-        "name": "Byte Medpod",
+        "name": "Medpod Byte",
         "color": "#ff6fb5",
         "about": "These Medpods will heal you during battles! Buy all three from Lolbit in Choppy's Woods for 625 Faz Tokens."
       },
       {
-        "name": "Byte Grim Reaper",
+        "name": "Reaper Byte",
         "color": "#9aa4c7",
         "about": "These Reapers have a chance to instantly kill enemies! Buy all three from Lolbit in Dusting Fields for 2,600 Faz Tokens."
       },
       {
-        "name": "Byte Shield",
+        "name": "Block Byte",
         "color": "#6fd0ff",
         "about": "These Shields block base damage from all attacks! Buy all three from Lolbit in Mysterious Mine for 2,550 Faz Tokens."
       },
       {
-        "name": "Byte Bomb",
+        "name": "Bomb Byte",
         "color": "#ff5d5d",
         "about": "These Bombs detonate once per battle for instant damage! Buy all three from Lolbit in Blacktomb Yard for 6,097 Faz Tokens."
       },
       {
-        "name": "Byte Eye",
+        "name": "Boss Drain Byte",
         "color": "#a56bff",
         "about": "These Eyebots work on bosses and steadily drain their life! Buy all three from Lolbit in Deep-Metal Mine for 6,700 Faz Tokens."
       },
       {
-        "name": "Byte UFO",
+        "name": "UFO Byte",
         "color": "#4fd36b",
         "about": "These UFOs shoot lasers for very high damage! Buy all three from Lolbit in Pinwheel Circus for 2,200 Faz Tokens."
       },
@@ -136,7 +136,7 @@
     {
       "id": "gnat",
       "name": "Gnat",
-      "group": "Byte Bee",
+      "group": "Bee Byte",
       "tier": 1,
       "price": 25,
       "world": "Fazbear Hills",
@@ -148,7 +148,7 @@
     {
       "id": "neon-bee",
       "name": "Neon Bee",
-      "group": "Byte Bee",
+      "group": "Bee Byte",
       "tier": 2,
       "price": 75,
       "world": "Fazbear Hills",
@@ -160,7 +160,7 @@
     {
       "id": "neon-wasp",
       "name": "Neon Wasp",
-      "group": "Byte Bee",
+      "group": "Bee Byte",
       "tier": 3,
       "price": 150,
       "world": "Fazbear Hills",
@@ -172,7 +172,7 @@
     {
       "id": "medpod-1",
       "name": "Medpod 1",
-      "group": "Byte Medpod",
+      "group": "Medpod Byte",
       "tier": 1,
       "price": 25,
       "world": "Choppy's Woods",
@@ -184,7 +184,7 @@
     {
       "id": "medpod-2",
       "name": "Medpod 2",
-      "group": "Byte Medpod",
+      "group": "Medpod Byte",
       "tier": 2,
       "price": 100,
       "world": "Choppy's Woods",
@@ -196,7 +196,7 @@
     {
       "id": "mega-med",
       "name": "Mega-Med",
-      "group": "Byte Medpod",
+      "group": "Medpod Byte",
       "tier": 3,
       "price": 500,
       "world": "Choppy's Woods",
@@ -208,7 +208,7 @@
     {
       "id": "mini-reaper",
       "name": "Mini Reaper",
-      "group": "Byte Grim Reaper",
+      "group": "Reaper Byte",
       "tier": 1,
       "price": 100,
       "world": "Dusting Fields",
@@ -220,7 +220,7 @@
     {
       "id": "reaper",
       "name": "Reaper",
-      "group": "Byte Grim Reaper",
+      "group": "Reaper Byte",
       "tier": 2,
       "price": 500,
       "world": "Dusting Fields",
@@ -232,7 +232,7 @@
     {
       "id": "x-reaper",
       "name": "X-Reaper",
-      "group": "Byte Grim Reaper",
+      "group": "Reaper Byte",
       "tier": 3,
       "price": 2000,
       "world": "Dusting Fields",
@@ -244,7 +244,7 @@
     {
       "id": "block5",
       "name": "Block5",
-      "group": "Byte Shield",
+      "group": "Block Byte",
       "tier": 1,
       "price": 50,
       "world": "Mysterious Mine",
@@ -256,7 +256,7 @@
     {
       "id": "block20",
       "name": "Block20",
-      "group": "Byte Shield",
+      "group": "Block Byte",
       "tier": 2,
       "price": 500,
       "world": "Mysterious Mine",
@@ -268,7 +268,7 @@
     {
       "id": "block50",
       "name": "Block50",
-      "group": "Byte Shield",
+      "group": "Block Byte",
       "tier": 3,
       "price": 2000,
       "world": "Mysterious Mine",
@@ -280,7 +280,7 @@
     {
       "id": "pop-pop",
       "name": "Pop-Pop",
-      "group": "Byte Bomb",
+      "group": "Bomb Byte",
       "tier": 1,
       "price": 99,
       "world": "Blacktomb Yard",
@@ -292,7 +292,7 @@
     {
       "id": "boom",
       "name": "BOOM!",
-      "group": "Byte Bomb",
+      "group": "Bomb Byte",
       "tier": 2,
       "price": 999,
       "world": "Blacktomb Yard",
@@ -304,7 +304,7 @@
     {
       "id": "kaboom",
       "name": "KABOOM!",
-      "group": "Byte Bomb",
+      "group": "Bomb Byte",
       "tier": 3,
       "price": 4999,
       "world": "Blacktomb Yard",
@@ -316,7 +316,7 @@
     {
       "id": "bossdrain01",
       "name": "BossDrain01",
-      "group": "Byte Eye",
+      "group": "Boss Drain Byte",
       "tier": 1,
       "price": 200,
       "world": "Deep-Metal Mine",
@@ -328,7 +328,7 @@
     {
       "id": "bossdrain02",
       "name": "BossDrain02",
-      "group": "Byte Eye",
+      "group": "Boss Drain Byte",
       "tier": 2,
       "price": 1500,
       "world": "Deep-Metal Mine",
@@ -340,7 +340,7 @@
     {
       "id": "bossdrain-x",
       "name": "BossDrain-X",
-      "group": "Byte Eye",
+      "group": "Boss Drain Byte",
       "tier": 3,
       "price": 5000,
       "world": "Deep-Metal Mine",
@@ -352,7 +352,7 @@
     {
       "id": "mini-fo",
       "name": "Mini-FO",
-      "group": "Byte UFO",
+      "group": "UFO Byte",
       "tier": 1,
       "price": 200,
       "world": "Pinwheel Circus",
@@ -364,7 +364,7 @@
     {
       "id": "ufo",
       "name": "UFO",
-      "group": "Byte UFO",
+      "group": "UFO Byte",
       "tier": 2,
       "price": 500,
       "world": "Pinwheel Circus",
@@ -376,7 +376,7 @@
     {
       "id": "x-fo",
       "name": "X-FO",
-      "group": "Byte UFO",
+      "group": "UFO Byte",
       "tier": 3,
       "price": 1500,
       "world": "Pinwheel Circus",

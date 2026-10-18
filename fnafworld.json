@@ -1404,7 +1404,7 @@
         "hard": "80-118"
       },
       "attacks": [
-        ""
+        "Unscrew"
       ],
       "about": "Eyesore is one of the bosses in FNaF World. It is a giant, dirt covered eye with five root-like \"legs\" and an orange iris. It resides in the Mysterious Mine and guards two yellow chests.",
       "card": "https://fnaf-world.fntduserguide.com/cards/eyesore.webp",
@@ -1448,7 +1448,8 @@
         "hard": "2000-2998"
       },
       "attacks": [
-        ""
+        "Alarm",
+        "4th Wall",
       ],
       "about": "Scott Cawthon is the final boss of Hard mode. He starts as a running sprite, then turns into a giant voxel figure with a floating head.",
       "card": "https://fnaf-world.fntduserguide.com/cards/scott-cawthon.webp",
@@ -1492,7 +1493,7 @@
         "hard": "1998-3994"
       },
       "attacks": [
-        ""
+        "Alarm"
       ],
       "about": "Security (also known as Security OWL) is the final boss to the normal mode of FNaF World, found at the end of the world, Pinwheel Circus, or the World 6.",
       "card": "https://fnaf-world.fntduserguide.com/cards/security.webp",

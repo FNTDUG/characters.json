@@ -416,7 +416,7 @@
       "name": "Headstart: Defense",
       "group": "Green",
       "world": "Fazbear Hills",
-      "effect": "Start battle with a temporary defense boost.",
+      "effect": "Start battle with a temporary defense boost.  Defense boost blocks a percent of the damage taken.",
       "unlock": "Path to the right behind Auto Chipper in Fazbear Hills.",
       "image": "https://fnaf-world.fntduserguide.com/specs/chips/headstart-defense.webp"
     },
@@ -425,7 +425,7 @@
       "name": "Headstart: Strength",
       "group": "Green",
       "world": "Fazbear Hills",
-      "effect": "Start battle with a temporary strength boost.",
+      "effect": "Start battle with a temporary strength boost. Damage boost increases your damage by a certain percent.",
       "unlock": "Behind Auto Chipper in Fazbear Hills.",
       "image": "https://fnaf-world.fntduserguide.com/specs/chips/headstart-strength.webp"
     },
@@ -434,7 +434,7 @@
       "name": "Headstart: Speed",
       "group": "Green",
       "world": "Choppy's Woods",
-      "effect": "Start battle with a temporary speed boost.",
+      "effect": "Start battle with a temporary speed boost. Speed boost increases your party's speed by a certain percent, meaning you can attack more.",
       "unlock": "Behind tall stump in Choppy's Woods near Lilygear Lake.",
       "image": "https://fnaf-world.fntduserguide.com/specs/chips/headstart-speed.webp"
     },
@@ -479,7 +479,7 @@
       "name": "Endless: Defense",
       "group": "Gold",
       "world": "Mysterious Mine",
-      "effect": "Permanent defense boost.",
+      "effect": "Permanent defense boost. Defense boost blocks a percent of the damage taken.",
       "unlock": "In the Mysterious Mine entrance at the top-left area of Lilygear Lake. Behind an Eyesore at the top right of the mine.",
       "image": "https://fnaf-world.fntduserguide.com/specs/chips/endless-defense.webp"
     },
@@ -488,7 +488,7 @@
       "name": "Endless: Strength",
       "group": "Gold",
       "world": "Mysterious Mine",
-      "effect": "Permanent strength boost.",
+      "effect": "Permanent strength boost. Damage boost increases your damage by a certain percent.",
       "unlock": "In the Mysterious Mine entrance at the top-left area of Lilygear Lake. At the top left of the mine, unguarded.",
       "image": "https://fnaf-world.fntduserguide.com/specs/chips/endless-strength.webp"
     },
@@ -497,7 +497,7 @@
       "name": "Endless: Speed",
       "group": "Gold",
       "world": "Mysterious Mine",
-      "effect": "Permanent speed boost.",
+      "effect": "Permanent speed boost. Speed boost increases your party's speed by a certain percent, meaning you can attack more.",
       "unlock": "In the Mysterious Mine entrance in Choppy's Woods. Behind an Eyesore at the bottom left of the mine.",
       "image": "https://fnaf-world.fntduserguide.com/specs/chips/endless-speed.webp"
     },
@@ -560,7 +560,7 @@
       "name": "Auto: Shield",
       "group": "Red",
       "world": "&*___TWRE",
-      "effect": "Neon-Wall automatically activates.",
+      "effect": "Neon-Wall automatically activates. Blocking 50% of all damage, along with nullifying Alarm",
       "unlock": "In the &*___TWRE entrance in Choppy's Woods, walk all the way to Lilygear Lake and it's found in the middle of the lake between walls.",
       "image": "https://fnaf-world.fntduserguide.com/specs/chips/auto-shield.webp"
     },
@@ -624,7 +624,7 @@
       "defense": 10,
       "world": "Fazbear Hills",
       "effect": "Gives your party +10 Defense.",
-      "unlock": "Buy it from Mendo in Fazbear Hills for 250 Faz Tokens.",
+      "unlock": "Buy it from Mendo in Fazbear Hills for 250 Faz Tokens. Defense blocks base damage, much like block bytes.",
       "card": "https://fnaf-world.fntduserguide.com/specs/armor/reinforced-endoskeleton.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/armor/reinforced-endoskeleton.webp"
     },
@@ -637,7 +637,7 @@
       "defense": 20,
       "world": "Fazbear Hills",
       "effect": "Gives your party +20 Defense.",
-      "unlock": "Buy it from Mendo in Fazbear Hills for 1,500 Faz Tokens.",
+      "unlock": "Buy it from Mendo in Fazbear Hills for 1,500 Faz Tokens. Defense blocks base damage, much like block bytes.",
       "card": "https://fnaf-world.fntduserguide.com/specs/armor/steel-endoskeleton.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/armor/steel-endoskeleton.webp"
     },
@@ -649,7 +649,7 @@
       "price": 9000,
       "defense": 100,
       "world": "Fazbear Hills",
-      "effect": "Gives your party +100 Defense. It's the strongest and most expensive upgrade.",
+      "effect": "Gives your party +100 Defense. Defense blocks base damage, much like block bytes.",
       "unlock": "Buy it from Mendo in Fazbear Hills for 9,000 Faz Tokens.",
       "card": "https://fnaf-world.fntduserguide.com/specs/armor/titanium-endoskeleton.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/armor/titanium-endoskeleton.webp"

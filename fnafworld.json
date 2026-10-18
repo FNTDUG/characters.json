@@ -1313,7 +1313,9 @@
         "Jumpscare",
         "Snowballs",
         "4th Wall",
-        "Alarm"
+        "Esc Key",
+        "Waterhose",
+        "Toxic Bite"
       ],
       "about": "Chipper's Revenge is the final boss of one of the endings. He is based on Chipper from another game made by Scott Cawthon, which is Chipper and Son's Lumber Co.",
       "card": "https://fnaf-world.fntduserguide.com/cards/chippers-revenge.webp",
@@ -1358,7 +1360,7 @@
         "hard": "400-598"
       },
       "attacks": [
-        ""
+        "Unscrew"
       ],
       "about": "Overclock is a boss found in Deep-Metal Mine in FNaF World, and is one of the \"Key Guardians\" that needs to be beaten to unlock the pathway to Security.",
       "card": "https://fnaf-world.fntduserguide.com/cards/overclock.webp",
@@ -1380,7 +1382,7 @@
         "hard": "500-698"
       },
       "attacks": [
-        ""
+        "Hot Cheese"
       ],
       "about": "Gold Endo is a secret boss that shows up at random in Pinwheel Funhouse. A golden counterpart of Mad Endo, it drops 500 to 1,000 Fazbear Tokens when beaten.",
       "card": "https://fnaf-world.fntduserguide.com/cards/gold-endo.webp",
@@ -1512,7 +1514,11 @@
         "hard": "400-998"
       },
       "attacks": [
-        ""
+        "Esc Key",
+        "Toxic Bite",
+        "Jumpscare",
+        "Waterhose",
+        "Snowballs"
       ],
       "about": "Snowcone is a boss found in Dusting Fields in FNaF World, and is one of the \"Key Guardians\" that needs to be beaten to unlock the pathway to Security.",
       "card": "https://fnaf-world.fntduserguide.com/cards/snowcone.webp",
@@ -1534,7 +1540,10 @@
         "hard": "800-1398"
       },
       "attacks": [
-        ""
+        "Esc Key",
+        "Hot Cheese",
+        "Unscrew"
+        
       ],
       "about": "Supergoon is a boss in FNaF World that guards a button that you must press to open up the path to Security.",
       "card": "https://fnaf-world.fntduserguide.com/cards/supergoon.webp",

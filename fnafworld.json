@@ -1220,6 +1220,9 @@
         "normal": "40-59",
         "hard": "80-119"
       },
+      "attacks": [
+        "Jumpscare"
+      ],
       "about": "Auto Chipper is a boss encountered in both Fazbear Hills and Choppy's Woods that mostly guards Grey Chests, specifically guarding the Headstart: Defense, Headstart: Strength, and Evercomet: Weak.",
       "card": "https://fnaf-world.fntduserguide.com/cards/auto-chipper.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/auto-chipper.webp"
@@ -1261,6 +1264,10 @@
         "normal": "250-349",
         "hard": "500-698"
       },
+      "attacks": [
+        "Balloons"
+      ],
+      
       "about": "Browboy is a boss found in Pinwheel Circus.",
       "card": "https://fnaf-world.fntduserguide.com/cards/browboy.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/browboy.webp"
@@ -1280,6 +1287,9 @@
         "normal": "250-349",
         "hard": "500-698"
       },
+      "attacks": [
+        "Jumpscare"
+      ],
       "about": "Bubba is a boss encountered in Pinwheel Funhouse that guards the path to Porkpatch, both of which are mandatory to defeat.",
       "card": "https://fnaf-world.fntduserguide.com/cards/bubba.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/bubba.webp"
@@ -1299,6 +1309,12 @@
         "normal": "3000-3099",
         "hard": "6000-6198"
       },
+      "attacks": [
+        "Jumpscare",
+        "Snowballs",
+        "4th Wall",
+        "Alarm"
+      ],
       "about": "Chipper's Revenge is the final boss of one of the endings. He is based on Chipper from another game made by Scott Cawthon, which is Chipper and Son's Lumber Co.",
       "card": "https://fnaf-world.fntduserguide.com/cards/chippers-revenge.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/chippers-revenge.webp"
@@ -1319,6 +1335,9 @@
         "normal": "200-209",
         "hard": "400-418"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Mad Endo and Overclock are both bosses found throughout FNaF World guarding different chests and one of the buttons locking the pathway to Security. Mad Endo in FNaF World: Halloween Edition is a regular enemy found in Area 1.",
       "card": "https://fnaf-world.fntduserguide.com/cards/mad-endo.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/mad-endo.webp"
@@ -1338,6 +1357,9 @@
         "normal": "200-299",
         "hard": "400-598"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Overclock is a boss found in Deep-Metal Mine in FNaF World, and is one of the \"Key Guardians\" that needs to be beaten to unlock the pathway to Security.",
       "card": "https://fnaf-world.fntduserguide.com/cards/overclock.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/overclock.webp"
@@ -1357,6 +1379,9 @@
         "normal": "250-349",
         "hard": "500-698"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Gold Endo is a secret boss that shows up at random in Pinwheel Funhouse. A golden counterpart of Mad Endo, it drops 500 to 1,000 Fazbear Tokens when beaten.",
       "card": "https://fnaf-world.fntduserguide.com/cards/gold-endo.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/gold-endo.webp"
@@ -1376,6 +1401,9 @@
         "normal": "40-59",
         "hard": "80-118"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Eyesore is one of the bosses in FNaF World. It is a giant, dirt covered eye with five root-like \"legs\" and an orange iris. It resides in the Mysterious Mine and guards two yellow chests.",
       "card": "https://fnaf-world.fntduserguide.com/cards/eyesore.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/eyesore.webp"
@@ -1395,6 +1423,9 @@
         "normal": "450-549",
         "hard": "900-1098"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Porkpatch is a boss enemy in FNaF World, and appears to be based off one of the children from The Happiest Day Minigame from Five Nights at Freddy's 3 and Nightmare Freddy from Five Nights at Freddy's 4.",
       "card": "https://fnaf-world.fntduserguide.com/cards/porkpatch.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/porkpatch.webp"
@@ -1414,6 +1445,9 @@
         "normal": null,
         "hard": "2000-2998"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Scott Cawthon is the final boss of Hard mode. He starts as a running sprite, then turns into a giant voxel figure with a floating head.",
       "card": "https://fnaf-world.fntduserguide.com/cards/scott-cawthon.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/scott-cawthon.webp"
@@ -1433,6 +1467,9 @@
         "normal": "90-109",
         "hard": "180-218"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Seagoon is a sea monster boss found in Lilygear Lake. Supergoon is its stronger counterpart.",
       "card": "https://fnaf-world.fntduserguide.com/cards/seagoon.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/seagoon.webp"
@@ -1452,6 +1489,9 @@
         "normal": "999-1997",
         "hard": "1998-3994"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Security (also known as Security OWL) is the final boss to the normal mode of FNaF World, found at the end of the world, Pinwheel Circus, or the World 6.",
       "card": "https://fnaf-world.fntduserguide.com/cards/security.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/security.webp"
@@ -1471,6 +1511,9 @@
         "normal": "200-499",
         "hard": "400-998"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Snowcone is a boss found in Dusting Fields in FNaF World, and is one of the \"Key Guardians\" that needs to be beaten to unlock the pathway to Security.",
       "card": "https://fnaf-world.fntduserguide.com/cards/snowcone.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/snowcone.webp"
@@ -1490,6 +1533,9 @@
         "normal": "400-669",
         "hard": "800-1398"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Supergoon is a boss in FNaF World that guards a button that you must press to open up the path to Security.",
       "card": "https://fnaf-world.fntduserguide.com/cards/supergoon.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/supergoon.webp"
@@ -1509,6 +1555,9 @@
         "normal": 999,
         "hard": 999
       },
+      "attacks": [
+        ""
+      ],
       "about": "Chica's Magic Rainbow is the main antagonist and final boss of update 2 of FNaF World. As the name suggests, it is a rainbow. However, its personality conflicts greatly with its outward appearance as it is rude, impatient, taunting, obnoxious, vengeful, and arrogant.",
       "card": "https://fnaf-world.fntduserguide.com/cards/chicas-magic-rainbow.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/chicas-magic-rainbow.webp"
@@ -1530,6 +1579,9 @@
         "normal": "104-108",
         "hard": "208-212"
       },
+      "attacks": [
+        ""
+      ],
       "about": "_!2222 is a glitched enemy in FNaF World. The glitched enemies can appear as many different enemy characters in FNaF World. However, _!2222 specifically appears as Boxbyte and Graveweed.",
       "card": "https://fnaf-world.fntduserguide.com/cards/2222.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/2222.webp"
@@ -1549,6 +1601,9 @@
         "normal": "100-104",
         "hard": "200-204"
       },
+      "attacks": [
+        ""
+      ],
       "about": "%_^^&( is a glitched enemy in FNaF World. In battle, the enemy constantly flickers between the idle sprites of Ballboy and Mechrab.",
       "card": "https://fnaf-world.fntduserguide.com/cards/and.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/and.webp"
@@ -1568,6 +1623,9 @@
         "normal": "92-96",
         "hard": "184-188"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Ballboy is an enemy found in Pinwheel Circus. He first showed up in the Halloween Edition troll release and came back in the real game.",
       "card": "https://fnaf-world.fntduserguide.com/cards/ballboy.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/ballboy.webp"
@@ -1606,6 +1664,9 @@
         "normal": "80-84",
         "hard": "160-164"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Blacktrap is a modified Beartrap that appears in Deep-Metal Mine instead of Blacktomb Yard and has much more health and damage. It has a 33% encounter rate in Deep-Metal Mine.",
       "card": "https://fnaf-world.fntduserguide.com/cards/blacktrap.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/blacktrap.webp"
@@ -1625,6 +1686,9 @@
         "normal": "4-8",
         "hard": "8-12"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Bouncepot is an introductory enemy found in Fazbear Hills, first introduced in FNaF World. It has a 33% chance of encountering.",
       "card": "https://fnaf-world.fntduserguide.com/cards/bouncepot.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/bouncepot.webp"
@@ -1644,6 +1708,9 @@
         "normal": "24-28",
         "hard": "48-52"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Boxbyte is an enemy found in Dusting Fields in FNaF World and has a 33% chance of being encountered.",
       "card": "https://fnaf-world.fntduserguide.com/cards/boxbyte.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/boxbyte.webp"
@@ -1663,6 +1730,9 @@
         "normal": "28-32",
         "hard": "56-60"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Chillax is an enemy in FNaF World. They are only spotted in the Dusting Fields. Chillax seems to be a form of a hermit crab.",
       "card": "https://fnaf-world.fntduserguide.com/cards/chillax.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/chillax.webp"
@@ -1682,6 +1752,9 @@
         "normal": "20-24",
         "hard": "40-44"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Chop 'N Roll's are enemies encountered in FNAF World. They might be based off of Scott's older game \"Chipper & Sons Lumber Co.\" They are found in the area \"Choppy's Woods\", and exist as enemies in \"Foxy Fighters.\"",
       "card": "https://fnaf-world.fntduserguide.com/cards/chop-n-roll.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/chop-n-roll.webp"
@@ -1701,6 +1774,9 @@
         "normal": "44-48",
         "hard": "88-92"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Colossal is an enemy found in Lilygear Lake.",
       "card": "https://fnaf-world.fntduserguide.com/cards/colossal.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/colossal.webp"
@@ -1720,6 +1796,9 @@
         "normal": "40-44",
         "hard": "80-84"
       },
+      "attacks": [
+        ""
+      ],
       "about": "They look like regular crabs and have orange and red skin. They have black and white eyes that are similar to the endoskeleton eyes of the animatronics. They have 3 pairs of legs and red pincers.",
       "card": "https://fnaf-world.fntduserguide.com/cards/crabapple.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/crabapple.webp"
@@ -1739,6 +1818,9 @@
         "normal": "88-92",
         "hard": "176-180"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Dogfights are a type of enemy in FNaF World found in Pinwheel Circus. They resemble purple fighter airplanes.",
       "card": "https://fnaf-world.fntduserguide.com/cards/dogfight.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/dogfight.webp"
@@ -1778,6 +1860,9 @@
         "normal": "12-16",
         "hard": "24-28"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Gearrat is a brown rat's head on top of a spinning brown gear. It has a tail with a flashing red ball on the end.",
       "card": "https://fnaf-world.fntduserguide.com/cards/gearrat.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/gearrat.webp"
@@ -1797,6 +1882,9 @@
         "normal": "96-100",
         "hard": "192-196"
       },
+      "attacks": [
+        ""
+      ],
       "about": ">>>>>> is 1 of the 3 glitched enemies in FNaF World. This enemy's sprite switches between a Prototype and a Gearrat. It can use the Snowball attack, which can deal a lot of damage to your team.",
       "card": "https://fnaf-world.fntduserguide.com/cards/x.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/x.webp"
@@ -1816,6 +1904,9 @@
         "normal": "56-60",
         "hard": "112-116"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Goldmine is an enemy found in the Mysterious Mine. Quarry is its counterpart.",
       "card": "https://fnaf-world.fntduserguide.com/cards/goldmine.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/goldmine.webp"
@@ -1835,6 +1926,9 @@
         "normal": "60-64",
         "hard": "120-124"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Graveweed is a modified Bouncepot found in Blacktomb Yard that has much more health and much more of a punch to it. It has a 33% encounter rate in Blacktomb Yard.",
       "card": "https://fnaf-world.fntduserguide.com/cards/graveweed.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/graveweed.webp"
@@ -1854,6 +1948,9 @@
         "normal": "8-12",
         "hard": "16-20"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Mechrab is a robotic crab with a pink spiral shell, robotic legs, and a body with huge magenta eyes and light blue eyelids. It appears similar to Chillax. At the end of its shell, there is an antenna with a red ball on it.",
       "card": "https://fnaf-world.fntduserguide.com/cards/mechrab.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/mechrab.webp"
@@ -1873,6 +1970,9 @@
         "normal": "84-88",
         "hard": "168-172"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Meringue is a cake-like enemy that is similar to Half-Bake and Mudpie, as opposed to either of them, Meringue looks more like an actual cake without any facial accessories. It is primarily found in Pinwheel Circus.",
       "card": "https://fnaf-world.fntduserguide.com/cards/meringue.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/meringue.webp"
@@ -1892,6 +1992,9 @@
         "normal": "52-56",
         "hard": "104-108"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Metalman is a relative of Chop 'N Roll. Metalman is made of complete steel, as opposed to Chop 'N Roll, who is made of wood. Metalman has an iron roller with metal spikes on it that is used as its main way of movement.",
       "card": "https://fnaf-world.fntduserguide.com/cards/metalman.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/metalman.webp"
@@ -1911,6 +2014,9 @@
         "normal": "68-72",
         "hard": "136-140"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Prototype is an enemy found in both FNaF World and FNaF World (Halloween Edition), and found in Blacktomb Yard and Area 2, respectively. Prototype is an animatronic bear with an endoskeleton-like body, and has a 33% chance of encountering in both games.",
       "card": "https://fnaf-world.fntduserguide.com/cards/prototype.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/prototype.webp"
@@ -1930,6 +2036,9 @@
         "normal": "48-52",
         "hard": "96-100"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Quarry is an enemy found in the Mysterious Mine. Goldmine is its counterpart.",
       "card": "https://fnaf-world.fntduserguide.com/cards/quarry.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/quarry.webp"
@@ -1949,6 +2058,9 @@
         "normal": "112-116",
         "hard": "224-228"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Redbear is an enemy in FNaF World and FNaF World: Halloween Edition.",
       "card": "https://fnaf-world.fntduserguide.com/cards/redbear.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/redbear.webp"
@@ -1968,6 +2080,9 @@
         "normal": "36-40",
         "hard": "72-76"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Seaweed is a green enemy that looks like Rot and Flan.",
       "card": "https://fnaf-world.fntduserguide.com/cards/seaweed.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/seaweed.webp"
@@ -1987,6 +2102,9 @@
         "normal": "108-112",
         "hard": "216-220"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Tangle is an enemy encountered in both FNaF World and FNaF World (Halloween Edition), in both Pinwheel Funhouse and Area 2, respectively. Tangle represents a discount or knockoff Mangle, and has a 33% chance of encountering.",
       "card": "https://fnaf-world.fntduserguide.com/cards/tangle.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/tangle.webp"
@@ -2006,6 +2124,9 @@
         "normal": "72-76",
         "hard": "144-148"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Tombstack is a black, totempole-like enemy with red eyes, black ears and white buck teeth. Its insides show an orange/brown color when it jumps up and down, strangely, Tombstacks appear to be stationary, yet the rest of the body is capable of moving. Tombstacks also have a brown tail at the base segment.",
       "card": "https://fnaf-world.fntduserguide.com/cards/tombstack.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/tombstack.webp"
@@ -2025,6 +2146,9 @@
         "normal": "16-20",
         "hard": "32-36"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Totemole is a totem pole-like creature with rodent features that is completely composed out of wood. It has buck teeth, yellow eyes, wooden ears, a tail, and three segments that constantly shift in different directions.",
       "card": "https://fnaf-world.fntduserguide.com/cards/totemole.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/totemole.webp"
@@ -2044,6 +2168,9 @@
         "normal": "116-120",
         "hard": "232-236"
       },
+      "attacks": [
+        ""
+      ],
       "about": "White Rabbit is an enemy in FNaF World that only appears in Pinwheel Funhouse. A reference to the fact that Bonnie was originally a white rabbit in the first version of FNaF 1.",
       "card": "https://fnaf-world.fntduserguide.com/cards/white-rabbit.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/white-rabbit.webp"
@@ -2063,6 +2190,9 @@
         "normal": "204-208",
         "hard": "408-412"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Neon is an enemy in FNaF World which is introduced in Update 2. Neon's design is pixelated and quite simple same with all other enemies encountered in Geist Lair. Neon is mostly yellow with orange for the eyes and mouth, as well as having small ears on it and what seems to be eyebrows on its face.",
       "card": "https://fnaf-world.fntduserguide.com/cards/neon.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/neon.webp"
@@ -2082,6 +2212,9 @@
         "normal": "212-216",
         "hard": "424-428"
       },
+      "attacks": [
+        ""
+      ],
       "about": "P.Goons are 8-bit enemies found in the Geist Lair, the area added in Update 2.",
       "card": "https://fnaf-world.fntduserguide.com/cards/p-goon.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/p-goon.webp"
@@ -2120,6 +2253,9 @@
         "normal": "76-80",
         "hard": "152-156"
       },
+      "attacks": [
+        ""
+      ],
       "about": "Rot is an enemy found in Deep-Metal Mine.",
       "card": "https://fnaf-world.fntduserguide.com/cards/rot.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/rot.webp"

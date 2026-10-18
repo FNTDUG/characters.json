@@ -1239,6 +1239,9 @@
         "normal": "60-79",
         "hard": "120-158"
       },
+      "attacks": [
+        "Snowballs"
+      ],
       "about": "Bouncer is a boss found in Dusting Fields in FNaF World, and is the first mandatory boss, guarding a necessary glitched object.",
       "card": "https://fnaf-world.fntduserguide.com/cards/bouncer.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/bouncer.webp"

@@ -7271,6 +7271,9 @@
     "imgShiny": "https://units.fntduserguide.com/units/bbnj-shiny.png",
     "rarity": "mythic",
     "typeMain": "Midgame",
+    "typeTags":[
+      "Halloween25"
+    ],
     "element": "Neutral",
     "placements": 2,
     "attackType": "Line",
@@ -7350,7 +7353,8 @@
       "Burn",
       "Trap",
       "Bonnie",
-      "Nightmare"
+      "Nightmare",
+      "Halloween25"
     ],
     "element": "Fire",
     "placements": 4,
@@ -8264,7 +8268,8 @@
     "typeMain": "Midgame-Endgame",
     "typeTags":[
       "Bonnie",
-      "Withered"
+      "Withered",
+      "Halloween25"
     ],
     "element": "Dark",
     "placements": 3,
@@ -9305,7 +9310,8 @@
       "Support",
       "Anti-Regen",
       "Bleed",
-      "Burn"
+      "Burn",
+      "Halloween25"
     ],
     "element": "Fire",
     "placements": 1,
@@ -11524,7 +11530,8 @@
     "typeMain": "Starter",
     "typeTags": [
       "Summon",
-      "Chica"
+      "Chica",
+      "Halloween25"
     ],
     "element": "Rust",
     "placements": 3,
@@ -11854,7 +11861,8 @@
     "rarity": "exclusive",
     "typeTags": [
       "Support",
-      "Freddy"
+      "Freddy",
+      "Halloween25"
     ],
     "element": "Neutral",
     "placements": 1,
@@ -22935,7 +22943,8 @@
   "typeTags": [
     "Wither",
     "Chica",
-    "Cupcake"
+    "Cupcake",
+    "Anniversary"
   ],
   "element": "Light",
   "placements": 1,
@@ -23015,7 +23024,8 @@
   "rarity": "epic",
   "typeMain": "Endgame",
   "typeTags": [
-    "Support"
+    "Support",
+    "Anniversary"
   ],
   "element": "Light",
   "placements": 1,

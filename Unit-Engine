@@ -4737,6 +4737,7 @@
           ["strat_chica_crit",   "Grand Strategist Chica: Hold the Line (+30% Crit DMG)",                  { critDmgAdd: 1.30}],
           ["spring_duo_avg",    "Spring Duo: Spotlight! (Averaged, +25% DMG, +22.5% RNG, -2.5% CD)",      { dmgMult: 1.25, rngMult: 1.225, cdMult: 0.975 }],
           ["sweetheart_toy_foxy","Sweetheart Toy Foxy: Love Shot (-35% DMG, avg CD)",                      { dmgMult: 0.65, singlePlacement: true }],
+          ["trickbullt",         "Trickster Bullies: Treat Mode (15% RNG)",                             { rngMult: 1.15, duration: 30, cd: 48, uptime: false }],
           ["unicorn_foxy",       "Unicorn Toy Foxy: Light Eater (+15% DMG)",                              { dmgMult: 1.15 }],
           ["void_molten",       "Void Drifter Molten Freddy: Cyberneetic Underworld (+20% RNG)",          { rngMult: 1.20 }],
           ["electricityelement","Electricity Element: -1% CD to units within range (stacks)",              { cdMult: 0.99, stackKey: "electricityelementStacks", maxStacks: 15 }],
@@ -4943,6 +4944,14 @@
             ["Glitch_top_wither",  "Glitchtrap: Max Top Path Wither (+20% DMG) [Dark & Electricity Only]", { dmgMult: 1.20, elements: ["Dark", "Electricity"]}],
             ["Glitch_top",         "Glitchtrap: Max Top Path (+1.25% DMG per stack) [Dark & Electricity Only]", { dmgMult: 1.0125, stackKey: "glitchtopstack", maxStacks: 8, elements: ["Dark", "Electricity"]}],
             ["Glitch_bot",         "Glitchtrap: Max Bottom Path (+20% & +20% RNG DMG) [Dark & Electricity Only]", { dmgMult: 1.20, rngMult: 1.20, elements: ["Dark", "Electricity"]}],
+          );
+        }
+
+        if (unitHasElement(unit, "electricity") || unitHasElement(unit, "rust")) {
+          BOOST_OPTIONS.push(
+            ["datanightcodeno",      "Data Theif Nightmarionne: Code Corrosion Debuff (-10% DMG & -10% RNG) [Rust & Electricity Only]", { dmgMult: 0.90, rngMult: 0.90, elements: ["Rust", "Electricity"]}],
+            ["datanightcodeyes",     "Data Theif Nightmarionne: Code Corrosion Buff (+25% DMG & +25% RNG) [Rust & Electricity Only]", { dmgMult: 1.25, rngMult: 1.25, elements: ["Rust", "Electricity"]}],
+            ["datanightdownload",    "Data Theif Nightmarionne: Organic Download (+15% DMG) [Rust & Electricity Only]", { dmgMult: 1.15, elements: ["Rust", "Electricity"]}]
           );
         }
         
@@ -5717,6 +5726,7 @@
 
       function normalizeTypeTag(t) {
         var allowed = {
+          "anniversary": "Anniversary",
           "anti-regen": "Anti-Regen",
           "astral":     "Astral",
           "bleed":      "Bleed",
@@ -5732,6 +5742,8 @@
           "foxy":       "Foxy",
           "freddy":     "Freddy",
           "golden":     "Golden",
+          "halloween25": "Halloween25",
+          "halloween26": "Halloween26",
           "income":     "Income",
           "knockback":  "Knockback",
           "lolbit":     "Lolbit",
@@ -7905,6 +7917,7 @@
           "Midgame",
           "Midgame-Endgame",
           "Endgame",
+          "Anniversary"
           "Anti-Regen",
           "Astral",
           "Bleed",
@@ -7920,6 +7933,8 @@
           "Foxy",
           "Freddy",
           "Golden",
+          "Halloween25",
+          "Halloween26",
           "Income",
           "Knockback",
           "Lolbit",

@@ -430,7 +430,8 @@
       "card": "https://fnaf-world.fntduserguide.com/cards/withered-bonnie.webp",
       "head": "https://fnaf-world.fntduserguide.com/heads/v3/withered-bonnie.webp",
       "idle": "https://fnaf-world.fntduserguide.com/idle/withered-bonnie.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/withered-bonnie.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/withered-bonnie.webp",
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/withered-bonnie.webp"
     },
     {
       "id": "withered-chica",
@@ -628,7 +629,8 @@
       "card": "https://fnaf-world.fntduserguide.com/cards/nightmare-freddy.webp",
       "head": "https://fnaf-world.fntduserguide.com/heads/v3/nightmare-freddy.webp",
       "idle": "https://fnaf-world.fntduserguide.com/idle/nightmare-freddy.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-freddy.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-freddy.webp",
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/nightmare-freddy.webp"
     },
     {
       "id": "nightmare-bonnie",
@@ -643,6 +645,14 @@
         "Rainy Day 2",
         "Pizza Wheel 2"
       ],
+      "skins": [
+      { 
+      "name": "Twisted Bonnie",
+      "idle": "https://fnaf-world.fntduserguide.com/skins/twisted-bonnie-roblox-idle.webp",
+      "attack": "https://fnaf-world.fntduserguide.com/skins/twisted-bonnie-roblox-attack.webp",
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/twisted-bonnie.webp" 
+      }
+      ],
       "quote": "Let's get mean!",
       "unlock": "Beat them in a challenger battle in Blacktomb Yard.",
       "about": "Adventure Nightmare Bonnie, or Nightmare Bonnie as named in-game, is an unlockable character in Blacktomb Yard that originates from Five Nights at Freddy's 4.",
@@ -650,7 +660,8 @@
       "card": "https://fnaf-world.fntduserguide.com/cards/nightmare-bonnie.webp",
       "head": "https://fnaf-world.fntduserguide.com/heads/v3/nightmare-bonnie.webp",
       "idle": "https://fnaf-world.fntduserguide.com/idle/nightmare-bonnie.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-bonnie.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-bonnie.webp",
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/nightmare-bonnie.webp"
     },
     {
       "id": "nightmare-chica",
@@ -682,6 +693,14 @@
       "world": "Blacktomb Yard",
       "game": "Five Nights at Freddy's 4",
       "health": 240,
+      "skins": [
+      { 
+      "name": "Radioactive Foxy",
+      "idle": "https://fnaf-world.fntduserguide.com/skins/radioactive-foxy-idle.webp",
+      "attack": "https://fnaf-world.fntduserguide.com/skins/radioactive-foxy-attack.webp",
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/radioactive-foxy.webp" 
+      }
+      ],
       "attacks": [
         "Bite 2",
         "Unscrew 2",
@@ -800,9 +819,10 @@
       "skins": [
       { 
       "name": "Toxic Springtrap",
-      "idle": "https://fnaf-world.fntduserguide.com/skins/toxic-springtrap-idle.gif",
-      "attack": "https://fnaf-world.fntduserguide.com/skins/toxic-springtrap-attack.gif",
-      "overworld": "https://fnaf-world.fntduserguide.com/overworld/toxic-springtrap.gif" }
+      "idle": "https://fnaf-world.fntduserguide.com/skins/toxic-springtrap-idle.webp",
+      "attack": "https://fnaf-world.fntduserguide.com/skins/toxic-springtrap-attack.webp",
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/toxic-springtrap.webp" 
+      }
       ],
       "quote": "Cuter in person; still a killer.",
       "unlock": "Beat them in a challenger battle in Pinwheel Circus.",
@@ -975,6 +995,14 @@
       "world": "Halloween Backstage",
       "game": "Five Nights at Freddy's 4: Halloween Edition",
       "health": 305,
+      "skins": [
+      { 
+      "name": "Screampunk",
+      "idle": "https://fnaf-world.fntduserguide.com/skins/mechanical-marvel-mangle-idle.webp",
+      "attack": "https://fnaf-world.fntduserguide.com/skins/mechanical-mangle-attack.webp",
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/mechanical-mangle.webp" 
+      }
+      ],
       "attacks": [
         "Haunting",
         "Jack-O-Bomb",
@@ -987,7 +1015,8 @@
       "card": "https://fnaf-world.fntduserguide.com/cards/jack-o-bonnie.webp",
       "head": "https://fnaf-world.fntduserguide.com/heads/v3/jack-o-bonnie.webp",
       "idle": "https://fnaf-world.fntduserguide.com/idle/jack-o-bonnie.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/jack-o-bonnie.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/jack-o-bonnie.webp",
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/jack-o-bonnie.webp"
     },
     {
       "id": "jack-o-chica",
@@ -1097,7 +1126,8 @@
       "card": "https://fnaf-world.fntduserguide.com/cards/nightmarionne.webp",
       "head": "https://fnaf-world.fntduserguide.com/heads/v3/nightmarionne.webp",
       "idle": "https://fnaf-world.fntduserguide.com/idle/nightmarionne.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmarionne.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmarionne.webp",
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/nightmarionne.webp"
     },
     {
       "id": "coffee",
@@ -1151,6 +1181,14 @@
       "world": "Halloween Backstage",
       "game": "Five Nights at Freddy's 4",
       "health": 355,
+      "skins": [
+      { 
+      "name": "Mechanical Mangle",
+      "idle": "https://fnaf-world.fntduserguide.com/skins/mechanical-marvel-mangle-idle.webp",
+      "attack": "https://fnaf-world.fntduserguide.com/skins/mechanical-mangle-attack.webp",
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/mechanical-mangle.webp" 
+      }
+      ],
       "attacks": [
         "Mega Prize",
         "Mega Bite",
@@ -1206,8 +1244,9 @@
       "tips": "Purple Guy pairs Slasher's 1 in 10 chance of a 99,999 damage hit with Hocus Pocus, which can turn strong enemies into weaker ones, and Speed Song to make the whole party faster.",
       "card": "https://fnaf-world.fntduserguide.com/cards/purple-guy.webp",
       "head": "https://fnaf-world.fntduserguide.com/heads/v3/purple-guy.webp",
-      "idle": "https://fnaf-world.fntduserguide.com/idle/purple-guy.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/purple-guy.webp"
+      "idle": "https://fnaf-world.fntduserguide.com/idle/withered-golden-freddy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/withered-golden-freddy.webp",
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/withered-golden-freddy.webp"
     }
   ],
   "bosses": [

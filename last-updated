@@ -305,11 +305,15 @@
 
 <script>
 var UPDATED_UNITS = [
-"Trapper Yenndo",
-"Executioner Nightmare Mangle",
-"Bubbly Toy Foxy",
-"Blue Baron Sparky",
-"Scrapbear"
+"Crow Keeper Foxy",
+"Mad Doctor Lolbit",
+"Pierrot Shadow Freddy",
+"Reanimated Twisted Wolf",
+"Ghoul Shadow Bonnie",
+"Trickster Bullies",
+"Sunshot Phantom Freddy",
+"Silet Ghost Toy Freddy",
+"Data Theif Nightmarionne"
 ];
 
 var UNITS_JSON_URL = 'https://raw.githubusercontent.com/FNTDUG/characters.json/refs/heads/main/json';

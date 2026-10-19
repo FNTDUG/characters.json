@@ -2375,9 +2375,9 @@
     "Alarm": {
       "color": "Red",
       "hex": "#ff4d4d",
-      "type": "",
-      "description": "",
-      "damage": null,
+      "type": "Damage",
+      "description": "Does 9999 damage per Orb, Countered by Neon Wall",
+      "damage": 9999,
       "icon": "https://fnaf-world.fntduserguide.com/moves/alarm.webp"
     },
     "Armor Song": {
@@ -2607,7 +2607,7 @@
     "Jumpscare": {
       "color": "Red",
       "hex": "#ff4d4d",
-      "type": "Damage",
+      "type": "Debuff",
       "description": "Stuns enemies for a few seconds.",
       "damage": "Stuns enemies; 2~8 Seconds (Enemy); 1~3 Seconds (Boss)",
       "icon": "https://fnaf-world.fntduserguide.com/moves/jumpscare.webp"
@@ -2623,8 +2623,8 @@
     "Mega Prize": {
       "color": "Blazing Orange",
       "hex": "#ff6a00",
-      "type": "",
-      "description": "",
+      "type": "Special",
+      "description": "Does a random Halloween attack.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/mega-prize.webp"
     },
@@ -2791,8 +2791,8 @@
     "Snowballs": {
       "color": "Red",
       "hex": "#ff4d4d",
-      "type": "",
-      "description": "",
+      "type": "Damage",
+      "description": "Deals anywhere from >1% to 99% health, can never kill.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/snowballs.webp"
     },

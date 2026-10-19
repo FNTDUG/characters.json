@@ -142,7 +142,6 @@
       "world": "Fazbear Hills",
       "effect": "These Bytes shoot stingers at enemies for extra damage!",
       "unlock": "Buy it from Lolbit in Fazbear Hills for 25 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/gnat.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/gnat.webp"
     },
     {
@@ -154,7 +153,6 @@
       "world": "Fazbear Hills",
       "effect": "These Bytes shoot stingers at enemies for extra damage!",
       "unlock": "Buy it from Lolbit in Fazbear Hills for 75 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/neon-bee.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/neon-bee.webp"
     },
     {
@@ -166,7 +164,6 @@
       "world": "Fazbear Hills",
       "effect": "These Bytes shoot stingers at enemies for extra damage!",
       "unlock": "Buy it from Lolbit in Fazbear Hills for 150 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/neon-wasp.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/neon-wasp.webp"
     },
     {
@@ -178,7 +175,6 @@
       "world": "Choppy's Woods",
       "effect": "These Medpods will heal you during battles!",
       "unlock": "Buy it from Lolbit in Choppy's Woods for 25 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/medpod-1.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/medpod-1.webp"
     },
     {
@@ -190,7 +186,6 @@
       "world": "Choppy's Woods",
       "effect": "These Medpods will heal you during battles!",
       "unlock": "Buy it from Lolbit in Choppy's Woods for 100 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/medpod-2.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/medpod-2.webp"
     },
     {
@@ -202,7 +197,6 @@
       "world": "Choppy's Woods",
       "effect": "These Medpods will heal you during battles!",
       "unlock": "Buy it from Lolbit in Choppy's Woods for 500 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/mega-med.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/mega-med.webp"
     },
     {
@@ -214,7 +208,6 @@
       "world": "Dusting Fields",
       "effect": "These Reapers have a chance to instantly kill enemies! 0.0005% chance on bosses!",
       "unlock": "Buy it from Lolbit in Dusting Fields for 100 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/mini-reaper.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/mini-reaper.webp"
     },
     {
@@ -226,7 +219,6 @@
       "world": "Dusting Fields",
       "effect": "These Reapers have a chance to instantly kill enemies! 0.0005% chance on bosses!",
       "unlock": "Buy it from Lolbit in Dusting Fields for 500 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/reaper.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/reaper.webp"
     },
     {
@@ -238,7 +230,6 @@
       "world": "Dusting Fields",
       "effect": "These Reapers have a chance to instantly kill enemies! 0.0005% chance on bosses!",
       "unlock": "Buy it from Lolbit in Dusting Fields for 2,000 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/x-reaper.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/x-reaper.webp"
     },
     {
@@ -250,7 +241,6 @@
       "world": "Mysterious Mine",
       "effect": "These Shields block base damage from all attacks!",
       "unlock": "Buy it from Lolbit in Mysterious Mine for 50 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/block5.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/block5.webp"
     },
     {
@@ -262,7 +252,6 @@
       "world": "Mysterious Mine",
       "effect": "These Shields block base damage from all attacks!",
       "unlock": "Buy it from Lolbit in Mysterious Mine for 500 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/block20.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/block20.webp"
     },
     {
@@ -274,7 +263,6 @@
       "world": "Mysterious Mine",
       "effect": "These Shields block base damage from all attacks!",
       "unlock": "Buy it from Lolbit in Mysterious Mine for 2,000 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/block50.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/block50.webp"
     },
     {
@@ -286,7 +274,6 @@
       "world": "Blacktomb Yard",
       "effect": "These Bombs detonate once per battle for instant damage!",
       "unlock": "Buy it from Lolbit in Blacktomb Yard for 99 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/pop-pop.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/pop-pop.webp"
     },
     {
@@ -298,7 +285,6 @@
       "world": "Blacktomb Yard",
       "effect": "These Bombs detonate once per battle for instant damage!",
       "unlock": "Buy it from Lolbit in Blacktomb Yard for 999 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/boom.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/boom.webp"
     },
     {
@@ -310,7 +296,6 @@
       "world": "Blacktomb Yard",
       "effect": "These Bombs detonate once per battle for instant damage!",
       "unlock": "Buy it from Lolbit in Blacktomb Yard for 4,999 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/kaboom.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/kaboom.webp"
     },
     {
@@ -322,7 +307,6 @@
       "world": "Deep-Metal Mine",
       "effect": "These Eyebots work on bosses. This one has a DPS of 60!",
       "unlock": "Buy it from Lolbit in Deep-Metal Mine for 200 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/bossdrain01.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/bossdrain01.webp"
     },
     {
@@ -334,7 +318,6 @@
       "world": "Deep-Metal Mine",
       "effect": "These Eyebots work on bosses. This one has a DPS of 120!",
       "unlock": "Buy it from Lolbit in Deep-Metal Mine for 1,500 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/bossdrain02.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/bossdrain02.webp"
     },
     {
@@ -346,7 +329,6 @@
       "world": "Deep-Metal Mine",
       "effect": "These Eyebots work on bosses. This one has a DPS of 180!",
       "unlock": "Buy it from Lolbit in Deep-Metal Mine for 5,000 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/bossdrain-x.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/bossdrain-x.webp"
     },
     {
@@ -358,7 +340,6 @@
       "world": "Pinwheel Circus",
       "effect": "These UFOs shoot lasers for very high damage!",
       "unlock": "Buy it from Lolbit in Pinwheel Circus for 200 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/mini-fo.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/mini-fo.webp"
     },
     {
@@ -370,7 +351,6 @@
       "world": "Pinwheel Circus",
       "effect": "These UFOs shoot lasers for very high damage!",
       "unlock": "Buy it from Lolbit in Pinwheel Circus for 500 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/ufo.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/ufo.webp"
     },
     {
@@ -382,7 +362,6 @@
       "world": "Pinwheel Circus",
       "effect": "These UFOs shoot lasers for very high damage!",
       "unlock": "Buy it from Lolbit in Pinwheel Circus for 1,500 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/x-fo.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/x-fo.webp"
     },
     {
@@ -394,7 +373,6 @@
       "world": "Fazbear Hills",
       "effect": "Heals your party members slowly.",
       "unlock": "Catch the Pearl at DeeDee's Fishing Hole in Fazbear Hills 5 times.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/the-pearl.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/the-pearl.webp"
     },
     {
@@ -406,7 +384,6 @@
       "world": "Fazbear Hills",
       "effect": "Stands at the front of your party, can't be killed, and randomly shoots lasers at the enemies.",
       "unlock": "Unlock all 40 characters. It can't be earned in Fixed Party mode.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/cards/the-fan.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/bytes/the-fan.webp"
     }
   ],
@@ -612,7 +589,6 @@
       "world": "Fazbear Hills",
       "effect": "The default endoskeleton. It gives +0 Defense.",
       "unlock": "Every party starts with it equipped.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/armor/basic-endoskeleton.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/armor/basic-endoskeleton.webp"
     },
     {
@@ -625,7 +601,6 @@
       "world": "Fazbear Hills",
       "effect": "Gives your party +10 Defense.",
       "unlock": "Buy it from Mendo in Fazbear Hills for 250 Faz Tokens. Defense blocks base damage, much like block bytes.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/armor/reinforced-endoskeleton.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/armor/reinforced-endoskeleton.webp"
     },
     {
@@ -638,7 +613,6 @@
       "world": "Fazbear Hills",
       "effect": "Gives your party +20 Defense.",
       "unlock": "Buy it from Mendo in Fazbear Hills for 1,500 Faz Tokens. Defense blocks base damage, much like block bytes.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/armor/steel-endoskeleton.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/armor/steel-endoskeleton.webp"
     },
     {
@@ -651,7 +625,6 @@
       "world": "Fazbear Hills",
       "effect": "Gives your party +100 Defense. Defense blocks base damage, much like block bytes.",
       "unlock": "Buy it from Mendo in Fazbear Hills for 9,000 Faz Tokens.",
-      "card": "https://fnaf-world.fntduserguide.com/specs/armor/titanium-endoskeleton.webp",
       "image": "https://fnaf-world.fntduserguide.com/specs/armor/titanium-endoskeleton.webp"
     }
   ]

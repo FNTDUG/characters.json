@@ -29331,6 +29331,1050 @@
       }
       ]
   }
+},
+{
+  "name": "Crow Keeper Foxy",
+  "imgNormal": "https://units.fntduserguide.com/units/crow-keeper-foxy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/crow-keeper-foxy-shiny.png",
+  "rarity": "exclusive",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support",
+    "Summon",
+    "Burn",
+    "Foxy",
+    "Halloween26"
+  ],
+  "element": "Fire/Light",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Halloween 2026 Event Exclusive 2",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 9500,
+      "damage": 800,
+      "type": "Cone",
+      "cd": 4,
+      "range": 16
+    },
+    {
+      "level": 2,
+      "cost": 4500,
+      "damage": 900,
+      "type": "Cone",
+      "cd": 4,
+      "range": 16
+    },
+    {
+      "level": 3,
+      "cost": 6000,
+      "damage": 1050,
+      "type": "Cone",
+      "cd": 3.8,
+      "range": 22
+    },
+    {
+      "level": 4,
+      "cost": 7500,
+      "damage": 1200,
+      "type": "Line",
+      "cd": 3.8,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 9500,
+      "damage": 1300,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 24
+    },
+    {
+      "level": 6,
+      "cost": 12000,
+      "damage": 1450,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 27
+    },
+    {
+      "level": 7,
+      "cost": 13500,
+      "damage": 1600,
+      "type": "Cone 60°",
+      "cd": 3.2,
+      "range": 27
+    },
+    {
+      "level": 8,
+      "cost": 16000,
+      "damage": 1800,
+      "type": "Cone 60°",
+      "cd": 3.2,
+      "range": 28
+    },
+    {
+      "level": 9,
+      "cost": 19000,
+      "damage": 2000,
+      "type": "Cone 60°",
+      "cd": 3,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Keeping Lookout",
+      "text": "Buff all units by 10% range. If this unit is stunned ignore the stun and increase the range buff to 30% for 20 seconds"
+    },
+    {
+      "title": "Break The Birdcage, and Be Free",
+      "text": "On this unit's cooldown summon a Crow with 25% of this unit's damage as health. When a Crow hits an enemy this unit's next attack applies 30% burn over 5 seconds. Increase this burn when Crows die before this unit attacks, up to 450%. If the enemy is burning, apply 20% burn in an Explosion AOE over 3 seconds. While [Keeping Lookout] is buffed increase Crow health from 25% to 50%"
+    }
+  ],
+  "passiveDamage":{
+    "summons":[
+      {
+        "label": "Crow Summons",
+        "healthpctofdamage": 0.25,
+        "spawncd": 3,
+        "spawncdboostable": true
+      }
+    ],
+    "dots":[
+      {
+        "label": "Be Free (DoT)",
+        "pctofdamage": 0.30,
+        "durationsec": 5
+      }
+    ],
+    "selfboost":[
+      {
+        "label": "Keeping Lookout",
+        "rngmult": 1.1
+      }
+    ]
+  }
+},
+{
+  "name": "Mad Doctor Lolbit",
+  "imgNormal": "https://units.fntduserguide.com/units/mad-doctor-lolbit.png",
+  "imgShiny": "https://units.fntduserguide.com/units/mad-doctor-lolbit-shiny.png",
+  "rarity": "exclusive",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Poison",
+    "Lolbit",
+    "Halloween26"
+  ],
+  "element": "Nature",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Halloween 2026 Event Exclusive 1",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 7500,
+      "damage": 200,
+      "type": "Cone",
+      "cd": 1.5,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 240,
+      "type": "Cone",
+      "cd": 1.5,
+      "range": 19
+    },
+    {
+      "level": 3,
+      "cost": 5250,
+      "damage": 450,
+      "type": "Cone",
+      "cd": 2.25,
+      "range": 23
+    },
+    {
+      "level": 4,
+      "cost": 6750,
+      "damage": 525,
+      "type": "Circle",
+      "cd": 2.25,
+      "range": 23
+    },
+    {
+      "level": 5,
+      "cost": 8500,
+      "damage": 600,
+      "type": "Circle",
+      "cd": 2.25,
+      "range": 24
+    },
+    {
+      "level": 6,
+      "cost": 10500,
+      "damage": 850,
+      "type": "Circle",
+      "cd": 3,
+      "range": 26
+    },
+    {
+      "level": 7,
+      "cost": 13500,
+      "damage": 975,
+      "type": "Line",
+      "cd": 3,
+      "range": 26
+    },
+    {
+      "level": 8,
+      "cost": 17000,
+      "damage": 1150,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 28
+    },
+    {
+      "level": 9,
+      "cost": 24000,
+      "damage": 1500,
+      "type": "Line",
+      "cd": 4,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Dont Worry, This Wont Hurt a Bit!",
+      "text": "Apply 100% poison over 20 seconds to this unit's target, increasing by 5% per enemy that dies with poison, up to +1500% that resets after use. Apply half of this poison to every other enemy in range. (Upgrade 0+, Global CD: 60s).",
+      "activeIcon": ""
+    },
+    {
+      "title": "Experimental Serum",
+      "text": "On attack apply 30% poison over 6 seconds, increasing by 3% per repeated application, up to +30%. Deal +10% damage per poison stack on the enemy, up to +50%. When an enemy dies with poison in range apply 10% poison to nearby enemies and permanently gain +0.25% damage, up to +25%"
+    }
+  ],
+  "passiveDamage":{
+    "dots":[
+      {
+        "label": "Experimental Serum (DoT)",
+        "pctofdamage": 0.40,
+        "durationsec": 6
+      },
+      {
+        "label": "Experimental Serum (AoE DoT)",
+        "pctofdamage": 0.10,
+        "durationsec": 1
+      },
+      {
+        "label": "Dont Worry",
+        "pctofdamage": 0.5,
+        "durationsec": 20,
+        "cd": 60,
+        "cdboostable": false
+
+      }
+    ],
+    "selfboost":[
+      {
+        "label": "Experimental Serum (Boost)",
+        "dmgmult": 1.45
+      }
+    ]
+  }
+},
+{
+  "name": "Pierrot Shadow Freddy",
+  "imgNormal": "https://units.fntduserguide.com/units/pierrot-shadow-freddy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/pierrot-shadow-freddy-shiny.png",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Summon",
+    "Support",
+    "Freddy",
+    "Halloween26"
+  ],
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Halloween 2026 Event Summons (0.066%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 4000,
+      "damage": 200,
+      "type": "Circle",
+      "cd": 2,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 240,
+      "type": "Circle",
+      "cd": 2,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 4500,
+      "damage": 300,
+      "type": "Circle",
+      "cd": 2.2,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 5500,
+      "damage": 420,
+      "type": "Circle",
+      "cd": 2.8,
+      "range": 27
+    },
+    {
+      "level": 5,
+      "cost": 7000,
+      "damage": 500,
+      "type": "Line",
+      "cd": 2.8,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 9000,
+      "damage": 600,
+      "type": "Line",
+      "cd": 2.8,
+      "range": 28
+    },
+    {
+      "level": 7,
+      "cost": 11500,
+      "damage": 750,
+      "type": "Line",
+      "cd": 3,
+      "range": 30
+    },
+    {
+      "level": 8,
+      "cost": 14500,
+      "damage": 950,
+      "type": "Line",
+      "cd": 3,
+      "range": 30
+    },
+    {
+      "level": 9,
+      "cost": 17500,
+      "damage": 1175,
+      "type": "Line",
+      "cd": 3.2,
+      "range": 32
+    },
+    {
+      "level": 10,
+      "cost": 21000,
+      "damage": 1400,
+      "type": "Line",
+      "cd": 3.2,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Storied Figure",
+      "text": "Whenever a summon with Haunting dies revive a copy with 20% of this unit's damage as health (1 second cooldown), gain +2% damage, up to +20%, lose this damage buff if it does not trigger for 20 seconds. Gain +2% damage per summon on the map, up to +20%"
+    },
+    {
+      "title": "Haunted Suffering",
+      "text": "Apply Haunting to enemies and summons that enter this unit's range. Haunting revives summons and non-boss enemies that die in range with 50% of this unit's damage as health (3 second cooldown). Heal summons by 3% per second. Haunting does not revive this unit's own summons"
+    }
+  ],
+  "passiveDamage":{
+  "summons": [
+    {
+    "label": "Haunting Suffering",
+    "healthpctofdamage": 0.5,
+    "spawncd": 3
+    }
+  ]
+}
+},
+{
+  "name": "Reanimated Twisted Wolf",
+  "imgNormal": "https://units.fntduserguide.com/units/reanimated-twisted-wolf.png",
+  "imgShiny": "https://units.fntduserguide.com/units/reanimated-twisted-wolf-shiny.png",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Bleed",
+    "Support",
+    "Stun",
+    "Halloween26"
+  ],
+  "element": "Electricity",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Halloween 2026 Craftable",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 8000,
+      "damage": 350,
+      "type": "Line",
+      "cd": 3,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 5000,
+      "damage": 450,
+      "type": "Line",
+      "cd": 3,
+      "range": 18
+    },
+    {
+      "level": 3,
+      "cost": 6500,
+      "damage": 525,
+      "type": "Line",
+      "cd": 2.8,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 8000,
+      "damage": 575,
+      "type": "Cone 60°",
+      "cd": 2.7,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 10000,
+      "damage": 620,
+      "type": "Cone 60°",
+      "cd": 2.7,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 12500,
+      "damage": 570,
+      "type": "Cone 60°",
+      "cd": 2.2,
+      "range": 28
+    },
+    {
+      "level": 7,
+      "cost": 14000,
+      "damage": 650,
+      "type": "Cone 100°",
+      "cd": 2.2,
+      "range": 28
+    },
+    {
+      "level": 8,
+      "cost": 17000,
+      "damage": 700,
+      "type": "Cone 100°",
+      "cd": 2,
+      "range": 31
+    },
+    {
+      "level": 9,
+      "cost": 20000,
+      "damage": 800,
+      "type": "Cone 100°",
+      "cd": 2,
+      "range": 33
+    }
+  ],
+  "passives": [
+    {
+      "title": "Ravenous Claws",
+      "text": "On hit apply 30% bleed over 4 seconds. Increase this bleed by 5% per hit against the same enemy, up to +120%. This unit deals 20% more damage to bleeding enemies. When a bleeding enemy dies in range gain +5% damage for 20 seconds, up to +50% and permanently gain +0.5% damage, up to +25%"
+    },
+    {
+      "title": "A Spark of Life",
+      "text": "This unit spawns a Tesla Coil sub-tower. The Tesla Coil shares this unit's cooldown, has 30% of this unit's damage, and 125% of this unit's range. Every 10 seconds, the Tesla Coil performs a pulse attack. Enemies hit take 20% of Reanimated Twisted Wolf's damage and are stunned for 1.5 seconds. Summons hit gain +10% health and +20% speed. When a summon hit by the Tesla Coil dies in range the Tesla Coil gains +10% damage for 10 seconds, up to +50%"
+    }
+  ],
+  "passiveDamage":{
+    "dots":[
+      {
+        "label": "Ravenous Claws (DoT)",
+        "pctofdamage": 0.3,
+        "durationsec": 4
+      }
+    ],
+    "selfboost":[
+      {
+        "label": "Ravenous Claws (Boost)",
+        "dmgmult": 1.95
+      }
+    ],
+    "periodic":[
+      {
+        "label": "Tesla Coil",
+        "pctofdamage": 0.3,
+        "cd": 2,
+        "cdboostable": true
+      },
+      {
+        "label": "Tesla Coil Pulse",
+        "pctofdamage": 0.2,
+        "cd": 10,
+        "cdboostable": true
+      }
+    ]
+  }
+},
+{
+  "name": "Ghoul Shadow Bonnie",
+  "imgNormal": "https://units.fntduserguide.com/units/ghoul-shadow-bonnie.png",
+  "imgShiny": "https://units.fntduserguide.com/units/ghoul-shadow-bonnie-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Poison",
+    "Slow",
+    "Stun",
+    "Bleed",
+    "Halloween26"
+  ],
+  "element": "Dark",
+  "placements": 2,
+  "attackType": "Multi",
+  "obtainment": "Halloween 2026 Event Summons (0.25%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 3500,
+      "damage": 150,
+      "type": "Line",
+      "cd": 3.2,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 4500,
+      "damage": 175,
+      "type": "Line",
+      "cd": 3.2,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 5750,
+      "damage": 200,
+      "type": "Line",
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 7250,
+      "damage": 175,
+      "type": "Line",
+      "cd": 2,
+      "range": 27
+    },
+    {
+      "level": 5,
+      "cost": 9000,
+      "damage": 220,
+      "type": "Circle",
+      "cd": 2,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 11500,
+      "damage": 260,
+      "type": "Circle",
+      "cd": 2,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 14500,
+      "damage": 325,
+      "type": "Circle",
+      "cd": 2,
+      "range": 32
+    },
+    {
+      "level": 8,
+      "cost": 18000,
+      "damage": 400,
+      "type": "Circle",
+      "cd": 2,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Amputate The Wound",
+      "text": "Attacks apply 40% poison over 5 seconds, slow enemies by 25% for 10 seconds and deal +2% damage per 1% slow above 25%. After hitting the same enemy 5 times, once per enemy stun the enemy for 2 seconds; if it is on stun cooldown, stun it for 3 seconds when the cooldown ends, apply permanent bleed that deals 10% of this unit's damage every second, and apply an additional permanent 10% slow"
+    },
+    {
+      "title": "Mindless Attack",
+      "text": "If a Light element unit is in range, every 15 seconds stun each [Light] unit for 2 seconds and gain +25% damage for 10 seconds per unit hit. Increase the stun by 1 second and the damage buff by 5% per [Light] unit in range. If the stun reaches 5 seconds deal 1000% of this unit's damage to all enemies in range and stun this unit for 5 seconds"
+    }
+  ],
+  "passiveDamage":{
+    "dots":[
+      {
+        "label": "Amputate The Wound (DoT)",
+        "pctofdamage": 0.4,
+        "durationsec": 5
+      }
+    ]
+  }
+},
+{
+  "name": "Trickster Bullies",
+  "imgNormal": "https://units.fntduserguide.com/units/trickster-bullies.png",
+  "imgShiny": "https://units.fntduserguide.com/units/trickster-bullies-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Starter-Midgame",
+  "typeTags": [
+    "Support",
+    "Slow",
+    "Trap",
+    "Halloween26"
+  ],
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Halloween 2026 Craftable",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 1000,
+      "damage": 250,
+      "type": "Single",
+      "cd": 2,
+      "range": 15
+    },
+    {
+      "level": 2,
+      "cost": 6000,
+      "damage": 375,
+      "type": "Single",
+      "cd": 1.5,
+      "range": 18
+    },
+    {
+      "level": 3,
+      "cost": 7000,
+      "damage": 425,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 9000,
+      "damage": 500,
+      "type": "Circle",
+      "cd": 1.5,
+      "range": 22
+    },
+    {
+      "level": 5,
+      "cost": 11500,
+      "damage": 600,
+      "type": "Circle",
+      "cd": 1.3,
+      "range": 25
+    },
+    {
+      "level": 6,
+      "cost": 13500,
+      "damage": 720,
+      "type": "Circle",
+      "cd": 1.2,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Tricks and Treats",
+      "text": "On hit, gain a Trick or Treat stack, up to 15. Buff this unit's damage by 5% per stack. <br> At 15 stacks, enter Trick for 30 seconds. Attacks follow up with an Explosion AOE for 20% damage and Slow enemies by 15%. Every 5 seconds, place a Pumpkin trap that deals 100% damage on contact and leaves a pool for 15 seconds. Pools deal 30% damage when walked over. Buff the range of units in range by 15%. <br> When Trick ends, enter Treat for 30 seconds. rotate attack type between Cone 30, Explosion, and Line. Increase this unit's range by 50%, buff units in range by 15% damage (30% for Halloween26 tag units), and buff this unit's damage by 3% per Halloween26 tag unit buffed"
+    }
+  ],
+  "passiveDamage":{
+    "selfboost":[
+      {
+        "label": "Stack Boost",
+        "dmgmult": 1.75,
+        "duration": 60,
+        "cd": 18,
+        "uptime": false
+      },
+      {
+        "label": "Trick FUA",
+        "dmgmult": 1.2,
+        "duration": 30,
+        "cd": 48,
+        "uptime": false
+      },
+      {
+        "label": "Treat Boost",
+        "rngmult": 1.5,
+        "duration": 30,
+        "cd": 48,
+        "uptime": false
+      }
+    ],
+    "summons":[
+      {
+        "label": "Pumpkin Trap",
+        "healthpctofdamage": 3.6,
+        "spawncd": 48,
+        "spawncdboostable": false
+      }
+    ]
+  }
+},
+{
+  "name": "Sunshot Phantom Freddy",
+  "imgNormal": "https://units.fntduserguide.com/units/sunshot-phantom-freddy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/sunshot-phantom-freddy-shiny.png",
+  "rarity": "secret",
+  "typeMain": "",
+  "typeTags": [
+    "Freddy",
+    "Halloween26"
+  ],
+  "element": "Fire/Light",
+  "placements": 1,
+  "attackType": "Ricochet",
+  "obtainment": "Halloween 2026 Event Free Pass",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 5500,
+      "damage": 1100,
+      "cd": 3,
+      "range": 24
+    },
+    {
+      "level": 2,
+      "cost": 4500,
+      "damage": 1400,
+      "cd": 3,
+      "range": 25
+    },
+    {
+      "level": 3,
+      "cost": 6000,
+      "damage": 1750,
+      "cd": 3,
+      "range": 26
+    },
+    {
+      "level": 4,
+      "cost": 8000,
+      "damage": 2300,
+      "cd": 3.6,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 10000,
+      "damage": 2750,
+      "cd": 3.6,
+      "range": 30
+    },
+    {
+      "level": 6,
+      "cost": 12500,
+      "damage": 3400,
+      "cd": 4.2,
+      "range": 32
+    },
+    {
+      "level": 7,
+      "cost": 15000,
+      "damage": 4300,
+      "cd": 4.8,
+      "range": 32
+    },
+    {
+      "level": 8,
+      "cost": 18000,
+      "damage": 5500,
+      "cd": 5.5,
+      "range": 35
+    },
+    {
+      "level": 9,
+      "cost": 22000,
+      "damage": 6400,
+      "cd": 5.5,
+      "range": 35
+    }
+  ],
+  "passives": [
+    {
+      "title": "Wasteland Hunter",
+      "text": "Attacks have a 50% chance to miss, but always critically hit when they land. After missing increase the next shot's hit chance by 10% until a shot lands, then reset to 50%. This unit's main target takes 50% more damage from this unit, takes +4 shield damage from this unit and 10% critical chance against that target"
+    },
+    {
+      "title": "Heavy Iron",
+      "text": "Gain +30% critical damage on placement. Gain critical damage equal to this unit's critical rate. For the next attack gain +2% critical damage per critical hit within range, up to +50%. Reset this bonus after a shot lands"
+    }
+  ]
+},
+{
+  "name": "Silent Ghost Toy Freddy",
+  "imgNormal": "https://units.fntduserguide.com/units/silent-ghost-toy-freddy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/silent-ghost-toy-freddy-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Bleed",
+    "Slow",
+    "Halloween26"
+  ],
+  "element": "Dark",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Halloween 2026 Event Premium Pass",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 8000,
+      "damage": 450,
+      "type": "Line",
+      "cd": 3,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 9000,
+      "damage": 600,
+      "type": "Line",
+      "cd": 3,
+      "range": 20
+    },
+    {
+      "level": 3,
+      "cost": 10500,
+      "damage": 800,
+      "type": "Line",
+      "cd": 3,
+      "range": 21
+    },
+    {
+      "level": 4,
+      "cost": 12500,
+      "damage": 650,
+      "type": "Line",
+      "cd": 2,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 15500,
+      "damage": 850,
+      "type": "Cone 75°",
+      "cd": 2,
+      "range": 26
+    },
+    {
+      "level": 6,
+      "cost": 19000,
+      "damage": 1050,
+      "type": "Cone 75°",
+      "cd": 1.75,
+      "range": 26
+    },
+    {
+      "level": 7,
+      "cost": 24000,
+      "damage": 1400,
+      "type": "Cone 75°",
+      "cd": 1.75,
+      "range": 27
+    }
+  ],
+  "passives": [
+    {
+      "title": "Supernatural Slaughter",
+      "text": "On hit deal +3 shield damage, apply 80% bleed over 8 seconds, become immune to stuns for 5 seconds, and follow up on the first enemy anywhere on the map for 20% damage"
+    },
+    {
+      "title": "Bad Omen",
+      "text": "For every hit against the same enemy deal +5% damage, up to +30%, and slow the enemy by 5% per stack above 2, up to 20%"
+    }
+  ],
+  "passiveDamage":{
+    "dots":[
+      {
+        "label": "Slaughter (DoT)",
+        "pctofdamage": 0.8,
+        "durationsec": 8
+      }
+    ],
+    "periodic":[
+      {
+        "label": "Slaughter (FUA)",
+        "pctofdamage": 0.2,
+        "cd": 1.75,
+        "cdboostable": true
+      }
+    ]
+  }
+},
+{
+  "name": "Data Theif Nightmarionne",
+  "imgNormal": "https://iili.io/njigMBV.webp",
+  "imgShiny": "https://units.fntduserguide.com/units/nightmarionne-shiny.png",
+  "rarity": "apex",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support",
+    "Bleed",
+    "Poison",
+    "Stun",
+    "Halloween26",
+    "Nightmare"
+  ],
+  "element": "Rust/Electricity",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Halloween 2026 Event Quest",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 10100,
+      "damage": 0,
+      "type": "Line",
+      "cd": 0,
+      "range": 0
+    },
+    {
+      "level": 2,
+      "cost": 4040,
+      "damage": 0,
+      "type": "Line",
+      "cd": 0,
+      "range": 0
+    },
+    {
+      "level": 3,
+      "cost": 5500,
+      "damage": 0,
+      "type": "Line",
+      "cd": 0,
+      "range": 0
+    },
+    {
+      "level": 4,
+      "cost": 7000,
+      "damage": 0,
+      "type": "Line",
+      "cd": 0,
+      "range": 0
+    },
+    {
+      "level": 5,
+      "cost": 9000,
+      "damage": 0,
+      "type": "Line",
+      "cd": 0,
+      "range": 0
+    },
+    {
+      "level": 6,
+      "cost": 14000,
+      "damage": 0,
+      "type": "Circle",
+      "cd": 0,
+      "range": 0
+    },
+    {
+      "level": 7,
+      "cost": 18000,
+      "damage": 0,
+      "type": "Circle",
+      "cd": 0,
+      "range": 0
+    },
+    {
+      "level": 8,
+      "cost": 22500,
+      "damage": 0,
+      "type": "Circle",
+      "cd": 0,
+      "range": 0
+    },
+    {
+      "level": 9,
+      "cost": 27000,
+      "damage": 0,
+      "type": "Cone 75°",
+      "cd": 0,
+      "range": 0
+    },
+    {
+      "level": 10,
+      "cost": 32000,
+      "damage": 0,
+      "type": "Cone 75°",
+      "cd": 0,
+      "range": 0
+    },
+    {
+      "level": 11,
+      "cost": 40400,
+      "damage": 0,
+      "type": "Cone 75°",
+      "cd": 0,
+      "range":0
+    }
+  ],
+  "passives": [
+    {
+      "title": "Code Corrosion",
+      "text": "Debuff up to 5 Electirc or Rust units in range by 10% damage and range. Gain +20% damage and +10% range per affected unit. <br> While fewer than 5 units are affected, change this unit's AOE to Cone 180. At 5 or more affected units, replace their debuff with +25% damage and range."
+    },
+    {
+      "title": "Organic Download",
+      "text": "When placed: <br>• Remove 1 upgrade from every unit in range and gain 1 upgrade for every upgrade removed. <br>• Remove up to 2 upgrades from Electric or Rust units and grant them +15% damage for 60 seconds (does not stack) <br>• Gain +6% damage and range per Electric or Rust unit drained, up to +30% "
+    },
+    {
+      "title": "Infection",
+      "text": "On hit apply Malware, deal +2 shield damage, apple 30% bleed and 20% poison over 5 seconds, deal +10% damage per unique DoT type on the enemy, up to +30%<br> Every 20 seconds stun enemies in range for 3 seconds, 50% chance to apply 50% bleed over 10 seconds, 20% chance to permanently gain +5% damage, up to +50%"
+    }
+  ],
+  "passiveDamage":{
+    "dots":[
+      {
+        "label": "Infection (DoTs)",
+        "pctofdamage": 0.5,
+        "durationsec": 5
+      }
+    ],
+    "selfboost":[
+      {
+        "label": "Infection (Unique DoT Boost)",
+        "dmgmult": 1.2
+      },
+      {
+        "label": "Infection (Permanent Boost)",
+        "dmgmult": 1.5
+      }
+    ]
+  }
 }
 ]
 

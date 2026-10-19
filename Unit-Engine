@@ -3011,7 +3011,9 @@
           "Universal": "https://images.fntduserguide.com/universalelement.png",
           "Neutral/Rust/Nature": "https://images.fntduserguide.com/nature%3Arust%3Aneutral.png",
           "Dark/Fire/Light": "https://images.fntduserguide.com/dark%3Afire%3Alight.png",
-          "Dark/Electricity": "https://images.fntduserguide.com/dark%3Aelec.png"
+          "Dark/Electricity": "https://images.fntduserguide.com/dark%3Aelec.png",
+          "Fire/Light": "https://lh3.googleusercontent.com/d/13sGi9mmaxDOZ9qq_yhHVEn87l0-ibrQV=w500?authuser=0",
+          "Rust/Electricity": "https://images.fntduserguide.com/rustelement.webp"
         };
 
         function getElementIcon(elementName) {
@@ -3039,7 +3041,9 @@
         "Universal": "Grants the effect of all Element boosts.",
         "Neutral/Rust/Nature": "+9% DMG, +3% RNG, -3% CD, & +1 stock per placement.",
         "Dark/Fire/Light": "+3% DMG, -3% CD, & 3% burn/second",
-        "Dark/Electricity": "+3% DMG & -1% CD to all units within range (capts at -15%)"
+        "Dark/Electricity": "+3% DMG & -1% CD to all units within range (capts at -15%)",
+        "Fire/Light": "+3% DMG, -3% CD, & 3% burn/second",
+        "Rust/Electricity": "+6% DMG, +3% CD & -1% CD to all units within range (caps at -15%)"
       };
         
       

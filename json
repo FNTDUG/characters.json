@@ -30355,15 +30355,15 @@
   "passives": [
     {
       "title": "Code Corrosion",
-      "text": "Debuff up to 5 Electirc or Rust units in range by 10% damage and range. Gain +20% damage and +10% range per affected unit. <br> While fewer than 5 units are affected, change this unit's AOE to Cone 180. At 5 or more affected units, replace their debuff with +25% damage and range."
+      "text": "Debuff up to 5 Electricity or Rust units in range by 10% damage and range. Gain +20% damage and +10% range per affected unit. <br> While fewer than 5 units are affected, change this unit's AOE to Cone 180. At 5 or more affected units, replace their debuff with +25% damage and range."
     },
     {
       "title": "Organic Download",
-      "text": "When placed: <br>• Remove 1 upgrade from every unit in range and gain 1 upgrade for every upgrade removed. <br>• Remove up to 2 upgrades from Electric or Rust units and grant them +15% damage for 60 seconds (does not stack) <br>• Gain +6% damage and range per Electric or Rust unit drained, up to +30% "
+      "text": "When placed: <br>• Remove 1 upgrade from every unit in range and gain 1 upgrade for every upgrade removed. <br>• Remove up to 2 upgrades from Electricity or Rust units and grant them +15% damage for 60 seconds (does not stack) <br>• Gain +6% damage and range per Electricity or Rust unit drained, up to +30% "
     },
     {
       "title": "Infection",
-      "text": "On hit apply Malware, deal +2 shield damage, apple 30% bleed and 20% poison over 5 seconds, deal +10% damage per unique DoT type on the enemy, up to +30%<br> Every 20 seconds stun enemies in range for 3 seconds, 50% chance to apply 50% bleed over 10 seconds, 20% chance to permanently gain +5% damage, up to +50%"
+      "text": "On hit: <br> Apply Malware, deal +2 shield damage, apply 30% bleed and 20% poison over 5 seconds, and deal +10% damage per unique DoT type on the enemy, up to +30%<br> Every 20 seconds: <br> Stun enemies in range for 3 seconds, 50% chance to apply 50% bleed over 10 seconds, 20% chance to permanently gain +5% damage, up to +50%"
     }
   ],
   "passiveDamage":{

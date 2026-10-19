@@ -2372,6 +2372,14 @@
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/4th-wall.webp"
     },
+    "Alarm": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "",
+      "description": "",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/alarm.webp"
+    },
     "Armor Song": {
       "color": "White",
       "hex": "#f4f4f4",
@@ -2612,6 +2620,14 @@
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/mega-bite.webp"
     },
+    "Mega Prize": {
+      "color": "Blazing Orange",
+      "hex": "#ff6a00",
+      "type": "",
+      "description": "",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/mega-prize.webp"
+    },
     "Mega Virus": {
       "color": "Red",
       "hex": "#ff4d4d",
@@ -2771,6 +2787,14 @@
       "description": "Slows enemies down.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/sludge.webp"
+    },
+    "Snowballs": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "",
+      "description": "",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/snowballs.webp"
     },
     "Speed Song": {
       "color": "White",

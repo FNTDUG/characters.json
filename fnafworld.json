@@ -797,6 +797,13 @@
         "Springlocks",
         "Rainy Day"
       ],
+      "skins": [
+      { 
+      "name": "Toxic Springtrap",
+      "idle": "https://fnaf-world.fntduserguide.com/skins/toxic-springtrap-idle.gif",
+      "attack": "https://fnaf-world.fntduserguide.com/skins/toxic-springtrap-attack.gif",
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/toxic-springtrap.gif" }
+      ],
       "quote": "Cuter in person; still a killer.",
       "unlock": "Beat them in a challenger battle in Pinwheel Circus.",
       "about": "Adventure Springtrap, or Springtrap as named in-game, is an unlockable character in Pinwheel Circus that originates from Five Nights at Freddy's 3.",

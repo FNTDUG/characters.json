@@ -1590,7 +1590,7 @@
         "hard": "208-212"
       },
       "attacks": [
-        ""
+        "Alarm"
       ],
       "about": "_!2222 is a glitched enemy in FNaF World. The glitched enemies can appear as many different enemy characters in FNaF World. However, _!2222 specifically appears as Boxbyte and Graveweed.",
       "card": "https://fnaf-world.fntduserguide.com/cards/2222.webp",
@@ -1612,7 +1612,7 @@
         "hard": "200-204"
       },
       "attacks": [
-        ""
+        "4th Wall"
       ],
       "about": "%_^^&( is a glitched enemy in FNaF World. In battle, the enemy constantly flickers between the idle sprites of Ballboy and Mechrab.",
       "card": "https://fnaf-world.fntduserguide.com/cards/and.webp",
@@ -1634,7 +1634,7 @@
         "hard": "184-188"
       },
       "attacks": [
-        ""
+        "Balloons"
       ],
       "about": "Ballboy is an enemy found in Pinwheel Circus. He first showed up in the Halloween Edition troll release and came back in the real game.",
       "card": "https://fnaf-world.fntduserguide.com/cards/ballboy.webp",
@@ -1675,7 +1675,7 @@
         "hard": "160-164"
       },
       "attacks": [
-        ""
+        "Esc Key"
       ],
       "about": "Blacktrap is a modified Beartrap that appears in Deep-Metal Mine instead of Blacktomb Yard and has much more health and damage. It has a 33% encounter rate in Deep-Metal Mine.",
       "card": "https://fnaf-world.fntduserguide.com/cards/blacktrap.webp",
@@ -1719,7 +1719,7 @@
         "hard": "48-52"
       },
       "attacks": [
-        ""
+        "Gloom"
       ],
       "about": "Boxbyte is an enemy found in Dusting Fields in FNaF World and has a 33% chance of being encountered.",
       "card": "https://fnaf-world.fntduserguide.com/cards/boxbyte.webp",
@@ -1785,7 +1785,7 @@
         "hard": "88-92"
       },
       "attacks": [
-        ""
+        "Waterhose"
       ],
       "about": "Colossal is an enemy found in Lilygear Lake.",
       "card": "https://fnaf-world.fntduserguide.com/cards/colossal.webp",
@@ -1807,7 +1807,7 @@
         "hard": "80-84"
       },
       "attacks": [
-        ""
+        "Hot Cheese"
       ],
       "about": "They look like regular crabs and have orange and red skin. They have black and white eyes that are similar to the endoskeleton eyes of the animatronics. They have 3 pairs of legs and red pincers.",
       "card": "https://fnaf-world.fntduserguide.com/cards/crabapple.webp",
@@ -1829,7 +1829,7 @@
         "hard": "176-180"
       },
       "attacks": [
-        ""
+        "Waterhose"
       ],
       "about": "Dogfights are a type of enemy in FNaF World found in Pinwheel Circus. They resemble purple fighter airplanes.",
       "card": "https://fnaf-world.fntduserguide.com/cards/dogfight.webp",
@@ -1850,6 +1850,9 @@
         "normal": "32-36",
         "hard": "64-68"
       },
+      "attacks": [
+        "Balloons"
+      ],
       "about": "Flan is one of the several enemies encountered in FNaF World. It can be found in Dusting Fields.",
       "card": "https://fnaf-world.fntduserguide.com/cards/flan.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/flan.webp"
@@ -1893,7 +1896,7 @@
         "hard": "192-196"
       },
       "attacks": [
-        ""
+        "Snowballs"
       ],
       "about": ">>>>>> is 1 of the 3 glitched enemies in FNaF World. This enemy's sprite switches between a Prototype and a Gearrat. It can use the Snowball attack, which can deal a lot of damage to your team.",
       "card": "https://fnaf-world.fntduserguide.com/cards/x.webp",
@@ -1937,7 +1940,7 @@
         "hard": "120-124"
       },
       "attacks": [
-        ""
+        "Gloom"
       ],
       "about": "Graveweed is a modified Bouncepot found in Blacktomb Yard that has much more health and much more of a punch to it. It has a 33% encounter rate in Blacktomb Yard.",
       "card": "https://fnaf-world.fntduserguide.com/cards/graveweed.webp",
@@ -1981,7 +1984,7 @@
         "hard": "168-172"
       },
       "attacks": [
-        ""
+        "Snowballs"
       ],
       "about": "Meringue is a cake-like enemy that is similar to Half-Bake and Mudpie, as opposed to either of them, Meringue looks more like an actual cake without any facial accessories. It is primarily found in Pinwheel Circus.",
       "card": "https://fnaf-world.fntduserguide.com/cards/meringue.webp",
@@ -2003,7 +2006,7 @@
         "hard": "104-108"
       },
       "attacks": [
-        ""
+        "Hot Cheese"
       ],
       "about": "Metalman is a relative of Chop 'N Roll. Metalman is made of complete steel, as opposed to Chop 'N Roll, who is made of wood. Metalman has an iron roller with metal spikes on it that is used as its main way of movement.",
       "card": "https://fnaf-world.fntduserguide.com/cards/metalman.webp",
@@ -2091,7 +2094,7 @@
         "hard": "72-76"
       },
       "attacks": [
-        ""
+        "Gloom"
       ],
       "about": "Seaweed is a green enemy that looks like Rot and Flan.",
       "card": "https://fnaf-world.fntduserguide.com/cards/seaweed.webp",
@@ -2113,7 +2116,7 @@
         "hard": "216-220"
       },
       "attacks": [
-        ""
+        "Esc Key"
       ],
       "about": "Tangle is an enemy encountered in both FNaF World and FNaF World (Halloween Edition), in both Pinwheel Funhouse and Area 2, respectively. Tangle represents a discount or knockoff Mangle, and has a 33% chance of encountering.",
       "card": "https://fnaf-world.fntduserguide.com/cards/tangle.webp",
@@ -2135,7 +2138,7 @@
         "hard": "144-148"
       },
       "attacks": [
-        ""
+        "Unscrew"
       ],
       "about": "Tombstack is a black, totempole-like enemy with red eyes, black ears and white buck teeth. Its insides show an orange/brown color when it jumps up and down, strangely, Tombstacks appear to be stationary, yet the rest of the body is capable of moving. Tombstacks also have a brown tail at the base segment.",
       "card": "https://fnaf-world.fntduserguide.com/cards/tombstack.webp",
@@ -2179,7 +2182,7 @@
         "hard": "232-236"
       },
       "attacks": [
-        ""
+        "Jumpscare"
       ],
       "about": "White Rabbit is an enemy in FNaF World that only appears in Pinwheel Funhouse. A reference to the fact that Bonnie was originally a white rabbit in the first version of FNaF 1.",
       "card": "https://fnaf-world.fntduserguide.com/cards/white-rabbit.webp",
@@ -2201,7 +2204,13 @@
         "hard": "408-412"
       },
       "attacks": [
-        ""
+        "Toxic Bite",
+        "Snowballs",
+        "Jumpscare",
+        "Waterhose",
+        "Esc Key",
+        "4th Wall",
+        "Alarm"
       ],
       "about": "Neon is an enemy in FNaF World which is introduced in Update 2. Neon's design is pixelated and quite simple same with all other enemies encountered in Geist Lair. Neon is mostly yellow with orange for the eyes and mouth, as well as having small ears on it and what seems to be eyebrows on its face.",
       "card": "https://fnaf-world.fntduserguide.com/cards/neon.webp",
@@ -2223,7 +2232,13 @@
         "hard": "424-428"
       },
       "attacks": [
-        ""
+        "Toxic Bite",
+        "Snowballs",
+        "Jumpscare",
+        "Waterhose",
+        "Esc Key",
+        "4th Wall",
+        "Alarm"
       ],
       "about": "P.Goons are 8-bit enemies found in the Geist Lair, the area added in Update 2.",
       "card": "https://fnaf-world.fntduserguide.com/cards/p-goon.webp",
@@ -2244,6 +2259,15 @@
         "normal": "208-212",
         "hard": "416-420"
       },
+      "attacks": [
+        "Toxic Bite",
+        "Snowballs",
+        "Jumpscare",
+        "Waterhose",
+        "Esc Key",
+        "4th Wall",
+        "Alarm"
+      ],
       "about": "Jangle is an 8-bit enemy encountered in the final location of FNaF World, the Geist Lair. It has a 33% chance of being encountered.",
       "card": "https://fnaf-world.fntduserguide.com/cards/jangle.webp",
       "image": "https://fnaf-world.fntduserguide.com/foes/jangle.webp"
@@ -2264,7 +2288,7 @@
         "hard": "152-156"
       },
       "attacks": [
-        ""
+        "Gloom"
       ],
       "about": "Rot is an enemy found in Deep-Metal Mine.",
       "card": "https://fnaf-world.fntduserguide.com/cards/rot.webp",

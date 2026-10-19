@@ -100,7 +100,8 @@
       "card": "https://fnaf-world.fntduserguide.com/cards/freddy.webp",
       "head": "https://fnaf-world.fntduserguide.com/heads/v3/freddy.webp",
       "idle": "https://fnaf-world.fntduserguide.com/idle/freddy.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/freddy.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/freddy.webp",
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/freddy.webp"
     },
     {
       "id": "bonnie",

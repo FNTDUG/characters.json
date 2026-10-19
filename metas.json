@@ -43,7 +43,8 @@
       "Weak Point": { "url": "https://images.fntduserguide.com/weak-point-chip.png", "rarity": "nightmare", "note": "+15% CritR, +30% CritD" },
       "Eye Augmentation": { "url": "https://images.fntduserguide.com/Eye-Augmentation-chip.png", "rarity": "nightmare", "note": "+15% RNG, +10% DMG" },
       "Blazing Fire": { "url": "https://images.fntduserguide.com/blazing-fire-chip.png", "rarity": "nightmare", "note": "+20% DoT DMG, when burn is applied +20% DMG for 10s" },
-      "Serrated Edge": { "url": "https://images.fntduserguide.com/Serrated%20Edge.webp", "rarity": "nightmare", "note": "+30% Bleed DMG, when bleed is applied +5% DMG and +15% RNG for 10s" }
+      "Serrated Edge": { "url": "https://images.fntduserguide.com/Serrated%20Edge.webp", "rarity": "nightmare", "note": "+30% Bleed DMG, when bleed is applied +5% DMG and +15% RNG for 10s" },
+      "Legion Commander": { "url": "https://tr.rbxcdn.com/180DAY-88577dbd16293144948fc1acc5badc76/420/420/Image/Png/noFilter", "rarity": "nightmare", "note": "Summons gain +15% HP. Gain +15% Damage after summoning. Permanently gain +1% Damage per summon, up to 10%." }
     }
   },
 

@@ -204,13 +204,13 @@
         "Auto: Regen",
         "Auto: Giftboxes",
         "Curse: Status",
-        "Endless: Speed"
+        "Endless: Speed",
+        "Endless: Defense",
+        "Endless: Strength"
       ],
       "a": [
-        "Endless: Defense",
         "Block: Unscrew",
         "Block: Jumpscare",
-        "Endless: Strength",
         "Evercomet: Strong",
         "Auto: Mimic",
         "Freddle: Fury",

@@ -66,6 +66,64 @@
         "Curse: Status"
       ],
       "notes": "GAMBLINGGGGG, on harder difficulties, we find it easier to hope and pray with slasher spam. Only swap to team two if a member on team one dies."
+    },
+    "Chippers Revenge1": {
+      "caption": "",
+      "world": "Geist Layer",
+      "party1": [
+        "Jack-O-Bonnie",
+        "Purple Guy",
+        "Nightmarionne",
+        "Coffee"
+      ],
+      "party2": [
+        "Funtime Foxy",
+        "RWQFSFASXC",
+        "Crying Child",
+        "Nightmare Balloon Boy"
+      ],
+      "bytes": [
+        "BossDrain-X",
+        "BossDrain02",
+        "X-FO",
+        "UFO"
+      ],
+      "chips": [
+        "Endless: Speed",
+        "Endless: Strength",
+        "Auto: Giftboxes",
+        "Curse: Status"
+      ],
+      "notes": "GAMBLINGGGGG, on harder difficulties, we find it easier to hope and pray with slasher spam. Only swap to team two if a member on team one dies."
+    },
+    "Chippers Revenge2": {
+      "caption": "",
+      "world": "Geist Layer",
+      "party1": [
+        "Jack-O-Bonnie",
+        "Purple Guy",
+        "Nightmarionne",
+        "Coffee"
+      ],
+      "party2": [
+        "Funtime Foxy",
+        "RWQFSFASXC",
+        "Crying Child",
+        "Nightmare Balloon Boy"
+      ],
+      "bytes": [
+        "BossDrain-X",
+        "BossDrain02",
+        "X-FO",
+        "UFO"
+      ],
+      "chips": [
+        "Endless: Speed",
+        "Endless: Strength",
+        "Auto: Giftboxes",
+        "Curse: Status"
+      ],
+      "notes": "GAMBLINGGGGG, on harder difficulties, we find it easier to hope and pray with slasher spam. Only swap to team two if a member on team one dies."
     }
   }
 }

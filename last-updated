@@ -313,7 +313,7 @@ var UPDATED_UNITS = [
 "Trickster Bullies",
 "Sunshot Phantom Freddy",
 "Silent Ghost Toy Freddy",
-"Data Theif Nightmarionne"
+"Data Thief Nightmarionne"
 ];
 
 var UNITS_JSON_URL = 'https://raw.githubusercontent.com/FNTDUG/characters.json/refs/heads/main/json';

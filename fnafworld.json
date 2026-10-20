@@ -638,8 +638,7 @@
       "about": "Adventure Nightmare Chica, or Nightmare Chica as named in-game, is an unlockable character in Blacktomb Yard that originates from Five Nights at Freddy's 4.",
       "tips": "Only good move is Bad Pizza, argubly the worst Nightmare.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/nightmare-chica.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-chica.webp",
-      "overworld": "https://fnaf-world.fntduserguide.com/overworld/nightmare-chica.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-chica.webp"
     },
     {
       "id": "nightmare-foxy",

@@ -96,7 +96,7 @@
       "quote": "Back to basics!",
       "unlock": "One of the 8 starter characters, so you have them from the beginning.",
       "about": "Adventure Freddy, or Freddy as named in-game, is the main protagonist of FNaF World, being the first out of the eight starter characters in the game, and originated from Five Nights at Freddy's. Freddy is also seen on the overworld, representing the player as you move around.",
-      "tips": "Being one of the starter characters, Freddy won't be around for long in your team. He doesn't have a category he excels in, but he makes great uses of his single target attack, his spread attack, and his supporting ability, those being Mic Toss, Pizza Wheel, and Birthday, respectively. Birthday in particular is most likely Freddy's best attack, giving the whole party a great boost in every category for a decent amount of time.",
+      "tips": "Freddy as a character is made as an all rounder, ok dps and good, but short buffs. Using freddy usually means you should be spamming Birthday with the ocasional Pizza Wheel.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/freddy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/freddy.webp",
       "overworld": "https://fnaf-world.fntduserguide.com/overworld/freddy.webp"
@@ -117,7 +117,7 @@
       "quote": "Jammin!",
       "unlock": "One of the 8 starter characters, so you have them from the beginning.",
       "about": "Adventure Bonnie, or Bonnie as named in-game, is an animatronic that first appeared in Five Nights at Freddy's, and is one of the eight starting characters in the game.",
-      "tips": "Being one of the starter characters, Bonnie will be phased out of your party fairly soon into your run. Like Freddy, he has an all-around moveset, including a single target attack, multi-target attack, and a healing move, those being Bite, Bash Jam, and Happy Jam, respectively.",
+      "tips": "Bonnie is one of (if not the) best starters. Happy jam is a really good healing ability, especially at the start of the game, along with having Bash jam for great Aoe damage.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/bonnie.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/bonnie.webp"
     },
@@ -137,7 +137,7 @@
       "quote": "Let's Eat!",
       "unlock": "One of the 8 starter characters, so you have them from the beginning.",
       "about": "Adventure Chica, or Chica as named in-game, is an animatronic first appearing in Five Nights at Freddy's and one of eight starter characters in FNaF World.",
-      "tips": "Being one of the starter characters, Chica will be replaced in your team rather quickly. Her role is almost completely as a healer only being able to deal minor damage in her Party Favors attack. Her moves are all more-or-less the same, those being Cupcakes, Party Favors, and Regen Song, but the best healing move has to be Cupcakes, even though they range around the same amount. During late game, she's basically useless as the healing moves heal lower and lower percentages of the newer party member's health.",
+      "tips": "Chica is one of the worst Starters... Mid healing with their only perk is having Regen song. Better to just replace her with another starter and use Bonnie as your main healer.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/chica.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/chica.webp"
     },
@@ -165,7 +165,7 @@
       "quote": "Back-In-Order!",
       "unlock": "One of the 8 starter characters, so you have them from the beginning.",
       "about": "Adventure Foxy, or Foxy as named in-game, is a starting character in FNaF World originating from the first Five Nights at Freddy's.",
-      "tips": "Foxy is a unique starting character with one of the best abilities in the game: Jumpscare. His damage output with Hot Cheese is also great when Jumpscare isn't required, however, due to the amount of mid-game characters that also have Jumpscare and other abilities that outclass both Hook and Hot Cheese, Foxy should, in most cases, be replaced the first chance you get with another Animatronic that has Jumpscare.",
+      "tips": "Along with Bonnie, Foxy is one of the best starters. Hot cheese is a really good Aoe DOT and Jumpscare being a stun move, he lets you push the starters much farther then you're supposed to.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/foxy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/foxy.webp"
     },
@@ -185,7 +185,7 @@
       "quote": "Something new!",
       "unlock": "One of the 8 starter characters, so you have them from the beginning.",
       "about": "Adventure Toy Bonnie, or Toy Bonnie as named in-game, is a starting character in your party in FNaF World that first appeared in Five Nights at Freddy's 2.",
-      "tips": "Toy Bonnie is one of the most offensive starting characters you will have at the beginning. Bash Jam and Munchies do fairly good multi-target damage and Prize Ball being able to pull out a whole string of different moves makes him viable for longer than most starting animatronics. However, his lack of utility makes him less useful in the long-term because his damage output simply gets outclassed by any animatronic with stronger attacks and should be replaced accordingly.",
+      "tips": "Toy Bonnie is just an ok character, all they have to their name is Bash Jam and thats the only move you should really use with him.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/toy-bonnie.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/toy-bonnie.webp"
     },
@@ -205,7 +205,7 @@
       "quote": "Let's Party!",
       "unlock": "One of the 8 starter characters, so you have them from the beginning.",
       "about": "Adventure Toy Chica, or Toy Chica as named in-game, is a starting character in your party in FNaF World that first appeared in Five Nights at Freddy's 2.",
-      "tips": "Being a starter character, Toy Chica won't get too much time in the limelight, but she has arguably the most viable moveset of all the starter characters, utilizing moves like Birthday and Waterhose that provide constant support, rather than utilizing attack moves that would usually get phased out compared to later moves.",
+      "tips": "The best Toy animatronic. The only starter with a insta-kill in the form of water hose, along with healing and buffing. Easily replaces Reg Chica out of the starters.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/toy-chica.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/toy-chica.webp"
     },
@@ -225,7 +225,7 @@
       "quote": "Still Freddy- but shiny.",
       "unlock": "One of the 8 starter characters, so you have them from the beginning.",
       "about": "Adventure Toy Freddy, or Toy Freddy as named in-game, is a starting character to your party in FNaF World that first appeared in Five Nights at Freddy's 2.",
-      "tips": "Toy Freddy is a starter animatronic, which means he won't last very long on the team, but his support move, Speed Song, gives him an edge over arguably not many of the other starters. Speed is most likely the most useful boost the player can get but besides that Toy Freddy becomes cannon-fodder with lackluster health and even worse damaging attacks. There is never going to be a time where he is useful late-game, being quickly outclassed in the only department he can excel at.",
+      "tips": "Toy Freddy... doesnt have much going for him. Bad damaging moves and a solo buff, he should be the first one replaced once a new character is aquired.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/toy-freddy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/toy-freddy.webp"
     },
@@ -245,7 +245,7 @@
       "quote": "Kids can be so cruel...",
       "unlock": "One of the 8 starter characters, so you have them from the beginning.",
       "about": "Adventure Mangle, or Mangle as named in-game, is a starting character to the player's party in FNaF World that first appeared in Five Nights at Freddy's 2.",
-      "tips": "Mangle isn't a really strong starter character in any capacity. Since they rely on attacking moves, they quickly get outclassed by attacks gained further in the game. Hook is useless, Poppers can barely be used, especially in late-game when Mangle can get killed easily, and Prize Ball only contains some decent moves here and there. Mangle is recommended to get rid of rather quickly.",
+      "tips": "The worst of the Toys. No support, Crappy damage moves is all they have. Only perk is having the highest base HP out of all the starters.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/mangle.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/mangle.webp"
     },
@@ -265,7 +265,7 @@
       "quote": "Everyone's favorite!",
       "unlock": "Beat them in a challenger battle in Fazbear Hills.",
       "about": "Adventure Balloon Boy, or Balloon Boy as named in-game, is an unlockable character in FNaF World found in Fazbear Hills, originating from Five Nights at Freddy's 2.",
-      "tips": "Being still a rather early character in the party roster, Balloon Boy finds himself to not be very useful especially in late game, thanks to his \"damaging-only\" moveset that will quickly get outclassed by other attacks, and has no support whatsoever. His signature move, Balloons, is easily his worst, dealing minimal damage to a couple enemies at a time, but Hot Cheese and Munchies are slightly better, especially Hot Cheese when dealing with early bosses.",
+      "tips": "BB is just ok, only one good move to his name in the form of Hot Cheese. Can be used but there is much better.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/balloon-boy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/balloon-boy.webp"
     },
@@ -285,7 +285,7 @@
       "quote": "Because one wasn't enough!",
       "unlock": "Beat them in a challenger battle in Fazbear Hills.",
       "about": "Adventure JJ, or JJ as named in-game, is an unlockable character found in Fazbear Hills that originates from Five Nights at Freddy's 2.",
-      "tips": "JJ is another fairly useless character, but can be used for her instant-kill move, Unscrew. Both Balloons and Poppers are absolutely useless, but with Unscrew she has a chance of defeating much harder enemies. Granted, with the limited move pool and mediocre health she will still be replaced by much better options, but she is much better off than her counterpart Balloon Boy.",
+      "tips": "Like BB, only one good move in the form of Unscrew. There is much MUCH better.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/jj.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/jj.webp"
     },
@@ -305,7 +305,7 @@
       "quote": "Just taking a stroll.",
       "unlock": "Beat them in a challenger battle in Fazbear Hills.",
       "about": "Phantom Freddy is an unlockable character found in Fazbear Hills that originates from Five Nights at Freddy's 3.",
-      "tips": "Phantom Freddy is actually a pretty decent character with all of the debuffs needed to handle enemies, which can be very useful for most of the game. Sadly, since he has no damaging moves and low health he isn't considered very often, and with the chip, Curse: Status, it can do everything he can in much less time and one less party member slot.",
+      "tips": "A member good enough to stay in the team throughout the whole game. Has access to every debuff in the game making fights trivial with the correct set-up.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/phantom-freddy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/phantom-freddy.webp"
     },
@@ -325,7 +325,7 @@
       "quote": "Stop calling me a watermelon.",
       "unlock": "Beat them in a challenger battle in Fazbear Hills.",
       "about": "Adventure Phantom Chica, or Phantom Chica as named in-game, is an unlockable character in Fazbear Hills that originates from Five Nights at Freddy's 3.",
-      "tips": "Phantom Chica is yet another underrated character to use on the team, featuring moves like Sludge and Unscrew that can be vital in a fight, though yet again she will be outclassed by different characters pretty quickly. With lower health, the best case for her is to use Unscrew and Sludge as much as possible before getting quickly killed.",
+      "tips": "Very nice character all around. Support, Damage, and an insta-kill move. Can stay in your team for a very good chunk of your adventure.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/phantom-chica.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/phantom-chica.webp"
     },
@@ -345,7 +345,7 @@
       "quote": "Because reasons.",
       "unlock": "Beat them in a challenger battle in Choppy's Woods.",
       "about": "Adventure Phantom Balloon Boy, or Phantom Balloon Boy as named in-game, is an unlockable character in Choppy's Woods that originates from Five Nights at Freddy's 3.",
-      "tips": "Phantom Balloon Boy is yet again another underrated Phantom animatronic that provides great debuffs that can be used throughout the game having the same amount of effect on every enemy. Gloom Balloon and Rainy Day are almost essential to use quickly with him, but Toxic Balloon isn't terrible to use late game.",
+      "tips": "Like Phantom Freddy, just without sludge. Much like Phantom Freddy, Phantom BB can make fight trivial with the correct set-up, although its better to just use Phantom Freddy if you want pure support.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/phantom-balloon-boy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/phantom-balloon-boy.webp"
     },
@@ -365,7 +365,7 @@
       "quote": "Because you can never have too much Foxy.",
       "unlock": "Beat them in a challenger battle in Choppy's Woods.",
       "about": "Adventure Phantom Foxy, or Phantom Foxy as named in-game, is an unlockable character in Choppy's Woods that originates from Five Nights at Freddy's 3.",
-      "tips": "Phantom Foxy isn't as viable as most of the Phantom animatronics, possessing no debuff move whatsoever, but Jumpscare can be fairly useful, as well as Unscrew, making for a decent stun-and-kill combo (if both land accordingly). Late-game, Phantom Foxy isn't recommended at all, with mediocre health and hard-to-hit moves, he'll be cannon-fodder sooner or later.",
+      "tips": "Phantom Foxy focuses more on DPS rather than supporting unlike the other Phantoms. Still posseses Jumpscare allowing him to replace Reg Foxy easily.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/phantom-foxy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/phantom-foxy.webp"
     },
@@ -385,7 +385,7 @@
       "quote": "Because he/she needed to be weirder",
       "unlock": "Beat them in a challenger battle in Choppy's Woods.",
       "about": "Adventure Phantom Mangle, or Phantom Mangle as named in-game, is an unlockable character in Choppy's Woods that originates from Five Nights at Freddy's 3.",
-      "tips": "Phantom Mangle seems like one of the best options for the Phantom animatronics, but with no debuffs nor instant-kill attacks, they're on the lower end of the roster. Pizza Wheel 2 and Toxic Bite can still pack a fairly decent punch, but the best bet is Mystery Box that could give the player a better team overall, including Nightmare animatronics and possibly better.",
+      "tips": "This Phantom also focuses more on Damage, possesing one of the best damaging moves for the early game in the form of Pizza Wheel 2, I reccomend spamming said move compared to Toxic Bite and ESSPECIALLY Mystery Box, Dont use Mystery Box.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/phantom-mangle.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/phantom-mangle.webp"
     },
@@ -405,7 +405,7 @@
       "quote": "Look into my eye!",
       "unlock": "Beat them in a challenger battle in Choppy's Woods.",
       "about": "Adventure Withered Bonnie, or Withered Bonnie as named in-game, is an unlockable character in Choppy's Woods that originates from Five Nights at Freddy's 2.",
-      "tips": "Withered Bonnie is a pretty good attacker, possibly the first in the roster, utilizing Eye Beam for potentially high damage, and Unscrew 2 is one of the most powerful attacks that can be used, as long as it hits. Pizza Wheel isn't nearly as effective though and brings his usefulness down, as well as his mediocre health.",
+      "tips": "First character you get with both Eye Beam and Unscrew 2, allowing him to be an easy main-stay until you get Find: Characters to unlock the good Characters.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/withered-bonnie.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/withered-bonnie.webp",
       "overworld": "https://fnaf-world.fntduserguide.com/overworld/withered-bonnie.webp"
@@ -426,7 +426,7 @@
       "quote": "What happened to Chica?!",
       "unlock": "Beat them in a challenger battle in Dusting Fields.",
       "about": "Adventure Withered Chica, or Withered Chica as named in-game, is an unlockable character in Dusting Fields that originates from Five Nights at Freddy's 2.",
-      "tips": "Withered Chica isn't great considering she usually gets unlocked after the Phantom animatronics and is arguably worse than them. Bite is almost completely useless by the time you get her, and Cupcake doesn't do much better. Prize Ball 2 is the player's best bet, and most of the moves can be utilized pretty well especially around mid-game. She isn't recommended to stay on the team long, but can pack a punch occasionally.",
+      "tips": "Shes bad, dont use her, just use Toy Chica instead.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/withered-chica.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/withered-chica.webp"
     },
@@ -446,7 +446,7 @@
       "quote": "Because we needed one more.",
       "unlock": "Beat them in a challenger battle in Dusting Fields.",
       "about": "Adventure Withered Freddy, or Withered Freddy as named in-game, is an unlockable character in Dusting Fields that originates from Five Nights at Freddy's 2.",
-      "tips": "Withered Freddy can act as a decent all-around fighter, using his debuff, Gloom Song, to lower the strength of enemies so he can use Esc Key more effectively with a lower chance of getting killed thanks to the attack debuff. Mic Toss is effectively useless, especially by the time the player unlocks him, so his best bet is possibly an insta-kill or two before he gets knocked off.",
+      "tips": "Just an ok Character, Possesing Gloom Song, arguably the most important debuff, but with the nerf of having the worst damaging move and argubly the worst insta-kill in the game.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/withered-freddy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/withered-freddy.webp"
     },
@@ -466,7 +466,7 @@
       "quote": "Still Foxy- but more YAAARG!",
       "unlock": "Beat them in a challenger battle in Dusting Fields.",
       "about": "Adventure Withered Foxy, or Withered Foxy as named in-game, is an unlockable character in Dusting Fields that originates from Five Nights at Freddy's 2.",
-      "tips": "Withered Foxy is almost certainly the best of his Withered counterparts, Withered Bonnie being a close second, but Withered Foxy's moveset outclasses most others before him with Rainy Day and Hot Cheese 2 being the standouts. Rainy Day is one of the best debuff moves, as enemies become much easier to kill with their defenses lowered, and Hot Cheese 2 can deal a LOT of damage over time, especially on bosses. He can stay on the team for most of the game, even having alright health to stay in battle longer.",
+      "tips": "The best of the Withereds. Debuff and a really good Aoe DOT ability, along with Withered Bonnie can carry you to the Find: Characters chip so you can make an actual team.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/withered-foxy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/withered-foxy.webp"
     },
@@ -486,7 +486,7 @@
       "quote": "I will eat your soul.",
       "unlock": "Beat them in a challenger battle in Dusting Fields.",
       "about": "Adventure Shadow Freddy, or Shadow Freddy as named in-game, is an unlockable character in Dusting Fields that originates from Five Nights at Freddy's 2.",
-      "tips": "Shadow Freddy is a very hit-or-miss character, only dealing insta-kill moves. His moveset could either be one of the best, or one of the worst in terms of dealing with enemies, but one thing that is for certain is that he is pretty useless when dealing with bosses. Waterhose will not affect bosses and both Unscrew and Esc Key have much lower chances of killing a boss compared to killing an enemy. He isn't recommended for late-game, but could be useful in places like &*TWRE where only enemies reside.",
+      "tips": "Not good. Possesing only insta-kill moves makes him very useless in a Boss and with said moves being the weakest versions makes him just ok in a regular fight. Recommeded to not use in any capacity.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/shadow-freddy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/shadow-freddy.webp"
     },
@@ -506,7 +506,7 @@
       "quote": "Think outside the box!",
       "unlock": "Beat them in a challenger battle in Lilygear Lake.",
       "about": "Adventure Marionette, or Marionette as named in-game, is an unlockable character in Lilygear Lake that originates from Five Nights at Freddy's 2.",
-      "tips": "Marionette is another character that almost exclusively relies on chance for her moves. Prize Ball 2 can house pretty decent attacks, and Mystery Box could be used very well considering how the player's team looks in the current battle. Esc Key is probably the best move to work with as long as it's used with grouped enemies. Marionette isn't recommended to stay in the team long-term, but can work well mid-game.",
+      "tips": "Very useless. much like Shadow Freddy posseses very RNG-Based moves, along with Mystery Box. Reccommended to ignore and not put in your party.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/marionette.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/marionette.webp"
     },
@@ -526,7 +526,7 @@
       "quote": "Put it back in the box!",
       "unlock": "Beat them in a challenger battle in Lilygear Lake.",
       "about": "Adventure Phantom Marionette, or Phantom Marionette as named in-game, is an unlockable character in Lilygear Lake that originates from Five Nights at Freddy's 3.",
-      "tips": "Phantom Marionette can be a pretty powerful attacker, especially in mid-game, when Hot Cheese 2 and Jumpscare can be used even more usefully. While all of their moves are pretty good, the most useful is likely Mystery Box 2, where the player can get the most powerful characters for the whole battle, which in many cases can turn the tides if the player's team isn't very powerful itself.",
+      "tips": "Unlike her normal form, Phantom Puppet is actually really good for a Character. Jumpscare and Hot Cheese 2 being very good abilities to spam, and even Mystery Box 2 which can possibly be used to get rare characters than can shred the bosses in this stage of the game.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/phantom-marionette.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/phantom-marionette.webp"
     },
@@ -546,7 +546,7 @@
       "quote": "It's me.",
       "unlock": "Beat them in a challenger battle in Lilygear Lake.",
       "about": "Adventure Golden Freddy, or Golden Freddy as named in-game, is an unlockable character in Lilygear Lake that originates from Five Nights at Freddy's.",
-      "tips": "Golden Freddy isn't the greatest character to work with in the game, but Rainy Day 2 and Haunting can be used to seriously debuff the enemy while dealing consistent damage. Rainy Day 2 is the most powerful debuff in the game, lowering defense while dealing damage, and Haunting, while not as powerful, can completely stop an enemy for a decent amount of time, though it will be useless against bosses, the same goes for Jumpscare. He isn't recommended for late-game but can do decent towards mid-game.",
+      "tips": "Dream character, due to having the best stun in the game in the form of Haunting, he is able to Easily carry boss fights. Very strong especially for his stage in the game.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/golden-freddy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/golden-freddy.webp"
     },
@@ -566,7 +566,7 @@
       "quote": "Huh?",
       "unlock": "Beat them in a challenger battle in Lilygear Lake.",
       "about": "Adventure Paperpals, or Paperpals as named in-game, are unlockable characters in Lilygear Lake that originates from Five Nights at Freddy's 2.",
-      "tips": "Paperpals are going to stay in the team for a good amount of time because of one move, Mimic Ball. Mimic Ball is one of the most powerful moves, especially with a good team roster, for its ability to duplicate any attack, no matter what the power. While it will eventually get outclassed by other characters with Mimic Ball or the Auto: Mimic chip, Paperpals can be pretty good at handling both enemies and bosses.",
+      "tips": "They're ok all around, only good move being Mimic Ball, which with the correct set-up can be used very effectivly, only issue with it being it can and will slow you down, a lot.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/paperpals.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/paperpals.webp"
     },
@@ -586,7 +586,7 @@
       "quote": "The more, the merrier.",
       "unlock": "Beat them in a challenger battle in Blacktomb Yard.",
       "about": "Adventure Nightmare Freddy, or Nightmare Freddy as named in-game, is an unlockable character in Blacktomb Yard that originates from Five Nights at Freddy's 4.",
-      "tips": "Nightmare Freddy isn't the most powerful, especially of his Nightmare counterparts, but Freddles is a pretty powerful attack, especially when dealing with hordes of enemies. Bite 2 won't be very useful once it's finally unlocked, and Sludge is a fairly helpful debuff, but there will be better characters that will use that attack slot for better purposes. In late-game, he wouldn't be recommended at all.",
+      "tips": "Argubly the best Nightmare. Possessing Freddles, He can dish out a large amount of damage along with Sludge allowing him to fit a Support role as well.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/nightmare-freddy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-freddy.webp",
       "overworld": "https://fnaf-world.fntduserguide.com/overworld/nightmare-freddy.webp"
@@ -615,7 +615,7 @@
       "quote": "Let's get mean!",
       "unlock": "Beat them in a challenger battle in Blacktomb Yard.",
       "about": "Adventure Nightmare Bonnie, or Nightmare Bonnie as named in-game, is an unlockable character in Blacktomb Yard that originates from Five Nights at Freddy's 4.",
-      "tips": "Nightmare Bonnie is possibly the best of his Nightmare counterparts, with Rainy Day 2 and Pizza Wheel 2 doing pretty good damage with even better debuffs. Bite 2 isn't worth much especially when it's unlocked, but Rainy Day 2 can deal decent damage while lowering defenses to deal even more damage, and Pizza Wheel 2 does slightly less damage than Freddles but still does decent AOE damage.",
+      "tips": "He's alright, definattly a character that can hold his place in your party. Theres just better to use.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/nightmare-bonnie.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-bonnie.webp",
       "overworld": "https://fnaf-world.fntduserguide.com/overworld/nightmare-bonnie.webp"
@@ -636,7 +636,7 @@
       "quote": "Making you a sandwich.",
       "unlock": "Beat them in a challenger battle in Blacktomb Yard.",
       "about": "Adventure Nightmare Chica, or Nightmare Chica as named in-game, is an unlockable character in Blacktomb Yard that originates from Five Nights at Freddy's 4.",
-      "tips": "Nightmare Chica is alright compared to her Nightmare counterparts, Bad Pizza easily being the best of her moves. Bad Pizza attacks all enemies on screen and has potential to deal massive damage all around, possibly one of the best moves the player can have so far. Bite 2 and Waterhose aren't great though, with Bite 2 being effectively useless when unlocked, and Waterhose already having a better counterpart on weaker characters' attack rosters.",
+      "tips": "Only good move is Bad Pizza, argubly the worst Nightmare.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/nightmare-chica.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-chica.webp"
     },
@@ -656,7 +656,7 @@
       "quote": "Out of order since FNaF 1.",
       "unlock": "Beat them in a challenger battle in Blacktomb Yard.",
       "about": "Adventure Nightmare Foxy, or Nightmare Foxy as named in-game, is an unlockable character in Blacktomb Yard that originates from Five Nights at Freddy's 4.",
-      "tips": "Nightmare Foxy is most likely the second best of his Nightmare counterparts, utilizing pretty good moves all around. Bite 2 is effectively useless when unlocked, but can still deal decent single-double target damage, and Hot Cheese 2 is very good at dealing damage to multiple enemies at a time, as well as good damage against bosses. Unscrew 2 might be the best out of the moves though, having a 50% chance of killing an enemy, and a lower but decent chance of killing a boss.",
+      "tips": "Hot Cheese 2 allows him to deal consistant damage, along with Unscrew 2 makes him a keeper until you can unlock the good characters.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/nightmare-foxy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-foxy.webp"
     },
@@ -676,7 +676,7 @@
       "quote": "Because look at him!",
       "unlock": "Beat them in a challenger battle in Deep-Metal Mine.",
       "about": "Adventure Endo-01, or Endo-01 as named in-game, is an unlockable character in Deep-Metal Mine that originates from Five Nights at Freddy's.",
-      "tips": "Endo-01 is a pretty good character with its signature move, Endo Army, as well as some pretty good support moves in Power and Armor Song. Endo Army will make three endos appear and constantly shoot towards enemies for a decent amount of time before disappearing, making it one of the best attacking moves in the game. While Endo Army is active, Endo-01 can use its support moves to buff the other party members, making it a viable option for late-game.",
+      "tips": "Argubly the best Non-Halloween character in the game for DPS. Endo Army is a crazy good move and he also posseses two buffing moves allowing him to be a permanent stay in your party.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/endo-01.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/endo-01.webp"
     },
@@ -696,7 +696,7 @@
       "quote": "Not as cute, but more useful.",
       "unlock": "Beat them in a challenger battle in Deep-Metal Mine.",
       "about": "Adventure Endo-02, or Endo-02 as named in-game, is an unlockable character in Deep-Metal Mine that originates from Five Nights at Freddy's 2.",
-      "tips": "Endo-02 is objectively better than its counterpart, Endo-01, replacing Power Song with Speed Song to dish out attacks faster instead of stronger, and replacing Armor Song with Neon Wall, which is just a better Armor Song, greatly increasing the whole team's defense. If the player does not have Auto: Shield, Endo-02 will likely be a mainstay by the time the player acquires it.",
+      "tips": "Much like 01, Endo 02 is a really good character for DPS. Endo army is a crazy good move and he also posseses two buffing moves, Neon Wall specifically is a needed move against Security and Scott.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/endo-02.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/endo-02.webp"
     },
@@ -716,7 +716,7 @@
       "quote": "Because the world needed a plush version.",
       "unlock": "Beat them in a challenger battle in Deep-Metal Mine.",
       "about": "Adventure Plushtrap, or Plushtrap as named in-game, is an unlockable character in Deep-Metal Mine that originates from Five Nights at Freddy's 4.",
-      "tips": "Plushtrap isn't great, especially by the time the player unlocks it, being outclassed by the Nightmare animatronics and the Endos that came before him. Bad Pizza is an amazing move, but gets downplayed thanks to the other two attacks in the roster, Toxic Bite and Sludge, which are pretty mediocre. Sludge has better characters that use it, and even then it doesn't need to be used if the player has better attackers.",
+      "tips": "Hes bad. The stage you get him in the game just makes him and his moves undesirible.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/plushtrap.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/plushtrap.webp"
     },
@@ -736,7 +736,7 @@
       "quote": "Because character quota.",
       "unlock": "Beat them in a challenger battle in Deep-Metal Mine.",
       "about": "Adventure Endoplush, or Endoplush as named in-game, is an unlockable character in Deep-Metal Mine that is actually an original character in FNaF World.",
-      "tips": "Endoplush is one of the better characters to unlock, holding both Neon Wall and Waterhose 2, as well as a potentially powerful attack, being Eye Beam. Neon Wall could easily be set up at the start of the battle to decrease damage done to the party, Eye Beam can be used mid-battle to whittle down the enemies' health, and Waterhose 2 can be used to easily clean them up towards the end of the battle. This setup can make Endoplush a character that makes it to the final battle.",
+      "tips": "Only good move is Neon Wall. Unlike his endo brothers he is very useless, Eye Beam is outperformed by Endo Army, and Waterhose 2  is just ok.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/endoplush.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/endoplush.webp"
     },
@@ -764,7 +764,7 @@
       "quote": "Cuter in person; still a killer.",
       "unlock": "Beat them in a challenger battle in Pinwheel Circus.",
       "about": "Adventure Springtrap, or Springtrap as named in-game, is an unlockable character in Pinwheel Circus that originates from Five Nights at Freddy's 3.",
-      "tips": "Springtrap can be a pretty powerful member of the player's army when utilizing his signature move, Springlocks, but his other moves are lacking. Rainy Day not only has a better counterpart that can deal damage, Rainy Day 2, but several characters also have it so it will most likely already be in effect. Bite 2 is practically useless at the point that Springtrap is unlocked, but Springlocks can do its damage and more, having the potential to be one of the most powerful moves in the game.",
+      "tips": "A powerful Character due to the move Springlocks. His other two moves are ok with Rainy day being used only if you dont have another Character on your Party with it.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/springtrap.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/springtrap.webp"
     },
@@ -784,7 +784,7 @@
       "quote": "SAY MY NAME!",
       "unlock": "Beat them in a challenger battle in Pinwheel Circus.",
       "about": "Adventure RWQFSFASXC, or RWQFSFASXC as named in-game, is an unlockable character in Pinwheel Circus that originates from Five Nights at Freddy's 2.",
-      "tips": "RWQFSFASXC is one of the best characters found in the game, utilizing no attack moves, but rather the two most powerful support moves, those being Mimic Ball and the coveted Gift Boxes. While both of these moves can be replaced by their corresponding chips, the fact that RWQFSFASXC can keep restocking the Gift Boxes makes him a mainstay as he can constantly keep the party alive. Haunting isn't a great move, but it can be used while both of the support moves are already active.",
+      "tips": "RWQFSFASXC is one of the best characters, having the best move in the game in the form of Gift Boxes, along with Haunting being the best Stalling in the game. easily can become a permanent Party Member.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/rwqfsfasxc.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/rwqfsfasxc.webp"
     },
@@ -804,7 +804,7 @@
       "quote": "Still sad.",
       "unlock": "Beat them in a challenger battle in Pinwheel Circus.",
       "about": "Adventure Crying Child, or Crying Child as named in-game, is an unlockable character in Pinwheel Circus that originates from Five Nights at Freddy's 2.",
-      "tips": "Crying Child is another one of the better characters in the game thanks to the unbalanced move of Gift Boxes. Granted, the other two moves Crying Child has, Power and Armor Song, are not the most powerful of moves, but they can be used to buff other party members which, if it's the right characters, can do wonders against some of the toughest bosses. Power Song is the more powerful of the two, so it's imperative to put that down first. All of these moves can also be replicated using Chips.",
+      "tips": "A pure support having Gift Boxes and two buffing moves, not much is needed to be said for this little guy.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/crying-child.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/crying-child.webp"
     },
@@ -824,7 +824,7 @@
       "quote": "It wasn't meant to last.",
       "unlock": "Beat them in a challenger battle in Pinwheel Circus.",
       "about": "Adventure Funtime Foxy, or Funtime Foxy as named in-game, is an unlockable character in Pinwheel Circus that originates from Five Nights at Freddy's 2.",
-      "tips": "Funtime Foxy is arguably the best character found in Update 1, having some of the best moves in the game and is much easier to find than later characters like Spring Bonnie. Happy Jam 2 is probably the weakest of these moves thanks to the other healing move Funtime Foxy has, Gift Boxes, but Happy Jam 2 is very useful to quickly heal teammates.",
+      "tips": "The best Character in the game, at least for update 1. Has both of the best supporting moves along with THE best DPS move besides for Endo Army. WILL be a permanent member in your team all the way up to even Chica's Magic Rainbow.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/funtime-foxy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/funtime-foxy.webp"
     },

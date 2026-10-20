@@ -38,7 +38,7 @@
         "Auto: Giftboxes",
         "Curse: Status"
       ],
-      "notes": "While Endo army is up, use Endo-01 to buff your party with both Song abilities, once curse status runs out you're more succeptible to being one-shot. Only swap to party two if your Funtime Foxy passed or you really need Giftboxes now."
+      "notes": "While Endo army is up, use Endo-01 to buff your party with both Song abilities, once curse status runs out you're more succeptible to being one-shot. Only swap to party two if your Funtime Foxy passed or you really need Giftboxes now. RWQ is only on Team two only as a safety precaution, can easily be put on Team 1 instead."
     },
     "Rainbow Killer": {
       "caption": "",
@@ -70,62 +70,62 @@
       "notes": "GAMBLINGGGGG, on harder difficulties, we find it easier to hope and pray with slasher spam. Only swap to team two if a member on team one dies."
     },
     "Chippers Revenge1": {
-      "caption": "",
+      "caption": "With only Update 1 Characters",
       "world": "Geist Layer",
       "party1": [
-        "Jack-O-Bonnie",
-        "Purple Guy",
-        "Nightmarionne",
-        "Coffee"
+        "Endo-01",
+        "Spring Bonnie",
+        "Funtime Foxy",
+        "Golden Freddy"
       ],
       "party2": [
-        "Funtime Foxy",
-        "RWQFSFASXC",
         "Crying Child",
-        "Nightmare Balloon Boy"
+        "RWQFSFASXC",
+        "Endo-02",
+        "Springtrap"
       ],
       "bytes": [
-        "BossDrain-X",
+        "Block50",
         "BossDrain02",
-        "X-FO",
-        "UFO"
+        "BossDrain-X",
+        "Block20"
       ],
       "chips": [
+        "Auto: Shield",
         "Endless: Speed",
-        "Endless: Strength",
         "Auto: Giftboxes",
         "Curse: Status"
       ],
-      "notes": "GAMBLINGGGGG, on harder difficulties, we find it easier to hope and pray with slasher spam. Only swap to team two if a member on team one dies."
+      "notes": "you may be surprised to see that this is the exact same as the Scott, thats because without Halloween Characters This is the best team possible! same tips as the ones against Scott."
     },
     "Chippers Revenge2": {
-      "caption": "",
+      "caption": "With Halloween Characters",
       "world": "Geist Layer",
       "party1": [
         "Jack-O-Bonnie",
-        "Purple Guy",
-        "Nightmarionne",
+        "Jack-O-Chica",
+        "Funtime Foxy",
         "Coffee"
       ],
       "party2": [
-        "Funtime Foxy",
+        "Nightmarionne",
         "RWQFSFASXC",
         "Crying Child",
         "Nightmare Balloon Boy"
       ],
       "bytes": [
-        "BossDrain-X",
+        "Block50",
         "BossDrain02",
-        "X-FO",
-        "UFO"
+        "BossDrain-X",
+        "Block20"
       ],
       "chips": [
         "Endless: Speed",
-        "Endless: Strength",
+        "Auto: Shield",
         "Auto: Giftboxes",
         "Curse: Status"
       ],
-      "notes": "GAMBLINGGGGG, on harder difficulties, we find it easier to hope and pray with slasher spam. Only swap to team two if a member on team one dies."
+      "notes": "With Halloween Characters it should be much easier. it is reccommended to always keep Gift Boxes up and ALWAYS keep Mega Virus up. Only Swap to Team 2 if your two Gift Boxers die on Team 1."
     }
   }
 }

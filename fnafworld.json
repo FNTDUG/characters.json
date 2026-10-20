@@ -1277,9 +1277,6 @@
         "normal": "200-209",
         "hard": "400-418"
       },
-      "attacks": [
-        ""
-      ],
       "about": "Mad Endo and Overclock are both bosses found throughout FNaF World guarding different chests and one of the buttons locking the pathway to Security. Mad Endo in FNaF World: Halloween Edition is a regular enemy found in Area 1.",
       "image": "https://fnaf-world.fntduserguide.com/foes/mad-endo.webp"
     },
@@ -1404,9 +1401,6 @@
         "normal": "90-109",
         "hard": "180-218"
       },
-      "attacks": [
-        ""
-      ],
       "about": "Seagoon is a sea monster boss found in Lilygear Lake. Supergoon is its stronger counterpart.",
       "image": "https://fnaf-world.fntduserguide.com/foes/seagoon.webp"
     },
@@ -1495,9 +1489,6 @@
         "normal": 999,
         "hard": 999
       },
-      "attacks": [
-        ""
-      ],
       "about": "Chica's Magic Rainbow is the main antagonist and final boss of update 2 of FNaF World. As the name suggests, it is a rainbow. However, its personality conflicts greatly with its outward appearance as it is rude, impatient, taunting, obnoxious, vengeful, and arrogant.",
       "image": "https://fnaf-world.fntduserguide.com/foes/chicas-magic-rainbow.webp"
     }
@@ -1620,9 +1611,6 @@
         "normal": "4-8",
         "hard": "8-12"
       },
-      "attacks": [
-        ""
-      ],
       "about": "Bouncepot is an introductory enemy found in Fazbear Hills, first introduced in FNaF World. It has a 33% chance of encountering.",
       "image": "https://fnaf-world.fntduserguide.com/foes/bouncepot.webp"
     },
@@ -1662,9 +1650,6 @@
         "normal": "28-32",
         "hard": "56-60"
       },
-      "attacks": [
-        ""
-      ],
       "about": "Chillax is an enemy in FNaF World. They are only spotted in the Dusting Fields. Chillax seems to be a form of a hermit crab.",
       "image": "https://fnaf-world.fntduserguide.com/foes/chillax.webp"
     },
@@ -1683,9 +1668,6 @@
         "normal": "20-24",
         "hard": "40-44"
       },
-      "attacks": [
-        ""
-      ],
       "about": "Chop 'N Roll's are enemies encountered in FNAF World. They might be based off of Scott's older game \"Chipper & Sons Lumber Co.\" They are found in the area \"Choppy's Woods\", and exist as enemies in \"Foxy Fighters.\"",
       "image": "https://fnaf-world.fntduserguide.com/foes/chop-n-roll.webp"
     },
@@ -1789,9 +1771,6 @@
         "normal": "12-16",
         "hard": "24-28"
       },
-      "attacks": [
-        ""
-      ],
       "about": "Gearrat is a brown rat's head on top of a spinning brown gear. It has a tail with a flashing red ball on the end.",
       "image": "https://fnaf-world.fntduserguide.com/foes/gearrat.webp"
     },
@@ -1831,9 +1810,6 @@
         "normal": "56-60",
         "hard": "112-116"
       },
-      "attacks": [
-        ""
-      ],
       "about": "Goldmine is an enemy found in the Mysterious Mine. Quarry is its counterpart.",
       "image": "https://fnaf-world.fntduserguide.com/foes/goldmine.webp"
     },
@@ -1873,9 +1849,6 @@
         "normal": "8-12",
         "hard": "16-20"
       },
-      "attacks": [
-        ""
-      ],
       "about": "Mechrab is a robotic crab with a pink spiral shell, robotic legs, and a body with huge magenta eyes and light blue eyelids. It appears similar to Chillax. At the end of its shell, there is an antenna with a red ball on it.",
       "image": "https://fnaf-world.fntduserguide.com/foes/mechrab.webp"
     },
@@ -1936,9 +1909,6 @@
         "normal": "68-72",
         "hard": "136-140"
       },
-      "attacks": [
-        ""
-      ],
       "about": "Prototype is an enemy found in both FNaF World and FNaF World (Halloween Edition), and found in Blacktomb Yard and Area 2, respectively. Prototype is an animatronic bear with an endoskeleton-like body, and has a 33% chance of encountering in both games.",
       "image": "https://fnaf-world.fntduserguide.com/foes/prototype.webp"
     },
@@ -1957,9 +1927,6 @@
         "normal": "48-52",
         "hard": "96-100"
       },
-      "attacks": [
-        ""
-      ],
       "about": "Quarry is an enemy found in the Mysterious Mine. Goldmine is its counterpart.",
       "image": "https://fnaf-world.fntduserguide.com/foes/quarry.webp"
     },
@@ -1978,9 +1945,6 @@
         "normal": "112-116",
         "hard": "224-228"
       },
-      "attacks": [
-        ""
-      ],
       "about": "Redbear is an enemy in FNaF World and FNaF World: Halloween Edition.",
       "image": "https://fnaf-world.fntduserguide.com/foes/redbear.webp"
     },
@@ -2062,9 +2026,6 @@
         "normal": "16-20",
         "hard": "32-36"
       },
-      "attacks": [
-        ""
-      ],
       "about": "Totemole is a totem pole-like creature with rodent features that is completely composed out of wood. It has buck teeth, yellow eyes, wooden ears, a tail, and three segments that constantly shift in different directions.",
       "image": "https://fnaf-world.fntduserguide.com/foes/totemole.webp"
     },

@@ -5,8 +5,8 @@
       "order": [
         "Scott Killer",
         "Rainbow Killer",
-        "Chippers Revenge1",
-        "Chippers Revenge2"
+        "Chippers Revenge (No Halloween)",
+        "Chippers Revenge (Halloween)"
       ]
     }
   ],
@@ -69,7 +69,7 @@
       ],
       "notes": "GAMBLINGGGGG, on harder difficulties, we find it easier to hope and pray with slasher spam. Only swap to team two if a member on team one dies."
     },
-    "Chippers Revenge1": {
+    "Chippers Revenge (No Halloween)": {
       "caption": "With only Update 1 Characters",
       "world": "Geist Layer",
       "party1": [
@@ -98,7 +98,7 @@
       ],
       "notes": "You may be surprised to see that this is the exact same as the Scott, thats because without Halloween Characters This is the best team possible! same tips as the ones against Scott."
     },
-    "Chippers Revenge2": {
+    "Chippers Revenge (Halloween)": {
       "caption": "With Halloween Characters",
       "world": "Geist Layer",
       "party1": [

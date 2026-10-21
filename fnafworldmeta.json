@@ -4,7 +4,9 @@
       "pageTitle": "Meta Teams",
       "order": [
         "Scott Killer",
+        "Scott Killer (Heavy Grind)",
         "Rainbow Killer",
+        "Rainbow Killer(Heavy Grind)",
         "Chippers Revenge (No Halloween)",
         "Chippers Revenge (Halloween)"
       ]
@@ -40,6 +42,36 @@
       ],
       "notes": "While Endo army is up, use Endo-01 to buff your party with both Song abilities, once curse status runs out you're more succeptible to being one-shot. Only swap to party two if your Funtime Foxy passed or you really need Giftboxes now. RWQ is only on Team two only as a safety precaution, can easily be put on Team 1 instead."
     },
+    "metas": {
+    "Scott Killer (Heavy Grind)": {
+      "caption": "LVL. 30 Minimum",
+      "world": "",
+      "party1": [
+        "Endo-01",
+        "Spring Bonnie",
+        "Funtime Foxy",
+        "RWQFSFASXC"
+      ],
+      "party2": [
+        "Crying Child",
+        "Golden Freddy",
+        "Endo-02",
+        "Springtrap"
+      ],
+      "bytes": [
+        "Block50",
+        "BossDrain02",
+        "BossDrain-X",
+        "Block20"
+      ],
+      "chips": [
+        "Auto: Shield",
+        "Auto: Mimic",
+        "Auto: Giftboxes",
+        "Curse: Status"
+      ],
+       "notes": "This team is much more consistant at beating Scott, and is reccommended for Nuzlocke runs. Same tips as normal Scott team minus the fact that you will most likely be able to tank much more hits. Use Happy Jam 2, a lot."
+    },
     "Rainbow Killer": {
       "caption": "",
       "world": "Geist Layer",
@@ -68,6 +100,35 @@
         "Curse: Status"
       ],
       "notes": "GAMBLINGGGGG, on harder difficulties, we find it easier to hope and pray with slasher spam. Only swap to team two if a member on team one dies."
+    },
+      "Rainbow Killer (Heavy Grind)": {
+      "caption": "LVL. 125 Minimum",
+      "world": "Geist Layer",
+      "party1": [
+        "Nightmare Balloon Boy",
+        "Animdude",
+        "Jack-O-Chica",
+        "Coffee"
+      ],
+      "party2": [
+        "Funtime Foxy",
+        "RWQFSFASXC",
+        "Crying Child",
+        "Nightmarionne"
+      ],
+      "bytes": [
+        "BossDrain-X",
+        "BossDrain02",
+        "X-FO",
+        "UFO"
+      ],
+      "chips": [
+        "Endless: Speed",
+        "Auto: Mimic",
+        "Auto: Giftboxes",
+        "Curse: Status"
+      ],
+      "notes": "This team is much more consistant for grinding Chica's Magic Rainbow, or if you're on a Nuzlocke and need to win first try. This team abuses the fact Balloons 2 scales exponentially from levels, making it the best attack in the game if you're willing to put in the time."
     },
     "Chippers Revenge (No Halloween)": {
       "caption": "With only Update 1 Characters",

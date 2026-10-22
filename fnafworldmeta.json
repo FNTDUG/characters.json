@@ -46,7 +46,7 @@
       "caption": "LVL. 30 Minimum",
       "world": "",
       "party1": [
-        "Endo-01",
+        "Endo-02",
         "Spring Bonnie",
         "Funtime Foxy",
         "RWQFSFASXC"
@@ -54,7 +54,7 @@
       "party2": [
         "Crying Child",
         "Golden Freddy",
-        "Endo-02",
+        "Endo-01",
         "Springtrap"
       ],
       "bytes": [
@@ -69,7 +69,7 @@
         "Auto: Giftboxes",
         "Curse: Status"
       ],
-       "notes": "This team is much more consistant at beating Scott, and is reccommended for Nuzlocke runs. Same tips as normal Scott team minus the fact that you will most likely be able to tank much more hits. Use Happy Jam 2, a lot."
+       "notes": "This team is much more consistant at beating Scott, and is recommended for Nuzlocke runs. Same tips as normal Scott team minus the fact that you will most likely be able to tank much more hits. Use Happy Jam 2, a lot. Also start using Speed Song as you dont use Endless: Speed in this comp"
     },
     "Rainbow Killer": {
       "caption": "",

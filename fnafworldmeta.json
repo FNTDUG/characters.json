@@ -215,7 +215,7 @@
         "Auto: Giftboxes",
         "Curse: Status"
       ],
-      "notes": "Made for Higher level. Due to Chipper doing up to 1000 damage a hit we decided it was best to forgoe the defensive stuff. In a Nuzlocke it is recommended to replace Auto: Giftboxes with Auto: Shield."
+      "notes": "Made for Higher level. Due to Chipper doing up to 1000 damage even with defense per hit we decided it was best to forgoe the defensive stuff for more dps. In a Nuzlocke it is recommended to replace Auto: Giftboxes with Auto: Shield."
     }
   }
 }

@@ -1,6 +1,11 @@
 {
   "worlds": [
     {
+      "name": "Starters",
+      "color": "#4fd36b",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/fazbear-hills.webp"
+    },
+    {
       "name": "Fazbear Hills",
       "color": "#4fd36b",
       "background": "https://fnaf-world.fntduserguide.com/worlds/fazbear-hills.webp",
@@ -85,7 +90,7 @@
       "name": "Freddy",
       "number": 1,
       "update": "Update 1",
-      "world": "Fazbear Hills",
+      "world": "Starters",
       "game": "Five Nights at Freddy's",
       "health": 105,
       "attacks": [
@@ -106,7 +111,7 @@
       "name": "Bonnie",
       "number": 2,
       "update": "Update 1",
-      "world": "Fazbear Hills",
+      "world": "Starters",
       "game": "Five Nights at Freddy's",
       "health": 110,
       "attacks": [
@@ -126,7 +131,7 @@
       "name": "Chica",
       "number": 3,
       "update": "Update 1",
-      "world": "Fazbear Hills",
+      "world": "Starters",
       "game": "Five Nights at Freddy's",
       "health": 115,
       "attacks": [
@@ -146,7 +151,7 @@
       "name": "Foxy",
       "number": 4,
       "update": "Update 1",
-      "world": "Fazbear Hills",
+      "world": "Starters",
       "game": "Five Nights at Freddy's",
       "health": 120,
       "skins": [
@@ -174,7 +179,7 @@
       "name": "Toy Bonnie",
       "number": 5,
       "update": "Update 1",
-      "world": "Fazbear Hills",
+      "world": "Starters",
       "game": "Five Nights at Freddy's 2",
       "health": 125,
       "attacks": [
@@ -194,7 +199,7 @@
       "name": "Toy Chica",
       "number": 6,
       "update": "Update 1",
-      "world": "Fazbear Hills",
+      "world": "Starters",
       "game": "Five Nights at Freddy's 2",
       "health": 130,
       "attacks": [
@@ -214,7 +219,7 @@
       "name": "Toy Freddy",
       "number": 7,
       "update": "Update 1",
-      "world": "Fazbear Hills",
+      "world": "Starters",
       "game": "Five Nights at Freddy's 2",
       "health": 135,
       "attacks": [
@@ -234,7 +239,7 @@
       "name": "Mangle",
       "number": 8,
       "update": "Update 1",
-      "world": "Fazbear Hills",
+      "world": "Starters",
       "game": "Five Nights at Freddy's 2",
       "health": 140,
       "attacks": [
@@ -334,7 +339,7 @@
       "name": "Phantom Balloon Boy",
       "number": 13,
       "update": "Update 1",
-      "world": "Choppy's Woods",
+      "world": "Fazbear Hills",
       "game": "Five Nights at Freddy's 3",
       "health": 165,
       "attacks": [
@@ -475,7 +480,7 @@
       "name": "Shadow Freddy",
       "number": 20,
       "update": "Update 1",
-      "world": "Dusting Fields",
+      "world": "Lilygear Lake",
       "game": "Five Nights at Freddy's 2",
       "health": 200,
       "attacks": [
@@ -535,7 +540,7 @@
       "name": "Golden Freddy",
       "number": 23,
       "update": "Update 1",
-      "world": "Lilygear Lake",
+      "world": "Mysterious Mine",
       "game": "Five Nights at Freddy's",
       "health": 215,
       "attacks": [
@@ -555,7 +560,7 @@
       "name": "Paperpals",
       "number": 24,
       "update": "Update 1",
-      "world": "Lilygear Lake",
+      "world": "Mysterious Mine",
       "game": "Five Nights at Freddy's 2",
       "health": 220,
       "attacks": [
@@ -725,7 +730,7 @@
       "name": "Endoplush",
       "number": 32,
       "update": "Update 1",
-      "world": "Deep-Metal Mine",
+      "world": "Pinwheel Circus",
       "game": "FNaF World",
       "health": 260,
       "attacks": [
@@ -793,7 +798,7 @@
       "name": "Crying Child",
       "number": 35,
       "update": "Update 1",
-      "world": "Pinwheel Circus",
+      "world": "Pinwheel Funhouse",
       "game": "Five Nights at Freddy's 2",
       "health": 275,
       "attacks": [
@@ -813,7 +818,7 @@
       "name": "Funtime Foxy",
       "number": 36,
       "update": "Update 1",
-      "world": "Pinwheel Circus",
+      "world": "Pinwheel Funhouse",
       "game": "Five Nights at Freddy's 2",
       "health": 280,
       "attacks": [

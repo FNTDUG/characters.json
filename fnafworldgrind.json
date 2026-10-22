@@ -1,0 +1,63 @@
+{
+  "methods": [
+    {
+      "id": "faz-token-method",
+      "name": "Faz Token Method",
+      "boss": "Gold Endo",
+      "kicker": "Faz Tokens",
+      "rewards": [
+        { "name": "Faz Tokens", "normal": 500, "hard": 1000 }
+      ],
+      "sections": [
+        {
+          "title": "How to grind Faz Tokens on Gold Endo",
+          "steps": [
+            "Save right before the tile where you'd trigger his encounter.",
+            "Trigger the encounter and defeat Gold Endo.",
+            "Go back to the title screen and reload your file.",
+            "The encounter should start straight away, because the game puts you on his tile.",
+            "Save again and restart.",
+            "Repeat until you have as many tokens as you want."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exp-method",
+      "name": "EXP Method",
+      "boss": "Security",
+      "kicker": "EXP",
+      "rewards": [
+        { "name": "EXP", "normal": 5000, "hard": 10000 },
+        { "name": "Faz Tokens", "normal": 250, "hard": 522 }
+      ],
+      "sections": [
+        {
+          "title": "High level: Security Owl",
+          "steps": [
+            "Defeat Security Owl.",
+            "Save.",
+            "Exit to the title screen.",
+            "Reload your save file.",
+            "Rinse and repeat."
+          ]
+        },
+        {
+          "title": "Mid level: Halloween",
+          "text": "When you reach mid level (level 20-30), Halloween becomes a good grinding area if it is available. You gain 600-1,020 EXP per battle and can toggle battles manually. Outside of Halloween and Pinwheel Circus & Funhouse there is no stand-out mid level grinding area."
+        },
+        {
+          "title": "Low level: best method for each world",
+          "rows": [
+            { "label": "World 1", "world": "Fazbear Hills", "text": "The slowest start. Just fight the normal enemies here." },
+            { "label": "World 2", "world": "Choppy's Woods", "text": "Farm EXP from Chipper in World 1, with the same steps as Security Owl." },
+            { "label": "World 3", "world": "Dusting Fields", "text": "Farm EXP from Snowcone after beating him once, with the same steps as Security Owl." },
+            { "label": "World 4", "world": "Lilygear Lake", "text": "Farm EXP from Seagoon after beating him once, with the same steps as Security Owl." },
+            { "label": "World 5", "world": "Blacktomb Yard", "text": "There is no right or wrong way to earn EXP here." },
+            { "label": "World 6", "world": "Pinwheel Circus", "text": "Same as World 5." }
+          ]
+        }
+      ]
+    }
+  ]
+}

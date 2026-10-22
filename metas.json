@@ -389,12 +389,12 @@
     },
     "Event Endless Grind": {
       "units": [
-        { "name": "Princess", "label": "$1k", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter, Potency" },
-        { "name": "Old Man Consequences", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "path": "2-0-5", "caption": "Buff Potency" },
-        { "name": "Planet Buster Scott", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Deep Sea Calamity Endo", "caption": "Buff Potency" },
-        { "name": "Black Hole Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Gaia Chica", "caption": "Buff Potency" },
+        { "name": "Unicorn Toy Foxy", "label": "$1k", "byte": "Pearl, The Box", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Starter" },
+        { "name": "Grand Strategist Chica", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "Valkyrie Chica", "caption": "" },
+        { "name": "Astral Bonnie", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Place on Boss" },
+        { "name": "Phone Guy", "label": "",    "byte": "KABOOM!, The Box", "chip": "Eye Augmentation", "enchant": "Hijacked", "replacement": "", "caption": "Place on Boss" },
         { "name": "Nature Reclaimed Foxy", "label": "", "byte": "The Box, Boss Drain", "chip": "Eye Augmentation", "enchant": "Vengeance", "replacement": "", "caption": "Buff Potency" },
-        { "name": "Stitchwraith", "label": "", "byte": "UFO, The Box", "chip": "Eye Augmentation", "enchant": "Phantom", "replacement": "", "caption": "Jake Mode, Potency" }
+        { "name": "Hot Dog Guy", "label": "", "byte": "Pearl, UFO", "enchant": "Investor", "chip": "", "replacement": "", "caption": "" }
       ]
     }
   }

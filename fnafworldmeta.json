@@ -8,7 +8,8 @@
         "Rainbow Killer",
         "Rainbow Killer (Heavy Grind)",
         "Chippers Revenge (No Halloween)",
-        "Chippers Revenge (Halloween)"
+        "Chippers Revenge (Halloween)",
+        "Chippers Revenge (Heavy Grind)"
       ]
     }
   ],
@@ -186,6 +187,35 @@
         "Curse: Status"
       ],
       "notes": "With Halloween Characters it should be much easier. it is reccommended to always keep Gift Boxes up and ALWAYS keep Mega Virus up. Only Swap to Team 2 if your two Gift Boxers die on Team 1."
+    }
+    "Chippers Revenge (Heavy Grind)": {
+      "caption": "With Halloween Characters + High Level. Minimum LVL. 50",
+      "world": "Geist Layer",
+      "party1": [
+        "Animdude",
+        "Jack-O-Chica",
+        "Funtime Foxy",
+        "Nightmare Balloon Bot"
+      ],
+      "party2": [
+        "Jack-O-Bonnie",
+        "Coffee",
+        "Springbonnie",
+        "Golden Freddy"
+      ],
+      "bytes": [
+        "X-FO",
+        "BossDrain02",
+        "BossDrain-X",
+        "UFO"
+      ],
+      "chips": [
+        "Endless: Strength",
+        "Auto: Mimic",
+        "Auto: Giftboxes",
+        "Curse: Status"
+      ],
+      "notes": "Made for Higher level. Due to Chipper doing up to 1000 damage a hit we decided it was best to forgoe the defensive stuff. In a Nuzlocke it is recommended to replace Auto: Giftboxes with Auto: Shield."
     }
   }
 }

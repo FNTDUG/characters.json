@@ -3042,7 +3042,7 @@
         "Neutral/Rust/Nature": "+9% DMG, +3% RNG, -3% CD, & +1 stock per placement.",
         "Dark/Fire/Light": "+3% DMG, -3% CD, & 3% burn/second",
         "Dark/Electricity": "+3% DMG & -1% CD to all units within range (capts at -15%)",
-        "Fire/Light": "+3% DMG, -3% CD, & 3% burn/second",
+        "Fire/Light": "-3% CD & 3% burn/second",
         "Rust/Electricity": "+6% DMG, +3% CD & -1% CD to all units within range (caps at -15%)"
       };
         

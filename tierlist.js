@@ -71,7 +71,7 @@
          "El Chip",
          "Model 2.9 Defective Funtime Foxy",
          "Malachite Foxy",
-         "Silent Ghost Toy Freddy NEW,
+         "Silent Ghost Toy Freddy NEW",
          "Security Owl DOWN",
          "Yeti Oni Bonnie",
          "Twisted Wolf",

@@ -2218,6 +2218,18 @@
       ],
       "about": "Mendo is the shop owner that you can purchase upgrades for your endoskeleton to increase your defense. In Fazbear Hills, Mendo sells reinforced, steel, and titanium upgrades at his shop, Mendo's Endo-Upgrades.",
       "image": "https://fnaf-world.fntduserguide.com/foes/mendo.webp"
+    },
+    {
+      "id": "scott",
+      "name": "Scott",
+      "update": "Update 1",
+      "worlds": [
+        "Pinwheel Circus"
+      ],
+      "quote": "There is always an over-achiever in the bunch. I guess that's you.",
+      "about": "Scott is the game's creator. He appears as the glowing blue running sprite from his game There Is No Pause Button! He's only found on Hard mode: beat Security, then walk into the circus tent in Pinwheel Circus. He congratulates you for making it that far, blames you for his misery and says he can't do this anymore, then turns into a giant voxel figure with a floating head and fights you as the final boss, Scott Cawthon.",
+      "tips": "Beat Security on Hard mode and go through the circus tent to find him. Talking to him starts the Scott Cawthon boss fight, the hardest in the game: he hits the whole party with 4th Wall and Alarm, so bring Neon Wall or the Auto: Shield chip and a Gift Boxes user on each team.",
+      "image": "https://fnaf-world.fntduserguide.com/foes/scott.webp"
     }
   ],
   "attacks": {

@@ -712,7 +712,7 @@
        "Cthulhu Nightmare Foxy": "Good DPS, great support to half the team, and good Slow and Stun."
      },
      "starter": {
-       "Golden Freddy": "Great boosting in Endless (up to +30% Damage per Golden Freddy), good DPS, and great stall with 20% Slow on attack and Knockback with his Active.",
+       "Golden Freddy": "Great boosting in Endless (up to +30% Damage per Golden Freddy), good DPS, an additional +15% Damage for Neutral units, and generates decent income.",
        "Endo 01": "A good choice for a Starter as he gives all units in his range +15% Damage and -3% CD, making him useful throughout the whole match.",
        "Princess": "High DPS, gives your 3 strongest units +30% Crit Damage and +10% Crit Chance, gives Light units +20% Damage if there's a Dark unit or enemy in range, and makes Light units deal 25% more damage to Dark enemies.",
        "Trickster Bullies": "High DPS, gives nearby units +15% Damage when in Treat mode, and attacks give enemies 15% Slow when in Trick mode.",
@@ -764,6 +764,7 @@
        "Krampus Purple Guy": "Attacks Stuns enemies for 1.8s. Pair him with a Kaboom or Box Byte to help combat his shorter range for better coverage.",
        "Golden Freddy": "Active ability can Stun all enemies for 5s and he Stuns all enemies in his range for 2s every 12s.",
        "Ennard": "Attacks Stun enemies for 0.8s and all enemies in range are Stunned for 1.2s every 10s.",
+       "Ghoul Shadow Bonnie": "The 5th attack on an enemy Stuns it for 2s, or for 3s if the 5th attack happened while the enemy was already in Stun Lockout.",
        "Cthulhu Nightmare Foxy": "Attacks Stun for 1s when Warp cap has been reached.",
        "Grand Strategist Chica": "Queen piece Stuns the 5 closest enemies on attack for 1.5s."
      },

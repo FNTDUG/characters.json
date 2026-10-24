@@ -60,10 +60,22 @@
       "about": "Pinwheel Funhouse is the final location the player usually finds in FNaF World and is only connected to Pinwheel Circus and Lilygear Lake."
     },
     {
+      "name": "Finale",
+      "color": "#c45cff",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/flipside.webp",
+      "about": "Finale is where the Hard mode ending plays out. After beating Security, the player walks through the circus tent in Pinwheel Circus and finds Scott waiting in the dark, then fights him as the final boss with purple and blue lightning flashing behind him."
+    },
+    {
       "name": "&*___TWRE",
       "color": "#b8ff3d",
       "background": "https://fnaf-world.fntduserguide.com/worlds/and-twre-battle.webp",
       "about": "&*___TWRE is the glitched world in FNaF World that the player can access through three different \"breakpoints\" around the map, mainly only to gain red chips."
+    },
+    {
+      "name": "Flipside",
+      "color": "#ff7777",
+      "background": "https://fnaf-world.fntduserguide.com/worlds/4th-layer.webp",
+      "about": "Flipside is the deepest of the glitched layers, reached from Pinwheel Funhouse by going through a gravestone and down 4 layers of glitched objects. It is a black clearing ringed with red pixel trees around a lake, where Old Man Consequences sits fishing."
     },
     {
       "name": "Halloween Backstage",
@@ -2220,16 +2232,28 @@
       "image": "https://fnaf-world.fntduserguide.com/foes/mendo.webp"
     },
     {
+      "id": "old-man-consequences",
+      "name": "Old Man Consequences",
+      "update": "Update 1",
+      "worlds": [
+        "Flipside"
+      ],
+      "quote": "My name is Old Man Consequences. Come have a seat, and let's fish for a while. You have no where else to go.",
+      "about": "Old Man Consequences is a unique character in FNaF World. He is found in the 4th level of the Glitch World. Old Man Consequences is a red-figure with a fishing rod and uneven teeth. He looks somewhat like a crocodile sitting on a rock. He appears to be sitting on a log with his fishing rod cast into the lake. He will talk to the player once they get close enough.",
+      "tips": "When the player enters the 4th layer, he will talk to them when they come close enough to him. He tells them they went too deep into the code and that they are stuck there, with no way out. After he finishes talking, the screen will say 'the end'.",
+      "image": "https://fnaf-world.fntduserguide.com/foes/old-man-consequences.webp"
+    },
+    {
       "id": "scott",
       "name": "Scott",
       "update": "Update 1",
       "worlds": [
-        "Pinwheel Circus"
+        "Finale"
       ],
       "quote": "There is always an over-achiever in the bunch. I guess that's you.",
       "about": "Scott is the game's creator. He appears as the glowing blue running sprite from his game There Is No Pause Button! He's only found on Hard mode: beat Security, then walk into the circus tent in Pinwheel Circus. He congratulates you for making it that far, blames you for his misery and says he can't do this anymore, then turns into a giant voxel figure with a floating head and fights you as the final boss, Scott Cawthon.",
       "tips": "Beat Security on Hard mode and go through the circus tent to find him. Talking to him starts the Scott Cawthon boss fight, the hardest in the game: he hits the whole party with 4th Wall and Alarm, so bring Neon Wall or the Auto: Shield chip and a Gift Boxes user on each team.",
-      "image": "https://fnaf-world.fntduserguide.com/foes/scott.webp"
+      "image": "https://fnaf-world.fntduserguide.com/foes/scott-anim-v2.webp"
     }
   ],
   "attacks": {

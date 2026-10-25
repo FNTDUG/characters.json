@@ -99,7 +99,7 @@
         "about": "These UFOs shoot lasers for very high damage! Buy all three from Lolbit in Pinwheel Circus for 2,200 Faz Tokens."
       },
       {
-        "name": "Special Bytes",
+        "name": "Special Byte",
         "color": "#ffe866",
         "about": "Special Bytes don't take up a Byte slot. You earn them instead of buying them."
       }
@@ -367,7 +367,7 @@
     {
       "id": "the-pearl",
       "name": "The Pearl",
-      "group": "Special Bytes",
+      "group": "Special Byte",
       "tier": null,
       "price": null,
       "world": "Fazbear Hills",
@@ -378,7 +378,7 @@
     {
       "id": "the-fan",
       "name": "The Fan",
-      "group": "Special Bytes",
+      "group": "Special Byte",
       "tier": null,
       "price": null,
       "world": "Fazbear Hills",

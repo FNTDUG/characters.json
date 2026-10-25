@@ -2184,8 +2184,8 @@
         "Halloween Backstage"
       ],
       "health": {
-        "normal": 1000,
-        "hard": 2000
+        "normal": 4215,
+        "hard": 8450
       },
       "attack": {
         "normal": "50-54",

@@ -121,7 +121,11 @@
         {
           "name": "Trophy Freddy",
           "idle": "https://fnaf-world.fntduserguide.com/skins/trophy-freddy-idle.webp",
-          "attack": "https://fnaf-world.fntduserguide.com/skins/trophy-freddy-attack.webp"
+          "attack": "https://fnaf-world.fntduserguide.com/skins/trophy-freddy-attack.webp",
+          "credits": {
+            "model": ["deevee_dee", "bennetjl0202"],
+            "animation": ["deevee_dee"]
+          }
         }
       ]
     },
@@ -178,7 +182,11 @@
       "name": "Radioactive Foxy",
       "idle": "https://fnaf-world.fntduserguide.com/skins/radioactive-foxy-idle.webp",
       "attack": "https://fnaf-world.fntduserguide.com/skins/radioactive-foxy-attack.webp",
-      "overworld": "https://fnaf-world.fntduserguide.com/overworld/radioactive-foxy.webp" 
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/radioactive-foxy.webp",
+      "credits": {
+        "model": ["bennetjl0202"],
+        "animation": ["_adamm_"]
+      }
       }
       ],
       "attacks": [
@@ -633,7 +641,11 @@
       "name": "Twisted Bonnie",
       "idle": "https://fnaf-world.fntduserguide.com/skins/twisted-bonnie-roblox-idle.webp",
       "attack": "https://fnaf-world.fntduserguide.com/skins/twisted-bonnie-roblox-attack.webp",
-      "overworld": "https://fnaf-world.fntduserguide.com/overworld/twisted-bonnie.webp" 
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/twisted-bonnie.webp",
+      "credits": {
+        "model": ["bennetjl0202"],
+        "animation": ["_adamm_"]
+      }
       }
       ],
       "quote": "Let's get mean!",
@@ -782,7 +794,11 @@
       "name": "Toxic Springtrap",
       "idle": "https://fnaf-world.fntduserguide.com/skins/toxic-springtrap-idle.webp",
       "attack": "https://fnaf-world.fntduserguide.com/skins/toxic-springtrap-attack.webp",
-      "overworld": "https://fnaf-world.fntduserguide.com/overworld/toxic-springtrap.webp" 
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/toxic-springtrap.webp",
+      "credits": {
+        "model": ["bennetjl0202"],
+        "animation": ["_adamm_"]
+      }
       }
       ],
       "quote": "Cuter in person; still a killer.",
@@ -945,7 +961,11 @@
       "name": "Screampunk",
       "idle": "https://fnaf-world.fntduserguide.com/skins/screampunk-idle.webp",
       "attack": "https://fnaf-world.fntduserguide.com/skins/screampunk-attack.webp",
-      "overworld": "https://fnaf-world.fntduserguide.com/overworld/screampunk.webp" 
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/screampunk.webp",
+      "credits": {
+        "model": ["bennetjl0202"],
+        "animation": ["_adamm_"]
+      }
       }
       ],
       "attacks": [
@@ -1115,7 +1135,11 @@
       "name": "Mechanical Mangle",
       "idle": "https://fnaf-world.fntduserguide.com/skins/mechanical-marvel-mangle-idle.webp",
       "attack": "https://fnaf-world.fntduserguide.com/skins/mechanical-mangle-attack.webp",
-      "overworld": "https://fnaf-world.fntduserguide.com/overworld/mechanical-mangle.webp" 
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/mechanical-mangle.webp",
+      "credits": {
+        "model": ["bennetjl0202"],
+        "animation": ["_adamm_"]
+      }
       }
       ],
       "attacks": [
@@ -1128,7 +1152,11 @@
       "about": "Nightmarish Mangle with Teeth as large as a Human Head!.",
       "tips": "Very much just an alright Character. Her main gimmick is having Mega Prize, being able to summon any Halloween attack in the game (excluding itself). Mega Bite is useless at this stage of the game, but Buzzsaw is very nice, being a very high damage but inconsistent move.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/nightmare-mangle.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-mangle.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-mangle.webp",
+      "credits": {
+        "model": ["bennetjl0202"],
+        "animation": ["emirdude"]
+      }
     },
     {
       "id": "sparky",
@@ -1148,7 +1176,11 @@
       "about": "Pooch.",
       "tips": "Exactly like Nightmare Bonnie, an alright Character all-around but easily replaceable.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/elsparko.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/elsparko.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/elsparko.webp",
+      "credits": {
+        "model": ["bennetjl0202"],
+        "animation": ["rhyspuffs_"]
+      }
     },
     {
       "id": "withered-golden-freddy",
@@ -1169,7 +1201,11 @@
       "tips": "Overall a bad Character. Has Pizza Wheel 2 allowing for a nice burst of AOE damage, and Jumpscare allowing for some stall, but overall he's worse than his newer brother Golden Freddy.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/withered-golden-freddy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/withered-golden-freddy.webp",
-      "overworld": "https://fnaf-world.fntduserguide.com/overworld/withered-golden-freddy.webp"
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/withered-golden-freddy.webp",
+      "credits": {
+        "model": ["bennetjl0202"],
+        "animation": ["_adamm_"]
+      }
     }
   ],
   "bosses": [

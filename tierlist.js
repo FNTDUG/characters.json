@@ -11,6 +11,7 @@
          "Grand Strategist Chica",
          "Black Hole Foxy",
          "Old Man Consequences 2-0-5",
+         "Flipside Fredbear",
          "Stitchwraith",
          "Nature Reclaimed Foxy"
        ],
@@ -47,7 +48,6 @@
          "Glitchtrap 2-0-5 BUG",
          "Dragon Endo 01",
          "Headless Horseman Mangle",
-         "Flipside Fredbear",
          "Ringmaster Funtime Freddy",
          "Samurai Duo",
          "Candy Cadet",

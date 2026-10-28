@@ -11,7 +11,7 @@
          "Grand Strategist Chica",
          "Black Hole Foxy",
          "Old Man Consequences 2-0-5",
-         "Flipside Fredbear",
+         "Flipside Fredbear UP",
          "Stitchwraith",
          "Nature Reclaimed Foxy"
        ],

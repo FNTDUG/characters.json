@@ -697,6 +697,7 @@
        "Planet Buster Scott": "Highest DPS in the game along with spectacular Stun, great Slow, good support, and Wither.",
        "Overlord Scott": "A weaker Planet Buster scott, but still very good DPS, spectacular Slow, and good support.",
        "Black Hole Foxy": "High DPS, great Slow, and good Light/Dark and Wither based support.",
+       "Flipside Fredbear": "Incredible stall with his Knockback, Stun, and portals. Additionally, his portals do 20% of an enemy's health, making him stronger the longer the match lasts. His normal attacks can also do % damage if he knocks enemies into each other.",
        "Astral Bonnie": "High DPS, mild support, and fits spectacularly into Light/Dark focused teams.",
        "Deep Sea Calamity Endo": "The best staller by far, having 15% AOE Slow per placement (30% per person bringing him), 1.8s Stun on attack, and Knockback when enemies get too close. Additionally is a good supporting DPS and has an absurdly large 245° Cone attack.",
        "Old Man Consequences": "Very good stall, being able to afflict enemies with up to 40% Slow, 2s Stun, 2 tile Knockback, and is the only unit that can Knockback Bosses.", 

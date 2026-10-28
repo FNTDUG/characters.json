@@ -30148,7 +30148,23 @@
       "title": "Heavy Iron",
       "text": "Gain +30% critical damage on placement. Gain critical damage equal to this unit's critical rate. For the next attack gain +2% critical damage per critical hit within range, up to +50%. Reset this bonus after a shot lands"
     }
-  ]
+  ],
+  "passiveDamage":{
+    "selfboost":[
+      {
+        "label": "Heavy Iron",
+        "critd": 2.3
+      },
+      {
+        "label": "50% Miss Chance",
+        "dmgmult": 0.5
+      },
+      {
+        "label": "100% Crit Chance",
+        "critc": 1
+      }
+    ]
+  }
 },
 {
   "name": "Silent Ghost Toy Freddy",

@@ -311,7 +311,7 @@ var UPDATED_UNITS = [
 "Party Sparkler Muffin",
 "Junkyard Warrior Happy Frog",
 "Rusty Tadpole Happy Frog",
-"Piñata Freddy"
+"Pinata Freddy"
 ];
 
 var UNITS_JSON_URL = 'https://raw.githubusercontent.com/FNTDUG/characters.json/refs/heads/main/json';

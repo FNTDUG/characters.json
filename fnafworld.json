@@ -2488,7 +2488,7 @@
       ],
       "health": {
         "normal": 4215,
-        "hard": 8450
+        "hard": 8430
       },
       "attack": {
         "normal": "50-54",
@@ -2508,7 +2508,25 @@
       "worlds": [
         "Halloween Backstage"
       ],
-      "health": null,
+      "health": {
+        "normal": 3930,
+        "hard": 7860
+      },
+      "attack": null,
+      "about": "",
+      "image": "https://fnaf-world.fntduserguide.com/foes/candy-corn.webp"
+    },
+    {
+      "id": "jawbreaker",
+      "name": "Jawbreaker",
+      "update": "Update 3",
+      "worlds": [
+        "Halloween Backstage"
+      ],
+      "health": {
+        "normal": 3655,
+        "hard": 7310
+      },
       "attack": null,
       "about": "",
       "image": "https://fnaf-world.fntduserguide.com/foes/candy-corn.webp"
@@ -2520,7 +2538,10 @@
       "worlds": [
         "Halloween Backstage"
       ],
-      "health": null,
+      "health": {
+        "normal": 4215,
+        "hard": 8430
+      },
       "attack": null,
       "about": "",
       "image": "https://fnaf-world.fntduserguide.com/foes/pumpkin-scratch.webp",

@@ -676,7 +676,30 @@
       "about": "Adventure Paperpals, or Paperpals as named in-game, are unlockable characters in Lilygear Lake that originates from Five Nights at Freddy's 2.",
       "tips": "They're ok all around. Only good move being Mimic Ball, which with the correct set-up, can be used very effectively. The only issue with it being it can and will slow you down, a lot.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/paperpals.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/paperpals.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/paperpals.webp",
+      "skins": [
+        {
+          "name": "Budget Banana",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/budget-banana-idle.webp",
+          "credits": {
+            "model": ["xtrasprinkles"]
+          }
+        },
+        {
+          "name": "Budget Bluegle",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/budget-bluegle-idle.webp",
+          "credits": {
+            "model": ["xtrasprinkles"]
+          }
+        },
+        {
+          "name": "Budget Ringmaster",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/budget-ringmaster-idle.webp",
+          "credits": {
+            "model": ["xtrasprinkles"]
+          }
+        }
+      ]
     },
     {
       "id": "nightmare-freddy",
@@ -1389,7 +1412,18 @@
       "credits": {
         "model": ["bennetjl0202"],
         "animation": ["rhyspuffs_"]
-      }
+      },
+      "skins": [
+        {
+          "name": "Movie Sparky",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/movie-sparky-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/movie-sparky-attack.webp",
+          "credits": {
+            "model": ["bennetjl0202"],
+            "animation": ["deevee_dee"]
+          }
+        }
+      ]
     },
     {
       "id": "withered-golden-freddy",

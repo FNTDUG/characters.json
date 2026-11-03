@@ -4781,7 +4781,7 @@
             ["michael_top", "Michael Afton: Max Top Path (+15% DMG) [Rust only]",                              { dmgMult: 1.15, elements: ["Rust"] }],
             ["michael_bot", "Michael Afton: Max Bottom Path (+20% DMG & +15% RNG) [Rust only]",                { dmgMult: 1.20, rngMult: 1.15, elements: ["Rust"] }],
             ["rustelement",  "Rust Element: +6% DMG, +3% CD penalty [Rust only]",                              { dmgMult: 1.06, cdMult: 1.03, elements: ["Rust"] }],
-            ["junkwarrust",          "Junkyard Warrior Happy Frog: Lord of the Scrapyard (+22.5% DMG) [Rust only]", { dmgMult: 1.225, elements: ["Rust"]}]
+            ["junkwarrust",          "Junkyard Warrior Happy Frog: Lord of the Scrapyard (+32% DMG) [Rust only]", { dmgMult: 1.32, elements: ["Rust"]}]
           );
         }
 
@@ -4927,8 +4927,8 @@
 
         if (unitHasTag(unit, "Anniversary")) {
           BOOST_OPTIONS.push(
-            ["anniballora", "Celebration Cake Ballora: Grande Fête (+25% RNG & +20% Crit Rate) [Anniversary Units only]",
-              { rngMult: 1.25, critRateAdd: 0.20, tags: ["Anniversary"] }],
+            ["anniballora", "Celebration Cake Ballora: Grande Fête (+50% RNG & +30% Crit Rate) [Anniversary Units only]",
+              { rngMult: 1.5, critRateAdd: 0.30, tags: ["Anniversary"] }],
             ["themuffinman", "Party Sparkler Muffin: Party Time! (+15% DMG & +5% Crit Rate) [Anniversary Units only]",
               { dmgMult: 1.15, critRateAdd: 0.05, tags: ["Anniversary"] }],
             ["themuffinmanball", "Party Sparkler Muffin: Party Time! with Ballora (+30% DMG & +20% Crit Rate) [Anniversary Units only]",

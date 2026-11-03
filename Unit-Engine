@@ -4750,9 +4750,10 @@
           ["scarecrow_guardian","Scarecrow Freddy: Guardian of the Fields (-5% DMG, -5% RNG)",             { dmgMult: 0.95, rngMult: 0.95, stackKey: "scarecrow_guardian_stacks", maxStacks: 4 }],
           ["pbs",               "Scott Units: The Creator (+1% DMG & +1% RNG per stack)",                 { dmgMult: 1.01, rngMult: 1.01, stackKey: "psbStack", maxStacks: 100 }],
           ["roar",              "Shadow Knight Freddy: Roaring Scream (+25% DMG, +3% CD)",                { dmgMult: 1.25, cdMult: 1.03, duration: 15, cd: 60 }],
+          ["scrap_endo",        "Scrap Incinerator Nightmare Endo: The Badlands Drifter (+20% DMG & +20% Crit Rate)",{ dmgMult: 1.20, critRateAdd: 0.20, duration: 30, cd: 120 }],
           ["survivor_gas",      "Sole Survivor Withered Bonnie: Mutating Gas (+30% DMG, +5% CD per stack)",{ dmgMult: 1.30, cdMult: 1.05, stackKey: "survivorStacks", maxStacks: 4 }],
           ["survivor_stun",     "Sole Survivor Withered Bonnie: Wasteland Scavenger (+25% DMG)",          { dmgMult: 1.25, duration: 10, cd: 15 }],
-          ["Stitchwraith",      "Stitchwraith: Jake Mode (15% DMG, +25% RNG, -5% CD, +20% Crit Rate, & +20% Crit DMG)", { dmgMult: 1.15, rngMult: 1.25, cdMult: 0.95, critRateAdd: 0.20, critDmgAdd: 0.20 }],
+          ["Stitchwraith",      "Stitchwraith: Jake Mode (15% DMG, +25% RNG, -5% CD, +10% Crit Rate, & +10% Crit DMG)", { dmgMult: 1.15, rngMult: 1.25, cdMult: 0.95, critRateAdd: 0.10, critDmgAdd: 0.10 }],
           ["strat_chica_dmg",   "Grand Strategist Chica: Pressing the Advantage (+35% Crit DMG)",          { dmgMult: 1.25}],
           ["strat_chica_crit",   "Grand Strategist Chica: Hold the Line (+30% Crit DMG)",                  { critDmgAdd: 1.30}],
           ["spring_duo_avg",    "Spring Duo: Spotlight! (Averaged, +25% DMG, +22.5% RNG, -2.5% CD)",      { dmgMult: 1.25, rngMult: 1.225, cdMult: 0.975 }],
@@ -4779,7 +4780,8 @@
             ["michael_base", "Michael Afton: Base Effect (+20% DMG, +10% RNG) [Rust only]",                    { dmgMult: 1.20, rngMult: 1.10, elements: ["Rust"] }],
             ["michael_top", "Michael Afton: Max Top Path (+15% DMG) [Rust only]",                              { dmgMult: 1.15, elements: ["Rust"] }],
             ["michael_bot", "Michael Afton: Max Bottom Path (+20% DMG & +15% RNG) [Rust only]",                { dmgMult: 1.20, rngMult: 1.15, elements: ["Rust"] }],
-            ["rustelement",  "Rust Element: +6% DMG, +3% CD penalty [Rust only]",                              { dmgMult: 1.06, cdMult: 1.03, elements: ["Rust"] }]
+            ["rustelement",  "Rust Element: +6% DMG, +3% CD penalty [Rust only]",                              { dmgMult: 1.06, cdMult: 1.03, elements: ["Rust"] }],
+            ["junkwarrust",          "Junkyard Warrior Happy Frog: Lord of the Scrapyard (+22.5% DMG) [Rust only]", { dmgMult: 1.225, elements: ["Rust"]}]
           );
         }
 
@@ -4863,24 +4865,24 @@
           );
         }
 
-        if (["Rockstar Foxy", "Rockstar Freddy", "Rockstar Bonnie", "Rockstar Chica"].indexOf(unit.name) !== -1) {
+        if (unitHasTag(unit, "Rockstar")) {
           BOOST_OPTIONS.push(
             ["rare_finds", "Lefty: Rare Finds (+20% DMG, -20% Cost) [Rockstar units only]",
-              { dmgMult: 1.20, costMult: 0.80, unitNames: ["Rockstar Foxy", "Rockstar Freddy", "Rockstar Bonnie", "Rockstar Chica", "Lefty"] }]
+              { dmgMult: 1.20, costMult: 0.80, tags: ["Rockstar"] }]
           );
         }
 
-        if (["No. 1 Crate", "Bucket Bob", "Pan Stan"].indexOf(unit.name) !== -1) {
+        if (unitHasTag(unit, "Trash and the Gang")) {
           BOOST_OPTIONS.push(
             ["trash_tron", "Trash O Tron: Assorted Parts (+50% DMG) [Trash and the Gang only]",
-              { dmgMult: 1.50, unitNames: ["No. 1 Crate", "Bucket Bob", "Pan Stan"] }]
+              { dmgMult: 1.50, tags: ["Trash and the Gang"] }]
           );
         }
 
-        if (["Mecha Cupcake", "Party Packer Cupcake", "Bombwork Cupcake", "Party Never Ends Cupcake", "Clockwork Cupcake", "Golden Cupcake", "Cupcake", "Nightmare Cupcake"].indexOf(unit.name) !== -1) {
+        if (unitHasTag(unit, "Cupcake")) {
           BOOST_OPTIONS.push(
             ["party_cupcup", "Party Never Ends Cupcake: Birthday Boy (+30% DMG, +30% RNG, -10% CD) [Cupcakes only]",
-              { dmgMult: 1.30, rngMult:  1.30, cdMult: 0.90, unitNames: ["Mecha Cupcake", "Party Packer Cupcake", "Bombwork Cupcake", "Party Never Ends Cupcake", "Clockwork Cupcake", "Golden Cupcake", "Cupcake", "Nightmare Cupcake"] }]
+              { dmgMult: 1.30, rngMult:  1.30, cdMult: 0.90, tags: ["Cupcake"] }]
           );
         }
 
@@ -4916,10 +4918,30 @@
           );
         }
 
-        if (["Sad Clown Helpy", "Knife Thrower Bear5"].indexOf(unit.name) !== -1) {
+        if (unitHasTag(unit, "Circus")) {
           BOOST_OPTIONS.push(
             ["ringmaster", "Ringmaster Funtime Freddy: Let The Cheers Commence (+20% DMG) [Circus Units only]",
-              { dmgMult: 1.20, duration: 10, cd: 16, unitNames: ["Sad Clown Helpy", "Knife Thrower Bear5"] }]
+              { dmgMult: 1.20, duration: 10, cd: 16, tags: ["Circus"] }]
+          );
+        }
+
+        if (unitHasTag(unit, "Anniversary")) {
+          BOOST_OPTIONS.push(
+            ["anniballora", "Celebration Cake Ballora: Grande Fête (+25% RNG & +20% Crit Rate) [Anniversary Units only]",
+              { rngMult: 1.25, critRateAdd: 0.20, tags: ["Anniversary"] }],
+            ["themuffinman", "Party Sparkler Muffin: Party Time! (+15% DMG & +5% Crit Rate) [Anniversary Units only]",
+              { dmgMult: 1.15, critRateAdd: 0.05, tags: ["Anniversary"] }],
+            ["themuffinmanball", "Party Sparkler Muffin: Party Time! with Ballora (+30% DMG & +20% Crit Rate) [Anniversary Units only]",
+              { dmgMult: 1.30, critRateAdd: 0.20, tags: ["Anniversary"] }],
+
+          );
+        }
+
+        if (unitHasTag(unit, "Nightmare")) {
+          BOOST_OPTIONS.push(
+            ["nmmangothing", "Executioner Nightmare Mangle: The Nightmare (+30% DMG) [Nightmare Units only]",
+              { dmgMult: 1.30, tags: ["Nightmare"] }],
+
           );
         }
 
@@ -4927,6 +4949,7 @@
           BOOST_OPTIONS.push(
             ["anni_boy",          "Anniversary Balloon Boy: The Afterparty (+10% DMG) [Light only]",             { dmgMult: 1.10, elements: ["Light"] }],
             ["anni_duo",          "Anniversary Duo: The Grand Celebration (+10% DMG) [Light only]",             { dmgMult: 1.10, elements: ["Light"] }],
+            ["celebratecake",     "Celebration Cake Ballora: Joyeux Anniversaire (+15% DMG) [Light only]", { dmgMult: 1.15, elements: ["Light"]}],
             ["ftc",               "Funtime Chica: Spotlight (+20% DMG) [Light only]",                            { dmgMult: 1.20, elements: ["Light"] }],
             ["lore_light",        "Lore Keeper Shadow Bonnie: Light Boost (-15% CD) [Light only]",               { cdMult: 0.80, elements: ["Light"] }],
             ["ballora_light_light", "Mother Nature Ballora: Light Boost (+5% DMG, +5% RNG, -5% CD) [Light only]", { dmgMult: 1.05, rngMult: 1.05, cdMult: 0.95, elements: ["Light"] }],
@@ -4971,7 +4994,8 @@
           BOOST_OPTIONS.push(
             ["datanightcodeno",      "Data Theif Nightmarionne: Code Corrosion Debuff (-10% DMG & -10% RNG) [Rust & Electricity Only]", { dmgMult: 0.90, rngMult: 0.90, elements: ["Rust", "Electricity"]}],
             ["datanightcodeyes",     "Data Theif Nightmarionne: Code Corrosion Buff (+25% DMG & +25% RNG) [Rust & Electricity Only]", { dmgMult: 1.25, rngMult: 1.25, elements: ["Rust", "Electricity"]}],
-            ["datanightdownload",    "Data Theif Nightmarionne: Organic Download (+15% DMG) [Rust & Electricity Only]", { dmgMult: 1.15, elements: ["Rust", "Electricity"]}]
+            ["datanightdownload",    "Data Theif Nightmarionne: Organic Download (+15% DMG) [Rust & Electricity Only]", { dmgMult: 1.15, elements: ["Rust", "Electricity"]}],
+            ["junkwarelec",          "Junkyard Warrior Happy Frog: Lord of the Scrapyard (+15% DMG) [Rust & Electricity Only]", { dmgMult: 1.15, elements: ["Rust", "Electricity"]}]
           );
         }
         

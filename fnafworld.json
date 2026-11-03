@@ -1395,7 +1395,7 @@
       "name": "Sparky",
       "number": 49,
       "update": "Update 2",
-      "world": "Deep-Metal Mine",
+      "world": "Blacktomb Yard",
       "game": "Five Nights at Freddy's",
       "health": 345,
       "attacks": [
@@ -2499,6 +2499,34 @@
       "credits": {
         "model": ["thebananaman20"],
         "animation": ["xtrasprinkles", "Thevendortrio"]
+      }
+    },
+    {
+      "id": "raging-flame",
+      "name": "Raging Flame",
+      "update": "Update 3",
+      "worlds": [
+        "Halloween Backstage"
+      ],
+      "health": null,
+      "attack": null,
+      "about": "",
+      "image": "https://fnaf-world.fntduserguide.com/foes/candy-corn.webp"
+    },
+    {
+      "id": "pumpkin-scratch",
+      "name": "Pumpkin Scratch",
+      "update": "Update 3",
+      "worlds": [
+        "Halloween Backstage"
+      ],
+      "health": null,
+      "attack": null,
+      "about": "",
+      "image": "https://fnaf-world.fntduserguide.com/foes/pumpkin-scratch.webp",
+      "credits": {
+        "model": ["thebananaman20"],
+        "animation": ["deevee_dee"]
       }
     }
   ],

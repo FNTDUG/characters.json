@@ -126,6 +126,14 @@
             "model": ["deevee_dee", "bennetjl0202"],
             "animation": ["deevee_dee"]
           }
+        },
+        {
+          "name": "Shamrock Freddy",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/shamrock-freddy-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/shamrock-freddy-attack.webp",
+          "credits": {
+            "animation": ["deevee_dee"]
+          }
         }
       ]
     },
@@ -1167,9 +1175,9 @@
       "game": "Five Nights at Freddy's",
       "health": 345,
       "attacks": [
-        "Bite 2",
-        "Unscrew 2",
-        "Rainy Day 2"
+        "Toxic Bite 2",
+        "Party Perks",
+        "Bark"
       ],
       "quote": "Try tellin' someone I exist! They won't Believe ya!",
       "unlock": "Obtainable in Deep Metal Mines.",
@@ -1205,6 +1213,30 @@
       "credits": {
         "model": ["bennetjl0202"],
         "animation": ["_adamm_"]
+      }
+    },
+    {
+      "id": "phantom-bonnie",
+      "name": "Phantom Bonnie",
+      "number": 52,
+      "update": "Update 3",
+      "world": "Lilygear Lake",
+      "game": "",
+      "health": null,
+      "attacks": [
+        "Crash Jam",
+        "Rainy Day",
+        "Waterhose"
+      ],
+      "quote": "",
+      "unlock": "",
+      "about": "",
+      "tips": "",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/phantom-bonnie.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/phantom-bonnie.webp",
+      "credits": {
+        "model": ["bennetjl0202"],
+        "animation": ["deevee_dee"]
       }
     }
   ],
@@ -2370,6 +2402,14 @@
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/balloons-2.webp"
     },
+    "Bark": {
+      "color": "White",
+      "hex": "#f4f4f4",
+      "type": "Buff",
+      "description": "",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/bark.webp"
+    },
     "Bash Jam": {
       "color": "Red",
       "hex": "#ff4d4d",
@@ -2425,6 +2465,14 @@
       "description": "Calls for a storm of comets.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/cosmic-song.webp"
+    },
+    "Crash Jam": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "Damage",
+      "description": "",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/crash-jam.webp"
     },
     "Cupcake": {
       "color": "Pink",
@@ -2657,6 +2705,14 @@
       "description": "Low damage, plus some healing.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/party-favors.webp"
+    },
+    "Party Perks": {
+      "color": "Pink",
+      "hex": "#ff6fb5",
+      "type": "Heal",
+      "description": "",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/party-perks.webp"
     },
     "Pizza Wheel": {
       "color": "Red",

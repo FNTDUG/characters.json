@@ -891,7 +891,18 @@
       "about": "Adventure RWQFSFASXC, or RWQFSFASXC as named in-game, is an unlockable character in Pinwheel Circus that originates from Five Nights at Freddy's 2.",
       "tips": "RWQFSFASXC is one of the best characters, having the best move in the game in the form of Gift Boxes, along with Haunting being the best Stalling in the game. Easily can become a permanent Party Member.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/rwqfsfasxc.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/rwqfsfasxc.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/rwqfsfasxc.webp",
+      "skins": [
+        {
+          "name": "8-Bit Shadow Bonnie",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-shadow-bonnie-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-shadow-bonnie-attack.webp",
+          "credits": {
+            "model": ["lzocks"],
+            "animation": ["lzocks"]
+          }
+        }
+      ]
     },
     {
       "id": "crying-child",
@@ -911,7 +922,18 @@
       "about": "Adventure Crying Child, or Crying Child as named in-game, is an unlockable character in Pinwheel Circus that originates from Five Nights at Freddy's 2.",
       "tips": "A pure support having Gift Boxes and two buffing moves, not much is needed to be said for this little guy.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/crying-child.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/crying-child.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/crying-child.webp",
+      "skins": [
+        {
+          "name": "8-Bit Crying Child",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-4-crying-child-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-4-crying-child-attack.webp",
+          "credits": {
+            "model": ["lzocks"],
+            "animation": ["lzocks"]
+          }
+        }
+      ]
     },
     {
       "id": "funtime-foxy",
@@ -1031,7 +1053,27 @@
       "about": "Spring Bonnie is an unlockable character found in Pinwheel Funhouse. They are based on the golden rabbit from the Five Nights at Freddy's 3 and 4 minigames.",
       "tips": "Really good Character right here. Best healing move in the game and has two of the best damaging moves in the game. Getting them is always a treat as they're the rarest!.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/spring-bonnie.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/spring-bonnie.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/spring-bonnie.webp",
+      "skins": [
+        {
+          "name": "8-Bit Spring Bonnie",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-spring-bonnie-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-spring-bonnie-attack.webp",
+          "credits": {
+            "model": ["lzocks"],
+            "animation": ["lzocks"]
+          }
+        },
+        {
+          "name": "8-Bit Spring Bonnie (Alt)",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-spring-bonnie-skin-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-spring-bonnie-skin-attack.webp",
+          "credits": {
+            "model": ["lzocks"],
+            "animation": ["lzocks"]
+          }
+        }
+      ]
     },
     {
       "id": "jack-o-bonnie",

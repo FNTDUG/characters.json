@@ -26554,6 +26554,12 @@
       "range": 35
     }
   ],
+   "skins": [
+      {
+        "name": "Black Magic Black Hole Foxy",
+        "rarity": "exclusive"
+      }
+    ],
   "passives": [
     {
       "title": "Passing The Event Horizon",
@@ -30547,13 +30553,14 @@
   }
 },
 {
-  "name": "Piñata Freddy",
+  "name": "Pinata Freddy",
   "imgNormal": "https://units.fntduserguide.com/units/pi-ata-freddy.png",
   "imgShiny": "https://units.fntduserguide.com/units/pi-ata-freddy-shiny.png",
   "rarity": "secret",
   "typeMain": "Midgame-Endgame",
   "typeTags": [
-    "Anniversary"
+    "Anniversary",
+    "Freddy"
   ],
   "element": "Light",
   "placements": 2,

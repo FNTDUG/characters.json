@@ -1451,6 +1451,18 @@
         if (ELEMENT_PARTS[e]) return ELEMENT_PARTS[e];
         return e.split("/").map(function (p) { return p.trim(); }).filter(Boolean);
       }
+      function unitHasTag(unit, tag) {
+        var t = String(tag == null ? "" : tag).trim().toLowerCase();
+        if (!t || !unit) return false;
+        var tags = Array.isArray(unit.typeTags) ? unit.typeTags.slice() : [];
+        if (unit.modes && typeof unit.modes === "object") {
+          for (var mk in unit.modes) {
+            var md = unit.modes[mk];
+            if (md && Array.isArray(md.typeTags)) tags = tags.concat(md.typeTags);
+          }
+        }
+        return tags.some(function (x) { return String(x == null ? "" : x).trim().toLowerCase() === t; });
+      }
       function unitHasElement(unit, base) {
         var b = String(base == null ? "" : base).trim().toLowerCase();
         if (!b) return false;
@@ -1776,6 +1788,10 @@
         }
         if (meta.unitNames) {
           if (meta.unitNames.indexOf(unit.name) === -1) return null;
+        }
+        if (meta.tags) {
+          var _tgOk = meta.tags.some(function (tg) { return unitHasTag(unit, tg); });
+          if (!_tgOk) return null;
         }
         
         if (meta.uptime === false) {
@@ -4882,21 +4898,21 @@
           );
         }
 
-        if (["Daydream Rockstar Foxy", "Bedtime Psychic Fredbear", "Nightterror Rockstar Bonnie"].indexOf(unit.name) !== -1) {
+        if (unitHasTag(unit, "Dreamer")) {
           BOOST_OPTIONS.push(
             ["bedtime_dreamer", "Bedtime Psychic Fredbear: As the Moon Shifts Max Boost (+30% DMG & +20% RNG) [Dreamer Units only]",
-              { dmgMult: 1.30, rngMult: 1.20, unitNames: ["Daydream Rockstar Foxy", "Bedtime Psychic Fredbear", "Nightterror Rockstar Bonnie"] }],
+              { dmgMult: 1.30, rngMult: 1.20, tags: ["Dreamer"] }],
             ["daydream_dreamer", "Daydream Rockstar Foxy: Sunlit Mornings (+20% DMG & +30% Crit Rate) [Dreamer Units only]",
-              { dmgMult: 1.20, critRateAdd: 0.30, unitNames: ["Daydream Rockstar Foxy", "Bedtime Psychic Fredbear", "Nightterror Rockstar Bonnie"] }],
+              { dmgMult: 1.20, critRateAdd: 0.30, tags: ["Dreamer"] }],
             ["terror_dreamer", "Nightterror Rockstar Bonnie: By My All Seeing Eye (+50% DMG & +20% RNG) [Dreamer Units only]",
-              { dmgMult: 1.50, rngMult: 1.20, stackKey: "terrordreamStack", maxStacks: 4, unitNames: ["Daydream Rockstar Foxy", "Bedtime Psychic Fredbear", "Nightterror Rockstar Bonnie"] }]
+              { dmgMult: 1.50, rngMult: 1.20, stackKey: "terrordreamStack", maxStacks: 4, tags: ["Dreamer"] }]
           );
         }
 
-        if (["Astral Bonnie", "Black Hole Foxy"].indexOf(unit.name) !== -1) {
+        if (unitHasTag(unit, "Astral")) {
           BOOST_OPTIONS.push(
             ["astral_hole", "Black Hole Foxy: Cosmic Calamity (+25% DMG) [Astral Units only]",
-              { dmgMult: 1.25, unitNames: ["Astral Bonnie", "Black Hole Foxy"] }]
+              { dmgMult: 1.25, tags: ["Astral"] }]
           );
         }
 

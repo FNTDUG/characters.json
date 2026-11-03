@@ -2628,13 +2628,13 @@
               dps.maxedBreakdown.forEach(function(item) {
                 if (item.isStun) return;
                 if (unit.basenodps && item.label === "Base") return;
-                var _hasDps     = item.value > 0.05;
+                var _hasDps     = Math.abs(item.value) > 0.05;
                 var _hasRngItem = _rngByLabel[item.label] != null;
                 var _hasCrit    = _critByLabel[item.label] != null;
                 var _hasCritDmg = _critDmgByLabel[item.label] != null;
                 var _hasStun    = _stunByLabel[item.label] != null;
                 var _parts = [];
-                if (_hasDps)     _parts.push("<span style=\"color:#ff8c00\">DPS:&nbsp;" + item.value.toFixed(1) + "</span>");
+                if (_hasDps)     _parts.push("<span style=\"color:" + (item.value < 0 ? "#ff4444" : "#ff8c00") + "\">DPS:&nbsp;" + item.value.toFixed(1) + "</span>");
                 if (_hasRngItem) {
                   var _rngVal = _rngByLabel[item.label];
                   _parts.push("<span style=\"color:cyan\">RNG:&nbsp;" + (_rngVal >= 0 ? "+" : "") + _rngVal.toFixed(1) + "</span>");
@@ -4146,12 +4146,12 @@
               var cumTotal = totFromParts(rCum.attackDps, pCum);
               var delta    = cumTotal - prevTotal;
               var hasRngOnly = delta <= 0.05 && typeof bp.rngmult === "number" && bp.rngmult !== 1;
-              if (delta > 0.05 || hasRngOnly) {
+              if (Math.abs(delta) > 0.05 || hasRngOnly) {
                 var lbl = bp.label || "Self Buff";
                 var ut = selfBoostUptime(bp, _effAcd, _extCdMult);
                 if (ut < 0.999) lbl += " (" + Math.round(ut * 100) + "%)";
                 var _bpCs = _critSteps[bi];
-                bItems.push({ label: lbl, value: delta > 0.05 ? delta : 0, critRate: _bpCs ? _bpCs.critRate : null, critDmg: _bpCs ? _bpCs.critDmg : null });
+                bItems.push({ label: lbl, value: Math.abs(delta) > 0.05 ? delta : 0, critRate: _bpCs ? _bpCs.critRate : null, critDmg: _bpCs ? _bpCs.critDmg : null });
                 
                 var _sbHasNth = bp.everynthattack > 0 && isFinite(_effAcd) && _effAcd > 0;
                 var _sbHasTiming = bp.duration > 0 && (bp.cd > 0 || _sbHasNth);

@@ -1406,7 +1406,7 @@
       "quote": "Try tellin' someone I exist! They won't Believe ya!",
       "unlock": "Obtainable in Deep Metal Mines.",
       "about": "Pooch.",
-      "tips": "Exactly like Nightmare Bonnie, an alright Character all-around but easily replaceable.",
+      "tips": "Overall a nice addition to the party! A DPS/Support mix of a character with a nice buff. Wont stay in your party for long due to there being better Healing/Buffers, but can stay on your party for a good chunk of time!",
       "idle": "https://fnaf-world.fntduserguide.com/idle/elsparko.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/elsparko.webp",
       "credits": {
@@ -1457,16 +1457,16 @@
       "update": "Update 3",
       "world": "Lilygear Lake",
       "game": "",
-      "health": null,
+      "health": 360,
       "attacks": [
         "Crash Jam",
         "Rainy Day",
         "Waterhose"
       ],
-      "quote": "",
-      "unlock": "",
+      "quote": "Who ate this Watermelon!?",
+      "unlock": "Obtainable in Lilygear Lake.",
       "about": "",
-      "tips": "",
+      "tips": "Overall just... meh. while gotten pretty close to mid-game, he has the same base moves of other Phantoms, with his only perk over them being his HIGH base HP. Wont stay in your Party late-game but may be useful if you're lacking Damage before obtaining Find: Characters.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/phantom-bonnie.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/phantom-bonnie.webp",
       "credits": {

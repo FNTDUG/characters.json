@@ -30314,90 +30314,90 @@
     {
       "level": 1,
       "cost": 10100,
-      "damage": 0,
+      "damage": 105,
       "type": "Line",
-      "cd": 0,
-      "range": 0
+      "cd": 2,
+      "range": 21
     },
     {
       "level": 2,
       "cost": 4040,
-      "damage": 0,
+      "damage": 130,
       "type": "Line",
-      "cd": 0,
-      "range": 0
+      "cd": 2,
+      "range": 21
     },
     {
       "level": 3,
       "cost": 5500,
-      "damage": 0,
+      "damage": 150,
       "type": "Line",
-      "cd": 0,
-      "range": 0
+      "cd": 2,
+      "range": 22
     },
     {
       "level": 4,
       "cost": 7000,
-      "damage": 0,
+      "damage": 200,
       "type": "Line",
-      "cd": 0,
-      "range": 0
+      "cd": 2,
+      "range": 22
     },
     {
       "level": 5,
       "cost": 9000,
-      "damage": 0,
+      "damage": 475,
       "type": "Line",
-      "cd": 0,
-      "range": 0
+      "cd": 3.5,
+      "range": 26
     },
     {
       "level": 6,
       "cost": 14000,
-      "damage": 0,
+      "damage": 600,
       "type": "Circle",
-      "cd": 0,
-      "range": 0
+      "cd": 3.5,
+      "range": 26
     },
     {
       "level": 7,
       "cost": 18000,
-      "damage": 0,
+      "damage": 750,
       "type": "Circle",
-      "cd": 0,
-      "range": 0
+      "cd": 3.5,
+      "range": 28
     },
     {
       "level": 8,
       "cost": 22500,
-      "damage": 0,
+      "damage": 900,
       "type": "Circle",
-      "cd": 0,
-      "range": 0
+      "cd": 3.8,
+      "range": 28
     },
     {
       "level": 9,
       "cost": 27000,
-      "damage": 0,
+      "damage": 1050,
       "type": "Cone 75°",
-      "cd": 0,
-      "range": 0
+      "cd": 3.8,
+      "range": 31
     },
     {
       "level": 10,
       "cost": 32000,
-      "damage": 0,
+      "damage": 1300,
       "type": "Cone 75°",
-      "cd": 0,
-      "range": 0
+      "cd": 4,
+      "range": 33
     },
     {
       "level": 11,
       "cost": 40400,
-      "damage": 0,
+      "damage": 1700,
       "type": "Cone 75°",
-      "cd": 0,
-      "range":0
+      "cd": 4,
+      "range": 36
     }
   ],
   "passives": [
@@ -30449,74 +30449,83 @@
   "placements": 1,
   "attackType": "Cone 90°",
   "obtainment": "1 Year Anniversary Present (0.5%)",
+  "balanceChanges": [
+      {
+        "date": "11/3/26",
+        "changes": [
+          { "type": "buff",   "text": "• DMG increased from 3000 to 3600" },
+          { "type": "buff",   "text": "• [Grande Fête] anniversary tag boost increased from 25% RNG & +20% Crit Rate tp 50% RNG & +30% Crit Rate" }
+        ]
+      }
+    ],
   "levels": [
     {
       "level": 1,
       "cost": 10000,
-      "damage": 750,
+      "damage": 900,
       "cd": 3,
       "range": 18
     },
     {
       "level": 2,
       "cost": 5000,
-      "damage": 950,
+      "damage": 1150,
       "cd": 3,
       "range": 18
     },
     {
       "level": 3,
       "cost": 6000,
-      "damage": 1150,
+      "damage": 1450,
       "cd": 2.8,
       "range": 20
     },
     {
       "level": 4,
       "cost": 7250,
-      "damage": 1400,
+      "damage": 1700,
       "cd": 2.8,
       "range": 20
     },
     {
       "level": 5,
       "cost": 8500,
-      "damage": 1600,
+      "damage": 1900,
       "cd": 2.5,
       "range": 22
     },
     {
       "level": 6,
       "cost": 10000,
-      "damage": 1850,
+      "damage": 2100,
       "cd": 2.5,
       "range": 23
     },
     {
       "level": 7,
       "cost": 12000,
-      "damage": 2100,
+      "damage": 2475,
       "cd": 2.5,
       "range": 25
     },
     {
       "level": 8,
       "cost": 15000,
-      "damage": 2400,
+      "damage": 2900,
       "cd": 2.5,
       "range": 27
     },
     {
       "level": 9,
       "cost": 18500,
-      "damage": 2700,
+      "damage": 3250,
       "cd": 2.5,
       "range": 30
     },
     {
       "level": 10,
       "cost": 21000,
-      "damage": 3000,
+      "damage": 3600,
       "cd": 2.5,
       "range": 32
     }
@@ -30524,7 +30533,7 @@
   "passives": [
     {
       "title": "Grande Fête",
-      "text": "For every unique Anniversary tag unit in range increase Joyeux Anniversaire follow-up damage by 5%, up to +20%. When there are at least 2 Anniversary tag units on the team this unit's follow-ups apply Breakable, causing enemies to take +1 shield damage from all sources. This unit and Anniversary tag units receive 25% range and 20% critical rate"
+      "text": "For every unique Anniversary tag unit in range increase Joyeux Anniversaire follow-up damage by 5%, up to +20%. When there are at least 2 Anniversary tag units on the team this unit's follow-ups apply Breakable, causing enemies to take +1 shield damage from all sources. This unit and Anniversary tag units receive 50% range and 30% critical rate"
     },
     {
       "title": "Dancing in Rhythm",
@@ -30566,6 +30575,15 @@
   "placements": 2,
   "attackType": "Multi",
   "obtainment": "1 Year Anniversary Present (7%)",
+  "balanceChanges": [
+      {
+        "date": "11/3/26",
+        "changes": [
+          { "type": "buff",   "text": "• [Sugar Snatch] duration incrased from 20s to 45s" },
+          { "type": "buff",   "text": "• [Sugar Snatch] Crit DMG and Crit Rate buffs increased from 10% to 20%" }
+        ]
+      }
+    ],
   "levels": [
     {
       "level": 1,
@@ -30635,7 +30653,7 @@
   "passives": [
     {
       "title": "Sugar Snatch",
-      "text": "This unit generates Candy stacks. Gain 3-5 Candy when an enemy dies in range, gain 1 Candy per shield broken in range, generate 3 Candy per enemy hit with Take a Swing!. When reaching 50 Candy stacks, consume them to enter Sugar Rush for 20 seconds. Buff this unit's damage, range, critical rate, and critical damage by 10% and reduce this unit's cooldown by 10%. Reduce the Candy requirement by 5 per unique type of Anniversary tag unit in range"
+      "text": "This unit generates Candy stacks. Gain 3-5 Candy when an enemy dies in range, gain 1 Candy per shield broken in range, generate 3 Candy per enemy hit with Take a Swing!. When reaching 50 Candy stacks, consume them to enter Sugar Rush for 45 seconds. Buff this unit's damage and range by 10%, critical rate and critical damage by 20%, and reduce this unit's cooldown by 10%. Reduce the Candy requirement by 5 per unique type of Anniversary tag unit in range"
     },
     {
       "title": "Take a Swing!",
@@ -30648,10 +30666,10 @@
         "label": "Suger Snatch",
         "dmgmult": 1.1,
         "rngmult": 1.1,
-        "critc": 0.15,
-        "crid": 2.1,
+        "critc": 0.25,
+        "crid": 2.2,
         "cdmult": 0.90,
-        "duration": 20,
+        "duration": 45,
         "cd": 40,
         "uptime": false
       }
@@ -30756,6 +30774,14 @@
   "placements": 1,
   "attackType": "Multi",
   "obtainment": "Rusty Tadpole Happy Frog Evolution",
+  "balanceChanges": [
+      {
+        "date": "11/3/26",
+        "changes": [
+          { "type": "Buff",   "text": "• [Lord of the Scrapyard] DMG boost incrased from 2.5% to 4% per upgrade" }
+        ]
+      }
+    ],
   "levels": [
     {
       "level": 1,
@@ -30837,7 +30863,7 @@
     },
     {
       "title": "Lord of the Scrapyard",
-      "text": "On attack apply 50% bleed over 5 seconds and apply 15% Rust and Electric wither. Increase the wither by 1% per DOT stack currently on the enemy, up to 25%. When this unit is upgraded, upgrade another Rust unit in range. If there are 6 Rust units on the team, upgrade 2 Rust units instead. Buff nearby Rust units by 2.5% damage per upgrade"
+      "text": "On attack apply 50% bleed over 5 seconds and apply 15% Rust and Electric wither. Increase the wither by 1% per DOT stack currently on the enemy, up to 25%. When this unit is upgraded, upgrade another Rust unit in range. If there are 6 Rust units on the team, upgrade 2 Rust units instead. Buff nearby Rust units by 4% damage per upgrade"
     }
   ],
   "passiveDamage":{
@@ -30851,7 +30877,7 @@
     ],
     "dots":[
       {
-        "label": "Lord of the Scrapyard",
+        "label": "Lord of the Scrapyard (dot)",
         "pctofdamage": 0.5,
         "durationsec": 5
       },
@@ -30861,6 +30887,12 @@
         "durationsec": 10,
         "cd": 6.3,
         "cdboostable": true
+      }
+    ],
+    "selfboost":[
+      {
+        "label": "Lord of the Scrapyard (boost)",
+        "dmgmult": 1.32
       }
     ]
   }
@@ -31056,11 +31088,20 @@
   "placements": 1,
   "attackType": "Multi",
   "obtainment": "ScorchJunk Nightmare Endo Evolution",
+  "balanceChanges": [
+      {
+        "date": "11/3/26",
+        "changes": [
+          { "type": "buff",   "text": "• Damage increased from 2000 to 2200" },
+          { "type": "buff",   "text": "• [Scrap Shot] duration increased from 15s to 30s" }
+        ]
+      }
+    ],
   "levels": [
     {
       "level": 1,
       "cost": 6500,
-      "damage": 200,
+      "damage": 225,
       "type": "Line",
       "cd": 2,
       "range": 14
@@ -31068,7 +31109,7 @@
     {
       "level": 2,
       "cost": 4000,
-      "damage": 275,
+      "damage": 315,
       "type": "Line",
       "cd": 2,
       "range": 16
@@ -31076,7 +31117,7 @@
     {
       "level": 3,
       "cost": 5500,
-      "damage": 500,
+      "damage": 550,
       "type": "Line",
       "cd": 2.5,
       "range": 23
@@ -31084,7 +31125,7 @@
     {
       "level": 4,
       "cost": 7500,
-      "damage": 650,
+      "damage": 710,
       "type": "Cone 45°",
       "cd": 2.5,
       "range": 24
@@ -31092,7 +31133,7 @@
     {
       "level": 5,
       "cost": 9000,
-      "damage": 850,
+      "damage": 950,
       "type": "Cone 45°",
       "cd": 2.5,
       "range": 25
@@ -31100,7 +31141,7 @@
     {
       "level": 6,
       "cost": 11000,
-      "damage": 1275,
+      "damage": 1400,
       "type": "Cone 45°",
       "cd": 3,
       "range": 29
@@ -31108,7 +31149,7 @@
     {
       "level": 7,
       "cost": 12750,
-      "damage": 1450,
+      "damage": 1600,
       "type": "Cone 120°",
       "cd": 3,
       "range": 30
@@ -31116,7 +31157,7 @@
     {
       "level": 8,
       "cost": 15500,
-      "damage": 1750,
+      "damage": 1900,
       "type": "Cone 120°",
       "cd": 3.2,
       "range": 32
@@ -31124,7 +31165,7 @@
     {
       "level": 9,
       "cost": 18500,
-      "damage": 2000,
+      "damage": 2200,
       "type": "Cone 120°",
       "cd": 3.2,
       "range": 32
@@ -31138,7 +31179,7 @@
     },
     {
       "title": "Scrap Shot",
-      "text": "Consume all Scrapnel stacks and deal 20% burn per stack in a Cone 150 AOE. For 15 seconds, attacks become Cone 30 and apply an additional 2.5% bleed and burn per consumed stack. Gain 20% range for 30 seconds. (Upgrade 0+, Global CD: 30s).",
+      "text": "Consume all Scrapnel stacks and deal 20% burn per stack in a Cone 150 AOE. For 30 seconds, attacks become Cone 30 and apply an additional 2.5% bleed and burn per consumed stack. Gain 20% range for 30 seconds. (Upgrade 0+, Global CD: 30s).",
       "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-19-21-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
     },
     {

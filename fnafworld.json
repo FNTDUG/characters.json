@@ -1451,7 +1451,8 @@
           "idle": "https://fnaf-world.fntduserguide.com/skins/withered-purple-guy-idle.webp",
           "attack": "https://fnaf-world.fntduserguide.com/skins/withered-purple-guy-attack.webp",
           "credits": {
-            "animation": ["_adamm_"]
+          "model": ["bennetjl0202"],  
+          "animation": ["_adamm_"]
           }
         }
       ],

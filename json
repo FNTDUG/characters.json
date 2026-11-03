@@ -21490,6 +21490,14 @@
   "placements": 1,
   "attackType": "Circle",
   "obtainment": "Overlord Scott Evolution",
+  "balanceChanges": [
+      {
+        "date": "11/1/26",
+        "changes": [
+          { "type": "nerf",   "text": "• Ability Changed from Local CD to Global CD" }
+        ]
+      }
+    ],
   "voicelines": [
       {
         "title": "Placement",
@@ -21579,7 +21587,7 @@
   "passives": [
     {
       "title": "Creation Arc Galactic",
-      "text": "Detonate a supernova, dealing 800% damage to all enemies, applying 100% Burn for 15s, 25% Slow for 30s, and 25% Wither for 10s. (Upgrade 0+, Local CD: 120s).",
+      "text": "Detonate a supernova, dealing 800% damage to all enemies, applying 100% Burn for 15s, 25% Slow for 30s, and 25% Wither for 10s. (Upgrade 0+, Global CD: 120s).",
       "activeIcon": "https://tr.rbxcdn.com/180DAY-e952fe06a252044745306c1e311a17a5/420/420/Image/Png/noFilter"
     },
     {
@@ -23395,6 +23403,14 @@
   "placements": 1,
   "attackType": "Circle",
   "obtainment": "Quest Shop",
+  "balanceChanges": [
+      {
+        "date": "11/1/26",
+        "changes": [
+          { "type": "nerf",   "text": "• Jake Mode Crit DMG and Crit Rate Boosts reduced from 20% to 10%" }
+        ]
+      }
+    ],
 
 "modes": {
   "jake": {
@@ -23436,7 +23452,7 @@
   "passives": [
     {
       "title": "Are You Really in Control?",
-      "text": "On placement, choose between Jake Mode and Andrew Mode. Jake mode cannot attack. Remnant is gained from enemies killed in this unit's range. (1 stack: 5 enemies. 2 stacks: 25 enemies. 3 stacks: 75 enemies). <br> Jake Mode: <br>• 1 stack: Units in range gain +15% Damage, +10% Range, and -5% CD. <br> • 2 stacks: Also gain +10% crit rate and +10% crit damage <br>• 3 stacks: Units in range gain +15% Damage, +25% Range, -5% CD, +20% crit rate, and +20% crit damage."
+      "text": "On placement, choose between Jake Mode and Andrew Mode. Jake mode cannot attack. Remnant is gained from enemies killed in this unit's range. (1 stack: 5 enemies. 2 stacks: 25 enemies. 3 stacks: 75 enemies). <br> Jake Mode: <br>• 1 stack: Units in range gain +15% Damage, +10% Range, and -5% CD. <br> • 2 stacks: Also gain +10% crit rate and +10% crit damage <br>• 3 stacks: Units in range gain +15% Damage, +25% Range, -5% CD, +10% crit rate, and +10% crit damage."
     }
   ]
 },
@@ -28241,7 +28257,7 @@
   "passives": [
     {
       "title": "Caught in a Loop",
-      "text": "The 3 towers with the most DPS receive this units lanterns. These lanterns will increase Crit Rate by 10%, and Crit Damage by 30%."
+      "text": "The 3 towers with the most DPS receive this units lanterns. These lanterns will increase Crit Rate by 10% and Crit Damage by 30%."
     },
     {
       "title": "Fend off The Dark",
@@ -30410,6 +30426,751 @@
         "dmgmult": 1.5
       }
     ]
+  }
+},
+{
+  "name": "Celebration Cake Ballora",
+  "imgNormal": "https://units.fntduserguide.com/units/celebration-cake-ballora.png",
+  "imgShiny": "https://units.fntduserguide.com/units/celebration-cake-ballora-shiny.png",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Support",
+    "Wither",
+    "Anniversary"
+  ],
+  "element": "Light",
+  "placements": 1,
+  "attackType": "Cone 90°",
+  "obtainment": "1 Year Anniversary Present (0.5%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 10000,
+      "damage": 750,
+      "cd": 3,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 5000,
+      "damage": 950,
+      "cd": 3,
+      "range": 18
+    },
+    {
+      "level": 3,
+      "cost": 6000,
+      "damage": 1150,
+      "cd": 2.8,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 7250,
+      "damage": 1400,
+      "cd": 2.8,
+      "range": 20
+    },
+    {
+      "level": 5,
+      "cost": 8500,
+      "damage": 1600,
+      "cd": 2.5,
+      "range": 22
+    },
+    {
+      "level": 6,
+      "cost": 10000,
+      "damage": 1850,
+      "cd": 2.5,
+      "range": 23
+    },
+    {
+      "level": 7,
+      "cost": 12000,
+      "damage": 2100,
+      "cd": 2.5,
+      "range": 25
+    },
+    {
+      "level": 8,
+      "cost": 15000,
+      "damage": 2400,
+      "cd": 2.5,
+      "range": 27
+    },
+    {
+      "level": 9,
+      "cost": 18500,
+      "damage": 2700,
+      "cd": 2.5,
+      "range": 30
+    },
+    {
+      "level": 10,
+      "cost": 21000,
+      "damage": 3000,
+      "cd": 2.5,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "Grande Fête",
+      "text": "For every unique Anniversary tag unit in range increase Joyeux Anniversaire follow-up damage by 5%, up to +20%. When there are at least 2 Anniversary tag units on the team this unit's follow-ups apply Breakable, causing enemies to take +1 shield damage from all sources. This unit and Anniversary tag units receive 25% range and 20% critical rate"
+    },
+    {
+      "title": "Dancing in Rhythm",
+      "text": "This unit's attack type rotates every attack: <br>Cone 90 - 120% damage<br>Line - 100% damage<br>Cone 180 - 80% damage"
+    },
+    {
+      "title": "Joyeux Anniversaire",
+      "text": "Unlocks after 100 enemies are defeated in range or when an Anniversary tag unit is in range. Whenever an enemy is defeated in range perform a Full AOE follow-up for 33% damage and stun nearby units for 0.2 seconds (12 second cooldown). Enemies in range receive 25% Light Wither."
+    }
+  ],
+  "passiveDamage":{
+    "selfboost":[
+      {
+        "label": "Joyeux Anniversaire (Wither)",
+        "dmgmult": 1.2
+      }
+    ],
+    "periodic":[
+      {
+        "label": "Joyeux Anniversaire (FUA)",
+        "pctofdamage": 0.33,
+        "cd": 12,
+        "cdboostable": false
+      }
+    ]
+  }
+},
+{
+  "name": "Piñata Freddy",
+  "imgNormal": "https://units.fntduserguide.com/units/pi-ata-freddy.png",
+  "imgShiny": "https://units.fntduserguide.com/units/pi-ata-freddy-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Midgame-Endgame",
+  "typeTags": [
+    "Anniversary"
+  ],
+  "element": "Light",
+  "placements": 2,
+  "attackType": "Multi",
+  "obtainment": "1 Year Anniversary Present (7%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 4000,
+      "damage": 250,
+      "type": "Circle",
+      "cd": 2,
+      "range": 18
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 300,
+      "type": "Circle",
+      "cd": 2,
+      "range": 20
+    },
+    {
+      "level": 3,
+      "cost": 4000,
+      "damage": 380,
+      "type": "Circle",
+      "cd": 2,
+      "range": 20
+    },
+    {
+      "level": 4,
+      "cost": 5250,
+      "damage": 875,
+      "type": "Circle",
+      "cd": 3.5,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 6750,
+      "damage": 950,
+      "type": "Cone 45°",
+      "cd": 3.5,
+      "range": 24
+    },
+    {
+      "level": 6,
+      "cost": 8500,
+      "damage": 1100,
+      "type": "Cone 45°",
+      "cd": 3.7,
+      "range": 26
+    },
+    {
+      "level": 7,
+      "cost": 10000,
+      "damage": 1300,
+      "type": "Cone 90°",
+      "cd": 4,
+      "range": 26
+    },
+    {
+      "level": 8,
+      "cost": 12250,
+      "damage": 1600,
+      "type": "Cone 90°",
+      "cd": 4,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Sugar Snatch",
+      "text": "This unit generates Candy stacks. Gain 3-5 Candy when an enemy dies in range, gain 1 Candy per shield broken in range, generate 3 Candy per enemy hit with Take a Swing!. When reaching 50 Candy stacks, consume them to enter Sugar Rush for 20 seconds. Buff this unit's damage, range, critical rate, and critical damage by 10% and reduce this unit's cooldown by 10%. Reduce the Candy requirement by 5 per unique type of Anniversary tag unit in range"
+    },
+    {
+      "title": "Take a Swing!",
+      "text": "This unit is immune to stuns.If this unit is attempted to be stunned follow up for 50% damage in a Full AOE with a guaranteed critical hit (10 second cooldown). Buff this follow-up by 10% damage per unique type of Anniversary tag unit in range"
+    }
+  ],
+  "passiveDamage":{
+    "selfboost":[
+      {
+        "label": "Suger Snatch",
+        "dmgmult": 1.1,
+        "rngmult": 1.1,
+        "critc": 0.15,
+        "crid": 2.1,
+        "cdmult": 0.90,
+        "duration": 20,
+        "cd": 40,
+        "uptime": false
+      }
+    ]
+  }
+},
+{
+  "name": "Party Sparkler Muffin",
+  "imgNormal": "https://units.fntduserguide.com/units/party-sparkler-muffin.png",
+  "imgShiny": "https://units.fntduserguide.com/units/party-sparkler-muffin-shiny.png",
+  "rarity": "epic",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Summon",
+    "Support",
+    "Anniversary"
+  ],
+  "element": "Fire/Light",
+  "placements": 2,
+  "attackType": "Line",
+  "obtainment": "1 Year Anniversary Present (75%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2000,
+      "damage": 200,
+      "cd": 5,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 3000,
+      "damage": 250,
+      "cd": 5,
+      "range": 22
+    },
+    {
+      "level": 3,
+      "cost": 4000,
+      "damage": 300,
+      "cd": 4.5,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 6250,
+      "damage": 425,
+      "cd": 4.5,
+      "range": 26
+    },
+    {
+      "level": 5,
+      "cost": 8500,
+      "damage": 475,
+      "cd": 4,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 10500,
+      "damage": 575,
+      "cd": 4,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Rollerskate Rink",
+      "text": "On this unit's cooldown summon a Muffin Friend to run down the track with 150% health. Buff summons based on additional Anniversary tag units on the team: <br> 1 unit - Increase summon health by 25%<br> 2 units - Increase summon health by 35%<br> 3 units - Increase summon health by 50%"
+    },
+    {
+      "title": "Party Time!",
+      "text": "Buff Anniversary tag units in range gain 15% damage and 5% critical rate. If Celebration Cake Ballora is in range gain an additional 15% damage and 15% critical damage"
+    }
+  ],
+  "passiveDamage":{
+    "summons": [
+      {
+        "label": "Muffin Friend",
+        "summonpctofdamage": 1.5,
+        "summoncd": 4,
+        "summoncdboostable": true
+      }
+    ]
+  }
+},
+{
+  "name": "Junkyard Warrior Happy Frog",
+  "imgNormal": "https://units.fntduserguide.com/units/junkyard-warrior-happy-frog.png",
+  "imgShiny": "https://units.fntduserguide.com/units/junkyard-warrior-happy-frog-shiny.png",
+  "rarity": "secret",
+  "typeMain": "Midgame-Endgame",
+  "typeTags": [
+    "Slow",
+    "Trap",
+    "Bleed",
+    "Wither",
+    "Support",
+    "Mediocre Melody"
+  ],
+  "element": "Rust",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "Rusty Tadpole Happy Frog Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 4000,
+      "damage": 300,
+      "type": "Circle",
+      "cd": 2.8,
+      "range": 22
+    },
+    {
+      "level": 2,
+      "cost": 7000,
+      "damage": 400,
+      "type": "Circle",
+      "cd": 2.8,
+      "range": 23
+    },
+    {
+      "level": 3,
+      "cost": 8000,
+      "damage": 500,
+      "type": "Circle",
+      "cd": 2.8,
+      "range": 24
+    },
+    {
+      "level": 4,
+      "cost": 9000,
+      "damage": 700,
+      "type": "Circle",
+      "cd": 3.2,
+      "range": 28
+    },
+    {
+      "level": 5,
+      "cost": 10500,
+      "damage": 800,
+      "type": "Circle",
+      "cd": 3.2,
+      "range": 28
+    },
+    {
+      "level": 6,
+      "cost": 12000,
+      "damage": 900,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 30
+    },
+    {
+      "level": 7,
+      "cost": 13500,
+      "damage": 1000,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 32
+    },
+    {
+      "level": 8,
+      "cost": 15000,
+      "damage": 1150,
+      "type": "Line",
+      "cd": 3.5,
+      "range": 35
+    },
+    {
+      "level": 9,
+      "cost": 17000,
+      "damage": 1500,
+      "type": "Line",
+      "cd": 4.2,
+      "range": 38
+    }
+  ],
+  "passives": [
+    {
+      "title": "Loose Wires",
+      "text": "Enemies in range are slowed by 20%. Every 1.5x this unit's cooldown place a Wire trap on the track, up to 5. When an enemy contacts a Wire trap apply 120% bleed over 10 seconds, slow by 10% for 10 seconds and chain to up to 3 other enemies. Chained enemies take 30% damage as bleed over 10 seconds and are slowed by 10% for 10 seconds. The trap slow does not stack, but contact resets its duration"
+    },
+    {
+      "title": "Lord of the Scrapyard",
+      "text": "On attack apply 50% bleed over 5 seconds and apply 15% Rust and Electric wither. Increase the wither by 1% per DOT stack currently on the enemy, up to 25%. When this unit is upgraded, upgrade another Rust unit in range. If there are 6 Rust units on the team, upgrade 2 Rust units instead. Buff nearby Rust units by 2.5% damage per upgrade"
+    }
+  ],
+  "passiveDamage":{
+    "summons":[
+      {
+        "label": "Wire Trap",
+        "summonpctofdamage": 1.2,
+        "summoncd": 6.3,
+        "summoncdboostable": true
+      }
+    ],
+    "dots":[
+      {
+        "label": "Lord of the Scrapyard",
+        "pctofdamage": 0.5,
+        "durationsec": 5
+      },
+      {
+        "label": "Chained",
+        "pctofdamage": 0.3,
+        "durationsec": 10,
+        "cd": 6.3,
+        "cdboostable": true
+      }
+    ]
+  }
+},
+{
+  "name": "Rusty Tadpole Happy Frog",
+  "imgNormal": "https://units.fntduserguide.com/units/rusty-tadpole-happy-frog.png",
+  "imgShiny": "https://units.fntduserguide.com/units/rusty-tadpole-happy-frog-shiny.png",
+  "rarity": "secret",
+  "typeMain": "",
+  "typeTags": [    
+    "Slow",
+    "Trap",
+    "Bleed",
+    "Mediocre Melody"
+  ],
+  "element": "Rust",
+  "placements": 1,
+  "attackType": "Circle",
+  "obtainment": "After Hours Night 2 (1%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 3000,
+      "damage": 175,
+      "cd": 2.5,
+      "range": 20
+    },
+    {
+      "level": 2,
+      "cost": 3500,
+      "damage": 250,
+      "cd": 2.5,
+      "range": 21
+    },
+    {
+      "level": 3,
+      "cost": 5000,
+      "damage": 350,
+      "cd": 2.5,
+      "range": 23
+    },
+    {
+      "level": 4,
+      "cost": 7000,
+      "damage": 500,
+      "cd": 2.75,
+      "range": 25
+    },
+    {
+      "level": 5,
+      "cost": 9500,
+      "damage": 700,
+      "cd": 2.75,
+      "range": 27
+    },
+    {
+      "level": 6,
+      "cost": 12000,
+      "damage": 1000,
+      "cd": 3,
+      "range": 30
+    }
+  ],
+  "passives": [
+    {
+      "title": "Loose Wires",
+      "text": "Enemies in range are slowed by 20%. Every 2x this unit's cooldown place a Wire trap on the track, up to 3. When an enemy contacts a Wire trap apply 100% bleed over 10 seconds, slow by 10% for 10 seconds, and chain to up to 3 other enemies. Chained enemies take 25% damage as bleed over 10 seconds and are slowed by 10% for 10 seconds. The trap slow does not stack, but contact resets its duration"
+    }
+  ],
+  "passiveDamage":{
+    "summons":[
+      {
+        "label": "Wire Trap",
+        "summonpctofdamage": 1,
+        "summoncd": 6,
+        "summoncdboostable": true
+      }
+    ],
+    "dots":[
+      {
+        "label": "Chained",
+        "pctofdamage": 0.25,
+        "durationsec": 10,
+        "cd": 6.3,
+        "cdboostable": true
+      }
+    ]
+  }
+},
+{
+  "name": "ScorchJunk Nightmare Endo",
+  "imgNormal": "https://units.fntduserguide.com/units/scorchjunk-nightmare-endo.png",
+  "imgShiny": "https://units.fntduserguide.com/units/scorchjunk-nightmare-endo-shiny.png",
+  "rarity": "nightmare",
+  "typeMain": "Midgame",
+  "typeTags": [
+    "Bleed",
+    "Burn",
+    "Slow",
+    "Nightmare"
+  ],
+  "element": "Fire/Rust",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "After Hours Night 3 (1%)",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 2500,
+      "damage": 200,
+      "type": "Line",
+      "cd": 2,
+      "range": 14
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 250,
+      "type": "Line",
+      "cd": 2,
+      "range": 16
+    },
+    {
+      "level": 3,
+      "cost": 5500,
+      "damage": 175,
+      "type": "Line",
+      "cd": 1.2,
+      "range": 21
+    },
+    {
+      "level": 4,
+      "cost": 7500,
+      "damage": 250,
+      "type": "Cone 45°",
+      "cd": 1.2,
+      "range": 23
+    },
+    {
+      "level": 5,
+      "cost": 9000,
+      "damage": 350,
+      "type": "Cone 45°",
+      "cd": 1.2,
+      "range": 25
+    },
+    {
+      "level": 6,
+      "cost": 11000,
+      "damage": 425,
+      "type": "Cone 45°",
+      "cd": 1,
+      "range": 27
+    },
+    {
+      "level": 7,
+      "cost": 14500,
+      "damage": 600,
+      "type": "Cone 45°",
+      "cd": 1,
+      "range": 28
+    }
+  ],
+  "passives": [
+    {
+      "title": "Hey! I Need Those Parts!",
+      "text": "On attack apply 30% bleed and 30% burn. Enemies are slowed by 3% per DOT stack on the enemy (max 15%)"
+    }
+  ],
+  "passiveDamage":{
+    "dots":[
+      {
+        "label": "Need Those Parts",
+        "pctofdamage": 0.6
+      }
+    ]
+  }
+},
+{
+  "name": "Scrap Incinerator Nightmare Endo",
+  "imgNormal": "https://units.fntduserguide.com/units/scrap-incinerator-nightmare-endo.png",
+  "imgShiny": "https://units.fntduserguide.com/units/scrap-incinerator-nightmare-endo-shiny.png",
+  "rarity": "nightmare",
+  "typeMain": "Endgame",
+  "typeTags": [
+    "Bleed",
+    "Burn",
+    "Slow",
+    "Nightmare"
+  ],
+  "element": "Fire/Rust",
+  "placements": 1,
+  "attackType": "Multi",
+  "obtainment": "ScorchJunk Nightmare Endo Evolution",
+  "levels": [
+    {
+      "level": 1,
+      "cost": 6500,
+      "damage": 200,
+      "type": "Line",
+      "cd": 2,
+      "range": 14
+    },
+    {
+      "level": 2,
+      "cost": 4000,
+      "damage": 275,
+      "type": "Line",
+      "cd": 2,
+      "range": 16
+    },
+    {
+      "level": 3,
+      "cost": 5500,
+      "damage": 500,
+      "type": "Line",
+      "cd": 2.5,
+      "range": 23
+    },
+    {
+      "level": 4,
+      "cost": 7500,
+      "damage": 650,
+      "type": "Cone 45°",
+      "cd": 2.5,
+      "range": 24
+    },
+    {
+      "level": 5,
+      "cost": 9000,
+      "damage": 850,
+      "type": "Cone 45°",
+      "cd": 2.5,
+      "range": 25
+    },
+    {
+      "level": 6,
+      "cost": 11000,
+      "damage": 1275,
+      "type": "Cone 45°",
+      "cd": 3,
+      "range": 29
+    },
+    {
+      "level": 7,
+      "cost": 12750,
+      "damage": 1450,
+      "type": "Cone 120°",
+      "cd": 3,
+      "range": 30
+    },
+    {
+      "level": 8,
+      "cost": 15500,
+      "damage": 1750,
+      "type": "Cone 120°",
+      "cd": 3.2,
+      "range": 32
+    },
+    {
+      "level": 9,
+      "cost": 18500,
+      "damage": 2000,
+      "type": "Cone 120°",
+      "cd": 3.2,
+      "range": 32
+    }
+  ],
+  "passives": [
+    {
+      "title": "The Badlands Drifter",
+      "text": "Relocate this unit. Upon placement, deal 100% damage and 200% burn over 8 seconds in range. This unit and units in range gain 20% damage and 20% critical rate for 30 seconds. (Upgrade 4+, Local CD: 120s).",
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-19-21-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
+    },
+    {
+      "title": "Scrap Shot",
+      "text": "Consume all Scrapnel stacks and deal 20% burn per stack in a Cone 150 AOE. For 15 seconds, attacks become Cone 30 and apply an additional 2.5% bleed and burn per consumed stack. Gain 20% range for 30 seconds. (Upgrade 0+, Global CD: 30s).",
+      "activeIcon": "https://primary.jwwb.nl/public/g/h/p/temp-xkzspsgvvlzquzykopjj/pasted-image-sun-mar-22-2026-21-19-21-gmt-0500-central-daylight-time-high.png?enable-io=true&crop=1%3A1&width=1920"
+    },
+    {
+      "title": "Hey! I Need Those Parts!",
+      "text": "On attack apply 50% bleed over 5 seconds and 50% burn over 5 seconds. Enemies are slowed by 3% per DOT stack on the enemy (max 15%). Deal +15% damage to enemies with wither applied"
+    },
+    {
+      "title": "Melted Slag",
+      "text": "This unit generates Scrapnel stacks (max 10). 10% chance to gain 1 stack when a burning enemy dies in range. Gain 1 stack at the end of a wave. Gain 10 stacks on every 10th wave"
+    }
+  ],
+  "passiveDamage":{
+    "selfboost":[
+      {
+        "label": "The Badlands Drifter (boost)",
+        "dmgmult": 1.2,
+        "critc": 0.25
+      }
+    ],
+    "periodic":[
+      {
+        "label": "The Badlands Drifter",
+        "pctofdamage": 3,
+        "cd": 120,
+        "cdboostable": false
+      },
+    {
+      "label": "Scrapnal Shot",
+      "pctofdamage": 0.2,
+      "cd": 30,
+      "cdboostable": false
+    }
+    ],
+    "dots":[
+    {
+      "label": "Need Those Parts",
+      "pctofdamage": 1
+    }
+  ]
   }
 }
 ]

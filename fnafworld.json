@@ -134,6 +134,32 @@
           "credits": {
             "animation": ["deevee_dee"]
           }
+        },
+        {
+          "name": "Joyful Freddy",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/joyful-freddy-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/joyful-freddy-attack.webp",
+          "credits": {
+            "animation": ["rhyspuffs_"]
+          }
+        },
+        {
+          "name": "8-Bit Freddy (FNaF 3)",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-freddy-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-freddy-attack.webp",
+          "credits": {
+            "model": ["lzocks"],
+            "animation": ["lzocks"]
+          }
+        },
+        {
+          "name": "8-Bit Freddy (FNaF 4)",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-4-freddy-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-4-freddy-attack.webp",
+          "credits": {
+            "model": ["lzocks"],
+            "animation": ["lzocks"]
+          }
         }
       ]
     },
@@ -155,7 +181,18 @@
       "about": "Adventure Bonnie, or Bonnie as named in-game, is an animatronic that first appeared in Five Nights at Freddy's, and is one of the eight starting characters in the game.",
       "tips": "Bonnie is one of (if not the) best starters. Happy Jam is a really good healing ability, especially at the start of the game, along with having Bash Jam for great AOE damage.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/bonnie.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/bonnie.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/bonnie.webp",
+      "skins": [
+        {
+          "name": "8-Bit Bonnie",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-bonnie-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-bonnie-attack.webp",
+          "credits": {
+            "model": ["lzocks"],
+            "animation": ["lzocks"]
+          }
+        }
+      ]
     },
     {
       "id": "chica",
@@ -175,7 +212,18 @@
       "about": "Adventure Chica, or Chica as named in-game, is an animatronic first appearing in Five Nights at Freddy's and one of eight starter characters in FNaF World.",
       "tips": "Chica is one of the worst Starters... mediocre healing with her only main upside being that she has Regen Song. Better to just replace her with another starter and use Bonnie as your main healer.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/chica.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/chica.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/chica.webp",
+      "skins": [
+        {
+          "name": "8-Bit Chica",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-chica-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-chica-attack.webp",
+          "credits": {
+            "model": ["lzocks"],
+            "animation": ["lzocks"]
+          }
+        }
+      ]
     },
     {
       "id": "foxy",
@@ -195,7 +243,16 @@
         "model": ["bennetjl0202"],
         "animation": ["_adamm_"]
       }
-      }
+      },
+        {
+          "name": "8-Bit Foxy",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-foxy-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-foxy-attack.webp",
+          "credits": {
+            "model": ["lzocks"],
+            "animation": ["lzocks"]
+          }
+        }
       ],
       "attacks": [
         "Hook",
@@ -934,7 +991,27 @@
       "about": "Fredbear is an unlockable character and the guide who leads the player through FNaF World. He is found in Pinwheel Funhouse.",
       "tips": "Despite being the big man of FNAF World, he's not that good. Limited support in the form of slow healing, and doubling attacks, but other than that he's just.... bad.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/fredbear.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/fredbear.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/fredbear.webp",
+      "skins": [
+        {
+          "name": "8-Bit Fredbear (FNaF 3)",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-fredbear-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-fredbear-attack.webp",
+          "credits": {
+            "model": ["lzocks"],
+            "animation": ["lzocks"]
+          }
+        },
+        {
+          "name": "8-Bit Fredbear (FNaF 4)",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-4-fredbear-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-4-fredbear-attack.webp",
+          "credits": {
+            "model": ["lzocks"],
+            "animation": ["lzocks"]
+          }
+        }
+      ]
     },
     {
       "id": "spring-bonnie",
@@ -1027,7 +1104,18 @@
       "about": "Animdude is Scott Cawthon's own sprite from There Is No Pause Button!, and the final boss of FNaF World before he became playable.",
       "tips": "Very nice Character overall. Being made for DPS he has some of the best for that! 4th Wall is just a strong, heavy hitting move needed for the Chica's Magic Rainbow fight and Mega Virus being the best DoT in the game he can hold his place in your party.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/animdude.webp",
-      "attackAnimation": null
+      "attackAnimation": null,
+      "skins": [
+        {
+          "name": "8-Bit Animdude",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-world-scott-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-world-scott-attack.webp",
+          "credits": {
+            "model": ["lzocks"],
+            "animation": ["lzocks"]
+          }
+        }
+      ]
     },
     {
       "id": "mr-chipper",
@@ -1128,7 +1216,45 @@
       "about": "Adventure Purple Guy is a pixelated sprite based on his look in the Five Nights at Freddy's 3 minigames. He was added in Update 2 as one of the Halloween characters.",
       "tips": "The weakest out of the Halloween Characters. Speed song is usless if you're using Endless: Speed, and Hocus Pocus is very useless at this stage of the game. His only good move is Slasher, being able to deal an absurd amount of damage at a 10% chance. Funny enough he's still recommended against the Rainbow!",
       "idle": "https://fnaf-world.fntduserguide.com/idle/purple-guy.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/purple-guy.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/purple-guy.webp",
+      "skins": [
+        {
+          "name": "FNaF 3 Purple Guy",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-purple-guy-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-purple-guy-attack.webp",
+          "credits": {
+            "model": ["lzocks"],
+            "animation": ["lzocks"]
+          }
+        },
+        {
+          "name": "Pirate Purple Guy",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-pirate-purple-guy-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-pirate-purple-guy-attack.webp",
+          "credits": {
+            "model": ["lzocks"],
+            "animation": ["lzocks"]
+          }
+        },
+        {
+          "name": "Pumpkin Purple Guy",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-pumpkin-purple-guy-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-pumpkin-purple-guy-attack.webp",
+          "credits": {
+            "model": ["lzocks"],
+            "animation": ["lzocks"]
+          }
+        },
+        {
+          "name": "Wizard Purple Guy",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-wizard-purple-guy-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-wizard-purple-guy-attack.webp",
+          "credits": {
+            "model": ["lzocks"],
+            "animation": ["lzocks"]
+          }
+        }
+      ]
     },
     {
       "id": "nightmare-mangle",

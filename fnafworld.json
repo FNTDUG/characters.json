@@ -1445,6 +1445,16 @@
       "idle": "https://fnaf-world.fntduserguide.com/idle/withered-golden-freddy.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/withered-golden-freddy.webp",
       "overworld": "https://fnaf-world.fntduserguide.com/overworld/withered-golden-freddy.webp",
+      "skins": [
+        {
+          "name": "Withered Purple Guy",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/withered-purple-guy-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/withered-purple-guy-attack.webp",
+          "credits": {
+            "animation": ["_adamm_"]
+          }
+        }
+      ],
       "credits": {
         "model": ["bennetjl0202"],
         "animation": ["_adamm_"]

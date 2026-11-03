@@ -153,7 +153,7 @@
           }
         },
         {
-          "name": "8-Bit Freddy (FNaF 4)",
+          "name": "8-Bit Freddy",
           "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-4-freddy-idle.webp",
           "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-4-freddy-attack.webp",
           "credits": {
@@ -525,7 +525,18 @@
       "about": "Adventure Withered Chica, or Withered Chica as named in-game, is an unlockable character in Dusting Fields that originates from Five Nights at Freddy's 2.",
       "tips": "Shes bad, don't use her. Just use Toy Chica instead.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/withered-chica.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/withered-chica.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/withered-chica.webp",
+      "skins": [
+        {
+          "name": "Unwithered Chica",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/unwithered-chica-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/unwithered-chica-attack.webp",
+          "credits": {
+            "model": ["thebananaman20"],
+            "animation": ["deevee_dee"]
+          }
+        }
+      ]
     },
     {
       "id": "withered-freddy",
@@ -925,7 +936,7 @@
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/crying-child.webp",
       "skins": [
         {
-          "name": "8-Bit Crying Child",
+          "name": "FNAF 4 Crying Child",
           "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-4-crying-child-idle.webp",
           "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-4-crying-child-attack.webp",
           "credits": {
@@ -1025,7 +1036,7 @@
           }
         },
         {
-          "name": "8-Bit Fredbear (FNaF 4)",
+          "name": "8-Bit Fredbear",
           "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-4-fredbear-idle.webp",
           "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-4-fredbear-attack.webp",
           "credits": {
@@ -1197,7 +1208,18 @@
       "about": "Nightmare Balloon Boy first appeared in Five Nights at Freddy's 4: Halloween Edition, where he replaced Plushtrap. He was added to FNaF World in Update 2.",
       "tips": "NM BB is another one of those just alright Characters. Balloons 2 is just... well Balloons but a lot more, and Mega Bite isn't useful this late into the game, Bubble Breath though is NEEDED for the Geist Layer allowing him to still have a place in your team.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/nightmare-balloon-boy.webp",
-      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-balloon-boy.webp"
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmare-balloon-boy.webp",
+      "skins": [
+        {
+          "name": "Auraless Nightmare BB",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/auraless-nightmare-balloon-boy-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/auraless-nightmare-balloon-boy-attack.webp",
+          "credits": {
+            "model": ["bennetjl0202"],
+            "animation": ["xtrasprinkles"]
+          }
+        }
+      ]
     },
     {
       "id": "nightmarionne",
@@ -1218,7 +1240,18 @@
       "tips": "Prize ball 2 sucks... BUT 4th Wall and Bubble Breath make him a VERY important Character when fighting Chica's Magic Rainbow, almost being the core of your team. Plus, he's the easiest to unlock!.",
       "idle": "https://fnaf-world.fntduserguide.com/idle/nightmarionne.webp",
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/nightmarionne.webp",
-      "overworld": "https://fnaf-world.fntduserguide.com/overworld/nightmarionne.webp"
+      "overworld": "https://fnaf-world.fntduserguide.com/overworld/nightmarionne.webp",
+      "skins": [
+        {
+          "name": "Auraless Nightmarionne",
+          "idle": "https://fnaf-world.fntduserguide.com/skins/auraless-nightmarionne-idle.webp",
+          "attack": "https://fnaf-world.fntduserguide.com/skins/auraless-nightmarionne-attack.webp",
+          "credits": {
+            "model": ["bennetjl0202"],
+            "animation": ["xtrasprinkles"]
+          }
+        }
+      ]
     },
     {
       "id": "coffee",
@@ -1261,7 +1294,7 @@
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/purple-guy.webp",
       "skins": [
         {
-          "name": "FNaF 3 Purple Guy",
+          "name": "FNAF 3 Purple Guy",
           "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-purple-guy-idle.webp",
           "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-purple-guy-attack.webp",
           "credits": {
@@ -1270,7 +1303,7 @@
           }
         },
         {
-          "name": "Pirate Purple Guy",
+          "name": "Pirate Man",
           "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-pirate-purple-guy-idle.webp",
           "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-pirate-purple-guy-attack.webp",
           "credits": {
@@ -1279,7 +1312,7 @@
           }
         },
         {
-          "name": "Pumpkin Purple Guy",
+          "name": "Pumpkin Man",
           "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-pumpkin-purple-guy-idle.webp",
           "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-pumpkin-purple-guy-attack.webp",
           "credits": {
@@ -1288,7 +1321,7 @@
           }
         },
         {
-          "name": "Wizard Purple Guy",
+          "name": "Wizard Man",
           "idle": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-wizard-purple-guy-idle.webp",
           "attack": "https://fnaf-world.fntduserguide.com/skins/fnaf-3-wizard-purple-guy-attack.webp",
           "credits": {

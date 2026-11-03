@@ -305,15 +305,13 @@
 
 <script>
 var UPDATED_UNITS = [
-"Crow Keeper Foxy",
-"Mad Doctor Lolbit",
-"Pierrot Shadow Freddy",
-"Reanimated Twisted Wolf",
-"Ghoul Shadow Bonnie",
-"Trickster Bullies",
-"Sunshot Phantom Freddy",
-"Silent Ghost Toy Freddy",
-"Data Thief Nightmarionne"
+"ScorchJunk Nightmare Endo",
+"Celebration Cake Ballora",
+"Scrap Incinerator Nightmare Endo",
+"Party Sparkler Muffin",
+"Junkyard Warrior Happy Frog",
+"Rusty Tadpole Happy Frog",
+"Piñata Freddy"
 ];
 
 var UNITS_JSON_URL = 'https://raw.githubusercontent.com/FNTDUG/characters.json/refs/heads/main/json';

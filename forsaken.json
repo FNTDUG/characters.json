@@ -8401,5 +8401,628 @@
     }
    }
   }
- }
+ },
+ "comps": {
+  "slasher": {
+   "about": "Slasher excels at picking people off one by one, so having a team constructed of 2 Healers, 2 Supports, 1 Survivalist and 3 Sentinels is usually best against him.",
+   "team": {
+    "Healer": [
+     "elliot",
+     "helperbot"
+    ],
+    "Support": [
+     "builderman",
+     "dusekkar"
+    ],
+    "Survivalist": [
+     "veeronica"
+    ],
+    "Sentinel": [
+     "guest-1337",
+     "shedletsky",
+     "jane-doe"
+    ]
+   },
+   "tip": "Helperbot and Elliot need to cycle between their healing abilities unless no one is injured. Helperbot will rarely get the chance to use Inspire, so its AOE healing is its main ability here. Shedletsky should stun whenever he gets the chance, while Guest 1337 only stuns when the Killer is close enough, and Jane Doe only at 3 stacks. Veeronica should always be cranking generators to cut down the time and build up her battery in case she needs to survive Last Man Standing."
+  },
+  "c00lkidd": {
+   "about": "c00lkidd is similar to Slasher, but he can easily multi-hit with his heavy-hitting abilities. A team constructed of 2 Healers, 3 Supports and 3 Sentinels is usually best against him.",
+   "team": {
+    "Healer": [
+     "elliot",
+     "helperbot"
+    ],
+    "Support": [
+     "dusekkar",
+     "dusekkar",
+     {
+      "pick": [
+       "taph",
+       "builderman"
+      ],
+      "note": "Taph and Builderman are both strong against c00lkidd."
+     }
+    ],
+    "Sentinel": [
+     "shedletsky",
+     "guest-1337",
+     "jane-doe"
+    ]
+   },
+   "tip": "Play it the same as against Slasher, but Taph or Builderman should always have a Sentry or a Subspace Tripmine and Tripwire nest set up. The Helpless from Subspace Tripmine and the time wasted destroying well-placed Sentries can be detrimental to the Killer."
+  },
+  "1x1x1x1": {
+   "about": "1x1x1x1 is countered by 3 specific Survivors: Two Time, Shedletsky and Dusekkar. The best team comp against them is 1 Healer, 3 Supports, 1 Survivalist and 3 Sentinels.",
+   "team": {
+    "Healer": [
+     "helperbot"
+    ],
+    "Support": [
+     "dusekkar",
+     "taph",
+     "builderman"
+    ],
+    "Survivalist": [
+     "007n7"
+    ],
+    "Sentinel": [
+     "two-time",
+     "shedletsky",
+     "jane-doe"
+    ]
+   },
+   "tip": "Whenever 1x1x1x1 uses Mass Infection, Two Time and Shedletsky can stun them out of it, while Jane Doe builds up her stacks. Jane should only stun at 3 stacks unless the situation is dire."
+  },
+  "noli": {
+   "about": "Noli is countered mainly by Survivalists, so the best team comp against him is 2 Healers, 1 Support, 3 Survivalists and 2 Sentinels.",
+   "team": {
+    "Healer": [
+     "elliot",
+     "helperbot"
+    ],
+    "Support": [
+     "dusekkar"
+    ],
+    "Survivalist": [
+     "007n7",
+     "007n7",
+     "noob"
+    ],
+    "Sentinel": [
+     "guest-1337",
+     "jane-doe"
+    ]
+   },
+   "tip": "Jane Doe plays a little differently in this team. She needs to juggle building up stacks and applying Purified to people, with Dusekkar applying Resistance. If she has any stack at all on the Killer, she should stun."
+  },
+  "guest-666": {
+   "about": "Guest 666 is heavily hindered by Supports. Because of her Anti Heal, Healers are less efficient against her. The best team comp against her is 1 Healer, 3 Supports, 1 Survivalist and 3 Sentinels.",
+   "team": {
+    "Healer": [
+     "helperbot"
+    ],
+    "Support": [
+     "dusekkar",
+     "builderman",
+     "taph"
+    ],
+    "Survivalist": [
+     "noob"
+    ],
+    "Sentinel": [
+     "two-time",
+     "shedletsky",
+     "jane-doe"
+    ]
+   },
+   "tip": "Guest 666's large hitbox makes Taph very potent against her, and makes it easier for Two Time to land backstabs. That lets Two Time stun the Killer consistently if they stay out of chase, and improves their own survivability."
+  },
+  "john-doe": {
+   "about": "John Doe is strong because he can turn the map against the Survivors and counter their stuns, so he can focus someone out very easily even against a strong team. He needs a more balanced team to counteract him: 2 Healers, 2 Supports, 2 Survivalists and 2 Sentinels.",
+   "team": {
+    "Healer": [
+     "elliot",
+     "helperbot"
+    ],
+    "Support": [
+     "dusekkar",
+     "dusekkar"
+    ],
+    "Survivalist": [
+     "noob",
+     {
+      "pick": [
+       "007n7",
+       "veeronica"
+      ],
+      "note": "007n7 and Veeronica are both good here; it comes down to personal choice."
+     }
+    ],
+    "Sentinel": [
+     "two-time",
+     "shedletsky"
+    ]
+   },
+   "tip": "Dusekkar is very important for this team: any time John Doe is stunned, Dusekkar beams him to cancel his Unstoppable passive. With two Dusekkars up, Unstoppable becomes useless no matter what."
+  },
+  "nosferatu": {
+   "about": "Nosferatu is hurt by tanky characters that can mitigate his abilities. His best team comp is 2 Healers, 1 Support, 3 Survivalists and 2 Sentinels.",
+   "team": {
+    "Healer": [
+     "elliot",
+     "helperbot"
+    ],
+    "Support": [
+     "dusekkar"
+    ],
+    "Survivalist": [
+     "noob",
+     "noob",
+     "007n7"
+    ],
+    "Sentinel": [
+     "guest-1337",
+     "guest-1337"
+    ]
+   },
+   "tip": "Always keep one Guest 1337 with the main clump of the team and the other one away, ready to jump in at any time without constantly being in harm's way. When one gets low, swap them around and heal the injured one. The Noobs and 007n7 can tank Nosferatu's hits for themselves or other Survivors by body blocking with Slateskin Potion or Clone."
+  },
+  "azure": {
+   "about": "Azure's greatest weakness is characters with Undetectable in their kit, which lets them walk through his traps unharmed. His best team comp is 2 Healers, 1 Support, 4 Survivalists and 1 Sentinel.",
+   "team": {
+    "Healer": [
+     "elliot",
+     "helperbot"
+    ],
+    "Support": [
+     "dusekkar"
+    ],
+    "Survivalist": [
+     "noob",
+     "noob",
+     "007n7",
+     "007n7"
+    ],
+    "Sentinel": [
+     "two-time"
+    ]
+   },
+   "tip": [
+    "Two Time can easily stun Azure out of his grab with their dash stab, forcing him out of aiming it or making him drop whoever he is carrying.",
+    "Noob and 007n7 can walk through his traps with Undetectable while the Healers and Supports keep them alive. Because of Azure's sheer damage potential, your most skilled players should be on Support and Healer, as this team is short on Sentinels."
+   ]
+  }
+ },
+ "strats": [
+  {
+   "id": "dynamic-stamina",
+   "name": "Dynamic Stamina",
+   "kind": "Stamina",
+   "for": "all",
+   "text": "Stop sprinting before the gray bar takes over your current stamina to regain stamina faster."
+  },
+  {
+   "id": "stutter-step",
+   "name": "Stutter Step",
+   "kind": "Stamina",
+   "for": "all",
+   "text": "Use 10-30 stamina when the Killer/Survivor is far/close enough, then walk until you regain it, or until the Killer/Survivor is far/close enough to (not) hit.",
+   "counters": [
+    {
+     "id": "slasher",
+     "with": [
+      "RAGING PACE"
+     ]
+    },
+    {
+     "id": "c00lkidd",
+     "with": [
+      "PIZZA DELIVERY"
+     ]
+    },
+    {
+     "id": "azure",
+     "with": [
+      "ENSTRANGLE",
+      "Golem"
+     ]
+    },
+    {
+     "id": "john-doe",
+     "with": [
+      "CORRUPT ENERGY"
+     ]
+    },
+    "1x1x1x1",
+    "nosferatu",
+    "guest-666",
+    {
+     "id": "noli",
+     "with": [
+      "NOVA",
+      "VOID RUSH"
+     ]
+    },
+    {
+     "text": "Teamwork",
+     "side": "survivor"
+    },
+    {
+     "text": "Bloxy Cola, if drunk before the chase",
+     "side": "survivor"
+    },
+    {
+     "cls": "Sentinel"
+    },
+    {
+     "cls": "Survivalist"
+    },
+    {
+     "id": "elliot",
+     "with": [
+      "RUSH HOUR"
+     ]
+    },
+    "dusekkar",
+    {
+     "id": "builderman",
+     "with": [
+      "SENTRY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "body-block",
+   "name": "Body Block",
+   "kind": "Strategy",
+   "for": "survivor",
+   "text": "When you're high on HP or the round is nearly over, use yourself to body block and stop another Survivor from dying.",
+   "counters": [
+    {
+     "text": "A high round timer"
+    },
+    "slasher",
+    "guest-666",
+    {
+     "id": "john-doe",
+     "with": [
+      "CORRUPT ENERGY"
+     ]
+    },
+    {
+     "id": "azure",
+     "with": [
+      "Golem"
+     ]
+    },
+    {
+     "id": "noli",
+     "with": [
+      "NOVA"
+     ]
+    },
+    "1x1x1x1"
+   ]
+  },
+  {
+   "id": "aggro",
+   "name": "Aggro",
+   "kind": "Strategy",
+   "for": "survivor",
+   "text": "Get the Killer's attention so a Survivor on low HP doesn't die.",
+   "counters": [
+    {
+     "text": "Targeting"
+    },
+    {
+     "text": "A high round timer"
+    }
+   ]
+  },
+  {
+   "id": "chill-survivor",
+   "name": "Chill Survivor",
+   "kind": "“Strategy”",
+   "for": "survivor",
+   "text": "Miss a stun on purpose or emote near the Killer to make them chill and waste time.",
+   "counters": [
+    {
+     "text": "Actual players"
+    }
+   ]
+  },
+  {
+   "id": "two-hits",
+   "name": "2 Hits",
+   "kind": "Distance",
+   "for": "survivor",
+   "text": "Any Survivor can trade health for speed. The extra speed lets you put distance between you and the Killer, forcing them to use more stamina while you build stamina back before getting hit. Best used at max HP, or when the Killer can't 2-shot you.",
+   "counters": [
+    {
+     "id": "slasher",
+     "with": [
+      "GASHING WOUND",
+      "RAGING PACE"
+     ]
+    },
+    {
+     "id": "c00lkidd",
+     "with": [
+      "CORRUPT NATURE",
+      "WALKSPEED OVERRIDE"
+     ]
+    },
+    {
+     "id": "azure",
+     "with": [
+      "ENSTRANGLE",
+      "Golem"
+     ]
+    },
+    "1x1x1x1",
+    {
+     "id": "nosferatu",
+     "with": [
+      "BLOODHOOK",
+      "ASCENSION"
+     ]
+    },
+    "guest-666",
+    {
+     "id": "noli",
+     "with": [
+      "NOVA",
+      "VOID RUSH"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "survivor-mid-chase",
+   "name": "Ability Usage Mid Chase",
+   "kind": "Strategy",
+   "for": "survivor",
+   "text": "Any Survivor who can use abilities mid chase can help the team, or themselves in Last Man Standing. Best used when the ability can stun the Killer to create distance.",
+   "counters": [
+    {
+     "id": "slasher",
+     "with": [
+      "RAGING PACE",
+      "BEHEAD"
+     ]
+    },
+    {
+     "id": "c00lkidd",
+     "with": [
+      "CORRUPT NATURE",
+      "WALKSPEED OVERRIDE"
+     ]
+    },
+    "azure",
+    "1x1x1x1",
+    "nosferatu",
+    "guest-666",
+    "noli",
+    {
+     "text": "Airballing any ability"
+    },
+    {
+     "text": "Being Builderman"
+    }
+   ]
+  },
+  {
+   "id": "fake-generators",
+   "name": "Spotting Noli's Fake Generators",
+   "kind": "Strategy",
+   "for": "survivor",
+   "text": "Complete 1/5 of a fake generator, or leave it empty, so the others know which one is fake. On a real one, complete 2-3/5 and let the others (preferably Elliot) finish it.",
+   "counters": [
+    {
+     "id": "noli",
+     "with": [
+      "HALLUCINATIONS",
+      "OBSERVANT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "generator-hopping",
+   "name": "Generator Hopping",
+   "kind": "Strategy",
+   "for": "survivor",
+   "text": "Complete at least 2/5 of a generator while your cooldowns are active. Finish it if you're a Survivalist, or if there's an Elliot on the team."
+  },
+  {
+   "id": "killer-mid-chase",
+   "name": "Ability Usage Mid Chase",
+   "kind": "Strategy",
+   "for": "killer",
+   "text": "Any Killer who can use their unique abilities mid chase can dish out an outburst or chip damage.",
+   "counters": [
+    {
+     "text": "Any Survivor, if a dash is missed",
+     "side": "survivor"
+    },
+    {
+     "text": "Bloxy Cola, if drunk before the chase",
+     "side": "survivor"
+    },
+    {
+     "text": "Teamwork",
+     "side": "survivor"
+    },
+    {
+     "cls": "Survivalist"
+    },
+    {
+     "cls": "Sentinel"
+    },
+    {
+     "id": "builderman",
+     "with": [
+      "SENTRY"
+     ]
+    },
+    "dusekkar",
+    "taph",
+    "elliot",
+    {
+     "id": "helperbot",
+     "with": [
+      "PULSE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zoning",
+   "name": "Zoning",
+   "kind": "Stamina",
+   "for": "killer",
+   "text": "Survivors can be cornered on some maps, letting you regain stamina and reset the chase to your advantage."
+  },
+  {
+   "id": "chance-lms",
+   "name": "Last Man Standing Prep",
+   "kind": "Strategy",
+   "for": "chance",
+   "text": "Build up 3 charges for **Reroll** or **One Shot**, then wait for an opening to use **One Shot**. If the Killer has already been stunned or you missed, **Reroll** and repeat until you get ⟦Vulnerable|⟧, a Flintlock Explosion, or a chance to use **Hat Fix** mid chase.",
+   "counters": [
+    {
+     "text": "Aura reveals"
+    },
+    {
+     "text": "Targeting"
+    },
+    {
+     "id": "guest-666",
+     "with": [
+      "⟦Hemorrhage|⟧"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chance-hp",
+   "name": "HP Threshold",
+   "kind": "Strategy",
+   "for": "chance",
+   "text": "Against some Killers it's important to have a set amount of Max HP. This doesn't account for map hazards, Killer dashes, minions, outbursts and traps, ⟦Hemorrhage|⟧, Azure combos, ⟦Atropa|⟧, ⟦Vulnerable|⟧ or a Flintlock Explosion.",
+   "table": [
+    {
+     "id": "guest-666",
+     "hp": 111,
+     "how": "5 M1s and 1 Eviscerate or Blood Hunt cry = 110 damage."
+    },
+    {
+     "id": "noli",
+     "hp": 116,
+     "how": "4 M1s and 1 Nova = 115 damage."
+    },
+    {
+     "id": "slasher",
+     "hp": 110,
+     "how": "3 M1s with damage over time and 1 Behead, or 1 Raging Pace M1 with damage over time, 2 M1s with damage over time and 1 M1 = 109 damage. This also survives 4 Beheads (100)."
+    },
+    {
+     "id": "1x1x1x1",
+     "hp": 115,
+     "how": "3 Entanglements and 3 M1s with damage over time = 114 damage."
+    },
+    {
+     "id": "c00lkidd",
+     "hp": 112,
+     "how": "2 Corrupt Natures and 3 M1s = 111 damage. This also survives 4 M1s (109)."
+    },
+    {
+     "id": "azure",
+     "hp": 111,
+     "how": "5 M1s = 110 damage."
+    },
+    {
+     "id": "john-doe",
+     "hp": 113,
+     "how": "4 M1s = 112 damage. This also survives 5 Corrupt Energies if hit twice each (110)."
+    },
+    {
+     "id": "nosferatu",
+     "hp": 117,
+     "how": "Hunter's Feast and 3 M1s while hit with Hunter's Feast, and 1 close-range Bloodhook = 116 damage."
+    }
+   ]
+  },
+  {
+   "id": "noli-shift",
+   "name": "Shift Tech",
+   "kind": "Tech",
+   "for": "noli",
+   "text": "When recasting **Void Rush**, hold down Shift. This uses stamina, but HEAVILY increases your speed and leaves Survivors less time to react."
+  },
+  {
+   "id": "noli-nova-stun",
+   "name": "Nova Stun",
+   "kind": "Tech",
+   "for": "noli",
+   "text": "Throw **Nova** in the air above your target Survivor. It pulls them into the air and staggers them when they hit the ground, so you can catch up easily."
+  },
+  {
+   "id": "noli-nova-combo",
+   "name": "Nova Combo",
+   "kind": "Tech",
+   "for": "noli",
+   "text": "Throw **Nova** at the ground when you're near a Survivor, then M1 for a free 40 damage combo. Riskier but more rewarding: hit them with **Nova**, then slam them for more damage or start a chain. Going for just the slam is the less risky option here."
+  },
+  {
+   "id": "noli-slide",
+   "name": "Slide Tech",
+   "kind": "Tech",
+   "for": "noli",
+   "text": "Angle yourself against a structure during **Void Rush** and you'll slide along it. Use this to counter certain loops and structures Survivors use."
+  },
+  {
+   "id": "noli-airlines",
+   "name": "Noli Airlines",
+   "kind": "Tech",
+   "for": "noli",
+   "text": "Shift Tech off an incline (usually stairs) and Noli is sent flying upwards. Use it to go over structures, or to change the direction of a **Void Rush** when you land."
+  },
+  {
+   "id": "noli-quiet",
+   "name": "Quiet Nova",
+   "kind": "Mindgame",
+   "for": "noli",
+   "text": "Use **Nova** to cover your loud ambient noise and breathing and catch people off guard. Noli's breathing is VERY loud and can give your position away."
+  },
+  {
+   "id": "noli-skins",
+   "name": "Flying Skins",
+   "kind": "Skins",
+   "for": "noli",
+   "text": "Any skin that flies instead of walking (Milestone 4 and Admin, for example) is quieter, which makes catching people off guard easier."
+  },
+  {
+   "id": "c00lkidd-slide",
+   "name": "Slide Tech",
+   "kind": "Tech",
+   "for": "c00lkidd",
+   "text": "Like Noli, c00lkidd can slide along structures during **Walkspeed Override** if he's angled against them."
+  },
+  {
+   "id": "c00lkidd-slingshot",
+   "name": "Slingshot Tech",
+   "kind": "Tech",
+   "for": "c00lkidd",
+   "text": "Dash at a Survivor with **Walkspeed Override** and hit them towards your **Pizza Delivery** minions to slingshot them in, for extremely high damage plus ⟦Slowness|⟧."
+  },
+  {
+   "id": "shedletsky-mindgames",
+   "name": "Fake-Outs",
+   "kind": "Mindgame",
+   "for": "shedletsky",
+   "text": "With no techs that don't hinder him, Shedletsky relies on mindgames: flick your camera back to make the Killer think you're going for the stun, or run at them to sell it. For the best stun in a chase, start the **Slash** swing, then flick at the Killer at the last second to get the most stun time through his endlag."
+  }
+ ]
 }

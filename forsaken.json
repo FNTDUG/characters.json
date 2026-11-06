@@ -2252,7 +2252,7 @@
      "quote": "\"You both shall set out on the grand step to rebirth.\" - ██████"
     },
     {
-     "name": "SACRIFICAL DAGGER",
+     "name": "SACRIFICIAL DAGGER",
      "key": "Q",
      "cd": "30s",
      "icon": "/forsaken/img/ab/two-time-sacrifical-dagger.webp",
@@ -7643,6 +7643,60 @@
   "imprisoned": "When a survivor is afflicted with Imprisoned, small puddles of black will occasionally appear around them in a small stud radius. When these puddles appear, survivors will have a short time to react before chains shoot out of these puddles and towards the position of where the survivor was when the puddle appeared. If the survivor is hit by the chain, they will become ensnared. Survivors will slowly lose ticks of health and they will have to spam a button to fill an escape bar. Once the bar is free, they escape the chain, and the puddle disappears. Every stack of this status effect increases the number of puddles that appear.",
   "disoriented": "Disoriented I: Any survivors outside a 25 stud radius will have their appearance concealed to the affected survivor. Disoriented II: Distorted faces and images will flash on the affected survivor’s screen, accompanied by glitchy droning ambience which drowns out other audio. Disoriented III: Screen becomes dark and highly saturated, limiting vision immensely. Like Hallucination, this status effect is hidden."
  },
+ "items": [
+  {
+   "id": "bloxy-cola",
+   "name": "Bloxy Cola",
+   "icon": "/forsaken/img/item/bloxy-cola.webp",
+   "quote": "tastes super duper sweet",
+   "desc": "Drink for a speed boost. Gives ⟦Speed|II⟧ for 10 seconds after a startup of around 4 seconds.\n\nDuring Last Man Standing it gives ⟦Speed|I⟧ instead.",
+   "where": "Spawns around every map.",
+   "notes": {
+    "noob": "Noob also has Bloxy Cola as an ability. The ability is quicker to drink but only gives ⟦Speed|I⟧, and the two can be used interchangeably."
+   }
+  },
+  {
+   "id": "ghostburger",
+   "name": "Ghostburger",
+   "icon": "/forsaken/img/item/ghostburger.webp",
+   "quote": "spooky burger!",
+   "desc": "Become invisible and fool the Killer. Gives ⟦Invisibility|IV⟧ and ⟦Undetectable|I⟧ for 10 seconds after a 2 second windup.",
+   "where": "Brandon6875935's Place.",
+   "notes": {
+    "noob": "Unlike Noob's own Ghostburger ability, the item does not slow you down while it is active."
+   }
+  },
+  {
+   "id": "medkit",
+   "name": "Medkit",
+   "icon": "/forsaken/img/item/medkit.webp",
+   "quote": "a little bit like Fortnite",
+   "desc": "Heals 80 HP after a 7 second startup, so use it somewhere safe.\n\nRemoves ⟦Hemorrhage|⟧ but does not restore vine-covered health. It cannot be used at full health.",
+   "where": "Spawns around every map.",
+   "notes": {
+    "veeronica": "Veeronica cannot use Medkits because of her passive."
+   },
+   "blocked": [
+    "veeronica"
+   ]
+  },
+  {
+   "id": "epicsauce",
+   "name": "Epicsauce",
+   "icon": "/forsaken/img/item/epicsauce.webp",
+   "quote": "THIS GIRL IS ON FĪYĀĀĀHHH",
+   "desc": "High risk, high reward. Gives ⟦Speed|IV⟧ and ⟦Burning|IV⟧ for 4 seconds. The burning deals 17 damage in total.",
+   "where": "Brandon6875935's Place, in the secret zone after cleaning every graffiti on the map."
+  },
+  {
+   "id": "slateskin",
+   "name": "Slateskin",
+   "icon": "/forsaken/img/item/slateskin.webp",
+   "quote": "completely solid",
+   "desc": "Turns your skin to rock to tank hits. Gives ⟦Slateskin|III⟧ for 6 seconds.",
+   "where": "Brandon6875935's Place, in the secret zone after cleaning every graffiti on the map."
+  }
+ ],
  "tierlist": {
   "maps": [
    {
@@ -7651,35 +7705,35 @@
     "sided": 40,
     "ranks": {
      "noli": {
-      "rank": "S8",
+      "rank": "S4",
       "note": "These Killers excel at rushdown, or hindering Survivors in some way. Noli excels at nearly everything in the game if played properly. c00lkidd can turn many of the safer areas against Survivors with his minions. Guest 666 can ambush Survivors by leaping off the castle and dealing huge chunks of damage, or leaping onto the castle where Survivors often group up."
      },
      "c00lkidd": {
-      "rank": "S7",
+      "rank": "S3",
       "note": "These Killers excel at rushdown, or hindering Survivors in some way. Noli excels at nearly everything in the game if played properly. c00lkidd can turn many of the safer areas against Survivors with his minions. Guest 666 can ambush Survivors by leaping off the castle and dealing huge chunks of damage, or leaping onto the castle where Survivors often group up."
      },
      "guest-666": {
-      "rank": "S7",
+      "rank": "S3",
       "note": "These Killers excel at rushdown, or hindering Survivors in some way. Noli excels at nearly everything in the game if played properly. c00lkidd can turn many of the safer areas against Survivors with his minions. Guest 666 can ambush Survivors by leaping off the castle and dealing huge chunks of damage, or leaping onto the castle where Survivors often group up."
      },
      "slasher": {
-      "rank": "A7",
+      "rank": "A3",
       "note": "Slasher is still very formidable on this map, however there are many objects to loop around and a wide variety of larger loops that require excellent stamina management to beat a Survivor on."
      },
-     "john-doe": {
-      "rank": "B2",
-      "note": "John Doe struggles for the same reason as Azure, but even more so with his lower trap count."
-     },
      "nosferatu": {
-      "rank": "B6",
+      "rank": "B3",
       "note": "Nosferatu struggles on this map for the same reason as Slasher. Due to the amount of structures, landing a Bloodhook can be very tedious against any competent Survivor, leaving his best playstyle as relying on ambushes with Bat Form to start chases."
      },
      "azure": {
-      "rank": "B3",
+      "rank": "B2",
       "note": "Azure is different and relies heavily on the Survivor's macro knowledge of the Killer and the map. Azure cannot shut down every loop or structure on this map, and due to the amount of structures it can be difficult to land his grab."
      },
+     "john-doe": {
+      "rank": "B1",
+      "note": "John Doe struggles for the same reason as Azure, but even more so with his lower trap count."
+     },
      "1x1x1x1": {
-      "rank": "C5",
+      "rank": "C3",
       "note": "1x1x1x1 is heavily countered by Survivors abusing the elevation difference, either on the castle or the small structure in the center of the map. Any smart Survivor will loop the castle."
      }
     }
@@ -7690,35 +7744,35 @@
     "sided": 50,
     "ranks": {
      "c00lkidd": {
-      "rank": "S10",
+      "rank": "S4",
       "note": "These Killers are great for this map as there are not many structures around, and most of the loops are small enough for them to outplay with their higher speed than the other Killers."
      },
      "slasher": {
-      "rank": "S8",
+      "rank": "S4",
       "note": "These Killers are great for this map as there are not many structures around, and most of the loops are small enough for them to outplay with their higher speed than the other Killers."
      },
      "noli": {
-      "rank": "A10",
+      "rank": "A4",
       "note": "Noli is only hindered by the cave loop of this map, however due to the sheer lack of other loops that are as safe, Noli can easily kill someone before they get to this loop."
      },
      "azure": {
-      "rank": "A9",
+      "rank": "A4",
       "note": "Azure's traps can shut down every loop on this map, forcing Survivors to rely on stamina management more than looping, and his grab has a small enough hitbox that you can work around the trees."
      },
      "john-doe": {
-      "rank": "A8",
+      "rank": "A4",
       "note": "John Doe can shut down the strong loops but still keep weaker ones open, which he can play around easily with proper corner cutting."
      },
      "guest-666": {
-      "rank": "A7",
+      "rank": "A3",
       "note": "Guest 666 is hindered by the amount of random objects strewn across the map, hurting their ability to do long range dash attacks."
      },
      "1x1x1x1": {
-      "rank": "B5",
+      "rank": "B3",
       "note": "1x1x1x1 thrives in the open areas of this map with proper luck, but their attacks are purely based on winning the 50/50 with how open the map is. There is little in the way of elevation to hurt them here."
      },
      "nosferatu": {
-      "rank": "B4",
+      "rank": "B2",
       "note": "Nosferatu again has a difficult job hitting his Bloodhook on this map, as the amount of random objects makes it difficult to land, and his Bat Swarm can collide with the random trees."
      }
     }
@@ -7729,31 +7783,31 @@
     "sided": 30,
     "ranks": {
      "slasher": {
-      "rank": "S10",
+      "rank": "S4",
       "note": "Slasher is the best Killer overall for this map. He has the rushdown speed to deal with the loops and structures without relying on a dash or projectile that may get caught on the structures of this map."
      },
      "1x1x1x1": {
-      "rank": "S5",
+      "rank": "S3",
       "note": "1x1x1x1 is good on this map as well, as there is only one area with an elevation difference, and their projectiles can go through walls, making them VERY oppressive on this map."
      },
      "c00lkidd": {
-      "rank": "A7",
+      "rank": "A3",
       "note": "c00lkidd can still make great use of Corrupt, but his Walkspeed is reduced purely to a punisher move, unable to be used as a dash for most of this map due to how many random objects are strewn about."
      },
      "noli": {
-      "rank": "A5",
+      "rank": "A3",
       "note": "Noli is great for rushdown on this map thanks to his ability to essentially stun with Nova and then combo it with Void Rush. With how close all the Survivors are forced together he gets easy Void Rush chains, however in 1v1 scenarios he struggles due to the amount of objects around the map."
      },
      "john-doe": {
-      "rank": "B9",
+      "rank": "B4",
       "note": "John Doe's traps are good for this map. There are many placements for Digital Footprint and a few spots you can trap people with Corrupt, but he gets torn apart by teamwork on this map, excelling in the 1v1 here."
      },
      "nosferatu": {
-      "rank": "B8",
+      "rank": "B4",
       "note": "Nosferatu can use his dash and Bat Form but finds little room to hit his Bloodhook, reducing him to an ambush / trapper playstyle."
      },
      "guest-666": {
-      "rank": "C4",
+      "rank": "C2",
       "note": "Sixer struggles on this map due to their size, making them easy to loop around the several structures scattered around, with little room for their dash to be used."
      },
      "azure": {
@@ -7768,35 +7822,35 @@
     "sided": 50,
     "ranks": {
      "noli": {
-      "rank": "S10",
+      "rank": "S4",
       "note": "Noli THRIVES on this map. His ability to suppress his sounds with Nova and ambush people with an M1 or Void Rush makes him extremely oppressive, and with how open it is, he can very easily chain Void Rush hits together."
      },
      "c00lkidd": {
-      "rank": "A10",
+      "rank": "A4",
       "note": "c00lkidd and Guest 666 do decently on this map for the same reasons as each other. c00lkidd has the rushdown to deal with the one very large loop around the caves, and Sixer can increase their speed enough to easily outplay it. They both get good mileage out of their dashes, but the lack of chip damage across the entire team puts them lower than Noli."
      },
      "guest-666": {
-      "rank": "A7",
+      "rank": "A3",
       "note": "c00lkidd and Guest 666 do decently on this map for the same reasons as each other. c00lkidd has the rushdown to deal with the one very large loop around the caves, and Sixer can increase their speed enough to easily outplay it. They both get good mileage out of their dashes, but the lack of chip damage across the entire team puts them lower than Noli."
      },
      "1x1x1x1": {
-      "rank": "A5",
+      "rank": "A3",
       "note": "This map is generally just alright for an average 1x1x1x1, but a skilled 1x1x1x1 can be demonic."
      },
      "slasher": {
-      "rank": "B8",
+      "rank": "B4",
       "note": "Slasher gets hard countered by the cave loop on the top half of the map. Any Survivor that runs to it and knows how to loop it is near unkillable for Slasher, but he is a menace anywhere else on the map."
      },
      "azure": {
-      "rank": "B7",
+      "rank": "B3",
       "note": "Azure can shut down every strong loop on this map, forcing Survivors to the weaker half of it. He can thrive, but requires proper knowledge of trap placements."
      },
      "nosferatu": {
-      "rank": "C8",
+      "rank": "C4",
       "note": "Nosferatu gets obliterated on this map with proper teamwork. It's so open that his dash trap ability becomes difficult to use unless you can trap Survivors in a circle, and his Bloodhook becomes his only useful ability next to Bat Form, which is easy to dodge."
      },
      "john-doe": {
-      "rank": "C5",
+      "rank": "C3",
       "note": "John Doe cannot properly shut off the strong loops of this map and is naturally slower than most Killers unless his speed passives are triggered."
      }
     }
@@ -7807,35 +7861,35 @@
     "sided": 20,
     "ranks": {
      "noli": {
-      "rank": "S10",
+      "rank": "S4",
       "note": "The wide open nature of this map lets their rushdown excel due to the lack of loops, forcing Survivors to rely on teamwork, which Noli thrives on, making him the absolute best for this map."
      },
      "slasher": {
-      "rank": "S7",
-      "note": "The wide open nature of this map lets their rushdown excel due to the lack of loops, forcing Survivors to rely on teamwork, which Noli thrives on, making him the absolute best for this map."
-     },
-     "c00lkidd": {
-      "rank": "S5",
-      "note": "The wide open nature of this map lets their rushdown excel due to the lack of loops, forcing Survivors to rely on teamwork, which Noli thrives on, making him the absolute best for this map."
-     },
-     "guest-666": {
       "rank": "S3",
       "note": "The wide open nature of this map lets their rushdown excel due to the lack of loops, forcing Survivors to rely on teamwork, which Noli thrives on, making him the absolute best for this map."
      },
+     "c00lkidd": {
+      "rank": "S3",
+      "note": "The wide open nature of this map lets their rushdown excel due to the lack of loops, forcing Survivors to rely on teamwork, which Noli thrives on, making him the absolute best for this map."
+     },
+     "guest-666": {
+      "rank": "S2",
+      "note": "The wide open nature of this map lets their rushdown excel due to the lack of loops, forcing Survivors to rely on teamwork, which Noli thrives on, making him the absolute best for this map."
+     },
      "azure": {
-      "rank": "A10",
+      "rank": "A4",
       "note": "Azure can easily land grabs on this map with how open it is and can keep the underside shut down with his Golem."
      },
      "nosferatu": {
-      "rank": "A7",
+      "rank": "A3",
       "note": "Nosferatu can make use of his dash, Bloodhook and Bat Form, allowing great combo potential, however he struggles more on the bottom half of this map."
      },
      "1x1x1x1": {
-      "rank": "B8",
+      "rank": "B4",
       "note": "1x1x1x1 is forced to play a more aggressive rushdown style with their ranged attacks on this map, due to it being two halves that they cannot hit between."
      },
      "john-doe": {
-      "rank": "C2",
+      "rank": "C1",
       "note": "John Doe's traps do not have the size to shut down any strong loops on this map, forcing him to play rushdown, which he is not designed for."
      }
     }
@@ -7846,35 +7900,35 @@
     "sided": 60,
     "ranks": {
      "1x1x1x1": {
-      "rank": "S10",
+      "rank": "S4",
       "note": "The lack of many elevation differences and the many walls for them to hide where they're aiming behind make 1x1x1x1 very lethal and potent on this map."
      },
      "guest-666": {
-      "rank": "S7",
+      "rank": "S3",
       "note": "Sixer can exploit the fact that most loops on this map have been removed, and can dash over the only existing one, the table, if you know how to aim it."
      },
      "noli": {
-      "rank": "A10",
+      "rank": "A4",
       "note": "Due to their natural rushdown style, they excel on this open map with little to no loops besides the table inside the small shack, which is easy to counter with their high speeds, or projectile in Noli's case."
      },
      "c00lkidd": {
-      "rank": "A8",
+      "rank": "A4",
       "note": "Due to their natural rushdown style, they excel on this open map with little to no loops besides the table inside the small shack, which is easy to counter with their high speeds, or projectile in Noli's case."
      },
      "slasher": {
-      "rank": "A6",
+      "rank": "A3",
       "note": "Due to their natural rushdown style, they excel on this open map with little to no loops besides the table inside the small shack, which is easy to counter with their high speeds, or projectile in Noli's case."
      },
      "john-doe": {
-      "rank": "B7",
+      "rank": "B3",
       "note": "These trapper style Killers can shut down the few mediocre loops, forcing Survivors to play around the open areas and rely more on stamina management, however teamwork will still shred these Killers."
      },
      "azure": {
-      "rank": "B6",
+      "rank": "B3",
       "note": "These trapper style Killers can shut down the few mediocre loops, forcing Survivors to play around the open areas and rely more on stamina management, however teamwork will still shred these Killers."
      },
      "nosferatu": {
-      "rank": "B4",
+      "rank": "B2",
       "note": "These trapper style Killers can shut down the few mediocre loops, forcing Survivors to play around the open areas and rely more on stamina management, however teamwork will still shred these Killers."
      }
     }
@@ -7885,35 +7939,35 @@
     "sided": 30,
     "ranks": {
      "slasher": {
-      "rank": "S10",
+      "rank": "S4",
       "note": "Slasher has the rushdown to overwhelm Survivors on this map without relying on projectiles once again. John Doe and Azure can shut down all the strong areas of this map with their traps, creating a very difficult dynamic that makes even teamwork on this map difficult to pull off."
      },
      "john-doe": {
-      "rank": "S9",
+      "rank": "S4",
       "note": "Slasher has the rushdown to overwhelm Survivors on this map without relying on projectiles once again. John Doe and Azure can shut down all the strong areas of this map with their traps, creating a very difficult dynamic that makes even teamwork on this map difficult to pull off."
      },
      "azure": {
-      "rank": "S8",
+      "rank": "S4",
       "note": "Slasher has the rushdown to overwhelm Survivors on this map without relying on projectiles once again. John Doe and Azure can shut down all the strong areas of this map with their traps, creating a very difficult dynamic that makes even teamwork on this map difficult to pull off."
      },
      "c00lkidd": {
-      "rank": "A7",
+      "rank": "A3",
       "note": "c00lkidd has the speed to overwhelm Survivors similar to Slasher, but cannot use Walkspeed aggressively on most of the map because of the random objects. Noli can counter most loops with Nova but cannot use Void Rush around most of them, though good stamina management can still make him formidable on them."
      },
      "noli": {
-      "rank": "A5",
+      "rank": "A3",
       "note": "c00lkidd has the speed to overwhelm Survivors similar to Slasher, but cannot use Walkspeed aggressively on most of the map because of the random objects. Noli can counter most loops with Nova but cannot use Void Rush around most of them, though good stamina management can still make him formidable on them."
      },
      "nosferatu": {
-      "rank": "B8",
+      "rank": "B4",
       "note": "Nosferatu can shut off loops and trap Survivors effectively on this map while still getting good mileage out of his Bloodhook, however the natural open feel of this map makes his bat attack very easy to dodge."
      },
      "1x1x1x1": {
-      "rank": "C4",
+      "rank": "C2",
       "note": "The several elevation differences on this map literally put 1x1x1x1 in a wheelchair, and Sixer is countered by the amount of random structures that block their dash."
      },
      "guest-666": {
-      "rank": "C2",
+      "rank": "C1",
       "note": "The several elevation differences on this map literally put 1x1x1x1 in a wheelchair, and Sixer is countered by the amount of random structures that block their dash."
      }
     }
@@ -7924,35 +7978,35 @@
     "sided": 60,
     "ranks": {
      "1x1x1x1": {
-      "rank": "S10",
+      "rank": "S4",
       "note": "A near completely flat map, making 1x1x1x1's projectiles highly lethal here, able to phase through all the random walls and objects."
      },
      "john-doe": {
-      "rank": "S10",
+      "rank": "S4",
       "note": "John Doe and Azure can easily trap large portions of this map due to its smaller size, however Azure may struggle a little more than John Doe with the amount of objects blocking his grab, but his traps are still very potent on this map."
      },
      "azure": {
-      "rank": "S9",
+      "rank": "S4",
       "note": "John Doe and Azure can easily trap large portions of this map due to its smaller size, however Azure may struggle a little more than John Doe with the amount of objects blocking his grab, but his traps are still very potent on this map."
      },
      "slasher": {
-      "rank": "A8",
+      "rank": "A4",
       "note": "These Killers all have the rushdown speed for this map that allows them to close distance without relying on their projectiles, however due to c00lkidd's inability to turn during Walkspeed, it is reduced purely to a punisher move on this map with all the random objects."
      },
      "noli": {
-      "rank": "A6",
+      "rank": "A3",
       "note": "These Killers all have the rushdown speed for this map that allows them to close distance without relying on their projectiles, however due to c00lkidd's inability to turn during Walkspeed, it is reduced purely to a punisher move on this map with all the random objects."
      },
      "c00lkidd": {
-      "rank": "A5",
+      "rank": "A3",
       "note": "These Killers all have the rushdown speed for this map that allows them to close distance without relying on their projectiles, however due to c00lkidd's inability to turn during Walkspeed, it is reduced purely to a punisher move on this map with all the random objects."
      },
      "guest-666": {
-      "rank": "B4",
+      "rank": "B2",
       "note": "These Killers both have their abilities made harder to hit by the amount of clutter on this map, making one of their abilities near useless for most of the map."
      },
      "nosferatu": {
-      "rank": "B2",
+      "rank": "B1",
       "note": "These Killers both have their abilities made harder to hit by the amount of clutter on this map, making one of their abilities near useless for most of the map."
      }
     }
@@ -7963,35 +8017,35 @@
     "sided": 20,
     "ranks": {
      "noli": {
-      "rank": "S5",
+      "rank": "S3",
       "note": "Noli is the only Killer that has the kit to adjust to all the different situations this map can throw at you."
      },
      "slasher": {
-      "rank": "A7",
-      "note": "These Killers have the rushdown potential to EASILY overwhelm anyone, but may get stuck on a few factors of this map: elevation, specific loops, or how open the map is in some areas."
-     },
-     "c00lkidd": {
-      "rank": "A5",
-      "note": "These Killers have the rushdown potential to EASILY overwhelm anyone, but may get stuck on a few factors of this map: elevation, specific loops, or how open the map is in some areas."
-     },
-     "guest-666": {
-      "rank": "A4",
-      "note": "These Killers have the rushdown potential to EASILY overwhelm anyone, but may get stuck on a few factors of this map: elevation, specific loops, or how open the map is in some areas."
-     },
-     "1x1x1x1": {
       "rank": "A3",
       "note": "These Killers have the rushdown potential to EASILY overwhelm anyone, but may get stuck on a few factors of this map: elevation, specific loops, or how open the map is in some areas."
      },
+     "c00lkidd": {
+      "rank": "A3",
+      "note": "These Killers have the rushdown potential to EASILY overwhelm anyone, but may get stuck on a few factors of this map: elevation, specific loops, or how open the map is in some areas."
+     },
+     "guest-666": {
+      "rank": "A2",
+      "note": "These Killers have the rushdown potential to EASILY overwhelm anyone, but may get stuck on a few factors of this map: elevation, specific loops, or how open the map is in some areas."
+     },
+     "1x1x1x1": {
+      "rank": "A2",
+      "note": "These Killers have the rushdown potential to EASILY overwhelm anyone, but may get stuck on a few factors of this map: elevation, specific loops, or how open the map is in some areas."
+     },
      "nosferatu": {
-      "rank": "B8",
+      "rank": "B4",
       "note": "A bit weaker due to being unable to shut off every strong part of the map, but they still have a lot of potency in the right hands."
      },
      "azure": {
-      "rank": "B6",
+      "rank": "B3",
       "note": "A bit weaker due to being unable to shut off every strong part of the map, but they still have a lot of potency in the right hands."
      },
      "john-doe": {
-      "rank": "B5",
+      "rank": "B3",
       "note": "A bit weaker due to being unable to shut off every strong part of the map, but they still have a lot of potency in the right hands."
      }
     }
@@ -8002,35 +8056,35 @@
     "sided": 50,
     "ranks": {
      "john-doe": {
-      "rank": "S10",
+      "rank": "S4",
       "note": "These three Killers either have the ability to completely shut off strong parts of this map, or easily overwhelm Survivors with their ability to speedblitz them."
      },
      "noli": {
-      "rank": "S7",
+      "rank": "S3",
       "note": "These three Killers either have the ability to completely shut off strong parts of this map, or easily overwhelm Survivors with their ability to speedblitz them."
      },
      "azure": {
-      "rank": "S5",
+      "rank": "S3",
       "note": "These three Killers either have the ability to completely shut off strong parts of this map, or easily overwhelm Survivors with their ability to speedblitz them."
      },
      "slasher": {
-      "rank": "A10",
+      "rank": "A4",
       "note": "Rushdown Killers have little issue on this map due to the heavy lack of strong loops, but are outclassed by the power that trapper and trickster Killers have."
      },
      "c00lkidd": {
-      "rank": "A9",
+      "rank": "A4",
       "note": "Rushdown Killers have little issue on this map due to the heavy lack of strong loops, but are outclassed by the power that trapper and trickster Killers have."
      },
      "guest-666": {
-      "rank": "A5",
+      "rank": "A3",
       "note": "Rushdown Killers have little issue on this map due to the heavy lack of strong loops, but are outclassed by the power that trapper and trickster Killers have."
      },
      "nosferatu": {
-      "rank": "B3",
+      "rank": "B2",
       "note": "Nosferatu becomes tedious to use on this map due to his reliance on his dash to trap people, which is difficult with how open the map is."
      },
      "1x1x1x1": {
-      "rank": "C4",
+      "rank": "C2",
       "note": "Too open, making their abilities easy to dodge."
      }
     }
@@ -8041,35 +8095,35 @@
     "sided": 40,
     "ranks": {
      "guest-666": {
-      "rank": "S10",
+      "rank": "S4",
       "note": "The size of this map allows these two Killers to ambush people consistently while still safely using their abilities in chase, and it is the only map where Sixer can play into such a playstyle safely and consistently."
      },
      "noli": {
-      "rank": "S9",
+      "rank": "S4",
       "note": "The size of this map allows these two Killers to ambush people consistently while still safely using their abilities in chase, and it is the only map where Sixer can play into such a playstyle safely and consistently."
      },
      "1x1x1x1": {
-      "rank": "A10",
+      "rank": "A4",
       "note": "These Killers can apply constant pressure in chase with no hindrance from the map, but fall below the S tier Killers for not being able to ambush, either because the map is open and attacks are easy to dodge, or because they lack the ability for it."
      },
      "nosferatu": {
-      "rank": "A7",
+      "rank": "A3",
       "note": "These Killers can apply constant pressure in chase with no hindrance from the map, but fall below the S tier Killers for not being able to ambush, either because the map is open and attacks are easy to dodge, or because they lack the ability for it."
      },
      "slasher": {
-      "rank": "A6",
+      "rank": "A3",
       "note": "These Killers can apply constant pressure in chase with no hindrance from the map, but fall below the S tier Killers for not being able to ambush, either because the map is open and attacks are easy to dodge, or because they lack the ability for it."
      },
      "c00lkidd": {
-      "rank": "B7",
+      "rank": "B3",
       "note": "These two Killers begin to struggle on this map, either due to how many corners there are to avoid a dash, or because traps cannot shut down many of the strong loops here."
      },
      "azure": {
-      "rank": "B4",
+      "rank": "B2",
       "note": "These two Killers begin to struggle on this map, either due to how many corners there are to avoid a dash, or because traps cannot shut down many of the strong loops here."
      },
      "john-doe": {
-      "rank": "C4",
+      "rank": "C2",
       "note": "John Doe relies heavily on his Unstoppable and hitting his spikes, which are highly reactable since he can only trap three of the many loops on this map."
      }
     }
@@ -8080,31 +8134,31 @@
     "sided": 40,
     "ranks": {
      "slasher": {
-      "rank": "S10",
+      "rank": "S4",
       "note": "Slasher's pure speed makes quick work of the lackluster loops."
      },
      "noli": {
-      "rank": "A9",
+      "rank": "A4",
       "note": "These two have a slightly harder time on this map with the amount of random short walls that block their dashes, but they still find wide use from their other abilities."
      },
      "c00lkidd": {
-      "rank": "A6",
+      "rank": "A3",
       "note": "These two have a slightly harder time on this map with the amount of random short walls that block their dashes, but they still find wide use from their other abilities."
      },
      "azure": {
-      "rank": "B10",
+      "rank": "B4",
       "note": "This compact map is perfect for these trap Killers, as they can shut off several pathways and easily full box Survivors on this map, Azure especially, however proper map knowledge and trap knowledge is needed."
      },
      "john-doe": {
-      "rank": "B8",
+      "rank": "B4",
       "note": "This compact map is perfect for these trap Killers, as they can shut off several pathways and easily full box Survivors on this map, Azure especially, however proper map knowledge and trap knowledge is needed."
      },
      "1x1x1x1": {
-      "rank": "C9",
+      "rank": "C4",
       "note": "1x1x1x1's only plus on this map is the ability to hide behind walls while aiming their attacks, but Survivors can easily mess with elevation in the main area."
      },
      "guest-666": {
-      "rank": "C5",
+      "rank": "C3",
       "note": "Sixer gets stuck on several random objects sticking out of the walls."
      },
      "nosferatu": {
@@ -8119,35 +8173,35 @@
     "sided": 70,
     "ranks": {
      "azure": {
-      "rank": "S10",
+      "rank": "S4",
       "note": "Takes very little effort on this map due to all his traps. Even decent bulb placements can easily shut down a good chunk of the map."
      },
      "c00lkidd": {
-      "rank": "A9",
+      "rank": "A4",
       "note": "If you know how to manipulate minions, it's super easy to either box somebody in or catch somebody off guard."
      },
      "1x1x1x1": {
-      "rank": "A8",
+      "rank": "A4",
       "note": "It's wide open. Entanglement with the speed boost from scanning, and minions aren't that annoying since there are really only two elevated areas."
      },
      "noli": {
-      "rank": "A4",
+      "rank": "A2",
       "note": "In the right hands he can be very potent due to Void Rush. Nova can also be a good way to catch up, as there aren't many walls to duck around, or they aren't thick enough to be useful for avoiding getting hit."
      },
      "slasher": {
-      "rank": "B7",
+      "rank": "B3",
       "note": "Doesn't require super good anti-looping, and the map being wide open can make it easy to catch up."
      },
      "guest-666": {
-      "rank": "B3",
+      "rank": "B2",
       "note": "The lunge is strong even just using it to go into the air, and since none of the \"loops\" on this map are that annoying, even without speed boosts she can do alright with the tiny boost she gets from the roar alone."
      },
      "nosferatu": {
-      "rank": "C7",
+      "rank": "C3",
       "note": "His blood trail is kind of like John Doe's spikes in a way, so it's not very effective, however thanks to the dive, with the map being so open, it's hard to avoid in the hands of even a moderate Nosferatu."
      },
      "john-doe": {
-      "rank": "C4",
+      "rank": "C2",
       "note": "The wide open nature of the map can make the spikes hard to use if not near the edges of the map."
      }
     }
@@ -8158,35 +8212,35 @@
     "sided": 100,
     "ranks": {
      "azure": {
-      "rank": "S10",
+      "rank": "S4",
       "note": "Trapper Killers THRIVE on this tiny map. The sheer lack of size makes it very easy to shut off entire halves of the map for looping."
      },
      "john-doe": {
-      "rank": "S9",
+      "rank": "S4",
       "note": "Trapper Killers THRIVE on this tiny map. The sheer lack of size makes it very easy to shut off entire halves of the map for looping."
      },
      "nosferatu": {
-      "rank": "S6",
+      "rank": "S3",
       "note": "Trapper Killers THRIVE on this tiny map. The sheer lack of size makes it very easy to shut off entire halves of the map for looping."
      },
      "noli": {
-      "rank": "A10",
-      "note": "These Killers are able to overwhelm Survivors with ease because of how small the map is, or how open it is with a small amount of loops. They have no flaws but are outclassed by trappers. There are no lower tier Killers for this map, as it is the only hard Killer sided map in the game."
-     },
-     "slasher": {
-      "rank": "A9",
+      "rank": "A4",
       "note": "These Killers are able to overwhelm Survivors with ease because of how small the map is, or how open it is with a small amount of loops. They have no flaws but are outclassed by trappers. There are no lower tier Killers for this map, as it is the only hard Killer sided map in the game."
      },
      "guest-666": {
-      "rank": "A9",
+      "rank": "A4",
+      "note": "These Killers are able to overwhelm Survivors with ease because of how small the map is, or how open it is with a small amount of loops. They have no flaws but are outclassed by trappers. There are no lower tier Killers for this map, as it is the only hard Killer sided map in the game."
+     },
+     "slasher": {
+      "rank": "A4",
       "note": "These Killers are able to overwhelm Survivors with ease because of how small the map is, or how open it is with a small amount of loops. They have no flaws but are outclassed by trappers. There are no lower tier Killers for this map, as it is the only hard Killer sided map in the game."
      },
      "1x1x1x1": {
-      "rank": "A8",
+      "rank": "A4",
       "note": "These Killers are able to overwhelm Survivors with ease because of how small the map is, or how open it is with a small amount of loops. They have no flaws but are outclassed by trappers. There are no lower tier Killers for this map, as it is the only hard Killer sided map in the game."
      },
      "c00lkidd": {
-      "rank": "A8",
+      "rank": "A4",
       "note": "These Killers are able to overwhelm Survivors with ease because of how small the map is, or how open it is with a small amount of loops. They have no flaws but are outclassed by trappers. There are no lower tier Killers for this map, as it is the only hard Killer sided map in the game."
      }
     }
@@ -8196,36 +8250,36 @@
     "image": "/forsaken/img/bg/reborn-family-abode-lit.webp",
     "sided": 60,
     "ranks": {
-     "slasher": {
-      "rank": "S9",
-      "note": "These four, once again, are the best for this map because of their ability to speedblitz Survivors. Their speed allows them to work against most of the loops on this map without the structures hindering their abilities."
-     },
      "1x1x1x1": {
-      "rank": "S9",
+      "rank": "S4",
       "note": "These four, once again, are the best for this map because of their ability to speedblitz Survivors. Their speed allows them to work against most of the loops on this map without the structures hindering their abilities."
      },
-     "noli": {
-      "rank": "S8",
+     "slasher": {
+      "rank": "S4",
       "note": "These four, once again, are the best for this map because of their ability to speedblitz Survivors. Their speed allows them to work against most of the loops on this map without the structures hindering their abilities."
      },
      "c00lkidd": {
-      "rank": "S8",
+      "rank": "S4",
+      "note": "These four, once again, are the best for this map because of their ability to speedblitz Survivors. Their speed allows them to work against most of the loops on this map without the structures hindering their abilities."
+     },
+     "noli": {
+      "rank": "S4",
       "note": "These four, once again, are the best for this map because of their ability to speedblitz Survivors. Their speed allows them to work against most of the loops on this map without the structures hindering their abilities."
      },
      "nosferatu": {
-      "rank": "A10",
+      "rank": "A4",
       "note": "Trappers have the ability to shut off all the strong loops on this map, and there are limited obstructions for their abilities."
      },
      "azure": {
-      "rank": "A8",
+      "rank": "A4",
       "note": "Trappers have the ability to shut off all the strong loops on this map, and there are limited obstructions for their abilities."
      },
      "john-doe": {
-      "rank": "A7",
+      "rank": "A3",
       "note": "Trappers have the ability to shut off all the strong loops on this map, and there are limited obstructions for their abilities."
      },
      "guest-666": {
-      "rank": "B4",
+      "rank": "B2",
       "note": "Sixer gets caught on far too many random obstructions thrown around the map that can hinder their dash, removing the viability of a very strong attack."
      }
     }
@@ -8236,55 +8290,55 @@
     "about": "Ranked by how they perform in a team.",
     "ranks": {
      "helperbot": {
-      "rank": "S10",
+      "rank": "S4",
       "note": "These two are the main staple of the team, their healing is vital to a team's survival. However Helperbot overall is better due to their AOE healing, but Elliot heals more for a single person."
      },
      "elliot": {
-      "rank": "S9",
+      "rank": "S4",
       "note": "These two are the main staple of the team, their healing is vital to a team's survival. However Helperbot overall is better due to their AOE healing, but Elliot heals more for a single person."
      },
      "dusekkar": {
-      "rank": "S8",
+      "rank": "S4",
       "note": "His ability to give Survivors a get out of jail free card, speed them up and give extra HP + Slowness to the Killer can make Survivors unkillable until he is taken care of."
      },
      "shedletsky": {
-      "rank": "A10",
+      "rank": "A4",
       "note": "His ability to very easily stun the Killer and heal himself means he can help protect the Supports with little risk, high reward."
      },
      "two-time": {
-      "rank": "A9",
+      "rank": "A4",
       "note": "Their ability to sneak up and stun the Killer out of nowhere can buy the rest of the team amazing time, as well as buffing themselves to a second life, improving their own survivability."
      },
      "jane-doe": {
-      "rank": "A8",
+      "rank": "A4",
       "note": "She can protect other Survivors by reducing incoming damage to them as well as healing back Shatterpoint HP from doing so, as well as having the longest stun in the game that she can build up as the other Sentinels stun the Killer."
      },
      "guest-1337": {
-      "rank": "A7",
+      "rank": "A3",
       "note": "His ability to body block parry and gain overheal from it allows him to tank and sponge a lot of damage for the important Survivors, however he is very high risk high reward."
      },
      "taph": {
-      "rank": "B10",
+      "rank": "B4",
       "note": "Tripmine can buy time for a Sentinel to land a stun but is very easy to counter by hitting it with an attack."
      },
      "builderman": {
-      "rank": "B9",
+      "rank": "B4",
       "note": "The slowdown from his Sentry can make a loop very difficult for a Killer to outplay, but it is easily destroyed and his Dispenser has mediocre healing."
      },
      "chance": {
-      "rank": "B8",
+      "rank": "B4",
       "note": "Can stun the Killer VERY easily but requires time to build up charges to be more likely to get the stun, and is very inconsistent."
      },
      "noob": {
-      "rank": "C10",
+      "rank": "C4",
       "note": "These Survivors are great at improving their own survivability, however they are not good on a high skill team comp as of the Helperbot update, due to Helperbot's insane healing and support potential."
      },
      "007n7": {
-      "rank": "C9",
+      "rank": "C4",
       "note": "These Survivors are great at improving their own survivability, however they are not good on a high skill team comp as of the Helperbot update, due to Helperbot's insane healing and support potential."
      },
      "veeronica": {
-      "rank": "C8",
+      "rank": "C4",
       "note": "These Survivors are great at improving their own survivability, however they are not good on a high skill team comp as of the Helperbot update, due to Helperbot's insane healing and support potential."
      }
     }
@@ -8293,55 +8347,55 @@
     "about": "Ranked by how well they survive on their own, as most lower skill players do not actively work together as a team.",
     "ranks": {
      "shedletsky": {
-      "rank": "S10",
+      "rank": "S4",
       "note": "Easy to land 3 second stun, and self healing giving him an extra 60 HP. Best at keeping themselves alive when no one else is around while still being very easy to use."
      },
      "noob": {
-      "rank": "S9",
+      "rank": "S4",
       "note": "Built for self sustainability, however does require basic knowledge on stamina management, putting them slightly lower than Shedletsky."
      },
      "jane-doe": {
-      "rank": "A10",
+      "rank": "A4",
       "note": "Ability to regain health by landing her abilities as well as possessing the longest stun in the game if built up, making her very potent in 1v1 scenarios."
      },
      "guest-1337": {
-      "rank": "A9",
+      "rank": "A4",
       "note": "His knockback is extremely powerful, allowing him to create free distance just by cycling between Punch and Charge, never even needing to land a parry to keep himself alive."
      },
      "veeronica": {
-      "rank": "A8",
+      "rank": "A4",
       "note": "Has the absolute best solo survivability in the game, however they do require map knowledge and familiarity with their kit, making her less used by newer players."
      },
      "007n7": {
-      "rank": "B10",
+      "rank": "B4",
       "note": "Clones can be great for bodyblocking, however a Killer that can multi hit with their M1 such as Sixer or Slasher will make blocking useless outside of Clone Parrying to put a Killer in their kill animation. Also requires higher skill, so does not find much use from newer players."
      },
      "elliot": {
-      "rank": "C10",
+      "rank": "C4",
       "note": "Very easily picked off and targeted in lower skill lobbies without anyone to protect them."
      },
      "dusekkar": {
-      "rank": "C9",
+      "rank": "C4",
       "note": "Very easily picked off and targeted in lower skill lobbies without anyone to protect them."
      },
      "helperbot": {
-      "rank": "C8",
+      "rank": "C4",
       "note": "Very easily picked off and targeted in lower skill lobbies without anyone to protect them."
      },
      "builderman": {
-      "rank": "C7",
+      "rank": "C3",
       "note": "Very easily picked off and targeted in lower skill lobbies without anyone to protect them."
      },
      "taph": {
-      "rank": "C6",
+      "rank": "C3",
       "note": "Very easily picked off and targeted in lower skill lobbies without anyone to protect them."
      },
      "two-time": {
-      "rank": "D10",
+      "rank": "D4",
       "note": "Terrible when it comes to 1v1 scenarios with lower skill players, as they are usually unable to hit Matador backstabs consistently in chase, and Two Time excels at stunning the Killer while they chase another Survivor, not themselves."
      },
      "chance": {
-      "rank": "D9",
+      "rank": "D4",
       "note": "Only gets one stun per chase, as they gain Weakness for trying to unlock their ability."
      }
     }

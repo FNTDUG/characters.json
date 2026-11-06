@@ -36,7 +36,7 @@
    "catNotes": {
     "Support": "Body block via Slateskin"
    },
-   "bg": "/forsaken/img/bg/cakefactory-killeronlydoorplaza-lit.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/cakefactory-killeronlydoorplaza-lit.webp",
    "map": "Cake Factory",
    "caption": "Bottoms up! Cant get worse than this, right?",
    "description": "A big snack person at heart, Noob has a handful of food items at their disposal. Sneaking by with their ghostburger, moving faster with their cola, and tanking damage with their slateskin, they're scared, but still pushes on, wanting to find an escape.",
@@ -45,21 +45,21 @@
     "#fcdb03",
     "#a5e00d"
    ],
-   "image": "/forsaken/img/noob.webp",
-   "card": "/forsaken/img/card/noob-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/noob.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/noob-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/noob-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/noob-title.webp",
    "abilities": [
     {
      "name": "BLOXY COLA",
      "key": "Q",
      "cd": "50s",
-     "icon": "/forsaken/img/ab/noob-bloxy-cola.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/noob-bloxy-cola.webp",
      "desc": "Noob drinks a can of **Bloxy Cola** for 2.5 seconds, during which they are unable to sprint. After finishing the drink, Noob is granted movement buffs and is cleansed of slowing effects. The effects are as follows:\n•Grants ⟦Speed|I⟧ for 10 seconds\n•Removes all existing ⟦Slowness|⟧ effects\n•While drinking, Noob cannot sprint\n\n**Using Bloxy Cola while Slateskin Potion is active:**\n\n•Plays a boowomp sound effect\n\n**Item Interaction:**\n\n•Ability is treated as a Bloxy Cola item consumption for the purposes of Bloxy Cola speed\n\n**Achievement(s):**",
      "quote": "\"Warning: Bloxy Cola maybe bland-forming.\" - Roblox"
     },
@@ -67,7 +67,7 @@
      "name": "SLATESKIN POTION",
      "key": "E",
      "cd": "46s",
-     "icon": "/forsaken/img/ab/noob-slateskin-potion.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/noob-slateskin-potion.webp",
      "desc": "Noob drinks a bottle of **Slateskin Potion** for 1.5 seconds, during which they are unable to sprint and their movement speed is decreased by 20%, after fully drinking the **Slateskin Potion**, Noob gains some effects. The effects are as follows:\n•Grants ⟦Slateskin|III⟧ for 6 seconds\n••Provides 120 overheal but reduces speed by 45%\n••Gains extra hit priority\n•Can be recast after 2.5 seconds to remove the effect manually\n•Cooldown only starts after 7.5s or if Noob manually cancels out\n\n**Expiration:**\n\n•If ⟦Slateskin|⟧ expires naturally, gives ⟦Speed|II⟧ for 2 seconds\n•If ended manually, gives ⟦Speed|I⟧ instead.\n\n**Undocumented:**\n\n• Guest 666 cannot collect Blood from Noob while the effect is active, Guest 666 also can't inflict ⟦Hemmorhage|⟧ on them, but drinking **Slateskin Potion** will not remove ⟦Hemmorhage|⟧ if it was already applied before being consumed.\n•Dusekkar can stack the overhealth from ⟦Slateskin|⟧ with **Plasma Beam** and vice versa, and the overhealth will stay until ⟦Slateskin|⟧ ends.\n•⟦Slateskin|⟧ doesn't make you immune to the On-hit speed boost, only the actual ⟦Speed|⟧ status effect.\n----**Achievement(s):**",
      "quote": "IM ROCK HARD!! - Homeless Guy"
     },
@@ -75,7 +75,7 @@
      "name": "GHOSTBURGER",
      "key": "R",
      "cd": "40s",
-     "icon": "/forsaken/img/ab/noob-ghostburger.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/noob-ghostburger.webp",
      "desc": "Noob eats a **Ghostburger** for 2 seconds, granting powerful stealth effects for a short duration. The effects are as follows:\n•Grants ⟦Undetectable|I⟧ and ⟦Invisibility|IV⟧ for 10 seconds\n•While eating, Noob moves 20% slower and is unable to sprint\n\n**Achievement(s):**",
      "quote": "\"What happens if you eat a ghost? You'll find out.\" - Roblox"
     }
@@ -466,7 +466,7 @@
    "catNotes": {
     "Support": "Body block via Clone"
    },
-   "bg": "/forsaken/img/bg/c00l-carnival-official-render-lit.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/c00l-carnival-official-render-lit.webp",
    "map": "C00l Carnival",
    "caption": "all your base are belong 2 me",
    "description": "Previously infamous for the exploits, he had a change of heart after gaining a, only to then lose him after a series of unfortunate events. With a smaller copy of the c00lgui on him, he's able to teleport far in the map, as well as create a duplicate of himself if need be.",
@@ -475,21 +475,21 @@
     "#ffdea6",
     "#1672db"
    ],
-   "image": "/forsaken/img/007n7.webp",
-   "card": "/forsaken/img/card/007n7-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/007n7.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/007n7-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/007n7-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/007n7-title.webp",
    "abilities": [
     {
      "name": "DEX",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/007n7-dex.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/007n7-dex.webp",
      "desc": "007n7 can always see the location of the furthest spawn point on the map.",
      "quote": "“get saveinstance()'d skrub” - loser"
     },
@@ -497,7 +497,7 @@
      "name": "CLONE",
      "key": "Q",
      "cd": "27s",
-     "icon": "/forsaken/img/ab/007n7-clone.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/007n7-clone.webp",
      "desc": "007n7 creates a clone of himself that persists for 10 seconds before disappearing. Upon activation, he gains ⟦Invisibility|IV⟧ and ⟦Undetectable|I⟧ for 5 seconds.\n\nThe clone wanders by default but can have its behavior modified using **Inject**. To 007n7, the clone is highlighted with a white aura.\n\n**Clone Behavior:**\n\n•Moves forward for an estimate of 0.5 seconds based on 007n7's facing direction upon creation.\n•Does not gain speed boosts when hit.\n•Plays running animations regardless of actual speed.\n•Triggers the Killer's terror radius.\n•Copies visual status effects.\n•Bypasses ragdoll limits.\n•If no Survivor is within 85 studs of the Killer, the Killer gains their normal 10% speed boost and does not drain stamina, even if a clone is nearby.\n\n**Undocumented:**\n\n•Upon activation, 007n7 gains a hidden ⟦Helpless|⟧ status effect for 3 seconds.\n•Clones grant John Doe ⟦Speed|⟧ when stepping into a **Digital Footprints**.\n•Clones take hitbox priority when its health is greater than or equal to the health of a survivor also in the hitbox, and gets negative priority when its health is less. Also applies to buildings.\n•The clone summoned will have the same health as 007n7 at the time of summoning and will have infinite stamina.",
      "quote": "\"YOUTUBE THIS IS NOT FUN\" - victim"
     },
@@ -505,7 +505,7 @@
      "name": "C00LGUI",
      "key": "E",
      "cd": "50s",
-     "icon": "/forsaken/img/ab/007n7-c00lgui.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/007n7-c00lgui.webp",
      "desc": "007n7 channels his c00lgui, reducing his movement speed by 85% for 5.5 seconds before teleporting to the spawn location indicated by **Dex**.\n\nTaking damage or beginning a generator interaction will cancel the ability.\n\n**Undocumented:**\n\n•There is a brief window near the end of the cast where teleportation will still occur even if damage is taken.\n•Cannot emote or use items while teleporting.",
      "quote": "\"where's my house\" - victim"
     },
@@ -513,7 +513,7 @@
      "name": "INJECT",
      "key": "R",
      "cd": "0s",
-     "icon": "/forsaken/img/ab/007n7-inject.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/007n7-inject.webp",
      "desc": "Upon activation, 007n7 gains control over the behavior of clones created using his **Clone** ability.\n\nThis ability allows switching between different clone movement modes depending on the situation, giving flexibility in deception, distraction, and chase manipulation.\n\nIf a clone is already active, switching modes will not affect it. The clone will remain locked into the movement mode it was assigned when it was created.",
      "quote": "\"dude stop hacking kid\" - victim"
     },
@@ -521,7 +521,7 @@
      "name": "INJECT - AIMLESS",
      "key": "R",
      "cd": "0s",
-     "icon": "/forsaken/img/ab/007n7-inject-aimless.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/007n7-inject-aimless.webp",
      "desc": "The clone wanders randomly, choosing a new direction every 2–4 seconds.",
      "quote": "\"dude stop hacking kid\" - victim"
     },
@@ -529,7 +529,7 @@
      "name": "INJECT - PATHFIND",
      "key": "R",
      "cd": "0s",
-     "icon": "/forsaken/img/ab/007n7-inject-pathfind.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/007n7-inject-pathfind.webp",
      "desc": "The clone pathfinds to the furthest survivor spawn. If it reaches its destination, it stops moving.",
      "quote": "\"dude stop hacking kid\" - victim"
     },
@@ -537,7 +537,7 @@
      "name": "INJECT - CURSOR",
      "key": "R",
      "cd": "0s",
-     "icon": "/forsaken/img/ab/007n7-inject-cursor.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/007n7-inject-cursor.webp",
      "desc": "The clone moves in a straight line toward the surface of the part the cursor is hovering over. Enabling shiftlock causes the clone to run in the direction the player is facing regardless of where the cursor lands, and this behavior is shared on mobile.",
      "quote": "\"dude stop hacking kid\" - victim"
     }
@@ -871,7 +871,7 @@
    "catNotes": {
     "Sentinel": "Can knock the Killer back"
    },
-   "bg": "/forsaken/img/bg/classic-battlegrounds-official-render-lit.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/classic-battlegrounds-official-render-lit.webp",
    "map": "Classic Battlegrounds",
    "caption": "SKATTINNGGGGGGG",
    "description": "A rebellious robot, once with a heart for tags and shredding. Letting her pieces run all while she jumps, kicks, and flies through the air! If danger ever finds her, she can slip away rapidly and repair herself. Veeronica stands as a pillar of survivability. Able to hold her own and take care of herself, all while sacrificing some aid from others for sustainability, speed, and style.",
@@ -880,21 +880,21 @@
     "#ff30e0",
     "#ffd1f3"
    ],
-   "image": "/forsaken/img/veeronica.webp",
-   "card": "/forsaken/img/card/veeronica-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/veeronica.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/veeronica-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/veeronica-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/veeronica-title.webp",
    "abilities": [
     {
      "name": "METAL FRAME",
      "key": "Passive",
      "cd": "",
-     "icon": "/forsaken/img/ab/veeronica-metal-frame.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/veeronica-metal-frame.webp",
      "desc": "Veeronica has a passive battery at the top right of her screen. Because she is a robot, she is prevented from using any healing items — including Medkits, Elliot's **Pizza**, or Builderman's **Dispensers**. Her rechargeable batteries are her only source of healing and can be activated through her **Activate Battery** ability. The effects are as follows:\n•The Battery heals up to 50 HP at 100% battery charge.\n•Starts each round with 30% charge.\n•Completing a generator puzzle restores 8% battery per puzzle.\n\n**Undocumented:**\n\n•Because the Battery value does not display decimals, the number shown for Veeronica's Battery can sometimes appear slightly inaccurate.\n••For example, if she were to take exactly 8.6 damage at full health while at 100% Battery, she would lose 17.2% Battery, leaving her at 82.8% charge, which is displayed as 83%.\n••For another example, if Veeronica's Battery is displayed as 50% and she completes a generator puzzle that grants 8% Battery, the result may be shown as 57% instead of 58%. However, if she completes the entire generator herself—or complete three additional generator puzzles—the Battery will display as 82%.\n•Fake Generators don't restore Battery.\n•Hallucinations of Elliot's **Pizza**, or Builderman's **Dispensers** do not affect her.\n•Veeronica cannot place Graffiti on a hallucination of a Dispenser.\n•**Metal Frame** is effective in private servers and cannot be disabled.\n•Veeronica can use the “Fake Medkit” item in private servers.",
      "quote": "roger roger"
     },
@@ -902,7 +902,7 @@
      "name": "VANDALISM",
      "key": "Q",
      "cd": "0.7s (equip/unequip, 10s (erased)",
-     "icon": "/forsaken/img/ab/veeronica-vandalism.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/veeronica-vandalism.webp",
      "desc": "Veeronica can equip or unequip her spray paint, allowing her to spray Graffiti onto a wall by left clicking and holding. The effects are as follows:\n•Takes 5 seconds to complete one piece of Graffiti.\n•Each Graffiti creates a rectangular Graffiti Zone with a hitbox of 12×30×12 studs that phases through walls and enables the use of **Sk8** when inside of it, visible only to Veeronica.\n•Can place up to 3 pieces of Graffiti at once.\n•Graffiti cannot be placed within spray range (4×4×7) of each other unless Veeronica is behind a wall.\n•There's a 1/25000 chance that a rare Graffiti, unlisted among the default Graffitis, may appear.\n\n**Graffiti Erasure:**\n\n•Veeronica can erase her own Graffiti by holding Spacebar near it with the spray can equipped.\n•Graffitis have an erase range of 4×7×1 for Killers attack hitboxes.\n••However, Veeronica can erase her own Graffiti as long as she is within 4×4×7 studs of the 4×7×1 Graffiti hitbox.\n•Graffitis have 5 health and can be erased by the Killer.\n•If any Graffiti is erased without Veeronica doing it herself, **Vandalism** goes on cooldown for 10 seconds.\n\n**Undocumented:**\n\n•Graffiti can't just be placed on walls and structures. They can be placed on basically any surface that isn't another Graffiti, the Killer, or a Survivor. This includes: Invisible Barriers, Killer-Only Doors, Builderman's **Constructions**, Taph's **Subspace Tripmine**, Elliot's **Pizza**, 007n7's **Clone**, John Doe's **Corrupt Energy**, c00lkidd and 1x1x1x1's **Minions**, and Items.\n••If a surface has Graffiti on it, it'll become erased and go on cooldown if said surface no longer exists. (I.E. Placing Graffiti on Taph's **Subspace Tripmine**, and then the trap explodes.)\n••Graffiti does not automatically erase if the surface moves away from the graffiti(I.E. Placing Graffiti on John Doe's Corrupt Energy, and then the spikes sink into the ground for a bit before despawning.)\n•If Veeronica is not facing a surface directly enough (around 50°), Graffiti will not be placed.\n• On-hit effects can trigger by hitting Graffiti, though this currently only applies to John Doe's **Corrupt Energy**.\n• Graffiti is placed directly in front of Veeronica, from head height and centered from the torso.\n• Erased Graffiti plays a sound and shows an icon where it was placed.\n• If the Killer destroys Graffiti, other pieces of Graffiti within 4.5 studs will be destroyed.\n• Graffiti zones are highlighted to the Killer when Veeronica uses her **Sk8** ability.\n• Being in a graffiti zone for an estimate of 0.5s will cause Veeronica's antennas to light up.\n• Veeronica has to be standing on the ground for the spray can to work.\n• Veeronica cannot place graffiti on Noli's Fake Generators.",
      "quote": "HEY! *whistle*"
     },
@@ -910,7 +910,7 @@
      "name": "SK8",
      "key": "E",
      "cd": "0.5s(upon activation; can still trick but cannot recast)",
-     "icon": "/forsaken/img/ab/veeronica-sk8.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/veeronica-sk8.webp",
      "desc": "Veeronica can only use **Sk8** while standing inside a Graffiti Zone. The effects are as follows:\n•Moves at 1.15x (29.9 studs per second) running speed while skating.\n•**Consumes 1.35x** (13.5 per second) **more stamina** than regular sprinting.\n•Has very limited turning control while skating.\n\n**Crashing and Penalties:**\n\n•Crashing into a wall or the Killer with **Mobile** active deals 5 self-damage.\n•Applies ⟦Slowness|4⟧ for 2.5 seconds upon crashing.\n\n**Cancellation:**\n\n•**Sk8** goes on a 5 second cooldown.\n•Veeronica can cancel skating at any time by recasting the ability, this bypasses the ⟦Helpless|⟧ effect.\n•If Veeronica's stamina runs out, **Sk8** ends immediately with no extended exhaustion, despite her increased movement speed while skating.\n•When activating **Sk8**, the Graffiti piece she used becomes highlighted within 25 studs for 2 seconds (visible to both Veeronica and the Killer)\n\n**Undocumented:**\n\n•Veeronica begins skating in the direction the camera is facing.\n•While using **SK8**, Veeronica does not lose speed when falling and immediately moves at 1.15× her running speed without an acceleration window.\n•**Sk8** retains the same target when yaw is stable, but camera pitch affects raycast hit precision, which can determine whether the system resolves a trick/crash cleanly or cancels **Sk8**.\n••Veeronica can also get kicked out of **Sk8** by being slowed down too heavily, such as getting hit by 1x1x1x1's Entanglement and sometimes Noli's Nova.\n•Veeronica cannot emote or use items while skating.",
      "quote": "subway surfers gameplay in the corner"
     },
@@ -918,7 +918,7 @@
      "name": "SK8 - TRICK",
      "key": "E",
      "cd": "1s",
-     "icon": "/forsaken/img/ab/veeronica-sk8-trick.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/veeronica-sk8-trick.webp",
      "desc": "When approaching a collidable surface (entering a 13-stud radius when going toward it, or a 3-stud radius when her side is facing it), Veeronica will glow and can perform a **Trick** by pressing Spacebar / X / Sprint (PC / Controller / Mobile) to rebound off it. Veeronica stays in the air for 1 second. The effects are as follows:\n•The 1.15x speed boost while skating is increased to a 1.42x boost while in the air.\n•Veeronica receives crash immunity for ~0.75s.\n•Veeronica restores 4 Stamina.\n•Performing 3 **Tricks** in a row charges Veeronica's Battery by 5%.\n•Attempting a **Trick** on nothing will make Veeronica glow red while still putting **Trick** on cooldown.\n\n**Undocumented:**\n\n•Veeronica's maximum jump height from performing a **Trick** is 10 studs.\n•Interacting with an object will override the **Trick** input.\n•**Sk8** does not account for certain collidable surfaces; attempting to skate on them will either allow Veeronica to pass through (common with smaller-than-normal objects) or cause Veeronica to be kicked out of **Sk8**.\n••The cooldown on activating **Sk8** only applies to manual reverts; this action will end **Sk8** immediately.\n•Holding the Spacebar / X / Sprint (PC / Controller / Mobile) while **Trick** is on cooldown will instantly activate **Trick** once again as soon as it's off cooldown, buffering **Trick**.",
      "quote": "NO WAY...."
     },
@@ -926,7 +926,7 @@
      "name": "BROADCAST - PHASE",
      "key": "R",
      "cd": "0.5s",
-     "icon": "/forsaken/img/ab/veeronica-broadcast-phase.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/veeronica-broadcast-phase.webp",
      "desc": "Veeronica can switch between 3 **Sk8** channels, each affecting her movement and interactions differently. These effects cannot be switched during **Sk8**.\n\n•Upon colliding with a Killer:\n••Gain ⟦Resistance|II⟧ for 3 seconds and ⟦Speed|II⟧ (35.88 studs per second) for 1.5 seconds.\n••**Phase** through the Killer.\n••Phasing charges Veeronica's Battery by 15%. (can only be used once per **Sk8**)\n\n**Undocumented:**\n\n•**Phase**'s speed boost overrides other speed boosts (such as Bloxy Cola).\n•**Phase**'s mechanic only triggers with Killer, not Minions.",
      "quote": "subway surfers gameplay in the corner"
     },
@@ -934,7 +934,7 @@
      "name": "BROADCAST - BUMPER",
      "key": "R",
      "cd": "0.5s",
-     "icon": "/forsaken/img/ab/veeronica-broadcast-bumper.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/veeronica-broadcast-bumper.webp",
      "desc": "Veeronica can switch between 3 **Sk8** channels, each affecting her movement and interactions differently. These effects cannot be switched during **Sk8**.\n\n•Upon crashing into a Killer:\n••Knock the Killer back.\n••Charge Veeronica's Battery by 15%.\n••Does not deal self-damage or apply ⟦Slowness|⟧.\n•**Sk8** ends immediately if she crashes into the Killer.\n•If the Killer has been hit by a **Bumper** in the last 20s, knockback will not occur.\n••A meter appears above Veeronica's **Broadcast** ability when **Bumper** is selected to indicate its cooldown. If no meter is shown, **Bumper** is not on cooldown.\n\n**Undocumented:**\n\n•**Bumper** deals 5 damage when colliding with the Killer.\n•Knockback is ping-dependent, applying massive, minor, or no knockback based on the Killer's connection.\n•**Bumper**'s mechanic only triggers with Killers, not Minions.\n•Upon performing a **Trick**, the Killer is immune to **Bumper** knockback for 1 second (if this is not intended, this may be caused by the crash immunity granted upon performing a **Trick**).\n•**Bumper**'s hitbox is dependent on the angle Veeronica is skating:\n••Skating upwards will knock the Killer high up into the air.\n••Skating downwards will push the Killer down, causing little to no knockback.",
      "quote": "subway surfers gameplay in the corner"
     },
@@ -942,7 +942,7 @@
      "name": "BROADCAST - MOBILE",
      "key": "R",
      "cd": "0.5s",
-     "icon": "/forsaken/img/ab/veeronica-broadcast-mobile.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/veeronica-broadcast-mobile.webp",
      "desc": "Veeronica can switch between 3 **Sk8** channels, each affecting her movement and interactions differently. These effects cannot be switched during **Sk8**.\n\n•**Trick's** increased turn control lasts 2 seconds after landing.",
      "quote": "subway surfers gameplay in the corner"
     },
@@ -950,7 +950,7 @@
      "name": "ACTIVATE BATTERY",
      "key": "T",
      "cd": "1:15 (75s), 1s(At full HP, or has 0% Charge)",
-     "icon": "/forsaken/img/ab/veeronica-activate-battery.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/veeronica-activate-battery.webp",
      "desc": "Veeronica begins slowly healing herself using her Battery. Healing stops if:\n•Maximum health is reached.\n•Battery charge runs out.\n•Veeronica takes any damage (including Status Effects that deal damage over-time).\n\n**Undocumented:**\n\n•Healing occurs at 1 HP per second.\n•1 hp equals 2% of the battery\n•If Veeronica has at least 1% charge, Battery can still be activated, restoring 1 HP even though the required threshold is not met.\n•While the Battery is in use, gaining energy from other sources does not increase its charge.\n•After ⟦Regeneration|⟧ ends, there is a very brief moment before Battery can be gained again.\n•Damage only counts if it's health being lost, losing only overhealth will not cancel the healing as long as no actual health is lost.\n•**Activate Battery**'s ⟦Regeneration|⟧ starts instantly after the ability is used.",
      "quote": "oktoberfest"
     }
@@ -1234,7 +1234,7 @@
     "Survivalist",
     "Sentinel"
    ],
-   "bg": "/forsaken/img/bg/sword-fighting-in-the-heights-rn.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/sword-fighting-in-the-heights-rn.webp",
    "map": "SFOTH",
    "caption": "BLAME JOHN!",
    "description": "Blame John. A former admin and huge part of Roblox's history, Shedletsky wields a Linked Sword to stop the killer in their tracks.",
@@ -1245,21 +1245,21 @@
     "#99b924",
     "#97989f"
    ],
-   "image": "/forsaken/img/shedletsky.webp",
-   "card": "/forsaken/img/card/shedletsky-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/shedletsky.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/shedletsky-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/shedletsky-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/shedletsky-title.webp",
    "abilities": [
     {
      "name": "SLASH",
      "key": "Q",
      "cd": "40s",
-     "icon": "/forsaken/img/ab/shedletsky-slash.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/shedletsky-slash.webp",
      "desc": "Shedletsky swings his sword in a horizontal diagonal arc within a 0.55-second windup. He gains ⟦Resistance|II⟧ for 0.55 seconds and is slowed by 75% for 1.4 seconds. The sword hitbox lingers for 0.4s.\n\n**On Hit:**\n\n•Deals 30 damage.\n•Stuns the Killer for 3 seconds.\n\n**Undocumented:**\n\n•Long endlag leaves Shedletsky vulnerable if missed.\n•Shedletsky's Slash hitbox extends up to 5 studs.\n\n**Achievement**(s):",
      "quote": "\"Death before dishonor.\" - Shedletsky"
     },
@@ -1267,7 +1267,7 @@
      "name": "FRIED CHICKEN",
      "key": "E",
      "cd": "70s",
-     "icon": "/forsaken/img/ab/shedletsky-fried-chicken.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/shedletsky-fried-chicken.webp",
      "desc": "Shedletsky consumes a fried chicken leg to recover health over time, trading mobility for strong healing.\n\n**Activation:**\n\n•Restores 5 HP instantly.\n•Restores 25 HP over 10 seconds (30 total).\n•Slows him down by 75% for 3 seconds.\n\n**Limitations:**\n\n•Cannot be used at full HP.\n•Regeneration is canceled upon taking sufficient damage.\n•Limited to 2 charges per round.\n\n**Undocumented:**\n\n•Regeneration only cancels after taking 5+ damage.\n\n**Achievement(s):**",
      "quote": "\"You won the annual chicken eat off hosted by Shedletsky!\" - Builderman"
     }
@@ -1697,7 +1697,7 @@
     "Survivalist",
     "Sentinel"
    ],
-   "bg": "/forsaken/img/bg/mugw-bloxy-ramp-lit.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/mugw-bloxy-ramp-lit.webp",
    "map": "Underground War (Memories)",
    "caption": "Be strong. Always be strong.",
    "description": "A hardened veteran with battle scars from wars long ago. He has a tendency to sacrifice himself in order to keep those around him safe. With Guest's sturdiness, he can block, bash, and punch the Killer to keep it away from harming his allies.",
@@ -1706,21 +1706,21 @@
     "#0c00ff",
     "#000000"
    ],
-   "image": "/forsaken/img/guest-1337.webp",
-   "card": "/forsaken/img/card/guest-1337-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/guest-1337.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/guest-1337-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/guest-1337-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/guest-1337-title.webp",
    "abilities": [
     {
      "name": "MADE TO LAST",
      "key": "Passive",
      "cd": "",
-     "icon": "/forsaken/img/ab/guest-1337-made-to-last.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/guest-1337-made-to-last.webp",
      "desc": "Guest 1337 gains an extra 10HP (was 15) as a Survivor.",
      "quote": "\"Never show fear, no matter the odds.\" - Guest 1337"
     },
@@ -1728,7 +1728,7 @@
      "name": "SELF SACRIFICE",
      "key": "Passive",
      "cd": "",
-     "icon": "/forsaken/img/ab/guest-1337-self-sacrifice.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/guest-1337-self-sacrifice.webp",
      "desc": "Guest 1337 has hit priority over other entities, such as survivors and structures. This increases the consistency of Guest 1337's defensive abilities and allows him to tank hits for teammates. It's worth noting that this passive becomes completely obsolete against piercing attacks, since they can hit multiple Survivors as long as they are within the hitbox.\n\n**This mechanic has three tiers:**\n•**Tier 1**:\n••Standard priority.\n••The entity closest to the Killer's hitbox is damaged.\n•**Tier 2**:\n••Guest 1337's default passive.\n••If multiple players are stacked in the same position, he will always be hit.\n••If multiple Guest 1337s are stacked, only one of them takes damage.\n•**Tier 3**:\n••Active only during Guest 1337's Block.\n••Overrides Tier 1 and Tier 2.\n••If multiple Guest 1337s are blocking in the same spot, only one of them takes damage.",
      "quote": "\"You'll have to get through me first.\" - Guest 1337"
     },
@@ -1736,7 +1736,7 @@
      "name": "BLOCK",
      "key": "Q",
      "cd": "27s",
-     "icon": "/forsaken/img/ab/guest-1337-block.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/guest-1337-block.webp",
      "desc": "Guest 1337 braces for an incoming attack, expanding his collision hitbox.\n•Applies ⟦Resistance|V⟧ for 1 second.\n•Movement speed is reduced by 50% for 1.75s.\n•Only fully blocks Main Abilities (referred to as **Basic Attacks (M1s or M1 extensions)**), but is able to negate most ability damage.\n\n**Upon successfully blocking a Basic Attack:**\n•⟦Resistance|V⟧ is removed, and the damage is fully negated.\n•Grants 10 stacking ⟦Overheal|⟧ that does not naturally decay, up to a maximum of 30.\n•Guest 1337's movement speed is restored and they gain ⟦Speed|I⟧ for 2s.\n•The Killer's movement speed is reduced by 30% for 1 second.\n•Fully resets the cooldown of Guest 1337's **Punch**.\n\n**If blocking an ability that is not a Basic Attack:**\n•**Block** immediately breaks and restores normal movement speed. A special animation is played when this happens.\n•Guest 1337 is hit normally, but the damage is reduced by 40%.\n•Guest 1337 gains ⟦Resistance|II⟧ for 3s.\n\n**Undocumented:**\n•Abilities will be locked out (non-visibly) for about 2s if Guest 1337 fails to **Block** any attack.\n•Guest 1337 gains ⟦Strength I|⟧ for 5s upon a successful block.\n•Guest 1337 cannot block more than one attack. This can be seen by blocking a killer's Basic Attack, then getting struck by an already-existing stray projectile.\n•Despite having a Main Ability bind, Nosferatu's **Dive** does not count as a Basic Attack.",
      "quote": "\"Stay strong, friend. I got your back.\" - Guest 1337"
     },
@@ -1744,7 +1744,7 @@
      "name": "CHARGE",
      "key": "E",
      "cd": "40s",
-     "icon": "/forsaken/img/ab/guest-1337-charge.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/guest-1337-charge.webp",
      "desc": "Guest 1337 lets out a battle cry and dashes forward in a shoulder-bash pose for 1.5s, having his stamina gain paused for the duration.\n\n**If** Guest 1337 **collides with the Killer:**\n•The Killer takes 5 damage and is knocked back depending on how long Guest 1337 charged, with a minimum of 6 studs and up to a maximum of 11 studs, charging over the course of 0.5s.\n•Guest 1337 is inflicted with ⟦Resistance|III⟧ for 0.55s.\n\n**If** Guest 1337 **does not collide with the Killer:**\n•Guest 1337 receives ⟦Slowness|II⟧ for a duration equal to ( 3 × stud distance to nearest Killer) ÷ 13.\n•**Charge** ends automatically if Guest 1337 crashes into a wall or falls off a high ledge.\n\n•The knockback value of **Charge** is reduced by 10% for every additional Guest 1337 currently alive.\n\n**Undocumented:**\n•Guest 1337 can \"sprint\" during **Charge**. However, this will only affect the stamina regeneration delay.\n•Abilities are locked during and after **Charge** ends in any way for 1s. Disabling ability cooldowns via the Command Panel doesn't bypass this.\n•The maximum ⟦Slowness|II⟧ duration Guest 1337 can get when missing a **Charge** is 15s, while the minimum is 3s. However, if Guest 1337 is near the killer when Charge ends, no penalty is applied.\n•If Guest 1337 charges into a Killer who has already been charged within the past 20s, **Charge**’s effects will be nullified.\n••A meter above Guest 1337's **Charge** ability to indicate its global cooldown. If no meter is shown, **Charge** is not on \"cooldown\".\n•**Charge** can be manually canceled if the user starts repairing a Generator at the correct moment.",
      "quote": "\"Incoming! Look out!\" - Guest 1337"
     },
@@ -1752,7 +1752,7 @@
      "name": "PUNCH",
      "key": "R",
      "cd": "55s",
-     "icon": "/forsaken/img/ab/guest-1337-punch.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/guest-1337-punch.webp",
      "desc": "Guest 1337 pulls back his right fist before immediately swinging it forward, with varying results as documented below.\n\n**Regular Punch**\n\nIf Guest 1337 uses the ability normally:\n•Can only connect with one target and has a windup of 0.6s. **Does not stun**.\n•The Killer is inflicted with ⟦Helpless|⟧ and ⟦Slowness|II⟧ for 2s on hit, lowered by 0.35s for every Guest 1337 currently alive.\n•Deals 25 damage on hit.\n•Knocks the Killer back by 7 studs on hit.\n\n**Parry Punch**\n\nIf Guest 1337 uses the ability immediately after successfully blocking a Basic Attack:\n•The hitbox pierces, and Guest 1337 receives ⟦Resistance|II⟧ during the reduced windup of 0.4s.\n••The Killer takes 42 damage (actually 35) and is ⟦Stunned|⟧ for 2s on hit.\n•Knocks the Killer back by 13 studs on hit.\n\n**Undocumented:**\n•**Punch**'s icon turns yellow upon a successful Basic Attack **Block** to signify Guest 1337 is able to do a Parry **Punch**.\n••Erroneously, this happens even if Guest 1337 blocks an ability attack.\n•Parry **Punch**'s lunge stops prematurely if Guest 1337 connects with a target.\n• **Punch** cannot interrupt active Killer abilities, and the knockback values of **Punch** are reduced by 10% for every additional Guest 1337 currently alive.",
      "quote": "\"FALCAWN PAAWNCH\" - random guy"
     }
@@ -2224,7 +2224,7 @@
     "Survivalist",
     "Sentinel"
    ],
-   "bg": "/forsaken/img/bg/reborn-family-abode-lit.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/reborn-family-abode-lit.webp",
    "map": "Reborn Family Abode",
    "caption": "Shadows die twice.",
    "description": "A fragile cultist that holds a terrible secret. Bearing nothing other than a sleek dagger and a manic smile, they're able to earn a second life through risk and sacrifice.",
@@ -2233,21 +2233,21 @@
     "#e6e6e6",
     "#4f4f4f"
    ],
-   "image": "/forsaken/img/two-time.webp",
-   "card": "/forsaken/img/card/two-time-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/two-time.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/two-time-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/two-time-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/two-time-title.webp",
    "abilities": [
     {
      "name": "OBLATION",
      "key": "Passive",
      "cd": "",
-     "icon": "/forsaken/img/ab/two-time-oblation.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/two-time-oblation.webp",
      "desc": "Two Time builds **Oblation** by dealing damage to the Killer, filling a meter that appears on the right side of the screen whenever damage is dealt. This meter determines whether they can respawn after death. Once full, dying will trigger a **second life** at their placed Ritual, but with reduced health and durability.\n\n**Oblation Gain:**\n\n•Front stab: +20%\n•Backstab: +40%\n\n**Second Life Activation:**\n\n•If the **Oblation** bar is filled, Two Time will enter their second life upon taking lethal damage.\n•Two Time is the last Survivor, but they will not respawn at their placed Ritual.\n\n**Second Life Effects:**\n\n•Respawns with 50 HP, which is 62.5% of their base health (80).\n•Restores 40% Stamina.\n•Removes all status effects.\n•Gains 2 seconds of invincibility.\n•Applies ⟦Speed|II⟧ for 6 seconds.\n•Applies ⟦Vulnerable|V⟧ for 12 seconds.\n\n**Limitations:**\n\n•Requires a placed Ritual to activate.\n•Without a Ritual, a full bar will not prevent death.\n\n**Undocumented:**\n\n•Adds 20 seconds to the round timer upon triggering a second life, excluding Last Man Standing (LMS) respawns.\n•Due to 2 seconds of invincibility, ⟦Vulnerable|5⟧ technically lasts 10 seconds.",
      "quote": "\"You both shall set out on the grand step to rebirth.\" - ██████"
     },
@@ -2255,7 +2255,7 @@
      "name": "SACRIFICIAL DAGGER",
      "key": "Q",
      "cd": "30s",
-     "icon": "/forsaken/img/ab/two-time-sacrifical-dagger.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/two-time-sacrifical-dagger.webp",
      "desc": "Two Time pulls out the **Ghostfire Dagger**, striking the Killer for damage and sustaining themselves. The outcome depends on positioning, rewarding precise backstabs with stronger effects.\n\n**Activation:**\n\n•0.3s windup.\n•Grants ⟦Resistance|1⟧ for 0.7.\n\n**On Hit:**\n\n•**Front stab:**\n••Deals 10 damage.\n••Applies ⟦Slowness|II⟧ and ⟦Helpless|⟧ to the Killer for 1 second.\n•**Backstab:**\n••Deals 20 damage.\n••The Killer is ⟦Stunned|⟧ for 2s.\n\n**Stabbing while Crouched:**\n\n•Transforms into a faster forward lunge that lunges you about **22 studs** with increased endlag and increase the Dagger stun duration ( 2s -> 3.5s )\n\n**Limitations:**\n\n•Landing a stab on a minion or a stun immune Killer does not grant Oblation.\n\n**Undocumented:**\n\n•Named **Dagger** in-game.\n•Cannot sprint during use.\n•Dagger hitbox reaches up to **5 studs**",
      "quote": "\"Lookie, █████-they gave us this cool knife!\" - Two Time"
     },
@@ -2263,7 +2263,7 @@
      "name": "CROUCH",
      "key": "E",
      "cd": "35s, 1s(upon activation)",
-     "icon": "/forsaken/img/ab/two-time-crouch.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/two-time-crouch.webp",
      "desc": "Two Time enters a stealth state by **crouching** with their Ghostfire Dagger in hand, silencing their footsteps and preparing for an ambush.\n\n**Effects while Crouched:**\n\n•Applies ⟦Undetectable|⟧.\n•Applies ⟦Invisibility|III⟧.\n•Silences footsteps.\n•**Crouching** and its effects last up to 15 seconds or until manually uncrouched\n•Two Time's aura is revealed to other Survivors within 100 studs.\n•Two Time will gradually gain speed while running towards the Killer, with this speed capping out on 40% over 4s. This speed boost is immediately lost if Two Time exits Crouch, takes damage, or stops running towards the Killer.\n\n**If** Two Time **manually uncrouches:**\n\n•Removes ⟦Undetectable|⟧ and ⟦Invisibility|III⟧.\n•If within 30 studs of the Killer, gains ⟦Speed|II⟧ for 1 second.\n\n**Undocumented:**\n\n•While **crouched**, Two Time's walk speed is reduced to 10 and their run speed is reduced to 20.\n•For some odd reason, **Crouch** does not show it's cooldown when you are currently undergoing it's effects despite it ticking down.\n•For some odd reason, if Two Time **crouches** before respawning during Last Man Standing (LMS), they remain **crouched** after respawning and are still highlighted.",
      "quote": "\"Quiet, Two Time! They're not supposed to see us in here, hehe!\" - █████"
     },
@@ -2271,7 +2271,7 @@
      "name": "PRAY",
      "key": "R",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/two-time-pray.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/two-time-pray.webp",
      "desc": "Two Time will kneel near their RITUAL and begin praying while this ability is held.\n\n•Letting go of the ability will stop PRAYING.\n•While PRAYING, Two Time will rapidly exchange OBLATION progress for HP.\n•Two Time will gain 1 HP for every 2% OBLATION progress spent, up to 50 HP at 100% OBLATION progress.\n•If Two Time is not near their RITUAL when attempting to use this ability, the location of their RITUAL will be revealed to them for 4s.\n•Two Time is unable to use this ability if they do not have a RITUAL.\n•Two Time Gets their OBLATION Revealed to themselves while using this ability.",
      "quote": "\"May spawn bless us today!\" - █████''"
     },
@@ -2279,7 +2279,7 @@
      "name": "RITUAL",
      "key": "T",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/two-time-ritual.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/two-time-ritual.webp",
      "desc": "Two Time carves a **Ritual** into the ground, marking a respawn point that enables their second life through Oblation.\n\n**Core Effects:**\n\n•Dying with a full Oblation bar instantly teleports Two Time to the **Ritual**.\n•Can only be placed and used once per round.\n\n**Last Man Standing (LMS) Bonus:**\n\n•Two Time automatically enters their second life, even if their Oblation bar is not full.\n•Maximum HP is increased to 110.\n•Heals up to 50 HP.\n•Does not receive the ⟦Vulnerable|5⟧ penalty.\n•Will not be teleported to their placed **Ritual**.\n•Any buffs gained are reduced based on how much **Oblation** is missing.\n\n**Undocumented:**\n\n•Windup: ~4s\n•**Ritual** visuals intensify with higher Oblation.\n•Without a planted **Ritual**, even a full Oblation bar will not trigger a respawn.\n\n**Achievement(s):**",
      "quote": "\"Spawn will be eternally pleased at our devotion!\" - ██████"
     }
@@ -2588,7 +2588,7 @@
    "cats": [
     "Sentinel"
    ],
-   "bg": "/forsaken/img/bg/chance-loading.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/chance-loading.webp",
    "caption": "99% of gamblers quit before they win big.",
    "description": "The sounds of machines promising great rewards spiral within his ears. Gambling with his life, his potential lies inside of the result of his coin. He also wields a shoddy flintlock that feels like it could break at any moment, but it's one that he'll take to his death.",
    "lead": "Chance is a Sentinel Survivor, available to all and purchasable for 777 Player Points. He is an extreme gambling addict who gambles with his life to survive, depending on coin flips that can create either beneficial or harmful effects, making him a high-risk, high-reward, and luck-based Survivor.",
@@ -2596,21 +2596,21 @@
     "#2d2d2d",
     "#828282"
    ],
-   "image": "/forsaken/img/chance.webp",
-   "card": "/forsaken/img/card/chance-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/chance.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/chance-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/chance-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/chance-title.webp",
    "abilities": [
     {
      "name": "UNPREDICTABLE FATE",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/chance-unpredictable-fate.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/chance-unpredictable-fate.webp",
      "desc": "When a round begins, Chance's max health is randomized between 70–90.",
      "quote": "\"TAKE A CHANCE WITH CHAAAANCE BABY\" - Chance"
     },
@@ -2618,7 +2618,7 @@
      "name": "COIN FLIP",
      "key": "Q",
      "cd": "1.75s",
-     "icon": "/forsaken/img/ab/chance-coin-flip.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/chance-coin-flip.webp",
      "desc": "Chance flips a coin—if an R appears, it is considered heads; otherwise, tails.\n\n**Heads:**\n\n•Gain 1 charge for all other abilities.\n\n**Tails:**\n\n•Gain 1 stack of ⟦Vulnerable|⟧ (+20% damage taken) for 15 seconds.\n•Each consecutive tails increases the Weakness tier by 1 and refreshes the duration.\n•⟦Vulnerable|⟧ has no stack limit.\n•When ⟦Vulnerable|⟧ expires naturally, its tier does not reset; only **Hat Fix** can reset it.\n\n**Coin Pit:**\n\n•Each consecutive tails grants +2.5% increased chance for the next heads result.\n•This bonus resets after the next heads.",
      "quote": "\"I gambled with my LIFE\" -???\n\"did you win though\" - Chance"
     },
@@ -2626,7 +2626,7 @@
      "name": "ONE SHOT",
      "key": "E",
      "cd": "45s",
-     "icon": "/forsaken/img/ab/chance-one-shot.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/chance-one-shot.webp",
      "desc": "Chance draws an unreliable flintlock and fires after a 1-second windup. One of three outcomes occurs:\n\n**Explosion (25% → 15% → 5%):**\n\n•Deals 25 self-damage.\n•Breaks the flintlock until repaired by **Hat Fix**.\n•Creates a 6×6×6 hitbox that stuns the Killer for ~5 seconds.\n\n**Misfire (25% → 15% → 5%):**\n\n•The gun fails to fire.\n•Triggers cooldown.\n\n**Successful Shot (50% → 70% → 90%):**\n\n•Deals 50 damage.\n•Stuns the Killer within 90 studs for 1–4 seconds (linearly decreasing with distance).\n\n**Charge Scaling:**\n\n•Each additional charge grants:\n••+20% success chance\n••-10% explosion chance\n••-10% misfire chance\n•Using **One Shot** consumes all charges from every ability.\n\n**Undocumented:**\n\n•Shooting a Killer normally knocks them back by 5 studs, but if they are caught in the explosion, they can be pushed back up to 25 studs, potentially creating distance during a chase at the cost of Chance losing significant health.",
      "quote": "\"You only have one shot.\" - Talking Cat"
     },
@@ -2634,7 +2634,7 @@
      "name": "REROLL",
      "key": "R",
      "cd": "20s",
-     "icon": "/forsaken/img/ab/chance-reroll.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/chance-reroll.webp",
      "desc": "Chance rerolls his Max Health to a random value between 55–120.\n\n**Charge Multipliers:**\n\n•1 charge → no bonus\n•2 charges → Rolled HP is increased by +5% (0.05)\n•3 charges → Rolled HP is increased by +10% (0.10)\n\n**Formulas:**\n\n•**New Max HP** = Rolled HP (55–120) × (1 + charge multiplier) (0.05 or 0.10)\n•**New Current HP** = New Max HP × (old Current HP/old Max HP)\n**Formula Example:**\n\n•**Variables:**\n••**90** Rolled HP; randomly rolled between 55–120\n••**0.10** (10%); 3 charges\n••**64/79**; old Current HP (64)/old Max HP (79)\n\n•**Calculation:**\n••90 × (1 + 0.10) = **99 New Max HP**\n••99 × (64/79) = **~80.2 New Current HP**\n••**Result**: 80/99 (80.2 is rounded to 80)\n•••Both 64/79 and 80/99 maintain the ~81% ratio\n\n**Caveats:**\n\n•**Reroll** starts off with 0 charges and has a cap of 3 charges.\n•Chance's new maximum HP cannot exceed 130 HP.\n•Using **Reroll** removes all charges from other abilities.\n\n**Undocumented:**\n•In the simplest explanation, without the math, **Reroll** either increases or decreases your current and maximum HP.\n•**Reroll** does not restore HP directly. Instead, it scales both Max HP and Current HP by the same amount, keeping the remaining HP percentage unchanged. For example, 80/90 HP (~89%) becomes 99/111 HP (~89%) after **Reroll**.\n•Since Chance's Max HP cannot exceed 130, the 3-charge bonus (10%) becomes less effective at high rolls. At the maximum roll of 120, the bonus would normally give 132 HP, but it is capped at 130. 120 × 1.10 = 132 → capped to 130.\n••This means the actual gain is +10 HP instead of +12 HP. Because part of the multiplier is lost to the cap, the effective increase is reduced to about 8.33% at this upper limit (120 + 8.33% = 130).",
      "quote": "\"Just one more go at it and I'll be a millionaire!\" - A College Student in Debt"
     },
@@ -2642,7 +2642,7 @@
      "name": "HAT FIX",
      "key": "T",
      "cd": "60s",
-     "icon": "/forsaken/img/ab/chance-hat-fix.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/chance-hat-fix.webp",
      "desc": "Chance fixes his hat. The effects are as follows:\n\n•Resets all ⟦Vulnerable|⟧ stacks to ⟦Vulnerable|I⟧.\n•Removes all active ⟦Vulnerable|⟧ debuffs.\n•Can only be activated after accumulating 3 total charges.\n\n•Using **Hat Fix** removes all charges from every ability and repairs **One Shot** if it has exploded.\n\n**Undocumented:**\n\n•There is a 1-second delay before ⟦Vulnerable|⟧ stacks are actually reset.\n•⟦Vulnerable|⟧ stacks not inflicted by **Coin Flip** can still be removed.",
      "quote": "\"This hat demonstrates good taste and exudes class.\" - Roblox"
     }
@@ -3117,7 +3117,7 @@
     "Sentinel",
     "Support"
    ],
-   "bg": "/forsaken/img/bg/robloxhqrender-lit.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/robloxhqrender-lit.webp",
    "map": "Roblox HQ",
    "caption": "Do you still hold on to that fleeting light?",
    "description": "A former tester for ROBLOX, one that was drowning in obsession and isolation. After gaining her ring, a reminder of who she is chasing after, Jane now has a new resolve. Utilizing the same corruption that once took him away, Jane is able to create openings for her hatchet from a distance and self-sustain through landing her abilities.",
@@ -3126,8 +3126,8 @@
     "#a32a77",
     "#ed217d"
    ],
-   "image": "/forsaken/img/jane-doe.webp",
-   "card": "/forsaken/img/card/jane-doe-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/jane-doe.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/jane-doe-440.webp",
    "cards": [
     220,
     330,
@@ -3139,7 +3139,7 @@
      "name": "TILL DEATH DO US PART",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/jane-doe-till-death-do-us-part.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/jane-doe-till-death-do-us-part.webp",
      "desc": "Under the influence of either The Spectre or John Doe's corruption, Jane Doe's face is completely covered by a glitchy black square that is visible only to John Doe.",
      "quote": "This passive has no official name nor displayed in-game. This passive will now be referred to as TILL DEATH DO US PART for ease of referencing."
     },
@@ -3147,7 +3147,7 @@
      "name": "DIGITAL FOOTPRINT",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/jane-doe-digital-footprint.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/jane-doe-digital-footprint.webp",
      "desc": "Jane Doe is able to see the footprints of the Killer. The color of the footprints shifts based on their freshness: red → yellow →Grey gradually becomes more transparent until it disappears. While moving on footprints, Jane Doe receives a small 5% speed boost (NOTE: This is probably a bug).",
      "quote": "\"JANE DOE TURNED SCARY AFTER MARCH 18!\" - Some Robloxian"
     },
@@ -3155,7 +3155,7 @@
      "name": "SHATTERPOINT",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/jane-doe-shatterpoint.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/jane-doe-shatterpoint.webp",
      "desc": "Jane Doe possesses a unique health system known as **Shatterpoint HP**, which cannot be healed by outside sources but benefits from 40% damage reduction.\n\n**Base Stats:**\n\n•Spawns with 20 **Shatterpoint HP**.\n••Starter shatterpoints are reduced by 10% for every extra Jane alive.\n•Can restore up to a maximum of 30 **Shatterpoint HP** through her abilities.\n\n**Shatterpoint Mechanics:**\n\n•**Shatterpoint HP** is restored by successfully landing abilities.\n•If Jane Doe is reduced to 0 **Shatterpoint HP**, she cannot regenerate it for 40 seconds.\n\n**Scaling Penalty:**\n\n•For each additional Jane Doe alive, all **Shatterpoint HP** gained from abilities is reduced by 10%.\n\n**Undocumented:**\n\n•When all **Shatterpoint HP** is lost, after 40 seconds you automatically regenerate 5 **Shatterpoint HP**, regardless of stacking penalties.\n•**Shatterpoint HP** prevents being kicked off items and generators when taking damage.\n•While Status Effects that deal damage over-time do not pierce through **Shatterpoint HP**, they still bypass the 40% damage reduction that **Shatterpoint HP** normally provides. Damage-over-time effects simply calculate their damage without applying her reduction. Because overheal values do not display decimals, this can cause Jane Doe's **Shatterpoint HP** to appear slightly inaccurate.\n••For example, if she is hit by c00lkidd's **Walkspeed Override** while at maximum **Shatterpoint HP**, she will lose 28.2 **Shatterpoint HP**, which appears in-game as having 2 **Shatterpoint HP** remaining despite her technically only having 1.8 **Shatterpoint HP** left.",
      "quote": "\"Throw everything you've got at me, I've got nothing to lose.\" - Jane"
     },
@@ -3163,7 +3163,7 @@
      "name": "CRYSTAL PITCH",
      "key": "Q",
      "cd": "16s, Projectile Lifetime: 6.5s",
-     "icon": "/forsaken/img/ab/jane-doe-crystal-pitch.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/jane-doe-crystal-pitch.webp",
      "desc": "Jane Doe throws a jar containing an explosive crystal that detonates on impact with a Killer, Survivor, or any surface, creating an area-of-effect blast. The projectile travels in a slow arc by default, but can be charged for up to 2 seconds to increase its speed and explosion radius. Charging the throw reduces Jane Doe's movement speed by 30%, leaving her more vulnerable while preparing the attack.\n\n**Upon Impact on Survivor/Killer:**\n\n•**Survivor:**\n••Grants ⟦Purified|1⟧ for 3 seconds.\n••Restores 2 Shatterpoint HP to Jane Doe.\n•**Killer:**\n••Applies ⟦Resonance|I⟧.\n••Restores 3 Shatterpoint HP.\n••Reveals Jane Doe's aura to the Killer for 3 seconds.\n\n**Long-Range Bonus:**\n\n•Directly hitting the Killer from 110+ studs applies ⟦Resonance|II⟧.\n\n**⟦Resonance|⟧ Mechanics:**\n\n•Lasts 30 seconds.\n•Reapplying refreshes duration and increases the level by 1, up to ⟦Resonance|III⟧.\n\n**Limitations:**\n\n•Cannot apply ⟦Resonance|⟧ if the Killer has been affected by ⟦Resonance|⟧ or ⟦Stunned|⟧ within the last 10 seconds.\n\n**Undocumented:**\n•⟦Purified|⟧ grants resistance against attacks depending on how much health is missing from the affected survivor.\n••This starts at 20% for every extra 20 HP missing from the affected survivor, and caps at 80% resistance with 80 HP missing.\n•⟦Purified|⟧ and ⟦Resistance|⟧ stack additively. For example, 80% damage protection from ⟦Resistance|⟧ combined with 20% from ⟦Purified|⟧ results in 100% damage resistance.\n•**Crystal Pitch** still restores Shatterpoint HP when it hits the Killer, even if ⟦Resonance|⟧ is not applied or the timer does not reset.\n•**Crystal Pitch** applies the effects of hitting a Survivor to any humanoid that is not the Killer, including Minions or NPCs.\n\n**Achievement(s):**",
      "quote": "\"The same corruption that had taken over Him, was repurposed by me.\" - Jane"
     },
@@ -3171,7 +3171,7 @@
      "name": "HATCHET",
      "key": "E",
      "cd": "35s",
-     "icon": "/forsaken/img/ab/jane-doe-hatchet.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/jane-doe-hatchet.webp",
      "desc": "Jane Doe draws her **Hatchet** and prepares a swift attack against the Killer. After a 0.75s windup, she lunges forward and swings her **Hatchet** in a top-down diagonal arc from right to left, briefly gaining ⟦Resistance|1⟧ during the attack. If the strike connects, the target takes **25** damage **(10 damage if the target is John Doe)** and its effects vary depending on the Killer's ⟦Resonance|⟧ level.\n\n**Base Hit (No ⟦Resonance|⟧):**\n\n•Applies ⟦Helpless|1⟧ and ⟦Slowness|2⟧ for 2 seconds.\n•Restores 5 Shatterpoint HP to Jane Doe.\n\n**⟦Resonance|⟧ Scaling:**\n\n•If the Killer has ⟦Resonance|1⟧:\n••The Killer is ⟦Stunned|⟧ for 2.25 seconds.\n••Jane Doe restores 10 Shatterpoint HP.\n\n•If the Killer has ⟦Resonance|2⟧:\n••The Killer is ⟦Stunned|⟧ for 3.25 seconds.\n••Jane Doe restores 15 Shatterpoint HP.\n\n•If the Killer has ⟦Resonance|3⟧:\n••The Killer is ⟦Stunned|⟧ for 4.25 seconds.\n••Jane Doe restores 20 Shatterpoint HP.\n\n**Additional Notes:**\n\n•Each ⟦Resonance|⟧ level increases the stun duration.\n•The extra stun time begins at 1 second but is reduced by 30% for every Jane Doe currently alive.\n\n**Undocumented:**\n\n•**Hatchet** still restores Shatterpoint HP on hit, but does not restore if the Killer is already ⟦Stunned|⟧ or if the strike itself fails to stun.\n•Level 0 **Hatchet** works even if the Killer has stun immunity.\n•**Hatchet**'s hitbox only hits one target.\n\n**Achievement(s):**",
      "quote": "\"I wasn't going to sit idly, I need to finish this. No matter what.\""
     }
@@ -3415,7 +3415,7 @@
    "cats": [
     "Support"
    ],
-   "bg": "/forsaken/img/bg/work-at-a-pizza-place-official-render-lit.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/work-at-a-pizza-place-official-render-lit.webp",
    "map": "Work at a Pizza Place",
    "caption": "Pizza pizza!",
    "description": "Builder Brother's Pizza's best employee, now just wanting to help in any way he can. With his experience in rushing deliveries and making pizzas, he works as a support to help his team with his pizza slices.",
@@ -3424,21 +3424,21 @@
     "#ffee00",
     "#ff0004"
    ],
-   "image": "/forsaken/img/elliot.webp",
-   "card": "/forsaken/img/card/elliot-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/elliot.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/elliot-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/elliot-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/elliot-title.webp",
    "abilities": [
     {
      "name": "ORDER UP!",
      "key": "Passive",
      "cd": "",
-     "icon": "/forsaken/img/ab/elliot-order-up.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/elliot-order-up.webp",
      "desc": "After the (generators) counter is incremented, Elliot gains a +2 increase to his healing. This bonus stacks up to +10, so completing five generators results in a potential 30 health restored per pizza.",
      "quote": "\"Pizza! Pizza! Pizza! Pizza! Pizza! Pizza!\" - Satisfied Customer"
     },
@@ -3446,7 +3446,7 @@
      "name": "DELIVERER'S RESOLVE",
      "key": "Passive",
      "cd": "",
-     "icon": "/forsaken/img/ab/elliot-deliverer-s-resolve.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/elliot-deliverer-s-resolve.webp",
      "desc": "Whenever any Survivor receives damage, their aura becomes revealed to Elliot for 12 seconds.\n\n**Undocumented:**\n\n•⟦Undetectable|⟧ prevents Elliot from seeing other Survivors' auras.\n•Taking damage from status effects doesn't reveal a Survivor's aura.\n••Primarily map environment hazards, but also John Doe's **Natural Malevolence** and **Digital Footprint**.\n•Losing overheal doesn't count, they must lose health (applies to Jane Doe's **Shatterpoint HP**).\n•Chance's **Reroll** can trigger the effect if he got lower max health than what he had before rerolling.\n•Veeronica can trigger the effect despite the fact that she cannot be healed by Elliot's pizzas.",
      "quote": "\"Woah! That's some fast delivery!\" - Satisfied Customer"
     },
@@ -3454,7 +3454,7 @@
      "name": "PIZZA THROW",
      "key": "Q",
      "cd": "30s",
-     "icon": "/forsaken/img/ab/elliot-pizza-throw.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/elliot-pizza-throw.webp",
      "desc": "Elliot tosses a pizza that heals other Survivors on pickup, restoring instant and over-time HP while scaling with objectives.\n•Restores 5 HP instantly and 15 HP over time to Survivors who pick it up.\n•Pizzas are highlighted to Survivors within 200 studs for 25 seconds when thrown.\n•Cannot be used by Elliot and despawns after 15 seconds.\n•Healing is reduced by 25% per additional Elliot in-game, down to 80% effectiveness.\n•**\"Order Up!\"** increases healing by +2 per completed objective (max +10).\n\n**Undocumented:**\n\n•⟦Regeneration|⟧ is canceled only if 5 or more HP is lost in a single hit.\n•Overhealth (e.g., Noob's **Slateskin Potion**) does not cancel regeneration since no real HP is lost.\n•The pizzas have a timer above them showing how many seconds are left before they despawn. Furthermore, they also have green plus marks to show the regeneration effect.",
      "quote": "\"Nice to see you! What can I get ya?\" - Elliot"
     },
@@ -3462,7 +3462,7 @@
      "name": "RUSH HOUR",
      "key": "E",
      "cd": "30s",
-     "icon": "/forsaken/img/ab/elliot-rush-hour.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/elliot-rush-hour.webp",
      "desc": "Elliot builds momentum by healing teammates, converting it into a short burst of speed.\n•Gains 1 charge whenever he heals another player (does not apply to other Elliots).\n•Charges stack until the maximum amount of 3 is reached.\n•Being within 85 studs of the killer turns the Rush Hour icon red, which means it will consume all charges if used within the Killer's vicinity.\n•If used near the Killer (when the icon is red) Elliot uses those charges he gains for a stack of ⟦Speed|⟧ for 4 seconds.\n•If within 85 studs of the Killer and with 2 or more charges, Elliot gains Exhausted II for 4 seconds after the speed boost runs out.\n•Using the ability outside of a terror radius will not consume its charges nor give ⟦Exhausted|⟧.\n•Starts the round with 1 charge.\n\n**Undocumented:**\n\n•During **Rush Hour**, the on-hit speed boost is disabled, so taking damage will not grant additional speed.",
      "quote": "\"Wow, you should get a raise.\" - Satisfied Customer"
     }
@@ -3822,7 +3822,7 @@
    "cats": [
     "Support"
    ],
-   "bg": "/forsaken/img/bg/guprcrgagaa6rhs.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/guprcrgagaa6rhs.webp",
    "caption": "Destiny's powerful hand has made the bed of my future, and it's up to me to lie in it.",
    "description": "A wise and caring pumpkin, flowing with magic and entwined with power. Wield the Staff of the Winds to protect and aid his team while hindering those who oppose him. His magic may be limited here, but that won't stop him doing everything he can to see everyone return unharmed.",
    "lead": "Dusekkar is a Support Survivor, costing 600 Player Points. Added as the 9th Survivor in Update 2.1.0 on February 21, 2025, he levitates to silence his footsteps and wields a versatile staff. Spinning and firing the staff can shield Survivors, grant temporary health, or slow the Killer, but these abilities may slow Dusekkar himself and cause temporary blindness.",
@@ -3830,20 +3830,20 @@
     "#2e30db",
     "#dbe8ff"
    ],
-   "image": "/forsaken/img/dusekkar.webp",
-   "card": "/forsaken/img/card/dusekkar-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/dusekkar.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/dusekkar-440.webp",
    "cards": [
     220,
     330,
     440
    ],
-   "title": "/forsaken/img/dusekkar-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/dusekkar-title.webp",
    "abilities": [
     {
      "name": "LEVITATION",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/dusekkar-levitation.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/dusekkar-levitation.webp",
      "desc": "Dusekkar levitates naturally, meaning that he doesn't make footstep sounds and can't be affected by John Doe's Trail. This passive is shared with Nosferatu.",
      "quote": "\"The cursed spirit is doomed to walk the Earth until it has hunted its hunter.\" - Ghosdeeri"
     },
@@ -3851,7 +3851,7 @@
      "name": "SPAWN PROTECTION",
      "key": "Q",
      "cd": "35s",
-     "icon": "/forsaken/img/ab/dusekkar-spawn-protection.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/dusekkar-spawn-protection.webp",
      "desc": "Dusekkar projects a protective barrier onto an ally, shielding them from harm at a distance.\n\nThe shield can be maintained for up to 3.5 seconds within a range of 95 studs. While active, the target gains ⟦Resistance|IV⟧, while Dusekkar is slowed by 30% during channeling.\n\n**Channeling Mechanics:**\n\n•The cursor must remain fixed on the target to sustain the shield.\n•If line of sight is broken for more than 2 seconds, the shield collapses.\n\n**Lethal Protection:**\n\n•If the target would take lethal damage, the hit is completely negated.\n•The shield immediately breaks upon preventing death.\n•An XP popup appears explaining the interaction.\n\n**Restrictions:**\n\n•Cannot target anchored players, executing players, or another Dusekkar currently channeling protection.\n•Failed casts do not trigger cooldown.\n•Protected players cannot be targeted again for 30 seconds.\n\n**Stacking Penalties**\n\n•If three or more Dusekkars are shielding simultaneously, all shields shatter.\n•All involved Dusekkars receive ⟦Blindness|III⟧ and ⟦Slowness|III⟧ for 6 seconds.\n\n**Undocumented:**\n\n•Uses cursor targeting rather than visibility, allowing usage through walls.\n•Can mitigate grab-based attacks if applied before anchoring occurs.\n•Negating lethal damage does not grant the on-hit speed boost.\n•⟦Resistance|IV⟧ has a short wind-up, but death prevention is instant.\n•After **Spawn Protection** ends, there is a very brief timeframe where the ⟦Resistance|IV⟧ will linger.\n•The -30% Movement Speed effect behaves as an invisible ⟦Slowness|III⟧, dispelling weaker ⟦Slowness|⟧ Effects.",
      "quote": "\"Let be be finale of seem, seems to me.\" - Darkseed"
     },
@@ -3859,7 +3859,7 @@
      "name": "PLASMA BEAM",
      "key": "E",
      "cd": "28s",
-     "icon": "/forsaken/img/ab/dusekkar-plasma-beam.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/dusekkar-plasma-beam.webp",
      "desc": "Dusekkar channels volatile energy through their staff before releasing it in a focused beam.\n\nAfter a 2-second windup, the beam fires up to 75 studs. During casting, Dusekkar's movement speed is reduced by 25%.\n\n**On Hit:**\n\n•**Killer:**\n••Applies ⟦Slowness|I⟧ for 4 seconds but is reduced by 0.5 seconds per additional Dusekkar alive.\n•• If the ⟦Slowness|⟧ duration is less than or equal to 0.5 seconds (at least 6 Dusekkars), then nothing happens.\n•**Survivor:**\n••Grants ⟦Speed|I⟧ for 3 seconds.\n••Provides +25 overheal but is reduced by 2.5 per additional Dusekkar alive.\n•• Overheal naturally decays at a rate of 1 overheal every 0.5 seconds (lasting 15 seconds if uninterrupted by outside means).\n\n**Undocumented:**\n\n•Can only hit one Survivor but can strike both the Killer and a Survivor if aligned.\n••Cannot affect anchored Killer, but can hit anchored Survivors.\n•Passes through walls and objects.\n•Overrides Noob's **Slateskin Potion** overheal (and vice versa).\n•Overheal bleeds through damage, for example, if you have 15 overheal and you take 30 damage in one attack, you will instead take 15 damage.\n••However, if the current overheal is greater than or equal to incoming damage, it fully absorbs it (e.g., **SK8** dealing no self-damage to Veeronica when she has at least 5 overheal).",
      "quote": "\"And you don't fight destiny.\" - the guy from the movie"
     }
@@ -4272,7 +4272,7 @@
    "cats": [
     "Support"
    ],
-   "bg": "/forsaken/img/bg/guprmd4agamyvio.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/guprmd4agamyvio.webp",
    "caption": "Welcome to ROBLOX!",
    "description": "The big boss of Roblox HQ himself. With a hammer in his inventory and a lot of spare parts and materials to spare, he's able to build contraptions that can either slow the killer's path, or heal those around him. As a promise with Shedletsky, he'll do all he can to help everyone.",
    "lead": "Builderman is a Support Survivor, available for purchase with 500 Player Points. He is known for his engineering abilities, able to deploy two of his signature devices: a sentry—which, when the Killer is in range, fires bullets that actively slow their movement speed—and a health regeneration dispenser, which gradually heals wounded Survivors nearby. However, both devices are easy to destroy.",
@@ -4280,21 +4280,21 @@
     "#2d2d2d",
     "#ff6100"
    ],
-   "image": "/forsaken/img/builderman.webp",
-   "card": "/forsaken/img/card/builderman-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/builderman.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/builderman-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/builderman-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/builderman-title.webp",
    "abilities": [
     {
      "name": "SENTRY",
      "key": "Q",
      "cd": "45s",
-     "icon": "/forsaken/img/ab/builderman-sentry.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/builderman-sentry.webp",
      "desc": "Builderman takes 6 seconds to construct a **Sentry** in front of him.\n\n**Sentries** have 30 Health and target nearby Killers, dealing damage and inflicting ⟦Slowness|II⟧ for 1 second. If Builderman is damaged while building a **Sentry**, it will be destroyed and the ability will be cancelled. If destroyed after built, will give 3$ and 12 EXP.\n\nBuilderman can only have 1 **Sentry** active at once, and will destroy any previously active **Sentry** you placed. **Sentries** have a target range of 65 studs, which decreases by 16% for every additional **Sentry** currently active. **Sentry** target range cannot go below 8 studs.\n\nOther buildings cannot be built within 125 studs of a **Sentry**. **Sentry** does 0.7-0.6 damage per hit to the Killer.\n\n**Undocumented:**\n•Builderman's structures are highlighted to himself and other survivors until they're completely destroyed.\n•John Doe's Corrupt Energy grants on-hit buffs when hitting the Sentry.\n•Builderman's structures are destroyed upon dying.\n•Any players (including the user) standing in front of the Sentry will prevent it from shooting.",
      "quote": "\"These sentries see your enemies so you don't have to!\" - Roblox"
     },
@@ -4302,7 +4302,7 @@
      "name": "DISPENSER",
      "key": "E",
      "cd": "45s",
-     "icon": "/forsaken/img/ab/builderman-dispenser.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/builderman-dispenser.webp",
      "desc": "Builderman takes 6 seconds to construct a **Dispenser** infront of him.\n\n**Dispensers** have 15 Health and heal in a 16-stud radius. If Builderman is damaged while building a **Dispenser**, it will be destroyed and the ability will be cancelled. Destroying it after finished building will give 3$ and 12 EXP.\n\nBuilderman can only have 1 **Dispenser** active at once, and will destroy any previously active **Dispenser** you placed. Dispensers heal 1HP/s, which decreases by 8% for every additional **Dispenser** currently active. **Dispenser** heal amount cannot go below 0.3HP/s.\n\nOther buildings cannot be built within 60 studs of a **Dispenser**.\n\n**Undocumented:**\n•Builderman's structures are highlighted to himself and other survivors until they're completely destroyed.\n•John Doe's Corrupt Energy grants on-hit buffs when hitting the Dispenser.\n•Builderman's structures are destroyed upon dying.\n•Survivors inflicted with ⟦Undetectable|⟧ can still be healed by the Dispenser.",
      "quote": "\"This is pretty much the best healing potion in any video game ever.\" - Roblox"
     },
@@ -4310,7 +4310,7 @@
      "name": "CARRY",
      "key": "R",
      "cd": "0",
-     "icon": "/forsaken/img/ab/builderman-carry.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/builderman-carry.webp",
      "desc": "While standing near a constructed Sentry or Dispenser, Builderman is able to pick up that building and carry it around. While buildings are being carried, they become completely inactive. While carrying buildings, Builderman is slowed down by 10% and is unable to sprint. If Builderman takes 10 or more damage while carrying a building, the building will be destroyed.",
      "quote": "\"Gotta move that gear up!\" - Roblox Software Engineer"
     },
@@ -4318,7 +4318,7 @@
      "name": "PLACE",
      "key": "R",
      "cd": "0",
-     "icon": "/forsaken/img/ab/builderman-place.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/builderman-place.webp",
      "desc": "Pressing the ability button again will place the building back down, and the building will become active again after a short delay.",
      "quote": "\"Gotta move that gear up!\" - Roblox Software Engineer"
     }
@@ -4708,7 +4708,7 @@
    "cats": [
     "Support"
    ],
-   "bg": "/forsaken/img/bg/taph-banner-big.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/taph-banner-big.webp",
    "caption": "BOOM BOOM BOOM!",
    "description": "A mute demolitionist who used to blow up unmoderated experiences for the greater good. This would lead to some unintended consequences. Uses Tripwires and Subspace Tripmines to slow down, reveal the position of, and disorientate the Killer.",
    "lead": "Taph is a FORSAKEN-original support Survivor, available for 600 Player Points. A demolition, trap, and stealth survivor, they make use of two tools: a tripwire and the Subspace Tripmine. The tripwire activates when crossed, slowing the Killer's speed and revealing their aura. The Subspace Tripmine detonates when the Killer enters its range, disorienting and also slowing them, while additionally applying helpless. However, the Subspace Tripmine can also disorient Taph if they too are caught in its blast radius.",
@@ -4717,21 +4717,21 @@
     "#826d05",
     "#ba066c"
    ],
-   "image": "/forsaken/img/taph.webp",
-   "card": "/forsaken/img/card/taph-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/taph.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/taph-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/taph-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/taph-title.webp",
    "abilities": [
     {
      "name": "TRIPWIRE",
      "key": "Q",
      "cd": "25s",
-     "icon": "/forsaken/img/ab/taph-tripwire.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/taph-tripwire.webp",
      "desc": "Taph places a tripwire on the ground to hinder the Killer and alert nearby Survivors. Each Taph may have up to 3 tripwires active at a time; placing a fourth will automatically remove the oldest one, similar to John Doe's Digital Footprint.\n\nWhen the Killer triggers a tripwire:\n•All Survivors, including Taph see the Killer's aura for 8 seconds.\n•The Killer is inflicted with ⟦Slowness|II⟧ for 4 seconds.\n\nAdditional info:\n•Tripwires have 10 health and are destroyed if struck by the Killer.\n•Has a 1.5s arming time.\n•After placement, they gradually become less visible over 150 seconds.\n•Each tripwire lasts forever.\n•Stakes cannot be placed within 8 studs of one another.\n•For every other Taph currently alive, negative effects inflicted by Tripwire will be shortened by 1.5s.\n\n**Undocumented:**\n•\n•**Subspace Tripmines** obstruct the tripwire's placement point, though this does not happen when done the other way around.\n•Taph's traps are highlighted to Survivors who are near them until they get completely destroyed.\n•Taph's traps are destroyed upon death.",
      "quote": "\"🔗🚶‍♂️🐌⚠️👥\""
     },
@@ -4739,7 +4739,7 @@
      "name": "SUBSPACE TRIPMINE",
      "key": "E",
      "cd": "40s",
-     "icon": "/forsaken/img/ab/taph-subspace-tripmine.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/taph-subspace-tripmine.webp",
      "desc": "Taph arms a Subspace Tripmine and throws it onto the ground. Once placed, the mine becomes semi-invisible, briefly revealing itself every 13 seconds with a faint purple glow and sound cue.\n\nWhen a Killer enters within 19 studs, the mine triggers after 0.5 seconds, inflicting ⟦Helpless|I⟧ for 3 seconds and ⟦Subspaced|III⟧ and ⟦Weakness|V⟧ for 6 seconds, which applies a dark pinkish visual filter and forcibly redirects the killer's camera for 6 seconds. If Taph is within the blast radius, they are also afflicted with the Tripmine's debuffs.\n\nThe Subspace Tripmine can be prematurely detonated if struck by a Killer's attack:\n\n•If destroyed before activation, it inflicts a weaker ⟦Subspaced|I⟧ with no ⟦Helpless|I⟧ or ⟦Weakness|V⟧.\n•If left untouched for 50 seconds, it automatically explodes.\n•If the mine successfully detonates on a Killer, its cooldown is reduced by 10 seconds.\n•For every other Taph currently alive, negative effects inflicted by Subspace Tripmine will be shortened by 2s.\n\n**Undocumented:**\n•If a **Subspace Tripmine** detonates during a kill animation, and the killer is caught in its blast radius, they will still be inflicted with ⟦Subspaced|3⟧, but without ⟦Helpless|⟧. However, if this happens to Taph, they will still be inflicted with ⟦Helpless|⟧.\n•⟦Subspaced|⟧'s high contrast effect become darker instead of brighter if epilepsy mode is enabled. Additionally, it silences the killer's chase theme to those inflicted by it.\n•Taph's traps are highlighted to survivors who are near them until they get completely destroyed.\n•Taph's traps are destroyed upon death.",
      "quote": "\"👁️🗨️⠀⠀💣💥❓💫\""
     }
@@ -5025,7 +5025,7 @@
    "cats": [
     "Support"
    ],
-   "bg": "/forsaken/img/bg/brandon6875935-s-place-official-render-lit.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/brandon6875935-s-place-official-render-lit.webp",
    "map": "Brandon6875935's Place",
    "caption": "I WILL HELP YOU",
    "description": "An excitable little machine with one very important directive: help! Equipped with a built-in radar and bursts of restorative energy, Helperbot keeps their teammates informed, protected, and ready for action. A little encouragement goes a long way, especially when it comes with a faster cooldown",
@@ -5035,21 +5035,21 @@
     "#AA855F",
     "#75787C"
    ],
-   "image": "/forsaken/img/helperbot.webp",
-   "card": "/forsaken/img/card/helperbot-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/helperbot.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/helperbot-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/helperbot-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/helperbot-title.webp",
    "abilities": [
     {
      "name": "RADAR",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/helperbot-radar.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/helperbot-radar.webp",
      "desc": "Helperbot periodically reveals nearby unfinished generators and items to all Survivors. Objects within 100 studs are highlighted for 3s, with a scan occurring every 12s\n\nWhen another Survivor uses an ability, their aura is revealed to Helperbot for 3s, colored according to their remaining health.",
      "quote": "\"The right tools are never far away. Sometimes you just need a little help finding them.\" - Builderman"
     },
@@ -5057,7 +5057,7 @@
      "name": "PULSE",
      "key": "Q",
      "cd": "44",
-     "icon": "/forsaken/img/ab/helperbot-pulse.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/helperbot-pulse.webp",
      "desc": "After a 2s windup Helperbot releases an expanding pulse that grants ⟦Regeneration|⟧ and ⟦Resistance|⟧ to Survivors it reaches, including themselves.\n\nHelperbot starts with one charge and can store up to three. Charges earned through Inspire improve Pulse's radius and buffs. All stored charges are consumed when the pulse is released.\n\nLevel 0\n\nBase Radius: 30 studs\n\n⟦Regeneration|I⟧ for 4s.\n\n⟦Resistance|I⟧ for 4s.\n\nLevel 1\n\nBase Radius: +10% compared to the base radius (33)\n\n⟦Regeneration|I⟧ for 5s.\n\n⟦Resistance|I⟧ for 5s.\n\nLevel 2\n\nBase Radius: +20% compared to the base radius (36)\n\n⟦Regeneration|I⟧ for 6s.\n\n⟦Resistance|I⟧ for 6s.\n\nLevel 3\n\nBase Radius: +30% compared to the base radius (39)\n\n⟦Regeneration|I⟧ for 7s.\n\n⟦Resistance|I⟧ for 7s.\n\nEach additional Helperbot reduces the buffs' durations by 1s, to a minimum of 1s before the following modifier.\n\nOther Helperbot characters receiving the pulse receive 50% of those durations. This reduction does not apply to the caster.\n\nHelperbot is slowed down by 10% during the windup of this ability.",
      "quote": "\"A good repair gets you moving. A great one gets the whole team moving.\" - Builderman"
     },
@@ -5065,7 +5065,7 @@
      "name": "INSPIRE",
      "key": "E",
      "cd": "46",
-     "icon": "/forsaken/img/ab/helperbot-inspire.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/helperbot-inspire.webp",
      "desc": "After a 0.75s windup Helperbot creates an inspiring aura that follows them for 10s. Other Survivors within 14 studs receive Haste V, accelerating their ability cooldowns.\n\nEach Survivor who stays inside Inspire's area for 5.5 seconds grants Helperbot one Pulse charge, up to three stored charges<. Each Survivor can contribute once per cast.\n\nLeaving the area gradually drains that Survivor's unfinished charge progress. Returning resumes it from whatever remains. Completed charges are not lost by leaving the area.\n\nEach additional Helperbot reduces the applied Haste by one level, down to a minimum of Haste I",
      "quote": "\"Keep encouraging each other. Nobody builds something great all on their own.\" - Builderman"
     }
@@ -5330,7 +5330,7 @@
    "cats": [
     "Rushdown"
    ],
-   "bg": "/forsaken/img/bg/you-should-survive-and-kill-the-killers--lit.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/you-should-survive-and-kill-the-killers--lit.webp",
    "map": "Area 51",
    "caption": "...",
    "description": "Seeking revenge on the world that wronged him, the Slasher stalks this domain with an old chainsaw and an eager intent to snap the metal. No one cared about the young child in a world that didn’t love him. No one cared about the soldier’s body, violently brought back to life through the Necrobloxicon. They arise now as walking death, trudged forward by the echo of her gentle voice. They all created the Slasher. They all will pay.",
@@ -5339,21 +5339,21 @@
     "#453306",
     "#c59315"
    ],
-   "image": "/forsaken/img/slasher.webp",
-   "card": "/forsaken/img/card/slasher-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/slasher.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/slasher-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/slasher-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/slasher-title.webp",
    "abilities": [
     {
      "name": "FINAL CHAPTER",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/slasher-final-chapter.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/slasher-final-chapter.webp",
      "desc": "Slasher gains ⟦Resistance IV|⟧ for 10 seconds when stunned. This has no effect on the duration or potency of incoming effects, only their damage, and does not change in longevity with different different stun immunity durations. Furthermore, it doesn't affect the damage of the attack that stunned Slasher, only damage following it.",
      "quote": "This ability has no official name nor displayed in-game. This passive will be called Final Chapter for ease of referencing."
     },
@@ -5361,7 +5361,7 @@
      "name": "SLASH",
      "key": "M1",
      "cd": "1.9s (0.8s if used while )",
-     "icon": "/forsaken/img/ab/slasher-slash.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/slasher-slash.webp",
      "desc": "Slasher performs a basic slash with his machete after a 0.2s windup. The effects are as follows:\n•**Normal Slash:**\n••Deals 20 damage.\n••Inflicts ⟦Bleeding|I⟧ for 5 seconds (totaling ~28 damage over time).\n•Windup: **0.2s**\n•Linger: **0.25s**\n•Length: **7.5 studs**\n••If used while, Slasher lunges 19 studs forward and the damage increases to 25 by 25% (33 with ⟦Bleeding|I⟧).\n••Can hit multiple Survivors at once.\n•**Old Friday the 13th Version:**\n••Damage increased to 40 (48 with status effect) with a 3.5s cooldown.\n••If used while, damage increases to 50 (58 with status effect) with a 1.5s cooldown.\n\n**Undocumented:**\n•Hitting a Survivor while ⟦Bleeding|I⟧ is still active will raise the effect to ⟦Bleeding|II⟧. The timer does not reset.\n•This attack can hit multiple people at once.",
      "quote": "\"Make them remember!\" - Mother"
     },
@@ -5369,7 +5369,7 @@
      "name": "BEHEAD",
      "key": "Q",
      "cd": "18s (12s if used while )",
-     "icon": "/forsaken/img/ab/slasher-behead.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/slasher-behead.webp",
      "desc": "Slasher winds up a heavy horizontal swing aimed at the target's head. The effects are as follows:\n•**Normal Swing:**\n••If the player is moving, Slasher will lunge forward in the direction they are facing, lunging further at higher speeds.\n••Deals 25 damage and inflicts ⟦Helpless|⟧ for 8s.\n••Damage increases to 35 by 75% if\n••Regardless of whether the swing lands, Slasher is very briefly immobilized and also inflicted with ⟦Slowness|I⟧ for 2s.\n••As compared to Slash, the hitbox of the attack is wider but smaller vertically. If there are multiple Survivors within the hitbox of Behead, they will all be hit by it.\n•**Old Friday the 13th Version:**\n••Damage increases to 50 with but with a higher cooldown of 24 seconds.\n••If, damage increases to 75 with a cooldown of 18 seconds.\n••As a result of Slasher's higher speeds during the event, the lunge distance is also increased.\n\n**Undocumented:**\n•Windup: 0.45s\n•Killing a Survivor with Behead or using Behead during Gashing Wound's Hit endlag does not apply the ⟦Slowness|⟧ penalty to Slasher.\nAchievement(s):",
      "quote": "\"No place to hide.\" - Mother"
     },
@@ -5377,7 +5377,7 @@
      "name": "GASHING WOUND",
      "key": "E",
      "cd": "32s (24s if used while )",
-     "icon": "/forsaken/img/ab/slasher-gashing-wound.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/slasher-gashing-wound.webp",
      "desc": "Slasher slices forward and unleashes a relentless chain of attacks with his machete and chainsaw. The effects are as follows:\n•**Normal Combo Slash:**\n••Begins with two machete strikes, each dealing 20% of the total damage.\n••Leads into a slash with the chainsaw, dealing 20% of the total damage.\n••Follows with a chainsaw stab, dealing 10% of the total damage, twice.\n••Finishes by kicking the Survivor to the ground, causing a brief ragdoll effect and dealing the remaining 20% of the damage.\n••Default total damage is 50, but if, damage is increased to 70.\n••Can strike multiple survivors within the hitbox.\n•••All hits dealt after the first machete slash have significantly smaller hitboxes.\n•••Only locks one survivor into the animation.\n•**Old Friday the 13th Version:**\n••Damage increased to 150, allowing Slasher to fully incapacitate a Survivor with only one Gashing Wound under normal circumstances. However, cooldown is raised to 60 seconds.\n••If, damage increases further to 250 with a shorter cooldown of 50 seconds.\n\n**Undocumented:**\n•Windup: 0.33s\n•On hit, Slasher is immune to stuns for the entire animation and for a lingering 1.5s after he is able to move again.\n•Slasher is able to move during the initial 0.1s of Gashing Wound's wind-up.\n•Slasher is immobilized for 4.5 seconds after using Gashing Wound, regardless of whether the move hits.\n\nAchievement(s):",
      "quote": "\"It'll be easier for you than it was for him.\" - Mother"
     },
@@ -5385,7 +5385,7 @@
      "name": "RAGING PACE",
      "key": "R",
      "cd": "30s",
-     "icon": "/forsaken/img/ab/slasher-raging-pace.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/slasher-raging-pace.webp",
      "desc": "Upon activation, Slasher’s left eye begins to glow with a red flare as he enters his state. The effects are as follows:\n•**Normal Version:**\n••Speed becomes 19.\n••The aura of the nearest survivor is revealed for 14 seconds.\n•••The aura is revealed for the full 14 seconds even if the state ends beforehand.\n••Slasher cannot be ⟦Stunned|⟧ and most other direct attacks by Survivors are ignored.\n••Sprinting is disabled.\n••Stamina gradually caps at 70 over 6.5s. (Cap is removed once ends.)\n••If Slasher uses Slash or Behead while, they lunge 19 studs forward in the direction they are facing.\n•**Current Friday the 13th Version:**\n••Speed becomes 32 for the entire duration.\n••All survivors are highlighted, instead of only the closest survivor.\n••While Slasher is, all players' screens are filtered through a dark red and all survivors' field of view are significantly reduced.\n••Slasher becomes completely invisible, cannot be highlighted (as if ⟦Undetectable|⟧), makes no footstep sounds, and plays no music or sounds through his terror radius and chase theme.\n•••Slasher can still set off Taph's traps, be detected and shot by Builderman's sentries, and interact with piercing hitboxes (such Dusekkar's Plasma Beam)\n••••Due to Slasher's general invulnerability during Friday the 13th, these interactions only serve to detect him and do not otherwise impact him.\n••Survivors experience a screen-shake and heartbeat noises, with more intensity experienced when closer to Slasher. The screenshake effect cannot be disabled via the settings menu.\n•••This heartbeat effect is shared with Guest 666's Blood Hunt effects.\n••Survivors that witness Slasher exiting the state hear a violin stab.\n•••This sound effect does not necessarily play when Slasher becomes visible, but rather when the effect as a whole ends. This is easily observed if Gashing Wound is successful, as the stinger will only sound after the entire animation finishes.\n•**Old Friday the 13th Version:**\n••Duration shortened to 8 seconds.\n••Speed becomes 26 for the entire duration.\n••Stamina is capped at 15 instead.\n••Cooldown increases to 55s.\n••All movement capabilities are heavily increased.\n\n**Undocumented:**\n• lasts for about 14 seconds, regardless if any abilities are used.\n• immediately ends if Slasher uses another ability.\n•While, Slasher is immune to all attacks, including melee, ranged, and Taph's tripwire.\n••**Exceptions:** Taph's **Subspace Tripmine** and Builderman's **Sentry** can both bypass immunity, as the **Subspace Tripmine** still inflicts ⟦Subspaced|3⟧ when Slasher enters its blast radius (though not its ⟦Helpless|⟧ effect), whilst Builderman's **Sentry** can still hit Slasher while\n••Slasher gains stun immunity for only after 0.3s after using the move.\n•••Under normal circumstances, this immunity will end before any of Slasher's attack animations (or the Raging Pace end-lag) will, making it only apply if a Survivor attack is attempted during the start of such an animation.",
      "quote": "\"Kill them!\" - Mother"
     }
@@ -5623,7 +5623,7 @@
    "cats": [
     "Rushdown"
    ],
-   "bg": "/forsaken/img/bg/c00l-carnival-official-render-lit.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/c00l-carnival-official-render-lit.webp",
    "map": "C00l Carnival",
    "caption": "join team c00lkidd today!!",
    "description": "An adopted son from a single father with childlike curiosity, but with the strength of a monster. He appears as a red, flesh-like humanoid that can kill fast and traverse fast. He is known for his association with a vandalization group called \"team c00lkidd\".",
@@ -5632,21 +5632,21 @@
     "#f08080",
     "#470309"
    ],
-   "image": "/forsaken/img/c00lkidd.webp",
-   "card": "/forsaken/img/card/c00lkidd-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/c00lkidd.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/c00lkidd-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/c00lkidd-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/c00lkidd-title.webp",
    "abilities": [
     {
      "name": "TAG",
      "key": "M1",
      "cd": "2s",
-     "icon": "/forsaken/img/ab/c00lkidd-tag.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/c00lkidd-tag.webp",
      "desc": "c00lkidd does a basic punch with his left arm. The effects are as follows:\n•**On Hit:**\n••Deals **26.5** damage (rounded to **27**).\n•Windup: **0.1s**\n•Linger: **0.3s**\n•Length: **5 studs**",
      "quote": "\"Let's play again sometime!\" - c00lkidd"
     },
@@ -5654,7 +5654,7 @@
      "name": "CORRUPT NATURE",
      "key": "Q",
      "cd": "12s",
-     "icon": "/forsaken/img/ab/c00lkidd-corrupt-nature.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/c00lkidd-corrupt-nature.webp",
      "desc": "c00lkidd immediately launches a projectile in the form of a spinning 2x1x2 gray part that goes through walls and Survivors. The effects are as follows:\n•**On Hit:**\n••Deals **15** damage.\n••Inflicts ⟦Slowness|I⟧ for 4s.\n••Reveals the Survivor's aura to c00lkidd for 10s.\n•Projectile lifetime: **10s**\n•Can hit multiple Survivors.\n•Reward condition: Hit a Survivor with **Corrupt Nature**. (**+8$**, **+24XP**)\n\nAchievement(s):",
      "quote": "\"Hahahaha!\" - c00lkidd"
     },
@@ -5662,7 +5662,7 @@
      "name": "WALKSPEED OVERRIDE",
      "key": "E",
      "cd": "20s",
-     "icon": "/forsaken/img/ab/c00lkidd-walkspeed-override.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/c00lkidd-walkspeed-override.webp",
      "desc": "c00lkidd taps a button on the c00lgui labeled \"cl1ck 4 SPEED!1!!\" while standing still for 0.5 seconds, then performs a long lunge forward. If c00lkidd collides with a Survivor during the lunge, he halts it and slashes with the Firebrand. The effects are as follows:\n•**On Hit:**\n••Deals **32** damage.\n••Inflicts ⟦Burning|I⟧ for 8s (total **47** damage; exact value **47.5**).\n••Knocks the Survivor back by roughly **20 studs**.\n••Reveals the Survivor's aura for ~**10s**.\n•Windup: **0.55s**\n•Dash speed: **90**\n•Dash duration: **1.34s**\n•Reward conditions:\n••Hit a Survivor with **Walkspeed Override**. (**+8$**, **+24XP**)\n••Kill a Survivor with **Walkspeed Override**. (**+12$**, **+36XP**)",
      "quote": "\"I'm it I'm it I'M IT!\" - c00lkidd"
     },
@@ -5670,7 +5670,7 @@
      "name": "PIZZA DELIVERY",
      "key": "R",
      "cd": "50s",
-     "icon": "/forsaken/img/ab/c00lkidd-pizza-delivery.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/c00lkidd-pizza-delivery.webp",
      "desc": "c00lkidd slams his arm into the ground and then summons two pizza delivery bots that automatically seek out the closest Survivors. If they make contact with one, they deal damage and apply effects before disappearing. If they do not find or hit a Survivor, they will disappear after some time. In **LMS**, they will not be affected by the ⟦Undetectable|⟧ Status Effect. If the nearest Survivor is not within 70 studs, the pizza delivery bots will travel faster before going back to usual speed upon getting close. The effects are as follows:\n•**On Hit:**\n••Deals **15** damage.\n••Inflicts ⟦Burning|I⟧ (total **20** damage; exact value **20.5**) and ⟦Slowness|II⟧ for 3s.\n••Reveals the Survivor's aura to c00lkidd for 15s.\n•**Pizza Bots:**\n••Health: **20 HP**\n••Attack range: **6 studs**\n••Immobile for **1s** after summon.\n••Speed: **14** (**19.5** if target is >70 studs away).\n••Lifetime: ~**35s**\n••Unaffected by ⟦Undetectable|⟧ in **LMS**.\n•Reward condition: A pizza delivery bot hits a Survivor. (**+4$**, **+12XP**)\n\nAchievement(s):",
      "quote": "\"This one's on the house!\" - c00lkidd"
     }
@@ -5888,7 +5888,7 @@
    "cats": [
     "Trapper"
    ],
-   "bg": "/forsaken/img/bg/robloxhqrender-lit.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/robloxhqrender-lit.webp",
    "map": "Roblox HQ",
    "caption": "DON'T PLAY ROBLOX ON MARCH 18TH?!?!",
    "description": "The defunct code of the early days of Roblox courses through their body, consuming his mind as he now focuses on one thing: to kill everyone in his path. An unstoppable force entering the round with a strategical mindset, he's able to set traps, summon walls to back survivors into a corner, and leave behind a faint trail that damages those who step on it.",
@@ -5897,21 +5897,21 @@
     "#f2d46d",
     "#403504"
    ],
-   "image": "/forsaken/img/john-doe.webp",
-   "card": "/forsaken/img/card/john-doe-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/john-doe.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/john-doe-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/john-doe-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/john-doe-title.webp",
    "abilities": [
     {
      "name": "TILL DEATH DO US PART",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/john-doe-till-death-do-us-part.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/john-doe-till-death-do-us-part.webp",
      "desc": "Under the influence of either The Spectre or John Doe's corruption, John Doe is blocked from seeing Jane Doe's face, as it is covered by a glitchy black square.",
      "quote": "This passive has no official name nor displayed in-game. This passive will be called TILL DEATH DO US PART for ease of referencing."
     },
@@ -5919,7 +5919,7 @@
      "name": "NATURAL MALEVOLENCE",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/john-doe-natural-malevolence.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/john-doe-natural-malevolence.webp",
      "desc": "For every step John Doe takes, a trail of corruption spreads behind him, steadily chipping away at the health of any survivor unfortunate enough to step into it. The effects are as follows:\n\n**Normal Version:**\n•The trail extends 48 studs before begginging to close in as John Doe continues walking.\n•Survivors who step on the trail are inflicted with ⟦Corrupted|II⟧ for 3 seconds, dealing 7.5 damage-over-time.\n\n**March 18th Version:**\n•Trail size is increased to roughly double its normal amount.\n•The trail length is reduced to 24 studs.",
      "quote": "\"We're dedicated to building a fun, safe environment where kids of all ages can power their imagination on Roblox.\" - Roblox"
     },
@@ -5927,7 +5927,7 @@
      "name": "UNSTOPPABLE",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/john-doe-unstoppable.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/john-doe-unstoppable.webp",
      "desc": "If John Doe is ⟦Stunned|⟧ while activating **Corrupt Energy** or **404 Error**, the stun time is weakened, and John Doe gains a ⟦Speed|⟧ boost to catch up. The effects are as follows:\n\n**Normal Version:**\n•The stun duration is capped at 2 seconds.\n•When the stun ends, John Doe unleashes a loud roar and gains ⟦Speed|I⟧ for 3 seconds, increased by 1 additional second for every Sentinel currently alive.\n•The cooldown of the ability that triggered **Unstoppable** is reduced by 50% (**Corrupt Energy** is reduced to 9 seconds, while **404 Error** is reduced to 10 seconds).\n•While Unstoppable Speed boost is active, the duration of all incoming negative status effects are reduced by 50%.\n\n**March 18th Version:**\n•**Unstoppable** is always active, triggering whenever a Sentinel stuns you, regardless of whether **Corrupt Energy** or **404 Error** are activated or in use.\n•Using **Corrupt Energy** or **404 Error** will still reduce their cooldowns by 50%.",
      "quote": "\"Consider this myth busted.\" - Roblox"
     },
@@ -5935,7 +5935,7 @@
      "name": "SLASH",
      "key": "M1",
      "cd": "1.7s",
-     "icon": "/forsaken/img/ab/john-doe-slash.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/john-doe-slash.webp",
      "desc": "For the primary attack, John Doe raises his arm and slashes down in front of him with his claws. The stats are as follows:\n\n**Normal Version:**\n•Damage: **28**(previously 30)\n•Windup: **0.35s**(previously 0.4s)\n•Linger: **0.25s**\n•Length: **7.5 studs**\n\n**March 18th Version:**\n•Cooldown: **2.5s**\n•Damage: **40** (**+5 damage** per Survivor killed.)\n•Windup: **0.35s**(previously 0.4s)\n•Linger: **0.25s**\n•Length: **7.5 studs**",
      "quote": "\"For many years, there has been lore circulating around John Doe and ████ Doe within the community.\" - Roblox"
     },
@@ -5943,7 +5943,7 @@
      "name": "CORRUPT ENERGY",
      "key": "Q",
      "cd": "12s",
-     "icon": "/forsaken/img/ab/john-doe-corrupt-energy.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/john-doe-corrupt-energy.webp",
      "desc": "John Doe punches his corrupted arm into the ground and, when he pulls it out, a wall of spikes emerge in front of him. The effects are as follows:\n\n**Normal Version:**\n• Summons 31 spikes that last 14 seconds each.\n• Survivors hit directly take 11 damage.\n• John Doe gains ⟦Speed|I⟧ for 7 seconds if a Survivor is hit.\n• Survivors standing on the spikes are inflicted with ⟦Corrupted|II⟧ for 5 seconds, dealing 12.5 damage.\n• Each survivor can be hit a maximum of 2 times, for a total of 22 damage.\n\n**March 18th Version:**\n• Summons 256 tall, high-velocity spikes that last 18.3182026 seconds.\n• Survivors hit directly take 16.3182026 damage.\n• Cooldown increased to 25.3182026 seconds.\n• Spikes can hit a single survivor more than 3182026 times.\n• John Doe can walk through the spikes while survivors cannot.\n\n**Undocumented:**\n• After John Doe uses **Corrupt Energy**, spikes do not appear instantly after the windup is finished; instead, they activate after a 0.045-second delay.\nAchievement(s):",
      "quote": "\"This year, we've decided that it's time to shed some light about these accounts.\" - Roblox"
     },
@@ -5959,7 +5959,7 @@
      "name": "DIGITAL FOOTPRINT",
      "key": "E",
      "cd": "3s",
-     "icon": "/forsaken/img/ab/john-doe-digital-footprint.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/john-doe-digital-footprint.webp",
      "desc": "John Doe stomps on the ground three times, with the third summoning a large shadow beneath him, functioning as a trap. The effects are as follows:\n•A maximum of 3 traps can exist at any given time.\n•Each trap lasts indefinitely.\n•John Doe has his traps permanently highlighted to him.\n\n**When stepped in by a Survivor:**\n\n•The trap disappears as the survivor triggers it.\n•John Doe gains ⟦Speed|I⟧ for 10 seconds.\n•The survivor is inflicted with ⟦Slowness|II⟧ and ⟦Corrupted|I⟧ for 10 seconds, for 19 damage over time.\n•Both John Doe and the survivor have their auras revealed to each other.\n\nOn March 18th, the maximum number of footprints that can be active at one time is increased to 5. Additionally, their height is exponentially greater, but their surface is thinner.\n\n•All **Digital Footprints** can be heard by both Survivors and Killers (aka John Doe) within 90 studs of the trap.",
      "quote": "\"John Doe and ████ Doe are two of Roblox's earliest accounts, as seen by their low user IDs here.\" - Roblox"
     },
@@ -5967,7 +5967,7 @@
      "name": "404 ERROR",
      "key": "R",
      "cd": "20s",
-     "icon": "/forsaken/img/ab/john-doe-404-error.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/john-doe-404-error.webp",
      "desc": "John Doe's corrupted arm pulsates twice, before revealing the auras of all living survivors to him for **6** seconds.\n\nOn **March 18th**, the highlight lasts for **10.3182026** seconds instead.\n\n**Undocumented:**\n•John Doe is heavily slowed down while using **404 Error**. Additionally, he cannot sprint.",
      "quote": "\"Authentic John Doe and ████ Doe accounts pose no danger to your Roblox account.\" - Roblox"
     }
@@ -6207,7 +6207,7 @@
     "Rushdown",
     "Trickster"
    ],
-   "bg": "/forsaken/img/bg/the-tempest-official-render-lit.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/the-tempest-official-render-lit.webp",
    "map": "The Tempest",
    "caption": "It’s I NOLI!!!!",
    "description": "Having made a deal to halt The Star's decay for an eternity trapped in this realm, Noli has made their debut as the latest and most rotten wielder of The Void Star. Harboring an artifact of the unknown with the potential to surpass that of any exploit, Noli lays waste to anything in their path with half a body and half a mind.",
@@ -6217,21 +6217,21 @@
     "#8707ff",
     "#a076bf"
    ],
-   "image": "/forsaken/img/noli.webp",
-   "card": "/forsaken/img/card/noli-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/noli.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/noli-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/noli-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/noli-title.webp",
    "abilities": [
     {
      "name": "HALLUCINATIONS",
      "key": "Passive",
      "cd": "",
-     "icon": "/forsaken/img/ab/noli-hallucinations.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/noli-hallucinations.webp",
      "desc": "Many of Noli's abilities inflict **Hallucination** stacks on Survivors.\n•Survivors with any Hallucination level have their aura revealed to Noli. The darker the highlight, the more intense the effect is.\n•Hallucination causes increasing hallucination effects as stacks grow.\n•Being hit by Noli's Stab or his Void Rush's slam removes all Hallucination stacks.\n•Hallucination caps at ⟦Hallucination|III⟧.\n•At ⟦Hallucination|I⟧, the survivor's timer becomes unreadable.\n•At ⟦Hallucination|II⟧, fake healing objects such as a pizza or dispenser spawn to distract survivors.\n•At ⟦Hallucination|III⟧, a hostile mirage of Noli appears and attacks the survivor. Mirages don't deal damage, even if they appear so. Your health bar will appear to be \"depleting\", but you will stay alive.\n\n**Undocumented:**\n•Hallucinations received are dependent on the Survivors currently being used in the round.\n•⟦Hallucination|I⟧ can list an incorrect amount of generators completed. This also works for other Quests like Jane Doe's.\n•Can also play Layer 1 of Noli's chase theme despite Noli being nowhere nearby.\n•If there is a Dusekkar in the round, a survivor may hallucinate receiving \"Spawn Protection.\" if the survivor looks over at the direction the protection is coming from at all, Noli's face will rapidly charge towards them, blurring their vision for a brief moment upon contact.\n•Noli mirages do not have footsteps.\n•Noli mirage's voidstar does not disappear when using abilities.\n•Noli mirages can be killed by any attack that can cast a hitbox, causing ⟦Hallucination|⟧ to wear off, including Dusekkar's Plasma Beam and Jane Doe's Crystal Pitch.\n••Veeronica's **Bumper Channel** Broadcast does not kill it, due to it not passively casting hitboxes (one casts only upon direct impact with a real killer).\n•Noli mirages cannot interrupt actions or effects (e.g. using a medkit, repairing a generator, healing over time).\n\nAchievement(s):",
      "quote": "\"O, that way madness lies.\""
     },
@@ -6239,7 +6239,7 @@
      "name": "PRANKSTER",
      "key": "Passive",
      "cd": "",
-     "icon": "/forsaken/img/ab/noli-prankster.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/noli-prankster.webp",
      "desc": "When the round starts, Noli spawns fake generators in any place where all the 5 real generators could have spawned, but didn't.\n•Completing a Fake Generator grants one Hallucination stack.\n•Fully completing a Fake Generator instantly grants **⟦Hallucination|III⟧**.\n•Fake Generators give no progress or points.\n•Survivors can identify Fake Generators by:\n••A considerably noticeable delay on the completion UI bar after completing a puzzle\n••Glitching sounds when nearby.\n••Incorrect puzzle complete message.\n••Incorrect XP or money amounts.\n••There will be a \"!\" at the end of the text.\n••Physical generator progress color will be an off shade of green.\n••A puzzle number gets skipped.\n••Incorrect currency. (+¢5, +¥5...)\n••If the time doesn't decrease after completing a puzzle.\n••Money symbol after amount of cash earned. (+5$ instead of +$5)\n••Electrical wires on generator model appear to be stained or torn with black (guaranteed for every fake generator).\n\n**Undocumented:**\n\n• Survivor doesn't gain any malice upon completing a puzzle on a Fake Generator, despite being displayed properly on its exp/money gain notification.\n• Veeronica's battery doesn't charge upon completing a Fake Generator.\n• Veeronica's graffiti cannot be placed on a Fake Generator.",
      "quote": "\"Art ignorant of what thou art.\""
     },
@@ -6247,7 +6247,7 @@
      "name": "STAB",
      "key": "M1",
      "cd": "1.8s",
-     "icon": "/forsaken/img/ab/noli-stab.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/noli-stab.webp",
      "desc": "Noli uses his Shadow Tendril to stab forwards.\n\n•Damage: **25**\n•Windup: **0.35s**\n•Linger: **0.25s**\n•Length: **8 studs**\n•Offset: **+0.5 studs**\n\n**Undocumented:**\n\n•Hitting a Survivor removes all stacks of ⟦Hallucination|⟧.\n• Unlike other Killers, Noli's hitbox spawns 0.5 studs farther away from his position, making his reach effectively be 8.5 studs.",
      "quote": "\"Our revels now are ended.\""
     },
@@ -6255,7 +6255,7 @@
      "name": "VOID RUSH",
      "key": "Q",
      "cd": "20s (used), 1.2s (windup cancelled), 10s (spawning in)",
-     "icon": "/forsaken/img/ab/noli-void-rush.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/noli-void-rush.webp",
      "desc": "On tap/hold, Noli prepares a rush for 1 second (which can be canceled anytime), charging forward for 3.5s to strike survivors. Once hitting a survivor without ⟦Hallucination|⟧, Noli can quickly perform another rush after 0.85s by pressing the Void Rush key again or cancel it by letting it time out after 2s.\n•Hitting a survivor deals 10 damage and applies ⟦Hallucination|II⟧. Hitting multiple targets will also amplify slam damage by 3.5.\n•Survivors with ⟦Hallucination|II⟧ or higher are slammed into the ground, taking 10 + 30 + 3.5 × re-rushes damage and ending the move.\n••For example, if Noli performs a single rush against a survivor with ⟦Hallucination|II⟧, they take a minimum of 43.5 damage (10 + 30 + 3.5).\n•Turn rate is heavily increased during the first 1.5 seconds of the rush.\n•Noli can hold Sprint before a re-rush to briefly boost himself.\n\nIf Noli crashes into any obstacle or if Noli cancels the dash while it is active, they are heavily slowed down for ~1.5s.\nThe rush ends early if Noli is stunned, crashes into a wall or releases the Void Rush key.\n\nNoli is unable to regenerate stamina for the duration of the rush.\n\n**Undocumented:**\n•The text below the charge meter changes depending on certain conditions, sometimes having humorous messages:\n••Charging rush: \"Charge Void Rush by holding down\"\n••Canceling charge: \"you didn't charge it long enough <:((\"\n••During rush: \"Release the Void Rush key to cancel\"\n••Hitting a target without ⟦Hallucination|⟧: \"Hit the Void Rush key again to charge again!\"\n••Slamming: \"hell yeah >:)\"\n••Rush timeout: \"too slow\"\n••Colliding with an obstacle: \"owwwww;(\"\n••Cancelling rush: \"Awww:(\"\n••Re-rush window timeout: \"ok...:(\"\n•Rushing into Builderman's buildings will end the rush prematurely with the dash message \"PROPERTY DAMAGE\".\n•Void Rush can rush through Taph's Tripwire and Subspace Tripmine.\n•Void Rush's first hit and slam deal damage to all survivors in its hitbox, although its first hit only applies ⟦Hallucination|II⟧ to the survivor with the highest Hit Priority.\n•Hitting someone, regardless of their ⟦Hallucination|⟧ stack who has 10 HP or less will simply kill them without slamming, allowing Noli to continue rushing. Although, if the victim is inflicted with ⟦Hallucination|II⟧ or higher already, Void Rush will slam them instead on random occasions, which is most likely a bug.\n•Void Rush's slam removes all stacks of ⟦Hallucination|⟧.\n•Void Rush detects a crash only if Noli's velocity is too low (or in other words, if they're too slow). This is the reason, for example, why you can utilise wallsliding, but also why Void Rush is stopped on slippery surfaces or stopped easier if you're currently slowed by any source.\n\nAchievement(s):",
      "quote": "\"Which pierces so that it assaults.\""
     },
@@ -6263,7 +6263,7 @@
      "name": "NOVA",
      "key": "E",
      "cd": "12s (after implosion) 0.9s (upon usage)",
-     "icon": "/forsaken/img/ab/noli-nova.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/noli-nova.webp",
      "desc": "Noli throws his Voidstar forward after a 0.7 second windup.\n•The projectile travels forward; hitting a survivor or wall causes a spherical implosion that pulls survivors toward the blast and deals **15** damage. Also has a slight slowing effect that decays the further you are from the implosion's original impact.\n•Hitting the floor causes the Voidstar to reduce the hitbox of the explosion. Manually exploding the Voidstar by using the move again will also decrease the hitbox.\n•Cooldown will only initiate after the Void Star detonates.\n\n**Undocumented:**\n\n•If the user gets stunned during the windup, it will not throw the Void Star and the cooldown will be 0.3s.\n••When stunned, the Void Star itself will be thrown but not with it's hitbox.\n•Nova's explosion does not remove ⟦Hallucination|⟧ stacks.",
      "quote": "\"Thou art inclined to sleep; 'tis a good dullness.\""
     },
@@ -6271,7 +6271,7 @@
      "name": "OBSERVANT",
      "key": "R",
      "cd": "30s (used), 15s (canceled)",
-     "icon": "/forsaken/img/ab/noli-observant.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/noli-observant.webp",
      "desc": "Noli enters a stance, highlighting all generators and displaying a mirage above them as a warning.\n•After 1.45 second windup, Noli can teleport to a selected generator.\n•Survivors more than 20/50/100 studs away receive **⟦Hallucination|I/II/III⟧** respectively.\n•Stunning Noli during windup or stance cancels the move.\n•Noli gains stun immunity after they teleports.\n•At the start of the game, Observant is placed on a 25 second cooldown.\n•The ability can be canceled by recasting it during selection.\n\n**Undocumented:**\n\n•Getting stunned while attempting to teleport will cause Observant to go on a 15s cooldown. However, getting stunned after selecting a generator will cause Observant to go on full cooldown instead.\n•Cannot select generators within 50 studs.\n•Observant actually starts the round off on full cooldown, but appears to be lowered due to the intro animation.\n•Teleporting next to a survivor 19 studs or less away will not give **⟦Hallucination|⟧** to the survivor.\n•Observant's ingame description is incorrect; saying Observant starts the game off on halved cooldown.",
      "quote": "\"Mine enemies are all knit up in their distractions.\""
     }
@@ -6512,7 +6512,7 @@
     "Rushdown",
     "Ranged"
    ],
-   "bg": "/forsaken/img/bg/sword-fighting-in-the-heights-rn.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/sword-fighting-in-the-heights-rn.webp",
    "map": "SFOTH",
    "caption": "Then, in a footnote, mentions the evil 1x1x1x1.”",
    "description": "The physical manifestation of pure malice, hatred, and negativity himself; the one who despises no one else more than the former admin, Shedletsky. With the Dæmonshank in their hands, they can summon beings of rot from the deceased, as well as target survivors from afar, poisoning them in the process.",
@@ -6523,8 +6523,8 @@
     "#FE0102",
     "#FE0102"
    ],
-   "image": "/forsaken/img/1x1x1x1.webp",
-   "card": "/forsaken/img/card/1x1x1x1-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/1x1x1x1.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/1x1x1x1-440.webp",
    "cards": [
     220,
     330,
@@ -6536,7 +6536,7 @@
      "name": "SLASH",
      "key": "M1",
      "cd": "1.75s",
-     "icon": "/forsaken/img/ab/1x1x1x1-slash.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/1x1x1x1-slash.webp",
      "desc": "1x1x1x1 swings their sword in front of them. The effects are as follows:\n•Deals 20 damage on hit.\n•Inflicts ⟦Glitched|I⟧ for 5 seconds.\n•Inflicts ⟦Poisoned|1⟧ for 5 seconds.\n\n•**Total Damage:** 28\n••**Slash:** 20\n••**Status Effects:** 8\n\n•Windup: **0.4s**\n•Linger: **0.25s**\n•Length: **7.5 studs**",
      "quote": "\"Turns out they fixed nothing but the floating plates and jump pads, and the exploits in this game are insane.\" - Concerned SFOTH Player"
     },
@@ -6544,7 +6544,7 @@
      "name": "MASS INFECTION",
      "key": "Q",
      "cd": "17s",
-     "icon": "/forsaken/img/ab/1x1x1x1-mass-infection.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/1x1x1x1-mass-infection.webp",
      "desc": "1x1x1x1 chains themself to black orbs and, after a 1.7-second windup, performs a horizontal split attack with two swords, creating a sharp shockwave audible to all survivors regardless of their distance from 1x1x1x1. The effects are as follows:\n•The shockwave lasts 6 seconds and travels at 104 studs per second.\n••This results in a total range of 624 studs.\n•Deals a universal 30 damage on hit.\n••Deals an additional 10 damage against targets inflicted with ⟦Glitched|⟧.\n\n•**If a Survivor is inside the \"up close\" radius:**\n••Inflicts ⟦Glitched|II⟧ for 5 seconds.\n••Inflicts ⟦Poisoned|V⟧} for 3 seconds.\n••Instantly inflicts an additional 25 damage.\n\n•**If a Survivor is hit by the shockwave:**\n••Inflicts ⟦Glitched|I⟧ for 5 seconds.\n••Inflicts ⟦Poisoned|I⟧ for 5 seconds.\n\n•**Total Damage:**\n••**Up Close:** 77\n•••**Universal:** 30\n•••**Melee:** 25\n•••**⟦Poisoned|⟧ Bonus:** 12\n•••**⟦Glitched|⟧ Bonus:** 10\n••**Not Up Close:** 38/48\n•••**Universal:** 30\n•••**⟦Poisoned|⟧ Bonus:** 8\n•••**⟦Glitched|⟧ Bonus:** 10 (may not be active)\n\n•**Audio Cue:**\n••The windup of this attack can be heard by all living players.\n\n**Undocumented:**\n\n•Survivors hit by **Mass Infection** have their aura revealed to 1x1x1x1 for 12 seconds.\n•The attack has separate hitboxes for long range and close range. The close-range hitbox deals significantly less damage but extends to behind 1x1x1x1 and applies more intense effects.\n•Survivors hit by **Mass Infection** at close range receive a significant speed boost, with a duration of about three seconds.\n•**Mass Infection** cannot kill zombies summoned by **Rejuvenate the Rotten**.\n•1x1x1x1's momentum is not immediately halted upon using **Mass Infection**, allowing them to move slightly during the wind-up.\n•Movement is immediately restored after releasing the shockwave.\n•During the windup, 1x1x1x1's camera slightly zooms in and a green vignette appears over its edges.\n••When using multiple **Mass Infections** at once while cooldowns are disabled, these effects are cumulative with each other.",
      "quote": "\"Blame ████.\" - Roblox Admin"
     },
@@ -6552,7 +6552,7 @@
      "name": "ENTANGLEMENT",
      "key": "E",
      "cd": "18s",
-     "icon": "/forsaken/img/ab/1x1x1x1-entanglement.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/1x1x1x1-entanglement.webp",
      "desc": "1x1x1x1 throws their sword forward following a 0.75-second windup. The effects are as follows:\n•The projectile lasts 1 second and travels at 125 studs per second.\n••This results in a total range of 125 studs.\n\n**Effects on Hit Survivors:**\n••Deals 10 damage on hit.\n••Aura is revealed to 1x1x1x1 for 12 seconds.\n••Inflicts ⟦Helpless|⟧ and ⟦Glitched|II⟧ for 6 seconds.\n••Inflicts ⟦Slowness|X⟧ for 0.85s-1.25s (Depending on distance).\n••Pulls the survivor toward 1x1x1x1.\n•••Pull strength is increased by 75% on survivors afflicted with ⟦Glitched|⟧.\n\n**Undocumented**:\n\n•**Entanglement** covers the Survivor's screen with 12 cosmetic pop-ups upon hit.\n•1x1x1x1's momentum is not immediately halted upon using **Entanglement**, allowing them to move slightly during the wind-up.\n•**Entanglement** can kill zombies summoned by **Rejuvenate the Rotten**.\n••When hitting a zombie, **Entanglement** deals 100 damage and will instantly kill it, instead of its ordinary 10 damage.",
      "quote": "\"I joined him in Crossroads, and it started raining heads saying things along the lines of 'he's coming back!' and '1x1x1x1 is coming for you!' and the likes.\" - Roblox Admin"
     },
@@ -6560,7 +6560,7 @@
      "name": "UNSTABLE EYE",
      "key": "R",
      "cd": "25s, 12.5s (start of the round)",
-     "icon": "/forsaken/img/ab/1x1x1x1-unstable-eye.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/1x1x1x1-unstable-eye.webp",
      "desc": "1x1x1x1 digs into their glaring red eye after a 1.5 second startup, tearing it opens to unleash its power. The effects are as follows:\n•Reveals the auras of all living Survivors for 8 seconds.\n•Grants ⟦Speed|II⟧ for 1.5 seconds.\n•Inflicts ⟦Blindness|III⟧ for 7 seconds.\n•Highlights Survivors based on health along with making the screen red.\n\n•At the start of the round, this ability starts on a halved (12.5s) cooldown.\n\n**Undocumented**:\n\n•Begins stamina regeneration immediately on use, completely ignoring any delay.\n•Speed effect is stackable: for example, if 1x1x1x1 kills a minion and then uses **Unstable Eye**, they gain ⟦Speed|III⟧ (albeit for 1.5s). The ⟦Speed|⟧ that is stackable is capped at ⟦Speed|X⟧, however this is impossible to see in normal gameplay.\n•• Strangely, the ⟦Blindness|⟧ effect can be stacked too, with a cap of ⟦Blindness|III⟧\n•**Unstable Eye** can also be heard by survivors within 400 studs of 1x1x1x1, although it is very quiet from a far place.\n•1x1x1x1 can sprint 0.35s after the windup.\n•1x1x1x1 can move with walk speed during the windup.",
      "quote": "\"I see you.\""
     },
@@ -6568,7 +6568,7 @@
      "name": "REJUVENATE THE ROTTEN",
      "key": "T",
      "cd": "30s",
-     "icon": "/forsaken/img/ab/1x1x1x1-rejuvenate-the-rotten.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/1x1x1x1-rejuvenate-the-rotten.webp",
      "desc": "1x1x1x1 stabs themselves with their swords and pulls them out, resurrecting any players they have killed in the form of rotten zombies that act as uncontrollable but loyal minions. The effects are as follows:\n•Minions wander aimlessly upon spawning.\n•They target players within a 20 stud distance.\n•They lose focus if the distance exceeds 30 studs.\n•Minions have 25 health and inflict ⟦Poisoned|1⟧, ⟦Glitched|I⟧ for 8 seconds on contact with survivors, also reveal their aura for 8 seconds. ⟦Glitched|⟧ survivors take 5 damage, but survivors may only be killed by the minion if the survivor is inflicted with ⟦Glitched|⟧\n\n•**Interaction with** 1x1x1x1**:**\n••Although loyal, minions can be killed by 1x1x1x1.\n••They can't be killed with Mass Infection.\n••Killing a zombie grants ⟦Speed|I⟧ for 8 seconds and the effect cannot stack.\n••This ability starts with 0 charges and gains 1 charge per kill, up to a maximum of 1 charge.\n\n**Undocumented**:\n\n•Windup: ~3-4s\n•Zombies emit green auras that are visible only to 1x1x1x1 while they are alive.\n•Zombies spawn exactly where the player died, even if the body was flung.\n•Zombies can damage their target multiple times, but can only kill when the ⟦Glitched|⟧ effect is applied.\n•This ability currently has no endlag, meaning 1x1x1x1’s movement speed is restored immediately after the windup ends.",
      "quote": "\"He sent me a message, telling me he had something to demonstrate.\" - Roblox Admin"
     }
@@ -6696,7 +6696,7 @@
    "cats": [
     "Rushdown"
    ],
-   "bg": "/forsaken/img/bg/beach-house-paradise-official-render-lit.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/beach-house-paradise-official-render-lit.webp",
    "map": "Beach House Paradise",
    "caption": "A kind of beast never before encountered.",
    "description": "\"Cursed with their name from the moment of their existence, he had managed to find solace in Noob. Someone who saw them for they were inside, but that ideal reality would not last. Guest 666 will viciously rip and tear through any obstacle in her way, feasting on the bloodshed and carnage to empower his abilities.\"",
@@ -6706,21 +6706,21 @@
     "#ff1000",
     "#ff5900"
    ],
-   "image": "/forsaken/img/guest-666.webp",
-   "card": "/forsaken/img/card/guest-666-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/guest-666.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/guest-666-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/guest-666-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/guest-666-title.webp",
    "abilities": [
     {
      "name": "MANIC FIXATION",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/guest-666-manic-fixation.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/guest-666-manic-fixation.webp",
      "desc": "Guest 666 gains movement speed when running toward or being within 30 studs Survivors highlighted by their abilities. The effects are as follows:\n•Gradually gains up to 7% speed while running toward or being within 30 studs of survivors highlighted by **Infernal Cry** or **Blood Rush.**\n•If the highlighted Survivor is not in chase, the speed bonus increases up to 12% (with the 10% extra speed boost when not within 85 studs of a survivor, it's effectively 22%).\n•Speed is lost once Guest 666 stops moving toward the highlighted Survivor while outside of 30 studs, exits the 30 stud range while not moving toward them or the highlight runs out.\n\n**Undocumented:**\n•The passive relies on when a Survivor is supposed to be highlighted, regardless of their current Status Effects, meaning that if a highlight is cleansed through gaining ⟦Undetectable|⟧, the visual highlight disappears, but the speed boost can still be gained for the remainder of the highlight's initial duration.",
      "quote": "\"Have you not heard the legend of Guest 666?\" - Random Robloxian"
     },
@@ -6728,7 +6728,7 @@
      "name": "HELLFORGED WILL",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/guest-666-hellforged-will.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/guest-666-hellforged-will.webp",
      "desc": "Guest 666 reduces the duration of non-self-inflicted negative status effects and stuns by 25% (increases to 50% while Blood Hunt is active).",
      "quote": "\"I tried my hardest, but they were unstoppable.\" - ████"
     },
@@ -6736,7 +6736,7 @@
      "name": "BLOODHOUND",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/guest-666-bloodhound.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/guest-666-bloodhound.webp",
      "desc": "**Hemorrhage**\n\nMany of Guest 666's attacks inflict ⟦Hemorrhage|⟧, a status effect that prevents full healing and causes Survivors to drop Blood Orbs. The effects are as follows:\n•While afflicted with ⟦Hemorrhage|⟧, vines begin to cover the Survivor's health bar.\n•Any health covered by vines cannot be healed.\n•⟦Hemorrhage|⟧ can be removed by another Survivor, but they must interact with you first by clicking.\n•Medkits can remove ⟦Hemorrhage|⟧, but do not restore vine-covered health.\n\n**Blood Orbs**\n\nSurvivors affected by ⟦Hemorrhage|⟧ will occasionally drop Blood Orbs, which Guest 666 can collect to empower their abilities. The effects are as follows:\n•Each Blood Orb grants Guest 666 15 Blood on contact.\n•Blood Orbs drop faster when the Survivor is sprinting and slower during a chase.\n••Sprinting: 1 Blood Orb every 10 seconds.\n••Chase: 1 Blood Orb every 35 seconds.\n••Sprinting in Chase: 1 Blood Orb every 25 seconds.\n•Guest 666 starts with 0 Blood and has a maximum of 200 Blood.\n•Collecting Blood Orbs reduces all active cooldowns by 3 seconds per orb.\n•Killing a Survivor grants 30 Blood. If the kill was caused by **Demonic Pursuit**, it grants 50 Blood instead.\n•Blood Orbs can always be collected during LMS, regardless of Guest 666's current Blood Meter.\n\n**Combat**\n\n•Guest 666's attacks are devastating and can hit multiple targets at once.\n•The effects are as follows:\n•All of Guest 666's attacks hit multiple players simultaneously.",
      "quote": "\"I know you hate that name... so how about Sixer instead?' - ████"
     },
@@ -6744,7 +6744,7 @@
      "name": "SENSE OF FEAR",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/guest-666-sense-of-fear.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/guest-666-sense-of-fear.webp",
      "desc": "Guest 666's aura revealing abilities from **Infernal Cry**, **Blood Hunt**, and **Blood Rush** will instead apply ⟦Marked|⟧ rather than the normal yellow highlight. Due to this, Survivors with ⟦Undetectable|⟧ will be bypassed and their aura will still be revealed to Guest 666. ⟦Subspaced|⟧ can disable the aura read for the duration, but it'll come back once the effect has worn off. However, if a survivor gains ⟦Undetectable|⟧ WHILE having ⟦Marked|⟧, it will actually cleanse ⟦Marked|⟧, effectively cancelling the aura reveal for the affected survivor.",
      "quote": "This ability has no official name nor displayed in-game. This passive will be called Sense of Fear for ease of referencing."
     },
@@ -6752,7 +6752,7 @@
      "name": "CARVING SLASH",
      "key": "M1",
      "cd": "2.0",
-     "icon": "/forsaken/img/ab/guest-666-carving-slash.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/guest-666-carving-slash.webp",
      "desc": "Guest 666's main attack allows them to slash at Survivors. If Guest 666 has at least 10 Blood, they can follow up with **Eviscerate** by holding down the primary attack button. The effects are as follows:\n•Performs a basic slashing attack.\n•Each slash can hit multiple Survivors simultaneously.\n•Each slash deals 20 damage.\n•Each successful hit grants 10 Blood.\n\n•Windup: **0.3s**\n•Linger: **0.25s**\n•Length: **7.25 studs**\n\n**Undocumented:**\n\n• Unlike other Killers, Guest 666's hitbox is taller than the rest due to their size.",
      "quote": "‎\"The legend says that Guest 666 could use admin commands\n and stuff... pretty gnarly...\" - Random Robloxian"
     },
@@ -6760,7 +6760,7 @@
      "name": "EVISCERATE",
      "key": "Hold M1",
      "cd": "8.0s (if used), 4s (if landed)",
-     "icon": "/forsaken/img/ab/guest-666-eviscerate.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/guest-666-eviscerate.webp",
      "desc": "Guest 666 will lunge forward and bite down using **Eviscerate**. Any Survivors hit by this attack will take damage and suffer a status effect. The effects are as follows:\n•Deals 10 damage to any Survivor hit.\n•Applies ⟦Hemorrhage|⟧ on hit\n•Costs 10 Blood to use.\n•Grants 15 Blood and reduces Eviscerate's cooldown by 50% on a successful hit.\n•If Guest 666 fails to hit a Survivor, they are afflicted with ⟦Slowness|I⟧ for 2.5 seconds. Hitting this halves the duration.\n\n•Windup: **0.4s**\n•Linger: **0.25s**\n•Length: **7 studs**",
      "quote": "‎\"Have you ever tried this? Give it a bite!' - ████"
     },
@@ -6768,7 +6768,7 @@
      "name": "DEMONIC PURSUIT",
      "key": "Q",
      "cd": "30/15s",
-     "icon": "/forsaken/img/ab/guest-666-demonic-pursuit.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/guest-666-demonic-pursuit.webp",
      "desc": "**Demonic Pursuit** is a charge- and mobility-based ability. On use, Guest 666 crouches and becomes transparent until the button is released. The ability can be held or toggled to charge longer, which increases damage and speed. A red arrow visualizer appears and can be aimed upward.\n\n**Pinning a Survivor**\n\nIf Guest 666 makes contact with a Survivor while airborne or within the first 0.8 seconds of a leap, they will pin them down. When a Survivor is successfully pinned:\n•Guest 666 slashes the Survivor 5 times.\n•Inflicts 1 stack of ⟦Hemorrhage|⟧\n•Throws the Survivor to the left and roars.\n••Changing direction mid-leap does not alter the throw direction.\n\n**Damage Values**\n\nEach slash deals damage depending on how long the ability was charged:\n•5.2 / 6.6 / 8.0 damage per hit\n•Total: 26 / 33 / 40 damage\nSuccessfully landing the ability grants 20 Blood, and killing a Survivor with this ability grants 50 Blood.\n\n**Blood Hunt Bonus**\n\nDuring Blood Hunt, this ability deals bonus damage based on how long the Survivor has been afflicted with ⟦Hemorrhage|⟧.\n•Damage increases by +0.4 for every unhealable health point\n••At maximum ⟦Hemorrhage|⟧ coverage, total damage is 65 / 72 / 79\n••(13 / 14.4 / 15.8 per slash)\n\n**Undocumented:**\n•**Demonic Pursuit's** slash combination hits all survivors in its hitbox, similar to Gashing Wound.\n•Guest 666's stamina freezes upon using this ability.\n•Hitting an object will cancel the leap prematurely.\n••Small obstacles, like fences, will sometimes not cancel the leap.\n•The ability takes 5s to complete, with the flurry of slashes taking 2s, after which Guest 666 flings the survivor ~20 studs, ragdolling them for 2s, pausing himself for another 3s.\n••This means that the survivor will have a headstart of 1 second, as well as a small chunk of distance.\n**Achievement(s):**",
      "quote": "\"Guest 666 is a demon bro, I swear on my robux they are\" - Random Player"
     },
@@ -6776,7 +6776,7 @@
      "name": "INFERNAL CRY",
      "key": "E",
      "cd": "20s",
-     "icon": "/forsaken/img/ab/guest-666-infernal-cry.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/guest-666-infernal-cry.webp",
      "desc": "Guest 666 lets out a roar, sending a sharp shockwave after a 0.7-second windup.\n\n•Can hit multiple survivors.\n• Can be aimed in any direction.\n• On hit:\n••Any Survivors hit are forced to face Guest 666\n••Applies ⟦Blindness|2⟧ for 4 seconds to the survivor.\n••Highlights the Survivor to Guest 666 for 12 seconds.\n••Survivors with ⟦Hemorrhage|⟧ will additionally drop 2 Blood Orbs.\n••Guest 666 is transparent during the windup of this ability.\n\n**Blood Hunt Bonus**\n\nDuring Blood Hunt, this ability is buffed:\n•Deals 10 damage.\n•Applies ⟦Speed|1⟧ to Guest 666 for 3 seconds.\n•Applies ⟦Strength|1⟧ to Guest 666 for 8 seconds.\n•⟦Blindness|2⟧ lasts 6 seconds instead of 4.\n\n**Undocumented:**\n•Guest 666 is slowed down by 25% when casting Infernal Cry\nAchievement(s):",
      "quote": "‎\"That voice I heard... it was horrible.\" - ████"
     },
@@ -6784,7 +6784,7 @@
      "name": "BLOOD RUSH",
      "key": "R",
      "cd": "30s",
-     "icon": "/forsaken/img/ab/guest-666-blood-rush.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/guest-666-blood-rush.webp",
      "desc": "Guest 666 will smell the blood in the air, highlighting all Survivors for a period of time. The effects are as follows:\n•Highlight duration increases with distance from the Survivor (minimum 5 seconds), reaching a maximum of 20 seconds at 200 studs.\n•While Guest 666 is at maximum Blood, this ability is replaced with Blood Hunt\n\n**Undocumented:**\n•Windup: **4s**",
      "quote": "‎\"Guest 666 is real. I saw them with my own\ntwo eyes hacking in a game\" - Myth Hunter"
     },
@@ -6792,7 +6792,7 @@
      "name": "BLOOD HUNT",
      "key": "R",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/guest-666-blood-hunt.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/guest-666-blood-hunt.webp",
      "desc": "Guest 666 emits an ear-splitting cry, audible to all Survivors, that resets their cooldowns and starts Blood Hunt for 25 seconds. For the duration of Blood Hunt:\n•Obstructive visuals affect Guest 666 and all Survivors.\n•Several of Guest 666's abilities are amplified.\n•Guest 666 cannot use Blood Rush.\n•Movement speed increased by 4%, terror radius decreased by 50%.\n•**Hellforged Will** passive is buffed to 50% negative effect reduction.\n•Sees all Survivors every 5 seconds as a flashing red highlight.\n•Killing a Survivor resets all cooldowns and extends Blood Hunt by 15s. The time extended by killing a Survivor decreases by??? with every kill.\n•During a chase, Blood Hunt's timer decreases twice as slowly.\n\n**Survivors with ⟦Hemorrhage|⟧:**\n•Highlight flashes faster and appears white instead of red.\n\n**When Blood Hunt ends:**\n•All Blood is instantly removed.\n•Maximum Blood is increased by 50.\n\n**While Blood Hunt is active:**\n•The timer continues even if not visible.\n•The round cannot end by timer reaching zero.\n•Disabled if only one Survivor remains; if active upon entering LMS, the remaining duration is set to 6 seconds.\n\n**Undocumented:**\n•Windup: **3s**\n•The round will not end if Blood Hunt is ongoing, even if the timer has run out.\n•• However, if Guest 666 does not enter Last Man Standing, the game will still end as the timer registers as being at 00:00.\n•Blood Hunt has no actual cooldown and can be activated as soon as Guest 666 reaches the maximum Blood requirement.\n••For an example, if Guest 666 uses Blood Rush while a Blood Orb is traveling toward him, Blood Hunt will become available to activate the moment the orb makes contact. This is because Blood Hunt has no true cooldown, relying entirely on reaching the maximum Blood requirement, meaning it completely ignores Blood Rush's active cooldown.\n•Two Time's respawn does not extend the Blood Hunt.\n••The round timer ticks down at halved speed for the duration of **Blood Hunt**.\n**Achievement(s):**",
      "quote": "\"You'll always be my best friend Sixer, through and through!\" - ████"
     }
@@ -6997,7 +6997,7 @@
     "Ranged",
     "Trickster"
    ],
-   "bg": "/forsaken/img/bg/bloodfell-manor-official-render-lit.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/bloodfell-manor-official-render-lit.webp",
    "map": "Bloodfell Manor",
    "caption": "Tonight, Bare witness the greatest feast of all!",
    "description": "A sanguine desire, one held by those of bloody code. Tempted by a deal of infinite celebration and desire, Nosferatu arrived to bring forth the Masquerade into the realm, alongside a bloody banquet. Granted power through the Spectre, Nosferatu takes advantage of land and air. Luring those in with his manipulation of bloody code to further feast and infect those around him. Nosferatu was offered a deal in his time of need from a certain agent of the Spectre…",
@@ -7010,21 +7010,21 @@
     "#D97D66",
     "#A86D16"
    ],
-   "image": "/forsaken/img/nosferatu.webp",
-   "card": "/forsaken/img/card/nosferatu-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/nosferatu.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/nosferatu-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/nosferatu-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/nosferatu-title.webp",
    "abilities": [
     {
      "name": "LEVITATION",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/nosferatu-levitation.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/nosferatu-levitation.webp",
      "desc": "Nosferatu levitates naturally, meaning that they don't have footstep sounds. This passive is shared with Dusekkar.",
      "quote": "\"To walk without sound is to hunt without mercy.\" - Nosferatu"
     },
@@ -7032,7 +7032,7 @@
      "name": "LACERATE",
      "key": "M1",
      "cd": "1.85s",
-     "icon": "/forsaken/img/ab/nosferatu-lacerate.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/nosferatu-lacerate.webp",
      "desc": "Nosferatu slashes in front of him with his claws.\n•Damage: **24**\n•Windup: **0.3s**\n•Linger: **0.3s**\n•Length: **8.5 studs**",
      "quote": "\"We are the things that Robloxians fear.\" - Nosferatu"
     },
@@ -7040,7 +7040,7 @@
      "name": "BLOODHOOK",
      "key": "Q",
      "cd": "24s",
-     "icon": "/forsaken/img/ab/nosferatu-bloodhook.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/nosferatu-bloodhook.webp",
      "desc": "After a 0.9s windup Nosferatu throws a horizontal chain at a survivor for 15 damage and \"reel them in\", triggering a brief minigame for the survivor to escape. If they fail the minigame, they receive follow-up damage. The effects are as follows:\n•Can hit multiple Survivors, but can only grab one.\n•Can be blocked by the environment.\n•Has a range of roughly 115 studs.\n\n•**If the projectile hits a survivor at 24 or less studs:**\n••Drags the survivor and deals 3 additional damage on the kick (18 total).\n••The time-based prompt does not appear.\n\n•**If the projectile hits a survivor from long range:**\n••A time-based prompt appears for both the killer and the survivor.\n••The survivor gets rapidly pulled towards Nosferatu at a speed of 16 studs.\n••Nosferatu can retain the grip by successfully completing an action command. Survivors that fail an action will get pulled closer towards Nosferatu.\n\n•**If** Nosferatu **successfully pulls the survivor in:**\n••Deals 25 additional damage (40 total).\n\n•Regardless of the pull type he successfully lands, he is inflicted with ⟦Helpless|⟧ for 2 seconds and ⟦Slowness|II⟧ for 1 second.\n•**If the Survivor escapes:**\n••The Survivor is freed at their current position.\n••Nosferatu is inflicted with ⟦Helpless|⟧ for 1 seconds.\n•As a Survivor: failing button prompts pulls you closer to the Killer.\n•As Nosferatu: failing button prompts make Survivor escape easier.\n\nAchievement(s):",
      "quote": "\"We are those who arrive in the night, stalking our prey\nand pulling them from prying eyes.\" - Nosferatu"
     },
@@ -7048,7 +7048,7 @@
      "name": "CATACLYSM",
      "key": "E",
      "cd": "22s",
-     "icon": "/forsaken/img/ab/nosferatu-cataclysm.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/nosferatu-cataclysm.webp",
      "desc": "Nosferatu performs a full spin to wind up their invisibility before dashing forward in the direction their model is facing. While dashing, he creates a sharp line on the ground. After about two seconds, Nosferatu is teleported back to the starting point and stomps the ground, triggering an explosion and summoning their bloody puddles. The effects are as follows:\n•During the dash, Nosferatu gains ⟦Invisibility|IV⟧\n•The explosion deals 10 damage.\n•The puddles of blood apply 2 status effects:\n••⟦Bleeding|II⟧ for 7.5 seconds, dealing 19(?) damage over time.\n••⟦Slowness|I⟧ for 7.5 seconds.\n•Any Survivors that step into the puddle's will be highlighted for 7.5 seconds.\n•Puddles last 12 seconds before despawning.\n\nAchievement(s):",
      "quote": "\"Dude I swear on my life I saw a vampire dash\n at like mach 5!!!\" - Random Robloxian"
     },
@@ -7056,7 +7056,7 @@
      "name": "HUNTER'S FEAST",
      "key": "R",
      "cd": "16s",
-     "icon": "/forsaken/img/ab/nosferatu-hunter-s-feast.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/nosferatu-hunter-s-feast.webp",
      "desc": "Nosferatu unleashes an orb of bats after a 0.23s windup, moving toward the direction of the player's cursor. The orb can be redirected once by pressing the ability button again, giving it omni-directional control, but it cannot be redirected more than once and it cannot pass through walls. The effects are as follows:\n•Deals 5 damage.\n•Applies ⟦Oblivious|⟧ and ⟦Creatures|⟧ for 10 seconds.\n•Highlights the survivor for 10 seconds\n• If the projectile does not collide with a surface or a Survivor, it persists for 10s before despawning.\n\n•Nosferatu**'s buffs upon hitting a survivor:**\n••Gains ⟦Invisibility|V⟧ and ⟦Undetectable|⟧ for 10 seconds.\n••Using any ability, including Lacerate, removes these effects.\n\n•**Cooldown behavior:**\n••The normal cooldown begins only after the projectile hits a surface or a Survivor.\n••If it despawns naturally after its lifespan, the cooldown begins at despawn.\n•• Redirecting the projectile starts the cooldown immediately, even if no collision has occurred.\n\n**Undocumented:**\n\n•Redirecting the projectile also makes it travel 4 times faster.\n•After casting, there is a brief window where the projectile cannot yet be redirected.",
      "quote": "\"THE BATS AAAAAAAAAAAAAAAAAAAAAAAAAAAA\"\n - Unfortunate Robloxian"
     },
@@ -7064,7 +7064,7 @@
      "name": "ASCENSION",
      "key": "T",
      "cd": "32s",
-     "icon": "/forsaken/img/ab/nosferatu-ascension.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/nosferatu-ascension.webp",
      "desc": "Nosferatu leaps upward and briefly transforms into a bat, gaining flight for up to 10 seconds. The effects are as follows:\n\n•Pressing the spacebar flaps his wings to gain height.\n•Holding the spacebar allows him to hover briefly and slows his descent. Nosferatu will only continue hovering if he flaps in-between glides.\nIf the 10 seconds of flight are up, Nosferatu will revert back to his normal state and gain ⟦Helpless|⟧ and ⟦Slowness|III⟧ for 4s.\n\nNosferatu can perform a dive attack while in bat form by using the Primary Attack.\n\nAfter pressing Lacerate, Nosferatu, after a 0.6 second windup, will begin to dive downwards at an angle towards their camera's direction. Upon hitting a survivor, they will instantly revert to their original humanoid form, pin down the target, and bite them for 5 damage. Afterwards, they will perform a spinning toss that deals additional damage. This damage rapidly scales with how long you spent diving, from a base 5 damage, up to 0.55s of diving time and 30 damage maximum. (10-35 total).\n\nIf the dive attack is missed, Nosferatu takes 20 self-damage and is inflicted with ⟦Slowness|III⟧ and ⟦Helpless|I⟧ for 3 seconds.\n\n**Undocumented:**\n\n• Nosferatu has complete invincibility during **Ascension**, meaning he cannot get ⟦Stunned|⟧ or hit by any offense ability.\n• Stamina will immediately begin regenerating regardless of how Nosferatu exits Ascension.\n• While in his bat-form, Nosferatu has all survivors highlighted to him.\n• On mobile, Nosferatu gains height by pressing and holding the sprint button.",
      "quote": "\"You know what's in here, I know what's in here.\n Inside you'll find...\" -???"
     },
@@ -7072,7 +7072,7 @@
      "name": "DISMOUNT",
      "key": "M1",
      "cd": "32s",
-     "icon": "/forsaken/img/ab/nosferatu-dismount.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/nosferatu-dismount.webp",
      "desc": "By re-using Ascension anytime during its duration, you will automatically return to your default form.\n\nIf Nosferatu exits without using the dive attack, he will be inflicted with ⟦Slowness|III⟧ and ⟦Helpless|I⟧ for 4 seconds."
     }
    ],
@@ -7189,16 +7189,16 @@
     "Ranged",
     "Trickster"
    ],
-   "bg": "/forsaken/img/bg/reborn-family-abode-lit.webp",
+   "bg": "https://forsaken.fntduserguide.com/img/bg/reborn-family-abode-lit.webp",
    "map": "Reborn Family Abode",
    "modes": [
     {
      "name": "Azure",
-     "image": "/forsaken/img/azure.webp"
+     "image": "https://forsaken.fntduserguide.com/img/azure.webp"
     },
     {
      "name": "Golem",
-     "image": "/forsaken/img/golem.webp",
+     "image": "https://forsaken.fntduserguide.com/img/golem.webp",
      "stats": {
       "speed": 9,
       "sprint": 30,
@@ -7209,7 +7209,7 @@
        "name": "EFFLORESCENT",
        "key": "Passive",
        "cd": "N/A",
-       "icon": "/forsaken/img/ab/azure-echolocation.webp",
+       "icon": "https://forsaken.fntduserguide.com/img/ab/azure-echolocation.webp",
        "desc": "The Golem gains a **10% movement speed boost** while more than **85 studs** away from any Survivor.\nThe Golem reduces all incoming negative status effects by 50% and can not be stunned.\n\nIf the Golem is hit by a stun, it will instead receive 3s of ⟦Slowness|II⟧ and ⟦Helpless|⟧.\n\n**Undocumented:**\n\n•The Golem gains an additional **10% movement speed boost** when out of chase, which stacks with other speed boost(total **20%**).",
        "quote": "\"I will guide you through the twilight, into an eternal hell.\" -???"
       },
@@ -7217,7 +7217,7 @@
        "name": "PUMMELING",
        "key": "M1",
        "cd": "2.4s",
-       "icon": "/forsaken/img/ab/golem-pummeling.webp",
+       "icon": "https://forsaken.fntduserguide.com/img/ab/golem-pummeling.webp",
        "desc": "Damage: 26\n\nWindup: 0.35\n\nLinger: 0.25\n\nLength: 10 studs\n\nThe Golem swipes its claw forward.",
        "quote": "\"Never again.\" -Azurewrath"
       },
@@ -7225,7 +7225,7 @@
        "name": "BLOOMING",
        "key": "Q",
        "cd": "7s",
-       "icon": "/forsaken/img/ab/golem-blooming.webp",
+       "icon": "https://forsaken.fntduserguide.com/img/ab/golem-blooming.webp",
        "desc": "After a 0.7s windup, the Golem will slam the ground under it and produce a shockwave that knocks over hit survivors briefly and deals damage based on how close they are to the center of the shockwave, up to 35 damage.\n\n**Undocumented:**\n•Survivors killed by **Blooming** do not get ragdolled; instead, they get squished and locked in place.",
        "quote": "\"Let your strengths remain unshaken, and your emotions never falter.\" -???"
       },
@@ -7233,7 +7233,7 @@
        "name": "UNEARTHING",
        "key": "E",
        "cd": "16s",
-       "icon": "/forsaken/img/ab/golem-unearthing.webp",
+       "icon": "https://forsaken.fntduserguide.com/img/ab/golem-unearthing.webp",
        "desc": "After a 0.8s windup, the Golem will stomp the ground and send a shockwave forwards that will knock back hit survivors and deal 15 damage.\n\nAs the shockwave travels, it will leave behind a fissure in its wake. This fissure slows survivors by 70% while they are inside of it. The fissure lasts for 8s.\n\nSurvivors are able to be carried by the shockwave as it travels, but will not take more than one instance of damage.",
        "quote": "\"Those guided by the Spawn cannot be tempted by the anger of the beasts that lurk outside of our Family.\" -Elder Amarah"
       },
@@ -7241,7 +7241,7 @@
        "name": "BURROWING",
        "key": "T",
        "cd": "2.5s",
-       "icon": "/forsaken/img/ab/golem-burrowing.webp",
+       "icon": "https://forsaken.fntduserguide.com/img/ab/golem-burrowing.webp",
        "desc": "Relinquish control of the Golem and return to Azure.",
        "quote": "\"You chose the Spawn. Never me.\" -Azurewrath"
       }
@@ -7256,21 +7256,21 @@
     "#332b68",
     "#4718AA"
    ],
-   "image": "/forsaken/img/azure.webp",
-   "card": "/forsaken/img/card/azure-440.webp",
+   "image": "https://forsaken.fntduserguide.com/img/azure.webp",
+   "card": "https://forsaken.fntduserguide.com/img/card/azure-440.webp",
    "cards": [
     220,
     330,
     440,
     660
    ],
-   "title": "/forsaken/img/azure-title.webp",
+   "title": "https://forsaken.fntduserguide.com/img/azure-title.webp",
    "abilities": [
     {
      "name": "ECHOLOCATION",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/azure-echolocation.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/azure-echolocation.webp",
      "desc": "Azure's plants are triggered by sound. If survivors sprint or use an ability near them, they will trigger and attack the survivor.\n\nSurvivors that trigger plants have their aura revealed to Azure for 3s.",
      "quote": "\"The transient sounds of winds sound softer today.\" -Aspen"
     },
@@ -7278,7 +7278,7 @@
      "name": "ATROPIC",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/azure-atropic.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/azure-atropic.webp",
      "desc": "Azure's plants apply a unique status effect named ⟦Atropa|⟧. This status effect is the primary way to gain OBLATION. OBLATION is also gained through dealing damage.\n\nAzure gains 1 OBLATION for every stack of ⟦Atropa|⟧ on a survivor when hit with Perforating. If Atropa expires naturally, Azure gains 1 OBLATION for every 2 stacks of Atropa, with a minimum of 1 OBLATION gained.\n\nAdditionally, Perforating and Pummeling will deal 1 additional damage for every stack of ⟦Atropa|⟧ on a survivor when hit. However, this will also remove all Atropa stacks.\n\n⟦Atropa|⟧ highlights survivors affected by it to Azure, with the highlight growing darker the more stacks they have.\n\nSeeker Bulb's inflict 1 stack of ⟦Atropa|⟧ on hit, Stigmatize Vine's inflict 3 stacks of ⟦Atropa|⟧ on hit, and a survivor fully disarming either of them is inflicted with 2 stacks of ⟦Atropa|⟧.\n\n⟦Atropa|⟧ can not go beyond 6 stacks, and additional stacks do not refresh the existing status timer.\n\nAzure can have a maximum of 15 OBLATION.",
      "quote": "\"May nature's hands be kinder than the folly of man..\" -Aspen"
     },
@@ -7286,7 +7286,7 @@
      "name": "SENESCENCE",
      "key": "Passive",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/azure-senescence.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/azure-senescence.webp",
      "desc": "Azure's plants are able to be temporarily disarmed by survivors.\n\nHowever, Azure's Seeker Bulb's and Stigmatize Vine's begin life Blooming. Blooming plants are glowing, unable to be disarmed, and have certain traits amplified.\n\nSeeker Bulb's will fire faster while Blooming, and Stigmatize Vine's windup is significantly faster and attack cooldown is reduced while Blooming.\n\nif either plant is disarmed, they will enter a withered state and become inactive for 30s.\n\nHowever, once a plant becomes active again, they will begin Blooming once more.\n\nThe Blooming state lasts for 40s.\n\n**Undocumented:**\n•While Blooming, Seeker Bulbs' exact firerate increase is 1.33x.\n•Disabling a Seeker Bulb or Stigmatize Vine will give the Survivor two stacks of Atropa.",
      "quote": "\"Sometimes I dream of him being plagued by illness. Freed from them.\" -Aspen"
     },
@@ -7294,7 +7294,7 @@
      "name": "PERFORATING",
      "key": "M1",
      "cd": "1.8s",
-     "icon": "/forsaken/img/ab/azure-perforating.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/azure-perforating.webp",
      "desc": "Damage: 22\n\nWindup: 0.22\n\nLinger: 0.25\n\nLength: 8.5 studs\n\nAzure jabs his tentacles forward.\nThis will additionally trigger any nearby plants on hit.",
      "quote": "\"May your faith remain unshaken, and your strength never yield.\" -Elder Amarah"
     },
@@ -7302,7 +7302,7 @@
      "name": "SEEKER BULB",
      "key": "Q",
      "cd": "12s",
-     "icon": "/forsaken/img/ab/azure-seeker-bulb.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/azure-seeker-bulb.webp",
      "desc": "Azure will slow down and then after a 0.86s windup will jab a tentacle forward, spawning a Seeker Bulb on the hit surface.\n\nUpon being triggered, they will begin to fire projectiles at the survivor who activated it, dealing 4 damage and applying a stack of ⟦Atropa|⟧ on hit.\n\nSeeker Bulbs will stop firing after 1.5s if they lose line of sight of survivors or survivors stop making noise near it.\n\nAzure can have up to 3 Seeker Bulbs at once. Using the ability again with 3 Seeker Bulbs placed will replace the oldest one.\n\n**Undocumented:**\n•It shoots in a **30 studs ** radius.",
      "quote": "\"Certain types of nightshade can be fatal, so be careful...\" -Aspen"
     },
@@ -7310,7 +7310,7 @@
      "name": "STIGMATIZE",
      "key": "E",
      "cd": "15s",
-     "icon": "/forsaken/img/ab/azure-stigmatize.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/azure-stigmatize.webp",
      "desc": "Azure will briefly come to a near standstill and then after a 0.8s windup will summon a Vine.\n\nVines have a brief 1.2s arm time after they are finished being summoned.\n\nUpon being triggered, they will track and attempt to attack the nearest survivor to trap them. The attack has a 0.6s windup.\n\nIf the attack hits a survivor, they will take 14 damage and become snared and unable to move more than a small distance away from the Vine before being pulled back in.\n\nSurvivors are released from the snare after 5s of being trapped or they take more than 10 damage.\n\nUpon being released, survivors gain ⟦Speed|II⟧ for 1s.\n\nAfter releasing a survivor or missing an attack, the Vine will briefly wither and go on a 6.5s cooldown before being able to be triggered again.\n\n**Undocumented:**\n\n•Trapped Survivors are still able to use their abilities.\n•It can reach up to **20 studs** in a radius.",
      "quote": "\"Perhaps we could ask if we could handle these overgrowths ourselves?\" -Two Time"
     },
@@ -7318,7 +7318,7 @@
      "name": "ENSTRANGLE",
      "key": "R",
      "cd": "25s",
-     "icon": "/forsaken/img/ab/azure-enstrangle.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/azure-enstrangle.webp",
      "desc": "Azure becomes unable to sprint and winds up a tentacle for 1s, after which Azure can press the Perforating ability button to send a tentacle towards the targeted location.\n\nAzure is able to cancel the ability by pressing the button again, which will set it on a shortened cooldown.\n\nUpon hitting a survivor, they will take 10 damage and Azure will regain the ability to sprint while grabbing them and holding the caught survivor for a bit before throwing them towards the targeted location. Azure can press the Perforating ability button again to throw the held survivor early.\n\nThe thrown survivor takes 5 damage and is briefly knocked down on impact. Survivors within a 20 stud radius of the impact point are also briefly knocked down.\n\nAzure is inflicted with ⟦Helpless|⟧ for 2s upon throwing the survivor. If the survivor is thrown too close to Azure, the duration of the ⟦Helpless|⟧ is increased and Azure will additionally suffer ⟦Slowness|II⟧ for 2s.\n\nWhile using this ability Azure has their Stamina Regeneration reduced by 75%.\n\nThrown survivors will always trigger any nearby plants upon landing.\n\n**Undocumented: **\n\n•Enstrangle grab cutscene grants Invincibility to Azure. Invincibility lingers for an additional 0.5 seconds after the initial grab animation ends.",
      "quote": "\"Holding your hand like this... makes me not want to let go..\" -Two Time"
     },
@@ -7326,7 +7326,7 @@
      "name": "INFLORESCENCE",
      "key": "T",
      "cd": "N/A",
-     "icon": "/forsaken/img/ab/azure-inflorescence.webp",
+     "icon": "https://forsaken.fntduserguide.com/img/ab/azure-inflorescence.webp",
      "desc": "Once Azure reaches 15 OBLATION, they are able to summon the Golem.\n\nSummoning the Golem takes 4.8s. After the Golem has finished summoning, they are able to be freely controlled by Azure by pressing the ability button again. The Golem becomes a statue when not being controlled.\n\nThe Golem has a maximum lifetime of 45s, and the lifetime is paused while not being controlled.\nSwapping to and from the Golem has a cooldown of 2.5s.\n\nAzure is unable to gain OBLATION while the Golem exists.",
      "quote": "\"Rise, once more, Azurewrath.\""
     }
@@ -7601,7 +7601,7 @@
    "azure"
   ]
  },
- "gridBg": "/forsaken/img/bg/1stfloor-lobby.webp",
+ "gridBg": "https://forsaken.fntduserguide.com/img/bg/1stfloor-lobby.webp",
  "effects": {
   "atropa": "A stacking debuff (up to Atropa VI) which reveals the Survivor's aura to Azure (color ranges from pink to dark purple based on their Atropa stack) and increases the damage of Perforating (and Pummeling) by 1 for each stack of Atropa If a Survivor with Atropa gets hit by Perforating, Azure will gain Oblation based on their Atropa stack, but also completely removes Atropa from the Survivor",
   "exhausted": "Reduces stamina regeneration and increases stamina drain by 10% per stack. The stamina bar turns red while Exhausted is active.",
@@ -7647,7 +7647,7 @@
   {
    "id": "bloxy-cola",
    "name": "Bloxy Cola",
-   "icon": "/forsaken/img/item/bloxy-cola.webp",
+   "icon": "https://forsaken.fntduserguide.com/img/item/bloxy-cola.webp",
    "quote": "tastes super duper sweet",
    "desc": "Drink for a speed boost. Gives ⟦Speed|II⟧ for 10 seconds after a startup of around 4 seconds.\n\nDuring Last Man Standing it gives ⟦Speed|I⟧ instead.",
    "where": "Spawns around every map.",
@@ -7658,7 +7658,7 @@
   {
    "id": "ghostburger",
    "name": "Ghostburger",
-   "icon": "/forsaken/img/item/ghostburger.webp",
+   "icon": "https://forsaken.fntduserguide.com/img/item/ghostburger.webp",
    "quote": "spooky burger!",
    "desc": "Become invisible and fool the Killer. Gives ⟦Invisibility|IV⟧ and ⟦Undetectable|I⟧ for 10 seconds after a 2 second windup.",
    "where": "Brandon6875935's Place.",
@@ -7669,7 +7669,7 @@
   {
    "id": "medkit",
    "name": "Medkit",
-   "icon": "/forsaken/img/item/medkit.webp",
+   "icon": "https://forsaken.fntduserguide.com/img/item/medkit.webp",
    "quote": "a little bit like Fortnite",
    "desc": "Heals 80 HP after a 7 second startup, so use it somewhere safe.\n\nRemoves ⟦Hemorrhage|⟧ but does not restore vine-covered health. It cannot be used at full health.",
    "where": "Spawns around every map.",
@@ -7683,7 +7683,7 @@
   {
    "id": "epicsauce",
    "name": "Epicsauce",
-   "icon": "/forsaken/img/item/epicsauce.webp",
+   "icon": "https://forsaken.fntduserguide.com/img/item/epicsauce.webp",
    "quote": "THIS GIRL IS ON FĪYĀĀĀHHH",
    "desc": "High risk, high reward. Gives ⟦Speed|IV⟧ and ⟦Burning|IV⟧ for 4 seconds. The burning deals 17 damage in total.",
    "where": "Brandon6875935's Place, in the secret zone after cleaning every graffiti on the map."
@@ -7691,7 +7691,7 @@
   {
    "id": "slateskin",
    "name": "Slateskin",
-   "icon": "/forsaken/img/item/slateskin.webp",
+   "icon": "https://forsaken.fntduserguide.com/img/item/slateskin.webp",
    "quote": "completely solid",
    "desc": "Turns your skin to rock to tank hits. Gives ⟦Slateskin|III⟧ for 6 seconds.",
    "where": "Brandon6875935's Place, in the secret zone after cleaning every graffiti on the map."
@@ -7701,7 +7701,7 @@
   "maps": [
    {
     "name": "Brandon6875935's Place",
-    "image": "/forsaken/img/bg/brandon6875935-s-place-official-render-lit.webp",
+    "image": "https://forsaken.fntduserguide.com/img/bg/brandon6875935-s-place-official-render-lit.webp",
     "sided": 40,
     "ranks": {
      "noli": {
@@ -7740,7 +7740,7 @@
    },
    {
     "name": "Glass Houses",
-    "image": "/forsaken/img/bg/glass-houses-official-render-lit.webp",
+    "image": "https://forsaken.fntduserguide.com/img/bg/glass-houses-official-render-lit.webp",
     "sided": 50,
     "ranks": {
      "c00lkidd": {
@@ -7779,7 +7779,7 @@
    },
    {
     "name": "Horror Hotel",
-    "image": "/forsaken/img/bg/horror-hotel-official-render-lit.webp",
+    "image": "https://forsaken.fntduserguide.com/img/bg/horror-hotel-official-render-lit.webp",
     "sided": 30,
     "ranks": {
      "slasher": {
@@ -7818,7 +7818,7 @@
    },
    {
     "name": "Ultimate Assassin Grounds",
-    "image": "/forsaken/img/bg/ultimate-assassin-grounds-official-render-lit.webp",
+    "image": "https://forsaken.fntduserguide.com/img/bg/ultimate-assassin-grounds-official-render-lit.webp",
     "sided": 50,
     "ranks": {
      "noli": {
@@ -7857,7 +7857,7 @@
    },
    {
     "name": "Underground War",
-    "image": "/forsaken/img/bg/mugw-bloxy-ramp-lit.webp",
+    "image": "https://forsaken.fntduserguide.com/img/bg/mugw-bloxy-ramp-lit.webp",
     "sided": 20,
     "ranks": {
      "noli": {
@@ -7896,7 +7896,7 @@
    },
    {
     "name": "C00l Carnival",
-    "image": "/forsaken/img/bg/c00l-carnival-official-render-lit.webp",
+    "image": "https://forsaken.fntduserguide.com/img/bg/c00l-carnival-official-render-lit.webp",
     "sided": 60,
     "ranks": {
      "1x1x1x1": {
@@ -7935,7 +7935,7 @@
    },
    {
     "name": "The Tempest",
-    "image": "/forsaken/img/bg/the-tempest-official-render-lit.webp",
+    "image": "https://forsaken.fntduserguide.com/img/bg/the-tempest-official-render-lit.webp",
     "sided": 30,
     "ranks": {
      "slasher": {
@@ -7974,7 +7974,7 @@
    },
    {
     "name": "Work at a Pizza Place",
-    "image": "/forsaken/img/bg/work-at-a-pizza-place-official-render-lit.webp",
+    "image": "https://forsaken.fntduserguide.com/img/bg/work-at-a-pizza-place-official-render-lit.webp",
     "sided": 60,
     "ranks": {
      "1x1x1x1": {
@@ -8013,7 +8013,7 @@
    },
    {
     "name": "Classic Battlegrounds",
-    "image": "/forsaken/img/bg/classic-battlegrounds-official-render-lit.webp",
+    "image": "https://forsaken.fntduserguide.com/img/bg/classic-battlegrounds-official-render-lit.webp",
     "sided": 20,
     "ranks": {
      "noli": {
@@ -8052,7 +8052,7 @@
    },
    {
     "name": "Cake Factory",
-    "image": "/forsaken/img/bg/cakefactory-killeronlydoorplaza-lit.webp",
+    "image": "https://forsaken.fntduserguide.com/img/bg/cakefactory-killeronlydoorplaza-lit.webp",
     "sided": 50,
     "ranks": {
      "john-doe": {
@@ -8091,7 +8091,7 @@
    },
    {
     "name": "Beach House Paradise",
-    "image": "/forsaken/img/bg/beach-house-paradise-official-render-lit.webp",
+    "image": "https://forsaken.fntduserguide.com/img/bg/beach-house-paradise-official-render-lit.webp",
     "sided": 40,
     "ranks": {
      "guest-666": {
@@ -8130,7 +8130,7 @@
    },
    {
     "name": "Bloodfell Manor",
-    "image": "/forsaken/img/bg/bloodfell-manor-official-render-lit.webp",
+    "image": "https://forsaken.fntduserguide.com/img/bg/bloodfell-manor-official-render-lit.webp",
     "sided": 40,
     "ranks": {
      "slasher": {
@@ -8169,7 +8169,7 @@
    },
    {
     "name": "Familiar Ruins",
-    "image": "/forsaken/img/bg/familiar-ruins-official-render-lit.webp",
+    "image": "https://forsaken.fntduserguide.com/img/bg/familiar-ruins-official-render-lit.webp",
     "sided": 70,
     "ranks": {
      "azure": {
@@ -8208,7 +8208,7 @@
    },
    {
     "name": "Natural Disaster Island",
-    "image": "/forsaken/img/bg/natural-disaster-survival-official-render-lit.webp",
+    "image": "https://forsaken.fntduserguide.com/img/bg/natural-disaster-survival-official-render-lit.webp",
     "sided": 100,
     "ranks": {
      "azure": {
@@ -8247,7 +8247,7 @@
    },
    {
     "name": "Reborn Family Abode",
-    "image": "/forsaken/img/bg/reborn-family-abode-lit.webp",
+    "image": "https://forsaken.fntduserguide.com/img/bg/reborn-family-abode-lit.webp",
     "sided": 60,
     "ranks": {
      "1x1x1x1": {

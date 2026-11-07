@@ -1483,6 +1483,52 @@
       "credits": {
         "model": ["bennetjl0202"],
         "animation": ["deevee_dee"]
+      },
+      {
+      "id": "dreadbear",
+      "name": "Dreadbear",
+      "number": 53,
+      "update": "Update 4",
+      "world": "Halloween Backstage",
+      "game": "Help Wanted: Halloween",
+      "health": 365,
+      "attacks": [
+        "Bearzerkered",
+        "Dreadshock",
+        "Rainy Day 2"
+      ],
+      "quote": "ITS ALIVE!!!",
+      "unlock": "Obtainable by beating him in his secret area in the Halloween Backstage.",
+      "about": "",
+      "tips": "Very strong overall. Bearzerkered being the move you should spam with the occasional Dreadshock for stunning. Bearzerkered has the power to dish out INSANE amounts of damage especially when leveled.",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/dreadbear.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/dreadbear.webp",
+      "credits": {
+        "model": ["bennetjl0202"],
+        "animation": ["deevee_dee"]
+      },
+      {
+      "id": "grimm-foxy",
+      "name": "Grimm Foxy",
+      "number": 54,
+      "update": "Update 4",
+      "world": "Halloween Backstage",
+      "game": "Help Wanted: Halloween",
+      "health": 370,
+      "attacks": [
+        "Jack-O-Bombs",
+        "Face Melter",
+        "Haunting"
+      ],
+      "quote": "YOUR FACE WILL LOOK LIKE MASHED POTATOES AFTER IM DONE WITH YOU!",
+      "unlock": "Obtainable by beating Foxy.EXE without taking damage.",
+      "about": "",
+      "tips": "Very strong overall. Face Melter is just a better Mega Virus (minus the stacking), then after he applies Face Melter he can spam Jack-O-Bombs.",
+      "idle": "https://fnaf-world.fntduserguide.com/idle/grim-foxy.webp",
+      "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/grim-foxy.webp",
+      "credits": {
+        "model": ["bennetjl0202"],
+        "animation": ["deevee_dee"]
       }
     }
   ],
@@ -3176,6 +3222,30 @@
       "description": "Kills all enemies under 50% health.",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/waterhose-2.webp"
+    },
+    "Bearzerkered": {
+      "color": "Blazing Orange",
+      "hex": "#ff6a00",
+      "type": "Damage",
+      "description": "Does a High Damage attack, but forces you into using it for the next three turns.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/Bearzerkered.webp"
+    },
+    "Dreadshock": {
+      "color": "Red",
+      "hex": "##ff4d4d",
+      "type": "Stun",
+      "description": "Stuns every enemy for a flat 12 seconds. Bosses are stunned for 4 seconds instead",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/Dreadshock.webp"
+    },
+    "Bearzerkered": {
+      "color": "Red",
+      "hex": "#ff4d4d",
+      "type": "Damage",
+      "description": "Does a HEAVY DOT to enemies, unlike Mega Virus, cannot stack.",
+      "damage": null,
+      "icon": "https://fnaf-world.fntduserguide.com/moves/face-melter.webp"
     }
   }
 }

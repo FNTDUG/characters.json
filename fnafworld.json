@@ -234,7 +234,7 @@
       "game": "Five Nights at Freddy's",
       "health": 120,
       "skins": [
-      { 
+      {
       "name": "Radioactive Foxy",
       "idle": "https://fnaf-world.fntduserguide.com/skins/radioactive-foxy-idle.webp",
       "attack": "https://fnaf-world.fntduserguide.com/skins/radioactive-foxy-attack.webp",
@@ -736,7 +736,7 @@
         "Pizza Wheel 2"
       ],
       "skins": [
-      { 
+      {
       "name": "Twisted Bonnie",
       "idle": "https://fnaf-world.fntduserguide.com/skins/twisted-bonnie-roblox-idle.webp",
       "attack": "https://fnaf-world.fntduserguide.com/skins/twisted-bonnie-roblox-attack.webp",
@@ -889,7 +889,7 @@
         "Rainy Day"
       ],
       "skins": [
-      { 
+      {
       "name": "Toxic Springtrap",
       "idle": "https://fnaf-world.fntduserguide.com/skins/toxic-springtrap-idle.webp",
       "attack": "https://fnaf-world.fntduserguide.com/skins/toxic-springtrap-attack.webp",
@@ -1118,7 +1118,7 @@
       "game": "Five Nights at Freddy's 4: Halloween Edition",
       "health": 305,
       "skins": [
-      { 
+      {
       "name": "Screampunk",
       "idle": "https://fnaf-world.fntduserguide.com/skins/screampunk-idle.webp",
       "attack": "https://fnaf-world.fntduserguide.com/skins/screampunk-attack.webp",
@@ -1363,7 +1363,7 @@
       "game": "From Five Nights at Freddy's 4: Halloween Edition",
       "health": 355,
       "skins": [
-      { 
+      {
       "name": "Mechanical Mangle",
       "idle": "https://fnaf-world.fntduserguide.com/skins/mechanical-marvel-mangle-idle.webp",
       "attack": "https://fnaf-world.fntduserguide.com/skins/mechanical-mangle-attack.webp",
@@ -1393,7 +1393,7 @@
     {
       "id": "sparky",
       "name": "Sparky",
-      "number": 49,
+      "number": 50,
       "update": "Update 2",
       "world": "Blacktomb Yard",
       "game": "Five Nights at Freddy's",
@@ -1451,7 +1451,7 @@
           "idle": "https://fnaf-world.fntduserguide.com/skins/withered-purple-guy-idle.webp",
           "attack": "https://fnaf-world.fntduserguide.com/skins/withered-purple-guy-attack.webp",
           "credits": {
-          "model": ["bennetjl0202"],  
+          "model": ["bennetjl0202"],
           "animation": ["_adamm_"]
           }
         }
@@ -1483,8 +1483,9 @@
       "credits": {
         "model": ["bennetjl0202"],
         "animation": ["deevee_dee"]
-      },
-      {
+      }
+    },
+    {
       "id": "dreadbear",
       "name": "Dreadbear",
       "number": 53,
@@ -1505,9 +1506,10 @@
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/dreadbear.webp",
       "credits": {
         "model": ["bennetjl0202"],
-        "animation": ["deevee_dee"]
-      },
-      {
+        "animation": ["rhyspuffs_"]
+      }
+    },
+    {
       "id": "grimm-foxy",
       "name": "Grimm Foxy",
       "number": 54,
@@ -1516,7 +1518,7 @@
       "game": "Help Wanted: Halloween",
       "health": 370,
       "attacks": [
-        "Jack-O-Bombs",
+        "Jack-O-Bomb",
         "Face Melter",
         "Haunting"
       ],
@@ -1528,7 +1530,7 @@
       "attackAnimation": "https://fnaf-world.fntduserguide.com/attack/grim-foxy.webp",
       "credits": {
         "model": ["bennetjl0202"],
-        "animation": ["deevee_dee"]
+        "animation": ["_adamm_"]
       }
     }
   ],
@@ -1594,7 +1596,7 @@
       "attacks": [
         "Balloons"
       ],
-      
+
       "about": "Browboy is a boss found in Pinwheel Circus.",
       "image": "https://fnaf-world.fntduserguide.com/foes/browboy.webp"
     },
@@ -1853,7 +1855,7 @@
         "Esc Key",
         "Hot Cheese",
         "Unscrew"
-        
+
       ],
       "about": "Supergoon is a boss in FNaF World that guards a button that you must press to open up the path to Security.",
       "image": "https://fnaf-world.fntduserguide.com/foes/supergoon.webp"
@@ -3233,13 +3235,13 @@
     },
     "Dreadshock": {
       "color": "Red",
-      "hex": "##ff4d4d",
+      "hex": "#ff4d4d",
       "type": "Stun",
       "description": "Stuns every enemy for a flat 12 seconds. Bosses are stunned for 4 seconds instead",
       "damage": null,
       "icon": "https://fnaf-world.fntduserguide.com/moves/Dreadshock.webp"
     },
-    "Bearzerkered": {
+    "Face Melter": {
       "color": "Red",
       "hex": "#ff4d4d",
       "type": "Damage",

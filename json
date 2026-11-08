@@ -17929,53 +17929,62 @@
     "placements": 1,
     "attackType": "Circle",
     "obtainment": "Quest Shop",
+    "balanceChanges": [
+      {
+        "date": "11/8/26",
+        "changes": [
+          { "type": "buff",   "text": "DMG increased from 740 to 950" },
+          { "type": "nerf",   "text": "Upgrade costs increased" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
         "cost": 2000,
-        "damage": 505,
+        "damage": 525,
         "cd": 3,
         "range": 18
       },
       {
         "level": 2,
-        "cost": 1400,
-        "damage": 520.15,
+        "cost": 3000,
+        "damage": 610,
         "cd": 2.9,
         "range": 20
       },
       {
         "level": 3,
-        "cost": 1900,
-        "damage": 550.45,
+        "cost": 4000,
+        "damage": 690,
         "cd": 2.9,
         "range": 22
       },
       {
         "level": 4,
-        "cost": 2500,
-        "damage": 606,
+        "cost": 5500,
+        "damage": 750,
         "cd": 2.8,
         "range": 24
       },
       {
         "level": 5,
-        "cost": 3000,
-        "damage": 641.35,
+        "cost": 7000,
+        "damage": 810,
         "cd": 2.8,
         "range": 26
       },
       {
         "level": 6,
-        "cost": 3700,
-        "damage": 671.65,
+        "cost": 9000,
+        "damage": 850,
         "cd": 2.7,
         "range": 27
       },
       {
         "level": 7,
-        "cost": 4600,
-        "damage": 747.4,
+        "cost": 11500,
+        "damage": 950,
         "cd": 2.7,
         "range": 28
       }
@@ -18192,53 +18201,62 @@
     "placements": 1,
     "attackType": "Line",
     "obtainment": "Quest Shop",
+    "balanceChanges": [
+      {
+        "date": "11/8/26",
+        "changes": [
+          { "type": "buff",   "text": "DMG increased from 220 to 275" },
+          { "type": "buff",   "text": "Upgrade costs increased" }
+        ]
+      }
+    ],
     "levels": [
       {
         "level": 1,
         "cost": 7460,
-        "damage": 151.5,
+        "damage": 185,
         "cd": 0.6,
         "range": 20
       },
       {
         "level": 2,
-        "cost": 2500,
-        "damage": 156.55,
+        "cost": 4000,
+        "damage": 190,
         "cd": 0.6,
         "range": 23
       },
       {
         "level": 3,
-        "cost": 3250,
-        "damage": 163.62,
+        "cost": 5500,
+        "damage": 200,
         "cd": 0.6,
         "range": 24
       },
       {
         "level": 4,
-        "cost": 4000,
-        "damage": 171.7,
+        "cost": 7500,
+        "damage": 210,
         "cd": 0.6,
         "range": 25
       },
       {
         "level": 5,
-        "cost": 5000,
-        "damage": 181.8,
+        "cost": 9500,
+        "damage": 225,
         "cd": 0.5,
         "range": 27
       },
       {
         "level": 6,
-        "cost": 6000,
-        "damage": 196.95,
+        "cost": 12000,
+        "damage": 245,
         "cd": 0.5,
         "range": 29
       },
       {
         "level": 7,
-        "cost": 7500,
-        "damage": 222.2,
+        "cost": 15000,
+        "damage": 275,
         "cd": 0.5,
         "range": 32
       }
@@ -18723,6 +18741,14 @@
         "changes": [
           { "type": "buff",   "text": "Element Nature/Dark (was Nature)" }
         ]
+      },
+      {
+        "date": "11/8/26",
+        "changes": [
+          { "type": "buff",   "text": "[Growmain Expansion] duration increased from 30s to 45s" },
+          { "type": "buff",   "text": "[Growmain Expansion] nature boost increased from +30% DMG to +60% DMG" },
+          { "type": "buff",   "text": "[Growmain Expansion] self boost increased from +50% DMG to +90% DMG" }
+        ]
       }
     ],
     "levels": [
@@ -18826,7 +18852,7 @@
     "passives": [
       {
         "title": "Growmain Expansion",
-        "text": "Creates a nature domain in this unit's range for 30s. Nature units in the domain gain +30% Damage and -10% CD. Gaia Chica gains +50% Damage and -15% CD instead. Duration is extended by 1s per stock, up to 15s. The first 3 activations generate +1 stock. (Upgrade 0+, Global CD: 90s).",
+        "text": "Creates a nature domain in this unit's range for 45s. Nature units in the domain gain +60% Damage and -10% CD. Gaia Chica gains +90% Damage and -15% CD instead. Duration is extended by 1s per stock, up to 15s. The first 3 activations generate +1 stock. (Upgrade 0+, Global CD: 90s).",
         "activeIcon": "https://tr.rbxcdn.com/180DAY-9bd108c80b4437014dd44343e399ad7b/420/420/Image/Png/noFilter"
       },
       {
@@ -18846,9 +18872,9 @@
       "selfboost": [
         {
           "label": "Growmain Expansion",
-          "dmgmult": 1.5,
+          "dmgmult": 1.9,
           "cdmult": 0.85,
-          "duration": 37,
+          "duration": 52,
           "cd": 90,
           "uptime": true
         }
@@ -21171,11 +21197,20 @@
   "placements": 1,
   "attackType": "Multi",
   "obtainment": "Vessel Plushtrap Evolution",
+  "balanceChanges": [
+      {
+        "date": "11/8/26",
+        "changes": [
+          { "type": "buff",   "text": "[Dangerous Concoction] damage bonus increased from 5% to 7.5%" },
+          { "type": "buff",   "text": "DMG increased from 950 to 1040" }
+        ]
+      }
+    ],
   "levels": [
     {
       "level": 1,
       "cost": 9000,
-      "damage": 300,
+      "damage": 340,
       "type": "Circle",
       "cd": 4,
       "range": 25
@@ -21183,7 +21218,7 @@
     {
       "level": 2,
       "cost": 7000,
-      "damage": 350,
+      "damage": 410,
       "type": "Circle",
       "cd": 4,
       "range": 26
@@ -21191,7 +21226,7 @@
     {
       "level": 3,
       "cost": 8000,
-      "damage": 400,
+      "damage": 460,
       "type": "Circle",
       "cd": 4,
       "range": 26
@@ -21199,7 +21234,7 @@
     {
       "level": 4,
       "cost": 9500,
-      "damage": 425,
+      "damage": 490,
       "type": "Circle",
       "cd": 3.5,
       "range": 28
@@ -21207,7 +21242,7 @@
     {
       "level": 5,
       "cost": 11000,
-      "damage": 500,
+      "damage": 565,
       "type": "Circle",
       "cd": 3.5,
       "range": 29
@@ -21215,7 +21250,7 @@
     {
       "level": 6,
       "cost": 12500,
-      "damage": 550,
+      "damage": 615,
       "type": "Circle",
       "cd": 3,
       "range": 29
@@ -21223,7 +21258,7 @@
     {
       "level": 7,
       "cost": 15000,
-      "damage": 700,
+      "damage": 790,
       "type": "Cone75°",
       "cd": 3,
       "range": 31
@@ -21231,7 +21266,7 @@
     {
       "level": 8,
       "cost": 17500,
-      "damage": 950,
+      "damage": 1040,
       "type": "Cone75°",
       "cd": 3,
       "range": 33
@@ -21244,7 +21279,7 @@
     },
     {
       "title": "Dangerous Concoction",
-      "text": "This unit deals 5% more damage for every Poison instance on the enemy. Enemies in range take 40% more Poison damage."
+      "text": "This unit deals 7.5% more damage for every Poison instance on the enemy. Enemies in range take 40% more Poison damage."
     }
   ],
   "passiveDamage": {
@@ -25293,11 +25328,19 @@
   "placements": 1,
   "attackType": "Multi",
   "obtainment": "Quest Shop",
+  "balanceChanges": [
+      {
+        "date": "11/8/26",
+        "changes": [
+          { "type": "buff",   "text": "DMG increased from 1000 to 1250" }
+        ]
+      }
+    ],
   "levels": [
     {
       "level": 1,
       "cost": 5000,
-      "damage": 220,
+      "damage": 270,
       "type": "Cone90°",
       "cd": 1.2,
       "range": 22
@@ -25305,7 +25348,7 @@
     {
       "level": 2,
       "cost": 4000,
-      "damage": 260,
+      "damage": 310,
       "type": "Cone90°",
       "cd": 1.2,
       "range": 23
@@ -25313,7 +25356,7 @@
     {
       "level": 3,
       "cost": 6000,
-      "damage": 400,
+      "damage": 500,
       "type": "Cone90°",
       "cd": 1.5,
       "range": 24
@@ -25321,7 +25364,7 @@
     {
       "level": 4,
       "cost": 8000,
-      "damage": 480,
+      "damage": 600,
       "type": "Cone90°",
       "cd": 1.5,
       "range": 25
@@ -25329,7 +25372,7 @@
     {
       "level": 5,
       "cost": 10000,
-      "damage": 725,
+      "damage": 880,
       "type": "Cone90°",
       "cd": 2,
       "range": 26
@@ -25337,7 +25380,7 @@
     {
       "level": 6,
       "cost": 12500,
-      "damage": 850,
+      "damage": 1100,
       "type": "FullAOE",
       "cd": 2,
       "range": 26
@@ -25345,7 +25388,7 @@
     {
       "level": 7,
       "cost": 15000,
-      "damage": 1000,
+      "damage": 1250,
       "type": "FullAOE",
       "cd": 2,
       "range": 26
@@ -25585,60 +25628,69 @@
   "placements": 1,
   "attackType": "Cone120°",
   "obtainment": "Quest Shop",
+  "balanceChanges": [
+      {
+        "date": "11/8/26",
+        "changes": [
+          { "type": "buff",   "text": "[Gemstone Heart] slow increased from 20% to 30%" },
+          { "type": "buff",   "text": "DMG increased from 800 to 900" }
+        ]
+      }
+    ],
   "levels": [
     {
       "level": 1,
       "cost": 6000,
-      "damage": 250,
+      "damage": 275,
       "cd": 2.5,
       "range": 24
     },
     {
       "level": 2,
       "cost": 3500,
-      "damage": 300,
+      "damage": 330,
       "cd": 2.5,
       "range": 25
     },
     {
       "level": 3,
       "cost": 5000,
-      "damage": 350,
+      "damage": 380,
       "cd": 2.5,
       "range": 26
     },
     {
       "level": 4,
       "cost": 6500,
-      "damage": 400,
+      "damage": 440,
       "cd": 2.3,
       "range": 28
     },
     {
       "level": 5,
       "cost": 8000,
-      "damage": 475,
+      "damage": 525,
       "cd": 2.3,
       "range": 30
     },
     {
       "level": 6,
       "cost": 10000,
-      "damage": 550,
+      "damage": 610,
       "cd": 2,
       "range": 32
     },
     {
       "level": 7,
       "cost": 13000,
-      "damage": 650,
+      "damage": 720,
       "cd": 2,
       "range": 35
     },
     {
       "level": 8,
       "cost": 17500,
-      "damage": 800,
+      "damage": 900,
       "cd": 2,
       "range": 35
     }
@@ -25646,7 +25698,7 @@
   "passives": [
     {
       "title": "Gemstone Heart",
-      "text": "On hit apply a stack of Crystallize which applies 50% poison over 5s. If there are 3+ Nature units on the team, follow up for 25% damage and 50% poison. When Crystallize reaches 5 stacks stun the enemy for 2s, apply 200% poison over 10s. While this poison is active, slow for 20%"
+      "text": "On hit apply a stack of Crystallize which applies 50% poison over 5s. If there are 3+ Nature units on the team, follow up for 25% damage and 50% poison. When Crystallize reaches 5 stacks stun the enemy for 2s, apply 200% poison over 10s. While this poison is active, slow for 30%"
     }
   ],
   "passiveDamage":{
@@ -29508,77 +29560,86 @@
   "placements": 1,
   "attackType": "Multi",
   "obtainment": "Halloween 2026 Event Exclusive 1",
+  "balanceChanges": [
+      {
+        "date": "11/8/26",
+        "changes": [
+          { "type": "buff",   "text": "DMG increased from 1500 to 2250" },
+          { "type": "nerf",   "text": "CD increased from 4s to 5s" }
+        ]
+      }
+  ],
   "levels": [
     {
       "level": 1,
       "cost": 7500,
-      "damage": 200,
-      "type": "Cone",
-      "cd": 1.5,
+      "damage": 300,
+      "type": "Cone 60°",
+      "cd": 2.25,
       "range": 18
     },
     {
       "level": 2,
       "cost": 4000,
-      "damage": 240,
-      "type": "Cone",
-      "cd": 1.5,
+      "damage": 360,
+      "type": "Cone 60°",
+      "cd": 2.25,
       "range": 19
     },
     {
       "level": 3,
       "cost": 5250,
-      "damage": 450,
-      "type": "Cone",
-      "cd": 2.25,
+      "damage": 625,
+      "type": "Cone 60°",
+      "cd": 3.5,
       "range": 23
     },
     {
       "level": 4,
       "cost": 6750,
-      "damage": 525,
+      "damage": 750,
       "type": "Circle",
-      "cd": 2.25,
+      "cd": 3.5,
       "range": 23
     },
     {
       "level": 5,
       "cost": 8500,
-      "damage": 600,
+      "damage": 900,
       "type": "Circle",
-      "cd": 2.25,
+      "cd": 3.5,
       "range": 24
     },
     {
       "level": 6,
       "cost": 10500,
-      "damage": 850,
+      "damage": 1220,
       "type": "Circle",
-      "cd": 3,
+      "cd": 4,
       "range": 26
     },
     {
       "level": 7,
       "cost": 13500,
-      "damage": 975,
+      "damage": 1400,
       "type": "Line",
-      "cd": 3,
+      "cd": 4,
       "range": 26
     },
     {
       "level": 8,
       "cost": 17000,
-      "damage": 1150,
+      "damage": 1750,
       "type": "Line",
-      "cd": 3.5,
+      "cd": 4.5,
       "range": 28
     },
     {
       "level": 9,
       "cost": 24000,
-      "damage": 1500,
+      "damage": 2250,
       "type": "Line",
-      "cd": 4,
+      "cd": 5,
       "range": 28
     }
   ],

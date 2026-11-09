@@ -7768,8 +7768,8 @@
       "note": "Guest 666 is hindered by the amount of random objects strewn across the map, hurting their ability to do long range dash attacks."
      },
      "1x1x1x1": {
-      "rank": "B3",
-      "note": "1x1x1x1 thrives in the open areas of this map with proper luck, but their attacks are purely based on winning the 50/50 with how open the map is. There is little in the way of elevation to hurt them here."
+      "rank": "A3",
+      "note": "With his reduced windup, 1x1x1x1 relies less on 50/50s now, making his projectiles deadly with good aim on this map, and the lack of strong loops lets his speed thrive."
      },
      "nosferatu": {
       "rank": "B2",
@@ -7864,6 +7864,10 @@
       "rank": "S4",
       "note": "The wide open nature of this map lets their rushdown excel due to the lack of loops, forcing Survivors to rely on teamwork, which Noli thrives on, making him the absolute best for this map."
      },
+     "1x1x1x1": {
+      "rank": "S4",
+      "note": "The wide open nature of this map lets their rushdown excel due to the lack of loops, forcing Survivors to rely on teamwork, which Noli thrives on, making him the absolute best for this map."
+     },
      "slasher": {
       "rank": "S3",
       "note": "The wide open nature of this map lets their rushdown excel due to the lack of loops, forcing Survivors to rely on teamwork, which Noli thrives on, making him the absolute best for this map."
@@ -7884,12 +7888,8 @@
       "rank": "A3",
       "note": "Nosferatu can make use of his dash, Bloodhook and Bat Form, allowing great combo potential, however he struggles more on the bottom half of this map."
      },
-     "1x1x1x1": {
-      "rank": "B4",
-      "note": "1x1x1x1 is forced to play a more aggressive rushdown style with their ranged attacks on this map, due to it being two halves that they cannot hit between."
-     },
      "john-doe": {
-      "rank": "C1",
+      "rank": "B1",
       "note": "John Doe's traps do not have the size to shut down any strong loops on this map, forcing him to play rushdown, which he is not designed for."
      }
     }
@@ -7938,6 +7938,10 @@
     "image": "https://forsaken.fntduserguide.com/img/bg/the-tempest-official-render-lit.webp",
     "sided": 30,
     "ranks": {
+     "1x1x1x1": {
+      "rank": "S4",
+      "note": "1x1x1x1 has the speed boosts to easily catch up, and Survivors who play altruistically will only feed his speed, letting him chip away at the team while dealing heavy hitting damage to his target. The open area where people clump together makes this Killer thrive."
+     },
      "slasher": {
       "rank": "S4",
       "note": "Slasher has the rushdown to overwhelm Survivors on this map without relying on projectiles once again. John Doe and Azure can shut down all the strong areas of this map with their traps, creating a very difficult dynamic that makes even teamwork on this map difficult to pull off."
@@ -7962,13 +7966,9 @@
       "rank": "B4",
       "note": "Nosferatu can shut off loops and trap Survivors effectively on this map while still getting good mileage out of his Bloodhook, however the natural open feel of this map makes his bat attack very easy to dodge."
      },
-     "1x1x1x1": {
-      "rank": "C2",
-      "note": "The several elevation differences on this map literally put 1x1x1x1 in a wheelchair, and Sixer is countered by the amount of random structures that block their dash."
-     },
      "guest-666": {
       "rank": "C1",
-      "note": "The several elevation differences on this map literally put 1x1x1x1 in a wheelchair, and Sixer is countered by the amount of random structures that block their dash."
+      "note": "Sixer is countered by the amount of random structures that block their dash."
      }
     }
    },
@@ -8067,6 +8067,10 @@
       "rank": "S3",
       "note": "These three Killers either have the ability to completely shut off strong parts of this map, or easily overwhelm Survivors with their ability to speedblitz them."
      },
+     "1x1x1x1": {
+      "rank": "A4",
+      "note": "Rushdown Killers have little issue on this map due to the heavy lack of strong loops, but are outclassed by the power that trapper and trickster Killers have."
+     },
      "slasher": {
       "rank": "A4",
       "note": "Rushdown Killers have little issue on this map due to the heavy lack of strong loops, but are outclassed by the power that trapper and trickster Killers have."
@@ -8082,10 +8086,6 @@
      "nosferatu": {
       "rank": "B2",
       "note": "Nosferatu becomes tedious to use on this map due to his reliance on his dash to trap people, which is difficult with how open the map is."
-     },
-     "1x1x1x1": {
-      "rank": "C2",
-      "note": "Too open, making their abilities easy to dodge."
      }
     }
    },
@@ -8133,6 +8133,10 @@
     "image": "https://forsaken.fntduserguide.com/img/bg/bloodfell-manor-official-render-lit.webp",
     "sided": 40,
     "ranks": {
+     "1x1x1x1": {
+      "rank": "S4",
+      "note": "1x1x1x1's rushdown and range, combined with his ability to zone consistently, make him extremely dangerous on this map. He relies less on his projectiles, and they come out much faster now, making elevation less abusable against him."
+     },
      "slasher": {
       "rank": "S4",
       "note": "Slasher's pure speed makes quick work of the lackluster loops."
@@ -8152,10 +8156,6 @@
      "john-doe": {
       "rank": "B4",
       "note": "This compact map is perfect for these trap Killers, as they can shut off several pathways and easily full box Survivors on this map, Azure especially, however proper map knowledge and trap knowledge is needed."
-     },
-     "1x1x1x1": {
-      "rank": "C4",
-      "note": "1x1x1x1's only plus on this map is the ability to hide behind walls while aiming their attacks, but Survivors can easily mess with elevation in the main area."
      },
      "guest-666": {
       "rank": "C3",
@@ -8227,15 +8227,15 @@
       "rank": "A4",
       "note": "These Killers are able to overwhelm Survivors with ease because of how small the map is, or how open it is with a small amount of loops. They have no flaws but are outclassed by trappers. There are no lower tier Killers for this map, as it is the only hard Killer sided map in the game."
      },
-     "guest-666": {
-      "rank": "A4",
-      "note": "These Killers are able to overwhelm Survivors with ease because of how small the map is, or how open it is with a small amount of loops. They have no flaws but are outclassed by trappers. There are no lower tier Killers for this map, as it is the only hard Killer sided map in the game."
-     },
      "slasher": {
       "rank": "A4",
       "note": "These Killers are able to overwhelm Survivors with ease because of how small the map is, or how open it is with a small amount of loops. They have no flaws but are outclassed by trappers. There are no lower tier Killers for this map, as it is the only hard Killer sided map in the game."
      },
      "1x1x1x1": {
+      "rank": "A4",
+      "note": "These Killers are able to overwhelm Survivors with ease because of how small the map is, or how open it is with a small amount of loops. They have no flaws but are outclassed by trappers. There are no lower tier Killers for this map, as it is the only hard Killer sided map in the game."
+     },
+     "guest-666": {
       "rank": "A4",
       "note": "These Killers are able to overwhelm Survivors with ease because of how small the map is, or how open it is with a small amount of loops. They have no flaws but are outclassed by trappers. There are no lower tier Killers for this map, as it is the only hard Killer sided map in the game."
      },
@@ -8250,11 +8250,7 @@
     "image": "https://forsaken.fntduserguide.com/img/bg/reborn-family-abode-lit.webp",
     "sided": 60,
     "ranks": {
-     "1x1x1x1": {
-      "rank": "S4",
-      "note": "These four, once again, are the best for this map because of their ability to speedblitz Survivors. Their speed allows them to work against most of the loops on this map without the structures hindering their abilities."
-     },
-     "slasher": {
+     "noli": {
       "rank": "S4",
       "note": "These four, once again, are the best for this map because of their ability to speedblitz Survivors. Their speed allows them to work against most of the loops on this map without the structures hindering their abilities."
      },
@@ -8262,7 +8258,11 @@
       "rank": "S4",
       "note": "These four, once again, are the best for this map because of their ability to speedblitz Survivors. Their speed allows them to work against most of the loops on this map without the structures hindering their abilities."
      },
-     "noli": {
+     "slasher": {
+      "rank": "S4",
+      "note": "These four, once again, are the best for this map because of their ability to speedblitz Survivors. Their speed allows them to work against most of the loops on this map without the structures hindering their abilities."
+     },
+     "1x1x1x1": {
       "rank": "S4",
       "note": "These four, once again, are the best for this map because of their ability to speedblitz Survivors. Their speed allows them to work against most of the loops on this map without the structures hindering their abilities."
      },
@@ -8281,6 +8281,41 @@
      "guest-666": {
       "rank": "B2",
       "note": "Sixer gets caught on far too many random obstructions thrown around the map that can hinder their dash, removing the viability of a very strong attack."
+     }
+    }
+   },
+   {
+    "name": "Yorick's Resting Place",
+    "image": "https://forsaken.fntduserguide.com/img/bg/yoricks-resting-place-official-render-lit.webp",
+    "sided": 10,
+    "ranks": {
+     "1x1x1x1": {
+      "rank": "S4",
+      "note": "The only Killer that can deal with the collision of the 500 walls on this map without hindering their own abilities. Turns the very strong nature of the manor against Survivors due to how claustrophobic it is."
+     },
+     "azure": {
+      "rank": "A4",
+      "note": "Can shut down the strong portions of this map with ease, and can turn the manor into a death trap for Survivors with his traps once it's opened."
+     },
+     "slasher": {
+      "rank": "A3",
+      "note": "100% win rate on this map unless Survivors unlock the manor, in which case the game becomes a huge struggle. Do your best to win as fast as you can before they get the manor."
+     },
+     "c00lkidd": {
+      "rank": "A1",
+      "note": "Has the speed to outplay all the loops, but sits lower than Slasher as Walkspeed is heavily hindered on this map."
+     },
+     "john-doe": {
+      "rank": "B4",
+      "note": "Can do what Azure does but worse, unable to lock down nearly as much as Azure can with his smaller trap pool."
+     },
+     "guest-666": {
+      "rank": "C1",
+      "note": "The amount of random objects sticking out of the ground and structures makes it hard for her to maneuver around with her larger hitbox, and hinders her dash heavily."
+     },
+     "nosferatu": {
+      "rank": "C1",
+      "note": "Too many random objects for Bloodhook or his bat attack to get mileage; they will get caught on random objects."
      }
     }
    }

@@ -60,7 +60,7 @@
      "key": "Q",
      "cd": "50s",
      "icon": "https://forsaken.fntduserguide.com/img/ab/noob-bloxy-cola.webp",
-     "desc": "Noob drinks a can of **Bloxy Cola** for 2.5 seconds, during which they are unable to sprint. After finishing the drink, Noob is granted movement buffs and is cleansed of slowing effects. The effects are as follows:\n•Grants ⟦Speed|I⟧ for 10 seconds\n•Removes all existing ⟦Slowness|⟧ effects\n•While drinking, Noob cannot sprint\n\n**Using Bloxy Cola while Slateskin Potion is active:**\n\n•Plays a boowomp sound effect\n\n**Item Interaction:**\n\n•Ability is treated as a Bloxy Cola item consumption for the purposes of Bloxy Cola speed\n\n**Achievement(s):**",
+     "desc": "Drink a can of **Bloxy Cola** for 2.5 seconds, during which you are unable to sprint. After finishing the drink, you:\n•Gain ⟦Speed|I⟧ for 10 seconds\n•Lose all existing ⟦Slowness|⟧ effects\n\n**Using Bloxy Cola while Slateskin Potion is active:**\n\n•Plays a boowomp sound effect\n\n**Item Interaction:**\n\n•Ability is treated as a Bloxy Cola item consumption for the purposes of Bloxy Cola speed\n\n**Achievement(s):**",
      "quote": "\"Warning: Bloxy Cola maybe bland-forming.\" - Roblox"
     },
     {
@@ -68,7 +68,7 @@
      "key": "E",
      "cd": "46s",
      "icon": "https://forsaken.fntduserguide.com/img/ab/noob-slateskin-potion.webp",
-     "desc": "Noob drinks a bottle of **Slateskin Potion** for 1.5 seconds, during which they are unable to sprint and their movement speed is decreased by 20%, after fully drinking the **Slateskin Potion**, Noob gains some effects. The effects are as follows:\n•Grants ⟦Slateskin|III⟧ for 6 seconds\n••Provides 120 overheal but reduces speed by 45%\n••Gains extra hit priority\n•Can be recast after 2.5 seconds to remove the effect manually\n•Cooldown only starts after 7.5s or if Noob manually cancels out\n\n**Expiration:**\n\n•If ⟦Slateskin|⟧ expires naturally, gives ⟦Speed|II⟧ for 2 seconds\n•If ended manually, gives ⟦Speed|I⟧ instead.\n\n**Undocumented:**\n\n• Guest 666 cannot collect Blood from Noob while the effect is active, Guest 666 also can't inflict ⟦Hemmorhage|⟧ on them, but drinking **Slateskin Potion** will not remove ⟦Hemmorhage|⟧ if it was already applied before being consumed.\n•Dusekkar can stack the overhealth from ⟦Slateskin|⟧ with **Plasma Beam** and vice versa, and the overhealth will stay until ⟦Slateskin|⟧ ends.\n•⟦Slateskin|⟧ doesn't make you immune to the On-hit speed boost, only the actual ⟦Speed|⟧ status effect.\n----**Achievement(s):**",
+     "desc": "Drink a bottle of **Slateskin Potion** for 1.5 seconds, during which you are unable to sprint and move 20% slower. After fully drinking the **Slateskin Potion**, you:\n•Gain ⟦Slateskin|III⟧ for 6 seconds\n••Provides 120 overheal but reduces speed by 45%\n••Gains extra hit priority\nCan be recast after 2.5 seconds to remove the effect manually\n•Cooldown only starts after 7.5s or if Noob manually cancels out\n\n**Expiration:**\n\n•If ⟦Slateskin|⟧ expires naturally, gives ⟦Speed|II⟧ for 2 seconds\n•If ended manually, gives ⟦Speed|I⟧ instead.\n\n**Undocumented:**\n\n• Guest 666 cannot collect Blood from Noob while the effect is active, Guest 666 also can't inflict ⟦Hemmorhage|⟧ on them, but drinking **Slateskin Potion** will not remove ⟦Hemmorhage|⟧ if it was already applied before being consumed.\n•Dusekkar can stack the overhealth from ⟦Slateskin|⟧ with **Plasma Beam** and vice versa, and the overhealth will stay until ⟦Slateskin|⟧ ends.\n•⟦Slateskin|⟧ doesn't make you immune to the On-hit speed boost, only the actual ⟦Speed|⟧ status effect.\n----**Achievement(s):**",
      "quote": "IM ROCK HARD!! - Homeless Guy"
     },
     {
@@ -76,7 +76,7 @@
      "key": "R",
      "cd": "40s",
      "icon": "https://forsaken.fntduserguide.com/img/ab/noob-ghostburger.webp",
-     "desc": "Noob eats a **Ghostburger** for 2 seconds, granting powerful stealth effects for a short duration. The effects are as follows:\n•Grants ⟦Undetectable|I⟧ and ⟦Invisibility|IV⟧ for 10 seconds\n•While eating, Noob moves 20% slower and is unable to sprint\n\n**Achievement(s):**",
+     "desc": "Eat a **Ghostburger** for 2 seconds, during which you are unable to sprint and move 20% slower. Once fully eaten, you:\n•Gain ⟦Undetectable|I⟧ and ⟦Invisibility|IV⟧ for 10 seconds\n\n**Achievement(s):**",
      "quote": "\"What happens if you eat a ghost? You'll find out.\" - Roblox"
     }
    ],

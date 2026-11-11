@@ -409,6 +409,8 @@
          "Kronos Endo Freddy",
          "Adventure Lolbit and Mendo Duo",
          "Party Never Ends Cupcake",
+         "Celebration Cake Ballora NEW",
+         "Party Sparkler Muffin NEW",
          "Cthulhu Nightmare Foxy",
          "Puppet 0-0-5",
          "Scarecrow Freddy",

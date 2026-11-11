@@ -94,7 +94,7 @@
          "Movie Mike and Abby Duo",
          "Celebration Cake Ballora LINKED NEW", 
          "Party Sparkler Muffin LINKED NEW",
-         "Pinata Freddy LINKED NEW",
+         "Pinata Freddy NEW",
          "Shark Withered Foxy",
          "Commander Withered Freddy",
          "Valkyrie Chica",

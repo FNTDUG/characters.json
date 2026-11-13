@@ -2,19 +2,16 @@
   "notes": [
     {
       "date": "2026-11-13",
-      "label": "Updated",
+      "label": "Added",
       "entries": [
         {
-          "badge": "Updated",
-          "title": "Forsakenween 2026 balance changes",
-          "link": "/forsaken/roster",
+          "badge": "Added",
+          "title": "Now Covering Forsaken!",
+          "link": "",
           "items": [
-            "Updated 1x1x1x1's walk and sprint speed, Mass Infection, Entanglement, Unstable Eye and Rejuvenate the Rotten.",
-            "Updated Elliot's Pizza Throw and Rush Hour, and added the two new Rush Hour rewards.",
-            "Updated Noob's Bloxy Cola, Slateskin Potion and Ghostburger.",
-            "Updated Helperbot's Inspire and Pulse.",
-            "Updated Two Time's Crouch and the Crouch backstab stun.",
-            "Exhausted now lowers stamina by 5% per level instead of 10%."
+            "Added The Forsaken page",
+            "Added TierLists & Maps page",
+            "Added Meta Comps page"
           ]
         }
       ]
